@@ -1,0 +1,68 @@
+{
+  "block_pools" :
+  [
+    {
+      "name": "scroll2",
+      "type":
+      {
+        "type": "block",
+        "name": "waystones:waystone",
+        "meta": 2
+      },
+      "disableJEI": true,
+      "clicktype": "rightclick",
+      "properties":
+      [
+        {
+          "type": "require_sneak",
+          "sneak": true
+        },
+        {
+          "type": "require_item",
+          "name": "minecraft:paper",
+          "meta": 0
+        },
+        {
+          "type": "consume_item",
+          "amount": 1
+        },
+        {
+          "type": "require_item",
+          "name": "minecraft:coal",
+          "meta": 1,
+          "offhand": true
+        },
+        {
+          "type": "consume_item",
+          "amount": 1,
+          "offHand": true,
+          "chance": 50
+        },
+        {
+          "type": "require_XP",
+          "value": 4,
+          "disableJEI": true
+        },
+        {
+          "type": "add_XP",
+          "amount": 4,
+          "remove": true
+        },
+        {
+          "type": "play_sound",
+          "name": "block.note.chime",
+          "pitch": 0.5,
+          "disableJEI": true
+        }
+      ],
+      "drops":
+      [
+        {
+          "name": "waystones:return_scroll",
+          "amount": 1,
+          "meta": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "name": "cm3thermal:machineframe2",
+
+  "disabled": false,
+
+  "target-item": "thermalexpansion:frame",
+  "target-count": 2,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "rockhounding_chemistry:alloy_parts",
+  "catalyst-meta": 9,
+  
+  "input-types": {
+    "a": {
+      "id": "jaopca:block_sheetmetalscal",
+      "meta": 1
+    },
+    "b": {
+      "id": "contenttweaker:invar_scaffolding",
+      "meta": 0
+    },
+    "c": {
+      "id": "thermalfoundation:glass",
+      "meta": 3
+    },
+    "d": {
+      "id": "immersiveengineering:sheetmetal",
+      "meta": 8
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "c",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "c",
+        "_",
+        "c"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ]
+    ],
+    [
+      [
+        "d",
+        "d",
+        "d"
+      ],
+      [
+        "d",
+        "c",
+        "d"
+      ],
+      [
+        "d",
+        "d",
+        "d"
+      ]
+    ]
+  ]
+
+}

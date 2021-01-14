@@ -1,0 +1,62 @@
+{	
+	"dependencies": "nuclearcraft",
+	"populate": {
+		"uranium": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "nuclearcraft:ore",
+						"properties": {
+							"type": "uranium"
+						},
+						"weight": 40
+					},
+					{
+						"name": "nuclearcraft:ore",
+						"properties": {
+							"type": "boron"
+						},
+						"weight": 15
+					},
+					{
+						"name": "nuclearcraft:ore",
+						"properties": {
+							"type": "thorium"
+						},
+						"weight": 15
+					},
+					{
+						"name": "nuclearcraft:ore",
+						"properties": {
+							"type": "magnesium"
+						},
+						"weight": 15
+					},
+					{
+						"name": "nuclearcraft:ore",
+						"properties": {
+							"type": "lithium"
+						},
+						"weight": 15
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 40
+			},
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 20,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0,
+					10
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+  "name": "cm3thermal:machineframe",
+
+  "disabled": true,
+
+  "target-item": "thermalexpansion:machine",
+  "target-count": 1,
+  "target-nbt": "{RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte}}",
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "thermalfoundation:material",
+  "catalyst-meta": 513,
+
+  "input-types": {
+    "r": {
+      "id": "minecraft:redstone_block",
+      "meta": 0
+    },
+    "c": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 0
+    },
+    "b": {
+      "id": "minecraft:brick_block",
+      "meta": 0
+    },
+    "s": {
+      "id": "immersiveengineering:sheetmetal",
+      "meta": 9
+    }
+
+
+  },
+  "shape": [
+    [
+      [ "s", "s", "s" ],
+      [ "s", "c", "s" ],
+      [ "s", "s", "s" ]
+    ],
+    [
+      [ "s", "b", "s" ],
+      [ "b", "r", "b" ],
+      [ "s", "b", "s" ]
+    ],
+    [
+      [ "s", "s", "s" ],
+      [ "s", "c", "s" ],
+      [ "s", "s", "s" ]
+    ]
+  ]
+
+}

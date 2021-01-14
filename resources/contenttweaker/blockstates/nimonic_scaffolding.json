@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/nimonic_scaffolding",
+      "particle": "contenttweaker:blocks/nimonic_scaffolding"
+    },
+    "model": "contenttweaker:nimonicscaffold",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

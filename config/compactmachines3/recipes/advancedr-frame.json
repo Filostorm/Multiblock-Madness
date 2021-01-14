@@ -1,0 +1,45 @@
+{
+  "name": "cm3ar:frame",
+
+  "disabled": false,
+
+  "target-item": "libvulpes:structuremachine",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "thermalfoundation:material",
+  "catalyst-meta": 260,
+
+  "input-types": {
+    "f": {
+      "id": "contenttweaker:nimonic_scaffolding",
+      "meta": 5
+    },
+    "s": {
+      "id": "contenttweaker:sheetmetal_nimonic",
+      "meta": 1
+    }
+
+
+  },
+  "shape": [
+    [
+      [ "f", "s", "f" ],
+      [ "s", "f", "s" ],
+      [ "f", "s", "f" ]
+    ],
+    [
+      [ "f", "s", "f" ],
+      [ "s", "f", "s" ],
+      [ "f", "s", "f" ]
+    ],
+    [
+      [ "f", "s", "f" ],
+      [ "s", "f", "s" ],
+      [ "f", "s", "f" ]
+    ]
+  ]
+
+}
