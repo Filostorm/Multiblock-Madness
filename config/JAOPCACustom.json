@@ -1,0 +1,24 @@
+[
+	{
+		"name": "sheetmetal",
+		"type": "block",
+		"ore_types": [
+			"ingot",
+			"ingot_oreless"
+		]
+	},
+	{
+		"name": "crushedlump",
+		"type": "item",
+		"ore_types": [
+			"ingot"
+		]
+	},
+	{
+		"name": "leachedshard",
+		"type": "item",
+		"ore_types": [
+			"ingot"
+		]
+	}
+]

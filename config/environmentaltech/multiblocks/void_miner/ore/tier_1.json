@@ -1,0 +1,104 @@
+{
+  "outputs": [
+    {
+      "target": "black",
+      "weight": 1000,
+      "id": "OD:oreCoal"
+    },
+    {
+      "target": "white",
+      "weight": 750,
+      "id": "OD:oreIron"
+    },
+    {
+      "target": "white",
+      "weight": 560,
+      "id": "OD:oreQuartz"
+    },
+    {
+      "target": "red",
+      "weight": 515,
+      "id": "OD:oreRedstone"
+    },
+    {
+      "target": "blue",
+      "weight": 343,
+      "id": "OD:oreLapis"
+    },
+    {
+      "target": "yellow",
+      "weight": 311,
+      "id": "OD:oreGold"
+    },
+    {
+      "target": "orange",
+      "weight": 584,
+      "id": "OD:oreCopper"
+    },
+    {
+      "target": "gray",
+      "weight": 602,
+      "id": "OD:oreTin"
+    },
+    {
+      "target": "silver",
+      "weight": 381,
+      "id": "OD:oreSilver"
+    },
+    {
+      "target": "purple",
+      "weight": 500,
+      "id": "OD:oreLead"
+    },
+    {
+      "target": "light_blue",
+      "weight": 187,
+      "id": "OD:oreCertusQuartz"
+    },
+    {
+      "target": "gray",
+      "weight": 232,
+      "id": "OD:oreNickel"
+    },
+    {
+      "target": "yellow",
+      "weight": 222,
+      "id": "OD:oreSulfur"
+    },
+    {
+      "target": "white",
+      "weight": 244,
+      "id": "OD:oreNiter"
+    },
+    {
+      "target": "black",
+      "weight": 290,
+      "id": "OD:oreQuartzBlack"
+    },
+    {
+      "target": "white",
+      "weight": 160,
+      "id": "OD:oreSalt"
+    },
+    {
+      "target": "crystal",
+      "weight": 200,
+      "id": "environmentaltech:litherite_crystal"
+    },
+    {
+      "target": "crystal",
+      "weight": 150,
+      "id": "environmentaltech:erodium_crystal"
+    },
+    {
+      "target": "black",
+      "weight": 4,
+      "id": "environmentaltech:lonsdaleite_crystal"
+    },
+    {
+      "target": "orange",
+      "weight": 200,
+      "id": "OD:orePalladium"
+    }
+  ]
+}

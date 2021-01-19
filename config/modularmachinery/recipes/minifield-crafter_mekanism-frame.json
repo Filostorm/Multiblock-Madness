@@ -1,0 +1,42 @@
+{
+    "machine": "minifield-crafter",
+    "registryName": "minifield-crafter-mekanism-frame",
+    "recipeTime": 500,
+    "requirements": [
+        {
+            "type": "modularmachinery:energy",
+            "io-type": "input",
+            "energyPerTick": 200
+        },
+        {
+            "type": "modularmachinery:item",
+            "io-type": "output",
+            "item": "mekanism:basicblock@8",
+            "amount": 1
+        },
+        {
+            "type": "modularmachinery:item",
+            "io-type": "input",
+            "item": "immersiveengineering:sheetmetal@8",
+            "amount": 14
+        },
+        {
+            "type": "modularmachinery:item",
+            "io-type": "input",
+            "item": "mekanism:basicblock",
+            "amount": 1
+        },
+        {
+            "type": "modularmachinery:item",
+            "io-type": "input",
+            "item": "contenttweaker:vanasteel_scaffolding",
+            "amount": 12
+        },
+        {
+            "type": "modularmachinery:item",
+            "io-type": "input",
+            "item": "thermalfoundation:material@288",
+            "amount": 1
+        }
+    ]
+}

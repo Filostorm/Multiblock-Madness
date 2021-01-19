@@ -1,0 +1,37 @@
+{
+    "casings_all": [
+        "modularmachinery:blockcasing",
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockenergyoutputhatch",
+        "modularmachinery:blockfluidoutputhatch"
+    ],
+    "casings_decorative": [
+        "modularmachinery:blockcasing"
+    ],
+    "casings_fluid": [
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockfluidoutputhatch"
+    ],
+    "casings_energy": [
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockenergyoutputhatch"
+    ],
+    "casings_item": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus"
+    ],
+    "fieldprojector": [
+        "compactmachines3:fieldprojector@2",
+        "compactmachines3:fieldprojector@4",
+        "compactmachines3:fieldprojector@3",
+        "compactmachines3:fieldprojector@5"
+    ],
+    "casing_energy_output": [
+        "modularmachinery:blockcasing",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockenergyinputhatch"
+    ]
+}

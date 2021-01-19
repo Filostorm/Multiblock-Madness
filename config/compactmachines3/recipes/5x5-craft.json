@@ -1,0 +1,66 @@
+{
+  "name": "cm3thaumcraft:infusionmatrix",
+
+  "disabled": true,
+
+  "target-item": "thaumcraft:infusion_matrix",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "thaumcraft:alumentum",
+
+  "input-types": {
+    "c": {
+      "id": "astralsorcery:blockcollectorcrystal",
+      "meta": 0,
+      "ignore-nbt": true
+    },
+    "s": {
+      "id": "bloodmagic:blood_rune",
+      "meta": 1
+    },
+    "p": {
+      "id": "bloodmagic:blood_rune",
+      "meta": 4
+    }
+  },
+  "shape": [
+    [
+      [ "s", "s", "_", "p", "p" ],
+      [ "s", "s", "_", "p", "p" ],
+      [ "_", "_", "_", "_", "_" ],
+      [ "p", "p", "_", "s", "s" ],
+      [ "p", "p", "_", "s", "s" ]
+    ],
+    [
+      [ "s", "s", "_", "p", "p" ],
+      [ "s", "s", "_", "p", "p" ],
+      [ "_", "_", "_", "_", "_" ],
+      [ "p", "p", "_", "s", "s" ],
+      [ "p", "p", "_", "s", "s" ]
+    ],
+      [
+      [ "_", "_", "_", "_", "_" ],
+      [ "_", "_", "_", "_", "_" ],
+      [ "_", "_", "c", "_", "_" ],
+      [ "_", "_", "_", "_", "_" ],
+      [ "_", "_", "_", "_", "_" ]
+    ],
+    [
+      [ "p", "p", "_", "s", "s" ],
+      [ "p", "p", "_", "s", "s" ],
+      [ "_", "_", "_", "_", "_" ],
+      [ "s", "s", "_", "p", "p" ],
+      [ "s", "s", "_", "p", "p" ]
+    ],    [
+      [ "p", "p", "_", "s", "s" ],
+      [ "p", "p", "_", "s", "s" ],
+      [ "_", "_", "_", "_", "_" ],
+      [ "s", "s", "_", "p", "p" ],
+      [ "s", "s", "_", "p", "p" ]
+    ]
+  ]
+
+}

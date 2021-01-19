@@ -1,0 +1,114 @@
+{
+  "name": "cm3bloodmagic:altar",
+
+  "disabled": false,
+
+  "target-item": "bloodmagic:altar",
+  "target-count": 1,
+ 
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "tconstruct:edible",
+  "catalyst-meta": 3,
+
+  "input-types": {
+    "a": {
+      "id": "actuallyadditions:block_crystal",
+      "meta": 0
+    },
+    "b": {
+      "id": "thaumcraft:slab_arcane_stone",
+      "meta": 0
+    },
+    "c": {
+      "id": "thaumcraft:stone_arcane",
+      "meta": 0
+    },
+    "d": {
+      "id": "chisel:energizedvoidstone",
+      "meta": 3
+    },
+    "e": {
+      "id": "botania:storage",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "b",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "b",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "c",
+        "c",
+        "c",
+        "a"
+      ],
+      [
+        "c",
+        "d",
+        "d",
+        "d",
+        "c"
+      ],
+      [
+        "c",
+        "d",
+        "e",
+        "d",
+        "c"
+      ],
+      [
+        "c",
+        "d",
+        "d",
+        "d",
+        "c"
+      ],
+      [
+        "a",
+        "c",
+        "c",
+        "c",
+        "a"
+      ]
+    ]
+  ]
+
+}

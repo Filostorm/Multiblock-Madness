@@ -1,0 +1,79 @@
+{
+	"populate": {
+		"oraculum": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "contenttweaker:sub_block_holder_0",
+					"properties": {
+						"sub_block_number": "3"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 1,
+			"min-height": 40,
+			"max-height": 100,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+				0
+				]
+			}
+		},
+		"mithril": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "contenttweaker:sub_block_holder_0",
+					"properties": {
+						"sub_block_number": "6"
+					}
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 7
+			},
+			"cluster-count": 3,
+			"min-height": 70,
+			"max-height": 124,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+				-1
+				]
+			}
+		},
+		"adamantite": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "contenttweaker:sub_block_holder_0",
+					"properties": {
+						"sub_block_number": "7"
+					}
+				},
+				"material": "minecraft:end_stone",
+				"cluster-size": 3
+			},
+			"cluster-count": 10,
+			"min-height": 10,
+			"max-height": 150,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+				1
+				]
+			}
+		}
+	}
+}
