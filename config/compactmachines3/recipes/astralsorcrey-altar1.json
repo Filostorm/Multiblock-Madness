@@ -1,0 +1,225 @@
+{
+  "name": "cm3astralsorcrey:altar1",
+
+  "disabled": false,
+
+  "target-item": "astralsorcery:blockaltar",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "astralsorcery:itemcraftingcomponent",
+
+  "input-types": {
+    "a": {
+      "id": "astralsorcery:blockmarble",
+      "meta": 3
+    },
+    "b": {
+      "id": "thaumcraft:slab_greatwood",
+      "meta": 8,
+      "item": {
+        "id": "thaumcraft:slab_greatwood",
+        "meta": 0,
+        "count": 16
+      }
+    },
+    "c": {
+      "id": "thaumcraft:plank_greatwood",
+      "meta": 0
+    },
+    "d": {
+      "id": "astralsorcery:blockblackmarble",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "d",
+        "d",
+        "d",
+        "a"
+      ],
+      [
+        "a",
+        "d",
+        "d",
+        "d",
+        "a"
+      ],
+      [
+        "a",
+        "d",
+        "d",
+        "d",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "b",
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "c",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "c",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "c",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "c",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "c",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "c",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "c",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "c",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "c",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "c",
+        "c",
+        "c",
+        "c",
+        "c"
+      ],
+      [
+        "c",
+        "c",
+        "c",
+        "c",
+        "c"
+      ],
+      [
+        "c",
+        "c",
+        "c",
+        "c",
+        "c"
+      ],
+      [
+        "c",
+        "c",
+        "c",
+        "c",
+        "c"
+      ],
+      [
+        "c",
+        "c",
+        "c",
+        "c",
+        "c"
+      ]
+    ]
+  ]
+
+}

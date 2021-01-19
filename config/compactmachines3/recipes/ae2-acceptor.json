@@ -1,0 +1,86 @@
+{
+  "name": "cm3appliedenergistics2:energy_acceptor",
+
+  "disabled": false,
+
+  "target-item": "appliedenergistics2:energy_acceptor",
+  "target-count": 1,
+  
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "appliedenergistics2:fluix_block",
+
+  "input-types": {
+    "a": {
+      "id": "appliedenergistics2:sky_stone_block",
+      "meta": 0
+    },
+    "b": {
+      "id": "contenttweaker:sheetmetal_refinediron",
+      "meta": 0
+    },
+    "c": {
+      "id": "appliedenergistics2:quartz_glass",
+      "meta": 0
+    },
+    "d": {
+      "id": "storagenetwork:master",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "c",
+        "d",
+        "c"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+}

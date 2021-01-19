@@ -1,0 +1,39 @@
+{
+  "name": "lava",
+  "type": "spawner",
+  "enabled": true,
+  "loadDefault": false,
+  "mobCountMin": 3,
+  "ignoreDimensions": true,
+  "ignoreBiomes": true,
+  "ignoreLightLevel": true,
+  "conditions": [],
+  "triggers": [
+    {
+      "type": "world",
+      "chance": 0.05,
+      "tickRate": 400
+    }
+  ],
+  "locations": [
+    {
+      "type": "block",
+      "rangeMin": [
+        16,
+        0,
+        16
+      ],
+      "rangeMax": [
+        32,
+        32,
+        32
+      ],
+      "sorting": "random",
+      "blocks": [
+        "minecraft:lava"
+      ],
+      "blockCost": 8,
+      "listType": "whitelist"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "name": "cm3ae2:mecontroller",
+
+  "disabled": false,
+
+  "target-item": "appliedenergistics2:controller",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "techreborn:part",
+  "catalyst-meta": "2",
+
+  "input-types": {
+    "a": {
+      "id": "appliedenergistics2:smooth_sky_stone_block",
+      "meta": 0
+    },
+    "b": {
+      "id": "appliedenergistics2:fluix_block",
+      "meta": 0
+    },
+    "c": {
+      "id": "thermalfoundation:storage",
+      "meta": 6
+    },
+    "d": {
+      "id": "actuallyadditions:block_crystal_empowered",
+      "meta": 2
+    },
+    "e": {
+      "id": "appliedenergistics2:quartz_vibrant_glass",
+      "meta": 0
+    },
+    "f": {
+      "id": "appliedenergistics2:energy_acceptor",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "c",
+        "d",
+        "c",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "e",
+        "e",
+        "e",
+        "b"
+      ],
+      [
+        "c",
+        "e",
+        "e",
+        "e",
+        "c"
+      ],
+      [
+        "b",
+        "e",
+        "e",
+        "e",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "c",
+        "d",
+        "c",
+        "a"
+      ],
+      [
+        "c",
+        "e",
+        "e",
+        "e",
+        "c"
+      ],
+      [
+        "d",
+        "e",
+        "f",
+        "e",
+        "d"
+      ],
+      [
+        "c",
+        "e",
+        "e",
+        "e",
+        "c"
+      ],
+      [
+        "a",
+        "c",
+        "d",
+        "c",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "e",
+        "e",
+        "e",
+        "b"
+      ],
+      [
+        "c",
+        "e",
+        "e",
+        "e",
+        "c"
+      ],
+      [
+        "b",
+        "e",
+        "e",
+        "e",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "c",
+        "d",
+        "c",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+
+}

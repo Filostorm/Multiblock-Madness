@@ -1,0 +1,182 @@
+{
+	"dependencies": "mekanism",
+	"populate": {
+		"osmium": {
+			"enabled": "false",
+			"distribution": "uniform",
+			"generator": {
+				"block": "mekanism:oreblock",
+				"material": "minecraft:stone",
+				"cluster-size": 12
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 100,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					10
+				]
+			}
+		},
+		
+		"voidstone": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "chisel:voidstone"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 100,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					10
+				]
+			}
+		},
+
+		"platinum": {
+			"enabled": "false",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "platinum"
+						}
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 100,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					10
+				]
+			}
+		},
+		"iridium": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "iridium"
+						},
+						"weight": 2
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "platinum"
+						},
+						"weight": 40
+					},
+					{
+						"name": "mekanism:oreblock",
+						"weight": 58
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 100,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					10
+				]
+			}
+		},
+		"gold": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "gold_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 25
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 100,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					10
+				]
+			}
+		},
+		"stygianiron": {
+			"distribution": "uniform",
+			"generator": {
+				
+				"block": {
+					"name": "woot:stygianironore"
+				},
+
+				"material": "minecraft:stone",
+				"cluster-size": 6
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 100,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					10
+				]
+			}
+		},
+		"oraculum": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "contenttweaker:sub_block_holder_0",
+					"properties": {
+						"sub_block_number": "3"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 25
+			},
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 100,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+				10
+				]
+			}
+		},
+	}
+}

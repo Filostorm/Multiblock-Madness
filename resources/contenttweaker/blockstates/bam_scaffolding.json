@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/bam_scaffolding",
+      "particle": "contenttweaker:blocks/bam_scaffolding"
+    },
+    "model": "contenttweaker:bamscaffold",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

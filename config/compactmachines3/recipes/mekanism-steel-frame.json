@@ -1,0 +1,50 @@
+{
+  "name": "cm3mekanism:machineframe",
+
+  "disabled": false,
+
+  "target-item": "mekanism:basicblock",
+  "target-count": 1,
+  "target-meta": 8,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "thermalfoundation:material",
+  "catalyst-meta": 288,
+
+  "input-types": {
+    "c": {
+      "id": "mekanism:basicblock",
+      "meta": 0
+    },
+    "f": {
+      "id": "contenttweaker:vanasteel_scaffolding",
+      "meta": 0
+    },
+    "s": {
+      "id": "immersiveengineering:sheetmetal",
+      "meta": 8
+    }
+
+
+  },
+  "shape": [
+    [
+      [ "s", "f", "s" ],
+      [ "f", "s", "f" ],
+      [ "s", "f", "s" ]
+    ],
+    [
+      [ "f", "s", "f" ],
+      [ "s", "c", "s" ],
+      [ "f", "s", "f" ]
+    ],
+    [
+      [ "s", "f", "s" ],
+      [ "f", "s", "f" ],
+      [ "s", "f", "s" ]
+    ]
+  ]
+
+}

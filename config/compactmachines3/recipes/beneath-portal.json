@@ -1,0 +1,44 @@
+{
+  "name": "cm3beneath:portal",
+
+  "disabled": false,
+
+  "target-item": "beneath:teleporterbeneath",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "minecraft:torch",
+
+  "input-types": {
+    "b": {
+      "id": "botania:storage",
+      "meta": 3
+    },
+    "s": {
+      "id": "additionalcompression:cobblestone_compressed",
+      "meta": 0
+    }
+
+
+  },
+  "shape": [
+    [
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ]
+    ],
+    [
+      [ "s", "s", "s" ],
+      [ "s", "b", "s" ],
+      [ "s", "s", "s" ]
+    ],
+    [
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ]
+    ]
+  ]
+
+}
