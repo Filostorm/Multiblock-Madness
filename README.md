@@ -18,7 +18,9 @@ Create the ultimate material processing factory and build the most advanced mach
  
      Make use of a custom 8x ore processing system through Rockhounding.
  
-    Use Immersive Engineering's Excavators with custom mineral veins to generate large amounts of ore mid game, then dive into chemistry with Rockhounding (complete with a quest page that will take you through the mod) to extract surprisingly large amounts of resources from Uninspected Minerals and smelt efficiency boosting alloys.
+    Use Immersive Engineering's Excavators with custom mineral veins to generate large amounts of ore mid game, then dive into chemistry with Rockhounding 
+    (complete with a quest page that will take you through the mod) to extract surprisingly large amounts of resources from Uninspected Minerals and 
+    smelt efficiency boosting alloys.
  
     Revamped ore gen; most ore now spawns in fairly large clusters with other related ores.
  
