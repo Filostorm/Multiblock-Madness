@@ -74,7 +74,7 @@ mods.thaumcraft.Crucible.registerRecipe("sacrificial_dagger", "",
 );
 
 //mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
-mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:skull:2>, [<thaumcraft:brain>, <additionalcompression:meatrotten_compressed>], 500,200,0);
+mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:skull:2>, [<thaumcraft:brain>, <thaumcraft:flesh_block>], 500,200,0);
 
 
 ##########################################################################################

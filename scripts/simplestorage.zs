@@ -21,7 +21,7 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-recipes.addShaped(<storagenetwork:controller>, [[<actuallyadditions:block_crystal:1>, <storagenetwork:process_kabel>, <actuallyadditions:block_crystal:1>],[<storagenetwork:process_kabel>, <rockhounding_chemistry:misc_items:10>, <storagenetwork:process_kabel>], [<actuallyadditions:block_crystal:1>, <storagenetwork:process_kabel>, <actuallyadditions:block_crystal:1>]]);
+recipes.addShaped(<storagenetwork:controller>, [[<actuallyadditions:block_crystal:1>, <storagenetwork:process_kabel>, <actuallyadditions:block_crystal:1>],[<storagenetwork:process_kabel>, <advgenerators:controller>, <storagenetwork:process_kabel>], [<actuallyadditions:block_crystal:1>, <storagenetwork:process_kabel>, <actuallyadditions:block_crystal:1>]]);
 recipes.addShaped(<storagenetwork:request>, [[<moreplates:restonia_plate>, <ore:workbench>, <moreplates:restonia_plate>],[<ore:workbench>, <rockhounding_chemistry:misc_items:1>, <ore:workbench>], [<moreplates:restonia_plate>, <ore:workbench>, <moreplates:restonia_plate>]]);
 recipes.addShaped(<storagenetwork:master>, [[<moreplates:void_plate>, <storagenetwork:kabel>, <moreplates:void_plate>],[<storagenetwork:kabel>, <rockhounding_chemistry:misc_items:1>, <storagenetwork:kabel>], [<moreplates:void_plate>, <storagenetwork:kabel>, <moreplates:void_plate>]]);
 recipes.addShaped(<storagenetwork:kabel> * 8, [[<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>],[<thermalfoundation:material:161>, <minecraft:redstone>, <thermalfoundation:material:161>], [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]]);

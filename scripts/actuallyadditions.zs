@@ -37,6 +37,8 @@ val removerecipes =
     <actuallyadditions:block_farmer>,
     <actuallyadditions:block_misc:7>,
     <actuallyadditions:item_misc:16>,
+    <actuallyadditions:block_dropper>,
+    <actuallyadditions:block_empowerer>,
 ]
 as IItemStack[];
 for item in removerecipes {
@@ -44,6 +46,11 @@ for item in removerecipes {
 }
 
 recipes.addShaped(<actuallyadditions:item_misc:16>, [[<thermalfoundation:storage_alloy>, <actuallyadditions:item_misc:7>, <thermalfoundation:storage_alloy>],[<actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal>, <actuallyadditions:item_misc:7>], [<thermalfoundation:storage_alloy>, <actuallyadditions:item_misc:7>, <thermalfoundation:storage_alloy>]]);
+
+
+#################################   EMPOWERER   #####################
+recipes.addShaped(<actuallyadditions:block_empowerer>, [[null, <actuallyadditions:item_crystal>, null],[null, <actuallyadditions:item_battery_double>, null], [<techreborn:machine_frame:1>, <actuallyadditions:block_display_stand>, <techreborn:machine_frame:1>]]);
+
 
 //mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, float[] particleColourArray);
 //emeradic
@@ -99,6 +106,11 @@ recipes.addShaped(<actuallyadditions:item_misc:7>, [[null, <immersiveengineering
 
 //Leaf Gen
 recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[<actuallyadditions:item_crystal:5>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal>, <ore:treeLeaves>, <actuallyadditions:item_crystal>], [<actuallyadditions:item_crystal:5>, <actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal:5>]]);
+
+//Dropper
+recipes.addShaped(<actuallyadditions:block_dropper>, [[<ore:cobblestone>, <actuallyadditions:item_crystal:1>, <ore:cobblestone>],[<ore:cobblestone>, <minecraft:dropper>, <actuallyadditions:item_misc:7>], [<ore:cobblestone>, <actuallyadditions:item_crystal:1>, <ore:cobblestone>]]);
+
+
 
 ##########################################################################################
 print("==================== end of actually additions.zs ====================");

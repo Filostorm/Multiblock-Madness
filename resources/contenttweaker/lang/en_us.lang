@@ -33,5 +33,7 @@ item.contenttweaker.magic_token.name=Magic Token
 item.contenttweaker.adamantine_ingot.name=Adamantine Ingot
 item.contenttweaker.orichalcum_ingot.name=Orichalcum Ingot
 item.contenttweaker.palladium_ingot.name=Palladium Ingot
+item.contenttweaker.terrasteel_coil.name=Terrasteel Heating Coil
 fluid.moltenEmbers=Molten Embers
 fluid.moltenTime=Molten Time
+

@@ -7,6 +7,18 @@ print("--- loading immersive.zs ---");
 	
 # *======= Recipes =======*
 
+
+val removerecipes =
+[   
+<immersiveengineering:metal_device1:2>,
+<immersiveengineering:tool>,
+<immersiveengineering:blueprint>.withTag({blueprint: "components"}),
+]
+as IItemStack[];
+for item in removerecipes {
+    recipes.remove(item);
+}
+
 //Excavator
 
 val removeMinerals = [
@@ -57,12 +69,9 @@ Excavator.addMineral("Platinum", 15, 0.01, ["orePlatinum", "oreNickel", "oreIrid
 Excavator.addMineral("Uranium", 10, 0, ["oreUranium", "oreLead", "oreBoron", "oreThorium", "oreUninspected"], [55, 24, 10, 10, 1], [0, 10]);
 
 //Excavator.addMineral("Lithium", 10, 0, ["oreLithium", "oreMagnesium", "oreUninspected"], [55, 44, 1], [0]);
-val basicBasalt = <ore:basicBasalt>;
-basicBasalt.add(<quark:basalt>);
-val basicLimestone = <ore:basicLimestone>;
-basicLimestone.add(<quark:limestone>);
-val basicMarble = <ore:basicMarble>;
-basicMarble.add(<astralsorcery:blockmarble>);
+<ore:basicBasalt>.add(<quark:basalt>);
+<ore:basicLimestone>.add(<quark:limestone>);
+<ore:basicMarble>.add(<astralsorcery:blockmarble>);
 Excavator.addMineral("Raw Stone", 10, 0, ["basicLimestone", "basicMarble", "basicBasalt", "stoneGranite", "stoneDiorite", "stoneAndesite"], [15, 15, 15, 20, 20, 20], [0]);
 
 
@@ -70,11 +79,8 @@ Excavator.addMineral("Cinnabar", 15, 0, ["oreRedstone", "oreCinnabar", "oreRuby"
 Excavator.addMineral("Quarzite", 15, 0, ["oreQuartz", "oreCertusQuartz", "oreQuartzBlack", "oreChargedCertusQuartz",], [40, 41, 14, 5], [-1, 0]);
 
 
-val oreStygianiron = <ore:oreStygianiron>;
-oreStygianiron.add(<woot:stygianironore>);
-
-val oreVoidstone = <ore:oreVoidstone>;
-oreVoidstone.add(<chisel:voidstone>);
+<ore:oreStygianiron>.add(<woot:stygianironore>);
+<ore:oreVoidstone>.add(<chisel:voidstone>);
 
 //beneath
 Excavator.addMineral("Osmium", 15, 0, ["oreOsmium", "orePlatinum", "oreIridium", "oreGold", "oreUninspected"], [50, 10, 6, 30, 4], [10]);
@@ -86,7 +92,6 @@ Excavator.addMineral("Sphalerite", 15, 0, ["oreSphalerite", "orePyrite", "oreIro
 //<ore:oreClathrateGlowstone>
 
 //hammer
-recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped(<immersiveengineering:tool>, [[null, <thermalfoundation:material:162>, <immersiveengineering:material:4>],[null, <minecraft:stick>, <thermalfoundation:material:162>], [<minecraft:stick>, null, null]]);
 
 
@@ -101,8 +106,10 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 3, [[<thermalfoun
 //Light block
 recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 2, [[<thermalfoundation:material:32>, <immersiveengineering:material:8>, <thermalfoundation:material:32>],[<moreplates:constantan_stick>, <moreplates:ardite_gear>, <moreplates:constantan_stick>], [<thermalfoundation:material:32>, <immersiveengineering:material:8>, <thermalfoundation:material:32>]]);
 
+//Kinetic Dynamo
+recipes.addShaped(<immersiveengineering:metal_device1:2>, [[<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>],[<minecraft:redstone>, <immersiveengineering:metal_decoration0>, <minecraft:redstone>], [<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>]]);
 
-recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "components"}));
+
 recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "components"}), [[<thermalfoundation:material:164>, <thermalfoundation:material:162>, <thermalfoundation:material:161>],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
 
 

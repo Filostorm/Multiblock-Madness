@@ -32,8 +32,9 @@ recipes.addShaped(<rockhounding_chemistry:misc_items:11>, [[<moreplates:energeti
 
 //logic chips (might change idk)
 recipes.remove(<rockhounding_chemistry:misc_items:1>);
-recipes.addShaped(<rockhounding_chemistry:misc_items:1>, [[<rockhounding_chemistry:misc_items:3>, <minecraft:redstone>, <rockhounding_chemistry:misc_items:3>],[<actuallyadditions:item_misc:7>, <thermalfoundation:material:353>, <actuallyadditions:item_misc:7>], [<rockhounding_chemistry:misc_items:3>, <minecraft:redstone>, <rockhounding_chemistry:misc_items:3>]]);
+recipes.addShaped(<rockhounding_chemistry:misc_items:1>, [[<rockhounding_chemistry:misc_items:3>, <minecraft:redstone>, <rockhounding_chemistry:misc_items:3>],[<actuallyadditions:item_misc:7>, <moreplates:nether_quartz_plate>, <actuallyadditions:item_misc:7>], [<rockhounding_chemistry:misc_items:3>, <minecraft:redstone>, <rockhounding_chemistry:misc_items:3>]]);
 
+//Advanced Logic Chip
 recipes.remove(<rockhounding_chemistry:misc_items:10>);
 recipes.addShaped(<rockhounding_chemistry:misc_items:10>, [[<contenttweaker:goldfoil>, <minecraft:redstone>, <contenttweaker:goldfoil>],[<actuallyadditions:item_misc:8>, <rockhounding_chemistry:misc_items:1>, <actuallyadditions:item_misc:8>], [<contenttweaker:goldfoil>, <minecraft:redstone>, <contenttweaker:goldfoil>]]);
 

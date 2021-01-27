@@ -124,6 +124,7 @@ recipes.addShaped(<minecraft:carrot> * 16, [[null, null, <ore:elementsWater>],[n
 recipes.addShaped(<minecraft:beetroot> * 16, [[<ore:elementsEarth>, null, null],[null, <lycanitesmobs:lifedraincharge>, null], [null, null, <ore:elementsWater>]]);
 recipes.addShaped(<minecraft:wheat> * 16, [[null, null, <ore:elementsEarth>],[null, <lycanitesmobs:lifedraincharge>, null], [<ore:elementsWater>, null, null]]);
 recipes.addShaped(<minecraft:melon_block> * 8, [[null, null, null],[<ore:elementsEarth>, <lycanitesmobs:lifedraincharge>, <ore:elementsWater>], [null, null, null]]);
+recipes.addShaped(<minecraft:pumpkin> * 8, [[null, <ore:elementsWater>, null],[null, <lycanitesmobs:lifedraincharge>, null], [null, <ore:elementsEarth>, null]]);
 recipes.addShapeless(<minecraft:slime_ball> * 16, [<lycanitesmobs:acidsplashcharge>, <ore:elementsWater>]);
 recipes.addShapeless(<minecraft:magma_cream> * 16, [<lycanitesmobs:acidsplashcharge>, <ore:elementsFire>]);
 

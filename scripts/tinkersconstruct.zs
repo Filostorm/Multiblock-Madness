@@ -152,6 +152,9 @@ var redstoneAlloy = HighOven.newMixRecipe(<liquid:redstone_alloy> * 144, <liquid
 redstoneAlloy.addPurifier(<nuclearcraft:gem:6>, 100);
 redstoneAlloy.register();
 
+var prudentium = HighOven.newMixRecipe(<liquid:prudentium> * 36, <liquid:inferium> * 36, 1300);
+prudentium.addPurifier(<mysticalagriculture:crafting:1>, 100);
+prudentium.register();
 
 ### DRYING ###
 

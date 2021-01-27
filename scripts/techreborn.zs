@@ -12,6 +12,8 @@ val itemstoRemove =
 <techreborn:rolling_machine>,
 <techreborn:wire_mill>,
 <techreborn:cable:2>,
+<techreborn:cable:6>,
+<techreborn:industrial_blast_furnace>,
 ]
  as IItemStack[];
 
@@ -27,21 +29,20 @@ recipes.addShaped(<techreborn:chemical_reactor>, [[<thermalfoundation:material:3
 recipes.addShaped(<techreborn:rolling_machine>, [[<minecraft:piston>, <ore:circuitBasic>, <minecraft:piston>],[<immersiveengineering:metal_decoration0:5>, <techreborn:machine_frame>, <immersiveengineering:metal_decoration0:5>], [<minecraft:piston>, <ore:circuitBasic>, <minecraft:piston>]]);
 //Wire Mill
 recipes.addShaped(<techreborn:wire_mill>, [[<thaumcraft:plate>, <immersiveengineering:metal_decoration0:4>, <thaumcraft:plate>],[<ore:circuitBasic>, <techreborn:machine_frame>, <ore:circuitBasic>], [<thaumcraft:plate>, <minecraft:piston>, <thaumcraft:plate>]]);
-
-//Less gold wires per craft
-recipes.removeShaped(<techreborn:cable:6> * 4, [[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>],[<ore:itemRubber>, <minecraft:gold_ingot>, <ore:itemRubber>], [<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>]]);
-recipes.addShaped(<techreborn:cable:2> * 9, [[<ore:ingotGold>, <minecraft:gold_ingot>, <ore:ingotGold>]]);
+//Blast Furnace
+recipes.addShaped(<techreborn:industrial_blast_furnace>, [[<ore:circuitAdvanced>, <contenttweaker:terrasteel_coil>, <ore:circuitAdvanced>],[<contenttweaker:terrasteel_coil>, <techreborn:machine_frame:1>, <contenttweaker:terrasteel_coil>], [<techreborn:electric_furnace>, <contenttweaker:terrasteel_coil>, <techreborn:electric_furnace>]]);
 
 
 furnace.remove(<techreborn:ingot:19>);
 //refined iron
-mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>*2, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 400, 1024, [<thebetweenlands:items_misc:27>, <contenttweaker:slatedust>], "Alloying");
-mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 300, 1024, [<contenttweaker:slatedust>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>*2, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 400, 512, [<thebetweenlands:items_misc:27>, <contenttweaker:slatedust>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 300, 512, [<contenttweaker:slatedust>], "Alloying");
 
 ### Assembling Machine ###
 
-//scaffolding
-//mods.techreborn.assemblingMachine.addRecipe(<contenttweaker:vanasteel_scaffolding>*9, <rockhounding_chemistry:alloy_items_tech:40>*3, <contenttweaker:rod_vanasteel>*3, 100, 100);
+//Gold Cable
+mods.techreborn.assemblingMachine.addRecipe(<techreborn:cable:6>, <techreborn:cable:2>, <ore:itemRubber>, 100, 100);
+
 
 ### Rolling Machine ###
 
@@ -52,11 +53,18 @@ rollingMachine.removeRecipe(<techreborn:part:13>);
 rollingMachine.addShaped(<techreborn:part:15>*2, [[<contenttweaker:material_part:5>,<contenttweaker:material_part:5>,<contenttweaker:material_part:5>],[<contenttweaker:material_part:5>,null,<contenttweaker:material_part:5>],[<contenttweaker:material_part:5>,<contenttweaker:material_part:5>,<contenttweaker:material_part:5>]]);
 rollingMachine.addShaped(<techreborn:part:14>*2, [[<rockhounding_chemistry:alloy_items_tech:22>,<rockhounding_chemistry:alloy_items_tech:22>,<rockhounding_chemistry:alloy_items_tech:22>],[<rockhounding_chemistry:alloy_items_tech:22>,null,<rockhounding_chemistry:alloy_items_tech:22>],[<rockhounding_chemistry:alloy_items_tech:22>,<rockhounding_chemistry:alloy_items_tech:22>,<rockhounding_chemistry:alloy_items_tech:22>]]);
 
-//Constantan Heating Coil
+
+//Terrasteel coil
+rollingMachine.addShaped(<contenttweaker:terrasteel_coil>*4, [[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>],[<botania:manaresource:4>,null,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>]]);
+
+
+//Kanthal Heating Coil
+/*
 <techreborn:part:13>.displayName = "Constantan Heating Coil";
 val ingotConstantan = <ore:ingotConstantan>;
 ingotConstantan.add(<rockhounding_chemistry:alloy_items_tech:13>);
-mods.techreborn.rollingMachine.addShaped(<techreborn:part:13>*2, [[<ore:ingotConstantan>,<ore:ingotConstantan>,<ore:ingotConstantan>],[<ore:ingotConstantan>,null,<ore:ingotConstantan>],[<ore:ingotConstantan>,<ore:ingotConstantan>,<ore:ingotConstantan>]]);
+*/
+mods.techreborn.rollingMachine.addShaped(<techreborn:part:13>*2, [[<rockhounding_chemistry:alloy_items_tech:13>,<rockhounding_chemistry:alloy_items_tech:13>,<rockhounding_chemistry:alloy_items_tech:13>],[<rockhounding_chemistry:alloy_items_tech:13>,null,<rockhounding_chemistry:alloy_items_tech:13>],[<rockhounding_chemistry:alloy_items_tech:13>,<rockhounding_chemistry:alloy_items_tech:13>,<rockhounding_chemistry:alloy_items_tech:13>]]);
 
 
 ### Ginder ###

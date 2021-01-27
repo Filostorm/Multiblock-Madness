@@ -98,6 +98,7 @@ val recipestoRemove =
 <fossil:scarab_pickaxe>,
 <jaopca:item_stickhydronalium>,
 <jaopca:item_stickdarksteel>,
+<advancedrocketry:misc:1>,
 ]
  as IItemStack[];
 
@@ -165,7 +166,7 @@ for item in itemstoRemove {
 
 recipes.removeShaped(<minecraft:bread>, [[<natura:materials>, <natura:materials>, <natura:materials>]]);
 recipes.removeShaped(<minecraft:bread>, [[<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>]]);
-
+recipes.removeShaped(<minecraft:paper> * 6, [[<ore:dustWood>, <ore:dustWood>, <ore:dustWood>]]);
 //-----------------just jei things
 <minecraft:quartz>.displayName = "Quartz";
 
@@ -214,8 +215,7 @@ recipes.addShaped(<immersiveengineering:stone_decoration:2>, [[<thermalfoundatio
 recipes.addShaped(<tcomplement:materials:1> * 8, [[<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>],[<embers:brick_caminite>, <embers:dust_ember>, <embers:brick_caminite>], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]]);
 
 
-recipes.addShaped(<compactmachines3:fieldprojector> * 4, [[<ore:plateTin>, <minecraft:ender_pearl>, <ore:plateTin>],[<ore:plateCopper>, <embers:block_lantern>, <ore:plateCopper>], [<tcomplement:scorched_slab:3>, <tcomplement:scorched_slab:3>, <tcomplement:scorched_slab:3>]]);
-recipes.addShaped(<compactmachines3:fieldprojector>, [[<ore:plateTin>, <randomthings:ingredient:7>, <ore:plateTin>],[<ore:plateCopper>, <minecraft:redstone_torch>, <ore:plateCopper>], [<embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>]]);
+recipes.addShapedMirrored(<compactmachines3:fieldprojector>, [[<randomthings:ingredient:7>, <randomthings:ingredient:7>, <randomthings:ingredient:7>],[<randomthings:ingredient:7>, <randomthings:advancedredstonetorch_on>, <tconstruct:pan_head>.withTag({Material: "copper"})], [<embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>]]);
 
 
 recipes.addShapeless(<minecraft:melon> * 9, [<minecraft:melon_block>]);
@@ -283,13 +283,14 @@ mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<minecraft:ender_pearl>
 mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectussilver>, <liquid:astralsorcery.liquidstarlight>, [<embers:aspectus_silver>], true);
 mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectuscopper>, <liquid:astralsorcery.liquidstarlight>, [<embers:aspectus_copper>], true);
 
-val plateVoid = <ore:plateVoid>;
-plateVoid.remove(<moreplates:void_plate>);
 
+<ore:plateVoid>.remove(<moreplates:void_plate>);
 
+<ore:dustWood>.add(<techreborn:dust:46>);
+<ore:dustWheat>.addAll(<ore:foodFlour>);
+<minecraft:snowball>.maxStackSize = 64;
+<minecraft:ender_pearl>.maxStackSize = 64;
 
-
-<techreborn:part:13>.displayName = "Constantan Heating Coil";
 
 //mods.agricraft.CropProduct.add(<agricraft:agri_seed>.withTag({agri_seed: "resource:jaslumine_plant"}), <jaopca:item_dusttinyaluminium>, 10);
 

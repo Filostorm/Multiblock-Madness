@@ -22,6 +22,7 @@ VanillaFactory.createItem("exploring_token").register();
 VanillaFactory.createItem("mining_token").register();
 VanillaFactory.createItem("tech_token").register();
 VanillaFactory.createItem("magic_token").register();
+VanillaFactory.createItem("terrasteel_coil").register();
 
 var activatedAspectusCopper = VanillaFactory.createItem("activatedAspectusCopper");
 activatedAspectusCopper.maxStackSize = 8;

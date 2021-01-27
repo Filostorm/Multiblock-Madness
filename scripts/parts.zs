@@ -43,6 +43,8 @@ mods.nuclearcraft.pressurizer.addRecipe([<actuallyadditions:item_crystal:3>, <mo
 mods.immersiveengineering.MetalPress.addRecipe(<thaumcraft:plate:3>, <thaumcraft:ingot:1>, <immersiveengineering:mold>, 2000);
 mods.techreborn.plateBendingMachine.addRecipe(<thaumcraft:plate:3>, <thaumcraft:ingot:1>, 400, 8);
 
+//Carbon Plate
+mods.immersiveengineering.MetalPress.addRecipe(<techreborn:plates:2>, <thermalfoundation:storage_resource>, <immersiveengineering:mold>, 2000);
 
 
 //sheetmetal

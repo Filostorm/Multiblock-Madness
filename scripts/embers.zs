@@ -26,7 +26,7 @@ recipes.remove(<mysticalmechanics:gear_gold_on>);
 recipes.addShaped(<mysticalmechanics:gear_gold_on>, [[<minecraft:redstone_torch>, <minecraft:redstone_torch>, <minecraft:redstone_torch>],[<minecraft:redstone_torch>, <ore:gearGold>, <minecraft:redstone_torch>], [<minecraft:redstone_torch>, <minecraft:redstone_torch>, <minecraft:redstone_torch>]]);
 
 recipes.remove(<embers:steam_engine>);
-recipes.addShaped(<embers:steam_engine>, [[null, <embers:pipe>, <embers:pipe>],[<mysticalmechanics:axle_iron>, <thermalfoundation:material:288>, <ore:plateBronze>], [<ore:plateSteel>, <ore:plateSteel>, <ore:plateBronze>]]);
+recipes.addShaped(<embers:steam_engine>, [[null, <embers:pipe>, <embers:pipe>],[<mysticalmechanics:axle_iron>, <thermalfoundation:material:290> , <ore:plateBronze>], [<embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>]]);
 
 recipes.remove(<embers:cinder_plinth>);
 recipes.addShaped(<embers:cinder_plinth>, [[null, <thermalfoundation:material:323>, null],[<techreborn:ingot:19>, <embers:superheater>, <techreborn:ingot:19>], [<thermalfoundation:material:323>, <embers:block_caminite_brick>, <thermalfoundation:material:323>]]);

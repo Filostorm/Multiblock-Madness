@@ -235,6 +235,16 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 
+  // Quartz Plates =======================================================================================================================================
+recipes.addShaped(<moreplates:nether_quartz_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<minecraft:quartz>], [<minecraft:quartz>]]);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<minecraft:quartz>])
+  .setFluid(<liquid:lava> *50)
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<moreplates:nether_quartz_plate>)
+  .create();
+
+
 //--------------Rods------------------
 //Steel rod
 RecipeBuilder.get("blacksmith")

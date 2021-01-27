@@ -24,6 +24,9 @@ val itemstoRemove =
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+
+ArcaneWorkbench.removeRecipe(<thaumcraft:metal_alchemical>);
+
 val preciousGems = <ore:preciousGems>;
 preciousGems.add(<techreborn:gem>);
 preciousGems.add(<techreborn:gem:1>);
