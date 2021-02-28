@@ -6,7 +6,7 @@
   ],
   "entityClass": "com.lycanitesmobs.core.entity.creature.EntityStrider",
   "modelClass": "com.lycanitesmobs.client.model.creature.ModelStrider",
-  "loadDefault": true,
+  "loadDefault": false,
   "enabled": true,
   "spawning": {
     "enabled": true,
@@ -32,7 +32,7 @@
     "spawnGroupMax": 1,
     "spawnsInLight": false,
     "spawnsInDark": true,
-    "worldDayMin": -1,
+    "worldDayMin": 20,
     "despawnNatural": true,
     "despawnForced": false
   },

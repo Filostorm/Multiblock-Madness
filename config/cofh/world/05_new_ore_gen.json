@@ -314,7 +314,7 @@
 						"properties": {
 							"oretype": "overworld"
 						},
-						"weight": 10
+						"weight": 5
 					},
 					{
 						"name": "rockhounding_chemistry:uninspected_mineral",

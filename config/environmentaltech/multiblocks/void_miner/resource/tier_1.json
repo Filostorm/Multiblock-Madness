@@ -404,6 +404,11 @@
       "target": "white",
       "weight": 2,
       "id": "environmentaltech:mica"
+    },
+    {
+      "target": "black",
+      "weight": 10,
+      "id": "appliedenergistics2:sky_stone_block"
     }
   ]
 }

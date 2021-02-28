@@ -1,0 +1,34 @@
+{
+  "block_pools" :
+  [
+    {
+      "name": "5plant2ore",
+      "type":
+      {
+        "type": "block",
+        "name": "environmentaltech:void_botanic_miner_cont_5",
+        "meta": 0
+      },
+      
+      "disableJEI": false,
+      "clicktype": "rightclick",
+      "properties":
+      [
+        {
+          "type": "require_sneak",
+          "sneak": true
+        },
+        {
+          "type": "consume_block",
+          "name": "environmentaltech:void_ore_miner_cont_5"
+        },
+        {
+          "type": "play_sound",
+          "name": "block.note.chime",
+          "pitch": 0.5,
+          "disableJEI": true
+        }
+      ]
+    }
+  ]
+}

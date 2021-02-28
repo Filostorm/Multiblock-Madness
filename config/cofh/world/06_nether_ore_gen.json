@@ -95,20 +95,20 @@
 						"properties": {
 							"sub_block_number": "7"
 						},
-						"weight": 45
+						"weight": 60
 					},
 					{
 						"name": "techreborn:ore",
 						"properties": {
 							"type": "cinnabar"
 						},
-						"weight": 45
+						"weight": 30
 					}
 				],
 				"material": "minecraft:netherrack",
 				"cluster-size": 25
 			},
-			"cluster-count": 1,
+			"cluster-count": 2,
 			"min-height": 70,
 			"max-height": 120,
 			"retrogen": "false",

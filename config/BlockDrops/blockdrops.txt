@@ -21495,36 +21495,6 @@
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
   },
   {
-    "name": "advancedrocketry:charcoallog",
-    "meta": 0,
-    "length": 1,
-    "name0": "minecraft:coal",
-    "meta0": 1,
-    "0chance0": 100.0,
-    "1chance0": 100.0,
-    "2chance0": 150.0,
-    "3chance0": 197.825,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
-  },
-  {
-    "name": "advancedrocketry:alienleaves",
-    "meta": 0,
-    "length": 1,
-    "name0": "advancedrocketry:aliensapling",
-    "meta0": 0,
-    "0chance0": 4.9249997,
-    "1chance0": 6.65,
-    "2chance0": 8.375,
-    "3chance0": 9.049999,
-    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
-  },
-  {
     "name": "soot:sulfur_ore",
     "meta": 0,
     "length": 1,
@@ -26570,21 +26540,6 @@
     "3pair0": "{\n  \"left\": 2,\n  \"right\": 92\n}"
   },
   {
-    "name": "ironfurnaces:obsidian_furnace_active",
-    "meta": 0,
-    "length": 1,
-    "name0": "ironfurnaces:obsidian_furnace_idle",
-    "meta0": 0,
-    "0chance0": 100.0,
-    "1chance0": 100.0,
-    "2chance0": 100.0,
-    "3chance0": 100.0,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
-  },
-  {
     "name": "rockhounding_chemistry:machines_b",
     "meta": 4,
     "length": 1,
@@ -26643,5 +26598,35 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 9\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 12\n}"
+  },
+  {
+    "name": "advancedrocketry:charcoallog",
+    "meta": 0,
+    "length": 1,
+    "name0": "minecraft:coal",
+    "meta0": 1,
+    "0chance0": 100.0,
+    "1chance0": 100.0,
+    "2chance0": 150.2,
+    "3chance0": 199.75,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
+  },
+  {
+    "name": "advancedrocketry:alienleaves",
+    "meta": 0,
+    "length": 1,
+    "name0": "advancedrocketry:aliensapling",
+    "meta0": 0,
+    "0chance0": 5.2999997,
+    "1chance0": 6.2749996,
+    "2chance0": 8.55,
+    "3chance0": 10.3,
+    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
   }
 ]

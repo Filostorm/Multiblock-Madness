@@ -1,6 +1,11 @@
 {
   "outputs": [
     {
+      "target": "black",
+      "weight": 10,
+      "id": "appliedenergistics2:sky_stone_block"
+    },
+    {
       "target": "gray",
       "weight": 32,
       "id": "minecraft:stone:0"
