@@ -1,5 +1,19 @@
+
+import crafttweaker.item.IItemStack;
+
 print("==================== loading Mekanism.zs ====================");
 ##########################################################################################
+
+
+val itemstoRemove =
+[
+<mekanism:teleportationcore>, 
+]
+ as IItemStack[];
+
+for item in itemstoRemove {
+	recipes.remove(item);
+}
 
 
 ##Metallurgic Infuser
@@ -34,6 +48,8 @@ recipes.addShapeless("elitetoultimatetank",
 	    return out.withTag(ins.tank.tag + {tier: 3});
     }, null);
     
-    
+
+  recipes.addShapedMirrored(<mekanism:teleportationcore>, [[<moreplates:osgloglas_plate>, <threng:material:14>, <enderio:item_material:35>],[<mekanism:atomicalloy>, <waystones:warp_stone>, <mekanism:atomicalloy>], [<enderio:item_material:35>, <threng:material:14>, <moreplates:osgloglas_plate>]]);
+  
 ##########################################################################################
 print("==================== end of Mekanism.zs ====================");

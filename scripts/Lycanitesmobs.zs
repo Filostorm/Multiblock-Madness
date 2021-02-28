@@ -25,8 +25,6 @@ for item in itemstoRemove {
 
 <ore:crystalforMystical>.add(<lycanitesmobs:cleansingcrystal>);
 
-recipes.addShaped(<oeintegration:excavatemodifier>, [[<minecraft:redstone>, <ore:artisansHammer>.reuse().transformDamage(50), <minecraft:redstone>],[<lycanitesmobs:geonachfist>, <minecraft:iron_block>, <lycanitesmobs:geonachspear>], [<minecraft:redstone>, <minecraft:lava_bucket>, <minecraft:redstone>]]);
-
 var pigIron = HighOven.manageMixRecipe(<liquid:pigiron>, <liquid:iron>);
 pigIron.addPurifier(<lycanitesmobs:raw_maka_meat>, 80);
 pigIron.addPurifier(<lycanitesmobs:raw_yeti_meat>, 80);

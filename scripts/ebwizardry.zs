@@ -1,5 +1,7 @@
 ##########################################################################################
 import crafttweaker.item.IItemStack;
+import mods.botania.ManaInfusion;
+
 print("==================== loading mods ebwizardry.zs ====================");
 ##########################################################################################
 
@@ -32,5 +34,7 @@ recipes.addShaped(<ebwizardry:novice_healing_wand>, [[null, null, <ebwizardry:ma
 
 recipes.addShaped(<ebwizardry:arcane_workbench>, [[<minecraft:gold_ingot>, <minecraft:carpet:10>, <minecraft:gold_ingot>],[<ebwizardry:magic_crystal>, <minecraft:lapis_block>, <ebwizardry:magic_crystal>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:stone_arcane_brick>, <thaumcraft:stone_arcane_brick>]]);
 
+ManaInfusion.addInfusion(<ebwizardry:grand_crystal>,<ebwizardry:magic_crystal>,250000);
+<ebwizardry:grand_crystal>.addTooltip(format.aqua("Created by dropping a Magic Crystal into a Mana Pool at least 1/4 full"));
 ##########################################################################################
 print("==================== end of mods ebwizardry.zs ====================");

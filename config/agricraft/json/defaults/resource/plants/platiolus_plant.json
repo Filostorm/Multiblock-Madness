@@ -27,7 +27,7 @@
         "max": 2,
         "chance": 0.95,
         "required": true,
-        "item": "oredict:nuggetPlatinum",
+        "item": "oredict:dustTinyPlatinum",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,

@@ -2,15 +2,15 @@
   "name": "sky",
   "type": "spawner",
   "enabled": true,
-  "loadDefault": true,
-  "mobCountMin": 2,
+  "loadDefault": false,
+  "mobCountMin": 1,
   "ignoreBiomes": false,
   "ignoreLightLevel": false,
   "conditions": [],
   "triggers": [
     {
       "type": "world",
-      "chance": 0.25,
+      "chance": 0.15,
       "tickRate": 800
     }
   ],

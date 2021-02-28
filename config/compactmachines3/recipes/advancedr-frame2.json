@@ -1,0 +1,80 @@
+{
+  "name": "cm3ar:frame2",
+
+  "disabled": false,
+
+  "target-item": "libvulpes:structuremachine",
+  "target-count": 2,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "rockhounding_chemistry:misc_items",
+  "catalyst-meta": 10,
+
+
+  "input-types": {
+    "a": {
+      "id": "jaopca:block_sheetmetaltitanium",
+      "meta": 0
+    },
+    "b": {
+      "id": "contenttweaker:nimonic_scaffolding",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+}

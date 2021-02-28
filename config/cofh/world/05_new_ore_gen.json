@@ -1,0 +1,561 @@
+{
+	"populate": {
+		"iron_vein_ow": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "iron_ore",
+						"weight": 65
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "nickel"
+						},
+						"weight": 20
+					},
+					{
+						"name": "minecraft:gold_ore",
+						"weight": 14
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 40
+			},
+			"cluster-count": 1,
+			"chunk-chance": 2,
+			"min-height": 10,
+			"max-height": 64,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                  10
+				]
+			}
+		},
+		
+		"copper_vein_ow": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "copper"
+						},
+						"weight": 70
+					},
+					{
+						"name": "utilitybaseores:blaze_ore",
+						"weight": 5
+					},
+					{
+						"name": "contenttweaker:sub_block_holder_0",
+						"properties": {
+							"sub_block_number": "3"
+						},
+						"weight": 24
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 40
+			},
+			"cluster-count": 1,
+			"chunk-chance": 2,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                  10
+				]
+			}
+		},
+		"tin_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "tin"
+						},
+						"weight": 84
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "lead"
+						},
+						"weight": 5
+					},
+					{
+						"name": "minecraft:iron_ore",
+						"weight": 10
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 40
+			},
+			"cluster-count": 1,
+			"chunk-chance": 2,
+			"min-height": 40,
+			"max-height": 80,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                     10
+				]
+			}
+		},
+		"lead_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "lead"
+						},
+						"weight": 65
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "silver"
+						},
+						"weight": 24
+					},
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "galena"
+						},
+						"weight": 10
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 1, 
+			"chunk-chance": 3,
+			"min-height": 5,
+			"max-height": 35,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                     10
+				]
+			}
+		},
+		
+		"silver_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "lead"
+						},
+						"weight": 24
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "silver"
+						},
+						"weight": 65
+					},
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "galena"
+						},
+						"weight": 10
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 1, 
+			"chunk-chance": 3,
+			"min-height": 5,
+			"max-height": 35,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                     10
+				]
+			}
+		},
+		"aluminum_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {	
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "aluminum"
+						},
+						"weight": 5
+					},
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "bauxite"
+						},
+						"weight": 89
+					},
+					{
+						"name": "libvulpes:ore0",
+						"properties": {
+							"varient": "8"
+						},
+						"weight": 5
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 1,
+			"chunk-chance": 4,
+			"min-height": 0,
+			"max-height": 20,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                10
+				]
+			}
+		},
+		"redstone_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "minecraft:redstone_ore",
+						"weight": 59
+					},
+					{
+						"name": "thermalfoundation:ore_fluid",
+						"properties": {
+							"type": "redstone"
+						},
+						"weight": 10
+					},
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "ruby"
+						},
+						"weight": 15
+					},
+					{
+						"name": "thaumcraft:ore_cinnabar",
+						"weight": 10
+					},
+					{
+						"name": "deepresonance:resonating_ore",
+						"properties": {
+							"oretype": "overworld"
+						},
+						"weight": 10
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 40
+			},
+			"cluster-count": 1, 
+			"chunk-chance": 3,
+			"min-height": 5,
+			"max-height": 15,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                  10
+				]
+			}
+		},
+		"emerald_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "minecraft:emerald_ore",
+						"weight": 20
+					},
+					{
+						"name": "utilitybaseores:slime_ore",
+						"weight": 20
+					},
+					{
+						"name": "enderore:ore_ender",
+						"weight": 39
+					},
+					{
+						"name": "fossil:fossil",
+						"weight": 20
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 25
+			},
+			"cluster-count": 1, 
+			"chunk-chance": 5,
+			"min-height": 5,
+			"max-height": 40,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                     10
+				]
+			}
+		},
+		"lapis_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "minecraft:lapis_ore",
+						"weight": 74
+					},
+					{
+						"name": "utilitybaseores:prismarine_ore",
+						"weight": 10
+					},
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "sapphire"
+						},
+						"weight": 15
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 1, 
+			"chunk-chance": 4,
+			"min-height": 5,
+			"max-height": 15,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                   10
+				]
+			}
+		},
+		"quartz_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "mysticalworld:quartz_ore",
+						"weight": 40
+					},
+					{
+						"name": "appliedenergistics2:quartz_ore",
+						"weight": 40
+					},
+					{
+						"name": "appliedenergistics2:charged_quartz_ore",
+						"weight": 4
+					},
+					{
+						"name": "actuallyadditions:block_misc",
+						"properties": {
+							"type": "ore_black_quartz"
+						},
+						"weight": 10
+					},
+					{
+						"name": "ebwizardry:crystal_ore",
+						"weight": 5
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 35
+			},
+			"cluster-count": 1, 
+			"chunk-chance": 3,
+			"min-height": 20,
+			"max-height": 70,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                10
+				]
+			}
+		},
+		"deep_coal_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "minecraft:coal_ore",
+						"weight": 87
+					},
+					{
+						"name": "minecraft:diamond_ore",
+						"weight": 10
+					},
+					{
+						"name": "astralsorcery:blockcustomore",
+						"weight": 1
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					},
+					{
+						"name": "fossil:fossil",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 40
+			},
+			"cluster-count": 1, 
+			"chunk-chance": 4,
+			"min-height": 0,
+			"max-height": 20,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+                    10
+				]
+			}
+		},
+		"coal_vein_ow": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "minecraft:coal_ore",
+						"weight": 98
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					},
+					{
+						"name": "fossil:fossil",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 40
+			},
+			"cluster-count": 1, 
+			"chunk-chance": 2,
+			"min-height": 20,
+			"max-height": 80,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1,
+               10
+				]
+			}
+		}
+	}
+}

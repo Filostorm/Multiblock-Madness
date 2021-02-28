@@ -9,36 +9,71 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "thermalfoundation:material",
-  "catalyst-meta": 260,
+  "catalyst": "rockhounding_chemistry:misc_items",
+  "catalyst-meta": 10,
+
 
   "input-types": {
-    "f": {
-      "id": "contenttweaker:nimonic_scaffolding",
-      "meta": 5
+    "a": {
+      "id": "jaopca:block_sheetmetaltitanium",
+      "meta": 0
     },
-    "s": {
-      "id": "contenttweaker:sheetmetal_nimonic",
-      "meta": 1
+    "b": {
+      "id": "immersiveengineering:metal_decoration1",
+      "meta": 5
     }
-
-
   },
   "shape": [
     [
-      [ "f", "s", "f" ],
-      [ "s", "f", "s" ],
-      [ "f", "s", "f" ]
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
     ],
     [
-      [ "f", "s", "f" ],
-      [ "s", "f", "s" ],
-      [ "f", "s", "f" ]
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ]
     ],
     [
-      [ "f", "s", "f" ],
-      [ "s", "f", "s" ],
-      [ "f", "s", "f" ]
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
     ]
   ]
 

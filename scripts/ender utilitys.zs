@@ -9,16 +9,7 @@ recipes.addShaped(<enderutilities:enderpart> * 4, [[null, <contenttweaker:materi
 //mods.immersiveengineering.ArcFurnace.addRecipe(<enderutilities:enderpart>*2, <contenttweaker:inert_ingot>*2, null, 1000, 2048, [<thermalfoundation:material:163>*2, <minecraft:ender_pearl>], "Alloying");
 
 //Dolly
-recipes.addShaped(<enderutilities:dolly>, [[null, null, <enderutilities:enderpart>],[null, null, <enderutilities:enderpart>], [<enderutilities:enderpart>, <enderutilities:enderpart>, <animania:wheel>]]);
-
-
-//Advanced Alloy
-recipes.remove(<enderutilities:enderpart:1>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<enderutilities:enderpart:1>*2, <enderutilities:enderpart>*2, null, 500, 1024, [<enderio:item_alloy_ingot:1>*2, <minecraft:ender_eye>], "Alloying");
-
-//Enhanced Alloy
-recipes.remove(<enderutilities:enderpart:2>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<enderutilities:enderpart:2>*2, <enderutilities:enderpart:1>*2, null, 1000, 2048, [<enderio:item_alloy_ingot:8>*2, <randomthings:stableenderpearl>], "Alloying");
+recipes.addShaped(<enderutilities:dolly>, [[null, null, <enderutilities:enderpart>],[null, null, <enderutilities:enderpart>], [<enderutilities:enderpart>, <enderutilities:enderpart>, <enderutilities:enderpart>]]);
 
 //Handy Bag Upgrade
 recipes.addShaped("bagupgraderecipe",

@@ -1,7 +1,7 @@
 {
   "name": "cm3thermal:deviceframe",
 
-  "disabled": false,
+  "disabled": true,
 
   "target-item": "thermalexpansion:frame",
   "target-count": 1,

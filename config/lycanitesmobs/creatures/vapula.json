@@ -18,7 +18,7 @@
     "biomeTags": [],
     "spawnWeight": 8,
     "dungeonWeight": 200,
-    "spawnAreaLimit": 5,
+    "spawnAreaLimit": 2,
     "spawnGroupMin": 1,
     "spawnGroupMax": 1,
     "spawnsInLight": false,

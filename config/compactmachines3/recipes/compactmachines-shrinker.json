@@ -19,11 +19,7 @@
     },
     "b": {
       "id": "actuallyadditions:block_misc",
-      "meta": 8
-    },
-    "c": {
-      "id": "deepmoblearning:infused_ingot_block",
-      "meta": 0
+      "meta": 6
     }
   },
   "shape": [
@@ -37,7 +33,7 @@
     [
       [
         "b",
-        "c",
+        "_",
         "b"
       ]
     ],

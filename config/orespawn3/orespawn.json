@@ -1,0 +1,577 @@
+{
+	"version": "2.0",
+	"spawns": {
+		"deep_coal_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "vein",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 6,
+				"frequency": 7,
+				"minHeight": 0,
+				"maxHeight": 30,
+				"minAttempts": 4,
+				"maxAttempts": 10,
+				"length": 30,
+				"startFacing": "HORIZONTAL"
+			},
+			"blocks": [
+				{
+					"name": "minecraft:coal_ore",
+					"chance": 87
+				},
+				{
+					"name": "minecraft:diamond_ore",
+					"chance": 10
+				},
+				{
+					"name": "astralsorcery:blockcustomore",
+					"chance": 2
+				},
+				{
+					"name": "rockhounding_chemistry:uninspected_mineral",
+					"chance": 1
+				}
+			]
+		},
+		"coal_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "vein",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 6,
+				"frequency": 7,
+				"minHeight": 0,
+				"maxHeight": 30,
+				"minAttempts": 4,
+				"maxAttempts": 10,
+				"length": 30,
+				"startFacing": "HORIZONTAL"
+			},
+			"blocks": [
+				{
+					"name": "minecraft:coal_ore",
+					"chance": 99
+				},
+				{
+					"name": "rockhounding_chemistry:uninspected_mineral",
+					"chance": 1
+				}
+			]
+		},
+		"iron_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "normal-cloud",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 4,
+				"frequency": 7,
+				"minHeight": 10,
+				"maxHeight": 64,
+				"maxSpread": 20,
+				"medianSize": 15,
+				"minAttempts": 5,
+				"maxAttempts": 15
+			},
+			"blocks": [
+				{
+					"name": "minecraft:iron_ore",
+					"chance": 60
+				},
+				{
+					"name": "thermalfoundation:ore",
+					"chance": 25,
+					"state": "type=nickel"
+				},
+				{
+					"name": "minecraft:gold_ore",
+					"chance": 10
+				},
+				{
+					"name": "baseminerals:sulfur_ore",
+					"chance": 5
+				}
+			]
+		},
+		"gold_ore_mesa": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [ "MESA" ]
+			},
+			"parameters": {
+				"size": 30,
+				"variation": 2,
+				"frequency": 2,
+				"minHeight": 32,
+				"maxHeight": 79
+			},
+			"blocks": [
+				{
+					"name": "minecraft:gold_ore",
+					"chance": 100
+				}
+			]
+		},
+		"redstone_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "clusters",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 4,
+				"frequency": 7,
+				"minHeight": 0,
+				"maxHeight": 25,
+				"numObjects": 5
+			},
+			"blocks": [
+				{
+					"name": "minecraft:redstone_ore",
+					"chance": 55
+				},
+				{
+					"name": "thermalfoundation:ore_fluid",
+					"chance": 10,
+					"state": "type=redstone"
+				},
+				{
+					"name": "techreborn:ore",
+					"chance": 20,
+					"state": "type=ruby"
+				},
+				{
+					"name": "thaumcraft:ore_cinnabar",
+					"chance": 10
+				},
+				{
+					"name": "deepresonance:resonating_ore",
+					"chance": 5,
+					"state": "oretype=overworld"
+				}
+			]
+		},
+		"lapis_ore": {
+			"retrogen": false,
+			"enabled": false,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 30,
+				"variation": 2,
+				"frequency": 5,
+				"minHeight": 0,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "minecraft:lapis_ore",
+					"chance": 60
+				},
+				{
+					"name": "utilitybaseores:prismarine_ore",
+					"chance": 10
+				},
+				{
+					"name": "techreborn:ore",
+					"chance": 30,
+					"state": "type=sapphire"
+				}
+			]
+		},
+		"emerald_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 20,
+				"variation": 4,
+				"frequency": 3,
+				"minHeight": 4,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "fossil:fossil",
+					"chance": 60
+				},
+				{
+					"name": "utilitybaseores:slime_ore",
+					"chance": 25
+				},
+				{
+					"name": "enderore:ore_ender",
+					"chance": 10
+				},
+				{
+					"name": "minecraft:emerald_ore",
+					"chance": 5
+				}
+			]
+		},
+		"aluminum_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 30,
+				"variation": 4,
+				"frequency": 3,
+				"minHeight": 4,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "thermalfoundation:ore",
+					"chance": 5,
+					"state": "type=aluminum"
+				},
+				{
+					"name": "techreborn:ore",
+					"chance": 90,
+					"state": "type=bauxite"
+				},
+				{
+					"name": "libvulpes:ore0",
+					"chance": 5,
+					"state": "variant=8"
+				}
+			]
+		},
+		"tin_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 4,
+				"frequency": 7,
+				"minHeight": 30,
+				"maxHeight": 60
+			},
+			"blocks": [
+				{
+					"name": "thermalfoundation:ore",
+					"chance": 80,
+					"state": "type=tin"
+				},
+				{
+					"name": "thermalfoundation:ore",
+					"chance": 10,
+					"state": "type=lead"
+				},
+				{
+					"name": "minecraft:iron_ore",
+					"chance": 10
+				}
+			]
+		},
+		"silver_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 20,
+				"variation": 4,
+				"frequency": 3,
+				"minHeight": 4,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "thermalfoundation:ore",
+					"chance": 65,
+					"state": "type=silver"
+				},
+				{
+					"name": "thermalfoundation:ore",
+					"chance": 25,
+					"state": "type=lead"
+				},
+				{
+					"name": "techreborn:ore",
+					"chance": 10,
+					"state": "type=galena"
+				}
+			]
+		},
+		"lead_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 20,
+				"variation": 4,
+				"frequency": 3,
+				"minHeight": 4,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "thermalfoundation:ore",
+					"chance": 25,
+					"state": "type=silver"
+				},
+				{
+					"name": "thermalfoundation:ore",
+					"chance": 65,
+					"state": "type=lead"
+				},
+				{
+					"name": "techreborn:ore",
+					"chance": 10,
+					"state": "type=galena"
+				}
+			]
+		},
+		"copper_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 4,
+				"frequency": 3,
+				"minHeight": 30,
+				"maxHeight": 60
+			},
+			"blocks": [
+				{
+					"name": "thermalfoundation:ore",
+					"chance": 70,
+					"state": "type=copper"
+				},
+				{
+					"name": "utilitybaseores:blaze_ore",
+					"chance": 5
+				},
+				{
+					"name": "contenttweaker:sub_block_holder_0",
+					"chance": 25,
+					"state": "sub_block_number=3"
+				}
+			]
+		},
+		"quartz_vein": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 4,
+				"frequency": 3,
+				"minHeight": 30,
+				"maxHeight": 60
+			},
+			"blocks": [
+				{
+					"name": "mysticalworld:quartz_ore",
+					"chance": 70
+				},
+				{
+					"name": "appliedenergistics2:quartz_ore",
+					"chance": 5
+				},
+				{
+					"name": "appliedenergistics2:charged_quartz_ore",
+					"chance": 25,
+					"state": "sub_block_number_0=3"
+				},
+				{
+					"name": "actuallyadditions:block_misc",
+					"chance": 25,
+					"state": "type=ore_black_quartz"
+				},
+				{
+					"name": "ebwizardry:crystal_ore",
+					"chance": 25,
+					"state": "sub_block_number_0=3"
+				}
+			]
+		},
+		"dirt": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 112,
+				"variation": 50,
+				"frequency": 10,
+				"minHeight": 50,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "minecraft:dirt",
+					"chance": 100,
+					"state": "snowy=false,variant=dirt"
+				}
+			]
+		},
+		"gravel": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 112,
+				"variation": 50,
+				"frequency": 8,
+				"minHeight": 30,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "minecraft:gravel",
+					"chance": 100
+				}
+			]
+		},
+		"andesite": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 200,
+				"variation": 50,
+				"frequency": 5,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "minecraft:stone",
+					"chance": 100,
+					"state": "variant=andesite"
+				}
+			]
+		},
+		"diorite": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 200,
+				"variation": 50,
+				"frequency": 5,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "minecraft:stone",
+					"chance": 100,
+					"state": "variant=diorite"
+				}
+			]
+		},
+		"granite": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 200,
+				"variation": 50,
+				"frequency": 5,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "minecraft:stone",
+					"chance": 100,
+					"state": "variant=granite"
+				}
+			]
+		}
+	}
+}

@@ -23,7 +23,6 @@ val recipestoRemove =
 <compactmachines3:fieldprojector>,
 <compactmachines3:psd>,
 <embers:mech_core>,
-<enderio:item_material:22>,
 <immersiveengineering:stone_decoration:1>,
 <immersiveengineering:stone_decoration:2>,
 <libvulpes:structuremachine>,
@@ -33,9 +32,6 @@ val recipestoRemove =
 <rockhounding_chemistry:misc_blocks_a:11>,
 <tcomplement:alloy_tank>,
 <tcomplement:storage>,
-<tconstruct:soil>,
-<thermalexpansion:frame:64>,
-<thermalexpansion:frame>,
 <thermalexpansion:tank>,
 <thermalfoundation:material:100>,
 <thermalfoundation:material:97>,
@@ -98,7 +94,14 @@ val recipestoRemove =
 <fossil:scarab_pickaxe>,
 <jaopca:item_stickhydronalium>,
 <jaopca:item_stickdarksteel>,
+<jaopca:item_stickendsteel>,
 <advancedrocketry:misc:1>,
+<minecraft:iron_bars>,
+<enderio:block_dark_iron_bars>,
+<enderio:block_end_iron_bars>,
+<scannable:scanner>,
+<scannable:module_blank>,
+<cookingforblockheads:sink>,
 ]
  as IItemStack[];
 
@@ -144,7 +147,6 @@ val itemstoRemove =
 <enderio:block_decoration3:2>,
 <enderio:block_decoration3:4>,
 <enderio:item_material:69>,
-<enderio:item_material>,
 <enderio:item_material:52>,
 <enderio:item_material:51>,
 <immersiveengineering:metal:15>,
@@ -164,6 +166,7 @@ for item in itemstoRemove {
 
 
 
+recipes.removeShaped(<quark:biotite_block>, [[<quark:biotite>, <quark:biotite>],[<quark:biotite>, <quark:biotite>]]);
 recipes.removeShaped(<minecraft:bread>, [[<natura:materials>, <natura:materials>, <natura:materials>]]);
 recipes.removeShaped(<minecraft:bread>, [[<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>]]);
 recipes.removeShaped(<minecraft:paper> * 6, [[<ore:dustWood>, <ore:dustWood>, <ore:dustWood>]]);
@@ -174,7 +177,6 @@ recipes.removeShaped(<minecraft:paper> * 6, [[<ore:dustWood>, <ore:dustWood>, <o
 
 mods.jei.JEI.addItem(<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 4 as short}}));
 mods.jei.JEI.addItem(<conarm:armorforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 3 as short}}));
-mods.jei.JEI.addItem(<tconstruct:pickaxe>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 20.025 as float, FreeModifiers: 3, Durability: 7251, HarvestLevel: 4, Attack: 11.2725 as float}, display: {Name: "eXcavator"}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 35.972034 as float, FreeModifiers: 61, Durability: 7251, HarvestLevel: 4, Attack: 11.2725 as float}, Special: {Categories: ["tool", "harvest", "aoe"]}, TinkerData: {UsedModifiers: 6, Materials: ["ma.supremium", "ma.supremium", "ma.supremium"], Modifiers: ["toolleveling", "oreexcavate", "haste", "creative"]}, Modifiers: [{identifier: "prosperous", color: -3932160, level: 1}, {identifier: "duritos", color: -3932160, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "oreexcavate", current: 25, color: 13395456, level: 1, max: 25, extraInfo: "24 / 25"}, {identifier: "haste", current: 250, color: 9502720, level: 5, max: 250, extraInfo: "249 / 250"}, {identifier: "creative", color: 0, level: 64}], Traits: ["prosperous", "duritos", "toolleveling"]}));
 //mods.jei.JEI.addItem(<rockhounding_chemistry:machines_e:1>);
 //mods.jei.JEI.addDescription(<immersiveengineering:stone_decoration:1>,"Your first Steel is made in the High Oven");
 <immersiveengineering:stone_decoration:1>.addTooltip(format.darkRed("Your first Steel is made in the High Oven"));
@@ -205,12 +207,19 @@ slimyMoss.add(<thebetweenlands:edge_moss>);
 
 
 ### Add recipes ###
+//Iron Bars
+recipes.addShaped(<minecraft:iron_bars> * 8, [[<immersiveengineering:material:1>, <immersiveengineering:material:1>, <immersiveengineering:material:1>], [<immersiveengineering:material:1>, <immersiveengineering:material:1>, <immersiveengineering:material:1>]]);
+recipes.addShaped(<minecraft:iron_bars> * 8, [[<tconstruct:tool_rod>.withTag({Material: "iron"}), <tconstruct:tool_rod>.withTag({Material: "iron"}), <tconstruct:tool_rod>.withTag({Material: "iron"})], [<tconstruct:tool_rod>.withTag({Material: "iron"}), <tconstruct:tool_rod>.withTag({Material: "iron"}), <tconstruct:tool_rod>.withTag({Material: "iron"})]]);
+//dark bars
+recipes.addShaped(<enderio:block_dark_iron_bars> * 8, [[<jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>], [<jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>]]);
+//end bars
+recipes.addShaped(<enderio:block_end_iron_bars> * 8, [[<jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>], [<jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>]]);
+
 recipes.addShapeless(<minecraft:gunpowder>, [<ore:dustCharcoal>,<ore:dustSulfur>,<ore:dustNiter>,<ore:dustNiter>]);
 recipes.addShaped(<minecraft:gunpowder> * 6, [[<mysticalagriculture:creeper_essence>, <mysticalagriculture:creeper_essence>, <mysticalagriculture:creeper_essence>],[null, null, null], [null, null, null]]);
 recipes.addShaped(<minecraft:gunpowder> * 15, [[<techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>],[<techreborn:uumatter>, null, null], [<techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>]]);
 
 
-recipes.addShapeless(<tconstruct:soil> * 2, [<embers:blend_caminite>,<embers:blend_caminite>,<minecraft:gravel>,<ore:sand>]);
 recipes.addShaped(<immersiveengineering:stone_decoration:2>, [[<thermalfoundation:material:352>],[<tcomplement:scorched_block:3>], [<embers:shard_ember>]]);
 recipes.addShaped(<tcomplement:materials:1> * 8, [[<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>],[<embers:brick_caminite>, <embers:dust_ember>, <embers:brick_caminite>], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]]);
 
@@ -218,7 +227,7 @@ recipes.addShaped(<tcomplement:materials:1> * 8, [[<embers:brick_caminite>, <emb
 recipes.addShapedMirrored(<compactmachines3:fieldprojector>, [[<randomthings:ingredient:7>, <randomthings:ingredient:7>, <randomthings:ingredient:7>],[<randomthings:ingredient:7>, <randomthings:advancedredstonetorch_on>, <tconstruct:pan_head>.withTag({Material: "copper"})], [<embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>]]);
 
 
-recipes.addShapeless(<minecraft:melon> * 9, [<minecraft:melon_block>]);
+
 recipes.addShapeless(<minecraft:paper> * 3, [<questbook:itemquestbook>]);
 
 //recipes.remove(<thermalexpansion:reservoir>);
@@ -239,15 +248,7 @@ recipes.addShaped(<translocators:translocator_part> * 2, [[<moreplates:energetic
 <translocators:translocator_part>.addTooltip("Hold Shift to see available modifiers");
 <translocators:translocator_part:1>.addTooltip("Hold Shift to see available modifiers");
 <translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n"))+(format.red("- Add Redstone to enable toggling in/output\n"))+(format.gray("- Add Iron to emit a signal when input is full of filtered item\n"))+(format.aqua("- Add a Diamond Nugget to enable fine tuning of filter supply and demand")));
-<translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n"))+(format.red("- Add Redstone to enable toggling in/output\n"))+(format.gray("- Add Iron to emit a signal when input is full of filtered item\n"))+(format.aqua("- Add a Diamond Nugget to enable fine tuning of filter supply and demand")));
-
-//inert block
-recipes.addShaped(<contenttweaker:sub_block_holder_0:1>, [[<contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>],[<contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>], [<contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>]]);
-recipes.addShapeless(<contenttweaker:inert_ingot> * 9, [<contenttweaker:sub_block_holder_0:1>]);
-
-//tough alloy
-recipes.addShaped(<contenttweaker:sub_block_holder_0:8>, [[<nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>],[<nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>], [<nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>]]);
-recipes.addShapeless(<nuclearcraft:alloy:1> * 9, [<contenttweaker:sub_block_holder_0:8>]);
+<translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n"))+(format.red("- Add Redstone to enable toggling in/output\n")));
 
 //crop sticks
 recipes.addShaped(<agricraft:crop_sticks> * 4, [[<immersiveengineering:material>, <immersiveengineering:material>],[<immersiveengineering:material>, <immersiveengineering:material>]]);
@@ -280,17 +281,21 @@ mods.extendedcrafting.TableCrafting.addShaped(<nuclearcraft:dominos>, [
 furnace.addRecipe(<chisel:energizedvoidstone:2>, <chisel:energizedvoidstone>, 1.0);
 
 mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<minecraft:ender_pearl>, <enderore:dust_ender>, 75);
-mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectussilver>, <liquid:astralsorcery.liquidstarlight>, [<embers:aspectus_silver>], true);
-mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectuscopper>, <liquid:astralsorcery.liquidstarlight>, [<embers:aspectus_copper>], true);
 
+//scanner
+recipes.addShaped(<scannable:scanner>, [[<minecraft:iron_bars>, null, <minecraft:iron_bars>],[<advgenerators:iron_wiring>, <rockhounding_chemistry:misc_items:1>, <advgenerators:iron_wiring>], [<moreplates:pulsating_iron_plate>, <embers:ember_detector>, <moreplates:pulsating_iron_plate>]]);
+recipes.addShaped(<scannable:module_blank> * 3, [[<moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>],[<enderio:item_material:22>, <minecraft:paper>, <enderio:item_material:22>], [<enderio:item_material:22>, <rockhounding_chemistry:misc_items:1>, <enderio:item_material:22>]]);
 
-<ore:plateVoid>.remove(<moreplates:void_plate>);
+<ironfurnaces:glass_furnace_idle>.displayName = "§bCrystal Furnace";
+<ironfurnaces:glass_furnace_active>.displayName = "§bCrystal Furnace";
 
-<ore:dustWood>.add(<techreborn:dust:46>);
-<ore:dustWheat>.addAll(<ore:foodFlour>);
+recipes.addShaped(<cookingforblockheads:sink>, [[<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>],[<minecraft:hardened_clay>, <nuclearcraft:water_source_compact>, <minecraft:hardened_clay>], [<minecraft:hardened_clay>, <minecraft:hardened_clay>, <minecraft:hardened_clay>]]);
+
+/* Added by Cyclic
 <minecraft:snowball>.maxStackSize = 64;
 <minecraft:ender_pearl>.maxStackSize = 64;
-
+recipes.addShapeless(<minecraft:melon> * 9, [<minecraft:melon_block>]);
+*/
 
 //mods.agricraft.CropProduct.add(<agricraft:agri_seed>.withTag({agri_seed: "resource:jaslumine_plant"}), <jaopca:item_dusttinyaluminium>, 10);
 
