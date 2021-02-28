@@ -9,12 +9,13 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "minecraft:torch",
+  "catalyst": "astralsorcery:itemusabledust",
+  "catalyst-meta": 1,
 
   "input-types": {
     "b": {
-      "id": "botania:storage",
-      "meta": 3
+      "id": "contenttweaker:starmetal_block",
+      "meta": 0
     },
     "s": {
       "id": "additionalcompression:cobblestone_compressed",

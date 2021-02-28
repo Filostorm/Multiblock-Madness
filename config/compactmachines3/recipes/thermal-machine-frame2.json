@@ -9,13 +9,13 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "rockhounding_chemistry:alloy_parts",
-  "catalyst-meta": 9,
+  "catalyst": "techreborn:part",
+  "catalyst-meta": 43,
   
   "input-types": {
     "a": {
       "id": "jaopca:block_sheetmetalscal",
-      "meta": 1
+      "meta": 0
     },
     "b": {
       "id": "contenttweaker:invar_scaffolding",
@@ -28,6 +28,10 @@
     "d": {
       "id": "immersiveengineering:sheetmetal",
       "meta": 8
+    },
+    "e": {
+      "id": "thermalfoundation:storage",
+      "meta": 6
     }
   },
   "shape": [
@@ -56,7 +60,7 @@
       ],
       [
         "c",
-        "_",
+        "e",
         "c"
       ],
       [

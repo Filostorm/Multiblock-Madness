@@ -13,6 +13,7 @@ tile.contenttweaker.plating_advanced.name=Advanced Plating Block
 tile.contenttweaker.plating_elite.name=Elite Plating Block
 tile.contenttweaker.plating_extreme.name=Extreme Plating Block
 tile.contenttweaker.plating_du.name=DU Plating Block
+tile.contenttweaker.starmetal_block.name=Block of Starmetal
 item.contenttweaker.hastelloyfoil.name=Hastelloy Foil
 item.contenttweaker.goldfoil.name=Gold Foil
 item.contenttweaker.aluminumcasing.name=Aluminum Casing
@@ -25,15 +26,70 @@ item.contenttweaker.greatwood_handle.name=Greatwood Stick
 item.contenttweaker.slatedust.name=§eCrushed Slate
 item.contenttweaker.activatedAspectusCopper.name=Infused Copper Aspectus
 item.contenttweaker.activatedAspectusSilver.name=Infused Silver Aspectus
-item.contenttweaker.adventure_token.name=Adventure Token
-item.contenttweaker.exploring_token.name=Exploring Token
-item.contenttweaker.mining_token.name=Mining Token
-item.contenttweaker.tech_token.name=Tech Token
-item.contenttweaker.magic_token.name=Magic Token
+item.contenttweaker.activatedAspectusDawnstone.name=Infused Dawnstone Aspectus
+
+item.contenttweaker.adventure_token_tier1.name=Tier 1 Adventure Token
+item.contenttweaker.exploring_token_tier1.name=Tier 1 Exploring Token
+item.contenttweaker.mining_token_tier1.name=Tier 1 Mining Token
+item.contenttweaker.tech_token_tier1.name=Tier 1 Tech Token
+item.contenttweaker.magic_token_tier1.name=Tier 1 Magic Token
+
+item.contenttweaker.adventure_token_tier2.name=Tier 2 Adventure Token
+item.contenttweaker.exploring_token_tier2.name=Tier 2 Exploring Token
+item.contenttweaker.mining_token_tier2.name=Tier 2 Mining Token
+item.contenttweaker.tech_token_tier2.name=Tier 2 Tech Token
+item.contenttweaker.magic_token_tier2.name=Tier 2 Magic Token
+
+item.contenttweaker.adventure_token_tier3.name=Tier 3 Adventure Token
+item.contenttweaker.exploring_token_tier3.name=Tier 3 Exploring Token
+item.contenttweaker.mining_token_tier3.name=Tier 3 Mining Token
+item.contenttweaker.tech_token_tier3.name=Tier 3 Tech Token
+item.contenttweaker.magic_token_tier3.name=Tier 3 Magic Token
+
+item.contenttweaker.adventure_token_tier4.name=Tier 4 Adventure Token
+item.contenttweaker.exploring_token_tier4.name=Tier 4 Exploring Token
+item.contenttweaker.mining_token_tier4.name=Tier 4 Mining Token
+item.contenttweaker.tech_token_tier4.name=Tier 4 Tech Token
+item.contenttweaker.magic_token_tier4.name=Tier 4 Magic Token
+
+item.contenttweaker.adventure_token_tier5.name=Tier 5 Adventure Token
+item.contenttweaker.exploring_token_tier5.name=Tier 5 Exploring Token
+item.contenttweaker.mining_token_tier5.name=Tier 5 Mining Token
+item.contenttweaker.tech_token_tier5.name=Tier 5 Tech Token
+item.contenttweaker.magic_token_tier5.name=Tier 5 Magic Token
+
 item.contenttweaker.adamantine_ingot.name=Adamantine Ingot
 item.contenttweaker.orichalcum_ingot.name=Orichalcum Ingot
 item.contenttweaker.palladium_ingot.name=Palladium Ingot
 item.contenttweaker.terrasteel_coil.name=Terrasteel Heating Coil
+item.contenttweaker.gearCrushingInvar.name=Invar Crushing Gear
+item.contenttweaker.gearCrushingSteel.name=Steel Crushing Gear
+item.contenttweaker.gearCrushingDarkSteel.name=Dark Steel Crushing Gear
+item.contenttweaker.gearCrushingCortenSteel.name=Corten Steel Crushing Gear
+item.contenttweaker.gearCrushingVanasteel.name=Vanasteel Crushing Gear
+
+item.contenttweaker.agitatorInvar.name=Invar Slurry Agitator
+item.contenttweaker.agitatorSteel.name=Steel Slurry Agitator
+item.contenttweaker.agitatorDarkSteel.name=Dark Steel Slurry Agitator
+item.contenttweaker.agitatorHydronalium.name=Hydronalium Slurry Agitator
+item.contenttweaker.agitatorHastelloy.name=Hastelloy Slurry Agitator
+
+item.contenttweaker.foilInvar.name=Invar Foil
+item.contenttweaker.foilSteel.name=Steel Foil
+item.contenttweaker.foilDarkSteel.name=Dark Steel Foil
+item.contenttweaker.foilHydronalium.name=Hydronalium Foil
+
+item.contenttweaker.rodInvar.name=Invar Rod
+item.contenttweaker.rodSteel.name=Steel Rod
+item.contenttweaker.rodDarkSteel.name=Dark Steel Rod
+item.contenttweaker.rodHydronalium.name=Hydronalium Rod
+
+item.contenttweaker.blood_crystal.name=Blood Crystal
+item.contenttweaker.adaptive_ingot.name=Adaptive Ingot
+item.contenttweaker.casingSteel.name=Steel Casing
+item.contenttweaker.casingPlatinum.name=Platinum Casing
+item.contenttweaker.purpleprint.name=Purpleprint
+
 fluid.moltenEmbers=Molten Embers
 fluid.moltenTime=Molten Time
 

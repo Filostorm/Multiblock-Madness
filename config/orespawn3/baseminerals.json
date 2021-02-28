@@ -1,0 +1,166 @@
+{
+	"version": "2.0",
+	"spawns": {
+		"lithium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "baseminerals:lithium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"niter_ore": {
+			"retrogen": false,
+			"enabled": false,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "baseminerals:niter_ore",
+					"chance": 100
+				}
+			]
+		},
+		"salt_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "baseminerals:salt_ore",
+					"chance": 100
+				}
+			]
+		},
+		"sulfur_ore": {
+			"retrogen": false,
+			"enabled": false,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "baseminerals:sulfur_ore",
+					"chance": 100
+				}
+			]
+		},
+		"phosphorus_ore": {
+			"retrogen": false,
+			"enabled": false,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "baseminerals:phosphorus_ore",
+					"chance": 100
+				}
+			]
+		},
+		"potash_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "baseminerals:potash_ore",
+					"chance": 100
+				}
+			]
+		},
+		"saltpeter_ore": {
+			"retrogen": false,
+			"enabled": false,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "baseminerals:saltpeter_ore",
+					"chance": 100
+				}
+			]
+		}
+	}
+}

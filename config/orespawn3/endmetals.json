@@ -1,0 +1,780 @@
+{
+	"version": "2.0",
+	"spawns": {
+		"end_coal_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 8,
+				"frequency": 12,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_coal_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_diamond_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 2,
+				"variation": 8,
+				"frequency": 12,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_diamond_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_emerald_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 8,
+				"frequency": 12,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_emerald_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_gold_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 5,
+				"variation": 8,
+				"frequency": 12,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_gold_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_iron_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 8,
+				"frequency": 12,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_iron_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_lapis_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 8,
+				"frequency": 12,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_lapis_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_redstone_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 8,
+				"frequency": 12,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_redstone_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_antimony_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_antimony_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_bismuth_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_bismuth_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_copper_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 12,
+				"frequency": 20,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_copper_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_lead_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 12,
+				"frequency": 20,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_lead_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_mercury_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_mercury_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_nickel_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_nickel_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_platinum_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 2,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_platinum_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_silver_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_silver_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_tin_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 12,
+				"frequency": 20,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_tin_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_zinc_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 8,
+				"frequency": 12,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_zinc_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_aluminum_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_aluminum_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_cadmium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_cadmium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_chromium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_chromium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_iridium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_iridium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_magnesium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_magnesium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_manganese_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_manganese_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_osmium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_osmium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_plutonium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_plutonium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_rutile_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_rutile_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_tantalum_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_tantalum_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_titanium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_titanium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_tungsten_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_tungsten_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_uranium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 2,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_uranium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"end_zirconium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [
+				1
+			],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 8,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [
+				{
+					"name": "endmetals:end_zirconium_ore",
+					"chance": 100
+				}
+			]
+		}
+	}
+}

@@ -10,8 +10,8 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "thermalfoundation:material",
-  "catalyst-meta": 24,
+  "catalyst": "powersuits:powerarmorcomponent",
+  "catalyst-meta": 0,
 
   "input-types": {
     "c": {

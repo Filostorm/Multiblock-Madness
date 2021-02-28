@@ -157,3 +157,12 @@ DUPlatingBlock.setToolClass("pickaxe");
 DUPlatingBlock.setToolLevel(1);
 DUPlatingBlock.setBlockSoundType(<soundtype:metal>);
 DUPlatingBlock.register();
+
+var StarmetalBlock = VanillaFactory.createBlock("starmetal_block", <blockmaterial:iron>);
+StarmetalBlock.setLightValue(0);
+StarmetalBlock.setBlockHardness(5.0);
+StarmetalBlock.setBlockResistance(5.0);
+StarmetalBlock.setToolClass("pickaxe");
+StarmetalBlock.setToolLevel(1);
+StarmetalBlock.setBlockSoundType(<soundtype:metal>);
+StarmetalBlock.register();

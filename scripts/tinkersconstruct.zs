@@ -27,9 +27,7 @@ smelteryHeart.add(<tconstruct:seared_tank>);
 smelteryHeart.add(<tconstruct:seared_tank:1>);
 smelteryHeart.add(<tconstruct:seared_tank:2>);
 
-// HighOven.removeFuel(IIngredient fuel);
-HighOven.removeFuel(<minecraft:coal:1>);
-HighOven.removeFuel(<ore:blockCharcoal>);
+
 
 	<liquid:pyrotheum>.definition.temperature = 5300;
 	mods.tconstruct.Fuel.registerFuel(<liquid:pyrotheum> * 25, 400);
@@ -57,14 +55,15 @@ Casting.addBasinRecipe(<randomthings:timeinabottle>.withTag({timeData: {storedTi
 */
 //---------Special Dusts
 Melting.addRecipe(<liquid:inert_metal> * 144,<contenttweaker:inert_ingot>);
-Melting.addRecipe(<liquid:inert_metal> * 1296,<contenttweaker:sub_block_holder_0:1>);
+Melting.addRecipe(<liquid:inert_metal> * 1296,<contenttweaker:sub_block_holder_0:2>);
 Melting.addRecipe(<liquid:ender> * 1000, <actuallyadditions:block_misc:6>, 500);
-Melting.addRecipe(<liquid:tough> * 1296, <contenttweaker:sub_block_holder_0:8>);
+Melting.addRecipe(<liquid:tough> * 1296, <contenttweaker:sub_block_holder_0:6>);
 Melting.addRecipe(<liquid:quartz> * 666, <minecraft:quartz>);
 Melting.addRecipe(<liquid:quartz> * 2664, <minecraft:quartz_block>);
 Melting.addRecipe(<liquid:stone> * 288, <thebetweenlands:cragrock>);
-### ALLOYING ###
+Melting.addRecipe(<liquid:stone> * 648, <additionalcompression:cobblestone_compressed>);
 
+### ALLOYING ###
 // remove alloys
 Alloy.removeRecipe(<liquid:steel>, [<liquid:iron>, <liquid:coal>]);
 Alloy.removeRecipe(<liquid:vibrant_alloy>);
@@ -76,20 +75,40 @@ Alloy.removeRecipe(<liquid:energetic_silver>);
 Alloy.removeRecipe(<liquid:pigiron>);
 Alloy.removeRecipe(<liquid:knightslime>);
 Alloy.removeRecipe(<liquid:bloodbronze>);
+Alloy.removeRecipe(<liquid:dark_steel>);
+Alloy.removeRecipe(<liquid:signalum>);
+Alloy.removeRecipe(<liquid:lumium>);
+Alloy.removeRecipe(<liquid:hard_carbon>);
+Alloy.removeRecipe(<liquid:conductive_iron>);
+Alloy.removeRecipe(<liquid:unsweetened_chocolate>);
+Alloy.removeRecipe(<liquid:dark_chocolate>);
+Alloy.removeRecipe(<liquid:milk_chocolate>);
+Alloy.removeRecipe(<liquid:hydrated_gelatin>);
+Alloy.removeRecipe(<liquid:marshmallow>);
+Alloy.removeRecipe(<liquid:clay>);
+
+//Doesnt seem to work for these
+Alloy.removeRecipe(<liquid:osmiridium>);
+Alloy.removeRecipe(<liquid:mirion>);
+Alloy.removeRecipe(<liquid:osgloglas>);
 
 //inert 
-Alloy.addRecipe(<liquid:inert_metal> * 2, [<liquid:silver> * 2, <liquid:lead> * 1]);
+Alloy.addRecipe(<liquid:inert_metal> * 72, [<liquid:silver> * 72, <liquid:lead> * 36]);
 
 ### CASTING ###
 //remove
 Casting.removeTableRecipe(<tcomplement:materials:1>);
+Casting.removeTableRecipe(<enderio:item_material:11>);
+Casting.removeTableRecipe(<enderio:item_material:12>);
+Casting.removeTableRecipe(<enderio:item_material:13>);
+Casting.removeTableRecipe(<enderio:item_material:73>);
+Casting.removeTableRecipe(<enderio:item_material:15>);
 Casting.removeBasinRecipe(<tcomplement:scorched_block>);
 Casting.removeBasinRecipe(<tcomplement:scorched_block:1>);
 Casting.removeBasinRecipe(<tcomplement:scorched_block:10>);
 Casting.removeBasinRecipe(<tcomplement:scorched_slab2:2>);
-
 //new metals
-Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:8>, null, <liquid:tough>, 1296);
+Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:6>, null, <liquid:tough>, 1296);
 
 //fused quartz
 Casting.addBasinRecipe(<enderio:block_fused_quartz>, null, <liquid:quartz>, 2664, false, 100);
@@ -102,7 +121,7 @@ Casting.addBasinRecipe(<conarm:armorforge>.withTag({textureBlock: {id: "tconstru
 
 //inert ingot
 Casting.addTableRecipe(<contenttweaker:inert_ingot>, <tconstruct:cast_custom>, <liquid:inert_metal>, 144, false, 50);
-Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, null, <liquid:inert_metal>, 1296);
+Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:2>, null, <liquid:inert_metal>, 1296);
 
 //ender shard
 Casting.addTableRecipe(<woot:endershard>, <botania:quartz:2>, <liquid:ender>, 250, true, 200);
@@ -111,9 +130,24 @@ Casting.addTableRecipe(<woot:endershard>, <botania:quartz:2>, <liquid:ender>, 25
 Melting.addRecipe(<liquid:dawnstone> * 1296, <embers:block_dawnstone>);
 Casting.addBasinRecipe(<embers:block_dawnstone>, null, <liquid:dawnstone>, 1296);
 
+############################################################
+//inert block
+recipes.addShaped(<contenttweaker:sub_block_holder_0:2>, [[<contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>],[<contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>], [<contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>]]);
+recipes.addShapeless(<contenttweaker:inert_ingot> * 9, [<contenttweaker:sub_block_holder_0:2>]);
 
+//tough alloy
+recipes.addShaped(<contenttweaker:sub_block_holder_0:6>, [[<nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>],[<nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>], [<nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>]]);
+recipes.addShapeless(<nuclearcraft:alloy:1> * 9, [<contenttweaker:sub_block_holder_0:6>]);
+
+############################################################
 
 ### HIGH OVEN ###
+// HighOven.removeFuel(IIngredient fuel);
+HighOven.removeFuel(<minecraft:coal:1>);
+HighOven.removeFuel(<ore:blockCharcoal>);
+
+// HighOven.addFuel(IIngredient fuel, int time, int rate);
+HighOven.addFuel(<thaumcraft:alumentum>, 3600, 50);
 
 // HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
 HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
@@ -130,13 +164,15 @@ steel.register();
 
 var pulsatingiron = HighOven.newMixRecipe(<liquid:pulsating_iron> * 144, <liquid:iron> * 144, 2300);
 pulsatingiron.addReducer(<enderio:item_material:20>,20);
-pulsatingiron.addPurifier(<ore:dustEnderPearl>, 100);
+//pulsatingiron.addPurifier(<ore:dustEnderPearl>, 100);
 pulsatingiron.addPurifier(<ore:dustEnder>, 100);
 pulsatingiron.register();
 
-var pigIron = HighOven.manageMixRecipe(<liquid:pigiron>, <liquid:iron>);
-pigIron.addPurifier(<animania:raw_prime_bacon>, 20);
-pigIron.addPurifier(<animania:raw_prime_pork>, 40);
+var conductiveiron = HighOven.newMixRecipe(<liquid:conductive_iron> * 144, <liquid:iron> * 144, 1300);
+conductiveiron.addReducer(<enderio:item_material:20>,20);
+//conductiveiron.addPurifier(<ore:dustEnderPearl>, 100);
+conductiveiron.addPurifier(<minecraft:redstone>, 80);
+conductiveiron.register();
 
 var dawnstone = HighOven.newMixRecipe(<liquid:dawnstone> * 144, <liquid:gold> * 144, 2000);
 dawnstone.addOxidizer(<minecraft:glowstone_dust>, 20);
@@ -148,13 +184,12 @@ dawnstone.addPurifier(<ore:dustCopper>, 100);
 dawnstone.addPurifier(<rockhounding_chemistry:alloy_items_deco:15>, 20); 
 dawnstone.register();
 
-var redstoneAlloy = HighOven.newMixRecipe(<liquid:redstone_alloy> * 144, <liquid:redstone> * 100, 1300);
-redstoneAlloy.addPurifier(<nuclearcraft:gem:6>, 100);
-redstoneAlloy.register();
+
 
 var prudentium = HighOven.newMixRecipe(<liquid:prudentium> * 36, <liquid:inferium> * 36, 1300);
 prudentium.addPurifier(<mysticalagriculture:crafting:1>, 100);
 prudentium.register();
+
 
 ### DRYING ###
 
@@ -162,7 +197,7 @@ prudentium.register();
 //Drying.addRecipe(<ceramics:unfired_clay:5>, <ceramics:unfired_clay:4>, 160);
 
 ## Blank Cast Resmelting
-//Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);
+Melting.addRecipe(<liquid:alubrass> * 144, <ore:cast>);
 
 
 // removals

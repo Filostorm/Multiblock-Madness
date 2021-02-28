@@ -1,4 +1,6 @@
 import crafttweaker.item.IItemStack;
+import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Transposer;
 print("==================== loading thermal.zs ====================");
 ##########################################################################################
 
@@ -6,7 +8,12 @@ print("==================== loading thermal.zs ====================");
 val itemstoRemove =
 [
     <thermalexpansion:machine:15>,
-    <thermalexpansion:machine:14>
+    <thermalexpansion:machine:14>,
+    <thermalfoundation:material:103>,
+    <thermalfoundation:material:101>,
+    <thermalfoundation:material:102>,
+    <thermalexpansion:frame:64>,
+    <thermalexpansion:frame>,
 ]
  as IItemStack[];
 
@@ -32,7 +39,10 @@ recipes.addShaped(<thermalfoundation:material:136>, [[null, <mysticalagriculture
 recipes.addShaped(<thermalfoundation:material:136>*2, [[null, <mysticalagriculture:crafting:37>, null],[<enderutilities:enderpart:2>, <contenttweaker:material_part:20>, <botania:manaresource:4>], [null, <thaumcraft:ingot>, null]]);
 
 //Mana Dust
-recipes.addShaped(<thermalfoundation:material:1028>, [[<bloodarsenal:base_item:2>, <botania:manaresource:23>, <thaumcraft:salis_mundus>],[<thermalfoundation:material:1024>, <thermalfoundation:material:72>, <astralsorcery:itemusabledust:1>], [<thermalfoundation:material:1027>, <thermalfoundation:material:1026>, <thermalfoundation:material:1025>]]);
+recipes.addShaped(<thermalfoundation:material:1028>, [[<bloodarsenal:base_item:2>,<botania:manaresource:8>, <thaumcraft:salis_mundus>],[<thermalfoundation:material:1024>, <thermalfoundation:material:72>, <astralsorcery:itemusabledust:1>], [<thermalfoundation:material:1027>, <thermalfoundation:material:1026>, <thermalfoundation:material:1025>]]);
+
+//Device Frame
+recipes.addShaped(<thermalexpansion:frame:64>, [[<thermalfoundation:material:321>, <ore:fusedGlass>, <thermalfoundation:material:321>],[<ore:fusedGlass>, <thermalfoundation:material:292>, <ore:fusedGlass>], [<thermalfoundation:material:321>, <ore:fusedGlass>, <thermalfoundation:material:321>]]);
 
 //extruder
 recipes.addShaped(<thermalexpansion:machine:15>, [[null, <embers:superheater>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
@@ -46,7 +56,52 @@ recipes.addShaped(<thermalfoundation:glass:3>, [[<thermalfoundation:material:770
 //mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
 //mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
-mods.thermalexpansion.Transposer.addFillRecipe(<modularmachinery:itemmodularium>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 100);
+//Modularium
+Transposer.addFillRecipe(<modularmachinery:itemmodularium>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 100);
 
+//Fiery Ingot
+Transposer.addFillRecipe(<twilightforest:fiery_ingot>, <thebetweenlands:octine_ingot>, <liquid:pyrotheum> * 2000, 10000);
+
+mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([<nuclearcraft:alloy:8>*4]);
+mods.nuclearcraft.infuser.removeRecipeWithOutput([<thermalfoundation:material:166>]);
+
+InductionSmelter.addRecipe(<nuclearcraft:alloy:8>*4, <thermalfoundation:material:130>, <thermalfoundation:material:129>*3, 5000);
+Transposer.addFillRecipe(<thermalfoundation:material:166>, <nuclearcraft:alloy:8>, <liquid:glowstone> * 1000, 10000);
+
+
+val OretoRemove =
+[
+<thermalfoundation:ore:7>,
+<thermalfoundation:ore:6>,
+]
+ as IItemStack[];
+
+for item in OretoRemove {
+InductionSmelter.removeRecipe(item, <minecraft:sand>);
+InductionSmelter.removeRecipe(item, <thermalfoundation:material:865>);
+InductionSmelter.removeRecipe(item, <thermalfoundation:material:866>);
+}
+
+val OreByproductstoRemove =
+[
+<thermalfoundation:ore:5>,
+]
+ as IItemStack[];
+
+for item in OreByproductstoRemove {
+InductionSmelter.removeRecipe(item, <thermalfoundation:material:866>);
+}
+
+val DuststoRemove =
+[
+<thermalfoundation:material:71>,
+<thermalfoundation:material:70>,
+<minecraft:iron_ingot>,
+]
+ as IItemStack[];
+
+for item in DuststoRemove {
+InductionSmelter.removeRecipe(item, <minecraft:sand>);
+}
 ##########################################################################################
 print("==================== end of thermal.zs ====================");
