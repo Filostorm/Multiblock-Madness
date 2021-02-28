@@ -1,0 +1,79 @@
+{
+  "name": "colossal:wood",
+
+  "disabled": true,
+
+  "target-item": "colossalchests:chest_wall",
+  "target-count": 4,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "minecraft:chest",
+  "catalyst-meta": 513,
+
+  "input-types": {
+    "a": {
+      "id": "minecraft:planks",
+      "ignore-meta": true
+    },
+    "b": {
+      "id": "actuallyadditions:block_crystal",
+      "meta": 3
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+
+}

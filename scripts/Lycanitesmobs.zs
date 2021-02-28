@@ -25,8 +25,6 @@ for item in itemstoRemove {
 
 <ore:crystalforMystical>.add(<lycanitesmobs:cleansingcrystal>);
 
-recipes.addShaped(<oeintegration:excavatemodifier>, [[<minecraft:redstone>, <ore:artisansHammer>.reuse().transformDamage(50), <minecraft:redstone>],[<lycanitesmobs:geonachfist>, <minecraft:iron_block>, <lycanitesmobs:geonachspear>], [<minecraft:redstone>, <minecraft:lava_bucket>, <minecraft:redstone>]]);
-
 var pigIron = HighOven.manageMixRecipe(<liquid:pigiron>, <liquid:iron>);
 pigIron.addPurifier(<lycanitesmobs:raw_maka_meat>, 80);
 pigIron.addPurifier(<lycanitesmobs:raw_yeti_meat>, 80);
@@ -124,6 +122,7 @@ recipes.addShaped(<minecraft:carrot> * 16, [[null, null, <ore:elementsWater>],[n
 recipes.addShaped(<minecraft:beetroot> * 16, [[<ore:elementsEarth>, null, null],[null, <lycanitesmobs:lifedraincharge>, null], [null, null, <ore:elementsWater>]]);
 recipes.addShaped(<minecraft:wheat> * 16, [[null, null, <ore:elementsEarth>],[null, <lycanitesmobs:lifedraincharge>, null], [<ore:elementsWater>, null, null]]);
 recipes.addShaped(<minecraft:melon_block> * 8, [[null, null, null],[<ore:elementsEarth>, <lycanitesmobs:lifedraincharge>, <ore:elementsWater>], [null, null, null]]);
+recipes.addShaped(<minecraft:pumpkin> * 8, [[null, <ore:elementsWater>, null],[null, <lycanitesmobs:lifedraincharge>, null], [null, <ore:elementsEarth>, null]]);
 recipes.addShapeless(<minecraft:slime_ball> * 16, [<lycanitesmobs:acidsplashcharge>, <ore:elementsWater>]);
 recipes.addShapeless(<minecraft:magma_cream> * 16, [<lycanitesmobs:acidsplashcharge>, <ore:elementsFire>]);
 

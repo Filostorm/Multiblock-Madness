@@ -10,7 +10,11 @@
   "ignoreLightLevel": true,
   "ignoreGroupLimit": false,
   "ignoreForgeCanSpawnEvent": true,
-  "conditions": [],
+  "conditions": [
+    {
+      "type": "player"
+    }
+  ],
   "triggers": [
     {
       "type": "crop",

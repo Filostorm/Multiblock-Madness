@@ -29,9 +29,23 @@
         "compactmachines3:fieldprojector@3",
         "compactmachines3:fieldprojector@5"
     ],
-    "casing_energy_output": [
-        "modularmachinery:blockcasing",
+    "casings_item_energy": [
+        "modularmachinery:blockinputbus",
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockenergyinputhatch"
+    ],
+    "casings_item_fluid_energy": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch"
+    ],
+    "casings_mixer": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockcasing",
+        "modularmachinery:blockfluidoutputhatch"
     ]
 }

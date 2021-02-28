@@ -83,6 +83,7 @@
   "glowing",
   "mana",
   "infernal_armor",
+  "apocalypse",
   "slimey_tar",
   "spades",
   "prosperous",

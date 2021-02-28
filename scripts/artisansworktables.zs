@@ -140,7 +140,7 @@ RecipeBuilder.get("blacksmith")
   .setShapeless([<ore:ingotInvar>])
   .setFluid(<liquid:lava> *50)
   .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:324>)
+  .addOutput(<thermalfoundation:material:354>)
   .create();
 
 // Electrum Plate =======================================================================================================================================
@@ -232,6 +232,24 @@ RecipeBuilder.get("blacksmith")
   .setFluid(<liquid:lava> *50)
   .addTool(<ore:artisansHammer>, 10)
   .addOutput(<moreplates:void_plate>)
+  .create();
+
+  // Enori Plates =======================================================================================================================================
+recipes.addShaped(<moreplates:enori_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<actuallyadditions:item_crystal:5>], [<actuallyadditions:item_crystal:5>]]);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<actuallyadditions:item_crystal:5>])
+  .setFluid(<liquid:lava> *50)
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<moreplates:enori_plate>)
+  .create();
+
+  // Quartz Plates =======================================================================================================================================
+recipes.addShaped(<moreplates:nether_quartz_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<minecraft:quartz>], [<minecraft:quartz>]]);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<minecraft:quartz>])
+  .setFluid(<liquid:lava> *50)
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<moreplates:nether_quartz_plate>)
   .create();
 
 

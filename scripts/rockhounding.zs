@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 print("==================== loading mods rockhounding.zs ====================");
 ##########################################################################################
 
+
 <rockhounding_chemistry:machines_d>.addTooltip("Hold shift to see blocks required for multiblock");
 <rockhounding_chemistry:machines_d>.addShiftTooltip((format.red("- Power Station\n"))+(format.gray("- Material Cabinet\n"))+(format.white("- Elements Cabinet\n"))+(format.yellow("- Optional: Server")));
 
@@ -9,8 +10,7 @@ mods.enderio.SagMill.addRecipe([<rockhounding_chemistry:chemical_dusts:11>,<tech
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:64>,<rockhounding_chemistry:chemical_dusts:52>], [0.20,0.15], <rockhounding_chemistry:phosphate_shards:12>);
 mods.enderio.SagMill.addRecipe([<rockhounding_chemistry:chemical_dusts:35>,<thermalfoundation:material>], [0.25,0.1], <rockhounding_chemistry:oxide_shards:26>);
 
-val gemFluorite = <ore:gemFluorite>;
-gemFluorite.add(<rockhounding_chemistry:chemical_items:4>);
+<ore:gemFluorite>.add(<rockhounding_chemistry:chemical_items:4>);
 
 recipes.addShaped(<rockhounding_chemistry:misc_blocks_a:13>, [[<rockhounding_chemistry:misc_blocks_a>, <minecraft:glass>, <rockhounding_chemistry:misc_blocks_a>],[<minecraft:glass>, null, <minecraft:glass>], [<rockhounding_chemistry:misc_blocks_a>, <minecraft:glass>, <rockhounding_chemistry:misc_blocks_a>]]);
 
@@ -28,12 +28,13 @@ recipes.addShaped(<rockhounding_chemistry:gasline_pump> * 2, [[<contenttweaker:h
 
 //Item Detector
 recipes.remove(<rockhounding_chemistry:misc_items:11>);
-recipes.addShaped(<rockhounding_chemistry:misc_items:11>, [[<moreplates:energetic_silver_plate>, <minecraft:comparator>, <moreplates:energetic_silver_plate>],[<minecraft:repeater>, <techreborn:part:2>, <minecraft:repeater>], [<moreplates:energetic_silver_plate>, <minecraft:comparator>, <moreplates:energetic_silver_plate>]]);
+recipes.addShaped(<rockhounding_chemistry:misc_items:11>, [[<moreplates:energetic_silver_plate>, <mysticalmechanics:gear_gold_on>, <moreplates:energetic_silver_plate>],[<mysticalmechanics:gear_gold_off>, <techreborn:part:2>, <mysticalmechanics:gear_gold_off>], [<moreplates:energetic_silver_plate>, <mysticalmechanics:gear_gold_on>, <moreplates:energetic_silver_plate>]]);
 
 //logic chips (might change idk)
 recipes.remove(<rockhounding_chemistry:misc_items:1>);
-recipes.addShaped(<rockhounding_chemistry:misc_items:1>, [[<rockhounding_chemistry:misc_items:3>, <minecraft:redstone>, <rockhounding_chemistry:misc_items:3>],[<actuallyadditions:item_misc:7>, <thermalfoundation:material:353>, <actuallyadditions:item_misc:7>], [<rockhounding_chemistry:misc_items:3>, <minecraft:redstone>, <rockhounding_chemistry:misc_items:3>]]);
+recipes.addShaped(<rockhounding_chemistry:misc_items:1>, [[<rockhounding_chemistry:misc_items:3>, <minecraft:redstone>, <rockhounding_chemistry:misc_items:3>],[<actuallyadditions:item_misc:7>, <moreplates:nether_quartz_plate>, <actuallyadditions:item_misc:7>], [<rockhounding_chemistry:misc_items:3>, <minecraft:redstone>, <rockhounding_chemistry:misc_items:3>]]);
 
+//Advanced Logic Chip
 recipes.remove(<rockhounding_chemistry:misc_items:10>);
 recipes.addShaped(<rockhounding_chemistry:misc_items:10>, [[<contenttweaker:goldfoil>, <minecraft:redstone>, <contenttweaker:goldfoil>],[<actuallyadditions:item_misc:8>, <rockhounding_chemistry:misc_items:1>, <actuallyadditions:item_misc:8>], [<contenttweaker:goldfoil>, <minecraft:redstone>, <contenttweaker:goldfoil>]]);
 
@@ -62,7 +63,7 @@ recipes.addShaped(<rockhounding_chemistry:misc_items:10>, [[<contenttweaker:gold
 
 // Vapor Distilation Plant =============================================================
 recipes.remove(<rockhounding_chemistry:machines_d:4>);
-recipes.addShaped(<rockhounding_chemistry:machines_d:4>, [[<rockhounding_chemistry:misc_items:29>, <rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:misc_items:29>],[<rockhounding_chemistry:misc_items:7>, <techreborn:part:1>, <rockhounding_chemistry:misc_items:7>], [<rockhounding_chemistry:misc_items:29>, <rockhounding_chemistry:machines_a:6>, <rockhounding_chemistry:misc_items:29>]]);
+recipes.addShaped(<rockhounding_chemistry:machines_d:4>, [[<contenttweaker:casingplatinum>, <rockhounding_chemistry:misc_items:7>, <contenttweaker:casingplatinum>],[<rockhounding_chemistry:misc_items:7>, <techreborn:part:1>, <rockhounding_chemistry:misc_items:7>], [<contenttweaker:casingplatinum>, <rockhounding_chemistry:machines_a:6>, <contenttweaker:casingplatinum>]]);
 
 
 
@@ -220,6 +221,12 @@ mods.rockhounding_chemistry.MaterialCabinet.add("St", "dustAstralStarmetal", "St
 //Kanthal
 mods.rockhounding_chemistry.MetalAlloyer.add(["dustIron", "dustChromium", "dustAluminum", "dustSilicon", "dustManganese", "dustCarbon"], [67, 23, 6, 2, 1, 1], <contenttweaker:material_part:5>);
 
+
+
+//Nichrome
+mods.rockhounding_chemistry.MetalAlloyer.remove(<rockhounding_chemistry:alloy_items_tech:22>);
+mods.rockhounding_chemistry.MetalAlloyer.add(["dustNickel", "dustChromium", "dustIron", "dustSilicon", "dustManganese", "dustMolybdenum"], [70, 20, 1, 2, 3, 4], <rockhounding_chemistry:alloy_items_tech:22>);
+
 // Transposer echanges  =============================================================
 mods.rockhounding_chemistry.Transposer.add(<liquid:ammonia>*1000, <liquid:ammonia>*1000);
 mods.rockhounding_chemistry.Transposer.add(<liquid:carbon_dioxide>*1000, <liquid:carbon_dioxide>*1000);
@@ -249,19 +256,63 @@ recipes.remove(<rockhounding_chemistry:machines_a:11>);
 
 //mods.rockhounding_chemistry.ProfilingBench.removeByOutput(<rockhounding_chemistry:crushing_gear>);
 
-mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:162>, <rockhounding_chemistry:crushing_gear>.withTag({ench: [{lvl: 1 as short, id: 34 as short}], RepairCost: 1}), 6);
-mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:160>, <rockhounding_chemistry:crushing_gear>.withTag({ench: [{lvl: 2 as short, id: 34 as short}], RepairCost: 1}), 6);
-mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <rockhounding_chemistry:crushing_gear>.withTag({ench: [{lvl: 3 as short, id: 34 as short}], RepairCost: 1}), 6);
-mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:16>, <rockhounding_chemistry:crushing_gear>.withTag({ench: [{lvl: 4 as short, id: 34 as short}]}), 6);
-mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:40>, <rockhounding_chemistry:crushing_gear>.withTag({Unbreakable: 1 as byte}), 6);
+mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:162>, <contenttweaker:gearcrushinginvar>, 6);
+mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushinginvar>);
+<contenttweaker:gearcrushinginvar>.addTooltip("Crushes 8 Stacks");
 
+mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:160>, <contenttweaker:gearcrushingsteel>, 6);
+mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingsteel>);
+<contenttweaker:gearcrushingsteel>.addTooltip("Crushes 16 Stacks");
 
+mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <contenttweaker:gearcrushingdarksteel>, 6);
+mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingdarksteel>);
+<contenttweaker:gearcrushingdarksteel>.addTooltip("Crushes 32 Stacks");
+
+mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_deco:22>, <contenttweaker:gearcrushingcortensteel>, 6);
+mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingcortensteel>);
+<contenttweaker:gearcrushingcortensteel>.addTooltip("Crushes 64 Stacks");
+
+mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:40>, <contenttweaker:gearcrushingvanasteel>, 6);
+mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingvanasteel>);
+<contenttweaker:gearcrushingvanasteel>.addTooltip("Crushes 128 Stacks");
+
+/*
 recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({ench: [{lvl: 1 as short, id: 34 as short}], RepairCost: 1}), [[null, <moreplates:invar_stick>, null],[<rockhounding_chemistry:misc_items:3>, <moreplates:invar_stick>, <rockhounding_chemistry:misc_items:3>], [<rockhounding_chemistry:misc_items:3>, <moreplates:invar_stick>, <rockhounding_chemistry:misc_items:3>]]);
 recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({ench: [{lvl: 2 as short, id: 34 as short}], RepairCost: 1}), [[null, <immersiveengineering:material:2>, null],[<rockhounding_chemistry:misc_items:3>, <immersiveengineering:material:2>, <rockhounding_chemistry:misc_items:3>], [<rockhounding_chemistry:misc_items:3>, <immersiveengineering:material:2>, <rockhounding_chemistry:misc_items:3>]]);
 recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({ench: [{lvl: 3 as short, id: 34 as short}], RepairCost: 1}), [[null, <jaopca:item_stickdarksteel>, null],[<rockhounding_chemistry:misc_items:3>, <jaopca:item_stickdarksteel>, <rockhounding_chemistry:misc_items:3>], [<rockhounding_chemistry:misc_items:3>, <jaopca:item_stickdarksteel>, <rockhounding_chemistry:misc_items:3>]]);
-recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({ench: [{lvl: 4 as short, id: 34 as short}]}), [[null, <rockhounding_chemistry:misc_items:27>, null],[<rockhounding_chemistry:misc_items:3>, <rockhounding_chemistry:misc_items:27>, <rockhounding_chemistry:misc_items:3>], [<rockhounding_chemistry:misc_items:3>, <rockhounding_chemistry:misc_items:27>, <rockhounding_chemistry:misc_items:3>]]);
-recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({Unbreakable: 1 as byte}), [[null, <jaopca:item_stickhydronalium>, null],[<rockhounding_chemistry:misc_items:3>, <jaopca:item_stickhydronalium>, <rockhounding_chemistry:misc_items:3>], [<rockhounding_chemistry:misc_items:3>, <jaopca:item_stickhydronalium>, <rockhounding_chemistry:misc_items:3>]]);
+recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({ench: [{lvl: 4 as short, id: 34 as short}]}), [[null, <jaopca:item_stickhydronalium>, null],[<rockhounding_chemistry:misc_items:3>, <jaopca:item_stickhydronalium>, <rockhounding_chemistry:misc_items:3>], [<rockhounding_chemistry:misc_items:3>, <jaopca:item_stickhydronalium>, <rockhounding_chemistry:misc_items:3>]]);
+recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({Unbreakable: 1 as byte}), [[null, <rockhounding_chemistry:misc_items:27>, null],[<contenttweaker:hastelloyfoil>, <rockhounding_chemistry:misc_items:27>, <contenttweaker:hastelloyfoil>], [<contenttweaker:hastelloyfoil>, <rockhounding_chemistry:misc_items:27>, <contenttweaker:hastelloyfoil>]]);
+*/
 
+mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:162>, <contenttweaker:rodinvar>*4, 2);
+mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:162>, <contenttweaker:foilinvar>*8, 3);
+mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorinvar>);
+<contenttweaker:agitatorinvar>.addTooltip("Mixes 8 Stacks");
+recipes.addShaped(<contenttweaker:agitatorinvar>, [[null, <contenttweaker:rodinvar>, null],[<contenttweaker:foilinvar>, <contenttweaker:rodinvar>, <contenttweaker:foilinvar>], [<contenttweaker:foilinvar>, <contenttweaker:rodinvar>, <contenttweaker:foilinvar>]]);
+
+mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:160>, <contenttweaker:rodsteel>*4, 2);
+mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:160>, <contenttweaker:foilsteel>*8, 3);
+mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorsteel>);
+<contenttweaker:agitatorsteel>.addTooltip("Mixes 16 Stacks");
+recipes.addShaped(<contenttweaker:agitatorsteel>, [[null, <contenttweaker:rodsteel>, null],[<contenttweaker:foilsteel>, <contenttweaker:rodsteel>, <contenttweaker:foilsteel>], [<contenttweaker:foilsteel>, <contenttweaker:rodsteel>, <contenttweaker:foilsteel>]]);
+
+mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <contenttweaker:roddarksteel>*4, 2);
+mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <contenttweaker:foildarksteel>*8, 3);
+mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatordarksteel>);
+<contenttweaker:agitatordarksteel>.addTooltip("Mixes 32 Stacks");
+recipes.addShaped(<contenttweaker:agitatordarksteel>, [[null, <contenttweaker:roddarksteel>, null],[<contenttweaker:foildarksteel>, <contenttweaker:roddarksteel>, <contenttweaker:foildarksteel>], [<contenttweaker:foildarksteel>, <contenttweaker:roddarksteel>, <contenttweaker:foildarksteel>]]);
+
+mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:37>, <contenttweaker:rodhydronalium>*4, 2);
+mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:37>, <contenttweaker:foilhydronalium>*8, 3);
+mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorhydronalium>);
+<contenttweaker:agitatorhydronalium>.addTooltip("Mixes 64 Stacks");
+recipes.addShaped(<contenttweaker:agitatorhydronalium>, [[null, <contenttweaker:rodhydronalium>, null],[<contenttweaker:foilhydronalium>, <contenttweaker:rodhydronalium>, <contenttweaker:foilhydronalium>], [<contenttweaker:foilhydronalium>, <contenttweaker:rodhydronalium>, <contenttweaker:foilhydronalium>]]);
+
+
+//mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:40>, <contenttweaker:agitatorhastelloy>, 6);
+recipes.addShaped(<contenttweaker:agitatorhastelloy>, [[null, <rockhounding_chemistry:misc_items:27>, null],[<contenttweaker:hastelloyfoil>, <rockhounding_chemistry:misc_items:27>, <contenttweaker:hastelloyfoil>], [<contenttweaker:hastelloyfoil>, <rockhounding_chemistry:misc_items:27>, <contenttweaker:hastelloyfoil>]]);
+mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorhastelloy>);
+<contenttweaker:agitatorhastelloy>.addTooltip("Mixes 128 Stacks");
 
 
 mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:19>, <contenttweaker:hastelloyfoil>*8, 3);
@@ -270,6 +321,7 @@ mods.rockhounding_chemistry.ProfilingBench.add(<minecraft:gold_ingot>, <contentt
 mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:goldfoil> * 4, <thermalfoundation:material:33>, 1500);
 mods.thermalexpansion.Compactor.addStorageRecipe(<rockhounding_chemistry:misc_items:3> * 4, <thermalfoundation:material:32>, 1500);
 mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:storage:4>, <contenttweaker:aluminumcasing>*20, 5);
+mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:storage:6>, <contenttweaker:casingplatinum>*20, 5);
 
 //input stack: the oredict-based items to be shaped
 //mods.rockhounding_chemistry.ProfilingBench.add("blockGlass", <minecraft:empty_bottle>*4, 0);
@@ -288,8 +340,9 @@ mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:storage:4>, <c
 ##=======================================================
 recipes.remove(<rockhounding_chemistry:machines_d:8>);
 recipes.remove(<rockhounding_chemistry:misc_blocks_a:10>);
-recipes.addShaped(<rockhounding_chemistry:misc_blocks_a:10>, [[<rockhounding_chemistry:misc_items:29>, <rockhounding_chemistry:misc_blocks_a:4>, <rockhounding_chemistry:misc_items:29>],[<rockhounding_chemistry:misc_blocks_a>, <minecraft:piston>, <rockhounding_chemistry:misc_blocks_a>], [<rockhounding_chemistry:misc_items:29>, <rockhounding_chemistry:misc_items:4>, <rockhounding_chemistry:misc_items:29>]]);
-recipes.addShaped(<rockhounding_chemistry:machines_d:8>, [[<contenttweaker:aluminumcasing>, <rockhounding_chemistry:misc_blocks_a>, <contenttweaker:aluminumcasing>],[<actuallyadditions:block_testifi_bucks_white_wall>, <techreborn:part:1>, <actuallyadditions:block_testifi_bucks_white_wall>], [<rockhounding_chemistry:misc_items:28>, <actuallyadditions:block_testifi_bucks_white_wall>, <rockhounding_chemistry:misc_items:28>]]);
+recipes.addShaped(<rockhounding_chemistry:misc_blocks_a:10>, [[<contenttweaker:casingplatinum>, <rockhounding_chemistry:misc_blocks_a:4>, <contenttweaker:casingplatinum>],[<rockhounding_chemistry:misc_blocks_a>, <minecraft:piston>, <rockhounding_chemistry:misc_blocks_a>], [<contenttweaker:casingplatinum>, <rockhounding_chemistry:misc_items:4>, <contenttweaker:casingplatinum>]]);
+recipes.addShaped(<rockhounding_chemistry:machines_d:8>, [[<contenttweaker:casingplatinum>, <rockhounding_chemistry:misc_blocks_a>, <contenttweaker:casingplatinum>],[<actuallyadditions:block_testifi_bucks_white_wall>, <techreborn:part:1>, <actuallyadditions:block_testifi_bucks_white_wall>], [<rockhounding_chemistry:misc_items:8>, <actuallyadditions:block_testifi_bucks_white_wall>, <rockhounding_chemistry:misc_items:8>]]);
+
 
 //base input: the base ingredient
 //dopant: the dopant element
