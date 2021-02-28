@@ -3,7 +3,7 @@ Bored of the normal expert packs out there? Try Multiblock Madness! We've got ex
  
 Many mod items are tweaked to be more useful, for example, most charges from Lycanites Mobs drops can now be converted into resources!
  
-Over 600 Quests!
+Over 400 Quests!
  
 Jei has been cleaned up, no more seeing that every block can be painted and enchanted with Vanishing!
  
@@ -28,4 +28,4 @@ Create the ultimate material processing factory and build the most advanced mach
  
 Empower yourself with Astral Sorcery, find powerful spells and trinkets with Electroblobs Wizardry, become the ultimate ritualist through Blood Magic, and tame the Void with Thaumcraft.
  
-As of version 0.3.0, the first four Questbook chapters are done, so have fun
+As of version 0.4.0, the first 5 Questbook chapters are done, so have fun!
