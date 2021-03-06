@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+ <recipe name="Gear, Wood" disabled="true">
+ <crafting>
+ <grid>
+ <item /><item name="stickWood"/><item />
+ <item name="stickWood"/><item /><item name="stickWood"/>
+ <item /><item name="stickWood"/><item />
+ </grid>
+ <output name="GEAR_WOOD"/>
+ </crafting>
+ </recipe>
+ <recipe name="Gear, ae2 messes things up" disabled="true">
+ <crafting>
+ <grid>
+ <item name="stickWood"/><item /><item name="stickWood"/>
+ <item /><item /><item />
+ <item name="stickWood"/><item /><item name="stickWood"/>
+ </grid>
+ <output name="GEAR_WOOD"/>
+ </crafting>
+ </recipe>
+ <recipe name="Gear, just to be sure" disabled="true">
+ <crafting>
+ <grid size="3x2">
+ <item name="stickWood"/><item /><item name="stickWood"/>
+ <item name="stickWood"/><item /><item name="stickWood"/>
+ </grid>
+ <output name="GEAR_WOOD"/>
+ </crafting>
+ </recipe>
+ <recipe name="Gear, better save than sorry" disabled="true">
+ <crafting>
+ <grid size="2x3">
+ <item name="stickWood"/><item name="stickWood"/>
+ <item /><item />
+ <item name="stickWood"/><item name="stickWood"/>
+ </grid>
+ <output name="GEAR_WOOD"/>
+ </crafting>
+ </recipe>
+ <recipe name="Gear, Stone" disabled="true">
+ <crafting>
+ <grid>
+ <item name="stickWood"/><item name="oredict:cobblestone"/><item name="
+stickWood"/>
+ <item name="oredict:cobblestone"/><item /><item name="oredict:cobblestone"/>
+ <item name="stickWood"/><item name="oredict:cobblestone"/><item name="
+stickWood"/>
+ </grid>
+ <output name="GEAR_STONE"/>
+ </crafting>
+ </recipe>
+ <recipe name="Gear, Stone, Upgrade" disabled="true">
+ <crafting>
+ <grid>
+ <item /><item name="oredict:cobblestone"/><item />
+ <item name="oredict:cobblestone"/><item name="GEAR_WOOD"/><item name="oredict:
+cobblestone"/>
+ <item /><item name="oredict:cobblestone"/><item />
+ </grid>
+ <output name="GEAR_STONE"/>
+ </crafting>
+ </recipe>
+ 
+  <recipe name="Crafter, Upgrade" disabled="true">
+ <crafting>
+ <grid size="3x2">
+ <item /><item name="enderio:block_simple_crafter" /><item />
+ <item name="GEAR_IRON" /><item name="CHASSIS" /><item name="GEAR_IRON" />
+ </grid>
+ <output name="enderio:block_crafter" />
+ </crafting>
+ </recipe>
+
+ <recipe name="Stirling Generator, Upgrade" disabled="true">
+ <crafting upgrade="true">
+ <grid size="3x2">
+ <item name="ingotDarkSteel" /><item name="enderio:
+block_simple_stirling_generator" /><item name="ingotDarkSteel" />
+ <item name="GEAR_DARKSTEEL" /><item name="CHASSIS" /><item name="
+GEAR_DARKSTEEL" />
+ </grid>
+ <output name="enderio:block_stirling_generator" />
+ </crafting>
+ </recipe>
+
+ <recipe name="Wired Charger, Upgrade" disabled="true">
+ <crafting upgrade="true">
+ <grid size="3x3">
+ <item name="ELECTRICAL_STEEL" /><item /><item name="ELECTRICAL_STEEL" />
+ <item /><item name="CHASSIS" /><item />
+ <item name="ELECTRICAL_STEEL" /><item name="enderio:
+block_simple_wired_charger" /><item name="ELECTRICAL_STEEL" />
+ </grid>
+ <output name="enderio:block_wired_charger" />
+ </crafting>
+ </recipe>
+
+ <recipe name="Alloy Smelter, Upgrade" disabled="true">
+ <crafting upgrade="true">
+ <grid size="3x3">
+ <item name="ingotDarkSteel" /><item /><item name="ingotDarkSteel" />
+ <item name="enderio:block_simple_alloy_smelter" /><item name="CHASSIS" /><item
+name="enderio:block_simple_furnace" />
+ <item name="GEAR_DARKSTEEL" /><item /><item name="GEAR_DARKSTEEL" />
+ </grid>
+ <output name="enderio:block_alloy_smelter" />
+ </crafting>
+ </recipe>
+
+ <recipe name="SAG Mill, Upgrade" disabled="true">
+ <crafting upgrade="true">
+ <grid size="3x2">
+ <item name="ingotDarkSteel" /><item name="enderio:block_simple_sag_mill"
+/><item name="ingotDarkSteel" />
+ <item name="GEAR_DARKSTEEL" /><item name="CHASSIS" /><item name="
+GEAR_DARKSTEEL" />
+ </grid>
+ <output name="enderio:block_sag_mill" />
+ </crafting>
+ </recipe>
+</enderio:recipes>

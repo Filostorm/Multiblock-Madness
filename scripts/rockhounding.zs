@@ -2,7 +2,15 @@ import crafttweaker.item.IItemStack;
 print("==================== loading mods rockhounding.zs ====================");
 ##########################################################################################
 
+val itemstoRemove =
+[
+    <rockhounding_chemistry:misc_items:13>,
+]
+ as IItemStack[];
 
+for item in itemstoRemove {
+	recipes.remove(item);
+}
 <rockhounding_chemistry:machines_d>.addTooltip("Hold shift to see blocks required for multiblock");
 <rockhounding_chemistry:machines_d>.addShiftTooltip((format.red("- Power Station\n"))+(format.gray("- Material Cabinet\n"))+(format.white("- Elements Cabinet\n"))+(format.yellow("- Optional: Server")));
 
@@ -37,6 +45,10 @@ recipes.addShaped(<rockhounding_chemistry:misc_items:1>, [[<rockhounding_chemist
 //Advanced Logic Chip
 recipes.remove(<rockhounding_chemistry:misc_items:10>);
 recipes.addShaped(<rockhounding_chemistry:misc_items:10>, [[<contenttweaker:goldfoil>, <minecraft:redstone>, <contenttweaker:goldfoil>],[<actuallyadditions:item_misc:8>, <rockhounding_chemistry:misc_items:1>, <actuallyadditions:item_misc:8>], [<contenttweaker:goldfoil>, <minecraft:redstone>, <contenttweaker:goldfoil>]]);
+
+//Heating Element
+recipes.addShaped(<rockhounding_chemistry:misc_items:13>*2, [[<rockhounding_chemistry:misc_items:14>, <rockhounding_chemistry:misc_items:14>, <rockhounding_chemistry:misc_items:14>],[<rockhounding_chemistry:misc_items:14>, null, <rockhounding_chemistry:misc_items:14>], [<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>]]);
+recipes.addShaped(<rockhounding_chemistry:misc_items:13>, [[<contenttweaker:material_part:6>, <contenttweaker:material_part:6>, <contenttweaker:material_part:6>],[<contenttweaker:material_part:6>, null, <contenttweaker:material_part:6>], [<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>]]);
 
 // Remove Iron Casings =============================================================
 //<rockhounding_chemistry:misc_items:5>.displayName = "TAIGA Casing";
@@ -225,7 +237,7 @@ mods.rockhounding_chemistry.MetalAlloyer.add(["dustIron", "dustChromium", "dustA
 
 //Nichrome
 mods.rockhounding_chemistry.MetalAlloyer.remove(<rockhounding_chemistry:alloy_items_tech:22>);
-mods.rockhounding_chemistry.MetalAlloyer.add(["dustNickel", "dustChromium", "dustIron", "dustSilicon", "dustManganese", "dustMolybdenum"], [70, 20, 1, 2, 3, 4], <rockhounding_chemistry:alloy_items_tech:22>);
+//mods.rockhounding_chemistry.MetalAlloyer.add(["dustNickel", "dustChromium", "dustIron", "dustSilicon", "dustManganese", "dustMolybdenum"], [70, 20, 1, 2, 3, 4], <rockhounding_chemistry:alloy_items_tech:22>);
 
 // Transposer echanges  =============================================================
 mods.rockhounding_chemistry.Transposer.add(<liquid:ammonia>*1000, <liquid:ammonia>*1000);
@@ -351,7 +363,6 @@ mods.rockhounding_chemistry.PullingCrucible.add(<mysticalagriculture:crafting:38
 //mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:glowstone_dust>, <mysticalagriculture:crafting:38>, <minecraft:ghast_tear>);
 mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:skull:1>, <quark:soul_powder>, <minecraft:nether_star>);
 //mods.rockhounding_chemistry.PullingCrucible.add(<quark:soul_powder>, <minecraft:skull:1>, <minecraft:nether_star>);
-mods.rockhounding_chemistry.PullingCrucible.add(<actuallyadditions:item_crystal_empowered:4>, <thermalfoundation:material:1028>, <environmentaltech:litherite_crystal>);
 //mods.rockhounding_chemistry.PullingCrucible.add(<thermalfoundation:material:1028>, <actuallyadditions:item_crystal_empowered:4>, <environmentaltech:litherite_crystal>);
 
 

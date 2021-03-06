@@ -1,0 +1,83 @@
+{
+  "name": "cm3techreborn:machine_frame",
+
+  "disabled": false,
+
+  "target-item": "techreborn:machine_frame",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "immersiveengineering:material",
+  "catalyst-meta": 27,
+
+  "input-types": {
+    "a": {
+      "id": "contenttweaker:sheetmetal_refinediron",
+      "meta": 0
+    },
+    "b": {
+      "id": "rockhounding_chemistry:misc_blocks_a",
+      "meta": 13
+    },
+    "c": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 3
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+
+}

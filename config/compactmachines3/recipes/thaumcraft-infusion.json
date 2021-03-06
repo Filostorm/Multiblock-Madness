@@ -1,0 +1,218 @@
+{
+  "name": "cm3thaumcraft:infusionmatrix",
+
+  "disabled": false,
+
+  "target-item": "thaumcraft:infusion_matrix",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "botania:manaresource",
+  "catalyst-meta": 1,
+
+  "input-types": {
+    "a": {
+      "id": "bloodmagic:blood_rune",
+      "meta": 0
+    },
+    "b": {
+      "id": "thaumcraft:nitor_yellow",
+      "meta": 0
+    }
+  },
+  "input-nbt": {
+    "b:A": {
+      "nbt": "{ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"thaumcraft:tilenitor\"}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "b:A",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "_",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+
+}

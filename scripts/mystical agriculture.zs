@@ -66,14 +66,14 @@ recipes.addShaped(<mysticalagriculture:infusion_crystal>, [[<mysticalagriculture
 
 mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/master_infusion_crystal", <mysticalagriculture:master_infusion_crystal>, 2000, 100, [
 
-			<embers:ember_cluster>, <ebwizardry:grand_crystal>, <embers:ember_cluster>,
+			<ebwizardry:astral_diamond>, <ebwizardry:grand_crystal>, <ebwizardry:astral_diamond>,
 
-			<ebwizardry:grand_crystal>, <ebwizardry:astral_diamond>, <ebwizardry:grand_crystal>,
+			<ebwizardry:grand_crystal>, <astralsorcery:itemcelestialcrystal>, <ebwizardry:grand_crystal>,
 
-			<embers:ember_cluster>, <ebwizardry:grand_crystal>, <embers:ember_cluster>,
+			<ebwizardry:astral_diamond>, <ebwizardry:grand_crystal>, <ebwizardry:astral_diamond>,
 
-			<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:4>, 
-            <mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:4>,
+			<embers:ember_cluster>, <embers:ember_cluster>, 
+            <embers:ember_cluster>, <embers:ember_cluster>,
 			<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:4>,
 			<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:4>,
 			<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:4>,

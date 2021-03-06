@@ -24,6 +24,7 @@ val itemstoRemove =
 <embers:stamper>,
 <embers:stamper_base>,
 <embers:mixer>,
+<embers:alchemy_pedestal>,
 ]
  as IItemStack[];
 
@@ -51,6 +52,10 @@ recipes.addShaped(<embers:cinder_plinth>, [[null, <thermalfoundation:material:32
 
 //Beam Cannon
 recipes.addShaped(<embers:beam_cannon>, [[<moreplates:energetic_alloy_plate>, <embers:crystal_ember>, <moreplates:energetic_alloy_plate>],[<moreplates:energetic_alloy_plate>, <embers:crystal_ember>, <moreplates:energetic_alloy_plate>], [<embers:ingot_dawnstone>, <embers:block_caminite_brick>, <embers:ingot_dawnstone>]]);
+
+//Pedestal
+recipes.addShaped(<embers:alchemy_pedestal>, [[<embers:plate_dawnstone>, null, <embers:plate_dawnstone>],[<techreborn:plates:35>, <embers:crystal_ember>, <techreborn:plates:35>], [<embers:stairs_caminite_brick>, <thermalfoundation:storage>, <embers:stairs_caminite_brick>]]);
+
 
 //Mixer
 recipes.addShaped(<embers:mixer>, [[<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>],[<thermalfoundation:material:32>, <thermalfoundation:storage_alloy:3>, <thermalfoundation:material:32>], [<botania:manaresource>, <embers:mech_core>, <botania:manaresource>]]);

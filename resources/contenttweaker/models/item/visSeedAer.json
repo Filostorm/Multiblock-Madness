@@ -1,0 +1,4 @@
+  { "parent": "item/generated", 
+    "textures": { "layer0": "thaumadditions:items/vis_seeds_0", 
+    "layer1": "contenttweaker:items/vis_seeds_1" }
+}

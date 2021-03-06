@@ -41,6 +41,7 @@ recipes.addShaped(<appliedenergistics2:controller>, [[<rockhounding_chemistry:al
 //interface
 recipes.addShaped(<appliedenergistics2:interface>, [[<thermalfoundation:material:324>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:324>],[<appliedenergistics2:material:44>, <ore:circuitAdvanced>, <appliedenergistics2:material:43>], [<thermalfoundation:material:324>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:324>]]);
 recipes.addShaped(<appliedenergistics2:interface> * 2, [[<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:quartz_glass>, <rockhounding_chemistry:alloy_parts:10>],[<appliedenergistics2:material:44>, <ore:circuitAdvanced>, <appliedenergistics2:material:43>], [<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:quartz_glass>, <rockhounding_chemistry:alloy_parts:10>]]);
+recipes.addShapeless(<appliedenergistics2:interface>, [<appliedenergistics2:part:440>]);
 
 //inscribers
 recipes.addShaped(<ae2stuff:inscriber>, [[<moreplates:dark_steel_plate>, <minecraft:hopper>, <moreplates:dark_steel_plate>],[<threng:material:4>, <appliedenergistics2:inscriber>, <threng:material:4>], [<moreplates:dark_steel_plate>, <minecraft:hopper>, <moreplates:dark_steel_plate>]]);

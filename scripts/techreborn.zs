@@ -2,6 +2,8 @@
 import mods.techreborn.rollingMachine;
 import crafttweaker.item.IItemStack;
 import mods.actuallyadditions.Empowerer;
+import mods.techreborn.blastFurnace;
+import mods.thermalexpansion.Transposer;
 
 print("==================== loading mods techreborn.zs ====================");
 ##########################################################################################
@@ -24,6 +26,9 @@ val itemstoRemove =
 <techreborn:part:2>,
 <techreborn:upgrades>,
 <techreborn:machine_casing:2>,
+<techreborn:machine_casing>,
+<techreborn:reinforced_glass>,
+<techreborn:part:36>,
 ]
  as IItemStack[];
 
@@ -38,6 +43,10 @@ for item in itemstoRemove {
 recipes.addShaped(<techreborn:upgrades>, [[null, <techreborn:part:38>, null], [<techreborn:cable:6>, <ore:circuitElite>, <techreborn:cable:6>]]);
 recipes.addShaped(<techreborn:upgrades>, [[null, <techreborn:part:8>, null], [<techreborn:cable:6>, <ore:circuitElite>, <techreborn:cable:6>]]);
 recipes.addShaped(<techreborn:upgrades>, [[null, <techreborn:part:10>, null], [<techreborn:cable:6>, <ore:circuitElite>, <techreborn:cable:6>]]);
+
+Transposer.addFillRecipe(<techreborn:part:36>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <liquid:cryotheum> * 250, 5000);
+
+
 
 //refined iron
 furnace.remove(<techreborn:ingot:19>);
@@ -70,8 +79,8 @@ mods.techreborn.assemblingMachine.addRecipe(<techreborn:cable:6>, <techreborn:ca
 
 ### Rolling Machine ###
 
-mods.mekatweaker.InfuserType.addTypeObject(<techreborn:ingot:3>, "CHROME", 40);
-mods.mekanism.infuser.addRecipe("CHROME", 10, <thermalfoundation:material:133>, <rockhounding_chemistry:alloy_items_tech:22>);
+mods.mekatweaker.InfuserType.addTypeObject(<techreborn:ingot:3>, "CHROME", 100);
+mods.mekanism.infuser.addRecipe("CHROME", 25, <thermalfoundation:material:133>, <rockhounding_chemistry:alloy_items_tech:22>);
 
 
 //heating coils
@@ -83,7 +92,7 @@ rollingMachine.addShaped(<techreborn:part:14>*2, [[<rockhounding_chemistry:alloy
 
 
 //Terrasteel coil
-rollingMachine.addShaped(<contenttweaker:terrasteel_coil>*4, [[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>],[<botania:manaresource:4>,null,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>]]);
+//rollingMachine.addShaped(<contenttweaker:terrasteel_coil>*4, [[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>],[<botania:manaresource:4>,null,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>]]);
 
 
 
@@ -101,14 +110,20 @@ mods.techreborn.rollingMachine.addShaped(<techreborn:part:13>*2, [[<ore:ingotCon
 Empowerer.addRecipe(<techreborn:machine_frame:1>, <techreborn:machine_frame>, <jaopca:item_platedensecarbon>, <jaopca:item_platedenseintermedium>, <jaopca:item_platedenseenergeticsilver>, <jaopca:item_platedenseadvancedalloy>, 1000000, 400, [0.9, 0.1, 0.2]);
 <techreborn:machine_frame:1>.addTooltip(format.darkPurple("Crafted with 1,000,000 RF"));
 
+//1st Tier Casing
+recipes.addShaped(<techreborn:machine_casing> * 4, [[<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>],[<ore:circuitBasic>, <techreborn:machine_frame>, <ore:circuitBasic>], [<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>]]);
+
 //2nd tier casing
 recipes.addShaped(<techreborn:machine_casing:1> * 4, [[<techreborn:machine_casing>, <ore:circuitAdvanced>, <techreborn:machine_casing>],[<jaopca:item_gearhslasteel>, <moreplates:terrasteel_plate>, <jaopca:item_gearhslasteel>], [<techreborn:machine_casing>, <ore:circuitAdvanced>, <techreborn:machine_casing>]]);
-recipes.addShaped(<techreborn:machine_casing:1> * 4, [[<ore:circuitAdvanced>, <moreplates:terrasteel_plate>, <ore:circuitAdvanced>],[<jaopca:item_platehslasteel>, <techreborn:machine_frame:1>, <jaopca:item_platehslasteel>], [<ore:circuitAdvanced>, <jaopca:item_platehslasteel>, <ore:circuitAdvanced>]]);
+//recipes.addShaped(<techreborn:machine_casing:1> * 4, [[<ore:circuitAdvanced>, <moreplates:terrasteel_plate>, <ore:circuitAdvanced>],[<jaopca:item_platehslasteel>, <techreborn:machine_frame:1>, <jaopca:item_platehslasteel>], [<ore:circuitAdvanced>, <jaopca:item_platehslasteel>, <ore:circuitAdvanced>]]);
 
 //3rd Tier Casing
 recipes.addShaped(<techreborn:machine_casing:2>, [[<techreborn:plates:20>, <ore:circuitElite>, <techreborn:plates:20>],[<environmentaltech:lonsdaleite_crystal>, <techreborn:machine_casing:1>, <environmentaltech:lonsdaleite_crystal>], [<techreborn:plates:20>, <ore:circuitElite>, <techreborn:plates:20>]]);
-recipes.addShaped(<techreborn:machine_casing:2> * 4, [[<techreborn:plates:20>, <ore:circuitElite>, <techreborn:plates:20>],[<environmentaltech:lonsdaleite_crystal>, <techreborn:machine_frame:2>, <environmentaltech:lonsdaleite_crystal>], [<techreborn:plates:20>, <ore:circuitElite>, <techreborn:plates:20>]]);
+//recipes.addShaped(<techreborn:machine_casing:2> * 4, [[<techreborn:plates:20>, <ore:circuitElite>, <techreborn:plates:20>],[<environmentaltech:lonsdaleite_crystal>, <techreborn:machine_frame:2>, <environmentaltech:lonsdaleite_crystal>], [<techreborn:plates:20>, <ore:circuitElite>, <techreborn:plates:20>]]);
 
+
+//Reinforced Glass
+blastFurnace.addRecipe(<techreborn:reinforced_glass>*2, null, <thermalfoundation:glass:3>*2, <techreborn:plates:36>, 1200, 50, 2000);
 
 ### Ginder ###
 /*Clay Dust

@@ -22,6 +22,7 @@ val removerecipes =
 <immersiveengineering:metal_device0>,
 <techreborn:part:29>,
 <techreborn:part:30>,
+<jaopca:item_gearthaumium>,
 ]
 as IItemStack[];
 for item in removerecipes {
@@ -94,16 +95,16 @@ Excavator.addMineral("Sphalerite", 15, 0, ["oreSphalerite", "orePyrite", "oreIro
 //<ore:oreClathrateGlowstone>
 
 Reservoir.registerReservoir("MoltenGold", <liquid:gold>, 216000, 288000, 144, 20, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("MoltenIron", <liquid:iron>, 216000, 288000, 144, 2, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("MoltenNickel", <liquid:nickel>, 216000, 288000, 144, 2, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("MoltenTin", <liquid:tin>, 216000, 288000, 144, 2, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("Moltencopper", <liquid:copper>, 216000, 288000, 144, 2, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("Moltensilver", <liquid:silver>, 216000, 288000, 144, 2, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("Moltenlead", <liquid:lead>, 216000, 288000, 144, 2, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("Moltenpyrotheum", <liquid:pyrotheum>, 187500, 250000, 250, 2, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("Moltencryotheum", <liquid:cryotheum>, 187500, 250000, 250, 2, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("Moltenaerotheum", <liquid:aerotheum>, 187500, 250000, 250, 2, [], [10], ["none"], ["all"]);
-Reservoir.registerReservoir("Moltenpetrotheum", <liquid:petrotheum>, 187500, 250000, 250, 2, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("MoltenIron", <liquid:iron>, 216000, 288000, 144, 20, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("MoltenNickel", <liquid:nickel>, 216000, 288000, 144, 20, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("MoltenTin", <liquid:tin>, 216000, 288000, 144, 20, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("Moltencopper", <liquid:copper>, 216000, 288000, 144, 20, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("Moltensilver", <liquid:silver>, 216000, 288000, 144, 20, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("Moltenlead", <liquid:lead>, 216000, 288000, 144, 20, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("Moltenpyrotheum", <liquid:pyrotheum>, 187500, 250000, 250, 20, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("Moltencryotheum", <liquid:cryotheum>, 187500, 250000, 250, 20, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("Moltenaerotheum", <liquid:aerotheum>, 187500, 250000, 250, 20, [], [10], ["none"], ["all"]);
+Reservoir.registerReservoir("Moltenpetrotheum", <liquid:petrotheum>, 187500, 250000, 250, 20, [], [10], ["none"], ["all"]);
 
 
 //hammer
@@ -115,7 +116,11 @@ recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<ore:blockGlassColo
 
 recipes.addShaped(<immersiveengineering:metal_decoration0:6> * 2, [[<thermalfoundation:material:352>, <immersiveengineering:wirecoil:1>, <thermalfoundation:material:352>],[<immersiveengineering:wirecoil:1>, <immersiveengineering:metal_device1:2>, <immersiveengineering:wirecoil:1>], [<thermalfoundation:material:352>, <immersiveengineering:wirecoil:1>, <thermalfoundation:material:352>]]);
 recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<thermalfoundation:material:352>, <thebetweenlands:octine_ingot>, <thermalfoundation:material:352>],[<thebetweenlands:octine_ingot>, <minecraft:water_bucket>, <thebetweenlands:octine_ingot>], [<thermalfoundation:material:352>, <thebetweenlands:octine_ingot>, <thermalfoundation:material:352>]]);
+
+//Heavy Block
 recipes.addShaped(<immersiveengineering:metal_decoration0:5> * 2, [[<thermalfoundation:material:352>, <immersiveengineering:material:9>, <thermalfoundation:material:352>],[<jaopca:item_gearsyrmorite>, <immersiveengineering:wirecoil:1>, <jaopca:item_gearsyrmorite>], [<thermalfoundation:material:352>, <immersiveengineering:material:9>, <thermalfoundation:material:352>]]);
+
+recipes.addShaped(<immersiveengineering:metal_decoration0:5> * 2, [[<thermalfoundation:material:352>, <immersiveengineering:material:9>, <thermalfoundation:material:352>],[<jaopca:item_gearthaumium>, <immersiveengineering:wirecoil:1>, <jaopca:item_gearthaumium>], [<thermalfoundation:material:352>, <immersiveengineering:material:9>, <thermalfoundation:material:352>]]);
 
 //Redstone block
 recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 1, [[<thermalfoundation:material:32>, <actuallyadditions:item_crystal>, <thermalfoundation:material:32>],[<actuallyadditions:item_crystal>, <advgenerators:iron_wiring>, <actuallyadditions:item_crystal>], [<thermalfoundation:material:32>, <actuallyadditions:item_crystal>, <thermalfoundation:material:32>]]);
@@ -179,6 +184,7 @@ mods.immersiveengineering.AlloySmelter.removeRecipe(item);
 Crusher.removeRecipe(<techreborn:dust:5>*2);
 Crusher.addRecipe(<techreborn:dust:5>*2, <techreborn:ore:4>, 2048, <thermalfoundation:material:68>, 0.1);
 
+//Crusher.addRecipe(<appliedenergistics2:material:46>, <minecraft:ender_pearl>, 1024);
 
 //mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:132>);
 //mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);

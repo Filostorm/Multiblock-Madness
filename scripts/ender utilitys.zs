@@ -1,5 +1,16 @@
+import crafttweaker.item.IItemStack;
 print("==================== loading ender utilitys.zs ====================");
 ##########################################################################################
+
+val itemstoRemove =
+[
+<enderutilities:dolly>,
+]
+ as IItemStack[];
+
+for item in itemstoRemove {
+	recipes.remove(item);
+}
 
 
 //Basic Alloy

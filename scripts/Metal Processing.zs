@@ -31,6 +31,7 @@ for item in itemstoRemove {
 ##=======================================================
 
 
+
 //----------Aluminum
 
 furnace.remove(<ore:ingotAluminium>);
@@ -718,6 +719,7 @@ val Tier4Ingots =[
 <enderio:item_alloy_ingot:1>,
 <enderio:item_alloy_ingot>,
 <thermalfoundation:material:132>,
+<techreborn:ingot:19>,
 ] as IItemStack[];
 for item in Tier4Ingots {
 item.addTooltip(format.aqua("Tier 4 Metal"));
@@ -731,6 +733,7 @@ val Tier5Ingots =[
 <mysticalagriculture:crafting:36>,
 <mysticalagradditions:insanium:2>,
 <mekanism:ingot:1>,
+<tconstruct:ingots:2>,
 ] as IItemStack[];
 for item in Tier5Ingots {
 item.addTooltip(format.gold("Tier 5 Metal"));

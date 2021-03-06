@@ -42,11 +42,18 @@ val removerecipes =
     <actuallyadditions:block_empowerer>,
     <actuallyadditions:block_lava_factory_controller>,
     <actuallyadditions:block_atomic_reconstructor>,
+    <actuallyadditions:block_fermenting_barrel>,
+    <actuallyadditions:block_canola_press>,
 ]
 as IItemStack[];
 for item in removerecipes {
     recipes.remove(item);
 }
+
+//Canola stuff
+recipes.addShaped(<actuallyadditions:block_fermenting_barrel>, [[<ore:plankTreatedWood>, <actuallyadditions:item_crystal:5>, <ore:plankTreatedWood>],[<ore:plankTreatedWood>, <actuallyadditions:item_misc:13>, <ore:plankTreatedWood>], [<ore:plankTreatedWood>, <actuallyadditions:block_misc:4>, <ore:plankTreatedWood>]]);
+recipes.addShaped(<actuallyadditions:block_canola_press>, [[<ore:cobblestone>, <actuallyadditions:item_crystal:5>, <ore:cobblestone>],[<ore:cobblestone>, <actuallyadditions:item_misc:13>, <ore:cobblestone>], [<ore:cobblestone>, <actuallyadditions:item_misc:7>, <ore:cobblestone>]]);
+
 
 recipes.addShaped(<actuallyadditions:item_misc:16>, [[<thermalfoundation:storage_alloy>, <actuallyadditions:item_misc:7>, <thermalfoundation:storage_alloy>],[<actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal>, <actuallyadditions:item_misc:7>], [<thermalfoundation:storage_alloy>, <actuallyadditions:item_misc:7>, <thermalfoundation:storage_alloy>]]);
 
@@ -108,7 +115,7 @@ Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:1>, <actuallyaddi
 //Casing
 recipes.addShaped(<actuallyadditions:block_misc:7> * 4, [[<actuallyadditions:block_crystal:5>, <actuallyadditions:block_misc:9>, <actuallyadditions:block_crystal:5>]]);
 //Farmer
-recipes.addShaped(<actuallyadditions:block_farmer>, [[<minecraft:wheat_seeds>, <thermalfoundation:material:288>, <minecraft:wheat_seeds>],[<thermalfoundation:material:288>, <actuallyadditions:block_misc:7>, <thermalfoundation:material:288>], [<minecraft:wheat_seeds>, <thermalfoundation:material:288>, <minecraft:wheat_seeds>]]);
+recipes.addShaped(<actuallyadditions:block_farmer>, [[<actuallyadditions:item_misc:7>, <thermalfoundation:material:288>, <actuallyadditions:item_misc:7>],[<thermalfoundation:material:288>, <actuallyadditions:block_misc:7>, <thermalfoundation:material:288>], [<actuallyadditions:item_misc:7>, <thermalfoundation:material:288>, <actuallyadditions:item_misc:7>]]);
 
 //Aadvanced Coils
 recipes.addShaped(<actuallyadditions:item_misc:8>, [[null, <techreborn:cable:6>, <immersiveengineering:material>],[<techreborn:cable:6>, <actuallyadditions:item_misc:7>, <techreborn:cable:6>], [<immersiveengineering:material>, <techreborn:cable:6>, null]]);

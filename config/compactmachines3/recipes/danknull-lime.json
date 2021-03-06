@@ -1,0 +1,62 @@
+{
+  "name": "danknull:dank_null_lime",
+
+  "disabled": false,
+
+  "target-item": "danknull:dank_null_5",
+  "target-count": 1,
+
+  "duration": 450,
+  "symmetrical": true,
+
+  "catalyst": "minecraft:emerald_block",
+
+  "input-types": {
+    "c": {
+      "id": "minecraft:coal_block",
+      "meta": 0
+    },
+    "g": {
+      "id": "minecraft:stained_glass",
+      "meta": 5
+    }
+  },
+  "shape": [
+    [
+      [ "c", "c", "c", "c", "c" ],
+      [ "c", "g", "g", "g", "c" ],
+      [ "c", "g", "g", "g", "c" ],
+      [ "c", "g", "g", "g", "c" ],
+      [ "c", "c", "c", "c", "c" ]
+    ],
+    [
+      [ "c", "g", "g", "g", "c" ],
+      [ "g", "_", "_", "_", "g" ],
+      [ "g", "_", "_", "_", "g" ],
+      [ "g", "_", "_", "_", "g" ],
+      [ "c", "g", "g", "g", "c" ]
+    ],
+      [
+      [ "c", "g", "g", "g", "c" ],
+      [ "g", "_", "_", "_", "g" ],
+      [ "g", "_", "_", "_", "g" ],
+      [ "g", "_", "_", "_", "g" ],
+      [ "c", "g", "g", "g", "c" ]
+    ],
+    [
+      [ "c", "g", "g", "g", "c" ],
+      [ "g", "_", "_", "_", "g" ],
+      [ "g", "_", "_", "_", "g" ],
+      [ "g", "_", "_", "_", "g" ],
+      [ "c", "g", "g", "g", "c" ]
+    ],
+    [
+      [ "c", "c", "c", "c", "c" ],
+      [ "c", "g", "g", "g", "c" ],
+      [ "c", "g", "g", "g", "c" ],
+      [ "c", "g", "g", "g", "c" ],
+      [ "c", "c", "c", "c", "c" ]
+    ]
+  ]
+
+}

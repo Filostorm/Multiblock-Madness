@@ -69,6 +69,7 @@ val plantsformossy =
 <minecraft:tallgrass:2>,
 <minecraft:double_plant:2>,
 <minecraft:vine>,
+<minecraft:double_plant:3>
 ]
  as IItemStack[];
 for item in plantsformossy {
@@ -185,8 +186,8 @@ val petalDupe =
  as IItemStack[];
 for item in petalDupe {
 Insolator.addRecipe(item*2, item, <thermalfoundation:fertilizer>, 1500);
-Insolator.addRecipe(item*3, item, <thermalfoundation:fertilizer:1>, 1500);
-Insolator.addRecipe(item*5, item, <thermalfoundation:fertilizer:2>, 1500);
+Insolator.addRecipe(item*3, item, <thermalfoundation:fertilizer:1>, 5000);
+Insolator.addRecipe(item*5, item, <thermalfoundation:fertilizer:2>, 15000);
 }
 //mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance, @Optional int water);
 

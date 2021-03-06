@@ -10,6 +10,8 @@ val itemstoRemove =
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+
+<techreborn:part:13>.displayName = "Constantan Heating Coil";
 */
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

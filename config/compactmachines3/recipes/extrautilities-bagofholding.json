@@ -1,0 +1,83 @@
+{
+  "name": "cm3extrautils2:bagofholding",
+
+  "disabled": true,
+
+  "target-item": "extrautils2:bagofholding",
+  "target-count": 1,
+  
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "botania:manaresource",
+  "catalyst-meta": 16,
+
+  "input-types": {
+    "a": {
+      "id": "minecraft:wool",
+      "meta": 4
+    },
+    "b": {
+      "id": "extrautils2:decorativesolidwood",
+      "meta": 1
+    },
+    "c": {
+      "id": "ironchest:iron_chest",
+      "meta": 1
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "c",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+
+}

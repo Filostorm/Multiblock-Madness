@@ -1,0 +1,124 @@
+{
+	"populate": {
+		"tungsten_vein": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "quark:biotite_ore",
+						"weight": 10
+					},
+					{
+						"name": "thermalfoundation:ore_fluid",
+						"properties": {
+							"type": "ender"
+						},
+						"weight": 10
+					},
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "tungsten"
+						},
+						"weight": 80
+					}
+				],
+				"material": "minecraft:end_stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 1,
+			"min-height": 10,
+			"max-height": 150,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					1
+				]
+			}
+		},
+		"sheldonite_vein": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "sheldonite"
+						},
+						"weight": 75
+					},
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "peridot"
+						},
+						"weight": 10
+					},
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "sodalite"
+						},
+						"weight": 15
+					}
+				],
+				"material": "minecraft:end_stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 1,
+			"min-height": 10,
+			"max-height": 150,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					1
+				]
+			}
+		},
+		"adimantite_vein": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "deepresonance:resonating_ore",
+						"properties": {
+							"oretype": "end"
+						},
+						"weight": 10
+					},
+					{
+						"name": "contenttweaker:sub_block_holder_0",
+						"properties": {
+							"sub_block_number": "8"
+						},
+						"weight": 80
+					},
+					{
+						"name": "rftools:dimensional_shard_ore",
+						"properties": {
+							"oretype": "end"
+						},
+						"weight": 10
+					}
+				],
+				"material": "minecraft:end_stone",
+				"cluster-size": 20
+			},
+			"cluster-count": 1,
+			"min-height": 10,
+			"max-height": 150,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					1
+				]
+			}
+		}
+	}
+}
