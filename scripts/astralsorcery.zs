@@ -33,7 +33,7 @@ mods.astralsorcery.LightTransmutation.removeTransmutation(<astralsorcery:blockcu
 mods.astralsorcery.LightTransmutation.addTransmutation(<contenttweaker:sub_block_holder_0:7>, <astralsorcery:blockcustomore:1>, 10);
 
 //1000 max starlight for first tier altar
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/upgrade_tier2", <astralsorcery:blockaltar:1>, 1000, 200, [
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/upgrade_tier2", <astralsorcery:blockaltar:1>, 950, 200, [
 
 			<arcanearchives:containment_field>, <astralsorcery:blockblackmarble>, <arcanearchives:containment_field>,
 
@@ -50,14 +50,14 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("internal/altar/illuminator", 
 			<astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>]);
 
 
-mods.astralsorcery.Altar.addAttunementAltarRecipe("internal/altar/upgrade_tier3", <astralsorcery:blockaltar:2>, 2000, 400, [
+mods.astralsorcery.Altar.addAttunementAltarRecipe("internal/altar/upgrade_tier3", <astralsorcery:blockaltar:2>, 1900, 400, [
 
 			<astralsorcery:itemcraftingcomponent>, null, <astralsorcery:itemcraftingcomponent>,
 			<astralsorcery:blockmarble:2>, <astralsorcery:itemrockcrystalsimple>, <astralsorcery:blockmarble:2>,
 			<moreplates:energetic_silver_plate>, <contenttweaker:starmetal_block>, <moreplates:energetic_silver_plate>,
 			<embers:focal_lens>, <embers:focal_lens>, <embers:focal_lens>, <embers:focal_lens>]);
 
-mods.astralsorcery.Altar.addConstellationAltarRecipe("internal/altar/upgrade_tier4", <astralsorcery:blockaltar:3>, 4000, 500, [
+mods.astralsorcery.Altar.addConstellationAltarRecipe("internal/altar/upgrade_tier4", <astralsorcery:blockaltar:3>, 3800, 500, [
 
 			<actuallyadditions:item_crystal_empowered:5>, <astralsorcery:blockblackmarble>, <actuallyadditions:item_crystal_empowered:5>,
 			<astralsorcery:blockblackmarble>, <astralsorcery:itemcelestialcrystal>, <astralsorcery:blockblackmarble>,

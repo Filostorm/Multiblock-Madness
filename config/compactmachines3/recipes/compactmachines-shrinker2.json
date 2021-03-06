@@ -1,0 +1,61 @@
+{
+  "name": "cm3:shrinker2",
+
+  "disabled": false,
+
+  "target-item": "compactmachines3:psd",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "enderio:item_material",
+  "catalyst-meta": 20,
+
+  "input-types": {
+    "a": {
+      "id": "immersiveengineering:sheetmetal",
+      "meta": 3
+    },
+    "b": {
+      "id": "actuallyadditions:block_misc",
+      "meta": 6
+    }
+  },
+  "shape": [
+    [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "a"
+      ]
+    ],
+    [
+      [
+        "b"
+      ],
+      [
+        "_"
+      ],
+      [
+        "b"
+      ]
+    ],
+    [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "a"
+      ]
+    ]
+  ]
+
+}

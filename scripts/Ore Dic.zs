@@ -26,11 +26,16 @@ for item in itemstoRemove {
 <ore:basicMarble>.add(<astralsorcery:blockmarble>);
 
 
-<ore:circuitBasic>.add(<thaumcraft:mechanism_complex>);
-/*
+
+<ore:dustEnderPearl>.remove(<techreborn:dust:20>);
+<ore:dustEnder>.add(<techreborn:dust:20>);
+<ore:dustEnder>.remove(<enderore:dust_ender>);
+
 <ore:circuitBasic>.add(<thaumcraft:mechanism_simple>);
 <ore:circuitAdvanced>.add(<thaumcraft:mechanism_complex>);
-*/
+
+//<ore:circuitBasic>.add(<thaumcraft:mechanism_complex>);
+
 //<ore:stickInvar>.add(<tconstruct:tool_rod>.withTag({Material: "invar"}));
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

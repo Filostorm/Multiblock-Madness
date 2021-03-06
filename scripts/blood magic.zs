@@ -50,7 +50,7 @@ BloodAltar.addRecipe(<bloodmagic:inscription_tool:6>.withTag({uses: 10}), <ember
 
 
 mods.thermalexpansion.InductionSmelter.addRecipe(<quark:biotite>, <actuallyadditions:item_misc:5>, <botania:manaresource:15>*8, 5000, <minecraft:glass_bottle>*8, 100);
-mods.techreborn.implosionCompressor.addRecipe(<quark:biotite_block>, null, <quark:biotite>*9, <minecraft:tnt>*16, 40, 5000);
+mods.techreborn.implosionCompressor.addRecipe(<quark:biotite_block>, null, <quark:biotite>*9, <minecraft:tnt>*16, 40, 50000);
 mods.thermalexpansion.Pulverizer.removeRecipe(<quark:biotite_block>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<quark:biotite_slab>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<quark:biotite_block:1>);

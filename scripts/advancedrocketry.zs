@@ -5,6 +5,7 @@ import mods.immersiveengineering.Crusher;
 import mods.thermalexpansion.Pulverizer;
 import mods.mekanism.enrichment;
 import mods.advancedrocketry.PrecisionAssembler;
+import mods.advancedrocketry.Crystallizer;
 
 print("==================== loading mods advancedrocketry-ssp.zs ====================");
 ##########################################################################################
@@ -40,12 +41,23 @@ mods.advancedrocketry.PlatePresser.addRecipe(<thermalfoundation:material:32>*5,<
 
 recipes.addShaped(<libvulpes:advstructuremachine> * 5, [[<libvulpes:structuremachine>, <techreborn:plates:38>, <libvulpes:structuremachine>],[<techreborn:plates:38>, <libvulpes:structuremachine>, <techreborn:plates:38>], [<libvulpes:structuremachine>, <techreborn:plates:38>, <libvulpes:structuremachine>]]);
 
+//Celestial Crystal
+Crystallizer.addRecipe(<astralsorcery:itemcelestialcrystal>, 2400, 5000, <astralsorcery:itemrockcrystalsimple>, <astralsorcery:itemcraftingcomponent:2>); 
 
+
+//Dilithium
+furnace.remove(<libvulpes:productdust>);
 Crusher.removeRecipe(<libvulpes:productgem>);
 Pulverizer.removeRecipe(<libvulpes:ore0>);
-
 enrichment.removeRecipe(<libvulpes:ore0>);
 enrichment.removeRecipe(<libvulpes:productdust>);
+
+Crystallizer.removeRecipe(<libvulpes:productgem>);
+Crystallizer.addRecipe(<libvulpes:productgem>, 600, 7500, <libvulpes:productdust>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "liquidchlorine", Amount: 1000}})); 
+
+
+Crystallizer.removeRecipe(<libvulpes:productboule:3>);
+Crystallizer.addRecipe(<libvulpes:productboule:3>, 600, 5000, <libvulpes:productdust:3>*4); 
 
 recipes.addShaped(<advancedrocketry:ic:5>, [[<moreplates:vivid_alloy_plate>, <appliedenergistics2:material:55>, <moreplates:vivid_alloy_plate>],[<moreplates:vivid_alloy_plate>, <enderio:item_material:41>, <moreplates:vivid_alloy_plate>], [<moreplates:vivid_alloy_plate>, <techreborn:part:43>, <moreplates:vivid_alloy_plate>]]);
 recipes.addShaped(<advancedrocketry:ic:3>, [[<moreplates:vibrant_alloy_plate>, <ore:circuitElite>, <moreplates:vibrant_alloy_plate>],[<moreplates:vibrant_alloy_plate>, <advgenerators:controller>, <moreplates:vibrant_alloy_plate>], [<moreplates:vibrant_alloy_plate>, <techreborn:part:43>, <moreplates:vibrant_alloy_plate>]]);
@@ -80,5 +92,6 @@ PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade:3>, 2400, 25000, <adv
 PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade:4>, 2400, 25000, <advancedrocketry:ic:3>, <advancedrocketry:ic:2>, <libvulpes:battery>, <advancedrocketry:lens>);
 PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade>, 2400, 25000, <advancedrocketry:ic:3>, <advancedrocketry:ic>, <minecraft:redstone>, <minecraft:redstone_torch>);
 PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade:1>, 2400, 25000, <advancedrocketry:ic:3>, <advancedrocketry:ic:2>, <minecraft:diamond>, <minecraft:fire_charge>);
+
 ##########################################################################################
 print("==================== end of mods advancedrocketry-ssp.zs ====================");

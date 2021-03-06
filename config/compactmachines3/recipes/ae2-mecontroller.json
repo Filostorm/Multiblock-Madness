@@ -1,0 +1,87 @@
+{
+  "name": "cm3ae2:mecontroller",
+
+  "disabled": false,
+
+  "target-item": "appliedenergistics2:controller",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "threng:material",
+  "catalyst-meta": "4",
+
+  "input-types": {
+    "a": {
+      "id": "appliedenergistics2:fluix_block",
+      "meta": 0
+    },
+    "b": {
+      "id": "appliedenergistics2:quartz_vibrant_glass",
+      "meta": 0
+    },
+    "c": {
+      "id": "thermalfoundation:storage",
+      "meta": 6
+    },
+    "d": {
+      "id": "techreborn:machine_frame",
+      "meta": 1
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "c",
+        "d",
+        "c"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+}

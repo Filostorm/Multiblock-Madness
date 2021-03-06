@@ -1,0 +1,104 @@
+{
+  "name": "reaper",
+  "creatureType": "undead",
+  "groups": [
+    "monster"
+  ],
+  "entityClass": "com.lycanitesmobs.core.entity.creature.EntityReaper",
+  "modelClass": "com.lycanitesmobs.client.model.creature.ModelReaper",
+  "loadDefault": false,
+  "enabled": true,
+  "spawning": {
+    "enabled": true,
+    "spawners": [
+      "sky"
+    ],
+    "disableSubspecies": false,
+    "dimensionIds": [],
+    "dimensionListType": "blacklist",
+    "ignoreBiome": false,
+    "biomeTags": [
+      "spooky"
+    ],
+    "spawnWeight": 2,
+    "dungeonWeight": 200,
+    "spawnAreaLimit": 1,
+    "spawnGroupMin": 1,
+    "spawnGroupMax": 1,
+    "spawnsInLight": false,
+    "spawnsInDark": true,
+    "worldDayMin": 20,
+    "despawnNatural": true,
+    "despawnForced": false
+  },
+  "width": 0.9,
+  "height": 1.9,
+  "experience": 10,
+  "health": 20,
+  "defense": 0,
+  "armor": 0,
+  "speed": 30,
+  "damage": 10,
+  "attackSpeed": 1,
+  "rangedSpeed": 0.2,
+  "effectDuration": 5,
+  "effectAmplifier": 0,
+  "pierce": 1,
+  "sight": 24,
+  "knockbackResistance": 4,
+  "eggBackColor": "#101519",
+  "eggForeColor": "#DD2233",
+  "subspecies": [
+    {
+      "index": 0,
+      "variants": [
+        {
+          "index": 1,
+          "name": "azure",
+          "type": "uncommon"
+        },
+        {
+          "index": 2,
+          "name": "verdant",
+          "type": "uncommon"
+        }
+      ]
+    }
+  ],
+  "element": "phase",
+  "peaceful": false,
+  "summonable": true,
+  "tameable": false,
+  "mountable": false,
+  "summonCost": 6,
+  "dungeonLevel": 1,
+  "drops": [
+    {
+      "item": "tconstruct:materials:17",
+      "minAmount": 1,
+      "maxAmount": 1,
+      "chance": 1
+    },
+    {
+      "item": "minecraft:obsidian",
+      "minAmount": 1,
+      "maxAmount": 1,
+      "chance": 0.05
+    },
+    {
+      "item": "minecraft:skull",
+      "metadata": 1,
+      "minAmount": 1,
+      "maxAmount": 1,
+      "chance": 0.25
+    },
+    {
+      "item": "lycanitesmobs:spectralboltcharge",
+      "minAmount": 1,
+      "maxAmount": 3,
+      "chance": 1
+    }
+  ],
+  "sizeScale": 1,
+  "hitboxScale": 1
+}

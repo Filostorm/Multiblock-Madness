@@ -1,0 +1,85 @@
+{
+  "name": "cm3enderio:industrial-frame",
+
+  "disabled": false,
+
+  "target-item": "enderio:item_material",
+  "target-count": 1,
+  "target-meta": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "thaumcraft:phial",
+  "catalyst-nbt": "{Aspects: [{amount: 10, key: \"machina\"}]}",
+  "catalyst-meta": 1,
+  
+  "input-types": {
+    "a": {
+      "id": "jaopca:block_sheetmetaldarksteel",
+      "meta": 0
+    },
+    "b": {
+      "id": "enderio:block_dark_iron_bars",
+      "meta": 0
+    },
+    "c": {
+      "id": "techreborn:storage",
+      "meta": 10
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+}

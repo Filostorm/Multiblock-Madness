@@ -1,17 +1,23 @@
 #priority 98
 
 import crafttweaker.item.IItemStack;
-import mods.techreborn.rollingMachine;
 import crafttweaker.oredict.IOreDict;
-import mods.immersiveengineering.Crusher;
-import mods.thermalexpansion.Pulverizer;
-import mods.nuclearcraft.manufactory;
-import mods.techreborn.grinder;
-import mods.techreborn.blastFurnace;
 import mods.enderio.AlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
+import mods.immersiveengineering.Crusher;
+import mods.immersiveengineering.MetalPress;
 import mods.nuclearcraft.alloy_furnace;
+import mods.nuclearcraft.manufactory;
+import mods.nuclearcraft.pressurizer;
+import mods.techreborn.blastFurnace;
+import mods.techreborn.grinder;
+import mods.techreborn.rollingMachine;
+import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Pulverizer;
+import mods.advancedrocketry.PlatePresser;
+import mods.techreborn.implosionCompressor;
+import mods.extendedcrafting.EnderCrafting;
 
 print("==================== loading parts.zs ====================");
 ##########################################################################################
@@ -38,8 +44,8 @@ for item in itemstoRemove {
 recipes.addShapedMirrored(<enderio:item_material:22>*8, [[<minecraft:sand>, <minecraft:clay_ball>, <minecraft:gravel>],[<minecraft:clay_ball>, <enderio:item_material:20>, <minecraft:clay_ball>], [<minecraft:gravel>, <minecraft:clay_ball>, <minecraft:sand>]]);
 recipes.addShapeless(<embers:blend_caminite>*2, [<enderio:item_material:22>,<enderio:item_material:22>]);
 recipes.addShapeless(<tconstruct:soil>*4, [<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>]);
-recipes.addShaped(<enderio:item_material:22>*8, [[<tconstruct:soil>, <tconstruct:soil>, <tconstruct:soil>],[<tconstruct:soil>, <enderio:item_material:20>, <tconstruct:soil>], [<tconstruct:soil>, <tconstruct:soil>, <tconstruct:soil>]]);
-recipes.addShaped(<enderio:item_material:22>*8, [[<embers:blend_caminite>, <embers:blend_caminite>, <embers:blend_caminite>],[<embers:blend_caminite>, <enderio:item_material:20>, <embers:blend_caminite>], [<embers:blend_caminite>, <embers:blend_caminite>, <embers:blend_caminite>]]);
+//recipes.addShaped(<enderio:item_material:22>*8, [[<tconstruct:soil>, <tconstruct:soil>, <tconstruct:soil>],[<tconstruct:soil>, <enderio:item_material:20>, <tconstruct:soil>], [<tconstruct:soil>, <tconstruct:soil>, <tconstruct:soil>]]);
+//recipes.addShaped(<enderio:item_material:22>*8, [[<embers:blend_caminite>, <embers:blend_caminite>, <embers:blend_caminite>],[<embers:blend_caminite>, <enderio:item_material:20>, <embers:blend_caminite>], [<embers:blend_caminite>, <embers:blend_caminite>, <embers:blend_caminite>]]);
 
 
 //scaffolding
@@ -58,25 +64,32 @@ recipes.addShaped(<contenttweaker:nimonic_scaffolding> * 6, [[<rockhounding_chem
 recipes.addShaped(<contenttweaker:vanasteel_scaffolding> * 6, [[<rockhounding_chemistry:alloy_items_tech:40>, <rockhounding_chemistry:alloy_items_tech:40>, <rockhounding_chemistry:alloy_items_tech:40>],[null, <contenttweaker:rod_vanasteel>, null], [<contenttweaker:rod_vanasteel>, null, <contenttweaker:rod_vanasteel>]]);
 recipes.addShaped(<contenttweaker:invar_scaffolding> * 6, [[<thermalfoundation:material:162>, <thermalfoundation:material:162>, <thermalfoundation:material:162>],[null, <moreplates:invar_stick>, null], [<moreplates:invar_stick>, null, <moreplates:invar_stick>]]);
 
+################# PLATES #######################
 //restonia
 //mods.immersiveengineering.MetalPress.addRecipe(<moreplates:restonia_plate>, <actuallyadditions:item_crystal>, <immersiveengineering:mold>, 2000);
-mods.thermalexpansion.Compactor.addStorageRecipe(<moreplates:restonia_plate>, <actuallyadditions:item_crystal>, 1500);
+Compactor.addStorageRecipe(<moreplates:restonia_plate>, <actuallyadditions:item_crystal>, 1500);
 mods.techreborn.plateBendingMachine.addRecipe(<moreplates:restonia_plate>, <actuallyadditions:item_crystal>, 400, 8);
-mods.nuclearcraft.pressurizer.addRecipe([<actuallyadditions:item_crystal>, <moreplates:restonia_plate>]);
+pressurizer.addRecipe([<actuallyadditions:item_crystal>, <moreplates:restonia_plate>]);
 
 //void
-//mods.immersiveengineering.MetalPress.addRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, <immersiveengineering:mold>, 2000);
-mods.thermalexpansion.Compactor.addStorageRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, 1500);
+//MetalPress.addRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, <immersiveengineering:mold>, 2000);
+Compactor.addStorageRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, 1500);
 mods.techreborn.plateBendingMachine.addRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, 400, 8);
-mods.nuclearcraft.pressurizer.addRecipe([<actuallyadditions:item_crystal:3>, <moreplates:void_plate>]);
+pressurizer.addRecipe([<actuallyadditions:item_crystal:3>, <moreplates:void_plate>]);
 
 //void metal
-mods.immersiveengineering.MetalPress.addRecipe(<thaumcraft:plate:3>, <thaumcraft:ingot:1>, <immersiveengineering:mold>, 2000);
+MetalPress.addRecipe(<thaumcraft:plate:3>, <thaumcraft:ingot:1>, <immersiveengineering:mold>, 2000);
 mods.techreborn.plateBendingMachine.addRecipe(<thaumcraft:plate:3>, <thaumcraft:ingot:1>, 400, 8);
 
 //Carbon Plate
-mods.immersiveengineering.MetalPress.addRecipe(<techreborn:plates:2>, <thermalfoundation:storage_resource>, <immersiveengineering:mold>, 2000);
+MetalPress.addRecipe(<techreborn:plates:2>, <thermalfoundation:storage_resource>, <immersiveengineering:mold>, 2000);
 
+//Iriduim Alloy Plate
+Compactor.removeStorageRecipe(<techreborn:ingot:22>);
+MetalPress.removeRecipe(<techreborn:plates:38>);
+pressurizer.removeRecipeWithOutput([<techreborn:plates:38>]);
+PlatePresser.removeRecipe(<techreborn:plates:38>); 
+mods.advancedrocketry.RollingMachine.removeRecipe(<techreborn:plates:38>); 
 
 //sheetmetal
 recipes.addShaped(<contenttweaker:sheetmetal_bronze> * 4, [[null, <ore:plateBronze>, null],[<ore:plateBronze>, null, <ore:plateBronze>], [null, <ore:plateBronze>, null]]);
@@ -306,21 +319,22 @@ ArcFurnace.addRecipe(<appliedenergistics2:quartz_vibrant_glass>, <ore:blockGlass
 alloy_furnace.addRecipe([<appliedenergistics2:quartz_glass>, <minecraft:glowstone_dust>*2, <appliedenergistics2:quartz_vibrant_glass>]);
 
 //polymer_clay
-AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*32, [<randomthings:ingredient:3>, <enderio:item_material:22>*32], 20000);
-ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*32, <randomthings:ingredient:3>, null, 1200, 512, [<enderio:item_material:22>*32], "Alloying");
-alloy_furnace.addRecipe([<randomthings:ingredient:3>, <enderio:item_material:22>*32, <deepmoblearning:polymer_clay>*32]);
 
-AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*16, [<thermalfoundation:material:134>, <enderio:item_material:22>*16], 15000);
-ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*16, <thermalfoundation:material:134>, null, 800, 512, [<enderio:item_material:22>*16], "Alloying");
-alloy_furnace.addRecipe([<thermalfoundation:material:134>, <enderio:item_material:22>*16, <deepmoblearning:polymer_clay>*16]);
+AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*32, [<randomthings:ingredient:3>, <enderio:item_material:22>*16], 20000);
+ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*32, <randomthings:ingredient:3>, null, 1200, 512, [<enderio:item_material:22>*16], "Alloying");
+alloy_furnace.addRecipe([<randomthings:ingredient:3>, <enderio:item_material:22>*16, <deepmoblearning:polymer_clay>*32]);
 
-AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*8, [<minecraft:gold_ingot>, <enderio:item_material:22>*8], 10000);
-ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*8, <minecraft:gold_ingot>, null, 600, 512, [<enderio:item_material:22>*8], "Alloying");
-alloy_furnace.addRecipe([<minecraft:gold_ingot>, <enderio:item_material:22>*8, <deepmoblearning:polymer_clay>*8]);
+AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*16, [<thermalfoundation:material:134>, <enderio:item_material:22>*8], 15000);
+ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*16, <thermalfoundation:material:134>, null, 800, 512, [<enderio:item_material:22>*8], "Alloying");
+alloy_furnace.addRecipe([<thermalfoundation:material:134>, <enderio:item_material:22>*8, <deepmoblearning:polymer_clay>*16]);
 
-AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*4, [<minecraft:iron_ingot>, <enderio:item_material:22>*4], 5000);
-ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*4, <minecraft:iron_ingot>, null, 600, 512, [<enderio:item_material:22>*4], "Alloying");
-alloy_furnace.addRecipe([<minecraft:iron_ingot>, <enderio:item_material:22>*4, <deepmoblearning:polymer_clay>*4]);
+AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*8, [<minecraft:gold_ingot>, <enderio:item_material:22>*4], 10000);
+ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*8, <minecraft:gold_ingot>, null, 600, 512, [<enderio:item_material:22>*4], "Alloying");
+alloy_furnace.addRecipe([<minecraft:gold_ingot>, <enderio:item_material:22>*4, <deepmoblearning:polymer_clay>*8]);
+
+AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*4, [<minecraft:iron_ingot>, <enderio:item_material:22>*2], 5000);
+ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*4, <minecraft:iron_ingot>, null, 600, 512, [<enderio:item_material:22>*2], "Alloying");
+alloy_furnace.addRecipe([<minecraft:iron_ingot>, <enderio:item_material:22>*2, <deepmoblearning:polymer_clay>*4]);
 
 //Specter Ingot
 InductionSmelter.addRecipe(<randomthings:ingredient:3>, <contenttweaker:inert_ingot>, <randomthings:ingredient:2>, 10000);
@@ -343,12 +357,36 @@ AlloySmelter.addRecipe(<enderio:item_material:73>, [<enderio:item_material:11>, 
 
 //Energetic Gear
 InductionSmelter.addRecipe(<enderio:item_material:12>, <enderio:item_material:73>, <enderio:item_alloy_ingot:1>*4, 50000);
-ArcFurnace.addRecipe(<enderio:item_material:12>, <enderio:item_material:73>, null, 500, 4096, [<enderio:item_alloy_ingot:1>*4], "Alloying");
 AlloySmelter.addRecipe(<enderio:item_material:12>, [<enderio:item_material:73>, <enderio:item_alloy_ingot:1>*4], 50000);
 
 //Vibrant Gear
 InductionSmelter.addRecipe(<enderio:item_material:13>, <enderio:item_material:12>, <enderio:item_alloy_ingot:2>*4, 100000);
 AlloySmelter.addRecipe(<enderio:item_material:13>, [<enderio:item_material:12>, <enderio:item_alloy_ingot:2>*4], 100000);
+
+//Manylan
+furnace.remove(<tconstruct:ingots:2>);
+alloy_furnace.removeRecipeWithOutput([<tconstruct:ingots:2>]);
+ArcFurnace.removeRecipe(<tconstruct:ingots:2>);
+blastFurnace.addRecipe(<tconstruct:ingots:2>, null, <tconstruct:ingots>, <tconstruct:ingots:1>, 1800, 80, 2000);
+
+//Dawnstone
+ArcFurnace.addRecipe(<embers:ingot_dawnstone>*2, <minecraft:gold_ingot>*2, null, 500, 4096, [<thermalfoundation:material:128>*2,<minecraft:glowstone_dust>*2,<embers:shard_ember>], "Alloying");
+InductionSmelter.addRecipe(<embers:ingot_dawnstone>*4, <rockhounding_chemistry:alloy_items_deco:4>*4, <embers:shard_ember>, 75000);
+
+//Duskstone
+	recipes.remove(<extendedcrafting:material:36>);
+<extendedcrafting:material:36>.displayName = "Duskstone Ingot";
+<extendedcrafting:storage:5>.displayName = "Duskstone Block";
+AlloySmelter.addRecipe(<extendedcrafting:material:36>, [<techreborn:ingot:15>, <minecraft:ender_eye>,<quark:biotite>], 100000);
+
+//Twilight Ingot
+<extendedcrafting:material:48>.displayName = "Twilight Ingot";
+<extendedcrafting:storage:7>.displayName = "Twilight Block";
+EnderCrafting.remove(<extendedcrafting:material:48>);
+EnderCrafting.addShaped(<extendedcrafting:material:48>, 
+[[<twilightforest:carminite>, <embers:ingot_dawnstone>, <twilightforest:carminite>],
+[<extendedcrafting:material:36>, <actuallyadditions:item_misc:19>, <extendedcrafting:material:36>], 
+[<twilightforest:carminite>, <embers:ingot_dawnstone>, <twilightforest:carminite>]]);  
 
 val alloystoAdapt =
 [
@@ -361,7 +399,6 @@ val alloystoAdapt =
 <enderio:item_alloy_ingot:6>,
 <enderio:item_alloy_ingot:7>,
 <enderio:item_alloy_ingot>,
-<nuclearcraft:alloy:1>,
 <nuclearcraft:alloy:6>,
 <tconstruct:ingots:2>,
 <tconstruct:ingots:5>,

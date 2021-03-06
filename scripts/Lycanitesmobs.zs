@@ -16,6 +16,7 @@ val itemstoRemove =
     <lycanitesmobs:immunizer>,
     <lycanitesmobs:summoningstaff>,
     <lycanitesmobs:cleansingcrystal>,
+    <lycanitesmobs:ironpaxel>,
 ]
  as IItemStack[];
 
@@ -26,10 +27,13 @@ for item in itemstoRemove {
 <ore:crystalforMystical>.add(<lycanitesmobs:cleansingcrystal>);
 
 var pigIron = HighOven.manageMixRecipe(<liquid:pigiron>, <liquid:iron>);
-pigIron.addPurifier(<lycanitesmobs:raw_maka_meat>, 80);
-pigIron.addPurifier(<lycanitesmobs:raw_yeti_meat>, 80);
+pigIron.addPurifier(<lycanitesmobs:raw_maka_meat>, 50);
+pigIron.addPurifier(<lycanitesmobs:raw_yeti_meat>, 50);
 
-recipes.addShaped(<lycanitesmobs:equipmentforge_lesser>, [[<bloodarsenal:blood_infused_wooden_planks>, <bloodarsenal:blood_infused_wooden_planks>, <bloodarsenal:blood_infused_wooden_planks>],[<thebetweenlands:octine_ingot>, <actuallyadditions:block_misc:7>, <thebetweenlands:octine_ingot>], [<minecraft:obsidian>, <minecraft:obsidian>, <minecraft:obsidian>]]);
+
+recipes.addShaped(<lycanitesmobs:equipmentforge_lesser>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:logWood>, <ore:workbench>, <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
+recipes.addShapeless(<lycanitesmobs:ironpaxel>.withTag({equipmentLevel: 1}), [<lycanitesmobs:woodenpaxel>,<tconstruct:shovel_head>.withTag({Material: "iron"}).onlyWithTag({Material: "iron"}),<tconstruct:axe_head>.withTag({Material: "iron"}).onlyWithTag({Material: "iron"}),<tconstruct:pick_head>.withTag({Material: "iron"}).onlyWithTag({Material: "iron"})]);
+
 
 recipes.addShaped(<lycanitesmobs:aberrantstone> * 8, [[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>, <lycanitesmobs:lobdarklingscharge>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
 recipes.addShaped(<lycanitesmobs:lushstone> * 8, [[<botania:livingrock>, <botania:livingrock>, <botania:livingrock>],[<botania:livingrock>, <lycanitesmobs:lifedraincharge>, <botania:livingrock>], [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]]);
@@ -105,6 +109,7 @@ recipes.addShaped(<minecraft:log:3> * 32, [[null, null, null],[null, <lycanitesm
 recipes.addShaped(<minecraft:log:2> * 32, [[null, null, null],[null, <lycanitesmobs:lifedraincharge>, <ore:elementsEarth>], [null, null, null]]);
 recipes.addShaped(<minecraft:log:1> * 32, [[null, <ore:elementsEarth>, null],[null, <lycanitesmobs:lifedraincharge>, null], [null, null, null]]);
 recipes.addShaped(<minecraft:log> * 32, [[null, null, null],[<ore:elementsEarth>, <lycanitesmobs:lifedraincharge>, null], [null, null, null]]);
+recipes.addShaped(<minecraft:log2> * 32, [[null, null, null],[null, <lycanitesmobs:lifedraincharge>, null], [null, null, <ore:elementsEarth>]]);
 recipes.addShaped(<minecraft:coal> * 32, [[<ore:elementsFire>, <ore:elementsEarth>, <lycanitesmobs:crystalshardcharge>]]);
 recipes.addShaped(<minecraft:clay> * 32, [[<ore:elementsWater>, <ore:elementsEarth>, null]]);
 recipes.addShaped(<minecraft:quartz> * 16, [[<ore:elementsEarth>, <lycanitesmobs:crystalshardcharge>, <lycanitesmobs:crystalshardcharge>]]);
@@ -164,6 +169,7 @@ recipes.addShaped(<thermalfoundation:ore:1>*12, [[null, null, <ore:elementsEarth
 recipes.addShaped(<thermalfoundation:ore> * 12, [[<ore:elementsEarth>, null, null],[null, null, null], [null, null, <ore:elementsEarth>]]);
 recipes.addShaped(<thermalfoundation:material:128> * 16, [[<ore:elementsEarth>, null, null],[null, <ore:elementsFire>, null], [null, null, <ore:elementsEarth>]]);
 recipes.addShapeless(<lycanitesmobs:venomshotcharge> * 4, [<lycanitesmobs:poisongland>]);
+recipes.addShaped(<deepresonance:resonating_ore> * 16, [[<lycanitesmobs:crystalshardcharge>, null, <lycanitesmobs:crystalshardcharge>],[null, <lycanitesmobs:boulderblastcharge>, null], [<lycanitesmobs:crystalshardcharge>, null, <lycanitesmobs:crystalshardcharge>]]);
 
 
     <lycanitesmobs:aquapulsecharge>.setAspects(<aspect:aqua> * 30);

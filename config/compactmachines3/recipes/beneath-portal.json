@@ -1,0 +1,45 @@
+{
+  "name": "cm3beneath:portal",
+
+  "disabled": false,
+
+  "target-item": "beneath:teleporterbeneath",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "astralsorcery:itemusabledust",
+  "catalyst-meta": 1,
+
+  "input-types": {
+    "b": {
+      "id": "contenttweaker:starmetal_block",
+      "meta": 0
+    },
+    "s": {
+      "id": "additionalcompression:cobblestone_compressed",
+      "meta": 0
+    }
+
+
+  },
+  "shape": [
+    [
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ]
+    ],
+    [
+      [ "s", "s", "s" ],
+      [ "s", "b", "s" ],
+      [ "s", "s", "s" ]
+    ],
+    [
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ]
+    ]
+  ]
+
+}

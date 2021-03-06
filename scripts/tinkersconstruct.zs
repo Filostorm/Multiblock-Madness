@@ -15,6 +15,7 @@ print("==================== loading mods tinkersconstruct.zs ===================
 ##########################################################################################
 
 	mods.jei.JEI.removeAndHide(<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 0 as short}}));
+recipes.addShaped(<tcomplement:materials:1> * 8, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <embers:dust_ember>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 
 recipes.addShapeless(<tcomplement:scorched_faucet>, [<embers:dust_ember>,<tconstruct:faucet>]);
 recipes.addShapeless(<tcomplement:high_oven_io>, [<embers:dust_ember>,<tconstruct:smeltery_io>]);
@@ -31,8 +32,13 @@ smelteryHeart.add(<tconstruct:seared_tank:2>);
 
 	<liquid:pyrotheum>.definition.temperature = 5300;
 	mods.tconstruct.Fuel.registerFuel(<liquid:pyrotheum> * 25, 400);
+	//Embers
 	<liquid:moltenembers>.definition.temperature = 6300;
 	mods.tconstruct.Fuel.registerFuel(<liquid:moltenembers> * 50, 50);
+	//Starlight
+	<liquid:astralsorcery.liquidstarlight>.definition.temperature = 4300;
+	mods.tconstruct.Fuel.registerFuel(<liquid:astralsorcery.liquidstarlight> * 50, 200);
+
 
 ### CRAFTING RECIPES ###
 
@@ -86,6 +92,9 @@ Alloy.removeRecipe(<liquid:milk_chocolate>);
 Alloy.removeRecipe(<liquid:hydrated_gelatin>);
 Alloy.removeRecipe(<liquid:marshmallow>);
 Alloy.removeRecipe(<liquid:clay>);
+Alloy.removeRecipe(<liquid:tough>);
+Alloy.removeRecipe(<liquid:manyullyn>);
+
 
 //Doesnt seem to work for these
 Alloy.removeRecipe(<liquid:osmiridium>);
@@ -156,7 +165,7 @@ HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix rec
 // HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
 
 var steel = HighOven.newMixRecipe(<liquid:steel> * 144, <liquid:iron> * 144, 1350);
-steel.addOxidizer(<minecraft:redstone>, 33);
+//steel.addOxidizer(<minecraft:redstone>, 33);
 steel.addReducer(<thermalfoundation:material:771>, 33);
 steel.addPurifier(<ore:sand>, 100);
 steel.addPurifier(<thebetweenlands:items_misc:27>, 33);
@@ -165,7 +174,8 @@ steel.register();
 var pulsatingiron = HighOven.newMixRecipe(<liquid:pulsating_iron> * 144, <liquid:iron> * 144, 2300);
 pulsatingiron.addReducer(<enderio:item_material:20>,20);
 //pulsatingiron.addPurifier(<ore:dustEnderPearl>, 100);
-pulsatingiron.addPurifier(<ore:dustEnder>, 100);
+pulsatingiron.addPurifier(<techreborn:dust:20>, 100);
+pulsatingiron.addPurifier(<enderore:dust_ender>, 100);
 pulsatingiron.register();
 
 var conductiveiron = HighOven.newMixRecipe(<liquid:conductive_iron> * 144, <liquid:iron> * 144, 1300);

@@ -102,6 +102,12 @@ val recipestoRemove =
 <scannable:scanner>,
 <scannable:module_blank>,
 <cookingforblockheads:sink>,
+<openmodularturrets:turret_base:1>,
+<openmodularturrets:intermediate_tiered:1>,
+<openmodularturrets:turret_base>,
+<quark:reed_block>,
+<quark:sugar_block>,
+<thaumadditions:iron_framed_greatwood>,
 ]
  as IItemStack[];
 
@@ -157,6 +163,11 @@ val itemstoRemove =
 <actuallyadditions:block_grinder>,
 <actuallyadditions:block_grinder_double>,
 <additionalcompression:string_compressed>,
+<tinker_io:fuel_input_machine>,
+<tinker_io:ore_crusher>,
+<tinker_io:solidfuel>,
+<techreborn:alloy_smelter>,
+<techreborn:iron_alloy_furnace>,
 ]
  as IItemStack[];
 
@@ -187,6 +198,8 @@ mods.jei.JEI.hideCategory("EIOWO");
 mods.jei.JEI.hideCategory("thermalexpansion.factorizer_combine");
 mods.jei.JEI.hideCategory("thermalexpansion.factorizer_split");
 mods.jei.JEI.hideCategory("EIOTank");
+mods.jei.JEI.hideCategory("tinker_io:smart_output");
+mods.jei.JEI.hideCategory("embers.dawnstone_anvil");
 
 ### ADD ORE DICs ###
 
@@ -207,6 +220,11 @@ slimyMoss.add(<thebetweenlands:edge_moss>);
 
 
 ### Add recipes ###
+
+//Super Tome
+recipes.addShaped(<akashictome:tome>.withTag({"akashictome:data": {tconstruct: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {AS_Amulet_HolderLeast: -5854321833218265537 as long, AS_Amulet_HolderMost: -3354768958829737557 as long}}, id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short}, deepresonance: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "deepresonance:dr_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "deepresonance"}, Damage: 0 as short}, astralsorcery: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "astralsorcery:itemjournal", Count: 1 as byte, tag: {"akashictome:definedMod": "astralsorcery"}, Damage: 0 as short}, conarm: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "conarm:book", Count: 1 as byte, tag: {"akashictome:definedMod": "conarm"}, Damage: 0 as short}, immersiveengineering: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "immersiveengineering:tool", Count: 1 as byte, tag: {"akashictome:definedMod": "immersiveengineering"}, Damage: 3 as short}, arcanearchives: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "arcanearchives:tome_arcana", Count: 1 as byte, tag: {"akashictome:definedMod": "arcanearchives", Book: "arcanearchives:xml/tome.xml"}, Damage: 0 as short}, woot: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "guideapi:woot-guide", Count: 1 as byte, tag: {"akashictome:definedMod": "woot"}, Damage: 0 as short}, valkyrielib: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "valkyrielib:guide", Count: 1 as byte, tag: {"akashictome:definedMod": "valkyrielib"}, Damage: 0 as short}, embers: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "embers:codex", Count: 1 as byte, tag: {"akashictome:definedMod": "embers"}, Damage: 0 as short}, cfm: {id: "cfm:item_recipe_book", Count: 1 as byte, tag: {"akashictome:definedMod": "cfm"}, Damage: 0 as short}, rftools: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rftools:rftools_shape_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftools"}, Damage: 0 as short}, deepmoblearning: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short}, solcarrot: {id: "solcarrot:food_book", Count: 1 as byte, tag: {"akashictome:definedMod": "solcarrot"}, Damage: 0 as short}, rftools1: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rftools:rftools_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftools1"}, Damage: 0 as short}, extendedcrafting: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "extendedcrafting:guide", Count: 1 as byte, tag: {"akashictome:definedMod": "extendedcrafting"}, Damage: 0 as short}, botania: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "botania:lexicon", Count: 1 as byte, tag: {"akashictome:definedMod": "botania"}, Damage: 0 as short}, thaumcraft: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "thaumcraft:thaumonomicon", Count: 1 as byte, tag: {"akashictome:definedMod": "thaumcraft"}, Damage: 0 as short}, actuallyadditions: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "actuallyadditions:item_booklet", Count: 1 as byte, tag: {"akashictome:definedMod": "actuallyadditions"}, Damage: 0 as short}, bloodmagic: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "guideapi:bloodmagic-guide", Count: 1 as byte, tag: {"akashictome:definedMod": "bloodmagic"}, Damage: 0 as short}, twilightforest: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "twilightforest", "patchouli:book": "twilightforest:guide"}, Damage: 0 as short}, openblocks: {id: "openblocks:info_book", Count: 1 as byte, tag: {"akashictome:definedMod": "openblocks"}, Damage: 0 as short}, cyclicmagic: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "guideapi:cyclicmagic-guide", Count: 1 as byte, tag: {"akashictome:definedMod": "cyclicmagic"}, Damage: 0 as short}, cookingforblockheads: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "cookingforblockheads:recipe_book", Count: 1 as byte, tag: {"akashictome:definedMod": "cookingforblockheads"}, Damage: 1 as short}}}), [[null, <minecraft:gold_ingot>, null],[<minecraft:gold_ingot>, <ore:bookshelf>, <minecraft:gold_ingot>], [null, <minecraft:gold_ingot>, null]]);
+
+
 //Iron Bars
 recipes.addShaped(<minecraft:iron_bars> * 8, [[<immersiveengineering:material:1>, <immersiveengineering:material:1>, <immersiveengineering:material:1>], [<immersiveengineering:material:1>, <immersiveengineering:material:1>, <immersiveengineering:material:1>]]);
 recipes.addShaped(<minecraft:iron_bars> * 8, [[<tconstruct:tool_rod>.withTag({Material: "iron"}), <tconstruct:tool_rod>.withTag({Material: "iron"}), <tconstruct:tool_rod>.withTag({Material: "iron"})], [<tconstruct:tool_rod>.withTag({Material: "iron"}), <tconstruct:tool_rod>.withTag({Material: "iron"}), <tconstruct:tool_rod>.withTag({Material: "iron"})]]);
@@ -221,7 +239,6 @@ recipes.addShaped(<minecraft:gunpowder> * 15, [[<techreborn:uumatter>, <techrebo
 
 
 recipes.addShaped(<immersiveengineering:stone_decoration:2>, [[<thermalfoundation:material:352>],[<tcomplement:scorched_block:3>], [<embers:shard_ember>]]);
-recipes.addShaped(<tcomplement:materials:1> * 8, [[<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>],[<embers:brick_caminite>, <embers:dust_ember>, <embers:brick_caminite>], [<embers:brick_caminite>, <embers:brick_caminite>, <embers:brick_caminite>]]);
 
 
 recipes.addShapedMirrored(<compactmachines3:fieldprojector>, [[<randomthings:ingredient:7>, <randomthings:ingredient:7>, <randomthings:ingredient:7>],[<randomthings:ingredient:7>, <randomthings:advancedredstonetorch_on>, <tconstruct:pan_head>.withTag({Material: "copper"})], [<embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>]]);
@@ -283,13 +300,18 @@ furnace.addRecipe(<chisel:energizedvoidstone:2>, <chisel:energizedvoidstone>, 1.
 mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<minecraft:ender_pearl>, <enderore:dust_ender>, 75);
 
 //scanner
-recipes.addShaped(<scannable:scanner>, [[<minecraft:iron_bars>, null, <minecraft:iron_bars>],[<advgenerators:iron_wiring>, <rockhounding_chemistry:misc_items:1>, <advgenerators:iron_wiring>], [<moreplates:pulsating_iron_plate>, <embers:ember_detector>, <moreplates:pulsating_iron_plate>]]);
+recipes.addShaped(<scannable:scanner>, [[<minecraft:iron_bars>, null, <minecraft:iron_bars>],[<botania:manaresource:1>, <rockhounding_chemistry:misc_items:1>, <botania:manaresource:1>], [<moreplates:conductive_iron_plate>, <embers:ember_detector>, <moreplates:conductive_iron_plate>]]);
 recipes.addShaped(<scannable:module_blank> * 3, [[<moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>],[<enderio:item_material:22>, <minecraft:paper>, <enderio:item_material:22>], [<enderio:item_material:22>, <rockhounding_chemistry:misc_items:1>, <enderio:item_material:22>]]);
 
-<ironfurnaces:glass_furnace_idle>.displayName = "§bCrystal Furnace";
-<ironfurnaces:glass_furnace_active>.displayName = "§bCrystal Furnace";
-
+//sink
 recipes.addShaped(<cookingforblockheads:sink>, [[<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>],[<minecraft:hardened_clay>, <nuclearcraft:water_source_compact>, <minecraft:hardened_clay>], [<minecraft:hardened_clay>, <minecraft:hardened_clay>, <minecraft:hardened_clay>]]);
+
+//tier 1 turret
+recipes.addShaped(<openmodularturrets:turret_base:1>, [[<thermalfoundation:material:354>, <openmodularturrets:intermediate_tiered:1>, <thermalfoundation:material:354>],[<openmodularturrets:intermediate_regular>, <openmodularturrets:turret_base>, <openmodularturrets:intermediate_regular>], [<thermalfoundation:material:354>, <enderio:item_basic_capacitor>, <thermalfoundation:material:354>]]);
+recipes.addShaped(<openmodularturrets:intermediate_tiered:1>, [[null, <thermalfoundation:material:356>, null],[<thermalfoundation:material:356>, <openmodularturrets:intermediate_tiered>, <thermalfoundation:material:356>], [null, <openmodularturrets:intermediate_regular>, null]]);
+recipes.addShaped(<openmodularturrets:turret_base>, [[<thermalfoundation:material:320>, <openmodularturrets:intermediate_tiered>, <thermalfoundation:material:320>],[<thermalfoundation:material:257>, <thaumadditions:iron_framed_greatwood>, <thermalfoundation:material:257>], [<thermalfoundation:material:320>, <enderio:item_capacitor_grainy>, <thermalfoundation:material:320>]]);
+recipes.addShaped(<thaumadditions:iron_framed_greatwood>, [[null, <thermalfoundation:material:32>, null],[<thermalfoundation:material:32>, <thaumcraft:plank_greatwood>, <thermalfoundation:material:32>], [null, <thermalfoundation:material:32>, null]]);
+
 
 /* Added by Cyclic
 <minecraft:snowball>.maxStackSize = 64;
