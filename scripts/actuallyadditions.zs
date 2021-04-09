@@ -1,8 +1,7 @@
 import mods.actuallyadditions.Empowerer;
 import crafttweaker.item.IItemStack;
 import mods.actuallyadditions.AtomicReconstructor;
-
-print("==================== loading actually additions.zs ====================");
+print("==================== loading actuallyadditions.zs ====================");
 ##########################################################################################
 
 //atomic reconstructor
@@ -147,5 +146,5 @@ AtomicReconstructor.addRecipe(<iceandfire:dragonforge_ice_brick>, <iceandfire:dr
 AtomicReconstructor.addRecipe(<iceandfire:dragonforge_fire_brick>, <iceandfire:dragonforge_ice_brick>, 30000);
 
 ##########################################################################################
-print("==================== end of actually additions.zs ====================");
+print("==================== end of actuallyadditions.zs ====================");
 

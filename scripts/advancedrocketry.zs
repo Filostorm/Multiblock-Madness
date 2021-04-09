@@ -8,7 +8,7 @@ import mods.advancedrocketry.PrecisionAssembler;
 import mods.advancedrocketry.Crystallizer;
 import mods.advancedrocketry.Lathe;
 
-print("==================== loading mods advancedrocketry-ssp.zs ====================");
+print("==================== loading mods advancedrocketry.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -106,4 +106,4 @@ Lathe.addRecipe(<contenttweaker:rod_bam>*2, 300, 20, <ore:ingotBam>.firstItem);
 Lathe.addRecipe(<contenttweaker:rod_scal>*2, 300, 20, <ore:ingotScal>.firstItem);
 
 ##########################################################################################
-print("==================== end of mods advancedrocketry-ssp.zs ====================");
+print("==================== end of mods advancedrocketry.zs ====================");

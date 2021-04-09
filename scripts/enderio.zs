@@ -2,8 +2,7 @@
 import crafttweaker.item.IItemStack;
 import mods.tconstruct.Casting;
 import mods.enderio.AlloySmelter;
-
-print("==================== loading mods enderIO.zs ====================");
+print("==================== loading mods enderio.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -91,4 +90,4 @@ recipes.addShaped(<enderio:item_redstone_conduit> * 8, [[<enderio:item_material:
 
 
 ##########################################################################################
-print("==================== end of mods enderIO.zs ====================");
+print("==================== end of mods enderio.zs ====================");

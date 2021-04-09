@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack;
 import mods.bloodmagic.BloodAltar;
 import mods.botania.ManaInfusion;
-print("==================== loading mods blank.zs ====================");
+print("==================== loading mods cyclic.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -67,4 +67,4 @@ recipes.addShaped(<cyclicmagic:block_miner_smart>, [[<moreplates:energetic_silve
 
 
 ##########################################################################################
-print("==================== end of mods blank.zs ====================");
+print("==================== end of mods cyclic.zs ====================");

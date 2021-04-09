@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Melting;
-print("==================== loading Astral Sorcery ====================");
+print("==================== loading astralsorcery.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -121,4 +121,4 @@ mods.astralsorcery.StarlightInfusion.addInfusion(<arcanearchives:radiant_dust>, 
 
 
 ##########################################################################################
-print("==================== end of Astral Sorcery ====================");
+print("==================== end of astralsorcery.zs ====================");

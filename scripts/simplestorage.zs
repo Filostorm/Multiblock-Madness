@@ -1,5 +1,5 @@
 import crafttweaker.item.IItemStack;
-print("==================== loading simple storage.zs ====================");
+print("==================== loading simplestorage.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -51,4 +51,4 @@ recipes.addShaped(<storagenetwork:remote:1>, [[<moreplates:end_steel_plate>, <ap
 
 
 ##########################################################################################
-print("==================== end of simple storage.zs ====================");
+print("==================== end of simplestorage.zs ====================");

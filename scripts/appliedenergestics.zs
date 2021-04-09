@@ -3,7 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.threng.Aggregator;
 import mods.techreborn.blastFurnace;
 
-print("==================== loading applied.zs ====================");
+print("==================== loading appliedenergistics.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -141,4 +141,4 @@ mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:4>, 600, 100
 
 
 ##########################################################################################
-print("==================== end of applied.zs ====================");
+print("==================== end of appliedenergistics.zs ====================");
