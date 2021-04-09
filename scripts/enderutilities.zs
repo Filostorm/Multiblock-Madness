@@ -1,5 +1,5 @@
 import crafttweaker.item.IItemStack;
-print("==================== loading ender utilitys.zs ====================");
+print("==================== loading enderutilities.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -41,4 +41,4 @@ recipes.addShaped(<enderutilities:storage_0:5>, [[<enderutilities:enderpart:1>, 
 recipes.addShaped(<enderutilities:storage_0:4>, [[<enderutilities:enderpart>, <enderutilities:storage_0:3>, <enderutilities:enderpart>], [<minecraft:piston>, <enderutilities:enderpart:10>, <minecraft:piston>]]);
 
 ##########################################################################################
-print("==================== end of ender utilitys.zs ====================");
+print("==================== end of enderutilities.zs ====================");

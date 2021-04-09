@@ -4,7 +4,7 @@ import mods.thaumcraft.Infusion;
 import mods.botaniatweaks.Agglomeration;
 import mods.extendedcrafting.EnderCrafting;
 
-print("==================== loading creative biz.zs ====================");
+print("==================== loading creative.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -269,4 +269,4 @@ mods.qmd.target_chamber.addRecipe(<extendedcrafting:material>, ((<particle:neutr
 null, null, null, 53000, 0.28, -100000, 0.001);
 
 ##########################################################################################
-print("==================== end of creative biz.zs ====================");
+print("==================== end of creative.zs ====================");

@@ -3,7 +3,7 @@ import mods.advancedrocketry.Crystallizer;
 import mods.rockhounding_chemistry.PullingCrucible;
 import mods.advancedrocketry.PrecisionAssembler;
 
-print("==================== loading mods enviromental tech.zs ====================");
+print("==================== loading mods enviromentaltech.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -72,4 +72,4 @@ item.addTooltip(format.green("Sneak-right click to change modes"));
 
 PrecisionAssembler.addRecipe(<environmentaltech:connector>, 2400, 25000, <techreborn:part:28>*4, <moreplates:redstone_alloy_plate>);
 ##########################################################################################
-print("==================== end of mods enviromental tech.zs ====================");
+print("==================== end of mods enviromentaltech.zs ====================");

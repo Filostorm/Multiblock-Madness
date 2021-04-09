@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.Transposer;
-print("==================== loading mods blank.zs ====================");
+print("==================== loading mods advancedgenerators.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -41,4 +41,4 @@ recipes.addShaped(<advgenerators:pressure_valve>, [[null, <moreplates:dark_steel
 recipes.addShaped(<advancedrocketry:seat>, [[<thermalfoundation:rockwool:7>, <thermalfoundation:rockwool:7>, <thermalfoundation:rockwool:7>]]);
 
 ##########################################################################################
-print("==================== end of mods blank.zs ====================");
+print("==================== end of mods advancedgenerators.zs ====================");

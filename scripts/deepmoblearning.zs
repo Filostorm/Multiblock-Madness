@@ -1,5 +1,5 @@
 import crafttweaker.item.IItemStack;
-print("==================== loading Deep Mob Learning.zs ====================");
+print("==================== loading deepmoblearning.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -33,4 +33,4 @@ recipes.addShapeless(<deepmoblearning:data_model_dragon>.withTag({tier: 1, killC
 recipes.addShapeless(<deepmoblearning:data_model_wither>.withTag({tier: 1, killCount: 1, totalKillCount: 1}), [<deepmoblearning:data_model_blank>,<minecraft:nether_star>]);
 
 ##########################################################################################
-print("==================== end of Deep Mob Learning.zs ====================");
+print("==================== end of deepmoblearning.zs ====================");

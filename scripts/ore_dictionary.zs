@@ -1,7 +1,7 @@
 #priority 100
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
-print("==================== loading mods blank.zs ====================");
+print("==================== loading mods ore_dictionary.zs ====================");
 ##########################################################################################
 /*
 val itemstoRemove =
@@ -57,4 +57,4 @@ for item in basicPlates {
 
 //<ore:stickInvar>.add(<tconstruct:tool_rod>.withTag({Material: "invar"}));
 ##########################################################################################
-print("==================== end of mods blank.zs ====================");
+print("==================== end of mods ore_dictionary.zs ====================");

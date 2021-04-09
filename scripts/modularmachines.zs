@@ -1,7 +1,7 @@
 import mods.modularmachinery.RecipePrimer;
 import crafttweaker.item.IItemStack;
 
-print("==================== loading modular machines.zs ====================");
+print("==================== loading modularmachines.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -522,4 +522,4 @@ VoidSeed.addDimensionRequirement([10]);
 VoidSeed.build();
 
 ##########################################################################################
-print("==================== end of modular machines.zs ====================");
+print("==================== end of modularmachines.zs ====================");

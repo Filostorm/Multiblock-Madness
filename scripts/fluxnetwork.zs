@@ -1,5 +1,5 @@
 import crafttweaker.item.IItemStack;
-print("==================== loading flux network.zs ====================");
+print("==================== loading fluxnetwork.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -16,4 +16,4 @@ recipes.addShaped(<fluxnetworks:fluxcontroller>, [[<fluxnetworks:fluxblock>, <ra
 recipes.addShaped(<fluxnetworks:fluxcore> * 8, [[<fluxnetworks:flux>, <fluxnetworks:flux>, <fluxnetworks:flux>],[<fluxnetworks:flux>, <mekanism:teleportationcore>, <fluxnetworks:flux>], [<fluxnetworks:flux>, <fluxnetworks:flux>, <fluxnetworks:flux>]]);
 
 ##########################################################################################
-print("==================== end of flux network.zs ====================");
+print("==================== end of fluxnetwork.zs ====================");
