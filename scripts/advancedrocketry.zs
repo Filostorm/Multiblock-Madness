@@ -6,6 +6,7 @@ import mods.thermalexpansion.Pulverizer;
 import mods.mekanism.enrichment;
 import mods.advancedrocketry.PrecisionAssembler;
 import mods.advancedrocketry.Crystallizer;
+import mods.advancedrocketry.Lathe;
 
 print("==================== loading mods advancedrocketry-ssp.zs ====================");
 ##########################################################################################
@@ -16,6 +17,7 @@ val itemstoRemove =
 <advancedrocketry:ic:5>,
 <advancedrocketry:ic:4>,
 <advancedrocketry:ic:3>,
+<advancedrocketry:seat>,
 ]
  as IItemStack[];
 
@@ -72,7 +74,10 @@ PrecisionAssembler.clear();
 
 PrecisionAssembler.addRecipe(<advancedrocketry:ic:5>, 1200, 10000, <moreplates:vivid_alloy_plate>*3, <appliedenergistics2:material:55>,<enderio:item_material:41>,<techreborn:part:43>);
 PrecisionAssembler.addRecipe(<advancedrocketry:ic:3>, 1200, 10000, <moreplates:vibrant_alloy_plate>*3, <mekanism:controlcircuit:2>,<advgenerators:controller>,<techreborn:part:43>);
+PrecisionAssembler.addRecipe(<advancedrocketry:ic:3>, 1200, 10000, <moreplates:vibrant_alloy_plate>*3, <techreborn:part:1>,<advgenerators:controller>,<techreborn:part:43>);
 PrecisionAssembler.addRecipe(<advancedrocketry:ic:4>, 1200, 10000, <moreplates:end_steel_plate>*3, <rockhounding_chemistry:misc_items:10>,<rockhounding_chemistry:misc_items:11>,<techreborn:part:43>);
+
+
 
 PrecisionAssembler.addRecipe(<advancedrocketry:itemcircuitplate>, 600, 5000, <advancedrocketry:wafer>, <minecraft:redstone>, <minecraft:gold_ingot>);
 PrecisionAssembler.addRecipe(<advancedrocketry:itemcircuitplate:1>, 1200, 10000, <advancedrocketry:wafer>, <minecraft:gold_ingot>, <minecraft:redstone_block>);
@@ -92,6 +97,13 @@ PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade:3>, 2400, 25000, <adv
 PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade:4>, 2400, 25000, <advancedrocketry:ic:3>, <advancedrocketry:ic:2>, <libvulpes:battery>, <advancedrocketry:lens>);
 PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade>, 2400, 25000, <advancedrocketry:ic:3>, <advancedrocketry:ic>, <minecraft:redstone>, <minecraft:redstone_torch>);
 PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade:1>, 2400, 25000, <advancedrocketry:ic:3>, <advancedrocketry:ic:2>, <minecraft:diamond>, <minecraft:fire_charge>);
+
+
+//The Hacatu Fix
+Lathe.addRecipe(<contenttweaker:rod_nimonic>*2, 300, 20, <ore:ingotNimonic>.firstItem);
+Lathe.addRecipe(<contenttweaker:rod_vanasteel>*2, 300, 20, <ore:ingotVanasteel>.firstItem);
+Lathe.addRecipe(<contenttweaker:rod_bam>*2, 300, 20, <ore:ingotBam>.firstItem);
+Lathe.addRecipe(<contenttweaker:rod_scal>*2, 300, 20, <ore:ingotScal>.firstItem);
 
 ##########################################################################################
 print("==================== end of mods advancedrocketry-ssp.zs ====================");

@@ -1,18 +1,31 @@
 import crafttweaker.item.IItemStack;
+import mods.rockhounding_chemistry.MaterialCabinet;
+import mods.rockhounding_chemistry.Transposer;
+
+
 print("==================== loading mods rockhounding.zs ====================");
 ##########################################################################################
+
+val EletrochemicalCTSR = <rockhounding_chemistry:machines_e:7>;
 
 val itemstoRemove =
 [
     <rockhounding_chemistry:misc_items:13>,
+    EletrochemicalCTSR,
 ]
  as IItemStack[];
 
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+
+
+
 <rockhounding_chemistry:machines_d>.addTooltip("Hold shift to see blocks required for multiblock");
-<rockhounding_chemistry:machines_d>.addShiftTooltip((format.red("- Power Station\n"))+(format.gray("- Material Cabinet\n"))+(format.white("- Elements Cabinet\n"))+(format.yellow("- Optional: Server")));
+<rockhounding_chemistry:machines_d>.addShiftTooltip((format.red("- Power Station")));
+<rockhounding_chemistry:machines_d>.addShiftTooltip((format.gray("- Material Cabinet")));
+<rockhounding_chemistry:machines_d>.addShiftTooltip((format.white("- Elements Cabinet")));
+<rockhounding_chemistry:machines_d>.addShiftTooltip((format.yellow("- Optional: Server")));
 
 mods.enderio.SagMill.addRecipe([<rockhounding_chemistry:chemical_dusts:11>,<techreborn:dust:37>], [0.15,0.1], <rockhounding_chemistry:phosphate_shards:8>);
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:64>,<rockhounding_chemistry:chemical_dusts:52>], [0.20,0.15], <rockhounding_chemistry:phosphate_shards:12>);
@@ -91,6 +104,10 @@ recipes.addShaped(<rockhounding_chemistry:machines_d:4>, [[<contenttweaker:casin
 //output stack: the output to remove
 //mods.rockhounding_chemistry.LabBlender.remove(<minecraft:magma_cream>);
 
+
+recipes.addShaped(EletrochemicalCTSR, [[<rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:machines_a:4>, <rockhounding_chemistry:misc_items:7>],[<rockhounding_chemistry:misc_items:8>, <rockhounding_chemistry:misc_items:1>, <rockhounding_chemistry:misc_items:8>], [<rockhounding_chemistry:misc_items:5>, <rockhounding_chemistry:slurry_agitator>, <rockhounding_chemistry:misc_items:5>]]);
+
+
 // Power Station  =============================================================
 //recipes.remove(<rockhounding_chemistry:machines_a:2>);
 
@@ -129,7 +146,7 @@ recipes.addShaped(<rockhounding_chemistry:machines_d:4>, [[<contenttweaker:casin
 
 ## Air Compressor =============================================================
 recipes.remove(<rockhounding_chemistry:machines_b:10>);
-recipes.addShaped(<rockhounding_chemistry:machines_b:10>, [[<rockhounding_chemistry:misc_items:3>, <rockhounding_chemistry:misc_items:3>, <rockhounding_chemistry:misc_items:3>],[<rockhounding_chemistry:misc_blocks_a>, <rockhounding_chemistry:misc_items:9>, <rockhounding_chemistry:misc_items:7>], [<techreborn:plates:35>, <techreborn:iron_furnace>, <techreborn:plates:35>]]);
+recipes.addShaped(<rockhounding_chemistry:machines_b:10>, [[<rockhounding_chemistry:misc_items:3>, <rockhounding_chemistry:misc_items:3>, <rockhounding_chemistry:misc_items:3>],[<rockhounding_chemistry:misc_blocks_a>, <rockhounding_chemistry:misc_items:9>, <rockhounding_chemistry:misc_items:7>], [<techreborn:plates:35>, <morefurnaces:furnaceblock>, <techreborn:plates:35>]]);
 
 // Gas Holder =============================================================
 //recipes.remove(<rockhounding_chemistry:machines_d:6>);
@@ -206,17 +223,19 @@ mods.rockhounding_chemistry.ChemicalExtractor.add("Rare Earth", <thaumcraft:nugg
 //symbol: a 2 chars symbol appearing on screen
 //oredict: the element oredict to be added
 //name: the display name of the added element
-mods.rockhounding_chemistry.MaterialCabinet.add("Sy", "dustSyrmorite", "Syrmorite");
-mods.rockhounding_chemistry.MaterialCabinet.add("Oc", "dustOctine", "Octine");
+MaterialCabinet.add("Sy", "dustSyrmorite", "Syrmorite");
+MaterialCabinet.add("Oc", "dustOctine", "Octine");
 
-mods.rockhounding_chemistry.MaterialCabinet.add("Ar", "dustArdite", "Ardite");
-mods.rockhounding_chemistry.MaterialCabinet.add("Gl", "dustGlowstone", "Glowstone");
-mods.rockhounding_chemistry.MaterialCabinet.add("Bz", "dustBlaze", "Blaze Powder");     
+MaterialCabinet.add("Ar", "dustArdite", "Ardite");
+MaterialCabinet.add("Gl", "dustGlowstone", "Glowstone");
+MaterialCabinet.add("Bz", "dustBlaze", "Blaze Powder");     
 
-mods.rockhounding_chemistry.MaterialCabinet.add("Ad", "dustAdamantine", "Adamantine");
-mods.rockhounding_chemistry.MaterialCabinet.add("Or", "dustOrichalcum", "Orichalcum");
-mods.rockhounding_chemistry.MaterialCabinet.add("Pl", "dustPalladium", "Palladium");
-mods.rockhounding_chemistry.MaterialCabinet.add("St", "dustAstralStarmetal", "Starmetal");
+MaterialCabinet.add("Ad", "dustAdamantine", "Adamantine");
+MaterialCabinet.add("Or", "dustOrichalcum", "Orichalcum");
+MaterialCabinet.add("Pl", "dustPalladium", "Palladium");
+MaterialCabinet.add("St", "dustAstralStarmetal", "Starmetal");
+
+MaterialCabinet.add("Hf", "dustHafnium", "Hafnium");
 
 
 
@@ -240,18 +259,18 @@ mods.rockhounding_chemistry.MetalAlloyer.remove(<rockhounding_chemistry:alloy_it
 //mods.rockhounding_chemistry.MetalAlloyer.add(["dustNickel", "dustChromium", "dustIron", "dustSilicon", "dustManganese", "dustMolybdenum"], [70, 20, 1, 2, 3, 4], <rockhounding_chemistry:alloy_items_tech:22>);
 
 // Transposer echanges  =============================================================
-mods.rockhounding_chemistry.Transposer.add(<liquid:ammonia>*1000, <liquid:ammonia>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:carbon_dioxide>*1000, <liquid:carbon_dioxide>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:compressed_air>*1000, <liquid:compressed_air>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:hydrogen>*1000, <liquid:hydrogen>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:liquid_oxygen>*1000, <liquid:liquidoxygen>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:liquidoxygen>*1000, <liquid:liquid_oxygen>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:nitrogen>*1000, <liquid:nitrogen>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:oxygen>*1000, <liquid:oxygen>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:raw_syngas>*1000, <liquid:raw_syngas>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:silicone>*1000, <liquid:silicone>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:syngas>*1000, <liquid:syngas>*1000);
-mods.rockhounding_chemistry.Transposer.add(<liquid:sodium_hydroxide>*1000, <liquid:sodium_hydroxide_solution>*1000);
+Transposer.add(<liquid:ammonia>*1000, <liquid:ammonia>*1000);
+Transposer.add(<liquid:carbon_dioxide>*1000, <liquid:carbon_dioxide>*1000);
+Transposer.add(<liquid:compressed_air>*1000, <liquid:compressed_air>*1000);
+Transposer.add(<liquid:hydrogen>*1000, <liquid:hydrogen>*1000);
+Transposer.add(<liquid:liquid_oxygen>*1000, <liquid:liquidoxygen>*1000);
+Transposer.add(<liquid:liquidoxygen>*1000, <liquid:liquid_oxygen>*1000);
+Transposer.add(<liquid:nitrogen>*1000, <liquid:nitrogen>*1000);
+Transposer.add(<liquid:oxygen>*1000, <liquid:oxygen>*1000);
+Transposer.add(<liquid:raw_syngas>*1000, <liquid:raw_syngas>*1000);
+Transposer.add(<liquid:silicone>*1000, <liquid:silicone>*1000);
+Transposer.add(<liquid:syngas>*1000, <liquid:syngas>*1000);
+Transposer.add(<liquid:sodium_hydroxide>*1000, <liquid:sodium_hydroxide_solution>*1000);
 
 
 

@@ -51,114 +51,115 @@ VanillaFactory.createItem("magic_token_tier5").register();
 VanillaFactory.createItem("terrasteel_coil").register();
 VanillaFactory.createItem("blood_crystal").register();
 VanillaFactory.createItem("adaptive_ingot").register();
-VanillaFactory.createItem("casingSteel").register();
-VanillaFactory.createItem("casingPlatinum").register();
-VanillaFactory.createItem("foilInvar").register();
-VanillaFactory.createItem("foilSteel").register();
-VanillaFactory.createItem("foilDarkSteel").register();
-VanillaFactory.createItem("foilHydronalium").register();
-VanillaFactory.createItem("rodInvar").register();
-VanillaFactory.createItem("rodSteel").register();
-VanillaFactory.createItem("rodDarkSteel").register();
-VanillaFactory.createItem("rodHydronalium").register();
+VanillaFactory.createItem("casingsteel").register();
+VanillaFactory.createItem("casingplatinum").register();
+VanillaFactory.createItem("foilinvar").register();
+VanillaFactory.createItem("foilsteel").register();
+VanillaFactory.createItem("foildarkSteel").register();
+VanillaFactory.createItem("foilhydronalium").register();
+VanillaFactory.createItem("rodinvar").register();
+VanillaFactory.createItem("rodsteel").register();
+VanillaFactory.createItem("roddarksteel").register();
+VanillaFactory.createItem("rodhydronalium").register();
 
 VanillaFactory.createItem("purpleprint").register();
+VanillaFactory.createItem("ingot_xp").register();
 
-var activatedAspectusCopper = VanillaFactory.createItem("activatedAspectusCopper");
-activatedAspectusCopper.maxStackSize = 1;
-activatedAspectusCopper.rarity = "rare";
-activatedAspectusCopper.glowing = true;
-activatedAspectusCopper.itemRightClick = function(stack, world, player, hand) {
+var activatedaspectuscopper = VanillaFactory.createItem("activatedaspectuscopper");
+activatedaspectuscopper.maxStackSize = 1;
+activatedaspectuscopper.rarity = "rare";
+activatedaspectuscopper.glowing = true;
+activatedaspectuscopper.itemRightClick = function(stack, world, player, hand) {
     Commands.call("time add 1000", player, world, true, true);
     return "Pass";
 };
-activatedAspectusCopper.register();
+activatedaspectuscopper.register();
 
-var activatedAspectusSilver = VanillaFactory.createItem("activatedAspectusSilver");
-activatedAspectusSilver.maxStackSize = 1;
-activatedAspectusSilver.rarity = "rare";
-activatedAspectusSilver.glowing = true;
-activatedAspectusSilver.itemRightClick = function(stack, world, player, hand) {
+var activatedaspectussilver = VanillaFactory.createItem("activatedaspectussilver");
+activatedaspectussilver.maxStackSize = 1;
+activatedaspectussilver.rarity = "rare";
+activatedaspectussilver.glowing = true;
+activatedaspectussilver.itemRightClick = function(stack, world, player, hand) {
     Commands.call("toggledownfall", player, world, true, true);
     return "Pass";
 };
-activatedAspectusSilver.register();
+activatedaspectussilver.register();
 
-var activatedAspectusDawnstone = VanillaFactory.createItem("activatedAspectusDawnstone");
-activatedAspectusDawnstone.maxStackSize = 1;
-activatedAspectusDawnstone.rarity = "rare";
-activatedAspectusDawnstone.glowing = true;
-/*activatedAspectusDawnstone.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("toggledownfall", player, world, true, true);
+var activatedaspectusdawnstone = VanillaFactory.createItem("activatedaspectusdawnstone");
+activatedaspectusdawnstone.maxStackSize = 1;
+activatedaspectusdawnstone.rarity = "rare";
+activatedaspectusdawnstone.glowing = true;
+activatedaspectusdawnstone.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("time set day", player, world, true, true);
     return "Pass";
-};*/
-activatedAspectusDawnstone.register();
+};
+activatedaspectusdawnstone.register();
 
-var gearCrushingInvar = VanillaFactory.createItem("gearCrushingInvar");
-gearCrushingInvar.maxStackSize = 1;
-gearCrushingInvar.rarity = "common";
-gearCrushingInvar.maxDamage = 512;
-//gearCrushingInvar.glowing = true;
-gearCrushingInvar.register();
+var gearcrushinginvar = VanillaFactory.createItem("gearcrushinginvar");
+gearcrushinginvar.maxStackSize = 1;
+gearcrushinginvar.rarity = "common";
+gearcrushinginvar.maxDamage = 512;
+//gearcrushinginvar.glowing = true;
+gearcrushinginvar.register();
 
-var gearCrushingSteel = VanillaFactory.createItem("gearCrushingSteel");
-gearCrushingSteel.maxStackSize = 1;
-gearCrushingSteel.rarity = "common";
-gearCrushingSteel.maxDamage = 1024;
-//gearCrushingSteel.glowing = true;
-gearCrushingSteel.register();
+var gearcrushingsteel = VanillaFactory.createItem("gearcrushingsteel");
+gearcrushingsteel.maxStackSize = 1;
+gearcrushingsteel.rarity = "common";
+gearcrushingsteel.maxDamage = 1024;
+//gearcrushingsteel.glowing = true;
+gearcrushingsteel.register();
 
-var gearCrushingDarkSteel = VanillaFactory.createItem("gearCrushingDarkSteel");
-gearCrushingDarkSteel.maxStackSize = 1;
-gearCrushingDarkSteel.rarity = "uncommon";
-gearCrushingDarkSteel.maxDamage = 2048;
-//gearCrushingDarkSteel.glowing = true;
-gearCrushingDarkSteel.register();
+var gearcrushingdarksteel = VanillaFactory.createItem("gearcrushingdarksteel");
+gearcrushingdarksteel.maxStackSize = 1;
+gearcrushingdarksteel.rarity = "uncommon";
+gearcrushingdarksteel.maxDamage = 2048;
+//gearcrushingdarksteel.glowing = true;
+gearcrushingdarksteel.register();
 
-var gearCrushingCortenSteel = VanillaFactory.createItem("gearCrushingCortenSteel");
-gearCrushingCortenSteel.maxStackSize = 1;
-gearCrushingCortenSteel.rarity = "rare";
-gearCrushingCortenSteel.maxDamage = 4096;
-//gearCrushingCortenSteel.glowing = true;
-gearCrushingCortenSteel.register();
+var gearcrushingCortensteel = VanillaFactory.createItem("gearcrushingcortensteel");
+gearcrushingCortensteel.maxStackSize = 1;
+gearcrushingCortensteel.rarity = "rare";
+gearcrushingCortensteel.maxDamage = 4096;
+//gearcrushingCortensteel.glowing = true;
+gearcrushingCortensteel.register();
 
-var gearCrushingVanasteel = VanillaFactory.createItem("gearCrushingVanasteel");
-gearCrushingVanasteel.maxStackSize = 1;
-gearCrushingVanasteel.rarity = "epic";
-gearCrushingVanasteel.maxDamage = 8192;
-//gearCrushingVanasteel.glowing = true;
-gearCrushingVanasteel.register();
+var gearcrushingVanasteel = VanillaFactory.createItem("gearcrushingvanasteel");
+gearcrushingVanasteel.maxStackSize = 1;
+gearcrushingVanasteel.rarity = "epic";
+gearcrushingVanasteel.maxDamage = 8192;
+//gearcrushingVanasteel.glowing = true;
+gearcrushingVanasteel.register();
 
 
-var agitatorInvar = VanillaFactory.createItem("agitatorInvar");
+var agitatorInvar = VanillaFactory.createItem("agitatorinvar");
 agitatorInvar.maxStackSize = 1;
 agitatorInvar.rarity = "common";
 agitatorInvar.maxDamage = 512;
 //agitatorInvar.glowing = true;
 agitatorInvar.register();
 
-var agitatorSteel = VanillaFactory.createItem("agitatorSteel");
-agitatorSteel.maxStackSize = 1;
-agitatorSteel.rarity = "common";
-agitatorSteel.maxDamage = 1024;
-//agitatorSteel.glowing = true;
-agitatorSteel.register();
+var agitatorsteel = VanillaFactory.createItem("agitatorsteel");
+agitatorsteel.maxStackSize = 1;
+agitatorsteel.rarity = "common";
+agitatorsteel.maxDamage = 1024;
+//agitatorsteel.glowing = true;
+agitatorsteel.register();
 
-var agitatorDarkSteel = VanillaFactory.createItem("agitatorDarkSteel");
-agitatorDarkSteel.maxStackSize = 1;
-agitatorDarkSteel.rarity = "uncommon";
-agitatorDarkSteel.maxDamage = 2048;
-//agitatorDarkSteel.glowing = true;
-agitatorDarkSteel.register();
+var agitatordarksteel = VanillaFactory.createItem("agitatordarksteel");
+agitatordarksteel.maxStackSize = 1;
+agitatordarksteel.rarity = "uncommon";
+agitatordarksteel.maxDamage = 2048;
+//agitatordarksteel.glowing = true;
+agitatordarksteel.register();
 
-var agitatorHydronalium = VanillaFactory.createItem("agitatorHydronalium");
+var agitatorHydronalium = VanillaFactory.createItem("agitatorhydronalium");
 agitatorHydronalium.maxStackSize = 1;
 agitatorHydronalium.rarity = "rare";
 agitatorHydronalium.maxDamage = 4096;
 //agitatorHydronalium.glowing = true;
 agitatorHydronalium.register();
 
-var agitatorHastelloy = VanillaFactory.createItem("agitatorHastelloy");
+var agitatorHastelloy = VanillaFactory.createItem("agitatorhastelloy");
 agitatorHastelloy.maxStackSize = 1;
 agitatorHastelloy.rarity = "epic";
 agitatorHastelloy.maxDamage = 8192;

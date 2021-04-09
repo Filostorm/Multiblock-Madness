@@ -8,6 +8,18 @@
 		]
 	},
 	{
+		"name": "scaffolding",
+		"type": "block",
+		"ore_types": [
+			"ingot",
+			"ingot_oreless"
+		],
+		"properties": {
+			"full": false,
+			"opaque": false
+		}
+	},
+	{
 		"name": "crushedlump",
 		"type": "item",
 		"ore_types": [

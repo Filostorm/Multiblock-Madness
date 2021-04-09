@@ -2,7 +2,7 @@
     "registryname": "minifield-crafter",
     "localizedname": "3D Crafter",
     "requires-blueprint": true,
-    "color": "0d5914",
+    "color": "757575",
     "parts": [
         {
             "x": 0,

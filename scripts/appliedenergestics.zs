@@ -39,8 +39,8 @@ for item in itemstoRemove {
 recipes.addShaped(<appliedenergistics2:controller>, [[<rockhounding_chemistry:alloy_parts:43>, <mekanism:controlcircuit:3>, <rockhounding_chemistry:alloy_parts:43>],[<advancedrocketry:ic:2>, <techreborn:part:1>, <enderutilities:enderpart:54>], [<rockhounding_chemistry:alloy_parts:43>, <rockhounding_chemistry:misc_items:10>, <rockhounding_chemistry:alloy_parts:43>]]);
 
 //interface
-recipes.addShaped(<appliedenergistics2:interface>, [[<thermalfoundation:material:324>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:324>],[<appliedenergistics2:material:44>, <ore:circuitAdvanced>, <appliedenergistics2:material:43>], [<thermalfoundation:material:324>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:324>]]);
-recipes.addShaped(<appliedenergistics2:interface> * 2, [[<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:quartz_glass>, <rockhounding_chemistry:alloy_parts:10>],[<appliedenergistics2:material:44>, <ore:circuitAdvanced>, <appliedenergistics2:material:43>], [<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:quartz_glass>, <rockhounding_chemistry:alloy_parts:10>]]);
+recipes.addShaped(<appliedenergistics2:interface>, [[<thermalfoundation:material:324>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:324>],[<appliedenergistics2:material:44>, <techreborn:part:43>, <appliedenergistics2:material:43>], [<thermalfoundation:material:324>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:324>]]);
+recipes.addShaped(<appliedenergistics2:interface> * 2, [[<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:quartz_glass>, <rockhounding_chemistry:alloy_parts:10>],[<appliedenergistics2:material:44>, <techreborn:part:43>, <appliedenergistics2:material:43>], [<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:quartz_glass>, <rockhounding_chemistry:alloy_parts:10>]]);
 recipes.addShapeless(<appliedenergistics2:interface>, [<appliedenergistics2:part:440>]);
 
 //inscribers
@@ -50,7 +50,7 @@ recipes.addShapedMirrored(<appliedenergistics2:inscriber>, [[<enderio:item_alloy
 //drives
 recipes.addShaped(<appliedenergistics2:drive>, [[<thermalfoundation:material:324>, <appliedenergistics2:part:16>, <thermalfoundation:material:324>],[<appliedenergistics2:material:24>, null, <appliedenergistics2:material:24>], [<thermalfoundation:material:324>, <appliedenergistics2:part:16>, <thermalfoundation:material:324>]]);
 recipes.addShaped(<appliedenergistics2:drive> * 2, [[<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:part:16>, <rockhounding_chemistry:alloy_parts:10>],[<appliedenergistics2:material:24>, null, <appliedenergistics2:material:24>], [<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:part:16>, <rockhounding_chemistry:alloy_parts:10>]]);
-recipes.addShapeless(<extracells:part.base:7>, [<appliedenergistics2:drive:*>, <thermalfoundation:material:*>,<thermalfoundation:material:132>]);
+recipes.addShapeless(<extracells:part.base:7>, [<appliedenergistics2:drive:*>, <thermalfoundation:material:132>,<thermalfoundation:material:132>]);
 
 recipes.addShaped(<appliedenergistics2:quartz_growth_accelerator>, [[<moreplates:dark_steel_plate>, <appliedenergistics2:part:16>, <moreplates:dark_steel_plate>],[<appliedenergistics2:quartz_glass>, <appliedenergistics2:fluix_block>, <appliedenergistics2:quartz_glass>], [<moreplates:dark_steel_plate>, <appliedenergistics2:part:16>, <moreplates:dark_steel_plate>]]);
 
@@ -123,7 +123,9 @@ recipes.addShaped(<threng:material:4>, [[<threng:material>, <appliedenergistics2
 
 //upgrades from simple storage network
 recipes.addShaped(<appliedenergistics2:part:240>, [[null, <appliedenergistics2:material:44>, null], [<thermalfoundation:material:132>, <storagenetwork:im_kabel>, <thermalfoundation:material:132>]]);
+recipes.addShaped(<appliedenergistics2:part:240>*2, [[null, <appliedenergistics2:material:44>, null], [<rockhounding_chemistry:alloy_items_tech:4>, <storagenetwork:im_kabel>, <rockhounding_chemistry:alloy_items_tech:4>]]);
 recipes.addShaped(<appliedenergistics2:part:260>, [[<thermalfoundation:material:132>, <appliedenergistics2:material:43>, <thermalfoundation:material:132>], [null, <storagenetwork:ex_kabel>, null]]);
+recipes.addShaped(<appliedenergistics2:part:260> * 2, [[<rockhounding_chemistry:alloy_items_tech:4>, <appliedenergistics2:material:43>, <rockhounding_chemistry:alloy_items_tech:4>], [null, <storagenetwork:ex_kabel>, null]]);
 recipes.addShapeless(<appliedenergistics2:part:220>, [<appliedenergistics2:interface>,<storagenetwork:storage_kabel>]);
 recipes.addShapeless(<appliedenergistics2:part:36>, [<storagenetwork:kabel>, <minecraft:wool:*>]);
 

@@ -2,6 +2,7 @@
 
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
 mods.unidict.removalByKind.get("Crafting").remove("plate");
 mods.unidict.removalByKind.get("Crafting").remove("rod");
 mods.unidict.removalByKind.get("Crafting").remove("gear");
@@ -34,7 +35,6 @@ recipes.addShaped(<artisanworktables:toolbox>, [[<enderio:item_material:10>, <th
 val recipestoRemove =
 [
   <embers:plate_dawnstone>,
-  <woot:stygianironplate>
 ]
  as IItemStack[];
 
@@ -179,14 +179,7 @@ RecipeBuilder.get("blacksmith")
   .addOutput(<embers:plate_dawnstone>)
   .create();
 
-// Stygian Iron Plates =======================================================================================================================================
-recipes.addShaped(<woot:stygianironplate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<woot:stygianironingot>], [<woot:stygianironingot>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<woot:stygianironingot>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<woot:stygianironplate>)
-  .create();
+
 
 // Ironwood Plates =======================================================================================================================================
 recipes.addShaped(<moreplates:ironwood_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<twilightforest:ironwood_ingot>], [<twilightforest:ironwood_ingot>]]);
@@ -604,5 +597,27 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansFile>, 25)
   .addOutput(<contenttweaker:adamantine_feet>)
   .create();
+
+
+
+//--------------Wires------------------
+<ore:artisansCutters>.add(<immersiveengineering:tool:1>);
+
+val WireCutting as IItemStack[IOreDictEntry] = {
+  <ore:plateCopper>:<immersiveengineering:material:20>,
+  <ore:plateElectrum>:<immersiveengineering:material:21>,
+  <ore:plateAluminum>:<immersiveengineering:material:22>,
+  <ore:plateSteel>:<immersiveengineering:material:23>,
+} as IItemStack[IOreDictEntry];
+
+for plate, wire in WireCutting {
+  RecipeBuilder.get("blacksmith")
+  .setShapeless([plate])
+  .setFluid(<liquid:lava> * 25)
+  .addTool(<ore:artisansCutters>, 10)
+  .addOutput(wire)
+  .create();
+	recipes.remove(wire);
+}
 ##########################################################################################
 print("==================== end of mods artisansworktables.zs ====================");

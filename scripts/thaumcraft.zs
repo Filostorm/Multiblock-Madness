@@ -6,6 +6,8 @@ import mods.thaumcraft.ArcaneWorkbench;
 import mods.thaumcraft.Crucible;
 import mods.thaumcraft.Infusion;
 import crafttweaker.item.IItemStack;
+import mods.arcanearchives.GCT;
+import mods.thaumcraft.SalisMundus;
 
 print("==================== loading mods thaumcraft.zs ====================");
 ##########################################################################################
@@ -39,6 +41,8 @@ preciousGems.add(<techreborn:gem:4>);
 
   <contenttweaker:material_part:3>.setAspects(<aspect:metallum> * 15);
 
+<thaumictinkerer:energetic_nitor>.addTooltip(format.gold("Lights up the surrounding area while in your inventory"));
+<thaumcraft:void_seed>.addTooltip(format.darkPurple("Collected from closing Void Rifts"));
 ### CRAFTING RECIPES ###
 
 // thaumometer
@@ -69,10 +73,17 @@ ArcaneWorkbench.registerShapedRecipe("CTArcaneStone", "", 10, [],
         [<embers:ashen_stone>, <embers:ashen_stone>, <embers:ashen_stone>]
     ]
 );
+
+//Quartz Slivers
+GCT.addRecipe("nuggets", <thaumcraft:nugget:9>, [<arcanearchives:quartz_sliver>]);
+
+
+mods.astralsorcery.LightTransmutation.addTransmutation(<embers:ashen_stone>, <thaumcraft:stone_arcane>, 5);
+
 ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_basic>);
 ArcaneWorkbench.registerShapedRecipe("CTBrassSmelter", "", 50, [<aspect:ignis>],
 <thaumcraft:smelter_basic>, 
-[[<thaumcraft:plate>, <thaumcraft:crucible>, <thaumcraft:plate>],
+[[<ore:plateBrass>, <thaumcraft:crucible>, <ore:plateBrass>],
 [<botania:livingrock>, <embers:superheater>, <botania:livingrock>], 
 [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]]
 );
@@ -102,10 +113,12 @@ Crucible.registerRecipe("AstralNitor", "",
     <thaumcraft:nitor_yellow>, <astralsorcery:itemusabledust>,
 	[<aspect:lux> * 10,<aspect:ignis> * 10,<aspect:potentia> * 10]
 );
+/*
 Crucible.registerRecipe("GreatwoodLog", "",
     <thaumcraft:log_greatwood>, <ore:logWood>,
 	[<aspect:herba> * 20,<aspect:victus> * 5,<aspect:praecantatio> * 5]
 );
+*/
 Crucible.registerRecipe("GreatwoodSapling", "",
     <thaumcraft:sapling_greatwood>, <ore:treeSapling>,
 	[<aspect:herba> * 20,<aspect:victus> * 5,<aspect:praecantatio> * 5]
@@ -127,6 +140,30 @@ ArcaneWorkbench.removeRecipe(<thaumcraft:infusion_matrix>);
     <embers:shifting_scales>.setAspects(<aspect:praecantatio>*40,<aspect:praemunio>*40);
 
 <ore:blockGlassHardened>.add(<thaumicaugmentation:fortified_glass>);
+
+
+//primordial_pearl
+mods.astralsorcery.Altar.addAttunementAltarRecipe("mm:shaped/internal/thaumcraft/primordial_pearl", <thaumcraft:primordial_pearl>, 1500, 300, [
+
+			<embers:plate_dawnstone>, <fossil:stone_tablet>, <embers:plate_dawnstone>,
+			<fossil:stone_tablet>, <arcanearchives:storage_shaped_quartz>, <fossil:stone_tablet>,
+			<embers:plate_dawnstone>, <fossil:stone_tablet>, <embers:plate_dawnstone>,
+
+			<thaumcraft:void_seed>, <thaumcraft:void_seed>, <thaumcraft:void_seed>, <thaumcraft:void_seed>]);
+
+
+
+/*
+<thaumcraft:thaumonomicon>.removeAspects(<aspect:cognitio>*8,<aspect:praecantatio>*10);
+<thaumcraft:thaumometer>.removeAspects(<aspect:metallum>*30,<aspect:desiderium>*30,<aspect:sensus>*10,<aspect:auram>*10,<aspect:praecantatio>*3);
+//<aspect:visum>,*/
+
+## GREATWOOD STICK
+//recipes.addShaped(<contenttweaker:greatwood_handle>, [[null, null, <thaumcraft:log_greatwood>],[null, <thaumcraft:log_greatwood>, null], [<thaumcraft:log_greatwood>, null, null]]);
+//recipes.addShaped(<thaumadditions:iron_framed_greatwood>, [[null, <thermalfoundation:material:32>, null],[<thermalfoundation:material:32>, <thaumcraft:plank_greatwood>, <thermalfoundation:material:32>], [null, <thermalfoundation:material:32>, null]]);
+
+<contenttweaker:greatwood_handle>.addTooltip(format.lightPurple("Use Salis Mundus on a Greatwood Log"));
+SalisMundus.addSingleConversion(<blockstate:thaumcraft:log_greatwood>.block, <contenttweaker:greatwood_handle>);
 
 ##########################################################################################
 print("==================== end of mods thaumcraft.zs ====================");

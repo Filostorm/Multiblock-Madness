@@ -10,8 +10,8 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "powersuits:powerarmorcomponent",
-  "catalyst-meta": 0,
+  "catalyst": "immersiveengineering:wirecoil",
+  "catalyst-meta": 1,
 
   "input-types": {
     "c": {

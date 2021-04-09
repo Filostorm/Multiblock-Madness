@@ -13,7 +13,8 @@
     "Natura Saplings": true,
     "Natura Bushes": true,
     "Natura Nether Bushes": true,
-    "AgriCraft Seeds": false
+    "AgriCraft Seeds": false,
+    "XL Food Mod Seeds": true
   },
   "defaults payment": {
     "__comment": "You can define custom payment items for the default entries here.",
@@ -29,7 +30,8 @@
     "Natura Saplings": "1*minecraft:emerald:0",
     "Natura Bushes": "2*minecraft:emerald:0",
     "Natura Nether Bushes": "3*minecraft:emerald:0",
-    "AgriCraft Seeds": "2*minecraft:emerald:0"
+    "AgriCraft Seeds": "2*minecraft:emerald:0",
+    "XL Food Mod Seeds": "1*minecraft:emerald:0"
   },
   "defaults amount": {
     "__comment": "You can define custom amounts for the default entries here.",
@@ -45,7 +47,8 @@
     "Natura Saplings": 1,
     "Natura Bushes": 1,
     "Natura Nether Bushes": 1,
-    "AgriCraft Seeds": 1
+    "AgriCraft Seeds": 1,
+    "XL Food Mod Seeds": 1
   },
   "defaults blacklist": [
     "examplemod:example_item"

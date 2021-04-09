@@ -23,14 +23,10 @@ recipes.addShaped(<astralsorcery:itemwand>, [[null, <astralsorcery:itemcraftingc
 
 
 //mods.astralsorcery.Lightwell.addLiquefaction(IItemStack input, ILiquidStack output, float productionMultiplier, float shatterMultiplier, int colorhex);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_silver>, <liquid:silver>, 1, 1.5, 1);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_copper>, <liquid:copper>, 1, 1.5, 2);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_iron>, <liquid:iron>, 1, 1.5, 3);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_lead>, <liquid:lead>, 1, 1.5, 4);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_dawnstone>, <liquid:dawnstone>, 1, 1.5, 0);
+
 
 mods.astralsorcery.LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, true);
-mods.astralsorcery.LightTransmutation.addTransmutation(<contenttweaker:sub_block_holder_0:7>, <astralsorcery:blockcustomore:1>, 10);
+mods.astralsorcery.LightTransmutation.addTransmutation(<contenttweaker:sub_block_holder_0:7>, <astralsorcery:blockcustomore:1>, 9);
 
 //1000 max starlight for first tier altar
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/upgrade_tier2", <astralsorcery:blockaltar:1>, 950, 200, [
@@ -72,7 +68,7 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("internal/altar/upgrade_tie
 mods.astralsorcery.Altar.addTraitAltarRecipe("mm:shaped/internal/altar/beacon", <minecraft:beacon>, 5000, 400, [
 
 	<botania:manaresource:2>, <botania:manaresource:2>, <botania:manaresource:2>,
-	<botania:manaresource:2>, <minecraft:nether_star>, <botania:manaresource:2>, 
+	<botania:manaresource:2>, <deepmoblearning:pristine_matter_wither>, <botania:manaresource:2>, 
 	<botania:manaresource:2>, <botania:manaresource:2>, <botania:manaresource:2>,
 	<thermalfoundation:glass_alloy:6>, <thermalfoundation:glass_alloy:6>, <minecraft:obsidian>, <minecraft:obsidian>,
 	<thermalfoundation:glass_alloy:6>, 	<thermalfoundation:glass_alloy:6>,	
@@ -90,7 +86,14 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("mm:shaped/internal/altar/beacon", 
 
 ]);
 
+//illumination powder
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("internal/altar/illuminationpowder", <astralsorcery:itemusabledust>*16, 250, 200, [
 
+			null, <arcanearchives:radiant_dust>, null,
+
+	<arcanearchives:radiant_dust>, <jaopca:item_dustaquamarine>, <arcanearchives:radiant_dust>,
+
+			null, <arcanearchives:radiant_dust>, null]);
 
 			
 /*
@@ -112,6 +115,10 @@ Melting.addRecipe(<liquid:starmetal> * 1296, <contenttweaker:starmetal_block>);
 Casting.addBasinRecipe(<contenttweaker:starmetal_block>, null, <liquid:starmetal>, 1296);
 
 <astralsorcery:itemperkseal>.addTooltip(format.lightPurple("Used to activate the Twilight Forest Portal"));
+
+//Illumination Powder
+mods.astralsorcery.StarlightInfusion.addInfusion(<arcanearchives:radiant_dust>, <astralsorcery:itemusabledust>, false, 0.1, 200);
+
 
 ##########################################################################################
 print("==================== end of Astral Sorcery ====================");

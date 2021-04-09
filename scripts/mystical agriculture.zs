@@ -1,4 +1,6 @@
 import crafttweaker.item.IItemStack;
+import mods.thermalexpansion.InductionSmelter;
+
 print("==================== loading mystical agriculture.zs ====================");
 ##########################################################################################
 
@@ -60,7 +62,7 @@ recipes.addShapeless(<mysticalagriculture:crafting:21> * 2, [<mysticalagradditio
 <ore:crystalforMystical>.add(<embers:ember_cluster>);
 <ore:crystalforMystical>.add(<botania:manaresource:2>);
 <ore:crystalforMystical>.add(<ebwizardry:grand_crystal>);
-<ore:crystalforMystical>.add(<astralsorcery:itemrockcrystalsimple>);
+//<ore:crystalforMystical>.add(<astralsorcery:itemrockcrystalsimple>);
 
 recipes.addShaped(<mysticalagriculture:infusion_crystal>, [[<mysticalagriculture:crafting>, <mysticalagriculture:crafting:5>, <mysticalagriculture:crafting>],[<mysticalagriculture:crafting:5>, <ore:crystalforMystical>, <mysticalagriculture:crafting:5>], [<mysticalagriculture:crafting>, <mysticalagriculture:crafting:5>, <mysticalagriculture:crafting>]]);
 
@@ -79,6 +81,8 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
 			<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:4>,
 			<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:4>]);
 
+//Tier 2 Metal
+InductionSmelter.addRecipe(<mysticalagriculture:crafting:34>, <mysticalagriculture:crafting:33>, <mysticalagriculture:crafting:1>*4, 5000);
 
 //Tier 3 metal
 mods.immersiveengineering.ArcFurnace.addRecipe(<mysticalagriculture:crafting:35>, <mysticalagriculture:crafting:34>, null, 300, 1024, [<mysticalagriculture:crafting:2>*4], "Alloying");
@@ -94,6 +98,11 @@ mods.techreborn.blastFurnace.addRecipe(<mysticalagradditions:insanium:2>, null, 
 
 recipes.addShaped(<mysticalagriculture:crafting:32>, [[null, <mysticalagriculture:crafting:5>, null],[<mysticalagriculture:crafting:5>, <contenttweaker:inert_ingot>, <mysticalagriculture:crafting:5>], [null, <mysticalagriculture:crafting:5>, null]]);
 recipes.addShaped(<mysticalagriculture:crafting:32>*2, [[null, <mysticalagriculture:crafting:5>, null],[<mysticalagriculture:crafting:5>, <contenttweaker:material_part:20>, <mysticalagriculture:crafting:5>], [null, <mysticalagriculture:crafting:5>, null]]);
+
+
+recipes.addShaped(<quark:marble> * 16, [[<mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>],[<mysticalagriculture:marble_essence>, null, <mysticalagriculture:marble_essence>], [<mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>]]);
+
+
 
 ##########################################################################################
 print("==================== end of mystical agriculture.zs ====================");

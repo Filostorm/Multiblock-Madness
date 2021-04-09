@@ -14,6 +14,7 @@ tile.contenttweaker.plating_elite.name=Elite Plating Block
 tile.contenttweaker.plating_extreme.name=Extreme Plating Block
 tile.contenttweaker.plating_du.name=DU Plating Block
 tile.contenttweaker.starmetal_block.name=Block of Starmetal
+
 item.contenttweaker.hastelloyfoil.name=Hastelloy Foil
 item.contenttweaker.goldfoil.name=Gold Foil
 item.contenttweaker.aluminumcasing.name=Aluminum Casing
@@ -24,9 +25,9 @@ item.contenttweaker.rod_vanasteel.name=Vanasteel Rod
 item.contenttweaker.rod_nimonic.name=Nimonic Rod 
 item.contenttweaker.greatwood_handle.name=Greatwood Stick
 item.contenttweaker.slatedust.name=§eCrushed Slate
-item.contenttweaker.activatedAspectusCopper.name=Infused Copper Aspectus
-item.contenttweaker.activatedAspectusSilver.name=Infused Silver Aspectus
-item.contenttweaker.activatedAspectusDawnstone.name=Infused Dawnstone Aspectus
+item.contenttweaker.activatedaspectuscopper.name=Infused Copper Aspectus
+item.contenttweaker.activatedaspectussilver.name=Infused Silver Aspectus
+item.contenttweaker.activatedaspectusdawnstone.name=Infused Dawnstone Aspectus
 
 item.contenttweaker.adventure_token_tier1.name=Tier 1 Adventure Token
 item.contenttweaker.exploring_token_tier1.name=Tier 1 Exploring Token
@@ -62,33 +63,36 @@ item.contenttweaker.adamantine_ingot.name=Adamantine Ingot
 item.contenttweaker.orichalcum_ingot.name=Orichalcum Ingot
 item.contenttweaker.palladium_ingot.name=Palladium Ingot
 item.contenttweaker.terrasteel_coil.name=Terrasteel Heating Coil
-item.contenttweaker.gearCrushingInvar.name=Invar Crushing Gear
-item.contenttweaker.gearCrushingSteel.name=Steel Crushing Gear
-item.contenttweaker.gearCrushingDarkSteel.name=Dark Steel Crushing Gear
-item.contenttweaker.gearCrushingCortenSteel.name=Corten Steel Crushing Gear
-item.contenttweaker.gearCrushingVanasteel.name=Vanasteel Crushing Gear
+item.contenttweaker.gearcrushinginvar.name=Invar Crushing Gear
+item.contenttweaker.gearcrushingsteel.name=Steel Crushing Gear
+item.contenttweaker.gearcrushingdarksteel.name=Dark Steel Crushing Gear
+item.contenttweaker.gearcrushingcortensteel.name=Corten Steel Crushing Gear
+item.contenttweaker.gearcrushingvanasteel.name=Vanasteel Crushing Gear
 
-item.contenttweaker.agitatorInvar.name=Invar Slurry Agitator
-item.contenttweaker.agitatorSteel.name=Steel Slurry Agitator
-item.contenttweaker.agitatorDarkSteel.name=Dark Steel Slurry Agitator
-item.contenttweaker.agitatorHydronalium.name=Hydronalium Slurry Agitator
-item.contenttweaker.agitatorHastelloy.name=Hastelloy Slurry Agitator
+item.contenttweaker.agitatorinvar.name=Invar Slurry Agitator
+item.contenttweaker.agitatorsteel.name=Steel Slurry Agitator
+item.contenttweaker.agitatordarksteel.name=Dark Steel Slurry Agitator
+item.contenttweaker.agitatorhydronalium.name=Hydronalium Slurry Agitator
+item.contenttweaker.agitatorhastelloy.name=Hastelloy Slurry Agitator
 
-item.contenttweaker.foilInvar.name=Invar Foil
-item.contenttweaker.foilSteel.name=Steel Foil
-item.contenttweaker.foilDarkSteel.name=Dark Steel Foil
-item.contenttweaker.foilHydronalium.name=Hydronalium Foil
+item.contenttweaker.foilinvar.name=Invar Foil
+item.contenttweaker.foilsteel.name=Steel Foil
+item.contenttweaker.foildarksteel.name=Dark Steel Foil
+item.contenttweaker.foilhydronalium.name=Hydronalium Foil
 
-item.contenttweaker.rodInvar.name=Invar Rod
-item.contenttweaker.rodSteel.name=Steel Rod
-item.contenttweaker.rodDarkSteel.name=Dark Steel Rod
-item.contenttweaker.rodHydronalium.name=Hydronalium Rod
+item.contenttweaker.rodinvar.name=Invar Rod
+item.contenttweaker.rodsteel.name=Steel Rod
+item.contenttweaker.roddarksteel.name=Dark Steel Rod
+item.contenttweaker.rodhydronalium.name=Hydronalium Rod
 
 item.contenttweaker.blood_crystal.name=Blood Crystal
 item.contenttweaker.adaptive_ingot.name=Adaptive Ingot
-item.contenttweaker.casingSteel.name=Steel Casing
-item.contenttweaker.casingPlatinum.name=Platinum Casing
-item.contenttweaker.purpleprint.name=Purpleprint
+item.contenttweaker.casingsteel.name=Steel Casing
+item.contenttweaker.casingplatinum.name=Platinum Casing
+item.contenttweaker.purpleprint.name=§5Multiblock Visualizer
+
+item.contenttweaker.ingot_xp.name=XP Infused Glowstone
+tile.contenttweaker.block_xp.name=Block of XP Infused Glowstone
 
 fluid.moltenEmbers=Molten Embers
 fluid.moltenTime=Molten Time
