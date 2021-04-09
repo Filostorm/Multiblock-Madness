@@ -166,3 +166,12 @@ StarmetalBlock.setToolClass("pickaxe");
 StarmetalBlock.setToolLevel(1);
 StarmetalBlock.setBlockSoundType(<soundtype:metal>);
 StarmetalBlock.register();
+
+var XPBlock = VanillaFactory.createBlock("block_xp", <blockmaterial:iron>);
+XPBlock.setLightValue(0);
+XPBlock.setBlockHardness(5.0);
+XPBlock.setBlockResistance(5.0);
+XPBlock.setToolClass("pickaxe");
+XPBlock.setToolLevel(1);
+XPBlock.setBlockSoundType(<soundtype:metal>);
+XPBlock.register();

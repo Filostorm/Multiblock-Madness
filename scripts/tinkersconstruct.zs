@@ -9,10 +9,22 @@ import mods.tconstruct.Melting;
 import mods.tcomplement.highoven.HighOven;
 import mods.tcomplement.highoven.MixRecipeBuilder;
 import mods.tcomplement.highoven.MixRecipeManager;
-
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 
 print("==================== loading mods tinkersconstruct.zs ====================");
 ##########################################################################################
+
+val itemstoRemove =
+[
+	<tinker_io:upg:4>,
+	<tinker_io:upg:2>,
+]
+ as IItemStack[];
+
+for item in itemstoRemove {
+	recipes.remove(item);
+}
 
 	mods.jei.JEI.removeAndHide(<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 0 as short}}));
 recipes.addShaped(<tcomplement:materials:1> * 8, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <embers:dust_ember>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
@@ -35,10 +47,11 @@ smelteryHeart.add(<tconstruct:seared_tank:2>);
 	//Embers
 	<liquid:moltenembers>.definition.temperature = 6300;
 	mods.tconstruct.Fuel.registerFuel(<liquid:moltenembers> * 50, 50);
+	/*
 	//Starlight
 	<liquid:astralsorcery.liquidstarlight>.definition.temperature = 4300;
 	mods.tconstruct.Fuel.registerFuel(<liquid:astralsorcery.liquidstarlight> * 50, 200);
-
+*/
 
 ### CRAFTING RECIPES ###
 
@@ -53,6 +66,9 @@ recipes.addShaped(<tconstruct:smeltery_controller>, [[<tconstruct:materials>, <c
 
 
 ### MELTING ###
+//remove
+Melting.removeRecipe(<liquid:fossil_tar>, <minecraft:coal>);
+
 /* bottled time
 recipes.remove(<randomthings:timeinabottle>.*);
 Melting.removeRecipe(<liquid:gold>, <minecraft:clock>);
@@ -96,10 +112,16 @@ Alloy.removeRecipe(<liquid:tough>);
 Alloy.removeRecipe(<liquid:manyullyn>);
 
 
-//Doesnt seem to work for these
+//smart upgrades
+recipes.addShaped(<tinker_io:upg:4>, [[<embers:nugget_dawnstone>, <minecraft:diamond>, <embers:nugget_dawnstone>],[<minecraft:diamond>, <tinker_io:upg:3>, <minecraft:diamond>], [<embers:nugget_dawnstone>, <minecraft:diamond>, <embers:nugget_dawnstone>]]);
+recipes.addShaped(<tinker_io:upg:2>, [[<thermalfoundation:material:162>, <minecraft:iron_ingot>, <thermalfoundation:material:162>],[<minecraft:iron_ingot>, <tinker_io:upg:1>, <minecraft:iron_ingot>], [<thermalfoundation:material:162>, <minecraft:iron_ingot>, <thermalfoundation:material:162>]]);
+
+
+/*
 Alloy.removeRecipe(<liquid:osmiridium>);
 Alloy.removeRecipe(<liquid:mirion>);
 Alloy.removeRecipe(<liquid:osgloglas>);
+*/
 
 //inert 
 Alloy.addRecipe(<liquid:inert_metal> * 72, [<liquid:silver> * 72, <liquid:lead> * 36]);
@@ -132,8 +154,46 @@ Casting.addBasinRecipe(<conarm:armorforge>.withTag({textureBlock: {id: "tconstru
 Casting.addTableRecipe(<contenttweaker:inert_ingot>, <tconstruct:cast_custom>, <liquid:inert_metal>, 144, false, 50);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:2>, null, <liquid:inert_metal>, 1296);
 
-//ender shard
-Casting.addTableRecipe(<woot:endershard>, <botania:quartz:2>, <liquid:ender>, 250, true, 200);
+//Ender Shard
+Casting.addTableRecipe(<enderio:item_material:62>, <tconstruct:cast_custom>, <liquid:ender>, 50, false, 50);
+
+//Orichalcum
+	Casting.addTableRecipe(<contenttweaker:material_part:20>,<tconstruct:cast_custom>, <liquid:orichalcum>, 144, false, 50);
+	Casting.addTableRecipe(<contenttweaker:material_part:21>,<tconstruct:cast_custom:4>, <liquid:orichalcum>, 576, false, 200);
+	Casting.addTableRecipe(<contenttweaker:material_part:22>,<tconstruct:cast_custom:3>, <liquid:orichalcum>, 144, false, 50);
+
+//Palladuim
+	Casting.addTableRecipe(<contenttweaker:material_part:30>,<tconstruct:cast_custom>, <liquid:palladium>, 144, false, 50);
+	Casting.addTableRecipe(<contenttweaker:material_part:31>,<tconstruct:cast_custom:4>, <liquid:palladium>, 576, false, 200);
+	Casting.addTableRecipe(<contenttweaker:material_part:32>,<tconstruct:cast_custom:3>, <liquid:palladium>, 144, false, 50);
+
+//Adamantine
+	Casting.addTableRecipe(<contenttweaker:material_part:10>,<tconstruct:cast_custom>, <liquid:adamantine>, 144, false, 50);
+	Casting.addTableRecipe(<contenttweaker:material_part:11>,<tconstruct:cast_custom:4>, <liquid:adamantine>, 576, false, 200);
+	Casting.addTableRecipe(<contenttweaker:material_part:12>,<tconstruct:cast_custom:3>, <liquid:adamantine>, 144, false, 50);
+
+
+val moreIngotCasting =
+[
+<embers:archaic_brick>,
+<embers:brick_caminite>,
+]
+ as IItemStack[];
+for item in moreIngotCasting {
+Casting.addTableRecipe(<tconstruct:cast_custom>, item, <liquid:gold>, 288, true);
+Casting.addTableRecipe(<tconstruct:cast_custom>, item, <liquid:alubrass>, 144, true);
+Casting.addTableRecipe(<tconstruct:cast_custom>, item, <liquid:brass>, 144, true);
+}
+val moreGearCasting =
+[
+<enderio:item_material:10>,
+]
+ as IItemStack[];
+for item in moreGearCasting {
+Casting.addTableRecipe(<tconstruct:cast_custom:4>, item, <liquid:alubrass>, 144, true);
+Casting.addTableRecipe(<tconstruct:cast_custom:4>, item, <liquid:brass>, 144, true);
+}
+
 
 //Dawnstone block
 Melting.addRecipe(<liquid:dawnstone> * 1296, <embers:block_dawnstone>);
@@ -160,7 +220,7 @@ HighOven.addFuel(<thaumcraft:alumentum>, 3600, 50);
 
 // HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
 HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
-
+HighOven.removeMixRecipe(<liquid:dark_chocolate>);
 //New steel recipe
 // HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
 
@@ -181,7 +241,7 @@ pulsatingiron.register();
 var conductiveiron = HighOven.newMixRecipe(<liquid:conductive_iron> * 144, <liquid:iron> * 144, 1300);
 conductiveiron.addReducer(<enderio:item_material:20>,20);
 //conductiveiron.addPurifier(<ore:dustEnderPearl>, 100);
-conductiveiron.addPurifier(<minecraft:redstone>, 80);
+conductiveiron.addPurifier(<minecraft:redstone>, 100);
 conductiveiron.register();
 
 var dawnstone = HighOven.newMixRecipe(<liquid:dawnstone> * 144, <liquid:gold> * 144, 2000);
@@ -196,8 +256,8 @@ dawnstone.register();
 
 
 
-var prudentium = HighOven.newMixRecipe(<liquid:prudentium> * 36, <liquid:inferium> * 36, 1300);
-prudentium.addPurifier(<mysticalagriculture:crafting:1>, 100);
+var prudentium = HighOven.newMixRecipe(<liquid:prudentium> * 144, <liquid:inferium> * 144, 1300);
+prudentium.addPurifier(<mysticalagriculture:crafting:1>*4, 100);
 prudentium.register();
 
 

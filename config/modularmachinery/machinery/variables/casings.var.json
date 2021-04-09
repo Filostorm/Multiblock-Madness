@@ -47,5 +47,10 @@
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockcasing",
         "modularmachinery:blockfluidoutputhatch"
+    ],
+    "casings_item_fluid": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidinputhatch"
     ]
 }

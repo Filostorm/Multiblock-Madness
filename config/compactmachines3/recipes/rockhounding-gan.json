@@ -9,8 +9,8 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "enderio:item_material",
-  "catalyst-meta": 77,
+  "catalyst": "contenttweaker:purpleprint",
+  "catalyst-meta": 0,
 
   "input-types": {
     "a": {

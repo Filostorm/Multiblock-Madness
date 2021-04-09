@@ -1,16 +1,22 @@
+//import mods.embers.Melter;
 import crafttweaker.item.IItemStack;
-import mods.techreborn.blastFurnace;
-import mods.tconstruct.Melting;
-import mods.tcomplement.Overrides;
-import mods.tcomplement.highoven.HighOven;
-import mods.embers.Melter;
-import mods.nuclearcraft.melter;
-import mods.thermalexpansion.Crucible;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.oredict.IOreDictEntry;
 import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.Crusher;
-import mods.thermalexpansion.Pulverizer;
-import mods.nuclearcraft.manufactory;
+import mods.nuclearcraft.Manufactory;
+import mods.nuclearcraft.Melter;
+import mods.rockhounding_chemistry.ChemicalExtractor;
+import mods.rockhounding_chemistry.LeachingVat;
+import mods.rockhounding_chemistry.MineralSizer;
+import mods.tcomplement.highoven.HighOven;
+import mods.tcomplement.Overrides;
+import mods.tconstruct.Melting;
+import mods.techreborn.blastFurnace;
 import mods.techreborn.grinder;
+import mods.thermalexpansion.Crucible;
+import mods.thermalexpansion.Pulverizer;
+
 
 print("==================== loading Metal Processing.zs ====================");
 ##########################################################################################
@@ -60,7 +66,7 @@ HighOven.removeMeltingOverride(<liquid:aluminum>, item);
 }
 
 Melting.removeRecipe(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
-Melter.remove(<thermalfoundation:ore:4>);
+mods.embers.Melter.remove(<thermalfoundation:ore:4>);
 
 
 
@@ -77,9 +83,9 @@ Melting.removeRecipe(<liquid:osmium>, <rockhounding_chemistry:chemical_dusts:38>
 Melting.removeRecipe(<liquid:osmium>, <mekanism:oreblock>);
 Overrides.removeRecipe(<liquid:osmium>, <mekanism:oreblock>);
 HighOven.removeMeltingOverride(<liquid:osmium>, <mekanism:oreblock>);
-Melter.remove(<mekanism:oreblock>);
-melter.removeRecipeWithInput(<mekanism:dust:2>);
-melter.removeRecipeWithInput(<mekanism:oreblock>);
+mods.embers.Melter.remove(<mekanism:oreblock>);
+Melter.removeRecipeWithInput(<mekanism:dust:2>);
+Melter.removeRecipeWithInput(<mekanism:oreblock>);
 Crucible.removeRecipe(<mekanism:dust:2>);
 Crucible.removeRecipe(<mekanism:oreblock>);
 
@@ -99,9 +105,9 @@ Overrides.removeRecipe(<liquid:platinum>, <thermalfoundation:ore:6>);
 HighOven.removeMeltingOverride(<liquid:platinum>, <thermalfoundation:material:70>);
 HighOven.removeMeltingOverride(<liquid:platinum>, <techreborn:smalldust:38>);
 HighOven.removeMeltingOverride(<liquid:platinum>, <thermalfoundation:ore:6>);
-Melter.remove(<thermalfoundation:ore:6>);
-melter.removeRecipeWithInput(<thermalfoundation:material:70>);
-melter.removeRecipeWithInput(<thermalfoundation:ore:6>);
+mods.embers.Melter.remove(<thermalfoundation:ore:6>);
+Melter.removeRecipeWithInput(<thermalfoundation:material:70>);
+Melter.removeRecipeWithInput(<thermalfoundation:ore:6>);
 Crucible.removeRecipe(<thermalfoundation:material:70>);
 Crucible.removeRecipe(<thermalfoundation:ore:6>);
 
@@ -113,18 +119,23 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
 
+
+
+Melting.removeRecipe(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
 Melting.removeRecipe(<liquid:tungsten>, <techreborn:dust:55>);
 Melting.removeRecipe(<liquid:tungsten>, <techreborn:smalldust:55>);
 Melting.removeRecipe(<liquid:tungsten>, <techreborn:ore:8>);
+Overrides.removeRecipe(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
 Overrides.removeRecipe(<liquid:tungsten>, <techreborn:dust:55>);
 Overrides.removeRecipe(<liquid:tungsten>, <techreborn:smalldust:55>);
 Overrides.removeRecipe(<liquid:tungsten>, <techreborn:ore:8>);
+HighOven.removeMeltingOverride(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
 HighOven.removeMeltingOverride(<liquid:tungsten>, <techreborn:dust:55>);
 HighOven.removeMeltingOverride(<liquid:tungsten>, <techreborn:smalldust:55>);
 HighOven.removeMeltingOverride(<liquid:tungsten>, <techreborn:ore:8>);
-Melter.remove(<techreborn:ore:8>);
-melter.removeRecipeWithInput(<techreborn:ore:8>);
-melter.removeRecipeWithInput(<techreborn:dust:55>);
+mods.embers.Melter.remove(<techreborn:ore:8>);
+Melter.removeRecipeWithInput(<techreborn:ore:8>);
+Melter.removeRecipeWithInput(<techreborn:dust:55>);
 Crucible.removeRecipe(<techreborn:ore:8>);
 Crucible.removeRecipe(<techreborn:dust:55>);
 
@@ -137,6 +148,7 @@ furnace.remove(item);
 }
 
 for item in <ore:dustTitanium>.items{
+	
 Melting.removeRecipe(<liquid:titanium>, (item));
 Overrides.removeRecipe(<liquid:titanium>, (item));
 HighOven.removeMeltingOverride(<liquid:titanium>, (item));
@@ -145,24 +157,30 @@ Overrides.removeRecipe(<liquid:molten_titanium>, (item));
 HighOven.removeMeltingOverride(<liquid:molten_titanium>, (item));
 }
 
+
 Melting.removeRecipe(<liquid:titanium>, <techreborn:smalldust:54>);
 Melting.removeRecipe(<liquid:titanium>, <libvulpes:ore0:8>);
+Overrides.removeRecipe(<liquid:titanium>, <techreborn:smalldust:54>);
+Overrides.removeRecipe(<liquid:titanium>, <libvulpes:ore0:8>);
+HighOven.removeMeltingOverride(<liquid:titanium>, <techreborn:smalldust:54>);
+HighOven.removeMeltingOverride(<liquid:titanium>, <libvulpes:ore0:8>);
+
+Melting.removeRecipe(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
 Melting.removeRecipe(<liquid:molten_titanium>, <techreborn:smalldust:54>);
 Melting.removeRecipe(<liquid:molten_titanium>, <libvulpes:ore0:8>);
 Overrides.removeRecipe(<liquid:molten_titanium>, <techreborn:smalldust:54>);
 Overrides.removeRecipe(<liquid:molten_titanium>, <libvulpes:ore0:8>);
-Overrides.removeRecipe(<liquid:titanium>, <techreborn:smalldust:54>);
-Overrides.removeRecipe(<liquid:titanium>, <libvulpes:ore0:8>);
+Overrides.removeRecipe(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
+HighOven.removeMeltingOverride(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
 HighOven.removeMeltingOverride(<liquid:molten_titanium>, <techreborn:smalldust:54>);
 HighOven.removeMeltingOverride(<liquid:molten_titanium>, <libvulpes:ore0:8>);
-HighOven.removeMeltingOverride(<liquid:titanium>, <techreborn:smalldust:54>);
-HighOven.removeMeltingOverride(<liquid:titanium>, <libvulpes:ore0:8>);
-Melter.remove(<libvulpes:ore0:8>);
-melter.removeRecipeWithInput(<libvulpes:ore0:8>);
-melter.removeRecipeWithInput(<techreborn:dust:54>);
+/*
+mods.embers.Melter.remove(<libvulpes:ore0:8>);
+Melter.removeRecipeWithInput(<libvulpes:ore0:8>);
+Melter.removeRecipeWithInput(<techreborn:dust:54>);
 Crucible.removeRecipe(<libvulpes:ore0:8>);
-Crucible.removeRecipe(<techreborn:dust:54>);
 
+*/
 //----------Iridium
 for item in <ore:ingotIridium>.items{
 blastFurnace.removeRecipe(item);
@@ -180,9 +198,9 @@ Overrides.removeRecipe(<liquid:iridium>, <thermalfoundation:ore:7>);
 HighOven.removeMeltingOverride(<liquid:iridium>, <thermalfoundation:material:71>);
 HighOven.removeMeltingOverride(<liquid:iridium>, <techreborn:smalldust:66>);
 HighOven.removeMeltingOverride(<liquid:iridium>, <thermalfoundation:ore:7>);
-Melter.remove(<thermalfoundation:ore:7>);
-melter.removeRecipeWithInput(<thermalfoundation:ore:7>);
-melter.removeRecipeWithInput(<thermalfoundation:material:71>);
+mods.embers.Melter.remove(<thermalfoundation:ore:7>);
+Melter.removeRecipeWithInput(<thermalfoundation:ore:7>);
+Melter.removeRecipeWithInput(<thermalfoundation:material:71>);
 Crucible.removeRecipe(<thermalfoundation:ore:7>);
 Crucible.removeRecipe(<thermalfoundation:material:71>);
 
@@ -191,10 +209,50 @@ Crucible.removeRecipe(<thermalfoundation:material:71>);
 ##              ORE PROCESSING
 ##=======================================================
 
+############### Hacatu #####################
+
+val clusterFluidMap as ILiquidStack[IOreDictEntry] = {
+	<ore:clusterAdamantine>: <fluid:adamantine>,
+	//<ore:clusterAluminium>: {},
+	<ore:clusterArdite>: <fluid:ardite>,
+	<ore:clusterAstralStarmetal>: <fluid:starmetal>,
+	<ore:clusterBoron>: <fluid:boron>,
+	<ore:clusterCobalt>: <fluid:cobalt>,
+	//<ore:clusterIridium>: {},
+	<ore:clusterLithium>: <fluid:lithium>,
+	<ore:clusterMagnesium>: <fluid:magnesium>,
+	//<ore:clusterMithril>: {},
+	<ore:clusterNickel>: <fluid:nickel>,
+	<ore:clusterOctine>: <fluid:octine>,
+	<ore:clusterOrichalcum>: <fluid:orichalcum>,
+	//<ore:clusterOsmium>: {},
+	<ore:clusterPalladium>: <fluid:palladium>,
+	//<ore:clusterPlatinum>: {},
+	<ore:clusterSyrmorite>: <fluid:syrmorite>,
+	<ore:clusterThorium>: <fluid:thorium>,
+	//<ore:clusterTitanium>: {},
+	//<ore:clusterTungsten>: {},
+	<ore:clusterUranium>: <fluid:uranium>,
+	<ore:clusterIron>: <fluid:iron>,
+	<ore:clusterGold>: <fluid:gold>,
+	<ore:clusterCopper>: <fluid:copper>,
+	<ore:clusterTin>: <fluid:tin>,
+	<ore:clusterSilver>: <fluid:silver>,
+	<ore:clusterLead>: <fluid:lead>,
+	//<ore:clusterCinnabar>: {},
+	//<ore:clusterQuartz>: <fluid:quartz>
+} as ILiquidStack[IOreDictEntry];
+
+for cluster, fluid in clusterFluidMap {
+	Melting.addRecipe(fluid*288, cluster);
+	mods.embers.Melter.add(fluid*432, cluster);
+}
+############### /Hacatu #####################
+
 //Iron
-mods.rockhounding_chemistry.MineralSizer.add(<minecraft:iron_ore>, [<jaopca:item_crushedlumpiron>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpiron>, [<jaopca:item_leachedshardiron>*2], [4.21F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardiron>, ["dustIron", "dustNickel", "dustCarbon", "dustPhosphorous"], [200, 25, 9, 6]);
+MineralSizer.add(<minecraft:iron_ore>, [<jaopca:item_crushedlumpiron>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpiron>, [<jaopca:item_leachedshardiron>*2], [4.21F], <liquid:leachate>*50);
+ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardiron>, ["dustIron", "dustNickel","dustChromium", "dustCarbon"], [200, 35, 20, 9]);
 
 val ironProcessing =[
 	<jaopca:item_crushedlumpiron>,
@@ -211,9 +269,9 @@ Pulverizer.addRecipe(<thermalfoundation:material>, item, 2000, <techreborn:small
 }
 
 //Gold
-mods.rockhounding_chemistry.MineralSizer.add(<minecraft:gold_ore>, [<jaopca:item_crushedlumpgold>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpgold>, [<jaopca:item_leachedshardgold>*2], [3.85F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardgold>, ["dustGold", "dustSilver", "dustCopper", "dustNickel"], [200, 15, 12, 10]);
+MineralSizer.add(<minecraft:gold_ore>, [<jaopca:item_crushedlumpgold>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpgold>, [<jaopca:item_leachedshardgold>*2], [3.85F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardgold>, ["dustGold", "dustSilver", "dustCopper", "dustNickel"], [200, 15, 12, 10]);
 val goldProcessing =[
 	<jaopca:item_crushedlumpgold>,
 	<jaopca:item_leachedshardgold>,
@@ -227,9 +285,9 @@ Pulverizer.addRecipe(<thermalfoundation:material:1>, item, 2000, <techreborn:sma
 }
 
 //Copper
-mods.rockhounding_chemistry.MineralSizer.add(<thermalfoundation:ore>, [<jaopca:item_crushedlumpcopper>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpcopper>, [<jaopca:item_leachedshardcopper>*2], [5.92F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardcopper>, ["dustCopper", "dustIron", "dustSulfur"], [200, 25, 8]);
+MineralSizer.add("oreCopper", [<jaopca:item_crushedlumpcopper>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpcopper>, [<jaopca:item_leachedshardcopper>*2], [5.92F], <liquid:leachate>*50);
+ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardcopper>, ["dustCopper", "dustIron", "dustZinc"], [200, 25, 12]);
 val copperProcessing =[
 	<jaopca:item_crushedlumpcopper>,
 	<jaopca:item_leachedshardcopper>,
@@ -244,9 +302,9 @@ Pulverizer.addRecipe(<thermalfoundation:material:64>, item, 2000, <techreborn:sm
 }
 
 //Tin
-mods.rockhounding_chemistry.MineralSizer.add(<thermalfoundation:ore:1>, [<jaopca:item_crushedlumptin>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumptin>, [<jaopca:item_leachedshardtin>*2], [6.08F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardtin>, ["dustTin", "dustLead", "dustArsenic"], [200, 25, 5]);
+MineralSizer.add("oreTin", [<jaopca:item_crushedlumptin>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumptin>, [<jaopca:item_leachedshardtin>*2], [6.08F], <liquid:leachate>*50);
+ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardtin>, ["dustTin", "dustLead", "dustTungsten", "dustArsenic"], [200, 30, 9, 5]);
 val tinProcessing =[
 	<jaopca:item_crushedlumptin>,
 	<jaopca:item_leachedshardtin>,
@@ -260,9 +318,9 @@ Pulverizer.addRecipe(<thermalfoundation:material:65>, item, 2000, <techreborn:sm
 }
 
 //Silver
-mods.rockhounding_chemistry.MineralSizer.add(<thermalfoundation:ore:2>, [<jaopca:item_crushedlumpsilver>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpsilver>, [<jaopca:item_leachedshardsilver>*2], [3.20F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardsilver>, ["dustSilver", "dustLead", "dustSulfur", "dustAntimony"], [200, 25, 10, 5]);
+MineralSizer.add("oreSilver", [<jaopca:item_crushedlumpsilver>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpsilver>, [<jaopca:item_leachedshardsilver>*2], [3.20F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardsilver>, ["dustSilver", "dustLead", "dustSulfur", "dustAntimony"], [200, 25, 10, 5]);
 val silverProcessing =[
 	<jaopca:item_crushedlumpsilver>,
 	<jaopca:item_leachedshardsilver>,
@@ -276,9 +334,9 @@ Pulverizer.addRecipe(<thermalfoundation:material:66>, item, 2000, <techreborn:sm
 }
 
 //Lead
-mods.rockhounding_chemistry.MineralSizer.add(<thermalfoundation:ore:3>, [<jaopca:item_crushedlumplead>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumplead>, [<jaopca:item_leachedshardlead>*2], [4.20F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardlead>, ["dustLead", "dustSilver", "dustZinc", "dustBismuth"], [200, 20, 15, 5]);
+MineralSizer.add("oreLead", [<jaopca:item_crushedlumplead>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumplead>, [<jaopca:item_leachedshardlead>*2], [4.20F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardlead>, ["dustLead", "dustSilver", "dustZinc", "dustBismuth"], [200, 20, 15, 5]);
 val leadProcessing =[
 	<jaopca:item_crushedlumplead>,
 	<jaopca:item_leachedshardlead>,
@@ -292,9 +350,9 @@ Pulverizer.addRecipe(<thermalfoundation:material:67>, item, 2000, <techreborn:sm
 }
 
 //Nickel
-mods.rockhounding_chemistry.MineralSizer.add(<thermalfoundation:ore:5>, [<jaopca:item_crushedlumpnickel>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpnickel>, [<jaopca:item_leachedshardnickel>*2], [4.69F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardnickel>, ["dustNickel", "dustPlatinum", "dustCopper", "dustCobalt"], [200, 25, 15, 10]);
+MineralSizer.add(<thermalfoundation:ore:5>, [<jaopca:item_crushedlumpnickel>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpnickel>, [<jaopca:item_leachedshardnickel>*2], [4.69F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardnickel>, ["dustNickel", "dustPlatinum", "dustCopper", "dustCobalt"], [200, 25, 15, 10]);
 val nickelProcessing =[
 	<jaopca:item_crushedlumpnickel>,
 	<jaopca:item_leachedshardnickel>,
@@ -308,9 +366,9 @@ Pulverizer.addRecipe(<thermalfoundation:material:69>, item, 2000, <techreborn:sm
 }
 
 //Octine
-mods.rockhounding_chemistry.MineralSizer.add(<thebetweenlands:octine_ore>, [<jaopca:item_crushedlumpoctine>*2], [8]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpoctine>, [<jaopca:item_leachedshardoctine>*2], [2.83F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardoctine>, ["dustOctine", "dustBlaze", "dustPhosphorus"], [200, 25, 15]);
+MineralSizer.add(<thebetweenlands:octine_ore>, [<jaopca:item_crushedlumpoctine>*2], [8]);
+LeachingVat.add(<jaopca:item_crushedlumpoctine>, [<jaopca:item_leachedshardoctine>*2], [2.83F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardoctine>, ["dustOctine", "dustBlaze", "dustPhosphorus"], [200, 25, 15]);
 val octineProcessing =[
 	<jaopca:item_crushedlumpoctine>,
 	<jaopca:item_leachedshardoctine>,
@@ -324,9 +382,9 @@ Pulverizer.addRecipe(<jaopca:item_dustoctine>, item, 2000, <jaopca:item_dustsmal
 }
 
 //Syrmorite
-mods.rockhounding_chemistry.MineralSizer.add(<thebetweenlands:syrmorite_ore>, [<jaopca:item_crushedlumpsyrmorite>*2], [8]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpsyrmorite>, [<jaopca:item_leachedshardsyrmorite>*2], [7.68F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardsyrmorite>, ["dustSyrmorite", "dustVanadium", "dustGold"], [200, 20, 12]);
+MineralSizer.add(<thebetweenlands:syrmorite_ore>, [<jaopca:item_crushedlumpsyrmorite>*2], [8]);
+LeachingVat.add(<jaopca:item_crushedlumpsyrmorite>, [<jaopca:item_leachedshardsyrmorite>*2], [7.68F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardsyrmorite>, ["dustSyrmorite", "dustVanadium", "dustGold"], [200, 20, 12]);
 val syrmoriteProcessing =[
 	<jaopca:item_crushedlumpsyrmorite>,
 	<jaopca:item_leachedshardsyrmorite>,
@@ -340,9 +398,9 @@ Pulverizer.addRecipe(<jaopca:item_dustsyrmorite>, item, 2000, <jaopca:item_dusts
 }
 
 //Cobalt
-mods.rockhounding_chemistry.MineralSizer.add(<tconstruct:ore>, [<jaopca:item_crushedlumpcobalt>*2], [8]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpcobalt>, [<jaopca:item_leachedshardcobalt>*2], [4.21F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardcobalt>, ["dustCobalt", "dustCopper", "dustNickel"], [200, 20, 15]);
+MineralSizer.add(<tconstruct:ore>, [<jaopca:item_crushedlumpcobalt>*2], [8]);
+LeachingVat.add(<jaopca:item_crushedlumpcobalt>, [<jaopca:item_leachedshardcobalt>*2], [4.21F], <liquid:leachate>*50);
+ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardcobalt>, ["dustCobalt", "dustCopper", "dustNickel"], [200, 20, 15]);
 val cobaltProcessing =[
 	<jaopca:item_crushedlumpcobalt>,
 	<jaopca:item_leachedshardcobalt>,
@@ -356,9 +414,9 @@ Pulverizer.addRecipe(<enderio:item_material:31>, item, 2000, <jaopca:item_dustsm
 }
 
 //Ardite
-mods.rockhounding_chemistry.MineralSizer.add(<tconstruct:ore:1>, [<jaopca:item_crushedlumpardite>*2], [8]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpardite>, [<jaopca:item_leachedshardardite>*2], [3.80F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardardite>, ["dustArdite", "dustGlowstone", "dustSulfur"], [200, 25, 10]);
+MineralSizer.add(<tconstruct:ore:1>, [<jaopca:item_crushedlumpardite>*2], [8]);
+LeachingVat.add(<jaopca:item_crushedlumpardite>, [<jaopca:item_leachedshardardite>*2], [3.80F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardardite>, ["dustArdite", "dustGlowstone", "dustSulfur"], [200, 25, 10]);
 val arditeProcessing =[
 	<jaopca:item_crushedlumpardite>,
 	<jaopca:item_leachedshardardite>,
@@ -374,9 +432,9 @@ Pulverizer.addRecipe(<jaopca:item_dustardite>, item, 2000, <jaopca:item_dustsmal
 
 
 //Uranium
-mods.rockhounding_chemistry.MineralSizer.add(<nuclearcraft:ore:4>, [<jaopca:item_crushedlumpuranium>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpuranium>, [<jaopca:item_leachedsharduranium>*2], [4.99F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedsharduranium>, ["dustYellowcake", "dustThorium"], [200, 40]);
+MineralSizer.add("oreUranium", [<jaopca:item_crushedlumpuranium>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpuranium>, [<jaopca:item_leachedsharduranium>*2], [4.99F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedsharduranium>, ["dustYellowcake", "dustThorium", "dustNiobium"], [200, 40, 25]);
 val uraniumProcessing =[
 	<jaopca:item_crushedlumpuranium>,
 	<jaopca:item_leachedsharduranium>,
@@ -391,9 +449,9 @@ Pulverizer.addRecipe(<immersiveengineering:metal:14>, item, 2000, <techreborn:sm
 }
 
 //Thorium
-mods.rockhounding_chemistry.MineralSizer.add(<nuclearcraft:ore:3>, [<jaopca:item_crushedlumpthorium>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpthorium>, [<jaopca:item_leachedshardthorium>*2], [6.00F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardthorium>, ["dustThorium", "dustYellowcake"], [200, 50]);
+MineralSizer.add(<nuclearcraft:ore:3>, [<jaopca:item_crushedlumpthorium>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpthorium>, [<jaopca:item_leachedshardthorium>*2], [6.00F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardthorium>, ["dustThorium", "dustYellowcake", "dustTitanium","dustHafnium"], [200, 50, 25, 20]);
 val thoriumProcessing =[
 	<jaopca:item_crushedlumpthorium>,
 	<jaopca:item_leachedshardthorium>,
@@ -407,9 +465,9 @@ Pulverizer.addRecipe(<techreborn:dust:65>, item, 2000, <techreborn:smalldust:67>
 }
 
 //Magnesium
-mods.rockhounding_chemistry.MineralSizer.add(<nuclearcraft:ore:7>, [<jaopca:item_crushedlumpmagnesium>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpmagnesium>, [<jaopca:item_leachedshardmagnesium>*2], [3.73F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardmagnesium>, ["dustMagnesium", "dustMolybdenum"], [200, 25]);
+MineralSizer.add(<nuclearcraft:ore:7>, [<jaopca:item_crushedlumpmagnesium>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpmagnesium>, [<jaopca:item_leachedshardmagnesium>*2], [3.73F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardmagnesium>, ["dustMagnesium", "dustPotassium", "dustCalcium"], [200, 25, 20]);
 val magnesiumProcessing =[
 	<jaopca:item_crushedlumpmagnesium>,
 	<jaopca:item_leachedshardmagnesium>,
@@ -423,9 +481,9 @@ Pulverizer.addRecipe(<techreborn:dust:30>, item, 2000, <techreborn:smalldust:30>
 }
 
 //Lithium
-mods.rockhounding_chemistry.MineralSizer.add(<nuclearcraft:ore:6>, [<jaopca:item_crushedlumplithium>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumplithium>, [<jaopca:item_leachedshardlithium>*2], [6.32F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardlithium>, ["dustLithium", "dustChrome"], [200, 25]);
+MineralSizer.add(<nuclearcraft:ore:6>, [<jaopca:item_crushedlumplithium>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumplithium>, [<jaopca:item_leachedshardlithium>*2], [6.32F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardlithium>, ["dustLithium", "dustAluminum", "dustSodium"], [200, 30, 15]);
 val lithiumProcessing =[
 	<jaopca:item_crushedlumplithium>,
 	<jaopca:item_leachedshardlithium>,
@@ -439,9 +497,9 @@ Pulverizer.addRecipe(<nuclearcraft:dust:6>, item, 2000, <jaopca:item_dustsmallli
 }
 
 //Boron
-mods.rockhounding_chemistry.MineralSizer.add(<nuclearcraft:ore:5>, [<jaopca:item_crushedlumpboron>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpboron>, [<jaopca:item_leachedshardboron>*2], [4.57F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardboron>, ["dustBoron", "dustSaltpeter"], [200, 20]);
+MineralSizer.add(<nuclearcraft:ore:5>, [<jaopca:item_crushedlumpboron>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpboron>, [<jaopca:item_leachedshardboron>*2], [4.57F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardboron>, ["dustBoron", "dustSaltpeter"], [200, 20]);
 val boronProcessing =[
 	<jaopca:item_crushedlumpboron>,
 	<jaopca:item_leachedshardboron>,
@@ -455,9 +513,9 @@ Pulverizer.addRecipe(<nuclearcraft:dust:5>, item, 2000, <jaopca:item_dustsmallbo
 }
 
 //Palladium
-mods.rockhounding_chemistry.MineralSizer.add(<contenttweaker:sub_block_holder_0:3>, [<jaopca:item_crushedlumppalladium>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumppalladium>, [<jaopca:item_leachedshardpalladium>*2], [4.57F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardpalladium>, ["dustPalladium"], [200]);
+MineralSizer.add(<contenttweaker:sub_block_holder_0:3>, [<jaopca:item_crushedlumppalladium>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumppalladium>, [<jaopca:item_leachedshardpalladium>*2], [4.57F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardpalladium>, ["dustPalladium"], [200]);
 val palladiumProcessing =[
 	<jaopca:item_crushedlumppalladium>,
 	<jaopca:item_leachedshardpalladium>,
@@ -471,9 +529,9 @@ Pulverizer.addRecipe(<contenttweaker:material_part:35>, item, 2000, <jaopca:item
 }
 
 //Orichalcum
-mods.rockhounding_chemistry.MineralSizer.add(<contenttweaker:sub_block_holder_0:7>, [<jaopca:item_crushedlumporichalcum>*2], [8]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumporichalcum>, [<jaopca:item_leachedshardorichalcum>*2], [6.32F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardorichalcum>, ["dustOrichalcum"], [200]);
+MineralSizer.add(<contenttweaker:sub_block_holder_0:7>, [<jaopca:item_crushedlumporichalcum>*2], [8]);
+LeachingVat.add(<jaopca:item_crushedlumporichalcum>, [<jaopca:item_leachedshardorichalcum>*2], [6.32F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardorichalcum>, ["dustOrichalcum"], [200]);
 val orichalcumProcessing =[
 	<jaopca:item_crushedlumporichalcum>,
 	<jaopca:item_leachedshardorichalcum>,
@@ -487,9 +545,9 @@ Pulverizer.addRecipe(<contenttweaker:material_part:25>, item, 2000, <jaopca:item
 }
 
 //Adamantine
-mods.rockhounding_chemistry.MineralSizer.add(<contenttweaker:sub_block_holder_0:8>, [<jaopca:item_crushedlumpadamantine>*2], [15]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpadamantine>, [<jaopca:item_leachedshardadamantine>*2], [3.73F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardadamantine>, ["dustAdamantine", "dustChrome"], [200, 34]);
+MineralSizer.add(<contenttweaker:sub_block_holder_0:8>, [<jaopca:item_crushedlumpadamantine>*2], [15]);
+LeachingVat.add(<jaopca:item_crushedlumpadamantine>, [<jaopca:item_leachedshardadamantine>*2], [3.73F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardadamantine>, ["dustAdamantine", "dustChrome"], [200, 34]);
 val adamantineProcessing =[
 	<jaopca:item_crushedlumpadamantine>,
 	<jaopca:item_leachedshardadamantine>,
@@ -503,9 +561,9 @@ Pulverizer.addRecipe(<jaopca:item_dustadaminite>, item, 2000, <jaopca:item_dusts
 }
 
 //Starmetal
-mods.rockhounding_chemistry.MineralSizer.add(<astralsorcery:blockcustomore:1>, [<jaopca:item_crushedlumpastralstarmetal>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpastralstarmetal>, [<jaopca:item_leachedshardastralstarmetal>*2], [4.57F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardastralstarmetal>, ["dustAstralStarmetal", "dustTitanium"], [200, 18]);
+MineralSizer.add(<astralsorcery:blockcustomore:1>, [<jaopca:item_crushedlumpastralstarmetal>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpastralstarmetal>, [<jaopca:item_leachedshardastralstarmetal>*2], [4.57F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardastralstarmetal>, ["dustAstralStarmetal", "dustTitanium"], [200, 18]);
 val astralstarmetalProcessing =[
 	<jaopca:item_crushedlumpastralstarmetal>,
 	<jaopca:item_leachedshardastralstarmetal>,
@@ -519,27 +577,27 @@ Pulverizer.addRecipe(<astralsorcery:itemcraftingcomponent:2>, item, 2000, <jaopc
 }
 
 //Pyrite
-mods.rockhounding_chemistry.LeachingVat.add(<techreborn:ore:5>, [<rockhounding_chemistry:sulfide_shards:6>*8], [5.1F], <liquid:leachate>*200);
+LeachingVat.add(<techreborn:ore:5>, [<rockhounding_chemistry:sulfide_shards:6>*8], [5.1F], <liquid:leachate>*200);
 
 //Galena
-mods.rockhounding_chemistry.LeachingVat.add(<techreborn:ore>, [<rockhounding_chemistry:sulfide_shards:3>*8], [7.4F], <liquid:leachate>*200);
+LeachingVat.add(<techreborn:ore>, [<rockhounding_chemistry:sulfide_shards:3>*8], [7.4F], <liquid:leachate>*200);
 
 //Sphalerite
-mods.rockhounding_chemistry.LeachingVat.add(<techreborn:ore:7>, [<rockhounding_chemistry:sulfide_shards:9>*8], [4.05F], <liquid:leachate>*200);
+LeachingVat.add(<techreborn:ore:7>, [<rockhounding_chemistry:sulfide_shards:9>*8], [4.05F], <liquid:leachate>*200);
 
 //blastFurnace.removeInputRecipe(IIngredient iIngredient)
 // 3880 is max heat
 
-furnace.remove(<nuclearcraft:ingot:11>,<nuclearcraft:ingot_oxide:2>);
-blastFurnace.addRecipe(<nuclearcraft:ingot:11>, null, <nuclearcraft:ingot_oxide:2>, null, 200, 20, 1500);
+furnace.remove(<nuclearcraft:ingot:11>,<nuclearcraft:ingot:14>);
+blastFurnace.addRecipe(<nuclearcraft:ingot:11>, null, <nuclearcraft:ingot:14>, null, 200, 20, 1500);
 
 
 ////////////////////////////////////////
 ##Aluminum
 ////////////////////////////////////////
-mods.rockhounding_chemistry.MineralSizer.add(<thermalfoundation:ore:4>, [<jaopca:item_crushedlumpaluminium>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpaluminium>, [<jaopca:item_leachedshardaluminium>*2], [4.88F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardaluminium>, ["dustAluminum", "dustIron", "dustTitanium"], [200, 25, 10]);
+MineralSizer.add(<thermalfoundation:ore:4>, [<jaopca:item_crushedlumpaluminium>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpaluminium>, [<jaopca:item_leachedshardaluminium>*2], [4.88F], <liquid:leachate>*50);
+ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardaluminium>, ["dustAluminum", "dustIron", "dustTitanium"], [200, 25, 10]);
 /*furnace.addRecipe(<thermalfoundation:material:132>, <jaopca:item_crushedlumpaluminium>, 0.1);
 furnace.addRecipe(<thermalfoundation:material:132>, <jaopca:item_leachedshardaluminium>, 0.1);*/
 
@@ -561,10 +619,10 @@ ArcFurnace.addRecipe(<thermalfoundation:material:132>, item, <immersiveengineeri
 ////////////////////////////////////////
 ##Platinum
 ////////////////////////////////////////
-mods.rockhounding_chemistry.MineralSizer.add(<techreborn:ore:9>, [<jaopca:item_crushedlumpplatinum>*4], [15]);
-mods.rockhounding_chemistry.MineralSizer.add(<thermalfoundation:ore:6>, [<jaopca:item_crushedlumpplatinum>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpplatinum>, [<jaopca:item_leachedshardplatinum>*2], [7.59F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardplatinum>, ["dustPlatinum", "dustOsmium", "dustIridium"], [200, 20, 15]);
+MineralSizer.add(<techreborn:ore:9>, [<jaopca:item_crushedlumpplatinum>*4], [15]);
+MineralSizer.add(<thermalfoundation:ore:6>, [<jaopca:item_crushedlumpplatinum>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpplatinum>, [<jaopca:item_leachedshardplatinum>*2], [7.59F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardplatinum>, ["dustPlatinum", "dustOsmium", "dustIridium"], [200, 20, 15]);
 
 blastFurnace.addRecipe(<thermalfoundation:material:134>, null, <ore:dustPlatinum>, null, 1200, 50, 2000);
 blastFurnace.addRecipe(<thermalfoundation:material:134>*4, null, <techreborn:ore:9>, null, 1200, 60, 2000);
@@ -583,9 +641,9 @@ Pulverizer.addRecipe(<thermalfoundation:material:70>, item, 2000, <techreborn:sm
 ////////////////////////////////////////
 ##Osmium
 ////////////////////////////////////////
-mods.rockhounding_chemistry.MineralSizer.add(<mekanism:oreblock>, [<jaopca:item_crushedlumposmium>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumposmium>, [<jaopca:item_leachedshardosmium>*2], [3.51F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardosmium>, ["dustOsmium", "dustIridium", "dustPlatinum"], [200, 20, 15]);
+MineralSizer.add(<mekanism:oreblock>, [<jaopca:item_crushedlumposmium>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumposmium>, [<jaopca:item_leachedshardosmium>*2], [3.51F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardosmium>, ["dustOsmium", "dustIridium", "dustPlatinum"], [200, 20, 15]);
 
 blastFurnace.addRecipe(<mekanism:ingot:1>, null, <ore:dustOsmium>, null, 1200, 40, 2500);
 blastFurnace.addRecipe(<mekanism:ingot:1>*2, null, <mekanism:oreblock>, null, 1200, 40, 2500);
@@ -603,9 +661,9 @@ Pulverizer.addRecipe(<mekanism:dust:2>, item, 2000, <jaopca:item_dustsmallosmium
 ////////////////////////////////////////
 ##Tungsten
 ////////////////////////////////////////
-mods.rockhounding_chemistry.MineralSizer.add(<techreborn:ore:8>, [<jaopca:item_crushedlumptungsten>*2], [15]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumptungsten>, [<jaopca:item_leachedshardtungsten>*2], [5.13F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardtungsten>, ["dustTungsten", "dustTin", "dustGold"], [200, 20, 7]);
+MineralSizer.add(<techreborn:ore:8>, [<jaopca:item_crushedlumptungsten>*2], [15]);
+LeachingVat.add(<jaopca:item_crushedlumptungsten>, [<jaopca:item_leachedshardtungsten>*2], [5.13F], <liquid:leachate>*50);
+ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardtungsten>, ["dustTungsten", "dustTin", "dustGold"], [200, 20, 7]);
 
 blastFurnace.addRecipe(<techreborn:ingot:15>*2, null, <ore:oreTungsten>, null, 1800, 100, 3000);
 blastFurnace.addRecipe(<techreborn:ingot:15>, null, <ore:dustTungsten>, null, 1800, 80, 3000);
@@ -623,9 +681,9 @@ Pulverizer.addRecipe(<techreborn:dust:55>, item, 2000, <techreborn:smalldust:55>
 ////////////////////////////////////////
 ##Titanium
 ////////////////////////////////////////
-mods.rockhounding_chemistry.MineralSizer.add(<libvulpes:ore0:8>, [<jaopca:item_crushedlumptitanium>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumptitanium>, [<jaopca:item_leachedshardtitanium>*2], [5.00F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardtitanium>, ["dustTitanium", "dustGold", "dustCarbon"], [200, 30, 20]);
+MineralSizer.add(<libvulpes:ore0:8>, [<jaopca:item_crushedlumptitanium>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumptitanium>, [<jaopca:item_leachedshardtitanium>*2], [5.00F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardtitanium>, ["dustTitanium", "dustGold", "dustCarbon"], [200, 30, 20]);
 
 blastFurnace.addRecipe(<techreborn:ingot:14>*2, null, <libvulpes:ore0:8>, null, 1800, 100, 3000);
 blastFurnace.addRecipe(<techreborn:ingot:14>, null, <techreborn:dust:54>, null, 1800, 80, 3000);
@@ -641,13 +699,13 @@ Crusher.addRecipe(<techreborn:dust:54>, item, 1024, <techreborn:smalldust:54>*2,
 Pulverizer.addRecipe(<techreborn:dust:54>, item, 2000, <techreborn:smalldust:54>*2);
 }
 
-mods.rockhounding_chemistry.LeachingVat.add(<libvulpes:ore0:8>, [<rockhounding_chemistry:oxide_shards:22>*8], [4.25F], <liquid:leachate>*200);
+LeachingVat.add(<libvulpes:ore0:8>, [<rockhounding_chemistry:oxide_shards:22>*8], [4.25F], <liquid:leachate>*200);
 ////////////////////////////////////////
 ##Iridium
 ////////////////////////////////////////
-mods.rockhounding_chemistry.MineralSizer.add(<thermalfoundation:ore:7>, [<jaopca:item_crushedlumpiridium>*2], [4]);
-mods.rockhounding_chemistry.LeachingVat.add(<jaopca:item_crushedlumpiridium>, [<jaopca:item_leachedshardiridium>*2], [20.20F], <liquid:leachate>*50);
-mods.rockhounding_chemistry.ChemicalExtractor.add("Native", <jaopca:item_leachedshardiridium>, ["dustIridium", "dustOsmium", "dustPlatinum"], [200, 25, 15]);
+MineralSizer.add(<thermalfoundation:ore:7>, [<jaopca:item_crushedlumpiridium>*2], [4]);
+LeachingVat.add(<jaopca:item_crushedlumpiridium>, [<jaopca:item_leachedshardiridium>*2], [20.20F], <liquid:leachate>*50);
+ChemicalExtractor.add("Native", <jaopca:item_leachedshardiridium>, ["dustIridium", "dustOsmium", "dustPlatinum"], [200, 25, 15]);
 
 blastFurnace.addRecipe(<thermalfoundation:material:135>*2, null, <ore:oreIridium>, null, 2000, 500, 3500);
 blastFurnace.addRecipe(<thermalfoundation:material:135>, null, <ore:dustIridium>, null, 2000, 500, 3500);
@@ -666,9 +724,9 @@ Pulverizer.addRecipe(<thermalfoundation:material:71>, item, 2000, <techreborn:sm
 
 
 
-
-#####			Ingot Tiers		#####
-
+##################################
+#####   	Ingot Tiers		######
+##################################
 
 //Furnace
 val Tier1Ingots =[
@@ -725,13 +783,14 @@ for item in Tier4Ingots {
 item.addTooltip(format.aqua("Tier 4 Metal"));
 }
 
-//Blast Furnace
+//Blast Furnace / chap 5
 val Tier5Ingots =[
 <nuclearcraft:ingot:11>,
-<thermalfoundation:material:135>,
 <thermalfoundation:material:134>,
 <mysticalagriculture:crafting:36>,
-<mysticalagradditions:insanium:2>,
+<thermalfoundation:material:165>,
+<thermalfoundation:material:166>,
+<thermalfoundation:material:167>,
 <mekanism:ingot:1>,
 <tconstruct:ingots:2>,
 ] as IItemStack[];
@@ -739,19 +798,20 @@ for item in Tier5Ingots {
 item.addTooltip(format.gold("Tier 5 Metal"));
 }
 
-//Ender Smeltery
+//Ender Smeltery / chap 6
 val Tier6Ingots =[
 <enderio:item_alloy_ingot:2>,
 <enderio:item_alloy_ingot:8>,
 <enderio:item_alloy_endergy_ingot:6>,
-<thermalfoundation:material:165>,
-<thermalfoundation:material:166>,
-<thermalfoundation:material:167>,
-<plustic:osmiridiumingot>,
-<plustic:mirioningot>,
-<plustic:osgloglasingot>,
+<techreborn:ingot:14>,
+<techreborn:ingot:15>,
+<thermalfoundation:material:135>,
+//<plustic:osmiridiumingot>,
+//<plustic:mirioningot>,
+//<plustic:osgloglasingot>,
 <advancedrocketry:productingot:1>,
 <advancedrocketry:productingot>,
+<mysticalagradditions:insanium:2>,
 ] as IItemStack[];
 for item in Tier6Ingots {
 item.addTooltip(format.darkPurple("Tier 6 Metal"));

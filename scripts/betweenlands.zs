@@ -13,13 +13,12 @@ oreDictRubber.add(
 
 ### CRAFTING RECIPES ###
 
-//crafting the talisman Moving to LM page
-/*
-recipes.addShaped(<thebetweenlands:swamp_talisman:1>, [[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>, <ore:elementsWater>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
-recipes.addShaped(<thebetweenlands:swamp_talisman:2>, [[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>, <ore:elementsEarth>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
-recipes.addShaped(<thebetweenlands:swamp_talisman:3>, [[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>, <ore:elementsFae>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
-recipes.addShaped(<thebetweenlands:swamp_talisman:4>, [[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>, <ore:elementsFire>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
-*/
+//crafting the talisman 
+recipes.addShaped(<thebetweenlands:swamp_talisman:1>, [[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>, <astralsorcery:itemusabledust:1>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
+recipes.addShaped(<thebetweenlands:swamp_talisman:2>, [[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>, <actuallyadditions:item_misc:7>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
+recipes.addShaped(<thebetweenlands:swamp_talisman:3>, [[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>, <arcanearchives:scintillating_inlay>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
+recipes.addShaped(<thebetweenlands:swamp_talisman:4>, [[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>, <embers:crystal_ember>, <thaumcraft:stone_arcane>], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
+
 //converting at very low rate
 recipes.addShaped(<thebetweenlands:log_weedwood>, [[<ore:logWood>, <ore:logWood>, <ore:logWood>],[<ore:logWood>, <thebetweenlands:swamp_talisman>.reuse(), <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
 recipes.addShaped(<thebetweenlands:smooth_betweenstone>, [[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],[<minecraft:stone>, <thebetweenlands:swamp_talisman>.reuse(), <minecraft:stone>], [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]]);

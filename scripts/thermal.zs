@@ -1,7 +1,12 @@
 import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
-import mods.nuclearcraft.alloy_furnace;
+import mods.nuclearcraft.AlloyFurnace;
+import mods.thermalexpansion.Insolator;
+import mods.nuclearcraft.Infuser;
+import mods.advancedrocketry.PrecisionAssembler;
+import mods.techreborn.assemblingMachine;
+
 print("==================== loading thermal.zs ====================");
 ##########################################################################################
 
@@ -46,39 +51,54 @@ recipes.addShaped(<thermalfoundation:material:1028>, [[<bloodarsenal:base_item:2
 recipes.addShaped(<thermalexpansion:frame:64>, [[<thermalfoundation:material:321>, <ore:fusedGlass>, <thermalfoundation:material:321>],[<ore:fusedGlass>, <thermalfoundation:material:292>, <ore:fusedGlass>], [<thermalfoundation:material:321>, <ore:fusedGlass>, <thermalfoundation:material:321>]]);
 
 //extruder
-recipes.addShaped(<thermalexpansion:machine:15>, [[null, <embers:superheater>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+recipes.addShaped(<thermalexpansion:machine:15>, [[null, <embers:superheater>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <openblocks:tank>, <thermalfoundation:material:256>]]);
 
 //glacial
-recipes.addShaped(<thermalexpansion:machine:14>, [[null, <cookingforblockheads:ice_unit>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+recipes.addShaped(<thermalexpansion:machine:14>, [[null, <cookingforblockheads:ice_unit>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <openblocks:tank>, <thermalfoundation:material:256>]]);
 
+//Hardned glass
 recipes.addShaped(<thermalfoundation:glass:3>, [[<thermalfoundation:material:770>, <thermalfoundation:material:1024>, <thermalfoundation:material:770>],[<thermalfoundation:material:67>, <ore:fusedQuartz>, <thermalfoundation:material:67>], [<thermalfoundation:material:770>, <thermalfoundation:material:1024>, <thermalfoundation:material:770>]]);
+
+
+val Coils as IItemStack[IItemStack] = {
+    <thermalfoundation:material:513>:<moreplates:gold_stick>,
+    <thermalfoundation:material:514>:<moreplates:silver_stick>,
+    <thermalfoundation:material:515>:<moreplates:electrum_stick>,
+} as IItemStack[IItemStack];
+
+for coil, rod in Coils {
+	recipes.remove(coil);
+    assemblingMachine.addRecipe(coil, rod, <advgenerators:iron_wiring>*2, 400, 32);
+    PrecisionAssembler.addRecipe(coil, 200, 10000, rod, <advgenerators:iron_wiring>*2);
+}
+
 
 
 //mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
 //mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
 //Modularium
-Transposer.addFillRecipe(<modularmachinery:itemmodularium>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 100);
+Transposer.addFillRecipe(<modularmachinery:itemmodularium>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 10000);
 
 //Fiery Ingot
 Transposer.addFillRecipe(<twilightforest:fiery_ingot>, <thebetweenlands:octine_ingot>, <liquid:pyrotheum> * 2000, 10000);
 
 //Lumim
-alloy_furnace.removeRecipeWithOutput([<nuclearcraft:alloy:8>*4]);
-mods.nuclearcraft.infuser.removeRecipeWithOutput([<thermalfoundation:material:166>]);
+AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:8>*4);
+Infuser.removeRecipeWithOutput(<thermalfoundation:material:166>);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:8>*4, <thermalfoundation:material:130>, <thermalfoundation:material:129>*3, 5000);
 Transposer.addFillRecipe(<thermalfoundation:material:166>, <nuclearcraft:alloy:8>, <liquid:glowstone> * 1000, 10000);
 
 //Signallum
-alloy_furnace.removeRecipeWithOutput([<nuclearcraft:alloy:7>*4]);
-mods.nuclearcraft.infuser.removeRecipeWithOutput([<thermalfoundation:material:165>]);
+AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:7>*4);
+Infuser.removeRecipeWithOutput(<thermalfoundation:material:165>);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:7>*4, <thermalfoundation:material:130>, <thermalfoundation:material:128>*3, 5000);
 Transposer.addFillRecipe(<thermalfoundation:material:165>, <rockhounding_chemistry:alloy_items_deco:13>, <liquid:redstone> * 500, 10000);
 Transposer.addFillRecipe(<thermalfoundation:material:165>, <nuclearcraft:alloy:7>, <liquid:redstone> * 1000, 10000);
 
 //Endurim
-alloy_furnace.removeRecipeWithOutput([<nuclearcraft:alloy:9>*4]);
-mods.nuclearcraft.infuser.removeRecipeWithOutput([<thermalfoundation:material:167>]);
+AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:9>*4);
+Infuser.removeRecipeWithOutput(<thermalfoundation:material:167>);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:9>*4, <thermalfoundation:material:134>, <thermalfoundation:material:131>*3, 5000);
 Transposer.addFillRecipe(<thermalfoundation:material:167>, <nuclearcraft:alloy:9>, <liquid:ender> * 250, 10000);
 
@@ -116,6 +136,27 @@ val DuststoRemove =
 
 for item in DuststoRemove {
 InductionSmelter.removeRecipe(item, <minecraft:sand>);
+}
+
+
+val flowerDupe =
+[
+<minecraft:red_flower:5>,
+<minecraft:red_flower:6>,
+<minecraft:red_flower:3>,
+<minecraft:red_flower:4>,
+<minecraft:red_flower:2>,
+<minecraft:red_flower:1>,
+<minecraft:yellow_flower>,
+<minecraft:red_flower:8>,
+<minecraft:red_flower>,
+<minecraft:red_flower:7>,
+]
+ as IItemStack[];
+for item in flowerDupe {
+Insolator.addRecipe(item*2, item, <thermalfoundation:fertilizer>, 1500);
+Insolator.addRecipe(item*3, item, <thermalfoundation:fertilizer:1>, 3000);
+Insolator.addRecipe(item*5, item, <thermalfoundation:fertilizer:2>, 5000);
 }
 ##########################################################################################
 print("==================== end of thermal.zs ====================");

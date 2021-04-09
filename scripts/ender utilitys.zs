@@ -36,9 +36,9 @@ recipes.addShaped("bagupgraderecipe",
 //Handy Chests Upgrade
 recipes.remove(<enderutilities:storage_0:6>);
 recipes.addShaped(<enderutilities:storage_0:6>, [[<enderutilities:enderpart:2>, <ore:chest>, <enderutilities:enderpart:2>],[<enderutilities:enderpart:2>, <ore:chest>, <enderutilities:enderpart:2>], [<minecraft:piston>, <enderutilities:enderpart:10>, <minecraft:piston>]]);
-recipes.addShaped(<enderutilities:storage_0:6>, [[null, null, null],[<enderutilities:enderpart:2>, <enderutilities:storage_0:5>, <enderutilities:enderpart:2>], [<minecraft:piston>, <enderutilities:enderpart:10>, <minecraft:piston>]]);
-recipes.addShaped(<enderutilities:storage_0:5>, [[null, null, null],[<enderutilities:enderpart:1>, <enderutilities:storage_0:4>, <enderutilities:enderpart:1>], [<minecraft:piston>, <enderutilities:enderpart:10>, <minecraft:piston>]]);
-recipes.addShaped(<enderutilities:storage_0:4>, [[null, null, null],[<enderutilities:enderpart>, <enderutilities:storage_0:3>, <enderutilities:enderpart>], [<minecraft:piston>, <enderutilities:enderpart:10>, <minecraft:piston>]]);
+recipes.addShaped(<enderutilities:storage_0:6>, [[<enderutilities:enderpart:2>, <enderutilities:storage_0:5>, <enderutilities:enderpart:2>], [<minecraft:piston>, <enderutilities:enderpart:10>, <minecraft:piston>]]);
+recipes.addShaped(<enderutilities:storage_0:5>, [[<enderutilities:enderpart:1>, <enderutilities:storage_0:4>, <enderutilities:enderpart:1>], [<minecraft:piston>, <enderutilities:enderpart:10>, <minecraft:piston>]]);
+recipes.addShaped(<enderutilities:storage_0:4>, [[<enderutilities:enderpart>, <enderutilities:storage_0:3>, <enderutilities:enderpart>], [<minecraft:piston>, <enderutilities:enderpart:10>, <minecraft:piston>]]);
 
 ##########################################################################################
 print("==================== end of ender utilitys.zs ====================");

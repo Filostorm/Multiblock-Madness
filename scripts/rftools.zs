@@ -8,6 +8,8 @@ val itemstoRemove =
     <rftools:space_chamber>,
     <rftools:shape_card:2>,
     <rftools:powercell>,
+    <rftools:dimensional_shard>,
+    <rftools:environmental_controller>,
 ]
  as IItemStack[];
 
@@ -23,6 +25,10 @@ recipes.addShaped(<rftools:shape_card:2>, [[<techreborn:plates:31>, <techreborn:
 
 //Powercell
 recipes.addShapedMirrored(<rftools:powercell> * 2, [[<minecraft:prismarine>, <randomthings:spectrelens>, <minecraft:redstone_block>],[<randomthings:spectrelens>, <rftools:machine_frame>, <randomthings:spectrelens>], [<minecraft:redstone_block>, <randomthings:spectrelens>, <minecraft:prismarine>]]);
+
+//Enviromental controller
+recipes.addShaped(<rftools:environmental_controller>, [[<minecraft:ender_pearl>, <minecraft:beacon>, <minecraft:ender_pearl>],[<actuallyadditions:block_crystal_empowered:5>, <rftools:machine_frame>, <actuallyadditions:block_crystal_empowered:2>], [<minecraft:ender_pearl>, <actuallyadditions:block_crystal_empowered:4>, <minecraft:ender_pearl>]]);
+
 
 ##########################################################################################
 print("==================== end of rftools.zs ====================");

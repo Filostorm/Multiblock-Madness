@@ -22,8 +22,6 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 ### Add recipes ###
-recipes.addShaped(<contenttweaker:greatwood_handle>, [[null, null, <thaumcraft:log_greatwood>],[null, <thaumcraft:log_greatwood>, null], [<thaumcraft:log_greatwood>, null, null]]);
-
 recipes.addShaped(<ebwizardry:magic_wand>, [[null, null, <ebwizardry:magic_crystal>],[null, <contenttweaker:greatwood_handle>, null], [<minecraft:gold_nugget>, null, null]]);
 recipes.addShaped(<ebwizardry:novice_earth_wand>, [[null, null, <ebwizardry:magic_crystal:5>],[null, <contenttweaker:greatwood_handle>, null], [<minecraft:gold_nugget>, null, null]]);
 recipes.addShaped(<ebwizardry:novice_necromancy_wand>, [[null, null, <ebwizardry:magic_crystal:4>],[null, <contenttweaker:greatwood_handle>, null], [<minecraft:gold_nugget>, null, null]]);

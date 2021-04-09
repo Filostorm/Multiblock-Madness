@@ -28,7 +28,7 @@ print("==================== loading Loot.zs ====================");
 	
 	val caveloot = [
 	<thermalfoundation:material:70>,
-	<extendedcrafting:storage>,
+	<extendedcrafting:material>,
 	<nuclearcraft:uranium:8>,
 	<nuclearcraft:neptunium>,
 	<nuclearcraft:plutonium>,
@@ -52,13 +52,10 @@ print("==================== loading Loot.zs ====================");
 	<mysticalagriculture:prudentium_apple>,
 	<mysticalagriculture:intermedium_apple>,
 	<mysticalagriculture:superium_apple>,
-	<botania:brewvial>.withTag({brewKey: "bloodthirst"}),
-	<botania:brewvial>.withTag({brewKey: "overload"}),
-	<botania:brewvial>.withTag({brewKey: "invisibility"}),
-	<botania:brewvial>.withTag({brewKey: "regen"}),
-	<botania:brewvial>.withTag({brewKey: "speed"}),
-	<botania:brewvial>.withTag({brewKey: "clear"}),
-	<botania:brewflask>.withTag({brewKey: "strength"})
+	<extendedcrafting:material:36>,
+	<rockhounding_chemistry:alloy_items_gems:2>,
+	<rockhounding_chemistry:alloy_items_tech:32>,
+	<extendedcrafting:material:33>,
 	] as IItemStack[];
 	
 	for item in caveloot {

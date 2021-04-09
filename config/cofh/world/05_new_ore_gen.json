@@ -52,7 +52,7 @@
 						"properties": {
 							"type": "copper"
 						},
-						"weight": 70
+						"weight": 75
 					},
 					{
 						"name": "utilitybaseores:blaze_ore",
@@ -63,7 +63,7 @@
 						"properties": {
 							"sub_block_number": "3"
 						},
-						"weight": 24
+						"weight": 19
 					},
 					{
 						"name": "rockhounding_chemistry:uninspected_mineral",

@@ -17,6 +17,8 @@ import mods.thermalexpansion.Insolator;
 print("==================== loading mods botania.zs ====================");
 ##########################################################################################
 
+//mods.botania.ElvenTrade.addRecipe([<minecraft:iron_ingot>], [<minecraft:dirt>,<minecraft:grass>]);
+
 val remove =
 [
 <botania:runealtar>,
@@ -25,6 +27,11 @@ val remove =
 <botania:pylon:1>,
 <botania:livingwood:5>,
 <botania:alfheimportal>,
+<botania:sparkupgrade:3>,
+<botania:sparkupgrade:2>,
+<botania:sparkupgrade:1>,
+<botania:sparkupgrade>,
+<botania:dreamwood:5>,
 ]
  as IItemStack[];
 
@@ -32,11 +39,14 @@ for item in remove {
 recipes.remove(item);
 }
 
+
+
+
 //mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance, @Optional int water);
 
-Insolator.addRecipe(<actuallyadditions:block_black_lotus>, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer>, 1500, <actuallyadditions:block_black_lotus>, 100, 1000);
-Insolator.addRecipe(<actuallyadditions:block_black_lotus>*2, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:1>, 1500, <botania:blacklotus>, 25, 5000);
-Insolator.addRecipe(<actuallyadditions:block_black_lotus>*3, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:2>, 1500, <botania:blacklotus:1>, 5, 10000);
+Insolator.addRecipe(<actuallyadditions:block_black_lotus>, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer>, 1000, <actuallyadditions:block_black_lotus>, 100, 1000);
+Insolator.addRecipe(<actuallyadditions:block_black_lotus>*2, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:1>, 7500, <botania:blacklotus>, 25, 2500);
+Insolator.addRecipe(<actuallyadditions:block_black_lotus>*3, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:2>, 15000, <botania:blacklotus:1>, 5, 5000);
 
 
 // living wood
@@ -117,10 +127,14 @@ ManaInfusion.addInfusion(<botania:manaresource:23>,<embers:dust_ember>,7500);
 //Essence of Mana
 ManaInfusion.addInfusion(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}), <thaumcraft:nugget:9>, 1000);
 
+//Mana Steel
 ManaInfusion.removeRecipe(<botania:storage>);
 ManaInfusion.removeRecipe(<ore:ingotManasteel>);
+
 ManaInfusion.addInfusion(<botania:manaresource>,<contenttweaker:inert_ingot>,10000);
 ManaInfusion.addInfusion(<botania:manaresource>*2,<contenttweaker:material_part:20>,10000);
+ManaInfusion.addInfusion(<botania:manaresource>,<contenttweaker:sub_block_holder_0:2>,100000);
+ManaInfusion.addInfusion(<botania:manaresource>*2,<contenttweaker:sub_block_holder_0>,100000);
 
 Agglomeration.removeRecipe(<botania:manaresource:4>, [<botania:manaresource:1>, <botania:manaresource>, <botania:manaresource:2>]);
 
@@ -138,16 +152,18 @@ mods.thaumcraft.Infusion.registerRecipe("nature_pylon", "",
 
 //Glimering Wood
 mods.astralsorcery.StarlightInfusion.addInfusion(<botania:livingwood>, <botania:livingwood:5>, false, 0.5, 200);
+mods.astralsorcery.StarlightInfusion.addInfusion(<botania:dreamwood>, <botania:dreamwood:5>, false, 0.5, 200);
+
 
 //Nature Pylon
 mods.thaumcraft.Infusion.registerRecipe("nature_pylon", "", 
-<botania:pylon:1>, 50, 
+<botania:pylon:1>, 5, 
 [<aspect:herba>*200, <aspect:praecantatio>*100, <aspect:alienis>*50, <aspect:chronos>*50], 
 <botania:pylon>, [<botania:livingwood:5>,<botania:manaresource:4>,<botania:livingwood:5>, <minecraft:ender_eye>,<botania:livingwood:5>,<botania:manaresource:4>, <botania:livingwood:5>,<minecraft:glowstone_dust>]);
 
 //Gateway Core
 mods.thaumcraft.Infusion.registerRecipe("gateway_core", "", 
-<botania:alfheimportal>, 100, 
+<botania:alfheimportal>, 10, 
 [<aspect:praecantatio>*200, <aspect:permutatio>*100, <aspect:alienis>*50, <aspect:chronos>*50], 
 <waystones:warp_stone>, 
 [<botania:manaresource:4>,<botania:livingwood:5>, <botania:manaresource:4>, <bloodmagic:slate:4>,
@@ -156,7 +172,7 @@ mods.thaumcraft.Infusion.registerRecipe("gateway_core", "",
 
 Agglomeration.addRecipe(<ebwizardry:astral_diamond>, [<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcraftingcomponent:2>, <botania:manaresource:2>,<thaumcraft:quicksilver>],250000,0x0000FF,0x8afff7,<astralsorcery:blockinfusedwood:6>,<contenttweaker:starmetal_block>,<astralsorcery:blockblackmarble>);
 
-RuneAltar.addRecipe(<chisel:energizedvoidstone:4>*4,[<chisel:energizedvoidstone>,<botania:rune:7>,<chisel:energizedvoidstone>,<botania:rune:6>,<chisel:energizedvoidstone>,<botania:rune:5>,<chisel:energizedvoidstone>,<botania:rune:4>], 10000);
+RuneAltar.addRecipe(<chisel:energizedvoidstone:4>*4,[<chisel:energizedvoidstone:2>,<botania:rune:7>,<chisel:energizedvoidstone:2>,<botania:rune:6>,<chisel:energizedvoidstone:2>,<botania:rune:5>,<chisel:energizedvoidstone:2>,<botania:rune:4>], 10000);
 
 //RuneAltar.removeRecipe(IIngredient output);
 RuneAltar.removeRecipe(<botania:rune:8>);
@@ -186,10 +202,47 @@ val petalDupe =
  as IItemStack[];
 for item in petalDupe {
 Insolator.addRecipe(item*2, item, <thermalfoundation:fertilizer>, 1500);
-Insolator.addRecipe(item*3, item, <thermalfoundation:fertilizer:1>, 5000);
-Insolator.addRecipe(item*5, item, <thermalfoundation:fertilizer:2>, 15000);
+Insolator.addRecipe(item*3, item, <thermalfoundation:fertilizer:1>, 3000);
+Insolator.addRecipe(item*5, item, <thermalfoundation:fertilizer:2>, 5000);
 }
 //mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance, @Optional int water);
+
+//Shaped Quartz
+//PureDaisy.addRecipe(<arcanearchives:raw_quartz_cluster>, <arcanearchives:shaped_quartz>);
+PureDaisy.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:storage_shaped_quartz>);
+
+
+
+mods.botania.ManaInfusion.removeRecipe(<minecraft:flint>);
+
+//Spark augmets
+recipes.addShapeless(<botania:sparkupgrade:3>, [<botania:rune:3>,<astralsorcery:itemusabledust>,<bloodmagic:component:29>,<botania:manaresource>]);
+recipes.addShapeless(<botania:sparkupgrade:2>, [<botania:rune:2>,<astralsorcery:itemusabledust>,<bloodmagic:component:29>,<botania:manaresource>]);
+recipes.addShapeless(<botania:sparkupgrade:1>, [<botania:rune:1>,<astralsorcery:itemusabledust>,<bloodmagic:component:29>,<botania:manaresource>]);
+recipes.addShapeless(<botania:sparkupgrade>, [<botania:rune>,<astralsorcery:itemusabledust>,<bloodmagic:component:29>,<botania:manaresource>]);
+
+//Life FLower
+//mods.botania.Apothecary.removeRecipe(IItemStack output);
+mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "dandelifeon"}));
+mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "munchdew"}));
+mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "kekimurus"}));
+mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "entropinnyum"}));
+
+mods.botania.Apothecary.addRecipe("dandelifeon",
+[<ore:petalPurple>, <ore:petalPurple>, <ore:petalGreen>, <ore:petalLime>, <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>]);
+
+mods.botania.Apothecary.addRecipe("munchdew", 
+[<ore:petalLime>,<ore:petalLime>,<ore:petalRed>,<ore:petalRed>,<ore:petalGreen>]);
+
+mods.botania.Apothecary.addRecipe("kekimurus", 
+[<ore:petalWhite>,<ore:petalWhite>,<ore:petalOrange>,<ore:petalOrange>,<ore:petalBrown>,<ore:petalBrown>,<botania:rune:10>]);
+
+mods.botania.Apothecary.addRecipe("entropinnyum", 
+[<ore:petalRed>,<ore:petalRed>,<ore:petalGray>,<ore:petalGray>,<ore:petalWhite>,<ore:petalWhite>,<botania:rune:13>,<botania:rune:1>,<botania:manaresource:8>]);
+
+
+<botania:specialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Degrades after 1 hour!"));
+<botania:floatingspecialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Degrades after 1 hour!"));
 
 ##########################################################################################
 print("==================== end of mods botania.zs ====================");

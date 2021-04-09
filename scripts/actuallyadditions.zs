@@ -1,5 +1,7 @@
 import mods.actuallyadditions.Empowerer;
 import crafttweaker.item.IItemStack;
+import mods.actuallyadditions.AtomicReconstructor;
+
 print("==================== loading actually additions.zs ====================");
 ##########################################################################################
 
@@ -65,7 +67,7 @@ recipes.addShaped(<actuallyadditions:block_giant_chest_medium>, [[<immersiveengi
 recipes.addShaped(<actuallyadditions:block_lava_factory_controller>, [[<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_misc:7>],[<actuallyadditions:block_crystal:5>, <embers:superheater>, <actuallyadditions:block_crystal:5>], [<minecraft:lava_bucket>, <minecraft:lava_bucket>, <minecraft:lava_bucket>]]);
 
 //Atomic
-recipes.addShapedMirrored(<actuallyadditions:block_atomic_reconstructor>, [[<thermalfoundation:material:354>, <powersuits:powerarmorcomponent>, <thermalfoundation:material:354>],[<arcanearchives:shaped_quartz>, <actuallyadditions:block_misc:9>, <minecraft:redstone_block>], [<thermalfoundation:material:354>, <powersuits:powerarmorcomponent>, <thermalfoundation:material:354>]]);
+recipes.addShapedMirrored(<actuallyadditions:block_atomic_reconstructor>, [[<thermalfoundation:material:354>, <thermalfoundation:material:291>, <thermalfoundation:material:354>],[<arcanearchives:shaped_quartz>, <actuallyadditions:block_misc:9>, <minecraft:redstone_block>], [<thermalfoundation:material:354>, <thermalfoundation:material:291>, <thermalfoundation:material:354>]]);
 
 //Ender Casing
 recipes.addShaped(<actuallyadditions:block_misc:8>, [[<minecraft:ender_pearl>, <actuallyadditions:item_crystal_empowered:3>, <minecraft:ender_pearl>],[<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:block_misc:2>, <actuallyadditions:item_crystal_empowered:3>], [<minecraft:ender_pearl>, <actuallyadditions:item_crystal_empowered:3>, <minecraft:ender_pearl>]]);
@@ -76,25 +78,20 @@ recipes.addShaped(<actuallyadditions:block_empowerer>, [[null, <actuallyaddition
 
 //mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, float[] particleColourArray);
 //emeradic
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal:4>, <appliedenergistics2:paint_ball:33>, <enderio:item_material:15>, <thermalfoundation:fertilizer:2>, <plustic:osgloglasingot>, 5000, 200, [0.1, 1, 0.1]);
-Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal:4>, <appliedenergistics2:paint_ball:33>, <enderio:item_material:15>, <thermalfoundation:fertilizer:2>, <plustic:osgloglasblock>, 10000, 400, [0.1, 1, 0.1]);
+Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal:4>, <mekanism:glowplasticblock:2>, <enderio:item_material:15>, <thermalfoundation:fertilizer:2>, <contenttweaker:ingot_xp>, 5000, 200, [0.1, 1, 0.1]);
+Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal:4>, <mekanism:glowplasticblock:2>, <enderio:item_material:15>, <thermalfoundation:fertilizer:2>, <contenttweaker:block_xp>, 10000, 400, [0.1, 1, 0.1]);
 ##Might add this if it needs to be harder idk
-/*
-recipes.remove(<mekanism:glowplasticblock:2>);
-recipes.addShaped(<mekanism:glowplasticblock:2>, [[<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>],[<appliedenergistics2:paint_ball:33>, <mekanism:plasticblock:15>, <appliedenergistics2:paint_ball:33>], [<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>]]);
-recipes.addShaped(<mekanism:glowplasticblock:2>, [[<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>],[<appliedenergistics2:paint_ball:33>, <mekanism:plasticblock:2>, <appliedenergistics2:paint_ball:33>], [<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>]]);
 
-*/
 
 //restonia <actuallyadditions:item_crystal>
 Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered>, <actuallyadditions:item_crystal>, <thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:20>, 5000, 200, [0.9, 0.1, 0.2]);
 Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered>, <actuallyadditions:block_crystal>, <thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:20>, 10000, 400, [0.9, 0.1, 0.2]);
 
-mods.actuallyadditions.AtomicReconstructor.removeRecipe(<moreplates:restonia_plate>);
+AtomicReconstructor.removeRecipe(<moreplates:restonia_plate>);
 
 //enori
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal:5>, <ore:dustSalt>, <botania:petal>, <thermalfoundation:material:166>, <advgenerators:controller>, 5000, 200, [0.9, 0.8, 1]);
-Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:5>, <actuallyadditions:block_crystal:5>, <ore:blockSalt>, <botania:petalblock>, <thermalfoundation:storage_alloy:6>, <advgenerators:controller>, 10000, 400, [0.9, 0.8, 1]);
+Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal:5>, <ore:dustSalt>, <botania:petal>, <jaopca:item_shardtitanium>, <advgenerators:controller>, 5000, 200, [0.9, 0.8, 1]);
+Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:5>, <actuallyadditions:block_crystal:5>, <ore:blockSalt>, <botania:petalblock>, <jaopca:item_shardtitanium>, <advgenerators:controller>, 10000, 400, [0.9, 0.8, 1]);
 
 //diamintine
 Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal:2>, <tombstone:crafting_ingredient:2>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>, 5000, 200, [0.2, 0.9, 0.9]);
@@ -106,7 +103,7 @@ Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyaddi
 
 mods.techreborn.plateBendingMachine.removeRecipe(<moreplates:void_plate>);
 mods.immersiveengineering.MetalPress.removeRecipe(<moreplates:void_plate>);
-mods.actuallyadditions.AtomicReconstructor.removeRecipe(<thaumcraft:plate:3>);
+AtomicReconstructor.removeRecipe(<thaumcraft:plate:3>);
 
 //palis
 Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal:1>, <bloodmagic:component:28>, <jaopca:item_stickmanasteel>, <astralsorcery:itemcraftingcomponent:4>, <thaumcraft:fabric>, 5000, 200, [0.1, 0.2, 1]);
@@ -130,7 +127,24 @@ recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[<actuallyadditions
 //Dropper
 recipes.addShaped(<actuallyadditions:block_dropper>, [[<ore:cobblestone>, <actuallyadditions:item_crystal:1>, <ore:cobblestone>],[<ore:cobblestone>, <minecraft:dropper>, <actuallyadditions:item_misc:7>], [<ore:cobblestone>, <actuallyadditions:item_crystal:1>, <ore:cobblestone>]]);
 
+//trav sack
+recipes.addShaped(<actuallyadditions:item_bag>, [[<mysticalagriculture:crafting:23>, <minecraft:leather>, <mysticalagriculture:crafting:23>],[<mysticalagriculture:crafting:23>, <actuallyadditions:block_crystal:3>, <mysticalagriculture:crafting:23>], [<minecraft:leather>, <tconstruct:tough_tool_rod>.withTag({Material: "treatedwood"}), <minecraft:leather>]]);
 
+//Dragon Eggs
+AtomicReconstructor.addRecipe(<iceandfire:dragonegg_red>, <iceandfire:dragonegg_blue>, 250000);
+AtomicReconstructor.addRecipe(<iceandfire:dragonegg_blue>, <iceandfire:dragonegg_green>, 250000);
+
+AtomicReconstructor.addRecipe(<iceandfire:dragonegg_green>, <iceandfire:dragonegg_sapphire>, 250000);
+AtomicReconstructor.addRecipe(<iceandfire:dragonegg_sapphire>, <iceandfire:dragonegg_bronze>, 250000);
+
+AtomicReconstructor.addRecipe(<iceandfire:dragonegg_bronze>, <iceandfire:dragonegg_silver>, 250000);
+AtomicReconstructor.addRecipe(<iceandfire:dragonegg_silver>, <iceandfire:dragonegg_gray>, 250000);
+
+AtomicReconstructor.addRecipe(<iceandfire:dragonegg_gray>, <iceandfire:dragonegg_white>, 250000);
+AtomicReconstructor.addRecipe(<iceandfire:dragonegg_white>, <iceandfire:dragonegg_red>, 250000);
+
+AtomicReconstructor.addRecipe(<iceandfire:dragonforge_ice_brick>, <iceandfire:dragonforge_fire_brick>, 30000);
+AtomicReconstructor.addRecipe(<iceandfire:dragonforge_fire_brick>, <iceandfire:dragonforge_ice_brick>, 30000);
 
 ##########################################################################################
 print("==================== end of actually additions.zs ====================");

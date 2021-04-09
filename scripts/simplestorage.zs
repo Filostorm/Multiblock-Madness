@@ -22,7 +22,7 @@ for item in itemstoRemove {
 }
 
 recipes.addShaped(<storagenetwork:controller>, [[<actuallyadditions:block_crystal:1>, <storagenetwork:process_kabel>, <actuallyadditions:block_crystal:1>],[<storagenetwork:process_kabel>, <advgenerators:controller>, <storagenetwork:process_kabel>], [<actuallyadditions:block_crystal:1>, <storagenetwork:process_kabel>, <actuallyadditions:block_crystal:1>]]);
-recipes.addShaped(<storagenetwork:request>, [[<moreplates:restonia_plate>, <storagenetwork:storage_kabel>, <moreplates:restonia_plate>],[<storagenetwork:storage_kabel>, <cyclicmagic:auto_crafter>, <storagenetwork:storage_kabel>], [<moreplates:restonia_plate>, <storagenetwork:storage_kabel>, <moreplates:restonia_plate>]]);
+recipes.addShaped(<storagenetwork:request>, [[<moreplates:restonia_plate>, <storagenetwork:storage_kabel>, <moreplates:restonia_plate>],[<storagenetwork:storage_kabel>, <engineersdecor:treated_wood_crafting_table>, <storagenetwork:storage_kabel>], [<moreplates:restonia_plate>, <storagenetwork:storage_kabel>, <moreplates:restonia_plate>]]);
 recipes.addShaped(<storagenetwork:master>, [[<moreplates:void_plate>, <storagenetwork:simple_kabel>, <moreplates:void_plate>],[<storagenetwork:simple_kabel>, <rockhounding_chemistry:misc_items:1>, <storagenetwork:simple_kabel>], [<moreplates:void_plate>, <storagenetwork:simple_kabel>, <moreplates:void_plate>]]);
 recipes.addShaped(<storagenetwork:kabel> * 8, [[<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>],[<thermalfoundation:material:161>, <minecraft:redstone>, <thermalfoundation:material:161>], [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]]);
 recipes.addShaped(<storagenetwork:process_kabel> * 4, [[<enderio:item_alloy_ingot:5>, <storagenetwork:kabel>, <enderio:item_alloy_ingot:5>],[<storagenetwork:kabel>, <minecraft:observer>, <storagenetwork:kabel>], [<enderio:item_alloy_ingot:5>, <storagenetwork:kabel>, <enderio:item_alloy_ingot:5>]]);
@@ -43,11 +43,11 @@ recipes.addShaped("remotethree", <storagenetwork:remote:2>, [[<moreplates:electr
     }, null);
 recipes.addShaped(<storagenetwork:remote:2>, [[<moreplates:electrical_steel_plate>, <rockhounding_chemistry:probe_items:1>, <moreplates:electrical_steel_plate>],[<enderutilities:enderpart:1>, <storagenetwork:master>, <enderutilities:enderpart:1>], [<moreplates:electrical_steel_plate>, <ore:circuitAdvanced>, <moreplates:electrical_steel_plate>]]);
 
-recipes.addShaped("remotefour", <storagenetwork:remote:1>, [[<moreplates:stellar_alloy_plate>, <appliedenergistics2:material:41>, <moreplates:stellar_alloy_plate>],[<enderutilities:enderpart:2>, <storagenetwork:remote:2>.marked("sncontroller"), <enderutilities:enderpart:2>], [<moreplates:stellar_alloy_plate>, <techreborn:part:3>, <moreplates:stellar_alloy_plate>]],
+recipes.addShaped("remotefour", <storagenetwork:remote:1>, [[<moreplates:end_steel_plate>, <appliedenergistics2:material:41>, <moreplates:end_steel_plate>],[<enderutilities:enderpart:2>, <storagenetwork:remote:2>.marked("sncontroller"), <enderutilities:enderpart:2>], [<moreplates:end_steel_plate>, <techreborn:part:3>, <moreplates:end_steel_plate>]],
 	function(out, ins, cInfo) {
 	    return out.withTag(ins.sncontroller.tag);
     }, null);
-recipes.addShaped(<storagenetwork:remote:1>, [[<moreplates:stellar_alloy_plate>, <appliedenergistics2:material:41>, <moreplates:stellar_alloy_plate>],[<enderutilities:enderpart:2>, <storagenetwork:master>, <enderutilities:enderpart:2>], [<moreplates:stellar_alloy_plate>, <techreborn:part:3>, <moreplates:stellar_alloy_plate>]]);
+recipes.addShaped(<storagenetwork:remote:1>, [[<moreplates:end_steel_plate>, <appliedenergistics2:material:41>, <moreplates:end_steel_plate>],[<enderutilities:enderpart:2>, <storagenetwork:master>, <enderutilities:enderpart:2>], [<moreplates:end_steel_plate>, <techreborn:part:3>, <moreplates:end_steel_plate>]]);
 
 
 ##########################################################################################

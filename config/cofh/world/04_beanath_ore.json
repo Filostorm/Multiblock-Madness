@@ -107,7 +107,7 @@
 				"block": [
 					{
 						"name": "iron_ore",
-						"weight": 55
+						"weight": 60
 					},
 					{
 						"name": "thermalfoundation:ore",
@@ -118,10 +118,10 @@
 					},
 					{
 						"name": "minecraft:gold_ore",
-						"weight": 14
+						"weight": 24
 					},
 					{
-						"name": "woot:stygianironore",
+						"name": "woot:stygian iron ore",
 						"weight": 15
 					},
 					{
