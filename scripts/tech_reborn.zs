@@ -6,7 +6,7 @@ import mods.techreborn.blastFurnace;
 import mods.thermalexpansion.Transposer;
 import mods.thermalexpansion.Centrifuge;
 import mods.techreborn.fusionReactor;
-
+import mods.techreborn.fluidReplicator;
 print("==================== loading mods techreborn.zs ====================");
 ##########################################################################################
 
@@ -188,6 +188,12 @@ Centrifuge.addRecipe([(<minecraft:gold_ingot> * 5) % 10, <minecraft:iron_ingot> 
 //Remove cell recipes
 fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidheliumplasma", Amount: 1000}}));
 fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidhelium3", Amount: 1000}}));
+
+############################################
+##############  Fluid Replicator  ##########
+###########################################
+//Heavy water
+mods.techreborn.fluidReplicator.addRecipe(2,<liquid:heavy_water>,100, 5000);
 
 
 ##########################################################################################
