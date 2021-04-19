@@ -1,0 +1,43 @@
+{
+	"version": "1.0",
+	"categories": [
+		"general"
+	],
+	"pools": [{
+		"name": "eb_common_items",
+		"rolls": {
+			"min": 1,
+			"max": 3
+		},
+		"entries": [{
+				"entryName": "stick",
+				"type": "item",
+				"name": "minecraft:stick",
+				"weight": 20
+			},
+			{
+				"entryName": "gold_nugget",
+				"type": "item",
+				"name": "minecraft:gold_nugget",
+				"weight": 20
+			},
+			{
+				"entryName": "wool",
+				"type": "item",
+				"name": "minecraft:wool",
+				"weight": 20
+			},
+			{
+				"entryName": "string",
+				"type": "item",
+				"name": "minecraft:string",
+				"weight": 20
+			},
+			{
+				"type": "loot_table",
+				"name": "ebwizardry:subsets/elemental_crystals",
+				"weight": 10
+			}
+		]
+	}]
+}

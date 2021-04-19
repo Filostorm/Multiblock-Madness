@@ -6,6 +6,7 @@ import crafttweaker.liquid.ILiquidStack;
 import mods.embers.Mixer;
 import mods.embers.EmberGeneration;
 import crafttweaker.item.IItemStack;
+import mods.thermalexpansion.Crucible;
 print("==================== loading mods embers.zs ====================");
 ##########################################################################################
 
@@ -65,6 +66,12 @@ Melting.addRecipe(<liquid:dawnstone> * 1296, <embers:block_dawnstone>);
 Melting.addRecipe(<liquid:dawnstone> * 576, <embers:gear_dawnstone>);
 Melting.addRecipe(<liquid:dawnstone> * 144, <embers:plate_dawnstone>);
 Melting.addRecipe(<liquid:dawnstone> * 144, <embers:ingot_dawnstone>);
+
+Crucible.addRecipe(<liquid:dawnstone> * 1296, <embers:block_dawnstone>, 10000);
+Crucible.addRecipe(<liquid:dawnstone> * 576, <embers:gear_dawnstone>, 4000);
+Crucible.addRecipe(<liquid:dawnstone> * 144, <embers:plate_dawnstone>, 1000);
+Crucible.addRecipe(<liquid:dawnstone> * 144, <embers:ingot_dawnstone>, 1000);
+
 Melting.addRecipe(<liquid:moltenembers> * 100, <embers:shard_ember>,1000);
 Melting.addRecipe(<liquid:moltenembers> * 600, <embers:crystal_ember>,2000);
 Melting.addRecipe(<liquid:moltenembers> * 2000, <embers:ember_cluster>,4000);

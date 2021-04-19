@@ -271,6 +271,7 @@ Transposer.add(<liquid:raw_syngas>*1000, <liquid:raw_syngas>*1000);
 Transposer.add(<liquid:silicone>*1000, <liquid:silicone>*1000);
 Transposer.add(<liquid:syngas>*1000, <liquid:syngas>*1000);
 Transposer.add(<liquid:sodium_hydroxide>*1000, <liquid:sodium_hydroxide_solution>*1000);
+Transposer.add(<liquid:argon>*1000, <liquid:argon>*1000);
 
 
 

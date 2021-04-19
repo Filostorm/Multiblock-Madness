@@ -1,0 +1,42 @@
+{
+  "name": "cm3rockhounding:aircompressor",
+
+  "disabled": false,
+
+  "target-item": "rockhounding_chemistry:machines_b",
+  "target-count": 1,
+  "target-meta": 10,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "contenttweaker:purpleprint",
+  "catalyst-meta": 0,
+  "input-types": {
+    "a": {
+      "id": "rockhounding_chemistry:machines_b",
+      "meta": 10
+    },
+    "b": {
+      "id": "rockhounding_chemistry:machines_b",
+      "meta": 9
+    }
+  },
+  "input-nbt": {
+    "a:A": {
+      "nbt": "{Facing:5,upgrade:{Size:0,Items:[]},PowerCount:0,RedstoneCount:0,Activation:0b,Inductor:0b,output:{Size:0,Items:[]},input:{Size:1,Items:[]},Cooktime:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},LavaTank:{Empty:\"\"},id:\"minecraft:rockhounding_chemistry_air_compressor\",RecipeIndex:-1,StorageNBT:{Energy:0},GasTank:{Empty:\"\"}}"
+    },
+    "b:A": {
+      "nbt": "{Collapse:0,Facing:5,EmitType:0,upgrade:{Size:0,Items:[]},InputGas:{Empty:\"\"},Activation:0b,output:{Size:0,Items:[]},input:{Size:0,Items:[]},Cooktime:0,EmitThreashold:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"minecraft:rockhounding_chemistry_pressure_vessel\",RecipeIndex:-1}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "a:A",
+        "b:A"
+      ]
+    ]
+  ]
+
+}

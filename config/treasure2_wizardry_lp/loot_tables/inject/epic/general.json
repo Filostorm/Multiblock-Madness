@@ -1,0 +1,76 @@
+{
+	"version": "1.0",
+	"categories": [
+		"general"
+	],
+	"pools": [{
+			"name": "eb_epic_items",
+			"rolls": {
+				"min": 1,
+				"max": 3
+			},
+			"entries": [{
+					"type": "loot_table",
+					"name": "ebwizardry:subsets/elemental_crystals",
+					"weight": 30
+				},
+				{
+					"type": "loot_table",
+					"name": "ebwizardry:subsets/wand_upgrades",
+					"weight": 20
+				},
+				{
+					"type": "loot_table",
+					"name": "ebwizardry:subsets/wizard_armour",
+					"weight": 20
+				},
+				{
+					"type": "item",
+					"name": "ebwizardry:armour_upgrade",
+					"weight": 15
+				},
+				{
+					"entryName": "master_tome",
+					"type": "item",
+					"name": "ebwizardry:arcane_tome",
+					"weight": 20,
+					"functions": [{
+						"function": "set_data",
+						"data": 3
+					}]
+				},
+				{
+					"type": "loot_table",
+					"name": "ebwizardry:subsets/epic_artefacts",
+					"weight": 20
+				}
+			]
+		},
+		{
+			"name": "eb_epic_spells",
+			"rolls": {
+				"min": 1,
+				"max": 3
+			},
+			"entries": [{
+					"entryName": "eb_spell_book",
+					"type": "item",
+					"name": "ebwizardry:spell_book",
+					"weight": 20,
+					"functions": [{
+						"function": "ebwizardry:random_spell",
+						"tiers": [
+							"master"
+						]
+					}]
+				},
+				{
+					"entryName": "eb_id_scroll",
+					"type": "item",
+					"name": "ebwizardry:identification_scroll",
+					"weight": 5
+				}
+			]
+		}
+	]
+}
