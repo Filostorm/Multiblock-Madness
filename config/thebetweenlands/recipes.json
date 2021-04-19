@@ -1,19 +1,19 @@
 {
       "animator": [
-        {
-          "input": {
-        "item": {
-          "id": "thebetweenlands:items_misc:14"
-        },
-            "fuel": 8,
-        "life": 4
-      },
-          "output_entity": {
-        "id": "thebetweenlands:swamp_hag",
-        "nbt": "{Attributes: [{Name:generic.maxHealth, Base:2}], CustomName:\"Weak Swamp Hag\", CustomNameVisible:1}"
-      },
-          "rendered_entity": "thebetweenlands:swamp_hag"
-    }
+    {
+      "input": {
+    "item": {
+      "id": "minecraft:soul_sand"
+    },
+        "fuel": 15,
+    "life": 25
+  },
+      "output_entity": {
+    "id": "randomthings:spirit",
+    "nbt": "{Attributes: [{Name:generic.maxHealth, Base:1}]}"
+  },
+      "rendered_entity": "randomthings:spirit"
+}
    ],
       "druid_altar": [
     {

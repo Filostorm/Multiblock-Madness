@@ -20,6 +20,8 @@ val itemstoRemove =
     <thermalfoundation:material:102>,
     <thermalexpansion:frame:64>,
     <thermalexpansion:frame>,
+    <thermalexpansion:machine:9>,
+    <thermalexpansion:machine:11>,
 ]
  as IItemStack[];
 
@@ -55,6 +57,10 @@ recipes.addShaped(<thermalexpansion:machine:15>, [[null, <embers:superheater>, n
 
 //glacial
 recipes.addShaped(<thermalexpansion:machine:14>, [[null, <cookingforblockheads:ice_unit>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <openblocks:tank>, <thermalfoundation:material:256>]]);
+
+//Energetic
+recipes.addShaped(<thermalexpansion:machine:9>, [[null, <appliedenergistics2:charger>, null],[<thermalfoundation:material:514>, <thermalexpansion:frame>, <thermalfoundation:material:514>], [<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
 
 //Hardned glass
 recipes.addShaped(<thermalfoundation:glass:3>, [[<thermalfoundation:material:770>, <thermalfoundation:material:1024>, <thermalfoundation:material:770>],[<thermalfoundation:material:67>, <ore:fusedQuartz>, <thermalfoundation:material:67>], [<thermalfoundation:material:770>, <thermalfoundation:material:1024>, <thermalfoundation:material:770>]]);
@@ -102,6 +108,11 @@ Infuser.removeRecipeWithOutput(<thermalfoundation:material:167>);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:9>*4, <thermalfoundation:material:134>, <thermalfoundation:material:131>*3, 5000);
 Transposer.addFillRecipe(<thermalfoundation:material:167>, <nuclearcraft:alloy:9>, <liquid:ender> * 250, 10000);
 
+recipes.addShaped(<thermalexpansion:machine:11>, [
+	[null, <ore:workbench>, null], 
+	[<ore:plateTin>, <thermalexpansion:frame:64>, <ore:plateTin>], 
+	[<ore:gearCopper>, <rockhounding_chemistry:misc_items:10>, <ore:gearCopper>]
+]);
 
 val OretoRemove =
 [

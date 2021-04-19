@@ -32,7 +32,7 @@ print("==================== loading Loot.zs ====================");
 	<nuclearcraft:uranium:8>,
 	<nuclearcraft:neptunium>,
 	<nuclearcraft:plutonium>,
-	<nuclearcraft:californium:4>,
+	<nuclearcraft:californium:5>,
 	<nuclearcraft:californium:12>,
 	<nuclearcraft:curium>,
 	<actuallyadditions:block_crystal>,

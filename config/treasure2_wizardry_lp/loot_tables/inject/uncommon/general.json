@@ -1,0 +1,83 @@
+{
+	"version": "1.0",
+	"categories": [
+		"general"
+	],
+	"pools": [{
+			"name": "eb_uncommon_items",
+			"rolls": {
+				"min": 1,
+				"max": 3
+			},
+			"entries": [{
+					"type": "loot_table",
+					"name": "ebwizardry:subsets/elemental_crystals",
+					"weight": 60
+				},
+				{
+					"entryName": "eb_basic_wand",
+					"type": "item",
+					"name": "ebwizardry:magic_wand",
+					"weight": 20
+				},
+				{
+					"entryName": "eb_silk",
+					"type": "item",
+					"name": "ebwizardry:magic_silk",
+					"weight": 20
+				},
+				{
+					"entryName": "eb_workbench",
+					"type": "item",
+					"name": "ebwizardry:arcane_workbench",
+					"weight": 10
+				},
+				{
+					"entryName": "apprentice_tome",
+					"type": "item",
+					"name": "ebwizardry:arcane_tome",
+					"weight": 10,
+					"functions": [{
+						"function": "set_data",
+						"data": 1
+					}]
+				},
+				{
+					"type": "loot_table",
+					"name": "ebwizardry:subsets/uncommon_artefacts",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"name": "eb_common_spells",
+			"rolls": {
+				"min": 1,
+				"max": 3
+			},
+			"entries": [{
+					"entryName": "eb_spell_book",
+					"type": "item",
+					"name": "ebwizardry:spell_book",
+					"weight": 20,
+					"conditions": [{
+						"condition": "random_chance",
+						"chance": 0.5
+					}],
+					"functions": [{
+						"function": "ebwizardry:random_spell",
+						"tiers": [
+							"novice"
+						]
+					}]
+				},
+				{
+					"entryName": "eb_id_scroll",
+					"type": "item",
+					"name": "ebwizardry:identification_scroll",
+					"weight": 5
+				}
+			]
+		}
+	]
+}
