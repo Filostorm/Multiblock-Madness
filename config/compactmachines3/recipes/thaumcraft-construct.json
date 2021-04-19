@@ -32,41 +32,47 @@
   },
   "input-nbt": {
     "b:A": {
-      "nbt": "{amount:0,side:1,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"thaumcraft:tiletube\",samount:0,open:[B;1B,1B,1B,1B,1B,1B]}"
+      "nbt": "{amount:0,side:2,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletube\",samount:0,open:[B;1B,1B,1B,1B,1B,1B]}"
     },
     "b:B": {
-      "nbt": "{amount:0,side:4,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"thaumcraft:tiletube\",samount:0,open:[B;1B,1B,1B,1B,1B,1B]}"
+      "nbt": "{amount:0,side:5,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletube\",samount:0,open:[B;1B,1B,1B,1B,1B,1B]}"
     },
     "c:A": {
-      "nbt": "{amount:0,side:3,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:0b}"
-    },
-    "c:B": {
-      "nbt": "{amount:0,side:1,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:1b}"
-    },
-    "c:C": {
-      "nbt": "{amount:0,side:4,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:1b}"
-    },
-    "c:D": {
-      "nbt": "{amount:0,side:5,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:1b}"
+      "nbt": "{amount:0,side:2,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:0b}"
     },
     "b:C": {
-      "nbt": "{amount:0,side:3,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"thaumcraft:tiletube\",samount:0,open:[B;1B,1B,1B,1B,1B,1B]}"
+      "nbt": "{amount:0,side:4,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletube\",samount:0,open:[B;1B,1B,1B,1B,1B,1B]}"
+    },
+    "c:B": {
+      "nbt": "{amount:0,side:1,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:1b}"
+    },
+    "c:C": {
+      "nbt": "{amount:0,side:5,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:1b}"
+    },
+    "c:D": {
+      "nbt": "{amount:0,side:4,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:1b}"
+    },
+    "b:D": {
+      "nbt": "{amount:0,side:1,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletube\",samount:0,open:[B;1B,1B,1B,1B,1B,1B]}"
+    },
+    "b:E": {
+      "nbt": "{amount:0,side:3,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletube\",samount:0,open:[B;1B,1B,1B,1B,1B,1B]}"
     },
     "c:E": {
-      "nbt": "{amount:0,side:2,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:1b}"
+      "nbt": "{amount:0,side:3,hadpower:0b,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tiletubevalve\",samount:0,open:[B;1B,1B,1B,1B,1B,1B],flow:1b}"
     }
   },
   "shape": [
     [
       [
         "a",
-        "b:C",
+        "b:E",
         "a"
       ],
       [
-        "b:A",
+        "b:B",
         "c:B",
-        "b:B"
+        "b:C"
       ],
       [
         "a",
@@ -76,9 +82,9 @@
     ],
     [
       [
-        "b:B",
+        "b:E",
         "c:E",
-        "b:B"
+        "b:C"
       ],
       [
         "c:C",
@@ -88,19 +94,19 @@
       [
         "b:B",
         "c:A",
-        "b:B"
+        "b:C"
       ]
     ],
     [
       [
         "a",
-        "b:A",
+        "b:B",
         "a"
       ],
       [
-        "b:A",
-        "b:B",
-        "b:A"
+        "b:D",
+        "c:B",
+        "b:D"
       ],
       [
         "a",

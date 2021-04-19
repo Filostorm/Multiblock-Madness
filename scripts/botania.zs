@@ -133,8 +133,8 @@ ManaInfusion.removeRecipe(<ore:ingotManasteel>);
 
 ManaInfusion.addInfusion(<botania:manaresource>,<contenttweaker:inert_ingot>,10000);
 ManaInfusion.addInfusion(<botania:manaresource>*2,<contenttweaker:material_part:20>,10000);
-ManaInfusion.addInfusion(<botania:manaresource>,<contenttweaker:sub_block_holder_0:2>,100000);
-ManaInfusion.addInfusion(<botania:manaresource>*2,<contenttweaker:sub_block_holder_0>,100000);
+ManaInfusion.addInfusion(<botania:storage>,<contenttweaker:sub_block_holder_0:2>,100000);
+ManaInfusion.addInfusion(<botania:storage>*2,<contenttweaker:sub_block_holder_0>,100000);
 
 Agglomeration.removeRecipe(<botania:manaresource:4>, [<botania:manaresource:1>, <botania:manaresource>, <botania:manaresource:2>]);
 

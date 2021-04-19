@@ -1,5 +1,6 @@
 
 import crafttweaker.item.IItemStack;
+import mods.mekanism.infuser;
 
 print("==================== loading Mekanism.zs ====================");
 ##########################################################################################
@@ -7,7 +8,7 @@ print("==================== loading Mekanism.zs ====================");
 
 val itemstoRemove =
 [
-<mekanism:teleportationcore>, 
+<mekanism:teleportationcore>,
 <mekanism:tierinstaller>,
 <mekanism:tierinstaller:1>,
 <mekanism:tierinstaller:2>,
@@ -36,6 +37,8 @@ val itemstoRemove =
 <mekanism:machineblock:5>.withTag({recipeType: 1, mekData: {}}),
 <mekanism:machineblock:5>.withTag({recipeType: 6}),
 <mekanism:machineblock:4>,
+<mekanism:basicblock2>,
+<mekanismgenerators:solarpanel>,
 ]
  as IItemStack[];
 
@@ -46,10 +49,14 @@ for item in itemstoRemove {
 ##Metallurgic Infuser
 recipes.addShaped(<mekanism:machineblock:8>, [[<minecraft:iron_ingot>, <minecraft:furnace>, <minecraft:iron_ingot>],[<minecraft:redstone>, <mekanism:basicblock:8>, <minecraft:redstone>], [<minecraft:iron_ingot>, <minecraft:furnace>, <minecraft:iron_ingot>]]);
 //OutputStack[, InputStack, InfusionString]
-mods.mekanism.infuser.removeRecipe(<mekanism:enrichedalloy>);
-//mods.mekanism.infuser.removeRecipe(<thermalfoundation:material:163>);
+infuser.removeRecipe(<mekanism:enrichedalloy>);
+infuser.removeRecipe(<mekanism:reinforcedalloy>);
+infuser.removeRecipe(<mekanism:atomicalloy>);
+//infuser.removeRecipe(<thermalfoundation:material:163>);
 //InfusionString, InputInfusion, InputStack, OutputStack //InfusionString = CARBON;TIN;DIAMOND;REDSTONE;FUNGI;BIO;OBSIDIAN
-mods.mekanism.infuser.addRecipe("REDSTONE", 20, <thermalfoundation:material:132>, <mekanism:enrichedalloy>);
+infuser.addRecipe("REDSTONE", 20, <thermalfoundation:material:132>, <mekanism:enrichedalloy>);
+infuser.addRecipe("DIAMOND", 10, <thermalfoundation:material:134>, <mekanism:reinforcedalloy>);
+infuser.addRecipe("OBSIDIAN", 10, <techreborn:ingot:15>, <mekanism:atomicalloy>);
 
 recipes.addShaped(<mekanism:machineblock2:11>, [[<immersiveengineering:material:8>, <embers:fluid_gauge>, <immersiveengineering:material:8>],[<moreplates:electrum_stick>, null, <moreplates:electrum_stick>], [<immersiveengineering:material:8>, <embers:pipe>, <immersiveengineering:material:8>]]);
 
@@ -82,6 +89,10 @@ recipes.addShapeless("elitetoultimatetank",
     }, null);
     
 
+//Evap tank 
+recipes.addShaped(<mekanism:basicblock2> * 4, [[<mekanism:enrichedalloy>, <thermalfoundation:material:352>, <mekanism:enrichedalloy>],[<thermalfoundation:material:352>, <mekanism:ingot:1>, <thermalfoundation:material:352>], [<mekanism:enrichedalloy>, <thermalfoundation:material:352>, <mekanism:enrichedalloy>]]);
+
+
 //Tier Installers
 recipes.addShaped(<mekanism:tierinstaller:3>, [[<mekanism:atomicalloy>, <ore:circuitUltimate>, <mekanism:atomicalloy>],[<techreborn:plates:38>, <ore:plankWood>, <techreborn:plates:38>], [<mekanism:atomicalloy>, <ore:circuitUltimate>, <mekanism:atomicalloy>]]);
 recipes.addShaped(<mekanism:tierinstaller:2>, [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>],[<moreplates:vivid_alloy_gear>, <ore:plankWood>, <moreplates:vivid_alloy_gear>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
@@ -97,6 +108,9 @@ recipes.addShaped(<mekanism:glowplasticblock:2>, [[<appliedenergistics2:paint_ba
 
 //Digital Miner
 recipes.addShaped(<mekanism:machineblock:4>, [[<mekanism:atomicalloy>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>],[<mekanism:teleportationcore>, <mekanism:basicblock:8>, <mekanism:teleportationcore>], [<mekanism:robit>, <appliedenergistics2:material:47>, <mekanism:robit>]]);
+
+//Solar Panel
+recipes.addShaped(<mekanismgenerators:solarpanel>, [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],[<enderio:item_material:38>, <mekanism:enrichedalloy>, <enderio:item_material:38>], [<moreplates:osmium_plate>, <moreplates:osmium_plate>, <moreplates:osmium_plate>]]);
 
 
 ##########################################################################################

@@ -46,6 +46,7 @@ val removerecipes =
     <actuallyadditions:block_atomic_reconstructor>,
     <actuallyadditions:block_fermenting_barrel>,
     <actuallyadditions:block_canola_press>,
+    <actuallyadditions:block_phantomface>,
 ]
 as IItemStack[];
 for item in removerecipes {
@@ -145,6 +146,23 @@ AtomicReconstructor.addRecipe(<iceandfire:dragonegg_white>, <iceandfire:dragoneg
 
 AtomicReconstructor.addRecipe(<iceandfire:dragonforge_ice_brick>, <iceandfire:dragonforge_fire_brick>, 30000);
 AtomicReconstructor.addRecipe(<iceandfire:dragonforge_fire_brick>, <iceandfire:dragonforge_ice_brick>, 30000);
+
+
+//Moved Paper cups
+
+<ore:foodCookedFish>.add(<thaumcraft:mechanism_complex>);
+<ore:foodCookedFish>.add(<minecraft:cooked_fish>);
+<ore:foodCookedFish>.add(<minecraft:cooked_fish:1>);
+<ore:foodCookedFish>.add(<fossil:sturgeon_cooked>);
+<ore:foodCookedFish>.add(<fossil:alligator_gar_cooked>);
+<ore:foodCookedFish>.add(<fossil:coelacanth_cooked>);
+
+recipes.addShaped(<actuallyadditions:item_food:4>, [[<actuallyadditions:item_food:5>, <actuallyadditions:item_food:5>, <actuallyadditions:item_food:5>], [null, <xlfoodmod:paper_cup>, null]]);
+recipes.addShaped(<actuallyadditions:item_food:3>, [[<actuallyadditions:item_food:5>, <ore:foodCookedFish>, <actuallyadditions:item_food:5>], [null, <xlfoodmod:paper_cup>, null]]);
+
+//Phantom Face
+recipes.addShaped(<actuallyadditions:block_phantomface>, [[null, <ore:chestWood>, null],[<actuallyadditions:item_crystal:2>, <actuallyadditions:block_misc:6>, <actuallyadditions:item_crystal:2>], [null, <actuallyadditions:item_misc:8>, null]]);
+
 
 ##########################################################################################
 print("==================== end of actually additions.zs ====================");

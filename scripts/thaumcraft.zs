@@ -163,7 +163,7 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("mm:shaped/internal/thaumcraft
 //recipes.addShaped(<thaumadditions:iron_framed_greatwood>, [[null, <thermalfoundation:material:32>, null],[<thermalfoundation:material:32>, <thaumcraft:plank_greatwood>, <thermalfoundation:material:32>], [null, <thermalfoundation:material:32>, null]]);
 
 <contenttweaker:greatwood_handle>.addTooltip(format.lightPurple("Use Salis Mundus on a Greatwood Log"));
-SalisMundus.addSingleConversion(<blockstate:thaumcraft:log_greatwood>.block, <contenttweaker:greatwood_handle>);
+SalisMundus.addSingleConversion(<blockstate:thaumcraft:log_greatwood>.block, <contenttweaker:greatwood_handle>*2);
 
 ##########################################################################################
 print("==================== end of mods thaumcraft.zs ====================");

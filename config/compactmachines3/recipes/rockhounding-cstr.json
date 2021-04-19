@@ -1,0 +1,106 @@
+{
+  "name": "cm3rockhounding:cstr",
+
+  "disabled": false,
+
+  "target-item": "rockhounding_chemistry:machines_e",
+  "target-count": 1,
+  "target-meta": 7,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "contenttweaker:purpleprint",
+  "catalyst-meta": 0,
+  
+  "input-types": {
+    "a": {
+      "id": "rockhounding_chemistry:misc_blocks_a",
+      "meta": 4
+    },
+    "b": {
+      "id": "rockhounding_chemistry:machines_a",
+      "meta": 7
+    },
+    "c": {
+      "id": "rockhounding_chemistry:machines_e",
+      "meta": 8
+    },
+    "d": {
+      "id": "rockhounding_chemistry:machines_b",
+      "meta": 9
+    },
+    "e": {
+      "id": "rockhounding_chemistry:machines_e",
+      "meta": 7
+    },
+    "f": {
+      "id": "rockhounding_chemistry:machines_e",
+      "meta": 9
+    }
+  },
+  "input-nbt": {
+    "b:A": {
+      "nbt": "{Facing:3,upgrade:{Size:0,Items:[]},Filtered:0b,Activation:0b,ReagentTank:{Empty:\"\"},output:{Size:0,Items:[]},input:{Size:2,Items:[]},Cooktime:0,SolventTank:{Empty:\"\"},ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"minecraft:rockhounding_chemistry_lab_oven_intank\",RecipeIndex:-1}"
+    },
+    "c:A": {
+      "nbt": "{output:{Size:0,Items:[]},input:{Size:0,Items:[]},Facing:5,Cooktime:0,upgrade:{Size:1,Items:[]},ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},Activation:0b,id:\"minecraft:rockhounding_chemistry_stirred_tank_top\",RecipeIndex:-1}"
+    },
+    "d:A": {
+      "nbt": "{Collapse:0,Facing:3,EmitType:0,upgrade:{Size:0,Items:[]},InputGas:{Empty:\"\"},Activation:0b,output:{Size:0,Items:[]},input:{Size:0,Items:[]},Cooktime:0,EmitThreashold:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"minecraft:rockhounding_chemistry_pressure_vessel\",RecipeIndex:-1}"
+    },
+    "e:A": {
+      "nbt": "{output:{Size:0,Items:[]},input:{Size:0,Items:[]},Facing:5,Cooktime:0,upgrade:{Size:0,Items:[]},ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},Activation:0b,id:\"minecraft:rockhounding_chemistry_stirred_tank_base\",RecipeIndex:-1}"
+    },
+    "f:A": {
+      "nbt": "{Facing:5,upgrade:{Size:0,Items:[]},InputTank:{Empty:\"\"},Activation:0b,output:{Size:0,Items:[]},input:{Size:1,Items:[]},Cooktime:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"minecraft:rockhounding_chemistry_stirred_tank_out\",RecipeIndex:-1}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "_"
+      ],
+      [
+        "a"
+      ],
+      [
+        "_"
+      ]
+    ],
+    [
+      [
+        "b:A"
+      ],
+      [
+        "c:A"
+      ],
+      [
+        "d:A"
+      ]
+    ],
+    [
+      [
+        "_"
+      ],
+      [
+        "e:A"
+      ],
+      [
+        "_"
+      ]
+    ],
+    [
+      [
+        "_"
+      ],
+      [
+        "f:A"
+      ],
+      [
+        "_"
+      ]
+    ]
+  ]
+
+}

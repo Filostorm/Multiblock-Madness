@@ -95,5 +95,10 @@ item.contenttweaker.ingot_xp.name=XP Infused Glowstone
 tile.contenttweaker.block_xp.name=Block of XP Infused Glowstone
 
 fluid.moltenEmbers=Molten Embers
-fluid.moltenTime=Molten Time
+fluid.moltenBedrock=Molten Bedrock
+fluid.moltenTokenIron=Essence of Tier 1
+fluid.moltenTokenBronze=Essence of Tier 2
+fluid.moltenTokenSteel=Essence of Tier 3
+fluid.moltenTokenRefinedIron=Essence of Tier 4
+fluid.moltenTokenOsmium=Essence of Tier 5
 

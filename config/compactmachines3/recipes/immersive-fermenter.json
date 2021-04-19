@@ -24,7 +24,12 @@
     },
     "c": {
       "id": "minecraft:cauldron",
-      "meta": 0
+      "meta": 0,
+      "item": {
+        "id": "minecraft:cauldron",
+        "meta": 0,
+        "count": 4
+      }
     },
     "d": {
       "id": "immersiveengineering:metal_decoration1",

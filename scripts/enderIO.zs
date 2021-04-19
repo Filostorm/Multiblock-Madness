@@ -2,6 +2,7 @@
 import crafttweaker.item.IItemStack;
 import mods.tconstruct.Casting;
 import mods.enderio.AlloySmelter;
+import mods.thermalexpansion.InductionSmelter;
 
 print("==================== loading mods enderIO.zs ====================");
 ##########################################################################################
@@ -73,8 +74,8 @@ recipes.addShaped(<enderio:item_xp_transfer>, [[null, null, <enderio:item_alloy_
 
 
 //cant make frames the normal way
-mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material:51>, <enderio:item_material>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material:52>, <enderio:item_material>);
+InductionSmelter.removeRecipe(<enderio:item_material:51>, <enderio:item_material>);
+InductionSmelter.removeRecipe(<enderio:item_material:52>, <enderio:item_material>);
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:1>);
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:53>);
 
@@ -89,6 +90,8 @@ recipes.addShaped(<enderio:item_redstone_not_filter>, [[<minecraft:redstone_torc
 recipes.addShaped(<enderio:item_material:60>, [[<deepmoblearning:soot_covered_redstone>, <minecraft:paper>, <deepmoblearning:soot_covered_redstone>],[<minecraft:paper>, <minecraft:iron_ingot>, <minecraft:paper>], [<deepmoblearning:soot_covered_redstone>, <minecraft:paper>, <deepmoblearning:soot_covered_redstone>]]);
 recipes.addShaped(<enderio:item_redstone_conduit> * 8, [[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],[<deepmoblearning:soot_covered_redstone>, <deepmoblearning:soot_covered_redstone>, <deepmoblearning:soot_covered_redstone>], [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]]);
 
+mods.jei.JEI.addItem(<enderio:item_broken_spawner>);
+InductionSmelter.addRecipe(<enderio:item_broken_spawner>, <actuallyadditions:item_misc:20>*4, <actuallyadditions:block_crystal_empowered:5>, 15000);
 
 ##########################################################################################
 print("==================== end of mods enderIO.zs ====================");

@@ -20,7 +20,13 @@
     },
     "b": {
       "id": "immersiveengineering:conveyor",
-      "meta": 0
+      "meta": 0,
+      "item": {
+        "id": "immersiveengineering:conveyor",
+        "nbt": "{conveyorType: \"immersiveengineering:conveyor\"}",
+        "meta": 0,
+        "count": 4
+      }
     },
     "c": {
       "id": "immersiveengineering:metal_decoration1",
