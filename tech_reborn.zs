@@ -192,8 +192,25 @@ fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: 
 ############################################
 ##############  Fluid Replicator  ##########
 ###########################################
+
+//Remove liquid recipes
+mods.techreborn.fluidReplicator.removeRecipe(<liquid:water>);
+mods.techreborn.fluidReplicator.removeRecipe(<liquid:lava>);
+
 //Heavy water
-mods.techreborn.fluidReplicator.addRecipe(2,<liquid:heavy_water>,100, 5000);
+mods.techreborn.fluidReplicator.addRecipe(2,<liquid:heavy_water>,10, 1000);
+//Enderium
+mods.techreborn.fluidReplicator.addRecipe(2,<liquid:enderium>,100, 1000);
+//liquid helium	
+mods.techreborn.fluidReplicator.addRecipe(2,<liquid:liquid_helium>,10, 1000);
+//Iridium
+mods.techreborn.fluidReplicator.addRecipe(64,<liquid:iridium>,1000, 10000);
+//water
+mods.techreborn.fluidReplicator.addRecipe(1,<liquid:water>*10000 ,10, 1000);
+//lava
+mods.techreborn.fluidReplicator.addRecipe(1,<liquid:lava>,10, 1000);
+
+
 
 
 ##########################################################################################
