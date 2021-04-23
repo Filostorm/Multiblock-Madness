@@ -1,0 +1,84 @@
+{
+  "name": "cm3mekanism:machineframe",
+
+  "disabled": false,
+
+  "target-item": "mekanism:basicblock",
+  "target-count": 1,
+  "target-meta": 8,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "techreborn:part",
+  "catalyst-meta": 43,
+
+  "input-types": {
+    "a": {
+      "id": "immersiveengineering:metal_decoration1",
+      "meta": 1
+    },
+    "b": {
+      "id": "jaopca:block_sheetmetalelectricalsteel",
+      "meta": 0
+    },
+    "c": {
+      "id": "mekanism:basicblock",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "c",
+        "a"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+}

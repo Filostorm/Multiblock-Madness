@@ -1,0 +1,80 @@
+{
+  "name": "cm3ar:frame",
+
+  "disabled": false,
+
+  "target-item": "libvulpes:structuremachine",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "rockhounding_chemistry:misc_items",
+  "catalyst-meta": 10,
+
+
+  "input-types": {
+    "a": {
+      "id": "jaopca:block_sheetmetaltitanium",
+      "meta": 0
+    },
+    "b": {
+      "id": "jaopca:block_scaffoldingstainlesssteel",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+}

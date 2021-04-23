@@ -1,0 +1,96 @@
+{
+      "animator": [
+    {
+      "input": {
+    "item": {
+      "id": "minecraft:soul_sand"
+    },
+        "fuel": 15,
+    "life": 25
+  },
+      "output_entity": {
+    "id": "randomthings:spirit",
+    "nbt": "{Attributes: [{Name:generic.maxHealth, Base:1}]}"
+  },
+      "rendered_entity": "randomthings:spirit"
+}
+   ],
+      "druid_altar": [
+    {
+          "input": {
+        "item_1": {
+          "id": "minecraft:stone"
+        },
+            "item_2": {
+          "id": "minecraft:dirt"
+        },
+            "item_3": {
+          "id": "minecraft:grass"
+        },
+            "item_4": {
+          "id": "minecraft:cobblestone"
+        }
+          },
+          "output": {
+        "id": "minecraft:diamond"
+      }
+        }
+      ],
+      "pestle_and_mortar": [
+    {
+          "input": {
+        "id": "thebetweenlands:items_misc",
+        "meta": 18
+      },
+          "output": {
+            "id": "thermalfoundation:material",
+            "meta": 771,
+            "size": 3
+      }
+        },
+        {
+          "input": {
+        "id": "quark:limestone",
+        "meta": 1
+      },
+          "output": {
+            "id": "thebetweenlands:items_misc",
+            "meta": 27,
+            "size": 3
+      }
+        },
+        {
+          "input": {
+        "id": "quark:limestone",
+        "meta": 0
+      },
+          "output": {
+            "id": "thebetweenlands:items_misc",
+            "meta": 27,
+            "size": 3
+      }
+        },
+        {
+          "input": {
+        "id": "chisel:limestone2",
+        "meta": 7
+      },
+          "output": {
+            "id": "thebetweenlands:items_misc",
+            "meta": 27,
+            "size": 3
+      }
+        }
+      ],
+      "purifier": [
+        {
+          "input": {
+            "id": "thebetweenlands:mud"
+          },
+          "output": {
+            "id": "embers:blend_caminite",
+            "size": 4
+          }
+        }
+      ]
+    }

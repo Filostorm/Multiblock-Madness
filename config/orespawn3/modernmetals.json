@@ -1,0 +1,373 @@
+{
+	"version": "2.0",
+	"spawns": {
+		"boron_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 8,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:boron_ore",
+					"chance": 100
+				}
+			]
+		},
+		"thorium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:thorium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"beryllium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 5,
+				"variation": 3,
+				"frequency": 20,
+				"minHeight": 0,
+				"maxHeight": 128
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:beryllium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"aluminum_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 8,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:aluminum_ore",
+					"chance": 100
+				}
+			]
+		},
+		"cadmium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 8,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:cadmium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"chromium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 2,
+				"variation": 4,
+				"frequency": 3,
+				"minHeight": 0,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:chromium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"iridium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 4,
+				"frequency": 5,
+				"minHeight": 0,
+				"maxHeight": 64
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:iridium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"magnesium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 4,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:magnesium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"manganese_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 64
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:manganese_ore",
+					"chance": 100
+				}
+			]
+		},
+		"osmium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 4,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 96
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:osmium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"plutonium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 2,
+				"variation": 4,
+				"frequency": 4,
+				"minHeight": 0,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:plutonium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"rutile_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 64
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:rutile_ore",
+					"chance": 100
+				}
+			]
+		},
+		"tantalum_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 64
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:tantalum_ore",
+					"chance": 100
+				}
+			]
+		},
+		"tungsten_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:tungsten_ore",
+					"chance": 100
+				}
+			]
+		},
+		"uranium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 2,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 32
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:uranium_ore",
+					"chance": 100
+				}
+			]
+		},
+		"zirconium_ore": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 64
+			},
+			"blocks": [
+				{
+					"name": "modernmetals:zirconium_ore",
+					"chance": 100
+				}
+			]
+		}
+	}
+}

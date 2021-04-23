@@ -1,0 +1,76 @@
+{
+  "name": "cm3natures:compass",
+
+  "disabled": false,
+
+  "target-item": "naturescompass:naturescompass",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "thaumicperiphery:gear_brass",
+  
+  "input-types": {
+    "a": {
+      "id": "minecraft:leaves",
+      "meta": 4,
+      "ignore-meta": true,
+      "item": {
+        "id": "minecraft:leaves",
+        "meta": 0,
+        "count": 9
+      }
+    },
+    "b": {
+      "id": "minecraft:log",
+      "meta": 0,
+      "ignore-meta": true
+    },
+    "c": {
+      "id": "contenttweaker:sheetmetal_bronze",
+      "meta": 0
+    },
+    "d": {
+      "id": "thaumcraft:amber_block",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "c",
+        "d",
+        "c"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ]
+    ]
+  ]
+
+}

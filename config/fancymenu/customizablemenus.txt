@@ -1,0 +1,11 @@
+type = customizablemenus
+
+net.minecraft.client.gui.GuiIngameMenu {
+}
+
+betterquesting.client.gui2.GuiHome {
+}
+
+net.minecraft.client.gui.GuiMainMenu {
+}
+

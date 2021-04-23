@@ -1,0 +1,34 @@
+{
+  "block_pools" :
+  [
+    {
+      "name": "6res2plant",
+      "type":
+      {
+        "type": "block",
+        "name": "environmentaltech:void_res_miner_cont_6",
+        "meta": 0
+      },
+      
+      "disableJEI": false,
+      "clicktype": "rightclick",
+      "properties":
+      [
+        {
+          "type": "require_sneak",
+          "sneak": true
+        },
+        {
+          "type": "consume_block",
+          "name": "environmentaltech:void_botanic_miner_cont_6"
+        },
+        {
+          "type": "play_sound",
+          "name": "block.note.chime",
+          "pitch": 0.5,
+          "disableJEI": true
+        }
+      ]
+    }
+  ]
+}

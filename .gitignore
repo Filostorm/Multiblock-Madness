@@ -1,0 +1,6 @@
+/*
+!/config
+!/scripts
+!/resources
+!*.md
+!.gitignore

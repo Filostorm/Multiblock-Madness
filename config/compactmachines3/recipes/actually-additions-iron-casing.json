@@ -1,0 +1,46 @@
+{
+  "name": "cm3aa:ironcasing",
+
+  "disabled": false,
+
+  "target-item": "actuallyadditions:block_misc",
+  "target-count": 1,
+  "target-meta": 9,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "immersiveengineering:wirecoil",
+  "catalyst-meta": 1,
+
+  "input-types": {
+    "c": {
+      "id": "actuallyadditions:block_misc",
+      "meta": 2
+    },
+    "s": {
+      "id": "immersiveengineering:sheetmetal",
+      "meta": 9
+    }
+
+
+  },
+  "shape": [
+    [
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ]
+    ],
+    [
+      [ "s", "s", "s" ],
+      [ "s", "c", "s" ],
+      [ "s", "s", "s" ]
+    ],
+    [
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ],
+      [ "s", "s", "s" ]
+    ]
+  ]
+
+}

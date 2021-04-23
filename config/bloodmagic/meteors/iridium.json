@@ -1,0 +1,28 @@
+{
+  "catalystStack": {
+    "registryName": {
+      "domain": "thermalfoundation",
+      "path": "storage"
+    },
+    "meta": 7
+  },
+  "components": [
+    {
+      "weight": 150,
+      "oreName": "orePlatinum"
+    },
+    {
+      "weight": 150,
+      "oreName": "oreOsmium"
+    },
+    {
+      "weight": 500,
+      "oreName": "oreIridium"
+    }
+  ],
+  "explosionStrength": 10.0,
+  "radius": 4,
+  "maxWeight": 800,
+  "version": 4,
+  "cost": 5000000
+}

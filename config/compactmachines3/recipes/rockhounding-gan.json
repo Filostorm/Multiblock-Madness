@@ -1,0 +1,256 @@
+{
+  "name": "cm3rockhounding:gan",
+
+  "disabled": false,
+
+  "target-item": "rockhounding_chemistry:machines_c",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "contenttweaker:purpleprint",
+  "catalyst-meta": 0,
+
+  "input-types": {
+    "a": {
+      "id": "rockhounding_chemistry:machines_b",
+      "meta": 9
+    },
+    "b": {
+      "id": "rockhounding_chemistry:machines_a",
+      "meta": 2
+    },
+    "c": {
+      "id": "rockhounding_chemistry:machines_c",
+      "meta": 0
+    },
+    "d": {
+      "id": "rockhounding_chemistry:misc_blocks_a",
+      "meta": 6
+    },
+    "e": {
+      "id": "rockhounding_chemistry:misc_blocks_a",
+      "meta": 5
+    },
+    "f": {
+      "id": "rockhounding_chemistry:machines_b",
+      "meta": 1
+    },
+    "g": {
+      "id": "rockhounding_chemistry:misc_blocks_a",
+      "meta": 7
+    },
+    "h": {
+      "id": "rockhounding_chemistry:machines_b",
+      "meta": 14
+    },
+    "i": {
+      "id": "rockhounding_chemistry:machines_b",
+      "meta": 13
+    },
+    "j": {
+      "id": "rockhounding_chemistry:misc_blocks_a",
+      "meta": 3
+    },
+    "k": {
+      "id": "rockhounding_chemistry:machines_c",
+      "meta": 2
+    }
+  },
+  "input-nbt": {
+    "a:A": {
+      "nbt": "{Collapse:0,Facing:2,EmitType:0,upgrade:{Size:0,Items:[]},InputGas:{Empty:\"\"},Activation:0b,output:{Size:0,Items:[]},input:{Size:0,Items:[]},Cooktime:0,Filter:{FluidName:\"cooled_air\",Amount:20},EmitThreashold:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"minecraft:rockhounding_chemistry_pressure_vessel\",RecipeIndex:-1}"
+    },
+    "b:A": {
+      "nbt": "{Facing:5,upgrade:{Size:0,Items:[]},EnableRedstone:1b,PowerCount:0,EnablePower:0b,RedstoneCount:64000,Activation:0b,Inductor:0b,output:{Size:0,Items:[]},input:{Size:2,Items:[]},Cooktime:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},LavaTank:{Empty:\"\"},id:\"minecraft:rockhounding_chemistry_power_generator\",RecipeIndex:-1,StorageNBT:{Energy:2000},GasTank:{Empty:\"\"}}"
+    },
+    "c:A": {
+      "nbt": "{Facing:4,EnableN:0b,upgrade:{Size:1,Items:[]},EnableO:0b,Activation:0b,output:{Size:0,Items:[]},input:{Size:0,Items:[]},Gases:{Gas0:0,Gas2:0,Gas1:0,Gas4:0,Gas3:0,Gas5:0},Cooktime:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"minecraft:rockhounding_chemistry_gan_controller\",RecipeIndex:-1,EnableX:0b}"
+    },
+    "f:A": {
+      "nbt": "{output:{Size:0,Items:[]},input:{Size:0,Items:[]},Facing:5,Cooktime:0,upgrade:{Size:0,Items:[]},ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},Activation:0b,id:\"minecraft:rockhounding_chemistry_gas_pressurizer\",RecipeIndex:-1}"
+    },
+    "a:B": {
+      "nbt": "{Collapse:0,Facing:5,EmitType:0,upgrade:{Size:0,Items:[]},InputGas:{Empty:\"\"},Activation:0b,output:{Size:0,Items:[]},input:{Size:0,Items:[]},Cooktime:0,Filter:{FluidName:\"nitrogen\",Amount:15},EmitThreashold:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"minecraft:rockhounding_chemistry_pressure_vessel\",RecipeIndex:-1}"
+    },
+    "h:A": {
+      "nbt": "{output:{Size:0,Items:[]},input:{Size:0,Items:[]},Facing:5,Cooktime:0,upgrade:{Size:0,Items:[]},ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},Activation:0b,id:\"minecraft:rockhounding_chemistry_gan_expander_top\",RecipeIndex:-1}"
+    },
+    "i:A": {
+      "nbt": "{output:{Size:0,Items:[]},input:{Size:0,Items:[]},Facing:5,Cooktime:0,upgrade:{Size:0,Items:[]},ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},Activation:0b,id:\"minecraft:rockhounding_chemistry_gan_expander_base\",RecipeIndex:-1}"
+    },
+    "f:B": {
+      "nbt": "{output:{Size:0,Items:[]},input:{Size:0,Items:[]},Facing:4,Cooktime:0,upgrade:{Size:0,Items:[]},ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},Activation:0b,id:\"minecraft:rockhounding_chemistry_gas_pressurizer\",RecipeIndex:-1}"
+    },
+    "a:C": {
+      "nbt": "{Collapse:0,Facing:5,EmitType:0,upgrade:{Size:0,Items:[]},InputGas:{Empty:\"\"},Activation:0b,output:{Size:0,Items:[]},input:{Size:0,Items:[]},Cooktime:0,Filter:{FluidName:\"oxygen\",Amount:5},EmitThreashold:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"minecraft:rockhounding_chemistry_pressure_vessel\",RecipeIndex:-1}"
+    },
+    "k:A": {
+      "nbt": "{Collapse:0,Facing:2,Tank_He:{Empty:\"\"},upgrade:{Size:0,Items:[]},Drains:{Drain5:0b,Drain4:0b,Drain1:0b,Drain0:0b,Drain3:0b,Drain2:0b},Activation:0b,Tank_Kr:{Empty:\"\"},output:{Size:0,Items:[]},Tank_CO:{Empty:\"\"},input:{Size:0,Items:[]},Cooktime:0,Tank_Xe:{Empty:\"\"},Tank_Ar:{Empty:\"\"},Enablers:{Enabler3:1b,Enabler4:1b,Enabler5:1b,Enabler0:1b,Enabler1:1b,Enabler2:1b},ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{radiationResistance:0.0d}},id:\"minecraft:rockhounding_chemistry_multivessel\",RecipeIndex:-1,Tank_Ne:{Empty:\"\"}}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "e",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "e",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "e",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "e",
+        "_"
+      ],
+      [
+        "h:A",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "e",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "k:A",
+        "_"
+      ],
+      [
+        "f:A",
+        "g",
+        "a:C"
+      ],
+      [
+        "i:A",
+        "j",
+        "f:B"
+      ],
+      [
+        "f:A",
+        "g",
+        "a:B"
+      ],
+      [
+        "b:A",
+        "c:A",
+        "_"
+      ],
+      [
+        "_",
+        "a:A",
+        "_"
+      ]
+    ]
+  ]
+
+}

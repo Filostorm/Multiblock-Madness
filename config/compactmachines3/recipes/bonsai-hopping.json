@@ -1,0 +1,69 @@
+{
+  "name": "cm3bonsaitrees:bonsaipot",
+
+  "disabled": false,
+
+  "target-item": "bonsaitrees:bonsaipot",
+  "target-count": 1,
+  "target-meta": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "minecraft:hopper",
+
+  "input-types": {
+    "a": {
+      "id": "contenttweaker:sheetmetal_bronze",
+      "meta": 0
+    },
+    "b": {
+      "id": "minecraft:brick_block",
+      "meta": 0
+    },
+    "c": {
+      "id": "minecraft:stone_slab",
+      "meta": 4
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "b",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "c",
+        "c",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "c",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "c",
+        "c",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "b",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+}

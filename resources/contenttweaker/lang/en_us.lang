@@ -1,0 +1,113 @@
+tile.contenttweaker.sheetmetal_bronze.name=Bronze Sheetmetal
+tile.contenttweaker.sheetmetal_refinediron.name=Refined Iron Sheetmetal
+tile.contenttweaker.sheetmetal_thaumium.name=Thaumium Sheetmetal
+tile.contenttweaker.sheetmetal_brass.name=Brass Sheetmetal
+tile.contenttweaker.sheetmetal_nimonic.name=Nimonic Sheetmetal
+tile.contenttweaker.vanasteel_scaffolding.name=Vanasteel Scaffolding
+tile.contenttweaker.scal_scaffolding.name=ScAl Scaffolding
+tile.contenttweaker.bam_scaffolding.name=BAM Scaffolding
+tile.contenttweaker.invar_scaffolding.name=Invar Scaffolding
+tile.contenttweaker.nimonic_scaffolding.name=Nimonic Scaffolding
+tile.contenttweaker.plating_basic.name=Basic Plating Block
+tile.contenttweaker.plating_advanced.name=Advanced Plating Block
+tile.contenttweaker.plating_elite.name=Elite Plating Block
+tile.contenttweaker.plating_extreme.name=Extreme Plating Block
+tile.contenttweaker.plating_du.name=DU Plating Block
+tile.contenttweaker.starmetal_block.name=Block of Starmetal
+
+item.contenttweaker.hastelloyfoil.name=Hastelloy Foil
+item.contenttweaker.goldfoil.name=Gold Foil
+item.contenttweaker.aluminumcasing.name=Aluminum Casing
+item.contenttweaker.inert_ingot.name=Inert Ingot
+item.contenttweaker.rod_bam.name=BAM Rod
+item.contenttweaker.rod_scal.name=ScAl Rod
+item.contenttweaker.rod_vanasteel.name=Vanasteel Rod
+item.contenttweaker.rod_nimonic.name=Nimonic Rod 
+item.contenttweaker.greatwood_handle.name=Greatwood Stick
+item.contenttweaker.slatedust.name=§eCrushed Slate
+item.contenttweaker.activatedaspectuscopper.name=Infused Copper Aspectus
+item.contenttweaker.activatedaspectussilver.name=Infused Silver Aspectus
+item.contenttweaker.activatedaspectusdawnstone.name=Infused Dawnstone Aspectus
+
+item.contenttweaker.adventure_token_tier1.name=Tier 1 Adventure Token
+item.contenttweaker.exploring_token_tier1.name=Tier 1 Exploring Token
+item.contenttweaker.mining_token_tier1.name=Tier 1 Mining Token
+item.contenttweaker.tech_token_tier1.name=Tier 1 Tech Token
+item.contenttweaker.magic_token_tier1.name=Tier 1 Magic Token
+
+item.contenttweaker.adventure_token_tier2.name=Tier 2 Adventure Token
+item.contenttweaker.exploring_token_tier2.name=Tier 2 Exploring Token
+item.contenttweaker.mining_token_tier2.name=Tier 2 Mining Token
+item.contenttweaker.tech_token_tier2.name=Tier 2 Tech Token
+item.contenttweaker.magic_token_tier2.name=Tier 2 Magic Token
+
+item.contenttweaker.adventure_token_tier3.name=Tier 3 Adventure Token
+item.contenttweaker.exploring_token_tier3.name=Tier 3 Exploring Token
+item.contenttweaker.mining_token_tier3.name=Tier 3 Mining Token
+item.contenttweaker.tech_token_tier3.name=Tier 3 Tech Token
+item.contenttweaker.magic_token_tier3.name=Tier 3 Magic Token
+
+item.contenttweaker.adventure_token_tier4.name=Tier 4 Adventure Token
+item.contenttweaker.exploring_token_tier4.name=Tier 4 Exploring Token
+item.contenttweaker.mining_token_tier4.name=Tier 4 Mining Token
+item.contenttweaker.tech_token_tier4.name=Tier 4 Tech Token
+item.contenttweaker.magic_token_tier4.name=Tier 4 Magic Token
+
+item.contenttweaker.adventure_token_tier5.name=Tier 5 Adventure Token
+item.contenttweaker.exploring_token_tier5.name=Tier 5 Exploring Token
+item.contenttweaker.mining_token_tier5.name=Tier 5 Mining Token
+item.contenttweaker.tech_token_tier5.name=Tier 5 Tech Token
+item.contenttweaker.magic_token_tier5.name=Tier 5 Magic Token
+
+item.contenttweaker.adamantine_ingot.name=Adamantine Ingot
+item.contenttweaker.orichalcum_ingot.name=Orichalcum Ingot
+item.contenttweaker.palladium_ingot.name=Palladium Ingot
+item.contenttweaker.terrasteel_coil.name=Terrasteel Heating Coil
+item.contenttweaker.gearcrushinginvar.name=Invar Crushing Gear
+item.contenttweaker.gearcrushingsteel.name=Steel Crushing Gear
+item.contenttweaker.gearcrushingdarksteel.name=Dark Steel Crushing Gear
+item.contenttweaker.gearcrushingcortensteel.name=Corten Steel Crushing Gear
+item.contenttweaker.gearcrushingvanasteel.name=Vanasteel Crushing Gear
+
+item.contenttweaker.agitatorinvar.name=Invar Slurry Agitator
+item.contenttweaker.agitatorsteel.name=Steel Slurry Agitator
+item.contenttweaker.agitatordarksteel.name=Dark Steel Slurry Agitator
+item.contenttweaker.agitatorhydronalium.name=Hydronalium Slurry Agitator
+item.contenttweaker.agitatorhastelloy.name=Hastelloy Slurry Agitator
+
+item.contenttweaker.foilinvar.name=Invar Foil
+item.contenttweaker.foilsteel.name=Steel Foil
+item.contenttweaker.foildarksteel.name=Dark Steel Foil
+item.contenttweaker.foilhydronalium.name=Hydronalium Foil
+
+item.contenttweaker.rodinvar.name=Invar Rod
+item.contenttweaker.rodsteel.name=Steel Rod
+item.contenttweaker.roddarksteel.name=Dark Steel Rod
+item.contenttweaker.rodhydronalium.name=Hydronalium Rod
+
+item.contenttweaker.blood_crystal.name=Blood Crystal
+item.contenttweaker.adaptive_ingot.name=Adaptive Ingot
+item.contenttweaker.casingsteel.name=Steel Casing
+item.contenttweaker.casingplatinum.name=Platinum Casing
+item.contenttweaker.purpleprint.name=§5Multiblock Visualizer
+
+item.contenttweaker.ingot_xp.name=XP Infused Glowstone
+tile.contenttweaker.block_xp.name=Block of XP Infused Glowstone
+
+fluid.moltenEmbers=Molten Embers
+fluid.moltenBedrock=Molten Bedrock
+fluid.moltenTokenIron=Essence of Tier 1
+fluid.moltenTokenBronze=Essence of Tier 2
+fluid.moltenTokenSteel=Essence of Tier 3
+fluid.moltenTokenRefinedIron=Essence of Tier 4
+fluid.moltenTokenOsmium=Essence of Tier 5
+
+
+
+item.contenttweaker.matrix_deposition_+.name=Positive Deposition Matrix
+item.contenttweaker.matrix_deposition_-.name=Negative Deposition Matrix
+item.contenttweaker.neutronic.name=§l§8Neutronic Matrix
+item.contenttweaker.incoherent.name=§l§cIncoherent Matrix
+
+qmd.particle.filon.name=Filon
+qmd.particle.filon.desc=I can't think of anything witty to write here! Think of one yourself.
