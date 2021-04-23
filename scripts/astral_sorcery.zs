@@ -136,7 +136,7 @@ Casting.addBasinRecipe(<contenttweaker:starmetal_block>, null, <liquid:starmetal
 <astralsorcery:itemperkseal>.addTooltip(format.lightPurple("Used to activate the Twilight Forest Portal"));
 
 //Illumination Powder
-StarlightInfusion.addInfusion(<arcanearchives:radiant_dust>, <astralsorcery:itemusabledust>, false, 0.1, 200);
+StarlightInfusion.addInfusion(<arcanearchives:radiant_dust>, <astralsorcery:itemusabledust>*4, false, 0.1, 200);
 
 
 //Skystone
