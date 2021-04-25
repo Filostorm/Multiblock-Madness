@@ -1,0 +1,18 @@
+// === Turbine Materials
+
+
+item.advgenerators.turbine_blade_hslasteel.name=HSLA Steel Turbine Blade
+item.advgenerators.turbine_rotor_hslasteel.name=HSLA Steel Turbine Rotor
+item.advgenerators.turbine_kit_hslasteel.name=HSLA Steel Turbine Upgrade Kit
+tile.advgenerators.turbine_hslasteel.name=HSLA Steel Turbine
+
+item.advgenerators.turbine_blade_extreme.name=Extreme Alloy Turbine Blade
+item.advgenerators.turbine_rotor_extreme.name=Extreme Alloy Turbine Rotor
+item.advgenerators.turbine_kit_extreme.name=Extreme Alloy Turbine Upgrade Kit
+tile.advgenerators.turbine_extreme.name=Extreme Alloy Turbine
+
+item.advgenerators.turbine_blade_super.name=Super Alloy Turbine Blade
+item.advgenerators.turbine_rotor_super.name=Super Alloy Turbine Rotor
+item.advgenerators.turbine_kit_super.name=Super Alloy Turbine Upgrade Kit
+tile.advgenerators.turbine_super.name=Super Alloy Turbine
+
