@@ -124,6 +124,7 @@ val recipestoRemove =
 <quark:rope>,
 <computercraft:cable:1>,
 <mob_grinding_utils:tank>,
+<advancedrocketry:productrod>,
 ]
  as IItemStack[];
 

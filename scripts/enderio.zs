@@ -45,12 +45,17 @@ val itemstoRemove =
 <enderio:block_buffer:1>,
 <enderio:block_impulse_hopper>,
 <enderio:block_niard>,
+<enderio:item_conduit_facade>,
 ]
  as IItemStack[];
 
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+
+//4x FAcad
+recipes.addShaped(<enderio:item_conduit_facade> * 4, [[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],[<enderio:item_material:4>, null, <enderio:item_material:4>], [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]]);
+
 
 //Simple Chassis
 recipes.addShaped(<enderio:item_material>, [[<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>],[<minecraft:iron_bars>, <thermalexpansion:frame:64>, <minecraft:iron_bars>], [<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>]]);
