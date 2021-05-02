@@ -193,7 +193,8 @@ Altar.addTraitAltarRecipe("mm:shaped/internal/altar/demon_crucible", <bloodmagic
 ]);
 
 
-
+//Loose Traction 
+recipes.addShaped(<bloodmagic:upgrade_tome>.withTag({level: 0, key: "bloodmagic.upgrade.slippery"}), [[null, <minecraft:ice>, null],[<minecraft:ice>, <bloodmagic:upgrade_tome>.withTag({level: 9, key: "bloodmagic.upgrade.slowness"}).onlyWithTag({level: 9, key: "bloodmagic.upgrade.slowness"}), <minecraft:ice>], [null, <minecraft:ice>, null]]);
 
 
 

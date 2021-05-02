@@ -168,7 +168,7 @@ mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:4>, 600, 100
 //Lazy Frame
 recipes.addShaped(<threng:big_assembler>*4, [
 	[<ore:plateTungstensteel>, <ore:ingotFluixSteel>, <ore:plateTungstensteel>], 
-	[<ore:ingotFluixSteel>, <cyclicmagic:auto_crafter>, <ore:ingotFluixSteel>], 
+	[<ore:ingotFluixSteel>, <nuclearcraft:part:12>, <ore:ingotFluixSteel>], 
 	[<ore:plateTungstensteel>, <ore:ingotFluixSteel>, <ore:plateTungstensteel>]
 ]);
 
@@ -231,6 +231,12 @@ recipes.addShaped(<packagedauto:encoder>, [
 	[<ore:plateDarkSteel>, <minecraft:comparator>, <ore:plateDarkSteel>]
 ]);
 
+
+//Terminal Converting
+recipes.addShaped(<ae2wtlib:infinity_booster_card> * 64, [[<appliedenergistics2:material:9>, <threng:material:6>, <appliedenergistics2:material:9>],[<threng:material:6>, <storagenetwork:remote:1>, <threng:material:6>], [<appliedenergistics2:material:9>, <threng:material:6>, <appliedenergistics2:material:9>]]);
+recipes.addShaped(<ae2wtlib:wut>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote:2>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
+recipes.addShaped(<wct:wct>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote:3>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
+recipes.addShaped(<appliedenergistics2:wireless_terminal>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
 
 ##########################################################################################
 print("==================== end of applied.zs ====================");

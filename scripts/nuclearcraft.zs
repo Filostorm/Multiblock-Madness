@@ -1,5 +1,6 @@
 
 import crafttweaker.item.IItemStack;
+import mods.techreborn.blastFurnace;
 print("==================== loading nuclearcraft.zs ====================");
 ##########################################################################################
 
@@ -43,10 +44,13 @@ recipes.addShaped(<nuclearcraft:alloy_furnace>, [[<nuclearcraft:part>, <minecraf
 recipes.remove(<nuclearcraft:dominos>);
 mods.extendedcrafting.TableCrafting.addShaped(<nuclearcraft:dominos>, [
     [<actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>],
-    [<actuallyadditions:item_misc:4>, <ore:listAllporkcooked>, <ore:mushroomAny>, <ore:listAllbeefcooked>, <actuallyadditions:item_misc:4>],
-    [<actuallyadditions:item_misc:4>, <ore:mushroomAny>, <ore:listAllchickencooked>, <ore:mushroomAny>, <actuallyadditions:item_misc:4>],
-    [<actuallyadditions:item_misc:4>, <ore:listAllbeefcooked>, <ore:mushroomAny>, <ore:listAllporkcooked>, <actuallyadditions:item_misc:4>],
+    [<actuallyadditions:item_misc:4>, <xlfoodmod:cheese>, <ore:mushroomAny>, <xlfoodmod:sausage>, <actuallyadditions:item_misc:4>],
+    [<actuallyadditions:item_misc:4>, <ore:mushroomAny>, <xlfoodmod:bacon>, <ore:mushroomAny>, <actuallyadditions:item_misc:4>],
+    [<actuallyadditions:item_misc:4>, <xlfoodmod:sausage>, <ore:mushroomAny>, <xlfoodmod:cheese>, <actuallyadditions:item_misc:4>],
     [<actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>]
 ]);  
+
+
+blastFurnace.addRecipe(<nuclearcraft:ingot:14>, null, <nuclearcraft:dust:14>, null, 200, 80, 1500);
 ##########################################################################################
 print("==================== end of nuclearcraft.zs ====================");

@@ -947,7 +947,7 @@
             "z": 11,
             
             "elements": [
-                "casings_item_fluid_energy"
+                "LGDC"
             ]
         },
         {
@@ -973,7 +973,7 @@
             "z": 11,
             
             "elements": [
-                "casings_item_fluid_energy"
+                "LGDC"
             ]
         },
         {
@@ -1757,7 +1757,7 @@
             "z": -5,
             
             "elements": [
-                "casings_item_fluid_energy"
+                "LGDC"
             ]
         },
         {
@@ -1924,7 +1924,7 @@
             "z": -5,
             
             "elements": [
-                "casings_item_fluid_energy"
+                "LGDC"
             ]
         },
         {
@@ -2861,7 +2861,7 @@
             "z": 3,
             
             "elements": [
-                "casings_item_fluid_energy"
+                "LGDC"
             ]
         },
         {
@@ -3070,7 +3070,7 @@
             "z": 3,
             
             "elements": [
-                "casings_item_fluid_energy"
+                "LGDC"
             ]
         },
         {
@@ -3079,7 +3079,7 @@
             "z": 3,
             
             "elements": [
-                "casings_item_fluid_energy"
+                "LGDC"
             ]
         },
         {
@@ -3482,7 +3482,7 @@
             "z": 3,
             
             "elements": [
-                "casings_item_fluid_energy"
+                "LGDC"
             ]
         },
         {
