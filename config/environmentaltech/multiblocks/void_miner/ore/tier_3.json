@@ -449,6 +449,21 @@
       "target": "green",
       "weight": 200,
       "id": "OD:oreEnderEssence"
+    },
+    {
+      "target": "green",
+      "weight": 200,
+      "id": "OD:oreUranium"
+    },
+    {
+      "target": "lime",
+      "weight": 200,
+      "id": "OD:oreSphalerite"
+    },
+    {
+      "target": "yellow",
+      "weight": 200,
+      "id": "OD:orePyrite"
     }
   ]
 }

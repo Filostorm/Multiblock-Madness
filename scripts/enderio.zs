@@ -45,6 +45,7 @@ val itemstoRemove =
 <enderio:block_buffer:1>,
 <enderio:block_impulse_hopper>,
 <enderio:block_niard>,
+<enderio:item_conduit_facade>,
 ]
  as IItemStack[];
 
@@ -52,8 +53,13 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
+//4x FAcad
+recipes.addShaped(<enderio:item_conduit_facade> * 4, [[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],[<enderio:item_material:4>, null, <enderio:item_material:4>], [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]]);
+
+
 //Simple Chassis
-recipes.addShaped(<enderio:item_material>, [[<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>],[<minecraft:iron_bars>, <thermalexpansion:frame:64>, <minecraft:iron_bars>], [<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>]]);
+recipes.addShaped(<enderio:item_material>, [[<minecraft:iron_bars>, <enderio:item_material:75>, <minecraft:iron_bars>],[<moreplates:conductive_iron_gear>, <thermalexpansion:frame:64>, <moreplates:conductive_iron_gear>], [<minecraft:iron_bars>, <enderio:item_material:75>, <minecraft:iron_bars>]]);
+//recipes.addShaped(<enderio:item_material>, [[<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>],[<minecraft:iron_bars>, <thermalexpansion:frame:64>, <minecraft:iron_bars>], [<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>]]);
 
 //Cyclic Crafter
 recipes.addShaped(<cyclicmagic:auto_crafter>, [[<moreplates:knightslime_plate>, <ore:workbench>, <moreplates:knightslime_plate>],[<enderio:item_capacitor_grainy>, <thermalexpansion:frame:64>, <enderio:item_capacitor_grainy>], [<moreplates:knightslime_plate>, <rockhounding_chemistry:misc_items:1>, <moreplates:knightslime_plate>]]);

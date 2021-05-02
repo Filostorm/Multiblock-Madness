@@ -103,6 +103,7 @@ fluid.moltenTokenRefinedIron=Essence of Tier 4
 fluid.moltenTokenOsmium=Essence of Tier 5
 
 
+item.contenttweaker.compressed_chrome.name=Compressed Chrome
 
 item.contenttweaker.matrix_deposition_+.name=Positive Deposition Matrix
 item.contenttweaker.matrix_deposition_-.name=Negative Deposition Matrix
@@ -110,4 +111,4 @@ item.contenttweaker.neutronic.name=§l§8Neutronic Matrix
 item.contenttweaker.incoherent.name=§l§cIncoherent Matrix
 
 qmd.particle.filon.name=Filon
-qmd.particle.filon.desc=I can't think of anything witty to write here! Think of one yourself.
+qmd.particle.filon.desc=Ultimate cosmic power!

@@ -3,8 +3,126 @@
     "localizedname": "3D Crafter",
     "requires-blueprint": true,
     "color": "757575",
+    "modifiers": [
+        {
+            "x": [-2,-1,0,1,2],
+            "y": 0,
+            "z": [1,7],
+            "elements": "techreborn:machine_casing@1",
+            "description": "Upgrade Casings to lower time required.",
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.985
+            }
+        },
+        {
+            "x": [-3,3],
+            "y": 0,
+            "z": [2,3,4,5,6],
+            "elements": "techreborn:machine_casing@1",
+            "description": "Upgrade Casings to lower time required.",
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.985
+            }
+        },
+        {
+            "x": [-2,-1,0,1,2],
+            "y": 0,
+            "z": [1,7],
+            "elements": "techreborn:machine_casing@2",
+            "description": "Upgrade Casings to lower time required.",
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.97
+            }
+        },
+        {
+            "x": [-3,3],
+            "y": 0,
+            "z": [2,3,4,5,6],
+            "elements": "techreborn:machine_casing@2",
+            "description": "Upgrade Casings to lower time required.",
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.97
+            }
+        }
+    ],
     "parts": [
         {
+            "x": [-2,-1,0,1,2],
+            "y": 0,
+            "z": [1,7],
+             "elements": [
+                "techreborn:machine_casing@0"
+            ]
+        },
+        {
+            "x": [-3,3],
+            "y": 0,
+            "z": [2,3,4,5,6],
+            "elements": [
+                "techreborn:machine_casing@0"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": 4,
+            "z": [3,4,5],
+            "elements": [
+                "actuallyadditions:block_misc@8"
+            ]
+        },
+        {
+            "x": [-2,-1,0,1,2],
+            "y": [1,2],
+            "z": [1,7],
+             "elements": [
+                "thermalfoundation:glass_alloy@7"
+            ]
+        },
+        {
+            "x": [-3,3],
+            "y": [1,2],
+            "z": [2,3,4,5,6],
+            "elements": [
+                "thermalfoundation:glass_alloy@7"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_item_energy"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_item_energy"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "casings_item_energy"
+            ]
+        },
+        {
             "x": 0,
             "y": 1,
             "z": 8,
@@ -37,35 +155,51 @@
             ]
         },
         {
-            "x": -4,
-            "y": 0,
-            "z": 4,
+            "x": 1,
+            "y": 4,
+            "z": 2,
             "elements": [
-                "casings_item_energy"
-            ]
-        },
-        {
-            "x": 4,
-            "y": 0,
-            "z": 4,
-            "elements": [
-                "casings_item_energy"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
-            "z": 8,
-            "elements": [
-                "casings_item_energy"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
             "x": -3,
-            "y": 2,
-            "z": 5,
+            "y": 3,
+            "z": 2,
             "elements": [
-                "thermalfoundation:glass_alloy@7"
+                "actuallyadditions:block_misc@7"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 6,
+            "elements": [
+                "actuallyadditions:block_misc@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_misc@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 6,
+            "elements": [
+                "actuallyadditions:block_misc@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -85,35 +219,11 @@
             ]
         },
         {
-            "x": 1,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 0,
-            "z": 4,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
             "x": -1,
             "y": 4,
             "z": 6,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -129,7 +239,7 @@
             "y": 4,
             "z": 6,
             "elements": [
-                "chisel:laboratory@11"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -140,29 +250,12 @@
                 "modularmachinery:blockcasing@1"
             ]
         },
-        {
-            "x": 3,
-            "y": 2,
-            "z": 5,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 0,
-            "z": 4,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-
         {
             "x": -2,
             "y": 3,
             "z": 1,
             "elements": [
-                "chisel:laboratory@11"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -175,18 +268,10 @@
         },
         {
             "x": 0,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 0,
             "y": 3,
             "z": 1,
             "elements": [
-                "chisel:laboratory@11"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -206,51 +291,11 @@
             ]
         },
         {
-            "x": -3,
-            "y": 1,
-            "z": 4,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
             "x": 2,
             "y": 3,
             "z": 1,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -3,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "chisel:factory@1"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -262,123 +307,11 @@
             ]
         },
         {
-            "x": 1,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 1,
-            "z": 4,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 7,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 3,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 7,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 7,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 7,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 7,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 2,
-            "z": 4,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
             "x": -2,
             "y": 4,
             "z": 5,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 0,
-            "z": 3,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 4,
-            "z": 5,
-            "elements": [
-                "actuallyadditions:block_misc@8"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 5,
-            "elements": [
-                "actuallyadditions:block_misc@8"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
-            "z": 5,
-            "elements": [
-                "actuallyadditions:block_misc@8"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -386,63 +319,7 @@
             "y": 4,
             "z": 5,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 2,
-            "z": 4,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 0,
-            "z": 7,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 0,
-            "z": 3,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 0,
-            "z": 7,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
-            "z": 7,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 0,
-            "z": 7,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 0,
-            "z": 7,
-            "elements": [
-                "chisel:laboratory@11"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -450,63 +327,7 @@
             "y": 3,
             "z": 4,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 1,
-            "z": 3,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -3,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": -3,
-            "y": -1,
-            "z": 6,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 1,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -514,167 +335,15 @@
             "y": 3,
             "z": 4,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 1,
-            "z": 3,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 6,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 3,
-            "y": -1,
-            "z": 2,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 6,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 6,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 1,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 6,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 6,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": 3,
-            "y": -1,
-            "z": 6,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 2,
-            "z": 3,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
             "x": -2,
             "y": 4,
             "z": 4,
-            "elements": [
+             "elements": [
                 "modularmachinery:blockcasing@1"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 0,
-            "z": 2,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 4,
-            "z": 4,
-            "elements": [
-                "actuallyadditions:block_misc@8"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 4,
-            "elements": [
-                "actuallyadditions:block_misc@8"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
-            "z": 4,
-            "elements": [
-                "actuallyadditions:block_misc@8"
             ]
         },
         {
@@ -687,78 +356,6 @@
         },
         {
             "x": -3,
-            "y": 0,
-            "z": 6,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 2,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 2,
-            "z": 3,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 0,
-            "z": 2,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 2,
-            "z": 7,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 0,
-            "z": 6,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -3,
             "y": 3,
             "z": 3,
             "elements": [
@@ -766,59 +363,11 @@
             ]
         },
         {
-            "x": -3,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 1,
-            "z": 6,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
             "x": -2,
             "y": 3,
             "z": 7,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -3,
-            "y": -1,
-            "z": 5,
-            "elements": [
-                "chisel:factory@1"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -838,115 +387,27 @@
             ]
         },
         {
-            "x": 1,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
             "x": 0,
             "y": 3,
             "z": 7,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 1,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 5,
-            "elements": [
-                "chisel:factory@6"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
             "x": 1,
             "y": 3,
             "z": 7,
-            "elements": [
+             "elements": [
                 "modularmachinery:blockcasing@1"
             ]
         },
         {
-            "x": -1,
-            "y": -1,
-            "z": 5,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 5,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
             "x": 2,
             "y": 3,
             "z": 7,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 5,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 1,
-            "z": 6,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 5,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": 3,
-            "y": -1,
-            "z": 5,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -954,63 +415,7 @@
             "y": 4,
             "z": 3,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 4,
-            "z": 3,
-            "elements": [
-                "actuallyadditions:block_misc@8"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 3,
-            "elements": [
-                "actuallyadditions:block_misc@8"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
-            "z": 3,
-            "elements": [
-                "actuallyadditions:block_misc@8"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 2,
-            "z": 6,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -1018,223 +423,7 @@
             "y": 4,
             "z": 3,
             "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 0,
-            "z": 5,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 0,
-            "z": 1,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 2,
-            "z": 6,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 0,
-            "z": 5,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -2,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 3,
-            "z": 6,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": -4,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": -3,
-            "y": 1,
-            "z": 5,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -3,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 3,
-            "z": 2,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 3,
-            "z": 6,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 3,
-            "y": 1,
-            "z": 5,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 2,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "chisel:factory@6"
-            ]
-        },
-        {
-            "x": 3,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 8,
-            "elements": [
-                "chisel:factory@1"
-            ]
-        },
-        {
-            "x": 4,
-            "y": -1,
-            "z": 4,
-            "elements": [
-                "chisel:factory@1"
+                "actuallyadditions:block_misc@7"
             ]
         },
         {
@@ -1246,51 +435,11 @@
             ]
         },
         {
-            "x": -2,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 4,
-            "z": 2,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
             "x": 0,
             "y": 4,
             "z": 2,
-            "elements": [
+             "elements": [
                 "modularmachinery:blockcasing@1"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
-            "z": 2,
-            "elements": [
-                "chisel:laboratory@11"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 1,
-            "elements": [
-                "thermalfoundation:glass_alloy@7"
             ]
         }
     ]}

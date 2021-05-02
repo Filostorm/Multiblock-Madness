@@ -32,6 +32,7 @@ recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "mod
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:minifield-crafter"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <compactmachines3:fieldprojector>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembler"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <techreborn:assembling_machine>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:darkness-collector"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <chisel:energizedvoidstone>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:lowgravitydepositionchamber"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <qmd:containment_casing>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 
 //Energy input
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:7>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyinputhatch:6>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitElite>, null]]);
@@ -353,7 +354,7 @@ MachineOne.addItemOutput(<compactmachines3:machine>);
 MachineOne.build();
 
 ##Compact Machine 2
-val MachineTwo = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machinetwo", "minifield-crafter", 400, 0);
+val MachineTwo = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machinetwo", "minifield-crafter", 300, 0);
 MachineTwo.addEnergyPerTickInput(2000);
 MachineTwo.addItemInput(<compactmachines3:wallbreakable>*26);
 MachineTwo.addItemInput(<minecraft:iron_block>);
@@ -362,13 +363,24 @@ MachineTwo.addItemOutput(<compactmachines3:machine:1>);
 MachineTwo.build();
 
 ##Compact Machine 3
-val MachineThree = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machinethree", "minifield-crafter", 800, 0);
+val MachineThree = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machinethree", "minifield-crafter", 600, 0);
 MachineThree.addEnergyPerTickInput(4000);
 MachineThree.addItemInput(<compactmachines3:wallbreakable>*26);
 MachineThree.addItemInput(<minecraft:gold_block>);
 MachineThree.addItemInput(<minecraft:ender_pearl>);
 MachineThree.addItemOutput(<compactmachines3:machine:2>);
 MachineThree.build();
+
+##TCconstruct
+val TCconstruct = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-tcconstruct", "minifield-crafter", 400, 0);
+TCconstruct.addEnergyPerTickInput(2000);
+TCconstruct.addItemInput(<thaumcraft:plank_greatwood>);
+TCconstruct.addItemInput(<immersiveengineering:sheetmetal:8>*8);
+TCconstruct.addItemInput(<thaumcraft:tube>*12);
+TCconstruct.addItemInput(<thaumcraft:tube_valve>*6);
+TCconstruct.addItemInput(<embers:gear_dawnstone>);
+TCconstruct.addItemOutput(<thaumcraft:metal_alchemical>*2);
+TCconstruct.build();
 
 /*
 ##Thermal Device Frame
@@ -484,18 +496,27 @@ dustFlux.addItemOutput(<fluxnetworks:flux>).setChance(0.5);
 dustFlux.build();
 
 ##CyrstaltineIngot
-val dustCyrstaltineIngot = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-cyrstaltineingot", "mixer", 2400, 0);
-dustCyrstaltineIngot.addEnergyPerTickInput(10000);
-dustCyrstaltineIngot.addItemInput(<extendedcrafting:material:24>);
-dustCyrstaltineIngot.addItemInput(<astralsorcery:itemcelestialcrystal>);
-dustCyrstaltineIngot.addItemInput(<avaritia:resource>*4);
-dustCyrstaltineIngot.addItemInput(<moreplates:stellar_alloy_plate>*8);
-dustCyrstaltineIngot.addItemInput(<actuallyadditions:item_crystal_empowered:2>*4);
-dustCyrstaltineIngot.addFluidInput(<liquid:astralsorcery.liquidstarlight>* 10000);
-dustCyrstaltineIngot.addFluidInput(<liquid:empoweredoil>* 10000);
-dustCyrstaltineIngot.addItemOutput(<avaritia:resource:1>);
-dustCyrstaltineIngot.build();
+val CyrstaltineIngot = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-cyrstaltineingot", "mixer", 2400, 0);
+CyrstaltineIngot.addEnergyPerTickInput(10000);
+CyrstaltineIngot.addItemInput(<extendedcrafting:material:24>);
+CyrstaltineIngot.addItemInput(<astralsorcery:itemcelestialcrystal>);
+CyrstaltineIngot.addItemInput(<avaritia:resource>*4);
+CyrstaltineIngot.addItemInput(<moreplates:stellar_alloy_plate>*8);
+CyrstaltineIngot.addItemInput(<actuallyadditions:item_crystal_empowered:2>*4);
+CyrstaltineIngot.addFluidInput(<liquid:astralsorcery.liquidstarlight>* 10000);
+CyrstaltineIngot.addFluidInput(<liquid:empoweredoil>* 10000);
+CyrstaltineIngot.addItemOutput(<avaritia:resource:1>);
+CyrstaltineIngot.build();
 
+##RichSlag
+val RichSlag = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-richslag", "mixer", 200, 0);
+RichSlag.addEnergyPerTickInput(1000);
+RichSlag.addItemInput(<thermalfoundation:material:864>*16);
+RichSlag.addItemInput(<rockhounding_chemistry:chemical_dusts:39>);
+RichSlag.addItemInput(<rockhounding_chemistry:chemical_dusts:41>);
+RichSlag.addFluidInput(<liquid:refined_biofuel>* 800);
+RichSlag.addItemOutput(<thermalfoundation:material:865>*16);
+RichSlag.build();
 
 ##############################################
 ##

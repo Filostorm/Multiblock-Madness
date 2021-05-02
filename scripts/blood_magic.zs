@@ -145,7 +145,7 @@ Altar.addTraitAltarRecipe("mm:shaped/internal/altar/demon_crystallizer", <bloodm
 
 	<techreborn:plates:32>, <enderio:item_material:16>, <techreborn:plates:32>,
 	<techreborn:plates:32>, <bloodmagic:soul_forge>, <techreborn:plates:32>, 
-	<techreborn:plates:32>, <tconevo:metal:34>, <techreborn:plates:32>,
+	<techreborn:plates:32>, <bloodmagic:blood_shard>, <techreborn:plates:32>,
 
 	<cyclicmagic:spikes_diamond>, <cyclicmagic:spikes_diamond>, <techreborn:plates:32>, <techreborn:plates:32>,
 	null, 	null,	
@@ -162,7 +162,7 @@ Altar.addTraitAltarRecipe("mm:shaped/internal/altar/demon_pylon", <bloodmagic:de
 
 	<techreborn:plates:32>, <enderio:item_material:17>, <techreborn:plates:32>,
 	<techreborn:plates:32>, <botania:pylon>, <techreborn:plates:32>, 
-	<techreborn:plates:32>, <tconevo:metal:34>, <techreborn:plates:32>,
+	<techreborn:plates:32>, <bloodmagic:blood_shard>, <techreborn:plates:32>,
 
 	null, null, <techreborn:plates:32>, <techreborn:plates:32>,
 	null, null,	
@@ -179,7 +179,7 @@ Altar.addTraitAltarRecipe("mm:shaped/internal/altar/demon_crucible", <bloodmagic
 
 	<techreborn:plates:32>, <enderio:item_material:19>, <techreborn:plates:32>,
 	<techreborn:plates:32>, <thaumcraft:crucible>, <techreborn:plates:32>, 
-	<techreborn:plates:32>, <tconevo:metal:34>, <techreborn:plates:32>,
+	<techreborn:plates:32>, <bloodmagic:blood_shard>, <techreborn:plates:32>,
 
 	null, null, <techreborn:plates:32>, <techreborn:plates:32>,
 	<cyclicmagic:spikes_diamond>, 	<cyclicmagic:spikes_diamond>,	
@@ -193,7 +193,8 @@ Altar.addTraitAltarRecipe("mm:shaped/internal/altar/demon_crucible", <bloodmagic
 ]);
 
 
-
+//Loose Traction 
+recipes.addShaped(<bloodmagic:upgrade_tome>.withTag({level: 0, key: "bloodmagic.upgrade.slippery"}), [[null, <minecraft:ice>, null],[<minecraft:ice>, <bloodmagic:upgrade_tome>.withTag({level: 9, key: "bloodmagic.upgrade.slowness"}).onlyWithTag({level: 9, key: "bloodmagic.upgrade.slowness"}), <minecraft:ice>], [null, <minecraft:ice>, null]]);
 
 
 

@@ -52,5 +52,10 @@
         "modularmachinery:blockinputbus",
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockfluidinputhatch"
+    ],
+    "LGDC": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockcasing"
     ]
 }
