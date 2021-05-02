@@ -2,6 +2,7 @@
 import crafttweaker.item.IItemStack;
 import mods.mekanism.infuser;
 import mod.mekanism.gas.IGasStack;
+import mods.mekatweaker.InfuserType;
 
 print("==================== loading Mekanism.zs ====================");
 ##########################################################################################
@@ -54,6 +55,11 @@ infuser.removeRecipe(<mekanism:reinforcedalloy>);
 infuser.removeRecipe(<mekanism:atomicalloy>);
 //infuser.removeRecipe(<thermalfoundation:material:163>);
 //InfusionString, InputInfusion, InputStack, OutputStack //InfusionString = CARBON;TIN;DIAMOND;REDSTONE;FUNGI;BIO;OBSIDIAN
+
+InfuserType.addTypeObject(<techreborn:ingot:3>, "CHROME", 100);
+InfuserType.addTypeObject(<contenttweaker:compressed_chrome>, "CHROME", 400);
+mods.mekanism.enrichment.addRecipe(<techreborn:ingot:3>, <contenttweaker:compressed_chrome>);
+
 infuser.addRecipe("REDSTONE", 20, <thermalfoundation:material:132>, <mekanism:enrichedalloy>);
 infuser.addRecipe("DIAMOND", 10, <thermalfoundation:material:134>, <mekanism:reinforcedalloy>);
 infuser.addRecipe("OBSIDIAN", 10, <techreborn:ingot:15>, <mekanism:atomicalloy>);
@@ -119,5 +125,8 @@ mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>, <gas:tritium>);
 //InputGas, OutputGas
 mods.mekanism.solarneutronactivator.addRecipe(<gas:lithium>*2, <gas:tritium>*2);
 
+//NO MORE SALT HACKS
+mods.mekanism.GasConversion.unregister(<ore:dustSalt>, <gas:hydrogenchloride>);
+mods.mekanism.GasConversion.unregister(<ore:itemSalt>, <gas:hydrogenchloride>);
 ##########################################################################################
 print("==================== end of Mekanism.zs ====================");

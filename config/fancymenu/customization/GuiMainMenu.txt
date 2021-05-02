@@ -29,9 +29,9 @@ customization {
 customization {
   identifier = %id=502382%
   orientation = mid-centered
-  x = -51
+  x = -53
   action = movebutton
-  y = -2
+  y = 16
 }
 
 customization {
@@ -68,10 +68,10 @@ customization {
 customization {
   orientation = mid-centered
   buttonaction = openlink
-  x = -92
+  x = -105
   width = 32
   action = addbutton
-  y = -10
+  y = 10
   backgroundhovered = resources/assets/fancymenu/discord-logo-logodownload-download-logotipos-1.png
   description = Join our Discord!
   label = 
@@ -95,10 +95,10 @@ customization {
 customization {
   orientation = mid-centered
   buttonaction = openlink
-  x = 57
+  x = 66
   width = 30
   action = addbutton
-  y = -8
+  y = 11
   backgroundhovered = resources/assets/fancymenu/iconfinder-github-4555889_121361.png
   description = Report an issue or make a suggestion!
   label = 

@@ -28,7 +28,6 @@ val removestuff =
     <actuallyadditions:block_crystal_empowered:4>,
     <actuallyadditions:item_crystal_empowered:5>,
     <actuallyadditions:block_crystal_empowered:5>,
-    <actuallyadditions:block_misc:8>,
 ]
 as IItemStack[];
 for item in removestuff {
@@ -47,6 +46,7 @@ val removerecipes =
     <actuallyadditions:block_fermenting_barrel>,
     <actuallyadditions:block_canola_press>,
     <actuallyadditions:block_phantomface>,
+    <actuallyadditions:block_misc:8>,
 ]
 as IItemStack[];
 for item in removerecipes {
@@ -71,7 +71,7 @@ recipes.addShaped(<actuallyadditions:block_lava_factory_controller>, [[<actually
 recipes.addShapedMirrored(<actuallyadditions:block_atomic_reconstructor>, [[<thermalfoundation:material:354>, <thermalfoundation:material:291>, <thermalfoundation:material:354>],[<arcanearchives:shaped_quartz>, <actuallyadditions:block_misc:9>, <minecraft:redstone_block>], [<thermalfoundation:material:354>, <thermalfoundation:material:291>, <thermalfoundation:material:354>]]);
 
 //Ender Casing
-recipes.addShaped(<actuallyadditions:block_misc:8>, [[<minecraft:ender_pearl>, <actuallyadditions:item_crystal_empowered:3>, <minecraft:ender_pearl>],[<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:block_misc:2>, <actuallyadditions:item_crystal_empowered:3>], [<minecraft:ender_pearl>, <actuallyadditions:item_crystal_empowered:3>, <minecraft:ender_pearl>]]);
+recipes.addShaped(<actuallyadditions:block_misc:8>, [[<actuallyadditions:item_misc:5>, <actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_misc:5>],[<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:block_misc:6>, <actuallyadditions:item_crystal_empowered:3>], [<actuallyadditions:item_misc:5>, <actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_misc:5>]]);
 
 #################################   EMPOWERER   #####################
 recipes.addShaped(<actuallyadditions:block_empowerer>, [[null, <actuallyadditions:item_crystal>, null],[null, <actuallyadditions:item_battery_double>, null], [<techreborn:machine_frame>, <actuallyadditions:block_display_stand>, <techreborn:machine_frame>]]);
@@ -93,17 +93,16 @@ AtomicReconstructor.removeRecipe(<moreplates:restonia_plate>);
 //enori
 Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal:5>, <ore:dustSalt>, <botania:petal>, <jaopca:item_shardtitanium>, <advgenerators:controller>, 5000, 200, [0.9, 0.8, 1]);
 Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:5>, <actuallyadditions:block_crystal:5>, <ore:blockSalt>, <botania:petalblock>, <jaopca:item_shardtitanium>, <advgenerators:controller>, 10000, 400, [0.9, 0.8, 1]);
+AtomicReconstructor.removeRecipe(<moreplates:enori_plate>);
 
 //diamintine
 Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal:2>, <tombstone:crafting_ingredient:2>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>, 5000, 200, [0.2, 0.9, 0.9]);
 Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal:2>, <tombstone:crafting_ingredient:2>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>, 10000, 400, [0.2, 0.9, 0.9]);
 
 //void
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_crystal:3>, <enderio:item_material:20>, <chisel:energizedvoidstone:4>, <thaumcraft:plate:2>, <thaumcraft:ingot:1>, 5000, 200, [0.2, 0.1, 0.5]); // 0.5, 0.3, 1 white core purple beam. like this one
-Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <enderio:block_infinity>, <chisel:energizedvoidstone:4>, <thaumcraft:plate:2>, <thaumcraft:nugget:7>, 10000, 400, [0.2, 0.1, 0.5]);
+Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_crystal:3>, <enderio:item_material:20>, <chisel:energizedvoidstone:4>, <thaumcraft:plate:2>, <thaumcraft:nugget:7>, 5000, 200, [0.2, 0.1, 0.5]); // 0.5, 0.3, 1 white core purple beam. like this one
+Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <enderio:block_infinity>, <chisel:energizedvoidstone:4>, <thaumcraft:plate:2>, <thaumcraft:ingot:1>, 10000, 400, [0.2, 0.1, 0.5]);
 
-mods.techreborn.plateBendingMachine.removeRecipe(<moreplates:void_plate>);
-mods.immersiveengineering.MetalPress.removeRecipe(<moreplates:void_plate>);
 AtomicReconstructor.removeRecipe(<thaumcraft:plate:3>);
 
 //palis
@@ -156,8 +155,12 @@ AtomicReconstructor.addRecipe(<iceandfire:dragonforge_fire_brick>, <iceandfire:d
 <ore:foodCookedFish>.add(<fossil:alligator_gar_cooked>);
 <ore:foodCookedFish>.add(<fossil:coelacanth_cooked>);
 
-recipes.addShaped(<actuallyadditions:item_food:4>, [[<actuallyadditions:item_food:5>, <actuallyadditions:item_food:5>, <actuallyadditions:item_food:5>], [null, <xlfoodmod:paper_cup>, null]]);
-recipes.addShaped(<actuallyadditions:item_food:3>, [[<actuallyadditions:item_food:5>, <ore:foodCookedFish>, <actuallyadditions:item_food:5>], [null, <xlfoodmod:paper_cup>, null]]);
+
+<ore:paperCup>.add(<actuallyadditions:item_misc>);
+<ore:paperCup>.add(<xlfoodmod:paper_cup>);
+
+recipes.addShaped(<actuallyadditions:item_food:4>, [[<actuallyadditions:item_food:5>, <actuallyadditions:item_food:5>, <actuallyadditions:item_food:5>], [null, <ore:paperCup>, null]]);
+recipes.addShaped(<actuallyadditions:item_food:3>, [[<actuallyadditions:item_food:5>, <ore:foodCookedFish>, <actuallyadditions:item_food:5>], [null, <ore:paperCup>, null]]);
 
 //Phantom Face
 recipes.addShaped(<actuallyadditions:block_phantomface>, [[null, <ore:chestWood>, null],[<actuallyadditions:item_crystal:2>, <actuallyadditions:block_misc:6>, <actuallyadditions:item_crystal:2>], [null, <actuallyadditions:item_misc:8>, null]]);

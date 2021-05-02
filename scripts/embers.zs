@@ -10,7 +10,7 @@ import mods.thermalexpansion.Crucible;
 print("==================== loading mods embers.zs ====================");
 ##########################################################################################
 
-recipes.addShapeless(<embers:blend_caminite> * 2, [<embers:plate_caminite_raw>]);
+recipes.addShapeless(<embers:blend_caminite> * 4, [<embers:plate_caminite_raw>]);
 
 val itemstoRemove =
 [
@@ -106,11 +106,17 @@ mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectussilv
 mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectuscopper>, <liquid:astralsorcery.liquidstarlight>, [<embers:aspectus_copper>], true);
 mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectusdawnstone>, <liquid:astralsorcery.liquidstarlight>, [<embers:aspectus_dawnstone>], true);
 
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_silver>, <liquid:silver>, 1.1, 1.5, 0xcfcfcf);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_copper>, <liquid:copper>, 1.1, 1.5, 0xff9b4a);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_iron>, <liquid:iron>, 1.1, 1.5, 0xa6a6a6);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_lead>, <liquid:lead>, 1.1, 1.5, 0x5c6f7a);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_dawnstone>, <liquid:dawnstone>, 1.1, 1.5, 0xe89e43);
+mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_silver>, <liquid:silver>, 1.2, 1.5, 0xcfcfcf);
+mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_copper>, <liquid:copper>, 1.2, 1.5, 0xff9b4a);
+mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_iron>, <liquid:iron>, 1.2, 1.5, 0xa6a6a6);
+mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_lead>, <liquid:lead>, 1.2, 1.5, 0x5c6f7a);
+mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_dawnstone>, <liquid:dawnstone>, 1.2, 1.5, 0xe89e43);
+
+
+//Glowstone
+mods.embers.Melter.add(<liquid:inert_metal> * 250, <minecraft:glowstone_dust>);
+mods.embers.Melter.add(<liquid:inert_metal> * 1000, <minecraft:glowstone>);
+
 
 ##########################################################################################
 print("==================== end of mods embers.zs ====================");

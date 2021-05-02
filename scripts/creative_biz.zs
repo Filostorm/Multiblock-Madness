@@ -79,7 +79,7 @@ null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
 <avaritia:resource:2>.addTooltip(format.lightPurple("Collected by Orbital Mining from a Space Station"));
 
 //AR Creative Power Plug
-recipes.addShaped(<libvulpes:creativepowerbattery>, [[<ore:circuitUltimate>, <extendedcrafting:material:19>, <ore:circuitUltimate>],[<extendedcrafting:material:19>, <libvulpes:forgepowerinput>, <extendedcrafting:material:19>], [<ore:circuitUltimate>, <extendedcrafting:material:19>, <mekanism:controlcircuit:3>]]);
+recipes.addShaped(<libvulpes:creativepowerbattery>, [[<ore:circuitUltimate>, <extendedcrafting:material:19>, <ore:circuitUltimate>],[<avaritia:resource:6>, <libvulpes:forgepowerinput>, <avaritia:resource:6>], [<ore:circuitUltimate>, <extendedcrafting:material:19>, <mekanism:controlcircuit:3>]]);
 
 //Infinity ingot
 mods.techreborn.fusionReactor.addRecipe(<avaritia:resource:5>*4, <avaritia:resource:4>*4, <avaritia:resource:6>, 100000000, -250000, 12000, 50);

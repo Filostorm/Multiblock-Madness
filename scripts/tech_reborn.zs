@@ -67,7 +67,7 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<techreborn:ingot:19>, <minecra
 blastFurnace.addRecipe(<techreborn:ingot:19>*2, <thermalfoundation:material:864>, <minecraft:iron_ingot>, <contenttweaker:slatedust>, 1800, 100, 1000);
 
 //Grinder
-recipes.addShaped(<techreborn:grinder>, [[<twilightforest:steeleaf_ingot>, <twilightforest:steeleaf_ingot>, <twilightforest:steeleaf_ingot>],[<ore:cobblestone>, <techreborn:machine_frame>, <ore:cobblestone>], [null, <ore:circuitBasic>, null]]);
+recipes.addShaped(<techreborn:grinder>, [[<minecraft:flint>, <minecraft:flint>, <minecraft:flint>],[<ore:cobblestone>, <techreborn:machine_frame>, <ore:cobblestone>], [null, <ore:circuitBasic>, null]]);
 //Chem Reactor
 recipes.addShaped(<techreborn:chemical_reactor>, [[<thermalfoundation:material:354>, <ore:circuitAdvanced>, <thermalfoundation:material:354>],[<thermalfoundation:glass:3>, <techreborn:machine_frame:1>, <thermalfoundation:glass:3>], [<thermalfoundation:material:354>, <ore:circuitAdvanced>, <thermalfoundation:material:354>]]);
 //Rolling Machine
@@ -121,7 +121,7 @@ mods.techreborn.rollingMachine.addShaped(<techreborn:part:13>*2, [[<ore:ingotCon
 
 //Advanced Frame
 //recipes.addShaped(<techreborn:machine_frame:1>, [[<moreplates:energetic_silver_plate>, <techreborn:plates:36>, <moreplates:energetic_silver_plate>],[<techreborn:plates:2>, <techreborn:machine_frame>, <techreborn:plates:2>], [<moreplates:energetic_silver_plate>, <techreborn:plates:36>, <moreplates:energetic_silver_plate>]]);
-Empowerer.addRecipe(<techreborn:machine_frame:1>, <techreborn:machine_frame>, <jaopca:item_platedensecarbon>, <jaopca:item_platedenseintermedium>, <jaopca:item_platedenseenergeticsilver>, <jaopca:item_platedenseadvancedalloy>, 1000000, 400, [0.9, 0.1, 0.2]);
+Empowerer.addRecipe(<techreborn:machine_frame:1>, <techreborn:machine_frame>, <jaopca:item_platedensecarbon>, <jaopca:item_platedenseintermedium>, <jaopca:item_platedenseenergeticsilver>, <jaopca:item_platedenseadvancedalloy>, 250000, 400, [0.9, 0.1, 0.2]);
 <techreborn:machine_frame:1>.addTooltip(format.darkPurple("Crafted with 1,000,000 RF"));
 
 //1st Tier Casing
