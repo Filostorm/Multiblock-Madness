@@ -171,7 +171,6 @@ recipes.addShaped(<thermalfoundation:ore:1>*12, [[null, null, <ore:elementsEarth
 recipes.addShaped(<thermalfoundation:ore> * 12, [[<ore:elementsEarth>, null, null],[null, null, null], [null, null, <ore:elementsEarth>]]);
 recipes.addShaped(<thermalfoundation:material:128> * 16, [[<ore:elementsEarth>, null, null],[null, <ore:elementsFire>, null], [null, null, <ore:elementsEarth>]]);
 recipes.addShapeless(<lycanitesmobs:venomshotcharge> * 4, [<lycanitesmobs:poisongland>]);
-recipes.addShaped(<deepresonance:resonating_ore> * 16, [[<lycanitesmobs:crystalshardcharge>, null, <lycanitesmobs:crystalshardcharge>],[null, <lycanitesmobs:boulderblastcharge>, null], [<lycanitesmobs:crystalshardcharge>, null, <lycanitesmobs:crystalshardcharge>]]);
 
 
     <lycanitesmobs:aquapulsecharge>.setAspects(<aspect:aqua> * 30);
