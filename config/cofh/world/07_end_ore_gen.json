@@ -84,13 +84,6 @@
 			"generator": {
 				"block": [
 					{
-						"name": "deepresonance:resonating_ore",
-						"properties": {
-							"oretype": "end"
-						},
-						"weight": 10
-					},
-					{
 						"name": "contenttweaker:sub_block_holder_0",
 						"properties": {
 							"sub_block_number": "8"

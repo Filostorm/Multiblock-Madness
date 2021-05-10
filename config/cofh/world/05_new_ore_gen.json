@@ -310,13 +310,6 @@
 						"weight": 10
 					},
 					{
-						"name": "deepresonance:resonating_ore",
-						"properties": {
-							"oretype": "overworld"
-						},
-						"weight": 5
-					},
-					{
 						"name": "rockhounding_chemistry:uninspected_mineral",
 						"weight": 1
 					}

@@ -236,11 +236,6 @@
       "id": "OD:oreBoron"
     },
     {
-      "target": "brown",
-      "weight": 177,
-      "id": "deepresonance:resonating_ore"
-    },
-    {
       "target": "pink",
       "weight": 186,
       "id": "OD:oreZinc"
