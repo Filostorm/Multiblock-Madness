@@ -57,7 +57,7 @@ val tinyDustMap as IItemStack[IItemStack] = {
 
 <jaopca:item_dusttinyplatinum>: <nuclearcraft:gem_dust:11>,
 <jaopca:item_dusttinyosmium>: <nuclearcraft:gem_dust:11>,
-<jaopca:item_dusttinyadaminite>: <nuclearcraft:gem_dust:11>,
+<jaopca:item_dusttinyadamantine>: <nuclearcraft:gem_dust:11>,
 <jaopca:item_dusttinytungsten>: <nuclearcraft:gem_dust:11>,
 <jaopca:item_dusttinytitanium>: <nuclearcraft:gem_dust:11>,
 } as IItemStack[IItemStack];

@@ -40,7 +40,7 @@ for item in itemstoRemove {
 <ore:circuitBasic>.add(<thaumcraft:mechanism_complex>);
 
 
-val basicPlates =
+val tierOnePlate =
 [
 <thermalfoundation:material:32>,
 <thermalfoundation:material:33>,
@@ -51,8 +51,8 @@ val basicPlates =
 <thermalfoundation:material:323>,
 ]
  as IItemStack[];
-for item in basicPlates {
-<ore:basicPlates>.add(item);
+for item in tierOnePlate {
+<ore:tierOnePlate>.add(item);
 }
 
 val Eww =
@@ -99,6 +99,10 @@ recipes.addShapeless(<minecraft:wooden_pressure_plate>, [<ore:pressurePlateWood>
 
 <ore:dustPhosphorous>.remove(<techreborn:dust:37>);
 <ore:dustPhosphorus>.add(<techreborn:dust:37>);
+
+<ore:lapotronCrystal>.add(<contenttweaker:lazurite_gem>);
+
+<ore:componentComputerChip>.add(<qmd:semiconductor:6>);
 //<ore:stickInvar>.add(<tconstruct:tool_rod>.withTag({Material: "invar"}));
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

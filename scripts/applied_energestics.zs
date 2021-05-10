@@ -157,11 +157,11 @@ recipes.addShapeless(<appliedenergistics2:part:220>, [<appliedenergistics2:inter
 recipes.addShapeless(<appliedenergistics2:part:36>, [<storagenetwork:kabel>, <minecraft:wool:*>]);
 
 
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:22>, 200, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<minecraft:gold_ingot>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:23>, 200, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<appliedenergistics2:material:10>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:24>, 200, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<minecraft:diamond>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:6>, 600, 10000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:5>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:14>, 1200, 100000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:13>);
+mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:22>, 100, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<minecraft:gold_ingot>);
+mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:23>, 100, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<appliedenergistics2:material:10>);
+mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:24>, 100, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<minecraft:diamond>);
+mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:6>, 300, 10000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:5>);
+mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:14>, 600, 100000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:13>);
 
 mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:4>, 600, 10000, <threng:material>*4,<appliedenergistics2:material:22>,<appliedenergistics2:material:24>,<rockhounding_chemistry:misc_items:10>);
 

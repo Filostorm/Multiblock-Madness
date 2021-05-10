@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
 
-  <capacitor key="enderio:block_alloy_smelter/intake" base="100000" scaler="POWER" />
+  <capacitor key="enderio:block_alloy_smelter/intake" base="10000" scaler="POWER" />
   <capacitor key="enderio:block_alloy_smelter/buffer" base="2000000" scaler="POWER" />
-  <capacitor key="enderio:block_alloy_smelter/use" base="5000" scaler="POWER" />
+  <capacitor key="enderio:block_alloy_smelter/use" base="1000" scaler="POWER" />
   
-  <capacitor key="enderio:block_enhanced_alloy_smelter/intake" base="100000" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_alloy_smelter/intake" base="20000" scaler="POWER" />
   <capacitor key="enderio:block_enhanced_alloy_smelter/buffer" base="2000000" scaler="POWER" />
-  <capacitor key="enderio:block_enhanced_alloy_smelter/use" base="10000" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_alloy_smelter/use" base="4000" scaler="POWER" />
 
   <capacitor key="enderio:block_buffer/intake_creative" base="2000000" scaler="FIXED" />
   <capacitor key="enderio:block_buffer/buffer_creative" base="20000000" scaler="FIXED" />
@@ -17,20 +17,12 @@
   <capacitor key="enderio:block_buffer/buffer" base="20000000" scaler="POWER" />
   <capacitor key="enderio:block_buffer/use" base="0" scaler="FIXED" />
 
-  <capacitor key="enderio:block_farm_station/intake" base="100000" scaler="RANGE" />
+  <capacitor key="enderio:block_farm_station/intake" base="10000" scaler="RANGE" />
   <capacitor key="enderio:block_farm_station/buffer" base="5000000" scaler="RANGE" />
   <capacitor key="enderio:block_farm_station/use" base="360" scaler="RANGE" />
   <capacitor key="enderio:block_farm_station/base_size" base="1" scaler="FIXED" />
   <capacitor key="enderio:block_farm_station/bonus_size" base="2" scaler="IDENTITY" />
   <capacitor key="enderio:block_farm_station/stacksize_limit" base="16" scaler="QUADRATIC" />
-  
-  <capacitor key="enderio:block_combustion_generator/loss" base="0" scaler="FIXED" />
-  <capacitor key="enderio:block_combustion_generator/buffer" base="200000" scaler="POWER" />
-  <capacitor key="enderio:block_combustion_generator/gen" base="16" scaler="CHEMICAL" />
-
-  <capacitor key="enderio:block_enhanced_combustion_generator/loss" base="0" scaler="FIXED" />
-  <capacitor key="enderio:block_enhanced_combustion_generator/buffer" base="800000" scaler="POWER" />
-  <capacitor key="enderio:block_enhanced_combustion_generator/gen" base="48" scaler="CHEMICAL" />
   
   <capacitor key="enderio:block_zombie_generator/loss" base="0" scaler="FIXED" />
   <capacitor key="enderio:block_zombie_generator/buffer" base="4000000" scaler="POWER" />
@@ -73,19 +65,19 @@
   <capacitor key="enderio:block_painter/buffer" base="100000" scaler="POWER" />
   <capacitor key="enderio:block_painter/use" base="500" scaler="POWER" />
   
-  <capacitor key="enderio:block_sag_mill/intake" base="100000" scaler="POWER" />
+  <capacitor key="enderio:block_sag_mill/intake" base="10000" scaler="POWER" />
   <capacitor key="enderio:block_sag_mill/buffer" base="2000000" scaler="POWER" />
-  <capacitor key="enderio:block_sag_mill/use" base="5000" scaler="POWER" />
+  <capacitor key="enderio:block_sag_mill/use" base="1000" scaler="POWER" />
   
-  <capacitor key="enderio:block_enhanced_sag_mill/intake" base="100000" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_sag_mill/intake" base="10000" scaler="POWER" />
   <capacitor key="enderio:block_enhanced_sag_mill/buffer" base="2000000" scaler="POWER" />
-  <capacitor key="enderio:block_enhanced_sag_mill/use" base="10000" scaler="POWER" />
+  <capacitor key="enderio:block_enhanced_sag_mill/use" base="4000" scaler="POWER" />
 
-  <capacitor key="enderio:block_slice_and_splice/intake" base="200000" scaler="QUADRATIC" />
+  <capacitor key="enderio:block_slice_and_splice/intake" base="20000" scaler="QUADRATIC" />
   <capacitor key="enderio:block_slice_and_splice/buffer" base="2000000" scaler="POWER" />
   <capacitor key="enderio:block_slice_and_splice/use" base="20000" scaler="QUADRATIC" />
   
-  <capacitor key="enderio:block_soul_binder/intake" base="200000" scaler="QUADRATIC" />
+  <capacitor key="enderio:block_soul_binder/intake" base="20000" scaler="QUADRATIC" />
   <capacitor key="enderio:block_soul_binder/buffer" base="2000000" scaler="POWER" />
   <capacitor key="enderio:block_soul_binder/use" base="40000" scaler="QUADRATIC" />
   <capacitor key="enderio:block_soul_binder/pitch" base="1" scaler="IDENTITY" />
@@ -99,13 +91,13 @@
   <capacitor key="enderio:block_transceiver/buffer" base="10000000" scaler="CUBIC" />
   <capacitor key="enderio:block_transceiver/use" base="50" scaler="QUADRATIC" />
 
-  <capacitor key="enderio:block_vat/intake" base="200000" scaler="POWER" />
+  <capacitor key="enderio:block_vat/intake" base="20000" scaler="POWER" />
   <capacitor key="enderio:block_vat/buffer" base="2000000" scaler="POWER" />
-  <capacitor key="enderio:block_vat/use" base="5000" scaler="CHEMICAL" />
+  <capacitor key="enderio:block_vat/use" base="1000" scaler="CHEMICAL" />
 
   <capacitor key="enderio:block_enhanced_vat/intake" base="200000" scaler="POWER" />
   <capacitor key="enderio:block_enhanced_vat/buffer" base="2000000" scaler="POWER" />
-  <capacitor key="enderio:block_enhanced_vat/use" base="10000" scaler="CHEMICAL" />
+  <capacitor key="enderio:block_enhanced_vat/use" base="4000" scaler="CHEMICAL" />
 
   <capacitor key="enderio:block_dialing_device/intake" base="10000" scaler="FIXED" />
   <capacitor key="enderio:block_dialing_device/buffer" base="100000" scaler="FIXED" />

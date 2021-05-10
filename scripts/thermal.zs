@@ -164,6 +164,7 @@ val flowerDupe =
 <minecraft:red_flower:8>,
 <minecraft:red_flower>,
 <minecraft:red_flower:7>,
+<xlfoodmod:vanilla_flower>,
 ]
  as IItemStack[];
 for item in flowerDupe {

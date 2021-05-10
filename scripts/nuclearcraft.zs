@@ -1,6 +1,7 @@
 
 import crafttweaker.item.IItemStack;
 import mods.techreborn.blastFurnace;
+import mods.nuclearcraft.IngotFormer;
 print("==================== loading nuclearcraft.zs ====================");
 ##########################################################################################
 
@@ -10,6 +11,7 @@ val itemstoRemove =
 <nuclearcraft:alloy_furnace>,
 <nuclearcraft:part:10>,
 <nuclearcraft:part:12>,
+<nuclearcraft:part:4>,
 ]
  as IItemStack[];
 
@@ -50,7 +52,11 @@ mods.extendedcrafting.TableCrafting.addShaped(<nuclearcraft:dominos>, [
     [<actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>]
 ]);  
 
-
+IngotFormer.addRecipe(<liquid:ender>, <minecraft:ender_pearl>);
 blastFurnace.addRecipe(<nuclearcraft:ingot:14>, null, <nuclearcraft:dust:14>, null, 200, 80, 1500);
+
+//Solanoid
+recipes.addShaped(<nuclearcraft:part:4> * 2, [[<contenttweaker:rodsteel>, <powersuits:powerarmorcomponent>, null],[<powersuits:powerarmorcomponent>, <contenttweaker:rodsteel>, <powersuits:powerarmorcomponent>], [null, <powersuits:powerarmorcomponent>, <contenttweaker:rodsteel>]]);
+
 ##########################################################################################
 print("==================== end of nuclearcraft.zs ====================");

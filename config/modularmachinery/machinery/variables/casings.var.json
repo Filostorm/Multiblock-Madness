@@ -56,6 +56,12 @@
     "LGDC": [
         "modularmachinery:blockinputbus",
         "modularmachinery:blockoutputbus",
-        "modularmachinery:blockcasing"
+        "modularmachinery:blockenergyinputhatch",
+        "modularmachinery:blockcasing@4"
+    ],
+    "item_fluid": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockcasing@4"
     ]
 }

@@ -70,14 +70,14 @@ recipes.addShaped(<refinedstorage:crafter> * 2,
 );
 
 // <appliedenergistics2:interface> -> <refinedstorage:interface>
-recipes.addShaped(<appliedenergistics2:interface>, 
+recipes.addShaped(<refinedstorage:interface>, 
 	[
 		[<thermalfoundation:material:324>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:324>],
 		[<refinedstorage:core:1>, <techreborn:part:43>, <refinedstorage:core:0>], 
 		[<thermalfoundation:material:324>, <appliedenergistics2:quartz_glass>, <thermalfoundation:material:324>]
 	]
 );
-recipes.addShaped(<appliedenergistics2:interface> * 2, 
+recipes.addShaped(<refinedstorage:interface> * 2, 
 	[
 		[<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:quartz_glass>, <rockhounding_chemistry:alloy_parts:10>],
 		[<refinedstorage:core:1>, <techreborn:part:43>, <refinedstorage:core:0>], 

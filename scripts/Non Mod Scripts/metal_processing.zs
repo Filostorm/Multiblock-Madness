@@ -575,8 +575,8 @@ val adamantineProcessing =[
 for item in adamantineProcessing {
 furnace.addRecipe(<contenttweaker:material_part:10>,item, 0.1);
 Melting.addRecipe(<liquid:adamantine> * 144, item);
-Crusher.addRecipe(<contenttweaker:material_part:15>, item, 1024, <jaopca:item_dustsmalladaminite>*2, 1);
-Pulverizer.addRecipe(<contenttweaker:material_part:15>, item, 2000, <jaopca:item_dustsmalladaminite>*2);
+Crusher.addRecipe(<contenttweaker:material_part:15>, item, 1024, <jaopca:item_dustsmalladamantine>*2, 1);
+Pulverizer.addRecipe(<contenttweaker:material_part:15>, item, 2000, <jaopca:item_dustsmalladamantine>*2);
 }
 
 //Starmetal

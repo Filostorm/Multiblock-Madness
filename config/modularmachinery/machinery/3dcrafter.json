@@ -14,7 +14,7 @@
                 "io": "input",
                 "target": "duration",
                 "operation": 1,
-                "multiplier": 0.985
+                "multiplier": 0.98
             }
         },
         {
@@ -27,7 +27,7 @@
                 "io": "input",
                 "target": "duration",
                 "operation": 1,
-                "multiplier": 0.985
+                "multiplier": 0.98
             }
         },
         {
@@ -40,7 +40,7 @@
                 "io": "input",
                 "target": "duration",
                 "operation": 1,
-                "multiplier": 0.97
+                "multiplier": 0.96
             }
         },
         {
@@ -53,7 +53,7 @@
                 "io": "input",
                 "target": "duration",
                 "operation": 1,
-                "multiplier": 0.97
+                "multiplier": 0.96
             }
         }
     ],

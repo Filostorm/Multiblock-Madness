@@ -15,6 +15,7 @@ import mods.techreborn.implosionCompressor;
 import mods.techreborn.plateBendingMachine;
 import mods.techreborn.assemblingMachine;
 import mods.advancedrocketry.Lathe;
+import mods.enderio.SagMill;
 
 print("==================== loading parts.zs ====================");
 ##########################################################################################
@@ -71,6 +72,7 @@ recipes.addShaped(<jaopca:block_scaffoldingstainlesssteel> * 6, [[<ore:ingotStai
 mods.actuallyadditions.AtomicReconstructor.removeRecipe(<moreplates:restonia_gear>);
 
 MetalPress.addRecipe(<moreplates:restonia_gear>, <actuallyadditions:item_crystal>, <immersiveengineering:mold:1>, 2000, 4);
+MetalPress.addRecipe(<thaumicperiphery:gear_brass>, <ore:ingotBrass>, <immersiveengineering:mold:1>, 2000, 4);
 Compactor.addGearRecipe(<moreplates:restonia_gear>, <actuallyadditions:item_crystal>*4, 4000);
 
 ################# PLATES #######################
@@ -221,6 +223,8 @@ for rod, wire in latheWires {
 ###################################################
 ############     CRUSHING      ####################
 ###################################################
+
+
 //clay dust
 Crusher.removeRecipe(<minecraft:clay_ball>);
 Crusher.addRecipe(<techreborn:dust:12>*4,<minecraft:clay>, 1024);
@@ -234,6 +238,7 @@ Manufactory.addRecipe(<minecraft:clay_ball>, <techreborn:dust:12>);
 Pulverizer.removeRecipe(<minecraft:clay>);
 Pulverizer.addRecipe(<techreborn:dust:12>*4, <minecraft:clay>, 2000);
 Pulverizer.addRecipe(<techreborn:dust:12>, <minecraft:clay_ball>, 1500);
+SagMill.addRecipe([<techreborn:dust:12>*4], [1] , <minecraft:clay>, "NONE");
 
 //limestone
 val limestoneforFlux = <ore:limestoneforFlux>;
@@ -248,6 +253,7 @@ Pulverizer.addRecipe(<thebetweenlands:items_misc:27>*4, item, 1500, <thebetweenl
 }
 Manufactory.addRecipe(<ore:limestoneforFlux>, <thebetweenlands:items_misc:27>*4);
 grinder.addRecipe(<thebetweenlands:items_misc:27>*4, <ore:limestoneforFlux>, 300, 4);
+SagMill.addRecipe([<thebetweenlands:items_misc:27>*3], [1] , <ore:limestoneforFlux>, "MULTIPLY_OUTPUT");
 
 
 //sulfur
@@ -255,12 +261,14 @@ Crusher.addRecipe(<thermalfoundation:material:771>*3, <thebetweenlands:items_mis
 Manufactory.addRecipe(<thebetweenlands:items_misc:18>, <thermalfoundation:material:771>*4);
 grinder.addRecipe(<thermalfoundation:material:771>*4, <thebetweenlands:items_misc:18>, 300, 4);
 Pulverizer.addRecipe(<thermalfoundation:material:771>*4, <thebetweenlands:items_misc:18>, 1500, <thermalfoundation:material:771>, 50);
+SagMill.addRecipe([<thermalfoundation:material:771>*3], [1] , <thebetweenlands:items_misc:18>, "MULTIPLY_OUTPUT");
 
 //Radiant Dust
 Crusher.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 1024, <arcanearchives:radiant_dust>*3, 0.5);
 Manufactory.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:radiant_dust>*9);
 grinder.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 300, 4);
 Pulverizer.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 1500, <arcanearchives:radiant_dust>*3, 50);
+SagMill.addRecipe([<arcanearchives:radiant_dust>*9], [1] , <arcanearchives:storage_raw_quartz>, "MULTIPLY_OUTPUT");
 
 
 //Ember Grit
@@ -268,10 +276,12 @@ Crusher.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 2048, <embers:dus
 Manufactory.addRecipe(<embers:crystal_ember>, <embers:dust_ember>);
 grinder.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 300, 4);
 Pulverizer.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 1500, <embers:dust_ember>, 10);
+SagMill.addRecipe([<embers:dust_ember>], [1] , <embers:crystal_ember>, "NONE");
 
 
 //Graphite
 grinder.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 300, 4);
+SagMill.addRecipe([<nuclearcraft:dust:8>], [1] , <thermalfoundation:material:768>, "NONE");
 
 //Slates
 Crusher.addRecipe(<contenttweaker:slatedust>*2, <bloodmagic:slate>, 2048);
@@ -302,9 +312,12 @@ Crusher.addRecipe(<rockhounding_chemistry:chemical_dusts:24>,<techreborn:plates:
 Crusher.addRecipe(<libvulpes:productdust:3>, <nuclearcraft:gem:6>, 1024);
 Manufactory.addRecipe(<nuclearcraft:gem:6>, <libvulpes:productdust:3>);
 grinder.addRecipe(<libvulpes:productdust:3>, <nuclearcraft:gem:6>, 300, 4);
+SagMill.addRecipe([<libvulpes:productdust:3>], [1] , <nuclearcraft:gem:6>, "NONE");
 
-//Silicon dust
+//Skystone dust
 Crusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>, 1024);
+grinder.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>, 300, 4);
+SagMill.addRecipe([<appliedenergistics2:material:45>], [1] , <appliedenergistics2:sky_stone_block>, "NONE");
 
 //Plutonium
 val plutoniumDust =
@@ -323,6 +336,8 @@ Manufactory.addRecipe(item, <techreborn:dust:67>);
 Crusher.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 1024);
 Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
 grinder.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 300, 4);
+SagMill.addRecipe([<quark:black_ash>*3], [1] , <minecraft:skull:1>, "MULTIPLY_OUTPUT");
+
 
 
 ##########################################################################################

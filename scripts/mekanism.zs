@@ -128,5 +128,9 @@ mods.mekanism.solarneutronactivator.addRecipe(<gas:lithium>*2, <gas:tritium>*2);
 //NO MORE SALT HACKS
 mods.mekanism.GasConversion.unregister(<ore:dustSalt>, <gas:hydrogenchloride>);
 mods.mekanism.GasConversion.unregister(<ore:itemSalt>, <gas:hydrogenchloride>);
+
+//Osmium Dust
+mods.mekanism.GasConversion.register(<mekanism:dust:2>, <gas:liquidosmium> * 200);
+
 ##########################################################################################
 print("==================== end of Mekanism.zs ====================");

@@ -273,7 +273,9 @@ Transposer.add(<liquid:silicone>*1000, <liquid:silicone>*1000);
 Transposer.add(<liquid:syngas>*1000, <liquid:syngas>*1000);
 Transposer.add(<liquid:sodium_hydroxide>*1000, <liquid:sodium_hydroxide_solution>*1000);
 Transposer.add(<liquid:argon>*1000, <liquid:argon>*1000);
-
+Transposer.add(<liquid:fluegas>*1000, <liquid:flue_gas>*1000);
+Transposer.add(<liquid:flue_gas>*1000, <liquid:fluegas>*1000);
+//Transposer.add(<liquid:hydrochloric_acid>*1000, <liquid:hydrogenchloride>*1000); not sure what liquid:hydrogenchloride should be, its not a fluid
 
 
 #=======================================================
@@ -386,6 +388,7 @@ mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:skull:1>, <quark:soul
 //mods.rockhounding_chemistry.PullingCrucible.add(<quark:soul_powder>, <minecraft:skull:1>, <minecraft:nether_star>);
 //mods.rockhounding_chemistry.PullingCrucible.add(<thermalfoundation:material:1028>, <actuallyadditions:item_crystal_empowered:4>, <environmentaltech:litherite_crystal>);
 
+mods.rockhounding_chemistry.PullingCrucible.add(<rockhounding_chemistry:chemical_items:4>, <techreborn:dust:28>, <contenttweaker:lazurite_gem>);
 
 //mods.rockhounding_chemistry.PullingCrucible.add("nuggetIron", <minecraft:glowstone_dust>, <minecraft:ghast_tear>);
 //mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:iron_nugget>, "dustGlowstone", <minecraft:ghast_tear>);
