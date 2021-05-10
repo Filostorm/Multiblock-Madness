@@ -20,12 +20,14 @@ recipes.removeShaped(<minecraft:nether_star>, [[<minecraft:skull:1>, <deepmoblea
 
 
 recipes.addShaped(<deepmoblearning:soot_covered_plate>, [[<actuallyadditions:item_misc:10>, <actuallyadditions:item_misc:10>, <actuallyadditions:item_misc:10>],
-[<actuallyadditions:item_misc:10>, <ore:basicPlates>, <actuallyadditions:item_misc:10>], 
+[<actuallyadditions:item_misc:10>, <ore:tierOnePlate>, <actuallyadditions:item_misc:10>], 
 [<actuallyadditions:item_misc:10>, <actuallyadditions:item_misc:10>, <actuallyadditions:item_misc:10>]]);
 
 recipes.addShaped(<deepmoblearning:machine_casing>, [[<deepmoblearning:soot_covered_plate>, <actuallyadditions:item_crystal_empowered>, <deepmoblearning:soot_covered_plate>],
 [<actuallyadditions:item_crystal_empowered>, <moreplates:osgloglas_gear>, <actuallyadditions:item_crystal_empowered>], 
 [<deepmoblearning:soot_covered_plate>, <actuallyadditions:item_crystal_empowered>, <deepmoblearning:soot_covered_plate>]]);
+
+recipes.addShaped(<contenttweaker:sooty_block>*4, [[null, <deepmoblearning:soot_covered_plate>, null],[<deepmoblearning:soot_covered_plate>, null, <deepmoblearning:soot_covered_plate>], [null, <deepmoblearning:soot_covered_plate>, null]]);
 
 
 //Pre kill bosses

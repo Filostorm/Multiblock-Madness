@@ -3,6 +3,8 @@ import crafttweaker.item.IItemStack;
 import mods.thaumcraft.Infusion;
 import mods.botaniatweaks.Agglomeration;
 import mods.extendedcrafting.EnderCrafting;
+import mods.enderio.Vat;
+import mods.nuclearcraft.Crystallizer;
 
 print("==================== loading creative biz.zs ====================");
 ##########################################################################################
@@ -15,6 +17,10 @@ val itemstoRemove =
 	<extendedcrafting:table_basic>,
 	<extendedcrafting:table_advanced>,
 	<extendedcrafting:table_elite>,
+	<avaritia:resource:4>,
+	<avaritia:resource:3>,
+	<extendedcrafting:lamp>,
+	<extendedcrafting:lamp:1>,
 ]
  as IItemStack[];
 
@@ -38,6 +44,13 @@ for item in EXitemstoRemove {
 	mods.avaritia.ExtremeCrafting.remove(item);
 }
 
+//Luminessence
+recipes.removeShapeless(<extendedcrafting:material:7> * 2, [<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:redstone>, <minecraft:gunpowder>]);
+Vat.removeRecipe(<liquid:liquid_sunshine>);
+Vat.addRecipe(<liquid:liquid_sunshine>, 1, <liquid:glowstone_nak>, 
+[<mowziesmobs:glowing_jelly>,<randomthings:glowingmushroom>,<thermalfoundation:material:894>,<enderio:block_holy_fog>],[3,2,1.5,1], 
+[<arcanearchives:radiant_dust>,<astralsorcery:itemusabledust>,<thaumcraft:nitor_yellow>,<thaumictinkerer:energetic_nitor>],[1,1,2,4], 100000);
+Crystallizer.addRecipe(<liquid:liquid_sunshine>*100, <extendedcrafting:material:7>, 1, 10000);
 
 
 //Ultime Ingot
@@ -73,6 +86,9 @@ null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
 <extendedcrafting:table_ultimate>.addTooltip(format.lightPurple("Shift-Right click the previous tier table with the catalyst"));
 
 
+//New Neutronium Essence output
+recipes.addShaped(<avaritia:resource:2> * 3, [[<mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>],[<mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>], [<mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>]]);
+
 
 //mods.iceandfire.recipes.addFireDragonForgeRecipe(<techreborn:ingot:25>, <actuallyadditions:item_crystal_empowered:3>, <extendedcrafting:material>);
 
@@ -82,7 +98,7 @@ null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
 recipes.addShaped(<libvulpes:creativepowerbattery>, [[<ore:circuitUltimate>, <extendedcrafting:material:19>, <ore:circuitUltimate>],[<avaritia:resource:6>, <libvulpes:forgepowerinput>, <avaritia:resource:6>], [<ore:circuitUltimate>, <extendedcrafting:material:19>, <mekanism:controlcircuit:3>]]);
 
 //Infinity ingot
-mods.techreborn.fusionReactor.addRecipe(<avaritia:resource:5>*4, <avaritia:resource:4>*4, <avaritia:resource:6>, 100000000, -250000, 12000, 50);
+mods.techreborn.fusionReactor.addRecipe(<avaritia:resource:5>*4, <avaritia:resource:4>*4, <avaritia:resource:6>, 100000000, -25000000, 2400, 50);
 
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:insanium:1>, [
@@ -283,6 +299,8 @@ Note: the input particles amount is the amount of particles needed to convert th
 mods.qmd.target_chamber.addRecipe(<extendedcrafting:material>, ((<particle:neutron>*1000000)^50000)~2.0, <avaritia:resource:4>, 
 null, null, null, 53000, 0.28, -100000, 0.001);
 */
+
+recipes.addShapeless(<avaritia:resource:3> * 9, [<avaritia:resource:4>]);
 mods.extendedcrafting.CombinationCrafting.addRecipe(<minecraft:bedrock>, 100000000, <avaritia:block_resource:1>, 
 [<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,
 <enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,

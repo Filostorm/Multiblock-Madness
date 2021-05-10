@@ -46,6 +46,7 @@ val itemstoRemove =
 <enderio:block_impulse_hopper>,
 <enderio:block_niard>,
 <enderio:item_conduit_facade>,
+<enderio:item_material:2>,
 ]
  as IItemStack[];
 
@@ -70,6 +71,10 @@ recipes.addShaped(<enderio:block_crafter>, [[<moreplates:electrical_steel_plate>
 
 //Painter
 recipes.addShaped(<enderio:block_painter>, [[<actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_misc:7>],[<enderio:item_material:11>, <enderio:item_material>, <enderio:item_material:11>], [<enderio:item_alloy_ingot>, <enderio:item_alloy_ingot>, <enderio:item_alloy_ingot>]]);
+
+//Parts
+recipes.addShaped(<enderio:item_material:2> * 16, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, <enderio:item_material>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
+
 
 //composit
 //recipes.addShaped(<enderio:item_material:22> * 8, [[<minecraft:gravel>, <embers:blend_caminite>, <minecraft:gravel>],[<embers:blend_caminite>, <ore:sand>, <embers:blend_caminite>], [<minecraft:gravel>, <embers:blend_caminite>, <minecraft:gravel>]]);

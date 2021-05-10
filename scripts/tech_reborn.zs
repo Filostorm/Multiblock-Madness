@@ -37,6 +37,7 @@ val itemstoRemove =
 <techreborn:part:1>,
 <techreborn:part:7>,
 <techreborn:solar_panel>,
+<techreborn:quantum_tank>,
 ]
  as IItemStack[];
 
@@ -56,6 +57,9 @@ Transposer.addFillRecipe(<techreborn:part:36>, <techreborn:dynamiccell>.withTag(
 
 //Data Control
 recipes.addShaped(<techreborn:part:1>*4, [[<ore:circuitAdvanced>, <techreborn:part:2>, <ore:circuitAdvanced>],[<techreborn:part:2>, <jaopca:item_platestainlesssteel>, <techreborn:part:2>], [<ore:circuitAdvanced>, <techreborn:part:2>, <ore:circuitAdvanced>]]);
+
+//UGE tank
+recipes.addShaped(<techreborn:quantum_tank>, [[<ore:circuitAdvanced>, <thermalfoundation:material:326>, <ore:circuitAdvanced>],[<thermalfoundation:material:326>, <fluiddrawers:tank>, <thermalfoundation:material:326>], [<ore:circuitAdvanced>, <thermalfoundation:material:326>, <ore:circuitAdvanced>]]);
 
 
 //refined iron

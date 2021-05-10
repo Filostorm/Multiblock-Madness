@@ -114,8 +114,8 @@ mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_dawnstone>, <liqui
 
 
 //Glowstone
-mods.embers.Melter.add(<liquid:inert_metal> * 250, <minecraft:glowstone_dust>);
-mods.embers.Melter.add(<liquid:inert_metal> * 1000, <minecraft:glowstone>);
+mods.embers.Melter.add(<liquid:glowstone> * 250, <minecraft:glowstone_dust>);
+mods.embers.Melter.add(<liquid:glowstone> * 1000, <minecraft:glowstone>);
 
 
 ##########################################################################################

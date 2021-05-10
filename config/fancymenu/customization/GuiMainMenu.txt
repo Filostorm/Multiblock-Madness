@@ -11,6 +11,11 @@ customization {
 }
 
 customization {
+  action = setscale
+  scale = 2
+}
+
+customization {
   identifier = %id=400322%
   orientation = mid-centered
   x = -103

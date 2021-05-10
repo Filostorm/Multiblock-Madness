@@ -78,6 +78,8 @@ ArcaneWorkbench.registerShapedRecipe("CTArcaneStone", "", 10, [],
 //Quartz Slivers
 GCT.addRecipe("nuggets", <thaumcraft:nugget:9>, [<arcanearchives:quartz_sliver>]);
 
+//Plate for research
+recipes.addShaped(<thaumadditions:mithrillium_plate>, [[<ore:artisansHammer>.reuse().transformDamage(10)],[<thaumadditions:mithrillium_ingot>]]);
 
 PureDaisy.addRecipe(<embers:ashen_stone>, <thaumcraft:stone_arcane>);
 

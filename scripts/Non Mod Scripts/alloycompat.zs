@@ -119,10 +119,10 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<deepmoblearning:polymer_clay>*
 mods.thermalexpansion.InductionSmelter.addRecipe(<plustic:osmiridiumingot>*2, <mekanism:ingot:1>, <thermalfoundation:material:135>, 1000000);
 
 // Vivid Alloy
-mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_endergy_ingot:6>*2, <enderio:item_alloy_endergy_ingot:5>, <minecraft:ender_pearl>, 10000);
+mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_endergy_ingot:6>, <enderio:item_alloy_endergy_ingot:5>, <minecraft:ender_pearl>, 10000);
 
 // End Steel
-mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot:8>*2, <enderio:item_alloy_ingot:6>, <nuclearcraft:compound:9>*2, 20000);
+mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot:8>, <enderio:item_alloy_ingot:6>, <nuclearcraft:compound:9>*2, 20000);
 
 // Thermoconducting Alloy
 mods.thermalexpansion.InductionSmelter.addRecipe(<nuclearcraft:alloy:11>*2, <nuclearcraft:alloy:10>, <nuclearcraft:gem:5>, 9000);

@@ -54,6 +54,7 @@ val itemstoRemoveandHide =
 	<cyclicmagic:netherbrick_axe>,
 	<cyclicmagic:netherbrick_pickaxe>,
 	<cyclicmagic:block_workbench>,
+	<cyclicmagic:fire_starter>,
 ]
  as IItemStack[];
 

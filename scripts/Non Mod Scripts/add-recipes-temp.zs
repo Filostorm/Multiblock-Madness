@@ -125,7 +125,8 @@ val recipestoRemove =
 <computercraft:cable:1>,
 <mob_grinding_utils:tank>,
 <advancedrocketry:productrod>,
-<storagedrawers:upgrade_storage>,
+<malisisdoors:rustyladder>,
+<cyclicmagic:storage_bag>,
 ]
  as IItemStack[];
 
@@ -225,6 +226,8 @@ val itemstoRemove =
 <enderio:block_enhanced_combustion_generator>,
 <enderio:block_combustion_generator>,
 <advgenerators:steam_turbine_controller>,
+<advancedrocketry:arcfurnace>,
+<advancedrocketry:blastbrick>,
 ]
  as IItemStack[];
 
@@ -298,7 +301,10 @@ recipes.addShaped(<iceandfire:blindfold>, [[<minecraft:string>, <improvedbackpac
 recipes.addShapeless(<randomthings:idcard>, [<techreborn:plates:35>,<ore:dyeBlack>]);
 
 //Tier 1 Drawer
-recipes.addShaped(<storagedrawers:upgrade_storage>, [[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],[<minecraft:flint>, <storagedrawers:upgrade_template>, <minecraft:flint>], [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
+//recipes.addShaped(<storagedrawers:upgrade_storage>, [[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],[<minecraft:flint>, <storagedrawers:upgrade_template>, <minecraft:flint>], [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
+
+//Metal Ladder coflict
+recipes.addShaped(<malisisdoors:rustyladder> * 2, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[null, null, null], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
 
 
 //Super Tome

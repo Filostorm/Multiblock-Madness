@@ -65,6 +65,7 @@ VanillaFactory.createItem("rodhydronalium").register();
 VanillaFactory.createItem("purpleprint").register();
 VanillaFactory.createItem("ingot_xp").register();
 VanillaFactory.createItem("compressed_chrome").register();
+VanillaFactory.createItem("lazurite_gem").register();
 
 var activatedaspectuscopper = VanillaFactory.createItem("activatedaspectuscopper");
 activatedaspectuscopper.maxStackSize = 1;

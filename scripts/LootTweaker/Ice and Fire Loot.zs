@@ -33,8 +33,9 @@ print("==================== loading Loot.zs ====================");
 	<nuclearcraft:neptunium>,
 	<nuclearcraft:plutonium>,
 	<nuclearcraft:californium:5>,
-	<nuclearcraft:californium:12>,
-	<nuclearcraft:curium>,
+	<nuclearcraft:californium:6>,
+	<nuclearcraft:californium:7>,
+	<nuclearcraft:californium:8>,
 	<actuallyadditions:block_crystal>,
 	<actuallyadditions:block_crystal:1>,
 	<actuallyadditions:block_crystal:2>,
@@ -48,7 +49,6 @@ print("==================== loading Loot.zs ====================");
 	<actuallyadditions:item_crystal_empowered:5>,
 	<botania:manaring>,
 	<botania:auraring>,
-	<botania:magnetring>,
 	<mysticalagriculture:prudentium_apple>,
 	<mysticalagriculture:intermedium_apple>,
 	<mysticalagriculture:superium_apple>,
@@ -56,6 +56,7 @@ print("==================== loading Loot.zs ====================");
 	<rockhounding_chemistry:alloy_items_gems:2>,
 	<rockhounding_chemistry:alloy_items_tech:32>,
 	<extendedcrafting:material:33>,
+	<cyclicmagic:storage_bag>,
 	] as IItemStack[];
 	
 	for item in caveloot {

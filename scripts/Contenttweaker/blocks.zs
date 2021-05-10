@@ -175,3 +175,12 @@ XPBlock.setToolClass("pickaxe");
 XPBlock.setToolLevel(1);
 XPBlock.setBlockSoundType(<soundtype:metal>);
 XPBlock.register();
+
+var SootBlook = VanillaFactory.createBlock("sooty_block", <blockmaterial:iron>);
+SootBlook.setLightValue(0);
+SootBlook.setBlockHardness(5.0);
+SootBlook.setBlockResistance(5.0);
+SootBlook.setToolClass("pickaxe");
+SootBlook.setToolLevel(1);
+SootBlook.setBlockSoundType(<soundtype:metal>);
+SootBlook.register();

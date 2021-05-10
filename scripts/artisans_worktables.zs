@@ -62,292 +62,79 @@ RecipeBuilder.get("mason")
 
 recipes.addShaped(<artisanworktables:worktable:3>, [[<ore:plateInvar>, <ore:plateInvar>, <ore:plateInvar>],[null, <ore:logWood>, null], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
 
-// Bronze-Plates =======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:355>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotBronze>], [<ore:ingotBronze>]]);
+
+
+val artisansPlates as IItemStack[IOreDictEntry] = {
+	<ore:ingotBronze>: <thermalfoundation:material:355>,
+  <ore:ingotTin>:<thermalfoundation:material:321>,
+  <ore:ingotGold>:<thermalfoundation:material:33>,
+  <ore:ingotCopper>:<thermalfoundation:material:320>,
+  <ore:ingotIron>:<thermalfoundation:material:32>,
+  <ore:ingotSilver>:<thermalfoundation:material:322>,
+  <ore:ingotLead>:<thermalfoundation:material:323>,
+  <ore:ingotNickel>:<thermalfoundation:material:325>,
+  <ore:ingotInvar>:<thermalfoundation:material:354>,
+  <ore:ingotElectrum>:<thermalfoundation:material:353>,
+  <ore:ingotConstantan>:<thermalfoundation:material:356>,
+  <ore:ingotSteel>:<thermalfoundation:material:352>,
+  <ore:ingotDawnstone>:<embers:plate_dawnstone>,
+  <ore:ingotIronwood>:<moreplates:ironwood_plate>,
+  <ore:ingotBrass>:<thaumcraft:plate>,
+  <ore:ingotThaumium>:<thaumcraft:plate:2>,
+  <ore:gemQuartz>:<moreplates:nether_quartz_plate>,
+} as IItemStack[IOreDictEntry];
+
+for ingot, plate in artisansPlates {
+recipes.addShaped(plate, [[<ore:artisansHammer>.reuse().transformDamage(5)], [ingot], [ingot]]);
 RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotBronze>])
+  .setShapeless([ingot])
   .setFluid(<liquid:lava> *50)
   .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:355>)
+  .addOutput(plate)
   .create();
+}
 
-// Tin-Plates ======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:321>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotTin>], [<ore:ingotTin>]]);
+val artisansCrystalPlates as IItemStack[IItemStack] = {
+  <actuallyadditions:item_crystal>:<moreplates:restonia_plate>,
+  <actuallyadditions:item_crystal:3>:<moreplates:void_plate>,
+  <actuallyadditions:item_crystal:5>:<moreplates:enori_plate>,
+} as IItemStack[IItemStack];
+for ingot, plate in artisansCrystalPlates {
+recipes.addShaped(plate, [[<ore:artisansHammer>.reuse().transformDamage(5)], [ingot], [ingot]]);
 RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotTin>])
+  .setShapeless([ingot])
   .setFluid(<liquid:lava> *50)
   .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:321>)
+  .addOutput(plate)
   .create();
-
-// Gold-Plates =======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:33>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotGold>], [<ore:ingotGold>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotGold>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:33>)
-  .create();
-
-// Copper-Plates =======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:320>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotCopper>], [<ore:ingotCopper>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotCopper>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:320>)
-  .create();
-
-// Iron-Plates ======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:32>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotIron>], [<ore:ingotIron>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotIron>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:32>)
-  .create();
-
-// Silver Plates ======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:322>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotSilver>], [<ore:ingotSilver>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotSilver>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:322>)
-  .create();
-
-// Lead Plates =======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:323>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotLead>], [<ore:ingotLead>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotLead>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:323>)
-  .create();
-
-// Nickel Plates =======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:325>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotNickel>], [<ore:ingotNickel>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotNickel>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:325>)
-  .create();
-
-// Invar Plate =======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:354>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotInvar>], [<ore:ingotInvar>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotInvar>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:354>)
-  .create();
-
-// Electrum Plate =======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:353>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotElectrum>], [<ore:ingotElectrum>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotElectrum>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:353>)
-  .create();
-
-// Constatan Plate =======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:356>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotConstantan>], [<ore:ingotConstantan>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotConstantan>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:356>)
-  .create();
-
-// Steel Plates =======================================================================================================================================
-recipes.addShaped(<thermalfoundation:material:352>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotSteel>], [<ore:ingotSteel>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotSteel>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thermalfoundation:material:352>)
-  .create();
-
-// Dawnstone Plates =======================================================================================================================================
-recipes.addShaped(<embers:plate_dawnstone>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<embers:ingot_dawnstone>], [<embers:ingot_dawnstone>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<embers:ingot_dawnstone>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<embers:plate_dawnstone>)
-  .create();
-
-
-
-// Ironwood Plates =======================================================================================================================================
-recipes.addShaped(<moreplates:ironwood_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<twilightforest:ironwood_ingot>], [<twilightforest:ironwood_ingot>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<twilightforest:ironwood_ingot>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<moreplates:ironwood_plate>)
-  .create();
-
-// Brass Plates =======================================================================================================================================
-recipes.addShaped(<thaumcraft:plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<ore:ingotBrass>], [<ore:ingotBrass>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<ore:ingotBrass>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thaumcraft:plate>)
-  .create();
-
-// Thaumaum Plates =======================================================================================================================================
-recipes.addShaped(<thaumcraft:plate:2>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<thaumcraft:ingot>], [<thaumcraft:ingot>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<thaumcraft:ingot>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<thaumcraft:plate:2>)
-  .create();
-
-// Restonia Plates =======================================================================================================================================
-recipes.addShaped(<moreplates:restonia_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<actuallyadditions:item_crystal>], [<actuallyadditions:item_crystal>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<actuallyadditions:item_crystal>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<moreplates:restonia_plate>)
-  .create();
-
-
-  // Void Plates =======================================================================================================================================
-recipes.addShaped(<moreplates:void_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<actuallyadditions:item_crystal:3>], [<actuallyadditions:item_crystal:3>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<actuallyadditions:item_crystal:3>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<moreplates:void_plate>)
-  .create();
-
-  // Enori Plates =======================================================================================================================================
-recipes.addShaped(<moreplates:enori_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<actuallyadditions:item_crystal:5>], [<actuallyadditions:item_crystal:5>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<actuallyadditions:item_crystal:5>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<moreplates:enori_plate>)
-  .create();
-
-  // Quartz Plates =======================================================================================================================================
-recipes.addShaped(<moreplates:nether_quartz_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)], [<minecraft:quartz>], [<minecraft:quartz>]]);
-RecipeBuilder.get("blacksmith")
-  .setShapeless([<minecraft:quartz>])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
-  .addOutput(<moreplates:nether_quartz_plate>)
-  .create();
-
-
+}
 //--------------Rods------------------
-//Steel rod
+
+val artisansRods as IItemStack[IOreDictEntry] = {
+  <ore:ingotSteel>:<immersiveengineering:material:2>,
+  <ore:ingotIron>:<immersiveengineering:material:1>,
+  <ore:ingotInvar>:<moreplates:invar_stick>,
+  <ore:ingotElectrum>:<moreplates:electrum_stick>,
+  <ore:ingotConstantan>:<moreplates:constantan_stick>,
+  <ore:ingotBrass>:<jaopca:item_stickbrass>,
+  <ore:ingotGold>:<moreplates:gold_stick>,
+	<ore:ingotBronze>: <moreplates:bronze_stick>,
+  <ore:ingotSyrmorite>:<jaopca:item_sticksyrmorite>,
+  <ore:ingotArdite>:<jaopca:item_stickardite>,
+  <ore:ingotCopper>:<libvulpes:productrod:4>,
+} as IItemStack[IOreDictEntry];
+
+for ingot, rod in artisansRods {
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [null, null, <thermalfoundation:material:160>],
-    [null, <thermalfoundation:material:160>, null],
-    [<thermalfoundation:material:160>, null, null]])
+    [null, null, ingot],
+    [null, ingot, null],
+    [ingot, null, null]])
   .setFluid(<liquid:lava> * 50)
   .addTool(<ore:artisansPliers>, 15)
-  .addOutput(<immersiveengineering:material:2>*3)
+  .addOutput(rod*3)
   .create();
-
-//Iron rod
-RecipeBuilder.get("blacksmith")
-    .setShaped([
-    [null, null, <minecraft:iron_ingot>],
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:iron_ingot>, null, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansPliers>, 15)
-  .addOutput(<immersiveengineering:material:1>*3)
-  .create();
-
-//Invar rod
-RecipeBuilder.get("blacksmith")
-    .setShaped([
-    [null, null, <thermalfoundation:material:162>],
-    [null, <thermalfoundation:material:162>, null],
-    [<thermalfoundation:material:162>, null, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansPliers>, 15)
-  .addOutput(<moreplates:invar_stick>*3)
-  .create();
-
-  //electrum rod
-RecipeBuilder.get("blacksmith")
-    .setShaped([
-    [null, null, <thermalfoundation:material:161>],
-    [null, <thermalfoundation:material:161>, null],
-    [<thermalfoundation:material:161>, null, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansPliers>, 15)
-  .addOutput(<moreplates:electrum_stick>*3)
-  .create();
-
-  //constantan rod
-RecipeBuilder.get("blacksmith")
-    .setShaped([
-    [null, null, <thermalfoundation:material:164>],
-    [null, <thermalfoundation:material:164>, null],
-    [<thermalfoundation:material:164>, null, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansPliers>, 15)
-  .addOutput(<moreplates:constantan_stick>*3)
-  .create();
-
-  //syrmorite rod
-RecipeBuilder.get("blacksmith")
-    .setShaped([
-    [null, null, <thebetweenlands:items_misc:11>],
-    [null, <thebetweenlands:items_misc:11>, null],
-    [<thebetweenlands:items_misc:11>, null, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansPliers>, 15)
-  .addOutput(<jaopca:item_sticksyrmorite>*3)
-  .create();
-
-  //brass rod
-RecipeBuilder.get("blacksmith")
-    .setShaped([
-    [null, null, <ore:ingotBrass>],
-    [null, <ore:ingotBrass>, null],
-    [<ore:ingotBrass>, null, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansPliers>, 15)
-  .addOutput(<jaopca:item_stickbrass>*3)
-  .create();
-
-  //ardite rod
-RecipeBuilder.get("blacksmith")
-    .setShaped([
-    [null, null, <tconstruct:ingots:1>],
-    [null, <tconstruct:ingots:1>, null],
-    [<tconstruct:ingots:1>, null, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansPliers>, 15)
-  .addOutput(<jaopca:item_stickardite>*3)
-  .create();
-
-  //gold rod
-RecipeBuilder.get("blacksmith")
-    .setShaped([
-    [null, null, <minecraft:gold_ingot>],
-    [null, <minecraft:gold_ingot>, null],
-    [<minecraft:gold_ingot>, null, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansPliers>, 15)
-  .addOutput(<moreplates:gold_stick>*3)
-  .create();
-
-
-
+}
 
 
 
@@ -440,7 +227,29 @@ recipes.addShaped(<artisanworktables:workstation:3>, [[<thermalfoundation:materi
   .addOutput(<moreplates:ardite_gear>)
   .create();
 
+    //Copper
+  RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:ingotCopper>, null],
+    [<ore:ingotCopper>, <ore:stickCopper>, <ore:ingotCopper>],
+    [null, <ore:ingotCopper>, null]])
+  .setFluid(<liquid:lava> * 50)
+  .addTool(<ore:artisansFile>, 20)
+  .addTool(<ore:artisansHammer>, 20)
+  .addOutput(<thermalfoundation:material:256>)
+  .create();
 
+    //Bronze
+  RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:ingotBronze>, null],
+    [<ore:ingotBronze>, <ore:stickBronze>, <ore:ingotBronze>],
+    [null, <ore:ingotBronze>, null]])
+  .setFluid(<liquid:lava> * 50)
+  .addTool(<ore:artisansFile>, 20)
+  .addTool(<ore:artisansHammer>, 20)
+  .addOutput(<thermalfoundation:material:291>)
+  .create();
 
 ###   ARMOR    ###
 recipes.addShaped(<artisanworktables:workshop:3>, [[<moreplates:ironwood_plate>, <moreplates:ironwood_plate>, <moreplates:ironwood_plate>],[<moreplates:ironwood_plate>, <artisanworktables:workstation:3>, <moreplates:ironwood_plate>], [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]]);

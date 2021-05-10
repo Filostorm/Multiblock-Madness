@@ -9,7 +9,7 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "thaumicperiphery:gear_brass",
+  "catalyst": "mysticalmechanics:gear_gold_off",
   
   "input-types": {
     "a": {
@@ -28,7 +28,7 @@
       "ignore-meta": true
     },
     "c": {
-      "id": "contenttweaker:sheetmetal_bronze",
+      "id": "immersiveengineering:sheetmetal",
       "meta": 0
     },
     "d": {

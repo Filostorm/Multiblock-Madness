@@ -18,6 +18,7 @@ val itemstoRemove =
 <advancedrocketry:ic:4>,
 <advancedrocketry:ic:3>,
 <advancedrocketry:seat>,
+<advancedrocketry:productrod:1>,
 ]
  as IItemStack[];
 

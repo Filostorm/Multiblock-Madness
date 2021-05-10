@@ -1,4 +1,8 @@
 ![Multiblock Madness](https://www.bisecthosting.com/images/CF/Multiblock_Madness/BH_MM_Header.png)
+<<<<<<< HEAD
+
+=======
+>>>>>>> dev
 Bored of the normal expert packs out there? Try Multiblock Madness! We've got exploration, dimensions, 3D crafting, and a slew of multiblock machines that do everything from collect lunar energy to killing virtual mobs to processing various types of metals. The pack starts you off at around vanilla minecraft level, with very few changed vanilla recipes, and quickly ramps up from there. Allowing for a fantastic gameplay for both newcomers to the modded scene, as well as seasoned experts.
 
 - All new ore generation, it spawns in large veins of several related ore types!
@@ -14,4 +18,8 @@ For the Modlist, [click here](https://www.curseforge.com/minecraft/modpacks/mult
 For the full description check out the modpack on [Curse](https://www.curseforge.com/minecraft/modpacks/multiblock-madness).
 
 
+<<<<<<< HEAD
 ![Discord](https://www.bisecthosting.com/images/CF/A_Bit_of_Everything/BH_BOE_Discord.png)
+=======
+![Discord](https://www.bisecthosting.com/images/CF/A_Bit_of_Everything/BH_BOE_Discord.png)
+>>>>>>> dev
