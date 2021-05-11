@@ -33276,25 +33276,21 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 64,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "deepresonance:resonating_ore"
-              },
-              "Damage:2": 0,
+              "id:8": "contenttweaker:sub_block_holder_0",
+              "Count:3": 32,
+              "Damage:2": 7,
               "OreDict:8": ""
             },
             "2:10": {
-              "id:8": "contenttweaker:sub_block_holder_0",
-              "Count:3": 16,
-              "Damage:2": 7,
+              "id:8": "nuclearcraft:ore",
+              "Count:3": 32,
+              "Damage:2": 4,
               "OreDict:8": ""
             },
             "3:10": {
               "id:8": "nuclearcraft:ore",
               "Count:3": 32,
-              "Damage:2": 4,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           }
@@ -44392,7 +44388,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Mining Levels and Ore Veins",
-          "desc:8": "Mining levels and example materials:\nYou can explore to get access to up to Reinforced level, or progress through the chapters for the rest!\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)\n§16 - Aethium\n§e8 - Stellar\n\n§rOre spawns in veins of several types of metal or gems:\n\n§765% Iron \n20% Nickel\n15% Gold\n§6§rY levels: 64-10\n\n§670% Copper\n25% Palladium\n5% Blaze\n§rY levels: §r60-20\n\n§785% Tin\n10% Iron\n5% Lead\n§rY levels: 80-40\n\n§845% Lead\n45% Silver\n10% Galena\n§rY levels: 35-5\n\n§c60% Redstone\n15% Ruby\n10% Cinnabar\n10% Destabilized Redstone\n5% Resonating Ore\n§rY levels: 15-5\n\n§f40% Quartz\n40% Certus Quartz\n10% Black Quartz\n5% Charged Certus Quartz\n5% Magic Crystal Ore\n§7Y levels: 20-70\n\n§975% Lapis\n15% Sapphire\n10% Prismarine Ore\n§rY levels: 15-5\n\n§790% Bauxite\n5% Aluminum\n5% Rutile\n§rY levels: 20-0\n\n§240% Ender Ore \n20% Emerald\n20% Slime Ore\n20% Fossil\n§rY levels: 40-5\n\n§rHold a Divining Rod in your off hand while you are mining to have the ore of that type to light up."
+          "desc:8": "Mining levels and example materials:\nYou can explore to get access to up to Reinforced level, or progress through the chapters for the rest!\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)\n§16 - Aethium\n§e8 - Stellar\n\n§rOre spawns in veins of several types of metal or gems:\n\n§765% Iron \n20% Nickel\n15% Gold\n§6§rY levels: 64-10\n\n§670% Copper\n25% Palladium\n5% Blaze\n§rY levels: §r60-20\n\n§785% Tin\n10% Iron\n5% Lead\n§rY levels: 80-40\n\n§845% Lead\n45% Silver\n10% Galena\n§rY levels: 35-5\n\n§c65% Redstone\n15% Ruby\n10% Cinnabar\n10% Destabilized Redstone\n§rY levels: 20-5\n\n§f40% Quartz\n40% Certus Quartz\n10% Black Quartz\n5% Charged Certus Quartz\n5% Magic Crystal Ore\n§7Y levels: 20-70\n\n§975% Lapis\n15% Sapphire\n10% Prismarine Ore\n§rY levels: 20-5\n\n§790% Bauxite\n5% Aluminum\n5% Rutile\n§rY levels: 20-0\n\n§240% Ender Ore \n30% Emerald\n20% Slime Ore\n10% Fossil\n§rY levels: 3 0-5\n\n§rHold a Divining Rod in your off hand while you are mining to have the ore of that type to light up."
         }
       },
       "tasks:9": {
@@ -44482,6 +44478,15 @@
               "id:8": "randomthings:diviningrod",
               "Count:3": 1,
               "Damage:2": 8,
+              "OreDict:8": ""
+            },
+            "8:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "randomthings:diviningrod",
+              "Count:3": 1,
+              "Damage:2": 5,
               "OreDict:8": ""
             }
           }

@@ -52,7 +52,10 @@ mods.extendedcrafting.TableCrafting.addShaped(<nuclearcraft:dominos>, [
     [<actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>]
 ]);  
 
-IngotFormer.addRecipe(<liquid:ender>, <minecraft:ender_pearl>);
+//Ender Pearl
+IngotFormer.addRecipe(<liquid:ender>*250, <minecraft:ender_pearl>);
+
+
 blastFurnace.addRecipe(<nuclearcraft:ingot:14>, null, <nuclearcraft:dust:14>, null, 200, 80, 1500);
 
 //Solanoid

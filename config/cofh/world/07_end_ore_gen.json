@@ -88,14 +88,14 @@
 						"properties": {
 							"sub_block_number": "8"
 						},
-						"weight": 80
+						"weight": 85
 					},
 					{
 						"name": "rftools:dimensional_shard_ore",
 						"properties": {
 							"oretype": "end"
 						},
-						"weight": 10
+						"weight": 15
 					}
 				],
 				"material": "minecraft:end_stone",

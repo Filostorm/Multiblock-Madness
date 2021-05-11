@@ -88,14 +88,14 @@
 						"properties": {
 							"sub_block_number": "7"
 						},
-						"weight": 60
+						"weight": 65
 					},
 					{
 						"name": "techreborn:ore",
 						"properties": {
 							"type": "cinnabar"
 						},
-						"weight": 30
+						"weight": 35
 					}
 				],
 				"material": "minecraft:netherrack",
