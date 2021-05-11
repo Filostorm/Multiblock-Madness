@@ -157,7 +157,7 @@ recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "componen
 
 recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "Circuits"}),[
 	[<ore:platerefinedIron>, <ore:alloyBasic>, <ore:platerefinedIron>], 
-	[<ore:gemLapis>, <ore:gemLapis>, <ore:gemLapis>], 
+	[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], 
 	[<ore:paper>, <ore:paper>, <ore:paper>]
 ]);
 mods.immersiveengineering.Blueprint.addRecipe("Circuits", <techreborn:part:29>, [<immersiveengineering:material:27>,<techreborn:plates:35>,<minecraft:redstone>*2,<techreborn:cable:5>*6]);

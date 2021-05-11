@@ -25,10 +25,10 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 45
+				"cluster-size": 40
 			},
 			"cluster-count": 1,
-			"chunk-chance": 2,
+			"chunk-chance": 1,
 			"min-height": 10,
 			"max-height": 64,
 			"retrogen": "false",
@@ -265,10 +265,10 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 30
+				"cluster-size": 25
 			},
 			"cluster-count": 1,
-			"chunk-chance": 4,
+			"chunk-chance": 3,
 			"min-height": 0,
 			"max-height": 20,
 			"retrogen": "false",
@@ -289,7 +289,7 @@
 				"block": [
 					{
 						"name": "minecraft:redstone_ore",
-						"weight": 59
+						"weight": 64
 					},
 					{
 						"name": "thermalfoundation:ore_fluid",
@@ -315,13 +315,13 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 40
+				"cluster-size": 30
 			},
 			"cluster-count": 1, 
-			"chunk-chance": 3,
+			"chunk-chance": 2,
 			"min-height": 5,
-			"max-height": 15,
-			"retrogen": "false",
+			"max-height": 20,
+			"retrogen": "true",
 			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
@@ -339,7 +339,7 @@
 				"block": [
 					{
 						"name": "minecraft:emerald_ore",
-						"weight": 20
+						"weight": 30
 					},
 					{
 						"name": "utilitybaseores:slime_ore",
@@ -351,7 +351,7 @@
 					},
 					{
 						"name": "fossil:fossil",
-						"weight": 20
+						"weight": 10
 					},
 					{
 						"name": "rockhounding_chemistry:uninspected_mineral",
@@ -362,9 +362,9 @@
 				"cluster-size": 25
 			},
 			"cluster-count": 1, 
-			"chunk-chance": 5,
+			"chunk-chance": 4,
 			"min-height": 5,
-			"max-height": 40,
+			"max-height": 30,
 			"retrogen": "false",
 			"biome": "all",
 			"dimension": {
@@ -405,9 +405,9 @@
 				"cluster-size": 20
 			},
 			"cluster-count": 1, 
-			"chunk-chance": 4,
+			"chunk-chance": 3,
 			"min-height": 5,
-			"max-height": 15,
+			"max-height": 20,
 			"retrogen": "false",
 			"biome": "all",
 			"dimension": {
@@ -456,7 +456,7 @@
 				"cluster-size": 35
 			},
 			"cluster-count": 1, 
-			"chunk-chance": 3,
+			"chunk-chance": 2,
 			"min-height": 20,
 			"max-height": 70,
 			"retrogen": "false",
