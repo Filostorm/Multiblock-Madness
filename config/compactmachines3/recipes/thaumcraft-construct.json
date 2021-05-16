@@ -4,7 +4,7 @@
   "disabled": false,
 
   "target-item": "thaumcraft:metal_alchemical",
-  "target-count": 2,
+  "target-count": 3,
 
   "duration": 200,
   "symmetrical": true,

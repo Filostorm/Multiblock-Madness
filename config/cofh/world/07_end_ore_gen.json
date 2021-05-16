@@ -104,7 +104,7 @@
 			"cluster-count": 1,
 			"min-height": 10,
 			"max-height": 150,
-			"retrogen": "false",
+			"retrogen": "true",
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",

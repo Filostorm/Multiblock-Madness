@@ -204,7 +204,7 @@ CombinationCrafting.addRecipe(<modularmachinery:blockcasing:4>, 1000000, <modula
 ##############################################
 
 ##Tech Reborn Basic Frame
-val TRBasicFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-trbasicframe", "minifield-crafter", 500, 0);
+val TRBasicFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-trbasicframe", "minifield-crafter", 400, 0);
 TRBasicFrame.addEnergyPerTickInput(2000);
 TRBasicFrame.addItemInput(<techreborn:part:29>);
 TRBasicFrame.addItemInput(<immersiveengineering:metal_decoration0:3>);
@@ -214,7 +214,7 @@ TRBasicFrame.addItemOutput(<techreborn:machine_frame>);
 TRBasicFrame.build();
 
 ##Mekanism Steel Casing
-val MekanismSteelCasing = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-mekanismsteelcasing", "minifield-crafter", 500, 0);
+val MekanismSteelCasing = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-mekanismsteelcasing", "minifield-crafter", 400, 0);
 MekanismSteelCasing.addEnergyPerTickInput(4000);
 MekanismSteelCasing.addItemInput(<techreborn:part:43>);
 MekanismSteelCasing.addItemInput(<mekanism:basicblock>);
@@ -223,7 +223,7 @@ MekanismSteelCasing.addItemInput(<immersiveengineering:metal_decoration1:1> * 14
 MekanismSteelCasing.addItemOutput(<mekanism:basicblock:8>);
 MekanismSteelCasing.build();
 
-val MekanismSteelCasing2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-mekanismsSteelcasing2", "minifield-crafter", 500, 0);
+val MekanismSteelCasing2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-mekanismsSteelcasing2", "minifield-crafter", 400, 0);
 MekanismSteelCasing2.addEnergyPerTickInput(4000);
 MekanismSteelCasing2.addItemInput(<techreborn:part:43>);
 MekanismSteelCasing2.addItemInput(<mekanism:basicblock>);
@@ -233,7 +233,7 @@ MekanismSteelCasing2.addItemOutput(<mekanism:basicblock:8>*2);
 MekanismSteelCasing2.build();
 
 ##Thermal Machine Frame
-val ThermalFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-thermalframe", "minifield-crafter", 500, 0);
+val ThermalFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-thermalframe", "minifield-crafter", 400, 0);
 ThermalFrame.addEnergyPerTickInput(4000);
 ThermalFrame.addItemInput(<techreborn:part:43>);
 ThermalFrame.addItemInput(<thermalfoundation:storage:6>);
@@ -244,7 +244,7 @@ ThermalFrame.addItemInput(<contenttweaker:invar_scaffolding> * 4);
 ThermalFrame.addItemOutput(<thermalexpansion:frame>);
 ThermalFrame.build();
 
-val ThermalFrame2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-thermalframe2", "minifield-crafter", 500, 0);
+val ThermalFrame2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-thermalframe2", "minifield-crafter", 400, 0);
 ThermalFrame2.addEnergyPerTickInput(4000);
 ThermalFrame2.addItemInput(<techreborn:part:43>);
 ThermalFrame2.addItemInput(<thermalfoundation:storage:6>);
@@ -256,7 +256,7 @@ ThermalFrame2.addItemOutput(<thermalexpansion:frame>*2);
 ThermalFrame2.build();
 
 ##Industruial Machine Chassis
-val IndustruialChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-industruialchassis", "minifield-crafter", 500, 0);
+val IndustruialChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-industruialchassis", "minifield-crafter", 400, 0);
 IndustruialChassis.addEnergyPerTickInput(6000);
 IndustruialChassis.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "machina"}]}));
 IndustruialChassis.addItemInput(<techreborn:storage:10>);
@@ -265,7 +265,7 @@ IndustruialChassis.addItemInput(<jaopca:block_sheetmetaldarksteel> * 8);
 IndustruialChassis.addItemOutput(<enderio:item_material:1>);
 IndustruialChassis.build();
 
-val IndustruialChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-industruialchassis2", "minifield-crafter", 500, 0);
+val IndustruialChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-industruialchassis2", "minifield-crafter", 400, 0);
 IndustruialChassis2.addEnergyPerTickInput(6000);
 IndustruialChassis2.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "machina"}]}));
 IndustruialChassis2.addItemInput(<rockhounding_chemistry:alloy_blocks_tech:14>);
@@ -275,7 +275,7 @@ IndustruialChassis2.addItemOutput(<enderio:item_material:1>*2);
 IndustruialChassis2.build();
 
 ##Soul Machine Chassis
-val SoulChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-soulchassis", "minifield-crafter", 500, 0);
+val SoulChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-soulchassis", "minifield-crafter", 400, 0);
 SoulChassis.addEnergyPerTickInput(6000);
 SoulChassis.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "spiritus"}]}));
 SoulChassis.addItemInput(<techreborn:storage:10>);
@@ -284,7 +284,7 @@ SoulChassis.addItemInput(<jaopca:block_sheetmetalsoularium> * 8);
 SoulChassis.addItemOutput(<enderio:item_material:53>);
 SoulChassis.build();
 
-val SoulChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-soulchassis2", "minifield-crafter", 500, 0);
+val SoulChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-soulchassis2", "minifield-crafter", 400, 0);
 SoulChassis2.addEnergyPerTickInput(6000);
 SoulChassis2.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "spiritus"}]}));
 SoulChassis2.addItemInput(<rockhounding_chemistry:alloy_blocks_tech:14>);
@@ -294,7 +294,7 @@ SoulChassis2.addItemOutput(<enderio:item_material:53>*2);
 SoulChassis2.build();
 
 ##Enhanced Machine Chassis
-val EnhancedChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-Enhancedchassis", "minifield-crafter", 500, 0);
+val EnhancedChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-Enhancedchassis", "minifield-crafter", 400, 0);
 EnhancedChassis.addEnergyPerTickInput(10000);
 EnhancedChassis.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "alienis"}]}));
 EnhancedChassis.addItemInput(<techreborn:storage:2>);
@@ -303,7 +303,7 @@ EnhancedChassis.addItemInput(<jaopca:block_sheetmetallumium> * 8);
 EnhancedChassis.addItemOutput(<enderio:item_material:66>);
 EnhancedChassis.build();
 
-val EnhancedChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-Enhancedchassis2", "minifield-crafter", 500, 0);
+val EnhancedChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-Enhancedchassis2", "minifield-crafter", 400, 0);
 EnhancedChassis2.addEnergyPerTickInput(10000);
 EnhancedChassis2.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "alienis"}]}));
 EnhancedChassis2.addItemInput(<rockhounding_chemistry:alloy_blocks_tech:11>);
@@ -314,7 +314,7 @@ EnhancedChassis2.build();
 
 
 ##Advanced Rockety Frame
-val ARFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-arframe", "minifield-crafter", 500, 0);
+val ARFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-arframe", "minifield-crafter", 400, 0);
 ARFrame.addEnergyPerTickInput(3000);
 ARFrame.addItemInput(<rockhounding_chemistry:misc_items:10>);
 ARFrame.addItemInput(<jaopca:block_scaffoldingstainlesssteel> * 18);
@@ -322,7 +322,7 @@ ARFrame.addItemInput(<jaopca:block_sheetmetaltitanium> * 9);
 ARFrame.addItemOutput(<libvulpes:structuremachine>);
 ARFrame.build();
 
-val ARFrame2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-arframe2", "minifield-crafter", 500, 0);
+val ARFrame2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-arframe2", "minifield-crafter", 400, 0);
 ARFrame2.addEnergyPerTickInput(3000);
 ARFrame2.addItemInput(<rockhounding_chemistry:misc_items:10>);
 ARFrame2.addItemInput(<contenttweaker:nimonic_scaffolding> * 18);
@@ -331,7 +331,7 @@ ARFrame2.addItemOutput(<libvulpes:structuremachine>*2);
 ARFrame2.build();
 
 ##Actually Additions Iron Casing
-val AAIronCasing = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aaironaasing", "minifield-crafter", 500, 0);
+val AAIronCasing = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aaironaasing", "minifield-crafter", 400, 0);
 AAIronCasing.addEnergyPerTickInput(1000);
 AAIronCasing.addItemInput(<immersiveengineering:sheetmetal:9> * 26);
 AAIronCasing.addItemInput(<actuallyadditions:block_misc:2>);
@@ -340,7 +340,7 @@ AAIronCasing.addItemOutput(<actuallyadditions:block_misc:9>);
 AAIronCasing.build();
 
 ##Profiling Bench
-val RHBench = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-rhbench", "minifield-crafter", 500, 0);
+val RHBench = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-rhbench", "minifield-crafter", 400, 0);
 RHBench.addEnergyPerTickInput(1000);
 RHBench.addItemInput(<immersiveengineering:stone_decoration:6> * 8);
 RHBench.addItemInput(<contenttweaker:invar_scaffolding> * 4);
@@ -351,7 +351,7 @@ RHBench.addItemOutput(<rockhounding_chemistry:machines_a:11>);
 RHBench.build();
 
 ##Energy Acceptor
-val AEAcceptor = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aeacceptor", "minifield-crafter", 500, 0);
+val AEAcceptor = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aeacceptor", "minifield-crafter", 400, 0);
 AEAcceptor.addEnergyPerTickInput(1000);
 AEAcceptor.addItemInput(<appliedenergistics2:sky_stone_block> * 8);
 AEAcceptor.addItemInput(<storagenetwork:master>);
@@ -362,7 +362,7 @@ AEAcceptor.addItemOutput(<appliedenergistics2:energy_acceptor>);
 AEAcceptor.build();
 
 ##ME Controller
-val MEController = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-mecntroller", "minifield-crafter", 500, 0);
+val MEController = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-mecntroller", "minifield-crafter", 400, 0);
 MEController.addEnergyPerTickInput(5000);
 MEController.addItemInput(<threng:material:4>);
 MEController.addItemInput(<appliedenergistics2:fluix_block>*8);
@@ -374,7 +374,7 @@ MEController.build();
 
 
 ##Small Crate
-val AASmallCrate = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aasmallcrate", "minifield-crafter", 500, 0);
+val AASmallCrate = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aasmallcrate", "minifield-crafter", 400, 0);
 AASmallCrate.addEnergyPerTickInput(1000);
 AASmallCrate.addItemInput(<minecraft:chest>);
 AASmallCrate.addItemInput(<actuallyadditions:block_misc:4> * 2);
@@ -383,7 +383,7 @@ AASmallCrate.addItemOutput(<actuallyadditions:block_giant_chest>);
 AASmallCrate.build();
 
 ##Medium Crate
-val AAMediumCrate = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aamediumcrate", "minifield-crafter", 500, 0);
+val AAMediumCrate = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aamediumcrate", "minifield-crafter", 400, 0);
 AAMediumCrate.addEnergyPerTickInput(2000);
 AAMediumCrate.addItemInput(<minecraft:chest>);
 AAMediumCrate.addItemInput(<actuallyadditions:block_crystal:3>);
@@ -393,7 +393,7 @@ AAMediumCrate.addItemOutput(<actuallyadditions:block_giant_chest_medium>);
 AAMediumCrate.build();
 
 ##Large Crate
-val AALargeCrate = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aalargecrate", "minifield-crafter", 500, 0);
+val AALargeCrate = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aalargecrate", "minifield-crafter", 400, 0);
 AALargeCrate.addEnergyPerTickInput(4000);
 AALargeCrate.addItemInput(<minecraft:chest>);
 AALargeCrate.addItemInput(<chisel:energizedvoidstone:2>);
@@ -403,7 +403,7 @@ AALargeCrate.addItemOutput(<actuallyadditions:block_giant_chest_large>);
 AALargeCrate.build();
 
 ##Thermal Tank
-val ThermalTank = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-thermaltank", "minifield-crafter", 500, 0);
+val ThermalTank = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-thermaltank", "minifield-crafter", 400, 0);
 ThermalTank.addEnergyPerTickInput(1000);
 ThermalTank.addItemInput(<tconstruct:clear_glass> * 12);
 ThermalTank.addItemInput(<chisel:technical:5> * 2);
@@ -413,7 +413,7 @@ ThermalTank.addItemOutput(<thermalexpansion:tank>);
 ThermalTank.build();
 
 ##Nuclearcraft Chassis
-val NCChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-ncchassis", "minifield-crafter", 500, 0);
+val NCChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-ncchassis", "minifield-crafter", 400, 0);
 NCChassis.addEnergyPerTickInput(4000);
 NCChassis.addItemInput(<contenttweaker:plating_basic> * 8);
 NCChassis.addItemInput(<contenttweaker:bam_scaffolding> * 18);
@@ -423,17 +423,27 @@ NCChassis.addItemOutput(<nuclearcraft:part:10>);
 NCChassis.build();
 
 ##RF Tools Frame
-val RFToolsFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-rftoolsframe", "minifield-crafter", 500, 0);
+val RFToolsFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-rftoolsframe", "minifield-crafter", 400, 0);
 RFToolsFrame.addEnergyPerTickInput(3000);
-RFToolsFrame.addItemInput(<contenttweaker:sheetmetal_thaumium> * 20);
-RFToolsFrame.addItemInput(<jaopca:block_sheetmetalconductiveiron> * 6);
-RFToolsFrame.addItemInput(<minecraft:lapis_block>);
-RFToolsFrame.addItemInput(<thermalfoundation:material:1>);
+RFToolsFrame.addItemInput(<jaopca:block_scaffoldingthaumium> * 18);
+RFToolsFrame.addItemInput(<immersiveengineering:stone_decoration:8> * 8);
+RFToolsFrame.addItemInput(<actuallyadditions:block_crystal:1>);
+RFToolsFrame.addItemInput(<actuallyadditions:item_misc:7>);
 RFToolsFrame.addItemOutput(<rftools:machine_frame>);
 RFToolsFrame.build();
 
+##RF Tools Frame 2
+val RFToolsFrame2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-rftoolsframe2", "minifield-crafter", 400, 0);
+RFToolsFrame2.addEnergyPerTickInput(3000);
+RFToolsFrame2.addItemInput(<jaopca:block_scaffoldingsyrmorite> * 18);
+RFToolsFrame2.addItemInput(<immersiveengineering:stone_decoration:8> * 8);
+RFToolsFrame2.addItemInput(<actuallyadditions:block_crystal:1>);
+RFToolsFrame2.addItemInput(<actuallyadditions:item_misc:7>);
+RFToolsFrame2.addItemOutput(<rftools:machine_frame>);
+RFToolsFrame2.build();
+
 ##Embers Core
-val EmbersCore = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-emberscore", "minifield-crafter", 500, 0);
+val EmbersCore = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-emberscore", "minifield-crafter", 400, 0);
 EmbersCore.addEnergyPerTickInput(1000);
 EmbersCore.addItemInput(<minecraft:redstone_block>);
 EmbersCore.addItemInput(<immersiveengineering:sheetmetal:2> * 12);
@@ -484,7 +494,7 @@ TCconstruct.addItemInput(<immersiveengineering:sheetmetal:8>*8);
 TCconstruct.addItemInput(<thaumcraft:tube>*12);
 TCconstruct.addItemInput(<thaumcraft:tube_valve>*6);
 TCconstruct.addItemInput(<embers:gear_dawnstone>);
-TCconstruct.addItemOutput(<thaumcraft:metal_alchemical>*2);
+TCconstruct.addItemOutput(<thaumcraft:metal_alchemical>*3);
 TCconstruct.build();
 
 /*
@@ -637,12 +647,12 @@ assemblerModularCircutBlock.addItemOutput(<modularmachinery:blockcasing:5>);
 assemblerModularCircutBlock.build();
 
 ##HighlyAdvancedFrame
-val assemblerHighlyAdvancedFrameBlock = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-highlyadvancedframe", "assembler", 600, 0);
+val assemblerHighlyAdvancedFrameBlock = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-highlyadvancedframe", "assembler", 400, 0);
 assemblerHighlyAdvancedFrameBlock.addEnergyPerTickInput(10000);
 assemblerHighlyAdvancedFrameBlock.addItemInput(<techreborn:machine_frame:1>);
 assemblerHighlyAdvancedFrameBlock.addItemInput(<jaopca:item_gearsuperalloy>*4);
 assemblerHighlyAdvancedFrameBlock.addItemInput(<techreborn:plates:38>*4);
-assemblerHighlyAdvancedFrameBlock.addFluidInput(<liquid:liquid_nitrogen>*2000);
+assemblerHighlyAdvancedFrameBlock.addFluidInput(<liquid:liquid_nitrogen>*4000);
 assemblerHighlyAdvancedFrameBlock.addItemOutput(<techreborn:machine_frame:2>);
 assemblerHighlyAdvancedFrameBlock.build();
 
@@ -671,7 +681,7 @@ assemblerAdvancedCoils.addItemOutput(<actuallyadditions:item_misc:8>);
 assemblerAdvancedCoils.build();
 
 ##QuarryCard
-val assemblerQuarryCard = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-quarrycard", "assembler", 600, 0);
+val assemblerQuarryCard = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-quarrycard", "assembler", 500, 0);
 assemblerQuarryCard.addEnergyPerTickInput(4000);
 assemblerQuarryCard.addItemInput(<rftools:shape_card>);
 assemblerQuarryCard.addItemInput(<techreborn:part:6>*4);
@@ -680,6 +690,17 @@ assemblerQuarryCard.addItemInput(<qmd:semiconductor:4>*4);
 assemblerQuarryCard.addFluidInput(<liquid:liquid_nitrogen>*4000);
 assemblerQuarryCard.addItemOutput(<rftools:shape_card:2>);
 assemblerQuarryCard.build();
+
+##LaserAcceptor
+val assemblerLaserAcceptorBlock = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-laseracceptor", "assembler", 500, 0);
+assemblerLaserAcceptorBlock.addEnergyPerTickInput(15000);
+assemblerLaserAcceptorBlock.addItemInput(<modularmachinery:blockcasing:4>);
+assemblerLaserAcceptorBlock.addItemInput(<environmentaltech:laser_core>*2);
+assemblerLaserAcceptorBlock.addItemInput(<mekanismgenerators:reactorglass:1>*2);
+assemblerLaserAcceptorBlock.addItemInput(<rockhounding_chemistry:alloy_parts:34>*4);
+assemblerLaserAcceptorBlock.addFluidInput(<liquid:liquid_nitrogen>*4000);
+assemblerLaserAcceptorBlock.addItemOutput(<modulardiversity:blockmeklaseracceptor>);
+assemblerLaserAcceptorBlock.build();
 
 ##############################################
 ##
@@ -776,7 +797,7 @@ NeutroniumIngot.addItemOutput(<avaritia:resource:4>);
 NeutroniumIngot.build();
 
 ##MignightLampLuminessence
-val MignightLampLuminessence = mods.modularmachinery.RecipeBuilder.newBuilder("forge-mignightlampluminessence", "heavens-forge", 500, 0);
+val MignightLampLuminessence = mods.modularmachinery.RecipeBuilder.newBuilder("forge-mignightlampluminessence", "heavens-forge", 400, 0);
 MignightLampLuminessence.addMekanismLaserInput(5000000);
 MignightLampLuminessence.addItemInput(<extendedcrafting:frame>);
 MignightLampLuminessence.addItemInput(<extendedcrafting:storage:1>);
@@ -785,7 +806,7 @@ MignightLampLuminessence.addItemOutput(<extendedcrafting:lamp:1>);
 MignightLampLuminessence.build();
 
 ##MignightLampGlowstone
-val MignightLampGlowstone = mods.modularmachinery.RecipeBuilder.newBuilder("forge-mignightlampglowstone", "heavens-forge", 500, 0);
+val MignightLampGlowstone = mods.modularmachinery.RecipeBuilder.newBuilder("forge-mignightlampglowstone", "heavens-forge", 400, 0);
 MignightLampGlowstone.addMekanismLaserInput(5000000);
 MignightLampGlowstone.addItemInput(<extendedcrafting:frame>);
 MignightLampGlowstone.addItemInput(<minecraft:glowstone>);

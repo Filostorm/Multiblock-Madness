@@ -1,0 +1,83 @@
+{
+  "name": "cm3dml:sootycasing",
+
+  "disabled": false,
+
+  "target-item": "deepmoblearning:machine_casing",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "moreplates:knightmetal_gear",
+  "catalyst-meta": 0,
+
+  "input-types": {
+    "a": {
+      "id": "contenttweaker:sooty_block",
+      "meta": 0
+    },
+    "b": {
+      "id": "jaopca:block_sheetmetalpulsatingiron",
+      "meta": 0
+    },
+    "c": {
+      "id": "bloodtinker:blood_bronze_block",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+
+}

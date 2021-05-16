@@ -29,6 +29,7 @@ val itemstoRemove =
 	<appliedenergistics2:quartz_vibrant_glass>,
 	<deepmoblearning:polymer_clay>,
 	<randomthings:ingredient:3>,
+	<jaopca:item_stickthaumium>,
 ]
  as IItemStack[];
 
@@ -56,7 +57,8 @@ assemblingMachine.addRecipe(<contenttweaker:invar_scaffolding>*9, <thermalfounda
 assemblingMachine.addRecipe(<immersiveengineering:metal_decoration1:5>*9, <thermalfoundation:material:132>*3, <immersiveengineering:material:3>*3, 100, 100);
 assemblingMachine.addRecipe(<jaopca:block_scaffoldingnichrome>*9, <rockhounding_chemistry:alloy_items_tech:22>*3, <jaopca:item_sticknichrome>*3, 100, 100);
 assemblingMachine.addRecipe(<jaopca:block_scaffoldingstainlesssteel>*9, <qmd:ingot_alloy:2>*3, <jaopca:item_stickstainlesssteel>*3, 100, 100);
-
+assemblingMachine.addRecipe(<jaopca:block_scaffoldingsyrmorite>*9, <thebetweenlands:items_misc:11>*3, <jaopca:item_sticksyrmorite>*3, 100, 100);
+assemblingMachine.addRecipe(<jaopca:block_scaffoldingthaumium>*9, <thaumcraft:ingot>*3, <jaopca:item_stickthaumium>*3, 100, 100);
 
 
 recipes.addShaped(<contenttweaker:scal_scaffolding> * 6, [[<rockhounding_chemistry:alloy_items_tech:4>, <rockhounding_chemistry:alloy_items_tech:4>, <rockhounding_chemistry:alloy_items_tech:4>],[null, <contenttweaker:rod_scal>, null], [<contenttweaker:rod_scal>, null, <contenttweaker:rod_scal>]]);
@@ -66,7 +68,8 @@ recipes.addShaped(<contenttweaker:vanasteel_scaffolding> * 6, [[<rockhounding_ch
 recipes.addShaped(<contenttweaker:invar_scaffolding> * 6, [[<thermalfoundation:material:162>, <thermalfoundation:material:162>, <thermalfoundation:material:162>],[null, <moreplates:invar_stick>, null], [<moreplates:invar_stick>, null, <moreplates:invar_stick>]]);
 recipes.addShaped(<jaopca:block_scaffoldingnichrome> * 6, [[<ore:ingotNichrome>, <ore:ingotNichrome>, <ore:ingotNichrome>],[null, <jaopca:item_sticknichrome>, null], [<jaopca:item_sticknichrome>, null, <jaopca:item_sticknichrome>]]);
 recipes.addShaped(<jaopca:block_scaffoldingstainlesssteel> * 6, [[<ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>],[null, <jaopca:item_stickstainlesssteel>, null], [<jaopca:item_stickstainlesssteel>, null, <jaopca:item_stickstainlesssteel>]]);
-
+recipes.addShaped(<jaopca:block_scaffoldingsyrmorite> * 6, [[<thebetweenlands:items_misc:11>, <thebetweenlands:items_misc:11>, <thebetweenlands:items_misc:11>],[null, <jaopca:item_sticksyrmorite>, null], [<jaopca:item_sticksyrmorite>, null, <jaopca:item_sticksyrmorite>]]);
+recipes.addShaped(<jaopca:block_scaffoldingthaumium> * 6, [[<thaumcraft:ingot>, <thaumcraft:ingot>, <thaumcraft:ingot>],[null, <jaopca:item_stickthaumium>, null], [<jaopca:item_stickthaumium>, null, <jaopca:item_stickthaumium>]]);
 
 ################# GEARS #######################
 mods.actuallyadditions.AtomicReconstructor.removeRecipe(<moreplates:restonia_gear>);

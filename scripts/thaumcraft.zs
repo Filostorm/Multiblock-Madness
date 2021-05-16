@@ -135,7 +135,7 @@ Crucible.registerRecipe("GreatwoodSapling", "",
 	[<aspect:herba> * 20,<aspect:victus> * 5,<aspect:praecantatio> * 5]
 );
 Crucible.removeRecipe(<thaumcraft:alumentum>);
-Crucible.registerRecipe("GreatwoodSapling", "",
+Crucible.registerRecipe("Alumentum", "",
     <thaumcraft:alumentum>, <botania:manaresource:23>,
 	[<aspect:potentia> * 10,<aspect:ignis> * 10,<aspect:perditio> * 5]
 );
@@ -169,14 +169,17 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("mm:shaped/internal/thaumcraft
 <thaumcraft:thaumometer>.removeAspects(<aspect:metallum>*30,<aspect:desiderium>*30,<aspect:sensus>*10,<aspect:auram>*10,<aspect:praecantatio>*3);
 //<aspect:visum>,*/
 
-## GREATWOOD STICK
+## GREATWOOD STIXS
 //recipes.addShaped(<contenttweaker:greatwood_handle>, [[null, null, <thaumcraft:log_greatwood>],[null, <thaumcraft:log_greatwood>, null], [<thaumcraft:log_greatwood>, null, null]]);
 //recipes.addShaped(<thaumadditions:iron_framed_greatwood>, [[null, <thermalfoundation:material:32>, null],[<thermalfoundation:material:32>, <thaumcraft:plank_greatwood>, <thermalfoundation:material:32>], [null, <thermalfoundation:material:32>, null]]);
 
 <contenttweaker:greatwood_handle>.addTooltip(format.lightPurple("Use Salis Mundus on a Greatwood Log"));
 SalisMundus.addSingleConversion(<blockstate:thaumcraft:log_greatwood>.block, <contenttweaker:greatwood_handle>*2);
 
-
+Crucible.registerRecipe("ArmorShard", "",
+    <twilightforest:armor_shard> * 3, <ebwizardry:crystal_shard>,
+	[<aspect:praemunio> * 10,<aspect:metallum> * 10,<aspect:desiderium> * 5]
+);
 
 
 ##########################################################################################

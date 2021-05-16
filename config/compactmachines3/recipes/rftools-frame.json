@@ -9,50 +9,33 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "thermalfoundation:material",
-  "catalyst-meta": 1,
+  "catalyst": "actuallyadditions:item_misc",
+  "catalyst-meta": 7,
   
   "input-types": {
     "a": {
-      "id": "contenttweaker:sheetmetal_thaumium",
-      "meta": 0
+      "id": "immersiveengineering:stone_decoration",
+      "meta": 8
     },
     "b": {
-      "id": "jaopca:block_sheetmetalconductiveiron",
+      "id": "jaopca:block_scaffoldingthaumium",
       "meta": 0
     },
     "c": {
-      "id": "minecraft:lapis_block",
-      "meta": 0
+      "id": "actuallyadditions:block_crystal",
+      "meta": 1
     }
   },
   "shape": [
     [
       [
         "a",
-        "a",
-        "a"
-      ],
-      [
-        "a",
-        "b",
-        "a"
-      ],
-      [
-        "a",
-        "a",
-        "a"
-      ]
-    ],
-    [
-      [
-        "a",
         "b",
         "a"
       ],
       [
         "b",
-        "c",
+        "b",
         "b"
       ],
       [
@@ -63,18 +46,35 @@
     ],
     [
       [
-        "a",
-        "a",
-        "a"
+        "b",
+        "b",
+        "b"
       ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    [
       [
         "a",
         "b",
         "a"
       ],
       [
+        "b",
+        "b",
+        "b"
+      ],
+      [
         "a",
-        "a",
+        "b",
         "a"
       ]
     ]

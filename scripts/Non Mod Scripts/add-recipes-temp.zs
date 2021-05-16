@@ -127,6 +127,11 @@ val recipestoRemove =
 <advancedrocketry:productrod>,
 <malisisdoors:rustyladder>,
 <cyclicmagic:storage_bag>,
+<quark:spruce_trapdoor>,
+<quark:birch_trapdoor>,
+<quark:dark_oak_trapdoor>,
+<quark:acacia_trapdoor>,
+<quark:jungle_trapdoor>,
 ]
  as IItemStack[];
 
@@ -285,7 +290,6 @@ slimyMoss.add(<thebetweenlands:moss>);
 slimyMoss.add(<thebetweenlands:edge_moss>);
 
 
-
 ### Add recipes ###
 
 //salt block
@@ -306,9 +310,16 @@ recipes.addShapeless(<randomthings:idcard>, [<techreborn:plates:35>,<ore:dyeBlac
 //Metal Ladder coflict
 recipes.addShaped(<malisisdoors:rustyladder> * 2, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[null, null, null], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
 
+//Trapdoor conflict
+recipes.addShaped(<quark:jungle_trapdoor> * 6, [[null, <minecraft:iron_nugget>, null],[<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>], [<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>]]);
+recipes.addShaped(<quark:acacia_trapdoor> * 6, [[null, <minecraft:iron_nugget>, null],[<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>], [<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>]]);
+recipes.addShaped(<quark:dark_oak_trapdoor> * 6, [[null, <minecraft:iron_nugget>, null],[<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>], [<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>]]);
+recipes.addShaped(<quark:birch_trapdoor> * 6, [[null, <minecraft:iron_nugget>, null],[<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>], [<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>]]);
+recipes.addShaped(<quark:spruce_trapdoor> * 6, [[null, <minecraft:iron_nugget>, null],[<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>], [<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>]]);
+
 
 //Super Tome
-mods.jei.JEI.removeAndHide(<akashictome:tome>);
+/*mods.jei.JEI.removeAndHide(<akashictome:tome>);
 mods.jei.JEI.addItem(<akashictome:tome>.withTag({"akashictome:data": {
 	tconstruct: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short}, 
 	integratedtunnels: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "integrateddynamics:on_the_dynamics_of_integration", Count: 1 as byte, tag: {"akashictome:definedMod": "integratedtunnels"}, Damage: 0 as short}, 
@@ -331,7 +342,7 @@ mods.jei.JEI.addItem(<akashictome:tome>.withTag({"akashictome:data": {
 	openblocks: {id: "openblocks:info_book", Count: 1 as byte, tag: {"akashictome:definedMod": "openblocks"}, Damage: 0 as short}, 
 	cookingforblockheads: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "cookingforblockheads:recipe_book", Count: 1 as byte, tag: {"akashictome:definedMod": "cookingforblockheads"}, Damage: 1 as short}, 
 	nuclearcraft: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "nuclearcraft", "patchouli:book": "nuclearcraft:guide"}, Damage: 0 as short}}})
-);
+);*/
 recipes.addShaped(<akashictome:tome>.withTag({"akashictome:data": {
 	tconstruct: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short}, 
 	integratedtunnels: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "integrateddynamics:on_the_dynamics_of_integration", Count: 1 as byte, tag: {"akashictome:definedMod": "integratedtunnels"}, Damage: 0 as short}, 
