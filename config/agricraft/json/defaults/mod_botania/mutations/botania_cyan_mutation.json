@@ -4,5 +4,5 @@
   "chance": 0.5,
   "child": "botania:cyan_flower_plant",
   "parent1": "botania:gray_flower_plant",
-  "parent2": "melon_plant"
+  "parent2": "vanilla:melon_plant"
 }
