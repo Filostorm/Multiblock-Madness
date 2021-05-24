@@ -120,6 +120,7 @@ val OretoRemove =
 [
 <thermalfoundation:ore:7>,
 <thermalfoundation:ore:6>,
+<thermalfoundation:ore:8>,
 ]
  as IItemStack[];
 

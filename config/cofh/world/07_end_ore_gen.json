@@ -88,14 +88,14 @@
 						"properties": {
 							"sub_block_number": "8"
 						},
-						"weight": 80
+						"weight": 85
 					},
 					{
 						"name": "rftools:dimensional_shard_ore",
 						"properties": {
 							"oretype": "end"
 						},
-						"weight": 10
+						"weight": 15
 					}
 				],
 				"material": "minecraft:end_stone",
@@ -104,7 +104,7 @@
 			"cluster-count": 1,
 			"min-height": 10,
 			"max-height": 150,
-			"retrogen": "false",
+			"retrogen": "true",
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",

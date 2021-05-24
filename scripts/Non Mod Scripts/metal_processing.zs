@@ -149,7 +149,6 @@ furnace.remove(item);
 }
 
 for item in <ore:dustTitanium>.items{
-	
 Melting.removeRecipe(<liquid:titanium>, (item));
 Overrides.removeRecipe(<liquid:titanium>, (item));
 HighOven.removeMeltingOverride(<liquid:titanium>, (item));
@@ -157,7 +156,6 @@ Melting.removeRecipe(<liquid:molten_titanium>, (item));
 Overrides.removeRecipe(<liquid:molten_titanium>, (item));
 HighOven.removeMeltingOverride(<liquid:molten_titanium>, (item));
 }
-
 
 Melting.removeRecipe(<liquid:titanium>, <techreborn:smalldust:54>);
 Melting.removeRecipe(<liquid:titanium>, <libvulpes:ore0:8>);
@@ -175,13 +173,12 @@ Overrides.removeRecipe(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>)
 HighOven.removeMeltingOverride(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
 HighOven.removeMeltingOverride(<liquid:molten_titanium>, <techreborn:smalldust:54>);
 HighOven.removeMeltingOverride(<liquid:molten_titanium>, <libvulpes:ore0:8>);
-/*
+
 mods.embers.Melter.remove(<libvulpes:ore0:8>);
 Melter.removeRecipeWithInput(<libvulpes:ore0:8>);
 Melter.removeRecipeWithInput(<techreborn:dust:54>);
 Crucible.removeRecipe(<libvulpes:ore0:8>);
 
-*/
 //----------Iridium
 for item in <ore:ingotIridium>.items{
 blastFurnace.removeRecipe(item);
@@ -205,6 +202,12 @@ Melter.removeRecipeWithInput(<thermalfoundation:material:71>);
 Crucible.removeRecipe(<thermalfoundation:ore:7>);
 Crucible.removeRecipe(<thermalfoundation:material:71>);
 
+//----------Mana Infused
+for item in <ore:ingotMithril>.items{
+blastFurnace.removeRecipe(item);
+mods.immersiveengineering.ArcFurnace.removeRecipe(item);
+furnace.remove(item);
+}
 
 ##=======================================================
 ##              ORE PROCESSING
@@ -725,6 +728,14 @@ Pulverizer.addRecipe(<techreborn:dust:54>, item, 2000, <techreborn:smalldust:54>
 }
 
 LeachingVat.add(<libvulpes:ore0:8>, [<rockhounding_chemistry:oxide_shards:22>*8], [4.25F], <liquid:leachate>*200);
+
+////////////////////////////////////////
+##Mana Metal
+////////////////////////////////////////
+
+blastFurnace.addRecipe(<thermalfoundation:material:136>*2, null, <ore:oreMithril>, null, 1800, 100, 3000);
+blastFurnace.addRecipe(<thermalfoundation:material:136>, null, <ore:dustMithril>, null, 1800, 80, 3000);
+
 ////////////////////////////////////////
 ##Iridium
 ////////////////////////////////////////
@@ -831,9 +842,9 @@ val Tier6Ingots =[
 <techreborn:ingot:14>,
 <techreborn:ingot:15>,
 <thermalfoundation:material:135>,
-//<plustic:osmiridiumingot>,
-//<plustic:mirioningot>,
-//<plustic:osgloglasingot>,
+<plustic:osmiridiumingot>,
+<plustic:mirioningot>,
+<plustic:osgloglasingot>,
 <advancedrocketry:productingot:1>,
 <advancedrocketry:productingot>,
 <mysticalagradditions:insanium:2>,

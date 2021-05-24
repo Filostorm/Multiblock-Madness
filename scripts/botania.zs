@@ -13,6 +13,7 @@ import mods.botania.RuneAltar;
 import mods.botaniatweaks.Agglomeration;
 import mods.inworldcrafting.FluidToItem;
 import mods.thermalexpansion.Insolator;
+import mods.thaumcraft.Infusion;
 
 print("==================== loading mods botania.zs ====================");
 ##########################################################################################
@@ -33,6 +34,7 @@ val remove =
 <botania:sparkupgrade>,
 <botania:dreamwood:5>,
 <botania:managun>,
+<botania:thirdeye>,
 ]
  as IItemStack[];
 
@@ -241,6 +243,17 @@ mods.botania.Apothecary.addRecipe("entropinnyum",
 
 <botania:specialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Degrades after 1 hour!"));
 <botania:floatingspecialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Degrades after 1 hour!"));
+
+
+//Third Eye
+Infusion.registerRecipe("thirdeye", "", 
+<botania:thirdeye>, 5, 
+[<aspect:sensus>*150, <aspect:praecantatio>*100, <aspect:spiritus>*50], 
+<minecraft:ender_eye>, 
+[<botania:pistonrelay>,<bloodmagic:component:26>, <botania:manaresource:2>, <botania:rune:7>,
+<botania:pistonrelay>,<bloodmagic:component:26>, <botania:manaresource:2>, <botania:rune:5>]);
+
+
 
 ##########################################################################################
 print("==================== end of mods botania.zs ====================");

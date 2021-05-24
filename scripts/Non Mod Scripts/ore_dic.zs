@@ -29,7 +29,7 @@ for item in itemstoRemove {
 
 <ore:dustEnderPearl>.remove(<techreborn:dust:20>);
 <ore:dustEnder>.add(<techreborn:dust:20>);
-<ore:dustEnder>.remove(<enderore:dust_ender>);
+//<ore:dustEnder>.remove(<enderore:dust_ender>);
 
 
 //<ore:NeutronPile>.add(<avaritia:resource:2>);
@@ -53,6 +53,18 @@ val tierOnePlate =
  as IItemStack[];
 for item in tierOnePlate {
 <ore:tierOnePlate>.add(item);
+}
+
+val tierTwoPlate =
+[
+<thermalfoundation:material:353>,
+<thermalfoundation:material:354>,
+<thermalfoundation:material:355>,
+<thermalfoundation:material:356>,
+]
+ as IItemStack[];
+for item in tierTwoPlate {
+<ore:tierTwoPlate>.add(item);
 }
 
 val Eww =
@@ -100,9 +112,12 @@ recipes.addShapeless(<minecraft:wooden_pressure_plate>, [<ore:pressurePlateWood>
 <ore:dustPhosphorous>.remove(<techreborn:dust:37>);
 <ore:dustPhosphorus>.add(<techreborn:dust:37>);
 
-<ore:lapotronCrystal>.add(<contenttweaker:lazurite_gem>);
+//<ore:lapotronCrystal>.add(<contenttweaker:lazurite_gem>);
 
 <ore:componentComputerChip>.add(<qmd:semiconductor:6>);
 //<ore:stickInvar>.add(<tconstruct:tool_rod>.withTag({Material: "invar"}));
+
+
+<ore:oreEnderEssence>.add(<utilitybaseores:ender_ore>);
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

@@ -44,36 +44,25 @@ Altar.addDiscoveryAltarRecipe("internal/altar/upgrade_tier2", <astralsorcery:blo
 			<astralsorcery:blockmarble:4>, <botania:storage>, <astralsorcery:blockmarble:4>]);
 
 //2000 max starlight 2nd tier
+
+
+<ore:littleLight>.add(<thaumictinkerer:energetic_nitor>);
+<ore:littleLight>.add(<bloodmagic:sigil_blood_light>);
+<ore:littleLight>.add(<embers:glimmer_lamp>);
+
 Altar.addAttunementAltarRecipe("internal/altar/illuminator", <astralsorcery:blockworldilluminator>, 1500, 300, [
-
 			<astralsorcery:itemcraftingcomponent:2>, <chisel:energizedvoidstone:2>, <astralsorcery:itemcraftingcomponent:2>,
-			<chisel:energizedvoidstone:2>, <thaumictinkerer:energetic_nitor>, <chisel:energizedvoidstone:2>,
-			<astralsorcery:itemcraftingcomponent:2>, <chisel:energizedvoidstone:2>, <astralsorcery:itemcraftingcomponent:2>,
-			<astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>]);
-Altar.addAttunementAltarRecipe("internal/altar/illuminator2", <astralsorcery:blockworldilluminator>, 1500, 300, [
-
-			<astralsorcery:itemcraftingcomponent:2>, <chisel:energizedvoidstone:2>, <astralsorcery:itemcraftingcomponent:2>,
-			<chisel:energizedvoidstone:2>, <bloodmagic:sigil_blood_light>, <chisel:energizedvoidstone:2>,
+			<chisel:energizedvoidstone:2>, <ore:littleLight>, <chisel:energizedvoidstone:2>,
 			<astralsorcery:itemcraftingcomponent:2>, <chisel:energizedvoidstone:2>, <astralsorcery:itemcraftingcomponent:2>,
 			<astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>]);
-Altar.addAttunementAltarRecipe("internal/altar/illuminator3", <astralsorcery:blockworldilluminator>, 1500, 300, [
-
-			<astralsorcery:itemcraftingcomponent:2>, <chisel:energizedvoidstone:2>, <astralsorcery:itemcraftingcomponent:2>,
-			<chisel:energizedvoidstone:2>, <embers:glimmer_lamp>, <chisel:energizedvoidstone:2>,
-			<astralsorcery:itemcraftingcomponent:2>, <chisel:energizedvoidstone:2>, <astralsorcery:itemcraftingcomponent:2>,
-			<astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>]);
-
-
 
 Altar.addAttunementAltarRecipe("internal/altar/upgrade_tier3", <astralsorcery:blockaltar:2>, 1900, 400, [
-
 			<astralsorcery:itemcraftingcomponent>, null, <astralsorcery:itemcraftingcomponent>,
 			<astralsorcery:blockmarble:2>, <astralsorcery:itemrockcrystalsimple>, <astralsorcery:blockmarble:2>,
 			<moreplates:energetic_silver_plate>, <contenttweaker:starmetal_block>, <moreplates:energetic_silver_plate>,
 			<embers:focal_lens>, <embers:focal_lens>, <embers:focal_lens>, <embers:focal_lens>]);
 
 Altar.addConstellationAltarRecipe("internal/altar/upgrade_tier4", <astralsorcery:blockaltar:3>, 3800, 500, [
-
 			<actuallyadditions:item_crystal_empowered:5>, <astralsorcery:blockblackmarble>, <actuallyadditions:item_crystal_empowered:5>,
 			<astralsorcery:blockblackmarble>, <astralsorcery:itemcelestialcrystal>, <astralsorcery:blockblackmarble>,
 			<actuallyadditions:item_crystal_empowered:5>, <astralsorcery:blockblackmarble>, <actuallyadditions:item_crystal_empowered:5>,
@@ -87,7 +76,7 @@ Altar.addConstellationAltarRecipe("internal/altar/upgrade_tier4", <astralsorcery
 Altar.addTraitAltarRecipe("mm:shaped/internal/altar/beacon", <minecraft:beacon>, 5000, 400, [
 
 	<botania:manaresource:2>, <botania:manaresource:2>, <botania:manaresource:2>,
-	<botania:manaresource:2>, <deepmoblearning:pristine_matter_wither>, <botania:manaresource:2>, 
+	<botania:manaresource:2>, <minecraft:nether_star>, <botania:manaresource:2>, 
 	<botania:manaresource:2>, <botania:manaresource:2>, <botania:manaresource:2>,
 	<thermalfoundation:glass_alloy:6>, <thermalfoundation:glass_alloy:6>, <minecraft:obsidian>, <minecraft:obsidian>,
 	<thermalfoundation:glass_alloy:6>, 	<thermalfoundation:glass_alloy:6>,	

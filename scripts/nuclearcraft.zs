@@ -28,13 +28,6 @@ recipes.addShaped(<nuclearcraft:part:12>, [[<jaopca:item_sticktough>, <moreplate
 ##Manufactory
 ##------------
 
-/*
-mods.nuclearcraft.manufactory.removeRecipeWithInput(<minecraft:clay>);
-//mods.nuclearcraft.manufactory.removeRecipeWithOutput(<techreborn:dust:12>);
-
-mods.nuclearcraft.manufactory.addRecipe(<minecraft:clay>, <techreborn:dust:12> * 4);
-mods.nuclearcraft.manufactory.addRecipe(<minecraft:clay_ball>, <techreborn:dust:12>);
-*/
 recipes.addShaped(<nuclearcraft:manufactory>, [[<thermalfoundation:material:323>, <minecraft:piston>, <thermalfoundation:material:323>],[<minecraft:flint>, <enderio:item_material>, <minecraft:flint>], [<thermalfoundation:material:323>, <nuclearcraft:part:4>, <thermalfoundation:material:323>]]);
 
 recipes.addShaped(<contenttweaker:plating_basic> * 4, [[null, <nuclearcraft:part>, null],[<nuclearcraft:part>, null, <nuclearcraft:part>], [null, <nuclearcraft:part>, null]]);
@@ -52,11 +45,14 @@ mods.extendedcrafting.TableCrafting.addShaped(<nuclearcraft:dominos>, [
     [<actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>, <actuallyadditions:item_misc:4>]
 ]);  
 
-IngotFormer.addRecipe(<liquid:ender>, <minecraft:ender_pearl>);
+//Ender Pearl
+IngotFormer.addRecipe(<liquid:ender>*250, <minecraft:ender_pearl>);
+
+
 blastFurnace.addRecipe(<nuclearcraft:ingot:14>, null, <nuclearcraft:dust:14>, null, 200, 80, 1500);
 
 //Solanoid
-recipes.addShaped(<nuclearcraft:part:4> * 2, [[<contenttweaker:rodsteel>, <powersuits:powerarmorcomponent>, null],[<powersuits:powerarmorcomponent>, <contenttweaker:rodsteel>, <powersuits:powerarmorcomponent>], [null, <powersuits:powerarmorcomponent>, <contenttweaker:rodsteel>]]);
+recipes.addShaped(<nuclearcraft:part:4> * 2, [[null, <powersuits:powerarmorcomponent>, <immersiveengineering:material:2>],[<powersuits:powerarmorcomponent>, <immersiveengineering:material:2>, <powersuits:powerarmorcomponent>], [<immersiveengineering:material:2>, <powersuits:powerarmorcomponent>, null]]);
 
 ##########################################################################################
 print("==================== end of nuclearcraft.zs ====================");

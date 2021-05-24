@@ -1,0 +1,114 @@
+{
+  "name": "cm3dml:trial",
+
+  "disabled": false,
+
+  "target-item": "deepmoblearning:trial_keystone",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "arcanearchives:radiant_key",
+  "catalyst-meta": 0,
+
+  "input-types": {
+    "a": {
+      "id": "contenttweaker:sooty_block",
+      "meta": 0
+    },
+    "b": {
+      "id": "embers:ashen_stone_slab",
+      "meta": 0
+    },
+    "c": {
+      "id": "astralsorcery:blockinfusedwood",
+      "meta": 0
+    },
+    "d": {
+      "id": "minecraft:diamond_block",
+      "meta": 0
+    },
+    "e": {
+      "id": "contenttweaker:sub_block_holder_0",
+      "meta": 2
+    }
+  },
+  "shape": [
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "b",
+        "b",
+        "b",
+        "_"
+      ],
+      [
+        "_",
+        "b",
+        "d",
+        "b",
+        "_"
+      ],
+      [
+        "_",
+        "b",
+        "b",
+        "b",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "c",
+        "c",
+        "c",
+        "a"
+      ],
+      [
+        "a",
+        "c",
+        "e",
+        "c",
+        "a"
+      ],
+      [
+        "a",
+        "c",
+        "c",
+        "c",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+
+}

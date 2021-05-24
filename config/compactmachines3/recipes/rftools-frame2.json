@@ -1,0 +1,83 @@
+{
+  "name": "cm3rftools:machineframe2",
+
+  "disabled": false,
+
+  "target-item": "rftools:machine_frame",
+  "target-count": 1,
+  
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "actuallyadditions:item_misc",
+  "catalyst-meta": 7,
+  
+  "input-types": {
+    "a": {
+      "id": "immersiveengineering:stone_decoration",
+      "meta": 8
+    },
+    "b": {
+      "id": "jaopca:block_scaffoldingsyrmorite",
+      "meta": 0
+    },
+    "c": {
+      "id": "actuallyadditions:block_crystal",
+      "meta": 1
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+}

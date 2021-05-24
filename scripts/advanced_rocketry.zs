@@ -58,7 +58,7 @@ enrichment.removeRecipe(<libvulpes:productdust>);
 Crystallizer.removeRecipe(<libvulpes:productgem>);
 Crystallizer.addRecipe(<libvulpes:productgem>, 600, 7500, <libvulpes:productdust>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "liquidchlorine", Amount: 1000}})); 
 
-
+//Silicon
 Crystallizer.removeRecipe(<libvulpes:productboule:3>);
 Crystallizer.addRecipe(<libvulpes:productboule:3>, 600, 5000, <libvulpes:productdust:3>*4); 
 
@@ -98,6 +98,11 @@ PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade:3>, 2400, 25000, <adv
 PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade:4>, 2400, 25000, <advancedrocketry:ic:3>, <advancedrocketry:ic:2>, <libvulpes:battery>, <advancedrocketry:lens>);
 PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade>, 2400, 25000, <advancedrocketry:ic:3>, <advancedrocketry:ic>, <minecraft:redstone>, <minecraft:redstone_torch>);
 PrecisionAssembler.addRecipe(<advancedrocketry:itemupgrade:1>, 2400, 25000, <advancedrocketry:ic:3>, <advancedrocketry:ic:2>, <minecraft:diamond>, <minecraft:fire_charge>);
+
+
+
+Crystallizer.addRecipe(<arcanearchives:raw_quartz>*3, 600, 7500, <appliedenergistics2:crystal_seed>*3, <astralsorcery:itemusabledust>); 
+
 
 ##########################################################################################
 print("==================== end of mods advancedrocketry-ssp.zs ====================");

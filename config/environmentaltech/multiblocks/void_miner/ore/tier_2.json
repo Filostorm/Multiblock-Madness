@@ -426,11 +426,6 @@
       "id": "OD:oreChaos"
     },
     {
-      "target": "green",
-      "weight": 200,
-      "id": "OD:oreEnderEssence"
-    },
-    {
       "target": "orange",
       "weight": 200,
       "id": "OD:orePalladium"

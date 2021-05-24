@@ -1,6 +1,7 @@
 import mods.actuallyadditions.Empowerer;
 import crafttweaker.item.IItemStack;
 import mods.actuallyadditions.AtomicReconstructor;
+import mods.techreborn.assemblingMachine;
 
 print("==================== loading actually additions.zs ====================");
 ##########################################################################################
@@ -47,6 +48,7 @@ val removerecipes =
     <actuallyadditions:block_canola_press>,
     <actuallyadditions:block_phantomface>,
     <actuallyadditions:block_misc:8>,
+    <actuallyadditions:block_xp_solidifier>,
 ]
 as IItemStack[];
 for item in removerecipes {
@@ -61,7 +63,7 @@ recipes.addShaped(<actuallyadditions:block_canola_press>, [[<ore:cobblestone>, <
 recipes.addShaped(<actuallyadditions:item_misc:16>, [[<thermalfoundation:storage_alloy>, <actuallyadditions:item_misc:7>, <thermalfoundation:storage_alloy>],[<actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal>, <actuallyadditions:item_misc:7>], [<thermalfoundation:storage_alloy>, <actuallyadditions:item_misc:7>, <thermalfoundation:storage_alloy>]]);
 
 //Small -> Med crate recipe
-recipes.addShaped(<actuallyadditions:block_giant_chest_medium>, [[<immersiveengineering:treated_wood>, <actuallyadditions:block_crystal:3>, <immersiveengineering:treated_wood>],[<actuallyadditions:block_giant_chest>, <actuallyadditions:block_misc:4>, <actuallyadditions:block_giant_chest>], [<immersiveengineering:treated_wood>, <actuallyadditions:block_crystal:3>, <immersiveengineering:treated_wood>]]);
+//recipes.addShaped(<actuallyadditions:block_giant_chest_medium>, [[<immersiveengineering:treated_wood>, <actuallyadditions:block_crystal:3>, <immersiveengineering:treated_wood>],[<actuallyadditions:block_giant_chest>, <actuallyadditions:block_misc:4>, <actuallyadditions:block_giant_chest>], [<immersiveengineering:treated_wood>, <actuallyadditions:block_crystal:3>, <immersiveengineering:treated_wood>]]);
 
 
 //Lava Factory
@@ -96,8 +98,8 @@ Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:5>, <actuallyaddi
 AtomicReconstructor.removeRecipe(<moreplates:enori_plate>);
 
 //diamintine
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal:2>, <tombstone:crafting_ingredient:2>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>, 5000, 200, [0.2, 0.9, 0.9]);
-Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal:2>, <tombstone:crafting_ingredient:2>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>, 10000, 400, [0.2, 0.9, 0.9]);
+Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal:2>, <tombstone:impregnated_diamond>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>, 5000, 200, [0.2, 0.9, 0.9]);
+Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal:2>, <tombstone:impregnated_diamond>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>, 10000, 400, [0.2, 0.9, 0.9]);
 
 //void
 Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_crystal:3>, <enderio:item_material:20>, <chisel:energizedvoidstone:4>, <thaumcraft:plate:2>, <thaumcraft:nugget:7>, 5000, 200, [0.2, 0.1, 0.5]); // 0.5, 0.3, 1 white core purple beam. like this one
@@ -114,12 +116,17 @@ recipes.addShaped(<actuallyadditions:block_misc:7> * 4, [[<actuallyadditions:blo
 //Farmer
 recipes.addShaped(<actuallyadditions:block_farmer>, [[<actuallyadditions:item_misc:7>, <thermalfoundation:material:288>, <actuallyadditions:item_misc:7>],[<thermalfoundation:material:288>, <actuallyadditions:block_misc:7>, <thermalfoundation:material:288>], [<actuallyadditions:item_misc:7>, <thermalfoundation:material:288>, <actuallyadditions:item_misc:7>]]);
 
-//Aadvanced Coils
+//Advanced Coils
 recipes.addShaped(<actuallyadditions:item_misc:8>, [[null, <techreborn:cable:6>, <immersiveengineering:material>],[<techreborn:cable:6>, <actuallyadditions:item_misc:7>, <techreborn:cable:6>], [<immersiveengineering:material>, <techreborn:cable:6>, null]]);
+assemblingMachine.addRecipe(<actuallyadditions:item_misc:8>, <actuallyadditions:item_misc:7>, <techreborn:cable:6>*4, 100, 32);
 
 //Basic Coils
-recipes.addShaped(<actuallyadditions:item_misc:7> * 2, [[null, <immersiveengineering:wirecoil:2>, <immersiveengineering:material>],[<immersiveengineering:wirecoil:2>, <actuallyadditions:item_crystal>, <immersiveengineering:wirecoil:2>], [<immersiveengineering:material>, <immersiveengineering:wirecoil:2>, null]]);
-recipes.addShaped(<actuallyadditions:item_misc:7>, [[null, <immersiveengineering:wirecoil:1>, <immersiveengineering:material>],[<immersiveengineering:wirecoil:1>, <actuallyadditions:item_crystal>, <immersiveengineering:wirecoil:1>], [<immersiveengineering:material>, <immersiveengineering:wirecoil:1>, null]]);
+recipes.addShaped(<actuallyadditions:item_misc:7>, [[null, <immersiveengineering:wirecoil>, <immersiveengineering:material>],[<immersiveengineering:wirecoil>, <actuallyadditions:item_crystal>, <immersiveengineering:wirecoil>], [<immersiveengineering:material>, <immersiveengineering:wirecoil>, null]]);
+recipes.addShaped(<actuallyadditions:item_misc:7>*2, [[null, <immersiveengineering:wirecoil:1>, <immersiveengineering:material>],[<immersiveengineering:wirecoil:1>, <actuallyadditions:item_crystal>, <immersiveengineering:wirecoil:1>], [<immersiveengineering:material>, <immersiveengineering:wirecoil:1>, null]]);
+recipes.addShaped(<actuallyadditions:item_misc:7> * 4, [[null, <immersiveengineering:wirecoil:2>, <immersiveengineering:material>],[<immersiveengineering:wirecoil:2>, <actuallyadditions:item_crystal>, <immersiveengineering:wirecoil:2>], [<immersiveengineering:material>, <immersiveengineering:wirecoil:2>, null]]);
+assemblingMachine.addRecipe(<actuallyadditions:item_misc:7>*4, <immersiveengineering:wirecoil:2>*4, <actuallyadditions:item_crystal>, 100, 32);
+assemblingMachine.addRecipe(<actuallyadditions:item_misc:7>*2, <immersiveengineering:wirecoil:1>*4, <actuallyadditions:item_crystal>, 100, 32);
+assemblingMachine.addRecipe(<actuallyadditions:item_misc:7>, <immersiveengineering:wirecoil>*4, <actuallyadditions:item_crystal>, 100, 32);
 
 //Leaf Gen
 recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[<actuallyadditions:item_crystal:5>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal>, <ore:treeLeaves>, <actuallyadditions:item_crystal>], [<actuallyadditions:item_crystal:5>, <actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal:5>]]);
@@ -145,6 +152,9 @@ AtomicReconstructor.addRecipe(<iceandfire:dragonegg_white>, <iceandfire:dragoneg
 
 AtomicReconstructor.addRecipe(<iceandfire:dragonforge_ice_brick>, <iceandfire:dragonforge_fire_brick>, 30000);
 AtomicReconstructor.addRecipe(<iceandfire:dragonforge_fire_brick>, <iceandfire:dragonforge_ice_brick>, 30000);
+
+//XP Solidifer
+recipes.addShaped(<actuallyadditions:block_xp_solidifier>, [[<actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>],[<actuallyadditions:block_crystal:2>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_crystal:2>], [<actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>]]);
 
 
 //Moved Paper cups

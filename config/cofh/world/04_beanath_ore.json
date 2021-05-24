@@ -378,7 +378,7 @@
 				"block": [
 					{
 						"name": "minecraft:redstone_ore",
-						"weight": 59
+						"weight": 64
 					},
 					{
 						"name": "thermalfoundation:ore_fluid",
@@ -410,7 +410,7 @@
 			"chunk-chance": 1,
 			"min-height": 5,
 			"max-height": 100,
-			"retrogen": "false",
+			"retrogen": "true",
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",

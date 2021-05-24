@@ -327,8 +327,8 @@ dawnstone.register();
 
 
 
-var prudentium = HighOven.newMixRecipe(<liquid:prudentium> * 144, <liquid:inferium> * 144, 1300);
-prudentium.addPurifier(<mysticalagriculture:crafting:1>*4, 100);
+var prudentium = HighOven.newMixRecipe(<liquid:prudentium> * 36, <liquid:inferium> * 36, 1300);
+prudentium.addPurifier(<mysticalagriculture:crafting:1>, 100);
 prudentium.register();
 
 

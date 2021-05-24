@@ -82,6 +82,7 @@ val artisansPlates as IItemStack[IOreDictEntry] = {
   <ore:ingotBrass>:<thaumcraft:plate>,
   <ore:ingotThaumium>:<thaumcraft:plate:2>,
   <ore:gemQuartz>:<moreplates:nether_quartz_plate>,
+  
 } as IItemStack[IOreDictEntry];
 
 for ingot, plate in artisansPlates {
@@ -98,6 +99,7 @@ val artisansCrystalPlates as IItemStack[IItemStack] = {
   <actuallyadditions:item_crystal>:<moreplates:restonia_plate>,
   <actuallyadditions:item_crystal:3>:<moreplates:void_plate>,
   <actuallyadditions:item_crystal:5>:<moreplates:enori_plate>,
+  <actuallyadditions:item_crystal:2>: <moreplates:diamatine_plate>,
 } as IItemStack[IItemStack];
 for ingot, plate in artisansCrystalPlates {
 recipes.addShaped(plate, [[<ore:artisansHammer>.reuse().transformDamage(5)], [ingot], [ingot]]);
@@ -122,6 +124,7 @@ val artisansRods as IItemStack[IOreDictEntry] = {
   <ore:ingotSyrmorite>:<jaopca:item_sticksyrmorite>,
   <ore:ingotArdite>:<jaopca:item_stickardite>,
   <ore:ingotCopper>:<libvulpes:productrod:4>,
+  <ore:ingotThaumium>:<jaopca:item_stickthaumium>,
 } as IItemStack[IOreDictEntry];
 
 for ingot, rod in artisansRods {

@@ -14,32 +14,70 @@
   "catalyst-meta": 1,
 
   "input-types": {
+    "a": {
+      "id": "immersiveengineering:sheetmetal",
+      "meta": 9
+    },
+    "b": {
+      "id": "immersiveengineering:wooden_decoration",
+      "meta": 1
+    },
     "c": {
       "id": "actuallyadditions:block_misc",
       "meta": 2
-    },
-    "s": {
-      "id": "immersiveengineering:sheetmetal",
-      "meta": 9
     }
-
-
   },
   "shape": [
     [
-      [ "s", "s", "s" ],
-      [ "s", "s", "s" ],
-      [ "s", "s", "s" ]
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
     ],
     [
-      [ "s", "s", "s" ],
-      [ "s", "c", "s" ],
-      [ "s", "s", "s" ]
+      [
+        "b",
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "c",
+        "a"
+      ],
+      [
+        "b",
+        "a",
+        "b"
+      ]
     ],
     [
-      [ "s", "s", "s" ],
-      [ "s", "s", "s" ],
-      [ "s", "s", "s" ]
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
     ]
   ]
 
