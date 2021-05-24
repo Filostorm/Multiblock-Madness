@@ -10,6 +10,7 @@ val itemstoRemove =
     <rftools:powercell>,
     <rftools:dimensional_shard>,
     <rftools:environmental_controller>,
+    <rftools:screen_controller>, 
 ]
  as IItemStack[];
 
@@ -30,6 +31,8 @@ recipes.addShapedMirrored(<rftools:powercell> * 2, [[<minecraft:prismarine>, <ra
 //Enviromental controller
 recipes.addShaped(<rftools:environmental_controller>, [[<minecraft:ender_pearl>, <minecraft:beacon>, <minecraft:ender_pearl>],[<actuallyadditions:block_crystal_empowered:5>, <rftools:machine_frame>, <actuallyadditions:block_crystal_empowered:2>], [<minecraft:ender_pearl>, <actuallyadditions:block_crystal_empowered:4>, <minecraft:ender_pearl>]]);
 
+//Screen Controller
+recipes.addShaped(<rftools:screen_controller>, [[<minecraft:redstone>, <minecraft:ender_pearl>, <minecraft:redstone>],[<minecraft:glass>, <thermalexpansion:frame:64>, <minecraft:glass>], [<minecraft:redstone>, <minecraft:glass>, <minecraft:redstone>]]);
 
 ##########################################################################################
 print("==================== end of rftools.zs ====================");

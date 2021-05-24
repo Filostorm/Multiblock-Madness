@@ -38,12 +38,39 @@ val itemstoRemove =
 <techreborn:part:7>,
 <techreborn:solar_panel>,
 <techreborn:quantum_tank>,
+<techreborn:rockcutter>,
 ]
  as IItemStack[];
 
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+
+val itemstoHide =
+[
+<techreborn:vacuum_freezer>,
+<techreborn:alloy_smelter>,
+<techreborn:iron_alloy_furnace>,
+<techreborn:iron_furnace>,
+<techreborn:electric_furnace>,
+<techreborn:solid_fuel_generator>,
+<techreborn:plasma_generator>,
+<techreborn:wind_mill>,
+<techreborn:water_mill>,
+<techreborn:thermal_generator>,
+<techreborn:diesel_generator>,
+<techreborn:semi_fluid_generator>,
+<techreborn:nuke>,
+]
+ as IItemStack[];
+
+for item in itemstoHide {
+	mods.jei.JEI.removeAndHide(item);
+}
+
+//Rockcutter
+recipes.addShaped(<techreborn:rockcutter>.withTag({ench: [{lvl: 1 as short, id: 33 as short}], energy: 0}), [[<mekanism:otherdust>, <techreborn:ingot:19>, null],[<mekanism:otherdust>, <techreborn:ingot:19>, null], [<mekanism:otherdust>, <ore:circuitBasic>, <techreborn:rebattery>]]);
+
 
 //UU Matter
 <techreborn:uumatter>.addTooltip(format.darkPurple("Collected from the Matter Fabricator"));
@@ -88,12 +115,6 @@ recipes.addShaped(<techreborn:industrial_electrolyzer>, [[<moreplates:electrical
 //Gold Cable
 assemblingMachine.addRecipe(<techreborn:cable:6>, <techreborn:cable:2>, <ore:itemRubber>, 100, 32);
 
-//Coils
-assemblingMachine.addRecipe(<actuallyadditions:item_misc:7>*2, <immersiveengineering:wirecoil:2>*4, <actuallyadditions:item_crystal>, 100, 32);
-assemblingMachine.addRecipe(<actuallyadditions:item_misc:7>, <immersiveengineering:wirecoil:1>*4, <actuallyadditions:item_crystal>, 100, 32);
-
-//Advanced Coils
-assemblingMachine.addRecipe(<actuallyadditions:item_misc:8>, <actuallyadditions:item_misc:7>, <techreborn:cable:6>*4, 100, 32);
 
 ### Rolling Machine ###
 
@@ -234,7 +255,8 @@ fluidReplicator.addRecipe(1,<liquid:water>*10000 ,10, 1000);
 //lava
 fluidReplicator.addRecipe(1,<liquid:lava>,10, 1000);
 
-
+//TOO MUCH TNT
+mods.techreborn.implosionCompressor.addRecipe(<techreborn:plates:38>, <techreborn:dust:15>*4, <techreborn:ingot:22>, <mekanism:obsidiantnt>, 20, 32);
 
 ##########################################################################################
 print("==================== end of mods techreborn.zs ====================");

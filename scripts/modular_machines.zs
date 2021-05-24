@@ -316,7 +316,7 @@ EnhancedChassis2.build();
 ##Advanced Rockety Frame
 val ARFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-arframe", "minifield-crafter", 400, 0);
 ARFrame.addEnergyPerTickInput(3000);
-ARFrame.addItemInput(<rockhounding_chemistry:misc_items:10>);
+ARFrame.addItemInput(<mekanism:atomicalloy>);
 ARFrame.addItemInput(<jaopca:block_scaffoldingstainlesssteel> * 18);
 ARFrame.addItemInput(<jaopca:block_sheetmetaltitanium> * 9);
 ARFrame.addItemOutput(<libvulpes:structuremachine>);
@@ -324,7 +324,7 @@ ARFrame.build();
 
 val ARFrame2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-arframe2", "minifield-crafter", 400, 0);
 ARFrame2.addEnergyPerTickInput(3000);
-ARFrame2.addItemInput(<rockhounding_chemistry:misc_items:10>);
+ARFrame2.addItemInput(<mekanism:atomicalloy>);
 ARFrame2.addItemInput(<contenttweaker:nimonic_scaffolding> * 18);
 ARFrame2.addItemInput(<jaopca:block_sheetmetaltitanium> * 9);
 ARFrame2.addItemOutput(<libvulpes:structuremachine>*2);
@@ -333,7 +333,8 @@ ARFrame2.build();
 ##Actually Additions Iron Casing
 val AAIronCasing = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aaironaasing", "minifield-crafter", 400, 0);
 AAIronCasing.addEnergyPerTickInput(1000);
-AAIronCasing.addItemInput(<immersiveengineering:sheetmetal:9> * 26);
+AAIronCasing.addItemInput(<immersiveengineering:sheetmetal:9> * 20);
+AAIronCasing.addItemInput(<immersiveengineering:wooden_decoration:1>*6);
 AAIronCasing.addItemInput(<actuallyadditions:block_misc:2>);
 AAIronCasing.addItemInput(<immersiveengineering:wirecoil:1>);
 AAIronCasing.addItemOutput(<actuallyadditions:block_misc:9>);
@@ -522,8 +523,8 @@ ThermalDeviceFrame.build();
 
 
 ##Brass
-val dustBrass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-brass", "mixer", 300, 0);
-dustBrass.addEnergyPerTickInput(100);
+val dustBrass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-brass", "mixer", 20, 0);
+dustBrass.addEnergyPerTickInput(500);
 dustBrass.addItemInput(<techreborn:dust:59>);
 dustBrass.addItemInput(<thermalfoundation:material:64> * 3);
 dustBrass.addItemOutput(<techreborn:dust:6> * 4);
@@ -532,8 +533,8 @@ dustBrass.build();
 
 
 ##Bronze
-val dustBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-bronze", "mixer", 300, 0);
-dustBronze.addEnergyPerTickInput(100);
+val dustBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-bronze", "mixer", 20, 0);
+dustBronze.addEnergyPerTickInput(500);
 dustBronze.addItemInput(<thermalfoundation:material:65>);
 dustBronze.addItemInput(<thermalfoundation:material:64> * 3);
 dustBronze.addItemOutput(<thermalfoundation:material:99> * 4);
@@ -547,8 +548,8 @@ carbonforSteel.add(<rockhounding_chemistry:chemical_dusts:24>);
 carbonforSteel.add(<thermalfoundation:material:768>);
 carbonforSteel.add(<nuclearcraft:dust:8>);
 
-val dustSteel = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-steel", "mixer", 300, 0);
-dustSteel.addEnergyPerTickInput(100);
+val dustSteel = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-steel", "mixer", 20, 0);
+dustSteel.addEnergyPerTickInput(500);
 dustSteel.addItemInput(<thermalfoundation:material>);
 dustSteel.addItemInput(<ore:carbonforSteel>);
 dustSteel.addItemOutput(<thermalfoundation:material:96>);
@@ -556,8 +557,8 @@ dustSteel.addItemOutput(<thermalfoundation:material:96>).setChance(0.5);
 dustSteel.build();
 
 ##Electrum
-val dustElectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-electrum", "mixer", 300, 0);
-dustElectrum.addEnergyPerTickInput(100);
+val dustElectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-electrum", "mixer", 20, 0);
+dustElectrum.addEnergyPerTickInput(500);
 dustElectrum.addItemInput(<thermalfoundation:material:66>);
 dustElectrum.addItemInput(<thermalfoundation:material:1>);
 dustElectrum.addItemOutput(<thermalfoundation:material:97> * 2);
@@ -565,8 +566,8 @@ dustElectrum.addItemOutput(<thermalfoundation:material:97>).setChance(0.5);
 dustElectrum.build();
 
 ##Energetic
-val dustEnergetic = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-energetic", "mixer", 300, 0);
-dustEnergetic.addEnergyPerTickInput(100);
+val dustEnergetic = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-energetic", "mixer", 20, 0);
+dustEnergetic.addEnergyPerTickInput(500);
 dustEnergetic.addItemInput(<minecraft:glowstone_dust>);
 dustEnergetic.addItemInput(<minecraft:redstone>);
 dustEnergetic.addItemOutput(<nuclearcraft:compound:2> * 2);
@@ -574,8 +575,8 @@ dustEnergetic.addItemOutput(<nuclearcraft:compound:2>).setChance(0.5);
 dustEnergetic.build();
 
 ##Dimentional
-val dustDimentional = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dimentional", "mixer", 300, 0);
-dustDimentional.addEnergyPerTickInput(100);
+val dustDimentional = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dimentional", "mixer", 20, 0);
+dustDimentional.addEnergyPerTickInput(500);
 dustDimentional.addItemInput(<thermalfoundation:material:770> * 4);
 dustDimentional.addItemInput(<ore:dustEndstone>);
 dustDimentional.addItemOutput(<nuclearcraft:compound:9> * 2);
@@ -583,8 +584,8 @@ dustDimentional.addItemOutput(<nuclearcraft:compound:9>).setChance(0.5);
 dustDimentional.build();
 
 ##Invar
-val dustInvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-invar", "mixer", 300, 0);
-dustInvar.addEnergyPerTickInput(100);
+val dustInvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-invar", "mixer", 20, 0);
+dustInvar.addEnergyPerTickInput(500);
 dustInvar.addItemInput(<thermalfoundation:material> * 2);
 dustInvar.addItemInput(<thermalfoundation:material:69>);
 dustInvar.addItemOutput(<thermalfoundation:material:98> * 3);
@@ -592,8 +593,8 @@ dustInvar.addItemOutput(<thermalfoundation:material:98>).setChance(0.5);
 dustInvar.build();
 
 ##CarbonManganese
-val dustCarbonManganese = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-carbonmanganese", "mixer", 300, 0);
-dustCarbonManganese.addEnergyPerTickInput(100);
+val dustCarbonManganese = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-carbonmanganese", "mixer", 20, 0);
+dustCarbonManganese.addEnergyPerTickInput(500);
 dustCarbonManganese.addItemInput(<ore:dustGraphite>);
 dustCarbonManganese.addItemInput(<ore:dustManganese>);
 dustCarbonManganese.addItemOutput(<nuclearcraft:compound:10> * 2);
@@ -601,8 +602,8 @@ dustCarbonManganese.addItemOutput(<nuclearcraft:compound:10>).setChance(0.5);
 dustCarbonManganese.build();
 
 ##Flux Dust
-val dustFlux = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-flux", "mixer", 300, 0);
-dustFlux.addEnergyPerTickInput(100);
+val dustFlux = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-flux", "mixer", 20, 0);
+dustFlux.addEnergyPerTickInput(500);
 dustFlux.addItemInput(<thermalfoundation:material:770> * 4);
 dustFlux.addItemInput(<enderio:item_material:20> * 4);
 dustFlux.addItemInput(<minecraft:redstone> * 4);
@@ -661,7 +662,7 @@ val assemblerBasicCoils = mods.modularmachinery.RecipeBuilder.newBuilder("assemb
 assemblerBasicCoils.addEnergyPerTickInput(1000);
 assemblerBasicCoils.addItemInput(<immersiveengineering:wirecoil:2>*4);
 assemblerBasicCoils.addItemInput(<actuallyadditions:item_crystal>);
-assemblerBasicCoils.addItemOutput(<actuallyadditions:item_misc:7>*2);
+assemblerBasicCoils.addItemOutput(<actuallyadditions:item_misc:7>*4);
 assemblerBasicCoils.build();
 
 ##BasicCoils2
@@ -669,8 +670,16 @@ val assemblerBasicCoils2 = mods.modularmachinery.RecipeBuilder.newBuilder("assem
 assemblerBasicCoils2.addEnergyPerTickInput(1000);
 assemblerBasicCoils2.addItemInput(<immersiveengineering:wirecoil:1>*4);
 assemblerBasicCoils2.addItemInput(<actuallyadditions:item_crystal>);
-assemblerBasicCoils2.addItemOutput(<actuallyadditions:item_misc:7>);
+assemblerBasicCoils2.addItemOutput(<actuallyadditions:item_misc:7>*2);
 assemblerBasicCoils2.build();
+
+##BasicCoils3
+val assemblerBasicCoils3 = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-Basiccoils3", "assembler", 10, 0);
+assemblerBasicCoils3.addEnergyPerTickInput(1000);
+assemblerBasicCoils3.addItemInput(<immersiveengineering:wirecoil>*4);
+assemblerBasicCoils3.addItemInput(<actuallyadditions:item_crystal>);
+assemblerBasicCoils3.addItemOutput(<actuallyadditions:item_misc:7>);
+assemblerBasicCoils3.build();
 
 ##AdvancedCoils
 val assemblerAdvancedCoils = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-Advancedcoils", "assembler", 20, 0);
@@ -701,6 +710,34 @@ assemblerLaserAcceptorBlock.addItemInput(<rockhounding_chemistry:alloy_parts:34>
 assemblerLaserAcceptorBlock.addFluidInput(<liquid:liquid_nitrogen>*4000);
 assemblerLaserAcceptorBlock.addItemOutput(<modulardiversity:blockmeklaseracceptor>);
 assemblerLaserAcceptorBlock.build();
+
+##LapatronCrystal
+val assemblerLapatronCrystal = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-LapatronCrystal", "assembler", 10, 0);
+assemblerLapatronCrystal.addEnergyPerTickInput(25000);
+assemblerLapatronCrystal.addItemInput(<contenttweaker:lazurite_gem>);
+assemblerLapatronCrystal.addItemInput(<ore:circuitAdvanced>);
+assemblerLapatronCrystal.addFluidInput(<liquid:lapis>*1000);
+assemblerLapatronCrystal.addItemOutput(<techreborn:lapotroncrystal>*4);
+assemblerLapatronCrystal.build();
+
+##lapotronicorb
+val assemblerlapotronicorb = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-lapotronicorb", "assembler", 20, 0);
+assemblerlapotronicorb.addEnergyPerTickInput(50000);
+assemblerlapotronicorb.addItemInput(<ore:lapotronCrystal>,8);
+assemblerlapotronicorb.addItemInput(<ore:plateiridiumAlloy>);
+assemblerlapotronicorb.addFluidInput(<liquid:lapis>*4000);
+assemblerlapotronicorb.addItemOutput(<techreborn:lapotronicorb>*4);
+assemblerlapotronicorb.build();
+
+##componentEVCapacitor
+val assemblercomponentEVCapacitor = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-componentEVCapacitor", "assembler", 40, 0);
+assemblercomponentEVCapacitor.addEnergyPerTickInput(1000000);
+assemblercomponentEVCapacitor.addItemInput(<ore:componentWiring>,6);
+assemblercomponentEVCapacitor.addItemInput(<ore:componentHVCapacitor>,2);
+assemblercomponentEVCapacitor.addItemInput(<ore:componentComputerChip>);
+assemblercomponentEVCapacitor.addFluidInput(<liquid:liquid_nitrogen>*4000);
+assemblercomponentEVCapacitor.addItemOutput(<powersuits:powerarmorcomponent:8>*4);
+assemblercomponentEVCapacitor.build();
 
 ##############################################
 ##
@@ -759,8 +796,8 @@ CyrstaltineIngot.addItemOutput(<avaritia:resource:1>);
 CyrstaltineIngot.build();
 
 ##PositiveDispositionMatrix
-val PositiveDispositionMatrix = mods.modularmachinery.RecipeBuilder.newBuilder("forge-positivedispositionmatrix", "heavens-forge", 600, 0);
-PositiveDispositionMatrix.addMekanismLaserInput(10000000);
+val PositiveDispositionMatrix = mods.modularmachinery.RecipeBuilder.newBuilder("forge-positivedispositionmatrix", "heavens-forge", 400, 0);
+PositiveDispositionMatrix.addMekanismLaserInput(100000000);
 PositiveDispositionMatrix.addItemInput(<rockhounding_chemistry:alloy_items_gems:4>);
 PositiveDispositionMatrix.addItemInput(<contenttweaker:material_part:10>);
 PositiveDispositionMatrix.addItemInput(<rockhounding_chemistry:alloy_items_deco:22>);
@@ -770,8 +807,8 @@ PositiveDispositionMatrix.addItemOutput(<contenttweaker:matrix_deposition_+>);
 PositiveDispositionMatrix.build();
 
 ##NegitiveDispositionMatrix
-val NegitiveDispositionMatrix = mods.modularmachinery.RecipeBuilder.newBuilder("forge-negitivedispositionmatrix", "heavens-forge", 600, 0);
-NegitiveDispositionMatrix.addMekanismLaserInput(10000000);
+val NegitiveDispositionMatrix = mods.modularmachinery.RecipeBuilder.newBuilder("forge-negitivedispositionmatrix", "heavens-forge", 400, 0);
+NegitiveDispositionMatrix.addMekanismLaserInput(100000000);
 NegitiveDispositionMatrix.addItemInput(<rockhounding_chemistry:alloy_items_gems:7>);
 NegitiveDispositionMatrix.addItemInput(<rockhounding_chemistry:alloy_items_deco:31>);
 NegitiveDispositionMatrix.addItemInput(<avaritia:resource:1>);
@@ -797,8 +834,8 @@ NeutroniumIngot.addItemOutput(<avaritia:resource:4>);
 NeutroniumIngot.build();
 
 ##MignightLampLuminessence
-val MignightLampLuminessence = mods.modularmachinery.RecipeBuilder.newBuilder("forge-mignightlampluminessence", "heavens-forge", 400, 0);
-MignightLampLuminessence.addMekanismLaserInput(5000000);
+val MignightLampLuminessence = mods.modularmachinery.RecipeBuilder.newBuilder("forge-mignightlampluminessence", "heavens-forge", 300, 0);
+MignightLampLuminessence.addMekanismLaserInput(10000000);
 MignightLampLuminessence.addItemInput(<extendedcrafting:frame>);
 MignightLampLuminessence.addItemInput(<extendedcrafting:storage:1>);
 MignightLampLuminessence.addFluidInput(<liquid:argon>* 10000);
@@ -806,8 +843,8 @@ MignightLampLuminessence.addItemOutput(<extendedcrafting:lamp:1>);
 MignightLampLuminessence.build();
 
 ##MignightLampGlowstone
-val MignightLampGlowstone = mods.modularmachinery.RecipeBuilder.newBuilder("forge-mignightlampglowstone", "heavens-forge", 400, 0);
-MignightLampGlowstone.addMekanismLaserInput(5000000);
+val MignightLampGlowstone = mods.modularmachinery.RecipeBuilder.newBuilder("forge-mignightlampglowstone", "heavens-forge", 300, 0);
+MignightLampGlowstone.addMekanismLaserInput(10000000);
 MignightLampGlowstone.addItemInput(<extendedcrafting:frame>);
 MignightLampGlowstone.addItemInput(<minecraft:glowstone>);
 MignightLampGlowstone.addFluidInput(<liquid:argon>* 10000);

@@ -28,6 +28,7 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
+
 ArcaneWorkbench.removeRecipe(<thaumcraft:metal_alchemical>);
 
 val preciousGems = <ore:preciousGems>;
@@ -80,6 +81,11 @@ GCT.addRecipe("nuggets", <thaumcraft:nugget:9>, [<arcanearchives:quartz_sliver>]
 
 //Plate for research
 recipes.addShaped(<thaumadditions:mithrillium_plate>, [[<ore:artisansHammer>.reuse().transformDamage(10)],[<thaumadditions:mithrillium_ingot>]]);
+recipes.addShaped(<thaumadditions:adaminite_plate>, [[<ore:artisansHammer>.reuse().transformDamage(10)],[<thaumadditions:adaminite_ingot>]]);
+recipes.addShaped(<thaumadditions:mithminite_plate>, [[<ore:artisansHammer>.reuse().transformDamage(10)],[<thaumadditions:mithminite_ingot>]]);
+
+
+
 
 PureDaisy.addRecipe(<embers:ashen_stone>, <thaumcraft:stone_arcane>);
 
@@ -87,7 +93,7 @@ ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_basic>);
 ArcaneWorkbench.registerShapedRecipe("CTBrassSmelter", "", 50, [<aspect:ignis>],
 <thaumcraft:smelter_basic>, 
 [[<ore:plateBrass>, <thaumcraft:crucible>, <ore:plateBrass>],
-[<botania:livingrock>, <embers:superheater>, <botania:livingrock>], 
+[<botania:livingrock>, <botania:rune:1>, <botania:livingrock>], 
 [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]]
 );
 
@@ -176,11 +182,16 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("mm:shaped/internal/thaumcraft
 <contenttweaker:greatwood_handle>.addTooltip(format.lightPurple("Use Salis Mundus on a Greatwood Log"));
 SalisMundus.addSingleConversion(<blockstate:thaumcraft:log_greatwood>.block, <contenttweaker:greatwood_handle>*2);
 
+//Knight Metal
 Crucible.registerRecipe("ArmorShard", "",
     <twilightforest:armor_shard> * 3, <ebwizardry:crystal_shard>,
-	[<aspect:praemunio> * 10,<aspect:metallum> * 10,<aspect:desiderium> * 5]
+	[<aspect:praemunio> * 5,<aspect:metallum> * 5]
 );
 
-
+//Fabric
+Crucible.registerRecipe("Fabric", "",
+    <thaumcraft:fabric>, <ore:wool>,
+	[<aspect:praecantatio> * 5]
+);
 ##########################################################################################
 print("==================== end of mods thaumcraft.zs ====================");

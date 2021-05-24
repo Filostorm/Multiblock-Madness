@@ -38,14 +38,6 @@ for item in itemstoRemove {
 }
 
 
-//Binder
-<enderio:item_material:22>.displayName = "Universal Binder";
-recipes.addShapedMirrored(<enderio:item_material:22>*8, [[<minecraft:sand>, <minecraft:clay_ball>, <minecraft:gravel>],[<minecraft:clay_ball>, <enderio:item_material:20>, <minecraft:clay_ball>], [<minecraft:gravel>, <minecraft:clay_ball>, <minecraft:sand>]]);
-recipes.addShapeless(<embers:blend_caminite>*2, [<enderio:item_material:22>,<enderio:item_material:22>]);
-recipes.addShapeless(<tconstruct:soil>*4, [<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>]);
-//recipes.addShaped(<enderio:item_material:22>*8, [[<tconstruct:soil>, <tconstruct:soil>, <tconstruct:soil>],[<tconstruct:soil>, <enderio:item_material:20>, <tconstruct:soil>], [<tconstruct:soil>, <tconstruct:soil>, <tconstruct:soil>]]);
-//recipes.addShaped(<enderio:item_material:22>*8, [[<embers:blend_caminite>, <embers:blend_caminite>, <embers:blend_caminite>],[<embers:blend_caminite>, <enderio:item_material:20>, <embers:blend_caminite>], [<embers:blend_caminite>, <embers:blend_caminite>, <embers:blend_caminite>]]);
-
 
 //scaffolding
 assemblingMachine.addRecipe(<contenttweaker:vanasteel_scaffolding>*9, <rockhounding_chemistry:alloy_items_tech:40>*3, <contenttweaker:rod_vanasteel>*3, 100, 100);
@@ -96,6 +88,12 @@ MetalPress.removeRecipe(<moreplates:void_plate>);
 MetalPress.addRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, <immersiveengineering:mold>, 2000);
 Compactor.addStorageRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, 1500);
 Pressurizer.addRecipe(<actuallyadditions:item_crystal:3>, <moreplates:void_plate>);
+
+//Diamantine
+mods.actuallyadditions.AtomicReconstructor.removeRecipe(<moreplates:diamatine_plate>);
+Compactor.addStorageRecipe(<moreplates:diamatine_plate>, <actuallyadditions:item_crystal:2>, 1500);
+Pressurizer.addRecipe(<actuallyadditions:item_crystal:2>, <moreplates:diamatine_plate>);
+
 
 //void metal
 MetalPress.addRecipe(<thaumcraft:plate:3>, <thaumcraft:ingot:1>, <immersiveengineering:mold>, 2000);
@@ -205,6 +203,7 @@ val latheRods as IItemStack[IItemStack] = {
 <thermalfoundation:material:135>:<libvulpes:productrod:10>,
 <rockhounding_chemistry:alloy_items_tech:22>:<jaopca:item_sticknichrome>,
 <thermalfoundation:material:164>:<moreplates:constantan_stick>,
+<thaumcraft:ingot>:<jaopca:item_stickthaumium>,
 } as IItemStack[IItemStack];
 
 for material, rod in latheRods {

@@ -54,6 +54,14 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
+//Binder
+<enderio:item_material:22>.displayName = "Universal Binder";
+recipes.addShapedMirrored(<enderio:item_material:22>*8, [[<ore:sand>, <minecraft:clay_ball>, <minecraft:gravel>],[<minecraft:clay_ball>, <enderio:item_material:20>, <minecraft:clay_ball>], [<minecraft:gravel>, <minecraft:clay_ball>, <ore:sand>]]);
+recipes.addShapeless(<embers:blend_caminite>*2, [<enderio:item_material:22>,<enderio:item_material:22>]);
+recipes.addShapeless(<tconstruct:soil>*4, [<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>]);
+
+
+
 //4x FAcad
 recipes.addShaped(<enderio:item_conduit_facade> * 4, [[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],[<enderio:item_material:4>, null, <enderio:item_material:4>], [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]]);
 
@@ -76,10 +84,6 @@ recipes.addShaped(<enderio:block_painter>, [[<actuallyadditions:item_misc:7>, <a
 recipes.addShaped(<enderio:item_material:2> * 16, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, <enderio:item_material>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
 
 
-//composit
-//recipes.addShaped(<enderio:item_material:22> * 8, [[<minecraft:gravel>, <embers:blend_caminite>, <minecraft:gravel>],[<embers:blend_caminite>, <ore:sand>, <embers:blend_caminite>], [<minecraft:gravel>, <embers:blend_caminite>, <minecraft:gravel>]]);
-//Grout
-//recipes.addShapeless(<tconstruct:soil> * 2, [<embers:blend_caminite>,<embers:blend_caminite>,<minecraft:gravel>,<ore:sand>]);
 
 //stone gear
 recipes.addShaped(<enderio:item_material:10>, [[null, <ore:stone>, null],[<ore:stone>, <enderio:item_material:9>, <ore:stone>], [null, <ore:stone>, null]]);
@@ -98,7 +102,6 @@ AlloyFurnace.addRecipe(<minecraft:diamond>, <enderio:item_alloy_ingot:5>, <ender
 
 Crusher.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 1024);
 grinder.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 300, 4);
-//mods.embers.Alchemy.add(<enderio:item_material:14>, [<minecraft:diamond>,<enderio:item_alloy_ingot:5>,<enderio:item_material:22>,<enderio:item_alloy_ingot:5>,<enderio:item_material:22>], {"silver":24 to 48});
 
 //XP Obelisk
 recipes.addShaped(<enderio:block_experience_obelisk>, [[null, <enderio:item_xp_transfer>, null],[<enderio:item_alloy_ingot:7>, <enderio:block_tank>, <enderio:item_alloy_ingot:7>], [<enderio:item_alloy_ingot:1>, <enderio:item_material>, <enderio:item_alloy_ingot:1>]]);

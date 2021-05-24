@@ -7,11 +7,12 @@ print("==================== loading mods rockhounding.zs ====================");
 ##########################################################################################
 
 val EletrochemicalCTSR = <rockhounding_chemistry:machines_e:7>;
-
+val ChemicalExtractor = <rockhounding_chemistry:machines_c:7>;
 val itemstoRemove =
 [
     <rockhounding_chemistry:misc_items:13>,
     EletrochemicalCTSR,
+    ChemicalExtractor,
 ]
  as IItemStack[];
 
@@ -19,14 +20,7 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-
-
-<rockhounding_chemistry:machines_d>.addTooltip("Hold shift to see blocks required for multiblock");
-<rockhounding_chemistry:machines_d>.addShiftTooltip((format.red("- Power Station")));
-<rockhounding_chemistry:machines_d>.addShiftTooltip((format.gray("- Material Cabinet")));
-<rockhounding_chemistry:machines_d>.addShiftTooltip((format.white("- Elements Cabinet")));
-<rockhounding_chemistry:machines_d>.addShiftTooltip((format.yellow("- Optional: Server")));
-
+//Sag mill cheating
 mods.enderio.SagMill.addRecipe([<rockhounding_chemistry:chemical_dusts:11>,<techreborn:dust:37>], [0.15,0.1], <rockhounding_chemistry:phosphate_shards:8>);
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:64>,<rockhounding_chemistry:chemical_dusts:52>], [0.20,0.15], <rockhounding_chemistry:phosphate_shards:12>);
 mods.enderio.SagMill.addRecipe([<rockhounding_chemistry:chemical_dusts:35>,<thermalfoundation:material>], [0.25,0.1], <rockhounding_chemistry:oxide_shards:26>);
@@ -197,8 +191,11 @@ recipes.addShaped(<rockhounding_chemistry:machines_b:10>, [[<rockhounding_chemis
 #=======================================================
 #CHEMICAL EXTRACTOR
 #=======================================================
-recipes.remove(<rockhounding_chemistry:machines_c:7>);
-recipes.addShaped(<rockhounding_chemistry:machines_c:7>, [[<contenttweaker:aluminumcasing>, <rockhounding_chemistry:misc_items:11>, <contenttweaker:aluminumcasing>],[<rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:misc_items:1>, <rockhounding_chemistry:misc_items:7>], [<contenttweaker:aluminumcasing>, <rockhounding_chemistry:misc_blocks_a:3>, <contenttweaker:aluminumcasing>]]);
+
+recipes.addShaped(ChemicalExtractor, [
+    [<contenttweaker:aluminumcasing>, <rockhounding_chemistry:misc_items:11>, <contenttweaker:aluminumcasing>],
+    [<rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:misc_items:10>, <rockhounding_chemistry:misc_items:7>], 
+    [<contenttweaker:aluminumcasing>, <rockhounding_chemistry:misc_blocks_a:3>, <contenttweaker:aluminumcasing>]]);
 
 //categoty: the category of the input
 //input stack: the item to decompose
@@ -388,7 +385,7 @@ mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:skull:1>, <quark:soul
 //mods.rockhounding_chemistry.PullingCrucible.add(<quark:soul_powder>, <minecraft:skull:1>, <minecraft:nether_star>);
 //mods.rockhounding_chemistry.PullingCrucible.add(<thermalfoundation:material:1028>, <actuallyadditions:item_crystal_empowered:4>, <environmentaltech:litherite_crystal>);
 
-mods.rockhounding_chemistry.PullingCrucible.add(<rockhounding_chemistry:chemical_items:4>, <techreborn:dust:28>, <contenttweaker:lazurite_gem>);
+mods.rockhounding_chemistry.PullingCrucible.add(<rockhounding_chemistry:chemical_items:4>, <techreborn:dust:28>*3, <contenttweaker:lazurite_gem>*3);
 
 //mods.rockhounding_chemistry.PullingCrucible.add("nuggetIron", <minecraft:glowstone_dust>, <minecraft:ghast_tear>);
 //mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:iron_nugget>, "dustGlowstone", <minecraft:ghast_tear>);

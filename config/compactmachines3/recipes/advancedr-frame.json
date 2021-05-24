@@ -9,8 +9,8 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "rockhounding_chemistry:misc_items",
-  "catalyst-meta": 10,
+  "catalyst": "mekanism:atomicalloy",
+  "catalyst-meta": 0,
 
 
   "input-types": {

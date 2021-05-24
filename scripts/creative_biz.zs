@@ -49,8 +49,8 @@ recipes.removeShapeless(<extendedcrafting:material:7> * 2, [<minecraft:glowstone
 Vat.removeRecipe(<liquid:liquid_sunshine>);
 Vat.addRecipe(<liquid:liquid_sunshine>, 1, <liquid:glowstone_nak>, 
 [<mowziesmobs:glowing_jelly>,<randomthings:glowingmushroom>,<thermalfoundation:material:894>,<enderio:block_holy_fog>],[3,2,1.5,1], 
-[<arcanearchives:radiant_dust>,<astralsorcery:itemusabledust>,<thaumcraft:nitor_yellow>,<thaumictinkerer:energetic_nitor>],[1,1,2,4], 100000);
-Crystallizer.addRecipe(<liquid:liquid_sunshine>*100, <extendedcrafting:material:7>, 1, 10);
+[<arcanearchives:radiant_dust>,<astralsorcery:itemusabledust>,<thaumcraft:nitor_yellow>,<botania:corporeaspark>],[1,1,2,3], 100000);
+Crystallizer.addRecipe(<liquid:liquid_sunshine>*100, <extendedcrafting:material:7>, 1, 8);
 
 
 //Ultime Ingot

@@ -189,10 +189,6 @@ val itemstoRemove =
 <tinker_io:fuel_input_machine>,
 <tinker_io:ore_crusher>,
 <tinker_io:solidfuel>,
-<techreborn:alloy_smelter>,
-<techreborn:iron_alloy_furnace>,
-<techreborn:iron_furnace>,
-<techreborn:electric_furnace>,
 <additionalcompression:rodblaze_compressed>,
 <natura:overworld_seed_bags:1>,
 <natura:overworld_seed_bags>,
@@ -215,14 +211,6 @@ val itemstoRemove =
 <enderio:item_endergy_conduit:3>,
 <enderio:item_endergy_conduit:4>,
 <enderio:item_endergy_conduit:5>,
-<techreborn:solid_fuel_generator>,
-<techreborn:plasma_generator>,
-<techreborn:wind_mill>,
-<techreborn:water_mill>,
-<techreborn:thermal_generator>,
-<techreborn:diesel_generator>,
-<techreborn:semi_fluid_generator>,
-<techreborn:nuke>,
 <techreborn:chunk_loader>,
 <enderio:block_stirling_generator>,
 <libvulpes:coalgenerator>,
@@ -478,7 +466,7 @@ mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<minecraft:ender_pearl>
 
 //scanner
 recipes.addShaped(<scannable:scanner>, [[<minecraft:iron_bars>, null, <minecraft:iron_bars>],[<botania:manaresource:1>, <rockhounding_chemistry:misc_items:1>, <botania:manaresource:1>], [<moreplates:conductive_iron_plate>, <embers:ember_detector>, <moreplates:conductive_iron_plate>]]);
-recipes.addShaped(<scannable:module_blank> * 3, [[<moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>],[<enderio:item_material:22>, <minecraft:paper>, <enderio:item_material:22>], [<enderio:item_material:22>, <rockhounding_chemistry:misc_items:1>, <enderio:item_material:22>]]);
+recipes.addShaped(<scannable:module_blank> * 3, [[<moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>],[<enderio:item_material:22>, <minecraft:paper>, <enderio:item_material:22>], [<enderio:item_material:22>, <moreplates:void_plate>, <enderio:item_material:22>]]);
 
 
 
@@ -501,6 +489,8 @@ recipes.addShapeless(<minecraft:melon> * 9, [<minecraft:melon_block>]);
 .addTooltip(format.aqua("Grows from a Celestal Crystal Cluster"));
 */
 
-
+<tombstone:impregnated_diamond>.maxStackSize = 64;
+<techreborn:lapotroncrystal>.withTag({energy: 0}).maxStackSize = 64;
+<techreborn:energycrystal>.withTag({energy: 0}).maxStackSize = 64;
 ##########################################################################################
 print("==================== end of mods add-recipes-temp.zs ====================");

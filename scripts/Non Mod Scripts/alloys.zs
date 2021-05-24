@@ -108,7 +108,7 @@ AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:3>*2, [<minecraft:nethe
 AlloySmelter.addRecipe(<plustic:osgloglasingot>, [<mekanism:ingot>,<mekanism:ingot:1>,<mekanism:ingot:3>], 500000, 0.0);
 //osmerdium Alloy
 AlloySmelter.addRecipe(<plustic:osmiridiumingot>*2, [<thermalfoundation:material:135>,<mekanism:ingot:1>], 1000000, 0.0);
-
+AlloyFurnace.removeRecipeWithOutput(<plustic:osmiridiumingot>*2);
 
 //Prosperity shard
 AlloySmelter.addRecipe(<mysticalagriculture:crafting:5>*4, [<minecraft:quartz_block>, <minecraft:lapis_block>], 15000);
@@ -234,7 +234,7 @@ val xpMap as int[IItemStack] = {
 for matter, qty in xpMap {
 InfuserType.addTypeObject(matter, "EXPERIENCE", qty);
 }
-infuser.addRecipe("EXPERIENCE", 100, <mekanism:ingot:3>, <contenttweaker:ingot_xp>);
+infuser.addRecipe("EXPERIENCE", 50, <mekanism:ingot:3>, <contenttweaker:ingot_xp>);
 recipes.addShaped(<contenttweaker:block_xp>, 
 [[<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>],
 [<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>],

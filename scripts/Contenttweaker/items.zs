@@ -55,7 +55,7 @@ VanillaFactory.createItem("casingsteel").register();
 VanillaFactory.createItem("casingplatinum").register();
 VanillaFactory.createItem("foilinvar").register();
 VanillaFactory.createItem("foilsteel").register();
-VanillaFactory.createItem("foildarkSteel").register();
+VanillaFactory.createItem("foildarksteel").register();
 VanillaFactory.createItem("foilhydronalium").register();
 VanillaFactory.createItem("rodinvar").register();
 VanillaFactory.createItem("rodsteel").register();

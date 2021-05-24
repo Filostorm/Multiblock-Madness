@@ -26,9 +26,9 @@ CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:5>, 400
 
 // Diamatine
 CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:2>, 200000, <actuallyadditions:item_crystal:2>, 
-[<tombstone:crafting_ingredient:2>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>]);
+[<tombstone:impregnated_diamond>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>]);
 CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:2>, 400000, <actuallyadditions:block_crystal:2>, 
-[<tombstone:crafting_ingredient:2>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>]);
+[<tombstone:impregnated_diamond>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>]);
 
 // Void
 CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:3>, 200000, <actuallyadditions:item_crystal:3>, 

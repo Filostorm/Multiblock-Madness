@@ -384,6 +384,16 @@
       "target": "yellow",
       "weight": 200,
       "id": "OD:orePyrite"
+    },
+    {
+      "target": "black",
+      "weight": 200,
+      "id": "OD:oreEnderBiotite"
+    },
+    {
+      "target": "cyan",
+      "weight": 200,
+      "id": "OD:oreSheldonite"
     }
   ]
 }
