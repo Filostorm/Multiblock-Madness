@@ -2,6 +2,7 @@ import mods.appliedenergistics2.Inscriber;
 import crafttweaker.item.IItemStack;
 import mods.threng.Aggregator;
 import mods.techreborn.blastFurnace;
+import crafttweaker.item.IIngredient;
 
 print("==================== loading applied.zs ====================");
 ##########################################################################################
@@ -39,6 +40,7 @@ val itemstoRemove =
 	<appliedenergistics2:part:241>,
 	<appliedenergistics2:part:240>,
 	<appliedenergistics2:fluid_interface>,
+	<appliedenergistics2:part:460>
 ]
  as IItemStack[];
 
@@ -66,6 +68,14 @@ recipes.addShaped(<appliedenergistics2:drive> * 2, [[<rockhounding_chemistry:all
 recipes.addShapeless(<extracells:part.base:7>, [<appliedenergistics2:drive:*>, <thermalfoundation:material:132>,<thermalfoundation:material:132>]);
 
 recipes.addShaped(<appliedenergistics2:quartz_growth_accelerator>, [[<moreplates:dark_steel_plate>, <appliedenergistics2:part:16>, <moreplates:dark_steel_plate>],[<appliedenergistics2:quartz_glass>, <appliedenergistics2:fluix_block>, <appliedenergistics2:quartz_glass>], [<moreplates:dark_steel_plate>, <appliedenergistics2:part:16>, <moreplates:dark_steel_plate>]]);
+
+//p2p
+val Fluix as IIngredient = (<appliedenergistics2:material:7>|<appliedenergistics2:material:12>) as IIngredient;
+
+recipes.addShaped(<appliedenergistics2:part:460>, [[null, <thermalfoundation:material:324>, null],
+[<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>], 
+[Fluix, Fluix, Fluix]]);
+
 
 //busses
 recipes.addShaped(<appliedenergistics2:part:240>, [[null, <appliedenergistics2:material:44>, null], [<thermalfoundation:material:132>, <minecraft:sticky_piston>, <thermalfoundation:material:132>]]);

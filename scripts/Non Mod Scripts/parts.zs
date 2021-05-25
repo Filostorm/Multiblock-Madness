@@ -3,19 +3,19 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import mods.immersiveengineering.Crusher;
-import mods.immersiveengineering.MetalPress;
 import mods.nuclearcraft.Manufactory;
-import mods.nuclearcraft.Pressurizer;
 import mods.techreborn.grinder;
+import mods.enderio.SagMill;
+import mods.thermalexpansion.Pulverizer;
 import mods.techreborn.rollingMachine;
 import mods.thermalexpansion.Compactor;
-import mods.thermalexpansion.Pulverizer;
 import mods.advancedrocketry.PlatePresser;
 import mods.techreborn.implosionCompressor;
+import mods.nuclearcraft.Pressurizer;
 import mods.techreborn.plateBendingMachine;
 import mods.techreborn.assemblingMachine;
 import mods.advancedrocketry.Lathe;
-import mods.enderio.SagMill;
+import mods.immersiveengineering.MetalPress;
 
 print("==================== loading parts.zs ====================");
 ##########################################################################################
@@ -134,6 +134,7 @@ recipes.addShaped(<jaopca:block_sheetmetalelectricalsteel> * 4, [[null, <morepla
 recipes.addShaped(<jaopca:block_sheetmetalvanasteel> * 4, [[null, <rockhounding_chemistry:alloy_parts:40>, null],[<rockhounding_chemistry:alloy_parts:40>, null, <rockhounding_chemistry:alloy_parts:40>], [null, <rockhounding_chemistry:alloy_parts:40>, null]]);
 recipes.addShaped(<jaopca:block_sheetmetaltitanium> * 4, [[null, <techreborn:plates:31>, null],[<techreborn:plates:31>, null, <techreborn:plates:31>], [null, <techreborn:plates:31>, null]]);
 recipes.addShaped(<jaopca:block_sheetmetalconductiveiron> * 4, [[null, <moreplates:conductive_iron_plate>, null],[<moreplates:conductive_iron_plate>, null, <moreplates:conductive_iron_plate>], [null, <moreplates:conductive_iron_plate>, null]]);
+recipes.addShaped(<jaopca:block_sheetmetalpulsatingiron> * 4, [[null, <moreplates:pulsating_iron_plate>, null],[<moreplates:pulsating_iron_plate>, null, <moreplates:pulsating_iron_plate>], [null, <moreplates:pulsating_iron_plate>, null]]);
 
 
 ### Rolling Machine ###
@@ -157,6 +158,7 @@ rollingMachine.addShapeless(<jaopca:block_sheetmetalelectricalsteel>*9,[<enderio
 rollingMachine.addShapeless(<jaopca:block_sheetmetalvanasteel>*9,[<rockhounding_chemistry:alloy_blocks_tech:13>]);
 rollingMachine.addShapeless(<jaopca:block_sheetmetaltitanium>*9,[<techreborn:storage:2>]);
 rollingMachine.addShapeless(<jaopca:block_sheetmetalconductiveiron>*9,[<enderio:block_alloy:4>]);
+rollingMachine.addShapeless(<jaopca:block_sheetmetalpulsatingiron>*9,[<enderio:block_alloy:5>]);
 
 ### Compressed Platess ###
 mods.techreborn.compressor.addRecipe(<jaopca:item_platedenseadvancedalloy>, <techreborn:plates:36>*9, 600, 50);
@@ -284,6 +286,7 @@ SagMill.addRecipe([<embers:dust_ember>], [1] , <embers:crystal_ember>, "NONE");
 //Graphite
 grinder.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 300, 4);
 SagMill.addRecipe([<nuclearcraft:dust:8>], [1] , <thermalfoundation:material:768>, "NONE");
+Pulverizer.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 1500);
 
 //Slates
 Crusher.addRecipe(<contenttweaker:slatedust>*2, <bloodmagic:slate>, 2048);
@@ -340,7 +343,8 @@ Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
 grinder.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 300, 4);
 SagMill.addRecipe([<quark:black_ash>*3], [1] , <minecraft:skull:1>, "MULTIPLY_OUTPUT");
 
-
+//Thermal Ruby dust
+Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
 
 ##########################################################################################
 print("==================== end of parts.zs ====================");

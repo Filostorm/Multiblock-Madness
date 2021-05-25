@@ -14,6 +14,11 @@ import mods.botaniatweaks.Agglomeration;
 import mods.inworldcrafting.FluidToItem;
 import mods.thermalexpansion.Insolator;
 import mods.thaumcraft.Infusion;
+import mods.immersiveengineering.Crusher;
+import mods.nuclearcraft.Manufactory;
+import mods.techreborn.grinder;
+import mods.enderio.SagMill;
+import mods.thermalexpansion.Pulverizer;
 
 print("==================== loading mods botania.zs ====================");
 ##########################################################################################
@@ -180,30 +185,42 @@ RuneAltar.removeRecipe(<botania:rune:8>);
 //mods.botania.RuneAltar.addRecipe(IItemStack output, IIngredient[] input, int mana);
 RuneAltar.addRecipe(<botania:rune:8>,[<botania:manaresource:2>, <botania:manaresource:2>, <thermalfoundation:material:134>, <thermalfoundation:material:134>, <enderio:item_alloy_endergy_ingot:5>, <enderio:item_alloy_endergy_ingot:5>], 20000);
 
-val petalDupe =
-[
-<botania:petal>,
-<botania:petal:1>,
-<botania:petal:2>,
-<botania:petal:3>,
-<botania:petal:4>,
-<botania:petal:5>,
-<botania:petal:6>,
-<botania:petal:7>,
-<botania:petal:8>,
-<botania:petal:9>,
-<botania:petal:10>,
-<botania:petal:11>,
-<botania:petal:12>,
-<botania:petal:13>,
-<botania:petal:14>,
-<botania:petal:15>,
-]
- as IItemStack[];
-for item in petalDupe {
-Insolator.addRecipe(item*2, item, <thermalfoundation:fertilizer>, 1500);
-Insolator.addRecipe(item*3, item, <thermalfoundation:fertilizer:1>, 3000);
-Insolator.addRecipe(item*5, item, <thermalfoundation:fertilizer:2>, 5000);
+val petalDupe as IItemStack[IItemStack] = {
+<botania:petal>:<botania:dye>,
+<botania:petal:1>:<botania:dye:1>,
+<botania:petal:2>:<botania:dye:2>,
+<botania:petal:3>:<botania:dye:3>,
+<botania:petal:4>:<botania:dye:4>,
+<botania:petal:5>:<botania:dye:5>,
+<botania:petal:6>:<botania:dye:6>,
+<botania:petal:7>:<botania:dye:7>,
+<botania:petal:8>:<botania:dye:8>,
+<botania:petal:9>:<botania:dye:9>,
+<botania:petal:10>:<botania:dye:10>,
+<botania:petal:11>:<botania:dye:11>,
+<botania:petal:12>:<botania:dye:12>,
+<botania:petal:13>:<botania:dye:13>,
+<botania:petal:14>:<botania:dye:14>,
+<botania:petal:15>:<botania:dye:15>,
+} as IItemStack[IItemStack];
+
+for petal, dust in petalDupe {
+Insolator.addRecipe(petal*2, petal, <thermalfoundation:fertilizer>, 1500);
+Insolator.addRecipe(petal*3, petal, <thermalfoundation:fertilizer:1>, 3000);
+Insolator.addRecipe(petal*5, petal, <thermalfoundation:fertilizer:2>, 5000);
+
+Crusher.addRecipe(dust, petal, 2048, dust, 0.1);
+Manufactory.addRecipe(petal, dust);
+grinder.addRecipe(dust, petal, 300, 4);
+Pulverizer.addRecipe(dust, petal, 1500, dust, 10);
+SagMill.addRecipe([dust], [1] , petal, "MULTIPLY_OUTPUT");
+}
+
+val tinyDustMap as IItemStack[IItemStack] = {
+} as IItemStack[IItemStack];
+
+for tinyDust, material in tinyDustMap {
+	mods.fossils.recipes.addSifterOutput(material, tinyDust, 1);
 }
 //mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance, @Optional int water);
 

@@ -81,10 +81,8 @@ recipes.addShaped(<actuallyadditions:block_empowerer>, [[null, <actuallyaddition
 
 //mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, float[] particleColourArray);
 //emeradic
-Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal:4>, <mekanism:glowplasticblock:2>, <enderio:item_material:15>, <thermalfoundation:fertilizer:2>, <contenttweaker:ingot_xp>, 5000, 200, [0.1, 1, 0.1]);
-Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal:4>, <mekanism:glowplasticblock:2>, <enderio:item_material:15>, <thermalfoundation:fertilizer:2>, <contenttweaker:block_xp>, 10000, 400, [0.1, 1, 0.1]);
-##Might add this if it needs to be harder idk
-
+Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal:4>, <mekanism:glowplasticblock:10>, <enderio:item_material:15>, <thermalfoundation:fertilizer:2>, <contenttweaker:ingot_xp>, 5000, 200, [0.1, 1, 0.1]);
+Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:4>, <actuallyadditions:block_crystal:4>, <mekanism:glowplasticblock:10>, <enderio:item_material:15>, <thermalfoundation:fertilizer:2>, <contenttweaker:block_xp>, 10000, 400, [0.1, 1, 0.1]);
 
 //restonia <actuallyadditions:item_crystal>
 Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered>, <actuallyadditions:item_crystal>, <thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:20>, 5000, 200, [0.9, 0.1, 0.2]);

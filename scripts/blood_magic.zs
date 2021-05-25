@@ -9,6 +9,8 @@ import mods.immersiveengineering.Squeezer;
 import crafttweaker.block.IBlockState;
 import mods.animus.AnimusPlugin;
 import mods.bloodmagic.AlchemyTable;
+import mods.techreborn.compressor;
+import mods.nuclearcraft.Pressurizer;
 
 
 print("==================== loading blood magic.zs ====================");
@@ -86,8 +88,6 @@ BloodAltar.addRecipe(<bloodmagic:inscription_tool:6>.withTag({uses: 10}), <ember
 
 
 //dusk inscription
-
-
 mods.thermalexpansion.InductionSmelter.addRecipe(<quark:biotite>, <actuallyadditions:item_misc:5>, <botania:manaresource:15>*8, 5000);
 mods.techreborn.implosionCompressor.addRecipe(<quark:biotite_block>, null, <quark:biotite>*9, <minecraft:tnt>*16, 40, 50000);
 mods.thermalexpansion.Pulverizer.removeRecipe(<quark:biotite_block>);
@@ -229,9 +229,10 @@ recipes.addShaped(<bloodmagic:upgrade_tome>.withTag({level: 0, key: "bloodmagic.
 
 //Blank Runes
 Squeezer.addRecipe(<bloodmagic:blood_rune>, <liquid:refined_life_essence>*500, <contenttweaker:slatedust> * 6, 1024);
-
+compressor.addRecipe(<bloodmagic:blood_rune>, <contenttweaker:slatedust>*6, 600, 50);
+Pressurizer.addRecipe(<contenttweaker:slatedust>*6, <bloodmagic:blood_rune>);
 //VOIDSTONE BOIIIIII
-AlchemyTable.addRecipe(<chisel:energizedvoidstone:6> *4, [<botania:thirdeye>,<chisel:energizedvoidstone> * 4], 1000, 100, 2);
+AlchemyTable.addRecipe(<chisel:energizedvoidstone:6> *4, [<botania:thirdeye>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>], 1000, 100, 2);
 AnimusPlugin.removeComponentMapping(<blockstate:minecraft:glowstone>,"GLOWSTONE");
 AnimusPlugin.addComponentMapping(<blockstate:chisel:energizedvoidstone:variation=6>, "GLOWSTONE");
 
