@@ -132,6 +132,7 @@ val recipestoRemove =
 <quark:dark_oak_trapdoor>,
 <quark:acacia_trapdoor>,
 <quark:jungle_trapdoor>,
+<powersuits:powerarmorcomponent:11>,
 ]
  as IItemStack[];
 
@@ -175,7 +176,6 @@ val itemstoRemove =
 <enderio:block_decoration3:1>,
 <enderio:block_decoration3:2>,
 <enderio:block_decoration3:4>,
-<enderio:item_material:69>,
 <enderio:item_material:52>,
 <enderio:item_material:51>,
 <immersiveengineering:metal:15>,
@@ -279,6 +279,9 @@ slimyMoss.add(<thebetweenlands:edge_moss>);
 
 
 ### Add recipes ###
+
+//Diamond Plating
+recipes.addShaped(<powersuits:powerarmorcomponent:11>, [[<techreborn:plates:5>, <techreborn:plates:5>],[<ore:circuitElite>, <techreborn:plates:5>], [<techreborn:plates:5>, <techreborn:plates:5>]]);
 
 //salt block
 recipes.addShaped(<mekanism:saltblock>, [[<ore:itemSalt>, <ore:itemSalt>],[<ore:itemSalt>, <ore:itemSalt>]]);

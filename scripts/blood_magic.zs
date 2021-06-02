@@ -26,7 +26,7 @@ val itemstoRemove =
 	<bloodmagic:soul_forge>,
 	<twilightforest:fiery_ingot>,
 	<tconstruct:soil:3>,
-	<bloodarsenal:glass_shards>,
+//	<bloodarsenal:glass_shards>,
 	<bloodmagic:demon_crucible>,
 	<bloodmagic:demon_pylon>,
 	<bloodmagic:demon_crystallizer>,
@@ -44,7 +44,10 @@ for item in itemstoRemove {
 <contenttweaker:starmetal_block>.addTooltip(format.gold("Can be used as a catalyst in the Mark of the Falling Tower ritual"));
 <contenttweaker:starmetal_block>.addTooltip(format.darkRed("Requires 1,000,000 LP in your Blood Orb"));
 //Automating Blood
-mods.immersiveengineering.Mixer.addRecipe(<liquid:lifeessence>*1000, <liquid:potion>.withTag({Potion: "minecraft:harming"})*1000, [<botania:manaresource:23>], 1024);
+//mods.immersiveengineering.Mixer.addRecipe(<liquid:lifeessence>*1000, <liquid:potion>.withTag({Potion: "minecraft:harming"})*1000, [<botania:manaresource:23>], 1024);
+//New Blood Recipe
+mods.immersiveengineering.Mixer.addRecipe(<liquid:lifeessence>*1000, <liquid:refined_life_essence>*250, [<techreborn:dust:6>], 512);
+
 Crucible.registerRecipe("BucketLife", "",
     <forge:bucketfilled>.withTag({FluidName: "lifeessence", Amount: 1000}), <minecraft:bucket>,
 	[<aspect:victus> * 10, <aspect:mortuus> * 1, <aspect:auram> * 1]
@@ -151,7 +154,7 @@ TartaricForge.addRecipe(<bloodmagic:component:8>,[<botania:manaresource:23>, <en
 
 //Graveyard/glass combo
 TartaricForge.addRecipe(<tconstruct:soil:3>,[<quark:black_ash>, <tombstone:crafting_ingredient:3>, <randomthings:fertilizeddirt>, <bloodmagic:blood_shard>], 150,20);
-mods.botania.ElvenTrade.addRecipe([<bloodarsenal:glass_shards>], [<bloodmagic:item_demon_crystal:3>,<bloodarsenal:base_item>*9]);
+//mods.botania.ElvenTrade.addRecipe([<bloodarsenal:glass_shards>], [<bloodmagic:item_demon_crystal:3>,<bloodarsenal:base_item>*9]);
 
 //Ash
 TartaricForge.removeRecipe([<minecraft:dye:15>, <minecraft:gunpowder>, <minecraft:redstone>, <minecraft:coal>]);
@@ -228,9 +231,11 @@ Altar.addTraitAltarRecipe("mm:shaped/internal/altar/demon_crucible", <bloodmagic
 recipes.addShaped(<bloodmagic:upgrade_tome>.withTag({level: 0, key: "bloodmagic.upgrade.slippery"}), [[null, <minecraft:ice>, null],[<minecraft:ice>, <bloodmagic:upgrade_tome>.withTag({level: 9, key: "bloodmagic.upgrade.slowness"}).onlyWithTag({level: 9, key: "bloodmagic.upgrade.slowness"}), <minecraft:ice>], [null, <minecraft:ice>, null]]);
 
 //Blank Runes
-Squeezer.addRecipe(<bloodmagic:blood_rune>, <liquid:refined_life_essence>*500, <contenttweaker:slatedust> * 6, 1024);
+Squeezer.addRecipe(<bloodmagic:blood_rune>, <liquid:refined_life_essence>*500, <contenttweaker:slatedust> * 6, 256);
+
 compressor.addRecipe(<bloodmagic:blood_rune>, <contenttweaker:slatedust>*6, 600, 50);
 Pressurizer.addRecipe(<contenttweaker:slatedust>*6, <bloodmagic:blood_rune>);
+
 //VOIDSTONE BOIIIIII
 AlchemyTable.addRecipe(<chisel:energizedvoidstone:6> *4, [<botania:thirdeye>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>], 1000, 100, 2);
 AnimusPlugin.removeComponentMapping(<blockstate:minecraft:glowstone>,"GLOWSTONE");

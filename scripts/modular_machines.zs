@@ -498,6 +498,15 @@ TCconstruct.addItemInput(<embers:gear_dawnstone>);
 TCconstruct.addItemOutput(<thaumcraft:metal_alchemical>*3);
 TCconstruct.build();
 
+##SootyFrame
+val SootyFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-SootyFrame", "minifield-crafter", 400, 0);
+SootyFrame.addEnergyPerTickInput(2000);
+SootyFrame.addItemInput(<contenttweaker:sooty_block> * 20);
+SootyFrame.addItemInput(<jaopca:block_sheetmetalpulsatingiron> * 6);
+SootyFrame.addItemInput(<bloodtinker:blood_bronze_block>);
+SootyFrame.addItemInput(<moreplates:knightmetal_gear>);
+SootyFrame.addItemOutput(<deepmoblearning:machine_casing>);
+SootyFrame.build();
 /*
 ##Thermal Device Frame
 val ThermalDeviceFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-thermaldeviceframe", "minifield-crafter", 1000, 0);
@@ -716,7 +725,7 @@ val assemblerLapatronCrystal = mods.modularmachinery.RecipeBuilder.newBuilder("a
 assemblerLapatronCrystal.addEnergyPerTickInput(25000);
 assemblerLapatronCrystal.addItemInput(<contenttweaker:lazurite_gem>);
 assemblerLapatronCrystal.addItemInput(<ore:circuitAdvanced>);
-assemblerLapatronCrystal.addFluidInput(<liquid:lapis>*1000);
+assemblerLapatronCrystal.addFluidInput(<liquid:lapis>*4000);
 assemblerLapatronCrystal.addItemOutput(<techreborn:lapotroncrystal>*4);
 assemblerLapatronCrystal.build();
 
@@ -725,7 +734,7 @@ val assemblerlapotronicorb = mods.modularmachinery.RecipeBuilder.newBuilder("ass
 assemblerlapotronicorb.addEnergyPerTickInput(50000);
 assemblerlapotronicorb.addItemInput(<ore:lapotronCrystal>,8);
 assemblerlapotronicorb.addItemInput(<ore:plateiridiumAlloy>);
-assemblerlapotronicorb.addFluidInput(<liquid:lapis>*4000);
+assemblerlapotronicorb.addFluidInput(<liquid:lapis>*8000);
 assemblerlapotronicorb.addItemOutput(<techreborn:lapotronicorb>*4);
 assemblerlapotronicorb.build();
 
@@ -735,7 +744,7 @@ assemblercomponentEVCapacitor.addEnergyPerTickInput(1000000);
 assemblercomponentEVCapacitor.addItemInput(<ore:componentWiring>,6);
 assemblercomponentEVCapacitor.addItemInput(<ore:componentHVCapacitor>,2);
 assemblercomponentEVCapacitor.addItemInput(<ore:componentComputerChip>);
-assemblercomponentEVCapacitor.addFluidInput(<liquid:liquid_nitrogen>*4000);
+assemblercomponentEVCapacitor.addFluidInput(<liquid:liquid_nitrogen>*2000);
 assemblercomponentEVCapacitor.addItemOutput(<powersuits:powerarmorcomponent:8>*4);
 assemblercomponentEVCapacitor.build();
 

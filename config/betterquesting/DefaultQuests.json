@@ -2214,7 +2214,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "Melting Metal",
+          "name:8": "The Melter",
           "desc:8": "Upgrading your equipment with metal.\n\nPlace the Melter on top of the lava filled tank. Insert 2 gold or clay, then right click the attached faucet to pour it onto a casting table with a tool part, ingot, plate, or gear, to make a cast.\n\n§cThe Melter can only hold one type of liquid at a time!§r\n\n§bThese Tokens can be spent in the Shop chapter.\n\n§5The §5Tier 6 Seed can be converted down at a 1/2 ratio, then back up. Choose wisely!"
         }
       },
@@ -4494,7 +4494,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Fluid Storage",
+          "name:8": "-REMOVED chap 2-",
           "desc:8": "Stores Fluid."
         }
       },
@@ -4502,10 +4502,10 @@
         "0:10": {
           "partialMatch:1": 1,
           "autoConsume:1": 0,
-          "groupDetect:1": 1,
+          "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
+          "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "embers:block_tank",
@@ -5023,7 +5023,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Storing XP",
-          "desc:8": "This handy device allows you to store xp.\n\nDoes not work on a server."
+          "desc:8": "This handy device allows you to store xp.\n\nThe rod is required to store XP on a server."
         }
       },
       "tasks:9": {
@@ -5040,12 +5040,34 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "enderio:item_xp_transfer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:block_travel_anchor",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "47:10": {
       "questID:3": 47,
@@ -7165,7 +7187,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "The Profiling Bench",
-          "desc:8": "§b§rLeft click to change modes, then right click to place whatever item you want processed. The Profiling Bench does not need power.\n\nItems can be piped in and out quite simply, so don\u0027t hesitate to set up a small system for it!\n\nRockhounding can be an intimadating mod! However in this pack it is almost completely optional, with the exception of this and the Metal Alloyer later on.\n\nThe Rockhounding questbook chapter will explain in depth how to get the most out of it.\n"
+          "desc:8": "§b§rLeft click to change modes, then right click to place whatever item you want processed. The Profiling Bench does not need power.\n\nItems can be piped in and out quite simply, so don\u0027t hesitate to set up a small system for it!\n\nRockhounding can be an intimadating mod! However in this pack it is §r§6almost §6completely optional§r, with the exception of this and the Metal Alloyer later on.\n\nThe Rockhounding questbook chapter will explain in depth how to get the most out of it.\n"
         }
       },
       "tasks:9": {
@@ -7253,7 +7275,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Intro to Rockhounding: The Mineral Sizer (2x Ore)",
-          "desc:8": "Simple ore doubling, as well as the start of 8x ore processing!\n\nAssemble these as shown in the guide book, under §6Structures and Machines. The Mineral Sizer is a Tier 2 machine.§r\n\nEach Machine you assemble will need a Power Station, with Fuel and/or RF. Looking at the icons active on the top of the power station GUI will tell you which is needed. Fuel can be either Lava, Syngas, or any burnable item. (This one needs fuel)\n\nPlace 8 of any type §bCrushing Gears§r in the tanks, then crush your ore at the correct level in the Sizer Controller. You will need to remove the result from the Gangue Collecter before you can start the next batch. \n\nThe §f§eServer§r is optional in any multiblock that includes one, so we can ignore it for now.\n\n§dThere is a visualization in the form of a 3D recipe for this machine and a few others. §\n\n\n§cOne thing to note is that some of these machines do not perform well on a server, so it is recomended to use Compact Machines for your processing chain."
+          "desc:8": "Simple ore doubling, as well as the start of 8x ore processing!\n\nAssemble these as shown in the guide book, under §6Structures and Machines. The Mineral Sizer is a Tier 2 machine.§r\n\nEach Machine you assemble will need a Power Station, with Fuel and/or RF. Looking at which icons are blue on the top of the power station GUI will tell you which is needed. Fuel can be either §6Lava§r, §7Syngas§r, or any burnable item. §c(This one needs fuel)§r\n\nPlace 8 of any type §bCrushing Gears§r in the tanks, then crush your ore at the correct level in the Sizer Controller. You will need to remove the result from the Gangue Collecter before you can start the next batch. \n\nThe §f§eServer§r is optional in any multiblock that includes one, so we can ignore it for now.\n\n§dThere is a visualization in the form of a 3D recipe for this machine and a few others. §\n\n\n§cOne thing to note is that some of these machines do not perform well on a server, so it is recomended to use Compact Machines for your processing chain."
         }
       },
       "tasks:9": {
@@ -12920,7 +12942,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Blood Magic",
-          "desc:8": "§d§5Raw Voidstone§r is found in the Beneath.\n\nItems can be piped in and out for basic automation.\n\nRight click anywhere with the §4Inspectoris Scandalum§r to set the Tier, then shift-right click on your altar to show a holographic layout in order to upgrade to that tier.\n\nYou might need a head for the dagger, one option is to place a piece of obsidian along with an ender pearl on a tinkers sword to give it beheading.\n\nTo craft sigils, use the Ashes on a block, then add the ingredients in the order shown.\n\nThe §eDivination Sigil§r is used to get more information on your Blood Altar/LP Network.\n\nUsing the §bSacrificial Dagger§r next to the altar will damage you to fill your altar by a small amount, while hitting mobs next to an altar with the §bDagger of Sacrifice§r will insta-kill them for some blood."
+          "desc:8": "§d§5Raw Voidstone§r is found in the Beneath.\n\nItems can be piped in and out for basic automation.\n\nRight click anywhere with the §4Inspectoris Scandalum§r to set the Tier, then shift-right click on your altar to show a holographic layout in order to upgrade to that tier.\n\nYou might need a head for the dagger, one option is to place a piece of obsidian along with an ender pearl on a tinkers sword to give it beheading.\n\nUsing the §bSacrificial Dagger§r next to the altar will damage you to fill your altar by a small amount, while hitting mobs next to an altar with the §bDagger of Sacrifice§r will insta-kill them for some blood."
         }
       },
       "tasks:9": {
@@ -12945,15 +12967,6 @@
               "id:8": "bloodmagic:sacrificial_dagger",
               "Count:3": 1,
               "tag:10": {},
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bloodmagic:sigil_divination",
-              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -17726,7 +17739,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Learning Trials",
-          "desc:8": "Place this in the center of a 15x15 flat area, and insert a Trail Key."
+          "desc:8": "Place this in the center of a 15x15 flat area, and insert a Attuned Trail Key."
         }
       },
       "tasks:9": {
@@ -18026,7 +18039,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Metal Press",
-          "desc:8": "You can use the hammer on the piston to rotate it, then again once it is in the proper position to complete the Metal Press.\n\nUse a Metal Press Mold on the Metal Press, then drop or pipe items on or into the back convayer block.\n\n"
+          "desc:8": "You can use the hammer on the piston to rotate it, then again once it is in the proper position to complete the Metal Press.\n\nUse a Metal Press Mold on the Metal Press, then drop or pipe items on or into the back convayor block.\n\n"
         }
       },
       "tasks:9": {
@@ -20153,7 +20166,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
@@ -22981,12 +22994,18 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
             "0:10": {
               "id:8": "immersiveengineering:wirecoil",
               "Count:3": 8,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "enderio:item_endergy_conduit",
+              "Count:3": 16,
               "Damage:2": 6,
               "OreDict:8": ""
             }
@@ -23887,13 +23906,19 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
             "0:10": {
               "id:8": "immersiveengineering:wirecoil",
               "Count:3": 8,
               "Damage:2": 7,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "enderio:item_power_conduit",
+              "Count:3": 16,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -32004,7 +32029,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Mana Infused Metal",
-          "desc:8": "No Description"
+          "desc:8": "Crafted in a normal crarfting table."
         }
       },
       "tasks:9": {
@@ -35050,8 +35075,8 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "arcanearchives:storage_shaped_quartz",
-              "Count:3": 1,
+              "id:8": "arcanearchives:shaped_quartz",
+              "Count:3": 2,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -35579,7 +35604,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Automated Alchemy!",
-          "desc:8": "Place both §6§2Alchemical Constructs§r on top of the §7Crucible§r, then splash with your §dSalis Mundus§r. Heat by placing the Nitor below. Rember to unlock the needed research in the §5Thaumonomicon§r.\n\nAttach the §6Empting Transfuser§r to any side of the top block eccept the front. Place an item inside, such as an Inert Ingot, then select the target item. It will start pulling Aspects from nearby filled jars in the direction the §6Empting Transfuser§r is pointing to craft the item!\n\nAttaching a label on a filled jar will only allow that type of Essentia inside from then on.\n\n§8Void Jars§r can be crafted by placing a Jar in the Arcane Workbench, with a Perditio Vis Crystal. They will void excess Essentia, which can be very useful when dealing with byproducts."
+          "desc:8": "Place both §6§2Alchemical Constructs§r on top of the §7Crucible§r, then splash with your §dSalis Mundus§r. Heat by placing the Nitor below. Remember to unlock the needed research in the §5Thaumonomicon§r.\n\nAttach the §6Emptying Transfuser§r to any side of the top block eccept the front. Place an item inside, such as an Inert Ingot, then select the target item. It will start pulling Aspects from nearby filled jars in the direction the §6Emptying Transfuser§r is pointing to craft the item!\n\nAttaching a label on a filled jar will only allow that type of Essentia inside from then on.\n\n§8Void Jars§r can be crafted by placing a Jar in the Arcane Workbench, with a Perditio Vis Crystal. They will void excess Essentia, which can be very useful when dealing with byproducts."
         }
       },
       "tasks:9": {
@@ -38010,7 +38035,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "More Runes",
-          "desc:8": "Displacement Runes allow you to transfer blood to and from external sources faster, while Runes of Capacity allow you to store more blood in the altar."
+          "desc:8": "§9Displacement Runes§r allow you to transfer blood to and from external sources faster, while §6Runes of Capacity §rallow you to store more blood in the altar."
         }
       },
       "tasks:9": {
@@ -38916,7 +38941,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -38933,7 +38958,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:compressed_chrome",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "460:10": {
       "questID:3": 460,
@@ -39198,9 +39236,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "enderutilities:enderpart",
+              "id:8": "enderio:block_travel_anchor",
               "Count:3": 2,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -40062,7 +40100,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Deep Learner",
-          "desc:8": "Kill mobs of the model types inside your Deep Learner to level them up. This can also be used to attune keys to the matching monster, which can then be used to take Trials for resources later."
+          "desc:8": "Kill mobs of the model types inside your Deep Learner to level them up. \n\nThis can also be used to attune keys to the matching monster, which can then be used to take Trials for resources later."
         }
       },
       "tasks:9": {
@@ -40098,20 +40136,14 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 1,
-          "choices:9": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "deepmoblearning:trial_key",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "deepmoblearning:data_model_blank",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -40695,7 +40727,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "advgenerators:turbine_controller",
@@ -45923,7 +45955,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Neutronium",
-          "desc:8": "This is it, Neutronium!"
+          "desc:8": "Neutronium can be collected in two different ways, either by using an Orbital Miner on a space station, or going through Rockhounding and QMD. The second way is much harder, and is only good for bragging rights.\n"
         }
       },
       "tasks:9": {
@@ -48048,6 +48080,123 @@
       }
     },
     "595:10": {
+      "questID:3": 595,
+      "preRequisites:11": [
+        693
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "mekanismgenerators:reactor",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "The Reactor",
+          "desc:8": "This much less complicated Reactor can be used to generate large quantities of steam for burning in your turbine. Check the Wiki for how to assemble and run it."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "mekanismgenerators:reactor",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "mekanismgenerators:reactor",
+              "Count:3": 3,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "mekanismgenerators:reactorglass",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "mekanismgenerators:reactorglass",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "mekanismgenerators:reactor",
+              "Count:3": 57,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanism:machineblock2",
+              "Count:3": 1,
+              "Damage:2": 14,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanism:machineblock2",
+              "Count:3": 4,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanismgenerators:hohlraum",
+              "Count:3": 1,
+              "tag:10": {
+                "mekData:10": {
+                  "stored:10": {
+                    "amount:3": 10,
+                    "gasName:8": "fusionfuel"
+                  }
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "596:10": {
       "questID:3": 596,
       "preRequisites:11": [
         468,
@@ -48112,7 +48261,7 @@
         }
       }
     },
-    "596:10": {
+    "597:10": {
       "questID:3": 597,
       "preRequisites:11": [
         580
@@ -48194,7 +48343,7 @@
         }
       }
     },
-    "597:10": {
+    "598:10": {
       "questID:3": 598,
       "preRequisites:11": [
         17
@@ -48258,7 +48407,7 @@
         }
       }
     },
-    "598:10": {
+    "599:10": {
       "questID:3": 599,
       "preRequisites:11": [
         603
@@ -48321,7 +48470,7 @@
       },
       "rewards:9": {}
     },
-    "599:10": {
+    "600:10": {
       "questID:3": 600,
       "preRequisites:11": [],
       "properties:10": {
@@ -48383,7 +48532,7 @@
         }
       }
     },
-    "600:10": {
+    "601:10": {
       "questID:3": 601,
       "preRequisites:11": [],
       "properties:10": {
@@ -48445,7 +48594,7 @@
         }
       }
     },
-    "601:10": {
+    "602:10": {
       "questID:3": 602,
       "preRequisites:11": [],
       "properties:10": {
@@ -48507,7 +48656,7 @@
         }
       }
     },
-    "602:10": {
+    "603:10": {
       "questID:3": 603,
       "preRequisites:11": [
         604,
@@ -48565,7 +48714,7 @@
       },
       "rewards:9": {}
     },
-    "603:10": {
+    "604:10": {
       "questID:3": 604,
       "preRequisites:11": [
         43
@@ -48628,7 +48777,7 @@
       },
       "rewards:9": {}
     },
-    "604:10": {
+    "605:10": {
       "questID:3": 605,
       "preRequisites:11": [],
       "properties:10": {
@@ -48690,7 +48839,7 @@
         }
       }
     },
-    "605:10": {
+    "606:10": {
       "questID:3": 606,
       "preRequisites:11": [],
       "properties:10": {
@@ -48752,7 +48901,7 @@
         }
       }
     },
-    "606:10": {
+    "607:10": {
       "questID:3": 607,
       "preRequisites:11": [],
       "properties:10": {
@@ -48814,7 +48963,7 @@
         }
       }
     },
-    "607:10": {
+    "608:10": {
       "questID:3": 608,
       "preRequisites:11": [],
       "properties:10": {
@@ -48876,11 +49025,19 @@
         }
       }
     },
-    "608:10": {
+    "609:10": {
       "questID:3": 609,
       "preRequisites:11": [
-        597,
-        12
+        727,
+        763,
+        762,
+        764,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -48928,7 +49085,7 @@
       },
       "rewards:9": {}
     },
-    "609:10": {
+    "610:10": {
       "questID:3": 610,
       "preRequisites:11": [
         55,
@@ -48980,7 +49137,7 @@
       },
       "rewards:9": {}
     },
-    "610:10": {
+    "611:10": {
       "questID:3": 611,
       "preRequisites:11": [],
       "properties:10": {
@@ -49042,7 +49199,7 @@
         }
       }
     },
-    "611:10": {
+    "612:10": {
       "questID:3": 612,
       "preRequisites:11": [],
       "properties:10": {
@@ -49104,7 +49261,7 @@
         }
       }
     },
-    "612:10": {
+    "613:10": {
       "questID:3": 613,
       "preRequisites:11": [],
       "properties:10": {
@@ -49166,7 +49323,7 @@
         }
       }
     },
-    "613:10": {
+    "614:10": {
       "questID:3": 614,
       "preRequisites:11": [],
       "properties:10": {
@@ -49228,7 +49385,7 @@
         }
       }
     },
-    "614:10": {
+    "615:10": {
       "questID:3": 615,
       "preRequisites:11": [],
       "properties:10": {
@@ -49290,7 +49447,7 @@
         }
       }
     },
-    "615:10": {
+    "616:10": {
       "questID:3": 616,
       "preRequisites:11": [],
       "properties:10": {
@@ -49352,7 +49509,7 @@
         }
       }
     },
-    "616:10": {
+    "617:10": {
       "questID:3": 617,
       "preRequisites:11": [],
       "properties:10": {
@@ -49414,7 +49571,7 @@
         }
       }
     },
-    "617:10": {
+    "618:10": {
       "questID:3": 618,
       "preRequisites:11": [],
       "properties:10": {
@@ -49476,7 +49633,7 @@
         }
       }
     },
-    "618:10": {
+    "619:10": {
       "questID:3": 619,
       "preRequisites:11": [],
       "properties:10": {
@@ -49542,7 +49699,7 @@
         }
       }
     },
-    "619:10": {
+    "620:10": {
       "questID:3": 620,
       "preRequisites:11": [
         558
@@ -49593,7 +49750,7 @@
       },
       "rewards:9": {}
     },
-    "620:10": {
+    "621:10": {
       "questID:3": 621,
       "preRequisites:11": [
         558
@@ -49696,7 +49853,7 @@
       },
       "rewards:9": {}
     },
-    "621:10": {
+    "622:10": {
       "questID:3": 622,
       "preRequisites:11": [
         12
@@ -49747,7 +49904,7 @@
       },
       "rewards:9": {}
     },
-    "622:10": {
+    "623:10": {
       "questID:3": 623,
       "preRequisites:11": [],
       "properties:10": {
@@ -49809,7 +49966,7 @@
         }
       }
     },
-    "623:10": {
+    "624:10": {
       "questID:3": 624,
       "preRequisites:11": [],
       "properties:10": {
@@ -49871,7 +50028,7 @@
         }
       }
     },
-    "624:10": {
+    "625:10": {
       "questID:3": 625,
       "preRequisites:11": [],
       "properties:10": {
@@ -49933,7 +50090,7 @@
         }
       }
     },
-    "625:10": {
+    "626:10": {
       "questID:3": 626,
       "preRequisites:11": [
         558
@@ -49984,7 +50141,7 @@
       },
       "rewards:9": {}
     },
-    "626:10": {
+    "627:10": {
       "questID:3": 627,
       "preRequisites:11": [],
       "properties:10": {
@@ -50046,7 +50203,7 @@
         }
       }
     },
-    "627:10": {
+    "628:10": {
       "questID:3": 628,
       "preRequisites:11": [
         558
@@ -50097,7 +50254,7 @@
       },
       "rewards:9": {}
     },
-    "628:10": {
+    "629:10": {
       "questID:3": 629,
       "preRequisites:11": [],
       "properties:10": {
@@ -50159,7 +50316,7 @@
         }
       }
     },
-    "629:10": {
+    "630:10": {
       "questID:3": 630,
       "preRequisites:11": [
         621,
@@ -50227,7 +50384,7 @@
       },
       "rewards:9": {}
     },
-    "630:10": {
+    "631:10": {
       "questID:3": 631,
       "preRequisites:11": [],
       "properties:10": {
@@ -50289,7 +50446,7 @@
         }
       }
     },
-    "631:10": {
+    "632:10": {
       "questID:3": 632,
       "preRequisites:11": [],
       "properties:10": {
@@ -50351,7 +50508,7 @@
         }
       }
     },
-    "632:10": {
+    "633:10": {
       "questID:3": 633,
       "preRequisites:11": [
         558
@@ -50402,7 +50559,7 @@
       },
       "rewards:9": {}
     },
-    "633:10": {
+    "634:10": {
       "questID:3": 634,
       "preRequisites:11": [
         558
@@ -50465,7 +50622,7 @@
       },
       "rewards:9": {}
     },
-    "634:10": {
+    "635:10": {
       "questID:3": 635,
       "preRequisites:11": [],
       "properties:10": {
@@ -50527,7 +50684,7 @@
         }
       }
     },
-    "635:10": {
+    "636:10": {
       "questID:3": 636,
       "preRequisites:11": [],
       "properties:10": {
@@ -50589,7 +50746,7 @@
         }
       }
     },
-    "636:10": {
+    "637:10": {
       "questID:3": 637,
       "preRequisites:11": [],
       "properties:10": {
@@ -50651,7 +50808,7 @@
         }
       }
     },
-    "637:10": {
+    "638:10": {
       "questID:3": 638,
       "preRequisites:11": [],
       "properties:10": {
@@ -50713,7 +50870,7 @@
         }
       }
     },
-    "638:10": {
+    "639:10": {
       "questID:3": 639,
       "preRequisites:11": [],
       "properties:10": {
@@ -50775,7 +50932,7 @@
         }
       }
     },
-    "639:10": {
+    "640:10": {
       "questID:3": 640,
       "preRequisites:11": [],
       "properties:10": {
@@ -50837,7 +50994,7 @@
         }
       }
     },
-    "640:10": {
+    "641:10": {
       "questID:3": 641,
       "preRequisites:11": [],
       "properties:10": {
@@ -50899,7 +51056,7 @@
         }
       }
     },
-    "641:10": {
+    "642:10": {
       "questID:3": 642,
       "preRequisites:11": [],
       "properties:10": {
@@ -50961,7 +51118,7 @@
         }
       }
     },
-    "642:10": {
+    "643:10": {
       "questID:3": 643,
       "preRequisites:11": [],
       "properties:10": {
@@ -51023,7 +51180,7 @@
         }
       }
     },
-    "643:10": {
+    "644:10": {
       "questID:3": 644,
       "preRequisites:11": [],
       "properties:10": {
@@ -51085,7 +51242,7 @@
         }
       }
     },
-    "644:10": {
+    "645:10": {
       "questID:3": 645,
       "preRequisites:11": [],
       "properties:10": {
@@ -51147,7 +51304,7 @@
         }
       }
     },
-    "645:10": {
+    "646:10": {
       "questID:3": 646,
       "preRequisites:11": [],
       "properties:10": {
@@ -51209,7 +51366,7 @@
         }
       }
     },
-    "646:10": {
+    "647:10": {
       "questID:3": 647,
       "preRequisites:11": [],
       "properties:10": {
@@ -51271,7 +51428,7 @@
         }
       }
     },
-    "647:10": {
+    "648:10": {
       "questID:3": 648,
       "preRequisites:11": [],
       "properties:10": {
@@ -51333,7 +51490,7 @@
         }
       }
     },
-    "648:10": {
+    "649:10": {
       "questID:3": 649,
       "preRequisites:11": [],
       "properties:10": {
@@ -51395,7 +51552,7 @@
         }
       }
     },
-    "649:10": {
+    "650:10": {
       "questID:3": 650,
       "preRequisites:11": [],
       "properties:10": {
@@ -51457,7 +51614,7 @@
         }
       }
     },
-    "650:10": {
+    "651:10": {
       "questID:3": 651,
       "preRequisites:11": [],
       "properties:10": {
@@ -51519,7 +51676,7 @@
         }
       }
     },
-    "651:10": {
+    "652:10": {
       "questID:3": 652,
       "preRequisites:11": [],
       "properties:10": {
@@ -51581,7 +51738,7 @@
         }
       }
     },
-    "652:10": {
+    "653:10": {
       "questID:3": 653,
       "preRequisites:11": [],
       "properties:10": {
@@ -51643,7 +51800,7 @@
         }
       }
     },
-    "653:10": {
+    "654:10": {
       "questID:3": 654,
       "preRequisites:11": [],
       "properties:10": {
@@ -51705,7 +51862,7 @@
         }
       }
     },
-    "654:10": {
+    "655:10": {
       "questID:3": 655,
       "preRequisites:11": [],
       "properties:10": {
@@ -51767,7 +51924,7 @@
         }
       }
     },
-    "655:10": {
+    "656:10": {
       "questID:3": 656,
       "preRequisites:11": [],
       "properties:10": {
@@ -51829,7 +51986,7 @@
         }
       }
     },
-    "656:10": {
+    "657:10": {
       "questID:3": 657,
       "preRequisites:11": [],
       "properties:10": {
@@ -51891,7 +52048,7 @@
         }
       }
     },
-    "657:10": {
+    "658:10": {
       "questID:3": 658,
       "preRequisites:11": [],
       "properties:10": {
@@ -51953,7 +52110,7 @@
         }
       }
     },
-    "658:10": {
+    "659:10": {
       "questID:3": 659,
       "preRequisites:11": [],
       "properties:10": {
@@ -52015,7 +52172,7 @@
         }
       }
     },
-    "659:10": {
+    "660:10": {
       "questID:3": 660,
       "preRequisites:11": [],
       "properties:10": {
@@ -52077,7 +52234,7 @@
         }
       }
     },
-    "660:10": {
+    "661:10": {
       "questID:3": 661,
       "preRequisites:11": [],
       "properties:10": {
@@ -52139,7 +52296,7 @@
         }
       }
     },
-    "661:10": {
+    "662:10": {
       "questID:3": 662,
       "preRequisites:11": [
         570
@@ -52243,7 +52400,7 @@
         }
       }
     },
-    "662:10": {
+    "663:10": {
       "questID:3": 663,
       "preRequisites:11": [],
       "properties:10": {
@@ -52305,7 +52462,7 @@
         }
       }
     },
-    "663:10": {
+    "664:10": {
       "questID:3": 664,
       "preRequisites:11": [],
       "properties:10": {
@@ -52367,7 +52524,7 @@
         }
       }
     },
-    "664:10": {
+    "665:10": {
       "questID:3": 665,
       "preRequisites:11": [],
       "properties:10": {
@@ -52429,7 +52586,7 @@
         }
       }
     },
-    "665:10": {
+    "666:10": {
       "questID:3": 666,
       "preRequisites:11": [],
       "properties:10": {
@@ -52491,7 +52648,7 @@
         }
       }
     },
-    "666:10": {
+    "667:10": {
       "questID:3": 667,
       "preRequisites:11": [
         662,
@@ -52589,7 +52746,7 @@
         }
       }
     },
-    "667:10": {
+    "668:10": {
       "questID:3": 668,
       "preRequisites:11": [],
       "properties:10": {
@@ -52651,7 +52808,7 @@
         }
       }
     },
-    "668:10": {
+    "669:10": {
       "questID:3": 669,
       "preRequisites:11": [],
       "properties:10": {
@@ -52713,7 +52870,7 @@
         }
       }
     },
-    "669:10": {
+    "670:10": {
       "questID:3": 670,
       "preRequisites:11": [],
       "properties:10": {
@@ -52775,7 +52932,7 @@
         }
       }
     },
-    "670:10": {
+    "671:10": {
       "questID:3": 671,
       "preRequisites:11": [],
       "properties:10": {
@@ -52837,7 +52994,7 @@
         }
       }
     },
-    "671:10": {
+    "672:10": {
       "questID:3": 672,
       "preRequisites:11": [],
       "properties:10": {
@@ -52899,7 +53056,7 @@
         }
       }
     },
-    "672:10": {
+    "673:10": {
       "questID:3": 673,
       "preRequisites:11": [],
       "properties:10": {
@@ -52961,7 +53118,7 @@
         }
       }
     },
-    "673:10": {
+    "674:10": {
       "questID:3": 674,
       "preRequisites:11": [],
       "properties:10": {
@@ -53023,7 +53180,7 @@
         }
       }
     },
-    "674:10": {
+    "675:10": {
       "questID:3": 675,
       "preRequisites:11": [],
       "properties:10": {
@@ -53085,7 +53242,7 @@
         }
       }
     },
-    "675:10": {
+    "676:10": {
       "questID:3": 676,
       "preRequisites:11": [],
       "properties:10": {
@@ -53147,7 +53304,7 @@
         }
       }
     },
-    "676:10": {
+    "677:10": {
       "questID:3": 677,
       "preRequisites:11": [],
       "properties:10": {
@@ -53209,7 +53366,7 @@
         }
       }
     },
-    "677:10": {
+    "678:10": {
       "questID:3": 678,
       "preRequisites:11": [
         17,
@@ -53280,7 +53437,7 @@
         }
       }
     },
-    "678:10": {
+    "679:10": {
       "questID:3": 679,
       "preRequisites:11": [
         570
@@ -53356,7 +53513,7 @@
         }
       }
     },
-    "679:10": {
+    "680:10": {
       "questID:3": 680,
       "preRequisites:11": [],
       "properties:10": {
@@ -53418,7 +53575,7 @@
         }
       }
     },
-    "680:10": {
+    "681:10": {
       "questID:3": 681,
       "preRequisites:11": [],
       "properties:10": {
@@ -53480,7 +53637,7 @@
         }
       }
     },
-    "681:10": {
+    "682:10": {
       "questID:3": 682,
       "preRequisites:11": [],
       "properties:10": {
@@ -53542,7 +53699,7 @@
         }
       }
     },
-    "682:10": {
+    "683:10": {
       "questID:3": 683,
       "preRequisites:11": [],
       "properties:10": {
@@ -53604,7 +53761,7 @@
         }
       }
     },
-    "683:10": {
+    "684:10": {
       "questID:3": 684,
       "preRequisites:11": [],
       "properties:10": {
@@ -53666,7 +53823,7 @@
         }
       }
     },
-    "684:10": {
+    "685:10": {
       "questID:3": 685,
       "preRequisites:11": [],
       "properties:10": {
@@ -53728,7 +53885,7 @@
         }
       }
     },
-    "685:10": {
+    "686:10": {
       "questID:3": 686,
       "preRequisites:11": [],
       "properties:10": {
@@ -53790,7 +53947,7 @@
         }
       }
     },
-    "686:10": {
+    "687:10": {
       "questID:3": 687,
       "preRequisites:11": [],
       "properties:10": {
@@ -53852,7 +54009,7 @@
         }
       }
     },
-    "687:10": {
+    "688:10": {
       "questID:3": 688,
       "preRequisites:11": [],
       "properties:10": {
@@ -53914,7 +54071,7 @@
         }
       }
     },
-    "688:10": {
+    "689:10": {
       "questID:3": 689,
       "preRequisites:11": [],
       "properties:10": {
@@ -53976,7 +54133,7 @@
         }
       }
     },
-    "689:10": {
+    "690:10": {
       "questID:3": 690,
       "preRequisites:11": [],
       "properties:10": {
@@ -54038,7 +54195,7 @@
         }
       }
     },
-    "690:10": {
+    "691:10": {
       "questID:3": 691,
       "preRequisites:11": [],
       "properties:10": {
@@ -54100,7 +54257,7 @@
         }
       }
     },
-    "691:10": {
+    "692:10": {
       "questID:3": 692,
       "preRequisites:11": [],
       "properties:10": {
@@ -54162,7 +54319,107 @@
         }
       }
     },
-    "692:10": {
+    "693:10": {
+      "questID:3": 693,
+      "preRequisites:11": [
+        468
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "mekanism:machineblock3",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Creating the Fuel",
+          "desc:8": "These are used in the process of collecting Deuterium and Tritium to power your Reactor."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanism:machineblock",
+              "Count:3": 1,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanism:filterupgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanism:machineblock2",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanism:machineblock3",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanism:machineblock",
+              "Count:3": 1,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "694:10": {
       "questID:3": 694,
       "preRequisites:11": [],
       "properties:10": {
@@ -54224,7 +54481,7 @@
         }
       }
     },
-    "693:10": {
+    "695:10": {
       "questID:3": 695,
       "preRequisites:11": [],
       "properties:10": {
@@ -54286,7 +54543,7 @@
         }
       }
     },
-    "694:10": {
+    "696:10": {
       "questID:3": 696,
       "preRequisites:11": [],
       "properties:10": {
@@ -54348,7 +54605,7 @@
         }
       }
     },
-    "695:10": {
+    "697:10": {
       "questID:3": 697,
       "preRequisites:11": [],
       "properties:10": {
@@ -54410,7 +54667,7 @@
         }
       }
     },
-    "696:10": {
+    "698:10": {
       "questID:3": 698,
       "preRequisites:11": [],
       "properties:10": {
@@ -54472,7 +54729,7 @@
         }
       }
     },
-    "697:10": {
+    "699:10": {
       "questID:3": 699,
       "preRequisites:11": [],
       "properties:10": {
@@ -54534,7 +54791,7 @@
         }
       }
     },
-    "698:10": {
+    "700:10": {
       "questID:3": 700,
       "preRequisites:11": [],
       "properties:10": {
@@ -54596,7 +54853,7 @@
         }
       }
     },
-    "699:10": {
+    "701:10": {
       "questID:3": 701,
       "preRequisites:11": [],
       "properties:10": {
@@ -54658,7 +54915,7 @@
         }
       }
     },
-    "700:10": {
+    "702:10": {
       "questID:3": 702,
       "preRequisites:11": [],
       "properties:10": {
@@ -54720,7 +54977,7 @@
         }
       }
     },
-    "701:10": {
+    "703:10": {
       "questID:3": 703,
       "preRequisites:11": [],
       "properties:10": {
@@ -54782,7 +55039,7 @@
         }
       }
     },
-    "702:10": {
+    "704:10": {
       "questID:3": 704,
       "preRequisites:11": [],
       "properties:10": {
@@ -54844,7 +55101,7 @@
         }
       }
     },
-    "703:10": {
+    "705:10": {
       "questID:3": 705,
       "preRequisites:11": [
         761
@@ -54871,7 +55128,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Possible Reactor Design",
-          "desc:8": "This is the design shown when looking at the Fission Controller Multiblock Visualizer.\n\nRecommended to understand the basic Concepts before attempting to build this or your own reactor."
+          "desc:8": "This is the design shown when looking at the Fission Controller Multiblock Visualizer.\n\nRecommended to understand the basic Concepts before attempting to build this or your own reactor.\n\nUse §2LEU 235 Nitride or Oxide§r in this Reactor."
         }
       },
       "tasks:9": {
@@ -54974,7 +55231,7 @@
         }
       }
     },
-    "704:10": {
+    "706:10": {
       "questID:3": 706,
       "preRequisites:11": [],
       "properties:10": {
@@ -55036,7 +55293,7 @@
         }
       }
     },
-    "705:10": {
+    "707:10": {
       "questID:3": 707,
       "preRequisites:11": [],
       "properties:10": {
@@ -55098,7 +55355,7 @@
         }
       }
     },
-    "706:10": {
+    "708:10": {
       "questID:3": 708,
       "preRequisites:11": [
         133
@@ -55174,7 +55431,7 @@
         }
       }
     },
-    "707:10": {
+    "709:10": {
       "questID:3": 709,
       "preRequisites:11": [],
       "properties:10": {
@@ -55236,7 +55493,7 @@
         }
       }
     },
-    "708:10": {
+    "710:10": {
       "questID:3": 710,
       "preRequisites:11": [],
       "properties:10": {
@@ -55298,7 +55555,7 @@
         }
       }
     },
-    "709:10": {
+    "711:10": {
       "questID:3": 711,
       "preRequisites:11": [],
       "properties:10": {
@@ -55360,7 +55617,7 @@
         }
       }
     },
-    "710:10": {
+    "712:10": {
       "questID:3": 712,
       "preRequisites:11": [],
       "properties:10": {
@@ -55422,7 +55679,7 @@
         }
       }
     },
-    "711:10": {
+    "713:10": {
       "questID:3": 713,
       "preRequisites:11": [],
       "properties:10": {
@@ -55484,7 +55741,7 @@
         }
       }
     },
-    "712:10": {
+    "714:10": {
       "questID:3": 714,
       "preRequisites:11": [
         756
@@ -55554,7 +55811,7 @@
         }
       }
     },
-    "713:10": {
+    "715:10": {
       "questID:3": 715,
       "preRequisites:11": [
         716,
@@ -55637,7 +55894,7 @@
         }
       }
     },
-    "714:10": {
+    "716:10": {
       "questID:3": 716,
       "preRequisites:11": [
         717,
@@ -55702,7 +55959,7 @@
         }
       }
     },
-    "715:10": {
+    "717:10": {
       "questID:3": 717,
       "preRequisites:11": [
         732
@@ -55772,13 +56029,70 @@
         }
       }
     },
-    "716:10": {
+    "718:10": {
+      "questID:3": 718,
+      "preRequisites:11": [
+        206
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "bloodmagic:sigil_divination",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Divination Sigil§r",
+          "desc:8": "To craft sigils, use the Ashes on the ground, then add the ingredients in the order shown.\n\nThe §eDivination Sigil§r is used to get more information on your Blood Altar/LP Network."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bloodmagic:sigil_divination",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "719:10": {
       "questID:3": 719,
       "preRequisites:11": [
         715,
-        725,
         728,
-        726
+        726,
+        724
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -55848,6 +56162,12 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "qmd:part",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -55868,7 +56188,7 @@
         }
       }
     },
-    "717:10": {
+    "720:10": {
       "questID:3": 720,
       "preRequisites:11": [
         459
@@ -55932,7 +56252,7 @@
         }
       }
     },
-    "718:10": {
+    "721:10": {
       "questID:3": 721,
       "preRequisites:11": [
         761
@@ -55959,7 +56279,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Automatic Construction",
-          "desc:8": "The §eReactor Builder§r allows you to automatically construct reactors from .json files. You can get these files from the §9Nuclearcraft Discord§r or from the §7Reactor Planner§r. Simply import a file, select your design, and feed the builder power and an inventory full of the right items and it will construct you your very own highly dangerous multiblock!"
+          "desc:8": "The §eReactor Builder§r allows you to automatically construct reactors from .json files. You can get these files from the §9Nuclearcraft Discord§r or from the §7Reactor Planner§r. Simply import a file, select your design, and feed the builder power and an inventory full of the right items and it will construct you your very own Fission Reactor!!"
         }
       },
       "tasks:9": {
@@ -55996,10 +56316,10 @@
         }
       }
     },
-    "719:10": {
+    "722:10": {
       "questID:3": 722,
       "preRequisites:11": [
-        257
+        456
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -56093,11 +56413,10 @@
         }
       }
     },
-    "720:10": {
+    "723:10": {
       "questID:3": 723,
       "preRequisites:11": [
-        456,
-        181
+        456
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -56158,7 +56477,7 @@
         }
       }
     },
-    "721:10": {
+    "724:10": {
       "questID:3": 724,
       "preRequisites:11": [
         723
@@ -56228,11 +56547,9 @@
         }
       }
     },
-    "722:10": {
+    "725:10": {
       "questID:3": 725,
-      "preRequisites:11": [
-        724
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -56254,7 +56571,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "Thermoconducting Coolers",
+          "name:8": "-REMOVED NC-",
           "desc:8": "§2Thermoconducting Alloy§r is used to make the powerful coolers necessary to handle the high heats produced by a particle accelerator. Make sure you can make a bunch of these!"
         }
       },
@@ -56265,7 +56582,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "index:3": 0,
-          "consume:1": 0,
+          "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "nuclearcraft:alloy",
@@ -56298,10 +56615,9 @@
         }
       }
     },
-    "723:10": {
+    "726:10": {
       "questID:3": 726,
       "preRequisites:11": [
-        181,
         722
       ],
       "properties:10": {
@@ -56324,7 +56640,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 1,
+          "ismain:1": 0,
           "name:8": "Niobium",
           "desc:8": "Niobium is a trace element that, while useful, you won\u0027t need in massive quantities. Always make sure to have some on hand, though!"
         }
@@ -56363,11 +56679,61 @@
         }
       }
     },
-    "724:10": {
+    "727:10": {
+      "questID:3": 727,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Glass Shard",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "728:10": {
       "questID:3": 728,
       "preRequisites:11": [
-        722,
-        181
+        722
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -56434,7 +56800,7 @@
         }
       }
     },
-    "725:10": {
+    "729:10": {
       "questID:3": 729,
       "preRequisites:11": [
         730
@@ -56504,7 +56870,7 @@
         }
       }
     },
-    "726:10": {
+    "730:10": {
       "questID:3": 730,
       "preRequisites:11": [
         257
@@ -56568,7 +56934,7 @@
         }
       }
     },
-    "727:10": {
+    "731:10": {
       "questID:3": 731,
       "preRequisites:11": [
         163,
@@ -56639,7 +57005,7 @@
         }
       }
     },
-    "728:10": {
+    "732:10": {
       "questID:3": 732,
       "preRequisites:11": [
         59
@@ -56709,7 +57075,7 @@
         }
       }
     },
-    "729:10": {
+    "733:10": {
       "questID:3": 733,
       "preRequisites:11": [
         719
@@ -56803,7 +57169,7 @@
         }
       }
     },
-    "730:10": {
+    "734:10": {
       "questID:3": 734,
       "preRequisites:11": [
         733
@@ -56939,7 +57305,7 @@
         }
       }
     },
-    "731:10": {
+    "735:10": {
       "questID:3": 735,
       "preRequisites:11": [
         733
@@ -57003,7 +57369,7 @@
         }
       }
     },
-    "732:10": {
+    "736:10": {
       "questID:3": 736,
       "preRequisites:11": [
         761
@@ -57067,7 +57433,7 @@
         }
       }
     },
-    "733:10": {
+    "737:10": {
       "questID:3": 737,
       "preRequisites:11": [
         740
@@ -57138,7 +57504,7 @@
       },
       "rewards:9": {}
     },
-    "734:10": {
+    "738:10": {
       "questID:3": 738,
       "preRequisites:11": [
         740
@@ -57209,7 +57575,7 @@
       },
       "rewards:9": {}
     },
-    "735:10": {
+    "739:10": {
       "questID:3": 739,
       "preRequisites:11": [
         741
@@ -57273,7 +57639,7 @@
         }
       }
     },
-    "736:10": {
+    "740:10": {
       "questID:3": 740,
       "preRequisites:11": [
         741,
@@ -57353,7 +57719,7 @@
         }
       }
     },
-    "737:10": {
+    "741:10": {
       "questID:3": 741,
       "preRequisites:11": [
         734,
@@ -57417,7 +57783,7 @@
       },
       "rewards:9": {}
     },
-    "738:10": {
+    "742:10": {
       "questID:3": 742,
       "preRequisites:11": [
         733
@@ -57468,7 +57834,7 @@
       },
       "rewards:9": {}
     },
-    "739:10": {
+    "743:10": {
       "questID:3": 743,
       "preRequisites:11": [
         740,
@@ -57536,7 +57902,7 @@
       },
       "rewards:9": {}
     },
-    "740:10": {
+    "744:10": {
       "questID:3": 744,
       "preRequisites:11": [
         740,
@@ -57604,7 +57970,7 @@
       },
       "rewards:9": {}
     },
-    "741:10": {
+    "745:10": {
       "questID:3": 745,
       "preRequisites:11": [
         752
@@ -57661,7 +58027,7 @@
       },
       "rewards:9": {}
     },
-    "742:10": {
+    "746:10": {
       "questID:3": 746,
       "preRequisites:11": [
         752
@@ -57718,7 +58084,7 @@
       },
       "rewards:9": {}
     },
-    "743:10": {
+    "747:10": {
       "questID:3": 747,
       "preRequisites:11": [
         735
@@ -57759,7 +58125,7 @@
       },
       "rewards:9": {}
     },
-    "744:10": {
+    "748:10": {
       "questID:3": 748,
       "preRequisites:11": [
         734
@@ -57810,7 +58176,7 @@
       },
       "rewards:9": {}
     },
-    "745:10": {
+    "749:10": {
       "questID:3": 749,
       "preRequisites:11": [
         748,
@@ -57852,7 +58218,7 @@
       },
       "rewards:9": {}
     },
-    "746:10": {
+    "750:10": {
       "questID:3": 750,
       "preRequisites:11": [
         740,
@@ -57894,7 +58260,7 @@
       },
       "rewards:9": {}
     },
-    "747:10": {
+    "751:10": {
       "questID:3": 751,
       "preRequisites:11": [
         468
@@ -57958,7 +58324,7 @@
         }
       }
     },
-    "748:10": {
+    "752:10": {
       "questID:3": 752,
       "preRequisites:11": [
         740
@@ -58096,7 +58462,7 @@
       },
       "rewards:9": {}
     },
-    "749:10": {
+    "753:10": {
       "questID:3": 753,
       "preRequisites:11": [
         397
@@ -58160,7 +58526,7 @@
         }
       }
     },
-    "750:10": {
+    "754:10": {
       "questID:3": 754,
       "preRequisites:11": [
         516
@@ -58260,7 +58626,7 @@
       },
       "rewards:9": {}
     },
-    "751:10": {
+    "755:10": {
       "questID:3": 755,
       "preRequisites:11": [
         401
@@ -58311,7 +58677,7 @@
       },
       "rewards:9": {}
     },
-    "752:10": {
+    "756:10": {
       "questID:3": 756,
       "preRequisites:11": [
         526
@@ -58411,7 +58777,7 @@
         }
       }
     },
-    "753:10": {
+    "757:10": {
       "questID:3": 757,
       "preRequisites:11": [
         17
@@ -58475,7 +58841,7 @@
         }
       }
     },
-    "754:10": {
+    "758:10": {
       "questID:3": 758,
       "preRequisites:11": [
         708
@@ -58557,7 +58923,7 @@
         }
       }
     },
-    "755:10": {
+    "759:10": {
       "questID:3": 759,
       "preRequisites:11": [
         667
@@ -58584,7 +58950,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Reactor Building 102: Heat Sinks",
-          "desc:8": "§9§rThis quest will teach you the intricacies of how to keep §9Heat Sinks§r activated, §7Conductors§r, and about §bActive Moderator Blocks§r.\n\n§9Heat Sinks §rcome in many different varieties, and each one has its own set of rules to be valid. \n\n\nNow the other rules required to ensure active §9Heat Sinks. §r\n\n1. They must start connected to a§6 Fuel Cell§r to be considered active. You\u0027ll want to make sure each §6Fuel Cell§r is connected to the §9Heat Sink§r \"network\", so they all recive enough cooling.\n\n2. Any §9Heat Sinks§r that are not connected by a face to another §9Heat Sink§r will not be active. This can be bypassed by using a §7Conductor§r to connect valid §9Heat Sinks§r.\n\n3. Active §bModerator Blocks§r are those directly adjacent to a §6Fuel Cell§r.\n\n\n\nIf building a reactor for power, you\u0027ll want to match the heat as close as possible to prevent loss of Steam."
+          "desc:8": "§9§rThis quest will teach you the intricacies of how to keep §9Heat Sinks§r activated, §7Conductors§r, and about §bActive Moderator Blocks§r.\n\n§9Heat Sinks §rcome in many different varieties, and each one has its own set of rules to be valid. \n\n\nNow the rules required to ensure active §9Heat Sinks. §r\n\n1. They must start connected to a§6 Fuel Cell§r to be considered active. You\u0027ll want to make sure each §6Fuel Cell§r is connected to the §9Heat Sink§r \"network\", so they all recive enough cooling.\n\n2. Any §9Heat Sinks§r that are not connected by a face to another §9Heat Sink§r will not be active. This can be bypassed by using a §7Conductor§r to connect valid §9Heat Sinks§r.\n\n3. Active §bModerator Blocks§r are those directly adjacent to a §6Fuel Cell§r.\n\n\n\nIf building a reactor for power, you\u0027ll want to match the heat as close as possible to prevent loss of Steam."
         }
       },
       "tasks:9": {
@@ -58621,7 +58987,7 @@
         }
       }
     },
-    "756:10": {
+    "760:10": {
       "questID:3": 760,
       "preRequisites:11": [
         759
@@ -58685,7 +59051,7 @@
         }
       }
     },
-    "757:10": {
+    "761:10": {
       "questID:3": 761,
       "preRequisites:11": [
         679,
@@ -58783,6 +59149,618 @@
             "8:10": {
               "id:8": "nuclearcraft:fission_irradiator_port",
               "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "762:10": {
+      "questID:3": 762,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 11,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Blood Orange",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 11,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "763:10": {
+      "questID:3": 763,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 12,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Vibrant Bimetal Gear",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "764:10": {
+      "questID:3": 764,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Insanium",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "765:10": {
+      "questID:3": 765,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 7,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Control Circuit Board",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "766:10": {
+      "questID:3": 766,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Item Circuit Board",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "767:10": {
+      "questID:3": 767,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Glimmering Dreamwood",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "768:10": {
+      "questID:3": 768,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 9,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Teleportation",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 9,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "769:10": {
+      "questID:3": 769,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 10,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Elite Plating",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 10,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "770:10": {
+      "questID:3": 770,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Liquid Circuit Board",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "771:10": {
+      "questID:3": 771,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Fluix Logic Unit",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "772:10": {
+      "questID:3": 772,
+      "preRequisites:11": [
+        580
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "extendedcrafting:singularity_custom",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "EV Capacitor",
+          "desc:8": "Collect 1000 to create a Singularity."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity_custom",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "773:10": {
+      "questID:3": 773,
+      "preRequisites:11": [
+        59
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "actuallyadditions:block_oil_generator",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Oil Generator",
+          "desc:8": "Using Canola Oil, aquire power!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "actuallyadditions:block_oil_generator",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -59046,7 +60024,7 @@
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -204,
+          "x:3": -192,
           "y:3": 60,
           "id:3": 277,
           "sizeY:3": 24
@@ -59116,7 +60094,7 @@
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": -252,
+          "x:3": -264,
           "y:3": 60,
           "id:3": 306,
           "sizeY:3": 24
@@ -59151,7 +60129,7 @@
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": -114,
+          "x:3": -36,
           "y:3": 144,
           "id:3": 483,
           "sizeY:3": 24
@@ -59165,30 +60143,58 @@
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 144,
-          "id:3": 667,
+          "x:3": 96,
+          "y:3": 180,
+          "id:3": 595,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 174,
-          "id:3": 759,
+          "x:3": -96,
+          "y:3": 144,
+          "id:3": 667,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 204,
-          "id:3": 760,
+          "x:3": 96,
+          "y:3": 144,
+          "id:3": 693,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": -84,
+          "x:3": -96,
+          "y:3": 264,
+          "id:3": 736,
+          "sizeY:3": 24
+        },
+        "28:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": 174,
+          "id:3": 759,
+          "sizeY:3": 24
+        },
+        "29:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": 204,
+          "id:3": 760,
+          "sizeY:3": 24
+        },
+        "30:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
           "y:3": 234,
           "id:3": 761,
+          "sizeY:3": 24
+        },
+        "31:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": 60,
+          "id:3": 773,
           "sizeY:3": 24
         }
       },
@@ -59480,22 +60486,22 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -108,
+          "x:3": -132,
           "y:3": -84,
           "id:3": 60,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 24,
+          "x:3": 72,
+          "y:3": -60,
           "id:3": 131,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": 24,
+          "x:3": 72,
+          "y:3": -108,
           "id:3": 359,
           "sizeY:3": 24
         },
@@ -59509,14 +60515,14 @@
         "4:10": {
           "sizeX:3": 24,
           "x:3": -108,
-          "y:3": -30,
+          "y:3": -12,
           "id:3": 560,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
           "x:3": -108,
-          "y:3": -120,
+          "y:3": -156,
           "id:3": 609,
           "sizeY:3": 24
         },
@@ -59572,29 +60578,113 @@
         "13:10": {
           "sizeX:3": 24,
           "x:3": -144,
-          "y:3": -12,
-          "id:3": 745,
+          "y:3": -120,
+          "id:3": 727,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
           "x:3": -144,
-          "y:3": -48,
-          "id:3": 746,
+          "y:3": 6,
+          "id:3": 745,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": -180,
-          "y:3": -84,
-          "id:3": 751,
+          "x:3": -144,
+          "y:3": -30,
+          "id:3": 746,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": -84,
+          "id:3": 751,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
           "x:3": -180,
-          "y:3": -30,
+          "y:3": -12,
           "id:3": 752,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": -144,
+          "y:3": -156,
+          "id:3": 762,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -120,
+          "id:3": 763,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -156,
+          "id:3": 764,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -120,
+          "id:3": 765,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -156,
+          "id:3": 766,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": -144,
+          "y:3": -192,
+          "id:3": 767,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": -120,
+          "id:3": 768,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": -156,
+          "id:3": 769,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -192,
+          "id:3": 770,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -192,
+          "id:3": 771,
+          "sizeY:3": 24
+        },
+        "28:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": -192,
+          "id:3": 772,
           "sizeY:3": 24
         }
       },
@@ -59705,14 +60795,14 @@
         "12:10": {
           "sizeX:3": 24,
           "x:3": -84,
-          "y:3": -162,
+          "y:3": -156,
           "id:3": 85,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
           "x:3": -120,
-          "y:3": -162,
+          "y:3": -156,
           "id:3": 86,
           "sizeY:3": 24
         },
@@ -59733,7 +60823,7 @@
         "16:10": {
           "sizeX:3": 24,
           "x:3": 30,
-          "y:3": -150,
+          "y:3": -156,
           "id:3": 94,
           "sizeY:3": 24
         },
@@ -59852,7 +60942,7 @@
         "33:10": {
           "sizeX:3": 24,
           "x:3": -84,
-          "y:3": -198,
+          "y:3": -192,
           "id:3": 214,
           "sizeY:3": 24
         },
@@ -59929,14 +61019,14 @@
         "44:10": {
           "sizeX:3": 24,
           "x:3": -108,
-          "y:3": -234,
+          "y:3": -228,
           "id:3": 287,
           "sizeY:3": 24
         },
         "45:10": {
           "sizeX:3": 24,
           "x:3": -60,
-          "y:3": -234,
+          "y:3": -228,
           "id:3": 289,
           "sizeY:3": 24
         },
@@ -61884,321 +62974,307 @@
     "9:10": {
       "quests:9": {
         "0:10": {
-          "sizeX:3": 24,
-          "x:3": 150,
-          "y:3": 96,
-          "id:3": 181,
-          "sizeY:3": 24
-        },
-        "1:10": {
           "sizeX:3": 36,
           "x:3": -30,
           "y:3": -18,
           "id:3": 257,
           "sizeY:3": 36
         },
-        "2:10": {
+        "1:10": {
           "sizeX:3": 24,
           "x:3": 150,
           "y:3": 60,
           "id:3": 456,
           "sizeY:3": 24
         },
-        "3:10": {
+        "2:10": {
           "sizeX:3": 24,
           "x:3": 294,
           "y:3": -84,
           "id:3": 489,
           "sizeY:3": 24
         },
-        "4:10": {
+        "3:10": {
           "sizeX:3": 36,
           "x:3": 744,
           "y:3": -18,
           "id:3": 560,
           "sizeY:3": 36
         },
-        "5:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": 18,
           "y:3": -12,
           "id:3": 570,
           "sizeY:3": 24
         },
-        "6:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": 54,
           "y:3": -12,
           "id:3": 662,
           "sizeY:3": 24
         },
-        "7:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": 90,
           "y:3": -12,
           "id:3": 667,
           "sizeY:3": 24
         },
-        "8:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": 150,
           "y:3": 24,
           "id:3": 679,
           "sizeY:3": 24
         },
-        "9:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": 204,
           "y:3": -48,
           "id:3": 705,
           "sizeY:3": 24
         },
-        "10:10": {
+        "9:10": {
           "sizeX:3": 24,
-          "x:3": 294,
+          "x:3": 312,
           "y:3": -12,
           "id:3": 715,
           "sizeY:3": 24
         },
-        "11:10": {
+        "10:10": {
           "sizeX:3": 24,
-          "x:3": 276,
+          "x:3": 288,
           "y:3": -48,
           "id:3": 716,
           "sizeY:3": 24
         },
-        "12:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": 264,
           "y:3": -84,
           "id:3": 717,
           "sizeY:3": 24
         },
-        "13:10": {
+        "12:10": {
           "sizeX:3": 36,
           "x:3": 378,
           "y:3": -18,
           "id:3": 719,
           "sizeY:3": 36
         },
-        "14:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": -48,
           "id:3": 721,
           "sizeY:3": 24
         },
-        "15:10": {
+        "14:10": {
           "sizeX:3": 24,
-          "x:3": 150,
-          "y:3": 132,
+          "x:3": 228,
+          "y:3": 96,
           "id:3": 722,
           "sizeY:3": 24
         },
-        "16:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": 228,
           "y:3": 60,
           "id:3": 723,
           "sizeY:3": 24
         },
-        "17:10": {
+        "16:10": {
           "sizeX:3": 24,
-          "x:3": 306,
+          "x:3": 312,
           "y:3": 24,
           "id:3": 724,
           "sizeY:3": 24
         },
-        "18:10": {
+        "17:10": {
           "sizeX:3": 24,
-          "x:3": 342,
-          "y:3": -12,
-          "id:3": 725,
-          "sizeY:3": 24
-        },
-        "19:10": {
-          "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": 120,
+          "x:3": 312,
+          "y:3": 84,
           "id:3": 726,
           "sizeY:3": 24
         },
-        "20:10": {
+        "18:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": 90,
+          "x:3": 312,
+          "y:3": 54,
           "id:3": 728,
           "sizeY:3": 24
         },
-        "21:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 54,
           "y:3": -54,
           "id:3": 729,
           "sizeY:3": 24
         },
-        "22:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 18,
           "y:3": -54,
           "id:3": 730,
           "sizeY:3": 24
         },
-        "23:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 90,
           "y:3": -54,
           "id:3": 731,
           "sizeY:3": 24
         },
-        "24:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 426,
           "y:3": -12,
           "id:3": 733,
           "sizeY:3": 24
         },
-        "25:10": {
+        "23:10": {
           "sizeX:3": 36,
           "x:3": 480,
           "y:3": -18,
           "id:3": 734,
           "sizeY:3": 36
         },
-        "26:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 432,
           "y:3": 30,
           "id:3": 735,
           "sizeY:3": 24
         },
-        "27:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 24,
           "id:3": 736,
           "sizeY:3": 24
         },
-        "28:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 576,
           "y:3": 30,
           "id:3": 737,
           "sizeY:3": 24
         },
-        "29:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 540,
           "y:3": 30,
           "id:3": 738,
           "sizeY:3": 24
         },
-        "30:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 564,
           "y:3": -54,
           "id:3": 739,
           "sizeY:3": 24
         },
-        "31:10": {
+        "29:10": {
           "sizeX:3": 36,
           "x:3": 588,
           "y:3": -18,
           "id:3": 740,
           "sizeY:3": 36
         },
-        "32:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 540,
           "y:3": -12,
           "id:3": 741,
           "sizeY:3": 24
         },
-        "33:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 486,
           "y:3": -54,
           "id:3": 742,
           "sizeY:3": 24
         },
-        "34:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 648,
           "y:3": 6,
           "id:3": 743,
           "sizeY:3": 24
         },
-        "35:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 648,
           "y:3": -30,
           "id:3": 744,
           "sizeY:3": 24
         },
-        "36:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 696,
           "y:3": -48,
           "id:3": 745,
           "sizeY:3": 24
         },
-        "37:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 696,
           "y:3": 24,
           "id:3": 746,
           "sizeY:3": 24
         },
-        "38:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 486,
           "y:3": 66,
           "id:3": 747,
           "sizeY:3": 24
         },
-        "39:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 486,
           "y:3": 30,
           "id:3": 748,
           "sizeY:3": 24
         },
-        "40:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 540,
           "y:3": 66,
           "id:3": 749,
           "sizeY:3": 24
         },
-        "41:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 594,
           "y:3": 66,
           "id:3": 750,
           "sizeY:3": 24
         },
-        "42:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 678,
           "y:3": -12,
           "id:3": 752,
           "sizeY:3": 24
         },
-        "43:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 126,
           "y:3": -12,
           "id:3": 759,
           "sizeY:3": 24
         },
-        "44:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 162,
           "y:3": -12,
           "id:3": 760,
           "sizeY:3": 24
         },
-        "45:10": {
+        "43:10": {
           "sizeX:3": 36,
           "x:3": 198,
           "y:3": -18,
@@ -62883,7 +63959,7 @@
         "13:10": {
           "sizeX:3": 24,
           "x:3": 240,
-          "y:3": 6,
+          "y:3": 42,
           "id:3": 206,
           "sizeY:3": 24
         },
@@ -62904,7 +63980,7 @@
         "16:10": {
           "sizeX:3": 24,
           "x:3": 240,
-          "y:3": 42,
+          "y:3": 6,
           "id:3": 211,
           "sizeY:3": 24
         },
@@ -63001,7 +64077,7 @@
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 414,
+          "x:3": 408,
           "y:3": 60,
           "id:3": 329,
           "sizeY:3": 24
@@ -63218,7 +64294,14 @@
         },
         "61:10": {
           "sizeX:3": 24,
-          "x:3": 402,
+          "x:3": 252,
+          "y:3": 84,
+          "id:3": 718,
+          "sizeY:3": 24
+        },
+        "62:10": {
+          "sizeX:3": 24,
+          "x:3": 408,
           "y:3": -18,
           "id:3": 755,
           "sizeY:3": 24
@@ -63919,7 +65002,7 @@
         "55:10": {
           "sizeX:3": 24,
           "x:3": -120,
-          "y:3": -96,
+          "y:3": -108,
           "id:3": 456,
           "sizeY:3": 24
         },
@@ -63982,7 +65065,7 @@
         "64:10": {
           "sizeX:3": 24,
           "x:3": -120,
-          "y:3": -60,
+          "y:3": -72,
           "id:3": 497,
           "sizeY:3": 24
         },
@@ -64022,6 +65105,13 @@
           "sizeY:3": 24
         },
         "70:10": {
+          "sizeX:3": 24,
+          "x:3": -120,
+          "y:3": -36,
+          "id:3": 570,
+          "sizeY:3": 24
+        },
+        "71:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -132,
@@ -64303,21 +65393,21 @@
         },
         "36:10": {
           "sizeX:3": 24,
-          "x:3": 132,
+          "x:3": 126,
           "y:3": -48,
           "id:3": 412,
           "sizeY:3": 24
         },
         "37:10": {
           "sizeX:3": 24,
-          "x:3": 84,
+          "x:3": 90,
           "y:3": -48,
           "id:3": 413,
           "sizeY:3": 24
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": 132,
+          "x:3": 126,
           "y:3": -84,
           "id:3": 414,
           "sizeY:3": 24
@@ -64338,7 +65428,7 @@
         },
         "41:10": {
           "sizeX:3": 24,
-          "x:3": 84,
+          "x:3": 90,
           "y:3": -84,
           "id:3": 417,
           "sizeY:3": 24

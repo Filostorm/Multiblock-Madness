@@ -148,7 +148,7 @@ Crucible.registerRecipe("Alumentum", "",
 furnace.setFuel(<thaumcraft:alumentum>, 6400);
 // runic matrix
 ArcaneWorkbench.removeRecipe(<thaumcraft:infusion_matrix>);
-
+ArcaneWorkbench.registerShapelessRecipe("matrixforresearch", "", 0, [], <thaumcraft:infusion_matrix>, [<thaumcraft:infusion_matrix>]);
 
 //add aspects
     <chisel:voidstone>.setAspects(<aspect:tenebrae> * 10, <aspect:vacuos> * 10, <aspect:ordo> * 10);

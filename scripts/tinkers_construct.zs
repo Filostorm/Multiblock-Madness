@@ -20,6 +20,7 @@ val itemstoRemove =
 	<tinker_io:upg:4>,
 	<tinker_io:upg:2>,
 	<tinker_io:smart_output>,
+	<tcomplement:melter>,
 ]
  as IItemStack[];
 
@@ -63,6 +64,9 @@ recipes.addShaped(<tcomplement:high_oven_controller>, [[<tcomplement:materials:1
 // smeltery controller
 recipes.remove(<tconstruct:smeltery_controller>);
 recipes.addShaped(<tconstruct:smeltery_controller>, [[<tconstruct:materials>, <contenttweaker:activatedaspectuscopper>, <tconstruct:materials>],[<contenttweaker:activatedaspectussilver>, <tcomplement:melter>, <contenttweaker:activatedaspectussilver>], [<tconstruct:materials>, <contenttweaker:activatedaspectuscopper>, <tconstruct:materials>]]);
+
+//Melter
+recipes.addShaped(<tcomplement:melter>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 
 
 

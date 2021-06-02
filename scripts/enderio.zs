@@ -47,6 +47,7 @@ val itemstoRemove =
 <enderio:block_niard>,
 <enderio:item_conduit_facade>,
 <enderio:item_material:2>,
+<enderio:block_travel_anchor>,
 ]
  as IItemStack[];
 
@@ -57,9 +58,11 @@ for item in itemstoRemove {
 //Binder
 <enderio:item_material:22>.displayName = "Universal Binder";
 recipes.addShapedMirrored(<enderio:item_material:22>*8, [[<ore:sand>, <minecraft:clay_ball>, <minecraft:gravel>],[<minecraft:clay_ball>, <enderio:item_material:20>, <minecraft:clay_ball>], [<minecraft:gravel>, <minecraft:clay_ball>, <ore:sand>]]);
-recipes.addShapeless(<embers:blend_caminite>*2, [<enderio:item_material:22>,<enderio:item_material:22>]);
-recipes.addShapeless(<tconstruct:soil>*4, [<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>]);
+recipes.addShapeless(<embers:blend_caminite>*4, [<enderio:item_material:22>,<enderio:item_material:22>]);
+recipes.addShapeless(<tconstruct:soil>*8, [<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>]);
 
+//Travel Anchors
+recipes.addShaped(<enderio:block_travel_anchor>, [[<enderutilities:enderpart>, <enderio:item_material:4>, <enderutilities:enderpart>],[<enderio:item_material:4>, <minecraft:diamond>, <enderio:item_material:4>], [<enderutilities:enderpart>, <enderio:item_material:4>, <enderutilities:enderpart>]]);
 
 
 //4x FAcad

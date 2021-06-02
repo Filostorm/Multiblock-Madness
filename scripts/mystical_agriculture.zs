@@ -103,7 +103,8 @@ recipes.addShaped(<mysticalagriculture:crafting:32>*2, [[null, <mysticalagricult
 
 recipes.addShaped(<quark:marble> * 16, [[<mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>],[<mysticalagriculture:marble_essence>, null, <mysticalagriculture:marble_essence>], [<mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>]]);
 
-
+//Fiery Ingot
+recipes.addShaped(<twilightforest:fiery_ingot>, [[<mysticalagriculture:fiery_ingot_essence>, <mysticalagriculture:fiery_ingot_essence>, <mysticalagriculture:fiery_ingot_essence>],[<mysticalagriculture:fiery_ingot_essence>, null, <mysticalagriculture:fiery_ingot_essence>], [<mysticalagriculture:fiery_ingot_essence>, <mysticalagriculture:fiery_ingot_essence>, <mysticalagriculture:fiery_ingot_essence>]]);
 
 ##########################################################################################
 print("==================== end of mystical agriculture.zs ====================");

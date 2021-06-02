@@ -119,5 +119,7 @@ recipes.addShapeless(<minecraft:wooden_pressure_plate>, [<ore:pressurePlateWood>
 
 
 <ore:oreEnderEssence>.add(<utilitybaseores:ender_ore>);
+
+<ore:blockWarpCoreCore>.add(<techreborn:storage:2>);
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

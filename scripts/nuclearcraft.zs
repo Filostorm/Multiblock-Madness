@@ -19,6 +19,9 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
+
+<nuclearcraft:fission_irradiator>.addTooltip(format.green("Refer to the Nuclear Engineering chapter"));
+
 //sink
 recipes.addShaped(<cookingforblockheads:sink>, [[<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>],[<minecraft:hardened_clay>, <nuclearcraft:water_source_compact>, <minecraft:hardened_clay>], [<minecraft:hardened_clay>, <minecraft:hardened_clay>, <minecraft:hardened_clay>]]);
 
