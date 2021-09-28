@@ -51,6 +51,7 @@ val itemstoRemove =
 <enderio:item_yeta_wrench>,
 <enderio:item_material:68>,
 <enderio:item_material:2>,
+<enderio:block_travel_anchor>,
 ]
  as IItemStack[];
 
