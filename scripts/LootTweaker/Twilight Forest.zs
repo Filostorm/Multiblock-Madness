@@ -4,11 +4,11 @@ import loottweaker.vanilla.loot.LootPool;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded loottweaker
 
-print("==================== loading Loot.zs ====================");
+print("==================== loading TF Loot.zs ====================");
 ##########################################################################################
 
 
-
+/*
 # *======= Variables =======*
 
 	val cyclops_cave = LootTweaker.getTable("iceandfire:cyclops_cave");
@@ -68,7 +68,7 @@ print("==================== loading Loot.zs ====================");
     ice_dragon_male_cave_pool.addItemEntry(item, 3);
 	
 	}
-	
+	*/
 		
 ##########################################################################################
-print("==================== end of Loot.zs ====================");
+print("==================== end of TF Loot.zs ====================");
