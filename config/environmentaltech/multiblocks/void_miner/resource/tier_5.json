@@ -409,6 +409,16 @@
       "target": "white",
       "weight": 6,
       "id": "environmentaltech:mica"
+    },
+    {
+      "target": "white",
+      "weight": 6,
+      "id": "advancedrocketry:moonturf"
+    },
+    {
+      "target": "gray",
+      "weight": 6,
+      "id": "advancedrocketry:moonturf_dark"
     }
   ]
 }

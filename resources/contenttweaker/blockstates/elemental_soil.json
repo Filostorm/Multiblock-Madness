@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "normal": { "model": "contenttweaker:elemental_soil" },
+    "inventory": {"model": "contenttweaker:elemental_soil"}
+  }
+}

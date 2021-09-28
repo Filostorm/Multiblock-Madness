@@ -10,6 +10,10 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.techreborn.implosionCompressor;
 import mods.mekatweaker.InfuserType;
 import mods.mekanism.infuser;
+import mods.nuclearcraft.Melter;
+import mods.tcomplement.highoven.HighOven;
+import mods.tcomplement.Overrides;
+import mods.tconstruct.Melting;
 
 print("==================== loading parts.zs ====================");
 ##########################################################################################
@@ -72,7 +76,7 @@ ArcFurnace.addRecipe(<enderio:item_alloy_ingot>, <thermalfoundation:material:160
 //Red Alloy
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:3>);
 AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:3>);
-ArcFurnace.addRecipe(<enderio:item_alloy_ingot:3>, <enderio:item_alloy_ingot:4>, null, 600, 1024, [<minecraft:redstone>,<nuclearcraft:gem:6>], "Alloying");
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:3>, <enderio:item_alloy_ingot:4>, null, 200, 1024, [<minecraft:redstone>,<nuclearcraft:gem:6>], "Alloying");
 AlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>, [<minecraft:redstone>,<enderio:item_alloy_ingot:4>,<nuclearcraft:gem:6>], 10000, 0.1);
 //AlloyFurnace.addRecipe([<enderio:item_alloy_ingot:4>, <minecraft:redstone>, <nuclearcraft:gem:6>, <enderio:item_alloy_ingot:3>]);
 
@@ -175,7 +179,7 @@ AlloyFurnace.removeRecipeWithOutput(<tconstruct:ingots:2>);
 AlloyFurnace.removeRecipeWithOutput(<tconstruct:metal:2>);
 AlloyFurnace.removeRecipeWithOutput(<tconstruct:nuggets:2>);
 ArcFurnace.removeRecipe(<tconstruct:ingots:2>);
-blastFurnace.addRecipe(<tconstruct:ingots:2>, null, <tconstruct:ingots>, <tconstruct:ingots:1>, 600, 80, 1500);
+blastFurnace.addRecipe(<tconstruct:ingots:2>, null, <tconstruct:ingots>, <tconstruct:ingots:1>, 300, 80, 1500);
 
 //Dawnstone
 //ArcFurnace.addRecipe(<embers:ingot_dawnstone>*2, <minecraft:gold_ingot>*2, null, 500, 4096, [<thermalfoundation:material:128>*2,<minecraft:glowstone_dust>*2,<embers:shard_ember>], "Alloying");
@@ -221,6 +225,32 @@ AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:2>);
 AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>, [<enderio:item_alloy_endergy_ingot:4>, <enderio:item_alloy_ingot:8>,<minecraft:chorus_fruit_popped>], 100000);
 
 
+// Tungsten Carbide 
+AlloyFurnace.removeRecipeWithOutput(<qmd:ingot_alloy>*2);
+AlloyFurnace.addRecipe(<ore:ingotTungsten>, <ore:ingotGraphite>, <qmd:ingot_alloy>*2);
+InductionSmelter.addRecipe(<qmd:ingot_alloy>*2, <techreborn:ingot:15>, <rockhounding_chemistry:metal_items:7>, 40000);
+AlloySmelter.addRecipe(<qmd:ingot_alloy>*2, [<ore:ingotTungsten>, <ore:ingotGraphite>], 40000);
+
+
+// Brass
+InductionSmelter.removeRecipe(<techreborn:dust:59>, <thermalfoundation:material:64>*3); 
+InductionSmelter.removeRecipe(<techreborn:ingot:18>, <thermalfoundation:material:64>*3); 
+InductionSmelter.removeRecipe(<techreborn:ingot:18>, <thermalfoundation:material:128>*3); 
+InductionSmelter.removeRecipe(<techreborn:dust:59>, <thermalfoundation:material:128>*3); 
+ArcFurnace.removeRecipe(<thaumcraft:ingot:2>);
+
+AlloyFurnace.removeRecipeWithOutput(<techreborn:ingot:1>*4);
+
+AlloyFurnace.addRecipe(<ore:ingotCopper>*2, <ore:ingotZinc>, <techreborn:ingot:1>*3);
+InductionSmelter.addRecipe(<techreborn:ingot:1>*3, <thermalfoundation:material:128>*2, <techreborn:ingot:18>, 40000);
+AlloySmelter.addRecipe(<techreborn:ingot:1>*3, [<ore:ingotCopper>*2, <ore:ingotZinc>], 40000);
+
+
+
+// Rose Gold 
+AlloySmelter.addRecipe(<rockhounding_chemistry:alloy_items_deco:4>*4, [<minecraft:gold_ingot>*3, <ore:ingotCopper>,<ore:nuggetSilver>], 20000);
+
+
 //XP Ingot
 val xpMap as int[IItemStack] = {
 <actuallyadditions:item_solidified_experience>:10,
@@ -240,6 +270,38 @@ recipes.addShaped(<contenttweaker:block_xp>,
 [<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>],
 [<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>]]);
 recipes.addShapeless(<contenttweaker:ingot_xp>*9, [<contenttweaker:block_xp>]);
+
+//Refined Obsidian (Finally)
+Melter.removeRecipeWithInput(<mekanism:otherdust:5>);
+Melting.removeRecipe(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
+Overrides.removeRecipe(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
+HighOven.removeMeltingOverride(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
+ArcFurnace.removeRecipe(<mekanism:ingot>);
+
+
+//Refined Iron melting bug
+val ironChestDupe =
+[
+	<ironchest:iron_chest>,
+	<ironchest:wood_iron_chest_upgrade>,
+]
+ as IItemStack[];
+
+for item in ironChestDupe {
+Melting.removeRecipe(<liquid:refined_iron>, item);
+Overrides.removeRecipe(<liquid:refined_iron>, item);
+HighOven.removeMeltingOverride(<liquid:refined_iron>, item);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 val alloystoAdapt =

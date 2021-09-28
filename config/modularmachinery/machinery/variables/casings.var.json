@@ -42,11 +42,30 @@
     ],
     "casings_mixer": [
         "modularmachinery:blockinputbus",
-        "modularmachinery:blockoutputbus",
-        "modularmachinery:blockenergyinputhatch",
-        "modularmachinery:blockfluidinputhatch",
-        "modularmachinery:blockcasing",
-        "modularmachinery:blockfluidoutputhatch"
+        "modularmachinery:blockfluidoutputhatch",
+        "embers:block_caminite_brick",
+        "embers:archaic_bricks",
+        "embers:ashen_brick"
+    ],
+    "casings_mechanical": [
+        "modulardiversity:blockmystmechinput",
+        "embers:sealed_planks"
+    ],
+    "casings_ember": [
+        "modulardiversity:blockemberinputhatch@1",
+        "modulardiversity:blockemberinputhatch@2",
+        "modulardiversity:blockemberinputhatch@3"
+    ],
+
+    "embers_bricks": [
+        "embers:block_caminite_brick",
+        "embers:archaic_bricks",
+        "embers:ashen_brick"
+    ],
+
+    "embers_brick_slabs": [
+        "embers:block_caminite_brick_slab@0",
+        "embers:ashen_brick_slab@0"
     ],
     "casings_item_fluid": [
         "modularmachinery:blockinputbus",
@@ -63,5 +82,10 @@
         "modularmachinery:blockinputbus",
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockcasing@4"
+    ],
+    "crystal_infuser": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modulardiversity:blockmanainputhatch"
     ]
 }

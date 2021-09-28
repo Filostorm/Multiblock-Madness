@@ -1,0 +1,18 @@
+{
+  "path": "vanilla/soils/elemental_soil.json",
+  "enabled": true,
+  "id": "elemental_soil",
+  "name": "Elemental Soil",
+  "varients": [
+    {
+      "item": "contenttweaker:elemental_soil",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}

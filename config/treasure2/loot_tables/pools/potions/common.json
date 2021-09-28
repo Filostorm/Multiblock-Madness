@@ -8,51 +8,51 @@
 				{
 					"entryName": "potion_c1",
 					"type": "item",
-					"name": "minecraft:potion",
+					"name": "bloodmagic:potion_flask",
 					"weight": 1,
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Potion:\"minecraft:regeneration\"}"
+							"tag": "{CustomPotionEffects: [{Ambient: 0 as byte, CurativeItems: [{id: \"minecraft:milk_bucket\", Count: 1 as byte, Damage: 0 as short}], ShowParticles: 1 as byte, Duration: 2400, Id: 13 as byte, Amplifier: 0 as byte}"
 						}
 					]
 				},
 				{
 					"entryName": "potion_c2",
 					"type": "item",
-					"name": "minecraft:potion",
+					"name": "bloodmagic:potion_flask",
 					"weight": 10,
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Potion:\"minecraft:night_vision\"}"
+							"tag": "{CustomPotionEffects: [{Ambient: 0 as byte, CurativeItems: [{id: \"minecraft:milk_bucket\", Count: 1 as byte, Damage: 0 as short}], ShowParticles: 1 as byte, Duration: 1, Id: 6 as byte, Amplifier: 0 as byte}"
 						}
 					]
 				},
 				{
 					"entryName": "potion_c3",
 					"type": "item",
-					"name": "minecraft:potion",
+					"name": "bloodmagic:potion_flask",
 					"weight": 10,
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Potion:\"minecraft:leaping\"}"
+							"tag": "{CustomPotionEffects: [{Ambient: 0 as byte, CurativeItems: [{id: \"minecraft:milk_bucket\", Count: 1 as byte, Damage: 0 as short}], ShowParticles: 1 as byte, Duration: 2400, Id: 1 as byte, Amplifier: 0 as byte}"
 						}
 					]
 				},
 				{
-					"entryName": "potion_c4",
+					"entryName": "potion_c3",
 					"type": "item",
-					"name": "minecraft:potion",
+					"name": "bloodmagic:potion_flask",
 					"weight": 10,
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Potion:\"minecraft:mundane\"}"
+							"tag": "{CustomPotionEffects: [{Ambient: 0 as byte, CurativeItems: [{id: \"minecraft:milk_bucket\", Count: 1 as byte, Damage: 0 as short}], ShowParticles: 1 as byte, Duration: 450, Id: 10 as byte, Amplifier: 0 as byte}"
 						}
 					]
-				}				
+				}			
 			]
 		}
 	]

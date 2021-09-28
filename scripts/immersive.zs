@@ -8,6 +8,7 @@ import mods.immersivepetroleum.Reservoir;
 import crafttweaker.item.IIngredient;
 import mods.thaumcraft.Infusion;
 import mods.immersiveengineering.Blueprint;
+import mods.immersiveengineering.BlastFurnace;
 
 print("--- loading immersive.zs ---");
 	
@@ -25,7 +26,6 @@ val removerecipes =
 <immersiveengineering:metal_device0>,
 <techreborn:part:29>,
 <techreborn:part:30>,
-<jaopca:item_gearthaumium>,
 <immersiveengineering:metal_device1:3>,
 <immersiveengineering:connector:3>,
 <immersiveengineering:connector:2>,
@@ -82,7 +82,7 @@ Excavator.addMineral("Iron", 20, 0, ["oreIron", "oreNickel", "oreTin", "oreUnins
 Excavator.addMineral("Lapis", 15, 0, ["oreLapis", "oreIron", "oreUninspected"], [69, 30, 1], [0, 10]);
 Excavator.addMineral("Magnetite", 15, 0, ["oreIron", "oreGold", "oreUninspected"], [83, 15, 2], [0, 10]);
 Excavator.addMineral("Nickel", 15, 0, ["oreNickel", "orePlatinum", "oreIron", "oreUninspected"], [80, 5, 14, 1], [0, 10]);
-Excavator.addMineral("Platinum", 15, 0.01, ["orePlatinum", "oreNickel", "oreIridium", "oreUninspected"], [64, 26, 9, 1], [0, 10]);
+Excavator.addMineral("Platinum", 15, 0.01, ["orePlatinum", "oreNickel", "oreIridium", "oreUninspected"], [64, 33, 1, 1], [0, 10]);
 Excavator.addMineral("Uranium", 10, 0, ["oreUranium", "oreLead", "oreBoron", "oreThorium", "oreUninspected"], [55, 24, 10, 10, 1], [0, 10]);
 
 //Excavator.addMineral("Lithium", 10, 0, ["oreLithium", "oreMagnesium", "oreUninspected"], [55, 44, 1], [0]);
@@ -101,6 +101,11 @@ Excavator.addMineral("Voidstone", 15, 0, ["oreGold", "oreIron", "oreVoidstone", 
 Excavator.addMineral("Pyrite", 15, 0, ["orePyrite", "oreSphalerite","oreIron", "oreUninspected"], [65, 19, 15, 1], [-1]);
 Excavator.addMineral("Sphalerite", 15, 0, ["oreSphalerite", "orePyrite", "oreIron", "oreUninspected"], [63, 26, 10, 1], [-1]);
 //<ore:oreClathrateGlowstone>
+
+<rockhounding_chemistry:uninspected_mineral>.addTooltip(format.gray("Can also be found in Excavator Veins"));
+<chisel:voidstone>.addTooltip(format.gray("Can also be found in Excavator Veins"));
+
+
 
 /* Moved to Config
 Reservoir.registerReservoir("MoltenGold", <liquid:gold>, 216000, 288000, 144, 60, [], [10], ["none"], ["all"]);
@@ -132,8 +137,11 @@ recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<ore:blockGlassColo
 
 
 recipes.addShaped(<immersiveengineering:metal_decoration0:6> * 2, [[<thermalfoundation:material:352>, <immersiveengineering:wirecoil:1>, <thermalfoundation:material:352>],[<immersiveengineering:wirecoil:1>, <immersiveengineering:metal_device1:2>, <immersiveengineering:wirecoil:1>], [<thermalfoundation:material:352>, <immersiveengineering:wirecoil:1>, <thermalfoundation:material:352>]]);
-recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<thermalfoundation:material:352>, <thebetweenlands:octine_ingot>, <thermalfoundation:material:352>],[<thebetweenlands:octine_ingot>, <minecraft:water_bucket>, <thebetweenlands:octine_ingot>], [<thermalfoundation:material:352>, <thebetweenlands:octine_ingot>, <thermalfoundation:material:352>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<thermalfoundation:material:352>, <contenttweaker:tarred_ingot>, <thermalfoundation:material:352>],[<contenttweaker:tarred_ingot>, <minecraft:water_bucket>, <contenttweaker:tarred_ingot>], [<thermalfoundation:material:352>, <contenttweaker:tarred_ingot>, <thermalfoundation:material:352>]]);
 
+
+//Tar
+furnace.addRecipe(<thermalfoundation:material:833>, <immersivepetroleum:material>, 0.0);
 
 val bloodOrb = [
 	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}),
@@ -153,21 +161,14 @@ val bloodOrbLeast = [
 	bloodOrb[5],
 ] as IIngredient[];
 
-/*
-val heavyGears = [
-	<jaopca:item_gearthaumium>|<jaopca:item_gearsyrmorite>,
-] as IIngredient[];
-*/
-val heavyGears as IIngredient = (<jaopca:item_gearthaumium>|<jaopca:item_gearsyrmorite>) as IIngredient;
+
+val heavyGears as IIngredient = (<mystgears:gear_thaumium>|<moreplates:ironwood_gear>) as IIngredient;
 
 //Heavy Block
 recipes.addShaped(<immersiveengineering:metal_decoration0:5>*3, [
 	[<immersiveengineering:material:9>, <moreplates:cobalt_gear>, <immersiveengineering:material:9>],
 	[heavyGears, bloodOrbLeast[1].reuse(), heavyGears], 
 	[<immersiveengineering:material:9>, <prefab:block_compressed_obsidian>, <immersiveengineering:material:9>]]);
-
-//recipes.addShaped(<immersiveengineering:metal_decoration0:5> * 2, [[<thermalfoundation:material:352>, <immersiveengineering:material:9>, <thermalfoundation:material:352>],[<jaopca:item_gearsyrmorite>, <immersiveengineering:wirecoil:1>, <jaopca:item_gearsyrmorite>], [<thermalfoundation:material:352>, <immersiveengineering:material:9>, <thermalfoundation:material:352>]]);
-//recipes.addShaped(<immersiveengineering:metal_decoration0:5> * 2, [[<thermalfoundation:material:352>, <immersiveengineering:material:9>, <thermalfoundation:material:352>],[<jaopca:item_gearthaumium>, <immersiveengineering:wirecoil:1>, <jaopca:item_gearthaumium>], [<thermalfoundation:material:352>, <immersiveengineering:material:9>, <thermalfoundation:material:352>]]);
 
 //Light block
 recipes.addShaped(<immersiveengineering:metal_decoration0:4>*3, [
@@ -199,19 +200,13 @@ recipes.addShaped(<immersiveengineering:connector:2> * 4, [[null, <enderio:item_
 //Blueprint
 recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "components"}), [[<thermalfoundation:material:164>, <thermalfoundation:material:162>, <thermalfoundation:material:161>],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
 
-recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "circuits"}),[
+recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "Circuits"}),[
 	[<ore:platerefinedIron>, <ore:alloyBasic>, <ore:platerefinedIron>], 
 	[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], 
 	[<ore:paper>, <ore:paper>, <ore:paper>]
 ]);
-Blueprint.addRecipe("circuits", <techreborn:part:29>, [<immersiveengineering:material:27>,<techreborn:plates:35>,<minecraft:redstone>*2,<techreborn:cable:5>*6]);
-Blueprint.addRecipe("circuits", <techreborn:part:30>, [<techreborn:part:29>,<minecraft:redstone>*4,<minecraft:glowstone_dust>*2,<minecraft:dye:4>*2]);
-//Torch Print
-recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "torches"}), [[<minecraft:torch>, <minecraft:dye:4>, <minecraft:torch>],
-[<minecraft:dye:4>, <minecraft:paper>, <minecraft:dye:4>], 
-[<minecraft:torch>, <minecraft:dye:4>, <minecraft:torch>]]);
-Blueprint.addRecipe("torches", <minecraft:torch>*8, [<minecraft:coal>,<ore:stickWood>]);
-Blueprint.addRecipe("torches", <thebetweenlands:sulfur_torch>*8, [<thebetweenlands:items_misc:18>,<ore:stickWood>]);
+Blueprint.addRecipe("Circuits", <techreborn:part:29>, [<immersiveengineering:material:27>,<techreborn:plates:35>,<minecraft:redstone>*2,<techreborn:cable:5>*6]);
+Blueprint.addRecipe("Circuits", <techreborn:part:30>, [<techreborn:part:29>,<minecraft:redstone>*4,<minecraft:glowstone_dust>*2,<minecraft:dye:4>*2]);
 
 //Electrodes
 Blueprint.removeRecipe(<immersiveengineering:graphite_electrode>);
@@ -222,8 +217,8 @@ Infusion.registerRecipe("electrodes", "",
 <immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1 as byte}), 3, 
 [<aspect:machina>*50, <aspect:fabrico>*50, <aspect:ordo>*25], 
 <bloodmagic:slate:2>, 
-[<immersiveengineering:material:19>,<immersivepetroleum:material>, <immersivepetroleum:material>, <immersivepetroleum:material>,<immersivepetroleum:material>,
-<immersiveengineering:material:19>, <immersivepetroleum:material>, <immersivepetroleum:material>, <immersivepetroleum:material>, <immersivepetroleum:material>]);
+[<immersiveengineering:material:19>, <immersivepetroleum:material>, <immersivepetroleum:material>,<immersivepetroleum:material>,
+<immersiveengineering:material:19>, <immersivepetroleum:material>, <immersivepetroleum:material>, <immersivepetroleum:material>]);
 
 
 
@@ -286,11 +281,6 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 
 //mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
 
-mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rod_nimonic>*2, <rockhounding_chemistry:alloy_items_tech:16>, <immersiveengineering:mold:2>, 2000);
-mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rod_scal>*2, <rockhounding_chemistry:alloy_items_tech:4>, <immersiveengineering:mold:2>, 2000);
-mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rod_vanasteel>*2, <rockhounding_chemistry:alloy_items_tech:40>, <immersiveengineering:mold:2>, 2000);
-mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:rod_bam>*2, <rockhounding_chemistry:alloy_items_tech:7>, <immersiveengineering:mold:2>, 2000);
-
 val reuseMold = [
 <immersiveengineering:mold>,
 <immersiveengineering:mold:1>,
@@ -310,7 +300,13 @@ Melting.addRecipe(<liquid:steel> * 720,item);
 recipes.addShaped(<immersiveengineering:metal_device1:3>, [[<thermalfoundation:material:160>, <thermalfoundation:material:160>, <thermalfoundation:material:160>],[<thermalfoundation:material:356>, <immersiveengineering:metal_decoration0:4>, <thermalfoundation:material:356>], [<thermalfoundation:material:356>, <thermalfoundation:material:356>, <thermalfoundation:material:356>]]);
 
 
-mods.immersiveengineering.BlastFurnace.addFuel(<thaumcraft:alumentum>, 7200);
+BlastFurnace.addFuel(<thaumcraft:alumentum>, 7200);
 
+BlastFurnace.addFuel(<mysticalagriculture:coal>, 2400);
+BlastFurnace.addFuel(<mysticalagriculture:coal:1>, 4800);
+BlastFurnace.addFuel(<mysticalagriculture:coal:2>, 9600);
+BlastFurnace.addFuel(<mysticalagriculture:coal:3>, 19200);
+BlastFurnace.addFuel(<mysticalagriculture:coal:4>, 38400);
+BlastFurnace.addFuel(<mysticalagradditions:insanium:5>, 76800);
 
 	print("--- immersive.zs initialized ---");

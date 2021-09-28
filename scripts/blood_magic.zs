@@ -9,6 +9,9 @@ import mods.immersiveengineering.Squeezer;
 import crafttweaker.block.IBlockState;
 import mods.animus.AnimusPlugin;
 import mods.bloodmagic.AlchemyTable;
+import mods.techreborn.compressor;
+import mods.nuclearcraft.Pressurizer;
+import mods.tconstruct.Casting;
 
 
 print("==================== loading blood magic.zs ====================");
@@ -24,12 +27,14 @@ val itemstoRemove =
 	<bloodmagic:soul_forge>,
 	<twilightforest:fiery_ingot>,
 	<tconstruct:soil:3>,
-	<bloodarsenal:glass_shards>,
+//	<bloodarsenal:glass_shards>,
 	<bloodmagic:demon_crucible>,
 	<bloodmagic:demon_pylon>,
 	<bloodmagic:demon_crystallizer>,
 	<twilightforest:fiery_sword>,
 	<bloodmagic:blood_rune>,
+	<bloodmagic:alchemy_table>,
+	<bloodmagic:activation_crystal:1>,
 ]
  as IItemStack[];
 
@@ -37,12 +42,25 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-<thermalfoundation:storage:7>.addTooltip(format.gold("Can be used as a catalyst in the Mark of the Falling Tower ritual"));
-<thermalfoundation:storage:7>.addTooltip(format.darkRed("Requires 5,000,000 LP in your Blood Orb"));
+## MOVED TO TINKERS
+//Limestone Flux
+//mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
+//mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:limestoneforFlux>, <bloodmagic:cutting_fluid:1>], 200,200,1);
+
+<thaumadditions:mithrillium_resonator>.addTooltip(format.gold("Can be used as a catalyst in the Mark of the Falling Tower ritual"));
+<thaumadditions:mithrillium_resonator>.addTooltip(format.darkRed("Requires 5,000,000 LP in your Blood Orb"));
+
 <contenttweaker:starmetal_block>.addTooltip(format.gold("Can be used as a catalyst in the Mark of the Falling Tower ritual"));
 <contenttweaker:starmetal_block>.addTooltip(format.darkRed("Requires 1,000,000 LP in your Blood Orb"));
+<immersiveengineering:storage:5>.addTooltip(format.gold("Can be used as a catalyst in the Mark of the Falling Tower ritual"));
+<immersiveengineering:storage:5>.addTooltip(format.darkRed("Requires 2,500,000 LP in your Blood Orb"));
+
 //Automating Blood
-mods.immersiveengineering.Mixer.addRecipe(<liquid:lifeessence>*1000, <liquid:potion>.withTag({Potion: "minecraft:harming"})*1000, [<botania:manaresource:23>], 1024);
+//mods.immersiveengineering.Mixer.addRecipe(<liquid:lifeessence>*1000, <liquid:potion>.withTag({Potion: "minecraft:harming"})*1000, [<botania:manaresource:23>], 1024);
+//New Blood Recipe
+//mods.immersiveengineering.Mixer.addRecipe(<liquid:lifeessence>*1000, <liquid:refined_life_essence>*250, [<techreborn:dust:6>], 512);
+
+
 Crucible.registerRecipe("BucketLife", "",
     <forge:bucketfilled>.withTag({FluidName: "lifeessence", Amount: 1000}), <minecraft:bucket>,
 	[<aspect:victus> * 10, <aspect:mortuus> * 1, <aspect:auram> * 1]
@@ -71,6 +89,9 @@ val bloodOrbLeast = [
 BloodAltar.removeRecipe(<minecraft:diamond>);
 BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <twilightforest:naga_scale>, 0, 2000, 12, 12);
 
+
+//Casting.addTableRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <twilightforest:naga_scale>, <liquid:blood>, 400, true, 200);
+
 #--------------apprentice blood orb
 BloodAltar.removeRecipe(<minecraft:redstone_block>);
 BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <botania:rune:4>, 1, 5000, 30, 20);
@@ -84,10 +105,11 @@ BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}
 BloodAltar.removeRecipe(<minecraft:glowstone>);
 BloodAltar.addRecipe(<bloodmagic:inscription_tool:6>.withTag({uses: 10}), <embers:block_dawnstone>, 5, 200000, 400, 200);
 
+//Awakened Activation Crystal
+BloodAltar.addRecipe(<bloodmagic:activation_crystal:1>, <actuallyadditions:item_misc:19>, 3, 40000, 200, 100);
+
 
 //dusk inscription
-
-
 mods.thermalexpansion.InductionSmelter.addRecipe(<quark:biotite>, <actuallyadditions:item_misc:5>, <botania:manaresource:15>*8, 5000);
 mods.techreborn.implosionCompressor.addRecipe(<quark:biotite_block>, null, <quark:biotite>*9, <minecraft:tnt>*16, 40, 50000);
 mods.thermalexpansion.Pulverizer.removeRecipe(<quark:biotite_block>);
@@ -100,7 +122,11 @@ BloodAltar.removeRecipe(<minecraft:coal_block>);
 BloodAltar.addRecipe(<bloodmagic:inscription_tool:5>.withTag({uses: 10}), <quark:biotite_block>, 3, 50000, 200, 20);
 
 
-
+//Extra Rune Recipes
+recipes.removeShaped(<bloodmagic:blood_rune:3> * 4, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:stone>, <bloodarsenal:gem:1>, <ore:stone>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
+recipes.removeShaped(<bloodmagic:blood_rune:4> * 4, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:stone>, <bloodarsenal:gem>, <ore:stone>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
+recipes.addShaped(<bloodmagic:blood_rune:4> * 4, [[null, <bloodmagic:blood_rune>, null],[<bloodmagic:blood_rune>, <bloodarsenal:gem>, <bloodmagic:blood_rune>], [null, <bloodmagic:blood_rune>, null]]);
+recipes.addShaped(<bloodmagic:blood_rune:3> * 4, [[null, <bloodmagic:blood_rune>, null],[<bloodmagic:blood_rune>, <bloodarsenal:gem:1>, <bloodmagic:blood_rune>], [null, <bloodmagic:blood_rune>, null]]);
 
 //Blood Bronze
 BloodAltar.addRecipe(<bloodtinker:blood_bronze_ingot>, <thermalfoundation:material:163>, 1, 2000, 12, 12);
@@ -118,32 +144,28 @@ BloodAltar.addRecipe(<bloodtinker:blood_bronze_ingot>, <thermalfoundation:materi
 <bloodmagic:blood_shard>.addTooltip(format.red("Dropped from mobs slain by a Bound Blade"));
 <bloodmagic:soul_snare>.addTooltip(format.red("Use the Sentient Sword to collect will"));
 
+//Hellfire Forge
 recipes.addShaped(<bloodmagic:soul_forge>, [[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>],[<quark:magma_bricks>, <bloodmagic:monster_soul>, <quark:magma_bricks>], [<quark:magma_bricks>, <thaumcraft:pedestal_arcane>, <quark:magma_bricks>]]);
 TartaricForge.removeRecipe([<bloodmagic:soul_gem>.withTag({}), <minecraft:iron_sword>]);
 //TartaricForge.addRecipe(IItemStack output, IItemStack[] inputs, double minSouls, double soulDrain);
 TartaricForge.removeRecipe([<minecraft:bucket>, <minecraft:string>, <minecraft:gunpowder>, <minecraft:string>]);
 TartaricForge.addRecipe(<bloodmagic:component:4>,[<minecraft:bucket>, <minecraft:string>, <minecraft:gunpowder>, <thaumcraft:nugget:7>], 64,10);
 
-<ore:hotStuff>.add(<twilightforest:fiery_tears>);
-<ore:hotStuff>.add(<twilightforest:fiery_blood>);
-<ore:hotStuff>.add(<iceandfire:fire_dragon_blood>);
-recipes.addShapeless(<twilightforest:fiery_ingot>, [<ore:hotStuff>,<thebetweenlands:octine_ingot>]);
 
-
-
-recipes.addShaped(<twilightforest:fiery_sword>, [[null, <twilightforest:fiery_ingot>, null],[null, <twilightforest:fiery_ingot>, null], [null, <minecraft:blaze_rod>, null]]);
+recipes.addShaped(<twilightforest:fiery_sword>.withTag({ench: [{lvl: 2 as short, id: 20 as short}]}), [[null, <twilightforest:fiery_ingot>, null],[null, <twilightforest:fiery_ingot>, null], [null, <minecraft:blaze_rod>, null]]);
 
 mods.thaumcraft.Crucible.registerRecipe("sentient_sword", "",
-    <bloodmagic:sentient_sword>.withTag({ench: [{lvl: 3 as short, id: 21 as short}]}), <twilightforest:fiery_sword>.withTag({ench: [{lvl: 2 as short, id: 20 as short}]}),
+    <bloodmagic:sentient_sword>.withTag({ench: [{lvl: 3 as short, id: 21 as short}, {lvl: 1 as short, id: 70 as short}], RepairCost: 1}), <twilightforest:fiery_sword>.withTag({ench: [{lvl: 2 as short, id: 20 as short}]}),
 	[<aspect:victus> * 30, <aspect:cognitio> * 15, <aspect:infernum> * 30]
 );
 mods.thaumcraft.Crucible.registerRecipe("sacrificial_dagger", "",
-    <bloodmagic:sacrificial_dagger>, <thebetweenlands:bone_sword>,
+    <bloodmagic:sacrificial_dagger>, <twilightforest:steeleaf_sword>.withTag({ench: [{lvl: 2 as short, id: 21 as short}]}),
 	[<aspect:aversio> * 20, <aspect:humanus> * 10, <aspect:mortuus> * 30]
 );
 
+//Zombie Head
 //mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
-mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:skull:2>, [<thaumcraft:brain>, <thaumcraft:flesh_block>], 500,200,0);
+mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:skull:2>, [<thaumcraft:brain>, <thaumcraft:flesh_block>], 500,200,1);
 
 //Binding Reagent
 TartaricForge.removeRecipe([<minecraft:gunpowder>, <minecraft:redstone>, <minecraft:glowstone_dust>, <minecraft:gold_nugget>]);
@@ -151,7 +173,7 @@ TartaricForge.addRecipe(<bloodmagic:component:8>,[<botania:manaresource:23>, <en
 
 //Graveyard/glass combo
 TartaricForge.addRecipe(<tconstruct:soil:3>,[<quark:black_ash>, <tombstone:crafting_ingredient:3>, <randomthings:fertilizeddirt>, <bloodmagic:blood_shard>], 150,20);
-mods.botania.ElvenTrade.addRecipe([<bloodarsenal:glass_shards>], [<bloodmagic:item_demon_crystal:3>,<bloodarsenal:base_item>*9]);
+//mods.botania.ElvenTrade.addRecipe([<bloodarsenal:glass_shards>], [<bloodmagic:item_demon_crystal:3>,<bloodarsenal:base_item>*9]);
 
 //Ash
 TartaricForge.removeRecipe([<minecraft:dye:15>, <minecraft:gunpowder>, <minecraft:redstone>, <minecraft:coal>]);
@@ -228,15 +250,27 @@ Altar.addTraitAltarRecipe("mm:shaped/internal/altar/demon_crucible", <bloodmagic
 recipes.addShaped(<bloodmagic:upgrade_tome>.withTag({level: 0, key: "bloodmagic.upgrade.slippery"}), [[null, <minecraft:ice>, null],[<minecraft:ice>, <bloodmagic:upgrade_tome>.withTag({level: 9, key: "bloodmagic.upgrade.slowness"}).onlyWithTag({level: 9, key: "bloodmagic.upgrade.slowness"}), <minecraft:ice>], [null, <minecraft:ice>, null]]);
 
 //Blank Runes
-Squeezer.addRecipe(<bloodmagic:blood_rune>, <liquid:refined_life_essence>*500, <contenttweaker:slatedust> * 6, 1024);
+Squeezer.addRecipe(<bloodmagic:blood_rune>, <liquid:stone>*1000, <contenttweaker:slatedust> * 4, 256);
+
+compressor.addRecipe(<bloodmagic:blood_rune>, <contenttweaker:slatedust>*4, 600, 50);
+Pressurizer.addRecipe(<contenttweaker:slatedust>*4, <bloodmagic:blood_rune>);
 
 //VOIDSTONE BOIIIIII
-AlchemyTable.addRecipe(<chisel:energizedvoidstone:6> *4, [<botania:thirdeye>,<chisel:energizedvoidstone> * 4], 1000, 100, 2);
+<bloodmagic:sanguine_book>.addTooltip(format.darkPurple("Primal Voidstone Eye is used as the tier 3 Capstones"));
+<chisel:energizedvoidstone:6>.addTooltip(format.darkPurple("Used as the tier 3 Capstones for the Blood Altar"));
+AlchemyTable.addRecipe(<chisel:energizedvoidstone:6> *4, [<botania:thirdeye>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>], 1000, 100, 2);
 AnimusPlugin.removeComponentMapping(<blockstate:minecraft:glowstone>,"GLOWSTONE");
 AnimusPlugin.addComponentMapping(<blockstate:chisel:energizedvoidstone:variation=6>, "GLOWSTONE");
 
 
+//alchemy_table
+recipes.addShaped(<bloodmagic:alchemy_table>, [
+	[<botania:vial>, <moreplates:gold_stick>, <botania:vial>],
+	[<moreplates:gold_stick>, <moreplates:restonia_plate>, <moreplates:gold_stick>], 
+	[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]
+]);
 
+<bloodmagic:ritual_stone:3>.addTooltip(format.green("Use an Earth Inscription Tool on a blank Ritual Stone"));
 
 /*
 val runeUncrafting =

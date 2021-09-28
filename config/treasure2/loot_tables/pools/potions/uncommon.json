@@ -8,60 +8,60 @@
 				{
 					"entryName": "potion_uc1",
 					"type": "item",
-					"name": "minecraft:potion",
+					"name": "botania:brewvial",
 					"weight": 10,
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Potion:\"minecraft:invisibility\"}"
+							"tag": "{brewKey:\"speed\"}"
 						}
 					]
 				},
 				{
 					"entryName": "potion_uc2",
 					"type": "item",
-					"name": "minecraft:potion",
+					"name": "botania:brewvial",
 					"weight": 10,
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Potion:\"minecraft:strength\"}"
+							"tag": "{brewKey:\"strength\"}"
 						}
 					]
 				},
 				{
 					"entryName": "potion_uc3",
 					"type": "item",
-					"name": "minecraft:potion",
+					"name": "botania:brewvial",
 					"weight": 10,
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Potion:\"minecraft:weakness\"}"
+							"tag": "{brewKey:\"haste\"}"
 						}
 					]
 				},
 				{
 					"entryName": "potion_uc4",
 					"type": "item",
-					"name": "minecraft:potion",
+					"name": "botania:brewvial",
 					"weight": 10,
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Potion:\"minecraft:swiftness\"}"
+							"tag": "{brewKey:\"absorption\"}"
 						}
 					]
 				},
 				{
 					"entryName": "potion_uc5",
 					"type": "item",
-					"name": "minecraft:potion",
+					"name": "botania:brewvial",
 					"weight": 10,
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{Potion:\"minecraft:water_breathing\"}"
+							"tag": "{brewKey:\"bloodthirst\"}"
 						}
 					]
 				}

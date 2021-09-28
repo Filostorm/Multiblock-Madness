@@ -48,7 +48,7 @@
 								"max": 3
 							}
 						}
-					]						
+					]					
 				},
 				{
 					"entryName": "emerald",
@@ -79,12 +79,33 @@
 							}
 						}
 					]							
-				},			
+				},
 				{
-					"entryName": "chorus_fruit_popped",
+					"entryName": "compressed_chrome",
 					"type": "item",
-					"name": "minecraft:chorus_fruit_popped",
+					"name": "contenttweaker:compressed_chrome",
 					"weight": 25,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 3,
+								"max": 9
+							}
+						}
+					]
+				},
+				{
+					"entryName": "heat_inductor",
+					"type": "item",
+					"name": "rockhounding_core:heat_inductor",
+					"weight": 20
+				},
+				{
+					"entryName": "overgrowthseed",
+					"type": "item",
+					"name": "botania:overgrowthseed",
+					"weight": 15,
 					"functions": [
 						{
 							"function": "set_count",
@@ -93,7 +114,19 @@
 								"max": 3
 							}
 						}
-					]							
+					]
+				},
+				{
+					"entryName": "t2_craftingseed",
+					"type": "item",
+					"name": "mysticalagriculture:crafting",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 18
+						}
+					]
 				},
 				{
 					"entryName": "skeleton_head",

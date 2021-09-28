@@ -5,12 +5,12 @@
 	"pools": [
 		{
 			"name": "treasure",
-			"rolls": 2,
+			"rolls": 1,
 			"entries": [
                 {
                     "type": "loot_table",
                     "name": "treasure2:pools/treasure/uncommon",
-                    "weight": 30
+                    "weight": 1
                 }
 			]
 		},
@@ -29,13 +29,13 @@
 			"name": "items",
 			"rolls": {
 				"min": 2,
-				"max": 4
+				"max": 15
 			},
 			"entries": [
                 {
                     "type": "loot_table",
                     "name": "treasure2:pools/items/uncommon",
-                    "weight": 1
+                    "weight": 30	
                 }
 			]
 		},
@@ -43,7 +43,7 @@
 			"name": "armor",
 			"rolls": {
 				"min": 0,
-				"max": 2
+				"max": 1
 			},
 			"entries": [
 	                {
@@ -85,7 +85,7 @@
 			"name": "potions",
 			"rolls": {
 				"min": 0,
-				"max": 2
+				"max": 1
 			},
 			"entries": [
 		            {
@@ -95,74 +95,17 @@
                 }
 			]
 		},
-
 		{
 			"name": "common_items",
 			"rolls": {
-				"min": 0,
-				"max": 2
+				"min": 1,
+				"max": 5
 			},
 			"entries": [
                 {
                     "type": "loot_table",
                     "name": "treasure2:pools/items/common",
-                    "weight": 1
-                }
-			]
-		},
-		{
-			"name": "common_armor",
-			"rolls": {
-				"min": 0,
-				"max": 1
-			},
-			"entries": [
-	                {
-                    "type": "loot_table",
-                    "name": "treasure2:pools/armor/common",
-                    "weight": 1
-                }
-			]
-		},
-		{
-			"name": "common_food",
-			"rolls": {
-				"min": 0,
-				"max": 1
-			},
-			"entries": [
-	                {
-                    "type": "loot_table",
-                    "name": "treasure2:pools/food/common",
-                    "weight": 1
-                }
-			]
-		},
-		{
-			"name": "common_tools",
-			"rolls": {
-				"min": 0,
-				"max": 1
-			},
-			"entries": [
-	            {
-                    "type": "loot_table",
-                    "name": "treasure2:pools/tools/common",
-                    "weight": 1
-                }
-			]
-		},
-		{
-			"name": "common_potions",
-			"rolls": {
-				"min": 0,
-				"max": 1
-			},
-			"entries": [
-		            {
-                    "type": "loot_table",
-                    "name": "treasure2:pools/potions/common",
-                    "weight": 1
+                    "weight": 10
                 }
 			]
 		}

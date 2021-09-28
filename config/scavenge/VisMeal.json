@@ -1,0 +1,413 @@
+{
+  "block_pools" :
+  [
+    {
+      "name": "vis_meal_up",
+      "type":
+      {
+        "type": "block",
+        "name": "minecraft:stone",
+        "meta": 0
+      },
+      "disableJEI": false,
+      "clicktype": "rightclick",
+      "properties":
+      [
+        {
+          "type": "require_sneak",
+          "sneak": true
+        },
+        {
+          "type": "require_item",
+          "name": "contenttweaker:vis_meal",
+          "meta": 0
+        },
+        {
+          "type": "consume_item",
+          "amount": 1
+        },
+        {
+          "type": "play_sound",
+          "name": "block.note.chime",
+          "pitch": 0.3,
+          "disableJEI": true
+        },
+        {
+          "type": "spawn_particles",
+          "disableJEI": true,
+          "name": "crit",
+          "amount": "50",
+          "xOffset": 0,
+          "yOffset": 1,
+          "zOffset": 0,
+          "speed": 0.3
+        },
+        {
+          "type": "swing_hand",
+          "disableJEI": true
+        },
+
+      {
+        "type": "conditional_Effect",
+        "disableJEI": true,
+        "condition": {
+            "type": "require_block",
+            "name": "minecraft:air",
+            "sides": "up"
+        },
+        "effects": [{
+                    "type": "modify_required",
+                    "disableJEI": true,
+                    "chance": 10,
+                    "name": "thaumcraft:crystal_aer",
+                    "sides": "up"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_aqua",
+          "sides": "up"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_terra",
+          "sides": "up"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ordo",
+          "sides": "up"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_perditio",
+          "sides": "up"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ignis",
+          "sides": "up"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 1,
+          "name": "thaumcraft:crystal_vitium",
+          "sides": "up"
+        }]
+      },
+
+
+      {
+        "type": "conditional_Effect",
+        "disableJEI": true,
+        "condition": {
+            "type": "require_block",
+            "name": "minecraft:air",
+            "sides": "down"
+        },
+        "effects": [{
+                    "type": "modify_required",
+                    "disableJEI": true,
+                    "chance": 10,
+                    "name": "thaumcraft:crystal_aer",
+                    "sides": "down"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_aqua",
+          "sides": "down"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_terra",
+          "sides": "down"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ordo",
+          "sides": "down"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_perditio",
+          "sides": "down"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ignis",
+          "sides": "down"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 1,
+          "name": "thaumcraft:crystal_vitium",
+          "sides": "down"
+        }]
+      },
+
+
+      {
+        "type": "conditional_Effect",
+        "disableJEI": true,
+        "condition": {
+            "type": "require_block",
+            "name": "minecraft:air",
+            "sides": "north"
+        },
+        "effects": [{
+                    "type": "modify_required",
+                    "disableJEI": true,
+                    "chance": 10,
+                    "name": "thaumcraft:crystal_aer",
+                    "sides": "north"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_aqua",
+          "sides": "north"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_terra",
+          "sides": "north"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ordo",
+          "sides": "north"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_perditio",
+          "sides": "north"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ignis",
+          "sides": "north"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 1,
+          "name": "thaumcraft:crystal_vitium",
+          "sides": "north"
+        }]
+      },
+
+
+      {
+        "type": "conditional_Effect",
+        "disableJEI": true,
+        "condition": {
+            "type": "require_block",
+            "name": "minecraft:air",
+            "sides": "south"
+        },
+        "effects": [{
+                    "type": "modify_required",
+                    "disableJEI": true,
+                    "chance": 10,
+                    "name": "thaumcraft:crystal_aer",
+                    "sides": "south"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_aqua",
+          "sides": "south"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_terra",
+          "sides": "south"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ordo",
+          "sides": "south"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_perditio",
+          "sides": "south"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ignis",
+          "sides": "south"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 1,
+          "name": "thaumcraft:crystal_vitium",
+          "sides": "south"
+        }]
+      },
+
+
+      {
+        "type": "conditional_Effect",
+        "disableJEI": true,
+        "condition": {
+            "type": "require_block",
+            "name": "minecraft:air",
+            "sides": "east"
+        },
+        "effects": [{
+                    "type": "modify_required",
+                    "disableJEI": true,
+                    "chance": 10,
+                    "name": "thaumcraft:crystal_aer",
+                    "sides": "east"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_aqua",
+          "sides": "east"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_terra",
+          "sides": "east"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ordo",
+          "sides": "east"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_perditio",
+          "sides": "east"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ignis",
+          "sides": "east"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 1,
+          "name": "thaumcraft:crystal_vitium",
+          "sides": "east"
+        }]
+      },
+
+
+      {
+        "type": "conditional_Effect",
+        "disableJEI": true,
+        "condition": {
+            "type": "require_block",
+            "name": "minecraft:air",
+            "sides": "west"
+        },
+        "effects": [{
+                    "type": "modify_required",
+                    "disableJEI": true,
+                    "chance": 10,
+                    "name": "thaumcraft:crystal_aer",
+                    "sides": "west"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_aqua",
+          "sides": "west"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_terra",
+          "sides": "west"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ordo",
+          "sides": "west"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_perditio",
+          "sides": "west"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 10.0,
+          "name": "thaumcraft:crystal_ignis",
+          "sides": "west"
+        },
+        {
+          "type": "modify_required",
+          "disableJEI": true,
+          "chance": 1,
+          "name": "thaumcraft:crystal_vitium",
+          "sides": "west"
+        }]
+      }
+
+
+     ]
+    }
+  ]
+}

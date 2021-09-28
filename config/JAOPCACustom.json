@@ -32,5 +32,23 @@
 		"ore_types": [
 			"ingot"
 		]
+	},
+	{
+		"name": "growthcatalyst",
+		"type": "block",
+		"ore_types": [
+			"ingot",
+			"ingot_oreless",
+			"gem"
+		],
+		"properties": {
+			"render_layer": "cutout_mipped",
+			"harvest_tool": "pickaxe",
+			"harvest_level": 2,
+			"light_value": {
+				"function": "constant",
+				"value": 3
+			}
+		}
 	}
 ]

@@ -1,0 +1,19 @@
+{
+    "machine": "assemblermkthree",
+    "adapter": "modularmachinery:assemblermkone",
+    "priority": 2,
+    "modifiers": [
+        {
+            "io": "input",
+            "target": "energy",
+            "operation": 1,
+            "multiplier": 40.0
+        },
+        {
+            "io": "input",
+            "target": "duration",
+            "operation": 1,
+            "multiplier": 0.025
+        }
+    ]
+}

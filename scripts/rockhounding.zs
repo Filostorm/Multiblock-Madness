@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import mods.rockhounding_chemistry.MaterialCabinet;
 import mods.rockhounding_chemistry.Transposer;
+import mods.rockhounding_chemistry.LabBlender;
 
 
 print("==================== loading mods rockhounding.zs ====================");
@@ -27,6 +28,7 @@ mods.enderio.SagMill.addRecipe([<rockhounding_chemistry:chemical_dusts:35>,<ther
 
 <ore:gemFluorite>.add(<rockhounding_chemistry:chemical_items:4>);
 
+//Reinforced Glass
 recipes.addShaped(<rockhounding_chemistry:misc_blocks_a:13>, [[<rockhounding_chemistry:misc_blocks_a>, <minecraft:glass>, <rockhounding_chemistry:misc_blocks_a>],[<minecraft:glass>, null, <minecraft:glass>], [<rockhounding_chemistry:misc_blocks_a>, <minecraft:glass>, <rockhounding_chemistry:misc_blocks_a>]]);
 
 //Fly Ash Balls
@@ -85,6 +87,31 @@ recipes.remove(<rockhounding_chemistry:machines_d:4>);
 recipes.addShaped(<rockhounding_chemistry:machines_d:4>, [[<contenttweaker:casingplatinum>, <rockhounding_chemistry:misc_items:7>, <contenttweaker:casingplatinum>],[<rockhounding_chemistry:misc_items:7>, <techreborn:part:1>, <rockhounding_chemistry:misc_items:7>], [<contenttweaker:casingplatinum>, <rockhounding_chemistry:machines_a:6>, <contenttweaker:casingplatinum>]]);
 
 
+##=======================================================
+##LAB OVEN
+##=======================================================
+##**Note 1: the solute must be always used. Solvent and the Solution cannot be null
+##**Note 2: the catalyst must be a damageable item (any item with a durability).
+//display name: alternative name for the recipe selector. Can be null if not necessary
+//solute stack: the main ingredient (required)
+//catalyst: the damageable ingredient (optional)
+//solvent fluid: the main solvent and its quantity
+//reagent fluid: the secondary solvent and its quantity (optional)
+//solution fluid: the output fluid and its quantity
+//byproduct: the secondary output and its quantity (optional)
+
+/* 
+mods.rockhounding_chemistry.LabOven.add(null, <minecraft:slime_ball>, null, <liquid:water>*500, null, <liquid:sulfuric_acid>*500, <liquid:silicone>*100);
+mods.rockhounding_chemistry.LabOven.add("Silicone Plus", <minecraft:slime_ball>, null, <liquid:water>*500, null, <liquid:sulfuric_acid>*500, <liquid:silicone>*100);
+mods.rockhounding_chemistry.LabOven.add("Silicone Mega", "slimeball", <rockhounding_chemistry:co_catalyst>, <liquid:water>*1000, null, <liquid:sulfuric_acid>*500, <liquid:silicone>*400);
+
+//solute stack: the solute to remove
+mods.rockhounding_chemistry.LabOven.removeByInput(<minecraft:slime_ball>);
+//input oredict: the oredict to remove
+mods.rockhounding_chemistry.LabOven.removeByOredict("slimeball");
+//solution fluid: the solution to remove
+mods.rockhounding_chemistry.LabOven.removeByOutput(<liquid:sulfuric_acid>*1000);
+*/
 
 ##=======================================================
 ##LAB BLENDER
@@ -97,6 +124,12 @@ recipes.addShaped(<rockhounding_chemistry:machines_d:4>, [[<contenttweaker:casin
 //mods.rockhounding_chemistry.LabBlender.add([<minecraft:redstone>*9, <minecraft:gunpowder>*4, <minecraft:glowstone_dust>*2], <minecraft:magma_cream>*9);
 //output stack: the output to remove
 //mods.rockhounding_chemistry.LabBlender.remove(<minecraft:magma_cream>);
+
+//Cracked Lime now takes limestone
+LabBlender.remove(<rockhounding_chemistry:chemical_items:20>);
+LabBlender.add([<quark:limestone>], <rockhounding_chemistry:chemical_items:20>*4);
+
+
 
 
 recipes.addShaped(EletrochemicalCTSR, [[<rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:machines_a:4>, <rockhounding_chemistry:misc_items:7>],[<rockhounding_chemistry:misc_items:8>, <rockhounding_chemistry:misc_items:1>, <rockhounding_chemistry:misc_items:8>], [<rockhounding_chemistry:misc_items:5>, <rockhounding_chemistry:slurry_agitator>, <rockhounding_chemistry:misc_items:5>]]);
@@ -250,7 +283,8 @@ MaterialCabinet.add("Hf", "dustHafnium", "Hafnium");
 //Kanthal
 mods.rockhounding_chemistry.MetalAlloyer.add(["dustIron", "dustChromium", "dustAluminum", "dustSilicon", "dustManganese", "dustCarbon"], [67, 23, 6, 2, 1, 1], <contenttweaker:material_part:5>);
 
-
+//Zircalloy
+mods.rockhounding_chemistry.MetalAlloyer.remove(<rockhounding_chemistry:alloy_items_tech_b:7>);
 
 //Nichrome
 mods.rockhounding_chemistry.MetalAlloyer.remove(<rockhounding_chemistry:alloy_items_tech:22>);
@@ -385,7 +419,7 @@ mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:skull:1>, <quark:soul
 //mods.rockhounding_chemistry.PullingCrucible.add(<quark:soul_powder>, <minecraft:skull:1>, <minecraft:nether_star>);
 //mods.rockhounding_chemistry.PullingCrucible.add(<thermalfoundation:material:1028>, <actuallyadditions:item_crystal_empowered:4>, <environmentaltech:litherite_crystal>);
 
-mods.rockhounding_chemistry.PullingCrucible.add(<rockhounding_chemistry:chemical_items:4>, <techreborn:dust:28>*3, <contenttweaker:lazurite_gem>*3);
+mods.rockhounding_chemistry.PullingCrucible.add(<rockhounding_chemistry:chemical_items:4>, <techreborn:dust:28>, <contenttweaker:lazurite_gem>*3);
 
 //mods.rockhounding_chemistry.PullingCrucible.add("nuggetIron", <minecraft:glowstone_dust>, <minecraft:ghast_tear>);
 //mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:iron_nugget>, "dustGlowstone", <minecraft:ghast_tear>);
@@ -401,54 +435,78 @@ mods.rockhounding_chemistry.PullingCrucible.add(<rockhounding_chemistry:chemical
 //output stack: the output to remove
 //mods.rockhounding_chemistry.PullingCrucible.removeByOutput(<minecraft:ghast_tear>);
 
-val colorName =
+
+val lowColorName =
 [
-<rockhounding_chemistry:sulfate_shards:3>,
-<rockhounding_chemistry:silicate_shards:16>,
-<rockhounding_chemistry:arsenate_shards>,
-<rockhounding_chemistry:arsenate_shards:4>,
-<rockhounding_chemistry:arsenate_shards:3>,
-<rockhounding_chemistry:sulfate_shards:12>,
-<rockhounding_chemistry:chromate_shards:5>,
-<rockhounding_chemistry:carbonate_shards>,
-<rockhounding_chemistry:chromate_shards:4>,
-<rockhounding_chemistry:sulfide_shards:11>,
-<rockhounding_chemistry:sulfide_shards:21>,
-<rockhounding_chemistry:sulfide_shards:22>,
-<rockhounding_chemistry:sulfide_shards:23>,
-<rockhounding_chemistry:oxide_shards:1>,
-<rockhounding_chemistry:sulfide_shards:9>,
-<rockhounding_chemistry:silicate_shards:3>,
-<rockhounding_chemistry:carbonate_shards:3>,
-<rockhounding_chemistry:oxide_shards:13>,
-<rockhounding_chemistry:oxide_shards:3>,
-<rockhounding_chemistry:borate_shards:4>,
-<rockhounding_chemistry:vanadate_shards:2>,
-<rockhounding_chemistry:arsenate_shards:1>,
-<rockhounding_chemistry:oxide_shards:19>,
-<rockhounding_chemistry:sulfate_shards:10>,
-<rockhounding_chemistry:antimonate_shards:4>,
-<rockhounding_chemistry:antimonate_shards:1>,
-<rockhounding_chemistry:native_shards>,
-<rockhounding_chemistry:native_shards:3>,
-<rockhounding_chemistry:phosphate_shards:2>,
 <rockhounding_chemistry:phosphate_shards:14>,
-<rockhounding_chemistry:oxide_shards:9>,
-<rockhounding_chemistry:carbonate_shards:4>,
-<rockhounding_chemistry:silicate_shards:2>,
-<rockhounding_chemistry:oxide_shards:4>,
-<rockhounding_chemistry:silicate_shards:5>,
 <rockhounding_chemistry:halide_shards:3>,
+<rockhounding_chemistry:oxide_shards:3>,
+<rockhounding_chemistry:oxide_shards:13>,
 <rockhounding_chemistry:oxide_shards:27>,
-<rockhounding_chemistry:silicate_shards:10>,
+<rockhounding_chemistry:oxide_shards:19>,
 <rockhounding_chemistry:oxide_shards:25>,
-<rockhounding_chemistry:sulfate_shards:9>,
-<rockhounding_chemistry:sulfide_shards>
+<rockhounding_chemistry:phosphate_shards:10>,
+<rockhounding_chemistry:arsenate_shards:1>,
+<rockhounding_chemistry:arsenate_shards:4>,
+<rockhounding_chemistry:silicate_shards:16>,
+<rockhounding_chemistry:antimonate_shards:1>,
+<rockhounding_chemistry:sulfate_shards:23>,
+<rockhounding_chemistry:sulfide_shards:22>,
+<rockhounding_chemistry:sulfate_shards:9>
 ]
  as IItemStack[];
 
-for item in colorName {
-(item).addTooltip(format.darkGreen("Leachate Shard"));
+for item in lowColorName {
+(item).addTooltip(format.darkGreen("Low-Grade Leachate Shard"));
+}
+
+val mediumColorName =
+[
+<rockhounding_chemistry:sulfate_shards:10>,
+<rockhounding_chemistry:sulfide_shards:21>,
+<rockhounding_chemistry:sulfide_shards>,
+<rockhounding_chemistry:chromate_shards:4>,
+<rockhounding_chemistry:oxide_shards:4>,
+<rockhounding_chemistry:sulfide_shards:11>,
+<rockhounding_chemistry:native_shards:3>,
+<rockhounding_chemistry:sulfide_shards:9>,
+<rockhounding_chemistry:sulfate_shards:3>,
+<rockhounding_chemistry:carbonate_shards:3>,
+<rockhounding_chemistry:oxide_shards:24>,
+<rockhounding_chemistry:oxide_shards:9>,
+<rockhounding_chemistry:borate_shards:4>,
+<rockhounding_chemistry:arsenate_shards:3>,
+<rockhounding_chemistry:antimonate_shards:4>
+]
+ as IItemStack[];
+
+for item in mediumColorName {
+(item).addTooltip(format.darkGreen("Medium-Grade Leachate Shard"));
+}
+
+val highColorName =
+[
+<rockhounding_chemistry:chromate_shards:5>,
+<rockhounding_chemistry:native_shards>,
+<rockhounding_chemistry:silicate_shards:3>,
+<rockhounding_chemistry:carbonate_shards:4>,
+<rockhounding_chemistry:oxide_shards:1>,
+<rockhounding_chemistry:sulfate_shards:12>,
+<rockhounding_chemistry:silicate_shards:5>,
+<rockhounding_chemistry:silicate_shards:18>,
+<rockhounding_chemistry:carbonate_shards>,
+<rockhounding_chemistry:silicate_shards:2>,
+<rockhounding_chemistry:arsenate_shards>,
+<rockhounding_chemistry:oxide_shards:5>,
+<rockhounding_chemistry:silicate_shards:17>,
+<rockhounding_chemistry:vanadate_shards:2>,
+<rockhounding_chemistry:phosphate_shards:2>,
+<rockhounding_chemistry:silicate_shards:10>
+]
+ as IItemStack[];
+
+for item in highColorName {
+(item).addTooltip(format.darkGreen("High-Grade Leachate Shard"));
 }
 ##########################################################################################
 print("==================== end of mods rockhounding.zs ====================");

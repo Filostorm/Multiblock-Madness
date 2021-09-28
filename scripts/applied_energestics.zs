@@ -1,7 +1,9 @@
 import mods.appliedenergistics2.Inscriber;
+import mods.advancedrocketry.Crystallizer;
 import crafttweaker.item.IItemStack;
 import mods.threng.Aggregator;
 import mods.techreborn.blastFurnace;
+import crafttweaker.item.IIngredient;
 
 print("==================== loading applied.zs ====================");
 ##########################################################################################
@@ -22,7 +24,7 @@ val itemstoRemove =
 	<appliedenergistics2:charger>,
 	<appliedenergistics2:io_port>,
 	<appliedenergistics2:spatial_io_port>,
-	<extracells:part.base:7>,
+	<aeadditions:part.base>,
 	<appliedenergistics2:quantum_ring>,
 	<threng:material:4>,
 	<appliedenergistics2:material:52>,
@@ -39,12 +41,27 @@ val itemstoRemove =
 	<appliedenergistics2:part:241>,
 	<appliedenergistics2:part:240>,
 	<appliedenergistics2:fluid_interface>,
+	<appliedenergistics2:part:460>,
+	<appliedenergistics2:material:35>,
 ]
  as IItemStack[];
 
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+
+//Resonating Crystal
+Crystallizer.addRecipe(<threng:material:5>, 100, 5000, <thermalfoundation:material:103>, <botania:manaresource:2>, <threng:material:1>); 
+Crystallizer.addRecipe(<threng:material:5>, 100, 5000, <thermalfoundation:material:103>, <mysticalworld:amethyst_gem>, <threng:material:1>); 
+Aggregator.removeRecipe(<threng:material:5>);
+
+
+//Storage Thingies
+val Certus as IIngredient = (<appliedenergistics2:material:10>|<appliedenergistics2:material>) as IIngredient;
+
+recipes.addShaped(<appliedenergistics2:material:35>, [[<moreplates:redstone_alloy_plate>, Certus, <moreplates:redstone_alloy_plate>],[Certus, <appliedenergistics2:material:22>, Certus], [<moreplates:redstone_alloy_plate>, Certus, <moreplates:redstone_alloy_plate>]]);
+recipes.addShaped(<appliedenergistics2:material:35>*2, [[<moreplates:manyullyn_plate>, Certus, <moreplates:manyullyn_plate>],[Certus, <appliedenergistics2:material:22>, Certus], [<moreplates:manyullyn_plate>, Certus, <moreplates:manyullyn_plate>]]);
+recipes.addShaped(<appliedenergistics2:material:35>*3, [[<jaopca:item_platetungstencarbide>, Certus, <jaopca:item_platetungstencarbide>],[Certus, <appliedenergistics2:material:22>, Certus], [<jaopca:item_platetungstencarbide>, Certus, <jaopca:item_platetungstencarbide>]]);
 
 
 //interface
@@ -63,9 +80,17 @@ recipes.addShapedMirrored(<appliedenergistics2:inscriber>, [[<enderio:item_alloy
 //drives
 recipes.addShaped(<appliedenergistics2:drive>, [[<thermalfoundation:material:324>, <appliedenergistics2:part:16>, <thermalfoundation:material:324>],[<appliedenergistics2:material:24>, null, <appliedenergistics2:material:24>], [<thermalfoundation:material:324>, <appliedenergistics2:part:16>, <thermalfoundation:material:324>]]);
 recipes.addShaped(<appliedenergistics2:drive> * 2, [[<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:part:16>, <rockhounding_chemistry:alloy_parts:10>],[<appliedenergistics2:material:24>, null, <appliedenergistics2:material:24>], [<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:part:16>, <rockhounding_chemistry:alloy_parts:10>]]);
-recipes.addShapeless(<extracells:part.base:7>, [<appliedenergistics2:drive:*>, <thermalfoundation:material:132>,<thermalfoundation:material:132>]);
+recipes.addShapeless(<aeadditions:part.base>, [<appliedenergistics2:drive:*>, <thermalfoundation:material:132>,<thermalfoundation:material:132>]);
 
 recipes.addShaped(<appliedenergistics2:quartz_growth_accelerator>, [[<moreplates:dark_steel_plate>, <appliedenergistics2:part:16>, <moreplates:dark_steel_plate>],[<appliedenergistics2:quartz_glass>, <appliedenergistics2:fluix_block>, <appliedenergistics2:quartz_glass>], [<moreplates:dark_steel_plate>, <appliedenergistics2:part:16>, <moreplates:dark_steel_plate>]]);
+
+//p2p
+val Fluix as IIngredient = (<appliedenergistics2:material:7>|<appliedenergistics2:material:12>) as IIngredient;
+
+recipes.addShaped(<appliedenergistics2:part:460>, [[null, <thermalfoundation:material:324>, null],
+[<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>], 
+[Fluix, Fluix, Fluix]]);
+
 
 //busses
 recipes.addShaped(<appliedenergistics2:part:240>, [[null, <appliedenergistics2:material:44>, null], [<thermalfoundation:material:132>, <minecraft:sticky_piston>, <thermalfoundation:material:132>]]);
@@ -156,10 +181,10 @@ recipes.addShapeless(<appliedenergistics2:part:36>, [<storagenetwork:kabel>, <mi
 mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:22>, 100, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<minecraft:gold_ingot>);
 mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:23>, 100, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<appliedenergistics2:material:10>);
 mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:24>, 100, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<minecraft:diamond>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:6>, 300, 10000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:5>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:14>, 600, 100000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:13>);
+mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:6>, 200, 10000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:5>);
+mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:14>, 1200, 100000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:13>);
 
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:4>, 600, 10000, <threng:material>*4,<appliedenergistics2:material:22>,<appliedenergistics2:material:24>,<rockhounding_chemistry:misc_items:10>);
+mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:4>, 300, 10000, <threng:material>*4,<appliedenergistics2:material:22>,<appliedenergistics2:material:24>,<rockhounding_chemistry:misc_items:10>);
 
 //Lazy Frame
 recipes.addShaped(<threng:big_assembler>*4, [
@@ -230,7 +255,8 @@ recipes.addShaped(<packagedauto:encoder>, [
 
 //Terminal Converting
 recipes.addShaped(<ae2wtlib:infinity_booster_card> * 64, [[<appliedenergistics2:material:9>, <threng:material:6>, <appliedenergistics2:material:9>],[<threng:material:6>, <storagenetwork:remote:1>, <threng:material:6>], [<appliedenergistics2:material:9>, <threng:material:6>, <appliedenergistics2:material:9>]]);
-recipes.addShaped(<ae2wtlib:wut>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote:2>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
+recipes.addShaped(<ae2wtlib:wut>.withTag({StoredTerminals: [{ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "wft:wft", Count: 1 as byte, Damage: 0 as short}, {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "wct:wct", Count: 1 as byte, Damage: 0 as short}], InfinityEnergy: 0, SelectedTerminal: 0, internalCurrentPower: 0.0}), [
+	[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote:2>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
 recipes.addShaped(<wct:wct>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote:3>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
 recipes.addShaped(<appliedenergistics2:wireless_terminal>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
 

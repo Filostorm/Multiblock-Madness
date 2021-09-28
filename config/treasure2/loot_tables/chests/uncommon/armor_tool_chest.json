@@ -5,12 +5,12 @@
 	"pools": [
 		{
 			"name": "treasure",
-			"rolls": 2,
+			"rolls": 1,
 			"entries": [
                 {
                     "type": "loot_table",
                     "name": "treasure2:pools/treasure/uncommon",
-                    "weight": 30
+                    "weight": 1
                 }
 			]
 		},
@@ -29,13 +29,13 @@
 			"name": "items",
 			"rolls": {
 				"min": 2,
-				"max": 4
+				"max": 10
 			},
 			"entries": [
                 {
                     "type": "loot_table",
                     "name": "treasure2:pools/items/uncommon",
-                    "weight": 1
+                    "weight": 30
                 }
 			]
 		},
@@ -57,7 +57,7 @@
 			"name": "food",
 			"rolls": {
 				"min": 0,
-				"max": 2
+				"max": 1
 			},
 			"entries": [
 	                {
@@ -89,7 +89,7 @@
                 {
                     "type": "loot_table",
                     "name": "treasure2:pools/items/common",
-                    "weight": 1
+                    "weight": 10
                 }
 			]
 		},
@@ -97,7 +97,7 @@
 			"name": "common_armor",
 			"rolls": {
 				"min": 0,
-				"max": 2
+				"max": 1
 			},
 			"entries": [
                 {
@@ -125,7 +125,7 @@
 			"name": "common_tools",
 			"rolls": {
 				"min": 0,
-				"max": 2
+				"max": 1
 			},
 			"entries": [
 		                {

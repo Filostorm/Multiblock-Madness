@@ -6,36 +6,6 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"entryName": "arrow",
-					"type": "item",
-					"name": "minecraft:arrow",
-					"weight": 50,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 10,
-								"max": 20
-							}
-						}
-					]						
-				},			
-				{
-					"entryName": "tnt",
-					"type": "item",
-					"name": "minecraft:tnt",
-					"weight": 35,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					]						
-				},
-				{
 					"entryName": "blaze_powder",
 					"type": "item",
 					"name": "minecraft:blaze_powder",
@@ -64,21 +34,6 @@
 							}
 						}
 					]						
-				},				
-				{
-					"entryName": "iron_ingot",
-					"type": "item",
-					"name": "minecraft:iron_ingot",
-					"weight": 20,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 8,
-								"max": 12
-							}
-						}
-					]						
 				},
 				{
 					"entryName": "iron_block",
@@ -102,11 +57,83 @@
 					"weight": 15				
 				},
 				{
-					"entryName": "gunpowder",
+					"entryName": "specter_key",
 					"type": "item",
-					"name": "minecraft:gunpowder",
-					"weight": 20
-				}				
+					"name": "randomthings:spectrekey",
+					"weight": 10			
+				},
+				{
+					"entryName": "cow_jar",
+					"type": "item",
+					"name": "cookingforblockheads:cow_jar",
+					"weight": 10				
+				},
+				{
+					"entryName": "food_step",
+					"type": "item",
+					"name": "cyclicmagic:food_step",
+					"weight": 10			
+				},
+				{
+					"entryName": "specter_key",
+					"type": "item",
+					"name": "demagnetize:demagnetizer_advanced",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 1
+						}
+					]					
+				},
+				{
+					"entryName": "demagnetizer_advanced",
+					"type": "item",
+					"name": "demagnetize:demagnetizer_advanced",
+					"weight": 10			
+				},
+				{
+					"entryName": "worldseed",
+					"type": "item",
+					"name": "botania:worldseed",
+					"weight": 10			
+				},
+				{
+					"entryName": "skydirtrod",
+					"type": "item",
+					"name": "botania:skydirtrod",
+					"weight": 10		
+				},
+				{
+					"entryName": "firerod",
+					"type": "item",
+					"name": "botania:firerod",
+					"weight": 10			
+				},
+				{
+					"entryName": "obsidianskull",
+					"type": "item",
+					"name": "randomthings:obsidianskull",
+					"weight": 10			
+				},
+				{
+					"entryName": "redstoneremote",
+					"type": "item",
+					"name": "randomthings:redstoneremote",
+					"weight": 10			
+				},
+				{
+					"entryName": "advancedredstoneinterface",
+					"type": "item",
+					"name": "randomthings:advancedredstoneinterface",
+					"weight": 10			
+				},
+				{
+					"entryName": "escaperope",
+					"type": "item",
+					"name": "randomthings:escaperope",
+					"weight": 10			
+				}
 			]
 		}
 	]

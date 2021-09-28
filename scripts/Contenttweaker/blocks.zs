@@ -184,3 +184,57 @@ SootBlook.setToolClass("pickaxe");
 SootBlook.setToolLevel(1);
 SootBlook.setBlockSoundType(<soundtype:metal>);
 SootBlook.register();
+
+var advanced_redstone_block = VanillaFactory.createBlock("advanced_redstone_block", <blockmaterial:iron>);
+advanced_redstone_block.setLightValue(0);
+advanced_redstone_block.setBlockHardness(5.0);
+advanced_redstone_block.setBlockResistance(5.0);
+advanced_redstone_block.setToolClass("pickaxe");
+advanced_redstone_block.setToolLevel(2);
+advanced_redstone_block.setBlockSoundType(<soundtype:metal>);
+advanced_redstone_block.register();
+
+var sheetmetalIronwoodBlock = VanillaFactory.createBlock("sheetmetal_ironwood", <blockmaterial:iron>);
+sheetmetalIronwoodBlock.setLightOpacity(3);
+sheetmetalIronwoodBlock.setLightValue(0);
+sheetmetalIronwoodBlock.setBlockHardness(5.0);
+sheetmetalIronwoodBlock.setBlockResistance(5.0);
+sheetmetalIronwoodBlock.setToolClass("pickaxe");
+sheetmetalIronwoodBlock.setToolLevel(1);
+sheetmetalIronwoodBlock.setBlockSoundType(<soundtype:metal>);
+sheetmetalIronwoodBlock.register();
+
+var scaffoldingIronwoodBlock = VanillaFactory.createBlock("ironwood_scaffolding", <blockmaterial:iron>);
+scaffoldingIronwoodBlock.setLightValue(0);
+scaffoldingIronwoodBlock.setBlockHardness(5.0);
+scaffoldingIronwoodBlock.setBlockResistance(5.0);
+scaffoldingIronwoodBlock.setToolClass("pickaxe");
+scaffoldingIronwoodBlock.setToolLevel(1);
+scaffoldingIronwoodBlock.setBlockSoundType(<soundtype:metal>);
+scaffoldingIronwoodBlock.setFullBlock(false);
+scaffoldingIronwoodBlock.setTranslucent(true);
+scaffoldingIronwoodBlock.setBlockLayer("CUTOUT");
+scaffoldingIronwoodBlock.register();
+
+
+var elementalSoilBlock = VanillaFactory.createBlock("elemental_soil", <blockmaterial:ground>);
+elementalSoilBlock.setLightOpacity(3);
+elementalSoilBlock.setLightValue(0);
+elementalSoilBlock.setBlockHardness(2.0);
+elementalSoilBlock.setBlockResistance(2.0);
+elementalSoilBlock.setToolClass("shovel");
+elementalSoilBlock.setToolLevel(1);
+elementalSoilBlock.setBlockSoundType(<soundtype:ground>);
+elementalSoilBlock.register();
+
+/*
+var ironGrowthCatlayst = VanillaFactory.createBlock("iron_growth_catlayst", <blockmaterial:iron>);
+ironGrowthCatlayst.setLightOpacity(3);
+ironGrowthCatlayst.setLightValue(3);
+ironGrowthCatlayst.setBlockHardness(5.0);
+ironGrowthCatlayst.setBlockResistance(5.0);
+ironGrowthCatlayst.setToolClass("pickaxe");
+ironGrowthCatlayst.setToolLevel(1);
+ironGrowthCatlayst.setBlockSoundType(<soundtype:metal>);
+ironGrowthCatlayst.register();
+*/

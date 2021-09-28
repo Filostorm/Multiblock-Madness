@@ -1,0 +1,41 @@
+{
+  "catalystStack": {
+    "registryName": {
+      "domain": "immersiveengineering",
+      "path": "storage"
+    },
+    "meta": 5
+  },
+  "components": [
+    {
+      "weight": 400,
+      "oreName": "oreUranium"
+    },
+    {
+      "weight": 300,
+      "oreName": "oreThorium"
+    },
+    {
+      "weight": 240,
+      "oreName": "oreBoron"
+	
+    },
+    {
+      "weight": 220,
+      "oreName": "oreLithium"
+    },
+    {
+      "weight": 150,
+      "oreName": "oreMagnesium"
+    },
+    {
+      "weight": 80,
+      "oreName": "oreUninspected"
+    }
+  ],
+  "explosionStrength": 13.0,
+  "radius": 6,
+  "maxWeight": 1390,
+  "version": 4,
+  "cost": 2500000
+}

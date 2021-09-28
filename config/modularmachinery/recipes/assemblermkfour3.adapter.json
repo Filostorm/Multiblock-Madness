@@ -1,0 +1,19 @@
+{
+    "machine": "assemblermkfour",
+    "adapter": "modularmachinery:assemblermkthree",
+    "priority": 1,
+    "modifiers": [
+        {
+            "io": "input",
+            "target": "energy",
+            "operation": 1,
+            "multiplier": 8.0
+        },
+        {
+            "io": "input",
+            "target": "duration",
+            "operation": 1,
+            "multiplier": 0.125
+        }
+    ]
+}

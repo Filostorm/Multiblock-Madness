@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.InductionSmelter;
+import mods.botania.ManaInfusion;
 
 print("==================== loading mystical agriculture.zs ====================");
 ##########################################################################################
@@ -21,11 +22,22 @@ val removerecipes =
 <mysticalagriculture:crafting:34>,
 <mysticalagriculture:crafting:35>,
 <mysticalagriculture:crafting:37>,
+<qmd:ingot:7>,
+<qmd:ingot>,
+<qmd:ingot:3>,
+<qmd:ingot:8>,
 ]
 as IItemStack[];
 for item in removerecipes {
     recipes.remove(item);
 }
+
+//Fix ingots
+recipes.addShaped(<mekanism:ingot:1> * 2, [[<mysticalagriculture:osmium_essence>, <mysticalagriculture:osmium_essence>, <mysticalagriculture:osmium_essence>],[<mysticalagriculture:osmium_essence>, null, <mysticalagriculture:osmium_essence>], [<mysticalagriculture:osmium_essence>, <mysticalagriculture:osmium_essence>, <mysticalagriculture:osmium_essence>]]);
+recipes.addShaped(<techreborn:ingot:14>, [[<mysticalagriculture:titanium_essence>, <mysticalagriculture:titanium_essence>, <mysticalagriculture:titanium_essence>],[<mysticalagriculture:titanium_essence>, null, <mysticalagriculture:titanium_essence>], [<mysticalagriculture:titanium_essence>, <mysticalagriculture:titanium_essence>, <mysticalagriculture:titanium_essence>]]);
+recipes.addShaped(<techreborn:ingot:15>, [[<mysticalagriculture:tungsten_essence>, <mysticalagriculture:tungsten_essence>, <mysticalagriculture:tungsten_essence>],[<mysticalagriculture:tungsten_essence>, null, <mysticalagriculture:tungsten_essence>], [<mysticalagriculture:tungsten_essence>, <mysticalagriculture:tungsten_essence>, <mysticalagriculture:tungsten_essence>]]);
+recipes.addShaped(<techreborn:ingot:18> * 4, [[<mysticalagriculture:zinc_essence>, <mysticalagriculture:zinc_essence>, <mysticalagriculture:zinc_essence>],[<mysticalagriculture:zinc_essence>, null, <mysticalagriculture:zinc_essence>], [<mysticalagriculture:zinc_essence>, <mysticalagriculture:zinc_essence>, <mysticalagriculture:zinc_essence>]]);
+
 
 //seeds
 /*
@@ -53,6 +65,7 @@ recipes.addShapeless(<mysticalagriculture:crafting:21> * 2, [<mysticalagradditio
 
 
 <mysticalagradditions:insanium:1>.addTooltip(format.darkPurple("Collected as a Chapter 1 quest reward"));
+<mysticalagradditions:insanium:1>.addTooltip(format.gold("Craftable"));
 <mysticalagriculture:crafting:17>.addTooltip(format.red("Uncraftable"));
 <mysticalagriculture:crafting:18>.addTooltip(format.red("Uncraftable"));
 <mysticalagriculture:crafting:19>.addTooltip(format.red("Uncraftable"));
@@ -70,7 +83,7 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
 
 			<ebwizardry:astral_diamond>, <ebwizardry:grand_crystal>, <ebwizardry:astral_diamond>,
 
-			<ebwizardry:grand_crystal>, <astralsorcery:itemcelestialcrystal>, <ebwizardry:grand_crystal>,
+			<ebwizardry:grand_crystal>, <ore:CelestialCrystal>, <ebwizardry:grand_crystal>,
 
 			<ebwizardry:astral_diamond>, <ebwizardry:grand_crystal>, <ebwizardry:astral_diamond>,
 
@@ -103,7 +116,16 @@ recipes.addShaped(<mysticalagriculture:crafting:32>*2, [[null, <mysticalagricult
 
 recipes.addShaped(<quark:marble> * 16, [[<mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>],[<mysticalagriculture:marble_essence>, null, <mysticalagriculture:marble_essence>], [<mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>, <mysticalagriculture:marble_essence>]]);
 
+//Fiery Ingot
+recipes.addShaped(<twilightforest:fiery_ingot>, [[<mysticalagriculture:fiery_ingot_essence>, <mysticalagriculture:fiery_ingot_essence>, <mysticalagriculture:fiery_ingot_essence>],[<mysticalagriculture:fiery_ingot_essence>, null, <mysticalagriculture:fiery_ingot_essence>], [<mysticalagriculture:fiery_ingot_essence>, <mysticalagriculture:fiery_ingot_essence>, <mysticalagriculture:fiery_ingot_essence>]]);
 
+
+//Coal is made with coke
+recipes.removeShapeless(<mysticalagriculture:coal>, [<minecraft:coal>, <mysticalagriculture:crafting>, <mysticalagriculture:crafting>]);
+recipes.addShapeless(<mysticalagriculture:coal>, [<immersiveengineering:material:6>,<mysticalagriculture:crafting>,<mysticalagriculture:crafting>]);
+
+
+ManaInfusion.addAlchemy(<mysticalagriculture:crafting:5>, <fossil:pottery_shard>, 10000);
 
 ##########################################################################################
 print("==================== end of mystical agriculture.zs ====================");

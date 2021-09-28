@@ -22,6 +22,7 @@ val itemstoRemove =
 	<cyclicmagic:block_anvil>,
 	<cyclicmagic:block_user>,
 	<cyclicmagic:block_miner_smart>,
+	<cyclicmagic:auto_packager>,
 ]
  as IItemStack[];
 
@@ -61,6 +62,8 @@ val itemstoRemoveandHide =
 for item in itemstoRemoveandHide {
 	mods.jei.JEI.removeAndHide(item);
 }
+
+//Melter etc
 recipes.addShaped(<cyclicmagic:solidifier>, [
 	[<ore:plateSteel>, <embers:stamper>, <ore:plateSteel>], 
 	[<ore:dustCryotheum>, null, <ore:dustCryotheum>], 
@@ -72,16 +75,20 @@ recipes.addShaped(<cyclicmagic:melter>, [
 	[<ore:plateSteel>, <techreborn:dynamiccell>, <ore:plateSteel>]
 ]);
 
+//Packager
+recipes.addShaped(<cyclicmagic:auto_packager>, [[<ore:dyeLightBlue>, <embers:archaic_circuit>, <ore:dyeLightBlue>],[<ore:craftingTableWood>, <thermalexpansion:frame:64>, <ore:craftingTableWood>], [<ore:dyeLightBlue>, <embers:archaic_circuit>, <ore:dyeLightBlue>]]);
+
+//Builder
 recipes.addShaped(<cyclicmagic:builder_pattern>, [[<moreplates:redstone_alloy_plate>, <ore:blockGlassHardened>, <moreplates:redstone_alloy_plate>],[<actuallyadditions:item_crystal:2>, <enderio:item_material>, <actuallyadditions:item_crystal:2>], [<moreplates:redstone_alloy_plate>, <ore:blockGlassHardened>, <moreplates:redstone_alloy_plate>]]);
 
 //anvil
 recipes.addShaped(<cyclicmagic:block_anvil>, [[<actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:2>],[<advgenerators:iron_wiring>, <ore:circuitAdvanced>, <advgenerators:iron_wiring>], [<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>]]);
 
-
-ManaInfusion.addInfusion(<cyclicmagic:glowing_chorus>,<minecraft:chorus_fruit>,10000);
+//Chorus
+ManaInfusion.addAlchemy(<cyclicmagic:glowing_chorus>,<minecraft:chorus_fruit>,20000);
 BloodAltar.addRecipe(<cyclicmagic:corrupted_chorus>, <minecraft:chorus_fruit>, 3, 5000, 25, 25);
 
-
+//Users Things
 recipes.addShaped(<cyclicmagic:block_user>, [[<moreplates:energetic_alloy_plate>, <rockhounding_chemistry:misc_items:10>, <moreplates:energetic_alloy_plate>],[<ore:circuitBasic>, <enderio:item_material>, <ore:circuitBasic>], [<moreplates:energetic_alloy_plate>, <moreplates:energetic_silver_gear>, <moreplates:energetic_alloy_plate>]]);
 recipes.addShaped(<cyclicmagic:block_miner_smart>, [[<moreplates:energetic_silver_plate>, <rockhounding_chemistry:misc_items:10>, <moreplates:energetic_silver_plate>],[<ore:circuitBasic>, <enderio:item_material>, <ore:circuitBasic>], [<moreplates:energetic_silver_plate>, <moreplates:energetic_alloy_gear>, <moreplates:energetic_silver_plate>]]);
 

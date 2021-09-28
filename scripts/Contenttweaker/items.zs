@@ -16,7 +16,18 @@ VanillaFactory.createItem("rod_vanasteel").register();
 VanillaFactory.createItem("rod_nimonic").register();
 VanillaFactory.createItem("greatwood_handle").register();
 VanillaFactory.createItem("slatedust").register();
+VanillaFactory.createItem("vis_meal").register();
 
+VanillaFactory.createItem("rod_ironwood").register();
+VanillaFactory.createItem("noon_ingot").register();
+VanillaFactory.createItem("tarred_ingot").register();
+
+VanillaFactory.createItem("stable_celestial_crystal").register();
+VanillaFactory.createItem("terrestrial_crystal").register();
+VanillaFactory.createItem("dun_crystal").register();
+VanillaFactory.createItem("falling_tower").register();
+
+/*
 VanillaFactory.createItem("adventure_token_tier1").register();
 VanillaFactory.createItem("exploring_token_tier1").register();
 VanillaFactory.createItem("mining_token_tier1").register();
@@ -41,12 +52,24 @@ VanillaFactory.createItem("mining_token_tier4").register();
 VanillaFactory.createItem("tech_token_tier4").register();
 VanillaFactory.createItem("magic_token_tier4").register();
 
-
 VanillaFactory.createItem("adventure_token_tier5").register();
 VanillaFactory.createItem("exploring_token_tier5").register();
 VanillaFactory.createItem("mining_token_tier5").register();
 VanillaFactory.createItem("tech_token_tier5").register();
 VanillaFactory.createItem("magic_token_tier5").register();
+*/
+
+
+VanillaFactory.createItem("token_tier1").register();
+VanillaFactory.createItem("token_tier2").register();
+VanillaFactory.createItem("token_tier3").register();
+VanillaFactory.createItem("token_tier4").register();
+VanillaFactory.createItem("token_tier5").register();
+VanillaFactory.createItem("token_tier6").register();
+VanillaFactory.createItem("token_tier7").register();
+VanillaFactory.createItem("token_tier8").register();
+
+
 
 VanillaFactory.createItem("terrasteel_coil").register();
 VanillaFactory.createItem("blood_crystal").register();
@@ -66,6 +89,10 @@ VanillaFactory.createItem("purpleprint").register();
 VanillaFactory.createItem("ingot_xp").register();
 VanillaFactory.createItem("compressed_chrome").register();
 VanillaFactory.createItem("lazurite_gem").register();
+VanillaFactory.createItem("limestone_flux").register();
+VanillaFactory.createItem("pristine_dust").register();
+
+
 
 var activatedaspectuscopper = VanillaFactory.createItem("activatedaspectuscopper");
 activatedaspectuscopper.maxStackSize = 1;

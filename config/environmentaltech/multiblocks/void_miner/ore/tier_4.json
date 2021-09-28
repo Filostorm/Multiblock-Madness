@@ -394,6 +394,11 @@
       "target": "cyan",
       "weight": 200,
       "id": "OD:oreSheldonite"
+    },
+    {
+      "target": "cyan",
+      "weight": 100,
+      "id": "OD:oreSodalite"
     }
   ]
 }

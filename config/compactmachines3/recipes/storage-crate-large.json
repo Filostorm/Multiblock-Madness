@@ -6,7 +6,7 @@
   "target-item": "actuallyadditions:block_giant_chest_large",
   "target-count": 1,
 
-  "duration": 200,
+  "duration": 150,
   "symmetrical": true,
 
   "catalyst": "minecraft:chest",

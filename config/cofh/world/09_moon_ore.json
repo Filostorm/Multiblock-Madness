@@ -1,0 +1,239 @@
+{
+	"populate": {
+		"iridium_moon": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "mekanism:oreblock",
+						"properties": {
+							"type": "osmium"
+						},
+						"weight": 20
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "platinum"
+						},
+						"weight": 20
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "iridium"
+						},
+						"weight": 60
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 25
+			},
+			"cluster-count": 1,
+			"chunk-chance": 4,
+			"min-height": 0,
+			"max-height": 40,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					3
+				]
+			}
+		},
+		"aluminum_moon": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {	
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "aluminum"
+						},
+						"weight": 19
+					},
+					{
+						"name": "techreborn:ore",
+						"properties": {
+							"type": "bauxite"
+						},
+						"weight": 1
+					},
+					{
+						"name": "libvulpes:ore0",
+						"properties": {
+							"varient": "8"
+						},
+						"weight": 80
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 1,
+			"chunk-chance": 1,
+			"min-height": 0,
+			"max-height": 100,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					3
+				]
+			}
+		},
+		"gems_moon": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {	
+				"block": [
+					{
+						"name": "densemetals:dense_diamond_ore",
+						"weight": 15
+					},
+					{
+						"name": "chisel:energizedvoidstone",
+						"properties": {
+							"variation": "0"
+						},
+						"weight": 15
+					},
+					{
+						"name": "ebwizardry:crystal_ore",
+						"weight": 15
+					},
+					{
+						"name": "mysticalworld:amethyst_ore",
+						"weight": 55
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 1,
+			"chunk-chance": 1,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					3
+				]
+			}
+		},
+		"dark_moon_geode1": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"type": "geode",
+				"block": "appliedenergistics2:sky_stone_block",
+				"crust": "appliedenergistics2:sky_stone_block",
+				"hollow": true,
+				"filler": [
+					{
+						"name": "actuallyadditions:block_misc",
+						"properties": {
+							"type": "black_quartz"
+						},
+						"weight": 15
+					},
+					{
+						"name": "fluxnetworks:fluxblock",
+						"weight": 15
+					},
+					{
+						"name": "thaumcraft:metal_void",
+						"weight": 15
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 15
+			},
+			"cluster-count": 1,
+			"chunk-chance": 1,
+			"min-height": 0,
+			"max-height": 100,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					3
+				]
+			}
+		},
+		"moon_spike1": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"type": "stalagmite",
+				"block": [
+					{
+						"name": "thaumcraft:stone_ancient_rock",
+						"weight": 99
+					},
+					{
+						"name": "mysticalworld:amethyst_block",
+						"weight": 1
+					}
+				],
+				"material": "advancedrocketry:moonturf",
+				"cluster-size": 30
+			},
+			"cluster-count": 1,
+			"chunk-chance": 10,
+			"min-height": 64,
+			"max-height": 100,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					3
+				]
+			}
+		},
+		"moon_spike2": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"type": "stalagmite",
+				"block": [
+					{
+						"name": "thaumcraft:stone_eldritch_tile",
+						"weight": 99
+					},
+					{
+						"name": "mysticalworld:amethyst_block",
+						"weight": 1
+					}
+				],
+				"material": "advancedrocketry:moonturf_dark",
+				"cluster-size": 30
+			},
+			"cluster-count": 1,
+			"chunk-chance": 10,
+			"min-height": 64,
+			"max-height": 100,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					3
+				]
+			}
+		}
+			
+	}
+}

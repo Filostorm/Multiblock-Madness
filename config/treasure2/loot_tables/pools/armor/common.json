@@ -6,51 +6,27 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"entryName": "leather_chestplate",
-					"type": "item",
-					"name": "minecraft:leather_chestplate",
-					"weight": 20		
-				},
-				{
-					"entryName": "leather_leggings",
-					"type": "item",
-					"name": "minecraft:leather_leggings",
-					"weight": 20		
-				},
-				{
-					"entryName": "leather_helmet",
-					"type": "item",
-					"name": "minecraft:leather_helmet",
-					"weight": 20		
-				},
-				{
-					"entryName": "leather_boots",
-					"type": "item",
-					"name": "minecraft:leather_boots",
-					"weight": 20		
-				},
-				{
 					"entryName": "golden_chestplate",
 					"type": "item",
-					"name": "minecraft:golden_chestplate",
+					"name": "actuallyadditions:item_helm_crystal_black",
 					"weight": 10		
 				},
 				{
 					"entryName": "golden_leggings",
 					"type": "item",
-					"name": "minecraft:golden_leggings",
+					"name": "actuallyadditions:item_chest_crystal_black",
 					"weight": 10		
 				},
 				{
 					"entryName": "golden_helmet",
 					"type": "item",
-					"name": "minecraft:golden_helmet",
+					"name": "actuallyadditions:item_pants_crystal_black",
 					"weight": 10		
 				},
 				{
 					"entryName": "golden_boots",
 					"type": "item",
-					"name": "minecraft:golden_boots",
+					"name": "actuallyadditions:item_boots_crystal_black",
 					"weight": 10		
 				}	
 			]

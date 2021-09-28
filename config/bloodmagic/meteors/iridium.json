@@ -1,22 +1,22 @@
 {
   "catalystStack": {
     "registryName": {
-      "domain": "thermalfoundation",
-      "path": "storage"
+      "domain": "thaumadditions",
+      "path": "mithrillium_resonator"
     },
-    "meta": 7
+    "meta": 0
   },
   "components": [
     {
-      "weight": 150,
+      "weight": 140,
       "oreName": "orePlatinum"
     },
     {
-      "weight": 150,
+      "weight": 140,
       "oreName": "oreOsmium"
     },
     {
-      "weight": 500,
+      "weight": 520,
       "oreName": "oreIridium"
     }
   ],

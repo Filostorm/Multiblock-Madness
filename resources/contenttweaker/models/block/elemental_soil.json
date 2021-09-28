@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "minecraft:blocks/dirt",
+    "top": "contenttweaker:blocks/elemental_soil0",
+    "side": "contenttweaker:blocks/elemental_soil1"
+  }
+}

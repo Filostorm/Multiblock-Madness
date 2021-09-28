@@ -17,6 +17,7 @@ import mods.techreborn.grinder;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Pulverizer;
 import mods.embers.Stamper;
+import mods.techreborn.industrialGrinder;
 
 
 print("==================== loading Metal Processing.zs ====================");
@@ -66,7 +67,7 @@ Overrides.removeRecipe(<liquid:aluminum>, item);
 HighOven.removeMeltingOverride(<liquid:aluminum>, item);
 }
 
-Melting.removeRecipe(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
+//Melting.removeRecipe(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
 mods.embers.Melter.remove(<thermalfoundation:ore:4>);
 
 
@@ -78,7 +79,7 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
 Melting.removeRecipe(<liquid:osmium>, <jaopca:item_dustsmallosmium>);
-Melting.removeRecipe(<liquid:osmium>, <jaopca:item_dusttinyosmium>);
+//Melting.removeRecipe(<liquid:osmium>, <jaopca:item_dusttinyosmium>);
 Melting.removeRecipe(<liquid:osmium>, <mekanism:dust:2>);
 Melting.removeRecipe(<liquid:osmium>, <rockhounding_chemistry:chemical_dusts:38>);
 Melting.removeRecipe(<liquid:osmium>, <mekanism:oreblock>);
@@ -96,7 +97,7 @@ for item in <ore:ingotPlatinum>.items{
 mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
-Melting.removeRecipe(<liquid:platinum>, <jaopca:item_dusttinyplatinum>);
+//Melting.removeRecipe(<liquid:platinum>, <jaopca:item_dusttinyplatinum>);
 Melting.removeRecipe(<liquid:platinum>, <thermalfoundation:material:70>);
 Melting.removeRecipe(<liquid:platinum>, <techreborn:smalldust:38>);
 Melting.removeRecipe(<liquid:platinum>, <thermalfoundation:ore:6>);
@@ -122,15 +123,15 @@ furnace.remove(item);
 
 
 
-Melting.removeRecipe(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
+//Melting.removeRecipe(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
 Melting.removeRecipe(<liquid:tungsten>, <techreborn:dust:55>);
 Melting.removeRecipe(<liquid:tungsten>, <techreborn:smalldust:55>);
 Melting.removeRecipe(<liquid:tungsten>, <techreborn:ore:8>);
-Overrides.removeRecipe(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
+//Overrides.removeRecipe(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
 Overrides.removeRecipe(<liquid:tungsten>, <techreborn:dust:55>);
 Overrides.removeRecipe(<liquid:tungsten>, <techreborn:smalldust:55>);
 Overrides.removeRecipe(<liquid:tungsten>, <techreborn:ore:8>);
-HighOven.removeMeltingOverride(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
+//HighOven.removeMeltingOverride(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
 HighOven.removeMeltingOverride(<liquid:tungsten>, <techreborn:dust:55>);
 HighOven.removeMeltingOverride(<liquid:tungsten>, <techreborn:smalldust:55>);
 HighOven.removeMeltingOverride(<liquid:tungsten>, <techreborn:ore:8>);
@@ -164,13 +165,13 @@ Overrides.removeRecipe(<liquid:titanium>, <libvulpes:ore0:8>);
 HighOven.removeMeltingOverride(<liquid:titanium>, <techreborn:smalldust:54>);
 HighOven.removeMeltingOverride(<liquid:titanium>, <libvulpes:ore0:8>);
 
-Melting.removeRecipe(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
+//Melting.removeRecipe(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
 Melting.removeRecipe(<liquid:molten_titanium>, <techreborn:smalldust:54>);
 Melting.removeRecipe(<liquid:molten_titanium>, <libvulpes:ore0:8>);
 Overrides.removeRecipe(<liquid:molten_titanium>, <techreborn:smalldust:54>);
 Overrides.removeRecipe(<liquid:molten_titanium>, <libvulpes:ore0:8>);
-Overrides.removeRecipe(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
-HighOven.removeMeltingOverride(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
+//Overrides.removeRecipe(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
+//HighOven.removeMeltingOverride(<liquid:molten_titanium>, <jaopca:item_dusttinytitanium>);
 HighOven.removeMeltingOverride(<liquid:molten_titanium>, <techreborn:smalldust:54>);
 HighOven.removeMeltingOverride(<liquid:molten_titanium>, <libvulpes:ore0:8>);
 
@@ -178,6 +179,7 @@ mods.embers.Melter.remove(<libvulpes:ore0:8>);
 Melter.removeRecipeWithInput(<libvulpes:ore0:8>);
 Melter.removeRecipeWithInput(<techreborn:dust:54>);
 Crucible.removeRecipe(<libvulpes:ore0:8>);
+Crucible.removeRecipe(<techreborn:dust:54>);
 
 //----------Iridium
 for item in <ore:ingotIridium>.items{
@@ -186,7 +188,7 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
 
-Melting.removeRecipe(<liquid:iridium>, <jaopca:item_dusttinyiridium>);
+//Melting.removeRecipe(<liquid:iridium>, <jaopca:item_dusttinyiridium>);
 Melting.removeRecipe(<liquid:iridium>, <thermalfoundation:material:71>);
 Melting.removeRecipe(<liquid:iridium>, <techreborn:smalldust:66>);
 Melting.removeRecipe(<liquid:iridium>, <thermalfoundation:ore:7>);
@@ -209,6 +211,13 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
 
+
+
+//----------Uranium
+industrialGrinder.removeInputRecipe(<nuclearcraft:ore:4>);
+//mods.techreborn.industrialGrinder.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, ILiquidStack fluid, int ticktime, int euTick);
+
+
 ##=======================================================
 ##              ORE PROCESSING
 ##=======================================================
@@ -227,12 +236,10 @@ val clusterFluidMap as ILiquidStack[IOreDictEntry] = {
 	<ore:clusterMagnesium>: <fluid:magnesium>,
 	//<ore:clusterMithril>: {},
 	<ore:clusterNickel>: <fluid:nickel>,
-	<ore:clusterOctine>: <fluid:octine>,
 	<ore:clusterOrichalcum>: <fluid:orichalcum>,
 	//<ore:clusterOsmium>: {},
 	<ore:clusterPalladium>: <fluid:palladium>,
 	//<ore:clusterPlatinum>: {},
-	<ore:clusterSyrmorite>: <fluid:syrmorite>,
 	<ore:clusterThorium>: <fluid:thorium>,
 	//<ore:clusterTitanium>: {},
 	//<ore:clusterTungsten>: {},
@@ -385,38 +392,6 @@ furnace.addRecipe(<thermalfoundation:material:133>,item, 0.1);
 Melting.addRecipe(<liquid:nickel> * 144, item);
 Crusher.addRecipe(<thermalfoundation:material:69>, item, 1024, <techreborn:smalldust:34>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:69>, item, 2000, <techreborn:smalldust:34>*2);
-}
-
-//Octine
-MineralSizer.add(<thebetweenlands:octine_ore>, [<jaopca:item_crushedlumpoctine>*2], [8]);
-LeachingVat.add(<jaopca:item_crushedlumpoctine>, [<jaopca:item_leachedshardoctine>*2], [2.83F], <liquid:leachate>*50);
-ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardoctine>, ["dustOctine", "dustBlaze", "dustPhosphorus"], [200, 25, 15]);
-val octineProcessing =[
-	<jaopca:item_crushedlumpoctine>,
-	<jaopca:item_leachedshardoctine>,
-] as IItemStack[];
-
-for item in octineProcessing {
-furnace.addRecipe(<thebetweenlands:octine_ingot>,item, 0.1);
-Melting.addRecipe(<liquid:octine> * 144, item);
-Crusher.addRecipe(<jaopca:item_dustoctine>, item, 1024, <jaopca:item_dustsmalloctine>*2, 1);
-Pulverizer.addRecipe(<jaopca:item_dustoctine>, item, 2000, <jaopca:item_dustsmalloctine>*2);
-}
-
-//Syrmorite
-MineralSizer.add(<thebetweenlands:syrmorite_ore>, [<jaopca:item_crushedlumpsyrmorite>*2], [8]);
-LeachingVat.add(<jaopca:item_crushedlumpsyrmorite>, [<jaopca:item_leachedshardsyrmorite>*2], [7.68F], <liquid:leachate>*50);
-ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardsyrmorite>, ["dustSyrmorite", "dustVanadium", "dustGold"], [200, 20, 12]);
-val syrmoriteProcessing =[
-	<jaopca:item_crushedlumpsyrmorite>,
-	<jaopca:item_leachedshardsyrmorite>,
-] as IItemStack[];
-
-for item in syrmoriteProcessing {
-furnace.addRecipe(<thebetweenlands:items_misc:11>,item, 0.1);
-Melting.addRecipe(<liquid:syrmorite> * 144, item);
-Crusher.addRecipe(<jaopca:item_dustsyrmorite>, item, 1024, <jaopca:item_dustsmallsyrmorite>*2, 1);
-Pulverizer.addRecipe(<jaopca:item_dustsyrmorite>, item, 2000, <jaopca:item_dustsmallsyrmorite>*2);
 }
 
 //Cobalt
@@ -758,6 +733,10 @@ Pulverizer.addRecipe(<thermalfoundation:material:71>, item, 2000, <techreborn:sm
 }
 ////////////////////////////////////////
 
+//New Ores
+furnace.addRecipe(<contenttweaker:material_part:10>, <contenttweaker:sub_block_holder_0:8>, 0.0);
+furnace.addRecipe(<contenttweaker:material_part:30>, <contenttweaker:sub_block_holder_0:3>, 0.0);
+furnace.addRecipe(<contenttweaker:material_part:20>, <contenttweaker:sub_block_holder_0:7>, 0.0);
 
 
 ##################################
@@ -778,13 +757,15 @@ for item in Tier1Ingots {
 item.addTooltip(format.gray("Tier 1 Metal"));
 }
 
-//Smeltery
+//Mixer
 val Tier2Ingots =[
 <contenttweaker:inert_ingot>,
 <thermalfoundation:material:161>,
 <thermalfoundation:material:162>,
 <thermalfoundation:material:164>,
 <thermalfoundation:material:163>,
+<enderio:item_alloy_ingot:4>,
+<enderio:item_alloy_ingot:5>,
 ] as IItemStack[];
 for item in Tier2Ingots {
 item.addTooltip(format.yellow("Tier 2 Metal"));
@@ -792,9 +773,7 @@ item.addTooltip(format.yellow("Tier 2 Metal"));
 
 //High Oven
 val Tier3Ingots =[
-<enderio:item_alloy_ingot:4>,
 <mysticalagriculture:crafting:34>,
-<enderio:item_alloy_ingot:5>,
 <embers:ingot_dawnstone>,
 <thermalfoundation:material:160>,
 ] as IItemStack[];
@@ -829,6 +808,9 @@ val Tier5Ingots =[
 <thermalfoundation:material:167>,
 <mekanism:ingot:1>,
 <tconstruct:ingots:2>,
+<enderio:item_alloy_ingot:8>,
+<enderio:item_alloy_ingot:2>,
+<enderio:item_alloy_endergy_ingot:6>,
 ] as IItemStack[];
 for item in Tier5Ingots {
 item.addTooltip(format.gold("Tier 5 Metal"));
@@ -836,9 +818,6 @@ item.addTooltip(format.gold("Tier 5 Metal"));
 
 //Ender Smeltery / chap 6
 val Tier6Ingots =[
-<enderio:item_alloy_ingot:2>,
-<enderio:item_alloy_ingot:8>,
-<enderio:item_alloy_endergy_ingot:6>,
 <techreborn:ingot:14>,
 <techreborn:ingot:15>,
 <thermalfoundation:material:135>,

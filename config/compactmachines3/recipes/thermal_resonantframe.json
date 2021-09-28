@@ -1,0 +1,230 @@
+{
+  "name": "cm3thermal:resonantframe",
+
+  "disabled": false,
+
+  "target-item": "thermalexpansion:frame",
+  "target-count": 1,
+  "target-meta": 148,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "thermalexpansion:frame",
+  "catalyst-meta": 128,
+
+  "input-types": {
+    "a": {
+      "id": "extendedcrafting:storage",
+      "meta": 7
+    },
+    "b": {
+      "id": "thermalfoundation:storage_alloy",
+      "meta": 7
+    },
+    "c": {
+      "id": "avaritia:block_resource",
+      "meta": 2
+    },
+    "d": {
+      "id": "contenttweaker:sub_block_holder_0",
+      "meta": 1
+    },
+    "e": {
+      "id": "extendedcrafting:lamp",
+      "meta": 1
+    },
+    "f": {
+      "id": "extendedcrafting:storage",
+      "meta": 4
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "c",
+        "_",
+        "_",
+        "_",
+        "c"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "_",
+        "d",
+        "d",
+        "d",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "e",
+        "d",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "d",
+        "d",
+        "_"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ]
+    ],
+    [
+      [
+        "c",
+        "_",
+        "_",
+        "_",
+        "c"
+      ],
+      [
+        "_",
+        "d",
+        "e",
+        "d",
+        "_"
+      ],
+      [
+        "_",
+        "e",
+        "f",
+        "e",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "e",
+        "d",
+        "_"
+      ],
+      [
+        "c",
+        "_",
+        "_",
+        "_",
+        "c"
+      ]
+    ],
+    [
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "_",
+        "d",
+        "d",
+        "d",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "e",
+        "d",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "d",
+        "d",
+        "_"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "c",
+        "_",
+        "_",
+        "_",
+        "c"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "c",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+}

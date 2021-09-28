@@ -6,7 +6,7 @@
   "target-item": "thaumcraft:metal_alchemical",
   "target-count": 3,
 
-  "duration": 200,
+  "duration": 100,
   "symmetrical": true,
 
   "catalyst": "embers:gear_dawnstone",

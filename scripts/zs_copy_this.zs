@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 print("==================== loading mods blank.zs ====================");
 ##########################################################################################
 /*
@@ -22,6 +23,8 @@ for tinyDust, material in tinyDustMap {
 
 <techreborn:part:13>.displayName = "Constantan Heating Coil";
 <astralsorcery:itemcelestialcrystal>.addTooltip(format.aqua("Grows from a Celestal Crystal Cluster"));
+
+val heavyGears as IIngredient = (<mystgears:gear_thaumium>|<moreplates:ironwood_gear>) as IIngredient;
 */
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

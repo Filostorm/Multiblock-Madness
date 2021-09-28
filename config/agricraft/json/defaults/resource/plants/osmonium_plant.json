@@ -51,7 +51,7 @@
         "max_x": 0,
         "max_y": -2,
         "max_z": 0,
-        "item": "oredict:oreOsmium",
+        "item": "jaopca:block_growthcatalystosmium",
         "meta": 0,
         "tags": "",
         "ignoreMeta": true,

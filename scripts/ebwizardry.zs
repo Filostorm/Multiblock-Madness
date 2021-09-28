@@ -15,7 +15,8 @@ val itemstoRemove =
     <ebwizardry:novice_ice_wand>,
     <ebwizardry:novice_lightning_wand>,
     <ebwizardry:novice_sorcery_wand>,
-    <ebwizardry:novice_healing_wand>
+    <ebwizardry:novice_healing_wand>,
+    <ebwizardry:novice_fire_wand>,
 ]
  as IItemStack[];
 for item in itemstoRemove {
@@ -29,6 +30,7 @@ recipes.addShaped(<ebwizardry:novice_ice_wand>, [[null, null, <ebwizardry:magic_
 recipes.addShaped(<ebwizardry:novice_lightning_wand>, [[null, null, <ebwizardry:magic_crystal:3>],[null, <contenttweaker:greatwood_handle>, null], [<minecraft:gold_nugget>, null, null]]);
 recipes.addShaped(<ebwizardry:novice_sorcery_wand>, [[null, null, <ebwizardry:magic_crystal:6>],[null, <contenttweaker:greatwood_handle>, null], [<minecraft:gold_nugget>, null, null]]);
 recipes.addShaped(<ebwizardry:novice_healing_wand>, [[null, null, <ebwizardry:magic_crystal:7>],[null, <contenttweaker:greatwood_handle>, null], [<minecraft:gold_nugget>, null, null]]);
+recipes.addShaped(<ebwizardry:novice_fire_wand>, [[null, null, <ebwizardry:magic_crystal:1>],[null, <contenttweaker:greatwood_handle>, null], [<minecraft:gold_nugget>, null, null]]);
 
 recipes.addShaped(<ebwizardry:arcane_workbench>, [[<minecraft:gold_ingot>, <minecraft:carpet:10>, <minecraft:gold_ingot>],[<ebwizardry:magic_crystal>, <minecraft:lapis_block>, <ebwizardry:magic_crystal>], [<thaumcraft:stone_arcane_brick>, <thaumcraft:stone_arcane_brick>, <thaumcraft:stone_arcane_brick>]]);
 

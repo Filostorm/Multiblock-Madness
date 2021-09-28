@@ -3,13 +3,12 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
-mods.unidict.removalByKind.get("Crafting").remove("plate");
-mods.unidict.removalByKind.get("Crafting").remove("rod");
-mods.unidict.removalByKind.get("Crafting").remove("gear");
 
 print("==================== loading mods artisansworktables.zs ====================");
 ##########################################################################################
-
+mods.unidict.removalByKind.get("Crafting").remove("plate");
+mods.unidict.removalByKind.get("Crafting").remove("rod");
+mods.unidict.removalByKind.get("Crafting").remove("gear");
 
 recipes.remove(<ore:plateAluminum>);
 recipes.remove(<ore:plateBronze>);
@@ -89,8 +88,8 @@ for ingot, plate in artisansPlates {
 recipes.addShaped(plate, [[<ore:artisansHammer>.reuse().transformDamage(5)], [ingot], [ingot]]);
 RecipeBuilder.get("blacksmith")
   .setShapeless([ingot])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
+  .setFluid(<liquid:lava> *25)
+  .addTool(<ore:artisansHammer>, 5)
   .addOutput(plate)
   .create();
 }
@@ -105,8 +104,8 @@ for ingot, plate in artisansCrystalPlates {
 recipes.addShaped(plate, [[<ore:artisansHammer>.reuse().transformDamage(5)], [ingot], [ingot]]);
 RecipeBuilder.get("blacksmith")
   .setShapeless([ingot])
-  .setFluid(<liquid:lava> *50)
-  .addTool(<ore:artisansHammer>, 10)
+  .setFluid(<liquid:lava> *25)
+  .addTool(<ore:artisansHammer>, 5)
   .addOutput(plate)
   .create();
 }
@@ -121,10 +120,10 @@ val artisansRods as IItemStack[IOreDictEntry] = {
   <ore:ingotBrass>:<jaopca:item_stickbrass>,
   <ore:ingotGold>:<moreplates:gold_stick>,
 	<ore:ingotBronze>: <moreplates:bronze_stick>,
-  <ore:ingotSyrmorite>:<jaopca:item_sticksyrmorite>,
   <ore:ingotArdite>:<jaopca:item_stickardite>,
   <ore:ingotCopper>:<libvulpes:productrod:4>,
   <ore:ingotThaumium>:<jaopca:item_stickthaumium>,
+  <ore:ingotIronwood>:<contenttweaker:rod_ironwood>,
 } as IItemStack[IOreDictEntry];
 
 for ingot, rod in artisansRods {
@@ -133,8 +132,8 @@ RecipeBuilder.get("blacksmith")
     [null, null, ingot],
     [null, ingot, null],
     [ingot, null, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansPliers>, 15)
+  .setFluid(<liquid:lava> * 25)
+  .addTool(<ore:artisansPliers>, 10)
   .addOutput(rod*3)
   .create();
 }
@@ -142,7 +141,11 @@ RecipeBuilder.get("blacksmith")
 
 
 //--------------Gears------------------
-recipes.addShaped(<artisanworktables:workstation:3>, [[<thermalfoundation:material:352>, <thermalfoundation:material:352>, <thermalfoundation:material:352>],[<thermalfoundation:material:352>, <artisanworktables:worktable:3>, <thermalfoundation:material:352>], [<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>]]);
+recipes.addShaped(<artisanworktables:workstation:3>, [
+[<thermalfoundation:material:352>, <thermalfoundation:material:352>, <thermalfoundation:material:352>],
+[<thermalfoundation:material:352>, <artisanworktables:worktable:3>, <thermalfoundation:material:352>], 
+[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>]
+]);
 
 
 //Steel
@@ -180,19 +183,6 @@ recipes.addShaped(<artisanworktables:workstation:3>, [[<thermalfoundation:materi
   .addTool(<ore:artisansHammer>, 20)
   .addOutput(<thermalfoundation:material:25>)
   .create();
-
-  //Syrmorite
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <thebetweenlands:items_misc:11>, null],
-    [<thebetweenlands:items_misc:11>, <jaopca:item_sticksyrmorite>, <thebetweenlands:items_misc:11>],
-    [null, <thebetweenlands:items_misc:11>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<jaopca:item_gearsyrmorite>)
-  .create();
-
 
   //Brass
   RecipeBuilder.get("blacksmith")
@@ -253,6 +243,23 @@ recipes.addShaped(<artisanworktables:workstation:3>, [[<thermalfoundation:materi
   .addTool(<ore:artisansHammer>, 20)
   .addOutput(<thermalfoundation:material:291>)
   .create();
+
+    //Ironwood
+  RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:ingotIronwood>, null],
+    [<ore:ingotIronwood>, <contenttweaker:rod_ironwood>, <ore:ingotIronwood>],
+    [null, <ore:ingotIronwood>, null]])
+  .setFluid(<liquid:lava> * 50)
+  .addTool(<ore:artisansFile>, 20)
+  .addTool(<ore:artisansHammer>, 20)
+  .addOutput(<moreplates:ironwood_gear>)
+  .create();
+
+
+
+
+
 
 ###   ARMOR    ###
 recipes.addShaped(<artisanworktables:workshop:3>, [[<moreplates:ironwood_plate>, <moreplates:ironwood_plate>, <moreplates:ironwood_plate>],[<moreplates:ironwood_plate>, <artisanworktables:workstation:3>, <moreplates:ironwood_plate>], [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]]);
@@ -431,5 +438,6 @@ for plate, wire in WireCutting {
   .create();
 	recipes.remove(wire);
 }
+
 ##########################################################################################
 print("==================== end of mods artisansworktables.zs ====================");

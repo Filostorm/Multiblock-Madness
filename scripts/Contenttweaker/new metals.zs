@@ -61,7 +61,7 @@ var AdamantineOre = Adamantine.registerPart("ore").getData();
 AdamantineOre.addDataValue("variants", "minecraft:end_stone");
 AdamantineOre.addDataValue("hardness", "10");
 AdamantineOre.addDataValue("resistance", "50");
-AdamantineOre.addDataValue("harvestLevel", "5");
+AdamantineOre.addDataValue("harvestLevel", "4");
 AdamantineOre.addDataValue("harvestTool", "pickaxe");
 
 var AdamantineArmor = Adamantine.registerPart("armor").getData();
@@ -84,6 +84,7 @@ var Orichalcum = MaterialSystem.getMaterialBuilder().setName("Orichalcum").setCo
 
 Orichalcum.registerParts(["ingot","gear", "plate", "nugget", "rod", "dust"] as string[]);
 //VanillaFactory.createItem("orichalcum_ingot").register();
+//oreData.addDataValue("drops", "minecraft:redstone,minecraft:gold_ingot");
 
 var OrichalcumOre = Orichalcum.registerPart("ore").getData();
 OrichalcumOre.addDataValue("variants", "minecraft:netherrack");
@@ -119,6 +120,7 @@ PalladiumOre.addDataValue("hardness", "10");
 PalladiumOre.addDataValue("resistance", "15");
 PalladiumOre.addDataValue("harvestLevel", "3");
 PalladiumOre.addDataValue("harvestTool", "pickaxe");
+//PalladiumOre.addDataValue("blockLayer", "CUTOUT_MIPPED");
 
 var PalladiumArmor = Palladium.registerPart("armor").getData();
 PalladiumArmor.addDataValue("durability", "50");

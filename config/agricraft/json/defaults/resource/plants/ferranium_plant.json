@@ -51,12 +51,12 @@
         "max_x": 0,
         "max_y": -2,
         "max_z": 0,
-        "item": "oredict:oreIron",
+        "item": "jaopca:block_growthcatalystiron",
         "meta": 0,
         "tags": "",
         "ignoreMeta": true,
         "ignoreTags": [],
-        "useOreDict": true
+        "useOreDict": false
       }
     ]
   },

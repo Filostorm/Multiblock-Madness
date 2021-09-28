@@ -34,7 +34,7 @@
   "products": {
     "products": [
       {
-        "min": 1,
+        "min": 3,
         "max": 5,
         "chance": 0.9,
         "required": true,

@@ -21,6 +21,8 @@ val itemstoRemove =
     <modularmachinery:blockfluidinputhatch:1>,
     <modularmachinery:blockfluidinputhatch>,
     <modularmachinery:blockcasing:4>,
+    <modularmachinery:blockcontroller>,
+    <modularmachinery:blockcasing>,
 ]
  as IItemStack[];
 
@@ -28,26 +30,81 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
+val itemstoHide =
+[
+    <modulardiversity:blockemberinputhatch>,
+    <modulardiversity:blockemberinputhatch:4>,
+    <modulardiversity:blockemberinputhatch:5>,
+    <modulardiversity:blockemberinputhatch:6>,
+    <modulardiversity:blockemberinputhatch:7>,
+    <modulardiversity:blockemberoutputhatch>,
+    <modulardiversity:blockemberoutputhatch:1>,
+    <modulardiversity:blockemberoutputhatch:2>,
+    <modulardiversity:blockemberoutputhatch:3>,
+    <modulardiversity:blockemberoutputhatch:4>,
+    <modulardiversity:blockemberoutputhatch:5>,
+    <modulardiversity:blockemberoutputhatch:6>,
+    <modulardiversity:blockemberoutputhatch:7>,
+
+    <modularmachinery:blockinputbus>,
+    <modularmachinery:blockfluidinputhatch>,
+    <modularmachinery:blockenergyinputhatch>,
+    <modularmachinery:blockenergyoutputhatch>,
+    <modularmachinery:blockfluidoutputhatch>,
+    <modularmachinery:blockoutputbus>,
+
+]
+ as IItemStack[];
+
+
+for item in itemstoHide {
+	mods.jei.JEI.removeAndHide(item);
+}
+
+//Controller
+//recipes.addShaped(<modularmachinery:blockcontroller>, [[<ore:circuitAdvanced>, <rockhounding_chemistry:misc_items:1>, <ore:circuitAdvanced>],[<jaopca:item_platetough>, <modularmachinery:blockcasing>, <jaopca:item_platetough>], [<actuallyadditions:block_crystal>, <moreplates:energetic_alloy_gear>, <actuallyadditions:block_crystal>]]);
+recipes.addShaped(<modularmachinery:blockcontroller>, [[<thermalfoundation:material:320>, <modularmachinery:itemmodularium>, <thermalfoundation:material:320>],[<modularmachinery:itemmodularium>, <minecraft:redstone_block>, <modularmachinery:itemmodularium>], [<thermalfoundation:material:320>, <thermalfoundation:material:257>, <thermalfoundation:material:320>]]);
+
+//Casing
+recipes.addShaped(<modularmachinery:blockcasing>, [[<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>],[<techreborn:plates:36>, <contenttweaker:material_part:11>, <techreborn:plates:36>], [<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>]]);
+recipes.addShaped(<modularmachinery:blockcasing> * 2, [[<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>],[<techreborn:plates:36>, <rockhounding_chemistry:alloy_parts:63>, <techreborn:plates:36>], [<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>]]);
+
+
+//Modularium
+//Transposer.addFillRecipe(<modularmachinery:itemmodularium>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 10000);
+mods.inworldcrafting.FluidToItem.transform(<modularmachinery:itemmodularium>, <liquid:moltenembers>, [<thermalfoundation:material>,<thermalfoundation:material:1>], false);
+
 //Vent
 recipes.addShaped(<modularmachinery:blockcasing:1>, [[<thermalfoundation:material:358>, <enderio:block_dark_iron_bars>, <thermalfoundation:material:358>],[<enderio:block_dark_iron_bars>, <modularmachinery:blockcasing>, <enderio:block_dark_iron_bars>], [<thermalfoundation:material:358>, <enderio:block_dark_iron_bars>, <thermalfoundation:material:358>]]);
 
 //Blueprints
-recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mixer"}), [[<rockhounding_chemistry:slurry_agitator>, <enderio:item_material:77>, <rockhounding_chemistry:slurry_agitator>],[<enderio:item_material:77>, <rockhounding_chemistry:slurry_agitator>, <enderio:item_material:77>], [<rockhounding_chemistry:slurry_agitator>, <enderio:item_material:77>, <rockhounding_chemistry:slurry_agitator>]]);
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mixer"}), [[<mysticalmechanics:axle_iron>, <enderio:item_material:77>, <mysticalmechanics:axle_iron>],[<enderio:item_material:77>, <mysticalmechanics:axle_iron>, <enderio:item_material:77>], [<mysticalmechanics:axle_iron>, <enderio:item_material:77>, <mysticalmechanics:axle_iron>]]);
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:minifield-crafter"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <compactmachines3:fieldprojector>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
-recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembler"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <techreborn:assembling_machine>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:darkness-collector"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <chisel:energizedvoidstone>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:lowgravitydepositionchamber"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <qmd:containment_casing>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:heavens-forge"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <thaumicaugmentation:starfield_glass:2>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 
+//Assembler Blueprints
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkone"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <techreborn:refined_iron_fence>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
+
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermktwo"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <mekanism:plasticfence:15>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermktwo"}), [<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkone"}).onlyWithTag({dynamicmachine: "modularmachinery:assemblermkone"}),<mekanism:plasticfence:15>]);
+
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkthree"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <techreborn:machine_casing:2>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkthree"}), [<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermktwo"}).onlyWithTag({dynamicmachine: "modularmachinery:assemblermktwo"}),<techreborn:machine_casing:2>]);
+
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkfour"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <techreborn:fusion_coil>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
+recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkfour"}), [<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkthree"}).onlyWithTag({dynamicmachine: "modularmachinery:assemblermkthree"}),<techreborn:fusion_coil>]);
+
 //Energy input
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:7>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyinputhatch:6>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitElite>, null]]);
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:6>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyinputhatch:5>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitElite>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyinputhatch:5>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyinputhatch:4>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitAdvanced>, null]]);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:5>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockcasing:4>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitElite>, null]]);
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:4>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyinputhatch:3>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitAdvanced>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyinputhatch:3>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyinputhatch:2>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitAdvanced>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyinputhatch:2>, [[null, <moreplates:conductive_iron_plate>, null],[<moreplates:conductive_iron_plate>, <modularmachinery:blockenergyinputhatch:1>, <moreplates:conductive_iron_plate>], [null, <ore:circuitBasic>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyinputhatch:1>, [[null, <moreplates:conductive_iron_plate>, null],[<moreplates:conductive_iron_plate>, <modularmachinery:blockenergyinputhatch>, <moreplates:conductive_iron_plate>], [null, <ore:circuitBasic>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyinputhatch>, [[null, <moreplates:conductive_iron_plate>, null],[<moreplates:conductive_iron_plate>, <modularmachinery:blockcasing>, <moreplates:conductive_iron_plate>], [null, <ore:circuitBasic>, null]]);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:3>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockcasing>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitAdvanced>, null]]);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:2>, [[null, <thermalfoundation:material:33>, null],[<thermalfoundation:material:33>, <modularmachinery:blockenergyinputhatch:1>, <thermalfoundation:material:33>], [null, <ore:circuitBasic>, null]]);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:1>, [[null, <thermalfoundation:material:33>, null],[<thermalfoundation:material:33>, <modularmachinery:itemmodularium>, <thermalfoundation:material:33>], [null, <ore:circuitBasic>, null]]);
+
 
 val blockenergyinputhatch =
 [
@@ -58,7 +115,7 @@ val blockenergyinputhatch =
 <modularmachinery:blockenergyinputhatch:3>,
 <modularmachinery:blockenergyinputhatch:2>,
 <modularmachinery:blockenergyinputhatch:1>,
-<modularmachinery:blockenergyinputhatch>,
+//<modularmachinery:blockenergyinputhatch>,
 ]
  as IItemStack[];
 for item in blockenergyinputhatch {
@@ -68,12 +125,11 @@ for item in blockenergyinputhatch {
 //Energy output
 recipes.addShaped(<modularmachinery:blockenergyoutputhatch:7>, [[null, <ore:circuitElite>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyoutputhatch:6>, <moreplates:redstone_alloy_plate>], [null, <moreplates:redstone_alloy_plate>, null]]);
 recipes.addShaped(<modularmachinery:blockenergyoutputhatch:6>, [[null, <ore:circuitElite>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyoutputhatch:5>, <moreplates:redstone_alloy_plate>], [null, <moreplates:redstone_alloy_plate>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyoutputhatch:5>, [[null, <ore:circuitAdvanced>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyoutputhatch:4>, <moreplates:redstone_alloy_plate>], [null, <moreplates:redstone_alloy_plate>, null]]);
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:5>, [[null, <ore:circuitElite>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockcasing:4>, <moreplates:redstone_alloy_plate>], [null, <moreplates:redstone_alloy_plate>, null]]);
 recipes.addShaped(<modularmachinery:blockenergyoutputhatch:4>, [[null, <ore:circuitAdvanced>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyoutputhatch:3>, <moreplates:redstone_alloy_plate>], [null, <moreplates:redstone_alloy_plate>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyoutputhatch:3>, [[null, <ore:circuitAdvanced>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyoutputhatch:2>, <moreplates:redstone_alloy_plate>], [null, <moreplates:redstone_alloy_plate>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyoutputhatch:2>, [[null, <ore:circuitBasic>, null],[<moreplates:conductive_iron_plate>, <modularmachinery:blockenergyoutputhatch:1>, <moreplates:conductive_iron_plate>], [null, <moreplates:conductive_iron_plate>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyoutputhatch:1>, [[null, <ore:circuitBasic>, null],[<moreplates:conductive_iron_plate>, <modularmachinery:blockenergyoutputhatch>, <moreplates:conductive_iron_plate>], [null, <moreplates:conductive_iron_plate>, null]]);
-recipes.addShaped(<modularmachinery:blockenergyoutputhatch>, [[null, <ore:circuitBasic>, null],[<moreplates:conductive_iron_plate>, <modularmachinery:blockcasing>, <moreplates:conductive_iron_plate>], [null, <moreplates:conductive_iron_plate>, null]]);
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:3>, [[null, <ore:circuitAdvanced>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockcasing>, <moreplates:redstone_alloy_plate>], [null, <moreplates:redstone_alloy_plate>, null]]);
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:2>, [[null, <ore:circuitBasic>, null],[<thermalfoundation:material:33>, <modularmachinery:blockenergyoutputhatch:1>, <thermalfoundation:material:33>], [null, <thermalfoundation:material:33>, null]]);
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:1>, [[null, <ore:circuitBasic>, null],[<thermalfoundation:material:33>, <modularmachinery:itemmodularium>, <thermalfoundation:material:33>], [null, <thermalfoundation:material:33>, null]]);
 
 val blockenergyoutputhatch =
 [
@@ -84,7 +140,7 @@ val blockenergyoutputhatch =
 <modularmachinery:blockenergyoutputhatch:3>,
 <modularmachinery:blockenergyoutputhatch:2>,
 <modularmachinery:blockenergyoutputhatch:1>,
-<modularmachinery:blockenergyoutputhatch>,
+//<modularmachinery:blockenergyoutputhatch>,
 ]
  as IItemStack[];
 for item in blockenergyoutputhatch {
@@ -92,14 +148,13 @@ for item in blockenergyoutputhatch {
 }
 
 //Fluid Input
-recipes.addShaped(<modularmachinery:blockfluidinputhatch:7>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidinputhatch:6>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidinputhatch:6>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidinputhatch:5>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidinputhatch:5>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidinputhatch:4>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidinputhatch:4>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidinputhatch:3>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidinputhatch:3>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidinputhatch:2>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidinputhatch:2>, [[null, <minecraft:bucket>, null],[<thermalfoundation:material:355>, <modularmachinery:blockfluidinputhatch:1>, <thermalfoundation:material:355>], [null, <thermalfoundation:material:355>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidinputhatch:1>, [[null, <minecraft:bucket>, null],[<thermalfoundation:material:355>, <modularmachinery:blockfluidinputhatch>, <thermalfoundation:material:355>], [null, <thermalfoundation:material:355>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidinputhatch>, [[null, <minecraft:bucket>, null],[<thermalfoundation:material:355>, <modularmachinery:blockcasing>, <thermalfoundation:material:355>], [null, <thermalfoundation:material:355>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:7>, [[null, <embers:plate_dawnstone>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidinputhatch:6>, <embers:plate_dawnstone>], [null, <minecraft:bucket>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:6>, [[null, <embers:plate_dawnstone>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidinputhatch:5>, <embers:plate_dawnstone>], [null, <minecraft:bucket>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:5>, [[null, <embers:plate_dawnstone>, null],[<embers:plate_dawnstone>, <modularmachinery:blockcasing:4>, <embers:plate_dawnstone>], [null, <minecraft:bucket>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:4>, [[null, <embers:plate_dawnstone>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidinputhatch:3>, <embers:plate_dawnstone>], [null, <minecraft:bucket>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:3>, [[null, <embers:plate_dawnstone>, null],[<embers:plate_dawnstone>, <modularmachinery:blockcasing>, <embers:plate_dawnstone>], [null, <minecraft:bucket>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:2>, [[null, <thermalfoundation:material:320>, null],[<thermalfoundation:material:320>, <modularmachinery:blockfluidinputhatch:1>, <thermalfoundation:material:320>], [null, <minecraft:bucket>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:1>, [[null, <thermalfoundation:material:320>, null],[<thermalfoundation:material:320>, <modularmachinery:itemmodularium>, <thermalfoundation:material:320>], [null, <minecraft:bucket>, null]]);
 
 val blockfluidinputhatch =
 [
@@ -110,22 +165,23 @@ val blockfluidinputhatch =
 <modularmachinery:blockfluidinputhatch:3>,
 <modularmachinery:blockfluidinputhatch:2>,
 <modularmachinery:blockfluidinputhatch:1>,
-<modularmachinery:blockfluidinputhatch>,
+//<modularmachinery:blockfluidinputhatch>,
 ]
  as IItemStack[];
 for item in blockfluidinputhatch {
 <ore:fluidInputHatch>.add(item);
 }
 
+
+
 //Fluid Output
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:7>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidoutputhatch:6>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:6>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidoutputhatch:5>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidoutputhatch:5>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidoutputhatch:4>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:5>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockcasing:4>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:4>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidoutputhatch:3>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidoutputhatch:3>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockfluidoutputhatch:2>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidoutputhatch:2>, [[null, <minecraft:bucket>, null],[<thermalfoundation:material:355>, <modularmachinery:blockfluidoutputhatch:1>, <thermalfoundation:material:355>], [null, <thermalfoundation:material:355>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidoutputhatch:1>, [[null, <minecraft:bucket>, null],[<thermalfoundation:material:355>, <modularmachinery:blockfluidoutputhatch>, <thermalfoundation:material:355>], [null, <thermalfoundation:material:355>, null]]);
-recipes.addShaped(<modularmachinery:blockfluidoutputhatch>, [[null, <minecraft:bucket>, null],[<thermalfoundation:material:355>, <modularmachinery:blockcasing>, <thermalfoundation:material:355>], [null, <thermalfoundation:material:355>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:3>, [[null, <minecraft:bucket>, null],[<embers:plate_dawnstone>, <modularmachinery:blockcasing>, <embers:plate_dawnstone>], [null, <embers:plate_dawnstone>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:2>, [[null, <minecraft:bucket>, null],[<thermalfoundation:material:320>, <modularmachinery:blockfluidoutputhatch:1>, <thermalfoundation:material:320>], [null, <thermalfoundation:material:320>, null]]);
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:1>, [[null, <minecraft:bucket>, null],[<thermalfoundation:material:320>, <modularmachinery:itemmodularium>, <thermalfoundation:material:320>], [null, <thermalfoundation:material:320>, null]]);
 
 val blockfluidoutputhatch =
 [
@@ -136,7 +192,7 @@ val blockfluidoutputhatch =
 <modularmachinery:blockfluidoutputhatch:3>,
 <modularmachinery:blockfluidoutputhatch:2>,
 <modularmachinery:blockfluidoutputhatch:1>,
-<modularmachinery:blockfluidoutputhatch>,
+//<modularmachinery:blockfluidoutputhatch>,
 ]
  as IItemStack[];
 for item in blockfluidoutputhatch {
@@ -145,12 +201,11 @@ for item in blockfluidoutputhatch {
 
 //Item Output
 recipes.addShaped(<modularmachinery:blockoutputbus:6>, [[null, <ironchest:iron_chest>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockoutputbus:5>, <moreplates:electrical_steel_plate>], [null, <moreplates:electrical_steel_plate>, null]]);
-recipes.addShaped(<modularmachinery:blockoutputbus:5>, [[null, <ironchest:iron_chest>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockoutputbus:4>, <moreplates:electrical_steel_plate>], [null, <moreplates:electrical_steel_plate>, null]]);
+recipes.addShaped(<modularmachinery:blockoutputbus:5>, [[null, <ironchest:iron_chest>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockcasing:4>, <moreplates:electrical_steel_plate>], [null, <moreplates:electrical_steel_plate>, null]]);
 recipes.addShaped(<modularmachinery:blockoutputbus:4>, [[null, <ironchest:iron_chest>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockoutputbus:3>, <moreplates:electrical_steel_plate>], [null, <moreplates:electrical_steel_plate>, null]]);
-recipes.addShaped(<modularmachinery:blockoutputbus:3>, [[null, <ironchest:iron_chest>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockoutputbus:2>, <moreplates:electrical_steel_plate>], [null, <moreplates:electrical_steel_plate>, null]]);
-recipes.addShaped(<modularmachinery:blockoutputbus:2>, [[null, <minecraft:chest>, null],[<thermalfoundation:material:356>, <modularmachinery:blockoutputbus:1>, <thermalfoundation:material:356>], [null, <thermalfoundation:material:356>, null]]);
-recipes.addShaped(<modularmachinery:blockoutputbus:1>, [[null, <minecraft:chest>, null],[<thermalfoundation:material:356>, <modularmachinery:blockoutputbus>, <thermalfoundation:material:356>], [null, <thermalfoundation:material:356>, null]]);
-recipes.addShaped(<modularmachinery:blockoutputbus>, [[null, <minecraft:chest>, null],[<thermalfoundation:material:356>, <modularmachinery:blockcasing>, <thermalfoundation:material:356>], [null, <thermalfoundation:material:356>, null]]);
+recipes.addShaped(<modularmachinery:blockoutputbus:3>, [[null, <ironchest:iron_chest>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockcasing>, <moreplates:electrical_steel_plate>], [null, <moreplates:electrical_steel_plate>, null]]);
+recipes.addShaped(<modularmachinery:blockoutputbus:2>, [[null, <minecraft:chest>, null],[<thermalfoundation:material:32>, <modularmachinery:blockoutputbus:1>, <thermalfoundation:material:32>], [null, <thermalfoundation:material:32>, null]]);
+recipes.addShaped(<modularmachinery:blockoutputbus:1>, [[null, <minecraft:chest>, null],[<thermalfoundation:material:32>, <modularmachinery:itemmodularium>, <thermalfoundation:material:32>], [null, <thermalfoundation:material:32>, null]]);
 
 val blockoutputbus =
 [
@@ -160,7 +215,7 @@ val blockoutputbus =
 <modularmachinery:blockoutputbus:3>,
 <modularmachinery:blockoutputbus:2>,
 <modularmachinery:blockoutputbus:1>,
-<modularmachinery:blockoutputbus>,
+//<modularmachinery:blockoutputbus>,
 ]
  as IItemStack[];
 for item in blockoutputbus {
@@ -169,12 +224,11 @@ for item in blockoutputbus {
 
 //Item Input
 recipes.addShaped(<modularmachinery:blockinputbus:6>, [[null, <moreplates:electrical_steel_plate>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockinputbus:5>, <moreplates:electrical_steel_plate>], [null, <ironchest:iron_chest>, null]]);
-recipes.addShaped(<modularmachinery:blockinputbus:5>, [[null, <moreplates:electrical_steel_plate>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockinputbus:4>, <moreplates:electrical_steel_plate>], [null, <ironchest:iron_chest>, null]]);
+recipes.addShaped(<modularmachinery:blockinputbus:5>, [[null, <moreplates:electrical_steel_plate>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockcasing:4>, <moreplates:electrical_steel_plate>], [null, <ironchest:iron_chest>, null]]);
 recipes.addShaped(<modularmachinery:blockinputbus:4>, [[null, <moreplates:electrical_steel_plate>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockinputbus:3>, <moreplates:electrical_steel_plate>], [null, <ironchest:iron_chest>, null]]);
-recipes.addShaped(<modularmachinery:blockinputbus:3>, [[null, <moreplates:electrical_steel_plate>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockinputbus:2>, <moreplates:electrical_steel_plate>], [null, <ironchest:iron_chest>, null]]);
-recipes.addShaped(<modularmachinery:blockinputbus:2>, [[null, <thermalfoundation:material:356>, null],[<thermalfoundation:material:356>, <modularmachinery:blockinputbus:1>, <thermalfoundation:material:356>], [null, <minecraft:chest>, null]]);
-recipes.addShaped(<modularmachinery:blockinputbus:1>, [[null, <thermalfoundation:material:356>, null],[<thermalfoundation:material:356>, <modularmachinery:blockinputbus>, <thermalfoundation:material:356>], [null, <minecraft:chest>, null]]);
-recipes.addShaped(<modularmachinery:blockinputbus>, [[null, <thermalfoundation:material:356>, null],[<thermalfoundation:material:356>, <modularmachinery:blockcasing>, <thermalfoundation:material:356>], [null, <minecraft:chest>, null]]);
+recipes.addShaped(<modularmachinery:blockinputbus:3>, [[null, <moreplates:electrical_steel_plate>, null],[<moreplates:electrical_steel_plate>, <modularmachinery:blockcasing>, <moreplates:electrical_steel_plate>], [null, <ironchest:iron_chest>, null]]);
+recipes.addShaped(<modularmachinery:blockinputbus:2>, [[null, <thermalfoundation:material:32>, null],[<thermalfoundation:material:32>, <modularmachinery:blockinputbus:1>, <thermalfoundation:material:32>], [null, <minecraft:chest>, null]]);
+recipes.addShaped(<modularmachinery:blockinputbus:1>, [[null, <thermalfoundation:material:32>, null],[<thermalfoundation:material:32>, <modularmachinery:itemmodularium>, <thermalfoundation:material:32>], [null, <minecraft:chest>, null]]);
 
 val blockinputbus =
 [
@@ -184,12 +238,32 @@ val blockinputbus =
 <modularmachinery:blockinputbus:3>,
 <modularmachinery:blockinputbus:2>,
 <modularmachinery:blockinputbus:1>,
-<modularmachinery:blockinputbus>,
+//<modularmachinery:blockinputbus>,
 ]
  as IItemStack[];
 for item in blockinputbus {
 <ore:itemInputHatch>.add(item);
 }
+
+//Ember Input
+recipes.addShaped(<modulardiversity:blockemberinputhatch:3>, [[<embers:caster_orb>, <embers:archaic_circuit>, <embers:caster_orb>],[<embers:archaic_circuit>, <modulardiversity:blockemberinputhatch:2>, <embers:archaic_circuit>], [<embers:caster_orb>, <embers:archaic_circuit>, <embers:caster_orb>]]);
+recipes.addShaped(<modulardiversity:blockemberinputhatch:2>, [[<embers:crystal_ember>, <ore:plateElectrum>, <embers:crystal_ember>],[<ore:plateElectrum>, <modulardiversity:blockemberinputhatch:1>, <ore:plateElectrum>], [<embers:crystal_ember>, <ore:plateElectrum>, <embers:crystal_ember>]]);
+recipes.addShaped(<modulardiversity:blockemberinputhatch:1>, [[<ore:plateGold>, <contenttweaker:activatedaspectussilver>, <ore:plateGold>],[<contenttweaker:activatedaspectuscopper>, <ore:gearTin>, <contenttweaker:activatedaspectuscopper>], [<ore:plateGold>, <contenttweaker:activatedaspectussilver>, <ore:plateGold>]]);
+
+val blockemberinput =
+[
+    <modulardiversity:blockemberinputhatch:1>,
+    <modulardiversity:blockemberinputhatch:2>,
+    <modulardiversity:blockemberinputhatch:3>,
+]
+ as IItemStack[];
+for item in blockemberinput {
+<ore:blockemberinput>.add(item);
+}
+
+//Mech Power Input
+recipes.addShaped(<modulardiversity:blockmystmechinput>, [[<thermalfoundation:material:323>, <thermalfoundation:material:25>, <thermalfoundation:material:323>],[<modularmachinery:itemmodularium>, <mysticalmechanics:gearbox_frame>, <modularmachinery:itemmodularium>], [<thermalfoundation:material:323>, <deepmoblearning:soot_covered_redstone>, <thermalfoundation:material:323>]]);
+
 
 //Reinforced Casing
 Empowerer.addRecipe(<modularmachinery:blockcasing:4>, <modularmachinery:blockcasing>, <jaopca:item_platedensetungstencarbide>, <advancedrocketry:productgear>, 
@@ -204,13 +278,23 @@ CombinationCrafting.addRecipe(<modularmachinery:blockcasing:4>, 1000000, <modula
 ##############################################
 
 ##Tech Reborn Basic Frame
+val TRBasicFrame2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-trbasicframe2", "minifield-crafter", 400, 0);
+TRBasicFrame2.addEnergyPerTickInput(2000);
+TRBasicFrame2.addItemInput(<techreborn:part:29>);
+TRBasicFrame2.addItemInput(<immersiveengineering:metal_decoration0:3>);
+TRBasicFrame2.addItemInput(<rockhounding_chemistry:misc_blocks_a:13> * 6);
+TRBasicFrame2.addItemInput(<contenttweaker:sheetmetal_refinediron> * 20);
+TRBasicFrame2.addItemOutput(<techreborn:machine_frame>);
+TRBasicFrame2.build();
+
+##Tech Reborn Basic Frame 2
 val TRBasicFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-trbasicframe", "minifield-crafter", 400, 0);
 TRBasicFrame.addEnergyPerTickInput(2000);
 TRBasicFrame.addItemInput(<techreborn:part:29>);
-TRBasicFrame.addItemInput(<immersiveengineering:metal_decoration0:3>);
+TRBasicFrame.addItemInput(<contenttweaker:advanced_redstone_block>);
 TRBasicFrame.addItemInput(<rockhounding_chemistry:misc_blocks_a:13> * 6);
 TRBasicFrame.addItemInput(<contenttweaker:sheetmetal_refinediron> * 20);
-TRBasicFrame.addItemOutput(<techreborn:machine_frame>);
+TRBasicFrame.addItemOutput(<techreborn:machine_frame>*2);
 TRBasicFrame.build();
 
 ##Mekanism Steel Casing
@@ -406,7 +490,7 @@ AALargeCrate.build();
 ##Thermal Tank
 val ThermalTank = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-thermaltank", "minifield-crafter", 400, 0);
 ThermalTank.addEnergyPerTickInput(1000);
-ThermalTank.addItemInput(<tconstruct:clear_glass> * 12);
+ThermalTank.addItemInput(<ore:fusedGlass>, 12);
 ThermalTank.addItemInput(<chisel:technical:5> * 2);
 ThermalTank.addItemInput(<immersiveengineering:sheetmetal> * 12);
 ThermalTank.addItemInput(<thermalfoundation:material:512>);
@@ -423,6 +507,16 @@ NCChassis.addItemInput(<nuclearcraft:part:7>);
 NCChassis.addItemOutput(<nuclearcraft:part:10>);
 NCChassis.build();
 
+##Nuclearcraft Chassis2
+val NCChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-ncchassis2", "minifield-crafter", 400, 0);
+NCChassis2.addEnergyPerTickInput(4000);
+NCChassis2.addItemInput(<contenttweaker:plating_elite> * 8);
+NCChassis2.addItemInput(<contenttweaker:bam_scaffolding> * 18);
+NCChassis2.addItemInput(<contenttweaker:sub_block_holder_0:6>);
+NCChassis2.addItemInput(<nuclearcraft:part:7>);
+NCChassis2.addItemOutput(<nuclearcraft:part:10>*2);
+NCChassis2.build();
+
 ##RF Tools Frame
 val RFToolsFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-rftoolsframe", "minifield-crafter", 400, 0);
 RFToolsFrame.addEnergyPerTickInput(3000);
@@ -436,7 +530,7 @@ RFToolsFrame.build();
 ##RF Tools Frame 2
 val RFToolsFrame2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-rftoolsframe2", "minifield-crafter", 400, 0);
 RFToolsFrame2.addEnergyPerTickInput(3000);
-RFToolsFrame2.addItemInput(<jaopca:block_scaffoldingsyrmorite> * 18);
+RFToolsFrame2.addItemInput(<contenttweaker:ironwood_scaffolding> * 18);
 RFToolsFrame2.addItemInput(<immersiveengineering:stone_decoration:8> * 8);
 RFToolsFrame2.addItemInput(<actuallyadditions:block_crystal:1>);
 RFToolsFrame2.addItemInput(<actuallyadditions:item_misc:7>);
@@ -498,21 +592,15 @@ TCconstruct.addItemInput(<embers:gear_dawnstone>);
 TCconstruct.addItemOutput(<thaumcraft:metal_alchemical>*3);
 TCconstruct.build();
 
-/*
-##Thermal Device Frame
-val ThermalDeviceFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-thermaldeviceframe", "minifield-crafter", 1000, 0);
-ThermalDeviceFrame.addEnergyPerTickInput(100);
-ThermalDeviceFrame.addItemInput(<actuallyadditions:block_crystal:1>);
-ThermalDeviceFrame.addItemInput(<tconstruct:clear_glass> * 6);
-ThermalDeviceFrame.addItemInput(<contenttweaker:sheetmetal_brass> * 8);
-ThermalDeviceFrame.addItemInput(<chisel:factory1:4> * 12);
-ThermalDeviceFrame.addItemInput(<thermalfoundation:material:259>);
-ThermalDeviceFrame.addItemOutput(<thermalexpansion:frame:64>);
-ThermalDeviceFrame.build();
-*/
-
-
-
+##SootyFrame
+val SootyFrame = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-SootyFrame", "minifield-crafter", 400, 0);
+SootyFrame.addEnergyPerTickInput(2000);
+SootyFrame.addItemInput(<contenttweaker:sooty_block> * 20);
+SootyFrame.addItemInput(<jaopca:block_sheetmetalpulsatingiron> * 6);
+SootyFrame.addItemInput(<bloodtinker:blood_bronze_block>);
+SootyFrame.addItemInput(<moreplates:knightmetal_gear>);
+SootyFrame.addItemOutput(<deepmoblearning:machine_casing>);
+SootyFrame.build();
 
 
 ##############################################
@@ -521,20 +609,20 @@ ThermalDeviceFrame.build();
 ##
 ##############################################
 
-
+/*
 ##Brass
-val dustBrass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-brass", "mixer", 20, 0);
-dustBrass.addEnergyPerTickInput(500);
+val dustBrass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-brass", "mixer", 100, 0);
+dustBrass.addMysticalMechanicsInput(10, 50);
 dustBrass.addItemInput(<techreborn:dust:59>);
-dustBrass.addItemInput(<thermalfoundation:material:64> * 3);
-dustBrass.addItemOutput(<techreborn:dust:6> * 4);
+dustBrass.addItemInput(<thermalfoundation:material:64> * 2);
+dustBrass.addItemOutput(<techreborn:dust:6> * 3);
 dustBrass.addItemOutput(<techreborn:dust:6>).setChance(0.5);
 dustBrass.build();
 
 
 ##Bronze
-val dustBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-bronze", "mixer", 20, 0);
-dustBronze.addEnergyPerTickInput(500);
+val dustBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-bronze", "mixer", 100, 0);
+dustBronze.addMysticalMechanicsInput(10, 50);
 dustBronze.addItemInput(<thermalfoundation:material:65>);
 dustBronze.addItemInput(<thermalfoundation:material:64> * 3);
 dustBronze.addItemOutput(<thermalfoundation:material:99> * 4);
@@ -548,8 +636,8 @@ carbonforSteel.add(<rockhounding_chemistry:chemical_dusts:24>);
 carbonforSteel.add(<thermalfoundation:material:768>);
 carbonforSteel.add(<nuclearcraft:dust:8>);
 
-val dustSteel = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-steel", "mixer", 20, 0);
-dustSteel.addEnergyPerTickInput(500);
+val dustSteel = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-steel", "mixer", 100, 0);
+dustSteel.addMysticalMechanicsInput(10, 50);
 dustSteel.addItemInput(<thermalfoundation:material>);
 dustSteel.addItemInput(<ore:carbonforSteel>);
 dustSteel.addItemOutput(<thermalfoundation:material:96>);
@@ -557,8 +645,8 @@ dustSteel.addItemOutput(<thermalfoundation:material:96>).setChance(0.5);
 dustSteel.build();
 
 ##Electrum
-val dustElectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-electrum", "mixer", 20, 0);
-dustElectrum.addEnergyPerTickInput(500);
+val dustElectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-electrum", "mixer", 100, 0);
+dustElectrum.addMysticalMechanicsInput(10, 50);
 dustElectrum.addItemInput(<thermalfoundation:material:66>);
 dustElectrum.addItemInput(<thermalfoundation:material:1>);
 dustElectrum.addItemOutput(<thermalfoundation:material:97> * 2);
@@ -566,8 +654,8 @@ dustElectrum.addItemOutput(<thermalfoundation:material:97>).setChance(0.5);
 dustElectrum.build();
 
 ##Energetic
-val dustEnergetic = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-energetic", "mixer", 20, 0);
-dustEnergetic.addEnergyPerTickInput(500);
+val dustEnergetic = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-energetic", "mixer", 100, 0);
+dustEnergetic.addMysticalMechanicsInput(10, 50);
 dustEnergetic.addItemInput(<minecraft:glowstone_dust>);
 dustEnergetic.addItemInput(<minecraft:redstone>);
 dustEnergetic.addItemOutput(<nuclearcraft:compound:2> * 2);
@@ -575,8 +663,8 @@ dustEnergetic.addItemOutput(<nuclearcraft:compound:2>).setChance(0.5);
 dustEnergetic.build();
 
 ##Dimentional
-val dustDimentional = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dimentional", "mixer", 20, 0);
-dustDimentional.addEnergyPerTickInput(500);
+val dustDimentional = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dimentional", "mixer", 100, 0);
+dustDimentional.addMysticalMechanicsInput(10, 50);
 dustDimentional.addItemInput(<thermalfoundation:material:770> * 4);
 dustDimentional.addItemInput(<ore:dustEndstone>);
 dustDimentional.addItemOutput(<nuclearcraft:compound:9> * 2);
@@ -584,8 +672,8 @@ dustDimentional.addItemOutput(<nuclearcraft:compound:9>).setChance(0.5);
 dustDimentional.build();
 
 ##Invar
-val dustInvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-invar", "mixer", 20, 0);
-dustInvar.addEnergyPerTickInput(500);
+val dustInvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-invar", "mixer", 100, 0);
+dustInvar.addMysticalMechanicsInput(10, 50);
 dustInvar.addItemInput(<thermalfoundation:material> * 2);
 dustInvar.addItemInput(<thermalfoundation:material:69>);
 dustInvar.addItemOutput(<thermalfoundation:material:98> * 3);
@@ -593,8 +681,8 @@ dustInvar.addItemOutput(<thermalfoundation:material:98>).setChance(0.5);
 dustInvar.build();
 
 ##CarbonManganese
-val dustCarbonManganese = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-carbonmanganese", "mixer", 20, 0);
-dustCarbonManganese.addEnergyPerTickInput(500);
+val dustCarbonManganese = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-carbonmanganese", "mixer", 100, 0);
+dustCarbonManganese.addMysticalMechanicsInput(10, 50);
 dustCarbonManganese.addItemInput(<ore:dustGraphite>);
 dustCarbonManganese.addItemInput(<ore:dustManganese>);
 dustCarbonManganese.addItemOutput(<nuclearcraft:compound:10> * 2);
@@ -602,8 +690,8 @@ dustCarbonManganese.addItemOutput(<nuclearcraft:compound:10>).setChance(0.5);
 dustCarbonManganese.build();
 
 ##Flux Dust
-val dustFlux = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-flux", "mixer", 20, 0);
-dustFlux.addEnergyPerTickInput(500);
+val dustFlux = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-flux", "mixer", 100, 0);
+dustFlux.addMysticalMechanicsInput(10, 50);
 dustFlux.addItemInput(<thermalfoundation:material:770> * 4);
 dustFlux.addItemInput(<enderio:item_material:20> * 4);
 dustFlux.addItemInput(<minecraft:redstone> * 4);
@@ -613,131 +701,103 @@ dustFlux.build();
 
 ##RichSlag
 val RichSlag = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-richslag", "mixer", 100, 0);
-RichSlag.addEnergyPerTickInput(1000);
+RichSlag.addMysticalMechanicsInput(20, 50);
 RichSlag.addItemInput(<thermalfoundation:material:864>*32);
 RichSlag.addItemInput(<rockhounding_chemistry:chemical_dusts:39>);
 RichSlag.addItemInput(<rockhounding_chemistry:chemical_dusts:41>);
 RichSlag.addFluidInput(<liquid:refined_biofuel>* 800);
 RichSlag.addItemOutput(<thermalfoundation:material:865>*32);
 RichSlag.build();
+*/
+//Smeltery Stuff
 
-##############################################
-##
-##           Assembler
-##
-##############################################
+##Bronze
+val fluidBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-bronze", "mixer", 240, 0);
+fluidBronze.addEmberInput(200);
+fluidBronze.addMysticalMechanicsInput(40, 80);
+fluidBronze.addItemInput(<ore:ingotCopper>,3);
+fluidBronze.addItemInput(<ore:ingotTin>);
+fluidBronze.addFluidOutput(<liquid:bronze>*576);
+fluidBronze.build();
 
-##TechBasicCircuit
-val TechBasicCircuit = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-techbasiccircuit", "assembler", 10, 0);
-TechBasicCircuit.addEnergyPerTickInput(1000);
-TechBasicCircuit.addItemInput(<powersuits:powerarmorcomponent>*4);
-TechBasicCircuit.addItemInput(<minecraft:redstone>*2);
-TechBasicCircuit.addItemInput(<techreborn:plates:35>);
-TechBasicCircuit.addItemOutput(<techreborn:part:29>);
-TechBasicCircuit.build();
+##constantan
+val fluidconstantan = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-constantan", "mixer", 120, 0);
+fluidconstantan.addEmberInput(200);
+fluidconstantan.addMysticalMechanicsInput(40, 80);
+fluidconstantan.addItemInput(<ore:ingotCopper>);
+fluidconstantan.addItemInput(<ore:ingotNickel>);
+fluidconstantan.addFluidOutput(<liquid:constantan>*288);
+fluidconstantan.build();
 
-##ModularCircut
-val assemblerModularCircutBlock = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-circutblock", "assembler", 400, 0);
-assemblerModularCircutBlock.addEnergyPerTickInput(10000);
-assemblerModularCircutBlock.addItemInput(<advancedrocketry:ic:5>);
-assemblerModularCircutBlock.addItemInput(<advancedrocketry:ic:3>);
-assemblerModularCircutBlock.addItemInput(<advancedrocketry:ic:4>);
-assemblerModularCircutBlock.addItemInput(<modularmachinery:blockcasing>);
-assemblerModularCircutBlock.addFluidInput(<liquid:liquid_nitrogen>*2000);
-assemblerModularCircutBlock.addItemOutput(<modularmachinery:blockcasing:5>);
-assemblerModularCircutBlock.build();
+##invar
+val fluidinvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-invar", "mixer", 180, 0);
+fluidinvar.addEmberInput(200);
+fluidinvar.addMysticalMechanicsInput(40, 80);
+fluidinvar.addItemInput(<ore:ingotIron>,2);
+fluidinvar.addItemInput(<ore:ingotNickel>);
+fluidinvar.addFluidOutput(<liquid:invar>*432);
+fluidinvar.build();
 
-##HighlyAdvancedFrame
-val assemblerHighlyAdvancedFrameBlock = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-highlyadvancedframe", "assembler", 400, 0);
-assemblerHighlyAdvancedFrameBlock.addEnergyPerTickInput(10000);
-assemblerHighlyAdvancedFrameBlock.addItemInput(<techreborn:machine_frame:1>);
-assemblerHighlyAdvancedFrameBlock.addItemInput(<jaopca:item_gearsuperalloy>*4);
-assemblerHighlyAdvancedFrameBlock.addItemInput(<techreborn:plates:38>*4);
-assemblerHighlyAdvancedFrameBlock.addFluidInput(<liquid:liquid_nitrogen>*4000);
-assemblerHighlyAdvancedFrameBlock.addItemOutput(<techreborn:machine_frame:2>);
-assemblerHighlyAdvancedFrameBlock.build();
+##electrum
+val fluidelectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-electrum", "mixer", 120, 0);
+fluidelectrum.addEmberInput(200);
+fluidelectrum.addMysticalMechanicsInput(40, 80);
+fluidelectrum.addItemInput(<ore:ingotGold>);
+fluidelectrum.addItemInput(<ore:ingotSilver>);
+fluidelectrum.addFluidOutput(<liquid:electrum>*288);
+fluidelectrum.build();
 
-##BasicCoils
-val assemblerBasicCoils = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-Basiccoils", "assembler", 10, 0);
-assemblerBasicCoils.addEnergyPerTickInput(1000);
-assemblerBasicCoils.addItemInput(<immersiveengineering:wirecoil:2>*4);
-assemblerBasicCoils.addItemInput(<actuallyadditions:item_crystal>);
-assemblerBasicCoils.addItemOutput(<actuallyadditions:item_misc:7>*4);
-assemblerBasicCoils.build();
+##inert_metal
+val fluidinert_metal = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-inert_metal", "mixer", 120, 0);
+fluidinert_metal.addEmberInput(200);
+fluidinert_metal.addMysticalMechanicsInput(40, 80);
+fluidinert_metal.addItemInput(<ore:ingotSilver>,2);
+fluidinert_metal.addItemInput(<ore:ingotLead>);
+fluidinert_metal.addFluidOutput(<liquid:inert_metal>*288);
+fluidinert_metal.build();
 
-##BasicCoils2
-val assemblerBasicCoils2 = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-Basiccoils2", "assembler", 10, 0);
-assemblerBasicCoils2.addEnergyPerTickInput(1000);
-assemblerBasicCoils2.addItemInput(<immersiveengineering:wirecoil:1>*4);
-assemblerBasicCoils2.addItemInput(<actuallyadditions:item_crystal>);
-assemblerBasicCoils2.addItemOutput(<actuallyadditions:item_misc:7>*2);
-assemblerBasicCoils2.build();
+##conductive_iron
+val fluidconductive_iron = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-conductive_iron", "mixer", 60, 0);
+fluidconductive_iron.addEmberInput(200);
+fluidconductive_iron.addMysticalMechanicsInput(60, 100);
+fluidconductive_iron.addItemInput(<minecraft:iron_ingot>);
+fluidconductive_iron.addItemInput(<minecraft:redstone>);
+fluidconductive_iron.addFluidOutput(<liquid:conductive_iron>*144);
+fluidconductive_iron.build();
 
-##BasicCoils3
-val assemblerBasicCoils3 = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-Basiccoils3", "assembler", 10, 0);
-assemblerBasicCoils3.addEnergyPerTickInput(1000);
-assemblerBasicCoils3.addItemInput(<immersiveengineering:wirecoil>*4);
-assemblerBasicCoils3.addItemInput(<actuallyadditions:item_crystal>);
-assemblerBasicCoils3.addItemOutput(<actuallyadditions:item_misc:7>);
-assemblerBasicCoils3.build();
+##pulsating_iron
+val fluidpulsating_iron = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-pulsating_iron", "mixer", 60, 0);
+fluidpulsating_iron.addEmberInput(200);
+fluidpulsating_iron.addMysticalMechanicsInput(60, 100);
+fluidpulsating_iron.addItemInput(<minecraft:iron_ingot>);
+fluidpulsating_iron.addItemInput(<minecraft:ender_pearl>);
+fluidpulsating_iron.addFluidOutput(<liquid:pulsating_iron>*144);
+fluidpulsating_iron.build();
 
-##AdvancedCoils
-val assemblerAdvancedCoils = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-Advancedcoils", "assembler", 20, 0);
-assemblerAdvancedCoils.addEnergyPerTickInput(2000);
-assemblerAdvancedCoils.addItemInput(<techreborn:cable:6>*4);
-assemblerAdvancedCoils.addItemInput(<actuallyadditions:item_misc:7>);
-assemblerAdvancedCoils.addItemOutput(<actuallyadditions:item_misc:8>);
-assemblerAdvancedCoils.build();
+##Quartz for fused
+val fluidquartz = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-quartz", "mixer", 100, 0);
+fluidquartz.addEmberInput(200);
+fluidquartz.addMysticalMechanicsInput(20, 60);
+fluidquartz.addItemInput(<minecraft:quartz>);
+fluidquartz.addFluidOutput(<liquid:quartz>*666);
+fluidquartz.build();
 
-##QuarryCard
-val assemblerQuarryCard = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-quarrycard", "assembler", 500, 0);
-assemblerQuarryCard.addEnergyPerTickInput(4000);
-assemblerQuarryCard.addItemInput(<rftools:shape_card>);
-assemblerQuarryCard.addItemInput(<techreborn:part:6>*4);
-assemblerQuarryCard.addItemInput(<rockhounding_chemistry:misc_items:10>*4);
-assemblerQuarryCard.addItemInput(<qmd:semiconductor:4>*4);
-assemblerQuarryCard.addFluidInput(<liquid:liquid_nitrogen>*4000);
-assemblerQuarryCard.addItemOutput(<rftools:shape_card:2>);
-assemblerQuarryCard.build();
+##Glass
+val fluidglass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-glass", "mixer", 100, 0);
+fluidglass.addEmberInput(200);
+fluidglass.addMysticalMechanicsInput(20, 60);
+fluidglass.addItemInput(<minecraft:sand>);
+fluidglass.addFluidOutput(<liquid:glass>*1000);
+fluidglass.build();
 
-##LaserAcceptor
-val assemblerLaserAcceptorBlock = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-laseracceptor", "assembler", 500, 0);
-assemblerLaserAcceptorBlock.addEnergyPerTickInput(15000);
-assemblerLaserAcceptorBlock.addItemInput(<modularmachinery:blockcasing:4>);
-assemblerLaserAcceptorBlock.addItemInput(<environmentaltech:laser_core>*2);
-assemblerLaserAcceptorBlock.addItemInput(<mekanismgenerators:reactorglass:1>*2);
-assemblerLaserAcceptorBlock.addItemInput(<rockhounding_chemistry:alloy_parts:34>*4);
-assemblerLaserAcceptorBlock.addFluidInput(<liquid:liquid_nitrogen>*4000);
-assemblerLaserAcceptorBlock.addItemOutput(<modulardiversity:blockmeklaseracceptor>);
-assemblerLaserAcceptorBlock.build();
+##Blood
+val fluidblood = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-blood", "mixer", 50, 0);
+fluidblood.addEmberInput(200);
+fluidblood.addMysticalMechanicsInput(20, 60);
+fluidblood.addItemInput(<ore:listAllmeatraw>);
+fluidblood.addFluidOutput(<liquid:blood>*40);
+fluidblood.build();
 
-##LapatronCrystal
-val assemblerLapatronCrystal = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-LapatronCrystal", "assembler", 10, 0);
-assemblerLapatronCrystal.addEnergyPerTickInput(25000);
-assemblerLapatronCrystal.addItemInput(<contenttweaker:lazurite_gem>);
-assemblerLapatronCrystal.addItemInput(<ore:circuitAdvanced>);
-assemblerLapatronCrystal.addFluidInput(<liquid:lapis>*1000);
-assemblerLapatronCrystal.addItemOutput(<techreborn:lapotroncrystal>*4);
-assemblerLapatronCrystal.build();
-
-##lapotronicorb
-val assemblerlapotronicorb = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-lapotronicorb", "assembler", 20, 0);
-assemblerlapotronicorb.addEnergyPerTickInput(50000);
-assemblerlapotronicorb.addItemInput(<ore:lapotronCrystal>,8);
-assemblerlapotronicorb.addItemInput(<ore:plateiridiumAlloy>);
-assemblerlapotronicorb.addFluidInput(<liquid:lapis>*4000);
-assemblerlapotronicorb.addItemOutput(<techreborn:lapotronicorb>*4);
-assemblerlapotronicorb.build();
-
-##componentEVCapacitor
-val assemblercomponentEVCapacitor = mods.modularmachinery.RecipeBuilder.newBuilder("assembler-modular-componentEVCapacitor", "assembler", 40, 0);
-assemblercomponentEVCapacitor.addEnergyPerTickInput(1000000);
-assemblercomponentEVCapacitor.addItemInput(<ore:componentWiring>,6);
-assemblercomponentEVCapacitor.addItemInput(<ore:componentHVCapacitor>,2);
-assemblercomponentEVCapacitor.addItemInput(<ore:componentComputerChip>);
-assemblercomponentEVCapacitor.addFluidInput(<liquid:liquid_nitrogen>*4000);
-assemblercomponentEVCapacitor.addItemOutput(<powersuits:powerarmorcomponent:8>*4);
-assemblercomponentEVCapacitor.build();
 
 ##############################################
 ##
@@ -784,9 +844,9 @@ VoidSeed.build();
 
 ##CyrstaltineIngot
 val CyrstaltineIngot = mods.modularmachinery.RecipeBuilder.newBuilder("forge-cyrstaltineingot", "heavens-forge", 400, 0);
-CyrstaltineIngot.addMekanismLaserInput(5000000);
+CyrstaltineIngot.addMekanismLaserInput(50000000);
 CyrstaltineIngot.addItemInput(<extendedcrafting:material:24>);
-CyrstaltineIngot.addItemInput(<astralsorcery:itemcelestialcrystal>);
+CyrstaltineIngot.addItemInput(<ore:CelestialCrystal>);
 CyrstaltineIngot.addItemInput(<avaritia:resource>*4);
 CyrstaltineIngot.addItemInput(<moreplates:stellar_alloy_plate>*8);
 CyrstaltineIngot.addItemInput(<actuallyadditions:item_crystal_empowered:2>*4);

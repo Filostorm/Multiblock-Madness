@@ -1,0 +1,85 @@
+{
+  "name": "cm3nuclearcraft:machineframe2",
+
+  "disabled": false,
+
+  "target-item": "nuclearcraft:part",
+  "target-count": 2,
+  "target-meta": 10,
+
+  "duration": 100,
+  "symmetrical": true,
+
+  "catalyst": "nuclearcraft:part",
+  "catalyst-meta": 7,
+
+  "input-types": {
+    "a": {
+      "id": "contenttweaker:plating_elite",
+      "meta": 0
+    },
+    "b": {
+      "id": "contenttweaker:bam_scaffolding",
+      "meta": 0
+    },
+    "c": {
+      "id": "contenttweaker:sub_block_holder_0",
+      "meta": 6
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ]
+  ]
+
+
+}

@@ -6,7 +6,7 @@
   "target-item": "botania:pool",
   "target-count": 1,
 
-  "duration": 200,
+  "duration": 150,
   "symmetrical": true,
 
   "catalyst": "enderio:item_material",

@@ -241,11 +241,6 @@
       "id": "OD:oreZinc"
     },
     {
-      "target": "white",
-      "weight": 157,
-      "id": "OD:oreIridium"
-    },
-    {
       "target": "black",
       "weight": 192,
       "id": "OD:oreTungsten"
@@ -389,6 +384,11 @@
   "target": "cyan",
   "weight": 200,
   "id": "OD:oreSheldonite"
+},
+{
+  "target": "cyan",
+  "weight": 100,
+  "id": "OD:oreSodalite"
 }
   ]
 }

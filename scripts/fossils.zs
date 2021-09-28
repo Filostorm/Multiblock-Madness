@@ -31,10 +31,11 @@ recipes.addShapeless(<fossil:scarab_sword>.withTag({ench: [{lvl: 4 as short, id:
 //mods.fossils.recipes.removeWorktableRecipe(<fossil:broken_sword>);
 //mods.fossils.recipes.addWorktableRecipe(<fossil:broken_sword>, <fossil:relic_scrap>, <fossil:ancient_sword>.withTag({ench: [{lvl: 1 as short, id: 27 as short}, {lvl: 5 as short, id: 36 as short}], RepairCost: 3}));
 
-mods.fossils.recipes.addAnalyzerOutput(<fossil:ancient_sword>, <fossil:ancient_sword>.withTag({ench: [{lvl: 1 as short, id: 27 as short}, {lvl: 5 as short, id: 36 as short}], RepairCost: 3}), 100);
+mods.fossils.recipes.addAnalyzerOutput(<fossil:ancient_sword>, <fossil:ancient_sword>.withTag({ench: [{lvl: 1 as short, id: 27 as short}, {lvl: 5 as short, id: 36 as short}, {lvl: 5 as short, id: 92 as short}], RepairCost: 7}), 100);
 
 
 val tinyDustMap as IItemStack[IItemStack] = {
+	/* Old Tiny Piles
 <jaopca:item_dusttinytin>: <minecraft:gravel>,
 <jaopca:item_dusttinycopper>: <minecraft:gravel>,
 <jaopca:item_dusttinynickel>: <minecraft:gravel>,
@@ -60,13 +61,39 @@ val tinyDustMap as IItemStack[IItemStack] = {
 <jaopca:item_dusttinyadamantine>: <nuclearcraft:gem_dust:11>,
 <jaopca:item_dusttinytungsten>: <nuclearcraft:gem_dust:11>,
 <jaopca:item_dusttinytitanium>: <nuclearcraft:gem_dust:11>,
+*/
+
+<techreborn:smalldust:30>: <minecraft:gravel>,
+<techreborn:smalldust:1>: <minecraft:gravel>,
+<techreborn:smalldust:24>: <minecraft:gravel>,
+<jaopca:item_dustsmallpalladium>: <minecraft:gravel>,
+<techreborn:smalldust:14>: <minecraft:gravel>,
+<techreborn:smalldust:29>: <minecraft:gravel>,
+<minecraft:redstone>: <minecraft:gravel>,
+<techreborn:smalldust:53>: <minecraft:gravel>,
+<techreborn:smalldust:34>: <minecraft:gravel>,
+<techreborn:smalldust:47>: <minecraft:gravel>,
+<techreborn:smalldust:27>: <minecraft:gravel>,
+
+<jaopca:item_dustsmalllithium>: <techreborn:dust:33>,
+<techreborn:smalldust:68>: <techreborn:dust:33>,
+<jaopca:item_dustsmallboron>: <techreborn:dust:33>,
+<jaopca:item_dustsmallcobalt>: <techreborn:dust:33>,
+<minecraft:glowstone_dust>: <techreborn:dust:33>,
+<jaopca:item_dustsmallardite>: <techreborn:dust:33>,
+<jaopca:item_dustsmallorichalcum>: <techreborn:dust:33>,
+<techreborn:smalldust:30>: <techreborn:dust:33>,
+
+<techreborn:smalldust:54>: <techreborn:dust:21>,
+<jaopca:item_dustsmallosmium>: <techreborn:dust:21>,
+<jaopca:item_dustsmalladamantine>: <techreborn:dust:21>,
+<techreborn:smalldust:55>: <techreborn:dust:21>,
+<techreborn:smalldust:38>: <techreborn:dust:21>,
 } as IItemStack[IItemStack];
 
 for tinyDust, material in tinyDustMap {
 	mods.fossils.recipes.addSifterOutput(material, tinyDust, 1);
 }
-
-
 
 ##########################################################################################
 print("==================== end of Fossils.zs ====================");

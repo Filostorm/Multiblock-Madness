@@ -6,6 +6,10 @@ import mods.thaumcraft.Infusion;
 import mods.astralsorcery.Altar;
 import mods.astralsorcery.LightTransmutation;
 import mods.astralsorcery.StarlightInfusion;
+import mods.enderio.SagMill;
+import mods.appliedenergistics2.Grinder;
+import mods.advancedrocketry.Crystallizer;
+import mods.astralsorcery.Lightwell;
 
 print("==================== loading Astral Sorcery ====================");
 ##########################################################################################
@@ -21,6 +25,16 @@ for item in itemstoRemove {
 }
 
 
+
+//Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
+//StarDust
+Grinder.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>, 4);
+Grinder.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:blockcustomore:1>, 4, <astralsorcery:itemcraftingcomponent:2>, 1);
+
+
+
+SagMill.addRecipe([<astralsorcery:itemrockcrystalsimple>,<astralsorcery:itemrockcrystalsimple>,<astralsorcery:itemrockcrystalsimple>], [1,0.5,0.1] , <astralsorcery:blockcustomore>, "MULTIPLY_OUTPUT");
+
 //<astralsorcery:blockinfusedwood>.addTooltip(format.aqua("Drop any log into liquid Starlight to create"));
 <astralsorcery:itemcelestialcrystal>.addTooltip(format.aqua("Grows from a Celestal Crystal Cluster"));
 
@@ -30,9 +44,9 @@ recipes.addShaped(<astralsorcery:itemwand>, [[null, <astralsorcery:itemcraftingc
 
 //mods.astralsorcery.Lightwell.addLiquefaction(IItemStack input, ILiquidStack output, float productionMultiplier, float shatterMultiplier, int colorhex);
 
-
+//Starmetal
 LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, true);
-LightTransmutation.addTransmutation(<contenttweaker:sub_block_holder_0:7>, <astralsorcery:blockcustomore:1>, 9);
+LightTransmutation.addTransmutation(<contenttweaker:sub_block_holder_0:7>, <astralsorcery:blockcustomore:1>, 20);
 
 //1000 max starlight for first tier altar
 Altar.addDiscoveryAltarRecipe("internal/altar/upgrade_tier2", <astralsorcery:blockaltar:1>, 950, 200, [
@@ -98,21 +112,15 @@ Altar.addTraitAltarRecipe("mm:shaped/internal/altar/beacon", <minecraft:beacon>,
 Altar.addDiscoveryAltarRecipe("internal/altar/illuminationpowder", <astralsorcery:itemusabledust>*16, 250, 200, [
 
 			null, <arcanearchives:radiant_dust>, null,
-
 	<arcanearchives:radiant_dust>, <jaopca:item_dustaquamarine>, <arcanearchives:radiant_dust>,
-
 			null, <arcanearchives:radiant_dust>, null]);
 
 			
 /*
 Altar.addAttunementAltarRecipe("multiblockmadness:shaped/internal/altar/runealtar", <botania:runealtar>, 500, 300, [
-
 			<arcanearchives:quartz_sliver>, <arcanearchives:quartz_sliver>, <arcanearchives:quartz_sliver>,
-
 			<botania:livingrock>, <botania:livingrock>, <botania:livingrock>,
-
 			<botania:livingrock>, <astralsorcery:itemshiftingstar>, <botania:livingrock>,
-
 			<botania:manaresource:23>, <botania:manaresource:23>, <bloodmagic:blood_rune>, <bloodmagic:blood_rune>]);
 */
 
@@ -122,11 +130,12 @@ recipes.addShaped(<contenttweaker:starmetal_block>, [[<astralsorcery:itemcraftin
 Melting.addRecipe(<liquid:starmetal> * 1296, <contenttweaker:starmetal_block>);
 Casting.addBasinRecipe(<contenttweaker:starmetal_block>, null, <liquid:starmetal>, 1296);
 
-<astralsorcery:itemperkseal>.addTooltip(format.lightPurple("Used to activate the Twilight Forest Portal"));
 
 //Illumination Powder
 StarlightInfusion.addInfusion(<arcanearchives:radiant_dust>, <astralsorcery:itemusabledust>*8, false, 0.5, 200);
 
+//Lens x2 recipe
+StarlightInfusion.addInfusion(<botania:managlasspane>, <astralsorcery:itemcraftingcomponent:3>*2, false, 0.75, 200);
 
 //Skystone
 LightTransmutation.addTransmutation(<embers:ashen_stone>, <appliedenergistics2:sky_stone_block>, 5);
@@ -147,6 +156,13 @@ Infusion.registerRecipe("chalice", "",
 <astralsorcery:blockmarble:6>,<rockhounding_chemistry:alloy_parts:51>, <astralsorcery:blockmarble:6>, <actuallyadditions:item_crystal_empowered:1>]);
 
 
+//Celestial Crystal
+Crystallizer.addRecipe(<astralsorcery:itemcelestialcrystal>, 1200, 5000, <astralsorcery:itemrockcrystalsimple>, <astralsorcery:itemcraftingcomponent:2>); 
+
+
+//Stable Celestial Crystal
+Crystallizer.addRecipe(<contenttweaker:stable_celestial_crystal>, 1200, 5000, <astralsorcery:itemrockcrystalsimple>, <astralsorcery:itemcraftingcomponent:2>, <botania:manaresource:23>); 
+Lightwell.addLiquefaction(<contenttweaker:stable_celestial_crystal>, <liquid:astralsorcery.liquidstarlight>, 2, 0.6, 0x6603fc);
 
 ##########################################################################################
 print("==================== end of Astral Sorcery ====================");

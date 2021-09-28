@@ -67,21 +67,14 @@
 						"properties": {
 							"type": "osmium"
 						},
-						"weight": 70
+						"weight": 60
 					},
 					{
 						"name": "thermalfoundation:ore",
 						"properties": {
 							"type": "platinum"
 						},
-						"weight": 29
-					},
-					{
-						"name": "thermalfoundation:ore",
-						"properties": {
-							"type": "iridium"
-						},
-						"weight": 1
+						"weight": 40
 					}
 				],
 				"material": "minecraft:stone",

@@ -30,7 +30,6 @@ val recipestoRemove =
 <mekanism:basicblock:8>,
 <naturescompass:naturescompass>,
 <rockhounding_chemistry:misc_blocks_a:11>,
-<tcomplement:alloy_tank>,
 <tcomplement:storage>,
 <thermalexpansion:tank>,
 <thermalfoundation:material:100>,
@@ -56,7 +55,6 @@ val recipestoRemove =
 <rftools:machine_frame>,
 <botania:pool>,
 <immersiveengineering:material:2>,
-<jaopca:item_gearsyrmorite>,
 <thermalfoundation:material:24>,
 <thermalfoundation:material:25>,
 <chisel:voidstone>,
@@ -79,7 +77,6 @@ val recipestoRemove =
 <buildinggadgets:templatemanager>,
 <buildinggadgets:copypastetool>,
 <agricraft:crop_sticks>,
-<jaopca:item_sticksyrmorite>,
 <jaopca:item_stickbrass>,
 <jaopca:item_stickardite>,
 <jaopca:item_stickmanasteel>,
@@ -122,7 +119,6 @@ val recipestoRemove =
 <actuallyadditions:item_food:4>,
 <actuallyadditions:item_food:3>,
 <quark:rope>,
-<computercraft:cable:1>,
 <mob_grinding_utils:tank>,
 <advancedrocketry:productrod>,
 <malisisdoors:rustyladder>,
@@ -132,6 +128,16 @@ val recipestoRemove =
 <quark:dark_oak_trapdoor>,
 <quark:acacia_trapdoor>,
 <quark:jungle_trapdoor>,
+<mysticalworld:assorted_seeds>,
+<danknull:dank_null_5>,
+<xlfoodmod:chocolate>,
+<immersiveposts:metal_rods:2>,
+<moreplates:electrum_stick>,
+<immersiveposts:metal_rods:7>,
+<immersiveposts:metal_rods:4>,
+<immersiveposts:metal_rods:3>,
+<randomthings:igniter>,
+<libvulpes:productrod:4>
 ]
  as IItemStack[];
 
@@ -175,7 +181,6 @@ val itemstoRemove =
 <enderio:block_decoration3:1>,
 <enderio:block_decoration3:2>,
 <enderio:block_decoration3:4>,
-<enderio:item_material:69>,
 <enderio:item_material:52>,
 <enderio:item_material:51>,
 <immersiveengineering:metal:15>,
@@ -221,6 +226,13 @@ val itemstoRemove =
 <advgenerators:steam_turbine_controller>,
 <advancedrocketry:arcfurnace>,
 <advancedrocketry:blastbrick>,
+<tinker_io:speedupg>,
+<mysticalworld:silver_sword>,
+<mysticalworld:copper_sword>,
+<immersiveposts:metal_rods>,
+<immersiveposts:metal_rods:5>,
+<additionalcompression:dirt_compressed>,
+<additionalcompression:dirt_compressed:1>,
 ]
  as IItemStack[];
 
@@ -259,26 +271,10 @@ mods.jei.JEI.hideCategory("thermalexpansion.factorizer_combine");
 mods.jei.JEI.hideCategory("thermalexpansion.factorizer_split");
 mods.jei.JEI.hideCategory("EIOTank");
 mods.jei.JEI.hideCategory("tinker_io:smart_output");
-mods.jei.JEI.hideCategory("embers.dawnstone_anvil");
-
-### ADD ORE DICs ###
-
-val slimyMoss = <ore:slimyMoss>;
-slimyMoss.add(<tconstruct:materials:18>);
-slimyMoss.add(<thebetweenlands:items_plant_drop:30>);
-slimyMoss.add(<twilightforest:twilight_plant>);
-slimyMoss.add(<thebetweenlands:items_crushed:27>);
-slimyMoss.add(<thebetweenlands:items_plant_drop:42>);
-slimyMoss.add(<thebetweenlands:items_plant_drop:29>);
-slimyMoss.add(<thebetweenlands:items_crushed:55>);
-slimyMoss.add(<thebetweenlands:items_crushed:38>);
-slimyMoss.add(<thebetweenlands:edge_moss>);
-slimyMoss.add(<thebetweenlands:cave_moss>);
-slimyMoss.add(<thebetweenlands:moss>);
-slimyMoss.add(<thebetweenlands:edge_moss>);
-
+//mods.jei.JEI.hideCategory("embers.dawnstone_anvil");
 
 ### Add recipes ###
+
 
 //salt block
 recipes.addShaped(<mekanism:saltblock>, [[<ore:itemSalt>, <ore:itemSalt>],[<ore:itemSalt>, <ore:itemSalt>]]);
@@ -332,39 +328,39 @@ mods.jei.JEI.addItem(<akashictome:tome>.withTag({"akashictome:data": {
 	nuclearcraft: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "nuclearcraft", "patchouli:book": "nuclearcraft:guide"}, Damage: 0 as short}}})
 );*/
 recipes.addShaped(<akashictome:tome>.withTag({"akashictome:data": {
-	tconstruct: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short}, 
-	integratedtunnels: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "integrateddynamics:on_the_dynamics_of_integration", Count: 1 as byte, tag: {"akashictome:definedMod": "integratedtunnels"}, Damage: 0 as short}, 
-	astralsorcery: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "astralsorcery:itemjournal", Count: 1 as byte, tag: {"akashictome:definedMod": "astralsorcery"}, Damage: 0 as short}, 
-	conarm: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "conarm:book", Count: 1 as byte, tag: {"akashictome:definedMod": "conarm"}, Damage: 0 as short}, 
-	immersiveengineering: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "immersiveengineering:tool", Count: 1 as byte, tag: {"akashictome:definedMod": "immersiveengineering"}, Damage: 3 as short}, 
-	arcanearchives: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "arcanearchives:tome_arcana", Count: 1 as byte, tag: {"akashictome:definedMod": "arcanearchives", Book: "arcanearchives:xml/tome.xml"}, Damage: 0 as short}, 
-	qmd: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "qmd", "patchouli:book": "qmd:guide"}, Damage: 0 as short}, 
-	valkyrielib: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "valkyrielib:guide", Count: 1 as byte, tag: {"akashictome:definedMod": "valkyrielib"}, Damage: 0 as short}, 
-	embers: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "embers:codex", Count: 1 as byte, tag: {"akashictome:definedMod": "embers"}, Damage: 0 as short}, 
-	rftools: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rftools:rftools_shape_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftools"}, Damage: 0 as short}, 
-	deepmoblearning: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short}, 
-	solcarrot: {id: "solcarrot:food_book", Count: 1 as byte, tag: {"akashictome:definedMod": "solcarrot"}, Damage: 0 as short}, 
-	rftools1: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rftools:rftools_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftools1"}, Damage: 0 as short}, 
-	extendedcrafting: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "extendedcrafting:guide", Count: 1 as byte, tag: {"akashictome:definedMod": "extendedcrafting"}, Damage: 0 as short}, 
-	botania: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "botania:lexicon", Count: 1 as byte, tag: {"knowledge.minecraft": 1 as byte, "akashictome:definedMod": "botania", "knowledge.alfheim": 1 as byte, "knowledge.relic": 1 as byte}, Damage: 0 as short}, 
-	bloodmagic: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "guideapi:bloodmagic-guide", Count: 1 as byte, tag: {"akashictome:definedMod": "bloodmagic"}, Damage: 0 as short}, 
-	actuallyadditions: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "actuallyadditions:item_booklet", Count: 1 as byte, tag: {"akashictome:definedMod": "actuallyadditions"}, Damage: 0 as short}, 
-	cyclicmagic: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "guideapi:cyclicmagic-guide", Count: 1 as byte, tag: {"akashictome:definedMod": "cyclicmagic"}, Damage: 0 as short}, 
-	openblocks: {id: "openblocks:info_book", Count: 1 as byte, tag: {"akashictome:definedMod": "openblocks"}, Damage: 0 as short}, 
-	cookingforblockheads: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "cookingforblockheads:recipe_book", Count: 1 as byte, tag: {"akashictome:definedMod": "cookingforblockheads"}, Damage: 1 as short}, 
-	nuclearcraft: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "nuclearcraft", "patchouli:book": "nuclearcraft:guide"}, Damage: 0 as short}}}),
+  tconstruct: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short}, 
+  integratedtunnels: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "integrateddynamics:on_the_dynamics_of_integration", Count: 1 as byte, tag: {"akashictome:definedMod": "integratedtunnels"}, Damage: 0 as short}, 
+  astralsorcery: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "astralsorcery:itemjournal", Count: 1 as byte, tag: {"akashictome:definedMod": "astralsorcery"}, Damage: 0 as short}, 
+  conarm: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "conarm:book", Count: 1 as byte, tag: {"akashictome:definedMod": "conarm"}, Damage: 0 as short}, 
+  immersiveengineering: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "immersiveengineering:tool", Count: 1 as byte, tag: {"akashictome:definedMod": "immersiveengineering"}, Damage: 3 as short}, 
+  arcanearchives: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "arcanearchives:tome_arcana", Count: 1 as byte, tag: {"akashictome:definedMod": "arcanearchives", Book: "arcanearchives:xml/tome.xml"}, Damage: 0 as short}, 
+  qmd: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "qmd", "patchouli:book": "qmd:guide"}, Damage: 0 as short}, 
+  valkyrielib: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "valkyrielib:guide", Count: 1 as byte, tag: {"akashictome:definedMod": "valkyrielib"}, Damage: 0 as short}, 
+  embers: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "embers:codex", Count: 1 as byte, tag: {"akashictome:definedMod": "embers"}, Damage: 0 as short}, 
+  rftools: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rftools:rftools_shape_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftools"}, Damage: 0 as short}, 
+  deepmoblearning: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short}, 
+  solcarrot: {id: "solcarrot:food_book", Count: 1 as byte, tag: {"akashictome:definedMod": "solcarrot"}, Damage: 0 as short}, 
+  rftools1: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rftools:rftools_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftools1"}, Damage: 0 as short}, 
+  extendedcrafting: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "extendedcrafting:guide", Count: 1 as byte, tag: {"akashictome:definedMod": "extendedcrafting"}, Damage: 0 as short}, 
+  botania: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "botania:lexicon", Count: 1 as byte, tag: {"knowledge.minecraft": 1 as byte, "akashictome:definedMod": "botania", "knowledge.alfheim": 1 as byte, "knowledge.relic": 1 as byte}, Damage: 0 as short}, 
+  bloodmagic: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "guideapi:bloodmagic-guide", Count: 1 as byte, tag: {"akashictome:definedMod": "bloodmagic"}, Damage: 0 as short}, 
+  actuallyadditions: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "actuallyadditions:item_booklet", Count: 1 as byte, tag: {"akashictome:definedMod": "actuallyadditions"}, Damage: 0 as short}, 
+  opencomputers: {id: "opencomputers:tool", Count: 1 as byte, tag: {"akashictome:definedMod": "opencomputers"}, Damage: 4 as short}, 
+  cyclicmagic: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "guideapi:cyclicmagic-guide", Count: 1 as byte, tag: {"akashictome:definedMod": "cyclicmagic"}, Damage: 0 as short}, 
+  openblocks: {id: "openblocks:info_book", Count: 1 as byte, tag: {"akashictome:definedMod": "openblocks"}, Damage: 0 as short}, 
+  cookingforblockheads: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "cookingforblockheads:recipe_book", Count: 1 as byte, tag: {"akashictome:definedMod": "cookingforblockheads"}, Damage: 1 as short}, 
+  nuclearcraft: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "nuclearcraft", "patchouli:book": "nuclearcraft:guide"}, Damage: 0 as short}}}),
 [[null, <minecraft:gold_ingot>, null],[<minecraft:gold_ingot>, <ore:bookshelf>, <minecraft:gold_ingot>], [null, <minecraft:gold_ingot>, null]]);
 
 //Rope
 recipes.addShaped(<quark:rope> * 2, [[<ore:string>, <ore:string>, <ore:string>],[<ore:string>, <ore:string>, <ore:string>], [<ore:string>, <ore:string>, <ore:string>]]);
 
-//Modem
-recipes.addShaped(<computercraft:cable:1>, [[<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>],[<thermalfoundation:material:32>, <minecraft:redstone>, <thermalfoundation:material:32>], [<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>]]);
 
 //XP Tank
 recipes.addShaped(<mob_grinding_utils:tank>, [[<thermalfoundation:material:32>, <minecraft:glass_pane>, <thermalfoundation:material:32>],[<moreplates:invar_stick>, <openblocks:tank>, <moreplates:invar_stick>], [<thermalfoundation:material:32>, <minecraft:glass_pane>, <thermalfoundation:material:32>]]);
 
-
+//Igniter
+recipes.addShapedMirrored(<randomthings:igniter>, [[<ore:cobblestone>, <ore:cobblestone>, <ore:netherrack>],[<ore:cobblestone>, <enderio:item_material>, <ore:netherrack>], [<ore:cobblestone>, <ore:cobblestone>, <ore:netherrack>]]);
 
 //Broken powersuit recipe
 recipes.addShaped(<powersuits:powerarmorcomponent:4>, [[<thermalfoundation:material:327>, <techreborn:part:17>, <thermalfoundation:material:327>],[<powersuits:powerarmorcomponent:12>, <powersuits:powerarmorcomponent:7>, <powersuits:powerarmorcomponent:12>], [<advancedrocketry:jetpack>, null, <advancedrocketry:jetpack>]]);
@@ -375,9 +371,11 @@ recipes.addShaped(<prefab:item_bundle_of_timber>, [[<ore:logWood>, <ore:logWood>
 //Beet Seeds
 recipes.addShapeless(<minecraft:beetroot_seeds>, [<minecraft:beetroot>]);
 
+/* should be fixed by now
 //No more cooked carrots!
 furnace.remove(<mysticalworld:cooked_carrot>, <minecraft:carrot>);
 recipes.removeShapeless(<mysticalworld:stuffed_aubergine>, [<mysticalworld:cooked_carrot>, <minecraft:beetroot>, <mysticalworld:cooked_aubergine>, <minecraft:carrot>]);
+*/
 
 //Missing Salads
 recipes.addShaped(<mysticalworld:aubergine_salad> * 3, [[<mysticalworld:aubergine>, <xlfoodmod:lettuce>, <mysticalworld:aubergine>],[<xlfoodmod:lettuce>, <mysticalworld:aubergine>, <xlfoodmod:lettuce>], [<minecraft:bowl>, <minecraft:bowl>, <minecraft:bowl>]]);
@@ -396,11 +394,6 @@ recipes.addShaped(<minecraft:iron_bars> * 8, [[<ore:stickIron>, <ore:stickIron>,
 //Radiant Resonators
 recipes.addShaped(<arcanearchives:radiant_resonator>, [[<thermalfoundation:material:33>, <minecraft:iron_bars>, <thermalfoundation:material:33>],[<contenttweaker:greatwood_handle>, <minecraft:water_bucket>, <contenttweaker:greatwood_handle>], [<contenttweaker:greatwood_handle>, null, <contenttweaker:greatwood_handle>]]);
 <arcanearchives:radiant_resonator>.addTooltip(format.red("Max 3 per player"));
-
-//dark bars
-recipes.addShaped(<enderio:block_dark_iron_bars> * 8, [[<jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>], [<jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>]]);
-//end bars
-recipes.addShaped(<enderio:block_end_iron_bars> * 8, [[<jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>], [<jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>]]);
 
 recipes.addShapeless(<minecraft:gunpowder>, [<ore:dustCharcoal>,<ore:dustSulfur>,<ore:dustNiter>,<ore:dustNiter>]);
 recipes.addShaped(<minecraft:gunpowder> * 6, [[<mysticalagriculture:creeper_essence>, <mysticalagriculture:creeper_essence>, <mysticalagriculture:creeper_essence>],[null, null, null], [null, null, null]]);
@@ -428,11 +421,6 @@ recipes.addShapeless(<minecraft:string>, [<natura:materials:3>,<natura:materials
 
 recipes.addShaped(<advgenerators:iron_frame> * 2, [[<immersiveengineering:material:1>, <immersiveengineering:material:1>, <immersiveengineering:material:1>],[<immersiveengineering:material:1>, null, <immersiveengineering:material:1>], [<immersiveengineering:material:1>, <immersiveengineering:material:1>, <immersiveengineering:material:1>]]);
 
-recipes.addShapeless(<twilightforest:steeleaf_ingot> * 6, [<twilightforest:steeleaf_chestplate>]);
-recipes.addShapeless(<twilightforest:steeleaf_ingot> * 2, [<twilightforest:steeleaf_boots>]);
-recipes.addShapeless(<twilightforest:steeleaf_ingot> * 5, [<twilightforest:steeleaf_leggings>]);
-recipes.addShapeless(<twilightforest:steeleaf_ingot> * 3, [<twilightforest:steeleaf_helmet>]);
-
 recipes.addShaped(<translocators:translocator_part:1> * 2, [[<moreplates:energetic_silver_plate>, <enderutilities:enderpart>, <moreplates:energetic_silver_plate>],[<enderutilities:enderpart>, <minecraft:piston>, <enderutilities:enderpart>], [<moreplates:energetic_silver_plate>, <enderutilities:enderpart>, <moreplates:energetic_silver_plate>]]);
 recipes.addShaped(<translocators:translocator_part> * 2, [[<moreplates:energetic_alloy_plate>, <enderutilities:enderpart>, <moreplates:energetic_alloy_plate>],[<enderutilities:enderpart>, <minecraft:piston>, <enderutilities:enderpart>], [<moreplates:energetic_alloy_plate>, <enderutilities:enderpart>, <moreplates:energetic_alloy_plate>]]);
 
@@ -441,11 +429,9 @@ recipes.addShaped(<translocators:translocator_part> * 2, [[<moreplates:energetic
 <translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n"))+(format.red("- Add Redstone to enable toggling in/output\n"))+(format.gray("- Add Iron to emit a signal when input is full of filtered item\n"))+(format.aqua("- Add a Diamond Nugget to enable fine tuning of filter supply and demand")));
 <translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n"))+(format.red("- Add Redstone to enable toggling in/output")));
 
-//crop sticks
-recipes.addShaped(<agricraft:crop_sticks> * 4, [[<immersiveengineering:material>, <immersiveengineering:material>],[<immersiveengineering:material>, <immersiveengineering:material>]]);
 
+recipes.addShaped(<minecraft:end_stone>, [[<minecraft:sandstone>, <minecraft:sandstone>, <minecraft:sandstone>],[<minecraft:sandstone>, <minecraft:skull:5>.reuse(), <minecraft:sandstone>], [<minecraft:sandstone>, <minecraft:sandstone>, <minecraft:sandstone>]]);
 
-recipes.addShaped(<minecraft:end_stone>, [[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],[<minecraft:stone>, <minecraft:skull:5>.reuse(), <minecraft:stone>], [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]]);
 recipes.addShaped(<minecraft:hopper>, [[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, <tconstruct:wooden_hopper>, <minecraft:iron_ingot>],[null, <minecraft:iron_ingot>, null]]);
 
 
@@ -492,5 +478,22 @@ recipes.addShapeless(<minecraft:melon> * 9, [<minecraft:melon_block>]);
 <tombstone:impregnated_diamond>.maxStackSize = 64;
 <techreborn:lapotroncrystal>.withTag({energy: 0}).maxStackSize = 64;
 <techreborn:energycrystal>.withTag({energy: 0}).maxStackSize = 64;
+<techreborn:lapotronicorb>.withTag({energy: 0}).maxStackSize = 64;
+
+
+
+//Wet Dirt
+recipes.remove(<mysticalworld:wet_mud_block>);
+recipes.addShaped(<mysticalworld:wet_mud_block>, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>,  <liquid:water>*1000, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+
+
+<mystgears:bellows_mechanical>.addTooltip(format.gold("Place by a furnace to speed up"));
+
+
+//Fix Dirt
+recipes.removeShapeless(<minecraft:dirt> * 9, [<additionalcompression:dirt_compressed>]);
+recipes.removeShaped(<additionalcompression:dirt_compressed:2>, [[<ore:compressedDirt2x>, <ore:compressedDirt2x>, <ore:compressedDirt2x>],[<ore:compressedDirt2x>, <ore:compressedDirt2x>, <ore:compressedDirt2x>], [<ore:compressedDirt2x>, <ore:compressedDirt2x>, <ore:compressedDirt2x>]]);
+recipes.addShaped(<additionalcompression:dirt_compressed:2>, [[<ore:compressedDirt2>, <ore:compressedDirt2>, <ore:compressedDirt2>],[<ore:compressedDirt2>, <ore:compressedDirt2>, <ore:compressedDirt2>], [<ore:compressedDirt2>, <ore:compressedDirt2>, <ore:compressedDirt2>]]);
+
 ##########################################################################################
 print("==================== end of mods add-recipes-temp.zs ====================");

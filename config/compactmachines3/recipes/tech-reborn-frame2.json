@@ -1,0 +1,83 @@
+{
+  "name": "cm3techreborn:machine_frame2",
+
+  "disabled": false,
+
+  "target-item": "techreborn:machine_frame",
+  "target-count": 2,
+
+  "duration": 100,
+  "symmetrical": true,
+
+  "catalyst": "techreborn:part",
+  "catalyst-meta": 29,
+
+  "input-types": {
+    "a": {
+      "id": "contenttweaker:sheetmetal_refinediron",
+      "meta": 0
+    },
+    "b": {
+      "id": "rockhounding_chemistry:misc_blocks_a",
+      "meta": 13
+    },
+    "c": {
+      "id": "contenttweaker:advanced_redstone_block",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+
+}

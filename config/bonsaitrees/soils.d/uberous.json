@@ -1,0 +1,16 @@
+{
+	"name": "twilightforest:uberous_soil",
+	"mod": "twilightforest",
+	"soil": {
+		"name": "twilightforest:uberous_soil",
+		"data": 0,
+		"ignoreMeta": false
+	},
+	
+	"modifiers": {
+		"growTime": 0.75,
+		"dropChance": 2.0
+	},
+	
+	"providedTags": [ "dirt", "grass" ]
+}

@@ -6,35 +6,53 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"entryName": "iron_chestplate",
+					"entryName": "item_boots_crystal_white",
 					"type": "item",
-					"name": "minecraft:iron_chestplate",
+					"name": "actuallyadditions:item_boots_crystal_white",
 					"weight": 12.5		
 				},
 				{
-					"entryName": "iron_leggings",
+					"entryName": "item_helm_crystal_white",
 					"type": "item",
-					"name": "minecraft:iron_leggings",
+					"name": "actuallyadditions:item_helm_crystal_white",
 					"weight": 20		
 				},
 				{
-					"entryName": "iron_helmet",
+					"entryName": "item_chest_crystal_white",
 					"type": "item",
-					"name": "minecraft:iron_helmet",
+					"name": "actuallyadditions:item_chest_crystal_white",
 					"weight": 20		
 				},
 				{
-					"entryName": "iron_boots",
+					"entryName": "item_pants_crystal_white",
 					"type": "item",
-					"name": "minecraft:iron_boots",
+					"name": "actuallyadditions:item_pants_crystal_white",
 					"weight": 20		
 				},
 				{
-					"entryName": "shield",
+					"entryName": "wizard_hat",
 					"type": "item",
-					"name": "minecraft:shield",
+					"name": "ebwizardry:wizard_hat",
 					"weight": 20		
-				},				
+				},
+				{
+					"entryName": "wizard_robe",
+					"type": "item",
+					"name": "ebwizardry:wizard_robe",
+					"weight": 20		
+				},
+				{
+					"entryName": "wizard_leggings",
+					"type": "item",
+					"name": "ebwizardry:wizard_leggings",
+					"weight": 20		
+				},
+				{
+					"entryName": "wizard_boots",
+					"type": "item",
+					"name": "ebwizardry:wizard_boots",
+					"weight": 20		
+				},
 				{
 					"entryName": "golden_chestplate",
 					"type": "item",

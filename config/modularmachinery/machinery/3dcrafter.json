@@ -9,52 +9,126 @@
             "y": 0,
             "z": [1,7],
             "elements": "techreborn:machine_casing@1",
-            "description": "Upgrade Casings to lower time required.",
-            "modifier": {
+            "description": "Upgrade Casings to lower time required. Will increase RF/t.",
+            "modifiers": [
+            {
                 "io": "input",
                 "target": "duration",
                 "operation": 1,
                 "multiplier": 0.98
+            },
+            {
+                "io": "input",
+                "target": "energy",
+                "operation": 1,
+                "multiplier": 1.04
             }
+        ]      
         },
         {
             "x": [-3,3],
             "y": 0,
             "z": [2,3,4,5,6],
             "elements": "techreborn:machine_casing@1",
-            "description": "Upgrade Casings to lower time required.",
-            "modifier": {
-                "io": "input",
-                "target": "duration",
-                "operation": 1,
-                "multiplier": 0.98
-            }
+            "description": "Upgrade Casings to lower time required. Will increase RF/t.",
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.98
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.04
+                }
+            ]     
         },
         {
             "x": [-2,-1,0,1,2],
             "y": 0,
             "z": [1,7],
             "elements": "techreborn:machine_casing@2",
-            "description": "Upgrade Casings to lower time required.",
-            "modifier": {
-                "io": "input",
-                "target": "duration",
-                "operation": 1,
-                "multiplier": 0.96
-            }
+            "description": "Upgrade Casings to lower time required. Will increase RF/t.",
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.96
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.08
+                }
+            ]     
         },
         {
             "x": [-3,3],
             "y": 0,
             "z": [2,3,4,5,6],
             "elements": "techreborn:machine_casing@2",
-            "description": "Upgrade Casings to lower time required.",
-            "modifier": {
-                "io": "input",
-                "target": "duration",
-                "operation": 1,
-                "multiplier": 0.96
-            }
+            "description": "Upgrade Casings to lower time required. Will increase RF/t.",
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.96
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.08
+                }
+            ]   
+        },
+        {
+            "x": [-2,-1,0,1,2],
+            "y": 0,
+            "z": [1,7],
+            "elements": "techreborn:fusion_coil@0",
+            "description": "Upgrade Casings to lower time required. Will increase RF/t.",
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.2
+                }
+            ]     
+        },
+        {
+            "x": [-3,3],
+            "y": 0,
+            "z": [2,3,4,5,6],
+            "elements": "techreborn:fusion_coil@0",
+            "description": "Upgrade Casings to lower time required. Will increase RF/t.",
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.2
+                }
+            ]   
         }
     ],
     "parts": [

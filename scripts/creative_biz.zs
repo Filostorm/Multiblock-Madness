@@ -44,18 +44,25 @@ for item in EXitemstoRemove {
 	mods.avaritia.ExtremeCrafting.remove(item);
 }
 
+
+//Crystal Matrix unpacking
+recipes.addShapeless(<avaritia:resource:1> * 9, [<avaritia:block_resource:2>]);
+
+//Entasngled Singularities
+mods.techreborn.implosionCompressor.addRecipe(<appliedenergistics2:material:48> * 2, null, <appliedenergistics2:material:47>, <techreborn:dust:19>*2, 40, 500);
+
 //Luminessence
 recipes.removeShapeless(<extendedcrafting:material:7> * 2, [<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:redstone>, <minecraft:gunpowder>]);
 Vat.removeRecipe(<liquid:liquid_sunshine>);
-Vat.addRecipe(<liquid:liquid_sunshine>, 1, <liquid:glowstone_nak>, 
+Vat.addRecipe(<liquid:liquid_sunshine>, 0.5, <liquid:glowstone_nak>, 
 [<mowziesmobs:glowing_jelly>,<randomthings:glowingmushroom>,<thermalfoundation:material:894>,<enderio:block_holy_fog>],[3,2,1.5,1], 
 [<arcanearchives:radiant_dust>,<astralsorcery:itemusabledust>,<thaumcraft:nitor_yellow>,<botania:corporeaspark>],[1,1,2,3], 100000);
-Crystallizer.addRecipe(<liquid:liquid_sunshine>*100, <extendedcrafting:material:7>, 1, 8);
+Crystallizer.addRecipe(<liquid:liquid_sunshine>*1000, <extendedcrafting:material:7>, 1, 8);
 
 
 //Ultime Ingot
 Agglomeration.addRecipe(<extendedcrafting:material:32>, 
-[<ore:ingotThermoconducting>, <extendedcrafting:material:48>, <ore:ingotOsmiridium>, <enderio:item_alloy_endergy_ingot:6>, <plustic:mirioningot>]
+[<ore:ingotThermoconducting>, <extendedcrafting:material:48>, <ore:ingotOsmiridium>, <techreborn:ingot:25>, <plustic:mirioningot>]
 ,1000000,0x004a80,0xa432a8,
 <avaritia:block_resource:2>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:4>,
 null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
@@ -77,6 +84,7 @@ null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
 <extendedcrafting:lamp:1>.displayName = "Midnight Lamp";
 
 <extendedcrafting:material:49>.displayName = "Twilight Nugget";
+<extendedcrafting:material:37>.displayName = "Duskstone Nugget";
 
 
 
@@ -98,7 +106,7 @@ recipes.addShaped(<avaritia:resource:2> * 3, [[<mysticalagradditions:neutronium_
 recipes.addShaped(<libvulpes:creativepowerbattery>, [[<ore:circuitUltimate>, <extendedcrafting:material:19>, <ore:circuitUltimate>],[<avaritia:resource:6>, <libvulpes:forgepowerinput>, <avaritia:resource:6>], [<ore:circuitUltimate>, <extendedcrafting:material:19>, <mekanism:controlcircuit:3>]]);
 
 //Infinity ingot
-mods.techreborn.fusionReactor.addRecipe(<avaritia:resource:5>*4, <avaritia:resource:4>*4, <avaritia:resource:6>, 100000000, -25000000, 2400, 50);
+mods.techreborn.fusionReactor.addRecipe(<avaritia:resource:5>, <avaritia:resource:4>*4, <avaritia:resource:6>, 100000000, -25000000, 2400, 50);
 
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:insanium:1>, [
@@ -184,14 +192,14 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:endest_pearl>, [
 
 //Infinity Catalyst
 mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:resource:5>, [
-	[null, null, null, null, <extracells:walrus>, null, null, null, null], 
+	[null, null, null, null, <enderio:item_material:55>, null, null, null, null], 
 	[null, <extendedcrafting:singularity_custom:12>, null, null, <ebwizardry:astral_diamond>, null, null, <extendedcrafting:singularity_custom:5>, null], 
 	[null, null, <extendedcrafting:singularity_custom:4>, null, <avaritia:cosmic_meatballs>, null, <extendedcrafting:singularity_custom:6>, null, null], 
 	[null, null, null, <extendedcrafting:singularity_custom:9>, <ore:blockIridium>, <extendedcrafting:singularity_custom:7>, null, null, null], 
-	[<tconstruct:sign_head>.withTag({Material: "blood_infused_iron"}), <bloodarsenal:blood_diamond:2>, <avaritia:ultimate_stew>, <contenttweaker:starmetal_block>, <extendedcrafting:material:13>, <extendedcrafting:trimmed:5>, <ore:blockCrystalMatrix>, <appliedenergistics2:material:48>, <ore:rodNdYAG>], 
+	[<fossil:vase_amphora:2>, <bloodarsenal:blood_diamond:2>, <avaritia:ultimate_stew>, <contenttweaker:starmetal_block>, <extendedcrafting:material:13>, <extendedcrafting:trimmed:5>, <ore:blockCrystalMatrix>, <appliedenergistics2:material:48>, <ore:rodNdYAG>], 
 	[null, null, null, <extendedcrafting:singularity_custom:8>, <ore:blockFiery>, <extendedcrafting:singularity_custom:10>, null, null, null], 
 	[null, null, <extendedcrafting:singularity_custom:1>, null, <avaritia:endest_pearl>, null, <extendedcrafting:singularity_custom:2>, null, null], 
-	[null, <extendedcrafting:singularity_custom:3>, null, null, <astralsorcery:itemcelestialcrystal>, null, null, <extendedcrafting:singularity_custom:11>, null], 
+	[null, <extendedcrafting:singularity_custom:3>, null, null, <ore:CelestialCrystal>, null, null, <extendedcrafting:singularity_custom:11>, null], 
 	[null, null, null, null, <techreborn:cloakingdevice>, null, null, null, null]
 ]);
 
@@ -211,6 +219,18 @@ recipes.addShapeless(<botania:pool:1>, [<botania:manatablet>.withTag({mana: 5000
 recipes.addShapeless(<botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}), [<botania:pool:1>]);
 
 //Creative Tank
+mods.extendedcrafting.TableCrafting.addShaped(0,<mekanism:machineblock2:11>.withTag({tier: 4}), [
+	[<techreborn:quantum_tank>, <thaumadditions:mithminite_plate>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <thaumadditions:mithminite_plate>, <techreborn:quantum_tank>], 
+	[<thaumadditions:mithminite_plate>, <avaritia:resource:5>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <avaritia:resource:5>, <thaumadditions:mithminite_plate>], 
+	[<ore:ingotCosmicNeutronium>, <ore:plateCrystalMatrix>, <avaritia:resource:5>, <ore:ingotInfinity>, <ore:ingotInfinity>, <ore:ingotInfinity>, <avaritia:resource:5>, <ore:plateCrystalMatrix>, <ore:ingotCosmicNeutronium>], 
+	[<ore:ingotCosmicNeutronium>, <ore:plateCrystalMatrix>, <ore:ingotInfinity>, <techreborn:cable:8>, <techreborn:cable:8>, <techreborn:cable:8>, <ore:ingotInfinity>, <ore:plateCrystalMatrix>, <ore:ingotCosmicNeutronium>], 
+	[<ore:ingotCosmicNeutronium>, <ore:plateCrystalMatrix>, <ore:ingotInfinity>, <techreborn:cable:8>, <thermalexpansion:frame:148>, <techreborn:cable:8>, <ore:ingotInfinity>, <ore:plateCrystalMatrix>, <ore:ingotCosmicNeutronium>], 
+	[<ore:ingotCosmicNeutronium>, <ore:plateCrystalMatrix>, <ore:ingotInfinity>, <techreborn:cable:8>, <techreborn:cable:8>, <techreborn:cable:8>, <ore:ingotInfinity>, <ore:plateCrystalMatrix>, <ore:ingotCosmicNeutronium>], 
+	[<ore:ingotCosmicNeutronium>, <ore:plateCrystalMatrix>, <avaritia:resource:5>, <ore:ingotInfinity>, <ore:ingotInfinity>, <ore:ingotInfinity>, <avaritia:resource:5>, <ore:plateCrystalMatrix>, <ore:ingotCosmicNeutronium>], 
+	[<thaumadditions:mithminite_plate>, <avaritia:resource:5>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <avaritia:resource:5>, <thaumadditions:mithminite_plate>], 
+	[<techreborn:quantum_tank>, <thaumadditions:mithminite_plate>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <thaumadditions:mithminite_plate>, <techreborn:quantum_tank>]
+]);
+/*
 mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:machineblock2:11>.withTag({tier: 4}), [
 	[<fluiddrawers:tank>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <fluiddrawers:tank>], 
 	[<ore:ingotCosmicNeutronium>, <extendedcrafting:material:13>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 4 as byte}), <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <extendedcrafting:material:13>, <ore:ingotCosmicNeutronium>], 
@@ -222,6 +242,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:machineblock2:11>.wit
 	[<ore:ingotCosmicNeutronium>, <extendedcrafting:material:13>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 4 as byte}), <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <extendedcrafting:material:13>, <ore:ingotCosmicNeutronium>], 
 	[<fluiddrawers:tank>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <fluiddrawers:tank>]
 ]);
+*/
 recipes.addShapeless(<mekanism:machineblock2:11>.withTag({tier: 4}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte})]);
 recipes.addShapeless(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}), [<mekanism:machineblock2:11>.withTag({tier: 4})]);
 
@@ -256,9 +277,9 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <randomthings:spectrecoil_genes
 	[null, null, null, null, null, null, null, null, null], 
 	[null, null, null, null, null, null, null, null, null], 
 	[null, null, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, null, null], 
-	[null, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:lamp:1>, <thermalexpansion:cell>.withTag({Recv: 25000, RSControl: 0 as byte, Facing: 4 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Send: 25000}), <extendedcrafting:lamp:1>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, null], 
+	[null, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:lamp:1>, <thermalexpansion:frame:148>, <extendedcrafting:lamp:1>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, null], 
 	[<extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <mekanism:basicblock2:3>.withTag({tier: 3}), <ore:blockInfinity>, <avaritia:resource:5>, <ore:blockInfinity>, <mekanism:basicblock2:3>.withTag({tier: 3}), <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>], 
-	[null, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:lamp:1>, <thermalexpansion:cell>.withTag({Recv: 25000, RSControl: 0 as byte, Facing: 4 as byte, Creative: 0 as byte, Energy: 0, Level: 4 as byte, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[], Send: 25000}), <extendedcrafting:lamp:1>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, null], 
+	[null, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:lamp:1>, <thermalexpansion:frame:148>, <extendedcrafting:lamp:1>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, null], 
 	[null, null, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, <extendedcrafting:trimmed:5>, null, null], 
 	[null, null, null, null, null, null, null, null, null], 
 	[null, null, null, null, null, null, null, null, null]
@@ -269,9 +290,9 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <appliedenergistics2:creative_s
 	[<threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>], 
 	[<threng:material:14>, <ore:ingotInfinity>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <ae2wtlib:wut_creative>.reuse(), <extendedcrafting:material:48>, <extendedcrafting:material:48>, <ore:ingotInfinity>, <threng:material:14>], 
 	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
-	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <extracells:storage.component:3>, <extracells:storage.component:3>, <extracells:storage.component:3>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
-	[<threng:material:14>, <mekanism:machineblock2:11>.withTag({tier: 4}).reuse(), <techreborn:quantum_chest>, <extracells:storage.component:3>, <storagedrawers:upgrade_creative>, <extracells:storage.component:3>, <techreborn:quantum_chest>, <randomthings:spectrecoil_genesis>.reuse(), <threng:material:14>], 
-	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <extracells:storage.component:3>, <extracells:storage.component:3>, <extracells:storage.component:3>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
+	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
+	[<threng:material:14>, <mekanism:machineblock2:11>.withTag({tier: 4}).reuse(), <techreborn:quantum_chest>, <aeadditions:storage.component:3>, <storagedrawers:upgrade_creative>, <aeadditions:storage.component:3>, <techreborn:quantum_chest>, <randomthings:spectrecoil_genesis>.reuse(), <threng:material:14>], 
+	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
 	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
 	[<threng:material:14>, <ore:ingotInfinity>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <botania:pool:1>.reuse(), <extendedcrafting:material:48>, <extendedcrafting:material:48>, <ore:ingotInfinity>, <threng:material:14>], 
 	[<threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>]

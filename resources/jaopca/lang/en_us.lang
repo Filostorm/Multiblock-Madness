@@ -1,4 +1,5 @@
-item.jaopca.crushedlump.name=Lump of %s
-item.jaopca.leachedshard.name=%s Shard
+tile.jaopca.growthcatalyst.name=%s Growth Catalyst
 tile.jaopca.sheetmetal.name=%s Sheetmetal
 tile.jaopca.scaffolding.name=%s Scaffolding
+item.jaopca.crushedlump.name=Lump of %s
+item.jaopca.leachedshard.name=%s Shard

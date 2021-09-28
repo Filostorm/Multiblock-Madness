@@ -22,6 +22,7 @@ val itemstoRemove =
     <thermalexpansion:frame>,
     <thermalexpansion:machine:9>,
     <thermalexpansion:machine:11>,
+    <thermalfoundation:fertilizer>,
 ]
  as IItemStack[];
 
@@ -85,11 +86,6 @@ mods.thermalexpansion.RedstoneFurnace.removeRecipe(<thermalfoundation:material:7
 //mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
 //mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
-//Modularium
-Transposer.addFillRecipe(<modularmachinery:itemmodularium>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 10000);
-
-//Fiery Ingot
-Transposer.addFillRecipe(<twilightforest:fiery_ingot>, <thebetweenlands:octine_ingot>, <liquid:pyrotheum> * 2000, 10000);
 
 //Lumim
 AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:8>*4);
@@ -144,6 +140,7 @@ val DuststoRemove =
 [
 <thermalfoundation:material:71>,
 <thermalfoundation:material:70>,
+<thermalfoundation:material:72>,
 <minecraft:iron_ingot>,
 ]
  as IItemStack[];
@@ -173,5 +170,12 @@ Insolator.addRecipe(item*2, item, <thermalfoundation:fertilizer>, 1500);
 Insolator.addRecipe(item*3, item, <thermalfoundation:fertilizer:1>, 3000);
 Insolator.addRecipe(item*5, item, <thermalfoundation:fertilizer:2>, 5000);
 }
+
+
+//Watering Cans
+recipes.removeShaped(<thermalcultivation:watering_can>, [[<thermalfoundation:material:128>, null, null],[<thermalfoundation:material:128>, <minecraft:bucket>, <thermalfoundation:material:128>], [null, <thermalfoundation:material:128>, null]]);
+recipes.removeShaped(<thermalcultivation:watering_can:1>, [[null, <minecraft:dye:15>, null],[<thermalfoundation:material:162>, <thermalcultivation:watering_can>, <thermalfoundation:material:162>], [<minecraft:dye:15>, <minecraft:redstone>, <minecraft:dye:15>]]);
+recipes.addShaped(<thermalcultivation:watering_can:1>, [[null, <cyclicmagic:peat_fuel>, null],[<thermalfoundation:material:162>, <thermalcultivation:watering_can>, <thermalfoundation:material:162>], [<cyclicmagic:peat_fuel>, <minecraft:redstone>, <cyclicmagic:peat_fuel>]]);
+recipes.addShaped(<thermalcultivation:watering_can>, [[<thermalfoundation:material:128>, null, null],[<thermalfoundation:material:128>, <actuallyadditions:item_fertilizer>, <thermalfoundation:material:128>], [null, <thermalfoundation:material:128>, null]]);
 ##########################################################################################
 print("==================== end of thermal.zs ====================");

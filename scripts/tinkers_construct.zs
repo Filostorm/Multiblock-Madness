@@ -1,4 +1,4 @@
-##########################################################################################
+ 	##########################################################################################
 #modloaded tconstruct
 #priority 100
 
@@ -11,6 +11,8 @@ import mods.tcomplement.highoven.MixRecipeBuilder;
 import mods.tcomplement.highoven.MixRecipeManager;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import mods.immersiveengineering.MetalPress;
+import mods.rockhounding_chemistry.LabBlender;
 
 print("==================== loading mods tinkersconstruct.zs ====================");
 ##########################################################################################
@@ -20,6 +22,9 @@ val itemstoRemove =
 	<tinker_io:upg:4>,
 	<tinker_io:upg:2>,
 	<tinker_io:smart_output>,
+	<tcomplement:melter>,
+	<tcomplement:alloy_tank>,
+	<tconstruct:materials:14>,
 ]
  as IItemStack[];
 
@@ -27,20 +32,31 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-	mods.jei.JEI.removeAndHide(<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 0 as short}}));
-recipes.addShaped(<tcomplement:materials:1> * 8, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <embers:dust_ember>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
+mods.jei.JEI.removeAndHide(<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 0 as short}}));
+mods.jei.JEI.removeAndHide(<tconstruct:smeltery_controller>);
+/*
+// smeltery controller
+recipes.remove(<tconstruct:smeltery_controller>);
+recipes.addShaped(<tconstruct:smeltery_controller>, [[<tconstruct:materials>, <embers:plate_dawnstone>, <tconstruct:materials>],[<embers:plate_dawnstone>, <tcomplement:melter>, <embers:plate_dawnstone>], [<tconstruct:materials>, <embers:plate_dawnstone>, <tconstruct:materials>]]);
+*/
 
+/* New Scorched Recipe
+recipes.addShaped(<tcomplement:materials:1> * 8, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <embers:dust_ember>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 recipes.addShapeless(<tcomplement:scorched_faucet>, [<embers:dust_ember>,<tconstruct:faucet>]);
 recipes.addShapeless(<tcomplement:high_oven_io>, [<embers:dust_ember>,<tconstruct:smeltery_io>]);
 recipes.addShapeless(<tcomplement:scorched_casting:1>, [<embers:dust_ember>,<tconstruct:casting:1>]);
 recipes.addShapeless(<tcomplement:scorched_casting>, [<embers:dust_ember>,<tconstruct:casting>]);
 recipes.addShapeless(<tcomplement:scorched_block:3>, [<embers:dust_ember>,<tconstruct:seared:3>]);
+*/
+LabBlender.add([<rockhounding_chemistry:chemical_items:20>*4, <actuallyadditions:item_crystal:3>, <embers:dust_ember>, <thaumcraft:stone_arcane_brick>*2], <tcomplement:materials:1>*8);
 
 val smelteryHeart = <ore:smelteryHeart>;
 smelteryHeart.add(<tconstruct:seared_tank>);
 smelteryHeart.add(<tconstruct:seared_tank:1>);
 smelteryHeart.add(<tconstruct:seared_tank:2>);
 
+//Alloy Tank
+recipes.addShaped(<tcomplement:alloy_tank>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <thermalfoundation:material:291>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 
 
 	<liquid:pyrotheum>.definition.temperature = 5300;
@@ -58,11 +74,10 @@ smelteryHeart.add(<tconstruct:seared_tank:2>);
 
 // high oven controller
 recipes.remove(<tcomplement:high_oven_controller>);
-recipes.addShaped(<tcomplement:high_oven_controller>, [[<tcomplement:materials:1>, <thebetweenlands:octine_ingot>, <tcomplement:materials:1>],[<thebetweenlands:octine_ingot>, <thaumcraft:alumentum>, <thebetweenlands:octine_ingot>], [<tcomplement:materials:1>, <thebetweenlands:octine_ingot>, <tcomplement:materials:1>]]);
+recipes.addShaped(<tcomplement:high_oven_controller>, [[<tcomplement:materials:1>, <contenttweaker:noon_ingot>, <tcomplement:materials:1>],[<contenttweaker:noon_ingot>, <thaumcraft:alumentum>, <contenttweaker:noon_ingot>], [<tcomplement:materials:1>, <contenttweaker:noon_ingot>, <tcomplement:materials:1>]]);
 
-// smeltery controller
-recipes.remove(<tconstruct:smeltery_controller>);
-recipes.addShaped(<tconstruct:smeltery_controller>, [[<tconstruct:materials>, <contenttweaker:activatedaspectuscopper>, <tconstruct:materials>],[<contenttweaker:activatedaspectussilver>, <tcomplement:melter>, <contenttweaker:activatedaspectussilver>], [<tconstruct:materials>, <contenttweaker:activatedaspectuscopper>, <tconstruct:materials>]]);
+//Melter
+recipes.addShaped(<tcomplement:melter>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 
 
 
@@ -84,7 +99,6 @@ Melting.addRecipe(<liquid:ender> * 1000, <actuallyadditions:block_misc:6>, 500);
 Melting.addRecipe(<liquid:tough> * 1296, <contenttweaker:sub_block_holder_0:6>);
 Melting.addRecipe(<liquid:quartz> * 666, <minecraft:quartz>);
 Melting.addRecipe(<liquid:quartz> * 2664, <minecraft:quartz_block>);
-Melting.addRecipe(<liquid:stone> * 288, <thebetweenlands:cragrock>);
 Melting.addRecipe(<liquid:stone> * 648, <additionalcompression:cobblestone_compressed>);
 
 
@@ -157,8 +171,13 @@ Casting.addBasinRecipe(<conarm:armorforge>.withTag({textureBlock: {id: "tconstru
 Casting.addTableRecipe(<contenttweaker:inert_ingot>, <tconstruct:cast_custom>, <liquid:inert_metal>, 144, false, 50);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:2>, null, <liquid:inert_metal>, 1296);
 
+//inert ingot
+Casting.addTableRecipe(<contenttweaker:inert_ingot>, <tconstruct:cast_custom>, <liquid:inert_metal>, 144, false, 50);
+Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:2>, null, <liquid:inert_metal>, 1296);
+
 //Ender Shard
 Casting.addTableRecipe(<enderio:item_material:62>, <tconstruct:cast_custom>, <liquid:ender>, 50, false, 50);
+
 
 //Orichalcum
 	Casting.addTableRecipe(<contenttweaker:material_part:20>,<tconstruct:cast_custom>, <liquid:orichalcum>, 144, false, 50);
@@ -167,7 +186,11 @@ Casting.addTableRecipe(<enderio:item_material:62>, <tconstruct:cast_custom>, <li
 
 Melting.addRecipe(<liquid:orichalcum> * 1296, <contenttweaker:sub_block_holder_0>);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0>, null, <liquid:orichalcum>, 1296);
-recipes.addShaped(<contenttweaker:sub_block_holder_0>, [[<contenttweaker:material_part:20>, <contenttweaker:material_part:20>, <contenttweaker:material_part:20>],[<contenttweaker:material_part:20>, <contenttweaker:material_part:20>, <contenttweaker:material_part:20>], [<contenttweaker:material_part:20>, <contenttweaker:material_part:20>, <contenttweaker:material_part:20>]]);
+recipes.addShaped(<contenttweaker:sub_block_holder_0>, [
+	[<contenttweaker:material_part:20>, <contenttweaker:material_part:20>, <contenttweaker:material_part:20>],
+	[<contenttweaker:material_part:20>, <contenttweaker:material_part:20>, <contenttweaker:material_part:20>], 
+	[<contenttweaker:material_part:20>, <contenttweaker:material_part:20>, <contenttweaker:material_part:20>]
+]);
 recipes.addShapeless(<contenttweaker:material_part:20> * 9, [<contenttweaker:sub_block_holder_0>]);
 
 //Palladuim
@@ -180,6 +203,15 @@ recipes.addShapeless(<contenttweaker:material_part:20> * 9, [<contenttweaker:sub
 	Casting.addTableRecipe(<contenttweaker:material_part:11>,<tconstruct:cast_custom:4>, <liquid:adamantine>, 576, false, 200);
 	Casting.addTableRecipe(<contenttweaker:material_part:12>,<tconstruct:cast_custom:3>, <liquid:adamantine>, 144, false, 50);
 
+Melting.addRecipe(<liquid:adamantine> * 1296, <contenttweaker:sub_block_holder_0:1>);
+Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, null, <liquid:adamantine>, 1296);
+recipes.addShaped(<contenttweaker:sub_block_holder_0:1>, [
+	[<contenttweaker:material_part:10>, <contenttweaker:material_part:10>, <contenttweaker:material_part:10>],
+	[<contenttweaker:material_part:10>, <contenttweaker:material_part:10>, <contenttweaker:material_part:10>], 
+	[<contenttweaker:material_part:10>, <contenttweaker:material_part:10>, <contenttweaker:material_part:10>]
+]);
+recipes.addShapeless(<contenttweaker:material_part:10> * 9, [<contenttweaker:sub_block_holder_0:1>]);
+
 
 Melting.addRecipe(<liquid:moltenbedrock> * 100, <minecraft:bedrock>,6000);
 
@@ -188,18 +220,25 @@ Alloy.addRecipe(<liquid:moltentokenbronze> * 1000, [<liquid:bronze> * 1296, <liq
 Alloy.addRecipe(<liquid:moltentokensteel> * 1000, [<liquid:steel> * 1296, <liquid:moltenbedrock> * 1000]);
 Alloy.addRecipe(<liquid:moltentokenrefinediron> * 1000, [<liquid:refined_iron> * 1296, <liquid:moltenbedrock> * 1000]);
 Alloy.addRecipe(<liquid:moltentokenosmium> * 1000, [<liquid:osmium> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokeniridium> * 1000, [<liquid:iridium> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokenultimate> * 1000, [<liquid:ultimate> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokeninfinity> * 1000, [<liquid:infinity> * 1296, <liquid:moltenbedrock> * 1000]);
 
 
-val miningTokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:mining_token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:mining_token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:mining_token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:mining_token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:mining_token_tier5>: <liquid:moltentokenosmium>,
+val Tokens as ILiquidStack[IItemStack] = {
+	<contenttweaker:token_tier1>: <liquid:moltentokeniron>,
+	<contenttweaker:token_tier2>: <liquid:moltentokenbronze>,
+	<contenttweaker:token_tier3>: <liquid:moltentokensteel>,
+	<contenttweaker:token_tier4>: <liquid:moltentokenrefinediron>,
+	<contenttweaker:token_tier5>: <liquid:moltentokenosmium>,
+	<contenttweaker:token_tier6>: <liquid:moltentokeniridium>,
+	<contenttweaker:token_tier7>: <liquid:moltentokenultimate>,
+	<contenttweaker:token_tier8>: <liquid:moltentokeninfinity>,
 } as ILiquidStack[IItemStack];
-for token, molten in miningTokens {
-Casting.addTableRecipe(token, <avaritia:infinity_pickaxe>, molten, 1000, false, 50);
+for token, molten in Tokens {
+Casting.addTableRecipe(token, <avaritia:resource:5>, molten, 1000, false, 50);
 }
+/*
 val adventureTokens as ILiquidStack[IItemStack] = {
 	<contenttweaker:adventure_token_tier1>: <liquid:moltentokeniron>,
 	<contenttweaker:adventure_token_tier2>: <liquid:moltentokenbronze>,
@@ -240,7 +279,7 @@ val magicTokens as ILiquidStack[IItemStack] = {
 for token, molten in magicTokens {
 Casting.addTableRecipe(token, <avaritia:infinity_bow>, molten, 1000, false, 50);
 }
-
+*/
 
 
 //MORE CASTS
@@ -289,17 +328,36 @@ HighOven.removeFuel(<ore:blockCharcoal>);
 // HighOven.addFuel(IIngredient fuel, int time, int rate);
 HighOven.addFuel(<thaumcraft:alumentum>, 3600, 50);
 
+HighOven.addFuel(<mysticalagriculture:coal>, 6000, 15);
+HighOven.addFuel(<mysticalagriculture:coal:1>, 10000, 20);
+HighOven.addFuel(<mysticalagriculture:coal:2>, 15000, 30);
+HighOven.addFuel(<mysticalagriculture:coal:3>, 20000, 40);
+HighOven.addFuel(<mysticalagriculture:coal:4>, 30000, 60);
+HighOven.addFuel(<mysticalagradditions:insanium:5>, 45000, 100);
+
+
 // HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
 HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
 HighOven.removeMixRecipe(<liquid:dark_chocolate>);
 //New steel recipe
 // HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
 
+
+var pigIron = HighOven.manageMixRecipe(<liquid:pigiron>, <liquid:iron>);
+pigIron.addPurifier(<thaumcraft:chunk:2>, 80);
+
+
+//Limestone Flux
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:limestoneforFlux>, <bloodmagic:cutting_fluid:1>], 200,200,1);
+
+
 var steel = HighOven.newMixRecipe(<liquid:steel> * 144, <liquid:iron> * 144, 1350);
 //steel.addOxidizer(<minecraft:redstone>, 33);
 steel.addReducer(<thermalfoundation:material:771>, 33);
+steel.addReducer(<rockhounding_chemistry:chemical_items:2>, 33);
 steel.addPurifier(<ore:sand>, 100);
-steel.addPurifier(<thebetweenlands:items_misc:27>, 33);
+steel.addPurifier(<contenttweaker:limestone_flux>, 33);
+steel.addPurifier(<rockhounding_chemistry:chemical_items:20>, 33);
 steel.register();
 
 var pulsatingiron = HighOven.newMixRecipe(<liquid:pulsating_iron> * 144, <liquid:iron> * 144, 2300);
@@ -341,12 +399,11 @@ prudentium.register();
 Melting.addRecipe(<liquid:alubrass> * 144, <ore:cast>);
 
 
-// removals
-
-
 //Smart IO
-recipes.addShaped(<tinker_io:smart_output>, [[<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>],[<arcanearchives:shaped_quartz>, <tconstruct:smeltery_io>, <arcanearchives:shaped_quartz>], [<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>]]);
+recipes.addShaped(<tinker_io:smart_output>, [[<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>],[<arcanearchives:shaped_quartz>, <tconstruct:casting>, <arcanearchives:shaped_quartz>], [<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>]]);
 
+//Reinforcement Modefier
+MetalPress.addRecipe(<tconstruct:materials:14>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:mold>, 2000);
 
 ##########################################################################################
 print("==================== end of mods tinkersconstruct.zs ====================");

@@ -119,5 +119,81 @@ recipes.addShapeless(<minecraft:wooden_pressure_plate>, [<ore:pressurePlateWood>
 
 
 <ore:oreEnderEssence>.add(<utilitybaseores:ender_ore>);
+
+<ore:blockWarpCoreRim>.add(<techreborn:storage:2>);
+
+<ore:waferSilicon>.add(<qmd:semiconductor:3>);
+<ore:siliconWafer>.add(<advancedrocketry:wafer>);
+
+//Item is removed
+//<ore:foodChocolatebar>.remove(<xlfoodmod:chocolate>);
+
+
+<ore:hotStuff>.add(<twilightforest:fiery_tears>);
+<ore:hotStuff>.add(<twilightforest:fiery_blood>);
+<ore:hotStuff>.add(<iceandfire:fire_dragon_blood>);
+
+val listAllmeatraw =
+[
+<minecraft:chicken>,
+<minecraft:rabbit>,
+<minecraft:porkchop>,
+<minecraft:beef>,
+<minecraft:mutton>,
+<minecraft:rotten_flesh>,
+]
+ as IItemStack[];
+for item in listAllmeatraw {
+<ore:listAllmeatraw>.add(item);
+}
+
+val pristineMatter =
+[
+<deepmoblearning:pristine_matter_zombie>,
+<deepmoblearning:pristine_matter_skeleton>,
+<deepmoblearning:pristine_matter_creeper>,
+<deepmoblearning:pristine_matter_slime>,
+<deepmoblearning:pristine_matter_spider>,
+<deepmoblearning:pristine_matter_guardian>,
+<deepmoblearning:pristine_matter_thermal_elemental>,
+<deepmoblearning:pristine_matter_tinker_slime>,
+<deepmoblearning:pristine_matter_twilight_forest>,
+<deepmoblearning:pristine_matter_twilight_swamp>,
+<deepmoblearning:pristine_matter_twilight_darkwood>,
+<deepmoblearning:pristine_matter_twilight_glacier>,
+<deepmoblearning:pristine_matter_slime>,
+<deepmoblearning:pristine_matter_witch>,
+<deepmoblearning:pristine_matter_blaze>,
+<deepmoblearning:pristine_matter_ghast>,
+<deepmoblearning:pristine_matter_wither_skeleton>,
+<deepmoblearning:pristine_matter_enderman>,
+<deepmoblearning:pristine_matter_wither>,
+<deepmoblearning:pristine_matter_dragon>,
+<deepmoblearning:pristine_matter_shulker>,
+]
+ as IItemStack[];
+for item in pristineMatter {
+<ore:pristineMatter>.add(item);
+}
+
+val dustElemental =
+[
+<thermalfoundation:material:1024>,
+<thermalfoundation:material:1025>,
+<thermalfoundation:material:1026>,
+<thermalfoundation:material:1027>,
+]
+ as IItemStack[];
+for item in dustElemental {
+<ore:dustElemental>.add(item);
+}
+
+
+
+<ore:CelestialCrystal>.add(<contenttweaker:stable_celestial_crystal>);
+<ore:CelestialCrystal>.add(<astralsorcery:itemcelestialcrystal>);
+
+<ore:oreAmethest>.add(<mysticalworld:amethyst_ore>);
+
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

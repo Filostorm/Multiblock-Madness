@@ -53,3 +53,24 @@ moltenTokenOsmium.gaseous = false;
 moltenTokenOsmium.luminosity = 10;
 moltenTokenOsmium.viscosity = 1000;
 moltenTokenOsmium.register();
+
+var moltenTokenIridium = VanillaFactory.createFluid("moltenTokenIridium", Color.fromHex("bae3e0"));
+moltenTokenIridium.temperature = 1000;
+moltenTokenIridium.gaseous = false;
+moltenTokenIridium.luminosity = 10;
+moltenTokenIridium.viscosity = 1000;
+moltenTokenIridium.register();
+
+var moltenTokenUltimate = VanillaFactory.createFluid("moltenTokenUltimate", Color.fromHex("d1387d"));
+moltenTokenUltimate.temperature = 1000;
+moltenTokenUltimate.gaseous = false;
+moltenTokenUltimate.luminosity = 10;
+moltenTokenUltimate.viscosity = 1000;
+moltenTokenUltimate.register();
+
+var moltenTokenInfinity = VanillaFactory.createFluid("moltenTokenInfinity", Color.fromHex("8f2c96"));
+moltenTokenInfinity.temperature = 1000;
+moltenTokenInfinity.gaseous = false;
+moltenTokenInfinity.luminosity = 10;
+moltenTokenInfinity.viscosity = 1000;
+moltenTokenInfinity.register();

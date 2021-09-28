@@ -110,7 +110,7 @@ val alloyComponentStrsMap as string[][IItemStack] = {
 "2 ppc Aluminum",
 "2 ppc Tantalum",
 "1 ppc Niobium"
-],
+],/*
 <rockhounding_chemistry:alloy_items_tech_b:7>://zircaloy
 [
 "98 ppc Zirconium",
@@ -118,7 +118,7 @@ val alloyComponentStrsMap as string[][IItemStack] = {
 "1 ppc Niobium",
 "1 ppc Iron",
 "1 ppc Chromium"
-],
+],*/
 <ore:ingotMischmetal>.firstItem:
 [
 "50 ppc Cerium",

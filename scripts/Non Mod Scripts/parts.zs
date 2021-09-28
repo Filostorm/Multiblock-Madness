@@ -2,20 +2,22 @@
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.Crusher;
-import mods.immersiveengineering.MetalPress;
 import mods.nuclearcraft.Manufactory;
-import mods.nuclearcraft.Pressurizer;
 import mods.techreborn.grinder;
+import mods.enderio.SagMill;
+import mods.thermalexpansion.Pulverizer;
 import mods.techreborn.rollingMachine;
 import mods.thermalexpansion.Compactor;
-import mods.thermalexpansion.Pulverizer;
 import mods.advancedrocketry.PlatePresser;
 import mods.techreborn.implosionCompressor;
+import mods.nuclearcraft.Pressurizer;
 import mods.techreborn.plateBendingMachine;
 import mods.techreborn.assemblingMachine;
 import mods.advancedrocketry.Lathe;
-import mods.enderio.SagMill;
+import mods.immersiveengineering.MetalPress;
 
 print("==================== loading parts.zs ====================");
 ##########################################################################################
@@ -38,7 +40,7 @@ for item in itemstoRemove {
 }
 
 
-
+/* Moved
 //scaffolding
 assemblingMachine.addRecipe(<contenttweaker:vanasteel_scaffolding>*9, <rockhounding_chemistry:alloy_items_tech:40>*3, <contenttweaker:rod_vanasteel>*3, 100, 100);
 assemblingMachine.addRecipe(<immersiveengineering:metal_decoration1:1>*9, <thermalfoundation:material:160>*3, <immersiveengineering:material:2>*3, 100, 100);
@@ -49,9 +51,8 @@ assemblingMachine.addRecipe(<contenttweaker:invar_scaffolding>*9, <thermalfounda
 assemblingMachine.addRecipe(<immersiveengineering:metal_decoration1:5>*9, <thermalfoundation:material:132>*3, <immersiveengineering:material:3>*3, 100, 100);
 assemblingMachine.addRecipe(<jaopca:block_scaffoldingnichrome>*9, <rockhounding_chemistry:alloy_items_tech:22>*3, <jaopca:item_sticknichrome>*3, 100, 100);
 assemblingMachine.addRecipe(<jaopca:block_scaffoldingstainlesssteel>*9, <qmd:ingot_alloy:2>*3, <jaopca:item_stickstainlesssteel>*3, 100, 100);
-assemblingMachine.addRecipe(<jaopca:block_scaffoldingsyrmorite>*9, <thebetweenlands:items_misc:11>*3, <jaopca:item_sticksyrmorite>*3, 100, 100);
 assemblingMachine.addRecipe(<jaopca:block_scaffoldingthaumium>*9, <thaumcraft:ingot>*3, <jaopca:item_stickthaumium>*3, 100, 100);
-
+*/
 
 recipes.addShaped(<contenttweaker:scal_scaffolding> * 6, [[<rockhounding_chemistry:alloy_items_tech:4>, <rockhounding_chemistry:alloy_items_tech:4>, <rockhounding_chemistry:alloy_items_tech:4>],[null, <contenttweaker:rod_scal>, null], [<contenttweaker:rod_scal>, null, <contenttweaker:rod_scal>]]);
 recipes.addShaped(<contenttweaker:bam_scaffolding> * 6, [[<rockhounding_chemistry:alloy_items_tech:7>, <rockhounding_chemistry:alloy_items_tech:7>, <rockhounding_chemistry:alloy_items_tech:7>],[null, <contenttweaker:rod_bam>, null], [<contenttweaker:rod_bam>, null, <contenttweaker:rod_bam>]]);
@@ -60,8 +61,23 @@ recipes.addShaped(<contenttweaker:vanasteel_scaffolding> * 6, [[<rockhounding_ch
 recipes.addShaped(<contenttweaker:invar_scaffolding> * 6, [[<thermalfoundation:material:162>, <thermalfoundation:material:162>, <thermalfoundation:material:162>],[null, <moreplates:invar_stick>, null], [<moreplates:invar_stick>, null, <moreplates:invar_stick>]]);
 recipes.addShaped(<jaopca:block_scaffoldingnichrome> * 6, [[<ore:ingotNichrome>, <ore:ingotNichrome>, <ore:ingotNichrome>],[null, <jaopca:item_sticknichrome>, null], [<jaopca:item_sticknichrome>, null, <jaopca:item_sticknichrome>]]);
 recipes.addShaped(<jaopca:block_scaffoldingstainlesssteel> * 6, [[<ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>],[null, <jaopca:item_stickstainlesssteel>, null], [<jaopca:item_stickstainlesssteel>, null, <jaopca:item_stickstainlesssteel>]]);
-recipes.addShaped(<jaopca:block_scaffoldingsyrmorite> * 6, [[<thebetweenlands:items_misc:11>, <thebetweenlands:items_misc:11>, <thebetweenlands:items_misc:11>],[null, <jaopca:item_sticksyrmorite>, null], [<jaopca:item_sticksyrmorite>, null, <jaopca:item_sticksyrmorite>]]);
 recipes.addShaped(<jaopca:block_scaffoldingthaumium> * 6, [[<thaumcraft:ingot>, <thaumcraft:ingot>, <thaumcraft:ingot>],[null, <jaopca:item_stickthaumium>, null], [<jaopca:item_stickthaumium>, null, <jaopca:item_stickthaumium>]]);
+recipes.addShaped(<contenttweaker:ironwood_scaffolding> * 6, [[<twilightforest:ironwood_ingot>, <twilightforest:ironwood_ingot>, <twilightforest:ironwood_ingot>],[null, <contenttweaker:rod_ironwood>, null], [<contenttweaker:rod_ironwood>, null, <contenttweaker:rod_ironwood>]]);
+
+################# RODS #######################
+
+val metalPressRods as IItemStack[IItemStack] = {
+	<contenttweaker:rod_nimonic>:<rockhounding_chemistry:alloy_items_tech:16>,
+	<contenttweaker:rod_scal>:<rockhounding_chemistry:alloy_items_tech:4>,
+	<contenttweaker:rod_vanasteel>:<rockhounding_chemistry:alloy_items_tech:40>,
+	<contenttweaker:rod_bam>:<rockhounding_chemistry:alloy_items_tech:7>,
+	<contenttweaker:rod_ironwood>:<twilightforest:ironwood_ingot>,
+} as IItemStack[IItemStack];
+
+for rod, material in metalPressRods {
+	MetalPress.addRecipe(rod*2, material, <immersiveengineering:mold:2>, 2000);
+}
+
 
 ################# GEARS #######################
 mods.actuallyadditions.AtomicReconstructor.removeRecipe(<moreplates:restonia_gear>);
@@ -134,6 +150,9 @@ recipes.addShaped(<jaopca:block_sheetmetalelectricalsteel> * 4, [[null, <morepla
 recipes.addShaped(<jaopca:block_sheetmetalvanasteel> * 4, [[null, <rockhounding_chemistry:alloy_parts:40>, null],[<rockhounding_chemistry:alloy_parts:40>, null, <rockhounding_chemistry:alloy_parts:40>], [null, <rockhounding_chemistry:alloy_parts:40>, null]]);
 recipes.addShaped(<jaopca:block_sheetmetaltitanium> * 4, [[null, <techreborn:plates:31>, null],[<techreborn:plates:31>, null, <techreborn:plates:31>], [null, <techreborn:plates:31>, null]]);
 recipes.addShaped(<jaopca:block_sheetmetalconductiveiron> * 4, [[null, <moreplates:conductive_iron_plate>, null],[<moreplates:conductive_iron_plate>, null, <moreplates:conductive_iron_plate>], [null, <moreplates:conductive_iron_plate>, null]]);
+recipes.addShaped(<jaopca:block_sheetmetalpulsatingiron> * 4, [[null, <moreplates:pulsating_iron_plate>, null],[<moreplates:pulsating_iron_plate>, null, <moreplates:pulsating_iron_plate>], [null, <moreplates:pulsating_iron_plate>, null]]);
+recipes.addShaped(<jaopca:block_sheetmetalstainlesssteel> * 4, [[null, <jaopca:item_platestainlesssteel>, null],[<jaopca:item_platestainlesssteel>, null, <jaopca:item_platestainlesssteel>], [null, <jaopca:item_platestainlesssteel>, null]]);
+recipes.addShaped(<contenttweaker:sheetmetal_ironwood> * 4, [[null, <moreplates:ironwood_plate>, null],[<moreplates:ironwood_plate>, null, <moreplates:ironwood_plate>], [null, <moreplates:ironwood_plate>, null]]);
 
 
 ### Rolling Machine ###
@@ -157,6 +176,9 @@ rollingMachine.addShapeless(<jaopca:block_sheetmetalelectricalsteel>*9,[<enderio
 rollingMachine.addShapeless(<jaopca:block_sheetmetalvanasteel>*9,[<rockhounding_chemistry:alloy_blocks_tech:13>]);
 rollingMachine.addShapeless(<jaopca:block_sheetmetaltitanium>*9,[<techreborn:storage:2>]);
 rollingMachine.addShapeless(<jaopca:block_sheetmetalconductiveiron>*9,[<enderio:block_alloy:4>]);
+rollingMachine.addShapeless(<jaopca:block_sheetmetalpulsatingiron>*9,[<enderio:block_alloy:5>]);
+rollingMachine.addShapeless(<jaopca:block_sheetmetalstainlesssteel>*9,[<jaopca:block_blockstainlesssteel>]);
+rollingMachine.addShapeless(<contenttweaker:sheetmetal_ironwood>*9,[<twilightforest:block_storage>]);
 
 ### Compressed Platess ###
 mods.techreborn.compressor.addRecipe(<jaopca:item_platedenseadvancedalloy>, <techreborn:plates:36>*9, 600, 50);
@@ -172,7 +194,6 @@ mods.techreborn.compressor.addRecipe(<jaopca:item_platedenseintermedium>, <morep
 mods.advancedrocketry.Lathe.clear();
 
 val latheRods as IItemStack[IItemStack] = {
-<thebetweenlands:items_misc:11>:<jaopca:item_sticksyrmorite>,
 <rockhounding_chemistry:alloy_items_tech:37>:<jaopca:item_stickhydronalium>,
 <thermalfoundation:material:132>:<immersiveengineering:material:3>,
 <thaumcraft:ingot:2>:<jaopca:item_stickbrass>,
@@ -204,10 +225,12 @@ val latheRods as IItemStack[IItemStack] = {
 <rockhounding_chemistry:alloy_items_tech:22>:<jaopca:item_sticknichrome>,
 <thermalfoundation:material:164>:<moreplates:constantan_stick>,
 <thaumcraft:ingot>:<jaopca:item_stickthaumium>,
+<twilightforest:ironwood_ingot>:<contenttweaker:rod_ironwood>,
+<techreborn:ingot:19>:<jaopca:item_stickrefinediron>,
 } as IItemStack[IItemStack];
 
 for material, rod in latheRods {
-	Lathe.addRecipe(rod*4, 100, 2000, material);
+	Lathe.addRecipe(rod*4, 60, 2000, material);
 }
 
 
@@ -246,24 +269,16 @@ SagMill.addRecipe([<techreborn:dust:12>*4], [1] , <minecraft:clay>, "NONE");
 val limestoneforFlux = <ore:limestoneforFlux>;
 limestoneforFlux.add(<quark:limestone>);
 limestoneforFlux.add(<quark:limestone:1>);
-limestoneforFlux.add(<thebetweenlands:polished_limestone>);
-limestoneforFlux.add(<thebetweenlands:limestone>);
 limestoneforFlux.add(<chisel:limestone2:7>);
 for item in limestoneforFlux.items{
-Crusher.addRecipe(<thebetweenlands:items_misc:27>*3, item, 1024, <thebetweenlands:items_misc:27>, 0.5);
-Pulverizer.addRecipe(<thebetweenlands:items_misc:27>*4, item, 1500, <thebetweenlands:items_misc:27>, 50);
+Crusher.addRecipe(<contenttweaker:limestone_flux>*3, item, 1024, <contenttweaker:limestone_flux>, 0.5);
+Pulverizer.addRecipe(<contenttweaker:limestone_flux>*4, item, 1500, <contenttweaker:limestone_flux>, 50);
 }
-Manufactory.addRecipe(<ore:limestoneforFlux>, <thebetweenlands:items_misc:27>*4);
-grinder.addRecipe(<thebetweenlands:items_misc:27>*4, <ore:limestoneforFlux>, 300, 4);
-SagMill.addRecipe([<thebetweenlands:items_misc:27>*3], [1] , <ore:limestoneforFlux>, "MULTIPLY_OUTPUT");
 
+Manufactory.addRecipe(<ore:limestoneforFlux>, <contenttweaker:limestone_flux>*4);
+grinder.addRecipe(<contenttweaker:limestone_flux>*4, <ore:limestoneforFlux>, 300, 4);
+SagMill.addRecipe([<contenttweaker:limestone_flux>*3], [1] , <ore:limestoneforFlux>, "MULTIPLY_OUTPUT");
 
-//sulfur
-Crusher.addRecipe(<thermalfoundation:material:771>*3, <thebetweenlands:items_misc:18>, 1024, <thermalfoundation:material:771>, 0.5);
-Manufactory.addRecipe(<thebetweenlands:items_misc:18>, <thermalfoundation:material:771>*4);
-grinder.addRecipe(<thermalfoundation:material:771>*4, <thebetweenlands:items_misc:18>, 300, 4);
-Pulverizer.addRecipe(<thermalfoundation:material:771>*4, <thebetweenlands:items_misc:18>, 1500, <thermalfoundation:material:771>, 50);
-SagMill.addRecipe([<thermalfoundation:material:771>*3], [1] , <thebetweenlands:items_misc:18>, "MULTIPLY_OUTPUT");
 
 //Radiant Dust
 Crusher.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 1024, <arcanearchives:radiant_dust>*3, 0.5);
@@ -284,6 +299,7 @@ SagMill.addRecipe([<embers:dust_ember>], [1] , <embers:crystal_ember>, "NONE");
 //Graphite
 grinder.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 300, 4);
 SagMill.addRecipe([<nuclearcraft:dust:8>], [1] , <thermalfoundation:material:768>, "NONE");
+Pulverizer.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 1500);
 
 //Slates
 Crusher.addRecipe(<contenttweaker:slatedust>*2, <bloodmagic:slate>, 2048);
@@ -321,18 +337,34 @@ Crusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_st
 grinder.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>, 300, 4);
 SagMill.addRecipe([<appliedenergistics2:material:45>], [1] , <appliedenergistics2:sky_stone_block>, "NONE");
 
+
+//Pristine dust
+Crusher.addRecipe(<contenttweaker:pristine_dust>, <ore:pristineMatter>, 1024);
+Manufactory.addRecipe(<ore:pristineMatter>, <contenttweaker:pristine_dust>);
+grinder.addRecipe(<contenttweaker:pristine_dust>, <ore:pristineMatter>, 300, 4);
+SagMill.addRecipe([<contenttweaker:pristine_dust>], [1] , <ore:pristineMatter>, "NONE");
+
+
+Crusher.addRecipe(<fluxnetworks:fluxcore>*4, <fluxnetworks:fluxblock>, 1024, <fluxnetworks:flux>*5, 0.9);
+Pulverizer.addRecipe(<fluxnetworks:fluxcore>*4, <fluxnetworks:fluxblock>, 1500, <fluxnetworks:flux>*5, 90);
+SagMill.addRecipe([<fluxnetworks:fluxcore>*4,<fluxnetworks:flux>*5], [1,0.9] , <fluxnetworks:fluxblock>, "NONE");
+
 //Plutonium
+/*
 val plutoniumDust =
 [
-	<nuclearcraft:plutonium:12>,
-	<nuclearcraft:plutonium:8>,
-	<nuclearcraft:plutonium:4>,
-	<nuclearcraft:plutonium>,
+	<ore:ingotPlutonium242All>,
+	<ore:ingotPlutonium241All>,
+	<ore:ingotPlutonium239All>,
+	<ore:ingotPlutonium238All>,
 ]
- as IItemStack[];
+ as IOreDictEntry[];
 for item in plutoniumDust {
 Manufactory.addRecipe(item, <techreborn:dust:67>);
 }
+*/
+val ingotPlutonium as IIngredient = (<ore:ingotPlutonium242All>|<ore:ingotPlutonium241All>|<ore:ingotPlutonium239All>|<ore:ingotPlutonium238All>) as IIngredient;
+Manufactory.addRecipe(ingotPlutonium, <techreborn:dust:67>);
 
 //Wither Ash
 Crusher.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 1024);
@@ -340,7 +372,8 @@ Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
 grinder.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 300, 4);
 SagMill.addRecipe([<quark:black_ash>*3], [1] , <minecraft:skull:1>, "MULTIPLY_OUTPUT");
 
-
+//Thermal Ruby dust
+Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
 
 ##########################################################################################
 print("==================== end of parts.zs ====================");

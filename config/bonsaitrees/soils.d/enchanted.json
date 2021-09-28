@@ -1,0 +1,16 @@
+{
+	"name": "botania:enchantedsoil",
+	"mod": "botania",
+	"soil": {
+		"name": "botania:enchantedsoil",
+		"data": 0,
+		"ignoreMeta": false
+	},
+	
+	"modifiers": {
+		"growTime": 0.75,
+		"dropChance": 3.0
+	},
+	
+	"providedTags": [ "dirt", "grass" ]
+}

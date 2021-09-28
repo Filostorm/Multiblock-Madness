@@ -1,7 +1,7 @@
 {
   "name": "cm3tinkers:toolforgebronze",
 
-  "disabled": false,
+  "disabled": true,
 
   "target-item": "tconstruct:toolforge",
   "target-count": 1,

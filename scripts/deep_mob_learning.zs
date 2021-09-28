@@ -12,11 +12,13 @@ val itemstoRemove =
 	<deepmoblearning:trial_keystone>,
 	<deepmoblearning:trial_key>,
 	<deepmoblearning:simulation_chamber>,
+/*
 	<deepmoblearning:glitch_infused_leggings>,
 	<deepmoblearning:glitch_infused_sword>,
 	<deepmoblearning:glitch_infused_helmet>,
 	<deepmoblearning:glitch_infused_chestplate>,
 	<deepmoblearning:glitch_infused_boots>,
+*/
 	<deepmoblearning:extraction_chamber>,
 	<deepmoblearningbm:digital_agonizer>,
 ]
@@ -57,20 +59,30 @@ recipes.addShaped(<deepmoblearningbm:digital_agonizer>, [[<bloodmagic:blood_rune
 recipes.addShaped(<deepmoblearning:simulation_chamber>, [[<moreplates:osgloglas_plate>, <actuallyadditions:item_crystal_empowered>, <moreplates:osgloglas_plate>],[<actuallyadditions:item_crystal_empowered>, <deepmoblearning:machine_casing>, <actuallyadditions:item_crystal_empowered>], [<moreplates:osgloglas_plate>, <techreborn:part:2>, <moreplates:osgloglas_plate>]]);
 
 
+//Pick-a-Matter
+//mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
 
+//Thermal
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_thermal_elemental>, [<contenttweaker:pristine_dust>, <ore:dustElemental>], 1000,100,2);
 
+//TF Stuff
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_glacier>, [<contenttweaker:pristine_dust>, <twilightforest:arctic_fur>], 1000,100,2);
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_darkwood>, [<contenttweaker:pristine_dust>, <twilightforest:twilight_log:3>], 1000,100,2);
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_swamp>, [<contenttweaker:pristine_dust>, <minecraft:waterlily>], 1000,100,2);
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_forest>, [<contenttweaker:pristine_dust>, <twilightforest:firefly>], 1000,100,2);
 
 
 //Pre kill bosses
 recipes.addShapeless(<deepmoblearning:data_model_dragon>.withTag({tier: 1, killCount: 1, totalKillCount: 1}), [<deepmoblearning:data_model_blank>,<minecraft:dragon_egg>]);
 recipes.addShapeless(<deepmoblearning:data_model_wither>.withTag({tier: 1, killCount: 1, totalKillCount: 1}), [<deepmoblearning:data_model_blank>,<minecraft:nether_star>]);
 
+/*
 //Glitch
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_sword>], [<botania:elementiumsword>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*8]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_helmet>], [<botania:elementiumhelm>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*5]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_chestplate>], [<botania:elementiumchest>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*8]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_leggings>], [<botania:elementiumlegs>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*7]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_boots>], [<botania:elementiumboots>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*4]);
-
+*/
 ##########################################################################################
 print("==================== end of Deep Mob Learning.zs ====================");

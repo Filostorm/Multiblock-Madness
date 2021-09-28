@@ -1,0 +1,24 @@
+{
+	"populate": {
+		"limestone": {
+
+			"distribution": "uniform",
+			"generator": {
+				"block": "quark:limestone",
+				"material": "minecraft:stone",
+				"cluster-size": 25
+			},
+			"cluster-count": 2,
+			"min-height": 10,
+			"max-height": 50,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					7
+				]
+			}
+		}
+	}
+}

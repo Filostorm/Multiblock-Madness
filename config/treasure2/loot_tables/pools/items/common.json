@@ -6,66 +6,6 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"entryName": "bread",
-					"type": "item",
-					"name": "minecraft:bread",
-					"weight": 80,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 2,
-								"max": 5
-							}
-						}
-					]
-				},
-				{
-					"entryName": "apple",
-					"type": "item",
-					"name": "minecraft:apple",
-					"weight": 60,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 4
-							}
-						}
-					]
-				},
-				{
-					"entryName": "wool",
-					"type": "item",
-					"name": "minecraft:wool",
-					"weight": 25,
-						"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
-						}
-					]
-				},
-				{
-					"entryName": "torch",
-					"type": "item",
-					"name": "minecraft:torch",
-					"weight": 50,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 5
-							}
-						}
-					]
-				},
-				{
 					"entryName": "leather",
 					"type": "item",
 					"name": "minecraft:leather",
@@ -81,40 +21,10 @@
 					]
 				},
 				{
-					"entryName": "rabbit_hide",
+					"entryName": "bio_goo",
 					"type": "item",
-					"name": "minecraft:rabbit_hide",
-					"weight": 20,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
-						}
-					]
-				},
-				{
-					"entryName": "gold_nugget",
-					"type": "item",
-					"name": "minecraft:gold_nugget",
-					"weight": 20,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
-						}
-					]
-				},
-				{
-					"entryName": "iron_ingot",
-					"type": "item",
-					"name": "minecraft:iron_ingot",
-					"weight": 30,
+					"name": "fossil:bio_goo",
+					"weight": 5,
 					"functions": [
 						{
 							"function": "set_count",
@@ -123,28 +33,13 @@
 								"max": 5
 							}
 						}
-					]
+					]	
 				},
 				{
-					"entryName": "arrow",
+					"entryName": "wirecoil",
 					"type": "item",
-					"name": "minecraft:arrow",
-					"weight": 50,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 5,
-								"max": 10
-							}
-						}
-					]
-				},
-				{
-					"entryName": "bone",
-					"type": "item",
-					"name": "minecraft:bone",
-					"weight": 50,
+					"name": "immersiveengineering:wirecoil",
+					"weight": 5,
 					"functions": [
 						{
 							"function": "set_count",
@@ -153,73 +48,200 @@
 								"max": 3
 							}
 						}
-					]
+					]	
 				},
 				{
-					"entryName": "spider_eye",
+					"entryName": "mys_shard",
 					"type": "item",
-					"name": "minecraft:spider_eye",
-					"weight": 35,
+					"name": "mysticalagriculture:crafting",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 5
+						}
+					]	
+				},
+				{
+					"entryName": "unripe_pearl",
+					"type": "item",
+					"name": "mysticalworld:unripe_pearl",
+					"weight": 5,
 					"functions": [
 						{
 							"function": "set_count",
 							"count": {
 								"min": 1,
-								"max": 3
+								"max": 5
 							}
 						}
-					]
+					]	
 				},
 				{
-					"entryName": "rotten_flesh",
+					"entryName": "pearl",
 					"type": "item",
-					"name": "minecraft:rotten_flesh",
-					"weight": 50
-				},
-				{
-					"entryName": "string",
-					"type": "item",
-					"name": "minecraft:string",
-					"weight": 50,
+					"name": "mysticalworld:pearl",
+					"weight": 5,
 					"functions": [
 						{
 							"function": "set_count",
 							"count": {
 								"min": 1,
-								"max": 3
+								"max": 5
 							}
 						}
-					]
+					]	
 				},
 				{
-					"entryName": "clay_ball",
+					"entryName": "ancient_javelin",
 					"type": "item",
-					"name": "minecraft:iron_ingot",
-					"weight": 10,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					]
+					"name": "fossil:ancient_javelin",
+					"weight": 5
 				},
 				{
-					"entryName": "brick",
+					"entryName": "bean",
 					"type": "item",
-					"name": "minecraft:iron_ingot",
-					"weight": 10,
+					"name": "randomthings:beans",
+					"weight": 5,
 					"functions": [
 						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
+							"function": "set_data",
+								"data": 2
 						}
-					]
+					]	
+				},
+				{
+					"entryName": "rthing",
+					"type": "item",
+					"name": "randomthings:ingredient",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 2
+						}
+					]	
+				},
+				{
+					"entryName": "egg",
+					"type": "item",
+					"name": "randomthings:weatheregg",
+					"weight": 5
+				},
+				{
+					"entryName": "eggone",
+					"type": "item",
+					"name": "randomthings:weatheregg",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 1
+						}
+					]	
+				},
+				{
+					"entryName": "eggtwo",
+					"type": "item",
+					"name": "randomthings:weatheregg",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 2
+						}
+					]	
+				},
+				{
+					"entryName": "dustq",
+					"type": "item",
+					"name": "ebwizardry:spectral_dust",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 1
+						}
+					]	
+					
+				},
+				{
+					"entryName": "dustw",
+					"type": "item",
+					"name": "ebwizardry:spectral_dust",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 2
+						}
+					]	
+				},
+				{
+					"entryName": "duste",
+					"type": "item",
+					"name": "ebwizardry:spectral_dust",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 3
+						}
+					]	
+				},
+				{
+					"entryName": "dustr",
+					"type": "item",
+					"name": "ebwizardry:spectral_dust",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 4
+						}
+					]	
+				},
+				{
+					"entryName": "dustt",
+					"type": "item",
+					"name": "ebwizardry:spectral_dust",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 5
+						}
+					]	
+				},
+				{
+					"entryName": "dusty",
+					"type": "item",
+					"name": "ebwizardry:spectral_dust",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 6
+						}
+					]	
+				},
+				{
+					"entryName": "dustu",
+					"type": "item",
+					"name": "ebwizardry:spectral_dust",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 7
+						}
+					]	
+				},
+				{
+					"entryName": "apple",
+					"type": "item",
+					"name": "cyclicmagic:apple",
+					"weight": 1
 				}
 			]
 		}

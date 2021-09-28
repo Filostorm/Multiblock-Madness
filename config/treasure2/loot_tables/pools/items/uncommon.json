@@ -6,121 +6,16 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"entryName": "spectral_arrow",
+					"entryName": "quickstacker",
 					"type": "item",
-					"name": "minecraft:spectral_arrow",
-					"weight": 15,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 2,
-								"max": 6
-							}
-						}
-					]						
-				},			
-				{
-					"entryName": "iron_ingot",
-					"type": "item",
-					"name": "minecraft:iron_ingot",
-					"weight": 20,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 2,
-								"max": 7
-							}
-						}
-					]						
+					"name": "enderutilities:quickstacker",
+					"weight": 1
 				},
 				{
-					"entryName": "paper",
+					"entryName": "erodium_crystal",
 					"type": "item",
-					"name": "minecraft:paper",
-					"weight": 25,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					]						
-				},
-				{
-					"entryName": "reeds",
-					"type": "item",
-					"name": "minecraft:reeds",
-					"weight": 50,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					]						
-				},				
-				{
-					"entryName": "book",
-					"type": "item",
-					"name": "minecraft:book",
-					"weight": 25,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					]						
-				},
-				{
-					"entryName": "bowl",
-					"type": "item",
-					"name": "minecraft:bowl",
-					"weight": 30				
-				},
-				{
-					"entryName": "redstone",
-					"type": "item",
-					"name": "minecraft:redstone",
-					"weight": 30,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
-						}
-					]						
-				},
-				{
-					"entryName": "redstone_torch",
-					"type": "item",
-					"name": "minecraft:redstone_torch",
-					"weight": 40,
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					]						
-				},
-				{
-					"entryName": "coal",
-					"type": "item",
-					"name": "minecraft:coal",
-					"weight": 50,
+					"name": "environmentaltech:erodium_crystal",
+					"weight": 10,
 					"functions": [
 						{
 							"function": "set_count",
@@ -129,79 +24,125 @@
 								"max": 5
 							}
 						}
-					]						
+					]	
 				},
 				{
-					"entryName": "bow",
+					"entryName": "wirecoil",
 					"type": "item",
-					"name": "minecraft:bow",
-					"weight": 25			
+					"name": "immersiveengineering:wirecoil",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 1
+						}
+					]	
 				},
 				{
-					"entryName": "clay",
+					"entryName": "nc_plating",
 					"type": "item",
-					"name": "minecraft:clay",
-					"weight": 15,
+					"name": "nuclearcraft:part",
+					"weight": 4,
 					"functions": [
 						{
 							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
+							"count": 1
 						}
-					]						
+					]	
 				},
 				{
-					"entryName": "bucket",
+					"entryName": "diviningrod",
 					"type": "item",
-					"name": "minecraft:bucket",
-					"weight": 50					
-				},
-				{
-					"entryName": "slime_ball",
-					"type": "item",
-					"name": "minecraft:slime_ball",
-					"weight": 35,
+					"name": "randomthings:diviningrod",
+					"weight": 1,
 					"functions": [
 						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
+							"function": "set_data",
+								"data": 7
 						}
-					]						
+					]	
 				},
 				{
-					"entryName": "lead",
+					"entryName": "brass",
 					"type": "item",
-					"name": "minecraft:lead",
-					"weight": 35,
+					"name": "thaumcraft:ingot",
+					"weight": 5,
 					"functions": [
 						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
+							"function": "set_data",
+								"data": 2
 						}
-					]						
+					]	
 				},
 				{
-					"entryName": "fermented_spider_eye",
+					"entryName": "boomball",
 					"type": "item",
-					"name": "minecraft:fermented_spider_eye",
+					"name": "tconstruct:throwball",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 1
+						}
+					]	
+				},
+				{
+					"entryName": "magichood",
+					"type": "item",
+					"name": "randomthings:magichood",
+					"weight": 1
+				},
+				{
+					"entryName": "lavawader",
+					"type": "item",
+					"name": "randomthings:lavawader",
+					"weight": 1
+				},
+				{
+					"entryName": "waterwalkingboots",
+					"type": "item",
+					"name": "randomthings:waterwalkingboots",
+					"weight": 1
+				},
+				{
+					"entryName": "hourglass",
+					"type": "item",
+					"name": "botania:hourglass",
+					"weight": 1
+				},
+				{
+					"entryName": "emerald",
+					"type": "item",
+					"name": "randomthings:ingredient",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_data",
+								"data": 9
+						}
+					]	
+				},
+				{
+					"entryName": "vis_meal",
+					"type": "item",
+					"name": "contenttweaker:vis_meal",
+					"weight": 1
+				},
+							
+				{
+					"entryName": "elemental_soil",
+					"type": "item",
+					"name": "contenttweaker:elemental_soil",
 					"weight": 25,
 					"functions": [
 						{
 							"function": "set_count",
 							"count": {
-								"min": 1,
-								"max": 3
+								"min": 3,
+								"max": 9
 							}
 						}
-					]						
+					]							
 				}
 			]
 		}

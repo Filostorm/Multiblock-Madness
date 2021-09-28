@@ -6,7 +6,7 @@
   "target-item": "deepmoblearning:machine_casing",
   "target-count": 1,
 
-  "duration": 200,
+  "duration": 100,
   "symmetrical": true,
 
   "catalyst": "moreplates:knightmetal_gear",

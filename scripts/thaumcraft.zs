@@ -29,6 +29,49 @@ for item in itemstoRemove {
 }
 
 
+
+Crucible.removeRecipe(<thaumadditions:vis_seeds>);
+
+/*
+val primalAspects = [
+"aer",
+ ] as string[];
+
+for essentiaType in primalAspects {
+Crucible.registerRecipe("vis_seed_" + essentiaType, "",
+    <thaumadditions:vis_seeds>.withTag({Aspect: essentiaType}), <minecraft:wheat_seeds>,
+	[<aspect:essentiaType> * 20, <aspect:herba> * 10]
+);
+}
+*/
+
+
+Crucible.registerRecipe("vis_seed_aer", "",
+    <thaumadditions:vis_seeds>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "thaumadditions:aer_vis_plant", Aspect: "aer", agri_growth: 1 as byte}), <minecraft:wheat_seeds>,
+	[<aspect:aer> * 20, <aspect:herba> * 10]
+);
+Crucible.registerRecipe("vis_seed_ordo", "",
+    <thaumadditions:vis_seeds>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "thaumadditions:ordo_vis_plant", Aspect: "ordo", agri_growth: 1 as byte}), <minecraft:wheat_seeds>,
+	[<aspect:ordo> * 20, <aspect:herba> * 10]
+);
+Crucible.registerRecipe("vis_seed_aqua", "",
+    <thaumadditions:vis_seeds>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "thaumadditions:aqua_vis_plant", Aspect: "aqua", agri_growth: 1 as byte}), <minecraft:wheat_seeds>,
+	[<aspect:aqua> * 20, <aspect:herba> * 10]
+);
+Crucible.registerRecipe("vis_seed_perditio", "",
+    <thaumadditions:vis_seeds>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "thaumadditions:perditio_vis_plant", Aspect: "perditio", agri_growth: 1 as byte}), <minecraft:wheat_seeds>,
+	[<aspect:perditio> * 20, <aspect:herba> * 10]
+);
+Crucible.registerRecipe("vis_seed_terra", "",
+    <thaumadditions:vis_seeds>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "thaumadditions:terra_vis_plant", Aspect: "terra", agri_growth: 1 as byte}), <minecraft:wheat_seeds>,
+	[<aspect:terra> * 20, <aspect:herba> * 10]
+);
+Crucible.registerRecipe("vis_seed_ignis", "",
+    <thaumadditions:vis_seeds>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "thaumadditions:ignis_vis_plant", Aspect: "ignis", agri_growth: 1 as byte}), <minecraft:wheat_seeds>,
+	[<aspect:ignis> * 20, <aspect:herba> * 10]
+);
+
+
 ArcaneWorkbench.removeRecipe(<thaumcraft:metal_alchemical>);
 
 val preciousGems = <ore:preciousGems>;
@@ -50,13 +93,23 @@ preciousGems.add(<techreborn:gem:4>);
 // thaumometer
 ArcaneWorkbench.removeRecipe(<thaumcraft:thaumometer>);
 ArcaneWorkbench.registerShapedRecipe("CTThaumometer", "", 20,
-    [],
+    [<aspect:aer>,<aspect:terra>,<aspect:ignis>,<aspect:aqua>,<aspect:perditio>,<aspect:ordo>],
     <thaumcraft:thaumometer>, [
         [<ore:preciousGems>, <ore:plateBronze>, <ore:preciousGems>],
         [<ore:plateBronze>, <minecraft:glass_pane>, <ore:plateBronze>],
         [<ore:preciousGems>, <ore:plateBronze>, <ore:preciousGems>]
     ]
 );
+
+ArcaneWorkbench.registerShapedRecipe("VisMeal", "", 25,
+    [],
+    <contenttweaker:vis_meal>*2, 
+    [[<ore:gravel>, <ore:gravel>, <ore:gravel>], 
+	[<ore:dustBedrock>, <thaumcraft:salis_mundus>, <botania:fertilizer>], 
+	[<ore:gravel>, <ore:gravel>, <ore:gravel>]]
+);
+<contenttweaker:vis_meal>.addTooltip(format.gold("When used on stone, has a chance to grow Vis Crystals on any open side"));
+
 
 // arcane stone
 //ArcaneWorkbench.removeRecipe(<thaumcraft:stone_arcane>);
@@ -80,9 +133,9 @@ ArcaneWorkbench.registerShapedRecipe("CTArcaneStone", "", 10, [],
 GCT.addRecipe("nuggets", <thaumcraft:nugget:9>, [<arcanearchives:quartz_sliver>]);
 
 //Plate for research
-recipes.addShaped(<thaumadditions:mithrillium_plate>, [[<ore:artisansHammer>.reuse().transformDamage(10)],[<thaumadditions:mithrillium_ingot>]]);
-recipes.addShaped(<thaumadditions:adaminite_plate>, [[<ore:artisansHammer>.reuse().transformDamage(10)],[<thaumadditions:adaminite_ingot>]]);
-recipes.addShaped(<thaumadditions:mithminite_plate>, [[<ore:artisansHammer>.reuse().transformDamage(10)],[<thaumadditions:mithminite_ingot>]]);
+recipes.addShaped(<thaumadditions:mithrillium_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)],[<thaumadditions:mithrillium_ingot>]]);
+recipes.addShaped(<thaumadditions:adaminite_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)],[<thaumadditions:adaminite_ingot>]]);
+recipes.addShaped(<thaumadditions:mithminite_plate>, [[<ore:artisansHammer>.reuse().transformDamage(5)],[<thaumadditions:mithminite_ingot>]]);
 
 
 
@@ -90,7 +143,7 @@ recipes.addShaped(<thaumadditions:mithminite_plate>, [[<ore:artisansHammer>.reus
 PureDaisy.addRecipe(<embers:ashen_stone>, <thaumcraft:stone_arcane>);
 
 ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_basic>);
-ArcaneWorkbench.registerShapedRecipe("CTBrassSmelter", "", 50, [<aspect:ignis>],
+ArcaneWorkbench.registerShapedRecipe("CTBrassSmelter", "", 50, [<aspect:ignis>*5],
 <thaumcraft:smelter_basic>, 
 [[<ore:plateBrass>, <thaumcraft:crucible>, <ore:plateBrass>],
 [<botania:livingrock>, <botania:rune:1>, <botania:livingrock>], 
@@ -98,7 +151,7 @@ ArcaneWorkbench.registerShapedRecipe("CTBrassSmelter", "", 50, [<aspect:ignis>],
 );
 
 ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_void>);
-ArcaneWorkbench.registerShapedRecipe("CTVoidSmelter", "", 750, [<aspect:ignis>*3],
+ArcaneWorkbench.registerShapedRecipe("CTVoidSmelter", "", 750, [<aspect:ignis>*10],
 <thaumcraft:smelter_void>, 
 [[<ore:plateBrass>, <thaumcraft:smelter_thaumium>, <ore:plateBrass>],
 [<thaumcraft:plate:3>, <thaumcraft:metal_alchemical_advanced>, <thaumcraft:plate:3>], 
@@ -148,11 +201,11 @@ Crucible.registerRecipe("Alumentum", "",
 furnace.setFuel(<thaumcraft:alumentum>, 6400);
 // runic matrix
 ArcaneWorkbench.removeRecipe(<thaumcraft:infusion_matrix>);
-
+ArcaneWorkbench.registerShapelessRecipe("matrixforresearch", "", 0, [], <thaumcraft:infusion_matrix>, [<thaumcraft:infusion_matrix>]);
 
 //add aspects
-    <chisel:voidstone>.setAspects(<aspect:tenebrae> * 10, <aspect:vacuos> * 10, <aspect:ordo> * 10);
-    <chisel:energizedvoidstone>.setAspects(<aspect:tenebrae> * 10, <aspect:perditio> * 10, <aspect:potentia> * 10);
+    //<chisel:voidstone>.setAspects(<aspect:tenebrae> * 10, <aspect:vacuos> * 10, <aspect:ordo> * 10);
+    //<chisel:energizedvoidstone>.setAspects(<aspect:tenebrae> * 10, <aspect:perditio> * 10, <aspect:potentia> * 10);
     <embers:winding_gears>.setAspects(<aspect:machina>*40,<aspect:instrumentum>*40);
     <embers:shifting_scales>.setAspects(<aspect:praecantatio>*40,<aspect:praemunio>*40);
 
@@ -179,7 +232,7 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("mm:shaped/internal/thaumcraft
 //recipes.addShaped(<contenttweaker:greatwood_handle>, [[null, null, <thaumcraft:log_greatwood>],[null, <thaumcraft:log_greatwood>, null], [<thaumcraft:log_greatwood>, null, null]]);
 //recipes.addShaped(<thaumadditions:iron_framed_greatwood>, [[null, <thermalfoundation:material:32>, null],[<thermalfoundation:material:32>, <thaumcraft:plank_greatwood>, <thermalfoundation:material:32>], [null, <thermalfoundation:material:32>, null]]);
 
-<contenttweaker:greatwood_handle>.addTooltip(format.lightPurple("Use Salis Mundus on a Greatwood Log"));
+<contenttweaker:greatwood_handle>.addTooltip(format.lightPurple("Use Salis Mundus on a Greatwood Log, makes 2"));
 SalisMundus.addSingleConversion(<blockstate:thaumcraft:log_greatwood>.block, <contenttweaker:greatwood_handle>*2);
 
 //Knight Metal
@@ -193,5 +246,33 @@ Crucible.registerRecipe("Fabric", "",
     <thaumcraft:fabric>, <ore:wool>,
 	[<aspect:praecantatio> * 5]
 );
+
+//mithrillium
+Infusion.removeRecipe(<thaumadditions:mithrillium_ingot>);
+Infusion.registerRecipe("mithrillium", "", 
+<thaumadditions:mithrillium_ingot>, 5, 
+[<aspect:vitreus>*30, <aspect:metallum>*30, <aspect:potentia>*15, <aspect:alienis>*10, <aspect:praecantatio>*10], 
+<thaumcraft:ingot:1>, 
+[<thaumcraft:fabric>,<thaumcraft:quicksilver>, <thaumcraft:alumentum>, <thaumcraft:amber>, <thaumcraft:salis_mundus>,
+<thaumcraft:fabric>,<thaumcraft:quicksilver>, <thaumcraft:alumentum>, <thaumcraft:amber>, <thaumcraft:salis_mundus>]);
+
+//adaminite
+Infusion.removeRecipe(<thaumadditions:adaminite_ingot>);
+Infusion.registerRecipe("adaminite", "", 
+<thaumadditions:adaminite_ingot>, 10, 
+[<aspect:spiritus>*120, <aspect:victus>*100, <aspect:praecantatio>*100, <aspect:infernum>*100, <aspect:permutatio>*40, <aspect:metallum>*40, <aspect:alkimia>*30, <aspect:draco>*20,<aspect:visum>*20], 
+<thaumadditions:mithrillium_ingot>, 
+[<thaumcraft:primordial_pearl>.anyDamage(), <minecraft:nether_star>,
+<thaumcraft:fabric>, <minecraft:nether_star>]);
+
+//mithminite
+Infusion.removeRecipe(<thaumadditions:mithminite_ingot>);
+Infusion.registerRecipe("mithminite", "", 
+<thaumadditions:mithminite_ingot>, 15, 
+[<aspect:praecantatio>*120,<aspect:victus>*90,<aspect:metallum>*60,<aspect:caeles>*10], 
+<thaumadditions:adaminite_ingot>, 
+[<thaumadditions:mithrillium_ingot>, <thaumcraft:quicksilver>,
+<thaumadditions:mithrillium_ingot>, <thaumcraft:quicksilver>]);
+
 ##########################################################################################
 print("==================== end of mods thaumcraft.zs ====================");
