@@ -155,7 +155,7 @@ recipes.addShaped(<appliedenergistics2:part:241>*2, [[<minecraft:dye:4>, <applie
 
 
 furnace.remove(<threng:material>);
-blastFurnace.addRecipe(<threng:material>, null, <threng:material:2>, null, 1200, 60, 2000);
+blastFurnace.addRecipe(<threng:material>, null, <threng:material:2>, null, 300, 512, 2000);
 
 <threng:material>.displayName = "Fluix Platinum Ingot";
 Aggregator.removeRecipe(<threng:material>);
