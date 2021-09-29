@@ -54,13 +54,13 @@ recipes.addShaped(<thermalfoundation:material:1028>, [[<bloodarsenal:base_item:2
 recipes.addShaped(<thermalexpansion:frame:64>, [[<thermalfoundation:material:321>, <ore:fusedGlass>, <thermalfoundation:material:321>],[<ore:fusedGlass>, <thermalfoundation:material:292>, <ore:fusedGlass>], [<thermalfoundation:material:321>, <ore:fusedGlass>, <thermalfoundation:material:321>]]);
 
 //extruder
-recipes.addShaped(<thermalexpansion:machine:15>, [[null, <embers:superheater>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <openblocks:tank>, <thermalfoundation:material:256>]]);
+recipes.addShaped(<thermalexpansion:machine:15>.withTag({Level: 1 as byte}), [[null, <embers:superheater>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <openblocks:tank>, <thermalfoundation:material:256>]]);
 
 //glacial
-recipes.addShaped(<thermalexpansion:machine:14>, [[null, <cookingforblockheads:ice_unit>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <openblocks:tank>, <thermalfoundation:material:256>]]);
+recipes.addShaped(<thermalexpansion:machine:14>.withTag({Level: 1 as byte}), [[null, <cookingforblockheads:ice_unit>, null],[<thermalfoundation:material:162>, <thermalexpansion:frame:64>, <thermalfoundation:material:162>], [<thermalfoundation:material:256>, <openblocks:tank>, <thermalfoundation:material:256>]]);
 
 //Energetic
-recipes.addShaped(<thermalexpansion:machine:9>, [[null, <appliedenergistics2:charger>, null],[<thermalfoundation:material:514>, <thermalexpansion:frame>, <thermalfoundation:material:514>], [<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+recipes.addShaped(<thermalexpansion:machine:9>.withTag({Level: 1 as byte}), [[null, <appliedenergistics2:charger>, null],[<thermalfoundation:material:514>, <thermalexpansion:frame>, <thermalfoundation:material:514>], [<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
 
 
 //Hardned glass
@@ -177,5 +177,99 @@ recipes.removeShaped(<thermalcultivation:watering_can>, [[<thermalfoundation:mat
 recipes.removeShaped(<thermalcultivation:watering_can:1>, [[null, <minecraft:dye:15>, null],[<thermalfoundation:material:162>, <thermalcultivation:watering_can>, <thermalfoundation:material:162>], [<minecraft:dye:15>, <minecraft:redstone>, <minecraft:dye:15>]]);
 recipes.addShaped(<thermalcultivation:watering_can:1>, [[null, <cyclicmagic:peat_fuel>, null],[<thermalfoundation:material:162>, <thermalcultivation:watering_can>, <thermalfoundation:material:162>], [<cyclicmagic:peat_fuel>, <minecraft:redstone>, <cyclicmagic:peat_fuel>]]);
 recipes.addShaped(<thermalcultivation:watering_can>, [[<thermalfoundation:material:128>, null, null],[<thermalfoundation:material:128>, <actuallyadditions:item_fertilizer>, <thermalfoundation:material:128>], [null, <thermalfoundation:material:128>, null]]);
+
+// Rewriting Thermal Machine Recipes to give Hardened variants
+val machinestoRemove =
+[
+<thermalexpansion:machine:4>,
+<thermalexpansion:machine:12>,
+<thermalexpansion:machine:13>,
+<thermalexpansion:machine>,
+<thermalexpansion:machine:1>,
+<thermalexpansion:machine:2>,
+<thermalexpansion:machine:3>,
+<thermalexpansion:machine:5>,
+<thermalexpansion:machine:6>,
+<thermalexpansion:machine:8>,
+<thermalexpansion:machine:7>,
+<thermalexpansion:machine:10>
+]
+ as IItemStack[];
+
+for item in machinestoRemove {
+	recipes.remove(item);
+}
+
+// Redstone Furnace
+recipes.addShaped(<thermalexpansion:machine>.withTag({Level: 1 as byte}), 
+[[null, <minecraft:redstone>, null],
+[<minecraft:brick_block>, <thermalexpansion:frame>, <minecraft:brick_block>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Pulveriser
+recipes.addShaped(<thermalexpansion:machine:1>.withTag({Level: 1 as byte}), 
+[[null, <minecraft:piston>, null],
+[<minecraft:flint>, <thermalexpansion:frame>, <minecraft:flint>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Sawmill
+recipes.addShaped(<thermalexpansion:machine:2>.withTag({Level: 1 as byte}), 
+[[null, <thermalfoundation:material:657>, null],
+[<ore:plankWood>, <thermalexpansion:frame>, <ore:plankWood>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Induction Smelter
+recipes.addShaped(<thermalexpansion:machine:3>.withTag({Level: 1 as byte}), 
+[[null, <thermalfoundation:material:290>, null],
+[<ore:sand>, <thermalexpansion:frame>, <ore:sand>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Compactor
+recipes.addShaped(<thermalexpansion:machine:5>.withTag({Level: 1 as byte}), 
+[[null, <minecraft:piston>, null],
+[<thermalfoundation:material:163>, <thermalexpansion:frame>, <thermalfoundation:material:163>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Magma Crucible
+recipes.addShaped(<thermalexpansion:machine:6>.withTag({Level: 1 as byte}), 
+[[null, <ore:blockGlassHardened>, null],
+[<minecraft:nether_brick>, <thermalexpansion:frame>, <minecraft:nether_brick>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Fluid Transposer
+recipes.addShaped(<thermalexpansion:machine:8>.withTag({Level: 1 as byte}), 
+[[null, <minecraft:bucket>, null],
+[<ore:blockGlass>, <thermalexpansion:frame>, <ore:blockGlass>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Fractionating Still
+recipes.addShaped(<thermalexpansion:machine:7>.withTag({Level: 1 as byte}), 
+[[null, <thermalfoundation:material:261>, null],
+[<ore:blockGlass>, <thermalexpansion:frame>, <ore:blockGlass>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Centrifugal Separator
+recipes.addShaped(<thermalexpansion:machine:10>.withTag({Level: 1 as byte}), 
+[[null, <minecraft:compass>, null],
+[<thermalfoundation:material:164>, <thermalexpansion:frame>, <thermalfoundation:material:164>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Phytogenic Insolator
+recipes.addShaped(<thermalexpansion:machine:4>.withTag({Level: 1 as byte}), 
+[[null, <thermalfoundation:material:294>, null],
+[<ore:dirt>, <thermalexpansion:frame>, <ore:dirt>], 
+[<thermalfoundation:material:256>, <thermalfoundation:material:513>, <thermalfoundation:material:256>]]);
+
+// Alchemical Imbuer
+recipes.addShaped(<thermalexpansion:machine:12>.withTag({Level: 1 as byte}), 
+[[null, <minecraft:brewing_stand>, null],
+[<ore:blockGlassHardened>, <thermalexpansion:frame>, <ore:blockGlassHardened>], 
+[<thermalfoundation:material:292>, <thermalfoundation:material:513>, <thermalfoundation:material:292>]]);
+
+// Arcane Ensorcellator
+recipes.addShaped(<thermalexpansion:machine:13>.withTag({Level: 1 as byte}), 
+[[null, <minecraft:enchanting_table>, null],
+[<ore:blockLapis>, <thermalexpansion:frame>, <ore:blockLapis>], 
+[<thermalfoundation:material:292>, <thermalfoundation:material:513>, <thermalfoundation:material:292>]]);
 ##########################################################################################
 print("==================== end of thermal.zs ====================");
