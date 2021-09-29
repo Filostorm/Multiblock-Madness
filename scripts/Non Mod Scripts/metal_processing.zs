@@ -289,7 +289,6 @@ val ironProcessing =[
 ] as IItemStack[];
 
 for item in ironProcessing {
-blastFurnace.addRecipe(<minecraft:iron_ingot>, null, item, null, 100, 20, 1000);
 furnace.addRecipe(<minecraft:iron_ingot>,item, 0.1);
 Melting.addRecipe(<liquid:iron> * 144, item);
 Crusher.addRecipe(<thermalfoundation:material>, item, 1024, <techreborn:smalldust:27>*2, 1);
