@@ -140,7 +140,7 @@ blastFurnace.removeRecipe(<techreborn:ingot:19>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>*2, <minecraft:iron_ingot>, <thermalfoundation:material:865>, 400, 512, [<contenttweaker:limestone_flux>, <contenttweaker:slatedust>], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 300, 512, [<contenttweaker:limestone_flux>], "Alloying");
 mods.thermalexpansion.InductionSmelter.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <contenttweaker:limestone_flux>, 10000, <thermalfoundation:material:864>, 25);
-blastFurnace.addRecipe(<techreborn:ingot:19>*2, <thermalfoundation:material:865>, <minecraft:iron_ingot>, <contenttweaker:slatedust>, 1800, 100, 1000);
+blastFurnace.addRecipe(<techreborn:ingot:19>*2, <thermalfoundation:material:865>, <minecraft:iron_ingot>, <contenttweaker:slatedust>, 200, 256, 1000);
 
 //Grinder
 recipes.addShaped(<techreborn:grinder>, [[<minecraft:flint>, <minecraft:flint>, <minecraft:flint>],[<ore:cobblestone>, <techreborn:machine_frame>, <ore:cobblestone>], [null, <ore:circuitBasic>, null]]);
@@ -210,11 +210,15 @@ recipes.addShaped(<techreborn:solar_panel>, [[<enderio:item_material:38>, <ender
 
 
 //Reinforced Glass
-blastFurnace.addRecipe(<techreborn:reinforced_glass>*2, null, <thermalfoundation:glass:3>*2, <techreborn:plates:36>, 1200, 50, 2000);
+blastFurnace.addRecipe(<techreborn:reinforced_glass>*2, null, <thermalfoundation:glass:3>*2, <techreborn:plates:36>, 300, 256, 2000);
 
 
 //Plutonium
-blastFurnace.addRecipe(<techreborn:ingot:25>, null, <techreborn:dust:67>, null, 800, 100, 2500);
+blastFurnace.addRecipe(<techreborn:ingot:25>, null, <techreborn:dust:67>, null, 400, 768, 2500);
+
+// Hot Tungstensteel Ingot
+mods.techreborn.blastFurnace.removeRecipe(<techreborn:ingot:16>);
+blastFurnace.addRecipe(<techreborn:ingot:16>, <techreborn:dust:15>*4, <techreborn:ingot:15>, <thermalfoundation:material:160>, 800, 1024, 3000);
 
 ### Ginder ###
 mods.techreborn.industrialGrinder.addRecipe(<thermalfoundation:material:70>, <mekanism:dust:2>, <jaopca:item_dusttinyiridium>, null, <randomthings:ingredient:3>, null, <liquid:alchemical_redstone>*500, 200, 512);
@@ -281,6 +285,28 @@ fluidReplicator.addRecipe(1,<liquid:lava>,10, 1000);
 
 //TOO MUCH TNT
 mods.techreborn.implosionCompressor.addRecipe(<techreborn:plates:38>, <techreborn:dust:15>*4, <techreborn:ingot:22>, <mekanism:obsidiantnt>, 20, 32);
+
+//Extractor Recipe Rebalance
+mods.techreborn.extractor.removeInputRecipe(<techreborn:rubber_sapling>);
+mods.techreborn.extractor.removeInputRecipe(<techreborn:rubber_log>);
+mods.techreborn.extractor.removeInputRecipe(<minecraft:slime_ball>);
+mods.techreborn.extractor.removeInputRecipe(<techreborn:part:31>);
+mods.techreborn.extractor.addRecipe(<techreborn:part:32>, <techreborn:rubber_sapling>, 120, 40);
+mods.techreborn.extractor.addRecipe(<techreborn:part:32>, <techreborn:rubber_log>, 120, 40);
+mods.techreborn.extractor.addRecipe(<techreborn:part:32>*2, <minecraft:slime_ball>, 120, 40);
+mods.techreborn.extractor.addRecipe(<techreborn:part:32>*3, <techreborn:part:31>, 120, 40);
+
+// Wire Mill Recipe Rebalance
+mods.techreborn.wireMill.removeAll();
+mods.techreborn.wireMill.addRecipe(<techreborn:cable>*3, <thermalfoundation:material:128>, 80, 40);
+mods.techreborn.wireMill.addRecipe(<techreborn:cable:1>*4, <thermalfoundation:material:129>, 120, 40);
+mods.techreborn.wireMill.addRecipe(<techreborn:cable:2>*6, <minecraft:gold_ingot>, 160, 40);
+mods.techreborn.wireMill.addRecipe(<techreborn:cable:3>*6, <techreborn:ingot:19>, 160, 40);
+
+// Removing all Grinder & Compressor Recipes
+mods.techreborn.grinder.removeAll();
+mods.techreborn.compressor.removeAll();
+mods.techreborn.compressor.removeRecipe(<immersiveengineering:material:18>); //Because HOP Graphite is stubborn
 
 ##########################################################################################
 print("==================== end of mods techreborn.zs ====================");
