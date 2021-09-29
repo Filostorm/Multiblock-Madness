@@ -585,7 +585,7 @@ LeachingVat.add(<techreborn:ore:7>, [<rockhounding_chemistry:sulfide_shards:9>*8
 // 3880 is max heat
 
 furnace.remove(<nuclearcraft:ingot:11>,<nuclearcraft:ingot:14>);
-blastFurnace.addRecipe(<nuclearcraft:ingot:11>, null, <nuclearcraft:ingot:14>, null, 200, 20, 1500);
+blastFurnace.addRecipe(<nuclearcraft:ingot:11>, null, <nuclearcraft:ingot:14>, null, 50, 256, 1500);
 
 
 ////////////////////////////////////////
@@ -597,8 +597,8 @@ ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardaluminium>, ["dustAlumin
 /*furnace.addRecipe(<thermalfoundation:material:132>, <jaopca:item_crushedlumpaluminium>, 0.1);
 furnace.addRecipe(<thermalfoundation:material:132>, <jaopca:item_leachedshardaluminium>, 0.1);*/
 
-blastFurnace.addRecipe(<thermalfoundation:material:132>, null, <thermalfoundation:material:68>, null, 100, 20, 1500);
-blastFurnace.addRecipe(<thermalfoundation:material:132>*2, null, <thermalfoundation:ore:4>, null, 100, 20, 1500);
+blastFurnace.addRecipe(<thermalfoundation:material:132>, null, <thermalfoundation:material:68>, null, 40, 128, 1500);
+blastFurnace.addRecipe(<thermalfoundation:material:132>*2, null, <thermalfoundation:ore:4>, null, 80, 128, 1500);
 
 val aluminumProcessing =[
 	<jaopca:item_crushedlumpaluminium>,
@@ -607,7 +607,7 @@ val aluminumProcessing =[
 ] as IItemStack[];
 
 for item in aluminumProcessing {
-blastFurnace.addRecipe(<thermalfoundation:material:132>, null, item, null, 100, 20, 1500);
+blastFurnace.addRecipe(<thermalfoundation:material:132>, null, item, null, 40, 128, 1500);
 Crusher.addRecipe(<thermalfoundation:material:68>, item, 1024, <techreborn:smalldust:1>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:68>, item, 2000, <techreborn:smalldust:1>*2);
 ArcFurnace.addRecipe(<thermalfoundation:material:132>, item, <immersiveengineering:material:7>, 100, 512);
@@ -622,9 +622,9 @@ MineralSizer.add(<thermalfoundation:ore:6>, [<jaopca:item_crushedlumpplatinum>*2
 LeachingVat.add(<jaopca:item_crushedlumpplatinum>, [<jaopca:item_leachedshardplatinum>*2], [7.59F], <liquid:leachate>*50);
 ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardplatinum>, ["dustPlatinum", "dustOsmium", "dustIridium"], [200, 20, 15]);
 
-blastFurnace.addRecipe(<thermalfoundation:material:134>, null, <ore:dustPlatinum>, null, 1200, 50, 2000);
-blastFurnace.addRecipe(<thermalfoundation:material:134>*4, null, <techreborn:ore:9>, null, 1200, 60, 2000);
-blastFurnace.addRecipe(<thermalfoundation:material:134>*2, null, <ore:orePlatinum>, null, 1200, 60, 2000);
+blastFurnace.addRecipe(<thermalfoundation:material:134>, null, <ore:dustPlatinum>, null, 200, 512, 2000);
+blastFurnace.addRecipe(<thermalfoundation:material:134>*4, null, <techreborn:ore:9>, null, 800, 512, 2000);
+blastFurnace.addRecipe(<thermalfoundation:material:134>*2, null, <ore:orePlatinum>, null, 400, 512, 2000);
 
 val platinumProcessing =[
 	<jaopca:item_crushedlumpplatinum>,
@@ -633,7 +633,7 @@ val platinumProcessing =[
 ] as IItemStack[];
 
 for item in platinumProcessing {
-blastFurnace.addRecipe(<thermalfoundation:material:134>, null, item, null, 1200, 60, 2000);
+blastFurnace.addRecipe(<thermalfoundation:material:134>, null, item, null, 200, 512, 2000);
 Crusher.addRecipe(<thermalfoundation:material:70>, item, 1024, <techreborn:smalldust:38>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:70>, item, 2000, <techreborn:smalldust:38>*2);
 }
@@ -644,8 +644,8 @@ MineralSizer.add(<mekanism:oreblock>, [<jaopca:item_crushedlumposmium>*2], [4]);
 LeachingVat.add(<jaopca:item_crushedlumposmium>, [<jaopca:item_leachedshardosmium>*2], [3.51F], <liquid:leachate>*50);
 ChemicalExtractor.add("Native", <jaopca:item_leachedshardosmium>, ["dustOsmium", "dustIridium", "dustPlatinum"], [200, 20, 15]);
 
-blastFurnace.addRecipe(<mekanism:ingot:1>, null, <ore:dustOsmium>, null, 1200, 40, 2500);
-blastFurnace.addRecipe(<mekanism:ingot:1>*2, null, <mekanism:oreblock>, null, 1200, 40, 2500);
+blastFurnace.addRecipe(<mekanism:ingot:1>, null, <ore:dustOsmium>, null, 300, 768, 2500);
+blastFurnace.addRecipe(<mekanism:ingot:1>*2, null, <mekanism:oreblock>, null, 600, 768, 2500);
 
 val osmiumProcessing =[
 	<jaopca:item_crushedlumposmium>,
@@ -654,7 +654,7 @@ val osmiumProcessing =[
 ] as IItemStack[];
 
 for item in osmiumProcessing {
-blastFurnace.addRecipe(<mekanism:ingot:1>, null, item, null, 1200, 60, 2500);
+blastFurnace.addRecipe(<mekanism:ingot:1>, null, item, null, 300, 768, 2500);
 Crusher.addRecipe(<mekanism:dust:2>, item, 1024, <jaopca:item_dustsmallosmium>*2, 1);
 Pulverizer.addRecipe(<mekanism:dust:2>, item, 2000, <jaopca:item_dustsmallosmium>*2);
 }
@@ -665,8 +665,8 @@ MineralSizer.add(<techreborn:ore:8>, [<jaopca:item_crushedlumptungsten>*2], [15]
 LeachingVat.add(<jaopca:item_crushedlumptungsten>, [<jaopca:item_leachedshardtungsten>*2], [5.13F], <liquid:leachate>*50);
 ChemicalExtractor.add("Sulfide", <jaopca:item_leachedshardtungsten>, ["dustTungsten", "dustTin", "dustGold"], [200, 20, 7]);
 
-blastFurnace.addRecipe(<techreborn:ingot:15>*2, null, <ore:oreTungsten>, null, 1800, 100, 3000);
-blastFurnace.addRecipe(<techreborn:ingot:15>, null, <ore:dustTungsten>, null, 1800, 80, 3000);
+blastFurnace.addRecipe(<techreborn:ingot:15>*2, null, <ore:oreTungsten>, null, 1200, 1024, 3000);
+blastFurnace.addRecipe(<techreborn:ingot:15>, null, <ore:dustTungsten>, null, 600, 1024, 3000);
 
 val tungstenProcessing =[
 	<jaopca:item_crushedlumptungsten>,
@@ -675,7 +675,7 @@ val tungstenProcessing =[
 ] as IItemStack[];
 
 for item in tungstenProcessing {
-blastFurnace.addRecipe(<techreborn:ingot:15>, null, item, null, 1800, 80, 3000);
+blastFurnace.addRecipe(<techreborn:ingot:15>, null, item, null, 600, 1024, 3000);
 Crusher.addRecipe(<techreborn:dust:55>, item, 1024, <techreborn:smalldust:55>*2, 1);
 Pulverizer.addRecipe(<techreborn:dust:55>, item, 2000, <techreborn:smalldust:55>*2);
 }
@@ -686,8 +686,8 @@ MineralSizer.add(<libvulpes:ore0:8>, [<jaopca:item_crushedlumptitanium>*2], [4])
 LeachingVat.add(<jaopca:item_crushedlumptitanium>, [<jaopca:item_leachedshardtitanium>*2], [5.00F], <liquid:leachate>*50);
 ChemicalExtractor.add("Native", <jaopca:item_leachedshardtitanium>, ["dustTitanium", "dustGold", "dustCarbon"], [200, 30, 20]);
 
-blastFurnace.addRecipe(<techreborn:ingot:14>*2, null, <libvulpes:ore0:8>, null, 1800, 100, 3000);
-blastFurnace.addRecipe(<techreborn:ingot:14>, null, <techreborn:dust:54>, null, 1800, 80, 3000);
+blastFurnace.addRecipe(<techreborn:ingot:14>*2, null, <libvulpes:ore0:8>, null, 1200, 1024, 3000);
+blastFurnace.addRecipe(<techreborn:ingot:14>, null, <techreborn:dust:54>, null, 600, 1024, 3000);
 
 val titaniumProcessing =[
 	<jaopca:item_crushedlumptitanium>,
@@ -696,7 +696,7 @@ val titaniumProcessing =[
 ] as IItemStack[];
 
 for item in titaniumProcessing {
-blastFurnace.addRecipe(<techreborn:ingot:14>, null, item, null, 1800, 80, 3000);
+blastFurnace.addRecipe(<techreborn:ingot:14>, null, item, null, 600, 1024, 3000);
 Crusher.addRecipe(<techreborn:dust:54>, item, 1024, <techreborn:smalldust:54>*2, 1);
 Pulverizer.addRecipe(<techreborn:dust:54>, item, 2000, <techreborn:smalldust:54>*2);
 }
@@ -707,8 +707,8 @@ LeachingVat.add(<libvulpes:ore0:8>, [<rockhounding_chemistry:oxide_shards:22>*8]
 ##Mana Metal
 ////////////////////////////////////////
 
-blastFurnace.addRecipe(<thermalfoundation:material:136>*2, null, <ore:oreMithril>, null, 1800, 100, 3000);
-blastFurnace.addRecipe(<thermalfoundation:material:136>, null, <ore:dustMithril>, null, 1800, 80, 3000);
+blastFurnace.addRecipe(<thermalfoundation:material:136>*2, null, <ore:oreMithril>, null, 1600, 1024, 3000);
+blastFurnace.addRecipe(<thermalfoundation:material:136>, null, <ore:dustMithril>, null, 800, 1024, 3000);
 
 ////////////////////////////////////////
 ##Iridium
@@ -717,8 +717,8 @@ MineralSizer.add(<thermalfoundation:ore:7>, [<jaopca:item_crushedlumpiridium>*2]
 LeachingVat.add(<jaopca:item_crushedlumpiridium>, [<jaopca:item_leachedshardiridium>*2], [20.20F], <liquid:leachate>*50);
 ChemicalExtractor.add("Native", <jaopca:item_leachedshardiridium>, ["dustIridium", "dustOsmium", "dustPlatinum"], [200, 25, 15]);
 
-blastFurnace.addRecipe(<thermalfoundation:material:135>*2, null, <ore:oreIridium>, null, 2000, 500, 3500);
-blastFurnace.addRecipe(<thermalfoundation:material:135>, null, <ore:dustIridium>, null, 2000, 500, 3500);
+blastFurnace.addRecipe(<thermalfoundation:material:135>*2, null, <ore:oreIridium>, null, 2000, 2048, 3500);
+blastFurnace.addRecipe(<thermalfoundation:material:135>, null, <ore:dustIridium>, null, 1000, 2048, 3500);
 
 val iridiumProcessing =[
 	<jaopca:item_crushedlumpiridium>,
@@ -726,7 +726,7 @@ val iridiumProcessing =[
 ] as IItemStack[];
 
 for item in iridiumProcessing {
-blastFurnace.addRecipe(<thermalfoundation:material:135>, null, item, null, 2000, 500, 3500);
+blastFurnace.addRecipe(<thermalfoundation:material:135>, null, item, null, 1000, 2048, 3500);
 Crusher.addRecipe(<thermalfoundation:material:71>, item, 1024, <techreborn:smalldust:66>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:71>, item, 2000, <techreborn:smalldust:66>*2);
 }
