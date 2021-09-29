@@ -177,15 +177,6 @@ recipes.addShaped(<appliedenergistics2:part:260> * 2, [[<rockhounding_chemistry:
 recipes.addShapeless(<appliedenergistics2:part:220>, [<appliedenergistics2:interface>,<storagenetwork:storage_kabel>]);
 recipes.addShapeless(<appliedenergistics2:part:36>, [<storagenetwork:kabel>, <minecraft:wool:*>]);
 
-
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:22>, 100, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<minecraft:gold_ingot>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:23>, 100, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<appliedenergistics2:material:10>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<appliedenergistics2:material:24>, 100, 1000, <nuclearcraft:gem:6>, <minecraft:redstone>,<minecraft:diamond>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:6>, 200, 10000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:5>);
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:14>, 1200, 100000, <nuclearcraft:gem:6>, <minecraft:redstone>,<threng:material:13>);
-
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:4>, 300, 10000, <threng:material>*4,<appliedenergistics2:material:22>,<appliedenergistics2:material:24>,<rockhounding_chemistry:misc_items:10>);
-
 //Lazy Frame
 recipes.addShaped(<threng:big_assembler>*4, [
 	[<ore:plateTungstensteel>, <ore:ingotFluixSteel>, <ore:plateTungstensteel>], 
