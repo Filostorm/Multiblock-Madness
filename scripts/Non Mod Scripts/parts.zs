@@ -523,5 +523,8 @@ SagMill.addRecipe([<quark:black_ash>*3], [1] , <minecraft:skull:1>, "MULTIPLY_OU
 //Thermal Ruby dust
 Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
 
+// Removing old silicon wafer recipe
+mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:wafer>);
+
 ##########################################################################################
 print("==================== end of parts.zs ====================");
