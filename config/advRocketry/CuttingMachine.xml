@@ -58,7 +58,7 @@
 	</Recipe>
 	<Recipe timeRequired="80" power ="5000">
 		<input>
-			<itemStack>libvulpes:productboule;1;3</itemStack>
+			<oreDict>bouleSilicon</oreDict>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:wafer;4</itemStack>
