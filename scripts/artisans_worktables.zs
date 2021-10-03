@@ -133,7 +133,7 @@ RecipeBuilder.get("blacksmith")
     [null, ingot, null],
     [ingot, null, null]])
   .setFluid(<liquid:lava> * 25)
-  .addTool(<ore:artisansPliers>, 10)
+  .addTool(<ore:artisansPliers>, 5)
   .addOutput(rod*3)
   .create();
 }

@@ -1,5 +1,7 @@
 import crafttweaker.item.IItemStack;
 import mods.botania.ElvenTrade;
+import mods.astralsorcery.Altar;
+import mods.bloodmagic.BloodAltar;
 print("==================== loading Deep Mob Learning.zs ====================");
 ##########################################################################################
 
@@ -12,13 +14,11 @@ val itemstoRemove =
 	<deepmoblearning:trial_keystone>,
 	<deepmoblearning:trial_key>,
 	<deepmoblearning:simulation_chamber>,
-/*
 	<deepmoblearning:glitch_infused_leggings>,
 	<deepmoblearning:glitch_infused_sword>,
 	<deepmoblearning:glitch_infused_helmet>,
 	<deepmoblearning:glitch_infused_chestplate>,
 	<deepmoblearning:glitch_infused_boots>,
-*/
 	<deepmoblearning:extraction_chamber>,
 	<deepmoblearningbm:digital_agonizer>,
 ]
@@ -76,13 +76,49 @@ mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight
 recipes.addShapeless(<deepmoblearning:data_model_dragon>.withTag({tier: 1, killCount: 1, totalKillCount: 1}), [<deepmoblearning:data_model_blank>,<minecraft:dragon_egg>]);
 recipes.addShapeless(<deepmoblearning:data_model_wither>.withTag({tier: 1, killCount: 1, totalKillCount: 1}), [<deepmoblearning:data_model_blank>,<minecraft:nether_star>]);
 
-/*
 //Glitch
+/*
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_sword>], [<botania:elementiumsword>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*8]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_helmet>], [<botania:elementiumhelm>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*5]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_chestplate>], [<botania:elementiumchest>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*8]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_leggings>], [<botania:elementiumlegs>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*7]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_boots>], [<botania:elementiumboots>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*4]);
 */
+BloodAltar.addRecipe(<contenttweaker:blood_crystal>, <contenttweaker:pristine_dust>, 2, 5000, 200, 40);
+
+Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchsword",<deepmoblearning:glitch_infused_sword>, 1500, 300, [
+	null, null, <deepmoblearning:glitch_infused_ingot>,
+	<tconstruct:wide_guard>.withTag({Material: "dragonbone"}).onlyWithTag({Material: "dragonbone"}), <deepmoblearning:glitch_infused_ingot>, null, 
+	<contenttweaker:greatwood_handle>, <tconstruct:wide_guard>.withTag({Material: "dragonbone"}).onlyWithTag({Material: "dragonbone"}), null,
+	<contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>
+	]);
+
+Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchboots",<deepmoblearning:glitch_infused_boots>, 1500, 300, [
+	<deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>,
+	<deepmoblearning:glitch_infused_ingot>, null, <deepmoblearning:glitch_infused_ingot>,
+	null, null, null,
+	<contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>
+	]);
+
+Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchleggingd",<deepmoblearning:glitch_infused_leggings>, 1500, 300, [
+	<deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>,
+	<deepmoblearning:glitch_infused_ingot>, null, <deepmoblearning:glitch_infused_ingot>,
+	<deepmoblearning:glitch_infused_ingot>, null, <deepmoblearning:glitch_infused_ingot>,
+	<contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>
+	]);
+
+Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchchestplate",<deepmoblearning:glitch_infused_chestplate>, 1500, 300, [
+	<deepmoblearning:glitch_infused_ingot>, null, <deepmoblearning:glitch_infused_ingot>,
+	<deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>,
+	<deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>,
+	<contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>
+	]);
+
+Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchhelmet",<deepmoblearning:glitch_infused_helmet>, 1500, 300, [
+	<deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>,
+	<deepmoblearning:glitch_infused_ingot>, null, <deepmoblearning:glitch_infused_ingot>,
+	null, null, null,
+	<contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>
+	]);
 ##########################################################################################
 print("==================== end of Deep Mob Learning.zs ====================");

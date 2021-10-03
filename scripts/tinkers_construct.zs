@@ -79,9 +79,6 @@ recipes.addShaped(<tcomplement:high_oven_controller>, [[<tcomplement:materials:1
 //Melter
 recipes.addShaped(<tcomplement:melter>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 
-//Melter
-recipes.addShaped(<tcomplement:melter>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
-
 
 
 ### MELTING ###
@@ -407,6 +404,60 @@ recipes.addShaped(<tinker_io:smart_output>, [[<tconstruct:materials>, <arcanearc
 
 //Reinforcement Modefier
 MetalPress.addRecipe(<tconstruct:materials:14>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:mold>, 2000);
+
+/*
+/////////////////////////
+// Tinker's Gregstruct //
+/////////////////////////
+#######################################################
+	#Bronze Tier Materials at LV Exruder for Basic Parts (Keep Casting)
+var matLVKeepCast as IItemStack[string] = {
+	"invar" : <ore:ingotInvar>.firstItem,
+	"nickel" : <ore:ingotNickel>.firstItem,
+	"lead" : <ore:ingotLead>.firstItem,
+	"iron" : <minecraft:iron_ingot>,
+	"pigiron" : <ore:ingotPigiron>.firstItem,
+	"electrum" : <ore:ingotElectrum>.firstItem,
+	"silver" : <ore:ingotSilver>.firstItem,
+	"bronze" : <ore:ingotBronze>.firstItem,
+	"restonia_actadd_plustic" : <actuallyadditions:item_crystal>,
+	"void_actadd_plustic" : <actuallyadditions:item_crystal:3>,
+	"fluixcrystal_plustic" : <ore:crystalFluix>.firstItem,
+	"palis_actadd_plustic" : <actuallyadditions:item_crystal:1>,
+	"paper" : <minecraft:paper>,
+	"enori_actadd_plustic" : <actuallyadditions:item_crystal:5>,
+};
+
+var tconPartsMapLVKeepCast as IData[][IItemStack] = {
+	<tconstruct:tool_rod> : [2, "tconstruct:tool_rod"],
+	<tconstruct:pick_head> : [3, "tconstruct:pick_head"],
+	<tconstruct:shovel_head> : [2, "tconstruct:shovel_head"],
+	<tconstruct:axe_head> : [2, "tconstruct:axe_head"],
+	<tconstruct:sword_blade> : [4, "tconstruct:sword_blade"],
+	<tconstruct:kama_head> : [2, "tconstruct:kama_head"],
+	<tconstruct:wide_guard> : [2 , "tconstruct:wide_guard"],
+	<tconstruct:hand_guard> : [2, "tconstruct:hand_guard"],
+	<tconstruct:binding> : [2, "tconstruct:binding"],
+	<tconstruct:pan_head> : [4, "tconstruct:pan_head"],
+	<tconstruct:sign_head> : [4, "tconstruct:sign_head"],
+	<tconstruct:sharpening_kit> : [2, "tconstruct:sharpening_kit"],
+	<tconstruct:bow_limb> : [4, "tconstruct:bow_limb"],
+	<tconstruct:arrow_head> : [2, "tconstruct:arrow_head"],
+	<tcomplement:chisel_head> : [1, "tcomplement:chisel_head"]
+};
+
+for mat, ingot in matLVKeepCast {
+	for part, info in tconPartsMapLVKeepCast {
+		mods.gregtech.recipe.RecipeMap.getByName("extruder").recipeBuilder()
+			.inputs(ingot * info[0])
+			.notConsumable(<tconstruct:cast>.withTag({PartType: info[1]}))
+			.outputs(part.withTag({Material: mat}))
+			.duration(300* info[0])
+			.EUt(30)
+			.buildAndRegister();
+	}
+}
+*/
 
 ##########################################################################################
 print("==================== end of mods tinkersconstruct.zs ====================");

@@ -195,5 +195,6 @@ for item in dustElemental {
 
 <ore:oreAmethest>.add(<mysticalworld:amethyst_ore>);
 
+<ore:concrete>.add(<minecraft:concrete>);
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

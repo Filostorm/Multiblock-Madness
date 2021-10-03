@@ -96,6 +96,10 @@ recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkfour"}), [[null, <enderio:item_material:77>, null],[<enderio:item_material:77>, <techreborn:fusion_coil>, <enderio:item_material:77>], [null, <enderio:item_material:77>, null]]);
 recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkfour"}), [<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkthree"}).onlyWithTag({dynamicmachine: "modularmachinery:assemblermkthree"}),<techreborn:fusion_coil>]);
 
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mixer-dust"}), [[null, <nuclearcraft:compound:2>, null],[<nuclearcraft:compound:2>, <enderio:item_material:77>, <nuclearcraft:compound:2>], [null, <nuclearcraft:compound:2>, null]]);
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mixer-dust"}), [[null, <nuclearcraft:compound:2>, null],[<nuclearcraft:compound:2>, <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mixer"}).onlyWithTag({dynamicmachine: "modularmachinery:mixer"}), <nuclearcraft:compound:2>], [null, <nuclearcraft:compound:2>, null]]);
+
+
 //Energy input
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:7>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyinputhatch:6>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitElite>, null]]);
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:6>, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, <modularmachinery:blockenergyinputhatch:5>, <moreplates:redstone_alloy_plate>], [null, <ore:circuitElite>, null]]);
@@ -603,16 +607,42 @@ SootyFrame.addItemOutput(<deepmoblearning:machine_casing>);
 SootyFrame.build();
 
 
+##bonsai
+val bonsai = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-bonsai", "minifield-crafter", 400, 0);
+bonsai.addEnergyPerTickInput(2000);
+bonsai.addItemInput(<minecraft:brick_block> * 12);
+bonsai.addItemInput(<minecraft:stone_slab:4> * 9);
+bonsai.addItemInput(<contenttweaker:sheetmetal_bronze> * 4);
+bonsai.addItemInput(<minecraft:hopper>);
+bonsai.addItemOutput(<bonsaitrees:bonsaipot:1>);
+bonsai.build();
+
+##manapool
+val manapool = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-manapool", "minifield-crafter", 400, 0);
+manapool.addEnergyPerTickInput(2000);
+manapool.addItemInput(<botania:livingrock> * 12);
+manapool.addItemInput(<botania:livingrock0slab> * 9);
+manapool.addItemInput(<contenttweaker:sheetmetal_brass> * 4);
+manapool.addItemInput(<enderio:item_material:20>);
+manapool.addItemOutput(<botania:pool>);
+manapool.build();
+
+
+
+
+
+
+
 ##############################################
 ##
 ##           Mixer
 ##
 ##############################################
 
-/*
+
 ##Brass
-val dustBrass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-brass", "mixer", 100, 0);
-dustBrass.addMysticalMechanicsInput(10, 50);
+val dustBrass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-brass", "mixer-dust", 30, 0);
+dustBrass.addMysticalMechanicsInput(40, 80);
 dustBrass.addItemInput(<techreborn:dust:59>);
 dustBrass.addItemInput(<thermalfoundation:material:64> * 2);
 dustBrass.addItemOutput(<techreborn:dust:6> * 3);
@@ -621,8 +651,8 @@ dustBrass.build();
 
 
 ##Bronze
-val dustBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-bronze", "mixer", 100, 0);
-dustBronze.addMysticalMechanicsInput(10, 50);
+val dustBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-bronze", "mixer-dust", 30, 0);
+dustBronze.addMysticalMechanicsInput(40, 80);
 dustBronze.addItemInput(<thermalfoundation:material:65>);
 dustBronze.addItemInput(<thermalfoundation:material:64> * 3);
 dustBronze.addItemOutput(<thermalfoundation:material:99> * 4);
@@ -636,8 +666,8 @@ carbonforSteel.add(<rockhounding_chemistry:chemical_dusts:24>);
 carbonforSteel.add(<thermalfoundation:material:768>);
 carbonforSteel.add(<nuclearcraft:dust:8>);
 
-val dustSteel = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-steel", "mixer", 100, 0);
-dustSteel.addMysticalMechanicsInput(10, 50);
+val dustSteel = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-steel", "mixer-dust", 30, 0);
+dustSteel.addMysticalMechanicsInput(40, 80);
 dustSteel.addItemInput(<thermalfoundation:material>);
 dustSteel.addItemInput(<ore:carbonforSteel>);
 dustSteel.addItemOutput(<thermalfoundation:material:96>);
@@ -645,8 +675,8 @@ dustSteel.addItemOutput(<thermalfoundation:material:96>).setChance(0.5);
 dustSteel.build();
 
 ##Electrum
-val dustElectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-electrum", "mixer", 100, 0);
-dustElectrum.addMysticalMechanicsInput(10, 50);
+val dustElectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-electrum", "mixer-dust", 30, 0);
+dustElectrum.addMysticalMechanicsInput(40, 80);
 dustElectrum.addItemInput(<thermalfoundation:material:66>);
 dustElectrum.addItemInput(<thermalfoundation:material:1>);
 dustElectrum.addItemOutput(<thermalfoundation:material:97> * 2);
@@ -654,8 +684,8 @@ dustElectrum.addItemOutput(<thermalfoundation:material:97>).setChance(0.5);
 dustElectrum.build();
 
 ##Energetic
-val dustEnergetic = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-energetic", "mixer", 100, 0);
-dustEnergetic.addMysticalMechanicsInput(10, 50);
+val dustEnergetic = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-energetic", "mixer-dust", 30, 0);
+dustEnergetic.addMysticalMechanicsInput(40, 80);
 dustEnergetic.addItemInput(<minecraft:glowstone_dust>);
 dustEnergetic.addItemInput(<minecraft:redstone>);
 dustEnergetic.addItemOutput(<nuclearcraft:compound:2> * 2);
@@ -663,8 +693,8 @@ dustEnergetic.addItemOutput(<nuclearcraft:compound:2>).setChance(0.5);
 dustEnergetic.build();
 
 ##Dimentional
-val dustDimentional = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dimentional", "mixer", 100, 0);
-dustDimentional.addMysticalMechanicsInput(10, 50);
+val dustDimentional = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dimentional", "mixer-dust", 30, 0);
+dustDimentional.addMysticalMechanicsInput(40, 80);
 dustDimentional.addItemInput(<thermalfoundation:material:770> * 4);
 dustDimentional.addItemInput(<ore:dustEndstone>);
 dustDimentional.addItemOutput(<nuclearcraft:compound:9> * 2);
@@ -672,8 +702,8 @@ dustDimentional.addItemOutput(<nuclearcraft:compound:9>).setChance(0.5);
 dustDimentional.build();
 
 ##Invar
-val dustInvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-invar", "mixer", 100, 0);
-dustInvar.addMysticalMechanicsInput(10, 50);
+val dustInvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-invar", "mixer-dust", 30, 0);
+dustInvar.addMysticalMechanicsInput(40, 80);
 dustInvar.addItemInput(<thermalfoundation:material> * 2);
 dustInvar.addItemInput(<thermalfoundation:material:69>);
 dustInvar.addItemOutput(<thermalfoundation:material:98> * 3);
@@ -681,8 +711,8 @@ dustInvar.addItemOutput(<thermalfoundation:material:98>).setChance(0.5);
 dustInvar.build();
 
 ##CarbonManganese
-val dustCarbonManganese = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-carbonmanganese", "mixer", 100, 0);
-dustCarbonManganese.addMysticalMechanicsInput(10, 50);
+val dustCarbonManganese = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-carbonmanganese", "mixer-dust", 30, 0);
+dustCarbonManganese.addMysticalMechanicsInput(40, 80);
 dustCarbonManganese.addItemInput(<ore:dustGraphite>);
 dustCarbonManganese.addItemInput(<ore:dustManganese>);
 dustCarbonManganese.addItemOutput(<nuclearcraft:compound:10> * 2);
@@ -690,8 +720,8 @@ dustCarbonManganese.addItemOutput(<nuclearcraft:compound:10>).setChance(0.5);
 dustCarbonManganese.build();
 
 ##Flux Dust
-val dustFlux = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-flux", "mixer", 100, 0);
-dustFlux.addMysticalMechanicsInput(10, 50);
+val dustFlux = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-flux", "mixer-dust", 30, 0);
+dustFlux.addMysticalMechanicsInput(40, 80);
 dustFlux.addItemInput(<thermalfoundation:material:770> * 4);
 dustFlux.addItemInput(<enderio:item_material:20> * 4);
 dustFlux.addItemInput(<minecraft:redstone> * 4);
@@ -700,91 +730,165 @@ dustFlux.addItemOutput(<fluxnetworks:flux>).setChance(0.5);
 dustFlux.build();
 
 ##RichSlag
-val RichSlag = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-richslag", "mixer", 100, 0);
-RichSlag.addMysticalMechanicsInput(20, 50);
+val RichSlag = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-richslag", "mixer-dust", 100, 0);
+RichSlag.addMysticalMechanicsInput(40, 80);
 RichSlag.addItemInput(<thermalfoundation:material:864>*32);
 RichSlag.addItemInput(<rockhounding_chemistry:chemical_dusts:39>);
 RichSlag.addItemInput(<rockhounding_chemistry:chemical_dusts:41>);
 RichSlag.addFluidInput(<liquid:refined_biofuel>* 800);
 RichSlag.addItemOutput(<thermalfoundation:material:865>*32);
 RichSlag.build();
-*/
+
+##sootyredstone
+val sootyredstone = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-sootyredstone", "mixer-dust", 20, 0);
+sootyredstone.addMysticalMechanicsInput(40, 80);
+sootyredstone.addItemInput(<minecraft:redstone>);
+sootyredstone.addItemInput(<thermalfoundation:material:768>);
+sootyredstone.addItemOutput(<deepmoblearning:soot_covered_redstone>);
+sootyredstone.build();
+
+
+
+
 //Smeltery Stuff
 
 ##Bronze
 val fluidBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-bronze", "mixer", 240, 0);
-fluidBronze.addEmberInput(200);
-fluidBronze.addMysticalMechanicsInput(40, 80);
+fluidBronze.addEmberInput(160);
+fluidBronze.addMysticalMechanicsInput(20, 39);
 fluidBronze.addItemInput(<ore:ingotCopper>,3);
 fluidBronze.addItemInput(<ore:ingotTin>);
 fluidBronze.addFluidOutput(<liquid:bronze>*576);
 fluidBronze.build();
 
+##Bronzefast
+val fluidBronzeFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-bronze-fast", "mixer", 160, 0);
+fluidBronzeFast.addEmberInput(160);
+fluidBronzeFast.addMysticalMechanicsInput(40, 80);
+fluidBronzeFast.addItemInput(<ore:ingotCopper>,3);
+fluidBronzeFast.addItemInput(<ore:ingotTin>);
+fluidBronzeFast.addFluidOutput(<liquid:bronze>*576);
+fluidBronzeFast.build();
+
 ##constantan
 val fluidconstantan = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-constantan", "mixer", 120, 0);
-fluidconstantan.addEmberInput(200);
-fluidconstantan.addMysticalMechanicsInput(40, 80);
+fluidconstantan.addEmberInput(80);
+fluidconstantan.addMysticalMechanicsInput(20, 39);
 fluidconstantan.addItemInput(<ore:ingotCopper>);
 fluidconstantan.addItemInput(<ore:ingotNickel>);
 fluidconstantan.addFluidOutput(<liquid:constantan>*288);
 fluidconstantan.build();
 
+##constantanFast
+val fluidconstantanFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-constantan-fast", "mixer", 80, 0);
+fluidconstantanFast.addEmberInput(80);
+fluidconstantanFast.addMysticalMechanicsInput(40, 80);
+fluidconstantanFast.addItemInput(<ore:ingotCopper>);
+fluidconstantanFast.addItemInput(<ore:ingotNickel>);
+fluidconstantanFast.addFluidOutput(<liquid:constantan>*288);
+fluidconstantanFast.build();
+
 ##invar
 val fluidinvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-invar", "mixer", 180, 0);
-fluidinvar.addEmberInput(200);
-fluidinvar.addMysticalMechanicsInput(40, 80);
+fluidinvar.addEmberInput(120);
+fluidinvar.addMysticalMechanicsInput(20, 39);
 fluidinvar.addItemInput(<ore:ingotIron>,2);
 fluidinvar.addItemInput(<ore:ingotNickel>);
 fluidinvar.addFluidOutput(<liquid:invar>*432);
 fluidinvar.build();
 
+##invarFast
+val fluidinvarFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-invar-fast", "mixer", 120, 0);
+fluidinvarFast.addEmberInput(120);
+fluidinvarFast.addMysticalMechanicsInput(40, 80);
+fluidinvarFast.addItemInput(<ore:ingotIron>,2);
+fluidinvarFast.addItemInput(<ore:ingotNickel>);
+fluidinvarFast.addFluidOutput(<liquid:invar>*432);
+fluidinvarFast.build();
+
 ##electrum
 val fluidelectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-electrum", "mixer", 120, 0);
-fluidelectrum.addEmberInput(200);
-fluidelectrum.addMysticalMechanicsInput(40, 80);
+fluidelectrum.addEmberInput(80);
+fluidelectrum.addMysticalMechanicsInput(20, 39);
 fluidelectrum.addItemInput(<ore:ingotGold>);
 fluidelectrum.addItemInput(<ore:ingotSilver>);
 fluidelectrum.addFluidOutput(<liquid:electrum>*288);
 fluidelectrum.build();
 
+##electrumFast
+val fluidelectrumFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-electrum-fast", "mixer", 80, 0);
+fluidelectrumFast.addEmberInput(80);
+fluidelectrumFast.addMysticalMechanicsInput(40, 80);
+fluidelectrumFast.addItemInput(<ore:ingotGold>);
+fluidelectrumFast.addItemInput(<ore:ingotSilver>);
+fluidelectrumFast.addFluidOutput(<liquid:electrum>*288);
+fluidelectrumFast.build();
+
 ##inert_metal
 val fluidinert_metal = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-inert_metal", "mixer", 120, 0);
-fluidinert_metal.addEmberInput(200);
-fluidinert_metal.addMysticalMechanicsInput(40, 80);
+fluidinert_metal.addEmberInput(80);
+fluidinert_metal.addMysticalMechanicsInput(20, 39);
 fluidinert_metal.addItemInput(<ore:ingotSilver>,2);
 fluidinert_metal.addItemInput(<ore:ingotLead>);
 fluidinert_metal.addFluidOutput(<liquid:inert_metal>*288);
 fluidinert_metal.build();
 
+##inert_metalFast
+val fluidinert_metalFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-inert_metal-fast", "mixer", 80, 0);
+fluidinert_metalFast.addEmberInput(80);
+fluidinert_metalFast.addMysticalMechanicsInput(40, 80);
+fluidinert_metalFast.addItemInput(<ore:ingotSilver>,2);
+fluidinert_metalFast.addItemInput(<ore:ingotLead>);
+fluidinert_metalFast.addFluidOutput(<liquid:inert_metal>*288);
+fluidinert_metalFast.build();
+
 ##conductive_iron
 val fluidconductive_iron = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-conductive_iron", "mixer", 60, 0);
-fluidconductive_iron.addEmberInput(200);
-fluidconductive_iron.addMysticalMechanicsInput(60, 100);
+fluidconductive_iron.addEmberInput(80);
+fluidconductive_iron.addMysticalMechanicsInput(40, 59);
 fluidconductive_iron.addItemInput(<minecraft:iron_ingot>);
 fluidconductive_iron.addItemInput(<minecraft:redstone>);
 fluidconductive_iron.addFluidOutput(<liquid:conductive_iron>*144);
 fluidconductive_iron.build();
 
+##conductive_ironFast
+val fluidconductive_ironFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-conductive_iron-fast", "mixer", 40, 0);
+fluidconductive_ironFast.addEmberInput(80);
+fluidconductive_ironFast.addMysticalMechanicsInput(60, 100);
+fluidconductive_ironFast.addItemInput(<minecraft:iron_ingot>);
+fluidconductive_ironFast.addItemInput(<minecraft:redstone>);
+fluidconductive_ironFast.addFluidOutput(<liquid:conductive_iron>*144);
+fluidconductive_ironFast.build();
+
 ##pulsating_iron
 val fluidpulsating_iron = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-pulsating_iron", "mixer", 60, 0);
-fluidpulsating_iron.addEmberInput(200);
-fluidpulsating_iron.addMysticalMechanicsInput(60, 100);
+fluidpulsating_iron.addEmberInput(80);
+fluidpulsating_iron.addMysticalMechanicsInput(40, 59);
 fluidpulsating_iron.addItemInput(<minecraft:iron_ingot>);
 fluidpulsating_iron.addItemInput(<minecraft:ender_pearl>);
 fluidpulsating_iron.addFluidOutput(<liquid:pulsating_iron>*144);
 fluidpulsating_iron.build();
 
+##pulsating_ironFast
+val fluidpulsating_ironFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-pulsating_iron-fast", "mixer", 40, 0);
+fluidpulsating_ironFast.addEmberInput(80);
+fluidpulsating_ironFast.addMysticalMechanicsInput(60, 100);
+fluidpulsating_ironFast.addItemInput(<minecraft:iron_ingot>);
+fluidpulsating_ironFast.addItemInput(<minecraft:ender_pearl>);
+fluidpulsating_ironFast.addFluidOutput(<liquid:pulsating_iron>*144);
+fluidpulsating_ironFast.build();
+
 ##Quartz for fused
-val fluidquartz = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-quartz", "mixer", 100, 0);
-fluidquartz.addEmberInput(200);
+val fluidquartz = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-quartz", "mixer", 80, 0);
+fluidquartz.addEmberInput(80);
 fluidquartz.addMysticalMechanicsInput(20, 60);
 fluidquartz.addItemInput(<minecraft:quartz>);
 fluidquartz.addFluidOutput(<liquid:quartz>*666);
 fluidquartz.build();
 
 ##Glass
-val fluidglass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-glass", "mixer", 100, 0);
-fluidglass.addEmberInput(200);
+val fluidglass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-glass", "mixer", 80, 0);
+fluidglass.addEmberInput(80);
 fluidglass.addMysticalMechanicsInput(20, 60);
 fluidglass.addItemInput(<minecraft:sand>);
 fluidglass.addFluidOutput(<liquid:glass>*1000);
@@ -792,7 +896,7 @@ fluidglass.build();
 
 ##Blood
 val fluidblood = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-blood", "mixer", 50, 0);
-fluidblood.addEmberInput(200);
+fluidblood.addEmberInput(40);
 fluidblood.addMysticalMechanicsInput(20, 60);
 fluidblood.addItemInput(<ore:listAllmeatraw>);
 fluidblood.addFluidOutput(<liquid:blood>*40);

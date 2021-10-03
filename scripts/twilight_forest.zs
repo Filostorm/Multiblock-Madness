@@ -21,6 +21,11 @@ val itemstoRemove =
 	<randomthings:weatheregg>,
 	<randomthings:weatheregg:1>,
 	<randomthings:weatheregg:2>,
+	<twilightforest:fiery_pickaxe>,
+	<twilightforest:fiery_leggings>,
+	<twilightforest:fiery_helmet>,
+	<twilightforest:fiery_boots>,
+	<twilightforest:fiery_chestplate>,
 ]
  as IItemStack[];
 
@@ -86,7 +91,7 @@ GCT.replaceRecipe("stormway", <arcanearchives:stormway>.withTag({charge: 30, inf
 
 
 //Gate Knightmetal
-furnace.remove(<twilightforest:armor_shard_cluster>);
+furnace.remove(<twilightforest:knightmetal_ingot>);
 val KnightmetalMelting =
 [
 	<twilightforest:armor_shard_cluster>
@@ -138,6 +143,12 @@ boreset.removeOutput(IItemStack <output>)
 Clears all outputs for this set
 boreset.clear()
 */
+//Firy Stuff so arc furnace isn't a bad boy
+recipes.addShaped(<twilightforest:fiery_leggings>, [[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>],[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>], [<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>]]);
+recipes.addShaped(<twilightforest:fiery_helmet>, [[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>],[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>]]);
+recipes.addShaped(<twilightforest:fiery_boots>, [[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>],[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>]]);
+recipes.addShaped(<twilightforest:fiery_chestplate>, [[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>],[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>], [<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>]]);
+recipes.addShaped(<twilightforest:fiery_pickaxe>, [[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>],[null, <minecraft:blaze_rod>, null], [null, <minecraft:blaze_rod>, null]]);
 
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

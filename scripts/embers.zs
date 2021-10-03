@@ -9,6 +9,7 @@ import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.Crucible;
 import mods.botania.RuneAltar;
 import mods.embers.Stamper;
+import mods.astralsorcery.Lightwell;
 
 print("==================== loading mods embers.zs ====================");
 ##########################################################################################
@@ -118,11 +119,11 @@ mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectussilv
 mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectuscopper>, <liquid:astralsorcery.liquidstarlight>, [<embers:aspectus_copper>], true);
 mods.inworldcrafting.FluidToItem.transform(<contenttweaker:activatedaspectusdawnstone>, <liquid:astralsorcery.liquidstarlight>, [<embers:aspectus_dawnstone>], true);
 
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_silver>, <liquid:silver>, 1.2, 1.5, 0xcfcfcf);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_copper>, <liquid:copper>, 1.2, 1.5, 0xff9b4a);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_iron>, <liquid:iron>, 1.2, 1.5, 0xa6a6a6);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_lead>, <liquid:lead>, 1.2, 1.5, 0x5c6f7a);
-mods.astralsorcery.Lightwell.addLiquefaction(<embers:aspectus_dawnstone>, <liquid:dawnstone>, 1.2, 1.5, 0xe89e43);
+Lightwell.addLiquefaction(<embers:aspectus_silver>, <liquid:silver>, 1.2, 1.5, 0xcfcfcf);
+Lightwell.addLiquefaction(<embers:aspectus_copper>, <liquid:copper>, 1.2, 1.5, 0xff9b4a);
+Lightwell.addLiquefaction(<embers:aspectus_iron>, <liquid:iron>, 1.2, 1.5, 0xa6a6a6);
+Lightwell.addLiquefaction(<embers:aspectus_lead>, <liquid:lead>, 1.2, 1.5, 0x5c6f7a);
+Lightwell.addLiquefaction(<embers:aspectus_dawnstone>, <liquid:dawnstone>, 1.2, 1.5, 0xe89e43);
 
 
 //Glowstone Flows up :(
@@ -167,6 +168,11 @@ for aspectusNew, molten in AspectusMap {
 Stamper.add(aspectusNew, molten*576, <embers:stamp_plate>, <astralsorcery:itemrockcrystalsimple>);
 }
 */
+
+//Molten Embers
+Lightwell.addLiquefaction(<embers:shard_ember>, <liquid:moltenembers>, 1, 0.6, 0xc97c28);
+Lightwell.addLiquefaction(<embers:crystal_ember>, <liquid:moltenembers>, 2, 0.6, 0xc97c28);
+Lightwell.addLiquefaction(<embers:ember_cluster>, <liquid:moltenembers>, 10, 0.6, 0xc97c28); 
 
 ##########################################################################################
 print("==================== end of mods embers.zs ====================");

@@ -136,26 +136,34 @@ mods.immersiveengineering.MetalPress.removeRecipe(<moreplates:nether_quartz_plat
 mods.techreborn.compressor.addRecipe(<moreplates:nether_quartz_plate>, <minecraft:quartz>, 400, 8);
 
 //sheetmetal
-recipes.addShaped(<contenttweaker:sheetmetal_bronze> * 4, [[null, <ore:plateBronze>, null],[<ore:plateBronze>, null, <ore:plateBronze>], [null, <ore:plateBronze>, null]]);
-recipes.addShaped(<contenttweaker:sheetmetal_refinediron> * 4, [[null, <techreborn:plates:35>, null],[<techreborn:plates:35>, null, <techreborn:plates:35>], [null, <techreborn:plates:35>, null]]);
-recipes.addShaped(<contenttweaker:sheetmetal_thaumium> * 4, [[null, <thaumcraft:plate:2>, null],[<thaumcraft:plate:2>, null, <thaumcraft:plate:2>], [null, <thaumcraft:plate:2>, null]]);
 recipes.addShaped(<contenttweaker:sheetmetal_brass> * 4, [[null, <ore:plateBrass>, null],[<ore:plateBrass>, null, <ore:plateBrass>], [null, <ore:plateBrass>, null]]);
-recipes.addShaped(<contenttweaker:sheetmetal_nimonic> * 4, [[null, <rockhounding_chemistry:alloy_parts:22>, null],[<rockhounding_chemistry:alloy_parts:22>, null, <rockhounding_chemistry:alloy_parts:22>], [null, <rockhounding_chemistry:alloy_parts:22>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetaldarksteel> * 4, [[null, <moreplates:dark_steel_plate>, null],[<moreplates:dark_steel_plate>, null, <moreplates:dark_steel_plate>], [null, <moreplates:dark_steel_plate>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetalsoularium> * 4, [[null, <moreplates:soularium_plate>, null],[<moreplates:soularium_plate>, null, <moreplates:soularium_plate>], [null, <moreplates:soularium_plate>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetallumium> * 4, [[null, <thermalfoundation:material:358>, null],[<thermalfoundation:material:358>, null, <thermalfoundation:material:358>], [null, <thermalfoundation:material:358>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetalredstonealloy> * 4, [[null, <moreplates:redstone_alloy_plate>, null],[<moreplates:redstone_alloy_plate>, null, <moreplates:redstone_alloy_plate>], [null, <moreplates:redstone_alloy_plate>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetalscal> * 4, [[null, <rockhounding_chemistry:alloy_parts:10>, null],[<rockhounding_chemistry:alloy_parts:10>, null, <rockhounding_chemistry:alloy_parts:10>], [null, <rockhounding_chemistry:alloy_parts:10>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetalelectricalsteel> * 4, [[null, <moreplates:electrical_steel_plate>, null],[<moreplates:electrical_steel_plate>, null, <moreplates:electrical_steel_plate>], [null, <moreplates:electrical_steel_plate>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetalvanasteel> * 4, [[null, <rockhounding_chemistry:alloy_parts:40>, null],[<rockhounding_chemistry:alloy_parts:40>, null, <rockhounding_chemistry:alloy_parts:40>], [null, <rockhounding_chemistry:alloy_parts:40>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetaltitanium> * 4, [[null, <techreborn:plates:31>, null],[<techreborn:plates:31>, null, <techreborn:plates:31>], [null, <techreborn:plates:31>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetalconductiveiron> * 4, [[null, <moreplates:conductive_iron_plate>, null],[<moreplates:conductive_iron_plate>, null, <moreplates:conductive_iron_plate>], [null, <moreplates:conductive_iron_plate>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetalpulsatingiron> * 4, [[null, <moreplates:pulsating_iron_plate>, null],[<moreplates:pulsating_iron_plate>, null, <moreplates:pulsating_iron_plate>], [null, <moreplates:pulsating_iron_plate>, null]]);
-recipes.addShaped(<jaopca:block_sheetmetalstainlesssteel> * 4, [[null, <jaopca:item_platestainlesssteel>, null],[<jaopca:item_platestainlesssteel>, null, <jaopca:item_platestainlesssteel>], [null, <jaopca:item_platestainlesssteel>, null]]);
-recipes.addShaped(<contenttweaker:sheetmetal_ironwood> * 4, [[null, <moreplates:ironwood_plate>, null],[<moreplates:ironwood_plate>, null, <moreplates:ironwood_plate>], [null, <moreplates:ironwood_plate>, null]]);
+rollingMachine.addShapeless(<contenttweaker:sheetmetal_brass>*9, [<ore:blockBrass>]);
 
+var SheetmetalPlate as IItemStack[IItemStack] = {
+<contenttweaker:sheetmetal_bronze>:<thermalfoundation:material:355>,
+<contenttweaker:sheetmetal_ironwood>:<moreplates:ironwood_plate>,
+<contenttweaker:sheetmetal_refinediron>:<techreborn:plates:35>,
+<contenttweaker:sheetmetal_thaumium>:<thaumcraft:plate:2>,
+<contenttweaker:sheetmetal_nimonic>:<rockhounding_chemistry:alloy_parts:22>,
+<jaopca:block_sheetmetaldarksteel>:<moreplates:dark_steel_plate>,
+<jaopca:block_sheetmetalsoularium>:<moreplates:soularium_plate>,
+<jaopca:block_sheetmetallumium>:<thermalfoundation:material:358>,
+<jaopca:block_sheetmetalredstonealloy>:<moreplates:redstone_alloy_plate>,
+<jaopca:block_sheetmetalscal>:<rockhounding_chemistry:alloy_parts:10>,
+<jaopca:block_sheetmetalelectricalsteel>:<moreplates:electrical_steel_plate>,
+<jaopca:block_sheetmetalvanasteel>:<rockhounding_chemistry:alloy_parts:40>,
+<jaopca:block_sheetmetaltitanium>:<techreborn:plates:31>,
+<jaopca:block_sheetmetalconductiveiron>:<moreplates:conductive_iron_plate>,
+<jaopca:block_sheetmetalpulsatingiron>:<moreplates:pulsating_iron_plate>,
+<jaopca:block_sheetmetalstainlesssteel>:<jaopca:item_platestainlesssteel>,
+<jaopca:block_sheetmetalenergeticalloy>:<moreplates:energetic_alloy_plate>,
+<jaopca:block_sheetmetalenergeticsilver>:<moreplates:energetic_silver_plate>,
+};
+for sheetmetal, plate in SheetmetalPlate {
+		### Rolling Machine ###
+recipes.addShaped(sheetmetal * 4, [[null, plate, null],[plate, null, plate], [null, plate, null]]);
+}
 
-### Rolling Machine ###
 rollingMachine.addShapeless(<immersiveengineering:sheetmetal:10>*9, [<minecraft:gold_block>]);
 rollingMachine.addShapeless(<contenttweaker:sheetmetal_thaumium>*9, [<thaumcraft:metal_thaumium>]);
 rollingMachine.addShapeless(<contenttweaker:sheetmetal_bronze>*9, [<thermalfoundation:storage_alloy:3>]);
@@ -163,7 +171,6 @@ rollingMachine.addShapeless(<immersiveengineering:sheetmetal>*9, [<thermalfounda
 rollingMachine.addShapeless(<immersiveengineering:sheetmetal:1>*9, [<thermalfoundation:storage:4>]);
 rollingMachine.addShapeless(<immersiveengineering:sheetmetal:2>*9, [<thermalfoundation:storage:3>]);
 rollingMachine.addShapeless(<contenttweaker:sheetmetal_refinediron>*9, [<techreborn:storage2:10>]);
-rollingMachine.addShapeless(<contenttweaker:sheetmetal_brass>*9, [<ore:blockBrass>]);
 rollingMachine.addShapeless(<contenttweaker:sheetmetal_nimonic>*9, [<rockhounding_chemistry:alloy_blocks_tech:5>]);
 rollingMachine.addShapeless(<immersiveengineering:sheetmetal:9>*9, [<minecraft:iron_block>]);
 rollingMachine.addShapeless(<immersiveengineering:sheetmetal:8>*9, [<thermalfoundation:storage_alloy>]);
@@ -179,6 +186,11 @@ rollingMachine.addShapeless(<jaopca:block_sheetmetalconductiveiron>*9,[<enderio:
 rollingMachine.addShapeless(<jaopca:block_sheetmetalpulsatingiron>*9,[<enderio:block_alloy:5>]);
 rollingMachine.addShapeless(<jaopca:block_sheetmetalstainlesssteel>*9,[<jaopca:block_blockstainlesssteel>]);
 rollingMachine.addShapeless(<contenttweaker:sheetmetal_ironwood>*9,[<twilightforest:block_storage>]);
+rollingMachine.addShapeless(<jaopca:block_sheetmetalenergeticalloy>*9,[<enderio:block_alloy:1>]);
+rollingMachine.addShapeless(<jaopca:block_sheetmetalenergeticsilver>*9,[<enderio:block_alloy_endergy:5>]);
+
+
+
 
 ### Compressed Platess ###
 mods.techreborn.compressor.addRecipe(<jaopca:item_platedenseadvancedalloy>, <techreborn:plates:36>*9, 600, 50);
@@ -341,10 +353,10 @@ SagMill.addRecipe([<appliedenergistics2:material:45>], [1] , <appliedenergistics
 //Pristine dust
 Crusher.addRecipe(<contenttweaker:pristine_dust>, <ore:pristineMatter>, 1024);
 Manufactory.addRecipe(<ore:pristineMatter>, <contenttweaker:pristine_dust>);
-grinder.addRecipe(<contenttweaker:pristine_dust>, <ore:pristineMatter>, 300, 4);
+//grinder.addRecipe(<contenttweaker:pristine_dust>, <ore:pristineMatter>, 300, 4);
 SagMill.addRecipe([<contenttweaker:pristine_dust>], [1] , <ore:pristineMatter>, "NONE");
 
-
+//Flux BLocks
 Crusher.addRecipe(<fluxnetworks:fluxcore>*4, <fluxnetworks:fluxblock>, 1024, <fluxnetworks:flux>*5, 0.9);
 Pulverizer.addRecipe(<fluxnetworks:fluxcore>*4, <fluxnetworks:fluxblock>, 1500, <fluxnetworks:flux>*5, 90);
 SagMill.addRecipe([<fluxnetworks:fluxcore>*4,<fluxnetworks:flux>*5], [1,0.9] , <fluxnetworks:fluxblock>, "NONE");
@@ -374,6 +386,7 @@ SagMill.addRecipe([<quark:black_ash>*3], [1] , <minecraft:skull:1>, "MULTIPLY_OU
 
 //Thermal Ruby dust
 Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
+
 
 ##########################################################################################
 print("==================== end of parts.zs ====================");

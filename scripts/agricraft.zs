@@ -161,6 +161,7 @@ val CatalystMap as IItemStack[IItemStack] = {
 <minecraft:lapis_block>:<jaopca:block_growthcatalystlapis>,
 <minecraft:emerald_block>:<jaopca:block_growthcatalystemerald>,
 <thermalfoundation:storage:4>:<jaopca:block_growthcatalystaluminium>,
+<minecraft:quartz_block>:<jaopca:block_growthcatalystquartz>
 } as IItemStack[IItemStack];
 
 for block, catalyst in CatalystMap {

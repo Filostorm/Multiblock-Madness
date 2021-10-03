@@ -82,7 +82,6 @@ Excavator.addMineral("Iron", 20, 0, ["oreIron", "oreNickel", "oreTin", "oreUnins
 Excavator.addMineral("Lapis", 15, 0, ["oreLapis", "oreIron", "oreUninspected"], [69, 30, 1], [0, 10]);
 Excavator.addMineral("Magnetite", 15, 0, ["oreIron", "oreGold", "oreUninspected"], [83, 15, 2], [0, 10]);
 Excavator.addMineral("Nickel", 15, 0, ["oreNickel", "orePlatinum", "oreIron", "oreUninspected"], [80, 5, 14, 1], [0, 10]);
-Excavator.addMineral("Platinum", 15, 0.01, ["orePlatinum", "oreNickel", "oreIridium", "oreUninspected"], [64, 33, 1, 1], [0, 10]);
 Excavator.addMineral("Uranium", 10, 0, ["oreUranium", "oreLead", "oreBoron", "oreThorium", "oreUninspected"], [55, 24, 10, 10, 1], [0, 10]);
 
 //Excavator.addMineral("Lithium", 10, 0, ["oreLithium", "oreMagnesium", "oreUninspected"], [55, 44, 1], [0]);
@@ -94,7 +93,9 @@ Excavator.addMineral("Cinnabar", 15, 0, ["oreRedstone", "oreCinnabar", "oreRuby"
 Excavator.addMineral("Quarzite", 15, 0, ["oreQuartz", "oreCertusQuartz", "oreQuartzBlack", "oreChargedCertusQuartz",], [40, 41, 14, 5], [-1, 0]);
 
 //beneath
-Excavator.addMineral("Osmium", 15, 0, ["oreOsmium", "orePlatinum", "oreIridium", "oreGold", "oreUninspected"], [50, 20, 6, 20, 4], [10]);
+Excavator.addMineral("Osmium", 15, 0, ["oreOsmium", "orePlatinum", "oreGold", "oreUninspected"], [56, 20, 20, 4], [10]);
+Excavator.addMineral("Platinum", 15, 0.01, ["orePlatinum", "oreNickel", "oreOsmium", "oreUninspected"], [64, 20, 14, 1], [10]);
+
 Excavator.addMineral("Gold", 15, 0, ["oreGold", "oreCopper", "oreNickel", "oreEnder","oreUninspected"], [67, 22, 6, 4, 1], [10]);
 Excavator.addMineral("Voidstone", 15, 0, ["oreGold", "oreIron", "oreVoidstone", "oreOsmium", "oreUninspected"], [45, 40, 5, 8, 2], [10]);
 //nether

@@ -26,12 +26,16 @@ val itemstoRemove =
 <environmentaltech:connector>,
 <environmentaltech:laser_lens_crystal>,
 <environmentaltech:photovoltaic_cell>,
+<environmentaltech:diode>,
 ]
  as IItemStack[];
 
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+
+//Diode
+recipes.addShaped(<environmentaltech:diode>, [[<advancedrocketry:productplate>, <powersuits:powerarmorcomponent:13>, <advancedrocketry:productplate>],[<advancedrocketry:productplate>, <threng:material:5>, <advancedrocketry:productplate>], [<advancedrocketry:productplate>, <astralsorcery:iteminfusedglass>, <advancedrocketry:productplate>]]);
 
 //laser core
 recipes.addShaped(<environmentaltech:laser_core>, [[<advgenerators:iron_frame>, <threng:material:5>, <advgenerators:iron_frame>],[<environmentaltech:connector>, <threng:material:5>, <environmentaltech:connector>], [<advgenerators:iron_frame>, <threng:material:5>, <advgenerators:iron_frame>]]);

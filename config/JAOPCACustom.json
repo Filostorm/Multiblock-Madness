@@ -5,7 +5,10 @@
 		"ore_types": [
 			"ingot",
 			"ingot_oreless"
-		]
+		],
+		"properties": {
+			"render_layer": "cutout_mipped"
+		}
 	},
 	{
 		"name": "scaffolding",

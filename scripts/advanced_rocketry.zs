@@ -19,6 +19,7 @@ val itemstoRemove =
 <advancedrocketry:ic:3>,
 <advancedrocketry:seat>,
 <advancedrocketry:productrod:1>,
+<advancedrocketry:launchpad>,
 ]
  as IItemStack[];
 
@@ -44,6 +45,8 @@ mods.advancedrocketry.PlatePresser.addRecipe(<thermalfoundation:material:32>*5,<
 
 recipes.addShaped(<libvulpes:advstructuremachine> * 5, [[<libvulpes:structuremachine>, <techreborn:plates:38>, <libvulpes:structuremachine>],[<techreborn:plates:38>, <libvulpes:structuremachine>, <techreborn:plates:38>], [<libvulpes:structuremachine>, <techreborn:plates:38>, <libvulpes:structuremachine>]]);
 
+//Launch Pad
+recipes.addShapeless(<advancedrocketry:launchpad>, [<ore:concrete>,<ore:dyeBlack>,<ore:dyeYellow>]);
 
 //Dilithium
 furnace.remove(<libvulpes:productdust>);

@@ -233,6 +233,7 @@ val itemstoRemove =
 <immersiveposts:metal_rods:5>,
 <additionalcompression:dirt_compressed>,
 <additionalcompression:dirt_compressed:1>,
+<mystgears:gear_wood>,
 ]
  as IItemStack[];
 
@@ -489,6 +490,20 @@ recipes.addShaped(<mysticalworld:wet_mud_block>, [[<ore:dirt>, <ore:dirt>, <ore:
 
 <mystgears:bellows_mechanical>.addTooltip(format.gold("Place by a furnace to speed up"));
 
+<contenttweaker:angelring_fake>.addTooltip(format.gold("Looking for flight? Hold shift:"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Vicio Ritual (Limited Area)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Glowing Chorus Fruit (2:00 Per)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Thaumostaic Harness (Requires stored Vis)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.gray("-Air Sigil (Launches you when used)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Glitch Armor"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Vicio Star Mantle (Requires a perk for Creative Flight)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Mithnimite Armor"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Jetpack (Requires Hydrogen)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Wings of the Bat (Needs to Recharge)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Environmental Controller (Limited Area)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Supremium Armor"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Flugel Tiara (Eye of the Flugel for infinite time)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Nanobot Beacon (Limited Area)"));
 
 //Fix Dirt
 recipes.removeShapeless(<minecraft:dirt> * 9, [<additionalcompression:dirt_compressed>]);

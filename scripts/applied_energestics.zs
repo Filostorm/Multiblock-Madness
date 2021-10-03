@@ -43,12 +43,42 @@ val itemstoRemove =
 	<appliedenergistics2:fluid_interface>,
 	<appliedenergistics2:part:460>,
 	<appliedenergistics2:material:35>,
+	<ae2fc:ingredient_buffer>,
+	<ae2fc:fluid_discretizer>,
+	<ae2fc:fluid_pattern_encoder>,
+	<appliedenergistics2:part:300>,
+	<appliedenergistics2:part:302>,
+	<appliedenergistics2:part:320>,
+	<appliedenergistics2:part:321>,
+	<appliedenergistics2:material:42>,
+	<appliedenergistics2:material:28>,
+	<appliedenergistics2:material:25>,
 ]
  as IItemStack[];
 
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+val Certus as IIngredient = (<appliedenergistics2:material:10>|<appliedenergistics2:material>) as IIngredient;
+
+//Wireless Cards
+recipes.addShaped(<appliedenergistics2:material:42>, [[<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>], [<threng:material:1>, Certus, <techreborn:dust:20>]]);
+recipes.addShaped(<appliedenergistics2:material:42>*2, [[<ore:plateScal>, <ore:plateScal>, <ore:plateScal>], [<threng:material:1>, Certus, <techreborn:dust:20>]]);
+
+//Upgrade cards
+recipes.addShaped(<appliedenergistics2:material:28> * 2, [[<moreplates:diamatine_plate>, <ore:plateAluminum>, null],[<appliedenergistics2:material:24>, <opencomputers:material:8>, <ore:plateAluminum>], [<moreplates:diamatine_plate>, <ore:plateAluminum>, null]]);
+recipes.addShaped(<appliedenergistics2:material:28> * 4, [[<moreplates:diamatine_plate>, <ore:plateScal>, null],[<appliedenergistics2:material:24>, <opencomputers:material:8>, <ore:plateScal>], [<moreplates:diamatine_plate>, <ore:plateScal>, null]]);
+
+recipes.addShaped(<appliedenergistics2:material:25> * 2, [[<moreplates:restonia_plate>, <ore:plateAluminum>, null],[<appliedenergistics2:material:22>, <opencomputers:material:8>, <ore:plateAluminum>], [<moreplates:restonia_plate>, <ore:plateAluminum>, null]]);
+recipes.addShaped(<appliedenergistics2:material:25> * 4, [[<moreplates:restonia_plate>, <ore:plateScal>, null],[<appliedenergistics2:material:22>, <opencomputers:material:8>, <ore:plateScal>], [<moreplates:restonia_plate>, <ore:plateScal>, null]]);
+
+
+//Fluid crafting stuff
+recipes.addShaped(<ae2fc:ingredient_buffer> * 2, [[<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:material:35>, <rockhounding_chemistry:alloy_parts:10>],[<appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:43>], [<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:material:54>, <rockhounding_chemistry:alloy_parts:10>]]);
+recipes.addShaped(<ae2fc:ingredient_buffer>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:35>, <thermalfoundation:material:324>],[<appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:43>], [<thermalfoundation:material:324>, <appliedenergistics2:material:54>, <thermalfoundation:material:324>]]);
+recipes.addShaped(<ae2fc:fluid_discretizer>, [[<moreplates:dark_steel_plate>, <threng:material>, <moreplates:dark_steel_plate>],[<appliedenergistics2:part:221>, <threng:material:4>, <appliedenergistics2:part:220>], [<moreplates:dark_steel_plate>, <threng:material>, <moreplates:dark_steel_plate>]]);
+recipes.addShaped(<ae2fc:fluid_pattern_encoder>, [[<actuallyadditions:block_crystal:1>, <appliedenergistics2:material:24>, <actuallyadditions:block_crystal:1>],[<moreplates:dark_steel_plate>, <ore:workbench>, <moreplates:dark_steel_plate>], [<moreplates:dark_steel_plate>, <moreplates:dark_steel_plate>, <moreplates:dark_steel_plate>]]);
+
 
 //Resonating Crystal
 Crystallizer.addRecipe(<threng:material:5>, 100, 5000, <thermalfoundation:material:103>, <botania:manaresource:2>, <threng:material:1>); 
@@ -56,8 +86,7 @@ Crystallizer.addRecipe(<threng:material:5>, 100, 5000, <thermalfoundation:materi
 Aggregator.removeRecipe(<threng:material:5>);
 
 
-//Storage Thingies
-val Certus as IIngredient = (<appliedenergistics2:material:10>|<appliedenergistics2:material>) as IIngredient;
+//Storage 1k
 
 recipes.addShaped(<appliedenergistics2:material:35>, [[<moreplates:redstone_alloy_plate>, Certus, <moreplates:redstone_alloy_plate>],[Certus, <appliedenergistics2:material:22>, Certus], [<moreplates:redstone_alloy_plate>, Certus, <moreplates:redstone_alloy_plate>]]);
 recipes.addShaped(<appliedenergistics2:material:35>*2, [[<moreplates:manyullyn_plate>, Certus, <moreplates:manyullyn_plate>],[Certus, <appliedenergistics2:material:22>, Certus], [<moreplates:manyullyn_plate>, Certus, <moreplates:manyullyn_plate>]]);
@@ -86,9 +115,11 @@ recipes.addShaped(<appliedenergistics2:quartz_growth_accelerator>, [[<moreplates
 
 //p2p
 val Fluix as IIngredient = (<appliedenergistics2:material:7>|<appliedenergistics2:material:12>) as IIngredient;
-
 recipes.addShaped(<appliedenergistics2:part:460>, [[null, <thermalfoundation:material:324>, null],
 [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>], 
+[Fluix, Fluix, Fluix]]);
+recipes.addShaped(<appliedenergistics2:part:460>*2, [[null, <ore:plateScal>, null],
+[<ore:plateScal>, <appliedenergistics2:material:24>, <ore:plateScal>], 
 [Fluix, Fluix, Fluix]]);
 
 
@@ -250,6 +281,18 @@ recipes.addShaped(<ae2wtlib:wut>.withTag({StoredTerminals: [{ForgeCaps: {"astral
 	[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote:2>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
 recipes.addShaped(<wct:wct>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote:3>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
 recipes.addShaped(<appliedenergistics2:wireless_terminal>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:41>, <thermalfoundation:material:324>],[<appliedenergistics2:material:22>, <storagenetwork:remote>, <appliedenergistics2:material:22>], [<thermalfoundation:material:324>, <appliedenergistics2:material:24>, <thermalfoundation:material:324>]]);
+
+
+//Planes
+recipes.addShaped(<appliedenergistics2:part:320> * 2, [[Fluix, Fluix, Fluix], [<ore:plateScal>, <appliedenergistics2:material:43>, <ore:plateScal>]]);
+recipes.addShaped(<appliedenergistics2:part:320>, [[Fluix, Fluix, Fluix], [<ore:plateAluminum>, <appliedenergistics2:material:43>, <ore:plateAluminum>]]);
+recipes.addShaped(<appliedenergistics2:part:300>, [[Fluix, Fluix, Fluix], [<ore:plateAluminum>, <appliedenergistics2:material:44>, <ore:plateAluminum>]]);
+recipes.addShaped(<appliedenergistics2:part:300> * 2, [[Fluix, Fluix, Fluix], [<ore:plateScal>, <appliedenergistics2:material:44>, <ore:plateScal>]]);
+
+recipes.addShaped(<appliedenergistics2:part:302> * 2, [[Fluix, Fluix, Fluix],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:plateScal>, <appliedenergistics2:material:44>, <ore:plateScal>]]);
+recipes.addShaped(<appliedenergistics2:part:302>, [[Fluix, Fluix, Fluix],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:plateAluminum>, <appliedenergistics2:material:44>, <ore:plateAluminum>]]);
+recipes.addShaped(<appliedenergistics2:part:321>, [[Fluix, Fluix, Fluix],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:plateAluminum>, <appliedenergistics2:material:43>, <ore:plateAluminum>]]);
+recipes.addShaped(<appliedenergistics2:part:321>*2, [[Fluix, Fluix, Fluix],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:plateScal>, <appliedenergistics2:material:43>, <ore:plateScal>]]);
 
 ##########################################################################################
 print("==================== end of applied.zs ====================");

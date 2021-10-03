@@ -47,9 +47,22 @@
         "embers:archaic_bricks",
         "embers:ashen_brick"
     ],
+    "casings_mixer_dust": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockfluidoutputhatch",
+        "embers:block_caminite_brick",
+        "embers:archaic_bricks",
+        "embers:ashen_brick"
+    ],
     "casings_mechanical": [
         "modulardiversity:blockmystmechinput",
         "embers:sealed_planks"
+    ],
+    "casings_mechanical_dust": [
+        "modulardiversity:blockmystmechinput",
+        "embers:wrapped_sealed_planks"
     ],
     "casings_ember": [
         "modulardiversity:blockemberinputhatch@1",
@@ -88,4 +101,5 @@
         "modularmachinery:blockoutputbus",
         "modulardiversity:blockmanainputhatch"
     ]
+    
 }

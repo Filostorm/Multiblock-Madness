@@ -91,6 +91,7 @@ VanillaFactory.createItem("compressed_chrome").register();
 VanillaFactory.createItem("lazurite_gem").register();
 VanillaFactory.createItem("limestone_flux").register();
 VanillaFactory.createItem("pristine_dust").register();
+VanillaFactory.createItem("angelring_fake").register();
 
 
 
