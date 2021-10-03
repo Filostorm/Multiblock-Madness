@@ -1097,4 +1097,85 @@
 			<itemStack>moreplates:diamatine_plate;9;0</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>ingotAdvancedAlloy;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;36</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockDiamond</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<itemStack>techreborn:plates;9;36</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedenseadvancedalloy</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateCarbon;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedensecarbon</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateEnergeticAlloy;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedenseenergeticalloy</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateIntermedium;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedenseintermedium</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateEnergeticSilver;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedenseenergeticsilver</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateTitaniumAluminide;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedensetitaniumaluminide</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateTungstenCarbide;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedensetungstencarbide</itemStack>
+		</output>
+	</Recipe>
 </Recipes>
