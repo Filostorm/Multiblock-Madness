@@ -102,13 +102,13 @@ InductionSmelter.addRecipe(<mysticalagriculture:crafting:35>, <mysticalagricultu
 mods.immersiveengineering.ArcFurnace.addRecipe(<mysticalagriculture:crafting:35>, <mysticalagriculture:crafting:34>, null, 300, 1024, [<mysticalagriculture:crafting:2>*4], "Alloying");
 
 //Tier 4 metal
-mods.techreborn.blastFurnace.addRecipe(<mysticalagriculture:crafting:36>, null, <mysticalagriculture:crafting:35>, <mysticalagriculture:crafting:3>*4, 600, 100, 1500);
+mods.techreborn.blastFurnace.addRecipe(<mysticalagriculture:crafting:36>, null, <mysticalagriculture:crafting:35>, <mysticalagriculture:crafting:3>*4, 300, 512, 1500);
 
 //Tier 5 metal
-mods.techreborn.blastFurnace.addRecipe(<mysticalagriculture:crafting:37>, null, <mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:4>*4, 1200, 150, 2500);
+mods.techreborn.blastFurnace.addRecipe(<mysticalagriculture:crafting:37>, null, <mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:4>*4, 600, 1024, 2500);
 
 //Tier 6 metal
-mods.techreborn.blastFurnace.addRecipe(<mysticalagradditions:insanium:2>, null, <mysticalagriculture:crafting:37>, <mysticalagradditions:insanium>*4, 2400, 200, 3500);
+mods.techreborn.blastFurnace.addRecipe(<mysticalagradditions:insanium:2>, null, <mysticalagriculture:crafting:37>, <mysticalagradditions:insanium>*4, 1200, 2048, 3500);
 
 recipes.addShaped(<mysticalagriculture:crafting:32>, [[null, <mysticalagriculture:crafting:5>, null],[<mysticalagriculture:crafting:5>, <contenttweaker:inert_ingot>, <mysticalagriculture:crafting:5>], [null, <mysticalagriculture:crafting:5>, null]]);
 recipes.addShaped(<mysticalagriculture:crafting:32>*2, [[null, <mysticalagriculture:crafting:5>, null],[<mysticalagriculture:crafting:5>, <contenttweaker:material_part:20>, <mysticalagriculture:crafting:5>], [null, <mysticalagriculture:crafting:5>, null]]);

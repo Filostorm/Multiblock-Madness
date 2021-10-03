@@ -71,10 +71,6 @@ item.addTooltip(format.green("Sneak-right click to change modes"));
 //Photo cell
 recipes.addShaped(<environmentaltech:photovoltaic_cell>, [[<mekanismgenerators:solarpanel>, <techreborn:reinforced_glass>, <mekanismgenerators:solarpanel>],[<techreborn:reinforced_glass>, <thermalfoundation:material:327>, <techreborn:reinforced_glass>], [<mekanismgenerators:solarpanel>, <techreborn:reinforced_glass>, <mekanismgenerators:solarpanel>]]);
 
-//Connector
-PrecisionAssembler.addRecipe(<environmentaltech:connector>, 600, 25000, <powersuits:powerarmorcomponent:6>, <techreborn:part:28>, <nuclearcraft:part:2>, <advgenerators:iron_wiring>*2);
-
-
 //Crystal Lens
 recipes.addShaped(<environmentaltech:laser_lens_crystal>, [[<environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>],[<environmentaltech:kyronite_crystal>, <ore:etLaserLens>, <environmentaltech:kyronite_crystal>], [<environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>]]);
 

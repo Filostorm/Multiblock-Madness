@@ -230,7 +230,7 @@ val latheRods as IItemStack[IItemStack] = {
 } as IItemStack[IItemStack];
 
 for material, rod in latheRods {
-	Lathe.addRecipe(rod*4, 60, 2000, material);
+	Lathe.addRecipe(rod*4, 30, 5000, material);
 }
 
 
@@ -242,7 +242,7 @@ val latheWires as IItemStack[IItemStack] = {
 } as IItemStack[IItemStack];
 
 for rod, wire in latheWires {
-	Lathe.addRecipe(wire*4, 100, 2000, rod);
+	Lathe.addRecipe(wire*4, 60, 5000, rod);
 }
 
 ###################################################

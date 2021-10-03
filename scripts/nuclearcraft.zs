@@ -52,7 +52,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<nuclearcraft:dominos>, [
 IngotFormer.addRecipe(<liquid:ender>*250, <minecraft:ender_pearl>);
 
 
-blastFurnace.addRecipe(<nuclearcraft:ingot:14>, null, <nuclearcraft:dust:14>, null, 200, 80, 1500);
+blastFurnace.addRecipe(<nuclearcraft:ingot:14>, null, <nuclearcraft:dust:14>, null, 200, 256, 1500);
 
 //Solanoid
 recipes.addShaped(<nuclearcraft:part:4> * 2, [[null, <powersuits:powerarmorcomponent>, <immersiveengineering:material:2>],[<powersuits:powerarmorcomponent>, <immersiveengineering:material:2>, <powersuits:powerarmorcomponent>], [<immersiveengineering:material:2>, <powersuits:powerarmorcomponent>, null]]);

@@ -179,7 +179,7 @@ AlloyFurnace.removeRecipeWithOutput(<tconstruct:ingots:2>);
 AlloyFurnace.removeRecipeWithOutput(<tconstruct:metal:2>);
 AlloyFurnace.removeRecipeWithOutput(<tconstruct:nuggets:2>);
 ArcFurnace.removeRecipe(<tconstruct:ingots:2>);
-blastFurnace.addRecipe(<tconstruct:ingots:2>, null, <tconstruct:ingots>, <tconstruct:ingots:1>, 300, 80, 1500);
+blastFurnace.addRecipe(<tconstruct:ingots:2>, null, <tconstruct:ingots>, <tconstruct:ingots:1>, 200, 256, 1500);
 
 //Dawnstone
 //ArcFurnace.addRecipe(<embers:ingot_dawnstone>*2, <minecraft:gold_ingot>*2, null, 500, 4096, [<thermalfoundation:material:128>*2,<minecraft:glowstone_dust>*2,<embers:shard_ember>], "Alloying");
