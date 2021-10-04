@@ -249,7 +249,6 @@ Insolator.addRecipe(petal*5, petal, <thermalfoundation:fertilizer:2>, 5000);
 
 Crusher.addRecipe(dust, petal, 2048, dust, 0.1);
 Manufactory.addRecipe(petal, dust);
-grinder.addRecipe(dust, petal, 300, 4);
 Pulverizer.addRecipe(dust, petal, 1500, dust, 10);
 SagMill.addRecipe([dust], [1] , petal, "MULTIPLY_OUTPUT");
 }
