@@ -129,7 +129,6 @@ InductionSmelter.addRecipe(<enderio:item_material:14>, <minecraft:diamond>, <end
 AlloyFurnace.addRecipe(<minecraft:diamond>, <enderio:item_alloy_ingot:5>, <enderio:item_material:14>);
 
 Crusher.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 1024);
-grinder.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 300, 4);
 
 //XP Obelisk
 recipes.addShaped(<enderio:block_experience_obelisk>, [[null, <enderio:item_xp_transfer>, null],[<enderio:item_alloy_ingot:7>, <enderio:block_tank>, <enderio:item_alloy_ingot:7>], [<enderio:item_alloy_ingot:1>, <enderio:item_material>, <enderio:item_alloy_ingot:1>]]);

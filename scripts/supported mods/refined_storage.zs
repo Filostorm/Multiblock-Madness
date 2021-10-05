@@ -104,7 +104,7 @@ recipes.addShaped(<refinedstorage:disk_drive> * 2,
 // fluix platinum alternative
 blastFurnace.addRecipe(<threng:material>, null, 
 	<refinedstorage:quartz_enriched_iron>, <thermalfoundation:material:134>, 
-1200, 60, 2000);
+300, 512, 2000);
 
 
 //fluix logic chip alternative 
@@ -115,8 +115,15 @@ recipes.addShaped(<threng:material:4>,
 		[<threng:material>, <refinedstorage:processor:5>, <threng:material>]
 	]
 );
-mods.advancedrocketry.PrecisionAssembler.addRecipe(<threng:material:4>, 600, 10000, <threng:material>*4,<refinedstorage:processor:4>,<refinedstorage:processor:5>,<rockhounding_chemistry:misc_items:10>);
 
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_fluix_logic_unit_alt", "assemblermktwo", 100)
+	.addEnergyPerTickInput(15000)
+	.addItemOutput(<threng:material:4>)
+	.addItemInput(<threng:material>*4)
+	.addItemInput(<refinedstorage:processor:4>)
+	.addItemInput(<refinedstorage:processor:5>)
+	.addItemInput(<rockhounding_chemistry:misc_items:10>)
+	.build();
 
 ##########################################################################################
 print("==================== end of refined_storage.zs ====================");

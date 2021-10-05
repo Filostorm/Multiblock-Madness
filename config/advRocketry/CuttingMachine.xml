@@ -32,7 +32,7 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="true">
-	<Recipe timeRequired="80" power ="10">
+	<Recipe timeRequired="4" power ="5000">
 		<input>
 			<itemStack>advancedrocketry:alienwood</itemStack>
 		</input>
@@ -40,7 +40,7 @@
 			<itemStack>advancedrocketry:planks;6</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="100">
+	<Recipe timeRequired="80" power ="5000">
 		<input>
 			<itemStack>advancedrocketry:itemcircuitplate;1;1</itemStack>
 		</input>
@@ -48,7 +48,7 @@
 			<itemStack>advancedrocketry:ic;4;2</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="100">
+	<Recipe timeRequired="80" power ="5000">
 		<input>
 			<itemStack>advancedrocketry:itemcircuitplate</itemStack>
 		</input>
@@ -56,15 +56,23 @@
 			<itemStack>advancedrocketry:ic;4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="100">
+	<Recipe timeRequired="80" power ="5000">
+		<input>
+			<itemStack>qmd:semiconductor;1;2</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:wafer;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="80" power ="5000">
 		<input>
 			<itemStack>libvulpes:productboule;1;3</itemStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:wafer;4</itemStack>
+			<itemStack>advancedrocketry:wafer;4;0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="80" power ="10">
+	<Recipe timeRequired="4" power ="5000">
 		<input>
 			<itemStack>minecraft:log</itemStack>
 		</input>
@@ -72,7 +80,7 @@
 			<itemStack>minecraft:planks;6</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="80" power ="10">
+	<Recipe timeRequired="4" power ="5000">
 		<input>
 			<itemStack>minecraft:log;1;1</itemStack>
 		</input>
@@ -80,7 +88,7 @@
 			<itemStack>minecraft:planks;6;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="80" power ="10">
+	<Recipe timeRequired="4" power ="5000">
 		<input>
 			<itemStack>minecraft:log;1;2</itemStack>
 		</input>
@@ -88,7 +96,7 @@
 			<itemStack>minecraft:planks;6;2</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="80" power ="10">
+	<Recipe timeRequired="4" power ="5000">
 		<input>
 			<itemStack>minecraft:log;1;3</itemStack>
 		</input>
@@ -96,7 +104,7 @@
 			<itemStack>minecraft:planks;6;3</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="80" power ="10">
+	<Recipe timeRequired="4" power ="5000">
 		<input>
 			<itemStack>minecraft:log2</itemStack>
 		</input>
@@ -104,12 +112,261 @@
 			<itemStack>minecraft:planks;6;4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="80" power ="10">
+	<Recipe timeRequired="4" power ="5000">
 		<input>
 			<itemStack>minecraft:log2;1;1</itemStack>
 		</input>
 		<output>
 			<itemStack>minecraft:planks;6;5</itemStack>
+		</output>
+	</Recipe>
+
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>techreborn:rubber_log;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>techreborn:rubber_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>randomthings:spectrelog;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>randomthings:spectreplank;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>thaumcraft:log_greatwood;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>thaumcraft:plank_greatwood;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>thaumcraft:log_silverwood;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>thaumcraft:plank_silverwood;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>integrateddynamics:menril_log;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>integrateddynamics:menril_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:overworld_logs;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:overworld_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:overworld_logs;1;1</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:overworld_planks;6;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:overworld_logs;1;2</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:overworld_planks;6;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:overworld_logs;1;3</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:overworld_planks;6;3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:overworld_logs2;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:overworld_planks;6;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:overworld_logs2;1;1</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:overworld_planks;6;5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:overworld_logs2;1;2</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:overworld_planks;6;6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:overworld_logs2;1;3</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:overworld_planks;6;7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:redwood_logs;1;1</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:overworld_planks;6;8</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:nether_logs;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:nether_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:nether_logs;1;1</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:nether_planks;6;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:nether_logs;1;2</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:nether_planks;6;3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>natura:nether_logs2;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>natura:nether_planks;6;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>mysticalworld:charred_log;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>mysticalworld:charred_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>twilightforest:twilight_log;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:twilight_oak_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>twilightforest:twilight_log;1;1</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:canopy_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>twilightforest:twilight_log;1;2</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:mangrove_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>twilightforest:twilight_log;1;3</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:dark_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>twilightforest:magic_log;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:time_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>twilightforest:magic_log;1;1</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:trans_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>twilightforest:magic_log;1;2</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:mine_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>twilightforest:magic_log;1;3</itemStack>
+		</input>
+		<output>
+			<itemStack>twilightforest:sort_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>fossil:palm_log;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>fossil:palm_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>fossil:calamites_log;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>fossil:calamites_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>fossil:cordaites_log;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>fossil:cordaites_planks;6;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="5000">
+		<input>
+			<itemStack>fossil:sigillaria_log;1;0</itemStack>
+		</input>
+		<output>
+			<itemStack>fossil:sigillaria_planks;6;0</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

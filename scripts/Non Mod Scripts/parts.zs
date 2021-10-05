@@ -6,7 +6,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.Crusher;
 import mods.nuclearcraft.Manufactory;
-import mods.techreborn.grinder;
 import mods.enderio.SagMill;
 import mods.thermalexpansion.Pulverizer;
 import mods.techreborn.rollingMachine;
@@ -245,6 +244,154 @@ for rod, wire in latheWires {
 	Lathe.addRecipe(wire*4, 60, 5000, rod);
 }
 
+################################### ROLLING MACHINE ######################################
+
+// Removing Rolling Machine recipes
+val rollingMachineone =
+[
+<moreplates:knightslime_plate>,
+<moreplates:osmiridium_plate>,
+<moreplates:osgloglas_plate>,
+<moreplates:redstone_alloy_plate>,
+<thaumadditions:mithrillium_plate>,
+<moreplates:stellar_alloy_plate>,
+<moreplates:conductive_iron_plate>,
+<moreplates:vibrant_alloy_plate>,
+<jaopca:item_platesuperalloy>,
+<moreplates:vivid_alloy_plate>,
+<moreplates:crude_steel_plate>,
+<moreplates:end_steel_plate>,
+<techreborn:plates:20>,
+<moreplates:melodic_alloy_plate>,
+<techreborn:plates:33>,
+<moreplates:dark_steel_plate>,
+<contenttweaker:material_part:32>,
+<jaopca:item_platehslasteel>,
+<moreplates:manyullyn_plate>,
+<moreplates:crystal_matrix_plate>,
+<jaopca:item_plateferroboron>,
+<techreborn:plates:36>,
+<contenttweaker:material_part:12>,
+<jaopca:item_platetungstencarbide>,
+<moreplates:neutronium_plate>,
+<moreplates:electrical_steel_plate>,
+<moreplates:soularium_plate>,
+<techreborn:plates:32>,
+<moreplates:refined_obsidian_plate>,
+<moreplates:energetic_alloy_plate>,
+<jaopca:item_platetough>,
+<jaopca:item_platelithium6deuteride>,
+<jaopca:item_platestainlesssteel>,
+<moreplates:terrasteel_plate>,
+<techreborn:plates:35>,
+<moreplates:energetic_silver_plate>,
+<contenttweaker:material_part:22>
+]
+ as IItemStack[];
+
+for item in rollingMachineone {
+	mods.advancedrocketry.RollingMachine.removeRecipe(item);
+}
+
+val rollingMachinear =
+[
+<advancedrocketry:pressuretank:1>,
+<advancedrocketry:pressuretank:2>,
+<advancedrocketry:pressuretank:3>,
+<advancedrocketry:pressuretank>,
+<libvulpes:productsheet:1>,
+<libvulpes:productsheet:4>,
+<libvulpes:productsheet:6>,
+<libvulpes:productsheet:7>,
+<libvulpes:productsheet:9>,
+<advancedrocketry:productsheet>,
+<advancedrocketry:productsheet:1>
+]
+ as IItemStack[];
+
+for item in rollingMachinear {
+	mods.advancedrocketry.RollingMachine.removeRecipe(item);
+}
+
+val rollingMachinetwo =
+[
+<thermalfoundation:material:324>,
+<thermalfoundation:material:358>,
+<thermalfoundation:material:357>,
+<thermalfoundation:material:359>,
+<rockhounding_chemistry:alloy_parts:58>,
+<thermalfoundation:material:327>,
+<rockhounding_chemistry:alloy_parts:64>,
+<rockhounding_chemistry:alloy_parts:16>,
+<rockhounding_chemistry:alloy_parts:70>,
+<rockhounding_chemistry:alloy_parts:40>,
+<rockhounding_chemistry:alloy_parts:4>,
+<rockhounding_chemistry:alloy_parts:88>,
+<thaumadditions:adaminite_plate>,
+<thaumadditions:mithminite_plate>,
+<rockhounding_chemistry:alloy_parts:46>,
+<rockhounding_chemistry:alloy_parts:67>,
+<techreborn:plates:31>,
+<thermalfoundation:material:320>,
+<moreplates:osmium_plate>,
+<techreborn:plates:34>,
+<embers:plate_dawnstone>,
+<rockhounding_chemistry:alloy_parts:7>,
+<thermalfoundation:material:321>,
+<rockhounding_chemistry:alloy_parts:76>,
+<thermalfoundation:material:325>,
+<thermalfoundation:material:356>,
+<advancedrocketry:productplate:1>,
+<immersiveengineering:metal:35>,
+<thermalfoundation:material:323>,
+<rockhounding_chemistry:alloy_parts:79>,
+<thaumcraft:plate:2>,
+<contenttweaker:material_part:3>,
+<thermalfoundation:material:352>,
+<rockhounding_chemistry:alloy_parts:55>,
+<techreborn:plates:2>,
+<thermalfoundation:material:353>,
+<thaumcraft:plate:3>,
+<thermalfoundation:material:355>,
+<thermalfoundation:material:33>,
+<rockhounding_chemistry:alloy_parts:73>,
+<rockhounding_chemistry:alloy_parts:49>,
+<rockhounding_chemistry:alloy_parts:22>,
+<thermalfoundation:material:322>,
+<rockhounding_chemistry:alloy_parts:43>,
+<rockhounding_chemistry:alloy_parts:31>,
+<rockhounding_chemistry:alloy_parts:61>,
+<techreborn:plates:20>,
+<thermalfoundation:material:354>,
+<rockhounding_chemistry:alloy_parts:28>,
+<rockhounding_chemistry:alloy_parts:34>,
+<rockhounding_chemistry:alloy_parts:91>,
+<thermalfoundation:material:326>,
+<libvulpes:productplate:3>,
+<advancedrocketry:productplate>,
+<thermalfoundation:material:328>,
+<rockhounding_chemistry:alloy_parts:82>,
+<rockhounding_chemistry:alloy_parts:25>,
+<rockhounding_chemistry:alloy_parts:13>,
+<rockhounding_chemistry:alloy_parts:10>,
+<rockhounding_chemistry:alloy_parts:52>,
+<rockhounding_chemistry:alloy_parts:19>,
+<rockhounding_chemistry:alloy_parts:37>,
+<thaumcraft:plate>,
+<rockhounding_chemistry:alloy_parts:85>,
+<moreplates:pulsating_iron_plate>,
+<thermalfoundation:material:32>,
+<moreplates:intermedium_plate>,
+<techreborn:plates:31>,
+<thermalfoundation:material:324>,
+<moreplates:ironwood_plate>
+]
+ as IItemStack[];
+
+for item in rollingMachinetwo {
+	mods.advancedrocketry.RollingMachine.removeRecipe(item);
+}
+
 ###################################################
 ############     CRUSHING      ####################
 ###################################################
@@ -254,9 +401,6 @@ for rod, wire in latheWires {
 Crusher.removeRecipe(<minecraft:clay_ball>);
 Crusher.addRecipe(<techreborn:dust:12>*4,<minecraft:clay>, 1024);
 Crusher.addRecipe(<techreborn:dust:12>,<minecraft:clay_ball>, 1024);
-grinder.removeRecipe(<techreborn:dust:12>*9);
-grinder.addRecipe(<techreborn:dust:12>*4, <minecraft:clay>, 300, 4);
-grinder.addRecipe(<techreborn:dust:12>, <minecraft:clay_ball>, 150, 2);
 Manufactory.removeRecipeWithInput(<minecraft:clay>);
 Manufactory.addRecipe(<minecraft:clay>, <techreborn:dust:12> * 4);
 Manufactory.addRecipe(<minecraft:clay_ball>, <techreborn:dust:12>);
@@ -276,14 +420,12 @@ Pulverizer.addRecipe(<contenttweaker:limestone_flux>*4, item, 1500, <contenttwea
 }
 
 Manufactory.addRecipe(<ore:limestoneforFlux>, <contenttweaker:limestone_flux>*4);
-grinder.addRecipe(<contenttweaker:limestone_flux>*4, <ore:limestoneforFlux>, 300, 4);
 SagMill.addRecipe([<contenttweaker:limestone_flux>*3], [1] , <ore:limestoneforFlux>, "MULTIPLY_OUTPUT");
 
 
 //Radiant Dust
 Crusher.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 1024, <arcanearchives:radiant_dust>*3, 0.5);
 Manufactory.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:radiant_dust>*9);
-grinder.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 300, 4);
 Pulverizer.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 1500, <arcanearchives:radiant_dust>*3, 50);
 SagMill.addRecipe([<arcanearchives:radiant_dust>*9], [1] , <arcanearchives:storage_raw_quartz>, "MULTIPLY_OUTPUT");
 
@@ -291,13 +433,11 @@ SagMill.addRecipe([<arcanearchives:radiant_dust>*9], [1] , <arcanearchives:stora
 //Ember Grit
 Crusher.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 2048, <embers:dust_ember>, 0.1);
 Manufactory.addRecipe(<embers:crystal_ember>, <embers:dust_ember>);
-grinder.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 300, 4);
 Pulverizer.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 1500, <embers:dust_ember>, 10);
 SagMill.addRecipe([<embers:dust_ember>], [1] , <embers:crystal_ember>, "NONE");
 
 
 //Graphite
-grinder.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 300, 4);
 SagMill.addRecipe([<nuclearcraft:dust:8>], [1] , <thermalfoundation:material:768>, "NONE");
 Pulverizer.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 1500);
 
@@ -317,11 +457,6 @@ Pulverizer.addRecipe(<contenttweaker:slatedust>*4, <bloodmagic:slate:1>, 10000);
 Pulverizer.addRecipe(<contenttweaker:slatedust>*8, <bloodmagic:slate:2>, 10000);
 Pulverizer.addRecipe(<contenttweaker:slatedust>*16, <bloodmagic:slate:3>, 10000);
 Pulverizer.addRecipe(<contenttweaker:slatedust>*32, <bloodmagic:slate:4>, 10000);
-grinder.addRecipe(<contenttweaker:slatedust>*2, <bloodmagic:slate>, 300, 4);
-grinder.addRecipe(<contenttweaker:slatedust>*4, <bloodmagic:slate:1>, 300, 4);
-grinder.addRecipe(<contenttweaker:slatedust>*8, <bloodmagic:slate:2>, 300, 4);
-grinder.addRecipe(<contenttweaker:slatedust>*16, <bloodmagic:slate:3>, 300, 4);
-grinder.addRecipe(<contenttweaker:slatedust>*32, <bloodmagic:slate:4>, 300, 4);
 
 Crusher.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 2048);
 Crusher.addRecipe(<rockhounding_chemistry:chemical_dusts:24>,<techreborn:plates:2>, 2048);
@@ -329,19 +464,16 @@ Crusher.addRecipe(<rockhounding_chemistry:chemical_dusts:24>,<techreborn:plates:
 //Silicon dust
 Crusher.addRecipe(<libvulpes:productdust:3>, <nuclearcraft:gem:6>, 1024);
 Manufactory.addRecipe(<nuclearcraft:gem:6>, <libvulpes:productdust:3>);
-grinder.addRecipe(<libvulpes:productdust:3>, <nuclearcraft:gem:6>, 300, 4);
 SagMill.addRecipe([<libvulpes:productdust:3>], [1] , <nuclearcraft:gem:6>, "NONE");
 
 //Skystone dust
 Crusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>, 1024);
-grinder.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>, 300, 4);
 SagMill.addRecipe([<appliedenergistics2:material:45>], [1] , <appliedenergistics2:sky_stone_block>, "NONE");
 
 
 //Pristine dust
 Crusher.addRecipe(<contenttweaker:pristine_dust>, <ore:pristineMatter>, 1024);
 Manufactory.addRecipe(<ore:pristineMatter>, <contenttweaker:pristine_dust>);
-grinder.addRecipe(<contenttweaker:pristine_dust>, <ore:pristineMatter>, 300, 4);
 SagMill.addRecipe([<contenttweaker:pristine_dust>], [1] , <ore:pristineMatter>, "NONE");
 
 
@@ -369,11 +501,13 @@ Manufactory.addRecipe(ingotPlutonium, <techreborn:dust:67>);
 //Wither Ash
 Crusher.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 1024);
 Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
-grinder.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 300, 4);
 SagMill.addRecipe([<quark:black_ash>*3], [1] , <minecraft:skull:1>, "MULTIPLY_OUTPUT");
 
 //Thermal Ruby dust
 Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
+
+// Removing old silicon wafer recipe
+mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:wafer>);
 
 ##########################################################################################
 print("==================== end of parts.zs ====================");
