@@ -32,661 +32,1150 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="true">
-	<Recipe timeRequired="100" power ="2">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<itemStack>libvulpes:productsheet;2;6</itemStack>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:pressuretank;1;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="100" power ="4">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<itemStack>libvulpes:productsheet;2;9</itemStack>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:pressuretank;1;2</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="400" power ="8">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<itemStack>libvulpes:productsheet;2;7</itemStack>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:pressuretank;1;3</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="100" power ="1">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<itemStack>libvulpes:productsheet;2;1</itemStack>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:pressuretank</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="200">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>plateIron</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>libvulpes:productsheet;1;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="200">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>plateCopper</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>libvulpes:productsheet;1;4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="200">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>plateSteel</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>libvulpes:productsheet;1;6</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="200">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>plateTitanium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>libvulpes:productsheet;1;7</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="200">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>plateAluminum</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>libvulpes:productsheet;1;9</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="200">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>plateTitaniumAluminide</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:productsheet</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="200">
+	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>plateTitaniumIridium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:productsheet;1;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotVanasteel</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockVanasteel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;40</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;40</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotAluminum</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockAluminum</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;324</itemStack>
+			<itemStack>thermalfoundation:material;9;324</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotVanadium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>ingotVanadium;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;4</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;4</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotInconel</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockInconel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;88</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;88</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotLumium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockLumium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;358</itemStack>
+			<itemStack>thermalfoundation:material;9;358</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotTantaloy</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockTantaloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;46</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;46</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotSignalum</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockSignalum</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;357</itemStack>
+			<itemStack>thermalfoundation:material;9;357</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotPewter</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockPewter</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;67</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;67</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotTitanium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockTitanium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productplate;1;7</itemStack>
+			<itemStack>libvulpes:productplate;9;7</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotCopper</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockCopper</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;320</itemStack>
+			<itemStack>thermalfoundation:material;9;320</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotVoid</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockVoid</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thaumcraft:plate;1;3</itemStack>
+			<itemStack>thaumcraft:plate;9;3</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotEnderium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockEnderium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;359</itemStack>
+			<itemStack>thermalfoundation:material;9;359</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotLavium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockBronze</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>tinkers_reforged:lavium_plate</itemStack>
+			<itemStack>thermalfoundation:material;9;355</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotBronze</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockGold</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;355</itemStack>
+			<itemStack>thermalfoundation:material;9;33</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotGold</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockShakudo</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;33</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;73</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotShakudo</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockAluminium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;73</itemStack>
+			<itemStack>thermalfoundation:material;9;324</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotAluminium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockMischmetal</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>embers:plate_aluminum</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;49</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotMischmetal</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockNimonic</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;49</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;22</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotNimonic</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockSilver</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;22</itemStack>
+			<itemStack>thermalfoundation:material;9;322</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotSilver</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockWidia</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;322</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;43</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotWidia</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockCunife</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;43</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;31</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotCunife</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockWhitegold</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;31</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;58</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotWhitegold</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockIridium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;58</itemStack>
+			<itemStack>thermalfoundation:material;9;327</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotIridium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockScal</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;327</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;10</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotScal</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockTombak</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;10</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;64</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotTombak</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockRosegold</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;64</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;52</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotRosegold</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockStellite</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;52</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;16</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotStellite</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockCupronickel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;16</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;19</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotCupronickel</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockHydronalium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;19</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;37</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotHydronalium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockBrass</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;37</itemStack>
+			<itemStack>thaumcraft:plate;9</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotBrass</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockCosm</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thaumcraft:plate</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;85</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotCosm</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockIron</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;85</itemStack>
+			<itemStack>thermalfoundation:material;9;32</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotIron</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockCorten</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;32</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;70</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotCorten</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockUranium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;70</itemStack>
+			<itemStack>immersiveengineering:metal;9;35</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotUranium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockTinite</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:metal;1;35</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;34</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotTinite</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockZircaloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;34</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;91</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotZircaloy</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockPlatinum</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;91</itemStack>
+			<itemStack>thermalfoundation:material;9;326</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotPlatinum</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockLead</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;326</itemStack>
+			<itemStack>thermalfoundation:material;9;323</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotLead</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>itemSilicon;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;323</itemStack>
+			<itemStack>libvulpes:productplate;9;3</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotSilicon</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockTitaniumAluminide</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productplate;1;3</itemStack>
+			<itemStack>advancedrocketry:productplate;9;0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotTitaniumAluminide</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockNial</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productplate</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;79</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotNial</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockMithril</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;79</itemStack>
+			<itemStack>thermalfoundation:material;9;328</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotMithril</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockNib</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;328</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;82</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotNib</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockHastelloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;82</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;25</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotHastelloy</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockThaumium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;25</itemStack>
+			<itemStack>thaumcraft:plate;9;2</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotThaumium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockSteel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thaumcraft:plate;1;2</itemStack>
+			<itemStack>thermalfoundation:material;9;352</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotSteel</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockGreengold</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;352</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;55</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotGreengold</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockElectrum</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;55</itemStack>
+			<itemStack>thermalfoundation:material;9;353</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotElectrum</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockBam</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;353</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;13</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotBam</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockDawnstone</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;13</itemStack>
+			<itemStack>embers:plate_dawnstone;9;0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotQivium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockCube</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>tinkers_reforged:qivium_plate</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;7</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotDawnstone</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockShibuichi</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>embers:plate_dawnstone</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;61</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotCube</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockTin</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;7</itemStack>
+			<itemStack>thermalfoundation:material;9;321</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotKovar</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockPurplegold</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>tinkers_reforged:kovar_plate</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;76</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotShibuichi</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockNickel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;61</itemStack>
+			<itemStack>thermalfoundation:material;9;325</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotTin</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockInvar</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;321</itemStack>
+			<itemStack>thermalfoundation:material;9;354</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotPurplegold</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockNichrome</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;76</itemStack>
+			<itemStack>rockhounding_chemistry:alloy_parts;9;28</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotNickel</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockConstantan</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;325</itemStack>
+			<itemStack>thermalfoundation:material;9;356</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotInvar</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockTitaniumIridium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;354</itemStack>
+			<itemStack>advancedrocketry:productplate;9;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotNichrome</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockKnightslime</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>rockhounding_chemistry:alloy_parts;1;28</itemStack>
+			<itemStack>moreplates:knightslime_plate;9;0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotConstantan</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockOsmiridium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material;1;356</itemStack>
+			<itemStack>moreplates:osmiridium_plate;9;0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotTitaniumIridium</oreDict>
-			<fluidStack>water;100</fluidStack>
+			<oreDict>blockOsgloglas</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productplate;1;1</itemStack>
+			<itemStack>moreplates:osgloglas_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockRedstoneAlloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:redstone_alloy_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockMithrillium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>thaumadditions:mithrillium_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockStellarAlloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:stellar_alloy_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockConductiveIron</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:conductive_iron_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockVibrantAlloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:vibrant_alloy_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>ingotSuperAlloy,9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platesuperalloy;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockEnergeticSilver</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:energetic_silver_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>techreborn:storage2;1;10</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;35</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>botania:storage;1;1</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:terrasteel_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>ore:blockStainlessSteel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platestainlesssteel;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockToughAlloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platetough;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockEnergeticAlloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:energetic_alloy_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockRefinedObsidian</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:refined_obsidian_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockTungsten</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;32</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockSoularium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:soularium_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockElectricalSteel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:electrical_steel_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>techreborn:part;9;34</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockOsmium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:osmium_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockZinc</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;34</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockCosmicNeutronium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:neutronium_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>ingotTungstenCarbide,9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platetungstencarbide;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockAdamantine</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:material_part;9;12</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>ingotAdvancedAlloy,9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;36</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>ingotFerroboron;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_plateferroboron;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockAdaminite</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>thaumadditions:adaminite_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockMithminite</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>thaumadditions:mithminite_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockCrystalMatrix</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:crystal_matrix_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockManyullyn</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:manyullyn_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>ingotHSLASteel;9</oreDict>
+			<fluidStack>lubricant</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platehslasteel;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockPalladium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:material_part;9;32</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockDarkSteel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:dark_steel_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockTungstensteel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;33</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockMelodicAlloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:melodic_alloy_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockIntermedium</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:intermedium_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockChrome</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;20</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockEndSteel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:end_steel_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockCrudeSteel</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:crude_steel_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockVividAlloy</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:vivid_alloy_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockOrichalcum</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:material_part;9;22</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>twilightforest:block_storage</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:ironwood_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+
+
+
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>minecraft:quartz_block</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:nether_quartz_plate;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>actuallyadditions:block_crystal;1;3</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:void_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>actuallyadditions:block_crystal</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:restonia_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>actuallyadditions:block_crystal;1;5</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:enori_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>actuallyadditions:block_crystal;1;2</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:diamatine_plate;9;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>ingotAdvancedAlloy;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;36</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockDiamond</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>techreborn:plates;9;5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<itemStack>techreborn:plates;9;36</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedenseadvancedalloy</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateCarbon;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedensecarbon</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateEnergeticAlloy;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedenseenergeticalloy</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateIntermedium;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedenseintermedium</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateEnergeticSilver;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedenseenergeticsilver</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateTitaniumAluminide;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedensetitaniumaluminide</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>plateTungstenCarbide;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedensetungstencarbide</itemStack>
 		</output>
 	</Recipe>
 </Recipes>
