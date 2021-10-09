@@ -2,6 +2,9 @@ import crafttweaker.item.IItemStack;
 import mods.botania.ElvenTrade;
 import mods.astralsorcery.Altar;
 import mods.bloodmagic.BloodAltar;
+import mods.bloodmagic.AlchemyTable;
+import mods.immersiveengineering.Squeezer;
+
 print("==================== loading Deep Mob Learning.zs ====================");
 ##########################################################################################
 
@@ -120,5 +123,21 @@ Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchhelmet",<deepmobl
 	null, null, null,
 	<contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>
 	]);
+	
+Squeezer.addRecipe(<contenttweaker:blank_matter>, <liquid:clay>*250, <deepmoblearning:polymer_clay> * 8, 256);
+
+val MobAlchemy as IItemStack[IItemStack] = {
+<deepmoblearning:pristine_matter_zombie>:<minecraft:rotten_flesh>,
+<deepmoblearning:pristine_matter_skeleton>:<minecraft:bone>,
+<deepmoblearning:pristine_matter_creeper>:<minecraft:gunpowder>,
+<deepmoblearning:pristine_matter_spider>:<minecraft:spider_eye>,
+<deepmoblearning:pristine_matter_slime>:<minecraft:slime_ball>,
+<deepmoblearning:pristine_matter_witch>:<minecraft:redstone>,
+<deepmoblearning:pristine_matter_blaze>:<minecraft:blaze_rod>,
+} as IItemStack[IItemStack];
+
+for matter, item in MobAlchemy {
+	AlchemyTable.addRecipe(matter, [<contenttweaker:blank_matter>,<aetherworks:item_resource>, item,item,item,item], 1000,200,3);
+}
 ##########################################################################################
 print("==================== end of Deep Mob Learning.zs ====================");

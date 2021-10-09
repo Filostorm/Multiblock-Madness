@@ -292,7 +292,6 @@ val rollingMachineone =
 <moreplates:refined_obsidian_plate>,
 <moreplates:energetic_alloy_plate>,
 <jaopca:item_platetough>,
-<jaopca:item_platelithium6deuteride>,
 <jaopca:item_platestainlesssteel>,
 <moreplates:terrasteel_plate>,
 <techreborn:plates:35>,
@@ -396,7 +395,10 @@ val rollingMachinetwo =
 <moreplates:intermedium_plate>,
 <techreborn:plates:31>,
 <thermalfoundation:material:324>,
-<moreplates:ironwood_plate>
+<moreplates:ironwood_plate>,
+<techreborn:plates:31>,
+<aetherworks:item_resource:3>,
+<thermalfoundation:material:324>,
 ]
  as IItemStack[];
 

@@ -59,6 +59,8 @@ val itemstoRemove =
 <mekanismgenerators:generator:10>,
 <mekanism:filterupgrade>,
 <mekanism:machineblock:12>,
+<nuclearcraft:turbine_controller>,
+<mekanism:machineblock2:4>,
 ]
  as IItemStack[];
 
@@ -66,10 +68,13 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-
 //Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
 
 Grinder.addRecipe(<thermalfoundation:material:800>, <minecraft:planks>, 4, <techreborn:smalldust:46>*2, 0.5, <techreborn:smalldust:46>*2, 0.5);
+
+
+//Sepotatoer
+recipes.addShaped(<mekanism:machineblock2:4>, [[<moreplates:osmium_plate>, <ore:circuitBasic>, <moreplates:osmium_plate>],[<mekanism:enrichedalloy>, <mekanism:electrolyticcore>, <mekanism:enrichedalloy>], [<moreplates:osmium_plate>, <minecraft:redstone>, <moreplates:osmium_plate>]]);
 
 //Pump
 recipes.addShaped(<mekanism:machineblock:12>, [[null, <minecraft:bucket>, null],[<ore:circuitBasic>, <immersiveengineering:metal_decoration0:5>, <ore:circuitBasic>], [<ore:platerefinedIron>, <ore:platerefinedIron>, <ore:platerefinedIron>]]);
@@ -86,8 +91,10 @@ recipes.addShaped(<mekanism:basicblock2:1> * 4, [[<mekanism:reinforcedalloy>, <t
 recipes.addShaped(<mekanism:basicblock2:1> * 8, [[<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>],[<ore:plateVanasteel>, <moreplates:osmium_gear>, <ore:plateVanasteel>], [<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>]]);
 
 //Turbine
-recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>],[<thermalfoundation:material:352>, <moreplates:osmium_gear>, <thermalfoundation:material:352>], [<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>]]);
-recipes.addShaped(<mekanismgenerators:generator:10> * 8, [[<mekanism:atomicalloy>, <ore:plateVanasteel>, <mekanism:atomicalloy>],[<ore:plateVanasteel>, <moreplates:osmium_gear>, <ore:plateVanasteel>], [<mekanism:atomicalloy>, <ore:plateVanasteel>, <mekanism:atomicalloy>]]);
+//recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>],[<thermalfoundation:material:352>, <moreplates:osmium_gear>, <thermalfoundation:material:352>], [<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>]]);
+//recipes.addShaped(<mekanismgenerators:generator:10> * 8, [[<mekanism:atomicalloy>, <ore:plateVanasteel>, <mekanism:atomicalloy>],[<ore:plateVanasteel>, <moreplates:osmium_gear>, <ore:plateVanasteel>], [<mekanism:atomicalloy>, <ore:plateVanasteel>, <mekanism:atomicalloy>]]);
+recipes.addShaped(<nuclearcraft:turbine_controller>, [[<nuclearcraft:fission_dust:3>, <powersuits:powerarmorcomponent:8>, <nuclearcraft:fission_dust:3>],[<extendedcrafting:material:48>, <techreborn:machine_frame:2>, <extendedcrafting:material:48>], [<nuclearcraft:part:3>, <extendedcrafting:material:12>, <nuclearcraft:part:3>]]);
+recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<nuclearcraft:part:3>, <nuclearcraft:pellet_thorium>, <nuclearcraft:part:3>],[<jaopca:item_platesuperalloy>, <mekanismgenerators:reactor:1>, <jaopca:item_platesuperalloy>], [<nuclearcraft:part:3>, <extendedcrafting:material:18>, <nuclearcraft:part:3>]]);
 
 //rEACTOR bIZ
 recipes.addShaped(<mekanismgenerators:reactor:1> * 4, [[<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>],[<mekanism:basicblock:8>, <mekanism:atomicalloy>, <mekanism:basicblock:8>], [<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>]]);

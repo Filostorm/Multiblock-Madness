@@ -6,11 +6,11 @@ The insight, xp boost, and experience boost enchantments all stack together
 The Thaumostatic Harness is an early way to get creative flight, but uses Vis as fuel
 You can use an anvil to combine looted Ender IO capacitators
 The Small Plate Presser can be used as an extremely fast stoneworks factory
-You can pump out fluids from the bottom of Astral Sorcery Lightwells
+You can pump out fluids and pipe in items from the bottom of Lightwells
 Using tools with Thaumcraft’s Refining infusion can allow for ore tripling
 You can right click Mekanism alloys on placed Mekanism cables to upgrade them, with 8 cables per alloy
 You can repair most tools, including Tinkers’ tools, with a Cyclic Powered Anvil
-If you’re struggling to find a Blizz in a cold biome, use Astral Sorcery Nocturnal Powder to force mob to spawns
+If you’re struggling to find a Blizz in a cold biome, use Nocturnal Powder to force mob to spawns
 You only need 400 Ember in the Beam Cannon to trigger the Alchemy Pedestal
 Embers Dawnstone Mail is a great way to get full knockback resistance
 Astral Sorcery Aevitas Rituals work on Bonsai Trees
@@ -21,7 +21,7 @@ You can craft Ender-IO filters together to copy the settings
 The Mekanism Thermal Evaporation Tower is an easy way to get lots of salt for your Rockhounding setup
 Don’t forget to update your questbook after each update!
 Time In A Bottle is extremely useful, craft one as soon as you can!
-More than 400 different foods exist, and eating a variety of them is a really easy way to extend your health bar!
+More than 300 different foods exist, and eating a variety of them is a really easy way to extend your health bar!
 The Silktouch enchantment can move spawners!
 The effects of multiple sprinklers in the same area stack
 Dragon lairs are a great source of Californium!

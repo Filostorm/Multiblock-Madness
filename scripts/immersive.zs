@@ -138,7 +138,9 @@ recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<ore:blockGlassColo
 
 
 recipes.addShaped(<immersiveengineering:metal_decoration0:6> * 2, [[<thermalfoundation:material:352>, <immersiveengineering:wirecoil:1>, <thermalfoundation:material:352>],[<immersiveengineering:wirecoil:1>, <immersiveengineering:metal_device1:2>, <immersiveengineering:wirecoil:1>], [<thermalfoundation:material:352>, <immersiveengineering:wirecoil:1>, <thermalfoundation:material:352>]]);
-recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<thermalfoundation:material:352>, <contenttweaker:tarred_ingot>, <thermalfoundation:material:352>],[<contenttweaker:tarred_ingot>, <minecraft:water_bucket>, <contenttweaker:tarred_ingot>], [<thermalfoundation:material:352>, <contenttweaker:tarred_ingot>, <thermalfoundation:material:352>]]);
+
+//Radiator Blocks
+recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 3, [[<thermalfoundation:material:352>, <contenttweaker:tarred_ingot>, <thermalfoundation:material:352>],[<contenttweaker:tarred_ingot>, <bloodmagic:blood_rune:1>, <contenttweaker:tarred_ingot>], [<thermalfoundation:material:352>, <contenttweaker:tarred_ingot>, <thermalfoundation:material:352>]]);
 
 
 //Tar

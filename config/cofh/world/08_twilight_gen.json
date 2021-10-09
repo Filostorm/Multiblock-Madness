@@ -1,17 +1,61 @@
 {
 	"populate": {
 		"limestone": {
-
 			"distribution": "uniform",
 			"generator": {
 				"block": "quark:limestone",
 				"material": "minecraft:stone",
-				"cluster-size": 25
+				"cluster-size": 20
 			},
-			"cluster-count": 2,
+			"cluster-count": 3,
 			"min-height": 10,
 			"max-height": 50,
 			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					7
+				]
+			}
+		},
+		"quartz_vein_tf": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "mysticalworld:quartz_ore",
+						"weight": 30
+					},
+					{
+						"name": "appliedenergistics2:charged_quartz_ore",
+						"weight": 39
+					},
+					{
+						"name": "actuallyadditions:block_misc",
+						"properties": {
+							"type": "ore_black_quartz"
+						},
+						"weight": 20
+					},
+					{
+						"name": "ebwizardry:crystal_ore",
+						"weight": 10
+					},
+					{
+						"name": "rockhounding_chemistry:uninspected_mineral",
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 30
+			},
+			"cluster-count": 1, 
+			"chunk-chance": 2,
+			"min-height": 20,
+			"max-height": 70,
+			"retrogen": "false",
 			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",

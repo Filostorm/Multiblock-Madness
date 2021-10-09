@@ -138,9 +138,9 @@ recipes.addShapeless(<extendedcrafting:material> * 9, [<extendedcrafting:storage
 <extendedcrafting:storage:7>.displayName = "Twilight Block";
 EnderCrafting.remove(<extendedcrafting:material:48>);
 EnderCrafting.addShaped(<extendedcrafting:material:48>, 
-[[<twilightforest:carminite>, <embers:ingot_dawnstone>, <twilightforest:carminite>],
-[<extendedcrafting:material:36>, <extendedcrafting:material:40>, <extendedcrafting:material:36>], 
-[<twilightforest:carminite>, <embers:ingot_dawnstone>, <twilightforest:carminite>]]);  
+[[<twilightforest:carminite>, <contenttweaker:noon_ingot>, <twilightforest:carminite>],
+[<embers:ingot_dawnstone>, <extendedcrafting:material:40>, <extendedcrafting:material:36>], 
+[<twilightforest:carminite>, <extendedcrafting:material>, <twilightforest:carminite>]]);  
 
 //Endest Star
 <extendedcrafting:material:40>.displayName = "Endest Star";

@@ -354,10 +354,10 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:
 var steel = HighOven.newMixRecipe(<liquid:steel> * 144, <liquid:iron> * 144, 1350);
 //steel.addOxidizer(<minecraft:redstone>, 33);
 steel.addReducer(<thermalfoundation:material:771>, 33);
-steel.addReducer(<rockhounding_chemistry:chemical_items:2>, 33);
+steel.addReducer(<rockhounding_chemistry:chemical_items:2>, 80);
 steel.addPurifier(<ore:sand>, 100);
 steel.addPurifier(<contenttweaker:limestone_flux>, 33);
-steel.addPurifier(<rockhounding_chemistry:chemical_items:20>, 33);
+steel.addPurifier(<rockhounding_chemistry:chemical_items:20>, 80);
 steel.register();
 
 var pulsatingiron = HighOven.newMixRecipe(<liquid:pulsating_iron> * 144, <liquid:iron> * 144, 2300);
