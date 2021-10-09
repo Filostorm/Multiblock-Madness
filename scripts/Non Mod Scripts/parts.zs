@@ -1,6 +1,7 @@
 #priority 98
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.WeightedItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IIngredient;
@@ -113,9 +114,6 @@ Pressurizer.addRecipe(<actuallyadditions:item_crystal:2>, <moreplates:diamatine_
 //void metal
 MetalPress.addRecipe(<thaumcraft:plate:3>, <thaumcraft:ingot:1>, <immersiveengineering:mold>, 2000);
 Pressurizer.removeRecipeWithInput(<thaumcraft:ingot:1>);
-
-//Carbon Plate
-MetalPress.addRecipe(<techreborn:plates:2>, <thermalfoundation:storage_resource>, <immersiveengineering:mold>, 2000);
 
 //Iriduim Alloy Plate
 Compactor.removeStorageRecipe(<techreborn:ingot:22>);
@@ -396,9 +394,9 @@ val rollingMachinetwo =
 <techreborn:plates:31>,
 <thermalfoundation:material:324>,
 <moreplates:ironwood_plate>,
-<techreborn:plates:31>,
-<aetherworks:item_resource:3>,
-<thermalfoundation:material:324>,
+<techreborn:ingot:14>,
+<thermalfoundation:material:132>,
+<aetherworks:item_resource:4>,
 ]
  as IItemStack[];
 
@@ -520,8 +518,334 @@ SagMill.addRecipe([<quark:black_ash>*3], [1] , <minecraft:skull:1>, "MULTIPLY_OU
 //Thermal Ruby dust
 Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
 
+
+// --==Silicon Unification==-- //
+
+// Unifying all silicon variants
+furnace.remove(<libvulpes:productingot:3>);
+furnace.addRecipe(<nuclearcraft:gem:6>, <ore:dustSilicon>);
+
+mods.nuclearcraft.Manufactory.removeRecipeWithInput(<minecraft:sand>);
+mods.nuclearcraft.Manufactory.removeRecipeWithInput(<libvulpes:productingot:3>);
+mods.nuclearcraft.Manufactory.addRecipe(<minecraft:sand>, <nuclearcraft:gem:6>);
+
+mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(<libvulpes:productingot:3>);
+mods.nuclearcraft.IngotFormer.addRecipe(<liquid:silicon> * 144, <nuclearcraft:gem:6>);
+
+mods.immersiveengineering.ArcFurnace.removeRecipe(<libvulpes:productingot:3>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<nuclearcraft:gem:6>, <ore:dustSilicon>, null, 100, 512);
+
+mods.jei.JEI.removeAndHide(<libvulpes:productingot:3>);
+mods.jei.JEI.removeAndHide(<appliedenergistics2:material:5>);
+mods.jei.JEI.removeAndHide(<enderio:item_material:5>);
+
+furnace.remove(<appliedenergistics2:material:5>);
+furnace.addRecipe(<nuclearcraft:gem:6>, <nuclearcraft:gem_dust:2>);
+furnace.addRecipe(<nuclearcraft:gem:6>, <appliedenergistics2:material:2>);
+
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <techreborn:plates:11>);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <libvulpes:productdust:3>);
+
+mods.immersiveengineering.Crusher.removeRecipesForInput(<libvulpes:productingot:3>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<libvulpes:productingot:3>);
+mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productdust:3>, <nuclearcraft:gem:6>, 2000);
+
+// Silicon Plates
+mods.thermalexpansion.Compactor.removeStorageRecipe(<libvulpes:productingot:3>);
+mods.thermalexpansion.Compactor.addStorageRecipe(<techreborn:plates:11>, <nuclearcraft:gem:6>, 4000);
+
+mods.techreborn.blastFurnace.removeRecipe(<techreborn:plates:11>);
+
+mods.nuclearcraft.Pressurizer.removeRecipeWithOutput(<techreborn:plates:11>);
+mods.nuclearcraft.Pressurizer.addRecipe(<ore:itemSilicon>, <techreborn:plates:11>);
+
+MetalPress.removeRecipe(<techreborn:plates:11>);
+MetalPress.removeRecipe(<libvulpes:productplate:3>);
+MetalPress.addRecipe(<techreborn:plates:11>, <nuclearcraft:gem:6>, <immersiveengineering:mold>, 2000);
+
+// New Silicon Wafer Recipes
+mods.nuclearcraft.Manufactory.removeRecipeWithInput(<qmd:semiconductor:2>);
+mods.nuclearcraft.Manufactory.addRecipe(<ore:bouleSilicon>, <advancedrocketry:wafer>*4);
+
+mods.nuclearcraft.FissionIrradiator.removeRecipeWithInput(<qmd:semiconductor:3>);
+mods.nuclearcraft.FissionIrradiator.addRecipe(<ore:waferSilicon>, <qmd:semiconductor:1>, 120000, 0, 0, 0);
+
+mods.qmd.target_chamber.removeRecipeWithInput(<qmd:semiconductor:3>, ((<particle:boron_ion>*120000)^600)~2.0);
+mods.qmd.target_chamber.addRecipe(<ore:waferSilicon>, ((<particle:boron_ion>*120000)^600)~2.0, <qmd:semiconductor>, 
+null, null, null, 
+1000, 1.0, 0, 0);
+
+mods.jei.JEI.removeAndHide(<qmd:semiconductor:3>);
+
+mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(<qmd:semiconductor:2>);
+mods.nuclearcraft.Crystallizer.addRecipe(<liquid:silicon> * 576, <qmd:semiconductor:2>);
+
 // Removing old silicon wafer recipe
 mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:wafer>);
+
+// --=Cinnabar, Quicksilver & Mercury Unification ==-- //
+
+// Cinnabar //
+
+// Removing Small Cinnabar
+mods.jei.JEI.removeAndHide(<techreborn:smalldust:11>);
+recipes.remove(<techreborn:dust:11>);
+
+// Adding a temporary cinnabar dust to cinnabar recipe (can be removed when cinnabar ore has been changed to drop TE cinnabar)
+furnace.addRecipe(<thermalfoundation:material:866>, <techreborn:dust:11>);
+
+mods.thermalexpansion.RedstoneFurnace.removeRecipe(<techreborn:dust:11>);
+mods.thermalexpansion.RedstoneFurnace.addRecipe(<thermalfoundation:material:866>, <techreborn:dust:11>, 2000);
+
+// Removing cinnabar electrolysis (has inconsistent mercury ratios)
+mods.techreborn.industrialElectrolyzer.removeInputRecipe(<techreborn:dust:11>);
+
+// Adding TE cinnabar to quicksilver smelting
+furnace.addRecipe(<thaumcraft:quicksilver>, <thermalfoundation:material:866>);
+
+/* Quicksilver to Cinnabar pulverisation
+Crusher.addRecipe(<thermalfoundation:material:866>, <ore:quicksilver>, 2048);
+Manufactory.addRecipe(<ore:quicksilver>, <thermalfoundation:material:866>);
+Pulverizer.addRecipe(<thermalfoundation:material:866>, <thaumcraft:quicksilver>, 2000);
+mods.mekanism.crusher.addRecipe(<ore:quicksilver>, <thermalfoundation:material:866>);
+SagMill.addRecipe([<thermalfoundation:material:866>], [1] , <ore:quicksilver>, "NONE");
+*/
+
+// Quicksilver/Mercury //
+
+// 1 Quicksilver ⇌ 144mb Mercury
+mods.thermalexpansion.Crucible.addRecipe(<liquid:mercury> * 144, <thaumcraft:quicksilver>, 4000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:mercury> * 144, <thermalfoundation:material:866>, 4000);
+
+mods.nuclearcraft.Melter.removeRecipeWithInput(<qmd:ingot2:2>);
+
+mods.nuclearcraft.Melter.addRecipe(<thaumcraft:quicksilver>, <liquid:mercury> * 144);
+mods.nuclearcraft.Melter.addRecipe(<ore:dustCinnabar>, <liquid:mercury> * 144);
+
+mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(<qmd:ingot2:2>);
+mods.nuclearcraft.IngotFormer.addRecipe(<liquid:mercury> * 144, <thaumcraft:quicksilver>);
+
+// Replacing Mercury with Quicksilver //
+
+// New Ore Leacher Recipes
+mods.qmd.ore_leacher.removeRecipeWithOutput(<minecraft:redstone> * 12, <qmd:ingot2:2> * 3, null);
+mods.qmd.ore_leacher.removeRecipeWithOutput(<qmd:ingot2:2>, <thermalfoundation:material:771>, null);
+
+mods.qmd.ore_leacher.addRecipe(<ore:oreRedstone>, <liquid:nitric_acid>*16, <liquid:hydrochloric_acid>*16, <liquid:sulfuric_acid>*16, <minecraft:redstone>*12, <thaumcraft:quicksilver>*3, null, 1.0, 1.0, 0);
+mods.qmd.ore_leacher.addRecipe(<ore:dustRedstone>, <liquid:nitric_acid>*16, <liquid:hydrochloric_acid>*16, <liquid:sulfuric_acid>*16, 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 50, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:771>, 50, 0), 
+null, 1.0, 1.0, 0.001);
+
+// New Fuel Reprocessor Recipes
+val fuelstorewrite =
+[
+<qmd:waste_spallation:1>,
+<qmd:waste_spallation:2>,
+<qmd:waste_spallation:3>,
+<qmd:waste_spallation:4>,
+<qmd:waste_spallation:5>,
+<qmd:waste_spallation:6>,
+<qmd:waste_spallation:8>,
+<qmd:waste_spallation:7>,
+<qmd:waste_spallation:9>
+]
+ as IItemStack[];
+
+for item in fuelstorewrite {
+	mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(item);
+}
+
+mods.nuclearcraft.FuelReprocessor.addRecipe(<qmd:waste_spallation:1>, 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:1>, 9, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:2>, 15, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<rockhounding_chemistry:chemical_dusts:20>, 40, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:67>, 35, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 1, 0), 
+null, 
+null, 
+null);
+
+mods.nuclearcraft.FuelReprocessor.addRecipe(<qmd:waste_spallation:2>, 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:1>, 13, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:2>, 17, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<rockhounding_chemistry:chemical_dusts:20>, 16, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:67>, 50, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 4, 0), 
+null, 
+null, 
+null);
+
+mods.nuclearcraft.FuelReprocessor.addRecipe(<qmd:waste_spallation:3>, 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:2>, 22, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<rockhounding_chemistry:chemical_dusts:20>, 15, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:67>, 55, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 5, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:1>, 1, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:70>, 2, 0), 
+null, 
+null);
+
+mods.nuclearcraft.FuelReprocessor.addRecipe(<qmd:waste_spallation:4>, 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:2>, 22, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<rockhounding_chemistry:chemical_dusts:20>, 14, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:67>, 55, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 5, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:1>, 1, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:70>, 3, 0), 
+null, 
+null);
+
+mods.nuclearcraft.FuelReprocessor.addRecipe(<qmd:waste_spallation:5>, 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:2>, 36, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<rockhounding_chemistry:chemical_dusts:20>, 17, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:67>, 34, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 7, 0),
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:1>, 2, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:70>, 4, 0), 
+null, 
+null);
+
+mods.nuclearcraft.FuelReprocessor.addRecipe(<qmd:waste_spallation:6>, 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:2>, 21, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<rockhounding_chemistry:chemical_dusts:20>, 12, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:67>, 55, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 7, 0),
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:1>, 1, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:70>, 4, 0), 
+null, 
+null);
+
+mods.nuclearcraft.FuelReprocessor.addRecipe(<qmd:waste_spallation:8>, 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:2>, 10, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<rockhounding_chemistry:chemical_dusts:20>, 7, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:67>, 62, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 11, 0),
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:1>, 2, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:70>, 8, 0), 
+null, 
+null);
+
+mods.nuclearcraft.FuelReprocessor.addRecipe(<qmd:waste_spallation:7>, 
+mods.nuclearcraft.ChanceItemIngredient.create(<nuclearcraft:fission_dust:2>, 36, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<rockhounding_chemistry:chemical_dusts:20>, 6, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:67>, 39, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 10, 0),
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:1>, 2, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:70>, 7, 0), 
+null, 
+null);
+
+mods.nuclearcraft.FuelReprocessor.addRecipe(<qmd:waste_spallation:9>, 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:67>, 58, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thaumcraft:quicksilver>, 18, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:1>, 3, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:70>, 10, 0),
+mods.nuclearcraft.ChanceItemIngredient.create(<thermalfoundation:material:71>, 6, 0), 
+mods.nuclearcraft.ChanceItemIngredient.create(<mekanism:dust:2>, 5, 0), 
+null, 
+null);
+
+// New Target Chamber Recipes
+mods.qmd.target_chamber.removeRecipeWithInput(<qmd:ingot2:2>, (<particle:proton>*487000)^200000);
+mods.qmd.target_chamber.removeRecipeWithInput(<qmd:ingot2:2>, (<particle:proton>*480000)^6580000);
+mods.qmd.target_chamber.removeRecipeWithInput(<qmd:ingot2:2>, (<particle:proton>*480000)^1540000);
+mods.qmd.target_chamber.removeRecipeWithInput(<qmd:ingot2:2>, <particle:antiproton>*240000);
+mods.qmd.target_chamber.removeRecipeWithInput(<qmd:ingot2:2>, (<particle:deuteron>*960000)^13100000);
+mods.qmd.target_chamber.removeRecipeWithInput(<qmd:ingot2:2>, <particle:antideuteron>*240000);
+
+mods.qmd.target_chamber.addRecipe(<thaumcraft:quicksilver>, (<particle:proton>*487000)^200000, <qmd:waste_fission>, 
+null, <particle:neutron>, null, 
+1000000, 0.01, 0, 0);
+
+mods.qmd.target_chamber.addRecipe(<thaumcraft:quicksilver>, (<particle:proton>*480000)^6580000, <qmd:waste_spallation2:3>, 
+<particle:proton>, null, <particle:antiproton>, 
+20000000, 0.1, -6580000, 0);
+
+mods.qmd.target_chamber.addRecipe(<thaumcraft:quicksilver>, (<particle:proton>*480000)^1540000, <qmd:waste_spallation2:3>, 
+<particle:pion_plus>, null, <particle:pion_minus>, 
+5000000, 0.2, -1540000, 0);
+
+mods.qmd.target_chamber.addRecipe(<thaumcraft:quicksilver>, <particle:antiproton>*240000, <qmd:waste_spallation2:3>, 
+<particle:pion_plus>, <particle:pion_naught>, <particle:pion_minus>, 
+10000000, 1.0, 1460000, 0);
+
+mods.qmd.target_chamber.addRecipe(<thaumcraft:quicksilver>, (<particle:deuteron>*960000)^13100000, <qmd:waste_spallation2:3>, 
+<particle:deuteron>, null, <particle:antideuteron>, 
+20000000, 0.05, -13100000, 0);
+
+mods.qmd.target_chamber.addRecipe(<thaumcraft:quicksilver>, <particle:antideuteron>*240000, <qmd:waste_spallation2:3>, 
+<particle:pion_plus>*4, <particle:pion_naught>*4, <particle:pion_minus>*4, 
+10000000, 1.0, 2090000, 0);
+
+// New Industrial Grinder Mercury Recipes
+val mercuryorestorewrite =
+[
+<minecraft:gold_ore>,
+<minecraft:diamond_ore>,
+<minecraft:emerald_ore>,
+<thermalfoundation:ore>,
+<techreborn:ore>,
+<techreborn:ore:9>,
+<thermalfoundation:ore:5>,
+<minecraft:netherrack>,
+<contenttweaker:sub_block_holder_0:8>,
+<astralsorcery:blockcustomore:1>,
+<nuclearcraft:ore:5>,
+<nuclearcraft:ore:6>,
+<nuclearcraft:ore:7>,
+<contenttweaker:sub_block_holder_0:7>,
+<contenttweaker:sub_block_holder_0:3>,
+<thermalfoundation:ore:6>
+]
+ as IItemStack[];
+
+for item in mercuryorestorewrite {
+	mods.techreborn.industrialGrinder.removeInputRecipe(item);
+}
+
+mods.techreborn.industrialGrinder.addRecipe(<thermalfoundation:material:1>*3, <techreborn:smalldust:14>, <techreborn:smalldust:34>, null, <ore:oreGold>, null, <liquid:mercury>*288, 100, 128);
+mods.techreborn.industrialGrinder.addRecipe(<minecraft:diamond>*2, <techreborn:smalldust:16>*3, null, null, <ore:oreDiamond>, null, <liquid:mercury>*288, 100, 64);
+mods.techreborn.industrialGrinder.addRecipe(<minecraft:emerald>*2, <techreborn:smalldust:18>*3, null, null, <ore:oreEmerald>, null, <liquid:mercury>*288, 100, 64);
+mods.techreborn.industrialGrinder.addRecipe(<thermalfoundation:material:64>*3, <thermalfoundation:material:1>, null, null, <ore:oreCopper>, null, <liquid:mercury>*288, 100, 64);
+mods.techreborn.industrialGrinder.addRecipe(<techreborn:dust:23>*2, <thermalfoundation:material:771>, <thermalfoundation:material:66>, null, <ore:oreGalena>, null, <liquid:mercury>*288, 100, 64);
+mods.techreborn.industrialGrinder.addRecipe(<thermalfoundation:material:70>*3, <thermalfoundation:material:69>, <techreborn:smalldust:66>, null, <ore:oreSheldonite>, null, <liquid:mercury>*288, 100, 64);
+mods.techreborn.industrialGrinder.addRecipe(<thermalfoundation:material:69>*3, <techreborn:smalldust:27>, <thermalfoundation:material:70>, null, <ore:oreNickel>, null, <liquid:mercury>*288, 100, 64);
+mods.techreborn.industrialGrinder.addRecipe(<techreborn:dust:33>*8, <minecraft:gold_nugget>, null, null, <minecraft:netherrack>*8, null, <liquid:mercury>*288, 800, 64);
+mods.techreborn.industrialGrinder.addRecipe(<contenttweaker:material_part:15>*3, null, null, null, <ore:oreAdamantine>, null, <liquid:mercury>*288, 100, 128);
+mods.techreborn.industrialGrinder.addRecipe(<astralsorcery:itemcraftingcomponent:2>*3, null, null, null, <ore:oreAstralStarmetal>, null, <liquid:mercury>*288, 100, 128);
+mods.techreborn.industrialGrinder.addRecipe(<rockhounding_chemistry:chemical_dusts:21>*3, null, null, null, <ore:oreBoron>, null, <liquid:mercury>*288, 100, 128);
+mods.techreborn.industrialGrinder.addRecipe(<mekanism:otherdust:4>*3, null, null, null, <ore:oreLithium>, null, <liquid:mercury>*288, 100, 128);
+mods.techreborn.industrialGrinder.addRecipe(<techreborn:dust:30>*3, null, null, null, <ore:oreMagnesium>, null, <liquid:mercury>*288, 100, 128);
+mods.techreborn.industrialGrinder.addRecipe(<contenttweaker:material_part:25>*3, null, null, null, <ore:oreOrichalcum>, null, <liquid:mercury>*288, 100, 128);
+mods.techreborn.industrialGrinder.addRecipe(<contenttweaker:material_part:35>*3, null, null, null, <ore:orePalladium>, null, <liquid:mercury>*288, 100, 128);
+mods.techreborn.industrialGrinder.addRecipe(<thermalfoundation:material:70>*3, <thermalfoundation:material:71>, null, null, <ore:orePlatinum>, null, <liquid:mercury>*288, 100, 128);
+
+mods.jei.JEI.removeAndHide(<qmd:ingot2:2>);
+
+// Removing RH:C Graphite Compound
+mods.jei.JEI.removeAndHide(<rockhounding_chemistry:chemical_items:8>);
+furnace.remove(<rockhounding_chemistry:metal_items:7>, <rockhounding_chemistry:chemical_items:8>);
+
+
+// Carbon Bricks
+MetalPress.addRecipe(<advancedrocketry:misc:1>, <minecraft:coal_block>, <immersiveengineering:mold>, 2000);
+MetalPress.addRecipe(<advancedrocketry:misc:1>, <thermalfoundation:storage_resource>, <immersiveengineering:mold>, 2000);
+MetalPress.addRecipe(<advancedrocketry:misc:1>*3, <ore:blockFuelCoke>, <immersiveengineering:mold>, 2000);
+
+Compactor.addStorageRecipe(<advancedrocketry:misc:1>, <minecraft:coal_block>, 4000);
+Compactor.addStorageRecipe(<advancedrocketry:misc:1>, <thermalfoundation:storage_resource>, 4000);
+Compactor.addStorageRecipe(<advancedrocketry:misc:1>*3, <thermalfoundation:storage_resource:1>, 4000);
+Compactor.addStorageRecipe(<advancedrocketry:misc:1>*3, <immersiveengineering:stone_decoration:3>, 4000);
+
+Pressurizer.addRecipe(<minecraft:coal_block>, <advancedrocketry:misc:1>);
+Pressurizer.addRecipe(<thermalfoundation:storage_resource>, <advancedrocketry:misc:1>);
+Pressurizer.addRecipe(<ore:blockFuelCoke>, <advancedrocketry:misc:1>*3);
+
+mods.nuclearcraft.Pressurizer.removeRecipeWithInput(<techreborn:part:34>);
+
+// Smelting recipe for Carbon Bricks
+furnace.addRecipe(<advancedrocketry:misc:1>, <ore:dustCarbon>);
 
 ##########################################################################################
 print("==================== end of parts.zs ====================");
