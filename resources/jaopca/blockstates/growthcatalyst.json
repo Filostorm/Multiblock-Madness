@@ -2,8 +2,9 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "layer0": "jaopca:blocks/growthcatalyst",
-      "particle": "jaopca:blocks/growthcatalyst"
+      "core": "jaopca:blocks/growthcatalyst_core",
+      "frame": "jaopca:blocks/growthcatalyst_frame",
+      "particle": "jaopca:blocks/growthcatalyst_frame"
     },
     "model": "jaopca:growthcatalyst",
     "uvlock": true,

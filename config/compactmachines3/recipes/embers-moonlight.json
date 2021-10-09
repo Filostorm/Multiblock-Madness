@@ -1,0 +1,336 @@
+{
+  "name": "cm3embers:moonstuff",
+
+  "disabled": false,
+
+  "target-item": "aetherworks:prism",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "contenttweaker:purpleprint",
+  "catalyst-meta": 0,
+ 
+  "input-types": {
+    "a": {
+      "id": "aetherworks:moonlight_amplifier",
+      "meta": 3,
+      "item": {
+        "id": "aetherworks:moonlight_amplifier",
+        "count": 1
+      }
+    },
+    "b": {
+      "id": "embers:archaic_edge",
+      "meta": 0
+    },
+    "c": {
+      "id": "embers:archaic_bricks",
+      "meta": 0
+    },
+    "d": {
+      "id": "aetherworks:aether_prism_controller_matrix",
+      "meta": 0
+    },
+    "e": {
+      "id": "aetherworks:moonlight_amplifier",
+      "meta": 1,
+      "item": {
+        "id": "aetherworks:moonlight_amplifier",
+        "count": 1
+      }
+    },
+    "f": {
+      "id": "aetherworks:prism",
+      "meta": 0
+    },
+    "g": {
+      "id": "aetherworks:moonlight_amplifier",
+      "meta": 0,
+      "item": {
+        "id": "aetherworks:moonlight_amplifier",
+        "count": 1
+      }
+    },
+    "h": {
+      "id": "aetherworks:prism_support",
+      "meta": 0
+    },
+    "i": {
+      "id": "embers:block_tank",
+      "meta": 0
+    },
+    "j": {
+      "id": "aetherworks:moonlight_amplifier",
+      "meta": 2,
+      "item": {
+        "id": "aetherworks:moonlight_amplifier",
+        "count": 1
+      }
+    }
+  },
+  "shape": [
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "e",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "a",
+        "_",
+        "_",
+        "f",
+        "_",
+        "_",
+        "j"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "g",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "b",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "_",
+        "_",
+        "_",
+        "d",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "b",
+        "_",
+        "_",
+        "h",
+        "_",
+        "_",
+        "b"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "d",
+        "_",
+        "_",
+        "_",
+        "d",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "b",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "c",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "b",
+        "_",
+        "_",
+        "_",
+        "b",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "c",
+        "_",
+        "_",
+        "h",
+        "_",
+        "_",
+        "c"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "b",
+        "_",
+        "_",
+        "_",
+        "b",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "c",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "c",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "_",
+        "_",
+        "_",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "c",
+        "_",
+        "_",
+        "i",
+        "_",
+        "_",
+        "c"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "c",
+        "_",
+        "_",
+        "_",
+        "c",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "c",
+        "_",
+        "_",
+        "_"
+      ]
+    ]
+  ]
+
+}

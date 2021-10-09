@@ -103,7 +103,7 @@ ArcaneWorkbench.registerShapedRecipe("CTThaumometer", "", 20,
 
 ArcaneWorkbench.registerShapedRecipe("VisMeal", "", 25,
     [],
-    <contenttweaker:vis_meal>*2, 
+    <contenttweaker:vis_meal>*3, 
     [[<ore:gravel>, <ore:gravel>, <ore:gravel>], 
 	[<ore:dustBedrock>, <thaumcraft:salis_mundus>, <botania:fertilizer>], 
 	[<ore:gravel>, <ore:gravel>, <ore:gravel>]]

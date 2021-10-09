@@ -161,7 +161,7 @@ Crystallizer.addRecipe(<astralsorcery:itemcelestialcrystal>, 1200, 5000, <astral
 
 
 //Stable Celestial Crystal
-Crystallizer.addRecipe(<contenttweaker:stable_celestial_crystal>, 1200, 5000, <astralsorcery:itemrockcrystalsimple>, <astralsorcery:itemcraftingcomponent:2>, <botania:manaresource:23>); 
+Crystallizer.addRecipe(<contenttweaker:stable_celestial_crystal>, 1200, 5000, <astralsorcery:itemrockcrystalsimple>, <appliedenergistics2:material:45>); 
 Lightwell.addLiquefaction(<contenttweaker:stable_celestial_crystal>, <liquid:astralsorcery.liquidstarlight>, 2, 0.6, 0x6603fc);
 
 ##########################################################################################

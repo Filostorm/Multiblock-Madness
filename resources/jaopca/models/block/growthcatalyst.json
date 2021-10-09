@@ -1,17 +1,191 @@
 {
-	"parent": "block/block",
-	"elements": [
-		{
-			"from": [ 0, 0, 0 ],
-			"to": [ 16, 16, 16 ],
-			"faces": {
-				"down":  { "texture": "#layer0", "tintindex": 0, "cullface": "down" },
-				"up":    { "texture": "#layer0", "tintindex": 0, "cullface": "up" },
-				"north": { "texture": "#layer0", "tintindex": 0, "cullface": "north" },
-				"south": { "texture": "#layer0", "tintindex": 0, "cullface": "south" },
-				"west":  { "texture": "#layer0", "tintindex": 0, "cullface": "west" },
-				"east":  { "texture": "#layer0", "tintindex": 0, "cullface": "east" }
-			}
-		}
-	]
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 4, 4, 4 ], 
+            "to": [ 12, 12, 12 ], 
+            "rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45.0 },
+            "faces": {
+                "north": { "texture": "#core", "uv": [ 0, 0, 8, 8 ] },
+                "east": { "texture": "#core", "uv": [ 0, 0, 8, 8 ] },
+                "south": { "texture": "#core", "uv": [ 0, 0, 8, 8 ] },
+                "west": { "texture": "#core", "uv": [ 0, 0, 8, 8 ] },
+                "up": { "texture": "#core", "uv": [ 0, 0, 8, 8 ] },
+                "down": { "texture": "#core", "uv": [ 0, 0, 8, 8 ] }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 14, 0, 0 ], 
+            "to": [ 16, 16, 2 ], 
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 0, 0, 2, 16 ], "tintindex": 0  },
+                "east": { "texture": "#frame", "uv": [ 14, 0, 16, 16 ], "tintindex": 0 },
+                "south": { "texture": "#frame", "uv": [ 0, 0, 2, 16 ], "tintindex": 0  },
+                "west": { "texture": "#frame", "uv": [ 14, 0, 16, 16 ], "tintindex": 0 },
+                "up": { "texture": "#frame", "uv": [ 14, 0, 16, 2 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 14, 14, 16, 16 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 14, 0, 14 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 14, 0, 16, 16 ], "tintindex": 0  },
+                "east": { "texture": "#frame", "uv": [ 0, 0, 2, 16 ], "tintindex": 0 },
+                "south": { "texture": "#frame", "uv": [ 14, 0, 16, 16 ], "tintindex": 0  },
+                "west": { "texture": "#frame", "uv": [ 0, 0, 2, 16 ], "tintindex": 0 },
+                "up": { "texture": "#frame", "uv": [ 14, 14, 16, 16 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 14, 14, 16, 16 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 0, 0, 14 ], 
+            "to": [ 2, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 0, 0, 2, 16 ], "tintindex": 0  },
+                "east": { "texture": "#frame", "uv": [ 14, 0, 16, 16 ], "tintindex": 0 },
+                "south": { "texture": "#frame", "uv": [ 0, 0, 2, 16 ], "tintindex": 0  },
+                "west": { "texture": "#frame", "uv": [ 14, 0, 16, 16 ], "tintindex": 0 },
+                "up": { "texture": "#frame", "uv": [ 0, 14, 2, 16 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 0, 0, 2, 2 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 2, 16, 2 ], 
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 14, 0, 16, 16 ], "tintindex": 0  },
+                "east": { "texture": "#frame", "uv": [ 0, 0, 2, 16 ], "tintindex": 0 },
+                "south": { "texture": "#frame", "uv": [ 14, 0, 16, 16 ], "tintindex": 0  },
+                "west": { "texture": "#frame", "uv": [ 0, 0, 2, 16 ], "tintindex": 0 },
+                "up": { "texture": "#frame", "uv": [ 0, 0, 2, 2 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 0, 14, 2, 16 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 2, 0, 14 ], 
+            "to": [ 14, 2, 16 ], 
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0  },
+                "south": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0  },
+                "up": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 2, 14, 14 ], 
+            "to": [ 14, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0  },
+                "south": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0  },
+                "up": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 2, 14, 0 ], 
+            "to": [ 14, 16, 2 ], 
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0  },
+                "south": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0  },
+                "up": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 2, 0, 0 ], 
+            "to": [ 14, 2, 2 ], 
+            "faces": {
+                "north": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0  },
+                "south": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0  },
+                "up": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 0, 0, 2 ], 
+            "to": [ 2, 2, 14 ], 
+            "faces": {
+                "east": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0 },
+                "west": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0 },
+                "up": { "texture": "#frame", "uv": [ 14, 2, 16, 14 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 0, 2, 2, 14 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 0, 14, 2 ], 
+            "to": [ 2, 16, 14 ], 
+            "faces": {
+                "east": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0 },
+                "west": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0 },
+                "up": { "texture": "#frame", "uv": [ 0, 2, 2, 14 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 14, 2, 16, 14 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 14, 14, 2 ], 
+            "to": [ 16, 16, 14 ], 
+            "faces": {
+                "east": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0 },
+                "west": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0 },
+                "up": { "texture": "#frame", "uv": [ 14, 2, 16, 14 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 0, 2, 2, 14 ], "tintindex": 0 }
+            }
+        },
+        {
+            "name": "Pillar",
+            "from": [ 14, 0, 2 ], 
+            "to": [ 16, 2, 14 ], 
+            "faces": {
+                "east": { "texture": "#frame", "uv": [ 2, 14, 14, 16 ], "tintindex": 0 },
+                "west": { "texture": "#frame", "uv": [ 2, 0, 14, 2 ], "tintindex": 0 },
+                "up": { "texture": "#frame", "uv": [ 14, 2, 16, 14 ], "tintindex": 0 },
+                "down": { "texture": "#frame", "uv": [ 14, 2, 16, 14 ], "tintindex": 0 }
+            }
+        }
+    ]
 }

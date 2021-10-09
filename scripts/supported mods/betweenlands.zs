@@ -32,6 +32,7 @@ import mods.techreborn.rollingMachine;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Pulverizer;
+import mods.rockhounding_chemistry.MaterialCabinet;
 
 print("==================== loading mods betweenlands.zs ====================");
 ##########################################################################################
@@ -225,5 +226,9 @@ recipes.addShaped(<jaopca:block_scaffoldingsyrmorite> * 6, [[<thebetweenlands:it
 Lathe.addRecipe(<jaopca:item_sticksyrmorite>*4, 60, 2000, <thebetweenlands:items_misc:11>);
 
 Melting.addRecipe(<liquid:stone> * 288, <thebetweenlands:cragrock>);
+
+MaterialCabinet.add("Sy", "dustSyrmorite", "Syrmorite");
+MaterialCabinet.add("Oc", "dustOctine", "Octine");
+
 ##########################################################################################
 print("==================== end of mods betweenlands.zs ====================");

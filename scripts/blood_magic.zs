@@ -47,8 +47,9 @@ for item in itemstoRemove {
 //mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
 //mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:limestoneforFlux>, <bloodmagic:cutting_fluid:1>], 200,200,1);
 
-<thaumadditions:mithrillium_resonator>.addTooltip(format.gold("Can be used as a catalyst in the Mark of the Falling Tower ritual"));
-<thaumadditions:mithrillium_resonator>.addTooltip(format.darkRed("Requires 5,000,000 LP in your Blood Orb"));
+//<thaumadditions:mithrillium_resonator>
+<botania:conjurationcatalyst>.addTooltip(format.gold("Can be used as a catalyst in the Mark of the Falling Tower ritual"));
+<botania:conjurationcatalyst>.addTooltip(format.darkRed("Requires 5,000,000 LP in your Blood Orb"));
 
 <contenttweaker:starmetal_block>.addTooltip(format.gold("Can be used as a catalyst in the Mark of the Falling Tower ritual"));
 <contenttweaker:starmetal_block>.addTooltip(format.darkRed("Requires 1,000,000 LP in your Blood Orb"));
@@ -165,7 +166,7 @@ mods.thaumcraft.Crucible.registerRecipe("sacrificial_dagger", "",
 
 //Zombie Head
 //mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
-mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:skull:2>, [<thaumcraft:brain>, <thaumcraft:flesh_block>], 500,200,1);
+AlchemyTable.addRecipe(<minecraft:skull:2>, [<thaumcraft:brain>, <thaumcraft:flesh_block>], 500,200,1);
 
 //Binding Reagent
 TartaricForge.removeRecipe([<minecraft:gunpowder>, <minecraft:redstone>, <minecraft:glowstone_dust>, <minecraft:gold_nugget>]);
@@ -250,7 +251,7 @@ Altar.addTraitAltarRecipe("mm:shaped/internal/altar/demon_crucible", <bloodmagic
 recipes.addShaped(<bloodmagic:upgrade_tome>.withTag({level: 0, key: "bloodmagic.upgrade.slippery"}), [[null, <minecraft:ice>, null],[<minecraft:ice>, <bloodmagic:upgrade_tome>.withTag({level: 9, key: "bloodmagic.upgrade.slowness"}).onlyWithTag({level: 9, key: "bloodmagic.upgrade.slowness"}), <minecraft:ice>], [null, <minecraft:ice>, null]]);
 
 //Blank Runes
-Squeezer.addRecipe(<bloodmagic:blood_rune>, <liquid:stone>*1000, <contenttweaker:slatedust> * 4, 256);
+Squeezer.addRecipe(<bloodmagic:blood_rune>, <liquid:stone>*288, <contenttweaker:slatedust> * 4, 256);
 
 compressor.addRecipe(<bloodmagic:blood_rune>, <contenttweaker:slatedust>*4, 600, 50);
 Pressurizer.addRecipe(<contenttweaker:slatedust>*4, <bloodmagic:blood_rune>);

@@ -435,22 +435,18 @@
 				"block": [
 					{
 						"name": "mysticalworld:quartz_ore",
-						"weight": 40
+						"weight": 60
 					},
 					{
 						"name": "appliedenergistics2:quartz_ore",
-						"weight": 40
-					},
-					{
-						"name": "appliedenergistics2:charged_quartz_ore",
-						"weight": 4
+						"weight": 30
 					},
 					{
 						"name": "actuallyadditions:block_misc",
 						"properties": {
 							"type": "ore_black_quartz"
 						},
-						"weight": 10
+						"weight": 4
 					},
 					{
 						"name": "ebwizardry:crystal_ore",
@@ -462,7 +458,7 @@
 					}
 				],
 				"material": "minecraft:stone",
-				"cluster-size": 35
+				"cluster-size": 25
 			},
 			"cluster-count": 1, 
 			"chunk-chance": 2,
@@ -476,7 +472,8 @@
 					-1,
 					1,
                 10,
-				3
+				3,
+				7
 				]
 			}
 		},

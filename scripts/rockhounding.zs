@@ -254,8 +254,6 @@ mods.rockhounding_chemistry.ChemicalExtractor.add("Rare Earth", <thaumcraft:nugg
 //symbol: a 2 chars symbol appearing on screen
 //oredict: the element oredict to be added
 //name: the display name of the added element
-MaterialCabinet.add("Sy", "dustSyrmorite", "Syrmorite");
-MaterialCabinet.add("Oc", "dustOctine", "Octine");
 
 MaterialCabinet.add("Ar", "dustArdite", "Ardite");
 MaterialCabinet.add("Gl", "dustGlowstone", "Glowstone");
@@ -263,7 +261,7 @@ MaterialCabinet.add("Bz", "dustBlaze", "Blaze Powder");
 
 MaterialCabinet.add("Ad", "dustAdamantine", "Adamantine");
 MaterialCabinet.add("Or", "dustOrichalcum", "Orichalcum");
-MaterialCabinet.add("Pl", "dustPalladium", "Palladium");
+MaterialCabinet.add("Pd", "dustPalladium", "Palladium");
 MaterialCabinet.add("St", "dustAstralStarmetal", "Starmetal");
 
 MaterialCabinet.add("Hf", "dustHafnium", "Hafnium");

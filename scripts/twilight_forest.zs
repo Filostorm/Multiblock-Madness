@@ -143,12 +143,15 @@ boreset.removeOutput(IItemStack <output>)
 Clears all outputs for this set
 boreset.clear()
 */
-//Firy Stuff so arc furnace isn't a bad boy
+//Fiery Stuff so arc furnace isn't a bad boy
 recipes.addShaped(<twilightforest:fiery_leggings>, [[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>],[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>], [<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>]]);
 recipes.addShaped(<twilightforest:fiery_helmet>, [[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>],[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>]]);
 recipes.addShaped(<twilightforest:fiery_boots>, [[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>],[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>]]);
 recipes.addShaped(<twilightforest:fiery_chestplate>, [[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>],[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>], [<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>]]);
 recipes.addShaped(<twilightforest:fiery_pickaxe>, [[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>],[null, <minecraft:blaze_rod>, null], [null, <minecraft:blaze_rod>, null]]);
+
+//transformation_powder
+recipes.addShapeless(<twilightforest:transformation_powder>, [<deepmoblearning:living_matter_twilight>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
 
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");
