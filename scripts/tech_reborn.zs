@@ -71,6 +71,19 @@ val itemstoHide =
 <techreborn:distillation_tower>,
 <techreborn:plate_bending_machine>,
 <jaopca:item_stickrefinediron>,
+<techreborn:gas_turbine>,
+<techreborn:magic_energy_absorber>,
+<techreborn:magic_energy_converter>,
+<techreborn:part:21>,
+<techreborn:part:22>,
+<techreborn:part:23>,
+<techreborn:depletedsinglethoriumfuelrod>,
+<techreborn:depleteddualthoriumfuelrod>,
+<techreborn:depletedquadthoriumfuelrod>,
+<techreborn:singlethoriumfuelrod>,
+<techreborn:dualthoriumfuelrod>,
+<techreborn:quadthoriumfuelrod>,
+<techreborn:solid_canning_machine>
 ]
  as IItemStack[];
 
