@@ -779,31 +779,6 @@ mods.qmd.target_chamber.addRecipe(<thaumcraft:quicksilver>, <particle:antideuter
 10000000, 1.0, 2090000, 0);
 
 // New Industrial Grinder Mercury Recipes
-val mercuryorestorewrite =
-[
-<minecraft:gold_ore>,
-<minecraft:diamond_ore>,
-<minecraft:emerald_ore>,
-<thermalfoundation:ore>,
-<techreborn:ore>,
-<techreborn:ore:9>,
-<thermalfoundation:ore:5>,
-<minecraft:netherrack>,
-<contenttweaker:sub_block_holder_0:8>,
-<astralsorcery:blockcustomore:1>,
-<nuclearcraft:ore:5>,
-<nuclearcraft:ore:6>,
-<nuclearcraft:ore:7>,
-<contenttweaker:sub_block_holder_0:7>,
-<contenttweaker:sub_block_holder_0:3>,
-<thermalfoundation:ore:6>
-]
- as IItemStack[];
-
-for item in mercuryorestorewrite {
-	mods.techreborn.industrialGrinder.removeInputRecipe(item);
-}
-
 mods.techreborn.industrialGrinder.addRecipe(<thermalfoundation:material:1>*3, <techreborn:smalldust:14>, <techreborn:smalldust:34>, null, <ore:oreGold>, null, <liquid:mercury>*288, 100, 128);
 mods.techreborn.industrialGrinder.addRecipe(<minecraft:diamond>*2, <techreborn:smalldust:16>*3, null, null, <ore:oreDiamond>, null, <liquid:mercury>*288, 100, 64);
 mods.techreborn.industrialGrinder.addRecipe(<minecraft:emerald>*2, <techreborn:smalldust:18>*3, null, null, <ore:oreEmerald>, null, <liquid:mercury>*288, 100, 64);
