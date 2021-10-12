@@ -835,7 +835,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<itemStack>techreborn:part;9;34</itemStack>
+			<itemStack>advancedrocketry:misc;9;1</itemStack>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -885,15 +885,6 @@
 		</input>
 		<output>
 			<itemStack>contenttweaker:material_part;9;12</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="30" power ="15000">
-		<input>
-			<oreDict>ingotAdvancedAlloy,9</oreDict>
-			<fluidStack>lubricant;5</fluidStack>
-		</input>
-		<output>
-			<itemStack>techreborn:plates;9;36</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
@@ -1176,6 +1167,33 @@
 		</input>
 		<output>
 			<itemStack>jaopca:item_platedensetungstencarbide</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>blockCoal;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:misc;9;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>blockCharcoal;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:misc;9;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
+			<oreDict>blockFuelCoke;9</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:misc;27;1</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

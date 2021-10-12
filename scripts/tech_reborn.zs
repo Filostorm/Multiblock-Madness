@@ -71,6 +71,21 @@ val itemstoHide =
 <techreborn:distillation_tower>,
 <techreborn:plate_bending_machine>,
 <jaopca:item_stickrefinediron>,
+<techreborn:gas_turbine>,
+<techreborn:magic_energy_absorber>,
+<techreborn:magic_energy_converter>,
+<techreborn:part:21>,
+<techreborn:part:22>,
+<techreborn:part:23>,
+<techreborn:depletedsinglethoriumfuelrod>,
+<techreborn:depleteddualthoriumfuelrod>,
+<techreborn:depletedquadthoriumfuelrod>,
+<techreborn:singlethoriumfuelrod>,
+<techreborn:dualthoriumfuelrod>,
+<techreborn:quadthoriumfuelrod>,
+<techreborn:solid_canning_machine>,
+<techreborn:part:34>,
+<techreborn:plates:11>,
 ]
  as IItemStack[];
 
@@ -241,7 +256,7 @@ Centrifuge.addRecipe([<techreborn:part:31> % 50, <rockhounding_chemistry:chemica
 Centrifuge.addRecipe([<techreborn:dust:28> % 75, <techreborn:smalldust:48> % 50, <techreborn:smalldust:39> % 25, <techreborn:smalldust:8> % 25], <actuallyadditions:item_dust:4>, null, 10000);
 
 //Redstone
-Centrifuge.addRecipe([<libvulpes:productdust:3> % 10, <techreborn:dust:43> % 30, <techreborn:dust:39> % 50], <minecraft:redstone>, <liquid:fluidmercury>*10, 10000);
+Centrifuge.addRecipe([<rockhounding_chemistry:chemical_dusts:42> % 10, <techreborn:dust:43> % 30, <techreborn:dust:39> % 50], <minecraft:redstone>, <liquid:mercury>*10, 10000);
 
 //glowstone
 Centrifuge.addRecipe([<minecraft:redstone> % 25, <thermalfoundation:material:1> % 25], <minecraft:glowstone_dust>, <liquid:helium>*100, 10000);
@@ -269,6 +284,7 @@ scrapbox.removeRecipe(<thermalfoundation:material:199>);
 //Remove liquid recipes
 fluidReplicator.removeRecipe(<liquid:water>);
 fluidReplicator.removeRecipe(<liquid:lava>);
+fluidReplicator.removeRecipe(<liquid:fluidmercury>);
 
 //Heavy water
 fluidReplicator.addRecipe(2,<liquid:heavy_water>,10, 1000);
@@ -282,6 +298,8 @@ fluidReplicator.addRecipe(64,<liquid:iridium>,1000, 10000);
 fluidReplicator.addRecipe(1,<liquid:water>*10000 ,10, 1000);
 //lava
 fluidReplicator.addRecipe(1,<liquid:lava>,10, 1000);
+// Mercury
+fluidReplicator.addRecipe(4, <liquid:mercury>, 200, 20);
 
 //TOO MUCH TNT
 mods.techreborn.implosionCompressor.addRecipe(<techreborn:plates:38>, <techreborn:dust:15>*4, <techreborn:ingot:22>, <mekanism:obsidiantnt>, 20, 32);
@@ -307,6 +325,12 @@ mods.techreborn.wireMill.addRecipe(<techreborn:cable:3>*6, <techreborn:ingot:19>
 mods.techreborn.grinder.removeAll();
 mods.techreborn.compressor.removeAll();
 mods.techreborn.compressor.removeRecipe(<immersiveengineering:material:18>); //Because HOP Graphite is stubborn
+
+//Silicon
+mods.nuclearcraft.IngotFormer.addRecipe(<liquid:fluidsilicon> * 200, <nuclearcraft:gem:6>);
+
+
+
 
 ##########################################################################################
 print("==================== end of mods techreborn.zs ====================");
