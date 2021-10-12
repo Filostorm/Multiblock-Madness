@@ -196,5 +196,8 @@ for item in dustElemental {
 <ore:oreAmethest>.add(<mysticalworld:amethyst_ore>);
 
 <ore:concrete>.add(<minecraft:concrete>);
+
+<ore:dustCinnabar>.add(<thermalfoundation:material:866>);
+<ore:quicksilver>.add(<qmd:ingot2:2>);
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

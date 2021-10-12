@@ -194,8 +194,8 @@ InductionSmelter.addRecipe(<nuclearcraft:alloy:13>*2, <nuclearcraft:gem:6>, <nuc
 AlloySmelter.addRecipe(<nuclearcraft:alloy:13>*2, [<ore:itemSilicon>, <ore:ingotGraphite>], 10000);
 
 // Zircaloy 
-InductionSmelter.addRecipe(<rockhounding_chemistry:alloy_items_tech_b:7>*8, <nuclearcraft:ingot:10>*7, <thermalfoundation:material:129>, 40000);
-AlloySmelter.addRecipe(<rockhounding_chemistry:alloy_items_tech_b:7>*8, [<ore:ingotZirconium>*7, <ore:ingotTin>], 40000);
+InductionSmelter.addRecipe(<nuclearcraft:alloy:12>*8, <nuclearcraft:ingot:10>*7, <thermalfoundation:material:129>, 40000);
+AlloySmelter.addRecipe(<nuclearcraft:alloy:12>*8, [<ore:ingotZirconium>*7, <ore:ingotTin>], 40000);
 
 
 
