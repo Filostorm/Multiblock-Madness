@@ -9,6 +9,7 @@ import crafttweaker.item.IIngredient;
 import mods.thaumcraft.Infusion;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.BlastFurnace;
+import mods.immersiveengineering.Refinery;
 
 print("--- loading immersive.zs ---");
 	
@@ -302,14 +303,22 @@ Melting.addRecipe(<liquid:steel> * 720,item);
 //ThermoElectric
 recipes.addShaped(<immersiveengineering:metal_device1:3>, [[<thermalfoundation:material:160>, <thermalfoundation:material:160>, <thermalfoundation:material:160>],[<thermalfoundation:material:356>, <immersiveengineering:metal_decoration0:4>, <thermalfoundation:material:356>], [<thermalfoundation:material:356>, <thermalfoundation:material:356>, <thermalfoundation:material:356>]]);
 
-
+//More Fuels
 BlastFurnace.addFuel(<thaumcraft:alumentum>, 7200);
-
 BlastFurnace.addFuel(<mysticalagriculture:coal>, 2400);
 BlastFurnace.addFuel(<mysticalagriculture:coal:1>, 4800);
 BlastFurnace.addFuel(<mysticalagriculture:coal:2>, 9600);
 BlastFurnace.addFuel(<mysticalagriculture:coal:3>, 19200);
 BlastFurnace.addFuel(<mysticalagriculture:coal:4>, 38400);
 BlastFurnace.addFuel(<mysticalagradditions:insanium:5>, 76800);
+
+
+
+//Boosted Diesel
+Refinery.addRecipe(<liquid:blended_diesel>*16, <liquid:biodiesel>*8, <liquid:diesel>*8, 512);
+mods.immersiveengineering.Mixer.addRecipe(<liquid:boosted_diesel>*250, <liquid:blended_diesel>*250, [<aetherworks:item_resource>], 512);
+mods.immersiveengineering.DieselHandler.addFuel(<liquid:boosted_diesel>, 450);
+mods.immersiveengineering.DieselHandler.addFuel(<liquid:blended_diesel>, 200);
+
 
 	print("--- immersive.zs initialized ---");

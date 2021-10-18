@@ -120,3 +120,6 @@ item.contenttweaker.falling_tower.name=Meteor
 item.contenttweaker.angelring_fake.name=Fake Angel Ring
 item.contenttweaker.blank_matter.name=Reactive Matter
 
+
+fluid.blended_diesel=Diesel Blend
+fluid.boosted_diesel=Boosted Diesel

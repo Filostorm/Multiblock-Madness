@@ -623,7 +623,7 @@ manapool.addEnergyPerTickInput(2000);
 manapool.addItemInput(<botania:livingrock> * 12);
 manapool.addItemInput(<botania:livingrock0slab> * 9);
 manapool.addItemInput(<contenttweaker:sheetmetal_brass> * 4);
-manapool.addItemInput(<enderio:item_material:20>);
+manapool.addItemInput(<astralsorcery:itemusabledust>);
 manapool.addItemOutput(<botania:pool>);
 manapool.build();
 
@@ -881,7 +881,7 @@ fluidpulsating_ironFast.build();
 ##Quartz for fused
 val fluidquartz = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-quartz", "mixer", 80, 0);
 fluidquartz.addEmberInput(80);
-fluidquartz.addMysticalMechanicsInput(20, 60);
+//fluidquartz.addMysticalMechanicsInput(20, 60);
 fluidquartz.addItemInput(<minecraft:quartz>);
 fluidquartz.addFluidOutput(<liquid:quartz>*666);
 fluidquartz.build();
@@ -889,7 +889,7 @@ fluidquartz.build();
 ##Glass
 val fluidglass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-glass", "mixer", 80, 0);
 fluidglass.addEmberInput(80);
-fluidglass.addMysticalMechanicsInput(20, 60);
+//fluidglass.addMysticalMechanicsInput(20, 60);
 fluidglass.addItemInput(<minecraft:sand>);
 fluidglass.addFluidOutput(<liquid:glass>*1000);
 fluidglass.build();
@@ -897,7 +897,7 @@ fluidglass.build();
 ##Blood
 val fluidblood = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-blood", "mixer", 50, 0);
 fluidblood.addEmberInput(40);
-fluidblood.addMysticalMechanicsInput(20, 60);
+//fluidblood.addMysticalMechanicsInput(20, 60);
 fluidblood.addItemInput(<ore:listAllmeatraw>);
 fluidblood.addFluidOutput(<liquid:blood>*40);
 fluidblood.build();

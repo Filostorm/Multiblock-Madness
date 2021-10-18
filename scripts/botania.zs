@@ -11,7 +11,6 @@ import mods.botania.OrechidIgnem;
 import mods.botania.PureDaisy;
 import mods.botania.RuneAltar;
 import mods.botaniatweaks.Agglomeration;
-import mods.enderio.SagMill;
 import mods.immersiveengineering.Crusher;
 import mods.inworldcrafting.FluidToItem;
 import mods.nuclearcraft.Manufactory;
@@ -21,6 +20,7 @@ import mods.thaumcraft.ArcaneWorkbench;
 import mods.thaumcraft.Infusion;
 import mods.thermalexpansion.Insolator;
 import mods.thermalexpansion.Pulverizer;
+import mods.thermalexpansion.Transposer;
 
 print("==================== loading mods botania.zs ====================");
 ##########################################################################################
@@ -213,6 +213,8 @@ RuneAltar.addRecipe(<botania:rune:3>,[<ore:ingotBrass>, <thermalfoundation:mater
 //Rune of Earth
 RuneAltar.removeRecipe(<botania:rune:2>);
 RuneAltar.addRecipe(<botania:rune:2>,[<mysticalworld:wet_mud_block>, <twilightforest:steeleaf_ingot>, <thermalfoundation:material:1027>, <botania:manaresource>, <botania:manaresource:23>], 15000);
+//Wet Mud
+Transposer.addFillRecipe(<mysticalworld:wet_mud_block>, <minecraft:dirt>, <liquid:water>*200, 2500);
 
 //Rune of Fire
 RuneAltar.removeRecipe(<botania:rune:1>);
@@ -250,7 +252,6 @@ Insolator.addRecipe(petal*5, petal, <thermalfoundation:fertilizer:2>, 5000);
 Crusher.addRecipe(dust, petal, 2048, dust, 0.1);
 Manufactory.addRecipe(petal, dust);
 Pulverizer.addRecipe(dust, petal, 1500, dust, 10);
-SagMill.addRecipe([dust], [1] , petal, "MULTIPLY_OUTPUT");
 }
 
 val tinyDustMap as IItemStack[IItemStack] = {

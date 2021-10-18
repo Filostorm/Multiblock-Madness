@@ -10,6 +10,11 @@ import mods.thermalexpansion.Crucible;
 import mods.botania.RuneAltar;
 import mods.embers.Stamper;
 import mods.astralsorcery.Lightwell;
+import mods.thermalexpansion.Pulverizer;
+import mods.aetherworks.MetalFormer;
+import mods.nuclearcraft.Melter;
+import mods.nuclearcraft.SaltMixer;
+import mods.immersiveengineering.Refinery;
 
 print("==================== loading mods embers.zs ====================");
 ##########################################################################################
@@ -33,6 +38,7 @@ val itemstoRemove =
 <embers:archaic_circuit>,
 <embers:ashen_amulet>,
 <embers:alchemy_tablet>,
+<aetherworks:item_resource:2>,
 ]
  as IItemStack[];
 
@@ -174,5 +180,29 @@ Lightwell.addLiquefaction(<embers:shard_ember>, <liquid:moltenembers>, 1, 0.6, 0
 Lightwell.addLiquefaction(<embers:crystal_ember>, <liquid:moltenembers>, 2, 0.6, 0xc97c28);
 Lightwell.addLiquefaction(<embers:ember_cluster>, <liquid:moltenembers>, 10, 0.6, 0xc97c28); 
 
+
+//Lens
+recipes.addShaped(<aetherworks:item_resource:2>, [[null, <ore:ingotBronze>, null],[<ore:ingotBronze>, <aetherworks:item_resource>, <ore:ingotBronze>], [null, <ore:ingotBronze>, null]]);
+
+//More Melting
+Melter.addRecipe(<aetherworks:item_resource>, <liquid:aetherworks.aetherium_gas>*16);
+Crucible.addRecipe(<liquid:aetherworks.aetherium_gas>*16, <aetherworks:item_resource>, 4000);
+
+//More Mixing
+SaltMixer.addRecipe(<liquid:aetherworks.impure_aetherium_gas>*8, <liquid:electrum>*8, <liquid:aetherworks.aetherium_gas>*16);
+Refinery.addRecipe(<liquid:aetherworks.aetherium_gas>*16, <liquid:aetherworks.impure_aetherium_gas>*8, <liquid:electrum>*8, 2048);
+
+
+//No more crystals from ore
+Pulverizer.removeRecipe(<aetherworks:aether_ore>);
+
+//remove old recipes
+MetalFormer.removeRecipesByOutput(<aetherworks:item_resource:3>);
+MetalFormer.removeRecipesByOutput(<aetherworks:item_resource:4>);
+MetalFormer.removeRecipesByOutput(<aetherworks:item_resource:5>);
+
+//New Materials
+MetalFormer.addRecipe(<embers:ingot_dawnstone>, <liquid:aetherworks.aetherium_gas>*144, <aetherworks:item_resource:4>, 2100);
+MetalFormer.addRecipe(<mysticalworld:amethyst_gem>, <liquid:aetherworks.aetherium_gas>*576, <aetherworks:item_resource:5>, 2500);
 ##########################################################################################
 print("==================== end of mods embers.zs ====================");

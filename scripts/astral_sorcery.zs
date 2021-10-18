@@ -6,7 +6,6 @@ import mods.thaumcraft.Infusion;
 import mods.astralsorcery.Altar;
 import mods.astralsorcery.LightTransmutation;
 import mods.astralsorcery.StarlightInfusion;
-import mods.enderio.SagMill;
 import mods.appliedenergistics2.Grinder;
 import mods.advancedrocketry.Crystallizer;
 import mods.astralsorcery.Lightwell;
@@ -31,9 +30,6 @@ for item in itemstoRemove {
 Grinder.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>, 4);
 Grinder.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:blockcustomore:1>, 4, <astralsorcery:itemcraftingcomponent:2>, 1);
 
-
-
-SagMill.addRecipe([<astralsorcery:itemrockcrystalsimple>,<astralsorcery:itemrockcrystalsimple>,<astralsorcery:itemrockcrystalsimple>], [1,0.5,0.1] , <astralsorcery:blockcustomore>, "MULTIPLY_OUTPUT");
 
 //<astralsorcery:blockinfusedwood>.addTooltip(format.aqua("Drop any log into liquid Starlight to create"));
 <astralsorcery:itemcelestialcrystal>.addTooltip(format.aqua("Grows from a Celestal Crystal Cluster"));

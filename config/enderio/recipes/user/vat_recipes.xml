@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+
+<recipe name="Liquid Sunshine"><disabled/></recipe>
+
+<recipe name="MBM: Liquid Sunshine" required="true">
+    <fermenting energy="100000">
+      <inputgroup>
+        <input name="mowziesmobs:glowing_jelly" multiplier="3.0"/>
+        <input name="randomthings:glowingmushroom" multiplier="2.0"/>
+        <input name="clathrateGlowstone" multiplier="1.5"/>
+        <input name="enderio:block_holy_fog" multiplier="1.0"/>
+      </inputgroup>
+      <inputgroup>
+        <input name="arcanearchives:radiant_dust" multiplier="1.0"/>
+        <input name="astralsorcery:itemusabledust" multiplier="1.0"/>
+        <input name="thaumcraft:nitor_yellow" multiplier="2.0"/>
+        <input name="botania:corporeaspark" multiplier="3.0"/>
+      </inputgroup>
+      <inputfluid name="glowstone_nak" multiplier="2.0"/>
+      <outputfluid name="liquid_sunshine"/>
+    </fermenting>
+  </recipe>
+
+
+</enderio:recipes>

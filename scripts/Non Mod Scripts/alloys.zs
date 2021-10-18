@@ -2,7 +2,7 @@
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
-import mods.enderio.AlloySmelter;
+//import mods.enderio.AlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
 import mods.nuclearcraft.AlloyFurnace;
 import mods.techreborn.blastFurnace;
@@ -25,7 +25,7 @@ print("==================== loading parts.zs ====================");
 
 //inert ingot
 ArcFurnace.addRecipe(<contenttweaker:inert_ingot>*2, <thermalfoundation:material:130>*2, null, 400, 1024, [<thermalfoundation:material:131>]);
-AlloySmelter.addRecipe(<contenttweaker:inert_ingot>*2, [<thermalfoundation:material:130>*2,<thermalfoundation:material:131>], 5000);
+//AlloySmelter.addRecipe(<contenttweaker:inert_ingot>*2, [<thermalfoundation:material:130>*2,<thermalfoundation:material:131>], 5000);
 
 //fused quartz
 ArcFurnace.addRecipe(<enderio:block_fused_quartz>, <ore:blockQuartz>, null, 200, 1024);
@@ -33,30 +33,30 @@ ArcFurnace.addRecipe(<enderio:block_fused_quartz>, <ore:blockQuartz>, null, 200,
 //vibrant alloy
 //ArcFurnace.addRecipe(<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:1>, null, 1200, 2048, [<minecraft:ender_pearl>]);
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_material:15>);
-AlloySmelter.addRecipe(<enderio:item_material:15>, [<minecraft:emerald>,<enderio:item_alloy_ingot:2>], 20000, 0.1);
+//AlloySmelter.addRecipe(<enderio:item_material:15>, [<minecraft:emerald>,<enderio:item_alloy_ingot:2>], 20000, 0.1);
 
 //energetic alloy
-AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:1>);
+//AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:1>);
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:1>);
 ArcFurnace.removeRecipe(<enderio:item_alloy_ingot:1>);
 
 ArcFurnace.addRecipe(<enderio:item_alloy_ingot:1>, <embers:ingot_dawnstone>, null, 400, 1024, [<minecraft:redstone>,<minecraft:glowstone_dust>]);
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:1>, [<minecraft:redstone>,<embers:ingot_dawnstone>,<minecraft:glowstone_dust>], 10000, 0.1);
+//AlloySmelter.addRecipe(<enderio:item_alloy_ingot:1>, [<minecraft:redstone>,<embers:ingot_dawnstone>,<minecraft:glowstone_dust>], 10000, 0.1);
 AlloyFurnace.addRecipe(<embers:ingot_dawnstone>, <nuclearcraft:compound:2>, <enderio:item_alloy_ingot:1>);
 InductionSmelter.addRecipe(<enderio:item_alloy_ingot:1>, <embers:ingot_dawnstone>, <nuclearcraft:compound:2>, 25000);
 
 //energetic silver
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:5>);
-AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:5>);
+//AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:5>);
 
 ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:5>, <botania:manaresource>, null, 400, 1024, [<minecraft:redstone>,<minecraft:glowstone_dust>]);
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:5>, [<minecraft:redstone>,<botania:manaresource>,<minecraft:glowstone_dust>], 10000, 0.1);
+//AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:5>, [<minecraft:redstone>,<botania:manaresource>,<minecraft:glowstone_dust>], 10000, 0.1);
 AlloyFurnace.addRecipe(<botania:manaresource>, <nuclearcraft:compound:2>, <enderio:item_alloy_endergy_ingot:5>);
 InductionSmelter.addRecipe(<enderio:item_alloy_endergy_ingot:5>, <botania:manaresource>, <nuclearcraft:compound:2>, 25000);
 
 //Pulsating
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_material:14>);
-AlloySmelter.addRecipe(<enderio:item_material:14>, [<minecraft:diamond>,<enderio:item_alloy_ingot:5>], 10000, 0.1);
+//AlloySmelter.addRecipe(<enderio:item_material:14>, [<minecraft:diamond>,<enderio:item_alloy_ingot:5>], 10000, 0.1);
 ArcFurnace.addRecipe(<enderio:item_alloy_ingot:5>, <minecraft:iron_ingot>, null, 600, 1024, [<minecraft:ender_pearl>], "Alloying");
 
 //Steel
@@ -75,14 +75,14 @@ ArcFurnace.addRecipe(<enderio:item_alloy_ingot>, <thermalfoundation:material:160
 
 //Red Alloy
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:3>);
-AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:3>);
+//AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:3>);
 ArcFurnace.addRecipe(<enderio:item_alloy_ingot:3>, <enderio:item_alloy_ingot:4>, null, 200, 1024, [<minecraft:redstone>,<nuclearcraft:gem:6>], "Alloying");
-AlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>, [<minecraft:redstone>,<enderio:item_alloy_ingot:4>,<nuclearcraft:gem:6>], 10000, 0.1);
+//AlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>, [<minecraft:redstone>,<enderio:item_alloy_ingot:4>,<nuclearcraft:gem:6>], 10000, 0.1);
 //AlloyFurnace.addRecipe([<enderio:item_alloy_ingot:4>, <minecraft:redstone>, <nuclearcraft:gem:6>, <enderio:item_alloy_ingot:3>]);
 
 //Knight Slime
 ArcFurnace.addRecipe(<tconstruct:ingots:3>, <minecraft:iron_ingot> , null, 600, 1024, [<tconstruct:edible:2>,<tconstruct:materials>], "Alloying");
-AlloySmelter.addRecipe(<tconstruct:ingots:3>, [<tconstruct:edible:2>,<minecraft:iron_ingot> ,<tconstruct:materials>], 10000, 0.1);
+//AlloySmelter.addRecipe(<tconstruct:ingots:3>, [<tconstruct:edible:2>,<minecraft:iron_ingot> ,<tconstruct:materials>], 10000, 0.1);
 
 //Clear Glass
 ArcFurnace.addRecipe(<enderio:block_fused_glass>, <minecraft:glass> * 2, null, 200, 512);
@@ -90,59 +90,59 @@ ArcFurnace.addRecipe(<enderio:block_fused_glass>, <minecraft:glass> * 2, null, 2
 //Advanced Alloy
 recipes.remove(<enderutilities:enderpart:1>);
 ArcFurnace.addRecipe(<enderutilities:enderpart:1>*2, <enderutilities:enderpart>*2, null, 500, 1024, [<enderio:item_alloy_ingot:1>*2, <minecraft:ender_eye>], "Alloying");
-AlloySmelter.addRecipe(<enderutilities:enderpart:1> *2, [<enderutilities:enderpart> * 2,<enderio:item_alloy_ingot:1> * 2,<minecraft:ender_eye>], 10000);
+//AlloySmelter.addRecipe(<enderutilities:enderpart:1> *2, [<enderutilities:enderpart> * 2,<enderio:item_alloy_ingot:1> * 2,<minecraft:ender_eye>], 10000);
 
 //Enhanced Alloy
 recipes.remove(<enderutilities:enderpart:2>);
 //ArcFurnace.addRecipe(<enderutilities:enderpart:2>*2, <enderutilities:enderpart:1>*2, null, 1000, 2048, [<enderio:item_alloy_ingot:8>*2, <randomthings:stableenderpearl>], "Alloying");
-AlloySmelter.addRecipe(<enderutilities:enderpart:2> * 2, [<enderutilities:enderpart:1> * 2,<enderio:item_alloy_ingot:8> * 2,<randomthings:stableenderpearl>], 15000);
+//AlloySmelter.addRecipe(<enderutilities:enderpart:2> * 2, [<enderutilities:enderpart:1> * 2,<enderio:item_alloy_ingot:8> * 2,<randomthings:stableenderpearl>], 15000);
 
 //Adaptive Ingot
-AlloySmelter.addRecipe(<contenttweaker:adaptive_ingot>, [<contenttweaker:material_part:30>, <enderio:block_infinity>], 15000);
+//AlloySmelter.addRecipe(<contenttweaker:adaptive_ingot>, [<contenttweaker:material_part:30>, <enderio:block_infinity>], 15000);
 ArcFurnace.addRecipe(<contenttweaker:adaptive_ingot>, <contenttweaker:material_part:30>, null, 500, 1024, [<enderio:block_infinity>], "Alloying");
 AlloyFurnace.addRecipe(<contenttweaker:material_part:30>, <enderio:block_infinity>, <contenttweaker:adaptive_ingot>);
 
 //Stellar Alloy
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:3>*2);
-AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:3>);
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:3>*2, [<minecraft:nether_star>,<enderio:item_alloy_endergy_ingot:2>,<environmentaltech:aethium_crystal>*4], 1000000, 0.0);
+//AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:3>);
+//AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:3>*2, [<minecraft:nether_star>,<enderio:item_alloy_endergy_ingot:2>,<environmentaltech:aethium_crystal>*4], 1000000, 0.0);
 
 
 //osgloglas Alloy
-AlloySmelter.addRecipe(<plustic:osgloglasingot>, [<mekanism:ingot>,<mekanism:ingot:1>,<mekanism:ingot:3>], 500000, 0.0);
+//AlloySmelter.addRecipe(<plustic:osgloglasingot>, [<mekanism:ingot>,<mekanism:ingot:1>,<mekanism:ingot:3>], 500000, 0.0);
 //osmerdium Alloy
-AlloySmelter.addRecipe(<plustic:osmiridiumingot>*2, [<thermalfoundation:material:135>,<mekanism:ingot:1>], 1000000, 0.0);
+//AlloySmelter.addRecipe(<plustic:osmiridiumingot>*2, [<thermalfoundation:material:135>,<mekanism:ingot:1>], 1000000, 0.0);
 AlloyFurnace.removeRecipeWithOutput(<plustic:osmiridiumingot>*2);
 
 //Prosperity shard
-AlloySmelter.addRecipe(<mysticalagriculture:crafting:5>*4, [<minecraft:quartz_block>, <minecraft:lapis_block>], 15000);
+//AlloySmelter.addRecipe(<mysticalagriculture:crafting:5>*4, [<minecraft:quartz_block>, <minecraft:lapis_block>], 15000);
 InductionSmelter.addRecipe(<mysticalagriculture:crafting:5>*4, <minecraft:quartz_block>, <minecraft:lapis_block>, 15000);
 AlloyFurnace.addRecipe(<minecraft:quartz_block>, <minecraft:lapis_block>, <mysticalagriculture:crafting:5>*4);
 
 //Quartz Glass
-AlloySmelter.addRecipe(<appliedenergistics2:quartz_glass>, [<ore:blockGlassHardened>, <appliedenergistics2:material:2>], 15000);
+//AlloySmelter.addRecipe(<appliedenergistics2:quartz_glass>, [<ore:blockGlassHardened>, <appliedenergistics2:material:2>], 15000);
 ArcFurnace.addRecipe(<appliedenergistics2:quartz_glass>, <ore:blockGlassHardened>, null, 500, 1024, [<appliedenergistics2:material:2>], "Alloying");
 AlloyFurnace.addRecipe(<ore:blockGlassHardened>, <appliedenergistics2:material:2>, <appliedenergistics2:quartz_glass>);
 
 //Vib Quartz Glass
-AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>, [<ore:blockGlassHardened>, <appliedenergistics2:material:2>,<minecraft:glowstone_dust>*2], 15000);
+//AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>, [<ore:blockGlassHardened>, <appliedenergistics2:material:2>,<minecraft:glowstone_dust>*2], 15000);
 ArcFurnace.addRecipe(<appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_glass>, null, 500, 1024, [<minecraft:glowstone_dust>*2], "Alloying");
 AlloyFurnace.addRecipe(<appliedenergistics2:quartz_glass>, <minecraft:glowstone_dust>*2, <appliedenergistics2:quartz_vibrant_glass>);
 
 //polymer_clay
-AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*32, [<randomthings:ingredient:3>, <enderio:item_material:22>*16], 20000);
+//AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*32, [<randomthings:ingredient:3>, <enderio:item_material:22>*16], 20000);
 ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*32, <randomthings:ingredient:3>, null, 1200, 512, [<enderio:item_material:22>*16], "Alloying");
 AlloyFurnace.addRecipe(<randomthings:ingredient:3>, <enderio:item_material:22>*16, <deepmoblearning:polymer_clay>*32);
 
-AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*16, [<thermalfoundation:material:134>, <enderio:item_material:22>*8], 15000);
+//AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*16, [<thermalfoundation:material:134>, <enderio:item_material:22>*8], 15000);
 ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*16, <thermalfoundation:material:134>, null, 800, 512, [<enderio:item_material:22>*8], "Alloying");
 AlloyFurnace.addRecipe(<thermalfoundation:material:134>, <enderio:item_material:22>*8, <deepmoblearning:polymer_clay>*16);
 
-AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*8, [<minecraft:gold_ingot>, <enderio:item_material:22>*4], 10000);
+//AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*8, [<minecraft:gold_ingot>, <enderio:item_material:22>*4], 10000);
 ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*8, <minecraft:gold_ingot>, null, 600, 512, [<enderio:item_material:22>*4], "Alloying");
 AlloyFurnace.addRecipe(<minecraft:gold_ingot>, <enderio:item_material:22>*4, <deepmoblearning:polymer_clay>*8);
 
-AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*4, [<minecraft:iron_ingot>, <enderio:item_material:22>*2], 5000);
+//AlloySmelter.addRecipe(<deepmoblearning:polymer_clay>*4, [<minecraft:iron_ingot>, <enderio:item_material:22>*2], 5000);
 ArcFurnace.addRecipe(<deepmoblearning:polymer_clay>*4, <minecraft:iron_ingot>, null, 600, 512, [<enderio:item_material:22>*2], "Alloying");
 AlloyFurnace.addRecipe(<minecraft:iron_ingot>, <enderio:item_material:22>*2, <deepmoblearning:polymer_clay>*4);
 
@@ -158,20 +158,20 @@ AlloyFurnace.removeRecipeWithOutput(<advancedrocketry:productingot:1>*2);
 //Bimetal Gear
 InductionSmelter.addRecipe(<enderio:item_material:11>, <thermalfoundation:material:288>, <enderio:item_material:20>*4, 10000);
 ArcFurnace.addRecipe(<enderio:item_material:11>, <thermalfoundation:material:288>, null, 500, 1024, [<enderio:item_material:20>*4], "Alloying");
-AlloySmelter.addRecipe(<enderio:item_material:11>, [<thermalfoundation:material:288>, <enderio:item_material:20>*4], 10000);
+//AlloySmelter.addRecipe(<enderio:item_material:11>, [<thermalfoundation:material:288>, <enderio:item_material:20>*4], 10000);
 
 //Dark Gear
 InductionSmelter.addRecipe(<enderio:item_material:73>, <enderio:item_material:11>, <enderio:item_alloy_ingot:6>*4, 25000);
 ArcFurnace.addRecipe(<enderio:item_material:73>, <enderio:item_material:11>, null, 500, 2048, [<enderio:item_alloy_ingot:6>*4], "Alloying");
-AlloySmelter.addRecipe(<enderio:item_material:73>, [<enderio:item_material:11>, <enderio:item_alloy_ingot:6>*4], 25000);
+//AlloySmelter.addRecipe(<enderio:item_material:73>, [<enderio:item_material:11>, <enderio:item_alloy_ingot:6>*4], 25000);
 
 //Energetic Gear
 InductionSmelter.addRecipe(<enderio:item_material:12>, <enderio:item_material:73>, <enderio:item_alloy_ingot:1>*4, 50000);
-AlloySmelter.addRecipe(<enderio:item_material:12>, [<enderio:item_material:73>, <enderio:item_alloy_ingot:1>*4], 50000);
+//AlloySmelter.addRecipe(<enderio:item_material:12>, [<enderio:item_material:73>, <enderio:item_alloy_ingot:1>*4], 50000);
 
 //Vibrant Gear
 InductionSmelter.addRecipe(<enderio:item_material:13>, <enderio:item_material:12>, <enderio:item_alloy_ingot:2>*4, 100000);
-AlloySmelter.addRecipe(<enderio:item_material:13>, [<enderio:item_material:12>, <enderio:item_alloy_ingot:2>*4], 100000);
+//AlloySmelter.addRecipe(<enderio:item_material:13>, [<enderio:item_material:12>, <enderio:item_alloy_ingot:2>*4], 100000);
 
 //Manylan
 furnace.remove(<tconstruct:ingots:2>);
@@ -189,7 +189,7 @@ InductionSmelter.addRecipe(<embers:ingot_dawnstone>*4, <rockhounding_chemistry:a
 	recipes.remove(<extendedcrafting:material:36>);
 <extendedcrafting:material:36>.displayName = "Duskstone Ingot";
 <extendedcrafting:storage:5>.displayName = "Duskstone Block";
-AlloySmelter.addRecipe(<extendedcrafting:material:36>, [<techreborn:ingot:15>, <minecraft:ender_eye>,<quark:biotite>], 100000);
+//AlloySmelter.addRecipe(<extendedcrafting:material:36>, [<techreborn:ingot:15>, <minecraft:ender_eye>,<quark:biotite>], 100000);
 
 //Feroborron
 ArcFurnace.addRecipe(<nuclearcraft:alloy:6>*2, <thermalfoundation:material:160>, null, 500, 2048, [<nuclearcraft:ingot:5>], "Alloying");
@@ -213,7 +213,7 @@ infuser.addRecipe("CHROME", 20, <thermalfoundation:material:160>, <qmd:ingot_all
 
 //Pink Slime ingot
 InductionSmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4>, <enderio:item_alloy_endergy_ingot:1>, <tconstruct:ingots:3>, 50000);
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4>, [<enderio:item_alloy_endergy_ingot:1>, <tconstruct:ingots:3>], 50000);
+//AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4>, [<enderio:item_alloy_endergy_ingot:1>, <tconstruct:ingots:3>], 50000);
 AlloyFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:1>, <tconstruct:ingots:3>, <enderio:item_alloy_endergy_ingot:4>);
 
 //Crystal ingot
@@ -221,15 +221,15 @@ InductionSmelter.addRecipe(<enderio:item_alloy_endergy_ingot:1>, <minecraft:gold
 
 //Melodic
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:2>);
-AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:2>);
-AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>, [<enderio:item_alloy_endergy_ingot:4>, <enderio:item_alloy_ingot:8>,<minecraft:chorus_fruit_popped>], 100000);
+//AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:2>);
+//AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:2>, [<enderio:item_alloy_endergy_ingot:4>, <enderio:item_alloy_ingot:8>,<minecraft:chorus_fruit_popped>], 100000);
 
 
 // Tungsten Carbide 
 AlloyFurnace.removeRecipeWithOutput(<qmd:ingot_alloy>*2);
 AlloyFurnace.addRecipe(<ore:ingotTungsten>, <ore:ingotGraphite>, <qmd:ingot_alloy>*2);
 InductionSmelter.addRecipe(<qmd:ingot_alloy>*2, <techreborn:ingot:15>, <rockhounding_chemistry:metal_items:7>, 40000);
-AlloySmelter.addRecipe(<qmd:ingot_alloy>*2, [<ore:ingotTungsten>, <ore:ingotGraphite>], 40000);
+//AlloySmelter.addRecipe(<qmd:ingot_alloy>*2, [<ore:ingotTungsten>, <ore:ingotGraphite>], 40000);
 
 
 // Brass
@@ -243,12 +243,12 @@ AlloyFurnace.removeRecipeWithOutput(<techreborn:ingot:1>*4);
 
 AlloyFurnace.addRecipe(<ore:ingotCopper>*2, <ore:ingotZinc>, <techreborn:ingot:1>*3);
 InductionSmelter.addRecipe(<techreborn:ingot:1>*3, <thermalfoundation:material:128>*2, <techreborn:ingot:18>, 40000);
-AlloySmelter.addRecipe(<techreborn:ingot:1>*3, [<ore:ingotCopper>*2, <ore:ingotZinc>], 40000);
+//AlloySmelter.addRecipe(<techreborn:ingot:1>*3, [<ore:ingotCopper>*2, <ore:ingotZinc>], 40000);
 
 
 
 // Rose Gold 
-AlloySmelter.addRecipe(<rockhounding_chemistry:alloy_items_deco:4>*4, [<minecraft:gold_ingot>*3, <ore:ingotCopper>,<ore:nuggetSilver>], 20000);
+//AlloySmelter.addRecipe(<rockhounding_chemistry:alloy_items_deco:4>*4, [<minecraft:gold_ingot>*3, <ore:ingotCopper>,<ore:nuggetSilver>], 20000);
 
 
 //XP Ingot
@@ -326,7 +326,7 @@ val alloystoAdapt =
  as IItemStack[];
 
 for item in alloystoAdapt {
-AlloySmelter.addRecipe(item * 3, [<contenttweaker:adaptive_ingot>, item], 15000);
+//AlloySmelter.addRecipe(item * 3, [<contenttweaker:adaptive_ingot>, item], 15000);
 ArcFurnace.addRecipe(item * 3, <contenttweaker:adaptive_ingot>, null, 500, 1024, [item], "Alloying");
 AlloyFurnace.addRecipe(<contenttweaker:adaptive_ingot>, item, item * 3);
 }

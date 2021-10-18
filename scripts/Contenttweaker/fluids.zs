@@ -74,3 +74,17 @@ moltenTokenInfinity.gaseous = false;
 moltenTokenInfinity.luminosity = 10;
 moltenTokenInfinity.viscosity = 1000;
 moltenTokenInfinity.register();
+
+var blendedDiesel = VanillaFactory.createFluid("blended_diesel", Color.fromHex("6b6e30"));
+blendedDiesel.temperature = 1500;
+blendedDiesel.gaseous = false;
+blendedDiesel.luminosity = 0;
+blendedDiesel.viscosity = 1000;
+blendedDiesel.register();
+
+var BoostedDiesel = VanillaFactory.createFluid("boosted_diesel", Color.fromHex("028799"));
+BoostedDiesel.temperature = 500;
+BoostedDiesel.gaseous = false;
+BoostedDiesel.luminosity = 0;
+BoostedDiesel.viscosity = 1000;
+BoostedDiesel.register();

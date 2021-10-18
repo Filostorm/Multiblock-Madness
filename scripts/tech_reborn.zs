@@ -44,6 +44,10 @@ val itemstoRemove =
 <techreborn:part:3>,
 <techreborn:cable:3>,
 <techreborn:refined_iron_fence>,
+<techreborn:implosion_compressor>,
+<techreborn:industrial_grinder>,
+<techreborn:quantum_chest>,
+<techreborn:recycler>,
 //<powersuits:powerarmorcomponent:11>,
 ]
  as IItemStack[];
@@ -86,6 +90,8 @@ val itemstoHide =
 <techreborn:solid_canning_machine>,
 <techreborn:part:34>,
 <techreborn:plates:11>,
+<techreborn:compressor>,
+<techreborn:grinder>,
 ]
  as IItemStack[];
 
@@ -101,6 +107,18 @@ mods.techreborn.industrialElectrolyzer.removeInputRecipe(<minecraft:dye:15>*3);
 recipes.addShaped(<techreborn:refined_iron_fence> * 3, [[<techreborn:ingot:19>, <jaopca:item_stickrefinediron>, <techreborn:ingot:19>], [<techreborn:ingot:19>, <jaopca:item_stickrefinediron>, <techreborn:ingot:19>]]);
 
 
+//NO MORE GRINDER AND COMPRESSOR
+//Q Chest
+recipes.addShaped(<techreborn:quantum_chest>, [[<techreborn:part:3>, <techreborn:part:24>, <techreborn:part:3>],[<ore:machineBlockHighlyAdvanced>, <aeadditions:storage.component:1>, <ore:machineBlockHighlyAdvanced>], [<techreborn:part:3>, <techreborn:digital_chest>, <techreborn:part:3>]]);
+
+//recycler
+recipes.addShaped(<techreborn:recycler>, [[null, <ore:circuitAdvanced>, null],[<ore:dirt>, <techreborn:machine_frame>, <ore:dirt>], [<minecraft:glowstone_dust>, <ore:dirt>, <minecraft:glowstone_dust>]]);
+
+//implosion_compressor
+recipes.addShaped(<techreborn:implosion_compressor>, [[<moreplates:osmium_plate>, <techreborn:part:3>, <moreplates:osmium_plate>],[<mekanism:obsidiantnt>, <techreborn:machine_frame:1>, <mekanism:obsidiantnt>], [<moreplates:osmium_plate>, <thermalfoundation:material:262>, <moreplates:osmium_plate>]]);
+
+//industrial_grinder
+recipes.addShaped(<techreborn:industrial_grinder>, [[<moreplates:osmium_plate>, <techreborn:part:3>, <moreplates:osmium_plate>],[<techreborn:part:4>, <techreborn:machine_frame:1>, <techreborn:part:4>], [<moreplates:osmium_plate>, <thermalfoundation:material:262>, <moreplates:osmium_plate>]]);
 
 
 /*
@@ -321,15 +339,12 @@ mods.techreborn.wireMill.addRecipe(<techreborn:cable:1>*4, <thermalfoundation:ma
 mods.techreborn.wireMill.addRecipe(<techreborn:cable:2>*6, <minecraft:gold_ingot>, 160, 40);
 mods.techreborn.wireMill.addRecipe(<techreborn:cable:3>*6, <techreborn:ingot:19>, 160, 40);
 
+/* Unneeded
 // Removing all Grinder & Compressor Recipes
 mods.techreborn.grinder.removeAll();
 mods.techreborn.compressor.removeAll();
 mods.techreborn.compressor.removeRecipe(<immersiveengineering:material:18>); //Because HOP Graphite is stubborn
-
-//Silicon
-mods.nuclearcraft.IngotFormer.addRecipe(<liquid:fluidsilicon> * 200, <nuclearcraft:gem:6>);
-
-
+*/
 
 
 ##########################################################################################

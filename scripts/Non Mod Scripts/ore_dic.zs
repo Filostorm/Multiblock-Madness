@@ -199,5 +199,26 @@ for item in dustElemental {
 
 <ore:dustCinnabar>.add(<thermalfoundation:material:866>);
 <ore:quicksilver>.add(<qmd:ingot2:2>);
+
+
+<ore:ingotInert>.add(<contenttweaker:inert_ingot>);
+
+<ore:ingotAdaptive>.add(<contenttweaker:adaptive_ingot>);
+
+// Removing oredict from hidden items
+<ore:ingotTungsten>.remove(<qmd:ingot>);
+
+val bricksForMixer =
+[
+<embers:archaic_bricks>,
+<embers:ashen_brick>,
+<embers:block_caminite_brick>,
+]
+ as IItemStack[];
+for item in bricksForMixer {
+<ore:bricksForMixer>.add(item);
+}
+
+
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

@@ -5,7 +5,6 @@ import mods.thermalexpansion.Transposer;
 import mods.tconstruct.Casting;
 import mods.immersiveengineering.ArcFurnace;
 import mods.nuclearcraft.AlloyFurnace;
-import mods.enderio.AlloySmelter;
 import mods.thermalexpansion.InductionSmelter;
 import mods.arcanearchives.GCT;
 import mods.thaumcraft.Crucible;
@@ -53,7 +52,7 @@ ManaInfusion.addAlchemy(<contenttweaker:noon_ingot>, <twilightforest:torchberrie
 Casting.addTableRecipe(<contenttweaker:tarred_ingot>, <contenttweaker:noon_ingot>, <liquid:gasoline>, 1000, true, 50);
 //tier two crafting
 ArcFurnace.addRecipe(<contenttweaker:tarred_ingot>, <contenttweaker:noon_ingot>, null, 400, 1024, [<thermalfoundation:material:833>*8]);
-AlloySmelter.addRecipe(<contenttweaker:tarred_ingot>, [<thermalfoundation:material:833>*8,<contenttweaker:noon_ingot>], 10000, 0.1);
+//AlloySmelter.addRecipe(<contenttweaker:tarred_ingot>, [<thermalfoundation:material:833>*8,<contenttweaker:noon_ingot>], 10000, 0.1);
 AlloyFurnace.addRecipe(<contenttweaker:noon_ingot>, <thermalfoundation:material:833>*8, <contenttweaker:tarred_ingot>);
 InductionSmelter.addRecipe(<contenttweaker:tarred_ingot>, <contenttweaker:noon_ingot>, <thermalfoundation:material:833>*8, 25000);
 

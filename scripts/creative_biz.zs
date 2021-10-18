@@ -3,7 +3,6 @@ import crafttweaker.item.IItemStack;
 import mods.thaumcraft.Infusion;
 import mods.botaniatweaks.Agglomeration;
 import mods.extendedcrafting.EnderCrafting;
-import mods.enderio.Vat;
 import mods.nuclearcraft.Crystallizer;
 
 print("==================== loading creative biz.zs ====================");
@@ -51,12 +50,15 @@ recipes.addShapeless(<avaritia:resource:1> * 9, [<avaritia:block_resource:2>]);
 //Entasngled Singularities
 mods.techreborn.implosionCompressor.addRecipe(<appliedenergistics2:material:48> * 2, null, <appliedenergistics2:material:47>, <techreborn:dust:19>*2, 40, 500);
 
+
 //Luminessence
 recipes.removeShapeless(<extendedcrafting:material:7> * 2, [<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:redstone>, <minecraft:gunpowder>]);
+/*
 Vat.removeRecipe(<liquid:liquid_sunshine>);
 Vat.addRecipe(<liquid:liquid_sunshine>, 0.5, <liquid:glowstone_nak>, 
 [<mowziesmobs:glowing_jelly>,<randomthings:glowingmushroom>,<thermalfoundation:material:894>,<enderio:block_holy_fog>],[3,2,1.5,1], 
 [<arcanearchives:radiant_dust>,<astralsorcery:itemusabledust>,<thaumcraft:nitor_yellow>,<botania:corporeaspark>],[1,1,2,3], 100000);
+*/
 Crystallizer.addRecipe(<liquid:liquid_sunshine>*1000, <extendedcrafting:material:7>, 1, 8);
 
 

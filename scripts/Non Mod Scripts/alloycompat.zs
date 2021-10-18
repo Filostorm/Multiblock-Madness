@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.thermalexpansion.InductionSmelter;
-import mods.enderio.AlloySmelter;
+//import mods.enderio.AlloySmelter;
 import mods.nuclearcraft.AlloyFurnace;
 
 print("==================== loading alloycompat.zs ====================");
@@ -158,44 +158,44 @@ InductionSmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>, <appliede
 
 // Super Alloy
 InductionSmelter.addRecipe(<qmd:ingot_alloy:6>*3, <rockhounding_chemistry:alloy_items_tech:22>*2, <qmd:ingot_alloy:3>, 50000);
-AlloySmelter.addRecipe(<qmd:ingot_alloy:6>*3, [<ore:ingotNichrome>*2, <ore:ingotNiobiumTitanium>], 50000);
+//AlloySmelter.addRecipe(<qmd:ingot_alloy:6>*3, [<ore:ingotNichrome>*2, <ore:ingotNiobiumTitanium>], 50000);
 
 // Zinc Sulfide
 InductionSmelter.addRecipe(<qmd:chemical_dust:7>, <techreborn:dust:59>, <thermalfoundation:material:771>, 10000);
-AlloySmelter.addRecipe(<qmd:chemical_dust:7>, [<ore:dustZinc>, <ore:dustSulfur>], 10000);
+//AlloySmelter.addRecipe(<qmd:chemical_dust:7>, [<ore:dustZinc>, <ore:dustSulfur>], 10000);
 
 // Niobium-Titanium
 InductionSmelter.addRecipe(<qmd:ingot_alloy:3>*2, <qmd:ingot:1>, <techreborn:ingot:14>, 30000);
-AlloySmelter.addRecipe(<qmd:ingot_alloy:3>*2, [<ore:ingotNiobium>, <ore:ingotTitanium>], 30000);
+//AlloySmelter.addRecipe(<qmd:ingot_alloy:3>*2, [<ore:ingotNiobium>, <ore:ingotTitanium>], 30000);
 
 // Niobium-Tin
 InductionSmelter.addRecipe(<qmd:ingot_alloy:1>*4, <qmd:ingot:1>*3, <thermalfoundation:material:129>, 20000);
-AlloySmelter.addRecipe(<qmd:ingot_alloy:1>*4, [<ore:ingotNiobium>*3, <ore:ingotTin>], 20000);
+//AlloySmelter.addRecipe(<qmd:ingot_alloy:1>*4, [<ore:ingotNiobium>*3, <ore:ingotTin>], 20000);
 
 // Titanium Aluminide
 InductionSmelter.addRecipe(<advancedrocketry:productingot>*3, <thermalfoundation:material:132>*7, <techreborn:ingot:14>*3, 30000);
-AlloySmelter.addRecipe(<advancedrocketry:productingot>*3, [<ore:ingotAluminum>*7, <ore:ingotTitanium>*3], 30000);
+//AlloySmelter.addRecipe(<advancedrocketry:productingot>*3, [<ore:ingotAluminum>*7, <ore:ingotTitanium>*3], 30000);
 
 // Titanium Iridium
 InductionSmelter.addRecipe(<advancedrocketry:productingot:1>*2, <techreborn:ingot:14>, <thermalfoundation:material:135>, 100000);
-AlloySmelter.addRecipe(<advancedrocketry:productingot:1>*2, [<ore:ingotTitanium>, <ore:ingotIridium>], 100000);
+//AlloySmelter.addRecipe(<advancedrocketry:productingot:1>*2, [<ore:ingotTitanium>, <ore:ingotIridium>], 100000);
 
 // HSLA Steel
 InductionSmelter.addRecipe(<nuclearcraft:alloy:15>*16, <minecraft:iron_ingot>*15, <nuclearcraft:compound:10>, 100000);
-AlloySmelter.addRecipe(<nuclearcraft:alloy:15>*16, [<minecraft:iron_ingot>*15, <nuclearcraft:compound:10>], 100000);
+//AlloySmelter.addRecipe(<nuclearcraft:alloy:15>*16, [<minecraft:iron_ingot>*15, <nuclearcraft:compound:10>], 100000);
 
 // Zirconium-Molybdenum Alloy
 InductionSmelter.addRecipe(<nuclearcraft:alloy:16>*16, <rockhounding_chemistry:metal_items:12>*15, <nuclearcraft:ingot:10>, 100000);
-AlloySmelter.addRecipe(<nuclearcraft:alloy:16>*16, [<ore:ingotMolybdenum>*15, <ore:ingotZirconium>], 100000);
+//AlloySmelter.addRecipe(<nuclearcraft:alloy:16>*16, [<ore:ingotMolybdenum>*15, <ore:ingotZirconium>], 100000);
 
 // Silicon Carbide
 InductionSmelter.addRecipe(<nuclearcraft:alloy:13>*2, <nuclearcraft:gem:6>, <rockhounding_chemistry:metal_items:7>, 10000);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:13>*2, <nuclearcraft:gem:6>, <nuclearcraft:ingot:8>, 10000);
-AlloySmelter.addRecipe(<nuclearcraft:alloy:13>*2, [<ore:itemSilicon>, <ore:ingotGraphite>], 10000);
+//AlloySmelter.addRecipe(<nuclearcraft:alloy:13>*2, [<ore:itemSilicon>, <ore:ingotGraphite>], 10000);
 
 // Zircaloy 
-InductionSmelter.addRecipe(<nuclearcraft:alloy:12>*8, <nuclearcraft:ingot:10>*7, <thermalfoundation:material:129>, 40000);
-AlloySmelter.addRecipe(<nuclearcraft:alloy:12>*8, [<ore:ingotZirconium>*7, <ore:ingotTin>], 40000);
+InductionSmelter.addRecipe(<rockhounding_chemistry:alloy_items_tech_b:7>*8, <nuclearcraft:ingot:10>*7, <thermalfoundation:material:129>, 40000);
+//AlloySmelter.addRecipe(<rockhounding_chemistry:alloy_items_tech_b:7>*8, [<ore:ingotZirconium>*7, <ore:ingotTin>], 40000);
 
 
 
@@ -203,29 +203,29 @@ AlloySmelter.addRecipe(<nuclearcraft:alloy:12>*8, [<ore:ingotZirconium>*7, <ore:
 // For recipes that can only be made in the Induction Smelter
 
 // Refined Iron (Iron + Limestone Flux recipe)
-AlloySmelter.addRecipe(<techreborn:ingot:19>, [<minecraft:iron_ingot>, <contenttweaker:limestone_flux>], 10000);
+//AlloySmelter.addRecipe(<techreborn:ingot:19>, [<minecraft:iron_ingot>, <contenttweaker:limestone_flux>], 10000);
 
 // Spectre Ingot
-AlloySmelter.addRecipe(<randomthings:ingredient:3>, [<contenttweaker:inert_ingot>, <randomthings:ingredient:2>], 10000);
-AlloySmelter.addRecipe(<randomthings:ingredient:3>*2, [<ore:ingotOrichalcum>, <randomthings:ingredient:2>], 10000);
+//AlloySmelter.addRecipe(<randomthings:ingredient:3>, [<contenttweaker:inert_ingot>, <randomthings:ingredient:2>], 10000);
+//AlloySmelter.addRecipe(<randomthings:ingredient:3>*2, [<ore:ingotOrichalcum>, <randomthings:ingredient:2>], 10000);
 
 // Ender Biotite (Ender Air recipe)
-AlloySmelter.addRecipe(<quark:biotite>, [<ore:gemQuartzBlack>, <botania:manaresource:15>*8], 5000);
+//AlloySmelter.addRecipe(<quark:biotite>, [<ore:gemQuartzBlack>, <botania:manaresource:15>*8], 5000);
 
 // Intermedium Ingot
-AlloySmelter.addRecipe(<mysticalagriculture:crafting:35>, [<ore:ingotPrudentium>, <ore:essenceIntermedium>*4], 10000);
+//AlloySmelter.addRecipe(<mysticalagriculture:crafting:35>, [<ore:ingotPrudentium>, <ore:essenceIntermedium>*4], 10000);
 
 // Prudentium Ingot
-AlloySmelter.addRecipe(<mysticalagriculture:crafting:34>, [<ore:ingotInferium>, <ore:essencePrudentium>*4], 5000);
+//AlloySmelter.addRecipe(<mysticalagriculture:crafting:34>, [<ore:ingotInferium>, <ore:essencePrudentium>*4], 5000);
 
 // Dawnstone Ingot
-AlloySmelter.addRecipe(<embers:ingot_dawnstone>*4, [<ore:ingotRosegold>*4, <embers:shard_ember>], 75000);
+//AlloySmelter.addRecipe(<embers:ingot_dawnstone>*4, [<ore:ingotRosegold>*4, <embers:shard_ember>], 75000);
 
 // Broken Spawner (Empowered Enori recipe)
-AlloySmelter.addRecipe(<enderio:item_broken_spawner>, [<actuallyadditions:item_misc:20>*4, <actuallyadditions:block_crystal_empowered:5>], 15000);
+//AlloySmelter.addRecipe(<enderio:item_broken_spawner>, [<actuallyadditions:item_misc:20>*4, <actuallyadditions:block_crystal_empowered:5>], 15000);
 
 // Hardened Glass 
-AlloySmelter.addRecipe(<thermalfoundation:glass:3>, [<ore:dustObsidian>*4, <ore:dustLead>], 8000);
+//AlloySmelter.addRecipe(<thermalfoundation:glass:3>, [<ore:dustObsidian>*4, <ore:dustLead>], 8000);
 
 
 
@@ -339,7 +339,7 @@ val ZircFuel = [
 
 for i, item in NormFuel {
 InductionSmelter.addRecipe(ZircFuel[i], item, <rockhounding_chemistry:metal_items:1>, 20000);
-AlloySmelter.addRecipe(ZircFuel[i], [item, <ore:ingotZirconium>], 20000);
+//AlloySmelter.addRecipe(ZircFuel[i], [item, <ore:ingotZirconium>], 20000);
 }
 
 
@@ -399,7 +399,7 @@ val CarbFuel = [
 for i, item in NormFuel {
 InductionSmelter.addRecipe(CarbFuel[i], item, <rockhounding_chemistry:metal_items:7>, 20000);
 InductionSmelter.addRecipe(CarbFuel[i], item, <nuclearcraft:ingot:8>, 20000);
-AlloySmelter.addRecipe(CarbFuel[i], [item, <ore:ingotGraphite>], 20000);
+//AlloySmelter.addRecipe(CarbFuel[i], [item, <ore:ingotGraphite>], 20000);
 }
 
 ##########################################################################################

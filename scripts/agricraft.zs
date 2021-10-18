@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.botaniatweaks.Agglomeration;
 import crafttweaker.item.IIngredient;
+import mods.thaumcraft.Crucible;
 import mods.modularmachinery.RecipePrimer;
 
 print("==================== loading agricraft.zs ====================");
@@ -141,6 +142,7 @@ crystalInfusing.build();
 val crystalReInfusing = mods.modularmachinery.RecipeBuilder.newBuilder("crystal_infuser_dun", "crystal_infuser", 400, 0);
 crystalReInfusing.addManaInput(2000);
 crystalReInfusing.addItemInput(<contenttweaker:dun_crystal>);
+crystalReInfusing.addItemInput(<botania:rune:2>);
 crystalReInfusing.addItemOutput(<contenttweaker:terrestrial_crystal>).setChance(0.9);
 crystalReInfusing.build();
 
@@ -166,11 +168,17 @@ val CatalystMap as IItemStack[IItemStack] = {
 
 for block, catalyst in CatalystMap {
 Agglomeration.addRecipe(<contenttweaker:dun_crystal>, 
-[<contenttweaker:terrestrial_crystal>]
-,250000,0x004a80,0xa432a8,
+[<enderutilities:enderpart:11>,<contenttweaker:terrestrial_crystal>,<aetherworks:item_resource>]
+,250000,0xe8991a,0x118507,
 <mysticalagriculture:growth_accelerator>,block,block,
 null, catalyst, catalyst);
 }
+
+//White Petal
+Crucible.registerRecipe("white_petal", "",
+    <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "botania:white_flower_plant", agri_growth: 1 as byte}), <botania:doubleflower1>,
+	[<aspect:sensus> * 20, <aspect:herba> * 10]
+);
 
 ##########################################################################################
 print("==================== end of agricraft.zs ====================");

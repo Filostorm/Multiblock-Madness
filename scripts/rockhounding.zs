@@ -21,11 +21,12 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
+/*
 //Sag mill cheating
 mods.enderio.SagMill.addRecipe([<rockhounding_chemistry:chemical_dusts:11>,<techreborn:dust:37>], [0.15,0.1], <rockhounding_chemistry:phosphate_shards:8>);
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:64>,<rockhounding_chemistry:chemical_dusts:52>], [0.20,0.15], <rockhounding_chemistry:phosphate_shards:12>);
 mods.enderio.SagMill.addRecipe([<rockhounding_chemistry:chemical_dusts:35>,<thermalfoundation:material>], [0.25,0.1], <rockhounding_chemistry:oxide_shards:26>);
-
+*/
 <ore:gemFluorite>.add(<rockhounding_chemistry:chemical_items:4>);
 
 //Reinforced Glass

@@ -9,8 +9,8 @@
   "duration": 150,
   "symmetrical": true,
 
-  "catalyst": "enderio:item_material",
-  "catalyst-meta": 20,
+  "catalyst": "astralsorcery:itemusabledust",
+  "catalyst-meta": 0,
 
   "input-types": {
     "a": {

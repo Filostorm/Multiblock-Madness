@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<!-- Migrated from enderio.zs -->
+
+<!-- Machine Parts -->
+<recipe name="MBM: Machine Parts" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="itemSimpleChassiParts" amount="4"/>
+    <input name="ingotTungsten"/>
+    <output name="itemChassiParts" amount="4"/>
+  </alloying>
+</recipe>
+
+<!-- Enhanced Machine Parts -->
+<recipe name="MBM: Enchanced Machine Parts" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="itemChassiParts" amount="4"/>
+    <input name="ingotMelodicAlloy"/>
+    <output name="itemEnhancedChassiParts" amount="4"/>
+  </alloying>
+</recipe>
+
+<!-- Industrial Machine Chassis -->
+<recipe name="Chassis"><disabled/></recipe>
+
+<!-- Soul Machine Chassis -->
+<recipe name="Soul Chassis"><disabled/></recipe>
+
+<!-- Infinity Goop from coal dust -->
+<recipe name="Infinity Goop"><disabled/></recipe>
+
+<!-- Infinity Goop from charcoal -->
+<recipe name="Infinity Goop, Charcoal"><disabled/></recipe>
+
+
+
+<!-- Migrated from alloys.zs -->
+
+<!-- Energetic Alloy -->
+<recipe name="Alloy: Energetic Alloy"><disabled/></recipe>
+
+<recipe name="MBM: Energetic Alloy" required="true">
+  <alloying energy="10000" exp="0.1">
+    <input name="dustRedstone"/>
+    <input name="ingotDawnstone"/>
+    <input name="dustGlowstone"/>
+    <output name="ingotEnergeticAlloy"/>
+  </alloying>
+</recipe>
+
+<!-- Vibrant Crystal -->
+<recipe name="MBM: Vibrant Crystal" required="true">
+  <alloying energy="20000" exp="0.1">
+    <input name="gemEmerald"/>
+    <input name="ingotVibrantAlloy"/>
+    <output name="itemVibrantCrystal"/>
+  </alloying>
+</recipe>
+
+<!-- Inert Ingot -->
+<recipe name="MBM: Inert Ingot" required="true">
+  <alloying energy="5000" exp="0.1">
+    <input name="ingotSilver" amount="2"/>
+    <input name="ingotLead"/>
+    <output name="ingotInert" amount="2"/>
+  </alloying>
+</recipe>
+
+<!-- Energetic Silver -->
+<recipe name="Alloy: Energetic Silver Alloy"><disabled/></recipe>
+
+<recipe name="MBM: Energetic Silver Ingot" required="true">
+  <alloying energy="10000" exp="0.1">
+    <input name="dustRedstone"/>
+    <input name="ingotManasteel"/>
+    <input name="dustGlowstone"/>
+    <output name="ingotEnergeticSilver"/>
+  </alloying>
+</recipe>
+
+<!-- Pulsating Crystal -->
+<recipe name="MBM: Pulsating Crystal" required="true">
+  <alloying energy="10000" exp="0.1">
+    <input name="gemDiamond"/>
+    <input name="ingotPulsatingIron"/>
+    <output name="itemPulsatingCrystal"/>
+  </alloying>
+</recipe>
+
+<!-- Redstone Alloy Ingot -->
+<recipe name="Alloy: Redstone Alloy"><disabled/></recipe>
+
+<recipe name="MBM: Redstone Alloy" required="true">
+  <alloying energy="10000" exp="0.1">
+    <input name="dustRedstone"/>
+    <input name="ingotConductiveIron"/>
+    <input name="itemSilicon"/>
+    <output name="ingotRedstoneAlloy"/>
+  </alloying>
+</recipe>
+
+<!-- Knight Slime -->
+<recipe name="MBM: Knight Slime Ingot" required="true">
+  <alloying energy="10000" exp="0.1">
+    <input name="tconstruct:edible:2"/>
+    <input name="ingotIron"/>
+    <input name="ingotBrickSeared"/>
+    <output name="ingotKnightslime"/>
+  </alloying>
+</recipe>
+
+<!-- Ender Alloy (Enhanced) -->
+<recipe name="MBM: Ender Alloy - Enhanced" required="true">
+  <alloying energy="10000" exp="0.5">
+    <input name="enderutilities:enderpart" amount="2"/>
+    <input name="ingotEnergeticAlloy"/>
+    <input name="pearlEnderEye"/>
+    <output name="enderutilities:enderpart:1" amount="2"/>
+  </alloying>
+</recipe>
+
+<!-- Adaptive Ingot -->
+<recipe name="MBM: Adaptive Ingot" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotPalladium"/>
+    <input name="compressed1xDustBedrock"/>
+    <output name="ingotAdaptive"/>
+  </alloying>
+</recipe>
+
+<!-- Stellar Alloy Ingot -->
+<recipe name="Alloy: Endergy Stellar Alloy"><disabled/></recipe>
+
+<recipe name="MBM: Stellar Alloy Ingot" required="true">
+  <alloying energy="1000000" exp="0.0">
+    <input name="netherStar"/>
+    <input name="ingotMelodicAlloy"/>
+    <input name="crystalAethium" amount="4"/>
+    <output name="ingotStellarAlloy" amount="2"/>
+  </alloying>
+</recipe>
+
+<!-- Osgloglas Alloy -->
+<recipe name="MBM: Osgloglas Alloy" required="true">
+  <alloying energy="500000" exp="0.0">
+    <input name="ingotRefinedObsidian"/>
+    <input name="ingotOsmium"/>
+    <input name="ingotRefinedGlowstone"/>
+    <output name="ingotOsgloglas"/>
+  </alloying>
+</recipe>
+
+<!-- Osmiridium Ingot -->
+<recipe name="MBM: Osmiridium Ingot" required="true">
+  <alloying energy="1000000" exp="0.0">
+    <input name="ingotIridium"/>
+    <input name="ingotOsmium"/>
+    <output name="ingotOsmiridium" amount="2"/>
+  </alloying>
+</recipe>
+
+<!-- Propperity Shard -->
+<recipe name="MBM: Prosperity Shard" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="blockQuartz"/>
+    <input name="blockLapis"/>
+    <output name="shardProsperity" amount="4"/>
+  </alloying>
+</recipe>
+
+<!-- Quartz Glass -->
+<recipe name="MBM: Quartz Glass" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="blockGlassHardened"/>
+    <input name="dustCertusQuartz"/>
+    <output name="appliedenergistics2:quartz_glass"/>
+  </alloying>
+</recipe>
+
+<!-- Vibrant Quartz Glass -->
+<recipe name="MBM: Vibrant Quartz Glass" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="blockGlassHardened"/>
+    <input name="dustCertusQuartz"/>
+    <input name="dustGlowstone" amount="2"/>
+    <output name="appliedenergistics2:quartz_vibrant_glass"/>
+  </alloying>
+</recipe>
+
+<!-- Polymer Clay -->
+<recipe name="MBM: Polymer Clay, 4" required="true">
+  <alloying energy="5000" exp="0.5">
+    <input name="ingotIron"/>
+    <input name="itemBinderComposite" amount="2"/>
+    <output name="deepmoblearning:polymer_clay" amount="4"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Polymer Clay, 8" required="true">
+  <alloying energy="10000" exp="0.5">
+    <input name="ingotGold"/>
+    <input name="itemBinderComposite" amount="4"/>
+    <output name="deepmoblearning:polymer_clay" amount="8"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Polymer Clay, 16" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotPlatinum"/>
+    <input name="itemBinderComposite" amount="8"/>
+    <output name="deepmoblearning:polymer_clay" amount="16"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Polymer Clay, 32" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="randomthings:ingredient:3"/>
+    <input name="itemBinderComposite" amount="16"/>
+    <output name="deepmoblearning:polymer_clay" amount="32"/>
+  </alloying>
+</recipe>
+
+<!-- Infinity Bimetal Gear -->
+<recipe name="MBM: Infinity Bimetal Gear" required="true">
+  <alloying energy="10000" exp="0.5">
+    <input name="gearSteel"/>
+    <input name="dustBedrock" amount="4"/>
+    <output name="gearIronInfinity"/>
+  </alloying>
+</recipe>
+
+<!-- Dark Bimetal Gear -->
+<recipe name="MBM: Dark Bimetal Gear" required="true">
+  <alloying energy="25000" exp="0.5">
+    <input name="gearIronInfinity"/>
+    <input name="ingotDarkSteel" amount="4"/>
+    <output name="gearDark"/>
+  </alloying>
+</recipe>
+
+<!-- Energized Bimetal Gear -->
+<recipe name="MBM: Energized Bimetal Gear" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="gearDark"/>
+    <input name="ingotEnergeticAlloy" amount="4"/>
+    <output name="gearEnergized"/>
+  </alloying>
+</recipe>
+
+<!-- Vibrant Bimetal Gear -->
+<recipe name="MBM: Vibrant Bimetal Gear" required="true">
+  <alloying energy="100000" exp="0.5">
+    <input name="gearEnergized"/>
+    <input name="ingotVibrantAlloy" amount="4"/>
+    <output name="gearVibrant"/>
+  </alloying>
+</recipe>
+
+<!-- Duskstone Ingot -->
+<recipe name="MBM: Duskstone Ingot" required="true">
+  <alloying energy="100000" exp="0.5">
+    <input name="ingotTungsten"/>
+    <input name="pearlEnderEye"/>
+    <input name="gemEnderBiotite"/>
+    <output name="extendedcrafting:material:36"/>
+  </alloying>
+</recipe>
+
+<!-- Crystalline Pink Slime Ingot -->
+<recipe name="MBM: Crystalline Pink Slime Ingot" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="ingotCrystallineAlloy"/>
+    <input name="ingotKnightslime"/>
+    <output name="ingotCrystallinePinkSlime"/>
+  </alloying>
+</recipe>
+
+<!-- Melodic Alloy Ingot -->
+<recipe name="Alloy: Endergy Melodic Alloy"><disabled/></recipe>
+
+<recipe name="MBM: Melodic Alloy Ingot" required="true">
+  <alloying energy="100000" exp="0.5">
+    <input name="ingotCrystallinePinkSlime"/>
+    <input name="ingotEndSteel"/>
+    <input name="minecraft:chorus_fruit_popped"/>
+    <output name="ingotMelodicAlloy"/>
+  </alloying>
+</recipe>
+
+<!-- Tungsten Carbide Ingot -->
+<recipe name="MBM: Tungsten Carbide Ingot" required="true">
+  <alloying energy="40000" exp="0.5">
+    <input name="ingotTungsten"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotTungstenCarbide" amount="2"/>
+  </alloying>
+</recipe>
+
+<!-- Brass Ingot -->
+<recipe name="MBM: Brass Ingot" required="true">
+  <alloying energy="40000" exp="0.5">
+    <input name="ingotCopper" amount="2"/>
+    <input name="ingotZinc"/>
+    <output name="ingotBrass" amount="3"/>
+  </alloying>
+</recipe>
+
+<!-- Rose Gold Ingot -->
+<recipe name="MBM: Rose Gold Ingot" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotGold" amount="3"/>
+    <input name="ingotCopper"/>
+    <input name="nuggetSilver"/>
+    <output name="ingotRosegold" amount="4"/>
+  </alloying>
+</recipe>
+
+<!-- Adaptive Alloy Tripling -->
+
+<recipe name="MBM: Inert Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotInert"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotInert" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Energetic Silver Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotEnergeticSilver"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotEnergeticSilver" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Electrical Steel Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotElectricalSteel"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotElectricalSteel" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Energetic Alloy Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotEnergeticAlloy"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotEnergeticAlloy" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Redstone Alloy Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotRedstoneAlloy"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotRedstoneAlloy" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Conductive Iron Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotConductiveIron"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotConductiveIron" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Pulsating Iron Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotPulsatingIron"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotPulsatingIron" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Dark Steel Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotDarkSteel"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotDarkSteel" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Soularium Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotSoularium"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotSoularium" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Ferroboron Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotFerroboron"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotFerroboron" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Aluminum Brass Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotAlubrass"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotAlubrass" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Steel Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotSteel"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotSteel" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Electrum Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotElectrum"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotElectrum" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Invar Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotInvar"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotInvar" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Bronze Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotBronze"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotBronze" amount="3"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Constantan Ingot Tripling" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="ingotConstantan"/>
+    <input name="ingotAdaptive"/>
+    <output name="ingotConstantan" amount="3"/>
+  </alloying>
+</recipe>
+
+
+
+<!-- Migrated from alloycompat.zs -->
+
+<!-- Super Alloy Ingot -->
+<recipe name="MBM: Super Alloy Ingot" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="ingotNichrome" amount="2"/>
+    <input name="ingotNiobiumTitanium"/>
+    <output name="ingotSuperAlloy" amount="3"/>
+  </alloying>
+</recipe>
+
+<!-- Zinc Sulfide -->
+<recipe name="MBM: Zinc Sulfide" required="true">
+  <alloying energy="10000" exp="0.5">
+    <input name="dustSulfur"/>
+    <input name="dustZinc"/>
+    <output name="dustZincSulfide"/>
+  </alloying>
+</recipe>
+
+<!-- Niobium Titanium Ingot -->
+<recipe name="MBM: Niobium Titanium Ingot" required="true">
+  <alloying energy="30000" exp="0.5">
+    <input name="ingotNiobium"/>
+    <input name="ingotTitanium"/>
+    <output name="ingotNiobiumTitanium" amount="2"/>
+  </alloying>
+</recipe>
+
+<!-- Niobium Tin Ingot -->
+<recipe name="MBM: Niobium Tin Ingot" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotNiobium" amount="3"/>
+    <input name="ingotTin"/>
+    <output name="ingotNiobiumTin" amount="4"/>
+  </alloying>
+</recipe>
+
+<!-- Titanium Aluminide Ingot -->
+<recipe name="MBM: Titanium Aluminide Ingot" required="true">
+  <alloying energy="30000" exp="0.5">
+    <input name="ingotTitanium" amount="3"/>
+    <input name="ingotAluminum" amount="7"/>
+    <output name="ingotTitaniumAluminide" amount="3"/>
+  </alloying>
+</recipe>
+
+<!-- Titanium Iridium Ingot -->
+<recipe name="MBM: Titanium Iridium Ingot" required="true">
+  <alloying energy="100000" exp="0.5">
+    <input name="ingotTitanium"/>
+    <input name="ingotIridium"/>
+    <output name="ingotTitaniumIridium" amount="2"/>
+  </alloying>
+</recipe>
+
+<!-- HSLA Steel Ingot -->
+<recipe name="MBM: HSLA Steel Ingot" required="true">
+  <alloying energy="100000" exp="0.5">
+    <input name="ingotIron" amount="15"/>
+    <input name="dustCarbonManganese"/>
+    <output name="ingotHSLASteel" amount="16"/>
+  </alloying>
+</recipe>
+
+<!-- Zirconium Molybdenum Alloy-->
+<recipe name="MBM: Zirconium Molybdenum Alloy" required="true">
+  <alloying energy="100000" exp="0.5">
+    <input name="ingotMolybdenum" amount="15"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotZirconiumMolybdenum" amount="16"/>
+  </alloying>
+</recipe>
+
+<!-- Silicon Carbide Ingot-->
+<recipe name="MBM: Silicon Carbide Ingot" required="true">
+  <alloying energy="10000" exp="0.5">
+    <input name="itemSilicon"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotSiliconCarbide" amount="2"/>
+  </alloying>
+</recipe>
+
+<!-- Zircaloy Ingot-->
+<recipe name="MBM: Zircaloy Ingot" required="true">
+  <alloying energy="40000" exp="0.5">
+    <input name="ingotZirconium" amount="7"/>
+    <input name="ingotTin"/>
+    <output name="ingotZircaloy" amount="8"/>
+  </alloying>
+</recipe>
+
+<!-- Refined Iron Ingot-->
+<recipe name="MBM: Refined Iron Ingot" required="true">
+  <alloying energy="10000" exp="0.5">
+    <input name="ingotIron"/>
+    <input name="contenttweaker:limestone_flux"/>
+    <output name="ingotRefinedIron"/>
+  </alloying>
+</recipe>
+
+<!-- Spectre Ingot-->
+<recipe name="MBM: Spectre Ingot" required="true">
+  <alloying energy="10000" exp="0.5">
+    <input name="ingotInert"/>
+    <input name="randomthings:ingredient:2"/>
+    <output name="randomthings:ingredient:3"/>
+  </alloying>
+</recipe>
+
+<!-- Spectre Ingot, 2x-->
+<recipe name="MBM: Spectre Ingot, 2x" required="true">
+  <alloying energy="10000" exp="0.5">
+    <input name="ingotOrichalcum"/>
+    <input name="randomthings:ingredient:2"/>
+    <output name="randomthings:ingredient:3" amount="2"/>
+  </alloying>
+</recipe>
+
+<!-- Ender Biotite-->
+<recipe name="MBM: Ender Biotite" required="true">
+  <alloying energy="5000" exp="0.5">
+    <input name="gemQuartzBlack"/>
+    <input name="bEnderAirBottle" amount="8"/>
+    <output name="gemEnderBiotite"/>
+  </alloying>
+</recipe>
+
+<!-- Intermedium Ingot-->
+<recipe name="MBM: Intermedium Ingot" required="true">
+  <alloying energy="10000" exp="0.5">
+    <input name="ingotPrudentium"/>
+    <input name="essenceIntermedium" amount="4"/>
+    <output name="ingotIntermedium"/>
+  </alloying>
+</recipe>
+
+<!-- Prudentium Ingot-->
+<recipe name="MBM: Prudentium Ingot" required="true">
+  <alloying energy="5000" exp="0.5">
+    <input name="ingotInferium"/>
+    <input name="essencePrudentium" amount="4"/>
+    <output name="ingotPrudentium"/>
+  </alloying>
+</recipe>
+
+<!-- Dawnstone Ingot-->
+<recipe name="MBM: Dawnstone Ingot" required="true">
+  <alloying energy="75000" exp="0.5">
+    <input name="embers:shard_ember"/>
+    <input name="ingotRosegold" amount="4"/>
+    <output name="ingotDawnstone" amount="4"/>
+  </alloying>
+</recipe>
+
+<!-- Broken Spawner -->
+<recipe name="MBM: Broken Spawner" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="actuallyadditions:item_misc:20" amount="4"/>
+    <input name="actuallyadditions:block_crystal_empowered:5"/>
+    <output name="enderio:item_broken_spawner"/>
+  </alloying>
+</recipe>
+
+<!-- Hardened Glass -->
+<recipe name="MBM: Hardened Glass" required="true">
+  <alloying energy="8000" exp="0.5">
+    <input name="dustObsidian" amount="4"/>
+    <input name="dustLead"/>
+    <output name="thermalfoundation:glass:3"/>
+  </alloying>
+</recipe>
+
+
+<!-- Zirconium Fuel copy recipes -->
+
+<recipe name="MBM: Zirc and U233" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotUranium233"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotUranium233ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and U235" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotUranium235"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotUranium235ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and U238" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotUranium238"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotUranium238ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and N236" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotNeptunium236"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotNeptunium236ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and N237" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotNeptunium237"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotNeptunium237ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and P238" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotPlutonium238"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotPlutonium238ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and P239" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotPlutonium239"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotPlutonium239ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and P241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotPlutonium241"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotPlutonium241ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and P242" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotPlutonium242"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotPlutonium242ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and A241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotAmericium241"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotAmericium241ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and A242" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotAmericium242"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotAmericium242ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and A243" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotAmericium243"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotAmericium243ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and C243" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCurium243"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotCurium243ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and C245" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCurium245"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotCurium245ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and C246" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCurium246"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotCurium246ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and C247" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCurium247"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotCurium247ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and B247" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotBerkelium247"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotBerkelium247ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and B248" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotBerkelium248"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotBerkelium248ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and CAL249" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCalifornium249"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotCalifornium249ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and CAL250" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCalifornium250"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotCalifornium250ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and CAL251" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCalifornium251"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotCalifornium251ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and CAL252" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCalifornium252"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotCalifornium252ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and TBU" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotTBU"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotTBUZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LEU233" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEU233"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLEU233ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HEU233" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEU233"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHEU233ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LEU235" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEU235"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLEU235ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HEU235" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEU235"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHEU235ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LEN236" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEN236"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLEN236ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HEN236" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEN236"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHEN236ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LEP239" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEP239"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLEP239ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HEP239" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEP239"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHEP239ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LEP241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEP241"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLEP241ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HEP241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEP241"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHEP241ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and MIX239" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotMIX239"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotMIX239ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and MIX241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotMIX241"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotMIX241ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LEA242" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEA242"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLEA242ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HEA242" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEA242"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHEA242ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LECm243" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECm243"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLECm243ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HECm243" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECm243"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHECm243ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LECm245" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECm245"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLECm245ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HECm245" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECm245"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHECm245ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LECm247" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECm247"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLECm247ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HECm247" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECm247"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHECm247ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LEB248" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEB248"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLEB248ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HEB248" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEB248"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHEB248ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LECf249" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECf249"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLECf249ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HECf249" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECf249"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHECf249ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and LECf251" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECf251"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotLECf251ZA"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Zirc and HECf251" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECf251"/>
+    <input name="ingotZirconium"/>
+    <output name="ingotHECf251ZA"/>
+  </alloying>
+</recipe>
+
+
+
+<!-- Carbide Fuels -->
+
+<recipe name="MBM: Graphite and U233" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotUranium233"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotUranium233Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and U235" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotUranium235"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotUranium235Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and U238" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotUranium238"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotUranium238Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and N236" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotNeptunium236"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotNeptunium236Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and N237" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotNeptunium237"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotNeptunium237Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and P238" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotPlutonium238"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotPlutonium238Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and P239" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotPlutonium239"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotPlutonium239Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and P241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotPlutonium241"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotPlutonium241Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and P242" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotPlutonium242"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotPlutonium242Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and A241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotAmericium241"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotAmericium241Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and A242" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotAmericium242"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotAmericium242Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and A243" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotAmericium243"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotAmericium243Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and C243" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCurium243"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotCurium243Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and C245" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCurium245"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotCurium245Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and C246" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCurium246"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotCurium246Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and C247" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCurium247"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotCurium247Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and B247" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotBerkelium247"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotBerkelium247Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and B248" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotBerkelium248"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotBerkelium248Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and CAL249" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCalifornium249"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotCalifornium249Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and CAL250" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCalifornium250"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotCalifornium250Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and CAL251" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCalifornium251"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotCalifornium251Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and CAL252" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotCalifornium252"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotCalifornium252Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and TBU" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotTBU"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotTBUCarbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LEU233" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEU233"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLEU233Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HEU233" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEU233"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHEU233Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LEU235" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEU235"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLEU235Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HEU235" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEU235"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHEU235Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LEN236" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEN236"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLEN236Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HEN236" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEN236"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHEN236Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LEP239" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEP239"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLEP239Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HEP239" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEP239"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHEP239Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LEP241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEP241"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLEP241Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HEP241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEP241"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHEP241Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and MIX239" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotMIX239"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotMIX239Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and MIX241" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotMIX241"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotMIX241Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LEA242" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEA242"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLEA242Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HEA242" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEA242"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHEA242Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LECm243" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECm243"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLECm243Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HECm243" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECm243"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHECm243Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LECm245" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECm245"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLECm245Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HECm245" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECm245"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHECm245Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LECm247" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECm247"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLECm247Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HECm247" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECm247"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHECm247Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LEB248" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLEB248"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLEB248Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HEB248" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHEB248"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHEB248Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LECf249" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECf249"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLECf249Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HECf249" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECf249"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHECf249Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and LECf251" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotLECf251"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotLECf251Carbide"/>
+  </alloying>
+</recipe>
+
+<recipe name="MBM: Graphite and HECf251" required="true">
+  <alloying energy="20000" exp="0.5">
+    <input name="ingotHECf251"/>
+    <input name="ingotGraphite"/>
+    <output name="ingotHECf251Carbide"/>
+  </alloying>
+</recipe>
+
+
+<!-- From twilight_forest.zs -->
+
+<!-- Combustible Ingot -->
+<recipe name="MBM: Combustible Ingot" required="true">
+  <alloying energy="10000" exp="0.1">
+    <input name="thermalfoundation:material:833" amount="8"/>
+    <input name="contenttweaker:noon_ingot"/>
+    <output name="contenttweaker:tarred_ingot"/>
+  </alloying>
+</recipe>
+
+</enderio:recipes>

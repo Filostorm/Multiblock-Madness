@@ -1,0 +1,286 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/fancymenu/assets/multiblockmadness/bhmmbackground.png
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=400322%
+  orientation = mid-centered
+  x = -186
+  action = movebutton
+  y = 13
+}
+
+customization {
+  identifier = %id=400322%
+  width = 171
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400322%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=400322%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmmultiplayerhover.png
+  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmmultiplayer.png
+}
+
+customization {
+  identifier = %id=400322%
+  seconds = 1.0
+  onlyfirsttime = true
+  fadein = true
+  fadeinspeed = 1.0
+  action = hidebuttonfor
+}
+
+customization {
+  identifier = %id=400382%
+  orientation = mid-centered
+  x = -186
+  action = movebutton
+  y = 93
+}
+
+customization {
+  identifier = %id=400382%
+  width = 171
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400382%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=400382%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmoptionshover.png
+  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmoptions.png
+}
+
+customization {
+  identifier = %id=400382%
+  seconds = 2.0
+  onlyfirsttime = true
+  fadein = true
+  fadeinspeed = 1.0
+  action = hidebuttonfor
+}
+
+customization {
+  identifier = %id=502382%
+  orientation = mid-centered
+  x = -186
+  action = movebutton
+  y = 132
+}
+
+customization {
+  identifier = %id=502382%
+  width = 171
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502382%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=502382%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmquitgamehover.png
+  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmquitgame.png
+}
+
+customization {
+  identifier = %id=502382%
+  seconds = 2.5
+  onlyfirsttime = true
+  fadein = true
+  fadeinspeed = 1.0
+  action = hidebuttonfor
+}
+
+customization {
+  identifier = %id=376382%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=400298%
+  orientation = mid-centered
+  x = -186
+  action = movebutton
+  y = -27
+}
+
+customization {
+  identifier = %id=400298%
+  width = 186
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400298%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=400298%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmsingeplayerhover.png
+  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmsingeplayer.png
+}
+
+customization {
+  identifier = %id=400298%
+  seconds = 0.5
+  onlyfirsttime = true
+  fadein = true
+  fadeinspeed = 1.0
+  action = hidebuttonfor
+}
+
+customization {
+  identifier = %id=400346%
+  orientation = mid-centered
+  x = -186
+  action = movebutton
+  y = 53
+}
+
+customization {
+  identifier = %id=400346%
+  width = 171
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400346%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=400346%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmmodshover.png
+  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmmods.png
+}
+
+customization {
+  identifier = %id=400346%
+  seconds = 1.5
+  onlyfirsttime = true
+  fadein = true
+  fadeinspeed = 1.0
+  action = hidebuttonfor
+}
+
+customization {
+  identifier = %id=502346%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376346%
+  action = hidebutton
+}
+
+customization {
+  path = config/fancymenu/assets/multiblockmadness/bhmmlogo.png
+  orientation = mid-centered
+  x = -186
+  width = 361
+  actionid = 0b92c308-794c-43dc-8a32-4ec721bc95f21634069700992
+  action = addtexture
+  y = -148
+  height = 100
+}
+
+customization {
+  path = config/fancymenu/assets/multiblockmadness/bhmmdiscordimage.png
+  orientation = mid-centered
+  x = 27
+  width = 147
+  actionid = f4a7c1f2-113c-4e53-9dec-f7a6be7114731634070514056
+  action = addtexture
+  y = -32
+  height = 185
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmdiscordhover.png
+  label = 
+  loopbackgroundanimations = true
+  x = 51
+  width = 98
+  actionid = e0d39c94-4e53-4b17-89b2-d15cf18d2d5d1634073097416
+  action = addbutton
+  y = 49
+  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmdiscord.png
+  value = https://discord.gg/qfEAtfY
+  height = 14
+}
+
+customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmrentserverhover.png
+  label = 
+  loopbackgroundanimations = true
+  x = 51
+  width = 98
+  actionid = 1d08ee14-3aa8-4e65-aaf4-c34bc0d6c1d81634073097417
+  action = addbutton
+  y = 67
+  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmrentserver.png
+  value = https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fbisecthosting.com%252fMultiblockMadness
+  height = 60
+}
+

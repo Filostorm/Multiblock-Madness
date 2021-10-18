@@ -10,7 +10,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.advancedrocketry.Lathe;
 import mods.advancedrocketry.PlatePresser;
 import mods.embers.Stamper;
-import mods.enderio.SagMill;
+//import mods.enderio.SagMill;
 import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.Crusher;
 import mods.nuclearcraft.Manufactory;
@@ -195,7 +195,7 @@ Crusher.addRecipe(<thermalfoundation:material:771>*3, <thebetweenlands:items_mis
 Manufactory.addRecipe(<thebetweenlands:items_misc:18>, <thermalfoundation:material:771>*4);
 grinder.addRecipe(<thermalfoundation:material:771>*4, <thebetweenlands:items_misc:18>, 300, 4);
 Pulverizer.addRecipe(<thermalfoundation:material:771>*4, <thebetweenlands:items_misc:18>, 1500, <thermalfoundation:material:771>, 50);
-SagMill.addRecipe([<thermalfoundation:material:771>*3], [1] , <thebetweenlands:items_misc:18>, "MULTIPLY_OUTPUT");
+//SagMill.addRecipe([<thermalfoundation:material:771>*3], [1] , <thebetweenlands:items_misc:18>, "MULTIPLY_OUTPUT");
 
 
 RecipeBuilder.get("blacksmith")

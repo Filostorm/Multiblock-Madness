@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+
+<!-- From astral_sorcery.zs -->
+
+<recipe name="MBM: Rock Crystal" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="astralsorcery:blockcustomore" />
+    <output name="astralsorcery:itemrockcrystalsimple" chance="1.0"/>
+    <output name="astralsorcery:itemrockcrystalsimple" chance="0.5"/>
+    <output name="astralsorcery:itemrockcrystalsimple" chance="0.1"/>
+  </sagmilling>
+</recipe>
+
+<!-- From botania.zs -->
+
+<recipe name="MBM: Botania Dye 0" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal" />
+    <output name="botania:dye" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 1" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:1" />
+    <output name="botania:dye:1" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 2" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:2" />
+    <output name="botania:dye:2" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 3" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:3" />
+    <output name="botania:dye:3" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 4" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:4" />
+    <output name="botania:dye:4" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 5" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:5" />
+    <output name="botania:dye:5" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 6" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:6" />
+    <output name="botania:dye:6" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 7" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:7" />
+    <output name="botania:dye:7" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 8" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:8" />
+    <output name="botania:dye:8" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 9" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:9" />
+    <output name="botania:dye:9" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 10" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:10" />
+    <output name="botania:dye:10" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 11" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:11" />
+    <output name="botania:dye:11" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 12" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:12" />
+    <output name="botania:dye:12" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 13" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:13" />
+    <output name="botania:dye:13" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 14" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:14" />
+    <output name="botania:dye:14" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Botania Dye 15" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="botania:petal:15" />
+    <output name="botania:dye:15" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+
+<!-- From rockhounding.zs -->
+
+<!-- Scandium Dust -->
+<recipe name="MBM: Scandium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:phosphate_shards:8" />
+    <output name="dustScandium" chance="0.15"/>
+    <output name="dustPhosphorus" chance="0.1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Copper and Vanadium -->
+<recipe name="MBM: Copper and Vanadium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:phosphate_shards:12" />
+    <output name="dustCopper" chance="0.2"/>
+    <output name="dustVanadium" chance="0.15"/>
+  </sagmilling>
+</recipe>
+
+<!-- Molybdenum and Iron -->
+<recipe name="MBM: Molybdenum and Iron Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:oxide_shards:26" />
+    <output name="dustMolybdenum" chance="0.25"/>
+    <output name="dustIron" chance="0.1"/>
+  </sagmilling>
+</recipe>
+
+
+<!-- From parts.zs -->
+
+<!-- Clay Dust -->
+<recipe name="MBM: Clay Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="blockClay" />
+    <output name="dustClay" chance="1.0" amount="4"/>
+  </sagmilling>
+</recipe>
+
+<!-- Limestone Flux -->
+<recipe name="MBM: Limestone Flux" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="limestoneforFlux" />
+    <output name="contenttweaker:limestone_flux" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Radiant Dust -->
+<recipe name="MBM: Radiant Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="arcanearchives:storage_raw_quartz" />
+    <output name="arcanearchives:radiant_dust" chance="1.0" amount="9"/>
+  </sagmilling>
+</recipe>
+
+<!-- Ember Grit -->
+<recipe name="MBM: Ember Grit" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="embers:crystal_ember" />
+    <output name="embers:dust_ember" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<!-- Graphite Dust -->
+<recipe name="MBM: Graphite Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="thermalfoundation:material:768" />
+    <output name="nuclearcraft:dust:8" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<!-- Silicon Dust -->
+<recipe name="MBM: Silicon Dust" required="true">
+  <sagmilling energy="2000" bonus="none">
+    <input name="dustSilicon" />
+    <output name="itemSilicon" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<!-- Skystone Dust -->
+<recipe name="MBM: Skystone Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="skyStone" />
+    <output name="appliedenergistics2:material:45" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<!-- Pristine Dust -->
+<recipe name="MBM: Pristine Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="pristineMatter" />
+    <output name="contenttweaker:pristine_dust" chance="1.0"/>
+  </sagmilling>
+</recipe>
+
+<!-- Flux Blocks -->
+<recipe name="MBM: Flux Blocks" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="fluxnetworks:fluxblock" />
+    <output name="fluxnetworks:fluxcore" chance="1.0" amount="4"/>
+    <output name="fluxnetworks:flux" chance="0.9" amount="5"/>
+  </sagmilling>
+</recipe>
+
+<!-- Wither Ash -->
+<recipe name="MBM: Wither Ash" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="minecraft:skull:1" />
+    <output name="quark:black_ash" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+
+
+<!-- From betweenlands.zs -->
+
+<!-- Sulfur -->
+<recipe name="MBM: Sulfur" required="false">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="thebetweenlands:items_misc:18" />
+    <output name="thermalfoundation:material:771" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+
+</enderio:recipes>

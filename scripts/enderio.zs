@@ -1,7 +1,6 @@
 
 import crafttweaker.item.IItemStack;
 import mods.tconstruct.Casting;
-import mods.enderio.AlloySmelter;
 import mods.thermalexpansion.InductionSmelter;
 import mods.nuclearcraft.AlloyFurnace;
 import mods.techreborn.grinder;
@@ -61,11 +60,11 @@ for item in itemstoRemove {
 
 //Parts t2
 InductionSmelter.addRecipe(<enderio:item_material:2>*4, <enderio:item_material:69>*4, <techreborn:ingot:15>, 50000);
-AlloySmelter.addRecipe(<enderio:item_material:2>*4, [<enderio:item_material:69>*4, <techreborn:ingot:15>], 50000);
+///AlloySmelter.addRecipe(<enderio:item_material:2>*4, [<enderio:item_material:69>*4, <techreborn:ingot:15>], 50000);
 AlloyFurnace.addRecipe(<enderio:item_material:69>*4, <techreborn:ingot:15>, <enderio:item_material:2>*4);
 //Parts t3
 InductionSmelter.addRecipe(<enderio:item_material:68>*4, <enderio:item_material:2>*4, <enderio:item_alloy_endergy_ingot:2>, 50000);
-AlloySmelter.addRecipe(<enderio:item_material:68>*4, [<enderio:item_material:2>*4, <enderio:item_alloy_endergy_ingot:2>], 50000);
+//AlloySmelter.addRecipe(<enderio:item_material:68>*4, [<enderio:item_material:2>*4, <enderio:item_alloy_endergy_ingot:2>], 50000);
 AlloyFurnace.addRecipe(<enderio:item_material:2>*4, <enderio:item_alloy_endergy_ingot:2>, <enderio:item_material:68>*4);
 
 //YETA
@@ -120,7 +119,7 @@ recipes.addShaped(<enderio:item_material:9>, [[null, <ore:stickWood>, null],[<or
 
 <ore:fusedGlass>.add(<tconstruct:clear_glass>);
 
-AlloySmelter.removeRecipe(<enderio:item_material:75>);
+//AlloySmelter.removeRecipe(<enderio:item_material:75>);
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<enderio:item_material:75>, <enderio:item_material:20>, 5000);
 
 //pulsating crystal
@@ -138,8 +137,8 @@ recipes.addShaped(<enderio:item_xp_transfer>, [[null, null, <enderio:item_alloy_
 //cant make frames the normal way
 InductionSmelter.removeRecipe(<enderio:item_material:51>, <enderio:item_material>);
 InductionSmelter.removeRecipe(<enderio:item_material:52>, <enderio:item_material>);
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:1>);
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:53>);
+//mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:1>);
+//mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:53>);
 
 //Redstone stuff
 recipes.addShaped(<enderio:item_redstone_timer_filter>, [[<deepmoblearning:soot_covered_redstone>, <enderio:item_material:60>, <minecraft:clock>]]);

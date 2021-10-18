@@ -137,7 +137,8 @@ val recipestoRemove =
 <immersiveposts:metal_rods:4>,
 <immersiveposts:metal_rods:3>,
 <randomthings:igniter>,
-<libvulpes:productrod:4>
+<libvulpes:productrod:4>,
+<simplevoidworld:portal>,
 ]
  as IItemStack[];
 
@@ -258,6 +259,9 @@ recipes.removeShapeless(<minecraft:dye:1>, [<minecraft:beetroot>]);
 mods.jei.JEI.addItem(<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 4 as short}}));
 mods.jei.JEI.addItem(<conarm:armorforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 3 as short}}));
 
+
+//Simple Void World
+recipes.addShaped(<simplevoidworld:portal>, [[<minecraft:obsidian>, <aetherworks:item_resource:2>, <minecraft:obsidian>],[<aetherworks:item_resource:2>, <actuallyadditions:block_crystal:2>, <aetherworks:item_resource:2>], [<minecraft:obsidian>, <aetherworks:item_resource:2>, <minecraft:obsidian>]]);
 
 
 //mods.jei.JEI.addItem(<rockhounding_chemistry:machines_e:1>);

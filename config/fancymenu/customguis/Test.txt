@@ -1,0 +1,3 @@
+identifier = Test
+title = Test
+allowesc = true

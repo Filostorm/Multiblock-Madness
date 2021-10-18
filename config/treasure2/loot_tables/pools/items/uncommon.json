@@ -133,12 +133,12 @@
 					"entryName": "elemental_soil",
 					"type": "item",
 					"name": "contenttweaker:elemental_soil",
-					"weight": 25,
+					"weight": 5,
 					"functions": [
 						{
 							"function": "set_count",
 							"count": {
-								"min": 3,
+								"min": 1,
 								"max": 9
 							}
 						}

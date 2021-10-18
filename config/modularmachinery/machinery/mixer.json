@@ -3,6 +3,23 @@
     "localizedname": "The Mixer", 
     "requires-blueprint": true, 
     "color": "5e5542",
+    "modifiers": [
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": "thermalfoundation:storage_alloy@1",
+            "description": "2x speed when replacing center block",
+            "modifiers": [
+            {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.50
+            }         
+            ]
+        }
+    ],
     "parts": [
         {
             "x": -1,

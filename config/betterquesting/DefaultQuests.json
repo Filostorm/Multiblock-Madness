@@ -5180,6 +5180,25 @@
       },
       "rewards:9": {
         "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "thermalexpansion:tank",
+              "Count:3": 1,
+              "tag:10": {
+                "RSControl:1": 0,
+                "Level:1": 0
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
           "rewardID:8": "bq_standard:choice",
           "index:3": 1,
           "choices:9": {
@@ -9163,7 +9182,7 @@
               "id:8": "embers:block_caminite_brick",
               "Count:3": 53,
               "Damage:2": 0,
-              "OreDict:8": ""
+              "OreDict:8": "bricksForMixer"
             },
             "11:10": {
               "id:8": "embers:block_caminite_brick_slab",
@@ -15387,6 +15406,25 @@
               "id:8": "rockhounding_chemistry:speed_items",
               "Count:3": 1,
               "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "simple_trophies:trophy",
+              "Count:3": 1,
+              "tag:10": {
+                "TrophyColorGreen:3": 47,
+                "TrophyVariant:8": "classic",
+                "TrophyShowsTooltip:1": 1,
+                "TrophyItem:10": {
+                  "id:8": "rockhounding_chemistry:machines_c",
+                  "Count:1": 1,
+                  "Damage:3": 7
+                },
+                "TrophyColorBlue:3": 190,
+                "TrophyName:8": "Rockhounding!",
+                "TrophyColorRed:3": 123
+              },
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -57953,7 +57991,33 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "simple_trophies:trophy",
+              "Count:3": 1,
+              "tag:10": {
+                "TrophyColorGreen:3": 47,
+                "TrophyVariant:8": "classic",
+                "TrophyShowsTooltip:1": 1,
+                "TrophyItem:10": {
+                  "id:8": "contenttweaker:incoherent",
+                  "Count:1": 1,
+                  "Damage:3": 0
+                },
+                "TrophyColorBlue:3": 190,
+                "TrophyName:8": "Quantum Minecraft Dynamics!",
+                "TrophyColorRed:3": 123
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "746:10": {
       "questID:3": 746,
@@ -58011,7 +58075,33 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "simple_trophies:trophy",
+              "Count:3": 1,
+              "tag:10": {
+                "TrophyColorGreen:3": 47,
+                "TrophyVariant:8": "classic",
+                "TrophyShowsTooltip:1": 1,
+                "TrophyItem:10": {
+                  "id:8": "contenttweaker:neutronic",
+                  "Count:1": 1,
+                  "Damage:3": 0
+                },
+                "TrophyColorBlue:3": 190,
+                "TrophyName:8": "Quantum Minecraft Dynamics!",
+                "TrophyColorRed:3": 123
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "747:10": {
       "questID:3": 747,
