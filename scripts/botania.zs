@@ -214,11 +214,15 @@ RuneAltar.addRecipe(<botania:rune:3>,[<ore:ingotBrass>, <thermalfoundation:mater
 RuneAltar.removeRecipe(<botania:rune:2>);
 RuneAltar.addRecipe(<botania:rune:2>,[<mysticalworld:wet_mud_block>, <twilightforest:steeleaf_ingot>, <thermalfoundation:material:1027>, <botania:manaresource>, <botania:manaresource:23>], 15000);
 //Wet Mud
-Transposer.addFillRecipe(<mysticalworld:wet_mud_block>, <minecraft:dirt>, <liquid:water>*200, 2500);
+Transposer.addFillRecipe(<mysticalworld:wet_mud_block>, <minecraft:dirt>, <liquid:water>*125, 2500);
+mods.nuclearcraft.Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
 
 //Rune of Fire
 RuneAltar.removeRecipe(<botania:rune:1>);
 RuneAltar.addRecipe(<botania:rune:1>,[<thaumcraft:alumentum>, <tconstruct:firewood:1>, <thermalfoundation:material:1024>, <botania:manaresource>, <botania:manaresource:23>], 15000);
+//Lavawood
+Transposer.addFillRecipe(<tconstruct:firewood>, <minecraft:planks>, <liquid:lava>*250, 2500);
+mods.nuclearcraft.Infuser.addRecipe(<ore:plankWood>, <liquid:lava>*250, <tconstruct:firewood>);
 
 //Rune of Water
 RuneAltar.removeRecipe(<botania:rune>);

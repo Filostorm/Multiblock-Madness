@@ -319,6 +319,6 @@ Refinery.addRecipe(<liquid:blended_diesel>*16, <liquid:biodiesel>*8, <liquid:die
 mods.immersiveengineering.Mixer.addRecipe(<liquid:boosted_diesel>*250, <liquid:blended_diesel>*250, [<aetherworks:item_resource>], 512);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:boosted_diesel>, 450);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:blended_diesel>, 200);
-
+mods.nuclearcraft.Enricher.addRecipe(<aetherworks:item_resource>, <liquid:blended_diesel>*250, <liquid:boosted_diesel>*250);
 
 	print("--- immersive.zs initialized ---");

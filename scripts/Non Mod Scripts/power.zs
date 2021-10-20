@@ -49,15 +49,17 @@ for fluid in boilerfluidstoremove {
 
 val newboilerfluids =
 [
-    <liquid:biodiesel>*15,
-    <liquid:diesel>*9,
-    <liquid:gasoline>*14,
-    <liquid:canolaoil>*155,
-    <liquid:refinedcanolaoil>*43,
-    <liquid:crystaloil>*8,
+    <liquid:biodiesel>*12,
+    <liquid:diesel>*7,
+    <liquid:gasoline>*11,
+    <liquid:canolaoil>*123,
+    <liquid:refinedcanolaoil>*34,
+    <liquid:crystaloil>*6,
     <liquid:empoweredoil>*2,
-    <liquid:creosote>*194,
-    <liquid:syngas>*15
+    <liquid:creosote>*153,
+    <liquid:syngas>*12,
+    <liquid:blended_diesel>*7,
+    <liquid:boosted_diesel>*3
 ]
  as ILiquidStack[];
 
@@ -81,20 +83,22 @@ for fluid in gasturbinefluidstoremove {
 
 val newgasturbinefluids =
 [
-    <liquid:biodiesel>*150,
-    <liquid:diesel>*90,
-    <liquid:gasoline>*140,
-    <liquid:canolaoil>*1550,
-    <liquid:refinedcanolaoil>*430,
-    <liquid:crystaloil>*80,
+    <liquid:biodiesel>*120,
+    <liquid:diesel>*70,
+    <liquid:gasoline>*110,
+    <liquid:canolaoil>*1230,
+    <liquid:refinedcanolaoil>*340,
+    <liquid:crystaloil>*60,
     <liquid:empoweredoil>*20,
-    <liquid:creosote>*1940,
-    <liquid:syngas>*150
+    <liquid:creosote>*1530,
+    <liquid:syngas>*120,
+    <liquid:blended_diesel>*70,
+    <liquid:boosted_diesel>*30
 ]
  as ILiquidStack[];
 
 for fluid in newgasturbinefluids {
-    mods.immersivetechnology.GasTurbine.addFuel(<liquid:fluegas>*1000, fluid, 10);
+    mods.immersivetechnology.GasTurbine.addFuel(<liquid:fluegas> * 1000, fluid, 10);
 }
 
 // New Solar Tower Recipes
@@ -125,7 +129,8 @@ val fuelstoremove =
 <liquid:gasoline>,
 <liquid:tree_oil>,
 <liquid:seed_oil>,
-<liquid:fire_water>
+<liquid:fire_water>,
+<liquid:rocket_fuel>
 ]
  as ILiquidStack[];
 
@@ -151,6 +156,8 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:syngas>, 1000000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:diesel>, 1650000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:biodiesel>, 1050000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:gasoline>, 1150000);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:boosted_diesel>, 1650000);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:blended_diesel>, 3700000);
 
 // Thermal Fuels
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refined_oil>, 1200000);
@@ -163,6 +170,9 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refined_biofuel>, 100000
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:hootch>, 600000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fire_water>, 1200000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocket_fuel>, 1500000);
+
+// AR Rocket Fuel
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocketfuel>, 500000);
 
 // Reactant Dynamo //
 
