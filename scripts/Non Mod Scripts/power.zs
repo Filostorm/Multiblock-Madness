@@ -156,8 +156,8 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:syngas>, 1000000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:diesel>, 1650000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:biodiesel>, 1050000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:gasoline>, 1150000);
-mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:boosted_diesel>, 1650000);
-mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:blended_diesel>, 3700000);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:blended_diesel>, 1650000);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:boosted_diesel>, 3700000);
 
 // Thermal Fuels
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refined_oil>, 1200000);
