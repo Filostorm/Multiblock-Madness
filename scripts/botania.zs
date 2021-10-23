@@ -255,6 +255,7 @@ Insolator.addRecipe(petal*5, petal, <thermalfoundation:fertilizer:2>, 5000);
 Crusher.addRecipe(dust, petal, 2048, dust, 0.1);
 Manufactory.addRecipe(petal, dust);
 Pulverizer.addRecipe(dust, petal, 1500, dust, 10);
+mods.mekanism.crusher.addRecipe(petal, dust);
 }
 
 val tinyDustMap as IItemStack[IItemStack] = {
