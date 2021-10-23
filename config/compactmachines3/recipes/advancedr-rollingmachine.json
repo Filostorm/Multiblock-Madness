@@ -12,88 +12,96 @@
   "catalyst": "contenttweaker:purpleprint",
   "catalyst-meta": 0,
   
+
   "input-types": {
     "a": {
+      "id": "libvulpes:forgepowerinput",
+      "meta": 0
+    },
+    "b": {
       "id": "advancedrocketry:rollingmachine",
-      "meta": 4,
+      "meta": 2,
       "item": {
         "id": "advancedrocketry:rollingmachine",
         "count": 1
       }
     },
-    "b": {
-      "id": "libvulpes:forgepowerinput",
-      "meta": 0
-    },
     "c": {
       "id": "libvulpes:hatch",
-      "meta": 2
+      "meta": 0
     },
     "d": {
       "id": "libvulpes:structuremachine",
       "meta": 0
     },
     "e": {
-      "id": "libvulpes:hatch",
-      "meta": 0
-    },
-    "f": {
-      "id": "libvulpes:coil0",
-      "meta": 7
-    },
-    "g": {
-      "id": "libvulpes:hatch",
-      "meta": 1
-    },
-    "h": {
       "id": "libvulpes:elitemotor",
       "meta": 2,
       "item": {
         "id": "libvulpes:elitemotor",
-        "count": 1
+        "count": 2
       }
+    },
+    "f": {
+      "id": "thermalfoundation:storage_alloy",
+      "meta": 0
+    },
+    "g": {
+      "id": "libvulpes:hatch",
+      "meta": 2
+    },
+    "h": {
+      "id": "libvulpes:hatch",
+      "meta": 1
     }
   },
   "shape": [
     [
       [
-        "e",
         "_",
-        "d",
+        "_",
+        "_",
+        "_",
         "_"
       ],
       [
-        "e",
-        "_",
         "d",
-        "_"
+        "d",
+        "d",
+        "d",
+        "d"
       ],
       [
-        "a",
-        "_",
-        "_",
-        "_"
+        "d",
+        "f",
+        "d",
+        "d",
+        "d"
       ]
     ],
     [
       [
-        "f",
-        "h",
-        "d",
-        "g"
+        "_",
+        "_",
+        "c:A",
+        "b:A",
+        "a:A"
       ],
       [
+        "d",
         "f",
-        "d",
-        "d",
-        "g"
+        "e",
+        "e",
+        "d"
       ],
       [
-        "b",
-        "c",
         "d",
-        "_"
+        "f",
+        "h:A",
+        "g:A",
+        "d"
       ]
     ]
   ]
+
 }
