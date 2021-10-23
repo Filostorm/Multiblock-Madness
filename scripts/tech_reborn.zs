@@ -7,7 +7,6 @@ import mods.thermalexpansion.Transposer;
 import mods.thermalexpansion.Centrifuge;
 import mods.techreborn.fusionReactor;
 import mods.techreborn.scrapbox;
-import mods.techreborn.assemblingMachine;
 import mods.techreborn.fluidReplicator;
 import mods.techreborn.industrialElectrolyzer;
 
@@ -48,6 +47,7 @@ val itemstoRemove =
 <techreborn:industrial_grinder>,
 <techreborn:quantum_chest>,
 <techreborn:recycler>,
+<techreborn:fluid_replicator>
 //<powersuits:powerarmorcomponent:11>,
 ]
  as IItemStack[];
@@ -92,6 +92,14 @@ val itemstoHide =
 <techreborn:plates:11>,
 <techreborn:compressor>,
 <techreborn:grinder>,
+<techreborn:chemical_reactor>,
+<techreborn:part:46>,
+<techreborn:part:44>,
+<techreborn:part:45>,
+<techreborn:part:25>,
+<techreborn:pump>,
+<techreborn:plates:3>,
+<techreborn:plates:4>
 ]
  as IItemStack[];
 
@@ -107,7 +115,7 @@ mods.techreborn.industrialElectrolyzer.removeInputRecipe(<minecraft:dye:15>*3);
 recipes.addShaped(<techreborn:refined_iron_fence> * 3, [[<techreborn:ingot:19>, <jaopca:item_stickrefinediron>, <techreborn:ingot:19>], [<techreborn:ingot:19>, <jaopca:item_stickrefinediron>, <techreborn:ingot:19>]]);
 
 
-//NO MORE GRINDER AND COMPRESSOR
+//NO MORE GRINDER, COMPRESSOR AND CHEMICAL REACTOR
 //Q Chest
 recipes.addShaped(<techreborn:quantum_chest>, [[<techreborn:part:3>, <techreborn:part:24>, <techreborn:part:3>],[<ore:machineBlockHighlyAdvanced>, <aeadditions:storage.component:1>, <ore:machineBlockHighlyAdvanced>], [<techreborn:part:3>, <techreborn:digital_chest>, <techreborn:part:3>]]);
 
@@ -120,6 +128,8 @@ recipes.addShaped(<techreborn:implosion_compressor>, [[<moreplates:osmium_plate>
 //industrial_grinder
 recipes.addShaped(<techreborn:industrial_grinder>, [[<moreplates:osmium_plate>, <techreborn:part:3>, <moreplates:osmium_plate>],[<techreborn:part:4>, <techreborn:machine_frame:1>, <techreborn:part:4>], [<moreplates:osmium_plate>, <thermalfoundation:material:262>, <moreplates:osmium_plate>]]);
 
+// Fluid Replicator
+recipes.addShaped(<techreborn:fluid_replicator>, [[<techreborn:plates:33>, <techreborn:part>, <techreborn:plates:33>],[<techreborn:part>, <techreborn:machine_frame:2>, <techreborn:part>], [<techreborn:part:17>, <techreborn:industrial_electrolyzer>, <techreborn:part:17>]]);
 
 /*
 //Data Circuit
@@ -268,7 +278,7 @@ recipes.addShaped(<techreborn:part:28>, [[null, <techreborn:part:26>, null],[<te
 
 
 //Rubber Wood
-Centrifuge.addRecipe([<techreborn:part:31> % 50, <rockhounding_chemistry:chemical_dusts:24> % 25, <techreborn:part:44> % 33], <techreborn:rubber_log>, <liquid:fluidmethane>*100, 4000);
+Centrifuge.addRecipe([<techreborn:part:31> % 50, <rockhounding_chemistry:chemical_dusts:24> % 25, <thermalfoundation:material:816> % 25], <techreborn:rubber_log>, <liquid:fluidmethane>*100, 4000);
 
 //lapis dust
 Centrifuge.addRecipe([<techreborn:dust:28> % 75, <techreborn:smalldust:48> % 50, <techreborn:smalldust:39> % 25, <techreborn:smalldust:8> % 25], <actuallyadditions:item_dust:4>, null, 10000);
@@ -338,6 +348,21 @@ mods.techreborn.wireMill.addRecipe(<techreborn:cable>*3, <thermalfoundation:mate
 mods.techreborn.wireMill.addRecipe(<techreborn:cable:1>*4, <thermalfoundation:material:129>, 120, 40);
 mods.techreborn.wireMill.addRecipe(<techreborn:cable:2>*6, <minecraft:gold_ingot>, 160, 40);
 mods.techreborn.wireMill.addRecipe(<techreborn:cable:3>*6, <techreborn:ingot:19>, 160, 40);
+
+// Sodium Persulfate Chain
+mods.nuclearcraft.ChemicalReactor.addRecipe(<liquid:sulfur> * 1000, <liquid:sodium> * 1000, <liquid:fluidsodiumsulfide> * 2000, null);
+mods.nuclearcraft.ChemicalReactor.addRecipe(<liquid:fluidsodiumsulfide> * 1000, <liquid:fluidcompressedair> * 1000, <liquid:fluidsodiumpersulfate> * 2000, null);
+
+// Removing useless TR Electrolyser recipes
+mods.techreborn.industrialElectrolyzer.removeInputRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidmethane", Amount: 1000}}));
+mods.techreborn.industrialElectrolyzer.removeInputRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidsulfuricacid", Amount: 1000}}));
+
+// Removing useless TR IBF recipes
+mods.techreborn.blastFurnace.removeInputRecipe(<techreborn:smalldust:23>);
+mods.techreborn.blastFurnace.removeInputRecipe(<techreborn:smalldust:51>);
+mods.techreborn.blastFurnace.removeInputRecipe(<thermalfoundation:material:96>);
+mods.techreborn.blastFurnace.removeInputRecipe(<techreborn:dust:10>);
+mods.techreborn.blastFurnace.removeInputRecipe(<techreborn:smalldust:10>);
 
 /* Unneeded
 // Removing all Grinder & Compressor Recipes
