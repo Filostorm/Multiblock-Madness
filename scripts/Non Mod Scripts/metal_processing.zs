@@ -13,7 +13,6 @@ import mods.tcomplement.highoven.HighOven;
 import mods.tcomplement.Overrides;
 import mods.tconstruct.Melting;
 import mods.techreborn.blastFurnace;
-import mods.techreborn.grinder;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Pulverizer;
 import mods.embers.Stamper;

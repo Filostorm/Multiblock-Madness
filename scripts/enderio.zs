@@ -3,7 +3,6 @@ import crafttweaker.item.IItemStack;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.InductionSmelter;
 import mods.nuclearcraft.AlloyFurnace;
-import mods.techreborn.grinder;
 import mods.immersiveengineering.Crusher;
 
 print("==================== loading mods enderIO.zs ====================");
