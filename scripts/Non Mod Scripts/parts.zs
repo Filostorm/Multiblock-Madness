@@ -10,13 +10,8 @@ import mods.nuclearcraft.Manufactory;
 import mods.thermalexpansion.Pulverizer;
 import mods.techreborn.rollingMachine;
 import mods.thermalexpansion.Compactor;
-import mods.advancedrocketry.PlatePresser;
 import mods.techreborn.implosionCompressor;
 import mods.nuclearcraft.Pressurizer;
-import mods.techreborn.plateBendingMachine;
-import mods.techreborn.assemblingMachine;
-import mods.advancedrocketry.Lathe;
-import mods.advancedrocketry.RollingMachine;
 import mods.immersiveengineering.MetalPress;
 
 print("==================== loading parts.zs ====================");
@@ -119,8 +114,6 @@ Pressurizer.removeRecipeWithInput(<thaumcraft:ingot:1>);
 Compactor.removeStorageRecipe(<techreborn:ingot:22>);
 MetalPress.removeRecipe(<techreborn:plates:38>);
 Pressurizer.removeRecipeWithOutput(<techreborn:plates:38>);
-PlatePresser.removeRecipe(<techreborn:plates:38>); 
-RollingMachine.removeRecipe(<techreborn:plates:38>); 
 
 //Aethium
 Compactor.removeStorageRecipe(<aetherworks:item_resource:4>);
@@ -207,6 +200,7 @@ mods.techreborn.compressor.addRecipe(<jaopca:item_platedenseintermedium>, <morep
 
 ################################### LATHE ######################################
 
+/*
 mods.advancedrocketry.Lathe.clear();
 
 val latheRods as IItemStack[IItemStack] = {
@@ -260,156 +254,7 @@ val latheWires as IItemStack[IItemStack] = {
 for rod, wire in latheWires {
 	Lathe.addRecipe(wire*4, 60, 5000, rod);
 }
-
-################################### ROLLING MACHINE ######################################
-
-// Removing Rolling Machine recipes
-val rollingMachineone =
-[
-<moreplates:knightslime_plate>,
-<moreplates:osmiridium_plate>,
-<moreplates:osgloglas_plate>,
-<moreplates:redstone_alloy_plate>,
-<thaumadditions:mithrillium_plate>,
-<moreplates:stellar_alloy_plate>,
-<moreplates:conductive_iron_plate>,
-<moreplates:vibrant_alloy_plate>,
-<jaopca:item_platesuperalloy>,
-<moreplates:vivid_alloy_plate>,
-<moreplates:crude_steel_plate>,
-<moreplates:end_steel_plate>,
-<techreborn:plates:20>,
-<moreplates:melodic_alloy_plate>,
-<techreborn:plates:33>,
-<moreplates:dark_steel_plate>,
-<contenttweaker:material_part:32>,
-<jaopca:item_platehslasteel>,
-<moreplates:manyullyn_plate>,
-<moreplates:crystal_matrix_plate>,
-<jaopca:item_plateferroboron>,
-<techreborn:plates:36>,
-<contenttweaker:material_part:12>,
-<jaopca:item_platetungstencarbide>,
-<moreplates:neutronium_plate>,
-<moreplates:electrical_steel_plate>,
-<moreplates:soularium_plate>,
-<techreborn:plates:32>,
-<moreplates:refined_obsidian_plate>,
-<moreplates:energetic_alloy_plate>,
-<jaopca:item_platetough>,
-<jaopca:item_platestainlesssteel>,
-<moreplates:terrasteel_plate>,
-<techreborn:plates:35>,
-<moreplates:energetic_silver_plate>,
-<contenttweaker:material_part:22>
-]
- as IItemStack[];
-
-for item in rollingMachineone {
-	mods.advancedrocketry.RollingMachine.removeRecipe(item);
-}
-
-val rollingMachinear =
-[
-<advancedrocketry:pressuretank:1>,
-<advancedrocketry:pressuretank:2>,
-<advancedrocketry:pressuretank:3>,
-<advancedrocketry:pressuretank>,
-<libvulpes:productsheet:1>,
-<libvulpes:productsheet:4>,
-<libvulpes:productsheet:6>,
-<libvulpes:productsheet:7>,
-<libvulpes:productsheet:9>,
-<advancedrocketry:productsheet>,
-<advancedrocketry:productsheet:1>
-]
- as IItemStack[];
-
-for item in rollingMachinear {
-	mods.advancedrocketry.RollingMachine.removeRecipe(item);
-}
-
-val rollingMachinetwo =
-[
-<thermalfoundation:material:324>,
-<thermalfoundation:material:358>,
-<thermalfoundation:material:357>,
-<thermalfoundation:material:359>,
-<rockhounding_chemistry:alloy_parts:58>,
-<thermalfoundation:material:327>,
-<rockhounding_chemistry:alloy_parts:64>,
-<rockhounding_chemistry:alloy_parts:16>,
-<rockhounding_chemistry:alloy_parts:70>,
-<rockhounding_chemistry:alloy_parts:40>,
-<rockhounding_chemistry:alloy_parts:4>,
-<rockhounding_chemistry:alloy_parts:88>,
-<thaumadditions:adaminite_plate>,
-<thaumadditions:mithminite_plate>,
-<rockhounding_chemistry:alloy_parts:46>,
-<rockhounding_chemistry:alloy_parts:67>,
-<techreborn:plates:31>,
-<thermalfoundation:material:320>,
-<moreplates:osmium_plate>,
-<techreborn:plates:34>,
-<embers:plate_dawnstone>,
-<rockhounding_chemistry:alloy_parts:7>,
-<thermalfoundation:material:321>,
-<rockhounding_chemistry:alloy_parts:76>,
-<thermalfoundation:material:325>,
-<thermalfoundation:material:356>,
-<advancedrocketry:productplate:1>,
-<immersiveengineering:metal:35>,
-<thermalfoundation:material:323>,
-<rockhounding_chemistry:alloy_parts:79>,
-<thaumcraft:plate:2>,
-<contenttweaker:material_part:3>,
-<thermalfoundation:material:352>,
-<rockhounding_chemistry:alloy_parts:55>,
-<techreborn:plates:2>,
-<thermalfoundation:material:353>,
-<thaumcraft:plate:3>,
-<thermalfoundation:material:355>,
-<thermalfoundation:material:33>,
-<rockhounding_chemistry:alloy_parts:73>,
-<rockhounding_chemistry:alloy_parts:49>,
-<rockhounding_chemistry:alloy_parts:22>,
-<thermalfoundation:material:322>,
-<rockhounding_chemistry:alloy_parts:43>,
-<rockhounding_chemistry:alloy_parts:31>,
-<rockhounding_chemistry:alloy_parts:61>,
-<techreborn:plates:20>,
-<thermalfoundation:material:354>,
-<rockhounding_chemistry:alloy_parts:28>,
-<rockhounding_chemistry:alloy_parts:34>,
-<rockhounding_chemistry:alloy_parts:91>,
-<thermalfoundation:material:326>,
-<libvulpes:productplate:3>,
-<advancedrocketry:productplate>,
-<thermalfoundation:material:328>,
-<rockhounding_chemistry:alloy_parts:82>,
-<rockhounding_chemistry:alloy_parts:25>,
-<rockhounding_chemistry:alloy_parts:13>,
-<rockhounding_chemistry:alloy_parts:10>,
-<rockhounding_chemistry:alloy_parts:52>,
-<rockhounding_chemistry:alloy_parts:19>,
-<rockhounding_chemistry:alloy_parts:37>,
-<thaumcraft:plate>,
-<rockhounding_chemistry:alloy_parts:85>,
-<moreplates:pulsating_iron_plate>,
-<thermalfoundation:material:32>,
-<moreplates:intermedium_plate>,
-<techreborn:plates:31>,
-<thermalfoundation:material:324>,
-<moreplates:ironwood_plate>,
-<techreborn:plates:31>,
-<aetherworks:item_resource:3>,
-<thermalfoundation:material:324>,
-]
- as IItemStack[];
-
-for item in rollingMachinetwo {
-	mods.advancedrocketry.RollingMachine.removeRecipe(item);
-}
+*/
 
 ###################################################
 ############     CRUSHING      ####################
@@ -588,9 +433,6 @@ mods.jei.JEI.removeAndHide(<qmd:semiconductor:3>);
 
 mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(<qmd:semiconductor:2>);
 mods.nuclearcraft.Crystallizer.addRecipe(<liquid:silicon> * 576, <qmd:semiconductor:2>);
-
-// Removing old silicon wafer recipe
-mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:wafer>);
 
 // --=Cinnabar, Quicksilver & Mercury Unification ==-- //
 
@@ -830,6 +672,48 @@ mods.nuclearcraft.Pressurizer.removeRecipeWithInput(<techreborn:part:34>);
 
 // Smelting recipe for Carbon Bricks
 furnace.addRecipe(<advancedrocketry:misc:1>, <ore:dustCarbon>);
+
+// Removing useless small dusts
+val duststoRemove =
+[
+<techreborn:smalldust:56>,
+<techreborn:smalldust:63>,
+<techreborn:smalldust:64>,
+<techreborn:smalldust:65>,
+<techreborn:smalldust:69>,
+<techreborn:smalldust>,
+<techreborn:smalldust:2>,
+<techreborn:smalldust:3>,
+<techreborn:smalldust:4>,
+<techreborn:smalldust:6>,
+<techreborn:smalldust:7>,
+<techreborn:smalldust:9>,
+<techreborn:smalldust:10>,
+<techreborn:smalldust:12>,
+<techreborn:smalldust:13>,
+<techreborn:smalldust:15>,
+<techreborn:smalldust:17>,
+<techreborn:smalldust:19>,
+<techreborn:smalldust:20>,
+<techreborn:smalldust:21>,
+<techreborn:smalldust:25>,
+<techreborn:smalldust:26>,
+<techreborn:smalldust:28>,
+<techreborn:smalldust:32>,
+<techreborn:smalldust:33>,
+<techreborn:smalldust:35>,
+<techreborn:smalldust:37>,
+<techreborn:smalldust:40>,
+<techreborn:smalldust:44>,
+<techreborn:smalldust:49>,
+<techreborn:smalldust:50>,
+<techreborn:smalldust:51>
+]
+ as IItemStack[];
+
+for item in duststoRemove {
+	mods.jei.JEI.removeAndHide(item);
+}
 
 ##########################################################################################
 print("==================== end of parts.zs ====================");

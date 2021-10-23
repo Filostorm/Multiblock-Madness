@@ -31,69 +31,301 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true">
-	<Recipe timeRequired="300" power ="20">
+<Recipes useDefault="false">
+	<Recipe timeRequired="30" power ="5000">
 		<input>
-			<oreDict>ingotTitaniumAluminide</oreDict>
+			<itemStack>rockhounding_chemistry:alloy_items_tech;1;37</itemStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productrod;2</itemStack>
+			<itemStack>jaopca:item_stickhydronalium;4;0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="5000">
 		<input>
-			<oreDict>ingotAluminum</oreDict>
+			<itemStack>thermalfoundation:material;1;132</itemStack>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:material;2;3</itemStack>
+			<itemStack>immersiveengineering:material;4;3</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="5000">
 		<input>
-			<oreDict>ingotIron</oreDict>
+			<itemStack>thaumcraft:ingot;1;2</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod;2;1</itemStack>
+			<itemStack>jaopca:item_stickbrass;4;0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="5000">
 		<input>
-			<oreDict>ingotSteel</oreDict>
+			<itemStack>contenttweaker:material_part;1;5</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod;2;6</itemStack>
+			<itemStack>contenttweaker:material_part;4;6</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="5000">
 		<input>
-			<oreDict>ingotTitanium</oreDict>
+			<itemStack>contenttweaker:material_part;1;30</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod;2;7</itemStack>
+			<itemStack>contenttweaker:material_part;4;34</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="5000">
 		<input>
-			<oreDict>ingotIridium</oreDict>
+			<itemStack>thermalfoundation:material;1;160</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod;2;10</itemStack>
+			<itemStack>immersiveengineering:material;4;2</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="5000">
 		<input>
-			<oreDict>ingotCopper</oreDict>
+			<itemStack>contenttweaker:material_part;1;20</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod;2;4</itemStack>
+			<itemStack>contenttweaker:material_part;4;24</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="300" power ="20">
+	<Recipe timeRequired="30" power ="5000">
 		<input>
-			<oreDict>ingotTitaniumIridium</oreDict>
+			<itemStack>thermalfoundation:material;1;128</itemStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productrod;2;1</itemStack>
+			<itemStack>libvulpes:productrod;4;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>minecraft:gold_ingot</itemStack>
+		</input>
+		<output>
+			<itemStack>moreplates:gold_stick;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>botania:manaresource</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickmanasteel;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>tconstruct:ingots;1;1</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickardite;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>nuclearcraft:alloy;1;1</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_sticktough;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>contenttweaker:material_part;1;10</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:material_part;4;14</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>techreborn:ingot;1;14</itemStack>
+		</input>
+		<output>
+			<itemStack>libvulpes:productrod;4;7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>enderio:item_alloy_ingot;1;8</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickendsteel;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>thermalfoundation:material;1;161</itemStack>
+		</input>
+		<output>
+			<itemStack>moreplates:electrum_stick;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>thermalfoundation:material;1;130</itemStack>
+		</input>
+		<output>
+			<itemStack>moreplates:silver_stick;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>enderio:item_alloy_ingot;1;6</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickdarksteel;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>qmd:ingot_alloy;1;2</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickstainlesssteel;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>rockhounding_chemistry:alloy_items_tech;1;40</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_vanasteel;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>rockhounding_chemistry:alloy_items_tech;1;7</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_bam;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>rockhounding_chemistry:alloy_items_tech;1;4</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_scal;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>advancedrocketry:productingot</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:productrod;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>minecraft:iron_ingot</itemStack>
+		</input>
+		<output>
+			<itemStack>immersiveengineering:material;4;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>advancedrocketry:productingot;1;1</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:productrod;4;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>rockhounding_chemistry:alloy_items_tech;1;16</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_nimonic;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>thermalfoundation:material;1;162</itemStack>
+		</input>
+		<output>
+			<itemStack>moreplates:invar_stick;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>thermalfoundation:material;1;135</itemStack>
+		</input>
+		<output>
+			<itemStack>libvulpes:productrod;4;10</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>rockhounding_chemistry:alloy_items_tech;1;22</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_sticknichrome;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>thermalfoundation:material;1;164</itemStack>
+		</input>
+		<output>
+			<itemStack>moreplates:constantan_stick;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>thaumcraft:ingot</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickthaumium;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>twilightforest:ironwood_ingot</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_ironwood;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>techreborn:ingot;1;19</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickrefinediron;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="5000">
+		<input>
+			<itemStack>immersiveengineering:material;1;3</itemStack>
+		</input>
+		<output>
+			<itemStack>immersiveengineering:material;4;22</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="5000">
+		<input>
+			<itemStack>immersiveengineering:material;1;2</itemStack>
+		</input>
+		<output>
+			<itemStack>immersiveengineering:material;4;23</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="5000">
+		<input>
+			<itemStack>moreplates:electrum_stick</itemStack>
+		</input>
+		<output>
+			<itemStack>immersiveengineering:material;4;21</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="60" power ="5000">
+		<input>
+			<itemStack>libvulpes:productrod;1;4</itemStack>
+		</input>
+		<output>
+			<itemStack>immersiveengineering:material;4;20</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

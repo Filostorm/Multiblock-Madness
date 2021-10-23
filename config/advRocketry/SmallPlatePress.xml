@@ -34,138 +34,66 @@
 <Recipes useDefault="false">
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>oreDilithium</oreDict>
+			<itemStack>minecraft:stone</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productdust;2</itemStack>
+			<itemStack>minecraft:cobblestone</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>blockIron</oreDict>
+			<itemStack>minecraft:cobblestone</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productplate;4;1</itemStack>
+			<itemStack>minecraft:gravel</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>oreIron</oreDict>
+			<itemStack>minecraft:gravel</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productdust;2;1</itemStack>
+			<itemStack>minecraft:sand</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>blockGold</oreDict>
+			<itemStack>minecraft:sand</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productplate;4;2</itemStack>
+			<itemStack>nuclearcraft:gem;1;6</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>oreGold</oreDict>
+			<itemStack>thermalfoundation:storage</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productdust;2;2</itemStack>
+			<itemStack>thermalfoundation:material;5;320</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>blockCopper</oreDict>
+			<itemStack>thermalfoundation:storage;1;1</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productplate;4;4</itemStack>
+			<itemStack>thermalfoundation:material;5;321</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>oreCopper</oreDict>
+			<itemStack>thermalfoundation:storage;1;3</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productdust;2;4</itemStack>
+			<itemStack>thermalfoundation:material;5;323</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power ="0">
 		<input>
-			<oreDict>blockTin</oreDict>
+			<itemStack>minecraft:iron_block</itemStack>
 		</input>
 		<output>
-			<itemStack>libvulpes:productplate;4;5</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>oreTin</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust;2;5</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>blockSteel</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productplate;4;6</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>blockTitanium</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productplate;4;7</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>blockAluminum</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productplate;4;9</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>oreAluminum</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust;2;9</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>blockIridium</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productplate;4;10</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>oreIridium</oreDict>
-		</input>
-		<output>
-			<itemStack>libvulpes:productdust;2;10</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>blockTitaniumAluminide</oreDict>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:productplate;4</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="0" power ="0">
-		<input>
-			<oreDict>blockTitaniumIridium</oreDict>
-		</input>
-		<output>
-			<itemStack>advancedrocketry:productplate;4;1</itemStack>
+			<itemStack>thermalfoundation:material;5;32</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

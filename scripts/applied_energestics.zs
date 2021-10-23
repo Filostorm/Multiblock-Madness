@@ -1,5 +1,4 @@
 import mods.appliedenergistics2.Inscriber;
-import mods.advancedrocketry.Crystallizer;
 import crafttweaker.item.IItemStack;
 import mods.threng.Aggregator;
 import mods.techreborn.blastFurnace;
@@ -81,8 +80,6 @@ recipes.addShaped(<ae2fc:fluid_pattern_encoder>, [[<actuallyadditions:block_crys
 
 
 //Resonating Crystal
-Crystallizer.addRecipe(<threng:material:5>, 100, 5000, <thermalfoundation:material:103>, <botania:manaresource:2>, <threng:material:1>); 
-Crystallizer.addRecipe(<threng:material:5>, 100, 5000, <thermalfoundation:material:103>, <mysticalworld:amethyst_gem>, <threng:material:1>); 
 Aggregator.removeRecipe(<threng:material:5>);
 
 

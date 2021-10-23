@@ -7,7 +7,6 @@ import mods.astralsorcery.Altar;
 import mods.astralsorcery.LightTransmutation;
 import mods.astralsorcery.StarlightInfusion;
 import mods.appliedenergistics2.Grinder;
-import mods.advancedrocketry.Crystallizer;
 import mods.astralsorcery.Lightwell;
 
 print("==================== loading Astral Sorcery ====================");
@@ -151,13 +150,7 @@ Infusion.registerRecipe("chalice", "",
 [<astralsorcery:blockmarble:6>,<rockhounding_chemistry:alloy_parts:51>, <astralsorcery:blockmarble:6>, <actuallyadditions:item_crystal_empowered:1>,
 <astralsorcery:blockmarble:6>,<rockhounding_chemistry:alloy_parts:51>, <astralsorcery:blockmarble:6>, <actuallyadditions:item_crystal_empowered:1>]);
 
-
-//Celestial Crystal
-Crystallizer.addRecipe(<astralsorcery:itemcelestialcrystal>, 1200, 5000, <astralsorcery:itemrockcrystalsimple>, <astralsorcery:itemcraftingcomponent:2>); 
-
-
 //Stable Celestial Crystal
-Crystallizer.addRecipe(<contenttweaker:stable_celestial_crystal>, 1200, 5000, <astralsorcery:itemrockcrystalsimple>, <appliedenergistics2:material:45>); 
 Lightwell.addLiquefaction(<contenttweaker:stable_celestial_crystal>, <liquid:astralsorcery.liquidstarlight>, 2, 0.6, 0x6603fc);
 
 ##########################################################################################
