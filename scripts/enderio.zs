@@ -50,6 +50,7 @@ val itemstoRemove =
 <enderio:item_material:68>,
 <enderio:item_material:2>,
 <enderio:block_travel_anchor>,
+<enderio:item_ender_food>
 ]
  as IItemStack[];
 
@@ -179,6 +180,8 @@ recipes.addShaped(<enderio:block_impulse_hopper>, [[<enderio:item_alloy_ingot>, 
 recipes.addShaped(<enderio:block_buffer:1>, [[<minecraft:iron_ingot>, <enderio:item_alloy_ingot>, <minecraft:iron_ingot>],[<enderio:item_alloy_ingot>, <enderio:item_material>, <enderio:item_alloy_ingot>], [<minecraft:iron_ingot>, <enderio:item_alloy_ingot>, <minecraft:iron_ingot>]]);
 recipes.addShaped(<enderio:block_power_monitor>, [[<enderio:item_alloy_ingot>, <enderio:item_conduit_probe>, <enderio:item_alloy_ingot>],[<enderio:item_alloy_ingot>, <enderio:item_material>, <enderio:item_alloy_ingot>], [<enderio:item_alloy_ingot>, <enderio:item_power_conduit>, <enderio:item_alloy_ingot>]]);
 
+// Fixed EnderIOs Recipe
+recipes.addShapeless(<enderio:item_ender_food>, [<minecraft:bowl>,<minecraft:milk_bucket>,<minecraft:wheat>,<ore:dustEnder>]);
 
 ##########################################################################################
 print("==================== end of mods enderIO.zs ====================");

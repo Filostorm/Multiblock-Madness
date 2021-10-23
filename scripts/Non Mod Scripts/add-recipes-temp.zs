@@ -235,6 +235,8 @@ val itemstoRemove =
 <additionalcompression:dirt_compressed>,
 <additionalcompression:dirt_compressed:1>,
 <mystgears:gear_wood>,
+<appliedenergistics2:material:46>,
+<enderio:item_material:28>,
 ]
  as IItemStack[];
 

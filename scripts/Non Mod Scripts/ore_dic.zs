@@ -29,7 +29,7 @@ for item in itemstoRemove {
 
 <ore:dustEnderPearl>.remove(<techreborn:dust:20>);
 <ore:dustEnder>.add(<techreborn:dust:20>);
-<ore:dustEnder>.remove(<enderore:dust_ender>);
+<ore:dustEnder>.add(<enderore:dust_ender>);
 
 
 //<ore:NeutronPile>.add(<avaritia:resource:2>);

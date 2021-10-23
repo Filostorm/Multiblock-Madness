@@ -35,6 +35,7 @@ for item in itemstoRemove {
 }
 
 
+
 /* Moved
 //scaffolding
 assemblingMachine.addRecipe(<contenttweaker:vanasteel_scaffolding>*9, <rockhounding_chemistry:alloy_items_tech:40>*3, <contenttweaker:rod_vanasteel>*3, 100, 100);
@@ -391,6 +392,113 @@ mods.mekanism.crusher.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
 //Thermal Ruby dust
 Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
 
+// --==Macerator Unification==-- //
+
+/*
+mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
+mods.nuclearcraft.Manufactory.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
+mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
+*/
+
+// Dense Construction Chunk
+mods.nuclearcraft.Manufactory.addRecipe(<buildinggadgets:constructionblock_dense>, <buildinggadgets:construction_chunk_dense> * 4);
+
+// Sky Stone Dust
+mods.mekanism.crusher.addRecipe(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>);
+
+// Wool to String
+mods.nuclearcraft.Manufactory.addRecipe(<ore:wool>, <minecraft:string> * 4);
+
+// Prismarine Crystals
+mods.mekanism.crusher.addRecipe(<minecraft:prismarine_shard>, <minecraft:prismarine_crystals>);
+
+// Flour
+mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:flour>, <minecraft:wheat>, 1024);
+mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:flour>, <natura:materials>, 1024);
+mods.nuclearcraft.Manufactory.addRecipe(<natura:materials>, <nuclearcraft:flour>);
+mods.thermalexpansion.Pulverizer.addRecipe(<nuclearcraft:flour>, <natura:materials>, 4000);
+mods.mekanism.crusher.addRecipe(<minecraft:wheat>, <nuclearcraft:flour>);
+mods.mekanism.crusher.addRecipe(<natura:materials>, <nuclearcraft:flour>);
+
+// Slag into Sand
+mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:864>, <minecraft:sand>);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>, <thermalfoundation:material:864>, 4000);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:864>, <minecraft:sand>);
+
+// Construction Paste
+mods.nuclearcraft.Manufactory.addRecipe(<buildinggadgets:construction_chunk_dense>, <buildinggadgets:constructionpaste>);
+
+// Bonemeal
+mods.mekanism.crusher.addRecipe(<minecraft:bone>, <minecraft:dye:15> * 6);
+
+// End Stone
+mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:21>, <minecraft:end_stone>, 2048, <techreborn:dust:21>, 0.1);
+mods.mekanism.crusher.addRecipe(<minecraft:end_stone>, <techreborn:dust:21>);
+
+// Blaze Rods
+mods.mekanism.enrichment.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 4);
+
+// Blizz Rods
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:2049> * 4, <thermalfoundation:material:2048>, 1024, <minecraft:snowball>, 0.5);
+mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4);
+mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4);
+
+// Blitz Rods
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:2051> * 4, <thermalfoundation:material:2050>, 1024, <thermalfoundation:material:772>, 0.5);
+mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4);
+mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4);
+
+// Basalz Rods
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:2053> * 4, <thermalfoundation:material:2052>, 1024, <thermalfoundation:material:770>, 0.5);
+mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4);
+mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4);
+
+// Ender Pearl Dust
+mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:20>, <minecraft:ender_pearl>, 1024);
+mods.nuclearcraft.Manufactory.addRecipe(<minecraft:ender_pearl>, <techreborn:dust:20>);
+mods.nuclearcraft.Manufactory.addRecipe(<enderore:ore_ender>, <techreborn:dust:20> * 2);
+mods.mekanism.crusher.addRecipe(<minecraft:ender_pearl>, <techreborn:dust:20>);
+mods.mekanism.enrichment.addRecipe(<enderore:ore_ender>, <techreborn:dust:20> * 2);
+
+// Ingot & Gem Pulverisation //
+
+// Crushed Rhodochrosite
+mods.mekanism.crusher.addRecipe(<nuclearcraft:gem>, <nuclearcraft:gem_dust:1>);
+
+// Hexagonal Boron Nitride
+mods.mekanism.crusher.addRecipe(<nuclearcraft:gem:1>, <nuclearcraft:gem_dust:4>);
+
+// Crushed Fluorite
+mods.mekanism.crusher.addRecipe(<nuclearcraft:gem:2>, <nuclearcraft:gem_dust:5>);
+
+// Crushed Villiaumite
+mods.mekanism.crusher.addRecipe(<nuclearcraft:gem:3>, <nuclearcraft:gem_dust:8>);
+
+// Grains of Prescience
+mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 1600);
+mods.mekanism.crusher.addRecipe(<enderio:item_material:19>, <enderio:item_material:34>);
+
+// Grains of Vibrancy
+mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:35>, <enderio:item_material:15>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:35>, <enderio:item_material:15>, 1600);
+mods.mekanism.crusher.addRecipe(<enderio:item_material:15>, <enderio:item_material:35>);
+
+// Grains of Piezallity
+mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 1600);
+mods.mekanism.crusher.addRecipe(<enderio:item_material:14>, <enderio:item_material:36>);
+
+// Grains of the End
+mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 1600);
+mods.mekanism.crusher.addRecipe(<enderio:item_material:16>, <enderio:item_material:37>);
+
+// Silicon Dust
+mods.mekanism.crusher.addRecipe(<nuclearcraft:gem:6>, <rockhounding_chemistry:chemical_dusts:42>);
+
 
 // --==Silicon Unification==-- //
 
@@ -736,112 +844,12 @@ for item in duststoRemove {
 	mods.jei.JEI.removeAndHide(item);
 }
 
-// --==Macerator Unification==-- //
-
-/*
-mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
-mods.nuclearcraft.Manufactory.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
-mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
-mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
-mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
-*/
-
-// Dense Construction Chunk
-mods.nuclearcraft.Manufactory.addRecipe(<buildinggadgets:constructionblock_dense>, <buildinggadgets:construction_chunk_dense> * 4);
-
-// Sky Stone Dust
-mods.mekanism.crusher.addRecipe(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>);
-
-// Wool to String
-mods.nuclearcraft.Manufactory.addRecipe(<ore:wool>, <minecraft:string> * 4);
-
-// Prismarine Crystals
-mods.mekanism.crusher.addRecipe(<minecraft:prismarine_shard>, <minecraft:prismarine_crystals>);
-
-// Flour
-mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:flour>, <minecraft:wheat>, 1024);
-mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:flour>, <natura:materials>, 1024);
-mods.nuclearcraft.Manufactory.addRecipe(<natura:materials>, <nuclearcraft:flour>);
-mods.thermalexpansion.Pulverizer.addRecipe(<nuclearcraft:flour>, <natura:materials>, 4000);
-mods.mekanism.crusher.addRecipe(<minecraft:wheat>, <nuclearcraft:flour>);
-mods.mekanism.crusher.addRecipe(<natura:materials>, <nuclearcraft:flour>);
-
-// Slag into Sand
-mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:864>, <minecraft:sand>);
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>, <thermalfoundation:material:864>, 4000);
-mods.mekanism.crusher.addRecipe(<thermalfoundation:material:864>, <minecraft:sand>);
-
-// Construction Paste
-mods.nuclearcraft.Manufactory.addRecipe(<buildinggadgets:construction_chunk_dense>, <buildinggadgets:constructionpaste>);
-
-// Bonemeal
-mods.mekanism.crusher.addRecipe(<minecraft:bone>, <minecraft:dye:15> * 6);
-
-// End Stone
-mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:21>, <minecraft:end_stone>, 2048, <techreborn:dust:21>, 0.1);
-mods.mekanism.crusher.addRecipe(<minecraft:end_stone>, <techreborn:dust:21>);
-
-// Blaze Rods
-mods.mekanism.enrichment.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 4);
-
-// Blizz Rods
-mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:2049> * 4, <thermalfoundation:material:2048>, 1024, <minecraft:snowball>, 0.5);
-mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4);
-mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4);
-
-// Blitz Rods
-mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:2051> * 4, <thermalfoundation:material:2050>, 1024, <thermalfoundation:material:772>, 0.5);
-mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4);
-mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4);
-
-// Basalz Rods
-mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:2053> * 4, <thermalfoundation:material:2052>, 1024, <thermalfoundation:material:770>, 0.5);
-mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4);
-mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4);
-
-// Ender Pearl Dust
-mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:20>, <minecraft:ender_pearl>, 1024);
-mods.nuclearcraft.Manufactory.addRecipe(<minecraft:ender_pearl>, <techreborn:dust:20>);
-mods.nuclearcraft.Manufactory.addRecipe(<enderore:ore_ender>, <techreborn:dust:20> * 2);
-mods.mekanism.crusher.addRecipe(<minecraft:ender_pearl>, <techreborn:dust:20>);
-mods.mekanism.enrichment.addRecipe(<enderore:ore_ender>, <techreborn:dust:20> * 2);
-
-// Ingot & Gem Pulverisation //
-
-// Crushed Rhodochrosite
-mods.mekanism.crusher.addRecipe(<nuclearcraft:gem>, <nuclearcraft:gem_dust:1>);
-
-// Hexagonal Boron Nitride
-mods.mekanism.crusher.addRecipe(<nuclearcraft:gem:1>, <nuclearcraft:gem_dust:4>);
-
-// Crushed Fluorite
-mods.mekanism.crusher.addRecipe(<nuclearcraft:gem:2>, <nuclearcraft:gem_dust:5>);
-
-// Crushed Villiaumite
-mods.mekanism.crusher.addRecipe(<nuclearcraft:gem:3>, <nuclearcraft:gem_dust:8>);
-
-// Grains of Prescience
-mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 1024);
-mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 1600);
-mods.mekanism.crusher.addRecipe(<enderio:item_material:19>, <enderio:item_material:34>);
-
-// Grains of Vibrancy
-mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:35>, <enderio:item_material:15>, 1024);
-mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:35>, <enderio:item_material:15>, 1600);
-mods.mekanism.crusher.addRecipe(<enderio:item_material:15>, <enderio:item_material:35>);
-
-// Grains of Piezallity
-mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 1024);
-mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 1600);
-mods.mekanism.crusher.addRecipe(<enderio:item_material:14>, <enderio:item_material:36>);
-
-// Grains of the End
-mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 1024);
-mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 1600);
-mods.mekanism.crusher.addRecipe(<enderio:item_material:16>, <enderio:item_material:37>);
-
-// Silicon Dust
-mods.mekanism.crusher.addRecipe(<nuclearcraft:gem:6>, <rockhounding_chemistry:chemical_dusts:42>);
+// Ender Pearl Dust Compat
+mods.nuclearcraft.AlloyFurnace.addRecipe(<enderio:item_alloy_ingot:1>, <techreborn:dust:20>, <enderio:item_alloy_ingot:2>, 1, 2);
+mods.nuclearcraft.AlloyFurnace.addRecipe(<minecraft:iron_ingot>, <techreborn:dust:20>, <enderio:item_alloy_ingot:5>, 1, 2);
+mods.nuclearcraft.AlloyFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:5>, <techreborn:dust:20>, <enderio:item_alloy_endergy_ingot:6>, 1, 2);
+mods.nuclearcraft.Melter.addRecipe(<techreborn:dust:20>, <liquid:ender> * 250, 0.5, 1.5);
+mods.nuclearcraft.Pressurizer.addRecipe(<techreborn:dust:20>, <minecraft:ender_pearl>);
 
 ##########################################################################################
 print("==================== end of parts.zs ====================");
