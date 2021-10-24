@@ -500,6 +500,55 @@ mods.mekanism.crusher.addRecipe(<enderio:item_material:16>, <enderio:item_materi
 mods.mekanism.crusher.addRecipe(<nuclearcraft:gem:6>, <rockhounding_chemistry:chemical_dusts:42>);
 
 
+// Gem Ore Processing Unification //
+
+// Dilithium
+mods.immersiveengineering.Crusher.addRecipe(<libvulpes:productdust> * 2, <libvulpes:ore0>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productdust> * 2, <libvulpes:ore0>, 3600);
+mods.mekanism.enrichment.addRecipe(<libvulpes:ore0>, <libvulpes:productdust> * 2);
+
+// Oil Sand/Shale
+mods.thermalexpansion.Crucible.removeRecipe(<thermalfoundation:ore_fluid:1>);
+mods.thermalexpansion.Crucible.removeRecipe(<thermalfoundation:ore_fluid>);
+mods.thermalexpansion.Crucible.removeRecipe(<thermalfoundation:material:892>);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:oil> * 250, <thermalfoundation:material:892>, 2000);
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:892> * 3, <ore:oreClathrateOilShale>, 2048, <minecraft:flint>, 0.5);
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:892> * 3, <ore:oreClathrateOilSand>, 2048, <thermalfoundation:material:833>, 0.5);
+
+val oilsandshale =
+[
+<thermalfoundation:ore_fluid:5>,
+<thermalfoundation:ore_fluid:1>,
+<thermalfoundation:ore_fluid>
+]
+ as IItemStack[];
+
+for item in oilsandshale {
+	mods.nuclearcraft.Melter.addRecipe(item, <liquid:oil> * 1000);
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:oil> * 1000, item, 4000);
+	mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:892> * 3);
+	mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:892> * 3);
+}
+
+// Galena
+mods.nuclearcraft.Manufactory.addRecipe(<techreborn:ore>, <techreborn:dust:23> * 2);
+mods.mekanism.enrichment.addRecipe(<techreborn:ore>, <techreborn:dust:23> * 2);
+
+// Bauxite
+mods.nuclearcraft.Manufactory.addRecipe(<techreborn:ore:4>, <techreborn:dust:5> * 2);
+mods.mekanism.enrichment.addRecipe(<techreborn:ore:4>, <techreborn:dust:5> * 2);
+
+// Pyrite
+mods.nuclearcraft.Manufactory.addRecipe(<techreborn:ore:5>, <techreborn:dust:39> * 2);
+mods.mekanism.enrichment.addRecipe(<techreborn:ore:5>, <techreborn:dust:39> * 5);
+
+// Cinnabar
+mods.mekanism.enrichment.addRecipe(<ore:oreCinnabar>, <thermalfoundation:material:866> * 3);
+
+// Sphalerite
+mods.nuclearcraft.Manufactory.addRecipe(<techreborn:ore:7>, <techreborn:dust:50> * 2);
+mods.mekanism.enrichment.addRecipe(<techreborn:ore:7>, <techreborn:dust:50> * 4);
+
 // --==Silicon Unification==-- //
 
 // Unifying all silicon variants

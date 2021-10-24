@@ -160,6 +160,46 @@
 
 <!-- From parts.zs -->
 
+<!-- Crushed Slate 1 -->
+<recipe name="MBM: Crushed Slate 1" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Slate 2 -->
+<recipe name="MBM: Crushed Slate 2" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate:1" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="4"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Slate 3 -->
+<recipe name="MBM: Crushed Slate 3" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate:2" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="8"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Slate 4 -->
+<recipe name="MBM: Crushed Slate 4" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate:3" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="16"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Slate 5 -->
+<recipe name="MBM: Crushed Slate 5" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate:4" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="32"/>
+  </sagmilling>
+</recipe>
+
 <!-- Clay Dust -->
 <recipe name="MBM: Clay Dust" required="true">
   <sagmilling energy="5000" bonus="none">
@@ -172,7 +212,7 @@
 <recipe name="MBM: Limestone Flux" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
     <input name="limestoneforFlux" />
-    <output name="contenttweaker:limestone_flux" chance="1.0" amount="3"/>
+    <output name="contenttweaker:limestone_flux" chance="1.0" amount="4"/>
   </sagmilling>
 </recipe>
 
@@ -197,14 +237,6 @@
   <sagmilling energy="5000" bonus="none">
     <input name="thermalfoundation:material:768" />
     <output name="nuclearcraft:dust:8" chance="1.0"/>
-  </sagmilling>
-</recipe>
-
-<!-- Silicon Dust -->
-<recipe name="MBM: Silicon Dust" required="true">
-  <sagmilling energy="2000" bonus="none">
-    <input name="dustSilicon" />
-    <output name="itemSilicon" chance="1.0"/>
   </sagmilling>
 </recipe>
 
@@ -241,6 +273,78 @@
   </sagmilling>
 </recipe>
 
+<!-- Dense Construction Chunk -->
+<recipe name="MBM: Dense Construction Chunk" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="buildinggadgets:constructionblock_dense" />
+    <output name="buildinggadgets:construction_chunk_dense" chance="1.0" amount="4"/>
+  </sagmilling>
+</recipe>
+
+<!-- Construction Paste -->
+<recipe name="MBM: Construction Paste" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="buildinggadgets:construction_chunk_dense" />
+    <output name="buildinggadgets:constructionpaste" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Endstone Dust -->
+<recipe name="MBM: Endstone Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="minecraft:end_stone" />
+    <output name="techreborn:dust:21" chance="1.0" amount="1"/>
+    <output name="techreborn:dust:21" chance="0.1" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Ender Dust -->
+<recipe name="MBM: Ender Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="minecraft:ender_pearl" />
+    <output name="techreborn:dust:20" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Rhodochrosite -->
+<recipe name="MBM: Crushed Rhodochrosite" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="nuclearcraft:gem" />
+    <output name="nuclearcraft:gem_dust:1" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Hexagonal Boron Nitride -->
+<recipe name="MBM: Hexagonal Boron Nitride" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="nuclearcraft:gem:1" />
+    <output name="nuclearcraft:gem_dust:4" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Fluorite -->
+<recipe name="MBM: Crushed Fluorite" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="nuclearcraft:gem:2" />
+    <output name="nuclearcraft:gem_dust:5" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Villiaumite -->
+<recipe name="MBM: Crushed Villiaumite" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="nuclearcraft:gem:3" />
+    <output name="nuclearcraft:gem_dust:8" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Silicon Dust -->
+<recipe name="MBM: Silicon Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="nuclearcraft:gem:6" />
+    <output name="rockhounding_chemistry:chemical_dusts:42" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
 
 
 <!-- From betweenlands.zs -->
