@@ -17,113 +17,113 @@
 
 <recipe name="MBM: Botania Dye 0" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal" />
-    <output name="botania:dye" chance="1.0"/>
+    <input name="botania:petal"/>
+    <output name="botania:dye" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 1" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:1" />
-    <output name="botania:dye:1" chance="1.0"/>
+    <input name="botania:petal:1"/>
+    <output name="botania:dye:1" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 2" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:2" />
-    <output name="botania:dye:2" chance="1.0"/>
+    <input name="botania:petal:2"/>
+    <output name="botania:dye:2" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 3" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:3" />
-    <output name="botania:dye:3" chance="1.0"/>
+    <input name="botania:petal:3"/>
+    <output name="botania:dye:3" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 4" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:4" />
-    <output name="botania:dye:4" chance="1.0"/>
+    <input name="botania:petal:4"/>
+    <output name="botania:dye:4" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 5" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:5" />
-    <output name="botania:dye:5" chance="1.0"/>
+    <input name="botania:petal:5"/>
+    <output name="botania:dye:5" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 6" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:6" />
-    <output name="botania:dye:6" chance="1.0"/>
+    <input name="botania:petal:6"/>
+    <output name="botania:dye:6" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 7" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:7" />
-    <output name="botania:dye:7" chance="1.0"/>
+    <input name="botania:petal:7"/>
+    <output name="botania:dye:7" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 8" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:8" />
+    <input name="botania:petal:8"/>
     <output name="botania:dye:8" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 9" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:9" />
-    <output name="botania:dye:9" chance="1.0"/>
+    <input name="botania:petal:9"/>
+    <output name="botania:dye:9" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 10" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:10" />
-    <output name="botania:dye:10" chance="1.0"/>
+    <input name="botania:petal:10"/>
+    <output name="botania:dye:10" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 11" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:11" />
-    <output name="botania:dye:11" chance="1.0"/>
+    <input name="botania:petal:11"/>
+    <output name="botania:dye:11" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 12" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:12" />
-    <output name="botania:dye:12" chance="1.0"/>
+    <input name="botania:petal:12"/>
+    <output name="botania:dye:12" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 13" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:13" />
-    <output name="botania:dye:13" chance="1.0"/>
+    <input name="botania:petal:13"/>
+    <output name="botania:dye:13" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 14" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:14" />
-    <output name="botania:dye:14" chance="1.0"/>
+    <input name="botania:petal:14"/>
+    <output name="botania:dye:14" chance="1.0" />
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 15" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:15" />
-    <output name="botania:dye:15" chance="1.0"/>
+    <input name="botania:petal:15"/>
+    <output name="botania:dye:15" chance="1.0" />
   </sagmilling>
 </recipe>
 
@@ -317,7 +317,7 @@
 <!-- Hexagonal Boron Nitride -->
 <recipe name="MBM: Hexagonal Boron Nitride" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="nuclearcraft:gem:1" />
+    <input name="gemBoronNitride" />
     <output name="nuclearcraft:gem_dust:4" chance="1.0" amount="1"/>
   </sagmilling>
 </recipe>
@@ -325,7 +325,7 @@
 <!-- Crushed Fluorite -->
 <recipe name="MBM: Crushed Fluorite" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="nuclearcraft:gem:2" />
+    <input name="gemFluorite" />
     <output name="nuclearcraft:gem_dust:5" chance="1.0" amount="1"/>
   </sagmilling>
 </recipe>
@@ -333,7 +333,7 @@
 <!-- Crushed Villiaumite -->
 <recipe name="MBM: Crushed Villiaumite" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="nuclearcraft:gem:3" />
+    <input name="gemVilliaumite" />
     <output name="nuclearcraft:gem_dust:8" chance="1.0" amount="1"/>
   </sagmilling>
 </recipe>
@@ -341,11 +341,411 @@
 <!-- Silicon Dust -->
 <recipe name="MBM: Silicon Dust" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="nuclearcraft:gem:6" />
+    <input name="itemSilicon" />
     <output name="rockhounding_chemistry:chemical_dusts:42" chance="1.0" amount="1"/>
   </sagmilling>
 </recipe>
 
+<!-- Carobbiite Dust -->
+<recipe name="MBM: Carobbiite Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="gemCarobbiite" />
+    <output name="nuclearcraft:gem_dust:9" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Sodalite Dust -->
+<recipe name="MBM: Sodalite Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="techreborn:ore:11" />
+    <output name="techreborn:dust:48" chance="1.0" amount="12"/>
+    <output name="thermalfoundation:material:68" chance="0.1" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- HOP Graphite Dust -->
+<recipe name="MBM: HOP Graphite Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotHOPGraphite" />
+    <output name="immersiveengineering:material:18" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Constantan Blend -->
+<recipe name="MBM: Constantan Blend" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotConstantan" />
+    <output name="thermalfoundation:material:100" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Amethyst -->
+<recipe name="MBM: Amethyst" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="mysticalworld:amethyst_ore" />
+    <output name="mysticalworld:amethyst_gem" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Refined Obsidian Blend -->
+<recipe name="MBM: Refined Obsidian Blend" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotRefinedObsidian" />
+    <output name="mekanism:otherdust:5" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Zirconium Dust -->
+<recipe name="MBM: Zirconium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotZirconium" />
+    <output name="nuclearcraft:dust:10" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Manganese Oxide Dust -->
+<recipe name="MBM: Manganese Oxide Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotManganeseOxide" />
+    <output name="nuclearcraft:dust:14" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Manganese Dioxide Dust -->
+<recipe name="MBM: Manganese Dioxide Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotManganeseDioxide" />
+    <output name="nuclearcraft:dust:15" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Shibuichi Dust -->
+<recipe name="MBM: Shibuichi Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotShibuichi" />
+    <output name="rockhounding_chemistry:alloy_items_deco:12" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Zircaloy Dust -->
+<recipe name="MBM: Zircaloy Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotZircaloy" />
+    <output name="rockhounding_chemistry:alloy_items_tech_b:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Niobium Dust -->
+<recipe name="MBM: Niobium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotNiobium" />
+    <output name="rockhounding_chemistry:chemical_dusts:37" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Hafnium Dust -->
+<recipe name="MBM: Hafnium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotHafnium" />
+    <output name="qmd:dust:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Zinc Dust -->
+<recipe name="MBM: Zinc Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotZinc" />
+    <output name="techreborn:dust:59" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Sodium Dust -->
+<recipe name="MBM: Sodium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotSodium" />
+    <output name="rockhounding_chemistry:chemical_dusts:44" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Potassium Dust -->
+<recipe name="MBM: Potassium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotPotassium" />
+    <output name="rockhounding_chemistry:chemical_dusts:41" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Calcium Dust -->
+<recipe name="MBM: Calcium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotCalcium" />
+    <output name="rockhounding_chemistry:chemical_dusts:23" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Strontium Dust -->
+<recipe name="MBM: Strontium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotStrontium" />
+    <output name="qmd:dust:14" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Yttrium Dust -->
+<recipe name="MBM: Yttrium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotYttrium" />
+    <output name="rockhounding_chemistry:chemical_dusts:15" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Neodymium Dust -->
+<recipe name="MBM: Neodymium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotNeodymium" />
+    <output name="rockhounding_chemistry:chemical_dusts:8" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nichrome Dust -->
+<recipe name="MBM: Nichrome Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotNichrome" />
+    <output name="rockhounding_chemistry:alloy_items_tech:21" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- TitaniumAluminide Dust -->
+<recipe name="MBM: TitaniumAluminide Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotTitaniumAluminide" />
+    <output name="advancedrocketry:productdust" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- TitaniumIridium Dust -->
+<recipe name="MBM: TitaniumIridium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotTitaniumIridium" />
+    <output name="advancedrocketry:productdust:1" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Kanthal Dust -->
+<recipe name="MBM: Kanthal Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotKanthal" />
+    <output name="contenttweaker:material_part:7" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Plutonium Dust -->
+<recipe name="MBM: Plutonium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotPlutonium" />
+    <output name="techreborn:dust:67" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Vanadium Dust -->
+<recipe name="MBM: Vanadium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotVanadium" />
+    <output name="rockhounding_chemistry:chemical_dusts:52" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Molybdenum Dust -->
+<recipe name="MBM: Molybdenum Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotMolybdenum" />
+    <output name="nuclearcraft:fission_dust:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Scal Dust -->
+<recipe name="MBM: Scal Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotScal" />
+    <output name="rockhounding_chemistry:alloy_items_tech:3" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Bam Dust -->
+<recipe name="MBM: Bam Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotBam" />
+    <output name="rockhounding_chemistry:alloy_items_tech:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Stellite Dust -->
+<recipe name="MBM: Stellite Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotStellite" />
+    <output name="rockhounding_chemistry:alloy_items_tech:9" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nimonic Dust -->
+<recipe name="MBM: Nimonic Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotNimonic" />
+    <output name="rockhounding_chemistry:alloy_items_tech:15" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Hastelloy Dust -->
+<recipe name="MBM: Hastelloy Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotHastelloy" />
+    <output name="rockhounding_chemistry:alloy_items_tech:18" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- SiliconNitride Dust -->
+<recipe name="MBM: SiliconNitride Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotSiliconNitride" />
+    <output name="rockhounding_chemistry:alloy_items_tech:27" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tinite Dust -->
+<recipe name="MBM: Tinite Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotTinite" />
+    <output name="rockhounding_chemistry:alloy_items_tech:33" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Hydronalium Dust -->
+<recipe name="MBM: Hydronalium Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotHydronalium" />
+    <output name="rockhounding_chemistry:alloy_items_tech:36" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Vanasteel Dust -->
+<recipe name="MBM: Vanasteel Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotVanasteel" />
+    <output name="rockhounding_chemistry:alloy_items_tech:39" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Widia Dust -->
+<recipe name="MBM: Widia Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotWidia" />
+    <output name="rockhounding_chemistry:alloy_items_tech:42" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tantaloy Dust -->
+<recipe name="MBM: Tantaloy Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotTantaloy" />
+    <output name="rockhounding_chemistry:alloy_items_tech:45" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nial Dust -->
+<recipe name="MBM: Nial Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotNial" />
+    <output name="rockhounding_chemistry:alloy_items_tech_b" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Inconel Dust -->
+<recipe name="MBM: Inconel Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotInconel" />
+    <output name="rockhounding_chemistry:alloy_items_tech_b:3" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Mischmetal Dust -->
+<recipe name="MBM: Mischmetal Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotMischmetal" />
+    <output name="rockhounding_chemistry:alloy_items_deco" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Rosegold Dust -->
+<recipe name="MBM: Rosegold Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotRosegold" />
+    <output name="rockhounding_chemistry:alloy_items_deco:3" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Greengold Dust -->
+<recipe name="MBM: Greengold Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotGreengold" />
+    <output name="rockhounding_chemistry:alloy_items_deco:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Whitegold Dust -->
+<recipe name="MBM: Whitegold Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotWhitegold" />
+    <output name="rockhounding_chemistry:alloy_items_deco:9" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tombak Dust -->
+<recipe name="MBM: Tombak Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotTombak" />
+    <output name="rockhounding_chemistry:alloy_items_deco:15" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Pewter Dust -->
+<recipe name="MBM: Pewter Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotPewter" />
+    <output name="rockhounding_chemistry:alloy_items_deco:18" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Shakudo Dust -->
+<recipe name="MBM: Shakudo Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotShakudo" />
+    <output name="rockhounding_chemistry:alloy_items_deco:24" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Purplegold Dust -->
+<recipe name="MBM: Purplegold Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotPurplegold" />
+    <output name="rockhounding_chemistry:alloy_items_deco:27" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nib Dust -->
+<recipe name="MBM: Nib Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotNib" />
+    <output name="rockhounding_chemistry:alloy_items_deco:30" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Zeolite Dust -->
+<recipe name="MBM: Zeolite Dust" required="true">
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="ingotZeolite" />
+    <output name="rockhounding_chemistry:chemical_items:10" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
 
 <!-- From betweenlands.zs -->
 
