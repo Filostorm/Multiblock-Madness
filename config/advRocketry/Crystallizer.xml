@@ -123,7 +123,7 @@
 			<itemStack>environmentaltech:erodium_crystal</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="150" power ="160000">
+	<Recipe timeRequired="150" power ="80000">
 		<input>
 			<itemStack>environmentaltech:pladium_crystal;2;0</itemStack>
 			<itemStack>thaumadditions:mithrillium_ingot</itemStack>
@@ -132,7 +132,7 @@
 			<itemStack>environmentaltech:ionite_crystal</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="150" power ="200000">
+	<Recipe timeRequired="150" power ="100000">
 		<input>
 			<itemStack>environmentaltech:ionite_crystal;2;0</itemStack>
 			<itemStack>botania:manaresource;1;14</itemStack>
