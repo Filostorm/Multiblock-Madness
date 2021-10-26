@@ -493,6 +493,29 @@ mods.mekanism.crusher.addRecipe(<ore:ingotZircaloy>, <rockhounding_chemistry:all
 // Shibuichi Dust
 mods.mekanism.crusher.addRecipe(<ore:ingotShibuichi>, <rockhounding_chemistry:alloy_items_deco:12>);
 
+// Ytterbium YAG Dust
+mods.nuclearcraft.Manufactory.addRecipe(<rockhounding_chemistry:alloy_items_gems:7>, <rockhounding_chemistry:alloy_items_gems:6>);
+mods.mekanism.enrichment.addRecipe(<rockhounding_chemistry:alloy_items_gems:7>, <rockhounding_chemistry:alloy_items_gems:6>);
+
+// Erbium YAG Dust
+mods.nuclearcraft.Manufactory.addRecipe(<rockhounding_chemistry:alloy_items_gems:4>, <rockhounding_chemistry:alloy_items_gems:3>);
+mods.mekanism.enrichment.addRecipe(<rockhounding_chemistry:alloy_items_gems:4>, <rockhounding_chemistry:alloy_items_gems:3>);
+
+// Neodymium YAG Dust
+mods.nuclearcraft.Manufactory.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <rockhounding_chemistry:alloy_items_gems>);
+mods.mekanism.enrichment.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <rockhounding_chemistry:alloy_items_gems>);
+
+// Coal Coke Dust
+mods.nuclearcraft.Manufactory.addRecipe(<ore:fuelCoke>, <immersiveengineering:material:17>);
+mods.nuclearcraft.Manufactory.addRecipe(<ore:blockFuelCoke>, <immersiveengineering:material:17> * 9);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:6>, <immersiveengineering:material:17>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:material:802>, <immersiveengineering:material:17>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:stone_decoration:3>, <immersiveengineering:material:17> * 9, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:storage_resource:1>, <immersiveengineering:material:17> * 9, 2000);
+mods.mekanism.enrichment.addRecipe(<ore:fuelCoke>, <immersiveengineering:material:17>);
+mods.mekanism.enrichment.addRecipe(<ore:blockFuelCoke>, <immersiveengineering:material:17> * 9);
+
+
 // Adding more ingot crushing recipes to the Mekanism Crusher
 val ingotcrushingMap as IItemStack[IItemStack] = {
 	<nuclearcraft:gem:6>: <rockhounding_chemistry:chemical_dusts:42>,
