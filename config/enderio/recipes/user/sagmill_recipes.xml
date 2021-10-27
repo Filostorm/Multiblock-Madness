@@ -16,114 +16,114 @@
 <!-- From botania.zs -->
 
 <recipe name="MBM: Botania Dye 0" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal"/>
-    <output name="botania:dye" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalWhite" />
+    <output name="botania:dye" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 1" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:1"/>
-    <output name="botania:dye:1" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalOrange" />
+    <output name="botania:dye:1" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 2" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:2"/>
-    <output name="botania:dye:2" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalMagenta" />
+    <output name="botania:dye:2" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 3" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:3"/>
-    <output name="botania:dye:3" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalLightBlue" />
+    <output name="botania:dye:3" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 4" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:4"/>
-    <output name="botania:dye:4" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalYellow" />
+    <output name="botania:dye:4" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 5" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:5"/>
-    <output name="botania:dye:5" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalLime" />
+    <output name="botania:dye:5" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 6" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:6"/>
-    <output name="botania:dye:6" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalPink" />
+    <output name="botania:dye:6" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 7" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:7"/>
-    <output name="botania:dye:7" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalGray" />
+    <output name="botania:dye:7" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 8" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:8"/>
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalLightGray" />
     <output name="botania:dye:8" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 9" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:9"/>
-    <output name="botania:dye:9" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalCyan" />
+    <output name="botania:dye:9" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 10" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:10"/>
-    <output name="botania:dye:10" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalPurple" />
+    <output name="botania:dye:10" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 11" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:11"/>
-    <output name="botania:dye:11" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalBlue" />
+    <output name="botania:dye:11" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 12" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:12"/>
-    <output name="botania:dye:12" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalBrown" />
+    <output name="botania:dye:12" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 13" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:13"/>
-    <output name="botania:dye:13" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalGreen" />
+    <output name="botania:dye:13" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 14" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:14"/>
-    <output name="botania:dye:14" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalRed" />
+    <output name="botania:dye:14" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 15" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="botania:petal:15"/>
-    <output name="botania:dye:15" chance="1.0" />
+  <sagmilling energy="5000" bonus="multiply_output">
+    <input name="petalBlack" />
+    <output name="botania:dye:15" chance="1.0"/>
   </sagmilling>
 </recipe>
 
