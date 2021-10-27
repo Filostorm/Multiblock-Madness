@@ -495,25 +495,25 @@ mods.mekanism.crusher.addRecipe(<ore:ingotShibuichi>, <rockhounding_chemistry:al
 
 // Ytterbium YAG Dust
 mods.nuclearcraft.Manufactory.addRecipe(<rockhounding_chemistry:alloy_items_gems:7>, <rockhounding_chemistry:alloy_items_gems:6>);
-mods.mekanism.enrichment.addRecipe(<rockhounding_chemistry:alloy_items_gems:7>, <rockhounding_chemistry:alloy_items_gems:6>);
+mods.mekanism.crusher.addRecipe(<rockhounding_chemistry:alloy_items_gems:7>, <rockhounding_chemistry:alloy_items_gems:6>);
 
 // Erbium YAG Dust
 mods.nuclearcraft.Manufactory.addRecipe(<rockhounding_chemistry:alloy_items_gems:4>, <rockhounding_chemistry:alloy_items_gems:3>);
-mods.mekanism.enrichment.addRecipe(<rockhounding_chemistry:alloy_items_gems:4>, <rockhounding_chemistry:alloy_items_gems:3>);
+mods.mekanism.crusher.addRecipe(<rockhounding_chemistry:alloy_items_gems:4>, <rockhounding_chemistry:alloy_items_gems:3>);
 
 // Neodymium YAG Dust
 mods.nuclearcraft.Manufactory.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <rockhounding_chemistry:alloy_items_gems>);
-mods.mekanism.enrichment.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <rockhounding_chemistry:alloy_items_gems>);
+mods.mekanism.crusher.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <rockhounding_chemistry:alloy_items_gems>);
 
 // Coal Coke Dust
 mods.nuclearcraft.Manufactory.addRecipe(<ore:fuelCoke>, <immersiveengineering:material:17>);
 mods.nuclearcraft.Manufactory.addRecipe(<ore:blockFuelCoke>, <immersiveengineering:material:17> * 9);
-mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:6>, <immersiveengineering:material:17>, 2000);
-mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:material:802>, <immersiveengineering:material:17>, 2000);
-mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:stone_decoration:3>, <immersiveengineering:material:17> * 9, 2000);
-mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:storage_resource:1>, <immersiveengineering:material:17> * 9, 2000);
-mods.mekanism.enrichment.addRecipe(<ore:fuelCoke>, <immersiveengineering:material:17>);
-mods.mekanism.enrichment.addRecipe(<ore:blockFuelCoke>, <immersiveengineering:material:17> * 9);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17>, <immersiveengineering:material:6>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17>, <thermalfoundation:material:802>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17> * 9, <immersiveengineering:stone_decoration:3>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17> * 9, <thermalfoundation:storage_resource:1>, 2000);
+mods.mekanism.crusher.addRecipe(<ore:fuelCoke>, <immersiveengineering:material:17>);
+mods.mekanism.crusher.addRecipe(<ore:blockFuelCoke>, <immersiveengineering:material:17> * 9);
 
 
 // Adding more ingot crushing recipes to the Mekanism Crusher
@@ -579,6 +579,73 @@ val ingotcrushingMap as IItemStack[IItemStack] = {
 for material, dust in ingotcrushingMap {
 	mods.mekanism.crusher.addRecipe(material, dust);
 }
+
+// Adding flower dye recipes to the Mek Enrichment Chamber & TR Extractor
+val flowerstoRemove =
+[
+<minecraft:red_flower>,
+<minecraft:red_flower:1>,
+<minecraft:red_flower:2>,
+<minecraft:red_flower:3>,
+<minecraft:red_flower:4>,
+<minecraft:red_flower:5>,
+<minecraft:red_flower:6>,
+<minecraft:red_flower:7>,
+<minecraft:red_flower:8>,
+<minecraft:yellow_flower>,
+<minecraft:double_plant>,
+<minecraft:double_plant:1>,
+<minecraft:double_plant:4>,
+<minecraft:double_plant:5>,
+]
+ as IItemStack[];
+
+for item in flowerstoRemove {
+	mods.techreborn.extractor.removeInputRecipe(item);
+}
+
+
+val flowercrushingMap as IItemStack[IItemStack] = {
+	<minecraft:red_flower>: <minecraft:dye:1> * 4,
+	<minecraft:red_flower:4>: <minecraft:dye:1> * 4,
+	<minecraft:double_plant:4>: <minecraft:dye:1> * 8,
+	<natura:bluebells_flower>: <natura:materials:8> * 4,
+	<minecraft:red_flower:8>: <minecraft:dye:7> * 4,
+	<minecraft:red_flower:6>: <minecraft:dye:7> * 4,
+	<minecraft:red_flower:3>: <minecraft:dye:7> * 4,
+	<minecraft:red_flower:7>: <minecraft:dye:9> * 4,
+	<minecraft:double_plant:5>: <minecraft:dye:9> * 8,
+	<minecraft:yellow_flower>: <minecraft:dye:11> * 4,
+	<minecraft:double_plant>: <minecraft:dye:11> * 8,
+	<minecraft:red_flower:1>: <minecraft:dye:12> * 4,
+	<minecraft:red_flower:2>: <minecraft:dye:13> * 4,
+	<minecraft:double_plant:1>: <minecraft:dye:13> * 8,
+	<minecraft:red_flower:5>: <minecraft:dye:14> * 4,
+	<actuallyadditions:block_black_lotus>: <actuallyadditions:item_misc:17> * 4,
+} as IItemStack[IItemStack];
+
+for flower, dye in flowercrushingMap {
+	mods.mekanism.enrichment.addRecipe(flower, dye);
+	mods.techreborn.extractor.addRecipe(dye, flower, 60, 40);
+}
+
+// Black Lotus to Black Dye
+mods.integrateddynamics.MechanicalSqueezer.addRecipe(<actuallyadditions:block_black_lotus>, <actuallyadditions:item_misc:17> * 4);
+
+// Bluebells to Blue Dye
+mods.integrateddynamics.MechanicalSqueezer.addRecipe(<natura:bluebells_flower>, <natura:materials:8> * 4);
+mods.thermalexpansion.Pulverizer.addRecipe(<natura:materials:8> * 4, <natura:bluebells_flower>, 2000);
+
+
+// Rebalancing tall flowers in the TE Pulveriser
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:double_plant:4>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:double_plant:5>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:double_plant>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:double_plant:1>);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:1> * 8, <minecraft:double_plant:4>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:9> * 8, <minecraft:double_plant:5>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:11> * 8, <minecraft:double_plant>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:13> * 8, <minecraft:double_plant:1>, 2000);
 
 // Gem Ore Processing Unification //
 

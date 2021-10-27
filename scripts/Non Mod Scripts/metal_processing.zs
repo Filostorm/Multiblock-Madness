@@ -348,6 +348,28 @@ for ingot, fluid in ingotFluidMap {
 	Stamper.add(ingot,fluid*144,<embers:stamp_bar>);
 }
 
+// Fixing byproducts of certain clusters
+
+
+val clusterstofix =
+[
+<jaopca:item_clusteraluminium>,
+<jaopca:item_clusterardite>,
+<jaopca:item_clustercobalt>,
+<jaopca:item_clustermithril>,
+<jaopca:item_clustertitanium>
+]
+ as IItemStack[];
+
+for item in clusterstofix {
+	mods.thermalexpansion.Pulverizer.removeRecipe(item);
+}
+Pulverizer.addRecipe(<thermalfoundation:material:68> * 3, <jaopca:item_clusteraluminium>, 3000, <thermalfoundation:material>, 20);
+Pulverizer.addRecipe(<jaopca:item_dustardite> * 3, <jaopca:item_clusterardite>, 3000, <thermalfoundation:material:1>, 20);
+Pulverizer.addRecipe(<rockhounding_chemistry:chemical_dusts:25> * 3, <jaopca:item_clustercobalt>, 3000, <thermalfoundation:material>, 20);
+Pulverizer.addRecipe(<thermalfoundation:material:72> * 3, <jaopca:item_clustermithril>, 3000, <thermalfoundation:material:1>, 20);
+Pulverizer.addRecipe(<techreborn:dust:54> * 3, <jaopca:item_clustertitanium>, 3000);
+
 //Iron
 MineralSizer.add(<minecraft:iron_ore>, [<jaopca:item_crushedlumpiron>*2], [4]);
 LeachingVat.add(<jaopca:item_crushedlumpiron>, [<jaopca:item_leachedshardiron>*2], [4.21F], <liquid:leachate>*50);
