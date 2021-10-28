@@ -622,6 +622,16 @@
   </alloying>
 </recipe>
 
+<!-- Ender Alloy (Advanced) -->
+<recipe name="MBM: Ender Alloy - Advanced" required="true">
+  <alloying energy="15000" exp="0.5">
+    <input name="enderutilities:enderpart:1" amount="2"/>
+    <input name="ingotEndSteel" amount="8"/>
+    <input name="randomthings:stableenderpearl"/>
+    <output name="enderutilities:enderpart:2" amount="2"/>
+  </alloying>
+</recipe>
+
 
 <!-- Zirconium Fuel copy recipes -->
 

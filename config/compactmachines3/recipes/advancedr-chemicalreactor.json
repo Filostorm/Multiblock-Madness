@@ -12,10 +12,11 @@
   "catalyst": "contenttweaker:purpleprint",
   "catalyst-meta": 0,
 
+
   "input-types": {
     "a": {
       "id": "advancedrocketry:chemicalreactor",
-      "meta": 4,
+      "meta": 2,
       "item": {
         "id": "advancedrocketry:chemicalreactor",
         "count": 1
@@ -46,10 +47,6 @@
       "meta": 3
     },
     "g": {
-      "id": "libvulpes:structuremachine",
-      "meta": 0
-    },
-    "h": {
       "id": "libvulpes:hatch",
       "meta": 1
     }
@@ -57,27 +54,28 @@
   "shape": [
     [
       [
-        "d",
-        "e",
-        "d"
+        "_",
+        "a:A",
+        "_"
       ],
       [
-        "_",
-        "a",
-        "_"
+        "d:A",
+        "e:A",
+        "d:A"
       ]
     ],
     [
       [
-        "f",
-        "g",
-        "h"
+        "b:A",
+        "c",
+        "b:A"
       ],
       [
-        "b",
-        "c",
-        "b"
+        "f:A",
+        "g:A",
+        "f:A"
       ]
     ]
   ]
+
 }

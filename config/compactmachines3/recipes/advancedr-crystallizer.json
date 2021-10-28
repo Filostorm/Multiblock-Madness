@@ -23,7 +23,7 @@
     },
     "c": {
       "id": "advancedrocketry:crystallizer",
-      "meta": 3,
+      "meta": 2,
       "item": {
         "id": "advancedrocketry:crystallizer",
         "count": 1
@@ -34,12 +34,16 @@
       "meta": 0
     },
     "e": {
-      "id": "libvulpes:coil0",
-      "meta": 7
+      "id": "libvulpes:hatch",
+      "meta": 3
     },
     "f": {
       "id": "libvulpes:forgepowerinput",
       "meta": 0
+    },
+    "g": {
+      "id": "libvulpes:hatch",
+      "meta": 2
     }
   },
   "shape": [
@@ -57,15 +61,16 @@
     ],
     [
       [
-        "e",
-        "f",
-        "e"
+        "d:A",
+        "c:A",
+        "b:A"
       ],
       [
-        "b",
-        "c",
-        "d"
+        "g:A",
+        "f:A",
+        "e:A"
       ]
     ]
   ]
+
 }

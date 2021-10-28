@@ -1,7 +1,5 @@
 import crafttweaker.item.IItemStack;
-import mods.advancedrocketry.Crystallizer;
 import mods.rockhounding_chemistry.PullingCrucible;
-import mods.advancedrocketry.PrecisionAssembler;
 import crafttweaker.item.IIngredient;
 
 print("==================== loading mods enviromental tech.zs ====================");
@@ -94,12 +92,7 @@ item.addTooltip(format.gold("Craftable"));
 }
 
 //Litherite
-Crystallizer.addRecipe(<environmentaltech:litherite_crystal>, 500, 10000, <thermalfoundation:material:1028>, <actuallyadditions:item_crystal_empowered:4>); 
 PullingCrucible.add(<actuallyadditions:item_crystal_empowered:4>, <thermalfoundation:material:1028>, <environmentaltech:litherite_crystal>*4);
-
-
-//Tier 2
-Crystallizer.addRecipe(<environmentaltech:erodium_crystal>, 200, 20000, <environmentaltech:litherite_crystal>*2, <botania:sparkupgrade:1>); 
 
 //Tier 3
 mods.nuclearcraft.Infuser.addRecipe(<environmentaltech:erodium_crystal>*2, <liquid:refined_life_essence>*1000, <environmentaltech:kyronite_crystal>);
@@ -109,25 +102,6 @@ mods.nuclearcraft.Infuser.addRecipe(<environmentaltech:erodium_crystal>*2, <liqu
 
 //Tier 4
 //Crystallizer.addRecipe(<environmentaltech:pladium_crystal>, 400, 60000, <environmentaltech:kyronite_crystal>*2, <qmd:semiconductor:4>); 
-mods.nuclearcraft.FissionIrradiator.addRecipe(<environmentaltech:kyronite_crystal>*2, <environmentaltech:pladium_crystal>, 200000, 0, 0.15, 0);
-
-//Tier 5
-Crystallizer.addRecipe(<environmentaltech:ionite_crystal>, 500, 80000, <environmentaltech:pladium_crystal>*2, <thaumadditions:mithrillium_ingot>); 
-
-//Tier 6
-Crystallizer.addRecipe(<environmentaltech:aethium_crystal>, 600, 100000, <environmentaltech:ionite_crystal>*2, <botania:manaresource:14>); 
-
-
-
-
-
-
-
-
-
-
-
-
 
 ##########################################################################################
 print("==================== end of mods enviromental tech.zs ====================");

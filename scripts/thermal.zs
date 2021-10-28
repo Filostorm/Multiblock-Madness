@@ -4,8 +4,6 @@ import mods.thermalexpansion.Transposer;
 import mods.nuclearcraft.AlloyFurnace;
 import mods.thermalexpansion.Insolator;
 import mods.nuclearcraft.Infuser;
-import mods.advancedrocketry.PrecisionAssembler;
-import mods.techreborn.assemblingMachine;
 
 print("==================== loading thermal.zs ====================");
 ##########################################################################################
@@ -66,7 +64,7 @@ recipes.addShaped(<thermalexpansion:machine:9>.withTag({Level: 1 as byte}), [[nu
 //Hardned glass
 recipes.addShaped(<thermalfoundation:glass:3>, [[<thermalfoundation:material:770>, <thermalfoundation:material:1024>, <thermalfoundation:material:770>],[<thermalfoundation:material:67>, <ore:fusedQuartz>, <thermalfoundation:material:67>], [<thermalfoundation:material:770>, <thermalfoundation:material:1024>, <thermalfoundation:material:770>]]);
 
-
+/*
 val Coils as IItemStack[IItemStack] = {
     <thermalfoundation:material:513>:<moreplates:gold_stick>,
     <thermalfoundation:material:514>:<moreplates:silver_stick>,
@@ -78,7 +76,7 @@ for coil, rod in Coils {
     assemblingMachine.addRecipe(coil, rod, <advgenerators:iron_wiring>*2, 400, 32);
     PrecisionAssembler.addRecipe(coil, 200, 10000, rod, <advgenerators:iron_wiring>*2);
 }
-
+*/
 
 //Remove Coal????
 mods.thermalexpansion.RedstoneFurnace.removeRecipe(<thermalfoundation:material:768>);

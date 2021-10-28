@@ -1,5 +1,4 @@
 import mods.appliedenergistics2.Inscriber;
-import mods.advancedrocketry.Crystallizer;
 import crafttweaker.item.IItemStack;
 import mods.threng.Aggregator;
 import mods.techreborn.blastFurnace;
@@ -62,8 +61,8 @@ for item in itemstoRemove {
 val Certus as IIngredient = (<appliedenergistics2:material:10>|<appliedenergistics2:material>) as IIngredient;
 
 //Wireless Cards
-recipes.addShaped(<appliedenergistics2:material:42>, [[<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>], [<threng:material:1>, Certus, <techreborn:dust:20>]]);
-recipes.addShaped(<appliedenergistics2:material:42>*2, [[<ore:plateScal>, <ore:plateScal>, <ore:plateScal>], [<threng:material:1>, Certus, <techreborn:dust:20>]]);
+recipes.addShaped(<appliedenergistics2:material:42>, [[<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>], [<threng:material:1>, Certus, <ore:dustEnder>]]);
+recipes.addShaped(<appliedenergistics2:material:42>*2, [[<ore:plateScal>, <ore:plateScal>, <ore:plateScal>], [<threng:material:1>, Certus, <ore:dustEnder>]]);
 
 //Upgrade cards
 recipes.addShaped(<appliedenergistics2:material:28> * 2, [[<moreplates:diamatine_plate>, <ore:plateAluminum>, null],[<appliedenergistics2:material:24>, <opencomputers:material:8>, <ore:plateAluminum>], [<moreplates:diamatine_plate>, <ore:plateAluminum>, null]]);
@@ -81,8 +80,6 @@ recipes.addShaped(<ae2fc:fluid_pattern_encoder>, [[<actuallyadditions:block_crys
 
 
 //Resonating Crystal
-Crystallizer.addRecipe(<threng:material:5>, 100, 5000, <thermalfoundation:material:103>, <botania:manaresource:2>, <threng:material:1>); 
-Crystallizer.addRecipe(<threng:material:5>, 100, 5000, <thermalfoundation:material:103>, <mysticalworld:amethyst_gem>, <threng:material:1>); 
 Aggregator.removeRecipe(<threng:material:5>);
 
 
@@ -293,6 +290,13 @@ recipes.addShaped(<appliedenergistics2:part:302> * 2, [[Fluix, Fluix, Fluix],[<o
 recipes.addShaped(<appliedenergistics2:part:302>, [[Fluix, Fluix, Fluix],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:plateAluminum>, <appliedenergistics2:material:44>, <ore:plateAluminum>]]);
 recipes.addShaped(<appliedenergistics2:part:321>, [[Fluix, Fluix, Fluix],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:plateAluminum>, <appliedenergistics2:material:43>, <ore:plateAluminum>]]);
 recipes.addShaped(<appliedenergistics2:part:321>*2, [[Fluix, Fluix, Fluix],[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], [<ore:plateScal>, <appliedenergistics2:material:43>, <ore:plateScal>]]);
+
+// Fixing Pulse Centrifuge Recipes
+mods.threng.Centrifuge.removeRecipe(<appliedenergistics2:material:46>);
+mods.threng.Centrifuge.removeRecipe(<appliedenergistics2:material:4>);
+mods.threng.Centrifuge.addRecipe(<techreborn:dust:20>, <minecraft:ender_pearl>);
+mods.threng.Centrifuge.addRecipe(<nuclearcraft:flour>, <minecraft:wheat>);
+mods.threng.Centrifuge.addRecipe(<nuclearcraft:flour>, <natura:materials>);
 
 ##########################################################################################
 print("==================== end of applied.zs ====================");

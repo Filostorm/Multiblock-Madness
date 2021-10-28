@@ -10,13 +10,8 @@ import mods.nuclearcraft.Manufactory;
 import mods.thermalexpansion.Pulverizer;
 import mods.techreborn.rollingMachine;
 import mods.thermalexpansion.Compactor;
-import mods.advancedrocketry.PlatePresser;
 import mods.techreborn.implosionCompressor;
 import mods.nuclearcraft.Pressurizer;
-import mods.techreborn.plateBendingMachine;
-import mods.techreborn.assemblingMachine;
-import mods.advancedrocketry.Lathe;
-import mods.advancedrocketry.RollingMachine;
 import mods.immersiveengineering.MetalPress;
 
 print("==================== loading parts.zs ====================");
@@ -38,6 +33,7 @@ val itemstoRemove =
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+
 
 
 /* Moved
@@ -119,8 +115,6 @@ Pressurizer.removeRecipeWithInput(<thaumcraft:ingot:1>);
 Compactor.removeStorageRecipe(<techreborn:ingot:22>);
 MetalPress.removeRecipe(<techreborn:plates:38>);
 Pressurizer.removeRecipeWithOutput(<techreborn:plates:38>);
-PlatePresser.removeRecipe(<techreborn:plates:38>); 
-RollingMachine.removeRecipe(<techreborn:plates:38>); 
 
 //Aethium
 Compactor.removeStorageRecipe(<aetherworks:item_resource:4>);
@@ -207,6 +201,7 @@ mods.techreborn.compressor.addRecipe(<jaopca:item_platedenseintermedium>, <morep
 
 ################################### LATHE ######################################
 
+/*
 mods.advancedrocketry.Lathe.clear();
 
 val latheRods as IItemStack[IItemStack] = {
@@ -260,156 +255,7 @@ val latheWires as IItemStack[IItemStack] = {
 for rod, wire in latheWires {
 	Lathe.addRecipe(wire*4, 60, 5000, rod);
 }
-
-################################### ROLLING MACHINE ######################################
-
-// Removing Rolling Machine recipes
-val rollingMachineone =
-[
-<moreplates:knightslime_plate>,
-<moreplates:osmiridium_plate>,
-<moreplates:osgloglas_plate>,
-<moreplates:redstone_alloy_plate>,
-<thaumadditions:mithrillium_plate>,
-<moreplates:stellar_alloy_plate>,
-<moreplates:conductive_iron_plate>,
-<moreplates:vibrant_alloy_plate>,
-<jaopca:item_platesuperalloy>,
-<moreplates:vivid_alloy_plate>,
-<moreplates:crude_steel_plate>,
-<moreplates:end_steel_plate>,
-<techreborn:plates:20>,
-<moreplates:melodic_alloy_plate>,
-<techreborn:plates:33>,
-<moreplates:dark_steel_plate>,
-<contenttweaker:material_part:32>,
-<jaopca:item_platehslasteel>,
-<moreplates:manyullyn_plate>,
-<moreplates:crystal_matrix_plate>,
-<jaopca:item_plateferroboron>,
-<techreborn:plates:36>,
-<contenttweaker:material_part:12>,
-<jaopca:item_platetungstencarbide>,
-<moreplates:neutronium_plate>,
-<moreplates:electrical_steel_plate>,
-<moreplates:soularium_plate>,
-<techreborn:plates:32>,
-<moreplates:refined_obsidian_plate>,
-<moreplates:energetic_alloy_plate>,
-<jaopca:item_platetough>,
-<jaopca:item_platestainlesssteel>,
-<moreplates:terrasteel_plate>,
-<techreborn:plates:35>,
-<moreplates:energetic_silver_plate>,
-<contenttweaker:material_part:22>
-]
- as IItemStack[];
-
-for item in rollingMachineone {
-	mods.advancedrocketry.RollingMachine.removeRecipe(item);
-}
-
-val rollingMachinear =
-[
-<advancedrocketry:pressuretank:1>,
-<advancedrocketry:pressuretank:2>,
-<advancedrocketry:pressuretank:3>,
-<advancedrocketry:pressuretank>,
-<libvulpes:productsheet:1>,
-<libvulpes:productsheet:4>,
-<libvulpes:productsheet:6>,
-<libvulpes:productsheet:7>,
-<libvulpes:productsheet:9>,
-<advancedrocketry:productsheet>,
-<advancedrocketry:productsheet:1>
-]
- as IItemStack[];
-
-for item in rollingMachinear {
-	mods.advancedrocketry.RollingMachine.removeRecipe(item);
-}
-
-val rollingMachinetwo =
-[
-<thermalfoundation:material:324>,
-<thermalfoundation:material:358>,
-<thermalfoundation:material:357>,
-<thermalfoundation:material:359>,
-<rockhounding_chemistry:alloy_parts:58>,
-<thermalfoundation:material:327>,
-<rockhounding_chemistry:alloy_parts:64>,
-<rockhounding_chemistry:alloy_parts:16>,
-<rockhounding_chemistry:alloy_parts:70>,
-<rockhounding_chemistry:alloy_parts:40>,
-<rockhounding_chemistry:alloy_parts:4>,
-<rockhounding_chemistry:alloy_parts:88>,
-<thaumadditions:adaminite_plate>,
-<thaumadditions:mithminite_plate>,
-<rockhounding_chemistry:alloy_parts:46>,
-<rockhounding_chemistry:alloy_parts:67>,
-<techreborn:plates:31>,
-<thermalfoundation:material:320>,
-<moreplates:osmium_plate>,
-<techreborn:plates:34>,
-<embers:plate_dawnstone>,
-<rockhounding_chemistry:alloy_parts:7>,
-<thermalfoundation:material:321>,
-<rockhounding_chemistry:alloy_parts:76>,
-<thermalfoundation:material:325>,
-<thermalfoundation:material:356>,
-<advancedrocketry:productplate:1>,
-<immersiveengineering:metal:35>,
-<thermalfoundation:material:323>,
-<rockhounding_chemistry:alloy_parts:79>,
-<thaumcraft:plate:2>,
-<contenttweaker:material_part:3>,
-<thermalfoundation:material:352>,
-<rockhounding_chemistry:alloy_parts:55>,
-<techreborn:plates:2>,
-<thermalfoundation:material:353>,
-<thaumcraft:plate:3>,
-<thermalfoundation:material:355>,
-<thermalfoundation:material:33>,
-<rockhounding_chemistry:alloy_parts:73>,
-<rockhounding_chemistry:alloy_parts:49>,
-<rockhounding_chemistry:alloy_parts:22>,
-<thermalfoundation:material:322>,
-<rockhounding_chemistry:alloy_parts:43>,
-<rockhounding_chemistry:alloy_parts:31>,
-<rockhounding_chemistry:alloy_parts:61>,
-<techreborn:plates:20>,
-<thermalfoundation:material:354>,
-<rockhounding_chemistry:alloy_parts:28>,
-<rockhounding_chemistry:alloy_parts:34>,
-<rockhounding_chemistry:alloy_parts:91>,
-<thermalfoundation:material:326>,
-<libvulpes:productplate:3>,
-<advancedrocketry:productplate>,
-<thermalfoundation:material:328>,
-<rockhounding_chemistry:alloy_parts:82>,
-<rockhounding_chemistry:alloy_parts:25>,
-<rockhounding_chemistry:alloy_parts:13>,
-<rockhounding_chemistry:alloy_parts:10>,
-<rockhounding_chemistry:alloy_parts:52>,
-<rockhounding_chemistry:alloy_parts:19>,
-<rockhounding_chemistry:alloy_parts:37>,
-<thaumcraft:plate>,
-<rockhounding_chemistry:alloy_parts:85>,
-<moreplates:pulsating_iron_plate>,
-<thermalfoundation:material:32>,
-<moreplates:intermedium_plate>,
-<techreborn:plates:31>,
-<thermalfoundation:material:324>,
-<moreplates:ironwood_plate>,
-<techreborn:plates:31>,
-<aetherworks:item_resource:3>,
-<thermalfoundation:material:324>,
-]
- as IItemStack[];
-
-for item in rollingMachinetwo {
-	mods.advancedrocketry.RollingMachine.removeRecipe(item);
-}
+*/
 
 ###################################################
 ############     CRUSHING      ####################
@@ -426,6 +272,8 @@ Manufactory.addRecipe(<minecraft:clay_ball>, <techreborn:dust:12>);
 Pulverizer.removeRecipe(<minecraft:clay>);
 Pulverizer.addRecipe(<techreborn:dust:12>*4, <minecraft:clay>, 2000);
 Pulverizer.addRecipe(<techreborn:dust:12>, <minecraft:clay_ball>, 1500);
+mods.mekanism.crusher.addRecipe(<minecraft:clay>, <techreborn:dust:12> * 4);
+mods.mekanism.crusher.addRecipe(<minecraft:clay_ball>, <techreborn:dust:12>);
 //SagMill.addRecipe([<techreborn:dust:12>*4], [1] , <minecraft:clay>, "NONE");
 
 //limestone
@@ -436,6 +284,7 @@ limestoneforFlux.add(<chisel:limestone2:7>);
 for item in limestoneforFlux.items{
 Crusher.addRecipe(<contenttweaker:limestone_flux>*3, item, 1024, <contenttweaker:limestone_flux>, 0.5);
 Pulverizer.addRecipe(<contenttweaker:limestone_flux>*4, item, 1500, <contenttweaker:limestone_flux>, 50);
+mods.mekanism.crusher.addRecipe(item, <contenttweaker:limestone_flux> * 4);
 }
 
 Manufactory.addRecipe(<ore:limestoneforFlux>, <contenttweaker:limestone_flux>*4);
@@ -446,6 +295,7 @@ Manufactory.addRecipe(<ore:limestoneforFlux>, <contenttweaker:limestone_flux>*4)
 Crusher.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 1024, <arcanearchives:radiant_dust>*3, 0.5);
 Manufactory.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:radiant_dust>*9);
 Pulverizer.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 1500, <arcanearchives:radiant_dust>*3, 50);
+mods.mekanism.crusher.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:radiant_dust>*9);
 //SagMill.addRecipe([<arcanearchives:radiant_dust>*9], [1] , <arcanearchives:storage_raw_quartz>, "MULTIPLY_OUTPUT");
 
 
@@ -453,12 +303,14 @@ Pulverizer.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_ra
 Crusher.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 2048, <embers:dust_ember>, 0.1);
 Manufactory.addRecipe(<embers:crystal_ember>, <embers:dust_ember>);
 Pulverizer.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 1500, <embers:dust_ember>, 10);
+mods.mekanism.crusher.addRecipe(<embers:crystal_ember>, <embers:dust_ember>);
 //SagMill.addRecipe([<embers:dust_ember>], [1] , <embers:crystal_ember>, "NONE");
 
 
 //Graphite
 //SagMill.addRecipe([<nuclearcraft:dust:8>], [1] , <thermalfoundation:material:768>, "NONE");
 Pulverizer.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 1500);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:768>, <nuclearcraft:dust:8>);
 
 //Slates
 Crusher.addRecipe(<contenttweaker:slatedust>*2, <bloodmagic:slate>, 2048);
@@ -476,6 +328,11 @@ Pulverizer.addRecipe(<contenttweaker:slatedust>*4, <bloodmagic:slate:1>, 10000);
 Pulverizer.addRecipe(<contenttweaker:slatedust>*8, <bloodmagic:slate:2>, 10000);
 Pulverizer.addRecipe(<contenttweaker:slatedust>*16, <bloodmagic:slate:3>, 10000);
 Pulverizer.addRecipe(<contenttweaker:slatedust>*32, <bloodmagic:slate:4>, 10000);
+mods.mekanism.crusher.addRecipe(<bloodmagic:slate>, <contenttweaker:slatedust> * 2);
+mods.mekanism.crusher.addRecipe(<bloodmagic:slate:1>, <contenttweaker:slatedust> * 4);
+mods.mekanism.crusher.addRecipe(<bloodmagic:slate:2>, <contenttweaker:slatedust> * 8);
+mods.mekanism.crusher.addRecipe(<bloodmagic:slate:3>, <contenttweaker:slatedust> * 16);
+mods.mekanism.crusher.addRecipe(<bloodmagic:slate:4>, <contenttweaker:slatedust> * 32);
 
 Crusher.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 2048);
 Crusher.addRecipe(<rockhounding_chemistry:chemical_dusts:24>,<techreborn:plates:2>, 2048);
@@ -493,6 +350,14 @@ Crusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_st
 //Pristine dust
 Crusher.addRecipe(<contenttweaker:pristine_dust>, <ore:pristineMatter>, 1024);
 Manufactory.addRecipe(<ore:pristineMatter>, <contenttweaker:pristine_dust>);
+mods.mekanism.crusher.addRecipe(<ore:pristineMatter>, <contenttweaker:pristine_dust>);
+
+val pristines = <ore:pristineMatter>;
+
+for item in pristines.items {
+Pulverizer.addRecipe(<contenttweaker:pristine_dust>, item, 10000);
+}
+
 //SagMill.addRecipe([<contenttweaker:pristine_dust>], [1] , <ore:pristineMatter>, "NONE");
 
 //Flux BLocks
@@ -520,11 +385,346 @@ Manufactory.addRecipe(ingotPlutonium, <techreborn:dust:67>);
 //Wither Ash
 Crusher.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 1024);
 Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
+Pulverizer.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 2000);
+mods.mekanism.crusher.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
 //SagMill.addRecipe([<quark:black_ash>*3], [1] , <minecraft:skull:1>, "MULTIPLY_OUTPUT");
 
 //Thermal Ruby dust
 Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
 
+// --==Macerator Unification==-- //
+
+/*
+mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
+mods.nuclearcraft.Manufactory.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
+mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
+*/
+
+// Dense Construction Chunk
+mods.nuclearcraft.Manufactory.addRecipe(<buildinggadgets:constructionblock_dense>, <buildinggadgets:construction_chunk_dense> * 4);
+
+// Sky Stone Dust
+mods.mekanism.crusher.addRecipe(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>);
+
+// Wool to String
+mods.nuclearcraft.Manufactory.addRecipe(<ore:wool>, <minecraft:string> * 4);
+
+// Prismarine Crystals
+mods.mekanism.crusher.addRecipe(<minecraft:prismarine_shard>, <minecraft:prismarine_crystals>);
+
+// Flour
+mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:flour>, <minecraft:wheat>, 1024);
+mods.immersiveengineering.Crusher.addRecipe(<nuclearcraft:flour>, <natura:materials>, 1024);
+mods.nuclearcraft.Manufactory.addRecipe(<natura:materials>, <nuclearcraft:flour>);
+mods.thermalexpansion.Pulverizer.addRecipe(<nuclearcraft:flour>, <natura:materials>, 4000);
+mods.mekanism.crusher.addRecipe(<minecraft:wheat>, <nuclearcraft:flour>);
+mods.mekanism.crusher.addRecipe(<natura:materials>, <nuclearcraft:flour>);
+
+// Slag into Sand
+mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:864>, <minecraft:sand>);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:sand>, <thermalfoundation:material:864>, 4000);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:864>, <minecraft:sand>);
+
+// Construction Paste
+mods.nuclearcraft.Manufactory.addRecipe(<buildinggadgets:construction_chunk_dense>, <buildinggadgets:constructionpaste>);
+
+// Bonemeal
+mods.mekanism.crusher.addRecipe(<minecraft:bone>, <minecraft:dye:15> * 6);
+
+// End Stone
+mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:21>, <minecraft:end_stone>, 2048, <techreborn:dust:21>, 0.1);
+mods.mekanism.crusher.addRecipe(<minecraft:end_stone>, <techreborn:dust:21>);
+
+// Blaze Rods
+mods.mekanism.enrichment.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 4);
+
+// Blizz Rods
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:2049> * 4, <thermalfoundation:material:2048>, 1024, <minecraft:snowball>, 0.5);
+mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4);
+mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4);
+
+// Blitz Rods
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:2051> * 4, <thermalfoundation:material:2050>, 1024, <thermalfoundation:material:772>, 0.5);
+mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4);
+mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4);
+
+// Basalz Rods
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:2053> * 4, <thermalfoundation:material:2052>, 1024, <thermalfoundation:material:770>, 0.5);
+mods.nuclearcraft.Manufactory.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4);
+mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4);
+
+// Ender Pearl Dust
+mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:20>, <minecraft:ender_pearl>, 1024);
+mods.nuclearcraft.Manufactory.addRecipe(<minecraft:ender_pearl>, <techreborn:dust:20>);
+mods.nuclearcraft.Manufactory.addRecipe(<enderore:ore_ender>, <techreborn:dust:20> * 2);
+mods.mekanism.crusher.addRecipe(<minecraft:ender_pearl>, <techreborn:dust:20>);
+mods.mekanism.enrichment.addRecipe(<enderore:ore_ender>, <techreborn:dust:20> * 2);
+
+// Ingot & Gem Pulverisation //
+
+// Grains of Prescience
+mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:34>, <enderio:item_material:19>, 1600);
+mods.mekanism.crusher.addRecipe(<enderio:item_material:19>, <enderio:item_material:34>);
+
+// Grains of Vibrancy
+mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:35>, <enderio:item_material:15>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:35>, <enderio:item_material:15>, 1600);
+mods.mekanism.crusher.addRecipe(<enderio:item_material:15>, <enderio:item_material:35>);
+
+// Grains of Piezallity
+mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 1600);
+mods.mekanism.crusher.addRecipe(<enderio:item_material:14>, <enderio:item_material:36>);
+
+// Grains of the End
+mods.immersiveengineering.Crusher.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<enderio:item_material:37>, <enderio:item_material:16>, 1600);
+mods.mekanism.crusher.addRecipe(<enderio:item_material:16>, <enderio:item_material:37>);
+
+// Brass Dust
+mods.mekanism.crusher.addRecipe(<ore:ingotBrass>, <techreborn:dust:6>);
+
+// Zircaloy Dust
+mods.mekanism.crusher.addRecipe(<ore:ingotZircaloy>, <rockhounding_chemistry:alloy_items_tech_b:6>);
+
+// Shibuichi Dust
+mods.mekanism.crusher.addRecipe(<ore:ingotShibuichi>, <rockhounding_chemistry:alloy_items_deco:12>);
+
+// Ytterbium YAG Dust
+mods.nuclearcraft.Manufactory.addRecipe(<rockhounding_chemistry:alloy_items_gems:7>, <rockhounding_chemistry:alloy_items_gems:6>);
+mods.mekanism.crusher.addRecipe(<rockhounding_chemistry:alloy_items_gems:7>, <rockhounding_chemistry:alloy_items_gems:6>);
+
+// Erbium YAG Dust
+mods.nuclearcraft.Manufactory.addRecipe(<rockhounding_chemistry:alloy_items_gems:4>, <rockhounding_chemistry:alloy_items_gems:3>);
+mods.mekanism.crusher.addRecipe(<rockhounding_chemistry:alloy_items_gems:4>, <rockhounding_chemistry:alloy_items_gems:3>);
+
+// Neodymium YAG Dust
+mods.nuclearcraft.Manufactory.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <rockhounding_chemistry:alloy_items_gems>);
+mods.mekanism.crusher.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <rockhounding_chemistry:alloy_items_gems>);
+
+// Coal Coke Dust
+mods.nuclearcraft.Manufactory.addRecipe(<ore:fuelCoke>, <immersiveengineering:material:17>);
+mods.nuclearcraft.Manufactory.addRecipe(<ore:blockFuelCoke>, <immersiveengineering:material:17> * 9);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17>, <immersiveengineering:material:6>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17>, <thermalfoundation:material:802>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17> * 9, <immersiveengineering:stone_decoration:3>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17> * 9, <thermalfoundation:storage_resource:1>, 2000);
+mods.mekanism.crusher.addRecipe(<ore:fuelCoke>, <immersiveengineering:material:17>);
+mods.mekanism.crusher.addRecipe(<ore:blockFuelCoke>, <immersiveengineering:material:17> * 9);
+
+
+// Adding more ingot crushing recipes to the Mekanism Crusher
+val ingotcrushingMap as IItemStack[IItemStack] = {
+	<nuclearcraft:gem:6>: <rockhounding_chemistry:chemical_dusts:42>,
+	<thermalfoundation:material:162>: <thermalfoundation:material:98>,
+	<immersiveengineering:material:19>: <immersiveengineering:material:18>,
+	<thermalfoundation:material:164>: <thermalfoundation:material:100>,
+	<thermalfoundation:material:166>: <thermalfoundation:material:102>,
+	<thermalfoundation:material:165>: <thermalfoundation:material:101>,
+	<thermalfoundation:material:167>: <thermalfoundation:material:103>,
+	<enderio:item_alloy_ingot:7>: <enderio:item_material:74>,
+	<nuclearcraft:ingot:8>: <nuclearcraft:dust:8>,
+	<nuclearcraft:ingot:10>: <nuclearcraft:dust:10>,
+	<nuclearcraft:ingot:11>: <techreborn:dust:31>,
+	<nuclearcraft:ingot:14>: <nuclearcraft:dust:14>,
+	<nuclearcraft:ingot:15>: <nuclearcraft:dust:15>,
+	<qmd:ingot:1>: <rockhounding_chemistry:chemical_dusts:37>,
+	<qmd:ingot:6>: <qmd:dust:6>,
+	<techreborn:ingot:18>: <techreborn:dust:59>,
+	<qmd:ingot:11>: <rockhounding_chemistry:chemical_dusts:44>,
+	<qmd:ingot:12>: <rockhounding_chemistry:chemical_dusts:41>,
+	<qmd:ingot:13>: <rockhounding_chemistry:chemical_dusts:23>,
+	<qmd:ingot:14>: <qmd:dust:14>,
+	<qmd:ingot2>: <rockhounding_chemistry:chemical_dusts:15>,
+	<qmd:ingot2:1>: <rockhounding_chemistry:chemical_dusts:8>,
+	<rockhounding_chemistry:alloy_items_tech:22>: <rockhounding_chemistry:alloy_items_tech:21>,
+	<advancedrocketry:productingot>: <advancedrocketry:productdust>,
+	<advancedrocketry:productingot:1>: <advancedrocketry:productdust:1>,
+	<contenttweaker:material_part:5>: <contenttweaker:material_part:7>,
+	<techreborn:ingot:25>: <techreborn:dust:67>,
+	<nuclearcraft:gem>: <nuclearcraft:gem_dust:1>,
+	<nuclearcraft:gem:1>: <nuclearcraft:gem_dust:4>,
+	<nuclearcraft:gem:2>: <nuclearcraft:gem_dust:5>,
+	<nuclearcraft:gem:3>: <nuclearcraft:gem_dust:8>,
+	<rockhounding_chemistry:metal_items>: <rockhounding_chemistry:chemical_dusts:52>,
+	<rockhounding_chemistry:metal_items:12>: <nuclearcraft:fission_dust:6>,
+	<rockhounding_chemistry:alloy_items_tech:4>: <rockhounding_chemistry:alloy_items_tech:3>,
+	<rockhounding_chemistry:alloy_items_tech:7>: <rockhounding_chemistry:alloy_items_tech:6>,
+	<rockhounding_chemistry:alloy_items_tech:10>: <rockhounding_chemistry:alloy_items_tech:9>,
+	<rockhounding_chemistry:alloy_items_tech:16>: <rockhounding_chemistry:alloy_items_tech:15>,
+	<rockhounding_chemistry:alloy_items_tech:19>: <rockhounding_chemistry:alloy_items_tech:18>,
+	<rockhounding_chemistry:alloy_items_tech:28>: <rockhounding_chemistry:alloy_items_tech:27>,
+	<rockhounding_chemistry:alloy_items_tech:34>: <rockhounding_chemistry:alloy_items_tech:33>,
+	<rockhounding_chemistry:alloy_items_tech:37>: <rockhounding_chemistry:alloy_items_tech:36>,
+	<rockhounding_chemistry:alloy_items_tech:40>: <rockhounding_chemistry:alloy_items_tech:39>,
+	<rockhounding_chemistry:alloy_items_tech:43>: <rockhounding_chemistry:alloy_items_tech:42>,
+	<rockhounding_chemistry:alloy_items_tech:46>: <rockhounding_chemistry:alloy_items_tech:45>,
+	<rockhounding_chemistry:alloy_items_tech_b:1>: <rockhounding_chemistry:alloy_items_tech_b>,
+	<rockhounding_chemistry:alloy_items_tech_b:4>: <rockhounding_chemistry:alloy_items_tech_b:3>,
+	<rockhounding_chemistry:alloy_items_deco:1>: <rockhounding_chemistry:alloy_items_deco>,
+	<rockhounding_chemistry:alloy_items_deco:4>: <rockhounding_chemistry:alloy_items_deco:3>,
+	<rockhounding_chemistry:alloy_items_deco:7>: <rockhounding_chemistry:alloy_items_deco:6>,
+	<rockhounding_chemistry:alloy_items_deco:10>: <rockhounding_chemistry:alloy_items_deco:9>,
+	<rockhounding_chemistry:alloy_items_deco:16>: <rockhounding_chemistry:alloy_items_deco:15>,
+	<rockhounding_chemistry:alloy_items_deco:19>: <rockhounding_chemistry:alloy_items_deco:18>,
+	<rockhounding_chemistry:alloy_items_deco:25>: <rockhounding_chemistry:alloy_items_deco:24>,
+	<rockhounding_chemistry:alloy_items_deco:28>: <rockhounding_chemistry:alloy_items_deco:27>,
+	<rockhounding_chemistry:alloy_items_deco:31>: <rockhounding_chemistry:alloy_items_deco:30>,
+	<rockhounding_chemistry:metal_items:8>: <rockhounding_chemistry:chemical_items:10>,
+} as IItemStack[IItemStack];
+
+for material, dust in ingotcrushingMap {
+	mods.mekanism.crusher.addRecipe(material, dust);
+}
+
+// Adding flower dye recipes to the Mek Enrichment Chamber & TR Extractor
+val flowerstoRemove =
+[
+<minecraft:red_flower>,
+<minecraft:red_flower:1>,
+<minecraft:red_flower:2>,
+<minecraft:red_flower:3>,
+<minecraft:red_flower:4>,
+<minecraft:red_flower:5>,
+<minecraft:red_flower:6>,
+<minecraft:red_flower:7>,
+<minecraft:red_flower:8>,
+<minecraft:yellow_flower>,
+<minecraft:double_plant>,
+<minecraft:double_plant:1>,
+<minecraft:double_plant:4>,
+<minecraft:double_plant:5>,
+]
+ as IItemStack[];
+
+for item in flowerstoRemove {
+	mods.techreborn.extractor.removeInputRecipe(item);
+}
+
+
+val flowercrushingMap as IItemStack[IItemStack] = {
+	<minecraft:red_flower>: <minecraft:dye:1> * 4,
+	<minecraft:red_flower:4>: <minecraft:dye:1> * 4,
+	<minecraft:double_plant:4>: <minecraft:dye:1> * 8,
+	<natura:bluebells_flower>: <natura:materials:8> * 4,
+	<minecraft:red_flower:8>: <minecraft:dye:7> * 4,
+	<minecraft:red_flower:6>: <minecraft:dye:7> * 4,
+	<minecraft:red_flower:3>: <minecraft:dye:7> * 4,
+	<minecraft:red_flower:7>: <minecraft:dye:9> * 4,
+	<minecraft:double_plant:5>: <minecraft:dye:9> * 8,
+	<minecraft:yellow_flower>: <minecraft:dye:11> * 4,
+	<minecraft:double_plant>: <minecraft:dye:11> * 8,
+	<minecraft:red_flower:1>: <minecraft:dye:12> * 4,
+	<minecraft:red_flower:2>: <minecraft:dye:13> * 4,
+	<minecraft:double_plant:1>: <minecraft:dye:13> * 8,
+	<minecraft:red_flower:5>: <minecraft:dye:14> * 4,
+	<actuallyadditions:block_black_lotus>: <actuallyadditions:item_misc:17> * 4,
+} as IItemStack[IItemStack];
+
+for flower, dye in flowercrushingMap {
+	mods.mekanism.enrichment.addRecipe(flower, dye);
+	mods.techreborn.extractor.addRecipe(dye, flower, 60, 40);
+}
+
+// Black Lotus to Black Dye
+mods.integrateddynamics.MechanicalSqueezer.addRecipe(<actuallyadditions:block_black_lotus>, <actuallyadditions:item_misc:17> * 4);
+
+// Bluebells to Blue Dye
+mods.integrateddynamics.MechanicalSqueezer.addRecipe(<natura:bluebells_flower>, <natura:materials:8> * 4);
+mods.thermalexpansion.Pulverizer.addRecipe(<natura:materials:8> * 4, <natura:bluebells_flower>, 2000);
+
+
+// Rebalancing tall flowers in the TE Pulveriser
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:double_plant:4>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:double_plant:5>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:double_plant>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:double_plant:1>);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:1> * 8, <minecraft:double_plant:4>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:9> * 8, <minecraft:double_plant:5>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:11> * 8, <minecraft:double_plant>, 2000);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:dye:13> * 8, <minecraft:double_plant:1>, 2000);
+
+// Gem Ore Processing Unification //
+
+// Dilithium
+mods.immersiveengineering.Crusher.addRecipe(<libvulpes:productdust> * 2, <libvulpes:ore0>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<libvulpes:productdust> * 2, <libvulpes:ore0>, 3600);
+mods.mekanism.enrichment.addRecipe(<libvulpes:ore0>, <libvulpes:productdust> * 2);
+
+// Oil Sand/Shale
+mods.thermalexpansion.Crucible.removeRecipe(<thermalfoundation:ore_fluid:1>);
+mods.thermalexpansion.Crucible.removeRecipe(<thermalfoundation:ore_fluid>);
+mods.thermalexpansion.Crucible.removeRecipe(<thermalfoundation:material:892>);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:oil> * 250, <thermalfoundation:material:892>, 2000);
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:892> * 3, <ore:oreClathrateOilShale>, 2048, <minecraft:flint>, 0.5);
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:892> * 3, <ore:oreClathrateOilSand>, 2048, <thermalfoundation:material:833>, 0.5);
+
+val oilsandshale =
+[
+<thermalfoundation:ore_fluid:5>,
+<thermalfoundation:ore_fluid:1>,
+<thermalfoundation:ore_fluid>
+]
+ as IItemStack[];
+
+for item in oilsandshale {
+	mods.nuclearcraft.Melter.addRecipe(item, <liquid:oil> * 1000);
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:oil> * 1000, item, 4000);
+	mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:892> * 3);
+	mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:892> * 3);
+}
+
+// Galena
+mods.nuclearcraft.Manufactory.addRecipe(<techreborn:ore>, <techreborn:dust:23> * 2);
+mods.mekanism.enrichment.addRecipe(<techreborn:ore>, <techreborn:dust:23> * 2);
+
+// Bauxite
+mods.nuclearcraft.Manufactory.addRecipe(<techreborn:ore:4>, <techreborn:dust:5> * 2);
+mods.mekanism.enrichment.addRecipe(<techreborn:ore:4>, <techreborn:dust:5> * 2);
+
+// Pyrite
+mods.nuclearcraft.Manufactory.addRecipe(<techreborn:ore:5>, <techreborn:dust:39> * 2);
+mods.mekanism.enrichment.addRecipe(<techreborn:ore:5>, <techreborn:dust:39> * 5);
+
+// Cinnabar
+mods.mekanism.enrichment.addRecipe(<ore:oreCinnabar>, <thermalfoundation:material:866> * 3);
+
+// Sphalerite
+mods.nuclearcraft.Manufactory.addRecipe(<techreborn:ore:7>, <techreborn:dust:50> * 2);
+mods.mekanism.enrichment.addRecipe(<techreborn:ore:7>, <techreborn:dust:50> * 4);
+
+// Destabilised Redstone Ore
+mods.nuclearcraft.Melter.addRecipe(<thermalfoundation:material:893>, <liquid:redstone> * 250);
+mods.nuclearcraft.Melter.addRecipe(<thermalfoundation:ore_fluid:2>, <liquid:redstone> * 1000);
+mods.mekanism.enrichment.addRecipe(<thermalfoundation:ore_fluid:2>, <thermalfoundation:material:893> * 3);
+
+// Energized Netherrack
+mods.nuclearcraft.Melter.addRecipe(<thermalfoundation:material:894>, <liquid:glowstone> * 250);
+mods.nuclearcraft.Melter.addRecipe(<thermalfoundation:ore_fluid:3>, <liquid:glowstone> * 1000);
+mods.mekanism.enrichment.addRecipe(<thermalfoundation:ore_fluid:3>, <thermalfoundation:material:894> * 3);
+
+// Resonant End Stone
+mods.nuclearcraft.Melter.addRecipe(<thermalfoundation:material:895>, <liquid:ender> * 250);
+mods.nuclearcraft.Melter.addRecipe(<thermalfoundation:ore_fluid:4>, <liquid:ender> * 1000);
+mods.mekanism.enrichment.addRecipe(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895> * 3);
+
+// Dimensional Shard Ore
+mods.mekanism.enrichment.addRecipe(<ore:oreDimensionalShard>, <rftools:dimensional_shard> * 4);
+
+// Sodalite Ore
+mods.nuclearcraft.Manufactory.addRecipe(<techreborn:ore:11>, <techreborn:dust:48> * 6);
+mods.mekanism.enrichment.addRecipe(<techreborn:ore:11>, <techreborn:dust:48> * 12);
+
+// Black Quartz
+mods.mekanism.enrichment.addRecipe(<actuallyadditions:block_misc:3>, <actuallyadditions:item_misc:5> * 2);
+
+// Amethyst Ore
+mods.immersiveengineering.Crusher.addRecipe(<mysticalworld:amethyst_gem> * 2, <mysticalworld:amethyst_ore>, 1024);
+mods.thermalexpansion.Pulverizer.addRecipe(<mysticalworld:amethyst_gem> * 2, <mysticalworld:amethyst_ore>, 2500);
+mods.mekanism.enrichment.addRecipe(<mysticalworld:amethyst_ore>, <mysticalworld:amethyst_gem> * 2);
 
 // --==Silicon Unification==-- //
 
@@ -588,9 +788,6 @@ mods.jei.JEI.removeAndHide(<qmd:semiconductor:3>);
 
 mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(<qmd:semiconductor:2>);
 mods.nuclearcraft.Crystallizer.addRecipe(<liquid:silicon> * 576, <qmd:semiconductor:2>);
-
-// Removing old silicon wafer recipe
-mods.advancedrocketry.CuttingMachine.removeRecipe(<advancedrocketry:wafer>);
 
 // --=Cinnabar, Quicksilver & Mercury Unification ==-- //
 
@@ -830,6 +1027,55 @@ mods.nuclearcraft.Pressurizer.removeRecipeWithInput(<techreborn:part:34>);
 
 // Smelting recipe for Carbon Bricks
 furnace.addRecipe(<advancedrocketry:misc:1>, <ore:dustCarbon>);
+
+// Removing useless small dusts
+val duststoRemove =
+[
+<techreborn:smalldust:56>,
+<techreborn:smalldust:63>,
+<techreborn:smalldust:64>,
+<techreborn:smalldust:65>,
+<techreborn:smalldust:69>,
+<techreborn:smalldust>,
+<techreborn:smalldust:2>,
+<techreborn:smalldust:3>,
+<techreborn:smalldust:4>,
+<techreborn:smalldust:6>,
+<techreborn:smalldust:7>,
+<techreborn:smalldust:9>,
+<techreborn:smalldust:10>,
+<techreborn:smalldust:12>,
+<techreborn:smalldust:13>,
+<techreborn:smalldust:15>,
+<techreborn:smalldust:17>,
+<techreborn:smalldust:19>,
+<techreborn:smalldust:20>,
+<techreborn:smalldust:21>,
+<techreborn:smalldust:25>,
+<techreborn:smalldust:26>,
+<techreborn:smalldust:28>,
+<techreborn:smalldust:32>,
+<techreborn:smalldust:33>,
+<techreborn:smalldust:35>,
+<techreborn:smalldust:37>,
+<techreborn:smalldust:40>,
+<techreborn:smalldust:44>,
+<techreborn:smalldust:49>,
+<techreborn:smalldust:50>,
+<techreborn:smalldust:51>
+]
+ as IItemStack[];
+
+for item in duststoRemove {
+	mods.jei.JEI.removeAndHide(item);
+}
+
+// Ender Pearl Dust Compat
+mods.nuclearcraft.AlloyFurnace.addRecipe(<enderio:item_alloy_ingot:1>, <techreborn:dust:20>, <enderio:item_alloy_ingot:2>, 1, 2);
+mods.nuclearcraft.AlloyFurnace.addRecipe(<minecraft:iron_ingot>, <techreborn:dust:20>, <enderio:item_alloy_ingot:5>, 1, 2);
+mods.nuclearcraft.AlloyFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:5>, <techreborn:dust:20>, <enderio:item_alloy_endergy_ingot:6>, 1, 2);
+mods.nuclearcraft.Melter.addRecipe(<techreborn:dust:20>, <liquid:ender> * 250, 0.5, 1.5);
+mods.nuclearcraft.Pressurizer.addRecipe(<techreborn:dust:20>, <minecraft:ender_pearl>);
 
 ##########################################################################################
 print("==================== end of parts.zs ====================");

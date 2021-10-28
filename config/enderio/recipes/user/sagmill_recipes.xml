@@ -17,112 +17,112 @@
 
 <recipe name="MBM: Botania Dye 0" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal" />
+    <input name="petalWhite" />
     <output name="botania:dye" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 1" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:1" />
+    <input name="petalOrange" />
     <output name="botania:dye:1" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 2" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:2" />
+    <input name="petalMagenta" />
     <output name="botania:dye:2" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 3" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:3" />
+    <input name="petalLightBlue" />
     <output name="botania:dye:3" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 4" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:4" />
+    <input name="petalYellow" />
     <output name="botania:dye:4" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 5" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:5" />
+    <input name="petalLime" />
     <output name="botania:dye:5" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 6" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:6" />
+    <input name="petalPink" />
     <output name="botania:dye:6" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 7" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:7" />
+    <input name="petalGray" />
     <output name="botania:dye:7" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 8" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:8" />
+    <input name="petalLightGray" />
     <output name="botania:dye:8" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 9" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:9" />
+    <input name="petalCyan" />
     <output name="botania:dye:9" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 10" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:10" />
+    <input name="petalPurple" />
     <output name="botania:dye:10" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 11" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:11" />
+    <input name="petalBlue" />
     <output name="botania:dye:11" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 12" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:12" />
+    <input name="petalBrown" />
     <output name="botania:dye:12" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 13" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:13" />
+    <input name="petalGreen" />
     <output name="botania:dye:13" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 14" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:14" />
+    <input name="petalRed" />
     <output name="botania:dye:14" chance="1.0"/>
   </sagmilling>
 </recipe>
 
 <recipe name="MBM: Botania Dye 15" required="true">
   <sagmilling energy="5000" bonus="multiply_output">
-    <input name="botania:petal:15" />
+    <input name="petalBlack" />
     <output name="botania:dye:15" chance="1.0"/>
   </sagmilling>
 </recipe>
@@ -160,6 +160,48 @@
 
 <!-- From parts.zs -->
 
+<!-- General Compatability Recipes -->
+
+<!-- Crushed Slate 1 -->
+<recipe name="MBM: Crushed Slate 1" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Slate 2 -->
+<recipe name="MBM: Crushed Slate 2" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate:1" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="4"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Slate 3 -->
+<recipe name="MBM: Crushed Slate 3" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate:2" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="8"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Slate 4 -->
+<recipe name="MBM: Crushed Slate 4" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate:3" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="16"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Slate 5 -->
+<recipe name="MBM: Crushed Slate 5" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="bloodmagic:slate:4" />
+    <output name="contenttweaker:slatedust" chance="1.0" amount="32"/>
+  </sagmilling>
+</recipe>
+
 <!-- Clay Dust -->
 <recipe name="MBM: Clay Dust" required="true">
   <sagmilling energy="5000" bonus="none">
@@ -170,15 +212,15 @@
 
 <!-- Limestone Flux -->
 <recipe name="MBM: Limestone Flux" required="true">
-  <sagmilling energy="5000" bonus="multiply_output">
+  <sagmilling energy="5000" bonus="none">
     <input name="limestoneforFlux" />
-    <output name="contenttweaker:limestone_flux" chance="1.0" amount="3"/>
+    <output name="contenttweaker:limestone_flux" chance="1.0" amount="4"/>
   </sagmilling>
 </recipe>
 
 <!-- Radiant Dust -->
 <recipe name="MBM: Radiant Dust" required="true">
-  <sagmilling energy="5000" bonus="multiply_output">
+  <sagmilling energy="5000" bonus="none">
     <input name="arcanearchives:storage_raw_quartz" />
     <output name="arcanearchives:radiant_dust" chance="1.0" amount="9"/>
   </sagmilling>
@@ -197,14 +239,6 @@
   <sagmilling energy="5000" bonus="none">
     <input name="thermalfoundation:material:768" />
     <output name="nuclearcraft:dust:8" chance="1.0"/>
-  </sagmilling>
-</recipe>
-
-<!-- Silicon Dust -->
-<recipe name="MBM: Silicon Dust" required="true">
-  <sagmilling energy="2000" bonus="none">
-    <input name="dustSilicon" />
-    <output name="itemSilicon" chance="1.0"/>
   </sagmilling>
 </recipe>
 
@@ -235,19 +269,1191 @@
 
 <!-- Wither Ash -->
 <recipe name="MBM: Wither Ash" required="true">
-  <sagmilling energy="5000" bonus="multiply_output">
+  <sagmilling energy="5000" bonus="none">
     <input name="minecraft:skull:1" />
     <output name="quark:black_ash" chance="1.0" amount="3"/>
   </sagmilling>
 </recipe>
 
+<!-- Dense Construction Chunk -->
+<recipe name="MBM: Dense Construction Chunk" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="buildinggadgets:constructionblock_dense" />
+    <output name="buildinggadgets:construction_chunk_dense" chance="1.0" amount="4"/>
+  </sagmilling>
+</recipe>
+
+<!-- Construction Paste -->
+<recipe name="MBM: Construction Paste" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="buildinggadgets:construction_chunk_dense" />
+    <output name="buildinggadgets:constructionpaste" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Endstone Dust -->
+<recipe name="MBM: Endstone Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="minecraft:end_stone" />
+    <output name="techreborn:dust:21" chance="1.0" amount="1"/>
+    <output name="techreborn:dust:21" chance="0.1" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Amethyst -->
+<recipe name="MBM: Amethyst" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="mysticalworld:amethyst_ore" />
+    <output name="mysticalworld:amethyst_gem" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Ingot Pulverisation Recipes -->
+
+<!-- Ender Dust -->
+<recipe name="MBM: Ender Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="minecraft:ender_pearl" />
+    <output name="techreborn:dust:20" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Rhodochrosite -->
+<recipe name="MBM: Crushed Rhodochrosite" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="nuclearcraft:gem" />
+    <output name="nuclearcraft:gem_dust:1" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Hexagonal Boron Nitride -->
+<recipe name="MBM: Hexagonal Boron Nitride" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="gemBoronNitride" />
+    <output name="nuclearcraft:gem_dust:4" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Fluorite -->
+<recipe name="MBM: Crushed Fluorite" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="gemFluorite" />
+    <output name="nuclearcraft:gem_dust:5" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Crushed Villiaumite -->
+<recipe name="MBM: Crushed Villiaumite" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="gemVilliaumite" />
+    <output name="nuclearcraft:gem_dust:8" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Silicon Dust -->
+<recipe name="MBM: Silicon Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="itemSilicon" />
+    <output name="rockhounding_chemistry:chemical_dusts:42" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Carobbiite Dust -->
+<recipe name="MBM: Carobbiite Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="gemCarobbiite" />
+    <output name="nuclearcraft:gem_dust:9" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Sodalite Dust -->
+<recipe name="MBM: Sodalite Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="techreborn:ore:11" />
+    <output name="techreborn:dust:48" chance="1.0" amount="12"/>
+    <output name="thermalfoundation:material:68" chance="0.1" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- HOP Graphite Dust -->
+<recipe name="MBM: HOP Graphite Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotHOPGraphite" />
+    <output name="immersiveengineering:material:18" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Constantan Blend -->
+<recipe name="MBM: Constantan Blend" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotConstantan" />
+    <output name="thermalfoundation:material:100" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Refined Obsidian Blend -->
+<recipe name="MBM: Refined Obsidian Blend" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotRefinedObsidian" />
+    <output name="mekanism:otherdust:5" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Zirconium Dust -->
+<recipe name="MBM: Zirconium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotZirconium" />
+    <output name="nuclearcraft:dust:10" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Manganese Oxide Dust -->
+<recipe name="MBM: Manganese Oxide Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotManganeseOxide" />
+    <output name="nuclearcraft:dust:14" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Manganese Dioxide Dust -->
+<recipe name="MBM: Manganese Dioxide Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotManganeseDioxide" />
+    <output name="nuclearcraft:dust:15" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Shibuichi Dust -->
+<recipe name="MBM: Shibuichi Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotShibuichi" />
+    <output name="rockhounding_chemistry:alloy_items_deco:12" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Zircaloy Dust -->
+<recipe name="MBM: Zircaloy Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotZircaloy" />
+    <output name="rockhounding_chemistry:alloy_items_tech_b:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Niobium Dust -->
+<recipe name="MBM: Niobium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotNiobium" />
+    <output name="rockhounding_chemistry:chemical_dusts:37" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Hafnium Dust -->
+<recipe name="MBM: Hafnium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotHafnium" />
+    <output name="qmd:dust:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Zinc Dust -->
+<recipe name="MBM: Zinc Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotZinc" />
+    <output name="techreborn:dust:59" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Sodium Dust -->
+<recipe name="MBM: Sodium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotSodium" />
+    <output name="rockhounding_chemistry:chemical_dusts:44" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Potassium Dust -->
+<recipe name="MBM: Potassium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotPotassium" />
+    <output name="rockhounding_chemistry:chemical_dusts:41" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Calcium Dust -->
+<recipe name="MBM: Calcium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotCalcium" />
+    <output name="rockhounding_chemistry:chemical_dusts:23" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Strontium Dust -->
+<recipe name="MBM: Strontium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotStrontium" />
+    <output name="qmd:dust:14" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Yttrium Dust -->
+<recipe name="MBM: Yttrium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotYttrium" />
+    <output name="rockhounding_chemistry:chemical_dusts:15" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Neodymium Dust -->
+<recipe name="MBM: Neodymium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotNeodymium" />
+    <output name="rockhounding_chemistry:chemical_dusts:8" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nichrome Dust -->
+<recipe name="MBM: Nichrome Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotNichrome" />
+    <output name="rockhounding_chemistry:alloy_items_tech:21" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- TitaniumAluminide Dust -->
+<recipe name="MBM: TitaniumAluminide Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotTitaniumAluminide" />
+    <output name="advancedrocketry:productdust" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- TitaniumIridium Dust -->
+<recipe name="MBM: TitaniumIridium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotTitaniumIridium" />
+    <output name="advancedrocketry:productdust:1" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Kanthal Dust -->
+<recipe name="MBM: Kanthal Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotKanthal" />
+    <output name="contenttweaker:material_part:7" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Plutonium Dust -->
+<recipe name="MBM: Plutonium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotPlutonium" />
+    <output name="techreborn:dust:67" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Vanadium Dust -->
+<recipe name="MBM: Vanadium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotVanadium" />
+    <output name="rockhounding_chemistry:chemical_dusts:52" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Molybdenum Dust -->
+<recipe name="MBM: Molybdenum Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotMolybdenum" />
+    <output name="nuclearcraft:fission_dust:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Scal Dust -->
+<recipe name="MBM: Scal Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotScal" />
+    <output name="rockhounding_chemistry:alloy_items_tech:3" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Bam Dust -->
+<recipe name="MBM: Bam Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotBam" />
+    <output name="rockhounding_chemistry:alloy_items_tech:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Stellite Dust -->
+<recipe name="MBM: Stellite Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotStellite" />
+    <output name="rockhounding_chemistry:alloy_items_tech:9" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nimonic Dust -->
+<recipe name="MBM: Nimonic Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotNimonic" />
+    <output name="rockhounding_chemistry:alloy_items_tech:15" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Hastelloy Dust -->
+<recipe name="MBM: Hastelloy Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotHastelloy" />
+    <output name="rockhounding_chemistry:alloy_items_tech:18" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- SiliconNitride Dust -->
+<recipe name="MBM: SiliconNitride Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotSiliconNitride" />
+    <output name="rockhounding_chemistry:alloy_items_tech:27" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tinite Dust -->
+<recipe name="MBM: Tinite Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotTinite" />
+    <output name="rockhounding_chemistry:alloy_items_tech:33" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Hydronalium Dust -->
+<recipe name="MBM: Hydronalium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotHydronalium" />
+    <output name="rockhounding_chemistry:alloy_items_tech:36" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Vanasteel Dust -->
+<recipe name="MBM: Vanasteel Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotVanasteel" />
+    <output name="rockhounding_chemistry:alloy_items_tech:39" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Widia Dust -->
+<recipe name="MBM: Widia Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotWidia" />
+    <output name="rockhounding_chemistry:alloy_items_tech:42" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tantaloy Dust -->
+<recipe name="MBM: Tantaloy Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotTantaloy" />
+    <output name="rockhounding_chemistry:alloy_items_tech:45" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nial Dust -->
+<recipe name="MBM: Nial Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotNial" />
+    <output name="rockhounding_chemistry:alloy_items_tech_b" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Inconel Dust -->
+<recipe name="MBM: Inconel Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotInconel" />
+    <output name="rockhounding_chemistry:alloy_items_tech_b:3" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Mischmetal Dust -->
+<recipe name="MBM: Mischmetal Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotMischmetal" />
+    <output name="rockhounding_chemistry:alloy_items_deco" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Rosegold Dust -->
+<recipe name="MBM: Rosegold Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotRosegold" />
+    <output name="rockhounding_chemistry:alloy_items_deco:3" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Greengold Dust -->
+<recipe name="MBM: Greengold Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotGreengold" />
+    <output name="rockhounding_chemistry:alloy_items_deco:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Whitegold Dust -->
+<recipe name="MBM: Whitegold Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotWhitegold" />
+    <output name="rockhounding_chemistry:alloy_items_deco:9" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tombak Dust -->
+<recipe name="MBM: Tombak Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotTombak" />
+    <output name="rockhounding_chemistry:alloy_items_deco:15" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Pewter Dust -->
+<recipe name="MBM: Pewter Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotPewter" />
+    <output name="rockhounding_chemistry:alloy_items_deco:18" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Shakudo Dust -->
+<recipe name="MBM: Shakudo Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotShakudo" />
+    <output name="rockhounding_chemistry:alloy_items_deco:24" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Purplegold Dust -->
+<recipe name="MBM: Purplegold Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotPurplegold" />
+    <output name="rockhounding_chemistry:alloy_items_deco:27" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nib Dust -->
+<recipe name="MBM: Nib Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotNib" />
+    <output name="rockhounding_chemistry:alloy_items_deco:30" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Zeolite Dust -->
+<recipe name="MBM: Zeolite Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotZeolite" />
+    <output name="rockhounding_chemistry:chemical_items:10" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Ytterbium YAG Dust -->
+<recipe name="MBM: Ytterbium YAG Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="gemYagYb" />
+    <output name="rockhounding_chemistry:alloy_items_gems:6" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Neodymium YAG Dust -->
+<recipe name="MBM: Neodymium YAG Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="gemYagNd" />
+    <output name="rockhounding_chemistry:alloy_items_gems" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Erbium YAG Dust -->
+<recipe name="MBM: Erbium YAG Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="gemYagEr" />
+    <output name="rockhounding_chemistry:alloy_items_gems:3" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Coal Coke Dust 1 -->
+<recipe name="MBM: Coal Coke Dust 1" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="fuelCoke" />
+    <output name="immersiveengineering:material:17" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Coal Coke Dust 2 -->
+<recipe name="MBM: Coal Coke Dust 2" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="blockFuelCoke" />
+    <output name="immersiveengineering:material:17" chance="1.0" amount="9"/>
+  </sagmilling>
+</recipe>
+
+
+<!-- Cluster, Lump & Shard Processing -->
+
+<!-- Adamantine Cluster -->
+<recipe name="MBM: Adamantine Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterAdamantine" />
+    <output name="contenttweaker:material_part:15" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Aluminium Cluster -->
+<recipe name="MBM: Aluminium Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterAluminium" />
+    <output name="thermalfoundation:material:68" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Ardite Cluster -->
+<recipe name="MBM: Ardite Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterArdite" />
+    <output name="jaopca:item_dustardite" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:1" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- AstralStarmetal Cluster -->
+<recipe name="MBM: AstralStarmetal Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterAstralStarmetal" />
+    <output name="astralsorcery:itemcraftingcomponent:2" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Boron Cluster -->
+<recipe name="MBM: Boron Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterBoron" />
+    <output name="nuclearcraft:dust:5" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Cobalt Cluster -->
+<recipe name="MBM: Cobalt Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterCobalt" />
+    <output name="rockhounding_chemistry:chemical_dusts:25" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Iridium Cluster -->
+<recipe name="MBM: Iridium Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterIridium" />
+    <output name="thermalfoundation:material:71" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:70" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Lithium Cluster -->
+<recipe name="MBM: Lithium Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterLithium" />
+    <output name="mekanism:otherdust:4" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Magnesium Cluster -->
+<recipe name="MBM: Magnesium Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterMagnesium" />
+    <output name="techreborn:dust:30" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Mithril Cluster -->
+<recipe name="MBM: Mithril Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterMithril" />
+    <output name="thermalfoundation:material:72" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:1" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nickel Cluster -->
+<recipe name="MBM: Nickel Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterNickel" />
+    <output name="thermalfoundation:material:69" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:70" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Orichalcum Cluster -->
+<recipe name="MBM: Orichalcum Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterOrichalcum" />
+    <output name="contenttweaker:material_part:25" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Osmium Cluster -->
+<recipe name="MBM: Osmium Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterOsmium" />
+    <output name="mekanism:dust:2" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Palladium Cluster -->
+<recipe name="MBM: Palladium Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterPalladium" />
+    <output name="contenttweaker:material_part:35" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Platinum Cluster -->
+<recipe name="MBM: Platinum Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterPlatinum" />
+    <output name="thermalfoundation:material:70" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:71" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Thorium Cluster -->
+<recipe name="MBM: Thorium Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterThorium" />
+    <output name="techreborn:dust:65" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Titanium Cluster -->
+<recipe name="MBM: Titanium Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterTitanium" />
+    <output name="techreborn:dust:54" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tungsten Cluster -->
+<recipe name="MBM: Tungsten Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterTungsten" />
+    <output name="techreborn:dust:55" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Uranium Cluster -->
+<recipe name="MBM: Uranium Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterUranium" />
+    <output name="immersiveengineering:metal:14" chance="1.0" amount="3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Iron Cluster -->
+<recipe name="MBM: Iron Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterIron" />
+    <output name="thermalfoundation:material" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:69" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Gold Cluster -->
+<recipe name="MBM: Gold Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterGold" />
+    <output name="thermalfoundation:material:1" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:866" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Copper Cluster -->
+<recipe name="MBM: Copper Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterCopper" />
+    <output name="thermalfoundation:material:64" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:1" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tin Cluster -->
+<recipe name="MBM: Tin Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterTin" />
+    <output name="thermalfoundation:material:65" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Silver Cluster -->
+<recipe name="MBM: Silver Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterSilver" />
+    <output name="thermalfoundation:material:66" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:67" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Lead Cluster -->
+<recipe name="MBM: Lead Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterLead" />
+    <output name="thermalfoundation:material:67" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:66" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Cinnabar Cluster -->
+<recipe name="MBM: Cinnabar Cluster" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="clusterCinnabar" />
+    <output name="thaumcraft:quicksilver" chance="1.0" amount="3"/>
+    <output name="thermalfoundation:material:866" chance="0.2" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Adamantine Crushed Lump -->
+<recipe name="MBM: Adamantine Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpAdamantine" />
+    <output name="contenttweaker:material_part:15" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmalladamantine" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Adamantine Leached Shard -->
+<recipe name="MBM: Adamantine Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardAdamantine" />
+    <output name="contenttweaker:material_part:15" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmalladamantine" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Aluminium Crushed Lump -->
+<recipe name="MBM: Aluminium Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpAluminium" />
+    <output name="thermalfoundation:material:68" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:1" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Aluminium Leached Shard -->
+<recipe name="MBM: Aluminium Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardAluminium" />
+    <output name="thermalfoundation:material:68" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:1" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Ardite Crushed Lump -->
+<recipe name="MBM: Ardite Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpArdite" />
+    <output name="jaopca:item_dustardite" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallardite" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Ardite Leached Shard -->
+<recipe name="MBM: Ardite Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardArdite" />
+    <output name="jaopca:item_dustardite" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallardite" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- AstralStarmetal Crushed Lump -->
+<recipe name="MBM: AstralStarmetal Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpAstralStarmetal" />
+    <output name="astralsorcery:itemcraftingcomponent:2" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallastralstarmetal" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- AstralStarmetal Leached Shard -->
+<recipe name="MBM: AstralStarmetal Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardAstralStarmetal" />
+    <output name="astralsorcery:itemcraftingcomponent:2" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallastralstarmetal" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Boron Crushed Lump -->
+<recipe name="MBM: Boron Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpBoron" />
+    <output name="nuclearcraft:dust:5" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallboron" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Boron Leached Shard -->
+<recipe name="MBM: Boron Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardBoron" />
+    <output name="nuclearcraft:dust:5" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallboron" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Cobalt Crushed Lump -->
+<recipe name="MBM: Cobalt Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpCobalt" />
+    <output name="rockhounding_chemistry:chemical_dusts:25" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallcobalt" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Cobalt Leached Shard -->
+<recipe name="MBM: Cobalt Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardCobalt" />
+    <output name="rockhounding_chemistry:chemical_dusts:25" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallcobalt" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Copper Crushed Lump -->
+<recipe name="MBM: Copper Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpCopper" />
+    <output name="thermalfoundation:material:64" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:14" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Copper Leached Shard -->
+<recipe name="MBM: Copper Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardCopper" />
+    <output name="thermalfoundation:material:64" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:14" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Gold Crushed Lump -->
+<recipe name="MBM: Gold Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpGold" />
+    <output name="thermalfoundation:material:1" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:24" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Gold Leached Shard -->
+<recipe name="MBM: Gold Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardGold" />
+    <output name="thermalfoundation:material:1" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:24" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Iridium Crushed Lump -->
+<recipe name="MBM: Iridium Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpIridium" />
+    <output name="thermalfoundation:material:71" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:66" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Iridium Leached Shard -->
+<recipe name="MBM: Iridium Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardIridium" />
+    <output name="thermalfoundation:material:71" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:66" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Iron Crushed Lump -->
+<recipe name="MBM: Iron Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpIron" />
+    <output name="thermalfoundation:material" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:27" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Iron Leached Shard -->
+<recipe name="MBM: Iron Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardIron" />
+    <output name="thermalfoundation:material" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:27" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Lead Crushed Lump -->
+<recipe name="MBM: Lead Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpLead" />
+    <output name="thermalfoundation:material:67" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:29" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Lead Leached Shard -->
+<recipe name="MBM: Lead Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardLead" />
+    <output name="thermalfoundation:material:67" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:29" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Lithium Crushed Lump -->
+<recipe name="MBM: Lithium Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpLithium" />
+    <output name="mekanism:otherdust:4" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmalllithium" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Lithium Leached Shard -->
+<recipe name="MBM: Lithium Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardLithium" />
+    <output name="mekanism:otherdust:4" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmalllithium" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Magnesium Crushed Lump -->
+<recipe name="MBM: Magnesium Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpMagnesium" />
+    <output name="techreborn:dust:30" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:30" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Magnesium Leached Shard -->
+<recipe name="MBM: Magnesium Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardMagnesium" />
+    <output name="techreborn:dust:30" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:30" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nickel Crushed Lump -->
+<recipe name="MBM: Nickel Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpNickel" />
+    <output name="thermalfoundation:material:69" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:34" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nickel Leached Shard -->
+<recipe name="MBM: Nickel Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardNickel" />
+    <output name="thermalfoundation:material:69" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:34" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Orichalcum Crushed Lump -->
+<recipe name="MBM: Orichalcum Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpOrichalcum" />
+    <output name="contenttweaker:material_part:25" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallorichalcum" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Orichalcum Leached Shard -->
+<recipe name="MBM: Orichalcum Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardOrichalcum" />
+    <output name="contenttweaker:material_part:25" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallorichalcum" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Osmium Crushed Lump -->
+<recipe name="MBM: Osmium Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpOsmium" />
+    <output name="mekanism:dust:2" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallosmium" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Osmium Leached Shard -->
+<recipe name="MBM: Osmium Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardOsmium" />
+    <output name="mekanism:dust:2" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallosmium" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Palladium Crushed Lump -->
+<recipe name="MBM: Palladium Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpPalladium" />
+    <output name="contenttweaker:material_part:35" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallpalladium" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Palladium Leached Shard -->
+<recipe name="MBM: Palladium Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardPalladium" />
+    <output name="contenttweaker:material_part:35" chance="1.0" amount="1"/>
+    <output name="jaopca:item_dustsmallpalladium" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Platinum Crushed Lump -->
+<recipe name="MBM: Platinum Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpPlatinum" />
+    <output name="thermalfoundation:material:70" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:38" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Platinum Leached Shard -->
+<recipe name="MBM: Platinum Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardPlatinum" />
+    <output name="thermalfoundation:material:70" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:38" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Silver Crushed Lump -->
+<recipe name="MBM: Silver Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpSilver" />
+    <output name="thermalfoundation:material:66" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:47" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Silver Leached Shard -->
+<recipe name="MBM: Silver Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardSilver" />
+    <output name="thermalfoundation:material:66" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:47" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Thorium Crushed Lump -->
+<recipe name="MBM: Thorium Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpThorium" />
+    <output name="techreborn:dust:65" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:67" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Thorium Leached Shard -->
+<recipe name="MBM: Thorium Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardThorium" />
+    <output name="techreborn:dust:65" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:67" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tin Crushed Lump -->
+<recipe name="MBM: Tin Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpTin" />
+    <output name="thermalfoundation:material:65" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:53" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tin Leached Shard -->
+<recipe name="MBM: Tin Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardTin" />
+    <output name="thermalfoundation:material:65" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:53" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Titanium Crushed Lump -->
+<recipe name="MBM: Titanium Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpTitanium" />
+    <output name="techreborn:dust:54" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:54" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Titanium Leached Shard -->
+<recipe name="MBM: Titanium Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardTitanium" />
+    <output name="techreborn:dust:54" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:54" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tungsten Crushed Lump -->
+<recipe name="MBM: Tungsten Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpTungsten" />
+    <output name="techreborn:dust:55" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:55" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Tungsten Leached Shard -->
+<recipe name="MBM: Tungsten Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardTungsten" />
+    <output name="techreborn:dust:55" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:55" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Uranium Crushed Lump -->
+<recipe name="MBM: Uranium Crushed Lump" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="crushedlumpUranium" />
+    <output name="immersiveengineering:metal:14" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:68" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Uranium Leached Shard -->
+<recipe name="MBM: Uranium Leached Shard" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="leachedshardUranium" />
+    <output name="immersiveengineering:metal:14" chance="1.0" amount="1"/>
+    <output name="techreborn:smalldust:68" chance="1.0" amount="2"/>
+  </sagmilling>
+</recipe>
 
 
 <!-- From betweenlands.zs -->
 
 <!-- Sulfur -->
 <recipe name="MBM: Sulfur" required="false">
-  <sagmilling energy="5000" bonus="multiply_output">
+  <sagmilling energy="5000" bonus="none">
     <input name="thebetweenlands:items_misc:18" />
     <output name="thermalfoundation:material:771" chance="1.0" amount="3"/>
   </sagmilling>

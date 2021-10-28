@@ -13,7 +13,6 @@ import mods.tcomplement.highoven.HighOven;
 import mods.tcomplement.Overrides;
 import mods.tconstruct.Melting;
 import mods.techreborn.blastFurnace;
-import mods.techreborn.grinder;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Pulverizer;
 import mods.embers.Stamper;
@@ -255,9 +254,80 @@ val clusterFluidMap as ILiquidStack[IOreDictEntry] = {
 } as ILiquidStack[IOreDictEntry];
 
 for cluster, fluid in clusterFluidMap {
-	Melting.addRecipe(fluid*288, cluster);
-	mods.embers.Melter.add(fluid*432, cluster);
+	Melting.addRecipe(fluid * 288, cluster);
+	mods.embers.Melter.add(fluid * 432, cluster);
+	mods.nuclearcraft.Melter.addRecipe(cluster, fluid * 432);
 }
+
+val clusterFluidMaptwo as ILiquidStack[IItemStack] = {
+	<jaopca:item_clusteradamantine>: <fluid:adamantine>,
+	//<ore:clusterAluminium>: {},
+	<jaopca:item_clusterardite>: <fluid:ardite>,
+	<jaopca:item_clusterastralstarmetal>: <fluid:starmetal>,
+	<jaopca:item_clusterboron>: <fluid:boron>,
+	<jaopca:item_clustercobalt>: <fluid:cobalt>,
+	//<ore:clusterIridium>: {},
+	<jaopca:item_clusterlithium>: <fluid:lithium>,
+	<jaopca:item_clustermagnesium>: <fluid:magnesium>,
+	//<ore:clusterMithril>: {},
+	<jaopca:item_clusternickel>: <fluid:nickel>,
+	<jaopca:item_clusterorichalcum>: <fluid:orichalcum>,
+	//<ore:clusterOsmium>: {},
+	<jaopca:item_clusterpalladium>: <fluid:palladium>,
+	//<ore:clusterPlatinum>: {},
+	<jaopca:item_clusterthorium>: <fluid:thorium>,
+	//<ore:clusterTitanium>: {},
+	//<ore:clusterTungsten>: {},
+	<jaopca:item_clusteruranium>: <fluid:uranium>,
+	<thaumcraft:cluster>: <fluid:iron>,
+	<thaumcraft:cluster:1>: <fluid:gold>,
+	<thaumcraft:cluster:2>: <fluid:copper>,
+	<thaumcraft:cluster:3>: <fluid:tin>,
+	<thaumcraft:cluster:4>: <fluid:silver>,
+	<thaumcraft:cluster:5>: <fluid:lead>,
+	//<ore:clusterCinnabar>: {},
+	//<ore:clusterQuartz>: <fluid:quartz>
+} as ILiquidStack[IItemStack];
+
+for cluster, fluid in clusterFluidMaptwo {
+		mods.thermalexpansion.Crucible.addRecipe(fluid * 432, cluster, 4000);
+}
+
+val clusterOreMap as IItemStack[IOreDictEntry] = {
+	<ore:clusterAdamantine>: <contenttweaker:material_part:15>,
+	<ore:clusterAluminium>: <thermalfoundation:material:68>,
+	<ore:clusterArdite>: <jaopca:item_dustardite>,
+	<ore:clusterAstralStarmetal>: <astralsorcery:itemcraftingcomponent:2>,
+	<ore:clusterBoron>: <nuclearcraft:dust:5>,
+	<ore:clusterCobalt>: <rockhounding_chemistry:chemical_dusts:25>,
+	<ore:clusterIridium>: <thermalfoundation:material:71>,
+	<ore:clusterLithium>: <mekanism:otherdust:4>,
+	<ore:clusterMagnesium>: <techreborn:dust:30>,
+	<ore:clusterMithril>: <thermalfoundation:material:72>,
+	<ore:clusterNickel>: <thermalfoundation:material:69>,
+	<ore:clusterOrichalcum>: <contenttweaker:material_part:25>,
+	<ore:clusterOsmium>: <mekanism:dust:2>,
+	<ore:clusterPalladium>: <contenttweaker:material_part:35>,
+	<ore:clusterPlatinum>: <thermalfoundation:material:70>,
+	<ore:clusterThorium>: <techreborn:dust:65>,
+	<ore:clusterTitanium>: <techreborn:dust:54>,
+	<ore:clusterTungsten>: <techreborn:dust:55>,
+	<ore:clusterUranium>: <immersiveengineering:metal:14>,
+	<ore:clusterIron>: <thermalfoundation:material>,
+	<ore:clusterGold>: <thermalfoundation:material:1>,
+	<ore:clusterCopper>: <thermalfoundation:material:64>,
+	<ore:clusterTin>: <thermalfoundation:material:65>,
+	<ore:clusterSilver>: <thermalfoundation:material:66>,
+	<ore:clusterLead>: <thermalfoundation:material:67>,
+	<ore:clusterCinnabar>: <thaumcraft:quicksilver>,
+	//<ore:clusterQuartz>: <fluid:quartz>
+} as IItemStack[IOreDictEntry];
+
+for cluster, item in clusterOreMap {
+	mods.mekanism.enrichment.addRecipe(cluster, item * 3);
+}
+
+
 ############### /Hacatu #####################
 
 val ingotFluidMap as ILiquidStack[IItemStack] = {
@@ -278,6 +348,28 @@ for ingot, fluid in ingotFluidMap {
 	Stamper.add(ingot,fluid*144,<embers:stamp_bar>);
 }
 
+// Fixing byproducts of certain clusters
+
+
+val clusterstofix =
+[
+<jaopca:item_clusteraluminium>,
+<jaopca:item_clusterardite>,
+<jaopca:item_clustercobalt>,
+<jaopca:item_clustermithril>,
+<jaopca:item_clustertitanium>
+]
+ as IItemStack[];
+
+for item in clusterstofix {
+	mods.thermalexpansion.Pulverizer.removeRecipe(item);
+}
+Pulverizer.addRecipe(<thermalfoundation:material:68> * 3, <jaopca:item_clusteraluminium>, 3000, <thermalfoundation:material>, 20);
+Pulverizer.addRecipe(<jaopca:item_dustardite> * 3, <jaopca:item_clusterardite>, 3000, <thermalfoundation:material:1>, 20);
+Pulverizer.addRecipe(<rockhounding_chemistry:chemical_dusts:25> * 3, <jaopca:item_clustercobalt>, 3000, <thermalfoundation:material>, 20);
+Pulverizer.addRecipe(<thermalfoundation:material:72> * 3, <jaopca:item_clustermithril>, 3000, <thermalfoundation:material:1>, 20);
+Pulverizer.addRecipe(<techreborn:dust:54> * 3, <jaopca:item_clustertitanium>, 3000);
+
 //Iron
 MineralSizer.add(<minecraft:iron_ore>, [<jaopca:item_crushedlumpiron>*2], [4]);
 LeachingVat.add(<jaopca:item_crushedlumpiron>, [<jaopca:item_leachedshardiron>*2], [4.21F], <liquid:leachate>*50);
@@ -293,6 +385,8 @@ furnace.addRecipe(<minecraft:iron_ingot>,item, 0.1);
 Melting.addRecipe(<liquid:iron> * 144, item);
 Crusher.addRecipe(<thermalfoundation:material>, item, 1024, <techreborn:smalldust:27>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material>, item, 2000, <techreborn:smalldust:27>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material>);
 //mods.techreborn.industrialGrinder.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, ILiquidStack fluid, int ticktime, int euTick)
 }
 
@@ -310,6 +404,8 @@ furnace.addRecipe(<minecraft:gold_ingot>,item, 0.1);
 Melting.addRecipe(<liquid:gold> * 144, item);
 Crusher.addRecipe(<thermalfoundation:material:1>, item, 1024, <techreborn:smalldust:24>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:1>, item, 2000, <techreborn:smalldust:24>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:1>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:1>);
 }
 
 //Copper
@@ -327,6 +423,8 @@ furnace.addRecipe(<thermalfoundation:material:128>,item, 0.1);
 Melting.addRecipe(<liquid:copper> * 144, item);
 Crusher.addRecipe(<thermalfoundation:material:64>, item, 1024, <techreborn:smalldust:14>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:64>, item, 2000, <techreborn:smalldust:14>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:64>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:64>);
 }
 
 //Tin
@@ -343,6 +441,8 @@ furnace.addRecipe(<thermalfoundation:material:129>,item, 0.1);
 Melting.addRecipe(<liquid:tin> * 144, item);
 Crusher.addRecipe(<thermalfoundation:material:65>, item, 1024, <techreborn:smalldust:53>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:65>, item, 2000, <techreborn:smalldust:53>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:65>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:65>);
 }
 
 //Silver
@@ -359,6 +459,8 @@ furnace.addRecipe(<thermalfoundation:material:130>,item, 0.1);
 Melting.addRecipe(<liquid:silver> * 144, item);
 Crusher.addRecipe(<thermalfoundation:material:66>, item, 1024, <techreborn:smalldust:47>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:66>, item, 2000, <techreborn:smalldust:47>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:66>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:66>);
 }
 
 //Lead
@@ -375,6 +477,8 @@ furnace.addRecipe(<thermalfoundation:material:131>,item, 0.1);
 Melting.addRecipe(<liquid:lead> * 144, item);
 Crusher.addRecipe(<thermalfoundation:material:67>, item, 1024, <techreborn:smalldust:29>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:67>, item, 2000, <techreborn:smalldust:29>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:67>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:67>);
 }
 
 //Nickel
@@ -391,6 +495,8 @@ furnace.addRecipe(<thermalfoundation:material:133>,item, 0.1);
 Melting.addRecipe(<liquid:nickel> * 144, item);
 Crusher.addRecipe(<thermalfoundation:material:69>, item, 1024, <techreborn:smalldust:34>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:69>, item, 2000, <techreborn:smalldust:34>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:69>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:69>);
 }
 
 //Cobalt
@@ -405,8 +511,10 @@ val cobaltProcessing =[
 for item in cobaltProcessing {
 furnace.addRecipe(<tconstruct:ingots>,item, 0.1);
 Melting.addRecipe(<liquid:cobalt> * 144, item);
-Crusher.addRecipe(<enderio:item_material:31>, item, 1024, <jaopca:item_dustsmallcobalt>*2, 1);
-Pulverizer.addRecipe(<enderio:item_material:31>, item, 2000, <jaopca:item_dustsmallcobalt>*2);
+Crusher.addRecipe(<rockhounding_chemistry:chemical_dusts:25>, item, 1024, <jaopca:item_dustsmallcobalt>*2, 1);
+Pulverizer.addRecipe(<rockhounding_chemistry:chemical_dusts:25>, item, 2000, <jaopca:item_dustsmallcobalt>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <rockhounding_chemistry:chemical_dusts:25>);
+mods.mekanism.enrichment.addRecipe(item, <rockhounding_chemistry:chemical_dusts:25>);
 }
 
 //Ardite
@@ -423,6 +531,8 @@ furnace.addRecipe(<tconstruct:ingots:1>,item, 0.1);
 Melting.addRecipe(<liquid:ardite> * 144, item);
 Crusher.addRecipe(<jaopca:item_dustardite>, item, 1024, <jaopca:item_dustsmallardite>*2, 1);
 Pulverizer.addRecipe(<jaopca:item_dustardite>, item, 2000, <jaopca:item_dustsmallardite>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <jaopca:item_dustardite>);
+mods.mekanism.enrichment.addRecipe(item, <jaopca:item_dustardite>);
 }
 
 
@@ -442,6 +552,8 @@ furnace.addRecipe(<immersiveengineering:metal:5>,item, 0.1);
 Melting.addRecipe(<liquid:uranium> * 144, item);
 Crusher.addRecipe(<immersiveengineering:metal:14>, item, 1024, <techreborn:smalldust:68>*2, 1);
 Pulverizer.addRecipe(<immersiveengineering:metal:14>, item, 2000, <techreborn:smalldust:68>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <immersiveengineering:metal:14>);
+mods.mekanism.enrichment.addRecipe(item, <immersiveengineering:metal:14>);
 }
 
 //Thorium
@@ -458,6 +570,8 @@ furnace.addRecipe(<nuclearcraft:ingot:3>,item, 0.1);
 Melting.addRecipe(<liquid:thorium> * 144, item);
 Crusher.addRecipe(<techreborn:dust:65>, item, 1024, <techreborn:smalldust:67>*2, 1);
 Pulverizer.addRecipe(<techreborn:dust:65>, item, 2000, <techreborn:smalldust:67>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <techreborn:dust:65>);
+mods.mekanism.enrichment.addRecipe(item, <techreborn:dust:65>);
 }
 
 //Magnesium
@@ -474,6 +588,8 @@ furnace.addRecipe(<nuclearcraft:ingot:7>,item, 0.1);
 Melting.addRecipe(<liquid:magnesium> * 144, item);
 Crusher.addRecipe(<techreborn:dust:30>, item, 1024, <techreborn:smalldust:30>*2, 1);
 Pulverizer.addRecipe(<techreborn:dust:30>, item, 2000, <techreborn:smalldust:30>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <techreborn:dust:30>);
+mods.mekanism.enrichment.addRecipe(item, <techreborn:dust:30>);
 }
 
 //Lithium
@@ -488,8 +604,10 @@ val lithiumProcessing =[
 for item in lithiumProcessing {
 furnace.addRecipe(<nuclearcraft:ingot:6>,item, 0.1);
 Melting.addRecipe(<liquid:lithium> * 144, item);
-Crusher.addRecipe(<nuclearcraft:dust:6>, item, 1024, <jaopca:item_dustsmalllithium>*2, 1);
-Pulverizer.addRecipe(<nuclearcraft:dust:6>, item, 2000, <jaopca:item_dustsmalllithium>*2);
+Crusher.addRecipe(<mekanism:otherdust:4>, item, 1024, <jaopca:item_dustsmalllithium>*2, 1);
+Pulverizer.addRecipe(<mekanism:otherdust:4>, item, 2000, <jaopca:item_dustsmalllithium>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <mekanism:otherdust:4>);
+mods.mekanism.enrichment.addRecipe(item, <mekanism:otherdust:4>);
 }
 
 //Boron
@@ -506,6 +624,8 @@ furnace.addRecipe(<nuclearcraft:ingot:5>,item, 0.1);
 Melting.addRecipe(<liquid:boron> * 144, item);
 Crusher.addRecipe(<nuclearcraft:dust:5>, item, 1024, <jaopca:item_dustsmallboron>*2, 1);
 Pulverizer.addRecipe(<nuclearcraft:dust:5>, item, 2000, <jaopca:item_dustsmallboron>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <nuclearcraft:dust:5>);
+mods.mekanism.enrichment.addRecipe(item, <nuclearcraft:dust:5>);
 }
 
 //Palladium
@@ -522,6 +642,8 @@ furnace.addRecipe(<contenttweaker:material_part:30>,item, 0.1);
 Melting.addRecipe(<liquid:palladium> * 144, item);
 Crusher.addRecipe(<contenttweaker:material_part:35>, item, 1024, <jaopca:item_dustsmallpalladium>*2, 1);
 Pulverizer.addRecipe(<contenttweaker:material_part:35>, item, 2000, <jaopca:item_dustsmallpalladium>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <contenttweaker:material_part:35>);
+mods.mekanism.enrichment.addRecipe(item, <contenttweaker:material_part:35>);
 }
 
 //Orichalcum
@@ -538,6 +660,8 @@ furnace.addRecipe(<contenttweaker:material_part:20>,item, 0.1);
 Melting.addRecipe(<liquid:orichalcum> * 144, item);
 Crusher.addRecipe(<contenttweaker:material_part:25>, item, 1024, <jaopca:item_dustsmallorichalcum>*2, 1);
 Pulverizer.addRecipe(<contenttweaker:material_part:25>, item, 2000, <jaopca:item_dustsmallorichalcum>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <contenttweaker:material_part:25>);
+mods.mekanism.enrichment.addRecipe(item, <contenttweaker:material_part:25>);
 }
 
 //Adamantine
@@ -554,6 +678,8 @@ furnace.addRecipe(<contenttweaker:material_part:10>,item, 0.1);
 Melting.addRecipe(<liquid:adamantine> * 144, item);
 Crusher.addRecipe(<contenttweaker:material_part:15>, item, 1024, <jaopca:item_dustsmalladamantine>*2, 1);
 Pulverizer.addRecipe(<contenttweaker:material_part:15>, item, 2000, <jaopca:item_dustsmalladamantine>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <contenttweaker:material_part:15>);
+mods.mekanism.enrichment.addRecipe(item, <contenttweaker:material_part:15>);
 }
 
 //Starmetal
@@ -570,6 +696,8 @@ furnace.addRecipe(<astralsorcery:itemcraftingcomponent:1>,item, 0.1);
 Melting.addRecipe(<liquid:starmetal> * 144, item);
 Crusher.addRecipe(<astralsorcery:itemcraftingcomponent:2>, item, 1024, <jaopca:item_dustsmallastralstarmetal>*2, 1);
 Pulverizer.addRecipe(<astralsorcery:itemcraftingcomponent:2>, item, 2000, <jaopca:item_dustsmallastralstarmetal>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <astralsorcery:itemcraftingcomponent:2>);
+mods.mekanism.enrichment.addRecipe(item, <astralsorcery:itemcraftingcomponent:2>);
 }
 
 //Pyrite
@@ -602,8 +730,7 @@ blastFurnace.addRecipe(<thermalfoundation:material:132>*2, null, <thermalfoundat
 
 val aluminumProcessing =[
 	<jaopca:item_crushedlumpaluminium>,
-	<jaopca:item_leachedshardaluminium>,
-<jaopca:item_clusteraluminium>,
+	<jaopca:item_leachedshardaluminium>
 ] as IItemStack[];
 
 for item in aluminumProcessing {
@@ -611,8 +738,11 @@ blastFurnace.addRecipe(<thermalfoundation:material:132>, null, item, null, 40, 1
 Crusher.addRecipe(<thermalfoundation:material:68>, item, 1024, <techreborn:smalldust:1>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:68>, item, 2000, <techreborn:smalldust:1>*2);
 ArcFurnace.addRecipe(<thermalfoundation:material:132>, item, <immersiveengineering:material:7>, 100, 512);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:68>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:68>);
 }
 
+blastFurnace.addRecipe(<thermalfoundation:material:132> * 2, null, <jaopca:item_clusteraluminium>, null, 80, 128, 1500);
 
 ////////////////////////////////////////
 ##Platinum
@@ -628,15 +758,19 @@ blastFurnace.addRecipe(<thermalfoundation:material:134>*2, null, <ore:orePlatinu
 
 val platinumProcessing =[
 	<jaopca:item_crushedlumpplatinum>,
-	<jaopca:item_leachedshardplatinum>,
-<jaopca:item_clusterplatinum>,
+	<jaopca:item_leachedshardplatinum>
 ] as IItemStack[];
 
 for item in platinumProcessing {
 blastFurnace.addRecipe(<thermalfoundation:material:134>, null, item, null, 200, 512, 2000);
 Crusher.addRecipe(<thermalfoundation:material:70>, item, 1024, <techreborn:smalldust:38>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:70>, item, 2000, <techreborn:smalldust:38>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:70>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:70>);
 }
+
+blastFurnace.addRecipe(<thermalfoundation:material:134> * 2, null, <jaopca:item_clusterplatinum>, null, 400, 512, 2000);
+
 ////////////////////////////////////////
 ##Osmium
 ////////////////////////////////////////
@@ -649,15 +783,19 @@ blastFurnace.addRecipe(<mekanism:ingot:1>*2, null, <mekanism:oreblock>, null, 60
 
 val osmiumProcessing =[
 	<jaopca:item_crushedlumposmium>,
-	<jaopca:item_leachedshardosmium>,
-<jaopca:item_clusterosmium>,
+	<jaopca:item_leachedshardosmium>
 ] as IItemStack[];
 
 for item in osmiumProcessing {
 blastFurnace.addRecipe(<mekanism:ingot:1>, null, item, null, 300, 768, 2500);
 Crusher.addRecipe(<mekanism:dust:2>, item, 1024, <jaopca:item_dustsmallosmium>*2, 1);
 Pulverizer.addRecipe(<mekanism:dust:2>, item, 2000, <jaopca:item_dustsmallosmium>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <mekanism:dust:2>);
+mods.mekanism.enrichment.addRecipe(item, <mekanism:dust:2>);
 }
+
+blastFurnace.addRecipe(<mekanism:ingot:1> * 2, null, <jaopca:item_clusterosmium>, null, 600, 768, 2500);
+
 ////////////////////////////////////////
 ##Tungsten
 ////////////////////////////////////////
@@ -670,15 +808,19 @@ blastFurnace.addRecipe(<techreborn:ingot:15>, null, <ore:dustTungsten>, null, 60
 
 val tungstenProcessing =[
 	<jaopca:item_crushedlumptungsten>,
-	<jaopca:item_leachedshardtungsten>,
-<jaopca:item_clustertungsten>,
+	<jaopca:item_leachedshardtungsten>
 ] as IItemStack[];
 
 for item in tungstenProcessing {
 blastFurnace.addRecipe(<techreborn:ingot:15>, null, item, null, 600, 1024, 3000);
 Crusher.addRecipe(<techreborn:dust:55>, item, 1024, <techreborn:smalldust:55>*2, 1);
 Pulverizer.addRecipe(<techreborn:dust:55>, item, 2000, <techreborn:smalldust:55>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <techreborn:dust:55>);
+mods.mekanism.enrichment.addRecipe(item, <techreborn:dust:55>);
 }
+
+blastFurnace.addRecipe(<techreborn:ingot:15> * 2, null, <jaopca:item_clustertungsten>, null, 1200, 1024, 3000);
+
 ////////////////////////////////////////
 ##Titanium
 ////////////////////////////////////////
@@ -691,15 +833,18 @@ blastFurnace.addRecipe(<techreborn:ingot:14>, null, <techreborn:dust:54>, null, 
 
 val titaniumProcessing =[
 	<jaopca:item_crushedlumptitanium>,
-	<jaopca:item_leachedshardtitanium>,
-<jaopca:item_clustertitanium>,
+	<jaopca:item_leachedshardtitanium>
 ] as IItemStack[];
 
 for item in titaniumProcessing {
 blastFurnace.addRecipe(<techreborn:ingot:14>, null, item, null, 600, 1024, 3000);
 Crusher.addRecipe(<techreborn:dust:54>, item, 1024, <techreborn:smalldust:54>*2, 1);
 Pulverizer.addRecipe(<techreborn:dust:54>, item, 2000, <techreborn:smalldust:54>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <techreborn:dust:54>);
+mods.mekanism.enrichment.addRecipe(item, <techreborn:dust:54>);
 }
+
+blastFurnace.addRecipe(<techreborn:ingot:14> * 2, null, <jaopca:item_clustertitanium>, null, 1200, 1024, 3000);
 
 LeachingVat.add(<libvulpes:ore0:8>, [<rockhounding_chemistry:oxide_shards:22>*8], [4.25F], <liquid:leachate>*200);
 
@@ -709,6 +854,7 @@ LeachingVat.add(<libvulpes:ore0:8>, [<rockhounding_chemistry:oxide_shards:22>*8]
 
 blastFurnace.addRecipe(<thermalfoundation:material:136>*2, null, <ore:oreMithril>, null, 1600, 1024, 3000);
 blastFurnace.addRecipe(<thermalfoundation:material:136>, null, <ore:dustMithril>, null, 800, 1024, 3000);
+blastFurnace.addRecipe(<thermalfoundation:material:136>*2, null, <jaopca:item_clustermithril>, null, 1600, 1024, 3000);
 
 ////////////////////////////////////////
 ##Iridium
@@ -729,7 +875,12 @@ for item in iridiumProcessing {
 blastFurnace.addRecipe(<thermalfoundation:material:135>, null, item, null, 1000, 2048, 3500);
 Crusher.addRecipe(<thermalfoundation:material:71>, item, 1024, <techreborn:smalldust:66>*2, 1);
 Pulverizer.addRecipe(<thermalfoundation:material:71>, item, 2000, <techreborn:smalldust:66>*2);
+mods.nuclearcraft.Manufactory.addRecipe(item, <thermalfoundation:material:71>);
+mods.mekanism.enrichment.addRecipe(item, <thermalfoundation:material:71>);
 }
+
+blastFurnace.addRecipe(<thermalfoundation:material:135>*2, null, <ore:clusterIridium>, null, 2000, 2048, 3500);
+
 ////////////////////////////////////////
 
 //New Ores

@@ -36465,15 +36465,15 @@
               "OreDict:8": ""
             },
             "3:10": {
-              "id:8": "rockhounding_chemistry:chemical_dusts",
+              "id:8": "nuclearcraft:dust",
               "Count:3": 1,
-              "Damage:2": 21,
+              "Damage:2": 5,
               "OreDict:8": ""
             },
             "4:10": {
-              "id:8": "libvulpes:productdust",
+              "id:8": "rockhounding_chemistry:chemical_dusts",
               "Count:3": 1,
-              "Damage:2": 3,
+              "Damage:2": 42,
               "OreDict:8": ""
             },
             "5:10": {

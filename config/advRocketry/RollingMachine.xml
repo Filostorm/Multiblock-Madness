@@ -31,7 +31,7 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true">
+<Recipes useDefault="false">
 	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<itemStack>libvulpes:productsheet;2;6</itemStack>
@@ -736,7 +736,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotSuperAlloy,9</oreDict>
+			<oreDict>ingotSuperAlloy;9</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -772,7 +772,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ore:blockStainlessSteel</oreDict>
+			<oreDict>blockStainlessSteel</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -871,7 +871,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotTungstenCarbide,9</oreDict>
+			<oreDict>ingotTungstenCarbide;9</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>

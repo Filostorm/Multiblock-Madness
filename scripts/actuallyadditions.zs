@@ -1,7 +1,6 @@
 import mods.actuallyadditions.Empowerer;
 import crafttweaker.item.IItemStack;
 import mods.actuallyadditions.AtomicReconstructor;
-import mods.techreborn.assemblingMachine;
 
 print("==================== loading actually additions.zs ====================");
 ##########################################################################################
@@ -157,15 +156,17 @@ recipes.addShaped(<actuallyadditions:block_farmer>, [[<actuallyadditions:item_mi
 
 //Advanced Coils
 recipes.addShaped(<actuallyadditions:item_misc:8>, [[null, <techreborn:cable:6>, <immersiveengineering:material>],[<techreborn:cable:6>, <actuallyadditions:item_misc:7>, <techreborn:cable:6>], [<immersiveengineering:material>, <techreborn:cable:6>, null]]);
-assemblingMachine.addRecipe(<actuallyadditions:item_misc:8>, <actuallyadditions:item_misc:7>, <techreborn:cable:6>*4, 100, 32);
+// assemblingMachine.addRecipe(<actuallyadditions:item_misc:8>, <actuallyadditions:item_misc:7>, <techreborn:cable:6>*4, 100, 32);
 
 //Basic Coils
 recipes.addShaped(<actuallyadditions:item_misc:7>, [[null, <immersiveengineering:wirecoil>, <immersiveengineering:material>],[<immersiveengineering:wirecoil>, <actuallyadditions:item_crystal>, <immersiveengineering:wirecoil>], [<immersiveengineering:material>, <immersiveengineering:wirecoil>, null]]);
 recipes.addShaped(<actuallyadditions:item_misc:7>*2, [[null, <immersiveengineering:wirecoil:1>, <immersiveengineering:material>],[<immersiveengineering:wirecoil:1>, <actuallyadditions:item_crystal>, <immersiveengineering:wirecoil:1>], [<immersiveengineering:material>, <immersiveengineering:wirecoil:1>, null]]);
 recipes.addShaped(<actuallyadditions:item_misc:7> * 4, [[null, <immersiveengineering:wirecoil:2>, <immersiveengineering:material>],[<immersiveengineering:wirecoil:2>, <actuallyadditions:item_crystal>, <immersiveengineering:wirecoil:2>], [<immersiveengineering:material>, <immersiveengineering:wirecoil:2>, null]]);
+/*
 assemblingMachine.addRecipe(<actuallyadditions:item_misc:7>*4, <immersiveengineering:wirecoil:2>*4, <actuallyadditions:item_crystal>, 100, 32);
 assemblingMachine.addRecipe(<actuallyadditions:item_misc:7>*2, <immersiveengineering:wirecoil:1>*4, <actuallyadditions:item_crystal>, 100, 32);
 assemblingMachine.addRecipe(<actuallyadditions:item_misc:7>, <immersiveengineering:wirecoil>*4, <actuallyadditions:item_crystal>, 100, 32);
+*/
 
 //Leaf Gen
 recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[<actuallyadditions:item_crystal:5>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal>, <ore:treeLeaves>, <actuallyadditions:item_crystal>], [<actuallyadditions:item_crystal:5>, <actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal:5>]]);

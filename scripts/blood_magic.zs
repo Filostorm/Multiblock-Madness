@@ -9,7 +9,6 @@ import mods.immersiveengineering.Squeezer;
 import crafttweaker.block.IBlockState;
 import mods.animus.AnimusPlugin;
 import mods.bloodmagic.AlchemyTable;
-import mods.techreborn.compressor;
 import mods.nuclearcraft.Pressurizer;
 import mods.tconstruct.Casting;
 
@@ -253,7 +252,7 @@ recipes.addShaped(<bloodmagic:upgrade_tome>.withTag({level: 0, key: "bloodmagic.
 //Blank Runes
 Squeezer.addRecipe(<bloodmagic:blood_rune>, <liquid:stone>*288, <contenttweaker:slatedust> * 4, 256);
 
-compressor.addRecipe(<bloodmagic:blood_rune>, <contenttweaker:slatedust>*4, 600, 50);
+// compressor.addRecipe(<bloodmagic:blood_rune>, <contenttweaker:slatedust>*4, 600, 50);
 Pressurizer.addRecipe(<contenttweaker:slatedust>*4, <bloodmagic:blood_rune>);
 
 //VOIDSTONE BOIIIIII
