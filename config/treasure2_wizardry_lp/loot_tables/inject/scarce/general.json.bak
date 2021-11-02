@@ -1,10 +1,10 @@
 {
-	"version": "1.1",
+	"version": "1.0",
 	"categories": [
 		"general"
 	],
 	"pools": [{
-			"name": "eb_epic_items",
+			"name": "eb_scarce_items",
 			"rolls": {
 				"min": 1,
 				"max": 3
@@ -12,7 +12,7 @@
 			"entries": [{
 					"type": "loot_table",
 					"name": "ebwizardry:subsets/elemental_crystals",
-					"weight": 30
+					"weight": 60
 				},
 				{
 					"type": "loot_table",
@@ -22,32 +22,32 @@
 				{
 					"type": "loot_table",
 					"name": "ebwizardry:subsets/wizard_armour",
-					"weight": 20
+					"weight": 10
 				},
 				{
-					"type": "loot_table",
-					"name": "ebwizardry:subsets/armour_upgrades",
-					"weight": 15
+					"type": "item",
+					"name": "ebwizardry:armour_upgrade",
+					"weight": 5
 				},
 				{
-					"entryName": "master_tome",
+					"entryName": "apprentice_tome",
 					"type": "item",
 					"name": "ebwizardry:arcane_tome",
 					"weight": 20,
 					"functions": [{
 						"function": "set_data",
-						"data": 3
+						"data": 1
 					}]
 				},
 				{
 					"type": "loot_table",
-					"name": "ebwizardry:subsets/epic_artefacts",
-					"weight": 20
+					"name": "ebwizardry:subsets/uncommon_artefacts",
+					"weight": 10
 				}
 			]
 		},
 		{
-			"name": "eb_epic_spells",
+			"name": "eb_scarce_spells",
 			"rolls": {
 				"min": 1,
 				"max": 3
@@ -57,10 +57,14 @@
 					"type": "item",
 					"name": "ebwizardry:spell_book",
 					"weight": 20,
+					"conditions": [{
+						"condition": "random_chance",
+						"chance": 0.7
+					}],
 					"functions": [{
 						"function": "ebwizardry:random_spell",
 						"tiers": [
-							"master"
+							"apprentice"
 						]
 					}]
 				},

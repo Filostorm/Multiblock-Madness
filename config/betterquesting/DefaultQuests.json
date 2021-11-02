@@ -3238,11 +3238,15 @@
           "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -5854321833218265537,
+                  "AS_Amulet_HolderMost:4": -3354768958829737557
+                }
               },
               "id:8": "akashictome:tome",
               "Count:3": 1,
               "tag:10": {
+                "akashictome:is_morphing:1": 1,
                 "akashictome:data:10": {
                   "tconstruct:10": {
                     "ForgeCaps:10": {
@@ -3274,17 +3278,6 @@
                     "Count:1": 1,
                     "tag:10": {
                       "akashictome:definedMod:8": "astralsorcery"
-                    },
-                    "Damage:2": 0
-                  },
-                  "conarm:10": {
-                    "ForgeCaps:10": {
-                      "astralsorcery:cap_item_amulet_holder:10": {}
-                    },
-                    "id:8": "conarm:book",
-                    "Count:1": 1,
-                    "tag:10": {
-                      "akashictome:definedMod:8": "conarm"
                     },
                     "Damage:2": 0
                   },
@@ -9260,7 +9253,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -9290,9 +9283,9 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
             "0:10": {
               "id:8": "rockhounding_chemistry:machines_a",
               "Count:3": 1,
@@ -9304,11 +9297,18 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "rockhounding_chemistry:speed_items",
+              "id:8": "rockhounding_chemistry:machines_a",
               "Count:3": 1,
+              "tag:10": {
+                "Energy:3": 0,
+                "Fuel:3": 0
+              },
+              "Damage:2": 11,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "rockhounding_chemistry:misc_items",
+              "Count:3": 4,
               "Damage:2": 1,
               "OreDict:8": ""
             }
@@ -14865,7 +14865,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Update Questbook",
+          "name:8": "Update Questbook -REMOVED-",
           "desc:8": "Use this after every update to insure you have the latest version of the Questbook.\n\n§l§lThis seems to cause a crash when used on a server, use the command §c§l/bq_admin default load §r§linstead!"
         }
       },
@@ -19786,7 +19786,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "index:3": 0,
-          "consume:1": 0,
+          "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "enderio:item_liquid_conduit",
@@ -20217,7 +20217,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Farming Will",
+          "name:8": "-REMOVED Farming Will-",
           "desc:8": "Grinding Will by killing mobs is old school. Cycle through the rituals until you get to the §4Gathering of the Forsaken Souls."
         }
       },
@@ -20228,7 +20228,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "index:3": 0,
-          "consume:1": 0,
+          "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "bloodmagic:ritual_controller",
@@ -20328,10 +20328,7 @@
     },
     "244:10": {
       "questID:3": 244,
-      "preRequisites:11": [
-        351,
-        11
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -20353,7 +20350,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Aura Will",
+          "name:8": "-REMOVED Aura Will-",
           "desc:8": "Quests coming Soon (TM)"
         }
       },
@@ -20364,7 +20361,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
+          "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "bloodmagic:demon_crucible",
@@ -20428,7 +20425,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -20446,22 +20443,10 @@
             },
             "1:10": {
               "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -5854321833218265537,
-                  "AS_Amulet_HolderMost:4": -3354768958829737557
-                }
+                "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "bloodmagic:activation_crystal",
               "Count:3": 1,
-              "tag:10": {
-                "binding:10": {
-                  "name:8": "Filostorm",
-                  "id:10": {
-                    "L:4": -5854321833218265537,
-                    "M:4": -3354768958829737557
-                  }
-                }
-              },
               "Damage:2": 1,
               "OreDict:8": ""
             },
@@ -21312,7 +21297,7 @@
     "258:10": {
       "questID:3": 258,
       "preRequisites:11": [
-        58
+        102
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -25229,7 +25214,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Advanced Machine Frame",
-          "desc:8": "You can make carbon plates by using a block of charcoal in a Metal Press.\n\n§bCommon loot from Nether Fortresses!"
+          "desc:8": "You can make carbon ingots by using a block of coal or charcoal in the Metal Press.\n\n§bCommon loot from Nether Fortresses!"
         }
       },
       "tasks:9": {
@@ -26458,11 +26443,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "thaumadditions:vis_seeds",
-              "Count:3": 1,
-              "tag:10": {
-                "Aspect:8": "permutatio"
-              },
+              "id:8": "astralsorcery:itemcraftingcomponent",
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -34767,7 +34749,7 @@
     "409:10": {
       "questID:3": 409,
       "preRequisites:11": [
-        58
+        102
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -38433,7 +38415,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "HIDDEN",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "modularmachinery:itemmodularium",
@@ -38458,7 +38440,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
+          "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "modularmachinery:itemmodularium",
@@ -44581,7 +44563,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Mining Levels and Ore Veins",
-          "desc:8": "Mining levels and example materials:\n§dYou can explore to get access to up to §rReinforced§d level, or progress through the chapters for the rest!\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron, Copper, Tin)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)\n\n§rOre spawns in veins of several types of metal or gems:\n\n§5§7§5100% Coal \n§rY levels: 80-20\n\n§589% Coal \n10% Diamond\n1% Rock Crystal\n§rY levels: 20-0\n\n§765% Iron \n20% Nickel\n15% Gold\n§6§rY levels: 64-10\n\n§670% Copper\n25% Palladium\n5% Blaze\n§rY levels: §r60-20\n\n§785% Tin\n10% Iron\n5% Lead\n§rY levels: 80-40\n\n§845% Lead\n45% Silver\n10% Galena\n§rY levels: 35-5\n\n§c65% Redstone\n15% Ruby\n10% Cinnabar\n10% Destabilized Redstone\n§rY levels: 20-5\n\n§f40% Quartz\n40% Certus Quartz\n10% Black Quartz\n5% Charged Certus Quartz\n5% Magic Crystal Ore\n§7Y levels: 20-70\n\n§975% Lapis\n15% Sapphire\n10% Prismarine Ore\n§rY levels: 20-5\n\n§790% Bauxite\n5% Aluminum\n5% Rutile\n§rY levels: 20-0\n\n§240% Ender Ore \n30% Emerald\n20% Slime Ore\n10% Fossil\n§rY levels: 3 0-5\n\nAll Veins have a 1% chance to spawn Uninspected Materials.\n\n§rHold the Divining Rod in your off hand while you are mining to have the ore of that type to light up."
+          "desc:8": "Mining levels and example materials:\n§dYou can explore to get access to up to §rReinforced§d level, or progress through the chapters for the rest!\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron, Copper, Tin)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)\n\n§rOre spawns in veins of several types of metal or gems:\n\n§5§7§5100% Coal \n§rY levels: 80-20\n\n§589% Coal \n10% Diamond\n1% Rock Crystal\n§rY levels: 20-0\n\n§765% Iron \n20% Nickel\n15% Gold\n§6§rY levels: 64-10\n\n§670% Copper\n25% Palladium\n5% Blaze\n§rY levels: §r60-20\n\n§785% Tin\n10% Iron\n5% Lead\n§rY levels: 80-40\n\n§845% Lead\n45% Silver\n10% Galena\n§rY levels: 35-5\n\n§c65% Redstone\n15% Ruby\n10% Cinnabar\n10% Destabilized Redstone\n§rY levels: 20-5\n\n§f40% Quartz\n40% Certus Quartz\n10% Black Quartz\n5% Charged Certus Quartz\n5% Magic Crystal Ore\n§7Y levels: 20-70\n\n§975% Lapis\n15% Sapphire\n10% Prismarine Ore\n§rY levels: 20-5\n\n§790% Bauxite\n5% Aluminum\n5% Rutile\n§rY levels: 20-0\n\n§240% Ender Ore \n30% Emerald\n20% Slime Ore\n10% Fossil\n§rY levels: 30-5\n\nAll Veins have a 1% chance to spawn Uninspected Materials.\n\n§rHold the Divining Rod in your off hand while you are mining to have the ore of that type to light up."
         }
       },
       "tasks:9": {
@@ -60745,8 +60727,7 @@
     "788:10": {
       "questID:3": 788,
       "preRequisites:11": [
-        492,
-        493
+        495
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -65721,244 +65702,237 @@
           "sizeY:3": 24
         },
         "9:10": {
-          "sizeX:3": 36,
-          "x:3": 168,
-          "y:3": -48,
-          "id:3": 177,
-          "sizeY:3": 36
-        },
-        "10:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 72,
           "id:3": 203,
           "sizeY:3": 24
         },
-        "11:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": 228,
           "y:3": 36,
           "id:3": 205,
           "sizeY:3": 24
         },
-        "12:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": 0,
           "id:3": 216,
           "sizeY:3": 24
         },
-        "13:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": -36,
           "id:3": 217,
           "sizeY:3": 24
         },
-        "14:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 0,
           "id:3": 218,
           "sizeY:3": 24
         },
-        "15:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": 36,
           "id:3": 219,
           "sizeY:3": 24
         },
-        "16:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 0,
           "id:3": 220,
           "sizeY:3": 24
         },
-        "17:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 0,
           "id:3": 255,
           "sizeY:3": 24
         },
-        "18:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": -36,
           "id:3": 256,
           "sizeY:3": 24
         },
-        "19:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": -36,
           "id:3": 287,
           "sizeY:3": 24
         },
-        "20:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": -72,
           "id:3": 342,
           "sizeY:3": 24
         },
-        "21:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": -36,
           "id:3": 346,
           "sizeY:3": 24
         },
-        "22:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 0,
           "id:3": 347,
           "sizeY:3": 24
         },
-        "23:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 72,
           "id:3": 348,
           "sizeY:3": 24
         },
-        "24:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 36,
           "id:3": 349,
           "sizeY:3": 24
         },
-        "25:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 108,
           "id:3": 350,
           "sizeY:3": 24
         },
-        "26:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 36,
           "id:3": 395,
           "sizeY:3": 24
         },
-        "27:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 108,
           "id:3": 407,
           "sizeY:3": 24
         },
-        "28:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 72,
           "id:3": 420,
           "sizeY:3": 24
         },
-        "29:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 36,
           "id:3": 424,
           "sizeY:3": 24
         },
-        "30:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 36,
           "id:3": 500,
           "sizeY:3": 24
         },
-        "31:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 72,
           "id:3": 512,
           "sizeY:3": 24
         },
-        "32:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 108,
           "id:3": 513,
           "sizeY:3": 24
         },
-        "33:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": -36,
           "id:3": 515,
           "sizeY:3": 24
         },
-        "34:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": -72,
           "id:3": 516,
           "sizeY:3": 24
         },
-        "35:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 36,
           "id:3": 517,
           "sizeY:3": 24
         },
-        "36:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 72,
           "id:3": 538,
           "sizeY:3": 24
         },
-        "37:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": -36,
           "id:3": 754,
           "sizeY:3": 24
         },
-        "38:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 108,
           "id:3": 788,
           "sizeY:3": 24
         },
-        "39:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 72,
           "id:3": 790,
           "sizeY:3": 24
         },
-        "40:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 36,
           "id:3": 791,
           "sizeY:3": 24
         },
-        "41:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": 108,
           "id:3": 792,
           "sizeY:3": 24
         },
-        "42:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 0,
           "id:3": 793,
           "sizeY:3": 24
         },
-        "43:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 72,
@@ -66684,264 +66658,250 @@
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -130,
-          "y:3": 188,
-          "id:3": 242,
-          "sizeY:3": 24
-        },
-        "6:10": {
-          "sizeX:3": 24,
           "x:3": -48,
           "y:3": -48,
           "id:3": 243,
           "sizeY:3": 24
         },
-        "7:10": {
-          "sizeX:3": 24,
-          "x:3": -166,
-          "y:3": 170,
-          "id:3": 244,
-          "sizeY:3": 24
-        },
-        "8:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": 0,
           "y:3": 108,
           "id:3": 245,
           "sizeY:3": 24
         },
-        "9:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -138,
           "y:3": -30,
           "id:3": 246,
           "sizeY:3": 24
         },
-        "10:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -288,
           "y:3": 78,
           "id:3": 247,
           "sizeY:3": 24
         },
-        "11:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": 36,
           "id:3": 260,
           "sizeY:3": 24
         },
-        "12:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": -198,
           "y:3": 78,
           "id:3": 288,
           "sizeY:3": 24
         },
-        "13:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": 0,
           "y:3": -36,
           "id:3": 323,
           "sizeY:3": 24
         },
-        "14:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": 72,
           "id:3": 336,
           "sizeY:3": 24
         },
-        "15:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": 120,
           "id:3": 339,
           "sizeY:3": 24
         },
-        "16:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": -216,
           "y:3": 138,
           "id:3": 351,
           "sizeY:3": 24
         },
-        "17:10": {
+        "15:10": {
           "sizeX:3": 30,
           "x:3": -464,
           "y:3": 33,
           "id:3": 354,
           "sizeY:3": 30
         },
-        "18:10": {
+        "16:10": {
           "sizeX:3": 30,
           "x:3": -258,
           "y:3": 54,
           "id:3": 358,
           "sizeY:3": 30
         },
-        "19:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": -12,
           "id:3": 360,
           "sizeY:3": 24
         },
-        "20:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": -48,
           "id:3": 364,
           "sizeY:3": 24
         },
-        "21:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": 0,
           "id:3": 368,
           "sizeY:3": 24
         },
-        "22:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": 36,
           "id:3": 369,
           "sizeY:3": 24
         },
-        "23:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": -120,
           "y:3": 84,
           "id:3": 370,
           "sizeY:3": 24
         },
-        "24:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": -150,
           "y:3": 138,
           "id:3": 381,
           "sizeY:3": 24
         },
-        "25:10": {
+        "23:10": {
           "sizeX:3": 30,
           "x:3": -258,
           "y:3": 6,
           "id:3": 457,
           "sizeY:3": 30
         },
-        "26:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -414,
           "y:3": 36,
           "id:3": 459,
           "sizeY:3": 24
         },
-        "27:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": 0,
           "id:3": 461,
           "sizeY:3": 24
         },
-        "28:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": 6,
           "id:3": 467,
           "sizeY:3": 24
         },
-        "29:10": {
+        "27:10": {
           "sizeX:3": 48,
           "x:3": 96,
           "y:3": 24,
           "id:3": 468,
           "sizeY:3": 48
         },
-        "30:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": -102,
           "y:3": 12,
           "id:3": 469,
           "sizeY:3": 24
         },
-        "31:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -288,
           "y:3": -24,
           "id:3": 472,
           "sizeY:3": 24
         },
-        "32:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": -198,
           "y:3": 30,
           "id:3": 489,
           "sizeY:3": 24
         },
-        "33:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": -198,
           "y:3": -18,
           "id:3": 490,
           "sizeY:3": 24
         },
-        "34:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": 168,
           "id:3": 491,
           "sizeY:3": 24
         },
-        "35:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": -366,
           "y:3": -12,
           "id:3": 503,
           "sizeY:3": 24
         },
-        "36:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": -354,
           "y:3": -48,
           "id:3": 504,
           "sizeY:3": 24
         },
-        "37:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": -60,
           "id:3": 505,
           "sizeY:3": 24
         },
-        "38:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -60,
           "id:3": 506,
           "sizeY:3": 24
         },
-        "39:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": 132,
           "id:3": 599,
           "sizeY:3": 24
         },
-        "40:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": -306,
           "y:3": 126,
           "id:3": 603,
           "sizeY:3": 24
         },
-        "41:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": -342,
           "y:3": 114,
           "id:3": 604,
           "sizeY:3": 24
         },
-        "42:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": 0,
@@ -67895,285 +67855,327 @@
         },
         "16:10": {
           "sizeX:3": 24,
+          "x:3": 228,
+          "y:3": -48,
+          "id:3": 177,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
           "x:3": 180,
           "y:3": 36,
           "id:3": 229,
           "sizeY:3": 24
         },
-        "17:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -36,
           "y:3": -132,
           "id:3": 237,
           "sizeY:3": 24
         },
-        "18:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": -144,
           "id:3": 238,
           "sizeY:3": 24
         },
-        "19:10": {
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 0,
+          "id:3": 242,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 24,
+          "id:3": 244,
+          "sizeY:3": 24
+        },
+        "22:10": {
           "sizeX:3": 24,
           "x:3": -120,
           "y:3": -156,
           "id:3": 254,
           "sizeY:3": 24
         },
-        "20:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": -84,
           "id:3": 265,
           "sizeY:3": 24
         },
-        "21:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -264,
           "id:3": 268,
           "sizeY:3": 24
         },
-        "22:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": -132,
           "id:3": 271,
           "sizeY:3": 24
         },
-        "23:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": -192,
           "id:3": 305,
           "sizeY:3": 24
         },
-        "24:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": -216,
           "id:3": 308,
           "sizeY:3": 24
         },
-        "25:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": -192,
           "id:3": 316,
           "sizeY:3": 24
         },
-        "26:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": -144,
           "id:3": 353,
           "sizeY:3": 24
         },
-        "27:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 204,
           "y:3": -120,
           "id:3": 399,
           "sizeY:3": 24
         },
-        "28:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 228,
           "y:3": -96,
           "id:3": 400,
           "sizeY:3": 24
         },
-        "29:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": -72,
           "id:3": 421,
           "sizeY:3": 24
         },
-        "30:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": -60,
           "id:3": 426,
           "sizeY:3": 24
         },
-        "31:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -36,
           "id:3": 428,
           "sizeY:3": 24
         },
-        "32:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 276,
           "y:3": -48,
           "id:3": 429,
           "sizeY:3": 24
         },
-        "33:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": -24,
           "id:3": 433,
           "sizeY:3": 24
         },
-        "34:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 102,
           "y:3": 60,
           "id:3": 435,
           "sizeY:3": 24
         },
-        "35:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": -60,
           "id:3": 439,
           "sizeY:3": 24
         },
-        "36:10": {
+        "39:10": {
+          "sizeX:3": 24,
+          "x:3": 252,
+          "y:3": -24,
+          "id:3": 454,
+          "sizeY:3": 24
+        },
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 0,
           "y:3": -36,
           "id:3": 458,
           "sizeY:3": 24
         },
-        "37:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": -12,
           "id:3": 463,
           "sizeY:3": 24
         },
-        "38:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 54,
           "y:3": 12,
           "id:3": 470,
           "sizeY:3": 24
         },
-        "39:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 78,
           "y:3": 36,
           "id:3": 481,
           "sizeY:3": 24
         },
-        "40:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": 12,
           "id:3": 485,
           "sizeY:3": 24
         },
-        "41:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": -156,
           "id:3": 502,
           "sizeY:3": 24
         },
-        "42:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -180,
           "id:3": 508,
           "sizeY:3": 24
         },
-        "43:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": 126,
           "y:3": 84,
           "id:3": 524,
           "sizeY:3": 24
         },
-        "44:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": 150,
           "y:3": 108,
           "id:3": 527,
           "sizeY:3": 24
         },
-        "45:10": {
+        "49:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -216,
           "id:3": 528,
           "sizeY:3": 24
         },
-        "46:10": {
+        "50:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": -264,
           "id:3": 537,
           "sizeY:3": 24
         },
-        "47:10": {
+        "51:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": -168,
           "id:3": 592,
           "sizeY:3": 24
         },
-        "48:10": {
+        "52:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": 72,
+          "id:3": 612,
+          "sizeY:3": 24
+        },
+        "53:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": -168,
           "id:3": 619,
           "sizeY:3": 24
         },
-        "49:10": {
+        "54:10": {
+          "sizeX:3": 24,
+          "x:3": 48,
+          "y:3": 48,
+          "id:3": 629,
+          "sizeY:3": 24
+        },
+        "55:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": -288,
           "id:3": 639,
           "sizeY:3": 24
         },
-        "50:10": {
+        "56:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -84,
           "id:3": 671,
           "sizeY:3": 24
         },
-        "51:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 36,
           "id:3": 678,
           "sizeY:3": 24
         },
-        "52:10": {
+        "58:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": -84,
           "id:3": 695,
           "sizeY:3": 24
         },
-        "53:10": {
+        "59:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -108,
           "id:3": 696,
           "sizeY:3": 24
         },
-        "54:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 60,
           "id:3": 700,
           "sizeY:3": 24
         },
-        "55:10": {
+        "61:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 84,
           "id:3": 701,
           "sizeY:3": 24
         },
-        "56:10": {
+        "62:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": -12,

@@ -1,5 +1,5 @@
 {
-	"version": "1.0",
+	"version": "1.1",
 	"categories": [
 		"general"
 	],
@@ -25,8 +25,8 @@
 					"weight": 20
 				},
 				{
-					"type": "item",
-					"name": "ebwizardry:armour_upgrade",
+					"type": "loot_table",
+					"name": "ebwizardry:subsets/armour_upgrades",
 					"weight": 10
 				},
 				{

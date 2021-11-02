@@ -107,8 +107,10 @@ for item in itemstoHide {
 	mods.jei.JEI.removeAndHide(item);
 }
 
+rollingMachine.removeRecipe(<minecraft:light_weighted_pressure_plate>);
+
 //no BONES
-mods.techreborn.industrialElectrolyzer.removeInputRecipe(<minecraft:dye:15>*3);
+industrialElectrolyzer.removeInputRecipe(<minecraft:dye:15>*3);
 
 //Iron Fence
 <techreborn:refined_iron_fence>.displayName = "Refined Iron Fence";
@@ -235,7 +237,7 @@ mods.techreborn.rollingMachine.addShaped(<techreborn:part:13>*2, [[<ore:ingotCon
 //Advanced Frame
 //recipes.addShaped(<techreborn:machine_frame:1>, [[<moreplates:energetic_silver_plate>, <techreborn:plates:36>, <moreplates:energetic_silver_plate>],[<techreborn:plates:2>, <techreborn:machine_frame>, <techreborn:plates:2>], [<moreplates:energetic_silver_plate>, <techreborn:plates:36>, <moreplates:energetic_silver_plate>]]);
 Empowerer.addRecipe(<techreborn:machine_frame:1>, <techreborn:machine_frame>, <jaopca:item_platedensecarbon>, <jaopca:item_platedenseintermedium>, <jaopca:item_platedenseenergeticsilver>, <jaopca:item_platedenseadvancedalloy>, 250000, 400, [0.9, 0.1, 0.2]);
-<techreborn:machine_frame:1>.addTooltip(format.darkPurple("Crafted with 1,000,000 RF"));
+//<techreborn:machine_frame:1>.addTooltip(format.darkPurple("Crafted with 1,000,000 RF"));
 
 //1st Tier Casing
 recipes.addShaped(<techreborn:machine_casing> * 4, [[<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>],[<ore:circuitBasic>, <techreborn:machine_frame>, <ore:circuitBasic>], [<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>]]);

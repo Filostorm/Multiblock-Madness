@@ -69,10 +69,10 @@ recipes.addShaped(<deepmoblearning:simulation_chamber>, [[<moreplates:osgloglas_
 mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_thermal_elemental>, [<contenttweaker:pristine_dust>, <ore:dustElemental>], 1000,100,2);
 
 //TF Stuff
-mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_glacier>, [<contenttweaker:pristine_dust>, <twilightforest:arctic_fur>], 1000,100,2);
-mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_darkwood>, [<contenttweaker:pristine_dust>, <twilightforest:twilight_log:3>], 1000,100,2);
-mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_swamp>, [<contenttweaker:pristine_dust>, <minecraft:waterlily>], 1000,100,2);
-mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_forest>, [<contenttweaker:pristine_dust>, <twilightforest:firefly>], 1000,100,2);
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_glacier>, [<contenttweaker:pristine_dust>, <twilightforest:arctic_fur>], 2000,100,1);
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_darkwood>, [<contenttweaker:pristine_dust>, <twilightforest:twilight_log:3>], 2000,100,1);
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_swamp>, [<contenttweaker:pristine_dust>, <minecraft:waterlily>], 2000,100,1);
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_forest>, [<contenttweaker:pristine_dust>, <twilightforest:firefly>], 2000,100,1);
 
 
 //Pre kill bosses
@@ -87,7 +87,7 @@ ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_chestplate>], [<botania:el
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_leggings>], [<botania:elementiumlegs>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*7]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_boots>], [<botania:elementiumboots>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*4]);
 */
-BloodAltar.addRecipe(<contenttweaker:blood_crystal>, <contenttweaker:pristine_dust>, 2, 5000, 200, 40);
+BloodAltar.addRecipe(<contenttweaker:blood_crystal>, <contenttweaker:pristine_dust>, 2, 5000, 50, 40);
 
 Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchsword",<deepmoblearning:glitch_infused_sword>, 1500, 300, [
 	null, null, <deepmoblearning:glitch_infused_ingot>,
@@ -97,7 +97,7 @@ Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchsword",<deepmoble
 	]);
 
 Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchboots",<deepmoblearning:glitch_infused_boots>, 1500, 300, [
-	<deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>, <deepmoblearning:glitch_infused_ingot>,
+	<deepmoblearning:glitch_infused_ingot>, null, <deepmoblearning:glitch_infused_ingot>,
 	<deepmoblearning:glitch_infused_ingot>, null, <deepmoblearning:glitch_infused_ingot>,
 	null, null, null,
 	<contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>, <contenttweaker:blood_crystal>
