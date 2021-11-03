@@ -44,8 +44,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmmultiplayerhover.png
-  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmmultiplayer.png
+  backgroundhovered = config/fancymenu/assets/multiblockmadness/bhmmmultiplayerhover.png
+  backgroundnormal = config/fancymenu/assets/multiblockmadness/bhmmmultiplayer.png
 }
 
 customization {
@@ -83,8 +83,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmoptionshover.png
-  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmoptions.png
+  backgroundhovered = config/fancymenu/assets/multiblockmadness/bhmmoptionshover.png
+  backgroundnormal = config/fancymenu/assets/multiblockmadness/bhmmoptions.png
 }
 
 customization {
@@ -122,8 +122,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmquitgamehover.png
-  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmquitgame.png
+  backgroundhovered = config/fancymenu/assets/multiblockmadness/bhmmquitgamehover.png
+  backgroundnormal = config/fancymenu/assets/multiblockmadness/bhmmquitgame.png
 }
 
 customization {
@@ -166,8 +166,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmsingeplayerhover.png
-  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmsingeplayer.png
+  backgroundhovered = config/fancymenu/assets/multiblockmadness/bhmmsingeplayerhover.png
+  backgroundnormal = config/fancymenu/assets/multiblockmadness/bhmmsingeplayer.png
 }
 
 customization {
@@ -205,8 +205,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmmodshover.png
-  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmmods.png
+  backgroundhovered = config/fancymenu/assets/multiblockmadness/bhmmmodshover.png
+  backgroundnormal = config/fancymenu/assets/multiblockmadness/bhmmmods.png
 }
 
 customization {
@@ -254,7 +254,7 @@ customization {
   orientation = mid-centered
   restartbackgroundanimations = true
   buttonaction = openlink
-  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmdiscordhover.png
+  backgroundhovered = config/fancymenu/assets/multiblockmadness/bhmmdiscordhover.png
   label = 
   loopbackgroundanimations = true
   x = 51
@@ -262,7 +262,7 @@ customization {
   actionid = e0d39c94-4e53-4b17-89b2-d15cf18d2d5d1634073097416
   action = addbutton
   y = 49
-  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmdiscord.png
+  backgroundnormal = config/fancymenu/assets/multiblockmadness/bhmmdiscord.png
   value = https://discord.gg/qfEAtfY
   height = 14
 }
@@ -271,7 +271,7 @@ customization {
   orientation = mid-centered
   restartbackgroundanimations = true
   buttonaction = openlink
-  backgroundhovered = config\fancymenu\assets\multiblockmadness\bhmmrentserverhover.png
+  backgroundhovered = config/fancymenu/assets/multiblockmadness/bhmmrentserverhover.png
   label = 
   loopbackgroundanimations = true
   x = 51
@@ -279,7 +279,7 @@ customization {
   actionid = 1d08ee14-3aa8-4e65-aaf4-c34bc0d6c1d81634073097417
   action = addbutton
   y = 67
-  backgroundnormal = config\fancymenu\assets\multiblockmadness\bhmmrentserver.png
+  backgroundnormal = config/fancymenu/assets/multiblockmadness/bhmmrentserver.png
   value = https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fbisecthosting.com%252fMultiblockMadness
   height = 60
 }
