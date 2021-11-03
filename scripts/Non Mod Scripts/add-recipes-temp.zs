@@ -498,5 +498,23 @@ recipes.addShaped(<mysticalworld:wet_mud_block>, [[<ore:dirt>, <ore:dirt>, <ore:
 <contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Flugel Tiara (Eye of the Flugel for infinite time)"));
 <contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Nanobot Beacon (Limited Area)"));
 
+// Food Items
+mods.nuclearcraft.Infuser.addRecipe(<minecraft:egg>, <liquid:milk> * 1000, <actuallyadditions:item_food>, 0.5);
+mods.thermalexpansion.Transposer.addFillRecipe(<actuallyadditions:item_food>, <minecraft:egg>, <liquid:milk> * 1000, 2000);
+
+mods.nuclearcraft.Infuser.addRecipe(<minecraft:dye:3> * 6, <liquid:milk> * 1000, <actuallyadditions:item_food:9> * 3, 0.5);
+mods.thermalexpansion.Transposer.addFillRecipe(<actuallyadditions:item_food:9> * 3, <minecraft:dye:3> * 6, <liquid:milk> * 1000, 2000);
+
+mods.nuclearcraft.IngotFormer.addRecipe(<liquid:milk> * 1500, <xlfoodmod:cheese>, 0.5);
+
+mods.nuclearcraft.Infuser.addRecipe(<mekanism:salt>, <liquid:milk> * 5000, <xlfoodmod:butter> * 2, 0.5);
+mods.thermalexpansion.Transposer.addFillRecipe(<xlfoodmod:butter> * 2, <mekanism:salt>, <liquid:milk> * 5000, 2000);
+
+mods.nuclearcraft.Infuser.addRecipe(<xlfoodmod:cooked_dough>, <liquid:milk> * 1000, <xlfoodmod:waffle>, 0.5);
+mods.thermalexpansion.Transposer.addFillRecipe(<xlfoodmod:waffle>, <xlfoodmod:cooked_dough>, <liquid:milk> * 1000, 2000);
+
+mods.nuclearcraft.Infuser.addRecipe(<minecraft:wheat>, <liquid:water> * 250, <xlfoodmod:dough> * 2, 0.5);
+mods.thermalexpansion.Transposer.addFillRecipe(<xlfoodmod:dough> * 2, <minecraft:wheat>, <liquid:water> * 1000, 2000);
+
 ##########################################################################################
 print("==================== end of mods add-recipes-temp.zs ====================");

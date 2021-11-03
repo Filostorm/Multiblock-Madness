@@ -424,6 +424,198 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_ironwood_sca
 	.addItemInput(<contenttweaker:rod_ironwood>*3)
 	.build();
 
+// Food //
+
+// Deadly Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_deadly_energy_drink", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:deadly_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:fermented_spider_eye>)
+	.addItemInput(<minecraft:spider_eye>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Strong Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_strong_energy_drink", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:strong_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:magma_cream>)
+	.addItemInput(<minecraft:blaze_powder>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Stealthy Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_stealthy_energy_drink", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:stealthy_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:sugar>)
+	.addItemInput(<minecraft:golden_carrot>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Healthy Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_healthy_energy_drink", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:healthy_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:ghast_tear>)
+	.addItemInput(<minecraft:speckled_melon>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Speedy Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_speedy_energy_drink", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:speedy_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:sugar>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Chocolate Ice Cream Ball
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_chocolate_icecream_ball", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:chocolate_icecream_ball>)
+	.addItemInput(<minecraft:snowball>)
+	.addItemInput(<xlfoodmod:vanilla_cream>)
+	.addItemInput(<minecraft:dye:3>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// Vanilla Ice Cream Ball
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_vanilla_icecream_ball", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:vanilla_icecream_ball>)
+	.addItemInput(<minecraft:snowball>)
+	.addItemInput(<xlfoodmod:vanilla_cream>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// Strawberry Ice Cream Ball
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_strawberry_icecream_ball", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:strawberry_icecream_ball>)
+	.addItemInput(<minecraft:snowball>)
+	.addItemInput(<xlfoodmod:strawberry>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// EnderIOs
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_enderios", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<enderio:item_ender_food>)
+	.addItemInput(<minecraft:bowl>)
+	.addItemInput(<minecraft:wheat>)
+	.addItemInput(<techreborn:dust:20>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// AA Chocolate Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_aachocolatecake", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<actuallyadditions:item_food:8>)
+	.addItemInput(<actuallyadditions:item_misc:4>)
+	.addItemInput(<minecraft:egg>)
+	.addItemInput(<minecraft:sugar>)
+	.addItemInput(<minecraft:dye:3> * 3)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// XL Food Chocolate Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_xlfoodchocolatecake", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:chocolate_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:chocolate_syrup>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Oreo Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_oreo_cake", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:oreo_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:oreo_cookie>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Cheese Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_cheese_cake", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:cheese_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:cheese>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Nether Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_nether_cake", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:nether_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<minecraft:blaze_powder>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Strawberry Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_strawberry_cake", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:strawberry_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:strawberry>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Pumpkin Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_pumpkin_cake", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<xlfoodmod:pumpkin_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<minecraft:pumpkin>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Vanilla MC Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_cake_1", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<minecraft:cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<minecraft:egg>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Vanilla MC Cake (Alternate recipe)
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_cake_2", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<minecraft:cake>)
+	.addItemInput(<enderio:item_material:70>)
+	.addItemInput(<minecraft:sugar> * 2)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Tasty Clay
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_tasty_clay", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<openblocks:tasty_clay> * 2)
+	.addItemInput(<minecraft:dye:3>)
+	.addItemInput(<minecraft:clay_ball>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
 
 // Miscellaneous Items //
 
@@ -486,24 +678,6 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_item_io_circ
 	.addItemInput(<rockhounding_chemistry:misc_items:10>)
 	.addItemInput(<rockhounding_chemistry:misc_items:11>)
 	.addItemInput(<techreborn:part:43>)
-	.build();
-
-// Basic Circuit Plate
-mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_basic_circuit_plate", "assemblermktwo", 100)
-	.addEnergyPerTickInput(7500)
-	.addItemOutput(<advancedrocketry:itemcircuitplate>)
-	.addItemInput(<advancedrocketry:wafer>)
-	.addItemInput(<contenttweaker:goldfoil>*4)
-	.addItemInput(<advgenerators:iron_wiring>*2)
-	.build();
-
-// Advanced Circuit Plate
-mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_advanced_circuit_plate", "assemblermktwo", 200)
-	.addEnergyPerTickInput(15000)
-	.addItemOutput(<advancedrocketry:itemcircuitplate:1>)
-	.addItemInput(<advancedrocketry:wafer>)
-	.addItemInput(<techreborn:part:42>*4)
-	.addItemInput(<actuallyadditions:item_misc:8>*2)
 	.build();
 
 // Data Storage Unit
@@ -1152,6 +1326,200 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_thaumium_sc
 	.addItemInput(<thaumcraft:ingot>*3)
 	.addItemInput(<jaopca:item_stickthaumium>*3)
 	.build();
+
+// Food //
+
+// Deadly Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_deadly_energy_drink", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:deadly_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:fermented_spider_eye>)
+	.addItemInput(<minecraft:spider_eye>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Strong Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_strong_energy_drink", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:strong_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:magma_cream>)
+	.addItemInput(<minecraft:blaze_powder>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Stealthy Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_stealthy_energy_drink", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:stealthy_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:sugar>)
+	.addItemInput(<minecraft:golden_carrot>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Healthy Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_healthy_energy_drink", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:healthy_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:ghast_tear>)
+	.addItemInput(<minecraft:speckled_melon>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Speedy Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_speedy_energy_drink", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:speedy_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:sugar>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Chocolate Ice Cream Ball
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_chocolate_icecream_ball", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:chocolate_icecream_ball>)
+	.addItemInput(<minecraft:snowball>)
+	.addItemInput(<xlfoodmod:vanilla_cream>)
+	.addItemInput(<minecraft:dye:3>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// Vanilla Ice Cream Ball
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_vanilla_icecream_ball", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:vanilla_icecream_ball>)
+	.addItemInput(<minecraft:snowball>)
+	.addItemInput(<xlfoodmod:vanilla_cream>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// Strawberry Ice Cream Ball
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_strawberry_icecream_ball", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:strawberry_icecream_ball>)
+	.addItemInput(<minecraft:snowball>)
+	.addItemInput(<xlfoodmod:strawberry>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// EnderIOs
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_enderios", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<enderio:item_ender_food>)
+	.addItemInput(<minecraft:bowl>)
+	.addItemInput(<minecraft:wheat>)
+	.addItemInput(<techreborn:dust:20>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// AA Chocolate Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_aachocolatecake", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<actuallyadditions:item_food:8>)
+	.addItemInput(<actuallyadditions:item_misc:4>)
+	.addItemInput(<minecraft:egg>)
+	.addItemInput(<minecraft:sugar>)
+	.addItemInput(<minecraft:dye:3> * 3)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// XL Food Chocolate Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_xlfoodchocolatecake", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:chocolate_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:chocolate_syrup>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Oreo Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_oreo_cake", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:oreo_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:oreo_cookie>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Cheese Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_cheese_cake", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:cheese_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:cheese>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Nether Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_nether_cake", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:nether_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<minecraft:blaze_powder>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Strawberry Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_strawberry_cake", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:strawberry_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:strawberry>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Pumpkin Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_pumpkin_cake", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<xlfoodmod:pumpkin_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<minecraft:pumpkin>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Vanilla MC Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_cake_1", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<minecraft:cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<minecraft:egg>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Vanilla MC Cake (Alternate recipe)
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_cake_2", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<minecraft:cake>)
+	.addItemInput(<enderio:item_material:70>)
+	.addItemInput(<minecraft:sugar> * 2)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Tasty Clay
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_tasty_clay", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<openblocks:tasty_clay> * 2)
+	.addItemInput(<minecraft:dye:3>)
+	.addItemInput(<minecraft:clay_ball>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
 
 // Miscellaneous Items //
 
