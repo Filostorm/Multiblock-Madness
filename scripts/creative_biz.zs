@@ -105,7 +105,7 @@ null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
 
 // ExC Components
 Empowerer.addRecipe(<extendedcrafting:material:14>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:5>, <advancedrocketry:ic>, <botania:rune:3>, 1000000, 400, [0.9, 0.8, 1]);
-Empowerer.addRecipe(<extendedcrafting:material:15>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered>, <qmd:semiconductor:4>, <botania:rune:1>, 1000000, 400, [0.9, 0.8, 1]);
+Empowerer.addRecipe(<extendedcrafting:material:15>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered>, <qmd:semiconductor:4>, <botania:rune:1>, 1000000, 400, [0.9, 0.9, 0.1]);
 Empowerer.addRecipe(<extendedcrafting:material:16>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:2>, <techreborn:part>, <botania:rune>, 1000000, 400, [0.2, 0.9, 0.9]);
 Empowerer.addRecipe(<extendedcrafting:material:17>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:4>, <advancedrocketry:ic:2>, <botania:rune:2>, 1000000, 400, [0.1, 1, 0.1]);
 
