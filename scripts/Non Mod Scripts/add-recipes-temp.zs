@@ -136,6 +136,9 @@ val recipestoRemove =
 <randomthings:igniter>,
 <libvulpes:productrod:4>,
 <simplevoidworld:portal>,
+<thermalfoundation:material:513>,
+<thermalfoundation:material:514>,
+<thermalfoundation:material:515>,
 ]
  as IItemStack[];
 
