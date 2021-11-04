@@ -898,6 +898,60 @@
 	</Recipe>
 	<Recipe timeRequired="9" power ="40000">
 		<input>
+			<fluidStack>lecm_247;288</fluidStack>
+		</input>
+		<output>
+			<fluidStack>curium_246;256</fluidStack>
+			<fluidStack>curium_247;32</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="40000">
+		<input>
+			<fluidStack>lecm_247_fluoride_flibe;144</fluidStack>
+		</input>
+		<output>
+			<fluidStack>lecm_247_fluoride;144</fluidStack>
+			<fluidStack>flibe;144</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="40000">
+		<input>
+			<fluidStack>depleted_lecm_247_fluoride_flibe;144</fluidStack>
+		</input>
+		<output>
+			<fluidStack>depleted_lecm_247_fluoride;144</fluidStack>
+			<fluidStack>flibe;144</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="9" power ="40000">
+		<input>
+			<fluidStack>hecm_247;288</fluidStack>
+		</input>
+		<output>
+			<fluidStack>curium_246;192</fluidStack>
+			<fluidStack>curium_247;96</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="40000">
+		<input>
+			<fluidStack>hecm_247_fluoride_flibe;144</fluidStack>
+		</input>
+		<output>
+			<fluidStack>hecm_247_fluoride;144</fluidStack>
+			<fluidStack>flibe;144</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="4" power ="40000">
+		<input>
+			<fluidStack>depleted_hecm_247_fluoride_flibe;144</fluidStack>
+		</input>
+		<output>
+			<fluidStack>depleted_hecm_247_fluoride;144</fluidStack>
+			<fluidStack>flibe;144</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="9" power ="40000">
+		<input>
 			<fluidStack>leb_248;288</fluidStack>
 		</input>
 		<output>
