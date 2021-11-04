@@ -82,8 +82,8 @@
 			<fluidStack>boron;384</fluidStack>
 		</input>
 		<output>
-			<fluidStack>boron_10;288</fluidStack>
-			<fluidStack>boron_11;96</fluidStack>
+			<fluidStack>boron_11;288</fluidStack>
+			<fluidStack>boron_10;96</fluidStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="9" power ="40000">
