@@ -2,7 +2,7 @@
   "catalystStack": {
     "registryName": {
       "domain": "botania",
-      "path": "botania:conjurationcatalyst"
+      "path": "conjurationcatalyst"
     },
     "meta": 0
   },
