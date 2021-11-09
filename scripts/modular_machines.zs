@@ -747,6 +747,200 @@ sootyredstone.addItemInput(<thermalfoundation:material:768>);
 sootyredstone.addItemOutput(<deepmoblearning:soot_covered_redstone>);
 sootyredstone.build();
 
+// Food //
+
+// Deadly Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_deadly_energy_drink", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:deadly_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:fermented_spider_eye>)
+	.addItemInput(<minecraft:spider_eye>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Strong Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_strong_energy_drink", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:strong_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:magma_cream>)
+	.addItemInput(<minecraft:blaze_powder>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Stealthy Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_stealthy_energy_drink", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:stealthy_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:sugar>)
+	.addItemInput(<minecraft:golden_carrot>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+
+// Healthy Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_healthy_energy_drink", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:healthy_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:ghast_tear>)
+	.addItemInput(<minecraft:speckled_melon>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Speedy Energy Drink
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_speedy_energy_drink", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:speedy_energy_drink>)
+	.addItemInput(<xlfoodmod:empty_can>)
+	.addItemInput(<ore:cropRice>)
+	.addItemInput(<minecraft:sugar>)
+    .addFluidInput(<liquid:water> * 1000)
+	.build();
+
+// Chocolate Ice Cream Ball
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_chocolate_icecream_ball", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:chocolate_icecream_ball>)
+	.addItemInput(<minecraft:snowball>)
+	.addItemInput(<xlfoodmod:vanilla_cream>)
+	.addItemInput(<minecraft:dye:3>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// Vanilla Ice Cream Ball
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_vanilla_icecream_ball", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:vanilla_icecream_ball>)
+	.addItemInput(<minecraft:snowball>)
+	.addItemInput(<xlfoodmod:vanilla_cream>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// Strawberry Ice Cream Ball
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_strawberry_icecream_ball", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:strawberry_icecream_ball>)
+	.addItemInput(<minecraft:snowball>)
+	.addItemInput(<xlfoodmod:strawberry>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// EnderIOs
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_enderios", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<enderio:item_ender_food>)
+	.addItemInput(<minecraft:bowl>)
+	.addItemInput(<minecraft:wheat>)
+	.addItemInput(<techreborn:dust:20>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
+// AA Chocolate Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_aachocolatecake", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<actuallyadditions:item_food:8>)
+	.addItemInput(<actuallyadditions:item_misc:4>)
+	.addItemInput(<minecraft:egg>)
+	.addItemInput(<minecraft:sugar>)
+	.addItemInput(<minecraft:dye:3> * 3)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// XL Food Chocolate Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_xlfoodchocolatecake", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:chocolate_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:chocolate_syrup>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Oreo Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_oreo_cake", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:oreo_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:oreo_cookie>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Cheese Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_cheese_cake", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:cheese_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:cheese>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Nether Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_nether_cake", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:nether_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<minecraft:blaze_powder>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Strawberry Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_strawberry_cake", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:strawberry_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<xlfoodmod:strawberry>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Pumpkin Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_pumpkin_cake", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<xlfoodmod:pumpkin_cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<minecraft:pumpkin>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Vanilla MC Cake
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_cake_1", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<minecraft:cake>)
+	.addItemInput(<minecraft:wheat> * 3)
+	.addItemInput(<minecraft:sugar> * 2)
+	.addItemInput(<minecraft:egg>)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Vanilla MC Cake (Alternate recipe)
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_cake_2", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<minecraft:cake>)
+	.addItemInput(<enderio:item_material:70>)
+	.addItemInput(<minecraft:sugar> * 2)
+    .addFluidInput(<liquid:milk> * 3000)
+	.build();
+
+// Tasty Clay
+mods.modularmachinery.RecipeBuilder.newBuilder("mixer-dust" + "_tasty_clay", "mixer-dust", 50)
+    .addMysticalMechanicsInput(40, 80)
+	.addItemOutput(<openblocks:tasty_clay> * 2)
+	.addItemInput(<minecraft:dye:3>)
+	.addItemInput(<minecraft:clay_ball>)
+    .addFluidInput(<liquid:milk> * 1000)
+	.build();
+
 
 
 

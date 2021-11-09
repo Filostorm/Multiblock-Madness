@@ -3,6 +3,8 @@ import crafttweaker.item.IItemStack;
 import mods.thaumcraft.Infusion;
 import mods.botaniatweaks.Agglomeration;
 import mods.extendedcrafting.EnderCrafting;
+import mods.extendedcrafting.CombinationCrafting;
+import mods.actuallyadditions.Empowerer;
 import mods.nuclearcraft.Crystallizer;
 
 print("==================== loading creative biz.zs ====================");
@@ -20,6 +22,12 @@ val itemstoRemove =
 	<avaritia:resource:3>,
 	<extendedcrafting:lamp>,
 	<extendedcrafting:lamp:1>,
+	<extendedcrafting:material:14>,
+	<extendedcrafting:material:15>,
+	<extendedcrafting:material:16>,
+	<extendedcrafting:material:17>,
+	<extendedcrafting:material:18>,
+	<extendedcrafting:material:19>
 ]
  as IItemStack[];
 
@@ -94,6 +102,26 @@ null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
 <extendedcrafting:table_advanced>.addTooltip(format.lightPurple("Shift-Right click the previous tier table with the catalyst"));
 <extendedcrafting:table_elite>.addTooltip(format.lightPurple("Shift-Right click the previous tier table with the catalyst"));
 <extendedcrafting:table_ultimate>.addTooltip(format.lightPurple("Shift-Right click the previous tier table with the catalyst"));
+
+// ExC Components
+Empowerer.addRecipe(<extendedcrafting:material:14>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:5>, <advancedrocketry:ic>, <botania:rune:3>, 1000000, 400, [0.9, 0.8, 1]);
+Empowerer.addRecipe(<extendedcrafting:material:15>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered>, <qmd:semiconductor:4>, <botania:rune:1>, 1000000, 400, [0.9, 0.9, 0.1]);
+Empowerer.addRecipe(<extendedcrafting:material:16>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:2>, <techreborn:part>, <botania:rune>, 1000000, 400, [0.2, 0.9, 0.9]);
+Empowerer.addRecipe(<extendedcrafting:material:17>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:4>, <advancedrocketry:ic:2>, <botania:rune:2>, 1000000, 400, [0.1, 1, 0.1]);
+
+CombinationCrafting.addRecipe(<extendedcrafting:material:14>, 4000000, <extendedcrafting:material:2>, 
+[<extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:5>, <advancedrocketry:ic>, <botania:rune:3>]);
+CombinationCrafting.addRecipe(<extendedcrafting:material:15>, 4000000, <extendedcrafting:material:2>, 
+[<extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered>, <qmd:semiconductor:4>, <botania:rune:1>]);
+CombinationCrafting.addRecipe(<extendedcrafting:material:16>, 4000000, <extendedcrafting:material:2>, 
+[<extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:2>, <techreborn:part>, <botania:rune>]);
+CombinationCrafting.addRecipe(<extendedcrafting:material:17>, 4000000, <extendedcrafting:material:2>, 
+[<extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:4>, <advancedrocketry:ic:2>, <botania:rune:2>]);
+
+CombinationCrafting.addRecipe(<extendedcrafting:material:18>, 8000000, <extendedcrafting:material:2>, 
+[<extendedcrafting:material:7>, <extendedcrafting:material:24>, <thermalfoundation:material:1028>, <extendedcrafting:material:7>, <extendedcrafting:material:24>, <botania:rune:8>]);
+CombinationCrafting.addRecipe(<extendedcrafting:material:19>, 16000000, <extendedcrafting:material:18>, 
+[<extendedcrafting:material:7>, <extendedcrafting:material:14>, <extendedcrafting:material:32>, <extendedcrafting:material:15>, <extendedcrafting:material:7>, <extendedcrafting:material:16>, <extendedcrafting:material:32>, <extendedcrafting:material:17>]);
 
 
 //New Neutronium Essence output

@@ -102,6 +102,7 @@ mods.nuclearcraft.Infuser.addRecipe(<environmentaltech:erodium_crystal>*2, <liqu
 
 //Tier 4
 //Crystallizer.addRecipe(<environmentaltech:pladium_crystal>, 400, 60000, <environmentaltech:kyronite_crystal>*2, <qmd:semiconductor:4>); 
+mods.nuclearcraft.FissionIrradiator.addRecipe(<environmentaltech:kyronite_crystal>*2, <environmentaltech:pladium_crystal>, 200000, 0, 0.15, 0);
 
 ##########################################################################################
 print("==================== end of mods enviromental tech.zs ====================");
