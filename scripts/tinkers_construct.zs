@@ -11,6 +11,7 @@ import mods.tcomplement.highoven.MixRecipeBuilder;
 import mods.tcomplement.highoven.MixRecipeManager;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.data.IData;
 import mods.immersiveengineering.MetalPress;
 import mods.rockhounding_chemistry.LabBlender;
 
@@ -405,59 +406,149 @@ recipes.addShaped(<tinker_io:smart_output>, [[<tconstruct:materials>, <arcanearc
 //Reinforcement Modefier
 MetalPress.addRecipe(<tconstruct:materials:14>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:mold>, 2000);
 
-/*
+
 /////////////////////////
-// Tinker's Gregstruct //
+// Immersive Tinker's //
 /////////////////////////
 #######################################################
-	#Bronze Tier Materials at LV Exruder for Basic Parts (Keep Casting)
-var matLVKeepCast as IItemStack[string] = {
-	"invar" : <ore:ingotInvar>.firstItem,
-	"nickel" : <ore:ingotNickel>.firstItem,
-	"lead" : <ore:ingotLead>.firstItem,
+
+// Most Parts
+var matpresser as IItemStack[string] = {
+	"electrical_steel" : <enderio:item_alloy_ingot>,
+	"energetic_alloy" : <enderio:item_alloy_ingot:1>,
+	"vibrant_alloy" : <enderio:item_alloy_ingot:2>,
+	"redstone_alloy" : <enderio:item_alloy_ingot:3>,
+	"conductive_iron": <enderio:item_alloy_ingot:4>,
+	"pulsating_iron" : <enderio:item_alloy_ingot:5>,
+	"dark_steel" : <enderio:item_alloy_ingot:6>,
+	"soularium" : <enderio:item_alloy_ingot:7>,
+	"end_steel" : <enderio:item_alloy_ingot:8>,
+	"construction_alloy" : <enderio:item_alloy_ingot:9>,
+	"fierymetal" : <twilightforest:fiery_ingot>,
+	"knightmetal" : <twilightforest:knightmetal_ingot>,
+	"obsidian" : <minecraft:obsidian>,
 	"iron" : <minecraft:iron_ingot>,
 	"pigiron" : <ore:ingotPigiron>.firstItem,
-	"electrum" : <ore:ingotElectrum>.firstItem,
-	"silver" : <ore:ingotSilver>.firstItem,
+	"knightslime" : <tconstruct:ingots:3>,
+	"cobalt" : <tconstruct:ingots>,
+	"ardite" : <tconstruct:ingots:1>,
+	"manyullyn" : <tconstruct:ingots:2>,
+	"copper" : <thermalfoundation:material:128>,
 	"bronze" : <ore:ingotBronze>.firstItem,
-	"restonia_actadd_plustic" : <actuallyadditions:item_crystal>,
-	"void_actadd_plustic" : <actuallyadditions:item_crystal:3>,
-	"fluixcrystal_plustic" : <ore:crystalFluix>.firstItem,
-	"palis_actadd_plustic" : <actuallyadditions:item_crystal:1>,
-	"paper" : <minecraft:paper>,
-	"enori_actadd_plustic" : <actuallyadditions:item_crystal:5>,
+	"lead" : <ore:ingotLead>.firstItem,
+	"silver" : <ore:ingotSilver>.firstItem,
+	"electrum" : <ore:ingotElectrum>.firstItem,
+	"steel" : <thermalfoundation:material:160>,
+	"constantan" : <thermalfoundation:material:164>,
+	"dragonsteel_fire" : <iceandfire:dragonsteel_fire_ingot>,
+	"dragonsteel_ice" : <iceandfire:dragonsteel_ice_ingot>,
+	"blood_infused_iron" : <bloodarsenal:base_item:4>,
+	"tar_slime" : <fossil:tardrop>,
+	"ma.soulium" : <mysticalagriculture:crafting:38>,
+	"ma.base_essence" : <mysticalagriculture:crafting:5>,
+	"ma.inferium" : <mysticalagriculture:crafting:33>,
+	"ma.prudentium" : <mysticalagriculture:crafting:34>,
+	"ma.intermedium" : <mysticalagriculture:crafting:35>,
+	"ma.superium": <mysticalagriculture:crafting:36>,
+	"ma.supremium" : <mysticalagriculture:crafting:37>,
+	"alumite" : <plustic:alumiteingot>,
+	"nickel" : <ore:ingotNickel>.firstItem,
+	"invar" : <ore:ingotInvar>.firstItem,
+	"iridium" : <thermalfoundation:material:135>,
+	"osmium" : <mekanism:ingot:1>,
+	"refinedobsidian" : <mekanism:ingot>,
+	"refinedglowstone" : <mekanism:ingot:3>,
+	"osgloglas" : <plustic:osgloglasingot>,
+	"osmiridium" : <plustic:osmiridiumingot>,
+	"titanium" : <techreborn:ingot:14>,
+	"lumium_plustic" : <thermalfoundation:material:166>,
+	"signalum_plustic" : <thermalfoundation:material:165>,
+	"platinum_plustic" : <thermalfoundation:material:134>,
+	"enderium_plustic" : <thermalfoundation:material:167>,
+	"infinity_avaritia_plustic" : <avaritia:resource:6>,
+	"thaumium" : <thaumcraft:ingot>,
+	"starmetal" : <astralsorcery:itemcraftingcomponent:1>,
+	"boron" : <nuclearcraft:ingot:5>,
+	"tough" : <nuclearcraft:alloy:1>,
+	"hard_carbon" : <nuclearcraft:alloy:2>,
+	"thorium" : <techreborn:ingot:23>,
+	"uranium" : <immersiveengineering:metal:5>,
+	"magnesium" : <nuclearcraft:ingot:7>,
+	"chocolate" :  <nuclearcraft:milk_chocolate>,
+	"bloodbronze" : <bloodtinker:blood_bronze_ingot>,
+	"mirion" : <plustic:mirioningot>,
+	"manasteel" : <botania:manaresource>,
+	"elementium" : <botania:manaresource:7>,
+	"terrasteel" : <botania:manaresource:4>,
+	"emerald_plustic" : <minecraft:emerald>,
 };
 
-var tconPartsMapLVKeepCast as IData[][IItemStack] = {
-	<tconstruct:tool_rod> : [2, "tconstruct:tool_rod"],
+var tconPartsMappresser as IData[][IItemStack] = {
+	<tconstruct:tool_rod> : [1, "tconstruct:tool_rod"],
 	<tconstruct:pick_head> : [3, "tconstruct:pick_head"],
 	<tconstruct:shovel_head> : [2, "tconstruct:shovel_head"],
-	<tconstruct:axe_head> : [2, "tconstruct:axe_head"],
-	<tconstruct:sword_blade> : [4, "tconstruct:sword_blade"],
+	<tconstruct:axe_head> : [3, "tconstruct:axe_head"],
+	<tconstruct:sword_blade> : [2, "tconstruct:sword_blade"],
 	<tconstruct:kama_head> : [2, "tconstruct:kama_head"],
-	<tconstruct:wide_guard> : [2 , "tconstruct:wide_guard"],
-	<tconstruct:hand_guard> : [2, "tconstruct:hand_guard"],
-	<tconstruct:binding> : [2, "tconstruct:binding"],
+	<tconstruct:wide_guard> : [1 , "tconstruct:wide_guard"],
+	<tconstruct:hand_guard> : [1, "tconstruct:hand_guard"],
+	<tconstruct:binding> : [1, "tconstruct:binding"],
 	<tconstruct:pan_head> : [4, "tconstruct:pan_head"],
-	<tconstruct:sign_head> : [4, "tconstruct:sign_head"],
+	<tconstruct:sign_head> : [3, "tconstruct:sign_head"],
 	<tconstruct:sharpening_kit> : [2, "tconstruct:sharpening_kit"],
-	<tconstruct:bow_limb> : [4, "tconstruct:bow_limb"],
 	<tconstruct:arrow_head> : [2, "tconstruct:arrow_head"],
-	<tcomplement:chisel_head> : [1, "tcomplement:chisel_head"]
+	<tconstruct:knife_blade> : [1, "tconstruct:knife_blade"],
+	<tconstruct:cross_guard> : [1, "tconstruct:cross_guard"],
+	<tconstruct:tough_binding> : [3, "tconstruct:tough_binding"],
+	<tconstruct:tough_tool_rod> : [3, "tconstruct:tough_tool_rod"],
+	<tconstruct:scythe_head> : [8, "tconstruct:scythe_head"],
+	<tconstruct:large_sword_blade> : [8, "tconstruct:large_sword_blade"],
+	<tconstruct:broad_axe_head> : [8, "tconstruct:broad_axe_head"],
+	<tconstruct:excavator_head> : [8, "tconstruct:excavator_head"],
+	<tconstruct:hammer_head> : [8, "tconstruct:hammer_head"],
+	<tconstruct:large_plate> : [8, "tconstruct:large_plate"],
+	<tcomplement:chisel_head> : [1, "tcomplement:chisel_head"],
+	<conarm:boots_core> :  [4, "conarm:boots_core"],
+	<conarm:leggings_core> : [5, "conarm:leggings_core"],
+	<conarm:chest_core> : [6, "conarm:chest_core"],
+	<conarm:helmet_core> : [4, "conarm:helmet_core"],
+	<conarm:armor_plate> : [3, "conarm:armor_plate"],
+	<conarm:armor_trim> : [1, "conarm:armor_trim"],
+	<plustic:pipe_piece> : [12, "plustic:pipe_piece"],
+	<conarm:polishing_kit> : [2, "conarm:polishing_kit"],
+	<tconstruct:bow_limb> : [3, "tconstruct:bow_limb"],	
 };
 
-for mat, ingot in matLVKeepCast {
-	for part, info in tconPartsMapLVKeepCast {
-		mods.gregtech.recipe.RecipeMap.getByName("extruder").recipeBuilder()
-			.inputs(ingot * info[0])
-			.notConsumable(<tconstruct:cast>.withTag({PartType: info[1]}))
-			.outputs(part.withTag({Material: mat}))
-			.duration(300* info[0])
-			.EUt(30)
-			.buildAndRegister();
+for mat, ingot in matpresser {
+	for part, info in tconPartsMappresser {
+		mods.immersiveengineering.MetalPress.addRecipe(part.withTag({Material: mat}), ingot, <tconstruct:cast>.withTag({PartType: info[1]}), 2000, info[0]);
 	}
 }
-*/
+
+// Arrow Shaft
+mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "fierymetal"}), <twilightforest:fiery_ingot>, <tconstruct:cast>.withTag({PartType: "tconstruct:arrow_shaft"}), 2000, 2);
+mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "enderium_plustic"}), <thermalfoundation:material:167>, <tconstruct:cast>.withTag({PartType: "tconstruct:arrow_shaft"}), 2000, 2);
+
+// Fletching
+mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}), 2000, 2);
+mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "invar"}), <thermalfoundation:material:162>, <tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}), 2000, 2);
+mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "titanium"}), <techreborn:ingot:14>, <tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}), 2000, 2);
+
+// Laser Medium
+mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedobsidian"}), <mekanism:ingot>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
+mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedglowstone"}), <mekanism:ingot:3>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
+mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "infinity_avaritia_plustic"}), <avaritia:resource:6>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
+mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "starmetal"}), <astralsorcery:itemcraftingcomponent:1>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
+
+// Bowstring
+mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:bow_string>.withTag({Material: "soularium"}), <enderio:item_alloy_ingot:7>, <tconstruct:cast>.withTag({PartType: "tconstruct:bow_string"}), 2000, 1);
+
+// Battery Cell
+mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "manyullyn"}), <tconstruct:ingots:2>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
+mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "copper"}), <thermalfoundation:material:128>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
+mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "silver"}), <thermalfoundation:material:130>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
+mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
+mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "osmium"}), <mekanism:ingot:1>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
 
 ##########################################################################################
 print("==================== end of mods tinkersconstruct.zs ====================");

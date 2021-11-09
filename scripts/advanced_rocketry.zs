@@ -17,6 +17,7 @@ val itemstoRemove =
 <advancedrocketry:seat>,
 <advancedrocketry:productrod:1>,
 <advancedrocketry:launchpad>,
+<advancedrocketry:vacuumlaser>,
 ]
  as IItemStack[];
 
@@ -43,11 +44,9 @@ recipes.addShaped(<advancedrocketry:ic:5>, [[<moreplates:vivid_alloy_plate>, <ap
 recipes.addShaped(<advancedrocketry:ic:3>, [[<moreplates:vibrant_alloy_plate>, <ore:circuitElite>, <moreplates:vibrant_alloy_plate>],[<moreplates:vibrant_alloy_plate>, <advgenerators:controller>, <moreplates:vibrant_alloy_plate>], [<moreplates:vibrant_alloy_plate>, <techreborn:part:43>, <moreplates:vibrant_alloy_plate>]]);
 recipes.addShaped(<advancedrocketry:ic:4>, [[<moreplates:end_steel_plate>, <rockhounding_chemistry:misc_items:10>, <moreplates:end_steel_plate>],[<moreplates:end_steel_plate>, <rockhounding_chemistry:misc_items:11>, <moreplates:end_steel_plate>], [<moreplates:end_steel_plate>, <techreborn:part:43>, <moreplates:end_steel_plate>]]);
 
-/*
-PrecisionAssembler.removeRecipe(<advancedrocketry:ic:5>); 
-PrecisionAssembler.removeRecipe(<advancedrocketry:ic:4>); 
-PrecisionAssembler.removeRecipe(<advancedrocketry:ic:3>); 
-*/
+// Laser Emitter
+recipes.addShaped(<advancedrocketry:vacuumlaser>, [[null, <minecraft:glass>, null],[<thermalfoundation:material:324>, <actuallyadditions:block_crystal_empowered>, <thermalfoundation:material:324>], [<thermalfoundation:material:324>, <libvulpes:structuremachine>, <thermalfoundation:material:324>]]);
+
 
 ##########################################################################################
 print("==================== end of mods advancedrocketry-ssp.zs ====================");
