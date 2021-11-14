@@ -31,27 +31,27 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="false">
-	<Recipe timeRequired="100" power ="7500">
+<Recipes useDefault="true">
+	<Recipe timeRequired="1200" power ="600">
 		<input>
 			<itemStack>advancedrocketry:lens</itemStack>
-			<itemStack>advancedrocketry:wafer</itemStack>
-			<itemStack>contenttweaker:goldfoil;4;0</itemStack>
-			<itemStack>advgenerators:iron_wiring;2;0</itemStack>
+			<itemStack>thermalfoundation:material;1;33</itemStack>
+			<itemStack>minecraft:redstone_block</itemStack>
+			<itemStack>advancedrocketry:wafer;4</itemStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:itemcircuitplate;1;0</itemStack>
+			<itemStack>advancedrocketry:itemcircuitplate;2;1</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="100" power ="15000">
+	<Recipe timeRequired="1200" power ="400">
 		<input>
 			<itemStack>advancedrocketry:lens</itemStack>
-			<itemStack>advancedrocketry:wafer</itemStack>
-			<itemStack>techreborn:part;4;42</itemStack>
-			<itemStack>actuallyadditions:item_misc;2;8</itemStack>
+			<itemStack>thermalfoundation:material;1;33</itemStack>
+			<itemStack>minecraft:redstone</itemStack>
+			<itemStack>advancedrocketry:wafer;4</itemStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:itemcircuitplate;1;1</itemStack>
+			<itemStack>advancedrocketry:itemcircuitplate;2</itemStack>
 		</output>
 	</Recipe>
 </Recipes>
