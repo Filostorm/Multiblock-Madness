@@ -66,7 +66,8 @@ Overrides.removeRecipe(<liquid:aluminum>, item);
 HighOven.removeMeltingOverride(<liquid:aluminum>, item);
 }
 
-//Melting.removeRecipe(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
+Melting.removeRecipe(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
+HighOven.removeMeltingOverride(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
 mods.embers.Melter.remove(<thermalfoundation:ore:4>);
 
 
@@ -78,7 +79,8 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
 Melting.removeRecipe(<liquid:osmium>, <jaopca:item_dustsmallosmium>);
-//Melting.removeRecipe(<liquid:osmium>, <jaopca:item_dusttinyosmium>);
+Melting.removeRecipe(<liquid:osmium>, <jaopca:item_dusttinyosmium>);
+HighOven.removeMeltingOverride(<liquid:osmium>, <jaopca:item_dusttinyosmium>);
 Melting.removeRecipe(<liquid:osmium>, <mekanism:dust:2>);
 Melting.removeRecipe(<liquid:osmium>, <rockhounding_chemistry:chemical_dusts:38>);
 Melting.removeRecipe(<liquid:osmium>, <mekanism:oreblock>);
@@ -96,7 +98,7 @@ for item in <ore:ingotPlatinum>.items{
 mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
-//Melting.removeRecipe(<liquid:platinum>, <jaopca:item_dusttinyplatinum>);
+Melting.removeRecipe(<liquid:platinum>, <jaopca:item_dusttinyplatinum>);
 Melting.removeRecipe(<liquid:platinum>, <thermalfoundation:material:70>);
 Melting.removeRecipe(<liquid:platinum>, <techreborn:smalldust:38>);
 Melting.removeRecipe(<liquid:platinum>, <thermalfoundation:ore:6>);
@@ -106,6 +108,7 @@ Overrides.removeRecipe(<liquid:platinum>, <thermalfoundation:ore:6>);
 HighOven.removeMeltingOverride(<liquid:platinum>, <thermalfoundation:material:70>);
 HighOven.removeMeltingOverride(<liquid:platinum>, <techreborn:smalldust:38>);
 HighOven.removeMeltingOverride(<liquid:platinum>, <thermalfoundation:ore:6>);
+HighOven.removeMeltingOverride(<liquid:platinum>, <jaopca:item_dusttinyplatinum>);
 mods.embers.Melter.remove(<thermalfoundation:ore:6>);
 Melter.removeRecipeWithInput(<thermalfoundation:material:70>);
 Melter.removeRecipeWithInput(<thermalfoundation:ore:6>);
@@ -116,11 +119,11 @@ Crucible.removeRecipe(<thermalfoundation:ore:6>);
 //----------Tungsten
 for item in <ore:ingotTungsten>.items{
 blastFurnace.removeRecipe(item);
-mods.immersiveengineering.ArcFurnace.removeRecipe(item);
+ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
 
-
+ArcFurnace.removeRecipe(<qmd:ingot>);
 
 //Melting.removeRecipe(<liquid:tungsten>, <jaopca:item_dusttinytungsten>);
 Melting.removeRecipe(<liquid:tungsten>, <techreborn:dust:55>);
@@ -144,7 +147,7 @@ Crucible.removeRecipe(<techreborn:dust:55>);
 
 for item in <ore:ingotTitanium>.items{
 blastFurnace.removeRecipe(item);
-mods.immersiveengineering.ArcFurnace.removeRecipe(item);
+ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
 
@@ -187,7 +190,7 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(item);
 furnace.remove(item);
 }
 
-//Melting.removeRecipe(<liquid:iridium>, <jaopca:item_dusttinyiridium>);
+Melting.removeRecipe(<liquid:iridium>, <jaopca:item_dusttinyiridium>);
 Melting.removeRecipe(<liquid:iridium>, <thermalfoundation:material:71>);
 Melting.removeRecipe(<liquid:iridium>, <techreborn:smalldust:66>);
 Melting.removeRecipe(<liquid:iridium>, <thermalfoundation:ore:7>);
@@ -197,6 +200,7 @@ Overrides.removeRecipe(<liquid:iridium>, <thermalfoundation:ore:7>);
 HighOven.removeMeltingOverride(<liquid:iridium>, <thermalfoundation:material:71>);
 HighOven.removeMeltingOverride(<liquid:iridium>, <techreborn:smalldust:66>);
 HighOven.removeMeltingOverride(<liquid:iridium>, <thermalfoundation:ore:7>);
+HighOven.removeMeltingOverride(<liquid:iridium>, <jaopca:item_dusttinyiridium>);
 mods.embers.Melter.remove(<thermalfoundation:ore:7>);
 Melter.removeRecipeWithInput(<thermalfoundation:ore:7>);
 Melter.removeRecipeWithInput(<thermalfoundation:material:71>);

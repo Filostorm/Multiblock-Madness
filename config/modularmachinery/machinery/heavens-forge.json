@@ -8,7 +8,7 @@
             "x": [1,-1],
             "y": [0,1],
             "z": [0,2],
-            "elements": "extendedcrafting:lamp",
+            "elements": "extendedcrafting:lamp@1",
             "description": "Add Luminessence to the Midnight Frames to lower time required.",
             "modifier": {
                 "io": "input",

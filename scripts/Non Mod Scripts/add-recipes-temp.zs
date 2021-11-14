@@ -139,6 +139,11 @@ val recipestoRemove =
 <randomthings:igniter>,
 <libvulpes:productrod:4>,
 <simplevoidworld:portal>,
+<thermalfoundation:material:513>,
+<thermalfoundation:material:514>,
+<thermalfoundation:material:515>,
+<iceandfire:chain>,
+<iceandfire:chain_link>,
 ]
  as IItemStack[];
 
@@ -264,6 +269,19 @@ mods.jei.JEI.addItem(<conarm:armorforge>.withTag({textureBlock: {id: "tconstruct
 
 //Simple Void World
 recipes.addShaped(<simplevoidworld:portal>, [[<minecraft:obsidian>, <aetherworks:item_resource:2>, <minecraft:obsidian>],[<aetherworks:item_resource:2>, <actuallyadditions:block_crystal:2>, <aetherworks:item_resource:2>], [<minecraft:obsidian>, <aetherworks:item_resource:2>, <minecraft:obsidian>]]);
+
+//Chainz
+recipes.addShaped(<quark:chain>, [[null, null, <iceandfire:chain_link>],[null, <iceandfire:chain_link>, null], [<iceandfire:chain_link>, null, null]]);
+recipes.addShaped(<iceandfire:chain>, [[null, <quark:chain>, <quark:chain>],[null, <quark:chain>, null], [<quark:chain>, <quark:chain>, null]]);
+
+recipes.removeShaped(<minecraft:chainmail_chestplate>, [[<iceandfire:chain_link>, null, <iceandfire:chain_link>],[<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>], [<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>]]);
+recipes.removeShaped(<minecraft:chainmail_boots>, [[<iceandfire:chain_link>, null, <iceandfire:chain_link>],[<iceandfire:chain_link>, null, <iceandfire:chain_link>], [null, null, null]]);
+recipes.removeShaped(<minecraft:chainmail_helmet>, [[<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>],[<iceandfire:chain_link>, null, <iceandfire:chain_link>], [null, null, null]]);
+recipes.removeShaped(<minecraft:chainmail_leggings>, [[<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>],[<iceandfire:chain_link>, null, <iceandfire:chain_link>], [<iceandfire:chain_link>, null, <iceandfire:chain_link>]]);
+
+
+//Ember Key
+mods.inworldcrafting.FluidToItem.transform(<treasure2:ember_key>, <liquid:moltenembers>, [<arcanearchives:radiant_key>], true);
 
 
 //mods.jei.JEI.addItem(<rockhounding_chemistry:machines_e:1>);

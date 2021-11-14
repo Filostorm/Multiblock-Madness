@@ -10,6 +10,7 @@ import mods.arcanearchives.GCT;
 import mods.thaumcraft.Crucible;
 import mods.tcomplement.Overrides;
 import mods.tconstruct.Melting;
+import crafttweaker.item.IIngredient;
 
 
 print("==================== loading mods blank.zs ====================");
@@ -32,10 +33,12 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
+<twilightforest:uberous_soil>.addTooltip(format.gold("Looted from Troll Caves"));
 
 <twilightforest:transformation_powder>.addTooltip(format.gold("Found in Twilight Forest hollow hills"));
 
 <twilightforest:charm_of_keeping_1>.addTooltip(format.gold("Found in Twilight Forest structures"));
+<twilightforest:charm_of_life_1>.addTooltip(format.gold("Found in Twilight Forest structures"));
 
 <twilightforest:torchberries>.addTooltip(format.gold("Found underground or as a drop from Skeleton Druids"));
 
@@ -45,7 +48,11 @@ PureDaisy.addRecipe(<twilightforest:root>, <twilightforest:root:1>);
 
 
 //mods.botania.ManaInfusion.addAlchemy(IItemStack output, IIngredient input, int mana);
+//Noon Ingot
 ManaInfusion.addAlchemy(<contenttweaker:noon_ingot>, <twilightforest:torchberries>, 10000);
+
+//Constilation papers
+ManaInfusion.addAlchemy(<astralsorcery:itemconstellationpaper>, <twilightforest:magic_map_empty>, 25000);
 
 
 //Combustible Ingot tier one crafting

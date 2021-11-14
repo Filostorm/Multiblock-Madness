@@ -26,6 +26,7 @@ val removerecipes =
 <qmd:ingot>,
 <qmd:ingot:3>,
 <qmd:ingot:8>,
+<techreborn:ingot:14>,
 ]
 as IItemStack[];
 for item in removerecipes {

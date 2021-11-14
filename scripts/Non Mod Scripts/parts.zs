@@ -12,7 +12,9 @@ import mods.techreborn.rollingMachine;
 import mods.thermalexpansion.Compactor;
 import mods.techreborn.implosionCompressor;
 import mods.nuclearcraft.Pressurizer;
+import mods.mekanism.crusher;
 import mods.immersiveengineering.MetalPress;
+import mods.mekanism.enrichment;
 
 print("==================== loading parts.zs ====================");
 ##########################################################################################
@@ -514,6 +516,26 @@ mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17> * 
 mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17> * 9, <thermalfoundation:storage_resource:1>, 2000);
 mods.mekanism.crusher.addRecipe(<ore:fuelCoke>, <immersiveengineering:material:17>);
 mods.mekanism.crusher.addRecipe(<ore:blockFuelCoke>, <immersiveengineering:material:17> * 9);
+
+// Netherrack Dust
+Manufactory.addRecipe(<minecraft:netherrack>, <techreborn:dust:33>);
+Manufactory.addRecipe(<additionalcompression:netherrack_compressed>, <techreborn:dust:33> * 9);
+Pulverizer.addRecipe(<techreborn:dust:33>, <minecraft:netherrack>, 2000);
+Pulverizer.addRecipe(<techreborn:dust:33> * 9, <additionalcompression:netherrack_compressed>, 2000);
+crusher.addRecipe(<minecraft:netherrack>, <techreborn:dust:33>);
+crusher.addRecipe(<additionalcompression:netherrack_compressed>, <techreborn:dust:33> * 9);
+Crusher.addRecipe(<techreborn:dust:33>, <minecraft:netherrack>, 1024);
+Crusher.addRecipe(<techreborn:dust:33> * 9, <additionalcompression:netherrack_compressed>, 1024);
+
+// Endstone Dust
+Manufactory.addRecipe(<additionalcompression:endstone_compressed>, <techreborn:dust:21> * 9);
+Pulverizer.addRecipe(<techreborn:dust:21>, <minecraft:end_stone>, 2000);
+Pulverizer.addRecipe(<techreborn:dust:21> * 9, <additionalcompression:endstone_compressed>, 4000);
+crusher.addRecipe(<minecraft:end_stone>, <techreborn:dust:21>);
+crusher.addRecipe(<additionalcompression:endstone_compressed>, <techreborn:dust:21> * 9);
+Crusher.addRecipe(<techreborn:dust:21> * 9, <additionalcompression:endstone_compressed>, 2048);
+
+
 
 
 // Adding more ingot crushing recipes to the Mekanism Crusher

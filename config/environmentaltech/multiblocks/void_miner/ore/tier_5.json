@@ -389,6 +389,11 @@
   "target": "cyan",
   "weight": 100,
   "id": "OD:oreSodalite"
+},
+{
+  "target": "cyan",
+  "weight": 100,
+  "id": "OD:oreDimensionalShard"
 }
   ]
 }

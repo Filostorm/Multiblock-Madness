@@ -337,5 +337,13 @@ mods.extendedcrafting.TableCrafting.addShaped(3, <extendedcrafting:material:24>,
     [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:5>, <enderio:item_alloy_endergy_ingot:1>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:2>, <arcanearchives:shaped_quartz>], 
     [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <arcanearchives:shaped_quartz>]
 ]);
+
+Infusion.registerRecipe("starmetal_cluster", "", 
+<contenttweaker:starmetal_cluster>, 10, 
+[<aspect:tenebrae>*50, <aspect:lux>*50], 
+<thaumcraft:ingot:1>, 
+[<jaopca:item_crystalastralstarmetal>,<jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>,
+<jaopca:item_crystalastralstarmetal>,<jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>]);
+
 ##########################################################################################
 print("==================== end of creative biz.zs ====================");

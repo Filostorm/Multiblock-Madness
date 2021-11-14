@@ -116,7 +116,7 @@
 	</Recipe>
 	<Recipe timeRequired="150" power ="40000">
 		<input>
-			<itemStack>environmentaltech:litherite_crystal;2;0</itemStack>
+			<itemStack>environmentaltech:litherite_crystal;1;0</itemStack>
 			<itemStack>botania:sparkupgrade;1;1</itemStack>
 		</input>
 		<output>
@@ -125,7 +125,7 @@
 	</Recipe>
 	<Recipe timeRequired="150" power ="80000">
 		<input>
-			<itemStack>environmentaltech:pladium_crystal;2;0</itemStack>
+			<itemStack>environmentaltech:pladium_crystal;1;0</itemStack>
 			<itemStack>thaumadditions:mithrillium_ingot</itemStack>
 		</input>
 		<output>
@@ -134,11 +134,23 @@
 	</Recipe>
 	<Recipe timeRequired="150" power ="100000">
 		<input>
-			<itemStack>environmentaltech:ionite_crystal;2;0</itemStack>
+			<itemStack>environmentaltech:ionite_crystal;1;0</itemStack>
 			<itemStack>botania:manaresource;1;14</itemStack>
 		</input>
 		<output>
 			<itemStack>environmentaltech:aethium_crystal</itemStack>
+		</output>
+	</Recipe>
+		<Recipe timeRequired="60" power ="50000">
+		<input>
+			<itemStack>rftools:infused_diamond;1;0</itemStack>
+			<itemStack>threng:material;1;5</itemStack>
+			<itemStack>aetherworks:item_resource;1;1</itemStack>
+			<itemStack>contenttweaker:starmetal_cluster;1;0</itemStack>
+			<fluidStack>aetherworks.aetherium_gas;100</fluidStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:crystal_lattice</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

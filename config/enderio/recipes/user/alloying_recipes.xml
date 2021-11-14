@@ -115,7 +115,7 @@
 <recipe name="MBM: Ender Alloy - Enhanced" required="true">
   <alloying energy="10000" exp="0.5">
     <input name="enderutilities:enderpart" amount="2"/>
-    <input name="ingotEnergeticAlloy"/>
+    <input name="ingotEnergeticAlloy" amount="2"/>
     <input name="pearlEnderEye"/>
     <output name="enderutilities:enderpart:1" amount="2"/>
   </alloying>

@@ -74,6 +74,7 @@ recipes.addShaped(<modularmachinery:blockcasing> * 2, [[<advgenerators:iron_fram
 //Transposer.addFillRecipe(<modularmachinery:itemmodularium>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 10000);
 mods.inworldcrafting.FluidToItem.transform(<modularmachinery:itemmodularium>, <liquid:moltenembers>, [<thermalfoundation:material>,<thermalfoundation:material:1>], false);
 
+
 //Vent
 recipes.addShaped(<modularmachinery:blockcasing:1>, [[<thermalfoundation:material:358>, <enderio:block_dark_iron_bars>, <thermalfoundation:material:358>],[<enderio:block_dark_iron_bars>, <modularmachinery:blockcasing>, <enderio:block_dark_iron_bars>], [<thermalfoundation:material:358>, <enderio:block_dark_iron_bars>, <thermalfoundation:material:358>]]);
 
@@ -915,7 +916,7 @@ fluidblood.build();
 <thaumcraft:metal_void>.addTooltip(format.darkPurple("Shadow Condenser 2x output modifier"));
 <thaumadditions:mithrillium_block>.addTooltip(format.darkPurple("Shadow Condenser 3x output modifier"));
 <thaumadditions:adaminite_block>.addTooltip(format.darkPurple("Shadow Condenser 4x output modifier"));
-<thaumadditions:mithminite_block>.addTooltip(format.darkPurple("Shadow Condenser output 5x modifier"));
+<thaumadditions:mithminite_block>.addTooltip(format.darkPurple("Shadow Condenser 5x output modifier"));
 
 val MidnightIngot = mods.modularmachinery.RecipeBuilder.newBuilder("midnight-ingot", "darkness-collector", 2000, 0);
 //MidnightIngot.addItemInput(<techreborn:ingot:25>);
@@ -946,18 +947,18 @@ VoidSeed.build();
 
 <avaritia:block_resource:2>.addTooltip(format.aqua("Forge of the Heavens fluid modifier"));
 
-##CyrstaltineIngot
-val CyrstaltineIngot = mods.modularmachinery.RecipeBuilder.newBuilder("forge-cyrstaltineingot", "heavens-forge", 400, 0);
-CyrstaltineIngot.addMekanismLaserInput(50000000);
-CyrstaltineIngot.addItemInput(<extendedcrafting:material:24>);
-CyrstaltineIngot.addItemInput(<ore:CelestialCrystal>);
-CyrstaltineIngot.addItemInput(<avaritia:resource>*4);
-CyrstaltineIngot.addItemInput(<moreplates:stellar_alloy_plate>*8);
-CyrstaltineIngot.addItemInput(<actuallyadditions:item_crystal_empowered:2>*4);
-CyrstaltineIngot.addFluidInput(<liquid:astralsorcery.liquidstarlight>* 10000);
-CyrstaltineIngot.addFluidInput(<liquid:empoweredoil>* 10000);
-CyrstaltineIngot.addItemOutput(<avaritia:resource:1>);
-CyrstaltineIngot.build();
+##CyrstalMatrixIngot
+val CyrstalMatrixIngot = mods.modularmachinery.RecipeBuilder.newBuilder("forge-cyrstalmatrixingot", "heavens-forge", 400, 0);
+CyrstalMatrixIngot.addMekanismLaserInput(50000000);
+CyrstalMatrixIngot.addItemInput(<extendedcrafting:material:24>);
+CyrstalMatrixIngot.addItemInput(<ore:CelestialCrystal>);
+CyrstalMatrixIngot.addItemInput(<contenttweaker:crystal_lattice>*2);
+CyrstalMatrixIngot.addItemInput(<moreplates:stellar_alloy_plate>*8);
+CyrstalMatrixIngot.addItemInput(<actuallyadditions:item_crystal_empowered:2>*4);
+CyrstalMatrixIngot.addFluidInput(<liquid:astralsorcery.liquidstarlight>* 10000);
+CyrstalMatrixIngot.addFluidInput(<liquid:empoweredoil>* 10000);
+CyrstalMatrixIngot.addItemOutput(<avaritia:resource:1>);
+CyrstalMatrixIngot.build();
 
 ##PositiveDispositionMatrix
 val PositiveDispositionMatrix = mods.modularmachinery.RecipeBuilder.newBuilder("forge-positivedispositionmatrix", "heavens-forge", 400, 0);
