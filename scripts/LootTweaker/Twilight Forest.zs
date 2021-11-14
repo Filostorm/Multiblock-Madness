@@ -8,67 +8,121 @@ print("==================== loading TF Loot.zs ====================");
 ##########################################################################################
 
 
-/*
+
 # *======= Variables =======*
 
-	val cyclops_cave = LootTweaker.getTable("iceandfire:cyclops_cave");
-	val cyclops_cave_pool = cyclops_cave.getPool("cyclops_cave");
+	val useless = LootTweaker.getTable("twilightforest/structures:useless");
+	val useless_pool = useless.getPool("main");
 
-	val fire_dragon_female_cave = LootTweaker.getTable("iceandfire:fire_dragon_female_cave");
-	val fire_dragon_female_cave_pool = fire_dragon_female_cave.getPool("fire_dragon_cave");
-    
-    val fire_dragon_male_cave = LootTweaker.getTable("iceandfire:fire_dragon_male_cave");
-	val fire_dragon_male_cave_pool = fire_dragon_male_cave.getPool("fire_dragon_cave");
 	
-	val ice_dragon_female_cave = LootTweaker.getTable("iceandfire:ice_dragon_female_cave");
-	val ice_dragon_female_cave_pool = ice_dragon_female_cave.getPool("ice_dragon_cave");
-    
-    val ice_dragon_male_cave = LootTweaker.getTable("iceandfire:ice_dragon_male_cave");
-	val ice_dragon_male_cave_pool = ice_dragon_male_cave.getPool("ice_dragon_cave");
-	
-	val caveloot = [
-	<thermalfoundation:material:70>,
-	<extendedcrafting:material>,
-	<nuclearcraft:uranium:8>,
-	<nuclearcraft:neptunium>,
-	<nuclearcraft:plutonium>,
-	<nuclearcraft:californium:5>,
-	<nuclearcraft:californium:6>,
-	<nuclearcraft:californium:7>,
-	<nuclearcraft:californium:8>,
-	<actuallyadditions:block_crystal>,
-	<actuallyadditions:block_crystal:1>,
-	<actuallyadditions:block_crystal:2>,
-	<actuallyadditions:block_crystal:3>,
-	<actuallyadditions:block_crystal:4>,
-	<actuallyadditions:item_crystal_empowered>,
-	<actuallyadditions:item_crystal_empowered:1>,
-	<actuallyadditions:item_crystal_empowered:2>,
-	<actuallyadditions:item_crystal_empowered:3>,
-	<actuallyadditions:item_crystal_empowered:4>,
-	<actuallyadditions:item_crystal_empowered:5>,
-	<botania:manaring>,
-	<botania:auraring>,
-	<mysticalagriculture:prudentium_apple>,
-	<mysticalagriculture:intermedium_apple>,
-	<mysticalagriculture:superium_apple>,
-	<extendedcrafting:material:36>,
-	<rockhounding_chemistry:alloy_items_gems:2>,
-	<rockhounding_chemistry:alloy_items_tech:32>,
-	<extendedcrafting:material:33>,
-	<cyclicmagic:storage_bag>,
+	val common_table = [
+<quark:arrow_torch>,
+<appliedenergistics2:quartz_fixture>,
+<contenttweaker:vis_meal>,
+<cyclicmagic:peat_unbaked>,
+<cyclicmagic:apple>,
+<enderutilities:enderpart:51>,
+<twilightforest:charm_of_life_1>,
+<twilightforest:charm_of_keeping_1>,
+<fossil:tardrop>,
+<fossil:ancient_glass>,
+<deepmoblearning:living_matter_twilight>,
+<randomthings:ingredient:10>,
+<quark:redstone_inductor>,
+<mowziesmobs:dart>,
 	] as IItemStack[];
 	
-	for item in caveloot {
-	
-	cyclops_cave_pool.addItemEntry(item, 3);
-	fire_dragon_female_cave_pool.addItemEntry(item, 3);
-    fire_dragon_male_cave_pool.addItemEntry(item, 3);
-	ice_dragon_female_cave_pool.addItemEntry(item, 3);
-    ice_dragon_male_cave_pool.addItemEntry(item, 3);
-	
+	for item in common_table {
+	useless_pool.addItemEntry(item, 20);
 	}
-	*/
+
+	val uncommon_table = [
+<cyclicmagic:glowing_chorus>,
+<artisanworktables:artisans_hammer_diamond>,
+<artisanworktables:artisans_cutters_diamond>,
+<artisanworktables:artisans_handsaw_diamond>,
+<artisanworktables:artisans_pliers_diamond>,
+<artisanworktables:artisans_trowel_diamond>,
+<artisanworktables:artisans_file_diamond>,
+<quark:arrow_torch>,
+<treasure2:mirthas_torch>,
+<appliedenergistics2:quartz_fixture>,
+<contenttweaker:vis_meal>,
+<cyclicmagic:peat_unbaked>,
+<cyclicmagic:apple>,
+<ebwizardry:ring_lightning_melee>,
+<cyclicmagic:block_library>,
+<enderutilities:enderpart:51>,
+<embers:glimmer_shard>.withTag({light: 800}),
+<mystgears:vis_motor>,
+<twilightforest:charm_of_life_1>,
+<twilightforest:charm_of_keeping_1>,
+<enderio:block_death_pouch>,
+<fossil:tardrop>,
+<fossil:ancient_glass>,
+<enderio:block_solar_panel>,
+<enderio:block_travel_anchor>,
+<deepmoblearning:living_matter_twilight>,
+<randomthings:ingredient:10>,
+<quark:redstone_inductor>,
+<quark:golden_frog_leg>,
+<mowziesmobs:dart>,
+<mowziesmobs:blowgun>,
+	] as IItemStack[];
+	
+	for item in uncommon_table {
+	useless_pool.addItemEntry(item, 10);
+	}
+
+	val rare_table = [
+<immersiveengineering:toolbox>,
+<toolbelt:belt>,
+<cyclicmagic:glowing_chorus>,
+<artisanworktables:artisans_hammer_diamond>,
+<artisanworktables:artisans_cutters_diamond>,
+<artisanworktables:artisans_handsaw_diamond>,
+<artisanworktables:artisans_pliers_diamond>,
+<artisanworktables:artisans_trowel_diamond>,
+<artisanworktables:artisans_file_diamond>,
+<ebwizardry:charm_feeding>,
+<ebwizardry:charm_sixth_sense>,
+<ebwizardry:amulet_absorption>,
+<ebwizardry:amulet_transience>,
+<ebwizardry:amulet_recovery>,
+<ebwizardry:amulet_glide>,
+<ebwizardry:amulet_wither_immunity>,
+<ebwizardry:amulet_fire_protection>,
+<ebwizardry:amulet_potential>,
+<cyclicmagic:apple>,
+<ebwizardry:ring_lightning_melee>,
+<cyclicmagic:block_library>,
+<enderutilities:enderpart:51>,
+<jaopca:block_growthcatalystquartz>,
+<jaopca:block_growthcatalystcopper>,
+<jaopca:block_growthcatalystgold>,
+<jaopca:block_growthcatalystiron>,
+<jaopca:block_growthcatalystlead>,
+<jaopca:block_growthcatalystnickel>,
+<jaopca:block_growthcatalystsilver>,
+<jaopca:block_growthcatalysttin>,
+<jaopca:block_growthcatalystlapis>,
+<enderio:item_travel_staff>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 0}}),
+<embers:glimmer_lamp>.withTag({light: 1200}),
+<mystgears:vis_motor>,
+<enderio:block_death_pouch>,
+<enderio:block_solar_panel>,
+<enderio:block_travel_anchor>,
+<iceandfire:jar_pixie:4>,
+<iceandfire:jar_pixie:3>,
+<iceandfire:jar_pixie:2>,
+<iceandfire:jar_pixie:1>,
+<iceandfire:jar_pixie>,
+	] as IItemStack[];
+	
+	for item in rare_table {
+	useless_pool.addItemEntry(item, 1);
+	}
+	
 		
 ##########################################################################################
 print("==================== end of TF Loot.zs ====================");

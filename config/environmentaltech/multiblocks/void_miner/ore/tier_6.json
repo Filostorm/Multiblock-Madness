@@ -419,6 +419,11 @@
   "target": "purple",
   "weight": 100,
   "id": "OD:oreAmethest"
+},
+{
+  "target": "cyan",
+  "weight": 100,
+  "id": "OD:oreDimensionalShard"
 }
   ]
 }

@@ -27,6 +27,11 @@ VanillaFactory.createItem("terrestrial_crystal").register();
 VanillaFactory.createItem("dun_crystal").register();
 VanillaFactory.createItem("falling_tower").register();
 
+VanillaFactory.createItem("crystal_lattice").register();
+VanillaFactory.createItem("starmetal_cluster").register();
+
+VanillaFactory.createItem("ring_frostbite").register();
+
 /*
 VanillaFactory.createItem("adventure_token_tier1").register();
 VanillaFactory.createItem("exploring_token_tier1").register();

@@ -96,10 +96,13 @@ val recipestoRemove =
 <scannable:scanner>,
 <scannable:module_blank>,
 <cookingforblockheads:sink>,
+<quark:reed_block>,
+<quark:sugar_block>,
 <thaumadditions:iron_framed_greatwood>,
 <openblocks:tank>,
 <fluxnetworks:fluxcontroller>,
 <powersuits:powerarmorcomponent:4>,
+<additionalcompression:rodblaze_compressed:1>,
 <iceandfire:blindfold>,
 <actuallyadditions:item_helm_obsidian>,
 <actuallyadditions:item_chest_obsidian>,
@@ -139,6 +142,8 @@ val recipestoRemove =
 <thermalfoundation:material:513>,
 <thermalfoundation:material:514>,
 <thermalfoundation:material:515>,
+<iceandfire:chain>,
+<iceandfire:chain_link>,
 ]
  as IItemStack[];
 
@@ -195,6 +200,7 @@ val itemstoRemove =
 <tinker_io:fuel_input_machine>,
 <tinker_io:ore_crusher>,
 <tinker_io:solidfuel>,
+<additionalcompression:rodblaze_compressed>,
 <natura:overworld_seed_bags:1>,
 <natura:overworld_seed_bags>,
 <natura:seed_bags:2>,
@@ -231,6 +237,8 @@ val itemstoRemove =
 <mysticalworld:copper_sword>,
 <immersiveposts:metal_rods>,
 <immersiveposts:metal_rods:5>,
+<additionalcompression:dirt_compressed>,
+<additionalcompression:dirt_compressed:1>,
 <mystgears:gear_wood>,
 <appliedenergistics2:material:46>,
 <enderio:item_material:28>,
@@ -261,6 +269,19 @@ mods.jei.JEI.addItem(<conarm:armorforge>.withTag({textureBlock: {id: "tconstruct
 
 //Simple Void World
 recipes.addShaped(<simplevoidworld:portal>, [[<minecraft:obsidian>, <aetherworks:item_resource:2>, <minecraft:obsidian>],[<aetherworks:item_resource:2>, <actuallyadditions:block_crystal:2>, <aetherworks:item_resource:2>], [<minecraft:obsidian>, <aetherworks:item_resource:2>, <minecraft:obsidian>]]);
+
+//Chainz
+recipes.addShaped(<quark:chain>, [[null, null, <iceandfire:chain_link>],[null, <iceandfire:chain_link>, null], [<iceandfire:chain_link>, null, null]]);
+recipes.addShaped(<iceandfire:chain>, [[null, <quark:chain>, <quark:chain>],[null, <quark:chain>, null], [<quark:chain>, <quark:chain>, null]]);
+
+recipes.removeShaped(<minecraft:chainmail_chestplate>, [[<iceandfire:chain_link>, null, <iceandfire:chain_link>],[<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>], [<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>]]);
+recipes.removeShaped(<minecraft:chainmail_boots>, [[<iceandfire:chain_link>, null, <iceandfire:chain_link>],[<iceandfire:chain_link>, null, <iceandfire:chain_link>], [null, null, null]]);
+recipes.removeShaped(<minecraft:chainmail_helmet>, [[<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>],[<iceandfire:chain_link>, null, <iceandfire:chain_link>], [null, null, null]]);
+recipes.removeShaped(<minecraft:chainmail_leggings>, [[<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>],[<iceandfire:chain_link>, null, <iceandfire:chain_link>], [<iceandfire:chain_link>, null, <iceandfire:chain_link>]]);
+
+
+//Ember Key
+mods.inworldcrafting.FluidToItem.transform(<treasure2:ember_key>, <liquid:moltenembers>, [<arcanearchives:radiant_key>], true);
 
 
 //mods.jei.JEI.addItem(<rockhounding_chemistry:machines_e:1>);
@@ -409,6 +430,12 @@ recipes.addShaped(<immersiveengineering:stone_decoration:2>, [[<thermalfoundatio
 recipes.addShapedMirrored(<compactmachines3:fieldprojector>, [[<deepmoblearning:soot_covered_plate>, <deepmoblearning:soot_covered_plate>, <deepmoblearning:soot_covered_plate>],[<enderio:item_material:62>, <randomthings:advancedredstonetorch_on>, <deepmoblearning:soot_covered_plate>], [<embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>]]);
 //recipes.addShapedMirrored(<compactmachines3:fieldprojector>, [[<randomthings:ingredient:7>, <randomthings:ingredient:7>, <randomthings:ingredient:7>],[<randomthings:ingredient:7>, <randomthings:advancedredstonetorch_on>, <tconstruct:pan_head>.withTag({Material: "copper"})], [<embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>]]);
 
+//Fix blaze blocks
+recipes.addShapeless(<botania:blazeblock> * 9, [<additionalcompression:rodblaze_compressed:1>]);
+recipes.addShaped(<additionalcompression:rodblaze_compressed:1>, [[<botania:blazeblock>, <botania:blazeblock>, <botania:blazeblock>],[<botania:blazeblock>, <botania:blazeblock>, <botania:blazeblock>], [<botania:blazeblock>, <botania:blazeblock>, <botania:blazeblock>]]);
+recipes.addShapeless(<additionalcompression:rodblaze_compressed:1> * 9, [<additionalcompression:rodblaze_compressed:2>]);
+
+
 recipes.addShapeless(<minecraft:paper> * 3, [<questbook:itemquestbook>]);
 
 //recipes.remove(<thermalexpansion:reservoir>);
@@ -501,23 +528,10 @@ recipes.addShaped(<mysticalworld:wet_mud_block>, [[<ore:dirt>, <ore:dirt>, <ore:
 <contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Flugel Tiara (Eye of the Flugel for infinite time)"));
 <contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Nanobot Beacon (Limited Area)"));
 
-// Food Items
-mods.nuclearcraft.Infuser.addRecipe(<minecraft:egg>, <liquid:milk> * 1000, <actuallyadditions:item_food>, 0.5);
-mods.thermalexpansion.Transposer.addFillRecipe(<actuallyadditions:item_food>, <minecraft:egg>, <liquid:milk> * 1000, 2000);
-
-mods.nuclearcraft.Infuser.addRecipe(<minecraft:dye:3> * 6, <liquid:milk> * 1000, <actuallyadditions:item_food:9> * 3, 0.5);
-mods.thermalexpansion.Transposer.addFillRecipe(<actuallyadditions:item_food:9> * 3, <minecraft:dye:3> * 6, <liquid:milk> * 1000, 2000);
-
-mods.nuclearcraft.IngotFormer.addRecipe(<liquid:milk> * 1500, <xlfoodmod:cheese>, 0.5);
-
-mods.nuclearcraft.Infuser.addRecipe(<mekanism:salt>, <liquid:milk> * 5000, <xlfoodmod:butter> * 2, 0.5);
-mods.thermalexpansion.Transposer.addFillRecipe(<xlfoodmod:butter> * 2, <mekanism:salt>, <liquid:milk> * 5000, 2000);
-
-mods.nuclearcraft.Infuser.addRecipe(<xlfoodmod:cooked_dough>, <liquid:milk> * 1000, <xlfoodmod:waffle>, 0.5);
-mods.thermalexpansion.Transposer.addFillRecipe(<xlfoodmod:waffle>, <xlfoodmod:cooked_dough>, <liquid:milk> * 1000, 2000);
-
-mods.nuclearcraft.Infuser.addRecipe(<minecraft:wheat>, <liquid:water> * 250, <xlfoodmod:dough> * 2, 0.5);
-mods.thermalexpansion.Transposer.addFillRecipe(<xlfoodmod:dough> * 2, <minecraft:wheat>, <liquid:water> * 1000, 2000);
+//Fix Dirt
+recipes.removeShapeless(<minecraft:dirt> * 9, [<additionalcompression:dirt_compressed>]);
+recipes.removeShaped(<additionalcompression:dirt_compressed:2>, [[<ore:compressedDirt2x>, <ore:compressedDirt2x>, <ore:compressedDirt2x>],[<ore:compressedDirt2x>, <ore:compressedDirt2x>, <ore:compressedDirt2x>], [<ore:compressedDirt2x>, <ore:compressedDirt2x>, <ore:compressedDirt2x>]]);
+recipes.addShaped(<additionalcompression:dirt_compressed:2>, [[<ore:compressedDirt2>, <ore:compressedDirt2>, <ore:compressedDirt2>],[<ore:compressedDirt2>, <ore:compressedDirt2>, <ore:compressedDirt2>], [<ore:compressedDirt2>, <ore:compressedDirt2>, <ore:compressedDirt2>]]);
 
 ##########################################################################################
 print("==================== end of mods add-recipes-temp.zs ====================");
