@@ -17,7 +17,7 @@ val itemstoRemove =
 <advancedrocketry:seat>,
 <advancedrocketry:productrod:1>,
 <advancedrocketry:launchpad>,
-<advancedrocketry:vacuumlaser>
+<advancedrocketry:vacuumlaser>,
 ]
  as IItemStack[];
 

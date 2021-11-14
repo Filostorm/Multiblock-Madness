@@ -550,6 +550,5 @@ mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({M
 mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
 mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "osmium"}), <mekanism:ingot:1>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
 
-
 ##########################################################################################
 print("==================== end of mods tinkersconstruct.zs ====================");

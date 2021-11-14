@@ -748,6 +748,11 @@ mods.immersiveengineering.Crusher.addRecipe(<mysticalworld:amethyst_gem> * 2, <m
 mods.thermalexpansion.Pulverizer.addRecipe(<mysticalworld:amethyst_gem> * 2, <mysticalworld:amethyst_ore>, 2500);
 mods.mekanism.enrichment.addRecipe(<mysticalworld:amethyst_ore>, <mysticalworld:amethyst_gem> * 2);
 
+// --==Pressuriser-Enrichment Chamber Compat==-- //
+mods.mekanism.enrichment.addRecipe(<nuclearcraft:gem_dust:1>, <nuclearcraft:gem>);
+mods.mekanism.enrichment.addRecipe(<nuclearcraft:gem_dust:4>, <nuclearcraft:gem:1>);
+mods.mekanism.enrichment.addRecipe(<nuclearcraft:gem_dust:8>, <nuclearcraft:gem:3>);
+
 // --==Silicon Unification==-- //
 
 // Unifying all silicon variants
