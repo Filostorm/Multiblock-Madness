@@ -1108,6 +1108,15 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="20000">
 		<input>
+			<oreDict>blockBlackIron</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>extendedcrafting:material;5;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="20000">
+		<input>
 			<itemStack>techreborn:plates;9;36</itemStack>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>

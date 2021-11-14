@@ -141,6 +141,7 @@ val recipestoRemove =
 <thermalfoundation:material:515>,
 <iceandfire:chain>,
 <iceandfire:chain_link>,
+<extendedcrafting:material:2>
 ]
  as IItemStack[];
 
