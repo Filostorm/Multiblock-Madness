@@ -176,7 +176,10 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fire_water>, 1200000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocket_fuel>, 1500000);
 
 // AR Rocket Fuel
-mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocketfuel>, 500000);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocketfuel>, 20000000);
+
+// Other Fuels
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fluidnitrodiesel>, 10000000);
 
 // Reactant Dynamo //
 
