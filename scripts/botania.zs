@@ -20,6 +20,7 @@ import mods.thaumcraft.Infusion;
 import mods.thermalexpansion.Insolator;
 import mods.thermalexpansion.Pulverizer;
 import mods.thermalexpansion.Transposer;
+import crafttweaker.item.IIngredient;
 
 print("==================== loading mods botania.zs ====================");
 ##########################################################################################
@@ -313,14 +314,17 @@ Infusion.registerRecipe("thirdeye", "",
 <botania:pistonrelay>,<bloodmagic:component:26>, <botania:manaresource:2>, <botania:rune:5>]);
 
 //elementium
-Melter.addRecipe(<botania:manaresource:7>, <liquid:elementium>);
+Melter.addRecipe(<botania:manaresource:7>, <liquid:elementium>*144);
+
+
+val charms as IIngredient = (<twilightforest:charm_of_keeping_1>|<twilightforest:charm_of_life_1>) as IIngredient;
 
 //alchemycatalyst
 ArcaneWorkbench.registerShapedRecipe("alchemycatalyst", "", 100,
     [<aspect:perditio>*8,<aspect:ordo>*8],
     <botania:alchemycatalyst>, [
     [<botania:livingrock>, <twilightforest:naga_scale>, <botania:livingrock>],
-    [<twilightforest:charm_of_keeping_1>, <twilightforest:magic_map_focus>, <twilightforest:transformation_powder>], 
+    [charms, <twilightforest:magic_map_focus>, <twilightforest:transformation_powder>], 
     [<botania:livingrock>, <twilightforest:naga_scale>, <botania:livingrock>]
 ]);
 
