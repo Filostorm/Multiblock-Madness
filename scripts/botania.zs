@@ -317,14 +317,15 @@ Infusion.registerRecipe("thirdeye", "",
 Melter.addRecipe(<botania:manaresource:7>, <liquid:elementium>*144);
 
 
-val charms as IIngredient = (<twilightforest:charm_of_keeping_1>|<twilightforest:charm_of_life_1>) as IIngredient;
+<ore:anyCharm>.add(<twilightforest:charm_of_keeping_1>);
+<ore:anyCharm>.add(<twilightforest:charm_of_life_1>);
 
 //alchemycatalyst
 ArcaneWorkbench.registerShapedRecipe("alchemycatalyst", "", 100,
     [<aspect:perditio>*8,<aspect:ordo>*8],
     <botania:alchemycatalyst>, [
     [<botania:livingrock>, <twilightforest:naga_scale>, <botania:livingrock>],
-    [charms, <twilightforest:magic_map_focus>, <twilightforest:transformation_powder>], 
+    [<ore:anyCharm>, <twilightforest:magic_map_focus>, <twilightforest:transformation_powder>], 
     [<botania:livingrock>, <twilightforest:naga_scale>, <botania:livingrock>]
 ]);
 

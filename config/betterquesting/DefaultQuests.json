@@ -2186,7 +2186,8 @@
     "17:10": {
       "questID:3": 17,
       "preRequisites:11": [
-        579
+        579,
+        106
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9472,9 +9473,7 @@
     },
     "106:10": {
       "questID:3": 106,
-      "preRequisites:11": [
-        17
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -64950,8 +64949,8 @@
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": -12,
+          "x:3": -36,
+          "y:3": -84,
           "id:3": 106,
           "sizeY:3": 24
         },
