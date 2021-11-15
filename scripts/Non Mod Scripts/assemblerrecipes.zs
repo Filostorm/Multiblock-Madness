@@ -1327,6 +1327,14 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_thaumium_sc
 	.addItemInput(<jaopca:item_stickthaumium>*3)
 	.build();
 
+// Ironwood Scaffolding
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_ironwood_scaffolding", "assemblermkone", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<contenttweaker:ironwood_scaffolding>*9)
+	.addItemInput(<twilightforest:ironwood_ingot>*3)
+	.addItemInput(<contenttweaker:rod_ironwood>*3)
+	.build();
+
 // Food //
 
 // Deadly Energy Drink
@@ -1519,7 +1527,6 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_tasty_clay"
 	.addItemInput(<minecraft:clay_ball>)
     .addFluidInput(<liquid:milk> * 1000)
 	.build();
-
 
 // Miscellaneous Items //
 

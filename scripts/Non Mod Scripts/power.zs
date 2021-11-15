@@ -164,7 +164,11 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refined_oil>, 1200000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refined_fuel>, 2000000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:tree_oil>, 1200000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:seed_oil>, 1000000);
-mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refined_biofuel>, 10000000);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refined_biofuel>, 2500000);
+
+// Grassoline Rebalance
+mods.thermalexpansion.Refinery.removeRecipe(<liquid:biocrude>);
+mods.thermalexpansion.Refinery.addRecipe(<liquid:refined_biofuel> * 400, null, <liquid:biocrude> * 200, 5000);
 
 // EnderIO Fuels
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:hootch>, 600000);
@@ -172,7 +176,10 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fire_water>, 1200000);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocket_fuel>, 1500000);
 
 // AR Rocket Fuel
-mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocketfuel>, 500000);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocketfuel>, 20000000);
+
+// Other Fuels
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fluidnitrodiesel>, 10000000);
 
 // Reactant Dynamo //
 

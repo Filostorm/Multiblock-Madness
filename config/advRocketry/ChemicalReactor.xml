@@ -31,7 +31,7 @@
 	
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
-<Recipes useDefault="true">
+<Recipes useDefault="false">
 	<Recipe timeRequired="2" power ="10000">
 		<input>
 			<itemStack>advancedrocketry:carbonscrubbercartridge;1;32766</itemStack>
@@ -39,15 +39,6 @@
 		<output>
 			<itemStack>advancedrocketry:carbonscrubbercartridge</itemStack>
 			<itemStack>minecraft:coal;1;1</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="10" power ="10000">
-		<input>
-			<fluidStack>oxygen;100</fluidStack>
-			<fluidStack>hydrogen;100</fluidStack>
-		</input>
-		<output>
-			<fluidStack>rocketfuel;200</fluidStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="2" power ="10000">
@@ -1540,6 +1531,195 @@
 		</input>
 		<output>
 			<fluidStack>hecf_251_fluoride;144</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>refined_fuel;500</fluidStack>
+			<fluidStack>empoweredoil;133</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>refined_fuel;500</fluidStack>
+			<fluidStack>refined_biofuel;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>refined_fuel;500</fluidStack>
+			<fluidStack>refined_biofuel;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>refined_fuel;500</fluidStack>
+			<fluidStack>liquidethene;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>refined_fuel;500</fluidStack>
+			<fluidStack>ethene;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>ender_distillation;50</fluidStack>
+			<fluidStack>empoweredoil;133</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>ender_distillation;50</fluidStack>
+			<fluidStack>refined_biofuel;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>ender_distillation;50</fluidStack>
+			<fluidStack>refined_biofuel;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>ender_distillation;50</fluidStack>
+			<fluidStack>liquidethene;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>ender_distillation;50</fluidStack>
+			<fluidStack>ethene;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>vapor_of_levity;25</fluidStack>
+			<fluidStack>empoweredoil;133</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>vapor_of_levity;25</fluidStack>
+			<fluidStack>refined_biofuel;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>vapor_of_levity;25</fluidStack>
+			<fluidStack>refined_biofuel;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>vapor_of_levity;25</fluidStack>
+			<fluidStack>liquidethene;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="10000">
+		<input>
+			<fluidStack>vapor_of_levity;25</fluidStack>
+			<fluidStack>ethene;400</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidnitrodiesel;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="20000">
+		<input>
+			<fluidStack>fluidnitrodiesel;100</fluidStack>
+			<fluidStack>tbu_fluoride_flibe;72</fluidStack>
+		</input>
+		<output>
+			<fluidStack>rocketfuel;200</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="20000">
+		<input>
+			<fluidStack>fluidnitrodiesel;100</fluidStack>
+			<fluidStack>leu_233_fluoride_flibe;36</fluidStack>
+		</input>
+		<output>
+			<fluidStack>rocketfuel;200</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="20000">
+		<input>
+			<fluidStack>fluidnitrodiesel;100</fluidStack>
+			<fluidStack>len_236_fluoride_flibe;36</fluidStack>
+		</input>
+		<output>
+			<fluidStack>rocketfuel;200</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="20000">
+		<input>
+			<fluidStack>fluidnitrodiesel;100</fluidStack>
+			<fluidStack>lep_239_fluoride_flibe;36</fluidStack>
+		</input>
+		<output>
+			<fluidStack>rocketfuel;200</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="20000">
+		<input>
+			<fluidStack>fluidnitrodiesel;100</fluidStack>
+			<fluidStack>lep_241_fluoride_flibe;36</fluidStack>
+		</input>
+		<output>
+			<fluidStack>rocketfuel;200</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="10" power ="20000">
+		<input>
+			<fluidStack>fluidnitrodiesel;100</fluidStack>
+			<fluidStack>lea_242_fluoride_flibe;18</fluidStack>
+		</input>
+		<output>
+			<fluidStack>rocketfuel;200</fluidStack>
 		</output>
 	</Recipe>
 </Recipes>

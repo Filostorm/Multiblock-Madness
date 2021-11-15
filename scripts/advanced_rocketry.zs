@@ -47,6 +47,5 @@ recipes.addShaped(<advancedrocketry:ic:4>, [[<moreplates:end_steel_plate>, <rock
 // Laser Emitter
 recipes.addShaped(<advancedrocketry:vacuumlaser>, [[null, <minecraft:glass>, null],[<thermalfoundation:material:324>, <actuallyadditions:block_crystal_empowered>, <thermalfoundation:material:324>], [<thermalfoundation:material:324>, <libvulpes:structuremachine>, <thermalfoundation:material:324>]]);
 
-
 ##########################################################################################
 print("==================== end of mods advancedrocketry-ssp.zs ====================");

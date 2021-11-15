@@ -753,7 +753,6 @@ mods.mekanism.enrichment.addRecipe(<nuclearcraft:gem_dust:1>, <nuclearcraft:gem>
 mods.mekanism.enrichment.addRecipe(<nuclearcraft:gem_dust:4>, <nuclearcraft:gem:1>);
 mods.mekanism.enrichment.addRecipe(<nuclearcraft:gem_dust:8>, <nuclearcraft:gem:3>);
 
-
 // --==Silicon Unification==-- //
 
 // Unifying all silicon variants
