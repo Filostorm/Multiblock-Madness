@@ -175,21 +175,6 @@
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
   },
   {
-    "name": "appliedenergistics2:charged_quartz_ore",
-    "meta": 0,
-    "length": 1,
-    "name0": "appliedenergistics2:material",
-    "meta0": 1,
-    "0chance0": 150.1,
-    "1chance0": 201.3,
-    "2chance0": 262.425,
-    "3chance0": 326.85,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 8\n}"
-  },
-  {
     "name": "aetherworks:aether_ore",
     "meta": 0,
     "length": 1,
@@ -203,21 +188,6 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
-  },
-  {
-    "name": "appliedenergistics2:quartz_ore",
-    "meta": 0,
-    "length": 1,
-    "name0": "appliedenergistics2:material",
-    "meta0": 0,
-    "0chance0": 150.425,
-    "1chance0": 200.85,
-    "2chance0": 267.025,
-    "3chance0": 332.05,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 8\n}"
   },
   {
     "name": "advancedrocketry:alienleaves",
@@ -433,5 +403,35 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
+  },
+  {
+    "name": "appliedenergistics2:quartz_ore",
+    "meta": 0,
+    "length": 1,
+    "name0": "appliedenergistics2:material",
+    "meta0": 0,
+    "0chance0": 150.22499,
+    "1chance0": 203.09999,
+    "2chance0": 261.5,
+    "3chance0": 329.375,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 8\n}"
+  },
+  {
+    "name": "appliedenergistics2:charged_quartz_ore",
+    "meta": 0,
+    "length": 1,
+    "name0": "appliedenergistics2:material",
+    "meta0": 1,
+    "0chance0": 149.22499,
+    "1chance0": 200.92499,
+    "2chance0": 256.625,
+    "3chance0": 330.27502,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 8\n}"
   }
 ]

@@ -11,7 +11,7 @@ print("==================== loading TF Loot.zs ====================");
 
 # *======= Variables =======*
 
-	val useless = LootTweaker.getTable("twilightforest/structures:useless");
+	val useless = LootTweaker.getTable("twilightforest:structures/useless");
 	val useless_pool = useless.getPool("main");
 
 	
@@ -37,13 +37,15 @@ print("==================== loading TF Loot.zs ====================");
 	}
 
 	val uncommon_table = [
-<cyclicmagic:glowing_chorus>,
+<immersiveengineering:toolbox>,
+<toolbelt:belt>,
 <artisanworktables:artisans_hammer_diamond>,
 <artisanworktables:artisans_cutters_diamond>,
 <artisanworktables:artisans_handsaw_diamond>,
 <artisanworktables:artisans_pliers_diamond>,
 <artisanworktables:artisans_trowel_diamond>,
 <artisanworktables:artisans_file_diamond>,
+<cyclicmagic:glowing_chorus>,
 <quark:arrow_torch>,
 <treasure2:mirthas_torch>,
 <appliedenergistics2:quartz_fixture>,
@@ -75,15 +77,6 @@ print("==================== loading TF Loot.zs ====================");
 	}
 
 	val rare_table = [
-<immersiveengineering:toolbox>,
-<toolbelt:belt>,
-<cyclicmagic:glowing_chorus>,
-<artisanworktables:artisans_hammer_diamond>,
-<artisanworktables:artisans_cutters_diamond>,
-<artisanworktables:artisans_handsaw_diamond>,
-<artisanworktables:artisans_pliers_diamond>,
-<artisanworktables:artisans_trowel_diamond>,
-<artisanworktables:artisans_file_diamond>,
 <ebwizardry:charm_feeding>,
 <ebwizardry:charm_sixth_sense>,
 <ebwizardry:amulet_absorption>,

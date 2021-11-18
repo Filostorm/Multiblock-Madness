@@ -87,7 +87,7 @@ ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_chestplate>], [<botania:el
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_leggings>], [<botania:elementiumlegs>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*7]);
 ElvenTrade.addRecipe([<deepmoblearning:glitch_infused_boots>], [<botania:elementiumboots>,<enderio:item_material:18>,<deepmoblearning:glitch_infused_ingot>*4]);
 */
-BloodAltar.addRecipe(<contenttweaker:blood_crystal>, <contenttweaker:pristine_dust>, 2, 5000, 50, 40);
+BloodAltar.addRecipe(<contenttweaker:blood_crystal>, <contenttweaker:pristine_dust>, 2, 10000, 25, 20);
 
 Altar.addAttunementAltarRecipe("mm:shaped/internal/altar/glitchsword",<deepmoblearning:glitch_infused_sword>, 1500, 300, [
 	null, null, <deepmoblearning:glitch_infused_ingot>,

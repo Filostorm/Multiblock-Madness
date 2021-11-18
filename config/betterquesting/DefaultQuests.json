@@ -9473,7 +9473,9 @@
     },
     "106:10": {
       "questID:3": 106,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        580
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -9494,9 +9496,9 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Mass Manufacturer",
-          "desc:8": "Highest tier of Assembling Machine, used to craft multiple items at once,"
+          "ismain:1": 1,
+          "name:8": "Elite Assembling Machine",
+          "desc:8": "The second highest tier of Assembling Machine."
         }
       },
       "tasks:9": {
@@ -9515,15 +9517,15 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "modularmachinery:blockcasing",
-              "Count:3": 9,
-              "Damage:2": 4,
+              "id:8": "techreborn:machine_casing",
+              "Count:3": 10,
+              "Damage:2": 2,
               "OreDict:8": ""
             },
             "2:10": {
               "id:8": "modularmachinery:blockinputbus",
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 3,
               "OreDict:8": "itemInputHatch"
             },
             "3:10": {
@@ -9540,69 +9542,63 @@
             },
             "5:10": {
               "id:8": "modularmachinery:blockfluidinputhatch",
-              "Count:3": 1,
-              "Damage:2": 6,
+              "Count:3": 2,
+              "Damage:2": 3,
               "OreDict:8": "fluidInputHatch"
             },
             "6:10": {
               "id:8": "mekanism:plasticfence",
-              "Count:3": 7,
+              "Count:3": 21,
               "Damage:2": 15,
               "OreDict:8": ""
             },
             "7:10": {
-              "id:8": "minecraft:stone_slab",
-              "Count:3": 2,
+              "id:8": "mekanism:plasticblock",
+              "Count:3": 8,
               "Damage:2": 7,
               "OreDict:8": ""
             },
             "8:10": {
-              "id:8": "techreborn:fusion_coil",
-              "Count:3": 11,
+              "id:8": "environmentaltech:structure_frame_6",
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "9:10": {
-              "id:8": "modularmachinery:blockcasing",
-              "Count:3": 4,
-              "Damage:2": 5,
+              "id:8": "jaopca:block_scaffoldingstainlesssteel",
+              "Count:3": 8,
+              "Damage:2": 0,
               "OreDict:8": ""
             },
             "10:10": {
-              "id:8": "techreborn:machine_frame",
-              "Count:3": 8,
-              "Damage:2": 2,
-              "OreDict:8": ""
-            },
-            "11:10": {
-              "id:8": "libvulpes:coil0",
-              "Count:3": 7,
-              "Damage:2": 10,
-              "OreDict:8": ""
-            },
-            "12:10": {
-              "id:8": "qmd:discharge_lamp",
+              "id:8": "jaopca:block_sheetmetalstainlesssteel",
               "Count:3": 2,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "13:10": {
-              "id:8": "avaritia:block_resource",
+            "11:10": {
+              "id:8": "qmd:discharge_lamp",
               "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "12:10": {
+              "id:8": "extendedcrafting:storage",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "13:10": {
+              "id:8": "immersiveengineering:metal_decoration0",
+              "Count:3": 7,
               "Damage:2": 2,
               "OreDict:8": ""
             },
             "14:10": {
-              "id:8": "techreborn:machine_frame",
-              "Count:3": 7,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "15:10": {
               "id:8": "modularmachinery:itemblueprint",
               "Count:3": 1,
               "tag:10": {
-                "dynamicmachine:8": "modularmachinery:assemblermkfour"
+                "dynamicmachine:8": "modularmachinery:assemblermkthree"
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -9611,7 +9607,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "techreborn:ingot",
+              "Count:3": 16,
+              "Damage:2": 14,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "107:10": {
       "questID:3": 107,
@@ -10937,8 +10946,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "The Basic Terminal",
-          "desc:8": "The Basic Terminal is used to access all of your stored items. Hook it up with a cable to your network."
+          "name:8": "The Crafting Terminal",
+          "desc:8": "The Crafting Terminal is used to access all of your stored items, and can be used as a crafting grid. Hook it up with a cable to your network."
         }
       },
       "tasks:9": {
@@ -10953,7 +10962,7 @@
             "0:10": {
               "id:8": "appliedenergistics2:part",
               "Count:3": 1,
-              "Damage:2": 380,
+              "Damage:2": 360,
               "OreDict:8": ""
             }
           },
@@ -10977,9 +10986,7 @@
     },
     "126:10": {
       "questID:3": 126,
-      "preRequisites:11": [
-        125
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -11001,7 +11008,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Crafting Terminal",
+          "name:8": "-REMOVED-",
           "desc:8": "Craft items from your storage with the built in 3x3 crafting table."
         }
       },
@@ -11012,7 +11019,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
+          "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "appliedenergistics2:part",
@@ -11129,7 +11136,7 @@
     "129:10": {
       "questID:3": 129,
       "preRequisites:11": [
-        125
+        132
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11255,9 +11262,7 @@
     },
     "131:10": {
       "questID:3": 131,
-      "preRequisites:11": [
-        88
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -11307,7 +11312,7 @@
     "132:10": {
       "questID:3": 132,
       "preRequisites:11": [
-        129
+        125
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -43640,7 +43645,9 @@
     },
     "528:10": {
       "questID:3": 528,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        284
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -43648,12 +43655,12 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
+          "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "thermalfoundation:material",
+            "id:8": "aetherworks:item_resource",
             "Count:3": 1,
-            "Damage:2": 160,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -43662,8 +43669,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "-REMOVED-",
-          "desc:8": ""
+          "name:8": "Blue Juice",
+          "desc:8": "Assemble these parts as shown when looking at the Prism recipe. \n\nDuring the night, you will start to accumulate Impure Aetherium in the fluid tank, which can then be refined."
         }
       },
       "tasks:9": {
@@ -43673,12 +43680,52 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "thermalfoundation:material",
+              "id:8": "aetherworks:prism",
               "Count:3": 1,
-              "Damage:2": 160,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "aetherworks:aether_prism_controller_matrix",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "aetherworks:moonlight_amplifier",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "aetherworks:prism_support",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "embers:block_tank",
+              "Count:3": 1,
+              "tag:10": {
+                "FluidName:8": "aetherworks.impure_aetherium_gas",
+                "Amount:3": 690
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "embers:archaic_edge",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "embers:archaic_bricks",
+              "Count:3": 12,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -43691,9 +43738,16 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "thermalfoundation:material",
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "forge:bucketfilled",
               "Count:3": 1,
-              "Damage:2": 160,
+              "tag:10": {
+                "FluidName:8": "electrum",
+                "Amount:3": 1000
+              },
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -64950,14 +65004,14 @@
         "3:10": {
           "sizeX:3": 24,
           "x:3": -36,
-          "y:3": -84,
+          "y:3": -12,
           "id:3": 106,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
           "x:3": -36,
-          "y:3": -12,
+          "y:3": -84,
           "id:3": 382,
           "sizeY:3": 24
         },
@@ -64971,7 +65025,7 @@
         "6:10": {
           "sizeX:3": 24,
           "x:3": -144,
-          "y:3": -12,
+          "y:3": -48,
           "id:3": 543,
           "sizeY:3": 24
         },
@@ -64984,36 +65038,36 @@
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -180,
-          "y:3": -12,
+          "x:3": -144,
+          "y:3": -84,
           "id:3": 545,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
           "x:3": -144,
-          "y:3": 24,
+          "y:3": -12,
           "id:3": 571,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
           "x:3": -144,
-          "y:3": 60,
+          "y:3": 24,
           "id:3": 573,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
           "x:3": -144,
-          "y:3": 96,
+          "y:3": 60,
           "id:3": 574,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
           "x:3": -144,
-          "y:3": 132,
+          "y:3": 96,
           "id:3": 575,
           "sizeY:3": 24
         },
@@ -65033,8 +65087,8 @@
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": -144,
-          "y:3": -48,
+          "x:3": -108,
+          "y:3": -84,
           "id:3": 588,
           "sizeY:3": 24
         },
@@ -65103,15 +65157,15 @@
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": -108,
+          "x:3": -72,
           "y:3": -84,
           "id:3": 794,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": -144,
-          "y:3": -84,
+          "x:3": -72,
+          "y:3": -120,
           "id:3": 795,
           "sizeY:3": 24
         }
@@ -66051,161 +66105,154 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 198,
-          "y:3": -60,
-          "id:3": 126,
-          "sizeY:3": 24
-        },
-        "13:10": {
-          "sizeX:3": 24,
-          "x:3": 162,
+          "x:3": 192,
           "y:3": -60,
           "id:3": 127,
           "sizeY:3": 24
         },
-        "14:10": {
+        "13:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": -96,
+          "x:3": 252,
+          "y:3": -132,
           "id:3": 129,
           "sizeY:3": 24
         },
-        "15:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": -132,
           "id:3": 130,
           "sizeY:3": 24
         },
-        "16:10": {
+        "15:10": {
           "sizeX:3": 24,
-          "x:3": 252,
+          "x:3": 234,
           "y:3": -96,
           "id:3": 132,
           "sizeY:3": 24
         },
-        "17:10": {
+        "16:10": {
           "sizeX:3": 48,
           "x:3": 324,
           "y:3": -108,
           "id:3": 133,
           "sizeY:3": 48
         },
-        "18:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": 336,
           "y:3": -48,
           "id:3": 134,
           "sizeY:3": 24
         },
-        "19:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": -60,
           "id:3": 135,
           "sizeY:3": 24
         },
-        "20:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": -132,
           "id:3": 136,
           "sizeY:3": 24
         },
-        "21:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": -24,
           "id:3": 137,
           "sizeY:3": 24
         },
-        "22:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 318,
           "y:3": -12,
           "id:3": 138,
           "sizeY:3": 24
         },
-        "23:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 354,
           "y:3": -12,
           "id:3": 139,
           "sizeY:3": 24
         },
-        "24:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 324,
           "y:3": -144,
           "id:3": 140,
           "sizeY:3": 24
         },
-        "25:10": {
+        "24:10": {
           "sizeX:3": 24,
-          "x:3": 252,
+          "x:3": 216,
           "y:3": -132,
           "id:3": 141,
           "sizeY:3": 24
         },
-        "26:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": -60,
           "id:3": 142,
           "sizeY:3": 24
         },
-        "27:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 354,
           "y:3": -144,
           "id:3": 251,
           "sizeY:3": 24
         },
-        "28:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": -60,
           "id:3": 320,
           "sizeY:3": 24
         },
-        "29:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": -132,
           "id:3": 526,
           "sizeY:3": 24
         },
-        "30:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 384,
           "y:3": -96,
           "id:3": 708,
           "sizeY:3": 24
         },
-        "31:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": -204,
           "id:3": 714,
           "sizeY:3": 24
         },
-        "32:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": -168,
           "id:3": 756,
           "sizeY:3": 24
         },
-        "33:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 420,
           "y:3": -96,
           "id:3": 758,
           "sizeY:3": 24
         },
-        "34:10": {
+        "33:10": {
           "sizeX:3": 24,
-          "x:3": 252,
+          "x:3": 246,
           "y:3": -60,
           "id:3": 801,
           "sizeY:3": 24
@@ -67346,33 +67393,40 @@
         },
         "59:10": {
           "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": -48,
+          "id:3": 528,
+          "sizeY:3": 24
+        },
+        "60:10": {
+          "sizeX:3": 24,
           "x:3": -300,
           "y:3": -84,
           "id:3": 531,
           "sizeY:3": 24
         },
-        "60:10": {
+        "61:10": {
           "sizeX:3": 24,
           "x:3": -120,
           "y:3": -42,
           "id:3": 570,
           "sizeY:3": 24
         },
-        "61:10": {
+        "62:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -30,
           "id:3": 732,
           "sizeY:3": 24
         },
-        "62:10": {
+        "63:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -132,
           "id:3": 753,
           "sizeY:3": 24
         },
-        "63:10": {
+        "64:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": -120,
@@ -68088,103 +68142,96 @@
         },
         "50:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": -216,
-          "id:3": 528,
-          "sizeY:3": 24
-        },
-        "51:10": {
-          "sizeX:3": 24,
           "x:3": 12,
           "y:3": -264,
           "id:3": 537,
           "sizeY:3": 24
         },
-        "52:10": {
+        "51:10": {
           "sizeX:3": 24,
           "x:3": 96,
           "y:3": 96,
           "id:3": 591,
           "sizeY:3": 24
         },
-        "53:10": {
+        "52:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": -168,
           "id:3": 592,
           "sizeY:3": 24
         },
-        "54:10": {
+        "53:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 72,
           "id:3": 612,
           "sizeY:3": 24
         },
-        "55:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": -168,
           "id:3": 619,
           "sizeY:3": 24
         },
-        "56:10": {
+        "55:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 48,
           "id:3": 629,
           "sizeY:3": 24
         },
-        "57:10": {
+        "56:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": -288,
           "id:3": 639,
           "sizeY:3": 24
         },
-        "58:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -84,
           "id:3": 671,
           "sizeY:3": 24
         },
-        "59:10": {
+        "58:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 36,
           "id:3": 678,
           "sizeY:3": 24
         },
-        "60:10": {
+        "59:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": -84,
           "id:3": 695,
           "sizeY:3": 24
         },
-        "61:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -108,
           "id:3": 696,
           "sizeY:3": 24
         },
-        "62:10": {
+        "61:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 60,
           "id:3": 700,
           "sizeY:3": 24
         },
-        "63:10": {
+        "62:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 84,
           "id:3": 701,
           "sizeY:3": 24
         },
-        "64:10": {
+        "63:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": -12,

@@ -204,5 +204,10 @@ MetalFormer.removeRecipesByOutput(<aetherworks:item_resource:5>);
 //New Materials
 MetalFormer.addRecipe(<embers:ingot_dawnstone>, <liquid:aetherworks.aetherium_gas>*144, <aetherworks:item_resource:4>, 2100);
 MetalFormer.addRecipe(<mysticalworld:amethyst_gem>, <liquid:aetherworks.aetherium_gas>*576, <aetherworks:item_resource:5>, 2500);
+
+//Steam fix?
+mods.embers.EmberGeneration.removeSteamEngineFuel(<liquid:steam>);
+mods.embers.EmberGeneration.addSteamEngineFuel(<liquid:steam>, 4.0, 1, [100]);
+
 ##########################################################################################
 print("==================== end of mods embers.zs ====================");
