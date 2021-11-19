@@ -1722,4 +1722,76 @@
 			<fluidStack>rocketfuel;200</fluidStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="2000" power ="100000">
+		<input>
+			<fluidStack>iron;1296</fluidStack>
+			<fluidStack>moltenbedrock;1000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>moltentokeniron;1000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2000" power ="100000">
+		<input>
+			<fluidStack>bronze;1296</fluidStack>
+			<fluidStack>moltenbedrock;1000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>moltentokenbronze;1000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2000" power ="100000">
+		<input>
+			<fluidStack>steel;1296</fluidStack>
+			<fluidStack>moltenbedrock;1000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>moltentokensteel;1000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2000" power ="100000">
+		<input>
+			<fluidStack>refined_iron;1296</fluidStack>
+			<fluidStack>moltenbedrock;1000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>moltentokenrefinediron;1000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2000" power ="100000">
+		<input>
+			<fluidStack>osmium;1296</fluidStack>
+			<fluidStack>moltenbedrock;1000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>moltentokenosmium;1000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2000" power ="100000">
+		<input>
+			<fluidStack>iridium;1296</fluidStack>
+			<fluidStack>moltenbedrock;1000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>moltentokeniridium;1000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2000" power ="100000">
+		<input>
+			<fluidStack>ultimate;1296</fluidStack>
+			<fluidStack>moltenbedrock;1000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>moltentokenultimate;1000</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2000" power ="100000">
+		<input>
+			<fluidStack>infinity;1296</fluidStack>
+			<fluidStack>moltenbedrock;1000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>moltentokeninfinity;1000</fluidStack>
+		</output>
+	</Recipe>
 </Recipes>
