@@ -1328,7 +1328,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_thaumium_sc
 	.build();
 
 // Ironwood Scaffolding
-mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_ironwood_scaffolding", "assemblermkone", 1)
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_ironwood_scaffolding", "assemblermkfour", 1)
 	.addEnergyPerTickInput(180000)
 	.addItemOutput(<contenttweaker:ironwood_scaffolding>*9)
 	.addItemInput(<twilightforest:ironwood_ingot>*3)
