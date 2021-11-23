@@ -762,6 +762,17 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_biome_change
 
 // Space Suit Upgrades //
 
+// Airtight Seal
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_airtight_seal", "assemblermktwo", 400)
+	.addEnergyPerTickInput(30000)
+	.addItemOutput(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 15 as short}]}))
+	.addItemInput(<advancedrocketry:pressuretank:3>)
+	.addItemInput(<mekanism:polyethene:2> * 4)
+	.addItemInput(<actuallyadditions:item_crystal_empowered:5> * 4)
+	.addItemInput(<advancedrocketry:ic:2> * 2)
+	.addFluidInput(<liquid:liquid_oxygen>*2000)
+	.build();
+
 // Bionic Leg Upgrade
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_bionic_leg_upgrade", "assemblermktwo", 400)
 	.addEnergyPerTickInput(30000)
@@ -1328,7 +1339,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_thaumium_sc
 	.build();
 
 // Ironwood Scaffolding
-mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_ironwood_scaffolding", "assemblermkone", 1)
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_ironwood_scaffolding", "assemblermkfour", 1)
 	.addEnergyPerTickInput(180000)
 	.addItemOutput(<contenttweaker:ironwood_scaffolding>*9)
 	.addItemInput(<twilightforest:ironwood_ingot>*3)

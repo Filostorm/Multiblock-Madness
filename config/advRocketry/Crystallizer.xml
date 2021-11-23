@@ -145,7 +145,7 @@
 		<input>
 			<itemStack>rftools:infused_diamond;1;0</itemStack>
 			<itemStack>threng:material;1;5</itemStack>
-			<itemStack>aetherworks:item_resource;1;1</itemStack>
+			<itemStack>ebwizardry:grand_crystal</itemStack>
 			<itemStack>contenttweaker:starmetal_cluster;1;0</itemStack>
 			<fluidStack>aetherworks.aetherium_gas;100</fluidStack>
 		</input>

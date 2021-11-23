@@ -18,6 +18,7 @@ val itemstoRemove =
 <advancedrocketry:productrod:1>,
 <advancedrocketry:launchpad>,
 <advancedrocketry:vacuumlaser>,
+<advancedrocketry:precisionlaseretcher>
 ]
  as IItemStack[];
 
@@ -46,6 +47,9 @@ recipes.addShaped(<advancedrocketry:ic:4>, [[<moreplates:end_steel_plate>, <rock
 
 // Laser Emitter
 recipes.addShaped(<advancedrocketry:vacuumlaser>, [[null, <minecraft:glass>, null],[<thermalfoundation:material:324>, <actuallyadditions:block_crystal_empowered>, <thermalfoundation:material:324>], [<thermalfoundation:material:324>, <libvulpes:structuremachine>, <thermalfoundation:material:324>]]);
+
+// Precision Laser etcher
+recipes.addShaped(<advancedrocketry:precisionlaseretcher>, [[<ore:plateGold>, <advancedrocketry:misc>, <ore:plateGold>],[<advancedrocketry:ic:4>, <libvulpes:structuremachine>, <advancedrocketry:ic:3>], [<ore:circuitElite>, <ore:circuitElite>, <ore:circuitElite>]]);
 
 ##########################################################################################
 print("==================== end of mods advancedrocketry-ssp.zs ====================");

@@ -215,7 +215,10 @@ recipes.addShapeless(<contenttweaker:material_part:10> * 9, [<contenttweaker:sub
 
 
 Melting.addRecipe(<liquid:moltenbedrock> * 100, <minecraft:bedrock>,6000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:moltenbedrock> * 100, <minecraft:bedrock>, 4000000);
+mods.nuclearcraft.Melter.addRecipe(<minecraft:bedrock>, <liquid:moltenbedrock> * 100, 10.0, 16.0);
 
+/*
 Alloy.addRecipe(<liquid:moltentokeniron> * 1000, [<liquid:iron> * 1296, <liquid:moltenbedrock> * 1000]);
 Alloy.addRecipe(<liquid:moltentokenbronze> * 1000, [<liquid:bronze> * 1296, <liquid:moltenbedrock> * 1000]);
 Alloy.addRecipe(<liquid:moltentokensteel> * 1000, [<liquid:steel> * 1296, <liquid:moltenbedrock> * 1000]);
@@ -224,7 +227,7 @@ Alloy.addRecipe(<liquid:moltentokenosmium> * 1000, [<liquid:osmium> * 1296, <liq
 Alloy.addRecipe(<liquid:moltentokeniridium> * 1000, [<liquid:iridium> * 1296, <liquid:moltenbedrock> * 1000]);
 Alloy.addRecipe(<liquid:moltentokenultimate> * 1000, [<liquid:ultimate> * 1296, <liquid:moltenbedrock> * 1000]);
 Alloy.addRecipe(<liquid:moltentokeninfinity> * 1000, [<liquid:infinity> * 1296, <liquid:moltenbedrock> * 1000]);
-
+*/
 
 val Tokens as ILiquidStack[IItemStack] = {
 	<contenttweaker:token_tier1>: <liquid:moltentokeniron>,
@@ -238,6 +241,8 @@ val Tokens as ILiquidStack[IItemStack] = {
 } as ILiquidStack[IItemStack];
 for token, molten in Tokens {
 Casting.addTableRecipe(token, <avaritia:resource:5>, molten, 1000, false, 50);
+mods.nuclearcraft.Infuser.addRecipe(<avaritia:resource:5>, molten * 1000, token, 20.0, 16.0);
+mods.thermalexpansion.Transposer.addFillRecipe(token, <avaritia:resource:5>, molten * 1000, 8000000);
 }
 /*
 val adventureTokens as ILiquidStack[IItemStack] = {
