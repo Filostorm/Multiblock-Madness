@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/sheetmetal_cast",
+      "particle": "contenttweaker:blocks/sheetmetal_cast"
+    },
+    "model": "contenttweaker:sheetmetal_cast",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

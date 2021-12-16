@@ -15,8 +15,8 @@
 
   "input-types": {
     "a": {
-      "id": "immersiveengineering:sheetmetal",
-      "meta": 9
+      "id": "jaopca:block_sheetmetaltinsilver",
+      "meta": 0
     },
     "b": {
       "id": "immersiveengineering:wooden_decoration",

@@ -127,5 +127,38 @@ fluid.boosted_diesel=Boosted Diesel
 
 item.contenttweaker.crystal_lattice.name=Crystal Lattice
 item.contenttweaker.starmetal_cluster.name=Starmetal Cluster
+item.contenttweaker.clump_titanium.name=Crystalized Titanium
 
-item.contenttweaker.ring_frostbite.name=Ring of Frostbite
+item.contenttweaker.gear_modularium.name=Modularium Gear
+item.contenttweaker.plate_modularium.name=Modularium Plate
+
+item.contenttweaker.prepared_starmetal.name=Starmetal-Plated Platinum
+item.contenttweaker.ingot_reinforced_starmetal.name=§9Reinforced Starmetal
+
+item.contenttweaker.stacc_thermal_alloy.name=Mixed Thermal Ingot
+item.contenttweaker.hot_thermal_alloy.name=Energized Thermal Alloy
+item.contenttweaker.ingot_thermal_alloy.name=§bFluid Enriched Alloy
+item.contenttweaker.plate_thermal_alloy.name=§bFluid Enriched Alloy Plate
+item.contenttweaker.gear_thermal_alloy.name=§bFluid Enriched Alloy Gear
+item.contenttweaker.rod_thermal_alloy.name=§bFluid Enriched Alloy Rod
+tile.contenttweaker.block_thermal_alloy.name=§bBlock of Fluid Enriched Alloy
+tile.contenttweaker.scaffolding_thermal_alloy.name=§bFluid Enriched Alloy Scaffolding
+tile.contenttweaker.sheetmetal_thermal_alloy.name=§bFluid Enriched Alloy Sheetmetal
+
+
+item.contenttweaker.ingot_staballoy.name=Staballoy Ingot
+
+item.contenttweaker.hot_cobalt.name=Hot Cobalt Ingot
+fluid.base_mirion=Mirion Base
+fluid.prepared_mirion=Prepared Mirion Fluid
+
+item.contenttweaker.excited_mek_alloy.name=Irradiated Alloy
+item.contenttweaker.component_mek_alloy.name=Dense Component
+item.contenttweaker.ingot_mek_alloy.name=§6Heavy Alloy
+item.contenttweaker.plate_mek_alloy.name=§6Heavy Alloy Plate
+item.contenttweaker.gear_mek_alloy.name=§6Heavy Alloy Gear
+tile.contenttweaker.block_mek_alloy.name=§6Block of Heavy Alloy
+tile.contenttweaker.sheetmetal_mek_alloy.name=§6Heavy Alloy Sheetmetal
+
+
+tile.contenttweaker.sheetmetal_cast.name=Sheetmetal Cast

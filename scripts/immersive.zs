@@ -32,6 +32,8 @@ val removerecipes =
 <immersiveengineering:connector:2>,
 <immersiveengineering:metal_device1:5>,
 <immersiveengineering:stone_decoration>,
+<immersiveengineering:material:8>,
+<immersiveengineering:material:9>,
 ]
 as IItemStack[];
 for item in removerecipes {
@@ -320,5 +322,11 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:boosted_diesel>*250, <liquid:b
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:boosted_diesel>, 450);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:blended_diesel>, 200);
 mods.nuclearcraft.Enricher.addRecipe(<aetherworks:item_resource>, <liquid:blended_diesel>*250, <liquid:boosted_diesel>*250);
+
+//Components
+Blueprint.removeRecipe(<immersiveengineering:material:8>);
+Blueprint.removeRecipe(<immersiveengineering:material:9>);
+Blueprint.addRecipe("components", <immersiveengineering:material:8>, [<ore:ingotCopper>, <ore:plateIron>,<ore:plateIron>, <bloodmagic:slate>]);
+Blueprint.addRecipe("components", <immersiveengineering:material:9>, [<ore:ingotCopper>, <ore:plateSteel>,<ore:plateSteel>, <bloodmagic:slate:1>]);
 
 	print("--- immersive.zs initialized ---");

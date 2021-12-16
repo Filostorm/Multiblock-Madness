@@ -127,7 +127,9 @@ infuser.addRecipe("REDSTONE", 20, <thermalfoundation:material:132>, <mekanism:en
 infuser.addRecipe("DIAMOND", 10, <thermalfoundation:material:134>, <mekanism:reinforcedalloy>);
 infuser.addRecipe("OBSIDIAN", 10, <techreborn:ingot:15>, <mekanism:atomicalloy>);
 
-recipes.addShaped(<mekanism:machineblock2:11>, [[<immersiveengineering:material:8>, <embers:fluid_gauge>, <immersiveengineering:material:8>],[<moreplates:electrum_stick>, null, <moreplates:electrum_stick>], [<immersiveengineering:material:8>, <embers:pipe>, <immersiveengineering:material:8>]]);
+
+//Basic Tank
+recipes.addShaped(<mekanism:machineblock2:11>, [[<thermalfoundation:material:321>, <embers:fluid_gauge>, <thermalfoundation:material:321>],[<moreplates:electrum_stick>, null, <moreplates:electrum_stick>], [<thermalfoundation:material:321>, <embers:pipe>, <thermalfoundation:material:321>]]);
 
 //Advanced Circuit
 recipes.addShaped(<mekanism:controlcircuit:1>, [[null, <mekanism:enrichediron>, null],[<mekanism:enrichedalloy>, <mekanism:controlcircuit>, <mekanism:enrichedalloy>], [null, <mekanism:enrichediron>, null]]);

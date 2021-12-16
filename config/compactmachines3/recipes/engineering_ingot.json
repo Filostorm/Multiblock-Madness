@@ -1,0 +1,65 @@
+{
+  "name": "cm3ct:engineering_ingot",
+
+  "disabled": false,
+
+  "target-item": "contenttweaker:engineering_ingot",
+  "target-count": 1,
+
+  "duration": 100,
+  "symmetrical": true,
+
+  "catalyst": "contenttweaker:blank_matter",
+  "catalyst-meta": 0,
+  
+
+  "input-types": {
+    "a": {
+      "id": "immersiveengineering:metal_decoration1",
+      "meta": 1
+    },
+    "b": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 7
+    },
+    "c": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 3
+    },
+    "d": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 5
+    },
+    "e": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 4
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "a",
+        "d",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "c",
+        "a"
+      ],
+      [
+        "a",
+        "e",
+        "a"
+      ]
+    ]
+  ]
+
+}

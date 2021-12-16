@@ -164,6 +164,11 @@ recipes.addShaped(<techreborn:rockcutter>.withTag({ench: [{lvl: 1 as short, id: 
 
 //Zinc
 <techreborn:dust:59>.addTooltip(format.gold("Processed from Sphalerite"));
+<techreborn:ingot:18>.addTooltip(format.gold("Processed from Sphalerite"));
+
+//Zinc
+<thermalfoundation:material:132>.addTooltip(format.gold("Processed from Bauxite"));
+<thermalfoundation:material:68>.addTooltip(format.gold("Processed from Bauxite"));
 
 //Overclocker
 recipes.addShaped(<techreborn:upgrades>, [[null, <techreborn:part:38>, null], [<techreborn:cable:6>, <ore:circuitElite>, <techreborn:cable:6>]]);
@@ -297,6 +302,9 @@ Centrifuge.addRecipe([<techreborn:smalldust:55> % 5, <minecraft:sand> % 25], <nu
 //netherrack
 Centrifuge.addRecipe([<thermalfoundation:material:771> % 25, <minecraft:redstone> % 5, <thermalfoundation:material:768> % 5, <minecraft:gold_nugget> % 5], <techreborn:dust:33>, <liquid:lava>*10, 10000);
 
+//Sodalite
+Centrifuge.addRecipe([<rockhounding_chemistry:chemical_dusts:44> % 100, <nuclearcraft:gem:6> % 80, <thermalfoundation:material:68> % 15], <techreborn:dust:48>, <liquid:fluidchlorite>*50, 10000);
+
 //Remove cell recipes
 fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidheliumplasma", Amount: 1000}}));
 fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidhelium3", Amount: 1000}}));
@@ -373,6 +381,10 @@ mods.techreborn.compressor.removeAll();
 mods.techreborn.compressor.removeRecipe(<immersiveengineering:material:18>); //Because HOP Graphite is stubborn
 */
 
+
+//Hot Tungstensteel
+Transposer.removeFillRecipe(<techreborn:ingot:16>, <liquid:cryotheum>);
+Transposer.addFillRecipe(<thermalfoundation:material:167>, <nuclearcraft:alloy:9>, <liquid:emergency_coolant> * 500, 10000);
 
 ##########################################################################################
 print("==================== end of mods techreborn.zs ====================");

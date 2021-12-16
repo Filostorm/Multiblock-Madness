@@ -95,7 +95,7 @@ item.addTooltip(format.gold("Craftable"));
 PullingCrucible.add(<actuallyadditions:item_crystal_empowered:4>, <thermalfoundation:material:1028>, <environmentaltech:litherite_crystal>*4);
 
 //Tier 3
-mods.nuclearcraft.Infuser.addRecipe(<environmentaltech:erodium_crystal>, <liquid:refined_life_essence>*1000, <environmentaltech:kyronite_crystal>);
+mods.nuclearcraft.Infuser.addRecipe(<environmentaltech:erodium_crystal>, <liquid:refined_life_essence>*250, <environmentaltech:kyronite_crystal>);
 
 //Tier 4
 mods.nuclearcraft.FissionIrradiator.addRecipe(<environmentaltech:kyronite_crystal>, <environmentaltech:pladium_crystal>, 200000, 0, 0.15, 0);

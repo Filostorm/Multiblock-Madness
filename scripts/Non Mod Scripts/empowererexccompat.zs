@@ -19,7 +19,7 @@ CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered>, 40000
 // Enori
 //CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:5>, 200000, <actuallyadditions:item_crystal:5>, [<ore:dustSalt>, <botania:petal>, <jaopca:item_shardtitanium>, <advgenerators:controller>]);
 CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:5>, 400000, <actuallyadditions:block_crystal:5>, 
-[<ore:blockSalt>, <botania:petalblock>, <jaopca:item_shardtitanium>, <advgenerators:controller>]);
+[<ore:blockSalt>, <botania:petalblock>, <contenttweaker:clump_titanium>, <advgenerators:controller>]);
 
 // Diamatine
 //CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered:2>, 200000, <actuallyadditions:item_crystal:2>, [<tombstone:impregnated_diamond>, <moreplates:elementium_gear>, <appliedenergistics2:material:12>, <bloodmagic:slate:2>]);

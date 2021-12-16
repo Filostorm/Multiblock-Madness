@@ -35,6 +35,7 @@ for item in itemstoRemove {
 
 mods.jei.JEI.removeAndHide(<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 0 as short}}));
 mods.jei.JEI.removeAndHide(<tconstruct:smeltery_controller>);
+mods.jei.JEI.removeAndHide(<tcomplement:alloy_tank>);
 /*
 // smeltery controller
 recipes.remove(<tconstruct:smeltery_controller>);
@@ -57,7 +58,7 @@ smelteryHeart.add(<tconstruct:seared_tank:1>);
 smelteryHeart.add(<tconstruct:seared_tank:2>);
 
 //Alloy Tank
-recipes.addShaped(<tcomplement:alloy_tank>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <thermalfoundation:material:291>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
+//recipes.addShaped(<tcomplement:alloy_tank>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <thermalfoundation:material:291>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 
 
 	<liquid:pyrotheum>.definition.temperature = 5300;
@@ -360,7 +361,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:
 var steel = HighOven.newMixRecipe(<liquid:steel> * 144, <liquid:iron> * 144, 1350);
 //steel.addOxidizer(<minecraft:redstone>, 33);
 steel.addReducer(<thermalfoundation:material:771>, 33);
-steel.addReducer(<rockhounding_chemistry:chemical_items:2>, 80);
+steel.addReducer(<rockhounding_chemistry:chemical_items:2>, 66);
 steel.addPurifier(<ore:sand>, 100);
 steel.addPurifier(<contenttweaker:limestone_flux>, 33);
 steel.addPurifier(<rockhounding_chemistry:chemical_items:20>, 33);
@@ -411,7 +412,7 @@ recipes.addShaped(<tinker_io:smart_output>, [[<tconstruct:materials>, <arcanearc
 //Reinforcement Modefier
 MetalPress.addRecipe(<tconstruct:materials:14>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:mold>, 2000);
 
-
+/* REMOVED UNTIL MORE TESTING
 /////////////////////////
 // Immersive Tinker's //
 /////////////////////////
@@ -554,6 +555,6 @@ mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({M
 mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "silver"}), <thermalfoundation:material:130>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
 mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
 mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "osmium"}), <mekanism:ingot:1>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-
+*/
 ##########################################################################################
 print("==================== end of mods tinkersconstruct.zs ====================");

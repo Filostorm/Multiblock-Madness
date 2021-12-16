@@ -15,8 +15,8 @@
 
   "input-types": {
     "a": {
-      "id": "immersiveengineering:metal_decoration1",
-      "meta": 1
+      "id": "contenttweaker:scaffolding_thermal_alloy",
+      "meta": 0
     },
     "b": {
       "id": "jaopca:block_sheetmetalvanasteel",

@@ -180,8 +180,6 @@ recipes.addShaped(<appliedenergistics2:part:241>*2, [[<minecraft:dye:4>, <applie
 //Inscriber.addRecipe(<chisel:voidstonerunic>, <chisel:energizedvoidstone>, true, <chisel:chisel_diamond>);
 
 //fluix platinum
-
-
 furnace.remove(<threng:material>);
 blastFurnace.addRecipe(<threng:material>, null, <threng:material:2>, null, 300, 512, 2000);
 
@@ -192,6 +190,7 @@ Aggregator.addRecipe(<threng:material>, <thermalfoundation:material:134>, <thren
 <threng:material:2>.displayName = "Fluix-Plated Platinum Ingot";
 Inscriber.removeRecipe(<threng:material:2>);
 Inscriber.addRecipe(<threng:material:2>, <thermalfoundation:material:134>, false, <appliedenergistics2:material:45>, <threng:material:1>);
+
 
 //fluix logic chip
 recipes.addShaped(<threng:material:4>, [[<threng:material>, <appliedenergistics2:material:24>, <threng:material>],[<appliedenergistics2:material:22>, <rockhounding_chemistry:misc_items:10>, <appliedenergistics2:material:22>], [<threng:material>, <appliedenergistics2:material:24>, <threng:material>]]);

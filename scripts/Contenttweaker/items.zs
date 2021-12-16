@@ -6,6 +6,11 @@ import mods.contenttweaker.IItemRightClick;
 import mods.contenttweaker.Commands;
 import mods.contenttweaker.IItemColorSupplier;
 import mods.contenttweaker.Color;
+
+
+print("==================== loading Items.zs ====================");
+##########################################################################################
+
 VanillaFactory.createItem("hastelloyfoil").register();
 VanillaFactory.createItem("goldfoil").register();
 VanillaFactory.createItem("aluminumcasing").register();
@@ -30,7 +35,8 @@ VanillaFactory.createItem("falling_tower").register();
 VanillaFactory.createItem("crystal_lattice").register();
 VanillaFactory.createItem("starmetal_cluster").register();
 
-VanillaFactory.createItem("ring_frostbite").register();
+
+
 
 /*
 VanillaFactory.createItem("adventure_token_tier1").register();
@@ -98,8 +104,32 @@ VanillaFactory.createItem("limestone_flux").register();
 VanillaFactory.createItem("pristine_dust").register();
 VanillaFactory.createItem("angelring_fake").register();
 VanillaFactory.createItem("blank_matter").register();
+VanillaFactory.createItem("clump_titanium").register();
 
 
+VanillaFactory.createItem("gear_modularium").register();
+VanillaFactory.createItem("plate_modularium").register();
+
+VanillaFactory.createItem("prepared_starmetal").register();
+VanillaFactory.createItem("ingot_reinforced_starmetal").register();
+
+VanillaFactory.createItem("stacc_thermal_alloy").register();
+VanillaFactory.createItem("hot_thermal_alloy").register();
+VanillaFactory.createItem("ingot_thermal_alloy").register();
+VanillaFactory.createItem("plate_thermal_alloy").register();
+VanillaFactory.createItem("gear_thermal_alloy").register();
+VanillaFactory.createItem("rod_thermal_alloy").register();
+
+
+VanillaFactory.createItem("excited_mek_alloy").register();
+VanillaFactory.createItem("component_mek_alloy").register();
+VanillaFactory.createItem("ingot_mek_alloy").register();
+VanillaFactory.createItem("plate_mek_alloy").register();
+VanillaFactory.createItem("gear_mek_alloy").register();
+
+VanillaFactory.createItem("ingot_staballoy").register();
+
+VanillaFactory.createItem("hot_cobalt").register();
 
 
 var activatedaspectuscopper = VanillaFactory.createItem("activatedaspectuscopper");
@@ -202,3 +232,7 @@ agitatorHastelloy.rarity = "epic";
 agitatorHastelloy.maxDamage = 8192;
 //agitatorHastelloy.glowing = true;
 agitatorHastelloy.register();
+
+
+##########################################################################################
+print("==================== end of Items.zs ====================");

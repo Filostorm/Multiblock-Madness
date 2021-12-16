@@ -3,6 +3,9 @@
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
 
+print("==================== loading blocks.zs ====================");
+##########################################################################################
+
 var sheetmetalBronzeBlock = VanillaFactory.createBlock("sheetmetal_bronze", <blockmaterial:iron>);
 sheetmetalBronzeBlock.setLightOpacity(3);
 sheetmetalBronzeBlock.setLightValue(0);
@@ -238,3 +241,69 @@ ironGrowthCatlayst.setToolLevel(1);
 ironGrowthCatlayst.setBlockSoundType(<soundtype:metal>);
 ironGrowthCatlayst.register();
 */
+
+
+var block_thermal_alloy = VanillaFactory.createBlock("block_thermal_alloy", <blockmaterial:iron>);
+block_thermal_alloy.setLightValue(0);
+block_thermal_alloy.setBlockHardness(5.0);
+block_thermal_alloy.setBlockResistance(5.0);
+block_thermal_alloy.setToolClass("pickaxe");
+block_thermal_alloy.setToolLevel(2);
+block_thermal_alloy.setBlockSoundType(<soundtype:metal>);
+block_thermal_alloy.register();
+
+var sheetmetal_thermal_alloy = VanillaFactory.createBlock("sheetmetal_thermal_alloy", <blockmaterial:iron>);
+sheetmetal_thermal_alloy.setLightOpacity(3);
+sheetmetal_thermal_alloy.setLightValue(0);
+sheetmetal_thermal_alloy.setBlockHardness(5.0);
+sheetmetal_thermal_alloy.setBlockResistance(5.0);
+sheetmetal_thermal_alloy.setToolClass("pickaxe");
+sheetmetal_thermal_alloy.setToolLevel(1);
+sheetmetal_thermal_alloy.setBlockSoundType(<soundtype:metal>);
+sheetmetal_thermal_alloy.register();
+
+var scaffolding_thermal_alloy = VanillaFactory.createBlock("scaffolding_thermal_alloy", <blockmaterial:iron>);
+scaffolding_thermal_alloy.setLightValue(0);
+scaffolding_thermal_alloy.setBlockHardness(5.0);
+scaffolding_thermal_alloy.setBlockResistance(5.0);
+scaffolding_thermal_alloy.setToolClass("pickaxe");
+scaffolding_thermal_alloy.setToolLevel(1);
+scaffolding_thermal_alloy.setBlockSoundType(<soundtype:metal>);
+scaffolding_thermal_alloy.setFullBlock(false);
+scaffolding_thermal_alloy.setTranslucent(true);
+scaffolding_thermal_alloy.setBlockLayer("CUTOUT");
+scaffolding_thermal_alloy.register();
+
+
+var sheetmetal_cast = VanillaFactory.createBlock("sheetmetal_cast", <blockmaterial:iron>);
+sheetmetal_cast.setLightValue(0);
+sheetmetal_cast.setBlockHardness(5.0);
+sheetmetal_cast.setBlockResistance(5.0);
+sheetmetal_cast.setToolClass("pickaxe");
+sheetmetal_cast.setToolLevel(1);
+sheetmetal_cast.setBlockSoundType(<soundtype:metal>);
+sheetmetal_cast.setFullBlock(false);
+sheetmetal_cast.setTranslucent(true);
+sheetmetal_cast.setBlockLayer("CUTOUT");
+sheetmetal_cast.register();
+
+var block_mek_alloy = VanillaFactory.createBlock("block_mek_alloy", <blockmaterial:iron>);
+block_mek_alloy.setLightValue(0);
+block_mek_alloy.setBlockHardness(5.0);
+block_mek_alloy.setBlockResistance(5.0);
+block_mek_alloy.setToolClass("pickaxe");
+block_mek_alloy.setToolLevel(2);
+block_mek_alloy.setBlockSoundType(<soundtype:metal>);
+block_mek_alloy.register();
+
+var sheetmetal_mek_alloy = VanillaFactory.createBlock("sheetmetal_mek_alloy", <blockmaterial:iron>);
+sheetmetal_mek_alloy.setLightOpacity(3);
+sheetmetal_mek_alloy.setLightValue(0);
+sheetmetal_mek_alloy.setBlockHardness(5.0);
+sheetmetal_mek_alloy.setBlockResistance(5.0);
+sheetmetal_mek_alloy.setToolClass("pickaxe");
+sheetmetal_mek_alloy.setToolLevel(1);
+sheetmetal_mek_alloy.setBlockSoundType(<soundtype:metal>);
+sheetmetal_mek_alloy.register();
+##########################################################################################
+print("==================== end of blocks.zs ====================");

@@ -63,8 +63,11 @@ val aluminumMelting =
 for item in aluminumMelting {
 Melting.removeRecipe(<liquid:aluminum>, item);
 Overrides.removeRecipe(<liquid:aluminum>, item);
-HighOven.removeMeltingOverride(<liquid:aluminum>, item);
+//HighOven.removeMeltingOverride(<liquid:aluminum>, item);
 }
+
+HighOven.removeMeltingOverride(<liquid:aluminum>);
+HighOven.removeMeltingOverride(<liquid:aluminium>);
 
 Melting.removeRecipe(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
 HighOven.removeMeltingOverride(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
@@ -105,10 +108,14 @@ Melting.removeRecipe(<liquid:platinum>, <thermalfoundation:ore:6>);
 Overrides.removeRecipe(<liquid:platinum>, <thermalfoundation:material:70>);
 Overrides.removeRecipe(<liquid:platinum>, <techreborn:smalldust:38>);
 Overrides.removeRecipe(<liquid:platinum>, <thermalfoundation:ore:6>);
+/*
 HighOven.removeMeltingOverride(<liquid:platinum>, <thermalfoundation:material:70>);
 HighOven.removeMeltingOverride(<liquid:platinum>, <techreborn:smalldust:38>);
 HighOven.removeMeltingOverride(<liquid:platinum>, <thermalfoundation:ore:6>);
 HighOven.removeMeltingOverride(<liquid:platinum>, <jaopca:item_dusttinyplatinum>);
+*/
+HighOven.removeMeltingOverride(<liquid:platinum>);
+
 mods.embers.Melter.remove(<thermalfoundation:ore:6>);
 Melter.removeRecipeWithInput(<thermalfoundation:material:70>);
 Melter.removeRecipeWithInput(<thermalfoundation:ore:6>);
@@ -197,10 +204,14 @@ Melting.removeRecipe(<liquid:iridium>, <thermalfoundation:ore:7>);
 Overrides.removeRecipe(<liquid:iridium>, <thermalfoundation:material:71>);
 Overrides.removeRecipe(<liquid:iridium>, <techreborn:smalldust:66>);
 Overrides.removeRecipe(<liquid:iridium>, <thermalfoundation:ore:7>);
+/*
 HighOven.removeMeltingOverride(<liquid:iridium>, <thermalfoundation:material:71>);
 HighOven.removeMeltingOverride(<liquid:iridium>, <techreborn:smalldust:66>);
 HighOven.removeMeltingOverride(<liquid:iridium>, <thermalfoundation:ore:7>);
 HighOven.removeMeltingOverride(<liquid:iridium>, <jaopca:item_dusttinyiridium>);
+*/
+HighOven.removeMeltingOverride(<liquid:iridium>);
+
 mods.embers.Melter.remove(<thermalfoundation:ore:7>);
 Melter.removeRecipeWithInput(<thermalfoundation:ore:7>);
 Melter.removeRecipeWithInput(<thermalfoundation:material:71>);

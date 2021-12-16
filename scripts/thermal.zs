@@ -89,14 +89,14 @@ mods.thermalexpansion.RedstoneFurnace.removeRecipe(<thermalfoundation:material:7
 AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:8>*4);
 Infuser.removeRecipeWithOutput(<thermalfoundation:material:166>);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:8>*4, <thermalfoundation:material:130>, <thermalfoundation:material:129>*3, 5000);
-Transposer.addFillRecipe(<thermalfoundation:material:166>, <nuclearcraft:alloy:8>, <liquid:glowstone> * 1000, 10000);
+Transposer.addFillRecipe(<thermalfoundation:material:166>, <nuclearcraft:alloy:8>, <liquid:glowstone> * 250, 10000);
 
 //Signallum
 AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:7>*4);
 Infuser.removeRecipeWithOutput(<thermalfoundation:material:165>);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:7>*4, <thermalfoundation:material:130>, <thermalfoundation:material:128>*3, 5000);
-Transposer.addFillRecipe(<thermalfoundation:material:165>, <rockhounding_chemistry:alloy_items_deco:13>, <liquid:redstone> * 500, 10000);
-Transposer.addFillRecipe(<thermalfoundation:material:165>, <nuclearcraft:alloy:7>, <liquid:redstone> * 1000, 10000);
+Transposer.addFillRecipe(<thermalfoundation:material:165>, <rockhounding_chemistry:alloy_items_deco:13>, <liquid:redstone> * 300, 10000);
+Transposer.addFillRecipe(<thermalfoundation:material:165>, <nuclearcraft:alloy:7>, <liquid:redstone> * 300, 10000);
 
 //Endurim
 AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:9>*4);
@@ -162,6 +162,7 @@ val flowerDupe =
 <minecraft:red_flower:7>,
 <xlfoodmod:vanilla_flower>,
 <randomthings:glowingmushroom>,
+//<nuclearcraft:glowing_mushroom>,
 ]
  as IItemStack[];
 for item in flowerDupe {

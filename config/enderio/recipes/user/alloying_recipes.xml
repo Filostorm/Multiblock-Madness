@@ -1424,6 +1424,44 @@
 </recipe>
 
 
+<!-- UraniumStaballoy.zs -->
+<recipe name="MBM: UraniumStaballoy" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="ingotTitanium"/>
+    <input name="depletedUranium" amount="3"/>
+    <output name="contenttweaker:ingot_staballoy"/>
+  </alloying>
+</recipe>
+
+<!-- TBUStaballoy.zs -->
+<recipe name="MBM: TBUStaballoy" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="ingotTitanium"/>
+    <input name="ingotTBU"/>
+    <output name="contenttweaker:ingot_staballoy"/>
+  </alloying>
+</recipe>
+
+<!-- MolyStaballoy.zs -->
+<recipe name="MBM: MolyStaballoy" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="ingotTitanium" amount="3"/>
+    <input name="dustMolybdenum"/>
+    <output name="contenttweaker:ingot_staballoy" amount="3"/>
+  </alloying>
+</recipe>
+
+
+<!-- Cheaper Mek Alloy.zs -->
+<recipe name="MBM: Mekalloy" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="contenttweaker:excited_mek_alloy"/>
+    <input name="contenttweaker:component_mek_alloy"/>
+    <input name="nuclearcraft:radaway" amount="2"/>
+    <output name="contenttweaker:ingot_mek_alloy"/>
+  </alloying>
+</recipe>
+
 <!-- From twilight_forest.zs -->
 
 <!-- Combustible Ingot -->

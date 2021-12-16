@@ -88,3 +88,18 @@ BoostedDiesel.gaseous = false;
 BoostedDiesel.luminosity = 0;
 BoostedDiesel.viscosity = 1000;
 BoostedDiesel.register();
+
+
+var mirionBase = VanillaFactory.createFluid("base_mirion", Color.fromHex("4903fc"));
+mirionBase.temperature = 700;
+mirionBase.gaseous = false;
+mirionBase.luminosity = 0;
+mirionBase.viscosity = 1000;
+mirionBase.register();
+
+var mirionPrepared = VanillaFactory.createFluid("prepared_mirion", Color.fromHex("92eb34"));
+mirionPrepared.temperature = 500;
+mirionPrepared.gaseous = false;
+mirionPrepared.luminosity = 0;
+mirionPrepared.viscosity = 1000;
+mirionPrepared.register();

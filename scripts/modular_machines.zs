@@ -63,15 +63,15 @@ for item in itemstoHide {
 
 //Controller
 //recipes.addShaped(<modularmachinery:blockcontroller>, [[<ore:circuitAdvanced>, <rockhounding_chemistry:misc_items:1>, <ore:circuitAdvanced>],[<jaopca:item_platetough>, <modularmachinery:blockcasing>, <jaopca:item_platetough>], [<actuallyadditions:block_crystal>, <moreplates:energetic_alloy_gear>, <actuallyadditions:block_crystal>]]);
-recipes.addShaped(<modularmachinery:blockcontroller>, [[<thermalfoundation:material:320>, <modularmachinery:itemmodularium>, <thermalfoundation:material:320>],[<modularmachinery:itemmodularium>, <minecraft:redstone_block>, <modularmachinery:itemmodularium>], [<thermalfoundation:material:320>, <thermalfoundation:material:257>, <thermalfoundation:material:320>]]);
+recipes.addShaped(<modularmachinery:blockcontroller>, [[<contenttweaker:plate_modularium>, <thermalfoundation:material:258>, <contenttweaker:plate_modularium>],[<thermalfoundation:material:259>, <minecraft:redstone_block>, <thermalfoundation:material:261>], [<contenttweaker:plate_modularium>, <thermalfoundation:material:257>, <contenttweaker:plate_modularium>]]);
 
 //Casing
-recipes.addShaped(<modularmachinery:blockcasing>, [[<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>],[<techreborn:plates:36>, <contenttweaker:material_part:11>, <techreborn:plates:36>], [<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>]]);
+recipes.addShaped(<modularmachinery:blockcasing>, [[<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>],[<techreborn:plates:36>, <contenttweaker:gear_modularium>, <techreborn:plates:36>], [<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>]]);
 recipes.addShaped(<modularmachinery:blockcasing> * 2, [[<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>],[<techreborn:plates:36>, <rockhounding_chemistry:alloy_parts:63>, <techreborn:plates:36>], [<advgenerators:iron_frame>, <techreborn:plates:36>, <advgenerators:iron_frame>]]);
 
 
 //Modularium
-//Transposer.addFillRecipe(<modularmachinery:itemmodularium>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 10000);
+//Transposer.addFillRecipe(<ore:ingotLead>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 10000);
 mods.inworldcrafting.FluidToItem.transform(<modularmachinery:itemmodularium>, <liquid:moltenembers>, [<thermalfoundation:material>,<thermalfoundation:material:1>], false);
 
 
@@ -308,7 +308,7 @@ MekanismSteelCasing.addEnergyPerTickInput(4000);
 MekanismSteelCasing.addItemInput(<techreborn:part:43>);
 MekanismSteelCasing.addItemInput(<mekanism:basicblock>);
 MekanismSteelCasing.addItemInput(<jaopca:block_sheetmetalelectricalsteel> * 12);
-MekanismSteelCasing.addItemInput(<immersiveengineering:metal_decoration1:1> * 14);
+MekanismSteelCasing.addItemInput(<contenttweaker:scaffolding_thermal_alloy> * 14);
 MekanismSteelCasing.addItemOutput(<mekanism:basicblock:8>);
 MekanismSteelCasing.build();
 
@@ -317,7 +317,7 @@ MekanismSteelCasing2.addEnergyPerTickInput(4000);
 MekanismSteelCasing2.addItemInput(<techreborn:part:43>);
 MekanismSteelCasing2.addItemInput(<mekanism:basicblock>);
 MekanismSteelCasing2.addItemInput(<jaopca:block_sheetmetalvanasteel> * 12);
-MekanismSteelCasing2.addItemInput(<immersiveengineering:metal_decoration1:1> * 14);
+MekanismSteelCasing2.addItemInput(<contenttweaker:scaffolding_thermal_alloy> * 14);
 MekanismSteelCasing2.addItemOutput(<mekanism:basicblock:8>*2);
 MekanismSteelCasing2.build();
 
@@ -422,7 +422,7 @@ ARFrame2.build();
 ##Actually Additions Iron Casing
 val AAIronCasing = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-aaironaasing", "minifield-crafter", 400, 0);
 AAIronCasing.addEnergyPerTickInput(1000);
-AAIronCasing.addItemInput(<immersiveengineering:sheetmetal:9> * 20);
+AAIronCasing.addItemInput(<jaopca:block_sheetmetaltinsilver> * 20);
 AAIronCasing.addItemInput(<immersiveengineering:wooden_decoration:1>*6);
 AAIronCasing.addItemInput(<actuallyadditions:block_misc:2>);
 AAIronCasing.addItemInput(<immersiveengineering:wirecoil:1>);
@@ -748,6 +748,16 @@ sootyredstone.addItemInput(<thermalfoundation:material:768>);
 sootyredstone.addItemOutput(<deepmoblearning:soot_covered_redstone>);
 sootyredstone.build();
 
+##itemmodularium
+val itemmodularium = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-itemmodularium", "mixer-dust", 20, 0);
+itemmodularium.addMysticalMechanicsInput(40, 80);
+itemmodularium.addItemInput(<thermalfoundation:material>);
+itemmodularium.addItemInput(<thermalfoundation:material:1>);
+itemmodularium.addFluidInput(<liquid:moltenembers>* 100);
+itemmodularium.addItemOutput(<modularmachinery:itemmodularium>);
+itemmodularium.build();
+
+
 // Food //
 
 // Deadly Energy Drink
@@ -1036,6 +1046,26 @@ fluidinert_metalFast.addItemInput(<ore:ingotSilver>,2);
 fluidinert_metalFast.addItemInput(<ore:ingotLead>);
 fluidinert_metalFast.addFluidOutput(<liquid:inert_metal>*288);
 fluidinert_metalFast.build();
+
+##tin_silver
+val fluidtin_silver = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-tin-silver", "mixer", 240, 0);
+fluidtin_silver.addEmberInput(80);
+fluidtin_silver.addMysticalMechanicsInput(20, 39);
+fluidtin_silver.addItemInput(<ore:ingotSilver>);
+fluidtin_silver.addItemInput(<ore:ingotTin>,3);
+fluidtin_silver.addFluidOutput(<liquid:tin_silver>*576);
+fluidtin_silver.build();
+
+##tin_silverFast
+val fluidtin_silverFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-tin-silver-fast", "mixer", 160, 0);
+fluidtin_silverFast.addEmberInput(80);
+fluidtin_silverFast.addMysticalMechanicsInput(40, 80);
+fluidtin_silverFast.addItemInput(<ore:ingotSilver>);
+fluidtin_silverFast.addItemInput(<ore:ingotTin>,3);
+fluidtin_silverFast.addFluidOutput(<liquid:tin_silver>*576);
+fluidtin_silverFast.build();
+
+
 
 ##conductive_iron
 val fluidconductive_iron = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-conductive_iron", "mixer", 60, 0);

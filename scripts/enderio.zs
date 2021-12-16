@@ -50,7 +50,8 @@ val itemstoRemove =
 <enderio:item_material:68>,
 <enderio:item_material:2>,
 <enderio:block_travel_anchor>,
-<enderio:item_ender_food>
+<enderio:item_ender_food>,
+<enderio:item_gas_conduit:2>,
 ]
  as IItemStack[];
 
@@ -58,6 +59,16 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
+val itemstoHide =
+[
+	<enderio:item_gas_conduit:1>,
+	<enderio:item_gas_conduit>,
+]
+ as IItemStack[];
+
+for item in itemstoHide {
+	mods.jei.JEI.removeAndHide(item);
+}
 //Parts t2
 InductionSmelter.addRecipe(<enderio:item_material:2>*4, <enderio:item_material:69>*4, <techreborn:ingot:15>, 50000);
 ///AlloySmelter.addRecipe(<enderio:item_material:2>*4, [<enderio:item_material:69>*4, <techreborn:ingot:15>], 50000);
@@ -182,6 +193,10 @@ recipes.addShaped(<enderio:block_power_monitor>, [[<enderio:item_alloy_ingot>, <
 
 // Fixed EnderIOs Recipe
 recipes.addShapeless(<enderio:item_ender_food>, [<minecraft:bowl>,<minecraft:milk_bucket>,<minecraft:wheat>,<ore:dustEnder>]);
+
+//New Gas Conduit recipe
+recipes.addShaped(<enderio:item_gas_conduit:2> * 8, [[<enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>],[<rockhounding_chemistry:gasline_duct>, <mekanism:atomicalloy>, <rockhounding_chemistry:gasline_duct>], [<enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>]]);
+
 
 ##########################################################################################
 print("==================== end of mods enderIO.zs ====================");

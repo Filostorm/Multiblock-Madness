@@ -1048,7 +1048,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_advanced_re
 	.addItemOutput(<contenttweaker:advanced_redstone_block>)
 	.addItemInput(<immersiveengineering:metal_decoration0:3>)
 	.addItemInput(<jaopca:item_gearzinc>)
-	.addItemInput(<techreborn:cable:6>*4)
+	.addItemInput(<techreborn:cable:6>*9)
     .addFluidInput(<liquid:fluidchlorite>*1000)
 	.build();
 

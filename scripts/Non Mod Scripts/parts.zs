@@ -15,6 +15,8 @@ import mods.nuclearcraft.Pressurizer;
 import mods.mekanism.crusher;
 import mods.immersiveengineering.MetalPress;
 import mods.mekanism.enrichment;
+import mods.tconstruct.Casting;
+import crafttweaker.liquid.ILiquidStack;
 
 print("==================== loading parts.zs ====================");
 ##########################################################################################
@@ -29,6 +31,8 @@ val itemstoRemove =
 	<deepmoblearning:polymer_clay>,
 	<randomthings:ingredient:3>,
 	<jaopca:item_stickthaumium>,
+	<moreplates:electrum_stick>,
+	<libvulpes:productrod:4>,
 ]
  as IItemStack[];
 
@@ -84,28 +88,33 @@ MetalPress.addRecipe(<moreplates:restonia_gear>, <actuallyadditions:item_crystal
 MetalPress.addRecipe(<thaumicperiphery:gear_brass>, <ore:ingotBrass>, <immersiveengineering:mold:1>, 2000, 4);
 Compactor.addGearRecipe(<moreplates:restonia_gear>, <actuallyadditions:item_crystal>*4, 4000);
 
+
+
 ################# PLATES #######################
+
+
+
 //restonia
 //mods.immersiveengineering.MetalPress.addRecipe(<moreplates:restonia_plate>, <actuallyadditions:item_crystal>, <immersiveengineering:mold>, 2000);
-Compactor.addStorageRecipe(<moreplates:restonia_plate>, <actuallyadditions:item_crystal>, 1500);
+Compactor.addStorageRecipe(<moreplates:restonia_plate>, <actuallyadditions:item_crystal>, 2000);
 Pressurizer.addRecipe(<actuallyadditions:item_crystal>, <moreplates:restonia_plate>);
 MetalPress.addRecipe(<moreplates:restonia_plate>, <actuallyadditions:item_crystal>, <immersiveengineering:mold>, 2000);
 
 //Enori
 //mods.immersiveengineering.MetalPress.addRecipe(<moreplates:restonia_plate>, <actuallyadditions:item_crystal>, <immersiveengineering:mold>, 2000);
-Compactor.addStorageRecipe(<moreplates:enori_plate>, <actuallyadditions:item_crystal:5>, 1500);
+Compactor.addStorageRecipe(<moreplates:enori_plate>, <actuallyadditions:item_crystal:5>, 2000);
 Pressurizer.addRecipe(<actuallyadditions:item_crystal:5>, <moreplates:enori_plate>);
 MetalPress.addRecipe(<moreplates:enori_plate>, <actuallyadditions:item_crystal:5>, <immersiveengineering:mold>, 2000);
 
 //void
 MetalPress.removeRecipe(<moreplates:void_plate>);
 MetalPress.addRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, <immersiveengineering:mold>, 2000);
-Compactor.addStorageRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, 1500);
+Compactor.addStorageRecipe(<moreplates:void_plate>, <actuallyadditions:item_crystal:3>, 2000);
 Pressurizer.addRecipe(<actuallyadditions:item_crystal:3>, <moreplates:void_plate>);
 
 //Diamantine
 mods.actuallyadditions.AtomicReconstructor.removeRecipe(<moreplates:diamatine_plate>);
-Compactor.addStorageRecipe(<moreplates:diamatine_plate>, <actuallyadditions:item_crystal:2>, 1500);
+Compactor.addStorageRecipe(<moreplates:diamatine_plate>, <actuallyadditions:item_crystal:2>, 2000);
 Pressurizer.addRecipe(<actuallyadditions:item_crystal:2>, <moreplates:diamatine_plate>);
 
 
@@ -120,7 +129,7 @@ Pressurizer.removeRecipeWithOutput(<techreborn:plates:38>);
 
 //Aethium
 Compactor.removeStorageRecipe(<aetherworks:item_resource:4>);
-Compactor.addStorageRecipe(<aetherworks:item_resource:3>, <aetherworks:item_resource:4>, 1500);
+Compactor.addStorageRecipe(<aetherworks:item_resource:3>, <aetherworks:item_resource:4>, 2000);
 Pressurizer.addRecipe(<aetherworks:item_resource:4>, <aetherworks:item_resource:3>);
 MetalPress.addRecipe(<aetherworks:item_resource:3>, <aetherworks:item_resource:4>, <immersiveengineering:mold>, 2000);
 
@@ -158,11 +167,66 @@ var SheetmetalPlate as IItemStack[IItemStack] = {
 <jaopca:block_sheetmetalstainlesssteel>:<jaopca:item_platestainlesssteel>,
 <jaopca:block_sheetmetalenergeticalloy>:<moreplates:energetic_alloy_plate>,
 <jaopca:block_sheetmetalenergeticsilver>:<moreplates:energetic_silver_plate>,
+<jaopca:block_sheetmetaltinsilver>:<jaopca:item_platetinsilver>,
 };
 for sheetmetal, plate in SheetmetalPlate {
-		### Rolling Machine ###
 recipes.addShaped(sheetmetal * 4, [[null, plate, null],[plate, null, plate], [null, plate, null]]);
 }
+
+
+
+
+
+//Casting sheetmetal?!?
+
+
+val sheetmetalCastingMap as ILiquidStack[IItemStack] = {
+<contenttweaker:sheetmetal_bronze>:<liquid:bronze>,
+<contenttweaker:sheetmetal_nimonic>:<liquid:molten_nimonic>,
+<contenttweaker:sheetmetal_refinediron>:<liquid:refined_iron>,
+<jaopca:block_sheetmetalconductiveiron>:<liquid:conductive_iron>,
+<jaopca:block_sheetmetaldarksteel>:<liquid:dark_steel>,
+<jaopca:block_sheetmetalelectricalsteel>:<liquid:electrical_steel>,
+<jaopca:block_sheetmetalenergeticalloy>:<liquid:energetic_alloy>,
+<jaopca:block_sheetmetalenergeticsilver>:<liquid:energetic_silver>,
+<jaopca:block_sheetmetallumium>:<liquid:lumium>,
+<jaopca:block_sheetmetalpulsatingiron>:<liquid:pulsating_iron>,
+<jaopca:block_sheetmetalredstonealloy>:<liquid:redstone_alloy>,
+<jaopca:block_sheetmetalscal>:<liquid:molten_scal>,
+<jaopca:block_sheetmetalsoularium>:<liquid:soularium>,
+<jaopca:block_sheetmetalstainlesssteel>:<liquid:stainless_steel>,
+<jaopca:block_sheetmetaltinsilver>:<liquid:tin_silver>,
+<jaopca:block_sheetmetaltitanium>:<liquid:molten_titanium>,
+<jaopca:block_sheetmetalvanasteel>:<liquid:molten_vanasteel>,
+<contenttweaker:sheetmetal_brass>:<liquid:brass>,
+<contenttweaker:sheetmetal_thaumium>:<liquid:thaumium>,
+<immersiveengineering:sheetmetal>:<liquid:copper>,
+<immersiveengineering:sheetmetal:1>:<liquid:aluminum>,
+<immersiveengineering:sheetmetal:2>:<liquid:lead>,
+<immersiveengineering:sheetmetal:3>:<liquid:silver>,
+<immersiveengineering:sheetmetal:4>:<liquid:nickel>,
+<immersiveengineering:sheetmetal:5>:<liquid:uranium>,
+<immersiveengineering:sheetmetal:6>:<liquid:constantan>,
+<immersiveengineering:sheetmetal:7>:<liquid:electrum>,
+<immersiveengineering:sheetmetal:8>:<liquid:steel>,
+<immersiveengineering:sheetmetal:9>:<liquid:iron>,
+<immersiveengineering:sheetmetal:10>:<liquid:gold>,
+} as ILiquidStack[IItemStack];
+
+for sheetmetal, fluid in sheetmetalCastingMap {
+Casting.addBasinRecipe(<contenttweaker:sheetmetal_cast>, sheetmetal, <liquid:steel>, 720, true, 400);
+Casting.addBasinRecipe(sheetmetal, <contenttweaker:sheetmetal_cast>, fluid, 144, false, 100);
+}
+
+
+
+
+
+
+
+
+
+
 
 rollingMachine.addShapeless(<immersiveengineering:sheetmetal:10>*9, [<minecraft:gold_block>]);
 rollingMachine.addShapeless(<contenttweaker:sheetmetal_thaumium>*9, [<thaumcraft:metal_thaumium>]);
@@ -393,6 +457,18 @@ mods.mekanism.crusher.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
 
 //Thermal Ruby dust
 Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
+
+//Marble
+Crusher.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 1024);
+Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
+Pulverizer.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 2000);
+mods.mekanism.crusher.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
+
+//Basalt
+Crusher.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 1024);
+Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
+Pulverizer.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 2000);
+mods.mekanism.crusher.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
 
 // --==Macerator Unification==-- //
 

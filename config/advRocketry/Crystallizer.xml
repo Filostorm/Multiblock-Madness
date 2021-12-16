@@ -141,7 +141,7 @@
 			<itemStack>environmentaltech:aethium_crystal</itemStack>
 		</output>
 	</Recipe>
-		<Recipe timeRequired="60" power ="50000">
+		<Recipe timeRequired="60" power ="100000">
 		<input>
 			<itemStack>rftools:infused_diamond;1;0</itemStack>
 			<itemStack>threng:material;1;5</itemStack>
@@ -151,6 +151,15 @@
 		</input>
 		<output>
 			<itemStack>contenttweaker:crystal_lattice</itemStack>
+		</output>
+	</Recipe>
+		<Recipe timeRequired="60" power ="50000">
+		<input>
+			<itemStack>contenttweaker:hot_thermal_alloy;1;0</itemStack>
+			<itemStack>jaopca:item_shardtitanium;8;0</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:clump_titanium</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

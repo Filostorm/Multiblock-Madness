@@ -153,5 +153,6 @@ Infusion.registerRecipe("chalice", "",
 //Stable Celestial Crystal
 Lightwell.addLiquefaction(<contenttweaker:stable_celestial_crystal>, <liquid:astralsorcery.liquidstarlight>, 2, 0.6, 0x6603fc);
 
+
 ##########################################################################################
 print("==================== end of Astral Sorcery ====================");

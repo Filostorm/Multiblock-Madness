@@ -2,6 +2,7 @@
 import crafttweaker.item.IItemStack;
 import mods.techreborn.blastFurnace;
 import mods.nuclearcraft.IngotFormer;
+import mods.nuclearcraft.Infuser;
 print("==================== loading nuclearcraft.zs ====================");
 ##########################################################################################
 
@@ -56,6 +57,14 @@ blastFurnace.addRecipe(<nuclearcraft:ingot:14>, null, <nuclearcraft:dust:14>, nu
 
 //Solanoid
 recipes.addShaped(<nuclearcraft:part:4> * 2, [[null, <powersuits:powerarmorcomponent>, <immersiveengineering:material:2>],[<powersuits:powerarmorcomponent>, <immersiveengineering:material:2>, <powersuits:powerarmorcomponent>], [<immersiveengineering:material:2>, <powersuits:powerarmorcomponent>, null]]);
+
+
+//Rad Stuff
+Infuser.removeRecipeWithOutput(<nuclearcraft:radaway>);
+Infuser.removeRecipeWithOutput(<nuclearcraft:radaway_slow>);
+Infuser.addRecipe(<mekanism:polyethene:2>*2, <liquid:radaway>*250, <nuclearcraft:radaway>);
+Infuser.addRecipe(<mekanism:polyethene:2>*2, <liquid:radaway_slow>*250, <nuclearcraft:radaway_slow>);
+
 
 ##########################################################################################
 print("==================== end of nuclearcraft.zs ====================");

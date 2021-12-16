@@ -72,7 +72,7 @@ Crystallizer.addRecipe(<liquid:liquid_sunshine>*1000, <extendedcrafting:material
 
 //Ultime Ingot
 Agglomeration.addRecipe(<extendedcrafting:material:32>, 
-[<ore:ingotThermoconducting>, <extendedcrafting:material:48>, <ore:ingotOsmiridium>, <techreborn:ingot:25>, <plustic:mirioningot>]
+[<contenttweaker:ingot_thermal_alloy>, <extendedcrafting:material:48>, <contenttweaker:ingot_mek_alloy>, <techreborn:ingot:25>, <plustic:mirioningot>]
 ,1000000,0x004a80,0xa432a8,
 <avaritia:block_resource:2>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:4>,
 null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
@@ -372,6 +372,7 @@ Infusion.registerRecipe("starmetal_cluster", "",
 <thaumcraft:ingot:1>, 
 [<jaopca:item_crystalastralstarmetal>,<jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>,
 <jaopca:item_crystalastralstarmetal>,<jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>]);
+
 
 // Temporary Ultimate Crafting Table Avaritia Recipes
 val avaritiaitemstoRemove =

@@ -148,6 +148,7 @@ ManaInfusion.addInfusion(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount
 //Mana Steel
 ManaInfusion.removeRecipe(<botania:storage>);
 ManaInfusion.removeRecipe(<ore:ingotManasteel>);
+ManaInfusion.removeRecipe(<mystgears:gear_manasteel>);
 
 ManaInfusion.addInfusion(<botania:manaresource>,<contenttweaker:inert_ingot>,10000);
 ManaInfusion.addInfusion(<botania:manaresource>*2,<contenttweaker:material_part:20>,10000);
@@ -170,7 +171,7 @@ ManaInfusion.addInfusion(<botania:storage:3>*2,<actuallyadditions:block_crystal_
 Agglomeration.removeRecipe(<botania:manaresource:4>, [<botania:manaresource:1>, <botania:manaresource>, <botania:manaresource:2>]);
 
 Agglomeration.addRecipe(<botania:manaresource:4>, 
-[<botania:manaresource:1>, <astralsorcery:itemcraftingcomponent:1>, <botania:manaresource:2>]
+[<botania:manaresource:1>, <contenttweaker:ingot_reinforced_starmetal>, <botania:manaresource:2>]
 ,500000,0x0000FF,0x00FF00,
 <bloodarsenal:blood_infused_iron_block>,<actuallyadditions:block_crystal_empowered:1>,<actuallyadditions:block_crystal_empowered:3>);
 

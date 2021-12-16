@@ -99,6 +99,7 @@ val artisansCrystalPlates as IItemStack[IItemStack] = {
   <actuallyadditions:item_crystal:3>:<moreplates:void_plate>,
   <actuallyadditions:item_crystal:5>:<moreplates:enori_plate>,
   <actuallyadditions:item_crystal:2>: <moreplates:diamatine_plate>,
+  <modularmachinery:itemmodularium>:<contenttweaker:plate_modularium>,
 } as IItemStack[IItemStack];
 for ingot, plate in artisansCrystalPlates {
 recipes.addShaped(plate, [[<ore:artisansHammer>.reuse().transformDamage(5)], [ingot], [ingot]]);
@@ -255,11 +256,7 @@ recipes.addShaped(<artisanworktables:workstation:3>, [
   .addTool(<ore:artisansHammer>, 20)
   .addOutput(<moreplates:ironwood_gear>)
   .create();
-
-
-
-
-
+  
 
 ###   ARMOR    ###
 recipes.addShaped(<artisanworktables:workshop:3>, [[<moreplates:ironwood_plate>, <moreplates:ironwood_plate>, <moreplates:ironwood_plate>],[<moreplates:ironwood_plate>, <artisanworktables:workstation:3>, <moreplates:ironwood_plate>], [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]]);
