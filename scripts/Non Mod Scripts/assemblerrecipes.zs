@@ -424,6 +424,14 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_ironwood_sca
 	.addItemInput(<contenttweaker:rod_ironwood>*3)
 	.build();
 
+// Thermal Alloy Scaffolding
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_thermal_alloy_scaffolding", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<contenttweaker:scaffolding_thermal_alloy>*9)
+	.addItemInput(<contenttweaker:ingot_thermal_alloy>*3)
+	.addItemInput(<contenttweaker:rod_thermal_alloy>*3)
+	.build();	
+
 // Food //
 
 // Deadly Energy Drink
@@ -639,6 +647,16 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_rftools_quar
 	.addItemInput(<qmd:semiconductor:4>*4)
     .addFluidInput(<liquid:liquid_nitrogen>*4000)
 	.build();
+
+// Mek Alloy
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_component_mek_alloy", "assemblermkone", 400)
+	.addEnergyPerTickInput(8000)
+	.addItemOutput(<contenttweaker:component_mek_alloy>*2)
+	.addItemInput(<mekanism:enrichedalloy>)
+	.addItemInput(<mekanism:reinforcedalloy>)
+	.addItemInput(<mekanism:atomicalloy>)
+	.addFluidInput(<liquid:hydrochloric_acid>*250)
+	.build();	
 
 ##############################################
 ##
@@ -1346,6 +1364,14 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_ironwood_sc
 	.addItemInput(<contenttweaker:rod_ironwood>*3)
 	.build();
 
+// Thermal Alloy Scaffolding
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_thermal_alloy_scaffolding", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<contenttweaker:scaffolding_thermal_alloy>*9)
+	.addItemInput(<contenttweaker:ingot_thermal_alloy>*3)
+	.addItemInput(<contenttweaker:rod_thermal_alloy>*3)
+	.build();	
+
 // Food //
 
 // Deadly Energy Drink
@@ -1561,6 +1587,16 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_rftools_qua
 	.addItemInput(<qmd:semiconductor:4>*4)
     .addFluidInput(<liquid:liquid_nitrogen>*4000)
 	.build();
+
+// Mek Alloy
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_component_mek_alloy", "assemblermkone", 1)
+	.addEnergyPerTickInput(2560000)
+	.addItemOutput(<contenttweaker:component_mek_alloy>*2)
+	.addItemInput(<mekanism:enrichedalloy>)
+	.addItemInput(<mekanism:reinforcedalloy>)
+	.addItemInput(<mekanism:atomicalloy>)
+	.addFluidInput(<liquid:hydrochloric_acid>*250)
+	.build();	
 
 ##############################################
 ##
