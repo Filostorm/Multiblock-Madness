@@ -153,9 +153,9 @@
 			<itemStack>contenttweaker:crystal_lattice</itemStack>
 		</output>
 	</Recipe>
-		<Recipe timeRequired="60" power ="50000">
+		<Recipe timeRequired="60" power ="20000">
 		<input>
-			<itemStack>contenttweaker:hot_thermal_alloy;1;0</itemStack>
+			<itemStack>contenttweaker:ingot_thermal_alloy;1;0</itemStack>
 			<itemStack>jaopca:item_shardtitanium;8;0</itemStack>
 		</input>
 		<output>
