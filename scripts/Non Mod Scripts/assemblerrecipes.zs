@@ -1589,7 +1589,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_rftools_qua
 	.build();
 
 // Mek Alloy
-mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_component_mek_alloy", "assemblermkfour", 1)
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_component_mek_alloy", "assemblermkfour", 1)
 	.addEnergyPerTickInput(2560000)
 	.addItemOutput(<contenttweaker:component_mek_alloy>*2)
 	.addItemInput(<mekanism:enrichedalloy>)
