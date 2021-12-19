@@ -36,6 +36,11 @@ VanillaFactory.createItem("crystal_lattice").register();
 VanillaFactory.createItem("starmetal_cluster").register();
 
 
+VanillaFactory.createItem("grindingball_mixedwill").register();
+
+VanillaFactory.createItem("plate_engineering").register();
+
+
 
 
 /*

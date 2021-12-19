@@ -380,17 +380,10 @@ blastFurnace.removeInputRecipe(<thermalfoundation:material:96>);
 blastFurnace.removeInputRecipe(<techreborn:dust:10>);
 blastFurnace.removeInputRecipe(<techreborn:smalldust:10>);
 
-/* Unneeded
-// Removing all Grinder & Compressor Recipes
-mods.techreborn.grinder.removeAll();
-mods.techreborn.compressor.removeAll();
-mods.techreborn.compressor.removeRecipe(<immersiveengineering:material:18>); //Because HOP Graphite is stubborn
-*/
-
-
+/*
 //Hot Tungstensteel
 Transposer.removeFillRecipe(<techreborn:ingot:16>, <liquid:cryotheum>);
 Transposer.addFillRecipe(<thermalfoundation:material:167>, <nuclearcraft:alloy:9>, <liquid:emergency_coolant> * 500, 10000);
-
+*/
 ##########################################################################################
 print("==================== end of mods techreborn.zs ====================");

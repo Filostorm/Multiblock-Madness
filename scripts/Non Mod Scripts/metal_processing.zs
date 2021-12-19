@@ -68,10 +68,9 @@ Overrides.removeRecipe(<liquid:aluminum>, item);
 }
 
 HighOven.removeMeltingOverride(<liquid:aluminum>);
-HighOven.removeMeltingOverride(<liquid:aluminium>);
 
 Melting.removeRecipe(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
-HighOven.removeMeltingOverride(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
+//HighOven.removeMeltingOverride(<liquid:aluminum>, <jaopca:item_dusttinyaluminium>);
 mods.embers.Melter.remove(<thermalfoundation:ore:4>);
 
 

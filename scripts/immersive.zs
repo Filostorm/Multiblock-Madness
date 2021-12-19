@@ -149,6 +149,9 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 3, [[<thermalfoun
 //Tar
 furnace.addRecipe(<thermalfoundation:material:833>, <immersivepetroleum:material>, 0.0);
 
+val heavyGears as IIngredient = (<mystgears:gear_thaumium>|<moreplates:ironwood_gear>) as IIngredient;
+
+// Orb recipes
 val bloodOrb = [
 	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}),
 	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}),
@@ -167,8 +170,27 @@ val bloodOrbLeast = [
 	bloodOrb[5],
 ] as IIngredient[];
 
+/*
+//Light block
+recipes.addShaped(<immersiveengineering:metal_decoration0:4>*3, [
+	[<immersiveengineering:material:8>, <thermalfoundation:material:291>, <immersiveengineering:material:8>],
+	[<moreplates:constantan_stick>, bloodOrbLeast[0].reuse(), <moreplates:constantan_stick>], 
+	[<immersiveengineering:material:8>, <moreplates:ardite_gear>, <immersiveengineering:material:8>]]);
+*/
 
-val heavyGears as IIngredient = (<mystgears:gear_thaumium>|<moreplates:ironwood_gear>) as IIngredient;
+//Light block
+recipes.addShaped(<immersiveengineering:metal_decoration0:4>*3, [
+	[<immersiveengineering:material:8>, <thermalfoundation:material:291>, <immersiveengineering:material:8>],
+	[<moreplates:constantan_stick>, <bloodmagic:slate>, <moreplates:constantan_stick>], 
+	[<immersiveengineering:material:8>, <moreplates:ardite_gear>, <immersiveengineering:material:8>]]);
+
+/*
+//Heavy Block
+recipes.addShaped(<immersiveengineering:metal_decoration0:5>*3, [
+	[<immersiveengineering:material:9>, <moreplates:cobalt_gear>, <immersiveengineering:material:9>],
+	[heavyGears, <bloodmagic:slate:1>, heavyGears], 
+	[<immersiveengineering:material:9>, <prefab:block_compressed_obsidian>, <immersiveengineering:material:9>]]);
+*/
 
 //Heavy Block
 recipes.addShaped(<immersiveengineering:metal_decoration0:5>*3, [
@@ -176,13 +198,6 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:5>*3, [
 	[heavyGears, bloodOrbLeast[1].reuse(), heavyGears], 
 	[<immersiveengineering:material:9>, <prefab:block_compressed_obsidian>, <immersiveengineering:material:9>]]);
 
-//Light block
-recipes.addShaped(<immersiveengineering:metal_decoration0:4>*3, [
-	[<immersiveengineering:material:8>, <thermalfoundation:material:291>, <immersiveengineering:material:8>],
-	[<moreplates:constantan_stick>, bloodOrbLeast[0].reuse(), <moreplates:constantan_stick>], 
-	[<immersiveengineering:material:8>, <moreplates:ardite_gear>, <immersiveengineering:material:8>]]);
-
-//recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 2, [[<thermalfoundation:material:32>, <thermalfoundation:material:291>, <thermalfoundation:material:32>],[<moreplates:constantan_stick>, <moreplates:ardite_gear>, <moreplates:constantan_stick>], [<thermalfoundation:material:32>, <thermalfoundation:material:291>, <thermalfoundation:material:32>]]);
 
 //Redstone block
 recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 1, [[<thermalfoundation:material:32>, <actuallyadditions:item_crystal>, <thermalfoundation:material:32>],[<actuallyadditions:item_crystal>, <thermalfoundation:material:291>, <actuallyadditions:item_crystal>], [<thermalfoundation:material:32>, <actuallyadditions:item_crystal>, <thermalfoundation:material:32>]]);
@@ -323,10 +338,12 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:boosted_diesel>, 450);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:blended_diesel>, 200);
 mods.nuclearcraft.Enricher.addRecipe(<aetherworks:item_resource>, <liquid:blended_diesel>*250, <liquid:boosted_diesel>*250);
 
+/* Might change later idk
 //Components
 Blueprint.removeRecipe(<immersiveengineering:material:8>);
 Blueprint.removeRecipe(<immersiveengineering:material:9>);
 Blueprint.addRecipe("components", <immersiveengineering:material:8>, [<ore:ingotCopper>, <ore:plateIron>,<ore:plateIron>, <bloodmagic:slate>]);
 Blueprint.addRecipe("components", <immersiveengineering:material:9>, [<ore:ingotCopper>, <ore:plateSteel>,<ore:plateSteel>, <bloodmagic:slate:1>]);
+*/
 
 	print("--- immersive.zs initialized ---");

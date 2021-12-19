@@ -30,6 +30,8 @@ val removestuff =
     <actuallyadditions:block_crystal_empowered:4>,
     <actuallyadditions:item_crystal_empowered:5>,
     <actuallyadditions:block_crystal_empowered:5>,
+    <moreplates:empowered_restonia_gear>,
+    <moreplates:empowered_void_gear>,
 ]
 as IItemStack[];
 for item in removestuff {
@@ -118,7 +120,7 @@ recipes.addShapedMirrored(<actuallyadditions:block_atomic_reconstructor>, [[<the
 recipes.addShaped(<actuallyadditions:block_misc:8>, [[<actuallyadditions:item_misc:5>, <actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_misc:5>],[<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:block_misc:6>, <actuallyadditions:item_crystal_empowered:3>], [<actuallyadditions:item_misc:5>, <actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_misc:5>]]);
 
 #################################   EMPOWERER   #####################
-recipes.addShaped(<actuallyadditions:block_empowerer>, [[null, <actuallyadditions:item_crystal>, null],[null, <actuallyadditions:item_battery_double>, null], [<techreborn:machine_frame>, <actuallyadditions:block_display_stand>, <techreborn:machine_frame>]]);
+recipes.addShaped(<actuallyadditions:block_empowerer>, [[null, <actuallyadditions:item_crystal>, null],[null, <actuallyadditions:item_battery_double>, null], [<contenttweaker:plate_engineering>, <actuallyadditions:block_display_stand>, <contenttweaker:plate_engineering>]]);
 
 
 //mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, float[] particleColourArray);

@@ -1,18 +1,17 @@
 {
-  "name": "cm3ct:engineering_ingot",
+  "name": "cm3ct:plate_engineering",
 
   "disabled": false,
 
-  "target-item": "contenttweaker:engineering_ingot",
-  "target-count": 1,
+  "target-item": "contenttweaker:plate_engineering",
+  "target-count": 2,
 
   "duration": 100,
   "symmetrical": true,
 
-  "catalyst": "contenttweaker:blank_matter",
-  "catalyst-meta": 0,
+  "catalyst": "immersiveengineering:material",
+  "catalyst-meta": 26,
   
-
   "input-types": {
     "a": {
       "id": "immersiveengineering:metal_decoration1",
@@ -20,15 +19,15 @@
     },
     "b": {
       "id": "immersiveengineering:metal_decoration0",
-      "meta": 7
+      "meta": 3
     },
     "c": {
       "id": "immersiveengineering:metal_decoration0",
-      "meta": 3
+      "meta": 5
     },
     "d": {
       "id": "immersiveengineering:metal_decoration0",
-      "meta": 5
+      "meta": 7
     },
     "e": {
       "id": "immersiveengineering:metal_decoration0",
@@ -38,25 +37,57 @@
   "shape": [
     [
       [
-        "a",
-        "b",
         "a"
       ],
       [
-        "a",
-        "d",
+        "a"
+      ],
+      [
+        "a"
+      ],
+      [
         "a"
       ]
     ],
     [
       [
-        "a",
-        "c",
         "a"
       ],
       [
-        "a",
-        "e",
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "a"
+      ]
+    ],
+    [
+      [
+        "a"
+      ],
+      [
+        "d"
+      ],
+      [
+        "e"
+      ],
+      [
+        "a"
+      ]
+    ],
+    [
+      [
+        "a"
+      ],
+      [
+        "a"
+      ],
+      [
+        "a"
+      ],
+      [
         "a"
       ]
     ]

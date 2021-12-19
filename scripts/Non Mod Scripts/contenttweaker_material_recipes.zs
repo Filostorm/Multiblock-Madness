@@ -24,13 +24,14 @@ recipes.addShaped(<contenttweaker:stacc_thermal_alloy> * 3, [[<thermalfoundation
 mods.thermalexpansion.Infuser.addRecipe(<contenttweaker:hot_thermal_alloy>, <contenttweaker:stacc_thermal_alloy>, 25000);
 
 //Cooled
-/*
+
 Transposer.addFillRecipe(<contenttweaker:ingot_thermal_alloy>, <contenttweaker:hot_thermal_alloy>, <liquid:emergency_coolant> * 1000, 10000);
 mods.nuclearcraft.Infuser.addRecipe(<contenttweaker:hot_thermal_alloy>, <liquid:emergency_coolant>*1000, <contenttweaker:ingot_thermal_alloy>);
-*/
 
+/* Osmium option
 Transposer.addFillRecipe(<contenttweaker:ingot_thermal_alloy>, <contenttweaker:hot_thermal_alloy>, <liquid:osmium> * 144, 10000);
 mods.nuclearcraft.Infuser.addRecipe(<contenttweaker:hot_thermal_alloy>, <liquid:osmium>*144, <contenttweaker:ingot_thermal_alloy>);
+*/
 
 //Fluid?
 //Melting.addRecipe(<liquid:orichalcum> * 1296, <contenttweaker:sub_block_holder_0>);
@@ -59,7 +60,7 @@ for item in depletedUranium {
 //Staballoy
 AlloyFurnace.addRecipe(<ore:ingotTitanium>, <ore:depletedUranium>*3, <contenttweaker:ingot_staballoy>);
 AlloyFurnace.addRecipe(<ore:ingotTitanium>, <ore:ingotTBU>, <contenttweaker:ingot_staballoy>);
-AlloyFurnace.addRecipe(<ore:ingotTitanium>*3, <ore:dustMolybdenum>, <contenttweaker:ingot_staballoy>*3);
+AlloyFurnace.addRecipe(<ore:ingotTitanium>*6, <ore:dustMolybdenum>, <contenttweaker:ingot_staballoy>*6);
 
 //This is probably way too high lol
 mods.nuclearcraft.FissionIrradiator.addRecipe(<contenttweaker:ingot_staballoy>, <contenttweaker:excited_mek_alloy>, 100000, 0, 0.25, 0);
@@ -74,7 +75,18 @@ blastFurnace.addRecipe(<contenttweaker:hot_cobalt>, null, <tconstruct:ingots>, <
 
 FluidToFluid.transform(<liquid:base_mirion>, <liquid:glass>, [<contenttweaker:hot_cobalt>], true);
 FluidToFluid.transform(<liquid:prepared_mirion>, <liquid:base_mirion>, [<botania:manaresource>,<botania:manaresource:7>,<botania:manaresource:4>], true);
-FluidToItem.transform(<plustic:mirioningot>*2, <liquid:prepared_mirion>, [<enderio:item_material:17>], true);
+FluidToItem.transform(<plustic:mirioningot>*2, <liquid:prepared_mirion>, [<enderio:item_material:16>], true);
+
+////////////// GRINDING BALLS //////////////////
+
+recipes.addShaped(<contenttweaker:grindingball_mixedwill>, [
+    [null, <bloodmagic:item_demon_crystal:1>, null],
+    [<bloodmagic:item_demon_crystal:4>, <bloodmagic:item_demon_crystal>, <bloodmagic:item_demon_crystal:2>], 
+    [null, <bloodmagic:item_demon_crystal:3>, null]
+]);
+
+
+
 
 ##########################################################################################
 print("==================== end of CTMR.zs ====================");

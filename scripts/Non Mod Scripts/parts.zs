@@ -84,13 +84,15 @@ val mapNewGears as IItemStack[IItemStack] = {
 	<contenttweaker:ingot_thermal_alloy>:<contenttweaker:gear_thermal_alloy>,
 	<contenttweaker:ingot_mek_alloy>:<contenttweaker:gear_mek_alloy>,
 	<actuallyadditions:item_crystal>:<moreplates:restonia_gear>,
+	<actuallyadditions:item_crystal_empowered:4>:<moreplates:empowered_emeradic_gear>,
+	<actuallyadditions:item_crystal_empowered:2>:<moreplates:empowered_diamatine_gear>,
+	<actuallyadditions:item_crystal_empowered:5>:<moreplates:empowered_enori_gear>,
 } as IItemStack[IItemStack];
 
 for material, output in mapNewGears {
 	MetalPress.addRecipe(output, material*4, <immersiveengineering:mold:1>, 2000);
 	Compactor.addGearRecipe(output, material*4, 4000);
 }
-
 
 ################# PLATES #######################
 

@@ -12472,7 +12472,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Blood Magic",
-          "desc:8": "§d§5Raw Voidstone§r is found in the Beneath.\n\nItems can be piped in and out for basic automation.\n\nShift-right click on your altar with the§d Diviner§r to show a holographic layout in order to upgrade to the next tier.\n\nUsing the §bSacrificial Dagger§r next to the altar will damage you to fill your altar by a small amount, while hitting mobs next to an altar with the §bDagger of Sacrifice§r will insta-kill them for some blood."
+          "desc:8": "§d§5Raw Voidstone§r is found in the Beneath.\n\nItems can be piped in and out for basic automation.\n\nShift-right click on your altar with the§d Diviner§r to show a holographic layout in order to upgrade to the next tier.\n\nUsing the §bSacrificial Dagger§r next to the altar will damage you to fill your altar by a small amount, while hitting mobs next to an altar with the §bDagger of Sacrifice§r will insta-kill them for some blood.\n\n"
         }
       },
       "tasks:9": {
@@ -19110,7 +19110,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Light Engineering Blocks",
-          "desc:8": "§d§5§fRight click to link the §cWeak Blood Orb§r to you. It is used for crafting, and placing it in a filled altar will store LP (Blood) for rituials and the Alchemy Table.\n\nA basic block for building some multiblock machines."
+          "desc:8": "A basic block for building some multiblock machines."
         }
       },
       "tasks:9": {
@@ -29850,7 +29850,7 @@
         "1:10": {
           "command:8": "/as research @s RADIANCE",
           "title:8": "bq_standard.reward.command",
-          "description:8": "Run a command script",
+          "description:8": "Unlock Research",
           "viaPlayer:1": 0,
           "hideBlockIcon:1": 1,
           "asScript:1": 1,
@@ -33355,7 +33355,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Tier 2 Blood Orb",
-          "desc:8": "Shift right click to bind to you. Higher tiers of orbs hold more LP and can be used for more advanced crafts."
+          "desc:8": "§d§5§fRight click to link the §cBlood Orb§r to you. It is used for crafting, and placing it in a filled altar will store LP (Blood) for rituials and the Alchemy Table. \n\nHigher tiers of orbs hold more LP and can be used for more advanced crafts."
         }
       },
       "tasks:9": {

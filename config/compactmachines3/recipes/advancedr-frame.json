@@ -9,7 +9,7 @@
   "duration": 200,
   "symmetrical": true,
 
-  "catalyst": "mekanism:atomicalloy",
+  "catalyst": "contenttweaker:component_mek_alloy",
   "catalyst-meta": 0,
 
 

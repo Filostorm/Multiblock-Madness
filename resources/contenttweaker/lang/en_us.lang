@@ -146,12 +146,12 @@ tile.contenttweaker.scaffolding_thermal_alloy.name=§bFluid Enriched Alloy Scaff
 tile.contenttweaker.sheetmetal_thermal_alloy.name=§bFluid Enriched Alloy Sheetmetal
 
 
-item.contenttweaker.ingot_staballoy.name=Staballoy Ingot
-
-item.contenttweaker.hot_cobalt.name=Hot Cobalt Ingot
+item.contenttweaker.hot_cobalt.name=Reactive Cobalt Ingot
 fluid.base_mirion=Mirion Base
 fluid.prepared_mirion=Prepared Mirion Fluid
 
+
+item.contenttweaker.ingot_staballoy.name=Staballoy Ingot
 item.contenttweaker.excited_mek_alloy.name=Irradiated Alloy
 item.contenttweaker.component_mek_alloy.name=Dense Component
 item.contenttweaker.ingot_mek_alloy.name=§6Heavy Alloy
@@ -162,3 +162,8 @@ tile.contenttweaker.sheetmetal_mek_alloy.name=§6Heavy Alloy Sheetmetal
 
 
 tile.contenttweaker.sheetmetal_cast.name=Sheetmetal Cast
+
+
+item.contenttweaker.grindingball_mixedwill.name=§bIndomitable Grinding Ball
+item.contenttweaker.plate_engineering.name=Engineers Masterpiece
+
