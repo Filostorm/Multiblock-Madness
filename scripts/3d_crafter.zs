@@ -79,7 +79,7 @@ val IndustruialChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifie
 IndustruialChassis.addEnergyPerTickInput(6000);
 IndustruialChassis.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "machina"}]}));
 IndustruialChassis.addItemInput(<techreborn:storage:10>);
-IndustruialChassis.addItemInput(<enderio:block_dark_iron_bars> * 18);
+IndustruialChassis.addItemInput(<contenttweaker:scaffolding_mek_alloy> * 18);
 IndustruialChassis.addItemInput(<jaopca:block_sheetmetaldarksteel> * 8);
 IndustruialChassis.addItemOutput(<enderio:item_material:1>);
 IndustruialChassis.build();
@@ -88,7 +88,7 @@ val IndustruialChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifi
 IndustruialChassis2.addEnergyPerTickInput(6000);
 IndustruialChassis2.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "machina"}]}));
 IndustruialChassis2.addItemInput(<rockhounding_chemistry:alloy_blocks_tech:14>);
-IndustruialChassis2.addItemInput(<enderio:block_dark_iron_bars> * 18);
+IndustruialChassis2.addItemInput(<contenttweaker:scaffolding_mek_alloy> * 18);
 IndustruialChassis2.addItemInput(<jaopca:block_sheetmetaldarksteel> * 8);
 IndustruialChassis2.addItemOutput(<enderio:item_material:1>*2);
 IndustruialChassis2.build();
@@ -98,7 +98,7 @@ val SoulChassis = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-craf
 SoulChassis.addEnergyPerTickInput(6000);
 SoulChassis.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "spiritus"}]}));
 SoulChassis.addItemInput(<techreborn:storage:10>);
-SoulChassis.addItemInput(<enderio:block_dark_iron_bars> * 18);
+SoulChassis.addItemInput(<contenttweaker:scaffolding_mek_alloy> * 18);
 SoulChassis.addItemInput(<jaopca:block_sheetmetalsoularium> * 8);
 SoulChassis.addItemOutput(<enderio:item_material:53>);
 SoulChassis.build();
@@ -107,7 +107,7 @@ val SoulChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-cra
 SoulChassis2.addEnergyPerTickInput(6000);
 SoulChassis2.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "spiritus"}]}));
 SoulChassis2.addItemInput(<rockhounding_chemistry:alloy_blocks_tech:14>);
-SoulChassis2.addItemInput(<enderio:block_dark_iron_bars> * 18);
+SoulChassis2.addItemInput(<contenttweaker:scaffolding_mek_alloy> * 18);
 SoulChassis2.addItemInput(<jaopca:block_sheetmetalsoularium> * 8);
 SoulChassis2.addItemOutput(<enderio:item_material:53>*2);
 SoulChassis2.build();

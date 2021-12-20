@@ -131,6 +131,7 @@ VanillaFactory.createItem("component_mek_alloy").register();
 VanillaFactory.createItem("ingot_mek_alloy").register();
 VanillaFactory.createItem("plate_mek_alloy").register();
 VanillaFactory.createItem("gear_mek_alloy").register();
+VanillaFactory.createItem("rod_mek_alloy").register();
 
 VanillaFactory.createItem("ingot_staballoy").register();
 
@@ -238,6 +239,26 @@ agitatorHastelloy.maxDamage = 8192;
 //agitatorHastelloy.glowing = true;
 agitatorHastelloy.register();
 
+/* COMING SOON TO A PACK NEAR YOU
+var warp_remover = VanillaFactory.createItem("warp_remover");
+warp_remover.maxStackSize = 1;
+warp_remover.rarity = "rare";
+
+/*
+warp_remover.itemLeftClick = function(stack, world, player, hand) {
+    Commands.call("tc warp @s add -50 TEMP", player, world, true, true);
+    return "Pass";
+};
+warp_remover.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("tc warp @s add -25", player, world, true, true);
+    return "Pass";
+};
+warp_remover.itemShiftRightClick = function(stack, world, player, hand) {
+    Commands.call("tc warp @s add -10 PERM", player, world, true, true);
+    return "Pass";
+};
+
+warp_remover.register();*/
 
 ##########################################################################################
 print("==================== end of Items.zs ====================");

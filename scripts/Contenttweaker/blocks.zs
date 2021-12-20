@@ -58,8 +58,8 @@ sheetmetalNimonicBlock.register();
 
 var scaffoldingVanasteelBlock = VanillaFactory.createBlock("vanasteel_scaffolding", <blockmaterial:iron>);
 scaffoldingVanasteelBlock.setLightValue(0);
-scaffoldingVanasteelBlock.setBlockHardness(5.0);
-scaffoldingVanasteelBlock.setBlockResistance(5.0);
+scaffoldingVanasteelBlock.setBlockHardness(4.0);
+scaffoldingVanasteelBlock.setBlockResistance(4.0);
 scaffoldingVanasteelBlock.setToolClass("pickaxe");
 scaffoldingVanasteelBlock.setToolLevel(1);
 scaffoldingVanasteelBlock.setBlockSoundType(<soundtype:metal>);
@@ -70,8 +70,8 @@ scaffoldingVanasteelBlock.register();
 
 var scaffoldingScalBlock = VanillaFactory.createBlock("scal_scaffolding", <blockmaterial:iron>);
 scaffoldingScalBlock.setLightValue(0);
-scaffoldingScalBlock.setBlockHardness(5.0);
-scaffoldingScalBlock.setBlockResistance(5.0);
+scaffoldingScalBlock.setBlockHardness(4.0);
+scaffoldingScalBlock.setBlockResistance(4.0);
 scaffoldingScalBlock.setToolClass("pickaxe");
 scaffoldingScalBlock.setToolLevel(1);
 scaffoldingScalBlock.setBlockSoundType(<soundtype:metal>);
@@ -82,8 +82,8 @@ scaffoldingScalBlock.register();
 
 var scaffoldingBamBlock = VanillaFactory.createBlock("bam_scaffolding", <blockmaterial:iron>);
 scaffoldingBamBlock.setLightValue(0);
-scaffoldingBamBlock.setBlockHardness(5.0);
-scaffoldingBamBlock.setBlockResistance(5.0);
+scaffoldingBamBlock.setBlockHardness(4.0);
+scaffoldingBamBlock.setBlockResistance(4.0);
 scaffoldingBamBlock.setToolClass("pickaxe");
 scaffoldingBamBlock.setToolLevel(1);
 scaffoldingBamBlock.setBlockSoundType(<soundtype:metal>);
@@ -94,8 +94,8 @@ scaffoldingBamBlock.register();
 
 var scaffoldingNimonicBlock = VanillaFactory.createBlock("nimonic_scaffolding", <blockmaterial:iron>);
 scaffoldingNimonicBlock.setLightValue(0);
-scaffoldingNimonicBlock.setBlockHardness(5.0);
-scaffoldingNimonicBlock.setBlockResistance(5.0);
+scaffoldingNimonicBlock.setBlockHardness(4.0);
+scaffoldingNimonicBlock.setBlockResistance(4.0);
 scaffoldingNimonicBlock.setToolClass("pickaxe");
 scaffoldingNimonicBlock.setToolLevel(1);
 scaffoldingNimonicBlock.setBlockSoundType(<soundtype:metal>);
@@ -106,8 +106,8 @@ scaffoldingNimonicBlock.register();
 
 var scaffoldingInvarBlock = VanillaFactory.createBlock("invar_scaffolding", <blockmaterial:iron>);
 scaffoldingInvarBlock.setLightValue(0);
-scaffoldingInvarBlock.setBlockHardness(5.0);
-scaffoldingInvarBlock.setBlockResistance(5.0);
+scaffoldingInvarBlock.setBlockHardness(3.0);
+scaffoldingInvarBlock.setBlockResistance(3.0);
 scaffoldingInvarBlock.setToolClass("pickaxe");
 scaffoldingInvarBlock.setToolLevel(1);
 scaffoldingInvarBlock.setBlockSoundType(<soundtype:metal>);
@@ -209,8 +209,8 @@ sheetmetalIronwoodBlock.register();
 
 var scaffoldingIronwoodBlock = VanillaFactory.createBlock("ironwood_scaffolding", <blockmaterial:iron>);
 scaffoldingIronwoodBlock.setLightValue(0);
-scaffoldingIronwoodBlock.setBlockHardness(5.0);
-scaffoldingIronwoodBlock.setBlockResistance(5.0);
+scaffoldingIronwoodBlock.setBlockHardness(3.0);
+scaffoldingIronwoodBlock.setBlockResistance(3.0);
 scaffoldingIronwoodBlock.setToolClass("pickaxe");
 scaffoldingIronwoodBlock.setToolLevel(1);
 scaffoldingIronwoodBlock.setBlockSoundType(<soundtype:metal>);
@@ -264,8 +264,8 @@ sheetmetal_thermal_alloy.register();
 
 var scaffolding_thermal_alloy = VanillaFactory.createBlock("scaffolding_thermal_alloy", <blockmaterial:iron>);
 scaffolding_thermal_alloy.setLightValue(0);
-scaffolding_thermal_alloy.setBlockHardness(5.0);
-scaffolding_thermal_alloy.setBlockResistance(5.0);
+scaffolding_thermal_alloy.setBlockHardness(3.0);
+scaffolding_thermal_alloy.setBlockResistance(3.0);
 scaffolding_thermal_alloy.setToolClass("pickaxe");
 scaffolding_thermal_alloy.setToolLevel(1);
 scaffolding_thermal_alloy.setBlockSoundType(<soundtype:metal>);
@@ -305,5 +305,17 @@ sheetmetal_mek_alloy.setToolClass("pickaxe");
 sheetmetal_mek_alloy.setToolLevel(1);
 sheetmetal_mek_alloy.setBlockSoundType(<soundtype:metal>);
 sheetmetal_mek_alloy.register();
+
+var scaffolding_mek_alloy = VanillaFactory.createBlock("scaffolding_mek_alloy", <blockmaterial:iron>);
+scaffolding_mek_alloy.setLightValue(0);
+scaffolding_mek_alloy.setBlockHardness(3.0);
+scaffolding_mek_alloy.setBlockResistance(3.0);
+scaffolding_mek_alloy.setToolClass("pickaxe");
+scaffolding_mek_alloy.setToolLevel(1);
+scaffolding_mek_alloy.setBlockSoundType(<soundtype:metal>);
+scaffolding_mek_alloy.setFullBlock(false);
+scaffolding_mek_alloy.setTranslucent(true);
+scaffolding_mek_alloy.setBlockLayer("CUTOUT");
+scaffolding_mek_alloy.register();
 ##########################################################################################
 print("==================== end of blocks.zs ====================");

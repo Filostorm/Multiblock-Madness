@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/scaffolding_mek_alloy",
+      "particle": "contenttweaker:blocks/scaffolding_mek_alloy"
+    },
+    "model": "contenttweaker:scaffolding_mek_alloy",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

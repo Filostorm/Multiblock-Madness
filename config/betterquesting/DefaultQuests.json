@@ -2106,7 +2106,7 @@
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "lockedprogress:1": 1,
-          "tasklogic:8": "AND",
+          "tasklogic:8": "OR",
           "repeattime:3": -1,
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
@@ -2149,6 +2149,10 @@
           },
           "taskID:8": "bq_standard:retrieval",
           "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 1
         }
       },
       "rewards:9": {
@@ -3619,7 +3623,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Hotkeys and Quests",
-          "desc:8": "§d§rWe have a few very useful hotkeys to set up in this pack:\n\n§2Better Questing: Opens the questbook.\n\n§bOre Excavator: Holding down while using a tool will cause connected blocks to be harversted as well.\n\n§eNotes: Opens a notepad.\n\n§6Find Me: Pushing while hovering oven an item will cause nearby chests containing that item to light up.\n\n\n\n§rIf you are having trouble with a quest, read the discription!\n\nWhen you see a red X§r, you will need to check it to complete the quest."
+          "desc:8": "§d§rWe have a few very useful hotkeys to set up in this pack:\n\n§2Better Questing: Opens the questbook.\n\n§bOre Excavator: Holding down while using a tool will cause connected blocks to be harversted as well.\n\n§6Find Me: Pushing while hovering oven an item will cause nearby chests containing that item to light up.\n\n\n\n§rIf you are having trouble with a quest, read the discription!\n\nWhen you see a red X§r, you will need to check it to complete the quest."
         }
       },
       "tasks:9": {
@@ -17509,6 +17513,10 @@
           },
           "taskID:8": "bq_standard:retrieval",
           "index:3": 1
+        },
+        "2:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 2
         }
       },
       "rewards:9": {
@@ -57815,7 +57823,20 @@
           "index:3": 0
         }
       },
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "rewards:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:bin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0
+        }
+      },
       "preRequisites:11": [
         679,
         760,
@@ -60106,7 +60127,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Reactor Troubleshooting",
-          "desc:8": "§8§3Melted Cells?§r Make sure each §6Cell§r is getting enough cooling! Double check the heating and cooling rules in the previous chapters. Remember, §1§9Heat Sink§r§9s§r need to be connected to a §6Cell§r directly or through other active §9Heat Sinks§,.\n\n§b§3Reactor not starting?§r Make sure you\u0027ve reached the §cCriticality factor§r for your supplied fuel! Double check the §aFlux Factor§r rules in the Fuel Cell chapter.\n\n§3Reactor Controller Melted?§r Pump the Steam out!"
+          "desc:8": "§8§3Melted Cells?§r Make sure each §6Cell§r is getting enough cooling! Double check the heating and cooling rules in the previous chapters. Remember, §1§9Heat Sink§r§9s§r need to be connected to a §6Cell§r directly or through other active §9Heat Sinks§,.\n\n§b§3Reactor not starting?§r Make sure you\u0027ve reached the §cCriticality factor§r for your supplied fuel! Double check the §aFlux Factor§r rules in the Fuel Cell quest.\n\n§3Reactor Controller Melted?§r Pump the Steam out!"
         }
       },
       "tasks:9": {

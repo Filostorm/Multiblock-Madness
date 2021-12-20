@@ -432,6 +432,14 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_thermal_allo
 	.addItemInput(<contenttweaker:rod_thermal_alloy>*3)
 	.build();	
 
+// Mek Alloy Scaffolding
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_mek_alloy_scaffolding", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<contenttweaker:scaffolding_mek_alloy>*9)
+	.addItemInput(<contenttweaker:ingot_mek_alloy>*3)
+	.addItemInput(<contenttweaker:rod_mek_alloy>*3)
+	.build();	
+
 // Food //
 
 // Deadly Energy Drink
@@ -1370,6 +1378,14 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_thermal_all
 	.addItemOutput(<contenttweaker:scaffolding_thermal_alloy>*9)
 	.addItemInput(<contenttweaker:ingot_thermal_alloy>*3)
 	.addItemInput(<contenttweaker:rod_thermal_alloy>*3)
+	.build();	
+
+// Mek Alloy Scaffolding
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_mek_alloy_scaffolding", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<contenttweaker:scaffolding_mek_alloy>*9)
+	.addItemInput(<contenttweaker:ingot_mek_alloy>*3)
+	.addItemInput(<contenttweaker:rod_mek_alloy>*3)
 	.build();	
 
 // Food //

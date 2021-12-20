@@ -157,8 +157,10 @@ item.contenttweaker.component_mek_alloy.name=Dense Component
 item.contenttweaker.ingot_mek_alloy.name=§6Heavy Alloy
 item.contenttweaker.plate_mek_alloy.name=§6Heavy Alloy Plate
 item.contenttweaker.gear_mek_alloy.name=§6Heavy Alloy Gear
+item.contenttweaker.rod_mek_alloy.name=§6Heavy Alloy Rod
 tile.contenttweaker.block_mek_alloy.name=§6Block of Heavy Alloy
 tile.contenttweaker.sheetmetal_mek_alloy.name=§6Heavy Alloy Sheetmetal
+tile.contenttweaker.scaffolding_mek_alloy.name=§6Heavy Alloy Scaffolding
 
 
 tile.contenttweaker.sheetmetal_cast.name=Sheetmetal Cast
@@ -166,4 +168,5 @@ tile.contenttweaker.sheetmetal_cast.name=Sheetmetal Cast
 
 item.contenttweaker.grindingball_mixedwill.name=§bIndomitable Grinding Ball
 item.contenttweaker.plate_engineering.name=Engineers Masterpiece
+item.contenttweaker.warp_remover.name=Staff of Sanity
 

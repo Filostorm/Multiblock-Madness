@@ -198,5 +198,164 @@ recipes.addShapeless(<enderio:item_ender_food>, [<minecraft:bowl>,<minecraft:mil
 recipes.addShaped(<enderio:item_gas_conduit:2> * 8, [[<enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>],[<rockhounding_chemistry:gasline_duct>, <mekanism:atomicalloy>, <rockhounding_chemistry:gasline_duct>], [<enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>]]);
 
 
+# [Alloy Smelter] from [Industrial Machine Chassis][+5]
+craft.remake(<enderio:block_alloy_smelter>, ["pretty",
+  "E ☼ E",
+  "□ M □",
+  "¤ B ¤"], {
+  "E": <contenttweaker:plate_engineering>, # Engineers Masterpiece
+  "☼": <ore:gearThermoconducting>,         # Thermoconducting Gear
+  "□": <contenttweaker:plate_mek_alloy>,   # Heavy Alloy Plate
+  "M": <ore:itemMachineChassi>,            # Industrial Machine Chassis
+  "¤": <ore:gearVibrant>,                  # Vibrant Bimetal Gear
+  "B": <ore:processorBasic>,               # Basic Processor
+});
+
+# [Enhanced Alloy Smelter] from [Alloy Smelter][+5]
+craft.remake(<enderio:block_enhanced_alloy_smelter>, ["pretty",
+  "□ V □",
+  "B A B",
+  "¤ E ¤"], {
+  "□": <ore:plateStellarAlloy>,         # Stellar Alloy Plate
+  "V": <ore:componentEVCapacitor>,      # EV Capacitor
+  "B": <extendedcrafting:material:14>,  # Basic Component
+  "A": <enderio:block_alloy_smelter>,   # Alloy Smelter
+  "¤": <ore:gearStellite>,              # Stellite Gear
+  "E": <ore:itemEnhancedMachineChassi>, # Enhanced Machine Chassis
+});
+
+# [Enchanter] from [Enchantment Table][+3]
+craft.remake(<enderio:block_enchanter>, ["pretty",
+  "* B *",
+  "¤ E ¤",
+  "  ¤  "], {
+  "*": <actuallyadditions:item_crystal_empowered:5>, # Empowered Enori Crystal
+  "B": <minecraft:book>,             # Book
+  "¤": <ore:gearDark>,               # Dark Bimetal Gear
+  "E": <minecraft:enchanting_table>, # Enchantment Table
+});
+
+# [SAG Mill] from [Industrial Machine Chassis][+5]
+craft.remake(<enderio:block_sag_mill>, ["pretty",
+  "D T D",
+  "□ M □",
+  "¤ B ¤"], {
+  "D": <contenttweaker:component_mek_alloy>, # Dense Component
+  "T": <ore:craftingTungstenGrinder>,        # Tungsten Grinding Head
+  "□": <contenttweaker:plate_mek_alloy>,     # Heavy Alloy Plate
+  "M": <ore:itemMachineChassi>,              # Industrial Machine Chassis
+  "¤": <ore:gearVibrant>,                    # Vibrant Bimetal Gear
+  "B": <ore:processorBasic>,                 # Basic Processor
+});
+
+# [Enhanced SAG Mill] from [SAG Mill][+5]
+craft.remake(<enderio:block_enhanced_sag_mill>, ["pretty",
+  "□ V □",
+  "B S B",
+  "¤ E ¤"], {
+  "□": <ore:plateStellarAlloy>,         # Stellar Alloy Plate
+  "V": <ore:componentEVCapacitor>,      # EV Capacitor
+  "B": <extendedcrafting:material:14>,  # Basic Component
+  "S": <enderio:block_sag_mill>,        # SAG Mill
+  "¤": <ore:gearStellite>,              # Stellite Gear
+  "E": <ore:itemEnhancedMachineChassi>, # Enhanced Machine Chassis
+});
+
+# [The Vat] from [Industrial Machine Chassis][+5]
+craft.remake(<enderio:block_vat>, ["pretty",
+  "п A п",
+  "□ M □",
+  "¤ B ¤"], {
+  "п": <ore:plateThermoconducting>,      # Thermoconducting Plate
+  "A": <mekanism:machineblock2:11>.withTag({tier: 1}), # Advanced Fluid Tank
+  "□": <contenttweaker:plate_mek_alloy>, # Heavy Alloy Plate
+  "M": <ore:itemMachineChassi>,          # Industrial Machine Chassis
+  "¤": <ore:gearVibrant>,                # Vibrant Bimetal Gear
+  "B": <ore:processorBasic>,             # Basic Processor
+});
+
+# [The Enhanced Vat] from [The Vat][+5]
+craft.remake(<enderio:block_enhanced_vat>, ["pretty",
+  "□ V □",
+  "B T B",
+  "¤ E ¤"], {
+  "□": <ore:plateStellarAlloy>,         # Stellar Alloy Plate
+  "V": <ore:componentEVCapacitor>,      # EV Capacitor
+  "B": <extendedcrafting:material:14>,  # Basic Component
+  "T": <enderio:block_vat>,             # The Vat
+  "¤": <ore:gearStellite>,              # Stellite Gear
+  "E": <ore:itemEnhancedMachineChassi>, # Enhanced Machine Chassis
+});
+# [Farming Station] from [Soul Machine Chassis][+5]
+craft.remake(<enderio:block_farm_station>, ["pretty",
+  "* Z *",
+  "□ S □",
+  "¤ ╳ ¤"], {
+  "*": <ore:itemVibrantCrystal>,    # Vibrant Crystal
+  "Z": <ore:skullZombieController>, # Z-Logic Controller
+  "□": <ore:plateSoularium>,        # Soularium Plate
+  "S": <ore:itemSoulMachineChassi>, # Soul Machine Chassis
+  "¤": <ore:gearEnergized>,         # Energized Bimetal Gear
+  "╳": <ore:itemPulsatingCrystal>,  # Pulsating Crystal
+});
+
+# [Slice'N'Splice] from [Soul Machine Chassis][+4]
+craft.remake(<enderio:block_slice_and_splice>, ["pretty",
+  "□ k □",
+  "□ S □",
+  "¤ B ¤"], {
+  "□": <ore:plateStellite>,         # Stellite Plate
+  "k": <ore:itemSkull>,             # Enderman Head
+  "S": <ore:itemSoulMachineChassi>, # Soul Machine Chassis
+  "¤": <ore:gearEnergized>,         # Energized Bimetal Gear
+  "B": <ore:processorBasic>,        # Basic Processor
+});
+
+# [Soul Binder] from [Soul Machine Chassis][+6]
+craft.remake(<enderio:block_soul_binder>, ["pretty",
+  "□ k □",
+  "e S h",
+  "¤ B ¤"], {
+  "□": <ore:plateStellite>,            # Stellite Plate
+  "k": <enderio:block_enderman_skull>, # Enderman Head
+  "e": <minecraft:skull:4>,            # Creeper Head
+  "S": <ore:itemSoulMachineChassi>,    # Soul Machine Chassis
+  "h": <minecraft:skull:2>,            # Zombie Head
+  "¤": <ore:gearStellite>,             # Stellite Gear
+  "B": <ore:processorBasic>,           # Basic Processor
+});
+
+# [Basic Capacitor Bank] from [Restonia Crystal Block][+2]
+craft.remake(<enderio:block_cap_bank:1>, ["pretty",
+  "□ B □",
+  "B * B",
+  "□ B □"], {
+  "□": <ore:plateElectricalSteel>,        # Electrical Steel Plate
+  "B": <enderio:item_basic_capacitor>,    # Basic Capacitor
+  "*": <actuallyadditions:block_crystal>, # Restonia Crystal Block
+});
+
+# [Capacitor Bank] from [Double-Layer Capacitor][+3]
+craft.remake(<enderio:block_cap_bank:2>, ["pretty",
+  "□ A □",
+  "B D B",
+  "□ A □"], {
+  "□": <ore:plateEnergeticAlloy>,              # Energetic Alloy Plate
+  "A": <rockhounding_chemistry:misc_items:10>, # Advanced Logic Chip
+  "B": <enderio:block_cap_bank:1>,             # Basic Capacitor Bank
+  "D": <enderio:item_basic_capacitor:1>,       # Double-Layer Capacitor
+});
+
+# [Vibrant Capacitor Bank] from [Vibrant Crystal][+3]
+craft.remake(<enderio:block_cap_bank:3>, ["pretty",
+  "□ O □",
+  "C * C",
+  "□ O □"], {
+  "□": <ore:plateVibrantAlloy>,          # Vibrant Alloy Plate
+  "O": <enderio:item_basic_capacitor:2>, # Octadic Capacitor
+  "C": <enderio:block_cap_bank:2>,       # Capacitor Bank
+  "*": <ore:itemVibrantCrystal>,         # Vibrant Crystal
+});
+
 ##########################################################################################
 print("==================== end of mods enderIO.zs ====================");

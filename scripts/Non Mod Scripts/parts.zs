@@ -67,6 +67,7 @@ val metalPressRods as IItemStack[IItemStack] = {
 	<contenttweaker:rod_bam>:<rockhounding_chemistry:alloy_items_tech:7>,
 	<contenttweaker:rod_ironwood>:<twilightforest:ironwood_ingot>,
 	<contenttweaker:rod_thermal_alloy>:<contenttweaker:ingot_thermal_alloy>,
+	<contenttweaker:rod_mek_alloy>:<contenttweaker:ingot_mek_alloy>,
 } as IItemStack[IItemStack];
 
 for rod, material in metalPressRods {
@@ -143,6 +144,7 @@ recipes.addShaped(<jaopca:block_scaffoldingstainlesssteel> * 6, [[<ore:ingotStai
 recipes.addShaped(<jaopca:block_scaffoldingthaumium> * 6, [[<thaumcraft:ingot>, <thaumcraft:ingot>, <thaumcraft:ingot>],[null, <jaopca:item_stickthaumium>, null], [<jaopca:item_stickthaumium>, null, <jaopca:item_stickthaumium>]]);
 recipes.addShaped(<contenttweaker:ironwood_scaffolding> * 6, [[<twilightforest:ironwood_ingot>, <twilightforest:ironwood_ingot>, <twilightforest:ironwood_ingot>],[null, <contenttweaker:rod_ironwood>, null], [<contenttweaker:rod_ironwood>, null, <contenttweaker:rod_ironwood>]]);
 recipes.addShaped(<contenttweaker:scaffolding_thermal_alloy> * 6, [[<contenttweaker:ingot_thermal_alloy>, <contenttweaker:ingot_thermal_alloy>, <contenttweaker:ingot_thermal_alloy>],[null, <contenttweaker:rod_thermal_alloy>, null], [<contenttweaker:rod_thermal_alloy>, null, <contenttweaker:rod_thermal_alloy>]]);
+recipes.addShaped(<contenttweaker:scaffolding_mek_alloy> * 6, [[<contenttweaker:ingot_mek_alloy>, <contenttweaker:ingot_mek_alloy>, <contenttweaker:ingot_mek_alloy>],[null, <contenttweaker:rod_mek_alloy>, null], [<contenttweaker:rod_mek_alloy>, null, <contenttweaker:rod_mek_alloy>]]);
 
 /* Moved
 //scaffolding

@@ -106,8 +106,7 @@ recipes.addShaped(<mekanismgenerators:reactor>, [[<mekanism:controlcircuit:3>, <
 
 recipes.addShapeless(<mekanism:configurator>, [<enderio:item_yeta_wrench>,<actuallyadditions:item_battery>]);
 
-##Metallurgic Infuser
-recipes.addShaped(<mekanism:machineblock:8>, [[<minecraft:iron_ingot>, <minecraft:furnace>, <minecraft:iron_ingot>],[<minecraft:redstone>, <mekanism:basicblock:8>, <minecraft:redstone>], [<minecraft:iron_ingot>, <minecraft:furnace>, <minecraft:iron_ingot>]]);
+
 //OutputStack[, InputStack, InfusionString]
 infuser.removeRecipe(<mekanism:enrichedalloy>);
 infuser.removeRecipe(<mekanism:reinforcedalloy>);
@@ -336,7 +335,7 @@ craft.remake(<mekanism:machineblock2:6>, ["pretty",
   "¤ ⌂ ¤",
   "□ I □"], {
   "□": <contenttweaker:plate_mek_alloy>, # Heavy Alloy Plate
-  "B": <mekanism:controlcircuit:3>,    # Basic Catalyst
+  "B": <mekanism:controlcircuit:3>,    # Ultmate Circuit
   "¤": <ore:gearEmeradicEmpowered>,      # Empowered Emeradic Gear
   "⌂": <mekanism:basicblock:8>,          # Steel Casing
   "I": <advancedrocketry:ic:4>,          # Item IO Circuit Board
@@ -348,7 +347,7 @@ craft.remake(<mekanism:machineblock2:7>, ["pretty",
   "¤ ⌂ ¤",
   "□ L □"], {
   "□": <contenttweaker:plate_mek_alloy>, # Heavy Alloy Plate
-  "B": <mekanism:controlcircuit:3>,    # Basic Catalyst
+  "B": <mekanism:controlcircuit:3>,    # Ultmate Circuit
   "¤": <ore:gearEnoriEmpowered>,         # Empowered Enori Gear
   "⌂": <mekanism:basicblock:8>,          # Steel Casing
   "L": <advancedrocketry:ic:5>,          # Liquid IO Circuit Board
@@ -360,12 +359,56 @@ craft.remake(<mekanism:machineblock2:8>, ["pretty",
   "¤ ⌂ ¤",
   "□ C □"], {
   "□": <contenttweaker:plate_mek_alloy>, # Heavy Alloy Plate
-  "B": <mekanism:controlcircuit:3>,    # Basic Catalyst
+  "B": <mekanism:controlcircuit:3>,    # Ultmate Circuit
   "¤": <ore:gearDiamatineEmpowered>,     # Empowered Diamatine Gear
   "⌂": <mekanism:basicblock:8>,          # Steel Casing
   "C": <advancedrocketry:ic:3>,          # Control Circuit Board
 });
 
+# [Precision Sawmill] from [Steel Casing][+5]
+craft.remake(<mekanism:machineblock2:5>, ["pretty",
+  "□ B □",
+  "A ⌂ I",
+  "□ E □"], {
+  "□": <contenttweaker:plate_thermal_alloy>, # Fluid Enriched Alloy Plate
+  "B": <ore:circuitBasic>,                   # Basic Control Circuit
+  "A": <ore:alloyAdvanced> | <ore:itemEnrichedAlloy>, # Enriched Alloy
+  "⌂": <mekanism:basicblock:8>,              # Steel Casing
+  "I": <advancedrocketry:sawbladeiron>,      # Iron Saw Blade
+  "E": <contenttweaker:plate_engineering>,   # Engineers Masterpiece
+});
 
+# [Basic Energy Cube] from [Steel Casing][+3]
+craft.remake(<mekanism:energycube>.withTag({tier: 0}), ["pretty",
+  "□ b □",
+  "п ⌂ п",
+  "□ b □"], {
+  "□": <ore:plateRestonia>,                  # Restonia Plate
+  "b": <ore:battery>,                        # Energy Tablet
+  "п": <contenttweaker:plate_thermal_alloy>, # Fluid Enriched Alloy Plate
+  "⌂": <mekanism:basicblock:8>,              # Steel Casing
+});
+
+# [Superheating Element] from [Steel Casing][+2]
+craft.remake(<mekanism:basicblock2:5>, ["pretty",
+  "A □ A",
+  "□ ⌂ □",
+  "A □ A"], {
+  "A": <ore:alloyAdvanced> | <ore:itemEnrichedAlloy>, # Enriched Alloy
+  "□": <ore:plateCopper> | <ore:tierOnePlate>, # Copper Plate
+  "⌂": <mekanism:basicblock:8>,                # Steel Casing
+});
+
+# [Resistive Heater] from [Superheating Element][+4]
+craft.remake(<mekanism:machineblock3:4>, ["pretty",
+  "B □ B",
+  "□ S □",
+  "¤ b ¤"], {
+  "B": <ore:circuitBasic>,       # Basic Control Circuit
+  "□": <ore:plateRestonia>,      # Restonia Plate
+  "S": <mekanism:basicblock2:5>, # Superheating Element
+  "¤": <ore:gearTin>,            # Tin Gear
+  "b": <ore:battery>,            # Energy Tablet
+});
 ##########################################################################################
 print("==================== end of Mekanism.zs ====================");

@@ -304,6 +304,14 @@
 			<itemStack>contenttweaker:rod_thermal_alloy;4;0</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>contenttweaker:ingot_mek_alloy</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_mek_alloy;4;0</itemStack>
+		</output>
+	</Recipe>
 
 
 	<Recipe timeRequired="60" power ="5000">
