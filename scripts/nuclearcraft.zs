@@ -13,6 +13,8 @@ val itemstoRemove =
 <nuclearcraft:part:10>,
 <nuclearcraft:part:12>,
 <nuclearcraft:part:4>,
+<nuclearcraft:part:3>,
+<nuclearcraft:part:2>
 ]
  as IItemStack[];
 
@@ -64,6 +66,10 @@ Infuser.removeRecipeWithOutput(<nuclearcraft:radaway>);
 Infuser.removeRecipeWithOutput(<nuclearcraft:radaway_slow>);
 Infuser.addRecipe(<mekanism:polyethene:2>*2, <liquid:radaway>*250, <nuclearcraft:radaway>);
 Infuser.addRecipe(<mekanism:polyethene:2>*2, <liquid:radaway_slow>*250, <nuclearcraft:radaway_slow>);
+
+// DU & Elite Plating
+recipes.addShaped(<nuclearcraft:part:3>, [[<nuclearcraft:compound:1>, <ore:ingotMagnesiumDiboride>, <nuclearcraft:compound:1>],[<ore:ingotThermoconducting>, <nuclearcraft:part:2>, <ore:ingotThermoconducting>], [<nuclearcraft:compound:1>, <ore:ingotMagnesiumDiboride>, <nuclearcraft:compound:1>]]);
+recipes.addShaped(<nuclearcraft:part:2>, [[<mekanism:polyethene:2>, <nuclearcraft:uranium:10>, <mekanism:polyethene:2>],[<nuclearcraft:uranium:10>, <nuclearcraft:part:1>, <nuclearcraft:uranium:10>], [<mekanism:polyethene:2>, <nuclearcraft:uranium:10>, <mekanism:polyethene:2>]]);
 
 
 ##########################################################################################
