@@ -1424,7 +1424,7 @@
 </recipe>
 
 
-<!-- UraniumStaballoy.zs -->
+<!-- UraniumStaballoy -->
 <recipe name="MBM: UraniumStaballoy" required="true">
   <alloying energy="50000" exp="0.5">
     <input name="ingotTitanium"/>
@@ -1433,7 +1433,7 @@
   </alloying>
 </recipe>
 
-<!-- TBUStaballoy.zs -->
+<!-- TBUStaballoy -->
 <recipe name="MBM: TBUStaballoy" required="true">
   <alloying energy="50000" exp="0.5">
     <input name="ingotTitanium"/>
@@ -1442,7 +1442,7 @@
   </alloying>
 </recipe>
 
-<!-- MolyStaballoy.zs -->
+<!-- MolyStaballoy -->
 <recipe name="MBM: MolyStaballoy" required="true">
   <alloying energy="50000" exp="0.5">
     <input name="ingotTitanium" amount="3"/>
@@ -1451,8 +1451,16 @@
   </alloying>
 </recipe>
 
+<!-- RareIsotopeStaballoy -->
+<recipe name="MBM: RareIsotopeStaballoy" required="true">
+  <alloying energy="50000" exp="0.5">
+    <input name="ingotTitanium" amount="5"/>
+    <input name="rareIsotopes"/>
+    <output name="contenttweaker:ingot_staballoy" amount="5"/>
+  </alloying>
+</recipe>
 
-<!-- Cheaper Mek Alloy.zs -->
+<!-- Cheaper Mek Alloy -->
 <recipe name="MBM: Mekalloy" required="true">
   <alloying energy="50000" exp="0.5">
     <input name="contenttweaker:excited_mek_alloy"/>

@@ -52,6 +52,13 @@ val itemstoRemove =
 <enderio:block_travel_anchor>,
 <enderio:item_ender_food>,
 <enderio:item_gas_conduit:2>,
+<enderio:item_capacitor_energetic_silver>,
+<enderio:item_basic_capacitor:1>,
+<enderio:item_basic_capacitor:2>,
+<enderio:item_capacitor_vivid>,
+<enderio:item_capacitor_crystalline>,
+<enderio:item_capacitor_melodic>,
+<enderio:item_capacitor_stellar>
 ]
  as IItemStack[];
 
@@ -355,6 +362,28 @@ craft.remake(<enderio:block_cap_bank:3>, ["pretty",
   "O": <enderio:item_basic_capacitor:2>, # Octadic Capacitor
   "C": <enderio:block_cap_bank:2>,       # Capacitor Bank
   "*": <ore:itemVibrantCrystal>,         # Vibrant Crystal
+});
+
+# [Basic Capacitor] from [Circuit Board][+3]
+craft.remake(<enderio:item_basic_capacitor>, ["pretty",
+  "▲ □ ▲",
+  "╱ C ╱",
+  "╱   ╱"], {
+  "▲": <ore:dustBedrock>,                      # Grains of Infinity
+  "□": <ore:plateCopper>, # Copper Plate
+  "╱": <ore:stickGold>,                        # Gold Rod
+  "C": <immersiveengineering:material:27>,     # Circuit Board
+});
+
+# [Silver Capacitor] from [Circuit Board][+3]
+craft.remake(<enderio:item_capacitor_silver>, ["pretty",
+  "▲ □ ▲",
+  "╱ C ╱",
+  "╱   ╱"], {
+  "▲": <ore:dustBedrock>,                    # Grains of Infinity
+  "□": <ore:plateLead>, # Lead Plate
+  "╱": <ore:stickSilver>,                    # Silver Rod
+  "C": <immersiveengineering:material:27>,   # Circuit Board
 });
 
 ##########################################################################################

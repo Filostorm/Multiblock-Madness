@@ -55,12 +55,30 @@ val depletedUranium =
  as IItemStack[];
 for item in depletedUranium {
 <ore:depletedUranium>.add(item);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy>, <techreborn:ingot:14>, item * 3, 50000);
+}
+
+val rareIsotopes =
+[
+<nuclearcraft:fission_dust:5>,
+<nuclearcraft:fission_dust:8>,
+<nuclearcraft:fission_dust:9>,
+<nuclearcraft:fission_dust:10>,
+<nuclearcraft:fission_dust:7>
+]
+ as IItemStack[];
+for item in rareIsotopes {
+<ore:rareIsotopes>.add(item);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy> * 5, <techreborn:ingot:14> * 5, item, 50000);
 }
 
 //Staballoy
 AlloyFurnace.addRecipe(<ore:ingotTitanium>, <ore:depletedUranium>*3, <contenttweaker:ingot_staballoy>);
 AlloyFurnace.addRecipe(<ore:ingotTitanium>, <ore:ingotTBU>, <contenttweaker:ingot_staballoy>);
-AlloyFurnace.addRecipe(<ore:ingotTitanium>*6, <ore:dustMolybdenum>, <contenttweaker:ingot_staballoy>*6);
+AlloyFurnace.addRecipe(<ore:ingotTitanium>*3, <ore:dustMolybdenum>, <contenttweaker:ingot_staballoy>*3);
+AlloyFurnace.addRecipe(<ore:ingotTitanium>*5, <ore:rareIsotopes>, <contenttweaker:ingot_staballoy>*5);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy>, <techreborn:ingot:14>, <nuclearcraft:pellet_thorium>, 50000);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy> * 3, <techreborn:ingot:14>, <nuclearcraft:fission_dust:6>, 50000);
 
 //This is probably way too high lol
 mods.nuclearcraft.FissionIrradiator.addRecipe(<contenttweaker:ingot_staballoy>, <contenttweaker:excited_mek_alloy>, 100000, 0, 0.25, 0);

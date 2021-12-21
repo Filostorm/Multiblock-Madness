@@ -32,10 +32,10 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-//Diode
+// Diode
 recipes.addShaped(<environmentaltech:diode>, [[<advancedrocketry:productplate>, <powersuits:powerarmorcomponent:13>, <advancedrocketry:productplate>],[<advancedrocketry:productplate>, <threng:material:5>, <advancedrocketry:productplate>], [<advancedrocketry:productplate>, <astralsorcery:iteminfusedglass>, <advancedrocketry:productplate>]]);
 
-//laser core
+// Laser Core
 recipes.addShaped(<environmentaltech:laser_core>, [[<advgenerators:iron_frame>, <threng:material:5>, <advgenerators:iron_frame>],[<environmentaltech:connector>, <threng:material:5>, <environmentaltech:connector>], [<advgenerators:iron_frame>, <threng:material:5>, <advgenerators:iron_frame>]]);
 recipes.addShaped(<environmentaltech:laser_core>*4, [[<advgenerators:iron_frame>, <rockhounding_chemistry:alloy_items_gems:1>, <advgenerators:iron_frame>],[<environmentaltech:connector>, <rockhounding_chemistry:alloy_items_gems:1>, <environmentaltech:connector>], [<advgenerators:iron_frame>, <rockhounding_chemistry:alloy_items_gems:1>, <advgenerators:iron_frame>]]);
 
@@ -70,12 +70,49 @@ for item in MinerTooltip {
 item.addTooltip(format.green("Sneak-right click to change modes"));
 }
 
-//Photo cell
+// Photo cell
 recipes.addShaped(<environmentaltech:photovoltaic_cell>, [[<mekanismgenerators:solarpanel>, <techreborn:reinforced_glass>, <mekanismgenerators:solarpanel>],[<techreborn:reinforced_glass>, <thermalfoundation:material:327>, <techreborn:reinforced_glass>], [<mekanismgenerators:solarpanel>, <techreborn:reinforced_glass>, <mekanismgenerators:solarpanel>]]);
 
-//Crystal Lens
+// Crystal Lens
 recipes.addShaped(<environmentaltech:laser_lens_crystal>, [[<environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>],[<environmentaltech:kyronite_crystal>, <ore:etLaserLens>, <environmentaltech:kyronite_crystal>], [<environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>]]);
 
+# [Clear Laser Lens] from [Hardened Iridium Glass]
+craft.remake(<environmentaltech:laser_lens>, ["pretty",
+  "■   ■",
+  "■ ■ ■",
+  "■   ■"], {
+  "■": <ore:blockGlassHardened>, # Hardened Iridium Glass
+});
+
+# [Clear Laser Lens]*4 from [Didymium Glass (Borderless)]
+craft.remake(<environmentaltech:laser_lens> * 4, ["pretty",
+  "D   D",
+  "D D D",
+  "D   D"], {
+  "D": <rockhounding_chemistry:didymium_glass>, # Didymium Glass (Borderless)
+});
+
+# [Structure Panel] from [Connector][+2]
+craft.remake(<environmentaltech:structure_panel>, ["pretty",
+  "p D p",
+  "D C D",
+  "p D p"], {
+  "p": <ore:platetungstensteel> | <ore:plateTungstensteel>, # Tungstensteel Plate
+  "D": <enderio:block_dark_iron_bars>, # Dark Iron Bars
+  "C": <environmentaltech:connector>,  # Connector
+});
+
+# [Null Modifier] from [Interconnect][+4]
+craft.remake(<environmentaltech:modifier_null>, ["pretty",
+  "□ ▬ □",
+  "E I E",
+  "□ n □"], {
+  "□": <ore:plateSuperAlloy>,              # Super Alloy Plate
+  "▬": <ore:ingotMirion>,                  # Mirion Ingot
+  "E": <bloodmagic:slate:4>,               # Ethereal Slate
+  "I": <environmentaltech:interconnect>,   # Interconnect
+  "n": <contenttweaker:plate_engineering>, # Engineers Masterpiece
+});
 
 
 //Start of stuff for making the crystals
@@ -99,6 +136,80 @@ mods.nuclearcraft.Infuser.addRecipe(<environmentaltech:erodium_crystal>, <liquid
 
 //Tier 4
 mods.nuclearcraft.FissionIrradiator.addRecipe(<environmentaltech:kyronite_crystal>, <environmentaltech:pladium_crystal>, 200000, 0, 0.15, 0);
+
+// Structure Frames //
+
+# [Structure Frame Tier 1] from [Structure Panel][+4]
+craft.remake(<environmentaltech:structure_frame_1>, ["pretty",
+  "□ I □",
+  "* S *",
+  "□ ╳ □"], {
+  "□": <ore:plateThermoconducting>,         # Thermoconducting Plate
+  "I": <enderutilities:enderpart:11>,       # Inactive Ender Core (Enhanced)
+  "*": <ore:crystalLitherite>,              # Litherite Crystal
+  "S": <environmentaltech:interconnect>,    # Interconnect
+  "╳": <ore:itemPrecientCrystal>,           # Prescient Crystal
+});
+
+# [Structure Frame Tier 2] from [Structure Frame Tier 1][+4]
+craft.remake(<environmentaltech:structure_frame_2>, ["pretty",
+  "□ D □",
+  "* ◙ *",
+  "□ ╳ □"], {
+  "□": <contenttweaker:plate_thermal_alloy>,  # Fluid Enriched Alloy Plate
+  "D": <techreborn:part:3>,                   # Data Orb
+  "*": <ore:crystalErodium>,                  # Erodium Crystal
+  "◙": <environmentaltech:structure_frame_1>, # Structure Frame Tier 1
+  "╳": <ore:itemWeatherCrystal>,              # Weather Crystal
+});
+
+# [Structure Frame Tier 3] from [Structure Frame Tier 2][+4]
+craft.remake(<environmentaltech:structure_frame_3>, ["pretty",
+  "□ E □",
+  "* ◙ *",
+  "□ B □"], {
+  "□": <contenttweaker:plate_mek_alloy>,      # Heavy Alloy Plate
+  "E": <ore:circuitElite>,                    # Elite Control Circuit
+  "*": <ore:crystalKyronite>,                 # Kyronite Crystal
+  "◙": <environmentaltech:structure_frame_2>, # Structure Frame Tier 2
+  "B": <extendedcrafting:material:14>,        # Basic Component
+});
+
+# [Structure Frame Tier 4] from [Structure Frame Tier 3][+4]
+craft.remake(<environmentaltech:structure_frame_4>, ["pretty",
+  "□ B □",
+  "* ◙ *",
+  "□ A □"], {
+  "□": <ore:plateMithril>,                    # Mana Infused Plate
+  "B": <ore:processorBasic>,                  # Basic Processor
+  "*": <ore:crystalPladium>,                  # Pladium Crystal
+  "◙": <environmentaltech:structure_frame_3>, # Structure Frame Tier 3
+  "A": <extendedcrafting:material:15>,        # Advanced Component
+});
+
+# [Structure Frame Tier 5] from [Structure Frame Tier 4][+4]
+craft.remake(<environmentaltech:structure_frame_5>, ["pretty",
+  "□ U □",
+  "* ◙ *",
+  "□ E □"], {
+  "□": <ore:plateOsmiridium>,                 # Osmiridium Plate
+  "U": <ore:circuitUltimate>,                 # Ultimate Control Circuit
+  "*": <ore:crystalIonite>,                   # Ionite Crystal
+  "◙": <environmentaltech:structure_frame_4>, # Structure Frame Tier 4
+  "E": <extendedcrafting:material:16>,        # Elite Component
+});
+
+# [Structure Frame Tier 6] from [Structure Frame Tier 5][+4]
+craft.remake(<environmentaltech:structure_frame_6>, ["pretty",
+  "□ I □",
+  "* ◙ *",
+  "□ U □"], {
+  "□": <ore:plateStellarAlloy>,               # Stellar Alloy Plate
+  "I": <enderutilities:enderpart:12>,         # Inactive Ender Core (Advanced)
+  "*": <ore:crystalAethium>,                  # Aethium Crystal
+  "◙": <environmentaltech:structure_frame_5>, # Structure Frame Tier 5
+  "U": <extendedcrafting:material:17>,        # Ultimate Component
+});
 
 ##########################################################################################
 print("==================== end of mods enviromental tech.zs ====================");
