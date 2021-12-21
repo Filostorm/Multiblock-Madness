@@ -6946,7 +6946,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Making Coal Soup",
-          "desc:8": "Crush Coal or Charcoal blocks in the Crushing Tank at level 2 to get Cracked Coal.\n\nPipe the Cracked Coal and water into the Slurry Pond. Having more then one of these would be a good idea."
+          "desc:8": "Crush Coal or Charcoal blocks in the Mineral Sizer at level 2 to get Cracked Coal.\n\nPipe the Cracked Coal and water into the Slurry Pond. Having more then one of these would be a good idea."
         }
       },
       "tasks:9": {
@@ -11140,7 +11140,9 @@
         }
       },
       "rewards:9": {},
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        94
+      ],
       "questID:3": 131
     },
     "132:10": {
@@ -14018,16 +14020,6 @@
               "OreDict:8": ""
             },
             "5:10": {
-              "id:8": "rockhounding_chemistry:machines_a",
-              "Count:3": 1,
-              "Damage:2": 14,
-              "tag:10": {
-                "Energy:3": 0,
-                "Fuel:3": 0
-              },
-              "OreDict:8": ""
-            },
-            "6:10": {
               "id:8": "rockhounding_chemistry:machines_e",
               "Count:3": 1,
               "Damage:2": 6,
@@ -14037,13 +14029,13 @@
               },
               "OreDict:8": ""
             },
-            "7:10": {
+            "6:10": {
               "id:8": "rockhounding_chemistry:au_catalyst",
               "Count:3": 4,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "8:10": {
+            "7:10": {
               "id:8": "rockhounding_chemistry:gr_catalyst",
               "Count:3": 6,
               "Damage:2": 0,
@@ -14160,7 +14152,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Nitric Acid",
-          "desc:8": "It\u0027s recommended here to assemble another Reforming Reactor to process Nitric Acid.\n\nRequires Ammonia and Oxygen."
+          "desc:8": "It\u0027s recommended here to assemble another Reforming Reactor to process this.\n\nRequires Ammonia and Oxygen."
         }
       },
       "tasks:9": {
@@ -15445,7 +15437,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Crystal Pulling Crucible",
-          "desc:8": "Also need a Power Station with RF, and a gas tank filled with Argon."
+          "desc:8": "Also need a Power Station with RF, and a gas tank filled with Argon.\n\nIf using Nuclearcraft\u0027s Argon, you will need to run it through a§6 Transposer§r to convert it into RH Gas form."
         }
       },
       "tasks:9": {
@@ -19754,7 +19746,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Building the Launch Pad",
-          "desc:8": "Assemble a base of Launch Pads, with the Structure Tower beside it. Place the plug next to your square of pads, with the §9§bRocket Assembling Machine§r on top."
+          "desc:8": "Assemble a base of Launch Pads, with the Structure Tower beside it. Place the §bRocket Assembling Machine§r next to, and one above, your square of pads."
         }
       },
       "tasks:9": {
@@ -19772,18 +19764,12 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "libvulpes:forgepowerinput",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
               "id:8": "advancedrocketry:launchpad",
               "Count:3": 36,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "3:10": {
+            "2:10": {
               "id:8": "advancedrocketry:structuretower",
               "Count:3": 8,
               "Damage:2": 0,
@@ -20908,7 +20894,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Litherite",
-          "desc:8": "Congratulations! You made it this far! I\u0027m super proud of you."
+          "desc:8": "Congratulations! You made it this far! I\u0027m super proud of you.\n\nIf you are using the 4x recipe in the §bCrystal Pulling Crucible§r, and plan on using Nuclearcraft\u0027s Argon, you will need to run it through a§6 Transposer§r to convert it into RH Gas form."
         }
       },
       "tasks:9": {
@@ -20924,12 +20910,6 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "environmentaltech:tool_multiblock_assembler",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval",
@@ -20940,8 +20920,8 @@
         "0:10": {
           "rewards:9": {
             "0:10": {
-              "id:8": "environmentaltech:litherite_crystal",
-              "Count:3": 4,
+              "id:8": "environmentaltech:tool_multiblock_assembler",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -31787,7 +31767,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Tier 4 Blood Altar",
-          "desc:8": "Using the same method as before, upgrade your Altar to tier 4.\n\nThis will allow you to start creating the more powerful rituals."
+          "desc:8": "Using 28 Runes, upgrade your Altar to tier 4.\n\nThis will allow you to start creating the more powerful rituals."
         }
       },
       "tasks:9": {
@@ -31799,18 +31779,12 @@
           "autoConsume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "bloodmagic:blood_rune",
-              "Count:3": 28,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
               "id:8": "bloodmagic:decorative_brick",
               "Count:3": 4,
               "Damage:2": 1,
               "OreDict:8": ""
             },
-            "2:10": {
+            "1:10": {
               "id:8": "bloodmagic:slate",
               "Count:3": 1,
               "Damage:2": 3,
@@ -41041,7 +41015,7 @@
             "0:10": {
               "id:8": "enderio:item_gas_conduit",
               "Count:3": 8,
-              "Damage:2": 0,
+              "Damage:2": 2,
               "OreDict:8": ""
             },
             "1:10": {
@@ -41049,7 +41023,7 @@
               "Count:3": 8,
               "Damage:2": 2,
               "tag:10": {
-                "tier:3": 0
+                "tier:3": 2
               },
               "OreDict:8": ""
             }
@@ -54774,7 +54748,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "QMD 101: Particles",
-          "desc:8": "§bThe quests from this point on are not required to beat the pack. Neutronium can also be collected by the Orbital Miner.§r However, there are major§f bragging rights to make it this way.\n\n§9Quantum Minecraft Dynamics §fis a mod that brings §5High-Energy Particle Physics§f to Minecraft. While it may seem complicated at first glance, the mod becomes much more understandable when you understand the concepts behind it. \n\nBesides this in-game quest book guide, §9Quantum Minecraft Dynamics § also h§has its own §2Guide Book§r already present in the Akashic Tome (albeit incomplete). A more complete version can be found on the §Q§Q§2QMD Github Wiki.§f\n\nOf course, the §N§2Nuclearcraft Official Discord§r also has channels to discuss high-energy particle smashing! Make sure to check out §7#qmd§r for support.\n\nWithout further ado, let\u0027s get into the tutorial!\n\nIn short, the entire mod revolves around manipulating §5particles§f to do various things. §5Particles§f are created and accelerated in §3§1§9§b§3Linear Accelerators§f, accelerated further in §3Synchrotron Accelerators§f, then used for recipes in various §3multiblock machines§f, including:\n\n§3§f- Target Chamber\n- Collision Chamber\n- Neutral Exotic Containment\n- Decay Chamber\n\nThese recipes produce new §eitems§f or even new types of §5particles§f, which can then be used in further recipes. All §3Multiblocks§f above will be gone into detail in subsequent quests. Since the entire mod revolves around §5particles§f, it is only natural that we understand how they work before we do anything involving them.\n\nMuch like how regular §eitems§f are stored in stacks, §5particles§f in §9QMD §fare stored in §\"\"particle stacks\"§f. However, unlike item stacks, particle stacks cannot be held by the player. Instead, §pparticle stacks§f can only be manipulated in §9QMD\u0027s §3Multiblock Machines§f, many of which were mentioned above, and transported between said machines via§7 §8beamline pipes.§f Even within said §3Multiblocks§f, particles are transported via §7§8beam blocks§f.\n\nParticle stacks have 3 properties:\n§4- Amount (pu/t)\n§6- Energy (eV)\n§b- Focus§f\n\nAll recipes require particle stacks to have a minimum §bfocus§f and to be within a certain §6energy range (e.g 10-20 MeV)§f for the recipe to work (relevant values can be seen in §2JEI§f). §3\n§A§fAs most newly-created particles start out with no §6energy §fand barely any §bfocus§f, §3Accelerators§e §fare used in order to get particle stacks to the relevant § §6energy§f and §bfocus§f§f. How §3Accelerators§f do this, and how they are constructed will be covered in the next quest. \n\nBesides being used as a requirement in some recipes, §bfocus §falso determines how far a given particle stack will travel. This is because a particle stack loses a certain amount of §bfocus§f per §8beamline pipe/beam block§f travelled (the amount of §bfocus§f lost per block is the attenuation rate of the relevant block, seen in their tooltip). A particle stack with a §a§bfocus§f less than or equal to zero will not travel any further. \n\n§fThe §4amount§f of §d§5particles§e§f in the particle stack determines the rate of §eitem §fproduction and §4amount§f of new §5particles §e§fproduced from said recipe (can be seen and calculated from §2JEI§f information). Unlike §6energy §for §bfocus§f, §3Accelerators§f cannot directly affect a particle stack\u0027s §4amount (pu/t)§f. A particle stack\u0027s §4amount§f is solely dependent on the source of the §5particle§f, as will be seen in the next quest and subsequent quests."
+          "desc:8": "§bThe quests from this point on are not required to beat the pack. Neutronium can also be collected by the Orbital Miner.§r However, there are major§f bragging rights to make it this way.\n\n§9Quantum Minecraft Dynamics §fis a mod that brings §5High-Energy Particle Physics§f to Minecraft. While it may seem complicated at first glance, the mod becomes much more understandable when you understand the concepts behind it. \n\nBesides this in-game quest book guide, §9Quantum Minecraft Dynamics§r § also has its own §2Guide Book§r already present in the Akashic Tome (albeit incomplete). A more complete version can be found on the §Q§Q§2QMD Github Wiki.§f\n\nOf course, the §N§2Nuclearcraft Official Discord§r also has channels to discuss high-energy particle smashing! Make sure to check out §7#qmd§r for support.\n\nWithout further ado, let\u0027s get into the tutorial!\n\nIn short, the entire mod revolves around manipulating §5particles§f to do various things. §5Particles§f are created and accelerated in §3§1§9§b§3Linear Accelerators§f, accelerated further in §3Synchrotron Accelerators§f, then used for recipes in various §3multiblock machines§f, including:\n\n§3§f- Target Chamber\n- Collision Chamber\n- Neutral Exotic Containment\n- Decay Chamber\n\nThese recipes produce new §eitems§f or even new types of §5particles§f, which can then be used in further recipes. All §3Multiblocks§f above will be gone into detail in subsequent quests. Since the entire mod revolves around §5particles§f, it is only natural that we understand how they work before we do anything involving them.\n\nMuch like how regular §eitems§f are stored in stacks, §5particles§f in §9QMD §fare stored in §\"\"particle stacks\"§f. However, unlike item stacks, particle stacks cannot be held by the player. Instead, §pparticle stacks§f can only be manipulated in §9QMD\u0027s §3Multiblock Machines§f, many of which were mentioned above, and transported between said machines via§7 §8beamline pipes.§f Even within said §3Multiblocks§f, particles are transported via §7§8beam blocks§f.\n\nParticle stacks have 3 properties:\n§4- Amount (pu/t)\n§6- Energy (eV)\n§b- Focus§f\n\nAll recipes require particle stacks to have a minimum §bfocus§f and to be within a certain §6energy range (e.g 10-20 MeV)§f for the recipe to work (relevant values can be seen in §2JEI§f). §3\n§A§fAs most newly-created particles start out with no §6energy §fand barely any §bfocus§f, §3Accelerators§e §fare used in order to get particle stacks to the relevant § §6energy§f and §bfocus§f§f. How §3Accelerators§f do this, and how they are constructed will be covered in the next quest. \n\nBesides being used as a requirement in some recipes, §bfocus §falso determines how far a given particle stack will travel. This is because a particle stack loses a certain amount of §bfocus§f per §8beamline pipe/beam block§f travelled (the amount of §bfocus§f lost per block is the attenuation rate of the relevant block, seen in their tooltip). A particle stack with a §a§bfocus§f less than or equal to zero will not travel any further. \n\n§fThe §4amount§f of §d§5particles§e§f in the particle stack determines the rate of §eitem §fproduction and §4amount§f of new §5particles §e§fproduced from said recipe (can be seen and calculated from §2JEI§f information). Unlike §6energy §for §bfocus§f, §3Accelerators§f cannot directly affect a particle stack\u0027s §4amount (pu/t)§f. A particle stack\u0027s §4amount§f is solely dependent on the source of the §5particle§f, as will be seen in the next quest and subsequent quests."
         }
       },
       "tasks:9": {

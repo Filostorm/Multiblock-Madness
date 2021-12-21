@@ -123,7 +123,7 @@ recipes.addShaped(<twilightforest:fiery_ingot>, [[<mysticalagriculture:fiery_ing
 
 //Coal is made with coke
 recipes.removeShapeless(<mysticalagriculture:coal>, [<minecraft:coal>, <mysticalagriculture:crafting>, <mysticalagriculture:crafting>]);
-recipes.addShapeless(<mysticalagriculture:coal>, [<immersiveengineering:material:6>,<mysticalagriculture:crafting>,<mysticalagriculture:crafting>]);
+recipes.addShapeless(<mysticalagriculture:coal>, [<ore:fuelCoke>,<mysticalagriculture:crafting>,<mysticalagriculture:crafting>]);
 
 
 ManaInfusion.addAlchemy(<mysticalagriculture:crafting:5>, <fossil:pottery_shard>, 10000);

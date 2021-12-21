@@ -216,7 +216,7 @@ RuneAltar.removeRecipe(<botania:rune:2>);
 RuneAltar.addRecipe(<botania:rune:2>,[<mysticalworld:wet_mud_block>, <twilightforest:steeleaf_ingot>, <thermalfoundation:material:1027>, <botania:manaresource>, <botania:manaresource:23>], 15000);
 //Wet Mud
 Transposer.addFillRecipe(<mysticalworld:wet_mud_block>, <minecraft:dirt>, <liquid:water>*125, 2500);
-mods.nuclearcraft.Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
+//mods.nuclearcraft.Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
 
 //Rune of Fire
 RuneAltar.removeRecipe(<botania:rune:1>);

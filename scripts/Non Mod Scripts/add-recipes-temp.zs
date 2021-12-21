@@ -497,7 +497,7 @@ recipes.addShapeless(<minecraft:melon> * 9, [<minecraft:melon_block>]);
 
 //Wet Dirt
 recipes.remove(<mysticalworld:wet_mud_block>);
-recipes.addShaped(<mysticalworld:wet_mud_block>, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>,  <liquid:water>*1000, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+recipes.addShaped(<mysticalworld:wet_mud_block>*8, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>,  <liquid:water>*1000, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 
 
 <mystgears:bellows_mechanical>.addTooltip(format.gold("Place by a furnace to speed up"));

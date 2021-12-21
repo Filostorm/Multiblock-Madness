@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.threng.Aggregator;
 import mods.techreborn.blastFurnace;
 import crafttweaker.item.IIngredient;
+import mods.thermalexpansion.Insolator;
 
 print("==================== loading applied.zs ====================");
 ##########################################################################################
@@ -296,6 +297,10 @@ mods.threng.Centrifuge.removeRecipe(<appliedenergistics2:material:4>);
 mods.threng.Centrifuge.addRecipe(<techreborn:dust:20>, <minecraft:ender_pearl>);
 mods.threng.Centrifuge.addRecipe(<nuclearcraft:flour>, <minecraft:wheat>);
 mods.threng.Centrifuge.addRecipe(<nuclearcraft:flour>, <natura:materials>);
+
+//Fix Crytstal growing
+Insolator.removeRecipe(<appliedenergistics2:crystal_seed>, <minecraft:glowstone_dust>);
+Insolator.addRecipe(<appliedenergistics2:material:10>,<appliedenergistics2:crystal_seed>.withTag({progress: 0}), <minecraft:glowstone_dust>, 90000, null, 0, 3000);
 
 ##########################################################################################
 print("==================== end of applied.zs ====================");
