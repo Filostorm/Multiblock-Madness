@@ -312,24 +312,27 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_advanced_coi
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_reception_coil", "assemblermkone", 200)
 	.addEnergyPerTickInput(2000)
 	.addItemOutput(<thermalfoundation:material:513>)
-	.addItemInput(<advgenerators:iron_wiring>*2)
-	.addItemInput(<moreplates:gold_stick>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:gold_stick> * 2)
+	.addItemInput(<advgenerators:iron_wiring> * 4)
 	.build();
 
 // Redstone Transmission Coil
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_transmission_coil", "assemblermkone", 200)
 	.addEnergyPerTickInput(2000)
 	.addItemOutput(<thermalfoundation:material:514>)
-	.addItemInput(<advgenerators:iron_wiring>*2)
-	.addItemInput(<moreplates:silver_stick>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:silver_stick> * 2)
+	.addItemInput(<advgenerators:iron_wiring> * 4)
 	.build();
 
 // Redstone Conductance Coil
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_conductance_coil", "assemblermkone", 200)
 	.addEnergyPerTickInput(2000)
 	.addItemOutput(<thermalfoundation:material:515>)
-	.addItemInput(<advgenerators:iron_wiring>*2)
-	.addItemInput(<moreplates:electrum_stick>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:electrum_stick> * 2)
+	.addItemInput(<advgenerators:iron_wiring> * 4)
 	.build();
 
 
@@ -633,6 +636,68 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_tasty_clay",
     .addFluidInput(<liquid:milk> * 1000)
 	.build();
 
+// EnderIO Capacitors //
+
+// Basic Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_basic_capacitor", "assemblermkone", 200)
+	.addEnergyPerTickInput(2000)
+	.addItemOutput(<enderio:item_basic_capacitor>)
+	.addItemInput(<ore:plateCopper>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:gold_stick> * 2)
+	.addItemInput(<enderio:item_material:20> * 2)
+	.build();
+
+// Silver Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_silver_capacitor", "assemblermkone", 200)
+	.addEnergyPerTickInput(2000)
+	.addItemOutput(<enderio:item_capacitor_silver>)
+	.addItemInput(<ore:plateLead>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:silver_stick> * 2)
+	.addItemInput(<enderio:item_material:20> * 2)
+	.build();
+
+// Double-Layer Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_double_layer_capacitor", "assemblermkone", 300)
+	.addEnergyPerTickInput(4000)
+	.addItemOutput(<enderio:item_basic_capacitor:1>)
+	.addItemInput(<enderio:item_basic_capacitor> * 2)
+	.addItemInput(<ore:plateEnergeticAlloy>, 2)
+	.addItemInput(<ore:dustCarbon>)
+	.addItemInput(<rockhounding_chemistry:misc_items:10>)
+	.build();
+
+// Endergenic Silver Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_endergenic_silver_capacitor", "assemblermkone", 300)
+	.addEnergyPerTickInput(4000)
+	.addItemOutput(<enderio:item_capacitor_energetic_silver>)
+	.addItemInput(<enderio:item_capacitor_silver> * 2)
+	.addItemInput(<ore:plateEnergeticSilver>, 2)
+	.addItemInput(<ore:dustCarbon>)
+	.addItemInput(<rockhounding_chemistry:misc_items:10>)
+	.build();
+
+// Octadic Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_octadic_capacitor", "assemblermkone", 400)
+	.addEnergyPerTickInput(6000)
+	.addItemOutput(<enderio:item_basic_capacitor:2>)
+	.addItemInput(<enderio:item_basic_capacitor:1> * 2)
+	.addItemInput(<ore:plateVibrantAlloy>, 2)
+	.addItemInput(<ore:dustEnergetic>, 4)
+	.addItemInput(<techreborn:part>)
+	.build();
+
+// Endergised Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_endergised_capacitor", "assemblermkone", 400)
+	.addEnergyPerTickInput(6000)
+	.addItemOutput(<enderio:item_capacitor_vivid>)
+	.addItemInput(<enderio:item_capacitor_energetic_silver> * 2)
+	.addItemInput(<ore:plateVividAlloy>, 2)
+	.addItemInput(<ore:dustEnergetic>, 4)
+	.addItemInput(<techreborn:part>)
+	.build();
+
 // Miscellaneous Items //
 
 // Basic Processor
@@ -640,9 +705,9 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_basic_proces
 	.addEnergyPerTickInput(3000)
 	.addItemOutput(<qmd:semiconductor:4>)
 	.addItemInput(<qmd:semiconductor:1>)
-	.addItemInput(<minecraft:redstone>*4)
-	.addItemInput(<ore:ingotGold>)
-	.addItemInput(<ore:ingotSilver>)
+	.addItemInput(<rockhounding_chemistry:misc_items:10>)
+	.addItemInput(<thermalfoundation:material:515>)
+	.addItemInput(<powersuits:powerarmorcomponent> * 3)
 	.build();
 
 // RFTools Quarry Card
@@ -914,9 +979,9 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_advanced_pro
 	.addEnergyPerTickInput(15000)
 	.addItemOutput(<qmd:semiconductor:5>)
 	.addItemInput(<qmd:semiconductor:4>)
-	.addItemInput(<minecraft:redstone>*4)
 	.addItemInput(<qmd:chemical_dust:5>)
 	.addItemInput(<qmd:semiconductor>)
+	.addItemInput(<ore:plateTungstensteel>)
 	.build();
 
 // Plastic Scintillator
@@ -943,6 +1008,39 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_tungsten_fil
 	.build();
 
 // Miscellaneous Items //
+
+// Crystalline Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_crystalline_capacitor_octadic", "assemblermktwo", 200)
+	.addEnergyPerTickInput(30000)
+	.addItemOutput(<enderio:item_capacitor_crystalline>)
+	.addItemInput(<enderio:item_basic_capacitor:2> * 2)
+	.addItemInput(<ore:ingotCrystallineAlloy>, 2)
+	.addItemInput(<ore:dustPrismarine>, 2)
+	.addItemInput(<ore:circuitElite>)
+	.addItemInput(<enderio:item_material:45>)
+	.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_crystalline_capacitor_vivid", "assemblermktwo", 200)
+	.addEnergyPerTickInput(30000)
+	.addItemOutput(<enderio:item_capacitor_crystalline>)
+	.addItemInput(<enderio:item_capacitor_vivid> * 2)
+	.addItemInput(<ore:ingotCrystallineAlloy>, 2)
+	.addItemInput(<ore:dustPrismarine>, 2)
+	.addItemInput(<ore:circuitElite>)
+	.addItemInput(<enderio:item_material:45>)
+	.build();
+
+// Melodic Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_melodic_capacitor", "assemblermktwo", 400)
+	.addEnergyPerTickInput(50000)
+	.addItemOutput(<enderio:item_capacitor_melodic>)
+	.addItemInput(<enderio:item_capacitor_crystalline> * 2)
+	.addItemInput(<ore:plateMelodicAlloy>, 4)
+	.addItemInput(<ore:plateEndSteel>, 2)
+	.addItemInput(<ore:circuitUltimate>)
+	.addItemInput(<enderio:item_material:16>)
+	.addFluidInput(<liquid:ender_distillation> * 1000)
+	.build();
 
 // Machine Circuitry
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_machine_circuitry", "assemblermktwo", 400)
@@ -1020,6 +1118,19 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_ev_capacit
 	.addFluidInput(<liquid:liquid_nitrogen>*2000)
 	.build();
 
+// Stellar Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_stellar_capacitor", "assemblermkthree", 200)
+	.addEnergyPerTickInput(480000)
+	.addItemOutput(<enderio:item_capacitor_stellar>)
+	.addItemInput(<enderio:item_capacitor_melodic> * 2)
+	.addItemInput(<ore:plateStellarAlloy>, 4)
+	.addItemInput(<minecraft:shulker_shell> * 2)
+	.addItemInput(<powersuits:powerarmorcomponent:8>)
+	.addItemInput(<enderio:item_material:44>)
+	.addItemInput(<enderio:item_material:19>)
+	.addFluidInput(<liquid:vapor_of_levity> * 2000)
+	.build();
+
 // BSCCO Dust
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_bscco_dust", "assemblermkthree", 50)
 	.addEnergyPerTickInput(60000)
@@ -1035,7 +1146,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_bscco_wire
 	.addEnergyPerTickInput(60000)
 	.addItemOutput(<qmd:part:4>*6)
 	.addItemInput(<qmd:chemical_dust:1>*3)
-	.addItemInput(<ore:ingotSilver>, 6)
+	.addItemInput(<powersuits:powerarmorcomponent:1>)
 	.build();
 
 // Elite Processor
@@ -1045,7 +1156,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_elite_proc
 	.addItemInput(<qmd:semiconductor:5>)
 	.addItemInput(<qmd:part:4>*4)
 	.addItemInput(<qmd:chemical_dust:5>)
-	.addItemInput(<ore:ingotPlatinum>)
+	.addItemInput(<ore:plateOsmiridium>)
 	.build();
 
 // Neodymium Magnet
@@ -1260,24 +1371,27 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_advanced_co
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_reception_coil", "assemblermkfour", 1)
 	.addEnergyPerTickInput(720000)
 	.addItemOutput(<thermalfoundation:material:513>)
-	.addItemInput(<advgenerators:iron_wiring>*2)
-	.addItemInput(<moreplates:gold_stick>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:gold_stick> * 2)
+	.addItemInput(<advgenerators:iron_wiring> * 4)
 	.build();
 
 // Redstone Transmission Coil
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_transmission_coil", "assemblermkfour", 1)
 	.addEnergyPerTickInput(720000)
 	.addItemOutput(<thermalfoundation:material:514>)
-	.addItemInput(<advgenerators:iron_wiring>*2)
-	.addItemInput(<moreplates:silver_stick>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:silver_stick> * 2)
+	.addItemInput(<advgenerators:iron_wiring> * 4)
 	.build();
 
 // Redstone Conductance Coil
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_conductance_coil", "assemblermkfour", 1)
 	.addEnergyPerTickInput(720000)
 	.addItemOutput(<thermalfoundation:material:515>)
-	.addItemInput(<advgenerators:iron_wiring>*2)
-	.addItemInput(<moreplates:electrum_stick>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:electrum_stick> * 2)
+	.addItemInput(<advgenerators:iron_wiring> * 4)
 	.build();
 
 
@@ -1581,6 +1695,69 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_tasty_clay"
     .addFluidInput(<liquid:milk> * 1000)
 	.build();
 
+// EnderIO Capacitors //
+
+// Basic Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_basic_capacitor", "assemblermkfour", 1)
+	.addEnergyPerTickInput(640000)
+	.addItemOutput(<enderio:item_basic_capacitor>)
+	.addItemInput(<ore:plateCopper>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:gold_stick> * 2)
+	.addItemInput(<enderio:item_material:20> * 2)
+	.build();
+
+// Silver Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_silver_capacitor", "assemblermkfour", 1)
+	.addEnergyPerTickInput(640000)
+	.addItemOutput(<enderio:item_capacitor_silver>)
+	.addItemInput(<ore:plateLead>)
+	.addItemInput(<actuallyadditions:item_misc:8>)
+	.addItemInput(<moreplates:silver_stick> * 2)
+	.addItemInput(<enderio:item_material:20> * 2)
+	.build();
+
+// Double-Layer Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_double_layer_capacitor", "assemblermkfour", 1)
+	.addEnergyPerTickInput(1280000)
+	.addItemOutput(<enderio:item_basic_capacitor:1>)
+	.addItemInput(<enderio:item_basic_capacitor> * 2)
+	.addItemInput(<ore:plateEnergeticAlloy>, 2)
+	.addItemInput(<ore:dustCarbon>)
+	.addItemInput(<rockhounding_chemistry:misc_items:10>)
+	.build();
+
+// Endergenic Silver Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_endergenic_silver_capacitor", "assemblermkfour", 1)
+	.addEnergyPerTickInput(1280000)
+	.addItemOutput(<enderio:item_capacitor_energetic_silver>)
+	.addItemInput(<enderio:item_capacitor_silver> * 2)
+	.addItemInput(<ore:plateEnergeticSilver>, 2)
+	.addItemInput(<ore:dustCarbon>)
+	.addItemInput(<rockhounding_chemistry:misc_items:10>)
+	.build();
+
+// Octadic Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_octadic_capacitor", "assemblermkfour", 1)
+	.addEnergyPerTickInput(1920000)
+	.addItemOutput(<enderio:item_basic_capacitor:2>)
+	.addItemInput(<enderio:item_basic_capacitor:1> * 2)
+	.addItemInput(<ore:plateVibrantAlloy>, 2)
+	.addItemInput(<ore:dustEnergetic>, 4)
+	.addItemInput(<techreborn:part>)
+	.build();
+
+// Endergised Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_endergised_capacitor", "assemblermkfour", 1)
+	.addEnergyPerTickInput(1920000)
+	.addItemOutput(<enderio:item_capacitor_vivid>)
+	.addItemInput(<enderio:item_capacitor_energetic_silver> * 2)
+	.addItemInput(<ore:plateVividAlloy>, 2)
+	.addItemInput(<ore:dustEnergetic>, 4)
+	.addItemInput(<techreborn:part>)
+	.build();
+
+
 // Miscellaneous Items //
 
 // Basic Processor
@@ -1588,9 +1765,9 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_basic_proce
 	.addEnergyPerTickInput(960000)
 	.addItemOutput(<qmd:semiconductor:4>)
 	.addItemInput(<qmd:semiconductor:1>)
-	.addItemInput(<minecraft:redstone>*4)
-	.addItemInput(<ore:ingotGold>)
-	.addItemInput(<ore:ingotSilver>)
+	.addItemInput(<rockhounding_chemistry:misc_items:10>)
+	.addItemInput(<thermalfoundation:material:515>)
+	.addItemInput(<powersuits:powerarmorcomponent> * 3)
 	.build();
 
 // RFTools Quarry Card
