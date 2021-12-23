@@ -59,7 +59,7 @@ recipes.addShaped(<deepmoblearning:extraction_chamber>, [[<bloodmagic:blood_rune
 recipes.addShaped(<deepmoblearningbm:digital_agonizer>, [[<bloodmagic:blood_rune:3>, <bloodarsenal:gem:1>, <bloodmagic:blood_rune:3>],[<moreplates:restonia_gear>, <deepmoblearning:machine_casing>, <moreplates:restonia_gear>], [<bloodmagic:blood_rune:3>, <immersiveengineering:metal_decoration0:5>, <bloodmagic:blood_rune:3>]]);
 
 //Sim Chamber
-recipes.addShaped(<deepmoblearning:simulation_chamber>, [[<moreplates:osgloglas_plate>, <actuallyadditions:item_crystal_empowered>, <moreplates:osgloglas_plate>],[<actuallyadditions:item_crystal_empowered>, <deepmoblearning:machine_casing>, <actuallyadditions:item_crystal_empowered>], [<moreplates:osgloglas_plate>, <techreborn:part:2>, <moreplates:osgloglas_plate>]]);
+recipes.addShaped(<deepmoblearning:simulation_chamber>, [[<contenttweaker:plate_thermal_alloy>, <actuallyadditions:item_crystal_empowered>, <contenttweaker:plate_thermal_alloy>],[<actuallyadditions:item_crystal_empowered>, <deepmoblearning:machine_casing>, <actuallyadditions:item_crystal_empowered>], [<contenttweaker:plate_thermal_alloy>, <techreborn:part:2>, <contenttweaker:plate_thermal_alloy>]]);
 
 
 //Pick-a-Matter

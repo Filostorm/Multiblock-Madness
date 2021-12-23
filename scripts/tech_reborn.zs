@@ -368,6 +368,9 @@ wireMill.addRecipe(<techreborn:cable:3>*6, <techreborn:ingot:19>, 160, 40);
 // Sodium Persulfate Chain
 mods.nuclearcraft.ChemicalReactor.addRecipe(<liquid:sulfur> * 1000, <liquid:sodium> * 1000, <liquid:fluidsodiumsulfide> * 2000, null);
 mods.nuclearcraft.ChemicalReactor.addRecipe(<liquid:fluidsodiumsulfide> * 1000, <liquid:fluidcompressedair> * 1000, <liquid:fluidsodiumpersulfate> * 2000, null);
+mods.nuclearcraft.ChemicalReactor.addRecipe(<liquid:fluidsodiumsulfide> * 1000, <liquid:compressed_air> * 1000, <liquid:fluidsodiumpersulfate> * 2000, null);
+
+
 
 // Removing useless TR Electrolyser recipes
 industrialElectrolyzer.removeInputRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidmethane", Amount: 1000}}));

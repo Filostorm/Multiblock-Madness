@@ -326,7 +326,7 @@
 <!-- Crushed Rhodochrosite -->
 <recipe name="MBM: Crushed Rhodochrosite" required="true">
   <sagmilling energy="5000" bonus="none">
-    <input name="nuclearcraft:gem" />
+    <input name="gemRhodochrosite" />
     <output name="nuclearcraft:gem_dust:1" chance="1.0" amount="1"/>
   </sagmilling>
 </recipe>

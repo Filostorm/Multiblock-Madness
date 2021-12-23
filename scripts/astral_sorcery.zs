@@ -72,9 +72,9 @@ Altar.addAttunementAltarRecipe("internal/altar/upgrade_tier3", <astralsorcery:bl
 			<embers:focal_lens>, <embers:focal_lens>, <embers:focal_lens>, <embers:focal_lens>]);
 
 Altar.addConstellationAltarRecipe("internal/altar/upgrade_tier4", <astralsorcery:blockaltar:3>, 3800, 500, [
-			<actuallyadditions:item_crystal_empowered:5>, <astralsorcery:blockblackmarble>, <actuallyadditions:item_crystal_empowered:5>,
-			<astralsorcery:blockblackmarble>, <astralsorcery:itemcelestialcrystal>, <astralsorcery:blockblackmarble>,
-			<actuallyadditions:item_crystal_empowered:5>, <astralsorcery:blockblackmarble>, <actuallyadditions:item_crystal_empowered:5>,
+			<actuallyadditions:item_crystal_empowered:5>, <contenttweaker:ingot_reinforced_starmetal>, <actuallyadditions:item_crystal_empowered:5>,
+			<contenttweaker:ingot_reinforced_starmetal>, <astralsorcery:itemcelestialcrystal>, <contenttweaker:ingot_reinforced_starmetal>,
+			<actuallyadditions:item_crystal_empowered:5>, <contenttweaker:ingot_reinforced_starmetal>, <actuallyadditions:item_crystal_empowered:5>,
 			<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:5>,
 			<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcraftingcomponent:4>,
 			<cyclicmagic:crystallized_obsidian>, <cyclicmagic:crystallized_obsidian>,

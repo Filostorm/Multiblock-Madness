@@ -4,6 +4,7 @@ import mods.thermalexpansion.Transposer;
 import mods.nuclearcraft.AlloyFurnace;
 import mods.thermalexpansion.Insolator;
 import mods.nuclearcraft.Infuser;
+import mods.techreborn.blastFurnace;
 
 print("==================== loading thermal.zs ====================");
 ##########################################################################################
@@ -173,6 +174,12 @@ recipes.removeShaped(<thermalcultivation:watering_can>, [[<thermalfoundation:mat
 recipes.removeShaped(<thermalcultivation:watering_can:1>, [[null, <minecraft:dye:15>, null],[<thermalfoundation:material:162>, <thermalcultivation:watering_can>, <thermalfoundation:material:162>], [<minecraft:dye:15>, <minecraft:redstone>, <minecraft:dye:15>]]);
 recipes.addShaped(<thermalcultivation:watering_can:1>, [[null, <cyclicmagic:peat_fuel>, null],[<thermalfoundation:material:162>, <thermalcultivation:watering_can>, <thermalfoundation:material:162>], [<cyclicmagic:peat_fuel>, <minecraft:redstone>, <cyclicmagic:peat_fuel>]]);
 recipes.addShaped(<thermalcultivation:watering_can>, [[<thermalfoundation:material:128>, null, null],[<thermalfoundation:material:128>, <actuallyadditions:item_fertilizer>, <thermalfoundation:material:128>], [null, <thermalfoundation:material:128>, null]]);
+
+
+//Iridium Glass
+InductionSmelter.removeRecipe(<thermalfoundation:glass>, <thermalfoundation:material:71>);
+blastFurnace.addRecipe(<thermalfoundation:glass:7>*4, null, <techreborn:reinforced_glass>*4, <techreborn:plates:38>, 300, 4096, 3500);
+
 
 
 //---=== New Thermal Machine Recipes ===---//

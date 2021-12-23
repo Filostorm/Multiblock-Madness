@@ -11,7 +11,6 @@ val itemstoRemove =
 <nuclearcraft:manufactory>,
 <nuclearcraft:alloy_furnace>,
 <nuclearcraft:part:10>,
-<nuclearcraft:part:12>,
 <nuclearcraft:part:4>,
 <nuclearcraft:part:3>,
 <nuclearcraft:part:2>
@@ -28,8 +27,17 @@ for item in itemstoRemove {
 //sink
 recipes.addShaped(<cookingforblockheads:sink>, [[<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>],[<minecraft:hardened_clay>, <nuclearcraft:water_source_compact>, <minecraft:hardened_clay>], [<minecraft:hardened_clay>, <minecraft:hardened_clay>, <minecraft:hardened_clay>]]);
 
-//Steel Chassis
-recipes.addShaped(<nuclearcraft:part:12>, [[<jaopca:item_sticktough>, <moreplates:electrical_steel_plate>, <jaopca:item_sticktough>],[<moreplates:dark_steel_plate>, <enderio:item_material>, <moreplates:dark_steel_plate>], [<jaopca:item_sticktough>, <moreplates:electrical_steel_plate>, <jaopca:item_sticktough>]]);
+
+# [Steel Chassis] from [Simple Machine Chassis][+3]
+craft.remake(<nuclearcraft:part:12>, ["pretty",
+  "╱ □ ╱",
+  "п S п",
+  "╱ □ ╱"], {
+  "╱": <ore:stickTough> | <ore:rodTough>, # Tough Rod
+  "□": <ore:plateElectricalSteel>,        # Electrical Steel Plate
+  "п": <ore:plateTitaniumAluminide>,      # Titanium Aluminide Plate
+  "S": <ore:itemSimpleMachineChassi>,     # Simple Machine Chassis
+});
 
 ##Manufactory
 ##------------

@@ -399,6 +399,15 @@
 			<fluidStack>fluidsodiumpersulfate;4000</fluidStack>
 		</output>
 	</Recipe>
+		<Recipe timeRequired="8" power ="40000">
+		<input>
+			<fluidStack>fluidsodiumsulfide;2000</fluidStack>
+			<fluidStack>compressed_air;2000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>fluidsodiumpersulfate;4000</fluidStack>
+		</output>
+	</Recipe>
 	<Recipe timeRequired="4" power ="40000">
 		<input>
 			<fluidStack>lif;288</fluidStack>

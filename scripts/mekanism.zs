@@ -83,12 +83,12 @@ recipes.addShaped(<mekanism:machineblock:12>, [[null, <minecraft:bucket>, null],
 recipes.addShaped(<mekanism:filterupgrade>, [[null, <thermalfoundation:glass:3>, null],[<ore:plateBam>, <ore:dustTin>, <ore:plateBam>], [null, <thermalfoundation:glass:3>, null]]);
 
 //Evap Tank
-recipes.addShaped(<mekanism:basicblock2> * 4, [[<mekanism:enrichedalloy>, <thermalfoundation:material:352>, <mekanism:enrichedalloy>],[<thermalfoundation:material:352>, <moreplates:osmium_gear>, <thermalfoundation:material:352>], [<mekanism:enrichedalloy>, <thermalfoundation:material:352>, <mekanism:enrichedalloy>]]);
-recipes.addShaped(<mekanism:basicblock2> * 8, [[<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>],[<ore:plateVanasteel>, <moreplates:osmium_gear>, <ore:plateVanasteel>], [<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:basicblock2> * 4, [[<mekanism:enrichedalloy>, <thermalfoundation:material:352>, <mekanism:enrichedalloy>],[<thermalfoundation:material:352>, <contenttweaker:gear_thermal_alloy>, <thermalfoundation:material:352>], [<mekanism:enrichedalloy>, <thermalfoundation:material:352>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:basicblock2> * 8, [[<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>],[<ore:plateVanasteel>, <contenttweaker:gear_thermal_alloy>, <ore:plateVanasteel>], [<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>]]);
 
 //Induction
-recipes.addShaped(<mekanism:basicblock2:1> * 4, [[<mekanism:reinforcedalloy>, <thermalfoundation:material:352>, <mekanism:reinforcedalloy>],[<thermalfoundation:material:352>, <moreplates:osmium_gear>, <thermalfoundation:material:352>], [<mekanism:reinforcedalloy>, <thermalfoundation:material:352>, <mekanism:reinforcedalloy>]]);
-recipes.addShaped(<mekanism:basicblock2:1> * 8, [[<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>],[<ore:plateVanasteel>, <moreplates:osmium_gear>, <ore:plateVanasteel>], [<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:basicblock2:1> * 4, [[<mekanism:reinforcedalloy>, <thermalfoundation:material:352>, <mekanism:reinforcedalloy>],[<thermalfoundation:material:352>, <contenttweaker:gear_thermal_alloy>, <thermalfoundation:material:352>], [<mekanism:reinforcedalloy>, <thermalfoundation:material:352>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:basicblock2:1> * 8, [[<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>],[<ore:plateVanasteel>, <contenttweaker:gear_thermal_alloy>, <ore:plateVanasteel>], [<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>]]);
 
 //Turbine
 //recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>],[<thermalfoundation:material:352>, <moreplates:osmium_gear>, <thermalfoundation:material:352>], [<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>]]);
@@ -96,7 +96,7 @@ recipes.addShaped(<mekanism:basicblock2:1> * 8, [[<mekanism:reinforcedalloy>, <o
 recipes.addShaped(<mekanismgenerators:generator:8>, [[<nuclearcraft:fission_dust:3>, <powersuits:powerarmorcomponent:8>, <nuclearcraft:fission_dust:3>],[<extendedcrafting:material:48>, <techreborn:machine_frame:2>, <extendedcrafting:material:48>], [<nuclearcraft:part:3>, <extendedcrafting:material:12>, <nuclearcraft:part:3>]]);
 recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<nuclearcraft:part:3>, <nuclearcraft:pellet_thorium>, <nuclearcraft:part:3>],[<jaopca:item_platesuperalloy>, <mekanismgenerators:reactor:1>, <jaopca:item_platesuperalloy>], [<nuclearcraft:part:3>, <extendedcrafting:material:18>, <nuclearcraft:part:3>]]);
 
-//rEACTOR bIZ
+//rEACTOR bIZZ
 recipes.addShaped(<mekanismgenerators:reactor:1> * 4, [[<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>],[<mekanism:basicblock:8>, <mekanism:atomicalloy>, <mekanism:basicblock:8>], [<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>]]);
 recipes.addShaped(<mekanismgenerators:reactor>, [[<mekanism:controlcircuit:3>, <powersuits:powerarmorcomponent:8>, <mekanism:controlcircuit:3>],[<mekanismgenerators:reactor:1>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:1>], [<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);
 

@@ -137,13 +137,13 @@ item.contenttweaker.ingot_reinforced_starmetal.name=§9Reinforced Starmetal
 
 item.contenttweaker.stacc_thermal_alloy.name=Mixed Thermal Ingot
 item.contenttweaker.hot_thermal_alloy.name=Energized Thermal Alloy
-item.contenttweaker.ingot_thermal_alloy.name=§bFluid Enriched Alloy
-item.contenttweaker.plate_thermal_alloy.name=§bFluid Enriched Alloy Plate
-item.contenttweaker.gear_thermal_alloy.name=§bFluid Enriched Alloy Gear
-item.contenttweaker.rod_thermal_alloy.name=§bFluid Enriched Alloy Rod
-tile.contenttweaker.block_thermal_alloy.name=§bBlock of Fluid Enriched Alloy
-tile.contenttweaker.scaffolding_thermal_alloy.name=§bFluid Enriched Alloy Scaffolding
-tile.contenttweaker.sheetmetal_thermal_alloy.name=§bFluid Enriched Alloy Sheetmetal
+item.contenttweaker.ingot_thermal_alloy.name=§bHardened Thermalloy
+item.contenttweaker.plate_thermal_alloy.name=§bHardened Thermalloy Plate
+item.contenttweaker.gear_thermal_alloy.name=§bHardened Thermalloy Gear
+item.contenttweaker.rod_thermal_alloy.name=§bHardened Thermalloy Rod
+tile.contenttweaker.block_thermal_alloy.name=§bBlock of Hardened Thermalloy
+tile.contenttweaker.scaffolding_thermal_alloy.name=§bHardened Thermalloy Scaffolding
+tile.contenttweaker.sheetmetal_thermal_alloy.name=§bHardened Thermalloy Sheetmetal
 
 
 item.contenttweaker.hot_cobalt.name=Reactive Cobalt Ingot
@@ -167,6 +167,6 @@ tile.contenttweaker.sheetmetal_cast.name=Sheetmetal Cast
 
 
 item.contenttweaker.grindingball_mixedwill.name=§bIndomitable Grinding Ball
-item.contenttweaker.plate_engineering.name=Engineers Masterpiece
+item.contenttweaker.plate_engineering.name=§eMechanical Plating
 item.contenttweaker.warp_remover.name=Staff of Sanity
 
