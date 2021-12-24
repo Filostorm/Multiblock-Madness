@@ -93,11 +93,29 @@ recipes.addShaped(<mekanism:basicblock2:1> * 8, [[<mekanism:reinforcedalloy>, <o
 //Turbine
 //recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>],[<thermalfoundation:material:352>, <moreplates:osmium_gear>, <thermalfoundation:material:352>], [<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>]]);
 //recipes.addShaped(<mekanismgenerators:generator:10> * 8, [[<mekanism:atomicalloy>, <ore:plateVanasteel>, <mekanism:atomicalloy>],[<ore:plateVanasteel>, <moreplates:osmium_gear>, <ore:plateVanasteel>], [<mekanism:atomicalloy>, <ore:plateVanasteel>, <mekanism:atomicalloy>]]);
-recipes.addShaped(<mekanismgenerators:generator:8>, [[<nuclearcraft:fission_dust:3>, <powersuits:powerarmorcomponent:8>, <nuclearcraft:fission_dust:3>],[<extendedcrafting:material:48>, <techreborn:machine_frame:2>, <extendedcrafting:material:48>], [<nuclearcraft:part:3>, <extendedcrafting:material:12>, <nuclearcraft:part:3>]]);
+
+# [Rotational Complex] from [Highly Advanced Machine Frame][+8]
+craft.remake(<mekanismgenerators:generator:8>, ["pretty",
+  "□ □ E □ □",
+  "п S D S п",
+  "▬ D ■ D ▬",
+  "п C T C п",
+  "□ □ T □ □"], {
+  "□": <ore:plateElite>,                     # Elite Plating
+  "E": <ore:componentEVCapacitor>,           # EV Capacitor
+  "п": <contenttweaker:plate_mek_alloy>,     # Heavy Alloy Plate
+  "S": <enderio:item_capacitor_stellar>,     # Stellar Capacitor
+  "D": <contenttweaker:component_mek_alloy>, # Dense Component
+  "▬": <extendedcrafting:material:48>,       # Twilight Ingot
+  "■": <ore:machineBlockHighlyAdvanced> | <ore:machineBlockElite>, # Highly Advanced Machine Frame
+  "C": <extendedcrafting:material:12>,       # Crystaltine Catalyst
+  "T": <mekanismgenerators:generator:7>,     # Turbine Rotor
+});
+
 recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<nuclearcraft:part:3>, <nuclearcraft:pellet_thorium>, <nuclearcraft:part:3>],[<jaopca:item_platesuperalloy>, <mekanismgenerators:reactor:1>, <jaopca:item_platesuperalloy>], [<nuclearcraft:part:3>, <extendedcrafting:material:18>, <nuclearcraft:part:3>]]);
 
 //rEACTOR bIZZ
-recipes.addShaped(<mekanismgenerators:reactor:1> * 4, [[<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>],[<mekanism:basicblock:8>, <mekanism:atomicalloy>, <mekanism:basicblock:8>], [<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>]]);
+recipes.addShaped(<mekanismgenerators:reactor:1> * 4, [[<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>],[<mekanism:basicblock:8>, <contenttweaker:gear_mek_alloy>, <mekanism:basicblock:8>], [<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>]]);
 recipes.addShaped(<mekanismgenerators:reactor>, [[<mekanism:controlcircuit:3>, <powersuits:powerarmorcomponent:8>, <mekanism:controlcircuit:3>],[<mekanismgenerators:reactor:1>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:1>], [<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);
 
 
@@ -175,7 +193,7 @@ recipes.addShaped(<mekanism:glowplasticblock:10>, [[<appliedenergistics2:paint_b
 recipes.addShaped(<mekanism:glowplasticblock:10>, [[<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>],[<appliedenergistics2:paint_ball:25>, <mekanism:plasticblock:10>, <appliedenergistics2:paint_ball:25>], [<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>]]);
 
 //Digital Miner
-recipes.addShaped(<mekanism:machineblock:4>, [[<mekanism:atomicalloy>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>],[<mekanism:teleportationcore>, <mekanism:basicblock:8>, <mekanism:teleportationcore>], [<mekanism:robit>, <appliedenergistics2:material:47>, <mekanism:robit>]]);
+recipes.addShaped(<mekanism:machineblock:4>, [[<contenttweaker:component_mek_alloy>, <mekanism:controlcircuit:2>, <contenttweaker:component_mek_alloy>],[<mekanism:teleportationcore>, <mekanism:basicblock:8>, <mekanism:teleportationcore>], [<mekanism:robit>, <appliedenergistics2:material:47>, <mekanism:robit>]]);
 
 //Solar Panel
 recipes.addShaped(<mekanismgenerators:solarpanel>, [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],[<enderio:item_material:38>, <mekanism:enrichedalloy>, <enderio:item_material:38>], [<moreplates:osmium_plate>, <moreplates:osmium_plate>, <moreplates:osmium_plate>]]);
@@ -422,7 +440,7 @@ craft.remake(<mekanism:basicblock2:5>, ["pretty",
   "□ ⌂ □",
   "A □ A"], {
   "A": <ore:alloyAdvanced> | <ore:itemEnrichedAlloy>, # Enriched Alloy
-  "□": <ore:plateCopper> | <ore:tierOnePlate>, # Copper Plate
+  "□": <ore:plateCopper>, # Copper Plate
   "⌂": <mekanism:basicblock:8>,                # Steel Casing
 });
 
@@ -458,15 +476,15 @@ craft.remake(<mekanism:machineblock2:9>, ["pretty",
   "S": <ore:scaffoldingSteel>,              # Steel Scaffolding
   "■": <chisel:technical:5>,                # Factory Block
   "t": <ore:fenceSteel>,                    # Steel Fence
-  "□": <ore:plateTin> | <ore:tierOnePlate>, # Tin Plate
+  "□": <ore:plateTin>, # Tin Plate
 });
 
 # [Seismic Reader] from [Void Plate][+4]
-craft.remake(<mekanism:seismicreader>.withTag({mekData: {energyStored: 12000.0}}), ["pretty",
+craft.remake(<mekanism:seismicreader>, ["pretty",
   "п B п",
   ": V □",
   "□ □ □"], {
-  "п": <ore:plateTin> | <ore:tierOnePlate>,   # Tin Plate
+  "п": <ore:plateTin>,   # Tin Plate
   "B": <rockhounding_chemistry:misc_items:1>, # Basic Logic Chip
   ":": <ore:oc:materialNumPad>,               # Numeric Keypad
   "V": <moreplates:void_plate>,               # Void Plate
@@ -490,17 +508,149 @@ craft.remake(<mekanism:machineblock:14>, ["pretty",
   "п": <ore:plateDarkSteel>,       # Dark Steel Plate
   "P": <ore:platePulsatingIron>,   # Pulsating Iron Plate
   "□": <ore:plateElectricalSteel>, # Electrical Steel Plate
-  "S": <actuallyadditions:item_battery>.withTag({Energy: 0}), # Single Battery
+  "S": <actuallyadditions:item_battery>, # Single Battery
 });
 
 # [Electric Bow] from [Single Battery][+2]
-craft.remake(<mekanism:electricbow>.withTag({mekData: {energyStored: 120000.0}}), ["pretty",
+craft.remake(<mekanism:electricbow>, ["pretty",
   "  ╱ S",
   "i   S",
   "  ╱ S"], {
   "╱": <ore:stickSteel>,             # Steel Rod
   "S": <randomthings:ingredient:12>, # Spectre String
-  "i": <actuallyadditions:item_battery>.withTag({Energy: 0}), # Single Battery
+  "i": <actuallyadditions:item_battery>, # Single Battery
+});
+
+# [Turbine Blade] from [Mechanical Plating][+1]
+craft.remake(<mekanismgenerators:turbineblade>, ["pretty",
+  "  □  ",
+  "□ § □",
+  "  □  "], {
+  "□": <ore:plateTitaniumIridium>,         # Titanium Iridium Alloy Plate
+  "§": <contenttweaker:plate_engineering>, # Mechanical Plating
+});
+
+# [Turbine Rotor] from [Dense Component][+2]
+craft.remake(<mekanismgenerators:generator:7>, ["pretty",
+  "□ § □",
+  "□ D □",
+  "□ § □"], {
+  "□": <ore:plateHastelloy>,                 # Hastelloy Plate
+  "§": <contenttweaker:plate_engineering>,   # Mechanical Plating
+  "D": <contenttweaker:component_mek_alloy>, # Dense Component
+});
+
+# [Turbine Valve]*2 from [Ultimate Control Circuit][+1]
+craft.remake(<mekanismgenerators:generator:11> * 2, ["pretty",
+  "  ⌂  ",
+  "⌂ U ⌂",
+  "  ⌂  "], {
+  "⌂": <mekanismgenerators:generator:10>, # Turbine Casing
+  "U": <ore:circuitUltimate>,             # Ultimate Control Circuit
+});
+
+# [Turbine Vent]*2 from [Heavy Alloy Scaffolding][+1]
+craft.remake(<mekanismgenerators:generator:12> * 2, ["pretty",
+  "  ⌂  ",
+  "⌂ § ⌂",
+  "  ⌂  "], {
+  "⌂": <mekanismgenerators:generator:10>,      # Turbine Casing
+  "§": <contenttweaker:scaffolding_mek_alloy>, # Heavy Alloy Scaffolding
+});
+
+# [Saturating Condenser] from [Bucket][+2]
+craft.remake(<mekanismgenerators:generator:13>, ["pretty",
+  "п □ п",
+  "□ ~ □",
+  "п □ п"], {
+  "п": <ore:plateElite>,      # Elite Plating
+  "□": <ore:plateSuperAlloy>, # Super Alloy Plate
+  "~": <minecraft:bucket>,    # Bucket
+});
+
+# [Electromagnetic Coil] from [Energy Tablet][+2]
+craft.remake(<mekanismgenerators:generator:9>, ["pretty",
+  "□ п □",
+  "п b п",
+  "□ п □"], {
+  "□": <contenttweaker:plate_mek_alloy>, # Heavy Alloy Plate
+  "п": <ore:plateTinite>,                # Tinite Plate
+  "b": <ore:battery>,                    # Energy Tablet
+});
+
+# [Pressure Disperser] from [Dense Component][+2]
+craft.remake(<mekanism:basicblock2:6>, ["pretty",
+  "□ / □",
+  "/ D /",
+  "□ / □"], {
+  "□": <contenttweaker:plate_thermal_alloy>, # Hardened Thermalloy Plate
+  "/": <contenttweaker:rod_thermal_alloy>,   # Hardened Thermalloy Rod
+  "D": <contenttweaker:component_mek_alloy>, # Dense Component
+});
+
+# [Solar Neutron Activator] from [Industrial Machine Chassis][+4]
+craft.remake(<mekanism:machineblock3:1>, ["pretty",
+  "D S D",
+  "U M U",
+  "□ □ □"], {
+  "D": <contenttweaker:component_mek_alloy>, # Dense Component
+  "S": <mekanismgenerators:solarpanel>,      # Solar Panel
+  "U": <ore:circuitUltimate>,                # Ultimate Control Circuit
+  "M": <ore:itemMachineChassi>,              # Industrial Machine Chassis
+  "□": <ore:plateElite>,                     # Elite Plating
+});
+
+# [Fuelwood Heater] from [Superheating Element][+4]
+craft.remake(<mekanism:machineblock3:6>, ["pretty",
+  "B □ B",
+  "□ S □",
+  "¤ P ¤"], {
+  "B": <ore:circuitBasic>,                       # Basic Control Circuit
+  "□": <ore:plateRestonia>,                      # Restonia Plate
+  "S": <mekanism:basicblock2:5>,                 # Superheating Element
+  "¤": <ore:gearTin>,                            # Tin Gear
+  "P": <actuallyadditions:block_furnace_double>, # Powered Furnace
+});
+
+# [Laser] from [Steel Casing][+3]
+craft.remake(<mekanism:machineblock2:13>, ["pretty",
+  "D b  ",
+  "D ⌂ L",
+  "D b  "], {
+  "D": <contenttweaker:component_mek_alloy>, # Dense Component
+  "b": <ore:battery>,                        # Energy Tablet
+  "⌂": <mekanism:basicblock:8>,              # Steel Casing
+  "L": <ore:etLaserLens>,                    # Clear Laser Lens
+});
+
+# [Laser Amplifier] from [Basic Energy Cube][+2]
+craft.remake(<mekanism:machineblock2:14>, ["pretty",
+  "□ □ □",
+  "□ Ϟ L",
+  "□ □ □"], {
+  "□": <contenttweaker:plate_mek_alloy>,         # Heavy Alloy Plate
+  "Ϟ": <mekanism:energycube>, # Basic Energy Cube
+  "L": <ore:etLaserLens>,                        # Clear Laser Lens
+});
+
+# [Teleporter] from [Teleportation Core][+2]
+craft.remake(<mekanism:machineblock:11>, ["pretty",
+  "E ⌂ E",
+  "⌂ T ⌂",
+  "E ⌂ E"], {
+  "E": <ore:circuitElite>,           # Elite Control Circuit
+  "⌂": <mekanism:basicblock:8>,      # Steel Casing
+  "T": <mekanism:teleportationcore>, # Teleportation Core
+});
+
+# [Portable Teleporter] from [Teleportation Core][+2]
+craft.remake(<mekanism:portableteleporter>, ["pretty",
+  "  b  ",
+  "E T E",
+  "  b  "], {
+  "b": <ore:battery>,                # Energy Tablet
+  "E": <ore:circuitElite>,           # Elite Control Circuit
+  "T": <mekanism:teleportationcore>, # Teleportation Core
 });
 
 ##########################################################################################
