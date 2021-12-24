@@ -884,5 +884,22 @@ MignightLampGlowstone.addItemInput(<minecraft:glowstone>);
 MignightLampGlowstone.addFluidInput(<liquid:argon>* 10000);
 MignightLampGlowstone.addItemOutput(<extendedcrafting:lamp>);
 MignightLampGlowstone.build();
+
+
+##Mirion
+val Mirion = mods.modularmachinery.RecipeBuilder.newBuilder("forge-mirion", "heavens-forge", 300, 0);
+Mirion.addMekanismLaserInput(10000000);
+Mirion.addItemInput(<botania:manaresource>);
+Mirion.addItemInput(<botania:manaresource:4>);
+Mirion.addItemInput(<botania:manaresource:7>);
+Mirion.addFluidInput(<liquid:cobalt>* 144);
+Mirion.addFluidInput(<liquid:base_essence>* 144);
+Mirion.addItemOutput(<plustic:mirioningot>);
+Mirion.build();
+
+
+
+
+
 ##########################################################################################
 print("==================== end of modular machines.zs ====================");

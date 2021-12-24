@@ -76,13 +76,15 @@ recipes.addShaped(<environmentaltech:photovoltaic_cell>, [[<mekanismgenerators:s
 // Crystal Lens
 recipes.addShaped(<environmentaltech:laser_lens_crystal>, [[<environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>],[<environmentaltech:kyronite_crystal>, <ore:etLaserLens>, <environmentaltech:kyronite_crystal>], [<environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>, <environmentaltech:kyronite_crystal>]]);
 
-# [Clear Laser Lens] from [Hardened Iridium Glass]
+
+# [Clear Laser Lens] from [Hardened Iridium Glass]*2
 craft.remake(<environmentaltech:laser_lens>, ["pretty",
   "■   ■",
   "■ ■ ■",
   "■   ■"], {
-  "■": <ore:blockGlassHardened>, # Hardened Iridium Glass
+  "■": <thermalfoundation:glass:7>, # Hardened Iridium Glass
 });
+
 
 # [Clear Laser Lens]*4 from [Didymium Glass (Borderless)]
 craft.remake(<environmentaltech:laser_lens> * 4, ["pretty",
@@ -138,16 +140,6 @@ mods.nuclearcraft.Infuser.addRecipe(<environmentaltech:erodium_crystal>, <liquid
 
 //Tier 4
 mods.nuclearcraft.FissionIrradiator.addRecipe(<environmentaltech:kyronite_crystal>, <environmentaltech:pladium_crystal>, 200000, 0, 0.15, 0);
-
-
-
-# [Clear Laser Lens] from [Hardened Iridium Glass]*2
-craft.remake(<environmentaltech:laser_lens>, ["pretty",
-  "■   ■",
-  "■ ■ ■",
-  "■   ■"], {
-  "■": <thermalfoundation:glass:7>, # Hardened Iridium Glass
-});
 
 
 
@@ -309,7 +301,7 @@ craft.remake(<environmentaltech:structure_frame_3>, ["pretty",
   "E": <ore:circuitElite>,                    # Elite Control Circuit
   "*": <ore:crystalKyronite>,                 # Kyronite Crystal
   "◙": <environmentaltech:structure_frame_2>, # Structure Frame Tier 2
-  "B": <thermalfoundation:material:1028>,     # Mana Dust
+  "B": <enderio:item_material:42>,        # Frank n Zombie
 });
 
 # [Structure Frame Tier 4] from [Structure Frame Tier 3][+4]

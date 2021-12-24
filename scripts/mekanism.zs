@@ -83,12 +83,12 @@ recipes.addShaped(<mekanism:machineblock:12>, [[null, <minecraft:bucket>, null],
 recipes.addShaped(<mekanism:filterupgrade>, [[null, <thermalfoundation:glass:3>, null],[<ore:plateBam>, <ore:dustTin>, <ore:plateBam>], [null, <thermalfoundation:glass:3>, null]]);
 
 //Evap Tank
-recipes.addShaped(<mekanism:basicblock2> * 4, [[<mekanism:enrichedalloy>, <thermalfoundation:material:352>, <mekanism:enrichedalloy>],[<thermalfoundation:material:352>, <contenttweaker:gear_thermal_alloy>, <thermalfoundation:material:352>], [<mekanism:enrichedalloy>, <thermalfoundation:material:352>, <mekanism:enrichedalloy>]]);
-recipes.addShaped(<mekanism:basicblock2> * 8, [[<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>],[<ore:plateVanasteel>, <contenttweaker:gear_thermal_alloy>, <ore:plateVanasteel>], [<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>]]);
+recipes.addShaped(<mekanism:basicblock2> * 4, [[<mekanism:enrichedalloy>, <moreplates:refined_obsidian_plate>, <mekanism:enrichedalloy>],[<moreplates:refined_obsidian_plate>, <contenttweaker:gear_thermal_alloy>, <moreplates:refined_obsidian_plate>], [<mekanism:enrichedalloy>, <moreplates:refined_obsidian_plate>, <mekanism:enrichedalloy>]]);
+//recipes.addShaped(<mekanism:basicblock2> * 8, [[<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>],[<ore:plateVanasteel>, <contenttweaker:gear_thermal_alloy>, <ore:plateVanasteel>], [<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>]]);
 
 //Induction
-recipes.addShaped(<mekanism:basicblock2:1> * 4, [[<mekanism:reinforcedalloy>, <thermalfoundation:material:352>, <mekanism:reinforcedalloy>],[<thermalfoundation:material:352>, <contenttweaker:gear_thermal_alloy>, <thermalfoundation:material:352>], [<mekanism:reinforcedalloy>, <thermalfoundation:material:352>, <mekanism:reinforcedalloy>]]);
-recipes.addShaped(<mekanism:basicblock2:1> * 8, [[<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>],[<ore:plateVanasteel>, <contenttweaker:gear_thermal_alloy>, <ore:plateVanasteel>], [<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:basicblock2:1> * 4, [[<mekanism:reinforcedalloy>, <moreplates:osgloglas_plate>, <mekanism:reinforcedalloy>],[<moreplates:osgloglas_plate>, <contenttweaker:gear_thermal_alloy>, <moreplates:osgloglas_plate>], [<mekanism:reinforcedalloy>, <moreplates:osgloglas_plate>, <mekanism:reinforcedalloy>]]);
+//recipes.addShaped(<mekanism:basicblock2:1> * 8, [[<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>],[<ore:plateVanasteel>, <contenttweaker:gear_thermal_alloy>, <ore:plateVanasteel>], [<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>]]);
 
 //Turbine
 //recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>],[<thermalfoundation:material:352>, <moreplates:osmium_gear>, <thermalfoundation:material:352>], [<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>]]);
@@ -355,11 +355,11 @@ craft.remake(<mekanism:machineblock2:2>, ["pretty",
   "□ l □",
   "E ⌂ E",
   "◘ l ◘"], {
-  "□": <ore:plateElite>,                            # Elite Plating
+  "□": <nuclearcraft:part:1>,                            # Advanced Plating
   "l": <ore:circuitElite>,                          # Data Control Circuit
   "E": <mekanism:gastank>.withTag({tier: 2}),       # Elite Gas Tank
   "⌂": <mekanism:basicblock:8>,                     # Steel Casing
-  "◘": <nuclearcraft:lithium_ion_cell>.withTag({}), # Lithium Ion Cell
+  "◘": <nuclearcraft:lithium_ion_cell>, # Lithium Ion Cell
 });
 
 # [Chemical Oxidizer] from [Steel Casing][+3]

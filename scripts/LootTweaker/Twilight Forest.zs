@@ -38,7 +38,6 @@ print("==================== loading TF Loot.zs ====================");
 
 	val uncommon_table = [
 <immersiveengineering:toolbox>,
-<toolbelt:belt>,
 <artisanworktables:artisans_hammer_diamond>,
 <artisanworktables:artisans_cutters_diamond>,
 <artisanworktables:artisans_handsaw_diamond>,

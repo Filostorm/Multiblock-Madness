@@ -547,5 +547,6 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalmechanics:creative_mec
 	[<ore:gearInfinity>, <mysticalmechanics:mergebox_frame>, <ore:gearInfinity>, <mysticalmechanics:axle_iron>, <mysticalmechanics:mergebox_frame>, <mysticalmechanics:axle_iron>, <ore:gearInfinity>, <mysticalmechanics:mergebox_frame>, <ore:gearInfinity>]
 ]);
 
+
 ##########################################################################################
 print("==================== end of creative biz.zs ====================");

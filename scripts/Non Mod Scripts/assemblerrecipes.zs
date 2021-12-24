@@ -441,6 +441,14 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_mek_alloy_sc
 	.addItemOutput(<contenttweaker:scaffolding_mek_alloy>*9)
 	.addItemInput(<contenttweaker:ingot_mek_alloy>*3)
 	.addItemInput(<contenttweaker:rod_mek_alloy>*3)
+	.build();
+
+// PlaStick Scaffolding
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_plastic_scaffolding", "assemblermkone", 50)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<contenttweaker:scaffolding_plastic>*9)
+	.addItemInput(<mekanism:polyethene:2>*3)
+	.addItemInput(<mekanism:polyethene:3>*3)
 	.build();	
 
 // Food //
@@ -1500,6 +1508,14 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_mek_alloy_s
 	.addItemOutput(<contenttweaker:scaffolding_mek_alloy>*9)
 	.addItemInput(<contenttweaker:ingot_mek_alloy>*3)
 	.addItemInput(<contenttweaker:rod_mek_alloy>*3)
+	.build();	
+
+// PlaStick Scaffolding
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_plastic_scaffolding", "assemblermkfour", 1)
+	.addEnergyPerTickInput(180000)
+	.addItemOutput(<contenttweaker:scaffolding_plastic>*9)
+	.addItemInput(<mekanism:polyethene:2>*3)
+	.addItemInput(<mekanism:polyethene:3>*3)
 	.build();	
 
 // Food //

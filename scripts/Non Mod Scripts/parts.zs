@@ -88,6 +88,8 @@ val mapNewGears as IItemStack[IItemStack] = {
 	<actuallyadditions:item_crystal_empowered:4>:<moreplates:empowered_emeradic_gear>,
 	<actuallyadditions:item_crystal_empowered:2>:<moreplates:empowered_diamatine_gear>,
 	<actuallyadditions:item_crystal_empowered:5>:<moreplates:empowered_enori_gear>,
+	<actuallyadditions:item_crystal_empowered:1>:<moreplates:empowered_palis_gear>,
+	<actuallyadditions:item_crystal_empowered:3>:<moreplates:empowered_void_gear>,
 } as IItemStack[IItemStack];
 
 for material, output in mapNewGears {
@@ -145,6 +147,7 @@ recipes.addShaped(<jaopca:block_scaffoldingthaumium> * 6, [[<thaumcraft:ingot>, 
 recipes.addShaped(<contenttweaker:ironwood_scaffolding> * 6, [[<twilightforest:ironwood_ingot>, <twilightforest:ironwood_ingot>, <twilightforest:ironwood_ingot>],[null, <contenttweaker:rod_ironwood>, null], [<contenttweaker:rod_ironwood>, null, <contenttweaker:rod_ironwood>]]);
 recipes.addShaped(<contenttweaker:scaffolding_thermal_alloy> * 6, [[<contenttweaker:ingot_thermal_alloy>, <contenttweaker:ingot_thermal_alloy>, <contenttweaker:ingot_thermal_alloy>],[null, <contenttweaker:rod_thermal_alloy>, null], [<contenttweaker:rod_thermal_alloy>, null, <contenttweaker:rod_thermal_alloy>]]);
 recipes.addShaped(<contenttweaker:scaffolding_mek_alloy> * 6, [[<contenttweaker:ingot_mek_alloy>, <contenttweaker:ingot_mek_alloy>, <contenttweaker:ingot_mek_alloy>],[null, <contenttweaker:rod_mek_alloy>, null], [<contenttweaker:rod_mek_alloy>, null, <contenttweaker:rod_mek_alloy>]]);
+recipes.addShaped(<contenttweaker:scaffolding_plastic> * 6, [[<mekanism:polyethene:2>, <mekanism:polyethene:2>, <mekanism:polyethene:2>],[null, <mekanism:polyethene:3>, null], [<mekanism:polyethene:3>, null, <mekanism:polyethene:3>]]);
 
 /* Moved
 //scaffolding

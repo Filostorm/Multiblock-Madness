@@ -21,6 +21,10 @@
     "b": {
       "id": "jaopca:block_scaffoldingstainlesssteel",
       "meta": 0
+    },
+    "c": {
+      "id": "contenttweaker:scaffolding_plastic",
+      "meta": 0
     }
   },
   "shape": [
@@ -32,7 +36,7 @@
       ],
       [
         "b",
-        "b",
+        "c",
         "b"
       ],
       [
@@ -44,17 +48,17 @@
     [
       [
         "b",
-        "b",
+        "c",
         "b"
       ],
       [
-        "b",
+        "c",
         "a",
-        "b"
+        "c"
       ],
       [
         "b",
-        "b",
+        "c",
         "b"
       ]
     ],
@@ -66,7 +70,7 @@
       ],
       [
         "b",
-        "b",
+        "c",
         "b"
       ],
       [
@@ -76,5 +80,6 @@
       ]
     ]
   ]
+
 
 }

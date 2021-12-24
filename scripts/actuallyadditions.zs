@@ -135,11 +135,11 @@ CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered:4>, 400
 
 // Restonia <actuallyadditions:item_crystal>
 //Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered>, <actuallyadditions:item_crystal>, <thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:20>, 50000, 200, [0.9, 0.1, 0.2]);
-Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered>, <actuallyadditions:block_crystal>, <thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:20>, 100000, 400, [0.9, 0.1, 0.2]);
+Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered>, <actuallyadditions:block_crystal>, <thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:16>, 100000, 400, [0.9, 0.1, 0.2]);
 
-//CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered>, 200000, <actuallyadditions:item_crystal>, [<thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:20>]);
+//CombinationCrafting.addRecipe(<actuallyadditions:item_crystal_empowered>, 200000, <actuallyadditions:item_crystal>, [<thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:16>]);
 CombinationCrafting.addRecipe(<actuallyadditions:block_crystal_empowered>, 400000, <actuallyadditions:block_crystal>, 
-[<thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:20>]);
+[<thermalfoundation:bait:2>, <mekanism:enrichedalloy>, <minecraft:tnt>, <techreborn:ingot:16>]);
 
 AtomicReconstructor.removeRecipe(<moreplates:restonia_plate>);
 

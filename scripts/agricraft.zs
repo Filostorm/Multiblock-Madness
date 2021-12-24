@@ -130,7 +130,7 @@ recipes.addShaped(<modulardiversity:blockmanainputhatch>, [[<thermalfoundation:m
 val crystalInfusing = mods.modularmachinery.RecipeBuilder.newBuilder("crystal_infuser_celestial", "crystal_infuser", 400, 0);
 crystalInfusing.addManaInput(2000);
 crystalInfusing.addItemInput(<ore:CelestialCrystal>);
-crystalInfusing.addItemInput(<bloodmagic:slate:2>*2);
+crystalInfusing.addItemInput(<bloodmagic:slate:3>);
 crystalInfusing.addItemInput(<actuallyadditions:item_fertilizer>);
 crystalInfusing.addItemInput(<thermalfoundation:fertilizer:2>*4);
 crystalInfusing.addItemInput(<mysticalagriculture:mystical_fertilizer>*3);

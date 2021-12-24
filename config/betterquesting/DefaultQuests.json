@@ -1709,7 +1709,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "enderio:block_soul_binder",
@@ -1724,7 +1724,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Soul Binder",
-          "desc:8": "Using Soul Vials, create new items."
+          "desc:8": "Using Soul Vials, create new items.\n\nYou can use a §dPowered Spawner§r on Capture mode to automatically fill Soul Vials!"
         }
       },
       "tasks:9": {
@@ -4500,7 +4500,8 @@
         }
       },
       "preRequisites:11": [
-        369
+        369,
+        368
       ],
       "questID:3": 43
     },
@@ -5402,7 +5403,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Hardened Thermalloy",
-          "desc:8": "No Description",
+          "desc:8": "This material is used a lot in Mekanism machines!",
           "icon:10": {
             "id:8": "contenttweaker:ingot_thermal_alloy",
             "Count:3": 1,
@@ -5418,7 +5419,7 @@
           "lockedprogress:1": 0,
           "autoclaim:1": 0,
           "issilent:1": 0,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "globalshare:1": 0,
           "simultaneous:1": 0,
           "visibility:8": "NORMAL"
@@ -5443,8 +5444,23 @@
           "index:3": 0
         }
       },
-      "rewards:9": {},
-      "preRequisites:11": [],
+      "rewards:9": {
+        "0:10": {
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:ingot_thermal_alloy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0
+        }
+      },
+      "preRequisites:11": [
+        355
+      ],
       "questID:3": 56
     },
     "57:10": {
@@ -9553,10 +9569,10 @@
           "lockedprogress:1": 0,
           "autoclaim:1": 0,
           "issilent:1": 0,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "globalshare:1": 0,
           "simultaneous:1": 0,
-          "visibility:8": "NORMAL"
+          "visibility:8": "ALWAYS"
         }
       },
       "tasks:9": {
@@ -9578,7 +9594,20 @@
           "index:3": 0
         }
       },
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:block_mek_alloy",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0
+        }
+      },
       "preRequisites:11": [
         761,
         113
@@ -9588,42 +9617,56 @@
     "109:10": {
       "properties:10": {
         "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
+          "name:8": "Manyullyn Turbine",
+          "desc:8": "800 RF/t",
           "icon:10": {
-            "id:8": "minecraft:spawn_egg",
+            "id:8": "advgenerators:turbine_manyullyn",
             "Count:3": 1,
             "Damage:2": 0,
-            "tag:10": {
-              "EntityTag:10": {
-                "id:8": "thebetweenlands:dark_druid"
-              }
-            },
             "OreDict:8": ""
           },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
+          "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
+          "questlogic:8": "AND",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
           "repeat_relative:1": 1,
+          "lockedprogress:1": 0,
+          "autoclaim:1": 0,
+          "issilent:1": 0,
           "ismain:1": 0,
-          "name:8": "-REMOVED chap 3-",
-          "desc:8": "Find a Swamp and kill some Dark Druids hanging out ominously."
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "visibility:8": "ALWAYS"
         }
       },
       "tasks:9": {
         "0:10": {
+          "partialMatch:1": 1,
+          "ignoreNBT:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "autoConsume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "advgenerators:turbine_manyullyn",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval",
+          "index:3": 0
+        },
+        "1:10": {
           "taskID:8": "bq_standard:checkbox",
           "index:3": 1
         }
       },
       "rewards:9": {},
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        483
+      ],
       "questID:3": 109
     },
     "110:10": {
@@ -9858,7 +9901,7 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "Dense Component",
-          "desc:8": "No Description",
+          "desc:8": "The Hydrogen Chloride can be made into Hydrochloric Acid, or you can follow Rockhounding\u0027s method.",
           "icon:10": {
             "id:8": "contenttweaker:component_mek_alloy",
             "Count:3": 1,
@@ -9899,9 +9942,22 @@
           "index:3": 0
         }
       },
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:component_mek_alloy",
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0
+        }
+      },
       "preRequisites:11": [
-        599
+        603
       ],
       "questID:3": 113
     },
@@ -16094,6 +16150,21 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "capsule:capsule",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "tag:10": {
+                "display:10": {
+                  "color:3": 3949738
+                },
+                "sourceInventory:10": {},
+                "structureName:8": "config/capsule/prefabs/immersivetech/it-distilliation-tower",
+                "label:8": "It-distilliation-tower",
+                "size:3": 17
+              },
+              "OreDict:8": ""
             }
           },
           "rewardID:8": "bq_standard:item",
@@ -16640,7 +16711,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "name:8": "Bound Blade",
           "desc:8": "Needed for the tier 4 Altar."
         }
@@ -20357,7 +20428,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Binding Reagent",
-          "desc:8": "Used to make Bound Weapons and Blood Iron.\n\nYou\u0027ll need to make a block of §4Blood Infused Iron§r for making §aTerrasteel§r."
+          "desc:8": "Used to make Bound Weapons and Blood Iron.\n\nTar can be made by melting coal in the Tinkers Melter.\n\nYou\u0027ll need to make a block of §4Blood Infused Iron§r for making §aTerrasteel§r."
         }
       },
       "tasks:9": {
@@ -21276,7 +21347,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 1,
+          "ismain:1": 0,
           "name:8": "Implosion Compresser",
           "desc:8": "The recipe for Block of Biotite requires you to have at least 2 Transformer upgrades in the Compressor."
         }
@@ -21321,39 +21392,39 @@
     "268:10": {
       "properties:10": {
         "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
-          "simultaneous:1": 0,
+          "name:8": "Extreme Alloy Turbine",
+          "desc:8": "1600 RF/t",
           "icon:10": {
-            "id:8": "techreborn:rolling_machine",
+            "id:8": "advgenerators:turbine_extreme",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
           },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
+          "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
+          "questlogic:8": "AND",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
           "repeat_relative:1": 1,
-          "ismain:1": 1,
-          "name:8": "-REMOVED chap 5-",
-          "desc:8": "Craft Heating Coils and easy Sheetmetal with this."
+          "lockedprogress:1": 0,
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "ismain:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "visibility:8": "ALWAYS"
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "ignoreNBT:1": 1,
-          "consume:1": 1,
+          "ignoreNBT:1": 0,
+          "consume:1": 0,
           "groupDetect:1": 0,
           "autoConsume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "techreborn:rolling_machine",
+              "id:8": "advgenerators:turbine_extreme",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -21361,10 +21432,16 @@
           },
           "taskID:8": "bq_standard:retrieval",
           "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 1
         }
       },
       "rewards:9": {},
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        109
+      ],
       "questID:3": 268
     },
     "269:10": {
@@ -21512,27 +21589,27 @@
     "271:10": {
       "properties:10": {
         "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
-          "simultaneous:1": 0,
+          "name:8": "Super Alloy Turbine",
+          "desc:8": "3200 RF/t. \n\nYou\u0027ll need to upgrade the internal power buffer if you make a maxed turbine!",
           "icon:10": {
-            "id:8": "techreborn:assembling_machine",
+            "id:8": "advgenerators:turbine_super",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
           },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
+          "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
+          "questlogic:8": "AND",
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
           "repeat_relative:1": 1,
-          "ismain:1": 1,
-          "name:8": "-REMOVED chap 5-",
-          "desc:8": "Can make some recipes cheaper.\n\nThis machine is suuuuuuuuuuuuper slow, so here is a few overclockers for now."
+          "lockedprogress:1": 0,
+          "autoclaim:1": 0,
+          "issilent:1": 0,
+          "ismain:1": 0,
+          "globalshare:1": 0,
+          "simultaneous:1": 0,
+          "visibility:8": "ALWAYS"
         }
       },
       "tasks:9": {
@@ -21544,7 +21621,7 @@
           "autoConsume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "techreborn:assembling_machine",
+              "id:8": "advgenerators:turbine_super",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -21552,23 +21629,16 @@
           },
           "taskID:8": "bq_standard:retrieval",
           "index:3": 0
+        },
+        "1:10": {
+          "taskID:8": "bq_standard:checkbox",
+          "index:3": 1
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "rewards:9": {
-            "0:10": {
-              "id:8": "techreborn:upgrades",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0
-        }
-      },
-      "preRequisites:11": [],
+      "rewards:9": {},
+      "preRequisites:11": [
+        268
+      ],
       "questID:3": 271
     },
     "272:10": {
@@ -23297,7 +23367,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Steam Turbine + Alternator",
-          "desc:8": "This Multiblock will require you to make the Arc Furnace first, for Aluminum and Electrical Steel.\n\nUse these two multiblocks to turn steam into high amounts of energy, up to 4096 RF/tick each connection.\n\nYou will need a very high extraction speed for water and steam, these Fluid Lasers should do the trick! You\u0027ll also need a Laser Wrench to connect them."
+          "desc:8": "This Multiblock will require you to make the Arc Furnace first, for Aluminum and Electrical Steel.\n\nUse these two multiblocks to turn steam into high amounts of energy, up to 4096 RF/tick each connection."
         }
       },
       "tasks:9": {
@@ -24876,7 +24946,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Solar Steam",
-          "desc:8": "Use the power of the sun to create steam.\n\nAssemble the Solar Tower as shown, with up to four Solar Reflectors around it."
+          "desc:8": "Use the power of the sun to create steam. §2Check the Engineer\u0027s Manual for information and building guides.§r\n\n§bDisclamer: I haven\u0027t gotten this to work yet, so be sure to message on the discord if you figure it out!"
         }
       },
       "tasks:9": {
@@ -24888,39 +24958,57 @@
           "autoConsume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "immersiveengineering:metal_decoration1",
-              "Count:3": 14,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "immersiveengineering:metal_device1",
-              "Count:3": 4,
-              "Damage:2": 6,
-              "OreDict:8": ""
-            },
-            "2:10": {
               "id:8": "immersiveengineering:metal_decoration0",
               "Count:3": 1,
               "Damage:2": 3,
               "OreDict:8": ""
             },
-            "3:10": {
+            "1:10": {
               "id:8": "immersiveengineering:metal_decoration0",
-              "Count:3": 5,
+              "Count:3": 2,
               "Damage:2": 5,
               "OreDict:8": ""
             },
+            "2:10": {
+              "id:8": "immersiveengineering:metal_decoration0",
+              "Count:3": 3,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "immersiveengineering:metal_decoration0",
+              "Count:3": 2,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            },
             "4:10": {
-              "id:8": "immersiveengineering:metal_decoration1",
-              "Count:3": 20,
-              "Damage:2": 0,
+              "id:8": "immersiveengineering:sheetmetal",
+              "Count:3": 8,
+              "Damage:2": 8,
               "OreDict:8": ""
             },
             "5:10": {
-              "id:8": "immersiveengineering:sheetmetal",
+              "id:8": "immersiveengineering:metal_decoration1",
               "Count:3": 16,
-              "Damage:2": 8,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "immersiveengineering:metal_decoration1",
+              "Count:3": 80,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "7:10": {
+              "id:8": "immersiveengineering:stone_decoration",
+              "Count:3": 9,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "8:10": {
+              "id:8": "immersiveengineering:stone_decoration",
+              "Count:3": 4,
+              "Damage:2": 4,
               "OreDict:8": ""
             }
           },
@@ -24932,27 +25020,33 @@
         "0:10": {
           "rewards:9": {
             "0:10": {
-              "id:8": "immersiveengineering:wooden_decoration",
-              "Count:3": 6,
-              "Damage:2": 0,
+              "id:8": "immersiveengineering:sheetmetal",
+              "Count:3": 9,
+              "Damage:2": 3,
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "thermalfoundation:storage",
-              "Count:3": 1,
-              "Damage:2": 2,
+              "id:8": "immersiveengineering:metal_decoration1",
+              "Count:3": 8,
+              "Damage:2": 1,
               "OreDict:8": ""
             },
             "2:10": {
-              "id:8": "immersiveengineering:metal_decoration1",
+              "id:8": "immersiveengineering:stone_decoration",
               "Count:3": 4,
-              "Damage:2": 1,
+              "Damage:2": 5,
               "OreDict:8": ""
             },
             "3:10": {
               "id:8": "immersiveengineering:metal_decoration0",
-              "Count:3": 2,
+              "Count:3": 1,
               "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "minecraft:glass",
+              "Count:3": 3,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -26626,7 +26720,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Gaia Guardian",
-          "desc:8": "Assemble the arena as shown in the Lexica Botania."
+          "desc:8": "§dGaia Spirit Ingots§r can be used to craft Aethium.\n\nAssemble the arena as shown in the Lexica Botania."
         }
       },
       "tasks:9": {
@@ -26794,7 +26888,8 @@
         397,
         398,
         19,
-        253
+        380,
+        56
       ],
       "questID:3": 338
     },
@@ -30326,7 +30421,9 @@
           "index:3": 0
         }
       },
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        108
+      ],
       "questID:3": 358
     },
     "359:10": {
@@ -30450,7 +30547,7 @@
       },
       "rewards:9": {},
       "preRequisites:11": [
-        364
+        246
       ],
       "questID:3": 360
     },
@@ -30657,9 +30754,9 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "mekanism:glowplasticblock",
+            "id:8": "mekanism:polyethene",
             "Count:3": 1,
-            "Damage:2": 10,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -30668,7 +30765,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "Plastic",
+          "name:8": "High Density Poly Ethylene!",
           "desc:8": "Use up some of that HDPE!"
         }
       },
@@ -30681,9 +30778,9 @@
           "autoConsume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "mekanism:glowplasticblock",
+              "id:8": "mekanism:polyethene",
               "Count:3": 1,
-              "Damage:2": 10,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -30693,8 +30790,7 @@
       },
       "rewards:9": {},
       "preRequisites:11": [
-        506,
-        246
+        506
       ],
       "questID:3": 364
     },
@@ -30822,7 +30918,6 @@
         }
       },
       "preRequisites:11": [
-        338,
         199
       ],
       "questID:3": 366
@@ -30971,7 +31066,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "3000 Heat - Tungsten and Titanium",
-          "desc:8": "Important metals."
+          "desc:8": "Important metals.\n\nYou will need to head to the§a Nuclear Engineering Chapter§r to unlock the next quest!"
         }
       },
       "tasks:9": {
@@ -31708,7 +31803,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "name:8": "Tier 4 Blood Altar",
           "desc:8": "Using 28 Runes, upgrade your Altar to tier 4.\n\nThis will allow you to start creating the more powerful rituals."
         }
@@ -35897,9 +35992,13 @@
         "0:10": {
           "choices:9": {
             "0:10": {
-              "id:8": "immersivetech:metal_device",
+              "id:8": "betterquesting:placeholder",
               "Count:3": 2,
               "Damage:2": 0,
+              "tag:10": {
+                "orig_id:8": "immersivetech:metal_device",
+                "orig_meta:3": 0
+              },
               "OreDict:8": ""
             },
             "1:10": {
@@ -37488,7 +37587,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Advanced Rocketry",
-          "desc:8": "Destination Moon!\n\n§bUse the Holo-Projector to help assemble the multiblocks."
+          "desc:8": "Destination Moon!\n\n§bUse the Holo-Projector to help assemble the multiblocks.\n\n§rYou\u0027ll need some §6Dense Components§r to craft the Structure Frames."
         }
       },
       "tasks:9": {
@@ -37530,7 +37629,11 @@
           "index:3": 0
         }
       },
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        364,
+        369,
+        113
+      ],
       "questID:3": 457
     },
     "458:10": {
@@ -38336,8 +38439,7 @@
         }
       },
       "preRequisites:11": [
-        457,
-        506
+        457
       ],
       "questID:3": 467
     },
@@ -38676,7 +38778,7 @@
         }
       },
       "preRequisites:11": [
-        288
+        369
       ],
       "questID:3": 472
     },
@@ -40901,7 +41003,7 @@
         }
       },
       "preRequisites:11": [
-        354
+        459
       ],
       "questID:3": 504
     },
@@ -41001,7 +41103,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "Condensating into a Liquid",
+          "name:8": "Liquid Ethylene",
           "desc:8": "Set the machine to convert to a liquid. \n\nEthylene is one of the best Advanced Generators fuels."
         }
       },
@@ -47343,7 +47445,6 @@
       },
       "rewards:9": {},
       "preRequisites:11": [
-        503,
         43
       ],
       "questID:3": 603
@@ -47373,7 +47474,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "Electrolyzing Brine",
+          "name:8": "-REMOVED-",
           "desc:8": "This machine has a few uses."
         }
       },
@@ -59945,7 +60046,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Refining Life Essence",
-          "desc:8": "Using the §c§4Ritual of Purification§r, you\u0027ll be able to refine Life Essence.\n\nPlace the tanks stacked above the center, with one empty space above the Ritual Stone. Then place the four Stasis Plates above the fire attuned Ritual Stones. \n\nEach item goes on a Stasis Plate, and Life Essence in the top tank. One bucket of Refined requires 10 buckets of unrefined Life Essence, and one of each item."
+          "desc:8": "This is used in crafting §5Kyronite§r.\n\nUsing the §c§4Ritual of Purification§r, you\u0027ll be able to refine Life Essence.\n\nPlace the tanks stacked above the center, with one empty space above the Ritual Stone. Then place the four Stasis Plates above the fire attuned Ritual Stones. \n\nEach item goes on a Stasis Plate, and Life Essence in the top tank. One bucket of Refined requires 10 buckets of unrefined Life Essence, and one of each item."
         }
       },
       "tasks:9": {
@@ -60801,207 +60902,228 @@
         "3:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
+          "x:3": -96,
+          "y:3": 180,
+          "id:3": 109
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "sizeY:3": 24,
           "x:3": -216,
           "y:3": 144,
           "id:3": 211
         },
-        "4:10": {
+        "5:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -96,
           "y:3": 108,
           "id:3": 231
         },
-        "5:10": {
+        "6:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 108,
           "id:3": 232
         },
-        "6:10": {
+        "7:10": {
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -96,
+          "y:3": 216,
+          "id:3": 268
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -96,
+          "y:3": 252,
+          "id:3": 271
+        },
+        "9:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -372,
           "y:3": 144,
           "id:3": 276
         },
-        "7:10": {
+        "10:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": 60,
           "id:3": 277
         },
-        "8:10": {
+        "11:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -444,
           "y:3": 108,
           "id:3": 278
         },
-        "9:10": {
+        "12:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -372,
           "y:3": 180,
           "id:3": 279
         },
-        "10:10": {
+        "13:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -240,
           "y:3": 144,
           "id:3": 280
         },
-        "11:10": {
+        "14:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -228,
           "y:3": 180,
           "id:3": 281
         },
-        "12:10": {
+        "15:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -228,
           "y:3": 216,
           "id:3": 282
         },
-        "13:10": {
+        "16:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -264,
           "y:3": 108,
           "id:3": 290
         },
-        "14:10": {
+        "17:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -180,
           "y:3": 180,
           "id:3": 293
         },
-        "15:10": {
+        "18:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": 216,
           "id:3": 294
         },
-        "16:10": {
+        "19:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": 144,
           "id:3": 295
         },
-        "17:10": {
+        "20:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -264,
           "y:3": 60,
           "id:3": 306
         },
-        "18:10": {
+        "21:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": 180,
           "id:3": 315
         },
-        "19:10": {
+        "22:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -432,
           "y:3": 60,
           "id:3": 341
         },
-        "20:10": {
+        "23:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -228,
           "y:3": 252,
           "id:3": 433
         },
-        "21:10": {
+        "24:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": 108,
           "id:3": 468
         },
-        "22:10": {
+        "25:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -96,
           "y:3": 144,
           "id:3": 483
         },
-        "23:10": {
+        "26:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -372,
           "y:3": 108,
           "id:3": 494
         },
-        "24:10": {
+        "27:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -384,
           "y:3": 60,
           "id:3": 518
         },
-        "25:10": {
+        "28:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": 180,
           "id:3": 595
         },
-        "26:10": {
+        "29:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 144,
           "id:3": 667
         },
-        "27:10": {
+        "30:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": 144,
           "id:3": 693
         },
-        "28:10": {
+        "31:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 264,
           "id:3": 736
         },
-        "29:10": {
+        "32:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 174,
           "id:3": 759
         },
-        "30:10": {
+        "33:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 204,
           "id:3": 760
         },
-        "31:10": {
+        "34:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 234,
           "id:3": 761
         },
-        "32:10": {
+        "35:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -228,
@@ -65201,315 +65323,301 @@
         "0:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -120,
-          "y:3": 108,
+          "x:3": -180,
+          "y:3": 84,
           "id:3": 11
         },
         "1:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -312,
+          "x:3": -324,
           "y:3": 84,
           "id:3": 43
         },
         "2:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -456,
-          "y:3": 108,
-          "id:3": 56
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
           "x:3": -252,
           "y:3": 36,
           "id:3": 108
         },
+        "3:10": {
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -240,
+          "y:3": 72,
+          "id:3": 113
+        },
         "4:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -204,
+          "x:3": 6,
           "y:3": 84,
-          "id:3": 113
+          "id:3": 157
         },
         "5:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 42,
-          "y:3": 84,
-          "id:3": 157
+          "x:3": 90,
+          "y:3": 36,
+          "id:3": 200
         },
         "6:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 126,
+          "x:3": -384,
           "y:3": 36,
-          "id:3": 200
+          "id:3": 201
         },
         "7:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -366,
-          "y:3": 36,
-          "id:3": 201
+          "x:3": 6,
+          "y:3": -48,
+          "id:3": 243
         },
         "8:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 42,
-          "y:3": -48,
-          "id:3": 243
+          "x:3": 54,
+          "y:3": 108,
+          "id:3": 245
         },
         "9:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 90,
-          "y:3": 108,
-          "id:3": 245
+          "x:3": -72,
+          "y:3": -48,
+          "id:3": 246
         },
         "10:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -48,
-          "y:3": -30,
-          "id:3": 246
+          "x:3": -288,
+          "y:3": 72,
+          "id:3": 247
         },
         "11:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -204,
-          "y:3": -24,
-          "id:3": 247
+          "x:3": 42,
+          "y:3": 36,
+          "id:3": 260
         },
         "12:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 78,
-          "y:3": 36,
-          "id:3": 260
+          "x:3": -144,
+          "y:3": 60,
+          "id:3": 288
         },
         "13:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -108,
-          "y:3": 78,
-          "id:3": 288
+          "x:3": 54,
+          "y:3": -36,
+          "id:3": 323
         },
         "14:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 90,
-          "y:3": -36,
-          "id:3": 323
+          "x:3": 78,
+          "y:3": 72,
+          "id:3": 336
         },
         "15:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 114,
-          "y:3": 72,
-          "id:3": 336
+          "x:3": -60,
+          "y:3": 108,
+          "id:3": 339
         },
         "16:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -6,
+          "x:3": -168,
           "y:3": 120,
-          "id:3": 339
-        },
-        "17:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -126,
-          "y:3": 138,
           "id:3": 351
         },
-        "18:10": {
+        "17:10": {
           "sizeX:3": 30,
           "sizeY:3": 30,
           "x:3": -464,
           "y:3": 33,
           "id:3": 354
         },
-        "19:10": {
+        "18:10": {
           "sizeX:3": 30,
           "sizeY:3": 30,
-          "x:3": -168,
-          "y:3": 54,
+          "x:3": -204,
+          "y:3": 48,
           "id:3": 358
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 6,
+          "y:3": -12,
+          "id:3": 360
         },
         "20:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 42,
-          "y:3": -12,
-          "id:3": 360
+          "x:3": -252,
+          "y:3": -24,
+          "id:3": 364
         },
         "21:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -6,
-          "y:3": -48,
-          "id:3": 364
+          "x:3": -396,
+          "y:3": 72,
+          "id:3": 368
         },
         "22:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -396,
-          "y:3": 84,
-          "id:3": 368
+          "x:3": -348,
+          "y:3": 36,
+          "id:3": 369
         },
         "23:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -336,
-          "y:3": 48,
-          "id:3": 369
+          "x:3": -72,
+          "y:3": 72,
+          "id:3": 370
         },
         "24:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -30,
-          "y:3": 84,
-          "id:3": 370
-        },
-        "25:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -60,
-          "y:3": 138,
+          "x:3": -108,
+          "y:3": 120,
           "id:3": 381
         },
-        "26:10": {
+        "25:10": {
           "sizeX:3": 30,
           "sizeY:3": 30,
-          "x:3": -168,
-          "y:3": 6,
+          "x:3": -204,
+          "y:3": 0,
           "id:3": 457
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -420,
+          "y:3": 36,
+          "id:3": 459
         },
         "27:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -414,
-          "y:3": 36,
-          "id:3": 459
+          "x:3": 42,
+          "y:3": 0,
+          "id:3": 461
         },
         "28:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 78,
-          "y:3": 0,
-          "id:3": 461
-        },
-        "29:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -66,
-          "y:3": 6,
+          "x:3": -108,
+          "y:3": -12,
           "id:3": 467
         },
-        "30:10": {
+        "29:10": {
           "sizeX:3": 48,
           "sizeY:3": 48,
-          "x:3": 186,
+          "x:3": 150,
           "y:3": 24,
           "id:3": 468
+        },
+        "30:10": {
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -60,
+          "y:3": 0,
+          "id:3": 469
         },
         "31:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -12,
-          "y:3": 12,
-          "id:3": 469
+          "x:3": -312,
+          "y:3": 0,
+          "id:3": 472
         },
         "32:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -42,
-          "y:3": 48,
-          "id:3": 472
+          "x:3": -24,
+          "y:3": 36,
+          "id:3": 489
         },
         "33:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -108,
-          "y:3": 30,
-          "id:3": 489
+          "x:3": -144,
+          "y:3": -36,
+          "id:3": 490
         },
         "34:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -108,
-          "y:3": -18,
-          "id:3": 490
+          "x:3": 0,
+          "y:3": 156,
+          "id:3": 491
         },
         "35:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 18,
-          "y:3": 168,
-          "id:3": 491
+          "x:3": -408,
+          "y:3": 0,
+          "id:3": 503
         },
         "36:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -366,
-          "y:3": -12,
-          "id:3": 503
+          "x:3": -372,
+          "y:3": 0,
+          "id:3": 504
         },
         "37:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -354,
-          "y:3": -48,
-          "id:3": 504
+          "x:3": -348,
+          "y:3": -36,
+          "id:3": 505
         },
         "38:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -276,
-          "y:3": -60,
-          "id:3": 505
+          "x:3": -300,
+          "y:3": -36,
+          "id:3": 506
         },
         "39:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -66,
-          "y:3": -60,
-          "id:3": 506
+          "x:3": -228,
+          "y:3": 120,
+          "id:3": 599
         },
         "40:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -192,
-          "y:3": 132,
-          "id:3": 599
+          "x:3": -276,
+          "y:3": 108,
+          "id:3": 603
         },
         "41:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -240,
-          "y:3": 120,
-          "id:3": 603
+          "x:3": -300,
+          "y:3": 36,
+          "id:3": 761
         },
         "42:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -192,
-          "y:3": -156,
-          "id:3": 604
-        },
-        "43:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -240,
-          "y:3": -12,
-          "id:3": 761
-        },
-        "44:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 114,
+          "x:3": 84,
           "y:3": 0,
           "id:3": 798
         }
@@ -65549,440 +65657,447 @@
           "id:3": 50
         },
         "2:10": {
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 24,
+          "y:3": -216,
+          "id:3": 56
+        },
+        "3:10": {
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -36,
           "y:3": -120,
           "id:3": 133
         },
-        "3:10": {
+        "4:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -300,
           "id:3": 148
         },
-        "4:10": {
+        "5:10": {
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -258,
           "y:3": -84,
           "id:3": 182
         },
-        "5:10": {
+        "6:10": {
           "sizeX:3": 36,
           "sizeY:3": 36,
           "x:3": -156,
           "y:3": -162,
           "id:3": 196
         },
-        "6:10": {
+        "7:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 156,
           "y:3": -156,
           "id:3": 197
         },
-        "7:10": {
+        "8:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -72,
           "y:3": -156,
           "id:3": 198
         },
-        "8:10": {
+        "9:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -84,
           "id:3": 199
         },
-        "9:10": {
+        "10:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 168,
-          "y:3": -240,
+          "x:3": 132,
+          "y:3": -216,
           "id:3": 204
         },
-        "10:10": {
+        "11:10": {
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": 204,
           "y:3": -168,
           "id:3": 232
         },
-        "11:10": {
+        "12:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
-          "y:3": -204,
+          "x:3": 168,
+          "y:3": -228,
           "id:3": 253
         },
-        "12:10": {
+        "13:10": {
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -180,
           "y:3": -90,
           "id:3": 257
         },
-        "13:10": {
+        "14:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": -120,
           "id:3": 264
         },
-        "14:10": {
+        "15:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": -192,
           "id:3": 266
         },
-        "15:10": {
+        "16:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 168,
           "y:3": -192,
           "id:3": 267
         },
-        "16:10": {
+        "17:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -276,
           "y:3": -192,
           "id:3": 269
         },
-        "17:10": {
+        "18:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -336,
           "y:3": -156,
           "id:3": 270
         },
-        "18:10": {
+        "19:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -12,
           "id:3": 284
         },
-        "19:10": {
+        "20:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -264,
           "y:3": -156,
           "id:3": 307
         },
-        "20:10": {
+        "21:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -192,
           "y:3": -156,
           "id:3": 310
         },
-        "21:10": {
+        "22:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -300,
           "y:3": -156,
           "id:3": 311
         },
-        "22:10": {
+        "23:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 132,
-          "y:3": -240,
+          "x:3": 168,
+          "y:3": -264,
           "id:3": 327
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -48,
           "id:3": 332
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -228,
           "y:3": -156,
           "id:3": 337
         },
-        "25:10": {
+        "26:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -156,
           "id:3": 338
         },
-        "26:10": {
+        "27:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -336,
           "id:3": 343
         },
-        "27:10": {
+        "28:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -336,
           "id:3": 345
         },
-        "28:10": {
+        "29:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -84,
           "id:3": 352
         },
-        "29:10": {
+        "30:10": {
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -36,
           "y:3": -216,
           "id:3": 355
         },
-        "30:10": {
+        "31:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -276,
           "id:3": 357
         },
-        "31:10": {
+        "32:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -6,
           "y:3": -288,
           "id:3": 361
         },
-        "32:10": {
+        "33:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -42,
           "y:3": -288,
           "id:3": 363
         },
-        "33:10": {
+        "34:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -120,
           "id:3": 366
         },
-        "34:10": {
+        "35:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -72,
-          "y:3": -216,
+          "y:3": -252,
           "id:3": 367
         },
-        "35:10": {
+        "36:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -216,
           "y:3": -228,
           "id:3": 371
         },
-        "36:10": {
+        "37:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 204,
-          "y:3": -240,
+          "x:3": 132,
+          "y:3": -180,
           "id:3": 380
         },
-        "37:10": {
+        "38:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -120,
           "id:3": 397
         },
-        "38:10": {
+        "39:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -192,
           "id:3": 398
         },
-        "39:10": {
+        "40:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -144,
           "y:3": -264,
           "id:3": 403
         },
-        "40:10": {
+        "41:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -228,
           "id:3": 404
         },
-        "41:10": {
+        "42:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -48,
           "id:3": 405
         },
-        "42:10": {
+        "43:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -216,
           "y:3": -78,
           "id:3": 431
         },
-        "43:10": {
+        "44:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
           "y:3": -204,
           "id:3": 441
         },
-        "44:10": {
+        "45:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -348,
           "id:3": 443
         },
-        "45:10": {
+        "46:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": -264,
           "id:3": 448
         },
-        "46:10": {
+        "47:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
           "y:3": -108,
           "id:3": 450
         },
-        "47:10": {
+        "48:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -108,
           "y:3": -156,
           "id:3": 455
         },
-        "48:10": {
+        "49:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -114,
           "id:3": 456
         },
-        "49:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 30,
-          "y:3": -252,
-          "id:3": 460
-        },
         "50:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
+          "y:3": -252,
+          "id:3": 460
+        },
+        "51:10": {
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -72,
           "y:3": -216,
           "id:3": 464
         },
-        "51:10": {
+        "52:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -216,
           "id:3": 466
         },
-        "52:10": {
+        "53:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -42,
           "y:3": -252,
           "id:3": 486
         },
-        "53:10": {
+        "54:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -6,
           "y:3": -252,
           "id:3": 487
         },
-        "54:10": {
+        "55:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -228,
           "id:3": 488
         },
-        "55:10": {
+        "56:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -78,
           "id:3": 497
         },
-        "56:10": {
+        "57:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -192,
           "id:3": 498
         },
-        "57:10": {
+        "58:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 30,
           "y:3": -288,
           "id:3": 499
         },
-        "58:10": {
+        "59:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -132,
           "id:3": 511
         },
-        "59:10": {
+        "60:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -48,
           "id:3": 528
         },
-        "60:10": {
+        "61:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -300,
           "y:3": -84,
           "id:3": 531
         },
-        "61:10": {
+        "62:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -42,
           "id:3": 570
         },
-        "62:10": {
+        "63:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -156,
           "y:3": -30,
           "id:3": 732
         },
-        "63:10": {
+        "64:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -132,
           "id:3": 753
         },
-        "64:10": {
+        "65:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -276,
@@ -66405,361 +66520,340 @@
         "8:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 84,
-          "y:3": -60,
-          "id:3": 109
-        },
-        "9:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
           "x:3": 204,
           "y:3": -72,
           "id:3": 115
         },
-        "10:10": {
+        "9:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 180,
           "y:3": -96,
           "id:3": 117
         },
-        "11:10": {
+        "10:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 156,
           "y:3": -120,
           "id:3": 128
         },
-        "12:10": {
+        "11:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -12,
           "id:3": 144
         },
-        "13:10": {
+        "12:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 156,
           "y:3": 12,
           "id:3": 173
         },
-        "14:10": {
+        "13:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 228,
           "y:3": -48,
           "id:3": 177
         },
-        "15:10": {
+        "14:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 180,
           "y:3": 36,
           "id:3": 229
         },
-        "16:10": {
+        "15:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -36,
           "y:3": -132,
           "id:3": 237
         },
-        "17:10": {
+        "16:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -144,
           "id:3": 238
         },
-        "18:10": {
+        "17:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": 0,
           "id:3": 242
         },
-        "19:10": {
+        "18:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": 24,
           "id:3": 244
         },
-        "20:10": {
+        "19:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -120,
           "y:3": -156,
           "id:3": 254
         },
-        "21:10": {
+        "20:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 12,
           "y:3": -84,
           "id:3": 265
         },
-        "22:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 60,
-          "y:3": -264,
-          "id:3": 268
-        },
-        "23:10": {
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -96,
-          "y:3": -132,
-          "id:3": 271
-        },
-        "24:10": {
+        "21:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 84,
           "y:3": -192,
           "id:3": 305
         },
-        "25:10": {
+        "22:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 108,
           "y:3": -216,
           "id:3": 308
         },
-        "26:10": {
+        "23:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -192,
           "id:3": 316
         },
-        "27:10": {
+        "24:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 180,
           "y:3": -144,
           "id:3": 353
         },
-        "28:10": {
+        "25:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 204,
           "y:3": -120,
           "id:3": 399
         },
-        "29:10": {
+        "26:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 228,
           "y:3": -96,
           "id:3": 400
         },
-        "30:10": {
+        "27:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 252,
           "y:3": -72,
           "id:3": 421
         },
-        "31:10": {
+        "28:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 36,
           "y:3": -60,
           "id:3": 426
         },
-        "32:10": {
+        "29:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -36,
           "id:3": 428
         },
-        "33:10": {
+        "30:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 276,
           "y:3": -48,
           "id:3": 429
         },
-        "34:10": {
+        "31:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 102,
           "y:3": 60,
           "id:3": 435
         },
-        "35:10": {
+        "32:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -24,
           "y:3": -60,
           "id:3": 439
         },
-        "36:10": {
+        "33:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 252,
           "y:3": -24,
           "id:3": 454
         },
-        "37:10": {
+        "34:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 0,
           "y:3": -36,
           "id:3": 458
         },
-        "38:10": {
+        "35:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 84,
           "y:3": -12,
           "id:3": 463
         },
-        "39:10": {
+        "36:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 54,
           "y:3": 12,
           "id:3": 470
         },
-        "40:10": {
+        "37:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 78,
           "y:3": 36,
           "id:3": 481
         },
-        "41:10": {
+        "38:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 108,
           "y:3": 12,
           "id:3": 485
         },
-        "42:10": {
+        "39:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -60,
           "y:3": -156,
           "id:3": 502
         },
-        "43:10": {
+        "40:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -180,
           "id:3": 508
         },
-        "44:10": {
+        "41:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 126,
           "y:3": 84,
           "id:3": 524
         },
-        "45:10": {
+        "42:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 150,
           "y:3": 108,
           "id:3": 527
         },
-        "46:10": {
+        "43:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 12,
           "y:3": -264,
           "id:3": 537
         },
-        "47:10": {
+        "44:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 96,
           "y:3": 96,
           "id:3": 591
         },
-        "48:10": {
+        "45:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 108,
           "y:3": -168,
           "id:3": 592
         },
-        "49:10": {
+        "46:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 72,
           "y:3": 72,
           "id:3": 612
         },
-        "50:10": {
+        "47:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 156,
           "y:3": -168,
           "id:3": 619
         },
-        "51:10": {
+        "48:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 48,
           "y:3": 48,
           "id:3": 629
         },
-        "52:10": {
+        "49:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 36,
           "y:3": -288,
           "id:3": 639
         },
-        "53:10": {
+        "50:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -84,
           "id:3": 671
         },
-        "54:10": {
+        "51:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": 36,
           "id:3": 678
         },
-        "55:10": {
+        "52:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -48,
           "y:3": -84,
           "id:3": 695
         },
-        "56:10": {
+        "53:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -72,
           "y:3": -108,
           "id:3": 696
         },
-        "57:10": {
+        "54:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 156,
           "y:3": 60,
           "id:3": 700
         },
-        "58:10": {
+        "55:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 180,
           "y:3": 84,
           "id:3": 701
         },
-        "59:10": {
+        "56:10": {
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,

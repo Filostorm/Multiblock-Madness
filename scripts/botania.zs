@@ -205,7 +205,7 @@ RuneAltar.addRecipe(<chisel:energizedvoidstone:4>*4,[<chisel:energizedvoidstone:
 
 //Rune of Mana
 RuneAltar.removeRecipe(<botania:rune:8>);
-RuneAltar.addRecipe(<botania:rune:8>,[<botania:manaresource:2>, <botania:manaresource:2>, <thermalfoundation:material:134>, <thermalfoundation:material:134>, <enderio:item_alloy_endergy_ingot:5>, <enderio:item_alloy_endergy_ingot:5>], 25000);
+RuneAltar.addRecipe(<botania:rune:8>,[<botania:manaresource:2>, <botania:manaresource:2>, <contenttweaker:ingot_reinforced_starmetal>, <contenttweaker:ingot_reinforced_starmetal>, <enderio:item_alloy_endergy_ingot:5>, <enderio:item_alloy_endergy_ingot:5>], 25000);
 
 //Rune of Air
 RuneAltar.removeRecipe(<botania:rune:3>);
@@ -334,6 +334,18 @@ ArcaneWorkbench.registerShapedRecipe("alchemycatalyst", "", 100,
 recipes.addShaped(<botania:vial>, [[<botania:managlass>, null, <botania:managlass>], [null, <botania:managlass>, null]]);
 
 
-
+# [Terrestrial Agglomeration Plate] from [Block of Hardened Thermalloy][+6]
+craft.remake(<botania:terraplate>, ["pretty",
+  "¤ * ☼",
+  "T § T",
+  "M A M"], {
+  "¤": <ore:gearPalisEmpowered>,             # Empowered Palis Gear
+  "*": <contenttweaker:terrestrial_crystal>, # Terrestrial Crystal
+  "☼": <ore:gearVoidEmpowered>,              # Empowered Void Gear
+  "T": <bloodmagic:teleposer>,            # Teleposer
+  "§": <contenttweaker:block_thermal_alloy>, # Block of Hardened Thermalloy
+  "M": <ore:runeManaB>,                      # Rune of Mana
+  "A": <ore:runeAutumnB>,                    # Rune of Autumn
+});
 ##########################################################################################
 print("==================== end of mods botania.zs ====================");

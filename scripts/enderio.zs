@@ -236,7 +236,7 @@ craft.remake(<enderio:block_enchanter>, ["pretty",
   "* B *",
   "¤ E ¤",
   "  ¤  "], {
-  "*": <actuallyadditions:item_crystal_empowered:5>, # Empowered Enori Crystal
+  "*": <contenttweaker:ingot_reinforced_starmetal>, # Reinforced Starmetal
   "B": <minecraft:book>,             # Book
   "¤": <ore:gearDark>,               # Dark Bimetal Gear
   "E": <minecraft:enchanting_table>, # Enchantment Table

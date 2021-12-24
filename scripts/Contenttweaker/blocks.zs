@@ -317,5 +317,17 @@ scaffolding_mek_alloy.setFullBlock(false);
 scaffolding_mek_alloy.setTranslucent(true);
 scaffolding_mek_alloy.setBlockLayer("CUTOUT");
 scaffolding_mek_alloy.register();
+
+var scaffolding_plastic = VanillaFactory.createBlock("scaffolding_plastic", <blockmaterial:iron>);
+scaffolding_plastic.setLightValue(0);
+scaffolding_plastic.setBlockHardness(5.0);
+scaffolding_plastic.setBlockResistance(3.0);
+scaffolding_plastic.setToolClass("pickaxe");
+scaffolding_plastic.setToolLevel(1);
+scaffolding_plastic.setBlockSoundType(<soundtype:metal>);
+scaffolding_plastic.setFullBlock(false);
+scaffolding_plastic.setTranslucent(true);
+scaffolding_plastic.setBlockLayer("CUTOUT");
+scaffolding_plastic.register();
 ##########################################################################################
 print("==================== end of blocks.zs ====================");
