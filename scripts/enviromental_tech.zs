@@ -156,12 +156,12 @@ craft.remake(<environmentaltech:laser_lens>, ["pretty",
 
 # [Void Ore Miner Controller Tier 1] from [Diode][+5]
 craft.remake(<environmentaltech:void_ore_miner_cont_1>, ["pretty",
-  "E S E",
-  "¤ D ¤",
+  "Ϟ S Ϟ",
+  "E D E",
   "■ L ■"], {
-  "E": <enderutilities:enderpart:16>, # Ender Core (Enhanced)
+  "Ϟ": <thermalexpansion:cell>.withTag({Level: 4 as byte}), # Energy Cell (Resonant)
   "S": <rftools:shape_card:2>,        # Shape Card (Quarry)
-  "¤": <ore:gearHastelloy>,           # Hastelloy Gear
+  "E": <enderutilities:enderpart:16>, # Ender Core (Enhanced)
   "D": <environmentaltech:diode>,     # Diode
   "■": <ore:blockLitherite>,          # Litherite
   "L": <ore:etLaserLens>,             # Clear Laser Lens
@@ -169,96 +169,106 @@ craft.remake(<environmentaltech:void_ore_miner_cont_1>, ["pretty",
 
 # [Void Ore Miner Controller Tier 2] from [Void Ore Miner Controller Tier 1][+5]
 craft.remake(<environmentaltech:void_ore_miner_cont_2>, ["pretty",
-  "E Q E",
-  "¤ V ¤",
+  "V P V",
+  "D o D",
   "■ L ■"], {
-  "E": <enderio:item_capacitor_vivid>,            # Endergised Capacitor
-  "Q": <mekanism:machineblock3>,                  # Quantum Entangloporter
-  "¤": <contenttweaker:gear_thermal_alloy>,       # Hardened Thermalloy Gear
-  "V": <environmentaltech:void_ore_miner_cont_1>, # Void Ore Miner Controller Tier 1
-  "■": <ore:blockErodium>,                        # Erodium Tiles
+  "V": <enderio:block_cap_bank:3>,                # Vibrant Capacitor Bank
+  "P": <threng:machine:3>,                        # Preemptive Assembly Unit
+  "D": <ore:craftingDiamondGrinder>,              # Diamond Grinding Head
+  "o": <environmentaltech:void_ore_miner_cont_1>, # Void Ore Miner Controller Tier 1
+  "■": <ore:blockErodium>,                        # Erodium
   "L": <ore:etLaserLens>,                         # Clear Laser Lens
 });
 
 # [Void Ore Miner Controller Tier 3] from [Void Ore Miner Controller Tier 2][+5]
 craft.remake(<environmentaltech:void_ore_miner_cont_3>, ["pretty",
-  "C P C",
-  "¤ V ¤",
+  "Ϟ Q Ϟ",
+  "T V T",
   "■ L ■"], {
-  "C": <enderio:item_capacitor_crystalline>,      # Crystalline Capacitor
-  "P": <threng:machine:3>,                        # Preemptive Assembly Unit
-  "¤": <contenttweaker:gear_mek_alloy>,           # Heavy Alloy Gear
+  "Ϟ": <mekanism:energycube>.withTag({tier: 3}),  # Ultimate Energy Cube
+  "Q": <mekanism:machineblock3>,                  # Quantum Entangloporter
+  "T": <ore:craftingTungstenGrinder>,             # Tungsten Grinding Head
   "V": <environmentaltech:void_ore_miner_cont_2>, # Void Ore Miner Controller Tier 2
-  "■": <ore:blockKyronite>,                       # Kyronite Paver
+  "■": <ore:blockKyronite>,                       # Kyronite
   "L": <ore:etLaserLens>,                         # Clear Laser Lens
 });
 
-# [Emerald Growth Catalyst]*59 from [Void Ore Miner Controller Tier 4][+9]
+
+# [Void Ore Miner Controller Tier 4] from [Void Ore Miner Controller Tier 3][+9]
 craft.remake(<environmentaltech:void_ore_miner_cont_4>, ["pretty",
-  "□ □ □ □ □",
-  "□ A E l □",
-  "□ B V U □",
-  "□ ▲ L ▲ □",
-  "■ ■ L ■ ■"], {
-  "□": <ore:plateStellite>,                       # Stellite Plate
-  "A": <extendedcrafting:material:9>,             # Advanced Catalyst
-  "E": <enderutilities:enderpart:16>,             # Ender Core (Enhanced)
-  "l": <extendedcrafting:material:10>,            # Elite Catalyst
-  "B": <extendedcrafting:material:8>,             # Basic Catalyst
-  "V": <environmentaltech:void_ore_miner_cont_3>, # Void Ore Miner Controller Tier 4
-  "U": <extendedcrafting:material:11>,            # Ultimate Catalyst
-  "▲": <ore:dustMana>,                            # Mana Dust
-  "L": <ore:etLaserLens>,                         # Clear Laser Lens
+  "◙ ◙ o ◙ ◙",
+  "■ D E D ■",
+  "■ C V C ■",
+  "■ ¤ L ¤ ■",
+  "◙ ◙ a ◙ ◙"], {
+  "◙": <environmentaltech:structure_frame_4>,     # Structure Frame Tier 4
+  "o": <ore:componentControlCircuit>,             # Control Circuit
   "■": <ore:blockPladium>,                        # Pladium
-});
-
-# [Emerald Growth Catalyst]*59 from [Void Ore Miner Controller Tier 4][+10]
-craft.remake(<environmentaltech:void_ore_miner_cont_5>, ["pretty",
-  "□ □ □ □ □ □ □",
-  "□ P E d E P □",
-  "□ E P d P E □",
-  "□ § § V § § □",
-  "□ ¤ § L § ¤ □",
-  "□ n F L F n □",
-  "■ ■ ■ L ■ ■ ■"], {
-  "□": <ore:plateStellarAlloy>,                     # Stellar Alloy Plate
-  "P": <ore:growthcatalystPlatinum>,                # Platinum Growth Catalyst
-  "E": <ore:growthcatalystEmerald>,                 # Emerald Growth Catalyst
-  "d": <enderutilities:enderpart:17>,               # Ender Core (Advanced)
-  "§": <contenttweaker:ingot_reinforced_starmetal>, # Reinforced Starmetal
-  "V": <environmentaltech:void_ore_miner_cont_4>,   # Void Ore Miner Controller Tier 4
-  "¤": <ore:gearTitaniumIridium>,                   # Titanium Iridium Alloy Gear
-  "L": <ore:etLaserLens>,                           # Clear Laser Lens
-  "n": <extendedcrafting:material:40>,              # Endest Star
-  "F": <techreborn:fusion_coil>,                    # Fusion Coil
-  "■": <ore:blockIonite>,                           # Ionite Paver
-});
-
-# [Emerald Growth Catalyst]*59 from [Void Ore Miner Controller Tier 5][+13]
-craft.remake(<environmentaltech:void_ore_miner_cont_6>, ["pretty",
-  "C C C C C C C C C",
-  "C ▬ ▬ E S E ▬ ▬ C",
-  "C ▬ - ¤ ☼ ¤ - ▬ C",
-  "C E ¤ M § M ¤ E C",
-  "C S ☼ § V § ☼ S C",
-  "C E D M L M D E C",
-  "C ▬ - * L * - ▬ C",
-  "C ▬ ▬ S L S ▬ ▬ C",
-  "■ ■ ■ ■ L ■ ■ ■ ■"], {
-  "C": <extendedcrafting:material:18>,            # Crystaltine Component
-  "▬": <ore:ingotMirion>,                         # Mirion Ingot
-  "E": <enderutilities:enderpart:17>,             # Ender Core (Advanced)
-  "S": <enderio:item_capacitor_stellar>,          # Stellar Capacitor
-  "-": <extendedcrafting:material:48>,            # Twilight Ingot
-  "¤": <contenttweaker:gear_thermal_alloy>,       # Hardened Thermalloy Gear
-  "☼": <contenttweaker:gear_mek_alloy>,           # Heavy Alloy Gear
-  "M": <appliedenergistics2:quantum_ring>,        # ME Quantum Ring
-  "§": <contenttweaker:plate_engineering>,        # Mechanical Plating
-  "V": <environmentaltech:void_ore_miner_cont_5>, # Void Ore Miner Controller Tier 5
-  "D": <contenttweaker:component_mek_alloy>,      # Dense Component
+  "D": <nuclearcraft:lithium_ion_battery_du>.withTag({}), # DU Lithium Ion Battery
+  "E": <ore:itemEnhancedMachineChassi>,           # Enhanced Machine Chassis
+  "C": <enderio:item_capacitor_crystalline>,      # Crystalline Capacitor
+  "V": <environmentaltech:void_ore_miner_cont_3>, # Void Ore Miner Controller Tier 3
+  "¤": <contenttweaker:gear_mek_alloy>,           # Heavy Alloy Gear
   "L": <environmentaltech:laser_core>,            # Laser Core
-  "*": <ore:gearCrystalMatrix>,                   # Crystal Matrix Gear
-  "■": <ore:blockAethium>,                        # Aethium Tiles
+  "a": <ore:etLaserLens>,                         # Clear Laser Lens
+});
+
+# [Void Ore Miner Controller Tier 5] from [Void Ore Miner Controller Tier 4][+14]
+craft.remake(<environmentaltech:void_ore_miner_cont_5>, ["pretty",
+  "⌂ ◙ ◙ n ◙ ◙ ⌂",
+  "■ E e C e E ■",
+  "■ l ◘ M ◘ l ■",
+  "■ P M V M P ■",
+  "■ l ◘ L ◘ l ■",
+  "■ E ¤ L ¤ E ■",
+  "⌂ ◙ ◙ a ◙ ◙ ⌂"], {
+  "⌂": <techreborn:machine_casing:2>,               # Advanced Machine Casing
+  "◙": <environmentaltech:structure_frame_5>,       # Structure Frame Tier 5
+  "n": <enderutilities:enderpart:17>,               # Ender Core (Advanced)
+  "■": <ore:blockIonite>,                           # Ionite
+  "E": <extendedcrafting:material:40>,              # Endest Star
+  "e": <enderio:item_capacitor_melodic>,            # Melodic Capacitor
+  "C": <ore:componentComputerChip>,                 # Computer Chip
+  "l": <extendedcrafting:material:10>,              # Elite Catalyst
+  "◘": <mekanism:basicblock2:3>.withTag({tier: 2}), # Elite Induction Cell
+  "M": <libvulpes:structuremachine>,                # Machine Structure
+  "P": <ore:growthcatalystPlatinum>,                # Platinum Growth Catalyst
+  "V": <environmentaltech:void_ore_miner_cont_4>,   # Void Ore Miner Controller Tier 4
+  "L": <environmentaltech:laser_core>,              # Laser Core
+  "¤": <ore:gearTitaniumIridium>,                   # Titanium Iridium Alloy Gear
+  "a": <ore:etLaserLens>,                           # Clear Laser Lens
+});
+
+# [Void Ore Miner Controller Tier 6] from [Void Ore Miner Controller Tier 5][+18]
+craft.remake(<environmentaltech:void_ore_miner_cont_6>, ["pretty",
+  "F ◙ ◙ ◙ n ◙ ◙ ◙ F",
+  "■ ▬ C M r M C ▬ ■",
+  "■ C V S ▀ S V C ■",
+  "■ M E ◘ ▄ ◘ E M ■",
+  "n O E ▄ o ▄ E O n",
+  "■ M E ◘ L ◘ E M ■",
+  "■ C V * L * V C ■",
+  "■ ▬ C M L M C ▬ ■",
+  "F ◙ ◙ ◙ a ◙ ◙ ◙ F"], {
+  "F": <techreborn:fusion_coil>,                    # Fusion Coil
+  "◙": <environmentaltech:structure_frame_6>,       # Structure Frame Tier 6
+  "n": <enderutilities:enderpart:17>,               # Ender Core (Advanced)
+  "■": <ore:blockAethium>,                          # Aethium
+  "▬": <extendedcrafting:material:48>,              # Twilight Ingot
+  "C": <extendedcrafting:material:18>,              # Crystaltine Component
+  "M": <appliedenergistics2:quantum_ring>,          # ME Quantum Ring
+  "r": <extendedcrafting:material:12>,              # Crystaltine Catalyst
+  "V": <ore:componentEVCapacitor>,                  # EV Capacitor
+  "S": <enderio:item_capacitor_stellar>,            # Stellar Capacitor
+  "▀": <ore:blockMirion>,                           # Mirion Block
+  "E": <nuclearcraft:lithium_ion_battery_elite>, # Elite Lithium Ion Battery
+  "◘": <mekanism:basicblock2:3>.withTag({tier: 3}), # Ultimate Induction Cell
+  "▄": <ore:machineBlockHighlyAdvanced> | <ore:machineBlockElite>, # Highly Advanced Machine Frame
+  "O": <ore:growthcatalystOsmium>,                  # Osmium Growth Catalyst
+  "o": <environmentaltech:void_ore_miner_cont_5>,   # Void Ore Miner Controller Tier 5
+  "L": <environmentaltech:laser_core>,              # Laser Core
+  "*": <ore:gearCrystalMatrix>,                     # Crystal Matrix Gear
+  "a": <ore:etLaserLens>,                           # Clear Laser Lens
 });
 
 
@@ -271,7 +281,7 @@ craft.remake(<environmentaltech:structure_frame_1>, ["pretty",
   "□ I □",
   "* S *",
   "□ ╳ □"], {
-  "□": <ore:plateThermoconducting>,         # Thermoconducting Plate
+  "□": <ore:plateOsgloglas>,                # Osgloglas Plate
   "I": <enderutilities:enderpart:11>,       # Inactive Ender Core (Enhanced)
   "*": <ore:crystalLitherite>,              # Litherite Crystal
   "S": <environmentaltech:interconnect>,    # Interconnect
@@ -299,7 +309,7 @@ craft.remake(<environmentaltech:structure_frame_3>, ["pretty",
   "E": <ore:circuitElite>,                    # Elite Control Circuit
   "*": <ore:crystalKyronite>,                 # Kyronite Crystal
   "◙": <environmentaltech:structure_frame_2>, # Structure Frame Tier 2
-  "B": <extendedcrafting:material:14>,        # Basic Component
+  "B": <thermalfoundation:material:1028>,     # Mana Dust
 });
 
 # [Structure Frame Tier 4] from [Structure Frame Tier 3][+4]
