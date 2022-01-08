@@ -443,11 +443,6 @@
     {
       "target": "green",
       "weight": 200,
-      "id": "OD:oreEnder"
-    },
-    {
-      "target": "green",
-      "weight": 200,
       "id": "OD:oreUranium"
     },
     {

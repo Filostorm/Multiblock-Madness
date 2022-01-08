@@ -7,7 +7,7 @@
 <recipe name="MBM: Liquid Sunshine" required="true">
     <fermenting energy="100000">
       <inputgroup>
-        <input name="mowziesmobs:glowing_jelly" multiplier="3.0"/>
+        <input name="mowziesmobs:glowing_jelly" multiplier="2.5"/>
         <input name="randomthings:glowingmushroom" multiplier="2.0"/>
         <input name="clathrateGlowstone" multiplier="1.5"/>
         <input name="enderio:block_holy_fog" multiplier="1.0"/>
@@ -18,7 +18,7 @@
         <input name="thaumcraft:nitor_yellow" multiplier="2.0"/>
         <input name="botania:corporeaspark" multiplier="3.0"/>
       </inputgroup>
-      <inputfluid name="glowstone_nak" multiplier="2.0"/>
+      <inputfluid name="glowstone_nak" multiplier="1"/>
       <outputfluid name="liquid_sunshine"/>
     </fermenting>
   </recipe>

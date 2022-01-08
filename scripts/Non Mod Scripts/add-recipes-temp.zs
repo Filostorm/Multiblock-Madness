@@ -129,7 +129,6 @@ val recipestoRemove =
 <danknull:dank_null_5>,
 <xlfoodmod:chocolate>,
 <immersiveposts:metal_rods:2>,
-<moreplates:electrum_stick>,
 <immersiveposts:metal_rods:7>,
 <immersiveposts:metal_rods:4>,
 <immersiveposts:metal_rods:3>,
@@ -141,14 +140,13 @@ val recipestoRemove =
 <thermalfoundation:material:515>,
 <iceandfire:chain>,
 <iceandfire:chain_link>,
-<extendedcrafting:material:2>
+<extendedcrafting:material:2>,
 ]
  as IItemStack[];
 
 for item in recipestoRemove {
 	recipes.remove(item);
 }
-
 
 val itemstoRemove =
 [
@@ -534,6 +532,16 @@ mods.thermalexpansion.Transposer.addFillRecipe(<xlfoodmod:waffle>, <xlfoodmod:co
 
 mods.nuclearcraft.Infuser.addRecipe(<minecraft:wheat>, <liquid:water> * 250, <xlfoodmod:dough> * 2, 0.5);
 mods.thermalexpansion.Transposer.addFillRecipe(<xlfoodmod:dough> * 2, <minecraft:wheat>, <liquid:water> * 1000, 2000);
+
+
+# [Sound Box] from [Note Block][+1]
+craft.remake(<randomthings:soundbox>, ["pretty",
+  "  ◊  ",
+  "◊ ■ ◊",
+  "  ◊  "], {
+  "◊": <ore:gemLapis>, # Lapis Lazuli
+  "■": <minecraft:noteblock>,                      # Note Block
+});
 
 ##########################################################################################
 print("==================== end of mods add-recipes-temp.zs ====================");

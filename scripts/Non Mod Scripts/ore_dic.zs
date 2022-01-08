@@ -219,6 +219,8 @@ for item in bricksForMixer {
 <ore:bricksForMixer>.add(item);
 }
 
+//Smingot for turbine
+<ore:ingotSmore>.add(<nuclearcraft:moresmore>);
 
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

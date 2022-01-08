@@ -61,7 +61,7 @@ mods.techreborn.implosionCompressor.addRecipe(<appliedenergistics2:material:48> 
 
 //Luminessence
 recipes.removeShapeless(<extendedcrafting:material:7> * 2, [<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:redstone>, <minecraft:gunpowder>]);
-/*
+/* MOVED TO CONFIG
 Vat.removeRecipe(<liquid:liquid_sunshine>);
 Vat.addRecipe(<liquid:liquid_sunshine>, 0.5, <liquid:glowstone_nak>, 
 [<mowziesmobs:glowing_jelly>,<randomthings:glowingmushroom>,<thermalfoundation:material:894>,<enderio:block_holy_fog>],[3,2,1.5,1], 

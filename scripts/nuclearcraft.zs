@@ -80,5 +80,10 @@ recipes.addShaped(<nuclearcraft:part:3>, [[<nuclearcraft:compound:1>, <ore:ingot
 recipes.addShaped(<nuclearcraft:part:2>, [[<mekanism:polyethene:2>, <nuclearcraft:uranium:10>, <mekanism:polyethene:2>],[<nuclearcraft:uranium:10>, <nuclearcraft:part:1>, <nuclearcraft:uranium:10>], [<mekanism:polyethene:2>, <nuclearcraft:uranium:10>, <mekanism:polyethene:2>]]);
 
 
+//SICSIC
+Infuser.addRecipe(<powersuits:powerarmorcomponent:14>*1, <liquid:silicon>*576, <nuclearcraft:part:13>);
+Infuser.addRecipe(<powersuits:powerarmorcomponent:14>*1, <liquid:fluidsilicon>*576, <nuclearcraft:part:13>);
+blastFurnace.addRecipe(<nuclearcraft:alloy:14>, null, <nuclearcraft:alloy:13>, <nuclearcraft:part:13>, 200, 512, 3000);
+
 ##########################################################################################
 print("==================== end of nuclearcraft.zs ====================");

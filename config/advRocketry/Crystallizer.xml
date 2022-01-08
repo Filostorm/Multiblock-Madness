@@ -116,29 +116,29 @@
 	</Recipe>
 	<Recipe timeRequired="150" power ="40000">
 		<input>
-			<itemStack>environmentaltech:litherite_crystal;1;0</itemStack>
+			<itemStack>environmentaltech:litherite_crystal;4;0</itemStack>
 			<itemStack>botania:sparkupgrade;1;1</itemStack>
 		</input>
 		<output>
-			<itemStack>environmentaltech:erodium_crystal</itemStack>
+			<itemStack>environmentaltech:erodium_crystal;4;0</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="80000">
 		<input>
-			<itemStack>environmentaltech:pladium_crystal;1;0</itemStack>
+			<itemStack>environmentaltech:pladium_crystal;4;0</itemStack>
 			<itemStack>thaumadditions:mithrillium_ingot</itemStack>
 		</input>
 		<output>
-			<itemStack>environmentaltech:ionite_crystal</itemStack>
+			<itemStack>environmentaltech:ionite_crystal;4;0</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="150" power ="100000">
 		<input>
-			<itemStack>environmentaltech:ionite_crystal;1;0</itemStack>
+			<itemStack>environmentaltech:ionite_crystal;8;0</itemStack>
 			<itemStack>botania:manaresource;1;14</itemStack>
 		</input>
 		<output>
-			<itemStack>environmentaltech:aethium_crystal</itemStack>
+			<itemStack>environmentaltech:aethium_crystal;8;0</itemStack>
 		</output>
 	</Recipe>
 		<Recipe timeRequired="60" power ="100000">

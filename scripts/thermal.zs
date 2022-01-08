@@ -89,20 +89,20 @@ mods.thermalexpansion.RedstoneFurnace.removeRecipe(<thermalfoundation:material:7
 //mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
 
 // Lumium
-AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:8>*4);
+//AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:8>*4);
 Infuser.removeRecipeWithOutput(<thermalfoundation:material:166>);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:8>*4, <thermalfoundation:material:130>, <thermalfoundation:material:129>*3, 5000);
 Transposer.addFillRecipe(<thermalfoundation:material:166>, <nuclearcraft:alloy:8>, <liquid:glowstone> * 250, 10000);
 
 // Signallum
-AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:7>*4);
+//AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:7>*4);
 Infuser.removeRecipeWithOutput(<thermalfoundation:material:165>);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:7>*4, <thermalfoundation:material:130>, <thermalfoundation:material:128>*3, 5000);
 Transposer.addFillRecipe(<thermalfoundation:material:165>, <rockhounding_chemistry:alloy_items_deco:13>, <liquid:redstone> * 300, 10000);
 Transposer.addFillRecipe(<thermalfoundation:material:165>, <nuclearcraft:alloy:7>, <liquid:redstone> * 300, 10000);
 
 // Enderium
-AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:9>*4);
+//AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:9>*4);
 Infuser.removeRecipeWithOutput(<thermalfoundation:material:167>);
 InductionSmelter.addRecipe(<nuclearcraft:alloy:9>*4, <thermalfoundation:material:134>, <thermalfoundation:material:131>*3, 5000);
 Transposer.addFillRecipe(<thermalfoundation:material:167>, <nuclearcraft:alloy:9>, <liquid:ender> * 250, 10000);

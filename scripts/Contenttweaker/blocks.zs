@@ -329,5 +329,17 @@ scaffolding_plastic.setFullBlock(false);
 scaffolding_plastic.setTranslucent(true);
 scaffolding_plastic.setBlockLayer("CUTOUT");
 scaffolding_plastic.register();
+
+var book_block = VanillaFactory.createBlock("book_block", <blockmaterial:wood>);
+book_block.setLightValue(0);
+book_block.setBlockHardness(1.0);
+book_block.setBlockResistance(3.0);
+book_block.setToolClass("axe");
+book_block.setToolLevel(1);
+book_block.setBlockSoundType(<soundtype:wood>);
+book_block.setFullBlock(false);
+book_block.setTranslucent(true);
+book_block.setBlockLayer("CUTOUT");
+book_block.register();
 ##########################################################################################
 print("==================== end of blocks.zs ====================");

@@ -10,11 +10,11 @@
 <!-- From astral_sorcery.zs -->
 
 <recipe name="MBM: Rock Crystal" required="true">
-  <sagmilling energy="5000" bonus="multiply_output">
+  <sagmilling energy="5000" bonus="none">
     <input name="astralsorcery:blockcustomore" />
     <output name="astralsorcery:itemrockcrystalsimple" chance="1.0"/>
     <output name="astralsorcery:itemrockcrystalsimple" chance="0.5"/>
-    <output name="astralsorcery:itemrockcrystalsimple" chance="0.1"/>
+    <output name="astralsorcery:itemrockcrystalsimple" chance="0.25"/>
   </sagmilling>
 </recipe>
 

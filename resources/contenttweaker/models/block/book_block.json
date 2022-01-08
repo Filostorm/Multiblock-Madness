@@ -1,0 +1,95 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "book_spine_side": "contenttweaker:blocks/book_spine_side",
+        "book_spine": "contenttweaker:blocks/book_spine",
+        "book_spine_top": "contenttweaker:blocks/book_spine_top",
+        "book_edge": "contenttweaker:blocks/book_edge",
+        "book_cover": "contenttweaker:blocks/book_cover",
+        "book_edge_top": "contenttweaker:blocks/book_edge_top",
+        "book_paper": "contenttweaker:blocks/book_paper"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 14 ], 
+            "to": [ 14, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#book_cover", "uv": [ 0, 0, 14, 16 ] },
+                "east": { "texture": "#book_edge", "uv": [ 0, 0, 2, 16 ] },
+                "south": { "texture": "#book_cover", "uv": [ 0, 0, 14, 16 ] },
+                "west": { "texture": "#book_edge", "uv": [ 0, 0, 2, 16 ] },
+                "up": { "texture": "#book_edge_top", "uv": [ 0, 0, 14, 2 ] },
+                "down": { "texture": "#book_edge_top", "uv": [ 0, 0, 14, 2 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 14, 0, 2 ], 
+            "to": [ 16, 16, 14 ], 
+            "faces": {
+                "north": { "texture": "#book_spine_side", "uv": [ 0, 0, 2, 16 ] },
+                "east": { "texture": "#book_spine", "uv": [ 1, 0, 15, 16 ] },
+                "south": { "texture": "#book_spine_side", "uv": [ 0, 0, 2, 16 ] },
+                "west": { "texture": "#book_spine", "uv": [ 1, 0, 15, 16 ] },
+                "up": { "texture": "#book_spine_top", "uv": [ 15, 0, 1, 2 ], "rotation": 90 },
+                "down": { "texture": "#book_spine_top", "uv": [ 15, 0, 1, 2 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 1, 2 ], 
+            "to": [ 14, 15, 14 ], 
+            "faces": {
+                "west": { "texture": "#book_paper", "uv": [ 0, 0, 12, 14 ] },
+                "up": { "texture": "#book_paper", "uv": [ 4, 4, 16, 16 ], "rotation": 90 },
+                "down": { "texture": "#book_paper", "uv": [ 4, 4, 16, 16 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 14, 16, 2 ], 
+            "faces": {
+                "north": { "texture": "#book_cover", "uv": [ 0, 0, 14, 16 ] },
+                "east": { "texture": "#book_edge", "uv": [ 0, 0, 2, 16 ] },
+                "south": { "texture": "#book_cover", "uv": [ 0, 0, 14, 16 ] },
+                "west": { "texture": "#book_edge", "uv": [ 0, 0, 2, 16 ] },
+                "up": { "texture": "#book_edge_top", "uv": [ 0, 0, 14, 2 ] },
+                "down": { "texture": "#book_edge_top", "uv": [ 0, 0, 14, 1 ] }
+            }
+        }
+    ]
+}

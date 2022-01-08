@@ -361,11 +361,6 @@
       "id": "OD:oreAmethyst"
     },
     {
-      "target": "green",
-      "weight": 200,
-      "id": "OD:oreEnder"
-    },
-    {
       "target": "magenta",
       "weight": 200,
       "id": "OD:oreOrichalcum"

@@ -792,7 +792,7 @@ val MidnightIngot = mods.modularmachinery.RecipeBuilder.newBuilder("midnight-ing
 MidnightIngot.addItemInput(<thermalfoundation:material:135>);
 MidnightIngot.addItemInput(<actuallyadditions:item_crystal_empowered:3>);
 MidnightIngot.addItemInput(<mysticalagradditions:stuff:3>);
-MidnightIngot.addItemInput(<environmentaltech:aethium_crystal>);
+MidnightIngot.addItemInput(<environmentaltech:kyronite_crystal>);
 MidnightIngot.addFluidInput(<liquid:ender_distillation>*4000);
 MidnightIngot.addItemOutput(<extendedcrafting:material>);
 MidnightIngot.addDimensionRequirement([10]);

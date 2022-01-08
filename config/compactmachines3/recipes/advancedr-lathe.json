@@ -15,30 +15,30 @@
   "input-types": {
     "a": {
       "id": "advancedrocketry:lathe",
-      "meta": 4,
+      "meta": 2,
       "item": {
         "id": "advancedrocketry:lathe",
         "count": 1
       }
     },
     "b": {
-      "id": "libvulpes:forgepowerinput",
-      "meta": 0
-    },
-    "c": {
-      "id": "libvulpes:structuremachine",
-      "meta": 0
-    },
-    "d": {
       "id": "libvulpes:elitemotor",
-      "meta": 0,
+      "meta": 3,
       "item": {
         "id": "libvulpes:elitemotor",
         "count": 1
       }
     },
-    "e": {
+    "c": {
       "id": "libvulpes:hatch",
+      "meta": 0
+    },
+    "d": {
+      "id": "libvulpes:forgepowerinput",
+      "meta": 0
+    },
+    "e": {
+      "id": "libvulpes:structuremachine",
       "meta": 0
     },
     "f": {
@@ -49,19 +49,20 @@
   "shape": [
     [
       [
-        "e",
-        "d",
+        "c",
         "_",
+        "b",
         "a"
       ]
     ],
     [
       [
         "f",
-        "c",
-        "c",
-        "b"
+        "e",
+        "e",
+        "d"
       ]
     ]
   ]
+  
 }

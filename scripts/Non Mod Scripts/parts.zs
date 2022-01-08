@@ -191,6 +191,7 @@ var SheetmetalPlate as IItemStack[IItemStack] = {
 <jaopca:block_sheetmetaltinsilver>:<jaopca:item_platetinsilver>,
 <contenttweaker:sheetmetal_thermal_alloy>:<contenttweaker:plate_thermal_alloy>,
 <contenttweaker:sheetmetal_mek_alloy>:<contenttweaker:plate_mek_alloy>,
+<jaopca:block_sheetmetalstellite>:<rockhounding_chemistry:alloy_parts:16>,
 };
 for sheetmetal, plate in SheetmetalPlate {
 recipes.addShaped(sheetmetal * 4, [[null, plate, null],[plate, null, plate], [null, plate, null]]);
@@ -228,6 +229,7 @@ val sheetmetalCastingMap as ILiquidStack[IItemStack] = {
 <immersiveengineering:sheetmetal:8>:<liquid:steel>,
 <immersiveengineering:sheetmetal:9>:<liquid:iron>,
 <immersiveengineering:sheetmetal:10>:<liquid:gold>,
+<jaopca:block_sheetmetalstellite>:<liquid:molten_stellite>,
 } as ILiquidStack[IItemStack];
 
 for sheetmetal, fluid in sheetmetalCastingMap {
@@ -263,6 +265,7 @@ val rollingmachineCastingMap as IItemStack[IItemStack] = {
 <jaopca:block_sheetmetalenergeticsilver>:<enderio:block_alloy_endergy:5>,
 <contenttweaker:sheetmetal_mek_alloy>:<contenttweaker:block_mek_alloy>,
 <contenttweaker:sheetmetal_thermal_alloy>:<contenttweaker:block_thermal_alloy>,
+<jaopca:block_sheetmetalstellite>:<rockhounding_chemistry:alloy_blocks_tech:3>,
 } as IItemStack[IItemStack];
 
 for sheetmetal, block in rollingmachineCastingMap {

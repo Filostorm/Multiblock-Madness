@@ -118,7 +118,7 @@ EnhancedChassis.addEnergyPerTickInput(10000);
 EnhancedChassis.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "alienis"}]}));
 EnhancedChassis.addItemInput(<techreborn:storage:2>);
 EnhancedChassis.addItemInput(<enderio:block_end_iron_bars> * 18);
-EnhancedChassis.addItemInput(<jaopca:block_sheetmetallumium> * 8);
+EnhancedChassis.addItemInput(<jaopca:block_sheetmetalstellite> * 8);
 EnhancedChassis.addItemOutput(<enderio:item_material:66>);
 EnhancedChassis.build();
 
@@ -127,7 +127,7 @@ EnhancedChassis2.addEnergyPerTickInput(10000);
 EnhancedChassis2.addItemInput(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "alienis"}]}));
 EnhancedChassis2.addItemInput(<rockhounding_chemistry:alloy_blocks_tech:11>);
 EnhancedChassis2.addItemInput(<enderio:block_end_iron_bars> * 18);
-EnhancedChassis2.addItemInput(<jaopca:block_sheetmetallumium> * 8);
+EnhancedChassis2.addItemInput(<jaopca:block_sheetmetalstellite> * 8);
 EnhancedChassis2.addItemOutput(<enderio:item_material:66>*2);
 EnhancedChassis2.build();
 
@@ -372,7 +372,20 @@ plateEngineering.addItemInput(<immersiveengineering:material:26>);
 plateEngineering.addItemOutput(<contenttweaker:plate_engineering>*2);
 plateEngineering.build();
 
-//te4asting\
+##hellShelf
+val hellShelf = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-hellshelf", "minifield-crafter", 400, 0);
+hellShelf.addEnergyPerTickInput(4000);
+hellShelf.addItemInput(<tcomplement:scorched_block:3> * 18);
+hellShelf.addItemInput(<contenttweaker:book_block> * 8);
+hellShelf.addItemInput(<ebwizardry:crystal_block>);
+hellShelf.addItemInput(<minecraft:nether_star>);
+hellShelf.addItemOutput(<apotheosis:hellshelf>*2);
+hellShelf.build();
+
+
+
+
+
 
 ##########################################################################################
 print("==================== end of 3d_crafter.zs ====================");

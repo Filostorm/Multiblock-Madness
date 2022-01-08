@@ -295,4 +295,10 @@ recipes.addShapeless(<bloodmagic:blood_rune>, [item]);
 TartaricForge.removeRecipe([<bloodmagic:item_demon_crystal:2>, <bloodmagic:item_demon_crystal:2>, <bloodmagic:blood_shard>, <bloodmagic:ritual_diviner>]);
 mods.inworldcrafting.FluidToItem.transform(<bloodmagic:ritual_dismantler>, <liquid:liquid_death>, [<bloodmagic:ritual_diviner>,<bloodmagic:blood_shard>], true);
 
+
+
+
+
+
+
 print("==================== end of blood magic.zs ====================");

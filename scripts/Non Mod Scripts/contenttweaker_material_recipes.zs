@@ -13,6 +13,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.nuclearcraft.AlloyFurnace;
 import mods.inworldcrafting.FluidToItem;
 import mods.inworldcrafting.FluidToFluid;
+import mods.bloodmagic.TartaricForge;
 
 print("==================== loading CTMR.zs ====================");
 ##########################################################################################
@@ -81,7 +82,7 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy> * 3, <techreborn:ingot:14>, <nuclearcraft:fission_dust:6>, 50000);
 
 //This is probably way too high lol
-mods.nuclearcraft.FissionIrradiator.addRecipe(<contenttweaker:ingot_staballoy>, <contenttweaker:excited_mek_alloy>, 100000, 0, 0.25, 0);
+mods.nuclearcraft.FissionIrradiator.addRecipe(<contenttweaker:ingot_staballoy>, <contenttweaker:excited_mek_alloy>, 200000, 0, 0.25, 0);
 mods.nuclearcraft.Radiation.setRadiationLevel(<contenttweaker:excited_mek_alloy>, 100);
 
 //Has an upgraded alloy smelter recipe
@@ -105,6 +106,11 @@ recipes.addShaped(<contenttweaker:grindingball_mixedwill>, [
     [null, <bloodmagic:item_demon_crystal:3>, null]
 ]);
 
+
+
+//Hell Shelf Stuff
+recipes.remove(<apotheosis:hellshelf>);
+TartaricForge.addRecipe(<contenttweaker:book_block>,[<minecraft:book>, <botania:manainkwell>, <thaumadditions:phantom_ink_phial>, <botania:rune:8>], 1000,100);
 
 
 

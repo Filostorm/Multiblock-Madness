@@ -16,3 +16,8 @@ item.advgenerators.turbine_rotor_super.name=Super Alloy Turbine Rotor
 item.advgenerators.turbine_kit_super.name=Super Alloy Turbine Upgrade Kit
 tile.advgenerators.turbine_super.name=Super Alloy Turbine
 
+item.advgenerators.turbine_blade_smore.name=S'more Turbine Blade
+item.advgenerators.turbine_rotor_smore.name=S'more Turbine Rotor
+item.advgenerators.turbine_kit_smore.name=S'more Turbine Upgrade Kit
+tile.advgenerators.turbine_smore.name=S'more Turbine
+

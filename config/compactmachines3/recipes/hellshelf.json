@@ -1,0 +1,84 @@
+{
+  "name": "cm3a:hellshelf",
+
+  "disabled": false,
+
+  "target-item": "apotheosis:hellshelf",
+  "target-count": 2,
+  "target-meta": 0,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "minecraft:nether_star",
+  "catalyst-meta": 0,
+
+  "input-types": {
+    "a": {
+      "id": "tcomplement:scorched_block",
+      "meta": 3
+    },
+    "b": {
+      "id": "contenttweaker:book_block",
+      "meta": 0
+    },
+    "c": {
+      "id": "ebwizardry:crystal_block",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "c",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+
+}

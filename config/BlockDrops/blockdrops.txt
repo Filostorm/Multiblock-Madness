@@ -120,21 +120,6 @@
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
   },
   {
-    "name": "advancedrocketry:alienleaves",
-    "meta": 0,
-    "length": 1,
-    "name0": "advancedrocketry:aliensapling",
-    "meta0": 0,
-    "0chance0": 5.075,
-    "1chance0": 6.5499997,
-    "2chance0": 8.625,
-    "3chance0": 10.5,
-    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
-  },
-  {
     "name": "enderio:block_dark_paper_anvil",
     "meta": 0,
     "length": 1,
@@ -148,21 +133,6 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}"
-  },
-  {
-    "name": "advancedrocketry:charcoallog",
-    "meta": 0,
-    "length": 1,
-    "name0": "minecraft:coal",
-    "meta0": 1,
-    "0chance0": 100.0,
-    "1chance0": 100.0,
-    "2chance0": 148.25,
-    "3chance0": 202.875,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
   },
   {
     "name": "enderio:block_dark_paper_anvil",
@@ -193,36 +163,6 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
-  },
-  {
-    "name": "appliedenergistics2:quartz_ore",
-    "meta": 0,
-    "length": 1,
-    "name0": "appliedenergistics2:material",
-    "meta0": 0,
-    "0chance0": 150.22499,
-    "1chance0": 203.09999,
-    "2chance0": 261.5,
-    "3chance0": 329.375,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 8\n}"
-  },
-  {
-    "name": "appliedenergistics2:charged_quartz_ore",
-    "meta": 0,
-    "length": 1,
-    "name0": "appliedenergistics2:material",
-    "meta0": 1,
-    "0chance0": 149.22499,
-    "1chance0": 200.92499,
-    "2chance0": 256.625,
-    "3chance0": 330.27502,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 8\n}"
   },
   {
     "name": "thaumicaugmentation:crab_vent",
@@ -448,5 +388,65 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
+  },
+  {
+    "name": "appliedenergistics2:charged_quartz_ore",
+    "meta": 0,
+    "length": 1,
+    "name0": "appliedenergistics2:material",
+    "meta0": 1,
+    "0chance0": 151.025,
+    "1chance0": 200.175,
+    "2chance0": 260.2,
+    "3chance0": 330.27502,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 8\n}"
+  },
+  {
+    "name": "appliedenergistics2:quartz_ore",
+    "meta": 0,
+    "length": 1,
+    "name0": "appliedenergistics2:material",
+    "meta0": 0,
+    "0chance0": 150.15,
+    "1chance0": 200.65,
+    "2chance0": 265.07498,
+    "3chance0": 328.4,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 6\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 8\n}"
+  },
+  {
+    "name": "advancedrocketry:charcoallog",
+    "meta": 0,
+    "length": 1,
+    "name0": "minecraft:coal",
+    "meta0": 1,
+    "0chance0": 100.0,
+    "1chance0": 100.0,
+    "2chance0": 148.77501,
+    "3chance0": 200.7,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
+  },
+  {
+    "name": "advancedrocketry:alienleaves",
+    "meta": 0,
+    "length": 1,
+    "name0": "advancedrocketry:aliensapling",
+    "meta0": 0,
+    "0chance0": 4.9,
+    "1chance0": 6.1749997,
+    "2chance0": 8.775001,
+    "3chance0": 9.375,
+    "0pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
+    "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
   }
 ]

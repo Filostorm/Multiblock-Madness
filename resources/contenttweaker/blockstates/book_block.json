@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "book_spine_side": "contenttweaker:blocks/book_spine_side",
+      "book_spine": "contenttweaker:blocks/book_spine",
+      "book_spine_top": "contenttweaker:blocks/book_spine_top",
+      "book_edge": "contenttweaker:blocks/book_edge",
+      "book_cover": "contenttweaker:blocks/book_cover",
+      "book_edge_top": "contenttweaker:blocks/book_edge_top",
+      "book_paper": "contenttweaker:blocks/book_paper",
+      "particle": "contenttweaker:blocks/book_paper"
+    },
+    "model": "contenttweaker:book_block",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

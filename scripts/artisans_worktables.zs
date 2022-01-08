@@ -1,5 +1,5 @@
 ##########################################################################################
-
+#priority 99
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
@@ -8,7 +8,9 @@ print("==================== loading mods artisansworktables.zs =================
 ##########################################################################################
 mods.unidict.removalByKind.get("Crafting").remove("plate");
 mods.unidict.removalByKind.get("Crafting").remove("rod");
+mods.unidict.removalByKind.get("Crafting").remove("stick");
 mods.unidict.removalByKind.get("Crafting").remove("gear");
+
 
 recipes.remove(<ore:plateAluminum>);
 recipes.remove(<ore:plateBronze>);
@@ -67,7 +69,7 @@ val artisansPlates as IItemStack[IOreDictEntry] = {
 	<ore:ingotBronze>: <thermalfoundation:material:355>,
   <ore:ingotTin>:<thermalfoundation:material:321>,
   <ore:ingotGold>:<thermalfoundation:material:33>,
-  <ore:ingotCopper>:<thermalfoundation:material:320>,
+  //<ore:ingotCopper>:<thermalfoundation:material:320>,
   <ore:ingotIron>:<thermalfoundation:material:32>,
   <ore:ingotSilver>:<thermalfoundation:material:322>,
   <ore:ingotLead>:<thermalfoundation:material:323>,
@@ -81,7 +83,6 @@ val artisansPlates as IItemStack[IOreDictEntry] = {
   <ore:ingotBrass>:<thaumcraft:plate>,
   <ore:ingotThaumium>:<thaumcraft:plate:2>,
   <ore:gemQuartz>:<moreplates:nether_quartz_plate>,
-  
 } as IItemStack[IOreDictEntry];
 
 for ingot, plate in artisansPlates {
@@ -100,6 +101,7 @@ val artisansCrystalPlates as IItemStack[IItemStack] = {
   <actuallyadditions:item_crystal:5>:<moreplates:enori_plate>,
   <actuallyadditions:item_crystal:2>: <moreplates:diamatine_plate>,
   <modularmachinery:itemmodularium>:<contenttweaker:plate_modularium>,
+  <thermalfoundation:material:128>:<thermalfoundation:material:320>, // COPPER
 } as IItemStack[IItemStack];
 for ingot, plate in artisansCrystalPlates {
 recipes.addShaped(plate, [[<ore:artisansHammer>.reuse().transformDamage(5)], [ingot], [ingot]]);

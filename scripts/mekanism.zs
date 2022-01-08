@@ -272,7 +272,7 @@ craft.remake(<mekanism:machineblock:1>, ["pretty",
   "M": <ore:solenoidMagnesiumDiboride>,      # Magnesium Diboride Solenoid
   "E": <ore:circuitElite>,                   # Data Control Circuit
   "⌂": <mekanism:basicblock:8>,              # Steel Casing
-  "D": <contenttweaker:component_mek_alloy>, # Dense Component
+  "D": <mekanism:reinforcedalloy>,           # Reinforced Alloy
 });
 
 # [Precision Sawmill] from [Steel Casing][+5]
@@ -309,7 +309,7 @@ craft.remake(<mekanism:machineblock2>, ["pretty",
   "A": <ore:circuitAdvanced>,                 # Advanced Electronic Circuit
   "B": <mekanism:gastank>.withTag({tier: 0}), # Basic Gas Tank
   "⌂": <mekanism:basicblock:8>,               # Steel Casing
-  "a": <mekanism:machineblock2:11>.withTag({tier: 0}), # Basic Fluid Tank
+  "a": <mekanism:machineblock2:11>, # Basic Fluid Tank .onlyWithTag({tier: 0})
 });
 
 # [Pressurized Reaction Chamber] from [Enrichment Chamber][+5]
