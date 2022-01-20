@@ -247,9 +247,9 @@ NCChassis.build();
 ##Nuclearcraft Chassis2
 val NCChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-ncchassis2", "minifield-crafter", 400, 0);
 NCChassis2.addEnergyPerTickInput(4000);
-NCChassis2.addItemInput(<contenttweaker:plating_elite> * 8);
+NCChassis2.addItemInput(<contenttweaker:plating_basic> * 8);
 NCChassis2.addItemInput(<contenttweaker:bam_scaffolding> * 18);
-NCChassis2.addItemInput(<contenttweaker:sub_block_holder_0:6>);
+NCChassis2.addItemInput(<jaopca:block_blockthermoconducting>);
 NCChassis2.addItemInput(<nuclearcraft:part:7>);
 NCChassis2.addItemOutput(<nuclearcraft:part:10>*2);
 NCChassis2.build();
@@ -369,7 +369,7 @@ plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:7>);
 plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:4>);
 plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:5>);
 plateEngineering.addItemInput(<immersiveengineering:material:26>);
-plateEngineering.addItemOutput(<contenttweaker:plate_engineering>*2);
+plateEngineering.addItemOutput(<contenttweaker:plate_engineering>);
 plateEngineering.build();
 
 ##hellShelf

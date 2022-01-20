@@ -141,6 +141,7 @@ val recipestoRemove =
 <iceandfire:chain>,
 <iceandfire:chain_link>,
 <extendedcrafting:material:2>,
+<jaopca:item_gearthermoconducting>,
 ]
  as IItemStack[];
 

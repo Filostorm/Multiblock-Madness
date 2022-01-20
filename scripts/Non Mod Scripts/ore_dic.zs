@@ -3,16 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 print("==================== loading mods blank.zs ====================");
 ##########################################################################################
-/*
-val itemstoRemove =
-[
-]
- as IItemStack[];
 
-for item in itemstoRemove {
-	recipes.remove(item);
-}
-*/
 <ore:plateVoid>.remove(<moreplates:void_plate>);
 <ore:dustWood>.add(<techreborn:dust:46>);
 
@@ -221,6 +212,41 @@ for item in bricksForMixer {
 
 //Smingot for turbine
 <ore:ingotSmore>.add(<nuclearcraft:moresmore>);
+
+val softGlass =
+[
+<thermalfoundation:glass_alloy:1>,
+<thermalfoundation:glass_alloy:2>,
+<thermalfoundation:glass_alloy:3>,
+<thermalfoundation:glass_alloy:4>,
+<thermalfoundation:glass_alloy:5>,
+<thermalfoundation:glass_alloy>,
+<thermalfoundation:glass:1>,
+<thermalfoundation:glass:2>,
+<thermalfoundation:glass:4>,
+<thermalfoundation:glass:5>,
+<thermalfoundation:glass:6>,
+<thermalfoundation:glass:8>,
+]
+ as IItemStack[];
+for item in softGlass {
+<ore:blockGlassHardened>.remove(item);
+	mods.jei.JEI.removeAndHide(item);
+}
+
+val hiddenGlass =
+[
+<thermalfoundation:glass>,
+<thermalfoundation:glass:7>,
+<thermalfoundation:glass_alloy:6>,
+<thermalfoundation:glass_alloy:7>,
+]
+ as IItemStack[];
+for item in hiddenGlass {
+<ore:blockGlassHardened>.remove(item);
+}
+
+<ore:blockGlassHardened>.add(<thermalfoundation:glass:3>);
 
 ##########################################################################################
 print("==================== end of mods blank.zs ====================");

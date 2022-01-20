@@ -60711,7 +60711,7 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
-          "repeattime:3": 600,
+          "repeattime:3": -1,
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
@@ -60727,10 +60727,10 @@
           "questlogic:8": "AND",
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
-          "repeat_relative:1": 1,
+          "repeat_relative:1": 0,
           "ismain:1": 0,
           "name:8": "Clear all Warp 2",
-          "desc:8": "This quest will clear you of any warp, and is repeatable."
+          "desc:8": "This quest will clear you of any warp, again. Don\u0027t get more warp!"
         }
       },
       "tasks:9": {

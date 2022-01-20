@@ -15,6 +15,7 @@ import mods.aetherworks.MetalFormer;
 import mods.nuclearcraft.Melter;
 import mods.nuclearcraft.SaltMixer;
 import mods.immersiveengineering.Refinery;
+import mods.nuclearcraft.Crystallizer;
 
 print("==================== loading mods embers.zs ====================");
 ##########################################################################################
@@ -188,10 +189,12 @@ recipes.addShaped(<aetherworks:item_resource:2>, [[null, <ore:ingotBronze>, null
 Melter.addRecipe(<aetherworks:item_resource>, <liquid:aetherworks.aetherium_gas>*16);
 Crucible.addRecipe(<liquid:aetherworks.aetherium_gas>*16, <aetherworks:item_resource>, 4000);
 
+/*
 //More Mixing
 SaltMixer.addRecipe(<liquid:aetherworks.impure_aetherium_gas>*8, <liquid:electrum>*8, <liquid:aetherworks.aetherium_gas>*16);
 Refinery.addRecipe(<liquid:aetherworks.aetherium_gas>*16, <liquid:aetherworks.impure_aetherium_gas>*8, <liquid:electrum>*8, 2048);
-
+*/
+mods.embers.Mixer.remove(<liquid:aetherworks.aetherium_gas>*16);
 
 //No more crystals from ore
 Pulverizer.removeRecipe(<aetherworks:aether_ore>);
@@ -209,5 +212,28 @@ MetalFormer.addRecipe(<mysticalworld:amethyst_gem>, <liquid:aetherworks.aetheriu
 mods.embers.EmberGeneration.removeSteamEngineFuel(<liquid:steam>);
 mods.embers.EmberGeneration.addSteamEngineFuel(<liquid:steam>, 4.0, 1, [100]);
 
+
+
+#################### AETHERIUM ##########################
+//Condensed Aetherium
+mods.thermalexpansion.Refinery.addRecipe(<liquid:condensed_aetherium> * 10, <minecraft:glowstone_dust>, <liquid:aetherworks.impure_aetherium_gas> * 20, 10000);
+
+//Geode
+Crystallizer.addRecipe(<liquid:condensed_aetherium> * 10, <thermalfoundation:geode>);
+
+
+///CRACKING GEODES
+mods.embers.DawnstoneAnvil.add([<contenttweaker:crystal_seed>*4],<thermalfoundation:geode>,null);
+
+//Gas Form
+mods.nuclearcraft.Enricher.addRecipe(<contenttweaker:crystal_seed>, <liquid:aerotheum>*500, <liquid:aetherworks.aetherium_gas>*100);
+
+/*
+//Free stuff
+mods.rockhounding_chemistry.MineralSizer.add(<contenttweaker:crystal_seed>, 
+[<ebwizardry:magic_crystal>, <astralsorcery:itemcraftingcomponent>, <techreborn:gem:1>, 
+<techreborn:gem>, <actuallyadditions:item_crystal:4>, <appliedenergistics2:material:7>, 
+<treasure2:onyx>, <botania:manaresource:2>], [2, 3, 5, 7, 8, 11, 14, 15]);
+*/
 ##########################################################################################
 print("==================== end of mods embers.zs ====================");

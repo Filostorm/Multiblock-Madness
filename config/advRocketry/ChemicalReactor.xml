@@ -768,15 +768,6 @@
 			<fluidStack>hecf_251;128</fluidStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="8" power ="40000">
-		<input>
-			<fluidStack>aetherworks.impure_aetherium_gas;16</fluidStack>
-			<fluidStack>electrum;16</fluidStack>
-		</input>
-		<output>
-			<fluidStack>aetherworks.aetherium_gas;32</fluidStack>
-		</output>
-	</Recipe>
 	<Recipe timeRequired="4" power ="40000">
 		<input>
 			<fluidStack>iron;288</fluidStack>

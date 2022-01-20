@@ -239,7 +239,7 @@ infuser.addRecipe("CHROME", 25, <thermalfoundation:material:133>, <rockhounding_
 // Stainless Steel //
 AlloyFurnace.removeRecipeWithOutput(<qmd:ingot_alloy:2>*6);
 AlloyFurnace.removeRecipeWithOutput(<jaopca:block_blockstainlesssteel>*6);
-infuser.addRecipe("CHROME", 20, <thermalfoundation:material:160>, <qmd:ingot_alloy:2>);
+infuser.addRecipe("CHROME", 20, <nuclearcraft:alloy:15>, <qmd:ingot_alloy:2>);
 
 // Super Alloy //
 InductionSmelter.addRecipe(<qmd:ingot_alloy:6>*3, <rockhounding_chemistry:alloy_items_tech:22>*2, <qmd:ingot_alloy:3>, 50000);
@@ -257,9 +257,6 @@ InductionSmelter.addRecipe(<qmd:ingot_alloy:3>*2, <qmd:ingot:1>, <techreborn:ing
 InductionSmelter.addRecipe(<qmd:ingot_alloy:1>*4, <qmd:ingot:1>*3, <thermalfoundation:material:129>, 20000);
 //AlloySmelter.addRecipe(<qmd:ingot_alloy:1>*4, [<ore:ingotNiobium>*3, <ore:ingotTin>], 20000);
 
-// HSLA Steel //
-InductionSmelter.addRecipe(<nuclearcraft:alloy:15>*16, <minecraft:iron_ingot>*15, <nuclearcraft:compound:10>, 100000);
-//AlloySmelter.addRecipe(<nuclearcraft:alloy:15>*16, [<minecraft:iron_ingot>*15, <nuclearcraft:compound:10>], 100000);
 
 // Zirconium-Molybdenum Alloy //
 InductionSmelter.addRecipe(<nuclearcraft:alloy:16>*16, <rockhounding_chemistry:metal_items:12>*15, <nuclearcraft:ingot:10>, 100000);

@@ -2,6 +2,7 @@
 #priority 97
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Fluid;
+import mods.contenttweaker.BlockMaterial;
 import mods.contenttweaker.Color;
 
 
@@ -10,6 +11,10 @@ moltenEmbers.temperature = 6000;
 moltenEmbers.gaseous = true;
 moltenEmbers.luminosity = 15;
 moltenEmbers.viscosity = 2000;
+moltenEmbers.stillLocation = "contenttweaker:fluids/molten_embers";
+moltenEmbers.flowingLocation = "contenttweaker:fluids/molten_embers";
+moltenEmbers.material = <blockmaterial:lava>;
+
 moltenEmbers.register();
 
 var moltenBedrock = VanillaFactory.createFluid("moltenBedrock", Color.fromHex("200a2e"));
@@ -103,3 +108,14 @@ mirionPrepared.gaseous = false;
 mirionPrepared.luminosity = 0;
 mirionPrepared.viscosity = 1000;
 mirionPrepared.register();
+
+
+
+var aetheriumCondensed = VanillaFactory.createFluid("condensed_aetherium", Color.fromHex("000e7a"));
+aetheriumCondensed.temperature = 500;
+aetheriumCondensed.gaseous = false;
+aetheriumCondensed.luminosity = 5;
+aetheriumCondensed.viscosity = 1000;
+aetheriumCondensed.stillLocation = "contenttweaker:fluids/condensed_aetherium";
+aetheriumCondensed.flowingLocation = "contenttweaker:fluids/condensed_aetherium";
+aetheriumCondensed.register();

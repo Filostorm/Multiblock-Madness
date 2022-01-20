@@ -96,9 +96,10 @@ recipes.addShaped(<appliedenergistics2:interface>, [[<thermalfoundation:material
 recipes.addShaped(<appliedenergistics2:interface> * 2, [[<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:quartz_glass>, <rockhounding_chemistry:alloy_parts:10>],[<appliedenergistics2:material:44>, <techreborn:part:43>, <appliedenergistics2:material:43>], [<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:quartz_glass>, <rockhounding_chemistry:alloy_parts:10>]]);
 recipes.addShapeless(<appliedenergistics2:interface>, [<appliedenergistics2:part:440>]);
 
+//Fluid Interface
 recipes.addShaped(<appliedenergistics2:fluid_interface>, [[<thermalfoundation:material:324>, <minecraft:dye:4>, <thermalfoundation:material:324>],[<appliedenergistics2:material:44>, <techreborn:part:43>, <appliedenergistics2:material:43>], [<thermalfoundation:material:324>, <minecraft:dye:4>, <thermalfoundation:material:324>]]);
 recipes.addShaped(<appliedenergistics2:fluid_interface> * 2, [[<rockhounding_chemistry:alloy_parts:10>, <minecraft:dye:4>, <rockhounding_chemistry:alloy_parts:10>],[<appliedenergistics2:material:44>, <techreborn:part:43>, <appliedenergistics2:material:43>], [<rockhounding_chemistry:alloy_parts:10>, <minecraft:dye:4>, <rockhounding_chemistry:alloy_parts:10>]]);
-
+recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
 
 //inscribers
 recipes.addShaped(<ae2stuff:inscriber>, [[<moreplates:dark_steel_plate>, <minecraft:hopper>, <moreplates:dark_steel_plate>],[<threng:material:4>, <appliedenergistics2:inscriber>, <threng:material:4>], [<moreplates:dark_steel_plate>, <minecraft:hopper>, <moreplates:dark_steel_plate>]]);
@@ -301,6 +302,16 @@ mods.threng.Centrifuge.addRecipe(<nuclearcraft:flour>, <natura:materials>);
 //Fix Crytstal growing
 Insolator.removeRecipe(<appliedenergistics2:crystal_seed>, <minecraft:glowstone_dust>);
 Insolator.addRecipe(<appliedenergistics2:material:10>,<appliedenergistics2:crystal_seed>.withTag({progress: 0}), <minecraft:glowstone_dust>, 90000, null, 0, 3000);
+
+# [Memory Card] from [Advanced Logic Chip][+3]
+craft.remake(<appliedenergistics2:memory_card>, ["pretty",
+  "C п п",
+  "□ A □"], {
+  "C": <appliedenergistics2:material:23>,      # Calculation Processor
+  "п": <ore:plateDarkSteel>,                   # Dark Steel Plate
+  "□": <ore:plateDiamatine>,                   # Diamatine Plate
+  "A": <rockhounding_chemistry:misc_items:10>, # Advanced Logic Chip
+});
 
 ##########################################################################################
 print("==================== end of applied.zs ====================");

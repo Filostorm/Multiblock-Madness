@@ -508,9 +508,9 @@
 <!-- HSLA Steel Ingot -->
 <recipe name="MBM: HSLA Steel Ingot" required="true">
   <alloying energy="100000" exp="0.5">
-    <input name="ingotIron" amount="15"/>
+    <input name="ingotRefinedIron" amount="4"/>
     <input name="dustCarbonManganese"/>
-    <output name="ingotHSLASteel" amount="16"/>
+    <output name="ingotHSLASteel" amount="4"/>
   </alloying>
 </recipe>
 

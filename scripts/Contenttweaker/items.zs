@@ -137,6 +137,7 @@ VanillaFactory.createItem("ingot_staballoy").register();
 
 VanillaFactory.createItem("hot_cobalt").register();
 
+VanillaFactory.createItem("crystal_seed").register();
 
 var activatedaspectuscopper = VanillaFactory.createItem("activatedaspectuscopper");
 activatedaspectuscopper.maxStackSize = 1;
@@ -238,6 +239,9 @@ agitatorHastelloy.rarity = "epic";
 agitatorHastelloy.maxDamage = 8192;
 //agitatorHastelloy.glowing = true;
 agitatorHastelloy.register();
+
+
+
 
 /* COMING SOON TO A PACK NEAR YOU
 var warp_remover = VanillaFactory.createItem("warp_remover");

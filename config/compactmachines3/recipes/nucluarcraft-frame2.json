@@ -15,7 +15,7 @@
 
   "input-types": {
     "a": {
-      "id": "contenttweaker:plating_elite",
+      "id": "contenttweaker:plating_basic",
       "meta": 0
     },
     "b": {
@@ -23,8 +23,8 @@
       "meta": 0
     },
     "c": {
-      "id": "contenttweaker:sub_block_holder_0",
-      "meta": 6
+      "id": "jaopca:block_blockthermoconducting",
+      "meta": 0
     }
   },
   "shape": [

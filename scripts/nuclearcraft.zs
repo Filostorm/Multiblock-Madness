@@ -3,6 +3,8 @@ import crafttweaker.item.IItemStack;
 import mods.techreborn.blastFurnace;
 import mods.nuclearcraft.IngotFormer;
 import mods.nuclearcraft.Infuser;
+import mods.thermalexpansion.InductionSmelter;
+import mods.nuclearcraft.AlloyFurnace;
 print("==================== loading nuclearcraft.zs ====================");
 ##########################################################################################
 
@@ -13,7 +15,8 @@ val itemstoRemove =
 <nuclearcraft:part:10>,
 <nuclearcraft:part:4>,
 <nuclearcraft:part:3>,
-<nuclearcraft:part:2>
+<nuclearcraft:part:2>,
+<nuclearcraft:compound:10>,
 ]
  as IItemStack[];
 
@@ -84,6 +87,17 @@ recipes.addShaped(<nuclearcraft:part:2>, [[<mekanism:polyethene:2>, <nuclearcraf
 Infuser.addRecipe(<powersuits:powerarmorcomponent:14>*1, <liquid:silicon>*576, <nuclearcraft:part:13>);
 Infuser.addRecipe(<powersuits:powerarmorcomponent:14>*1, <liquid:fluidsilicon>*576, <nuclearcraft:part:13>);
 blastFurnace.addRecipe(<nuclearcraft:alloy:14>, null, <nuclearcraft:alloy:13>, <nuclearcraft:part:13>, 200, 512, 3000);
+
+//Carbon Blend
+recipes.addShapeless(<nuclearcraft:compound:10> * 2, [<ore:dustCarbon>,<ore:dustManganese>]);
+
+// HSLA Steel
+AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:15>*16);
+//InductionSmelter.removeRecipe(<minecraft:iron_ingot>*15, <nuclearcraft:compound:10>); 
+
+InductionSmelter.addRecipe(<nuclearcraft:alloy:15>*4, <techreborn:ingot:19>*4, <nuclearcraft:compound:10>, 100000);
+AlloyFurnace.addRecipe(<techreborn:ingot:19>*4, <nuclearcraft:compound:10>, <nuclearcraft:alloy:15>*4);
+
 
 ##########################################################################################
 print("==================== end of nuclearcraft.zs ====================");

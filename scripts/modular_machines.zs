@@ -359,7 +359,7 @@ dustInvar.build();
 ##CarbonManganese
 val dustCarbonManganese = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-carbonmanganese", "mixer-dust", 30, 0);
 dustCarbonManganese.addMysticalMechanicsInput(40, 80);
-dustCarbonManganese.addItemInput(<ore:dustGraphite>);
+dustCarbonManganese.addItemInput(<ore:dustCarbon>);
 dustCarbonManganese.addItemInput(<ore:dustManganese>);
 dustCarbonManganese.addItemOutput(<nuclearcraft:compound:10> * 2);
 dustCarbonManganese.addItemOutput(<nuclearcraft:compound:10>).setChance(0.5);
