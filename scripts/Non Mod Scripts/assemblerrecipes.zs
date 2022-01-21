@@ -1807,6 +1807,30 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_component_m
 	.addFluidInput(<liquid:hydrochloric_acid>*250)
 	.build();	
 
+//--== Lapotronic Orb & EV Capacitor Recipes for MK IV assembler ==--//
+
+// Because MM doesn't want to adapt these recipes
+
+// Lapotronic Energy Orb
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_lapotronic_energy_orb", "assemblermkfour", 12)
+	.addEnergyPerTickInput(1920000)
+	.addItemOutput(<techreborn:lapotronicorb>*4)
+	.addItemInput(<ore:lapotronCrystal>,8)
+	.addItemInput(<ore:plateiridiumAlloy>)
+	.addFluidInput(<liquid:lapis>*8000)
+	.build();
+
+// EV Capacitor
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_ev_capacitor", "assemblermkfour", 25)
+	.addEnergyPerTickInput(3840000)
+	.addItemOutput(<powersuits:powerarmorcomponent:8>*4)
+	.addItemInput(<ore:componentWiring>,6)
+	.addItemInput(<ore:componentHVCapacitor>,2)
+	.addItemInput(<ore:componentComputerChip>)
+	.addFluidInput(<liquid:liquid_nitrogen>*2000)
+	.build();
+
+
 ##############################################
 ##
 ##           Assembling Machine Upgrade Tooltips/JEI Descriptions
