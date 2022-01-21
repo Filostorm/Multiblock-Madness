@@ -1040,6 +1040,16 @@
 			<itemStack>moreplates:ironwood_plate;9;0</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockTinSilver</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platetinsilver;9;0</itemStack>
+		</output>
+	</Recipe>
+
 
 
 
