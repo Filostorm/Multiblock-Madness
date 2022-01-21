@@ -215,7 +215,6 @@ recipes.addShaped(<contenttweaker:sub_block_holder_0:1>, [
 recipes.addShapeless(<contenttweaker:material_part:10> * 9, [<contenttweaker:sub_block_holder_0:1>]);
 
 
-Melting.addRecipe(<liquid:moltenbedrock> * 100, <minecraft:bedrock>,6000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:moltenbedrock> * 100, <minecraft:bedrock>, 4000000);
 mods.nuclearcraft.Melter.addRecipe(<minecraft:bedrock>, <liquid:moltenbedrock> * 100, 10.0, 16.0);
 
