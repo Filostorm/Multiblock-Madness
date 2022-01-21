@@ -266,6 +266,12 @@ val rollingmachineCastingMap as IItemStack[IItemStack] = {
 <contenttweaker:sheetmetal_mek_alloy>:<contenttweaker:block_mek_alloy>,
 <contenttweaker:sheetmetal_thermal_alloy>:<contenttweaker:block_thermal_alloy>,
 <jaopca:block_sheetmetalstellite>:<rockhounding_chemistry:alloy_blocks_tech:3>,
+<jaopca:block_sheetmetaltinsilver>:<jaopca:block_blocktinsilver>,
+<immersiveengineering:sheetmetal:3>:<thermalfoundation:storage:2>,
+<immersiveengineering:sheetmetal:4>:<thermalfoundation:storage:5>,
+<immersiveengineering:sheetmetal:5>:<immersiveengineering:storage:5>,
+<immersiveengineering:sheetmetal:6>:<thermalfoundation:storage_alloy:4>,
+<immersiveengineering:sheetmetal:7>:<thermalfoundation:storage_alloy:1>,
 } as IItemStack[IItemStack];
 
 for sheetmetal, block in rollingmachineCastingMap {
