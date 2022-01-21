@@ -147,7 +147,7 @@
 			<itemStack>threng:material;1;5</itemStack>
 			<itemStack>ebwizardry:grand_crystal</itemStack>
 			<itemStack>contenttweaker:starmetal_cluster;1;0</itemStack>
-			<fluidStack>aetherworks.aetherium_gas;100</fluidStack>
+			<fluidStack>aetherworks.aetherium_gas;200</fluidStack>
 		</input>
 		<output>
 			<itemStack>contenttweaker:crystal_lattice</itemStack>
