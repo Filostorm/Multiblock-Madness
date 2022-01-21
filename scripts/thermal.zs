@@ -178,7 +178,7 @@ recipes.addShaped(<thermalcultivation:watering_can>, [[<thermalfoundation:materi
 
 //Iridium Glass
 InductionSmelter.removeRecipe(<thermalfoundation:glass:3>, <thermalfoundation:material:71>);
-blastFurnace.addRecipe(<thermalfoundation:glass:7>*4, null, <techreborn:reinforced_glass>*4, <techreborn:plates:38>, 300, 4096, 3500);
+blastFurnace.addRecipe(<thermalfoundation:glass:7>*4, null, <techreborn:reinforced_glass>*4, <techreborn:plates:38>, 600, 2048, 3500);
 
 // Resonant Cell Upgrade
 recipes.addShapeless(<thermalexpansion:cell>.withTag({Level: 4 as byte}), [<thermalexpansion:cell>,<thermalfoundation:upgrade:35>]);
