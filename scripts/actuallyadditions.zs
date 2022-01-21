@@ -226,6 +226,12 @@ AtomicReconstructor.addRecipe(<iceandfire:dragonegg_white>, <iceandfire:dragoneg
 AtomicReconstructor.addRecipe(<iceandfire:dragonforge_ice_brick>, <iceandfire:dragonforge_fire_brick>, 30000);
 AtomicReconstructor.addRecipe(<iceandfire:dragonforge_fire_brick>, <iceandfire:dragonforge_ice_brick>, 30000);
 
+AtomicReconstructor.addRecipe(<iceandfire:dragonforge_ice_core_disabled>, <iceandfire:dragonforge_fire_core_disabled>, 250000);
+AtomicReconstructor.addRecipe(<iceandfire:dragonforge_fire_core_disabled>, <iceandfire:dragonforge_ice_core_disabled>, 250000);
+
+AtomicReconstructor.addRecipe(<iceandfire:ice_dragon_blood>, <iceandfire:fire_dragon_blood>, 20000);
+AtomicReconstructor.addRecipe(<iceandfire:fire_dragon_blood>, <iceandfire:ice_dragon_blood>, 20000);
+
 //XP Solidifer
 recipes.addShaped(<actuallyadditions:block_xp_solidifier>, [[<actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>],[<actuallyadditions:block_crystal:2>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_crystal:2>], [<actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>]]);
 
