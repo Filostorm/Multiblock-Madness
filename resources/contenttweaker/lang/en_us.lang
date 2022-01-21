@@ -179,3 +179,5 @@ tile.contenttweaker.book_block.name=Tome of Magic
 
 item.contenttweaker.crystal_seed.name=Crystalized Aetherium
 fluid.condensed_aetherium=Condensed Aetherium
+
+fluid.crystal_slurry=Crystal Slag

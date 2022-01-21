@@ -242,6 +242,10 @@ recipes.addShaped(ChemicalExtractor, [
 
 mods.rockhounding_chemistry.ChemicalExtractor.add("Rare Earth", <thaumcraft:nugget:10>, 
 ["dustVanadium", "dustScandium", "dustMolybdenum", "dustYttrium", "dustNeodymium"], [56, 42, 37, 25, 20]);
+
+
+
+
 //input stack: the input to remove
 //mods.rockhounding_chemistry.ChemicalExtractor.removebyInput(<minecraft:hardened_clay>);
 //input oredict: the oredict to remove

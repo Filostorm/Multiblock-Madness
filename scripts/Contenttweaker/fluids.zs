@@ -119,3 +119,11 @@ aetheriumCondensed.viscosity = 1000;
 aetheriumCondensed.stillLocation = "contenttweaker:fluids/condensed_aetherium";
 aetheriumCondensed.flowingLocation = "contenttweaker:fluids/condensed_aetherium";
 aetheriumCondensed.register();
+
+
+var crystalSlurry = VanillaFactory.createFluid("crystal_slurry", Color.fromHex("553478"));
+crystalSlurry.temperature = 500;
+crystalSlurry.gaseous = false;
+crystalSlurry.luminosity = 0;
+crystalSlurry.viscosity = 1000;
+crystalSlurry.register();

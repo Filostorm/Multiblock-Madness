@@ -359,7 +359,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<minecraft:bedrock>, 1000000
 <enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>]);
 
 mods.extendedcrafting.TableCrafting.remove(<extendedcrafting:material:24>);
-mods.extendedcrafting.TableCrafting.addShaped(3, <extendedcrafting:material:24>, [
+mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:material:24>, [
     [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <arcanearchives:shaped_quartz>], 
     [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:5>, <enderio:item_alloy_endergy_ingot:1>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:2>, <arcanearchives:shaped_quartz>], 
     [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:5>, <enderio:item_alloy_endergy_ingot:1>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:2>, <arcanearchives:shaped_quartz>], 

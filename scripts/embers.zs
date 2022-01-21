@@ -228,12 +228,20 @@ mods.embers.DawnstoneAnvil.add([<contenttweaker:crystal_seed>*4],<thermalfoundat
 //Gas Form
 mods.nuclearcraft.Enricher.addRecipe(<contenttweaker:crystal_seed>, <liquid:aerotheum>*500, <liquid:aetherworks.aetherium_gas>*100);
 
-/*
-//Free stuff
-mods.rockhounding_chemistry.MineralSizer.add(<contenttweaker:crystal_seed>, 
-[<ebwizardry:magic_crystal>, <astralsorcery:itemcraftingcomponent>, <techreborn:gem:1>, 
-<techreborn:gem>, <actuallyadditions:item_crystal:4>, <appliedenergistics2:material:7>, 
-<treasure2:onyx>, <botania:manaresource:2>], [2, 3, 5, 7, 8, 11, 14, 15]);
-*/
+##=======================================================
+##LEACHING VAT
+##=======================================================
+//mods.rockhounding_chemistry.LeachingVat.add(<thermalfoundation:geode>, [<minecraft:diamond>, <minecraft:emerald>, <minecraft:dye:4>, <techreborn:gem:1>, <techreborn:gem>,<techreborn:gem:4>,<techreborn:gem:3>,<thaumcraft:amber>,<techreborn:gem:2>], [2.10F, 5.69F, 7.51F, 3.80F, 10.07F, 8.40F, 12.93F, 4.32F, 5.20F], <liquid:crystal_slurry>*1000);
+
+mods.rockhounding_chemistry.LeachingVat.add(<thermalfoundation:geode>, [<contenttweaker:crystal_seed>, <aetherworks:item_resource>], [2.10F, 5.69F], <liquid:crystal_slurry>*1000);
+
+
+##=======================================================
+##RETENTION VAT
+##=======================================================
+//mods.rockhounding_chemistry.RetentionVat.add(<liquid:crystal_slurry>*300, [<ebwizardry:magic_crystal>, <astralsorcery:itemcraftingcomponent>, <actuallyadditions:item_crystal:4>, <appliedenergistics2:material:7>, <botania:manaresource:2>, <contenttweaker:crystal_seed>, <treasure2:onyx>], [3.18F, 4.88F, 7.51F, 3.30F, 12.05F, 9.79F, 15.01F]);
+
+mods.rockhounding_chemistry.RetentionVat.add(<liquid:crystal_slurry>*200, [<techreborn:gem>, <astralsorcery:itemcraftingcomponent>, <techreborn:gem:4>, <techreborn:gem:3>, <techreborn:gem:1>, <techreborn:gem:2>, <treasure2:onyx>], [3.18F, 4.88F, 7.51F, 3.30F, 12.05F, 9.79F, 15.01F]);
+
 ##########################################################################################
 print("==================== end of mods embers.zs ====================");
