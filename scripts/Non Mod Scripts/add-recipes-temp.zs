@@ -236,6 +236,13 @@ val itemstoRemove =
 <mystgears:gear_wood>,
 <appliedenergistics2:material:46>,
 <enderio:item_material:28>,
+<enderio:item_material:26>,
+<enderio:item_material:27>,
+<enderio:item_material:30>,
+<enderio:item_material:31>,
+<enderio:item_material:33>,
+<qmd:dust2:3>,
+<qmd:dust2:4>,
 ]
  as IItemStack[];
 
@@ -543,6 +550,10 @@ craft.remake(<randomthings:soundbox>, ["pretty",
   "◊": <ore:gemLapis>, # Lapis Lazuli
   "■": <minecraft:noteblock>,                      # Note Block
 });
+
+// Red Sand
+mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:sand:1>, <minecraft:sand>, <liquid:blood> * 10, 2000);
+mods.nuclearcraft.Infuser.addRecipe(<minecraft:sand>, <liquid:blood> * 10, <minecraft:sand:1>);
 
 ##########################################################################################
 print("==================== end of mods add-recipes-temp.zs ====================");
