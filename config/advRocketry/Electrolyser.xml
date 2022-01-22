@@ -97,28 +97,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>tbu_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>tbu;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_tbu_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_tbu;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>leu_233_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>leu_233;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -133,28 +115,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>heu_233_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>heu_233;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_heu_233_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_heu_233;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>leu_235_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>leu_235;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -169,28 +133,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>heu_235_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>heu_235;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_heu_235_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_heu_235;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>len_236_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>len_236;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -205,28 +151,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>hen_236_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hen_236;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_hen_236_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_hen_236;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>lep_239_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>lep_239;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -241,28 +169,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>hep_239_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hep_239;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_hep_239_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_hep_239;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>lep_241_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>lep_241;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -277,28 +187,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>hep_241_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hep_241;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_hep_241_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_hep_241;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>mix_239_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>mix_239;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -313,28 +205,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>mix_241_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>mix_241;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_mix_241_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_mix_241;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>lea_242_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>lea_242;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -349,28 +223,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>hea_242_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hea_242;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_hea_242_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_hea_242;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>lecm_243_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>lecm_243;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -385,28 +241,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>hecm_243_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hecm_243;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_hecm_243_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_hecm_243;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>lecm_245_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>lecm_245;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -421,28 +259,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>hecm_245_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hecm_245;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_hecm_245_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_hecm_245;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>lecm_247_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>lecm_247;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -457,28 +277,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>hecm_247_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hecm_247;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_hecm_247_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_hecm_247;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>leb_248_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>leb_248;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -493,28 +295,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>heb_248_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>heb_248;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_heb_248_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_heb_248;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>lecf_249_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>lecf_249;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
@@ -529,15 +313,6 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>hecf_249_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hecf_249;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_hecf_249_fluoride;144</fluidStack>
 		</input>
 		<output>
@@ -547,28 +322,10 @@
 	</Recipe>
 	<Recipe timeRequired="2" power ="40000">
 		<input>
-			<fluidStack>lecf_251_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>lecf_251;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
 			<fluidStack>depleted_lecf_251_fluoride;144</fluidStack>
 		</input>
 		<output>
 			<fluidStack>depleted_lecf_251;144</fluidStack>
-			<fluidStack>fluorine;1000</fluidStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="2" power ="40000">
-		<input>
-			<fluidStack>hecf_251_fluoride;144</fluidStack>
-		</input>
-		<output>
-			<fluidStack>hecf_251;144</fluidStack>
 			<fluidStack>fluorine;1000</fluidStack>
 		</output>
 	</Recipe>
