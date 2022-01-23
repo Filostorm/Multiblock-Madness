@@ -247,8 +247,6 @@ val fuelseparationtoremove =
 <nuclearcraft:pellet_californium:7>,
 <nuclearcraft:pellet_plutonium:5>,
 <nuclearcraft:pellet_plutonium:7>,
-<nuclearcraft:pellet_mixed:1>,
-<nuclearcraft:pellet_mixed:3>,
 <nuclearcraft:pellet_americium:1>,
 <nuclearcraft:pellet_americium:3>,
 <nuclearcraft:pellet_curium:1>,
@@ -270,8 +268,6 @@ val fuelseparationtoremove =
 <nuclearcraft:fuel_californium:7>,
 <nuclearcraft:fuel_californium:11>,
 <nuclearcraft:fuel_californium:15>,
-<nuclearcraft:fuel_mixed:3>,
-<nuclearcraft:fuel_mixed:7>,
 <nuclearcraft:fuel_plutonium:11>,
 <nuclearcraft:fuel_plutonium:15>,
 <nuclearcraft:fuel_americium:3>,
@@ -367,7 +363,6 @@ for fuel in flibefuelcentrifugingtoremove {
 // Removing Fuel Centrifuging
 val fuelcentrifugingtoremove =
 [
-<liquid:tbu>,
 <liquid:leu_233>,
 <liquid:heu_233>,
 <liquid:leu_235>,

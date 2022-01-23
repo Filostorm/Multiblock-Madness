@@ -46,6 +46,8 @@ for item in itemstoRemove {
 val mapNewBlocks as IItemStack[IItemStack] = {
 	<contenttweaker:ingot_thermal_alloy>:<contenttweaker:block_thermal_alloy>,
 	<contenttweaker:ingot_mek_alloy>:<contenttweaker:block_mek_alloy>,
+	<contenttweaker:inert_ingot>:<contenttweaker:sub_block_holder_0:2>,
+	<nuclearcraft:alloy:1>:<contenttweaker:sub_block_holder_0:6>,
 } as IItemStack[IItemStack];
 
 for ingot, block in mapNewBlocks {
