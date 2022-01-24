@@ -74,11 +74,11 @@ smelteryHeart.add(<tconstruct:seared_tank:2>);
 
 ### CRAFTING RECIPES ###
 
-// high oven controller
+// High Oven Controller
 recipes.remove(<tcomplement:high_oven_controller>);
 recipes.addShaped(<tcomplement:high_oven_controller>, [[<tcomplement:materials:1>, <contenttweaker:noon_ingot>, <tcomplement:materials:1>],[<contenttweaker:noon_ingot>, <thaumcraft:alumentum>, <contenttweaker:noon_ingot>], [<tcomplement:materials:1>, <contenttweaker:noon_ingot>, <tcomplement:materials:1>]]);
 
-//Melter
+// Melter
 recipes.addShaped(<tcomplement:melter>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 
 
@@ -215,7 +215,6 @@ recipes.addShaped(<contenttweaker:sub_block_holder_0:1>, [
 recipes.addShapeless(<contenttweaker:material_part:10> * 9, [<contenttweaker:sub_block_holder_0:1>]);
 
 
-Melting.addRecipe(<liquid:moltenbedrock> * 100, <minecraft:bedrock>,6000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:moltenbedrock> * 100, <minecraft:bedrock>, 4000000);
 mods.nuclearcraft.Melter.addRecipe(<minecraft:bedrock>, <liquid:moltenbedrock> * 100, 10.0, 16.0);
 
@@ -241,7 +240,7 @@ val Tokens as ILiquidStack[IItemStack] = {
 	<contenttweaker:token_tier8>: <liquid:moltentokeninfinity>,
 } as ILiquidStack[IItemStack];
 for token, molten in Tokens {
-Casting.addTableRecipe(token, <avaritia:resource:5>, molten, 1000, false, 50);
+// Casting.addTableRecipe(token, <avaritia:resource:5>, molten, 1000, false, 50);
 mods.nuclearcraft.Infuser.addRecipe(<avaritia:resource:5>, molten * 1000, token, 20.0, 16.0);
 mods.thermalexpansion.Transposer.addFillRecipe(token, <avaritia:resource:5>, molten * 1000, 8000000);
 }
@@ -315,17 +314,6 @@ Casting.addTableRecipe(<tconstruct:cast_custom:4>, item, <liquid:brass>, 144, tr
 //Dawnstone block
 Melting.addRecipe(<liquid:dawnstone> * 1296, <embers:block_dawnstone>);
 Casting.addBasinRecipe(<embers:block_dawnstone>, null, <liquid:dawnstone>, 1296);
-
-############################################################
-//inert block
-recipes.addShaped(<contenttweaker:sub_block_holder_0:2>, [[<contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>],[<contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>], [<contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>, <contenttweaker:inert_ingot>]]);
-recipes.addShapeless(<contenttweaker:inert_ingot> * 9, [<contenttweaker:sub_block_holder_0:2>]);
-
-//tough alloy
-recipes.addShaped(<contenttweaker:sub_block_holder_0:6>, [[<nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>],[<nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>], [<nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>, <nuclearcraft:alloy:1>]]);
-recipes.addShapeless(<nuclearcraft:alloy:1> * 9, [<contenttweaker:sub_block_holder_0:6>]);
-
-############################################################
 
 ### HIGH OVEN ###
 // HighOven.removeFuel(IIngredient fuel);

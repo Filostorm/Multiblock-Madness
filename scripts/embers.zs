@@ -109,6 +109,8 @@ mods.embers.Alchemy.add(<embers:seed_dawnstone>, [<minecraft:quartz>,<embers:ing
 
 //Archaic Brick
 Casting.addTableRecipe(<embers:archaic_brick>, <embers:brick_caminite>, <liquid:inert_metal>, 72, true, 50);
+mods.thermalexpansion.Transposer.addFillRecipe(<embers:archaic_brick>, <embers:brick_caminite>, <liquid:inert_metal> * 72, 2000);
+mods.nuclearcraft.Infuser.addRecipe(<embers:brick_caminite>, <liquid:inert_metal> * 72, <embers:archaic_brick>);
 
 //inert metal
 Mixer.add(<liquid:inert_metal> * 72, [<liquid:silver> * 72, <liquid:lead> * 36]);
@@ -226,14 +228,14 @@ Crystallizer.addRecipe(<liquid:condensed_aetherium> * 10, <thermalfoundation:geo
 mods.embers.DawnstoneAnvil.add([<contenttweaker:crystal_seed>*4],<thermalfoundation:geode>,null);
 
 //Gas Form
-mods.nuclearcraft.Enricher.addRecipe(<contenttweaker:crystal_seed>, <liquid:aerotheum>*500, <liquid:aetherworks.aetherium_gas>*100);
+mods.nuclearcraft.Enricher.addRecipe(<contenttweaker:crystal_seed>, <liquid:aerotheum> * 500, <liquid:aetherworks.aetherium_gas> * 200);
 
 ##=======================================================
 ##LEACHING VAT
 ##=======================================================
 //mods.rockhounding_chemistry.LeachingVat.add(<thermalfoundation:geode>, [<minecraft:diamond>, <minecraft:emerald>, <minecraft:dye:4>, <techreborn:gem:1>, <techreborn:gem>,<techreborn:gem:4>,<techreborn:gem:3>,<thaumcraft:amber>,<techreborn:gem:2>], [2.10F, 5.69F, 7.51F, 3.80F, 10.07F, 8.40F, 12.93F, 4.32F, 5.20F], <liquid:crystal_slurry>*1000);
 
-mods.rockhounding_chemistry.LeachingVat.add(<thermalfoundation:geode>, [<contenttweaker:crystal_seed>, <aetherworks:item_resource>], [2.10F, 5.69F], <liquid:crystal_slurry>*1000);
+mods.rockhounding_chemistry.LeachingVat.add(<thermalfoundation:geode>, [<contenttweaker:crystal_seed>, <aetherworks:item_resource>], [2.10F, 5.69F], <liquid:crystal_slurry> * 1000);
 
 
 ##=======================================================
@@ -241,7 +243,7 @@ mods.rockhounding_chemistry.LeachingVat.add(<thermalfoundation:geode>, [<content
 ##=======================================================
 //mods.rockhounding_chemistry.RetentionVat.add(<liquid:crystal_slurry>*300, [<ebwizardry:magic_crystal>, <astralsorcery:itemcraftingcomponent>, <actuallyadditions:item_crystal:4>, <appliedenergistics2:material:7>, <botania:manaresource:2>, <contenttweaker:crystal_seed>, <treasure2:onyx>], [3.18F, 4.88F, 7.51F, 3.30F, 12.05F, 9.79F, 15.01F]);
 
-mods.rockhounding_chemistry.RetentionVat.add(<liquid:crystal_slurry>*200, [<techreborn:gem>, <astralsorcery:itemcraftingcomponent>, <techreborn:gem:4>, <techreborn:gem:3>, <techreborn:gem:1>, <techreborn:gem:2>, <treasure2:onyx>], [3.18F, 4.88F, 7.51F, 3.30F, 12.05F, 9.79F, 15.01F]);
+mods.rockhounding_chemistry.RetentionVat.add(<liquid:crystal_slurry> * 200, [<ebwizardry:magic_crystal>, <techreborn:gem>, <astralsorcery:itemcraftingcomponent>, <techreborn:gem:4>, <techreborn:gem:3>, <techreborn:gem:1>, <techreborn:gem:2>, <thaumcraft:amber>, <treasure2:onyx>], [2.79F, 3.18F, 4.88F, 7.51F, 3.30F, 12.05F, 9.79F, 11.13F, 15.01F]);
 
 ##########################################################################################
 print("==================== end of mods embers.zs ====================");

@@ -51,7 +51,8 @@ val itemstoRemove =
 <techreborn:industrial_grinder>,
 <techreborn:quantum_chest>,
 <techreborn:recycler>,
-<techreborn:fluid_replicator>
+<techreborn:fluid_replicator>,
+<powersuits:powerarmorcomponent:14>,
 //<powersuits:powerarmorcomponent:11>,
 ]
  as IItemStack[];
@@ -364,6 +365,7 @@ wireMill.addRecipe(<techreborn:cable>*3, <thermalfoundation:material:128>, 80, 4
 wireMill.addRecipe(<techreborn:cable:1>*4, <thermalfoundation:material:129>, 120, 40);
 wireMill.addRecipe(<techreborn:cable:2>*6, <minecraft:gold_ingot>, 160, 40);
 wireMill.addRecipe(<techreborn:cable:3>*6, <techreborn:ingot:19>, 160, 40);
+wireMill.addRecipe(<powersuits:powerarmorcomponent:14>, <advancedrocketry:misc:1>, 200, 128);
 
 // Sodium Persulfate Chain
 mods.nuclearcraft.ChemicalReactor.addRecipe(<liquid:sulfur> * 1000, <liquid:sodium> * 1000, <liquid:fluidsodiumsulfide> * 2000, null);

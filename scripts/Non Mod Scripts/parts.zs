@@ -46,6 +46,8 @@ for item in itemstoRemove {
 val mapNewBlocks as IItemStack[IItemStack] = {
 	<contenttweaker:ingot_thermal_alloy>:<contenttweaker:block_thermal_alloy>,
 	<contenttweaker:ingot_mek_alloy>:<contenttweaker:block_mek_alloy>,
+	<contenttweaker:inert_ingot>:<contenttweaker:sub_block_holder_0:2>,
+	<nuclearcraft:alloy:1>:<contenttweaker:sub_block_holder_0:6>,
 } as IItemStack[IItemStack];
 
 for ingot, block in mapNewBlocks {
@@ -266,6 +268,12 @@ val rollingmachineCastingMap as IItemStack[IItemStack] = {
 <contenttweaker:sheetmetal_mek_alloy>:<contenttweaker:block_mek_alloy>,
 <contenttweaker:sheetmetal_thermal_alloy>:<contenttweaker:block_thermal_alloy>,
 <jaopca:block_sheetmetalstellite>:<rockhounding_chemistry:alloy_blocks_tech:3>,
+<jaopca:block_sheetmetaltinsilver>:<jaopca:block_blocktinsilver>,
+<immersiveengineering:sheetmetal:3>:<thermalfoundation:storage:2>,
+<immersiveengineering:sheetmetal:4>:<thermalfoundation:storage:5>,
+<immersiveengineering:sheetmetal:5>:<immersiveengineering:storage:5>,
+<immersiveengineering:sheetmetal:6>:<thermalfoundation:storage_alloy:4>,
+<immersiveengineering:sheetmetal:7>:<thermalfoundation:storage_alloy:1>,
 } as IItemStack[IItemStack];
 
 for sheetmetal, block in rollingmachineCastingMap {

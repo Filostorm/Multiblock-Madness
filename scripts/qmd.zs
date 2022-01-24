@@ -25,5 +25,6 @@ for tinyDust, material in tinyDustMap {
 */
 
 mods.nuclearcraft.Melter.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <liquid:nd_yag>*432);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:nd_yag>*432, <rockhounding_chemistry:alloy_items_gems:1>, 4000);
 ##########################################################################################
 print("==================== end of QMD.zs ====================");
