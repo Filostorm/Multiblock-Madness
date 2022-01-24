@@ -14,6 +14,8 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import mods.immersiveengineering.MetalPress;
 import mods.rockhounding_chemistry.LabBlender;
+import mods.immersiveengineering.ArcFurnace;
+import mods.chisel.Carving;
 
 print("==================== loading mods tinkersconstruct.zs ====================");
 ##########################################################################################
@@ -87,6 +89,32 @@ recipes.addShaped(<tcomplement:melter>, [[<tconstruct:materials>, <tconstruct:ma
 //remove
 Melting.removeRecipe(<liquid:fossil_tar>, <minecraft:coal>);
 Melting.removeRecipe(<liquid:dark_steel>, <enderio:item_dark_steel_sword>);
+
+val moltentoremove = [
+<liquid:melodic_alloy>,
+<liquid:crystalline_alloy>,
+<liquid:enderium>,
+<liquid:lumium>,
+<liquid:signalum>,
+<liquid:platinum>,
+<liquid:lead_platinum>,
+<liquid:iridium>,
+<liquid:refinedobsidian>,
+<liquid:refinedglowstone>,
+<liquid:osgloglas>,
+<liquid:osmiridium>,
+<liquid:terrasteel>,
+<liquid:elementium>,
+<liquid:titanium>,
+<liquid:osmium>,
+<liquid:mirion>,
+<liquid:crystalline_pink_slime>,
+<liquid:stellar_alloy>,
+] as ILiquidStack[];
+
+for moltenfluid in moltentoremove {
+	Melting.removeRecipe(moltenfluid);
+}
 
 /* bottled time
 recipes.remove(<randomthings:timeinabottle>.*);
@@ -400,11 +428,120 @@ recipes.addShaped(<tinker_io:smart_output>, [[<tconstruct:materials>, <arcanearc
 //Reinforcement Modefier
 MetalPress.addRecipe(<tconstruct:materials:14>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:mold>, 2000);
 
-/* REMOVED UNTIL MORE TESTING
 /////////////////////////
 // Immersive Tinker's //
 /////////////////////////
 #######################################################
+
+
+// Tinkers Steel Casts, Cast Chiseling
+Carving.addGroup("claycast");
+Carving.addGroup("cast");
+Carving.addGroup("steelcast");
+
+val CasttoSteelCast as IItemStack[IItemStack] = {
+<tconstruct:cast>:<contenttweaker:steelcast>,
+<tconstruct:cast>.withTag({PartType: "conarm:armor_plate"}):<contenttweaker:steelcast_armor_plate>,
+<tconstruct:cast>.withTag({PartType: "conarm:armor_trim"}):<contenttweaker:steelcast_armor_trim>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:arrow_head"}):<contenttweaker:steelcast_arrow_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:arrow_shaft"}):<contenttweaker:steelcast_arrow_shaft>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:axe_head"}):<contenttweaker:steelcast_axe_head>,
+<tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}):<contenttweaker:steelcast_battery_cell>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:binding"}):<contenttweaker:steelcast_binding>,
+<tconstruct:cast>.withTag({PartType: "conarm:boots_core"}):<contenttweaker:steelcast_boots_core>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:bow_limb"}):<contenttweaker:steelcast_bow_limb>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:bow_string"}):<contenttweaker:steelcast_bow_string>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:broad_axe_head"}):<contenttweaker:steelcast_broad_axe_head>,
+<tconstruct:cast>.withTag({PartType: "conarm:chest_core"}):<contenttweaker:steelcast_chest_core>,
+<tconstruct:cast>.withTag({PartType: "tcomplement:chisel_head"}):<contenttweaker:steelcast_chisel_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:cross_guard"}):<contenttweaker:steelcast_cross_guard>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:excavator_head"}):<contenttweaker:steelcast_excavator_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}):<contenttweaker:steelcast_fletching>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:hammer_head"}):<contenttweaker:steelcast_hammer_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:hand_guard"}):<contenttweaker:steelcast_hand_guard>,
+<tconstruct:cast>.withTag({PartType: "conarm:helmet_core"}):<contenttweaker:steelcast_helmet_core>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:kama_head"}):<contenttweaker:steelcast_kama_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:knife_blade"}):<contenttweaker:steelcast_knife_blade>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:large_plate"}):<contenttweaker:steelcast_large_plate>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:large_sword_blade"}):<contenttweaker:steelcast_large_sword_blade>,
+<tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}):<contenttweaker:steelcast_laser_medium>,
+<tconstruct:cast>.withTag({PartType: "conarm:leggings_core"}):<contenttweaker:steelcast_leggings_core>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:pan_head"}):<contenttweaker:steelcast_pan_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:pick_head"}):<contenttweaker:steelcast_pick_head>,
+<tconstruct:cast>.withTag({PartType: "plustic:pipe_piece"}):<contenttweaker:steelcast_pipe_piece>,
+<tconstruct:cast>.withTag({PartType: "conarm:polishing_kit"}):<contenttweaker:steelcast_polishing_kit>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:scythe_head"}):<contenttweaker:steelcast_scythe_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:sharpening_kit"}):<contenttweaker:steelcast_sharpening_kit>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:shovel_head"}):<contenttweaker:steelcast_shovel_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:sign_head"}):<contenttweaker:steelcast_sign_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:sword_blade"}):<contenttweaker:steelcast_sword_blade>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:tool_rod"}):<contenttweaker:steelcast_tool_rod>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:tough_binding"}):<contenttweaker:steelcast_tough_binding>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:tough_tool_rod"}):<contenttweaker:steelcast_tough_tool_rod>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:wide_guard"}):<contenttweaker:steelcast_wide_guard>,
+} as IItemStack[IItemStack];
+
+for brasscast, steelcast in CasttoSteelCast {
+	recipes.addShapeless(steelcast, [brasscast, <ore:plateSteel>]);
+	Carving.addVariation("cast", brasscast);
+	Carving.addVariation("steelcast", steelcast);
+}
+
+Carving.addVariation("cast", <tcomplement:cast>);
+Carving.addVariation("cast", <tconstruct:cast>.withTag({PartType: "tconstruct:shard"}));
+Carving.addVariation("cast", <tconstruct:cast_custom>);
+Carving.addVariation("cast", <tconstruct:cast_custom:1>);
+Carving.addVariation("cast", <tconstruct:cast_custom:2>);
+Carving.addVariation("cast", <tconstruct:cast_custom:3>);
+Carving.addVariation("cast", <tconstruct:cast_custom:4>);
+
+val claycast = [
+<tconstruct:clay_cast>.withTag({PartType: "conarm:armor_plate"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:armor_trim"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:arrow_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:arrow_shaft"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:axe_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "plustic:battery_cell"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:binding"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:boots_core"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:bow_limb"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:bow_string"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:broad_axe_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:chest_core"}),
+<tconstruct:clay_cast>.withTag({PartType: "tcomplement:chisel_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:cross_guard"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:excavator_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:fletching"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:hammer_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:hand_guard"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:helmet_core"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:kama_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:knife_blade"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:large_plate"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:large_sword_blade"}),
+<tconstruct:clay_cast>.withTag({PartType: "plustic:laser_medium"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:leggings_core"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:pan_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:pick_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "plustic:pipe_piece"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:polishing_kit"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:scythe_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:sharpening_kit"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:shovel_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:sign_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:sword_blade"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:tool_rod"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:tough_binding"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:tough_tool_rod"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:wide_guard"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:shard"}),
+<tcomplement:cast_clay>,
+] as IItemStack[];
+
+for cast in claycast {
+	Carving.addVariation("claycast", cast);
+}
+
 
 // Most Parts
 var matpresser as IItemStack[string] = {
@@ -477,72 +614,93 @@ var matpresser as IItemStack[string] = {
 	"emerald_plustic" : <minecraft:emerald>,
 };
 
-var tconPartsMappresser as IData[][IItemStack] = {
-	<tconstruct:tool_rod> : [1, "tconstruct:tool_rod"],
-	<tconstruct:pick_head> : [3, "tconstruct:pick_head"],
-	<tconstruct:shovel_head> : [2, "tconstruct:shovel_head"],
-	<tconstruct:axe_head> : [3, "tconstruct:axe_head"],
-	<tconstruct:sword_blade> : [2, "tconstruct:sword_blade"],
-	<tconstruct:kama_head> : [2, "tconstruct:kama_head"],
-	<tconstruct:wide_guard> : [1 , "tconstruct:wide_guard"],
-	<tconstruct:hand_guard> : [1, "tconstruct:hand_guard"],
-	<tconstruct:binding> : [1, "tconstruct:binding"],
-	<tconstruct:pan_head> : [4, "tconstruct:pan_head"],
-	<tconstruct:sign_head> : [3, "tconstruct:sign_head"],
-	<tconstruct:sharpening_kit> : [2, "tconstruct:sharpening_kit"],
-	<tconstruct:arrow_head> : [2, "tconstruct:arrow_head"],
-	<tconstruct:knife_blade> : [1, "tconstruct:knife_blade"],
-	<tconstruct:cross_guard> : [1, "tconstruct:cross_guard"],
-	<tconstruct:tough_binding> : [3, "tconstruct:tough_binding"],
-	<tconstruct:tough_tool_rod> : [3, "tconstruct:tough_tool_rod"],
-	<tconstruct:scythe_head> : [8, "tconstruct:scythe_head"],
-	<tconstruct:large_sword_blade> : [8, "tconstruct:large_sword_blade"],
-	<tconstruct:broad_axe_head> : [8, "tconstruct:broad_axe_head"],
-	<tconstruct:excavator_head> : [8, "tconstruct:excavator_head"],
-	<tconstruct:hammer_head> : [8, "tconstruct:hammer_head"],
-	<tconstruct:large_plate> : [8, "tconstruct:large_plate"],
-	<tcomplement:chisel_head> : [1, "tcomplement:chisel_head"],
-	<conarm:boots_core> :  [4, "conarm:boots_core"],
-	<conarm:leggings_core> : [5, "conarm:leggings_core"],
-	<conarm:chest_core> : [6, "conarm:chest_core"],
-	<conarm:helmet_core> : [4, "conarm:helmet_core"],
-	<conarm:armor_plate> : [3, "conarm:armor_plate"],
-	<conarm:armor_trim> : [1, "conarm:armor_trim"],
-	<plustic:pipe_piece> : [12, "plustic:pipe_piece"],
-	<conarm:polishing_kit> : [2, "conarm:polishing_kit"],
-	<tconstruct:bow_limb> : [3, "tconstruct:bow_limb"],	
+var tconPartsMappresser as int[IItemStack[]] = {
+	[<tconstruct:tool_rod> , <contenttweaker:steelcast_tool_rod>] : 1,
+	[<tconstruct:pick_head> , <contenttweaker:steelcast_pick_head>] : 3,
+	[<tconstruct:shovel_head> , <contenttweaker:steelcast_shovel_head>] : 2,
+	[<tconstruct:axe_head> , <contenttweaker:steelcast_axe_head>] : 3,
+	[<tconstruct:sword_blade> , <contenttweaker:steelcast_sword_blade>] : 2,
+	[<tconstruct:kama_head> , <contenttweaker:steelcast_kama_head>] : 2,
+	[<tconstruct:wide_guard> , <contenttweaker:steelcast_wide_guard>] : 1,
+	[<tconstruct:hand_guard> , <contenttweaker:steelcast_hand_guard>] : 1,
+	[<tconstruct:binding> , <contenttweaker:steelcast_binding>] : 1,
+	[<tconstruct:pan_head> , <contenttweaker:steelcast_pan_head>] : 4,
+	[<tconstruct:sign_head> , <contenttweaker:steelcast_sign_head>] : 3,
+	[<tconstruct:sharpening_kit> , <contenttweaker:steelcast_sharpening_kit>] : 2,
+	[<tconstruct:arrow_head> , <contenttweaker:steelcast_arrow_head>] : 2,
+	[<tconstruct:knife_blade> , <contenttweaker:steelcast_knife_blade>] : 1,
+	[<tconstruct:cross_guard> , <contenttweaker:steelcast_cross_guard>] : 1,
+	[<tconstruct:tough_binding> , <contenttweaker:steelcast_tough_binding>] : 3,
+	[<tconstruct:tough_tool_rod> , <contenttweaker:steelcast_tough_tool_rod>] : 3,
+	[<tconstruct:scythe_head> , <contenttweaker:steelcast_scythe_head>] : 8,
+	[<tconstruct:large_sword_blade> , <contenttweaker:steelcast_large_sword_blade>] : 8,
+	[<tconstruct:broad_axe_head> , <contenttweaker:steelcast_broad_axe_head>] : 8,
+	[<tconstruct:excavator_head> , <contenttweaker:steelcast_excavator_head>] : 8,
+	[<tconstruct:hammer_head> , <contenttweaker:steelcast_hammer_head>] : 8,
+	[<tconstruct:large_plate> , <contenttweaker:steelcast_large_plate>] : 8,
+	[<tcomplement:chisel_head> , <contenttweaker:steelcast_chisel_head>] : 1,
+	[<conarm:boots_core> , <contenttweaker:steelcast_boots_core>] : 4,
+	[<conarm:leggings_core> , <contenttweaker:steelcast_leggings_core>] : 5,
+	[<conarm:chest_core> , <contenttweaker:steelcast_chest_core>] : 6,
+	[<conarm:helmet_core> , <contenttweaker:steelcast_helmet_core>] : 4, 
+	[<conarm:armor_plate> , <contenttweaker:steelcast_armor_plate>] : 3,
+	[<conarm:armor_trim> , <contenttweaker:steelcast_armor_trim>] : 1,
+	[<plustic:pipe_piece> , <contenttweaker:steelcast_pipe_piece>] : 12,
+	[<conarm:polishing_kit> , <contenttweaker:steelcast_polishing_kit>] : 2,
+	[<tconstruct:bow_limb> , <contenttweaker:steelcast_bow_limb>] : 3,	
 };
 
 for mat, ingot in matpresser {
-	for part, info in tconPartsMappresser {
-		mods.immersiveengineering.MetalPress.addRecipe(part.withTag({Material: mat}), ingot, <tconstruct:cast>.withTag({PartType: info[1]}), 2000, info[0]);
+	for item, quantity in tconPartsMappresser {
+		MetalPress.addRecipe(item[0].withTag({Material: mat}), ingot, item[1], 2000, quantity);
+//		ArcFurnace.addRecipe(ingot * quantity, item[0].withTag({Material: mat}), null, 100, 512);
 	}
 }
 
 // Arrow Shaft
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "fierymetal"}), <twilightforest:fiery_ingot>, <tconstruct:cast>.withTag({PartType: "tconstruct:arrow_shaft"}), 2000, 2);
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "enderium_plustic"}), <thermalfoundation:material:167>, <tconstruct:cast>.withTag({PartType: "tconstruct:arrow_shaft"}), 2000, 2);
+MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "fierymetal"}), <twilightforest:fiery_ingot>, <contenttweaker:steelcast_arrow_shaft>, 2000, 2);
+MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "enderium_plustic"}), <thermalfoundation:material:167>, <contenttweaker:steelcast_arrow_shaft>, 2000, 2);
+
+//ArcFurnace.addRecipe(<twilightforest:fiery_ingot> * 2, <tconstruct:arrow_shaft>.withTag({Material: "fierymetal"}), null, 100, 512);
+//ArcFurnace.addRecipe(<thermalfoundation:material:167> * 2, <tconstruct:arrow_shaft>.withTag({Material: "enderium_plustic"}), null, 100, 512);
 
 // Fletching
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}), 2000, 2);
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "invar"}), <thermalfoundation:material:162>, <tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}), 2000, 2);
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "titanium"}), <techreborn:ingot:14>, <tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}), 2000, 2);
+MetalPress.addRecipe(<tconstruct:fletching>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <contenttweaker:steelcast_fletching>, 2000, 2);
+MetalPress.addRecipe(<tconstruct:fletching>.withTag({Material: "invar"}), <thermalfoundation:material:162>, <contenttweaker:steelcast_fletching>, 2000, 2);
+MetalPress.addRecipe(<tconstruct:fletching>.withTag({Material: "titanium"}), <techreborn:ingot:14>, <contenttweaker:steelcast_fletching>, 2000, 2);
+
+/*ArcFurnace.addRecipe(<thermalfoundation:material:133> * 2, <tconstruct:fletching>.withTag({Material: "nickel"}), null, 100, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:162> * 2, <tconstruct:fletching>.withTag({Material: "invar"}), null, 100, 512);
+ArcFurnace.addRecipe(<techreborn:ingot:14> * 2, <tconstruct:fletching>.withTag({Material: "titanium"}), null, 100, 512);*/
 
 // Laser Medium
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedobsidian"}), <mekanism:ingot>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedglowstone"}), <mekanism:ingot:3>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "infinity_avaritia_plustic"}), <avaritia:resource:6>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "starmetal"}), <astralsorcery:itemcraftingcomponent:1>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
+MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedobsidian"}), <mekanism:ingot>, <contenttweaker:steelcast_laser_medium>, 2000, 8);
+MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedglowstone"}), <mekanism:ingot:3>, <contenttweaker:steelcast_laser_medium>, 2000, 8);
+MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "infinity_avaritia_plustic"}), <avaritia:resource:6>, <contenttweaker:steelcast_laser_medium>, 2000, 8);
+MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "starmetal"}), <astralsorcery:itemcraftingcomponent:1>, <contenttweaker:steelcast_laser_medium>, 2000, 8);
+
+/*ArcFurnace.addRecipe(<mekanism:ingot>, <plustic:laser_medium>.withTag({Material: "refinedobsidian"}), null, 100, 512);
+ArcFurnace.addRecipe(<mekanism:ingot:3>, <plustic:laser_medium>.withTag({Material: "refinedglowstone"}), null, 100, 512);
+ArcFurnace.addRecipe(<avaritia:resource:6>, <plustic:laser_medium>.withTag({Material: "infinity_avaritia_plustic"}), null, 100, 512);
+ArcFurnace.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <plustic:laser_medium>.withTag({Material: "starmetal"}), null, 100, 512);*/
 
 // Bowstring
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:bow_string>.withTag({Material: "soularium"}), <enderio:item_alloy_ingot:7>, <tconstruct:cast>.withTag({PartType: "tconstruct:bow_string"}), 2000, 1);
+MetalPress.addRecipe(<tconstruct:bow_string>.withTag({Material: "soularium"}), <enderio:item_alloy_ingot:7>, <contenttweaker:steelcast_bow_string>, 2000, 1);
+
+//ArcFurnace.addRecipe(<enderio:item_alloy_ingot:7>, <tconstruct:bow_string>.withTag({Material: "soularium"}), null, 100, 512);
 
 // Battery Cell
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "manyullyn"}), <tconstruct:ingots:2>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "copper"}), <thermalfoundation:material:128>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "silver"}), <thermalfoundation:material:130>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "osmium"}), <mekanism:ingot:1>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-*/
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "manyullyn"}), <tconstruct:ingots:2>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "copper"}), <thermalfoundation:material:128>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "silver"}), <thermalfoundation:material:130>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "osmium"}), <mekanism:ingot:1>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+
+/*ArcFurnace.addRecipe(<tconstruct:ingots:2> * 8, <plustic:battery_cell>.withTag({Material: "manyullyn"}), null, 100, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:128> * 8, <plustic:battery_cell>.withTag({Material: "copper"}), null, 100, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:130> * 8, <plustic:battery_cell>.withTag({Material: "silver"}), null, 100, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:133> * 8, <plustic:battery_cell>.withTag({Material: "nickel"}), null, 100, 512);
+ArcFurnace.addRecipe(<mekanism:ingot:1> * 8, <plustic:battery_cell>.withTag({Material: "osmium"}), null, 100, 512);*/
+
 ##########################################################################################
 print("==================== end of mods tinkersconstruct.zs ====================");

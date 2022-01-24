@@ -1,5 +1,5 @@
 #loader contenttweaker
-#priority 99
+#priority 101
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.IItemRightClick;
@@ -40,6 +40,45 @@ VanillaFactory.createItem("grindingball_mixedwill").register();
 
 VanillaFactory.createItem("plate_engineering").register();
 
+VanillaFactory.createItem("steelcast").register();
+VanillaFactory.createItem("steelcast_armor_plate").register();
+VanillaFactory.createItem("steelcast_armor_trim").register();
+VanillaFactory.createItem("steelcast_arrow_head").register();
+VanillaFactory.createItem("steelcast_arrow_shaft").register();
+VanillaFactory.createItem("steelcast_axe_head").register();
+VanillaFactory.createItem("steelcast_battery_cell").register();
+VanillaFactory.createItem("steelcast_binding").register();
+VanillaFactory.createItem("steelcast_boots_core").register();
+VanillaFactory.createItem("steelcast_bow_limb").register();
+VanillaFactory.createItem("steelcast_bow_string").register();
+VanillaFactory.createItem("steelcast_broad_axe_head").register();
+VanillaFactory.createItem("steelcast_chest_core").register();
+VanillaFactory.createItem("steelcast_chisel_head").register();
+VanillaFactory.createItem("steelcast_cross_guard").register();
+VanillaFactory.createItem("steelcast_excavator_head").register();
+VanillaFactory.createItem("steelcast_fletching").register();
+VanillaFactory.createItem("steelcast_hammer_head").register();
+VanillaFactory.createItem("steelcast_hand_guard").register();
+VanillaFactory.createItem("steelcast_helmet_core").register();
+VanillaFactory.createItem("steelcast_kama_head").register();
+VanillaFactory.createItem("steelcast_knife_blade").register();
+VanillaFactory.createItem("steelcast_large_plate").register();
+VanillaFactory.createItem("steelcast_large_sword_blade").register();
+VanillaFactory.createItem("steelcast_laser_medium").register();
+VanillaFactory.createItem("steelcast_leggings_core").register();
+VanillaFactory.createItem("steelcast_pan_head").register();
+VanillaFactory.createItem("steelcast_pick_head").register();
+VanillaFactory.createItem("steelcast_pipe_piece").register();
+VanillaFactory.createItem("steelcast_polishing_kit").register();
+VanillaFactory.createItem("steelcast_scythe_head").register();
+VanillaFactory.createItem("steelcast_sharpening_kit").register();
+VanillaFactory.createItem("steelcast_shovel_head").register();
+VanillaFactory.createItem("steelcast_sign_head").register();
+VanillaFactory.createItem("steelcast_sword_blade").register();
+VanillaFactory.createItem("steelcast_tool_rod").register();
+VanillaFactory.createItem("steelcast_tough_binding").register();
+VanillaFactory.createItem("steelcast_tough_tool_rod").register();
+VanillaFactory.createItem("steelcast_wide_guard").register();
 
 
 
