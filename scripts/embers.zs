@@ -106,6 +106,11 @@ Casting.addBasinRecipe(<embers:block_dawnstone>, null, <liquid:dawnstone>, 1296)
 mods.embers.Alchemy.add(<embers:seed_dawnstone>, [<minecraft:quartz>,<embers:ingot_dawnstone>,<embers:ingot_dawnstone>,<embers:shard_ember>,<embers:shard_ember>], {"iron":48 to 64,"dawnstone":48 to 64});
 //mods.embers.Alchemy.remove(IItemStack <output>);
 
+// Remove Tungsten Melting
+mods.embers.Melter.remove(<liquid:tungsten>);
+mods.embers.Melter.remove(<liquid:tungsten>);
+mods.embers.Melter.remove(<liquid:tungsten>);
+
 
 //Archaic Brick
 Casting.addTableRecipe(<embers:archaic_brick>, <embers:brick_caminite>, <liquid:inert_metal>, 72, true, 50);
