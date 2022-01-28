@@ -1,7 +1,7 @@
 import mods.modularmachinery.RecipePrimer;
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI.addDescription;
-print("==================== loading assembling_machine_recipes.zs ====================");
+print("==================== loading assemblerrecipes.zs ====================");
 ##########################################################################################
 
 
@@ -81,18 +81,22 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "item name here", m
 
 // --==Removals==-- //
 
+
 // Remove all Precision Assembler Recipes
 mods.jei.JEI.removeAndHide(<advancedrocketry:precisionassemblingmachine>);
+//mods.advancedrocketry.PrecisionAssembler.clear();
 
 // Remove all TR Assembler Recipes
+
 mods.jei.JEI.removeAndHide(<techreborn:assembling_machine>);
+//mods.techreborn.assemblingMachine.removeAll();
 
 // Remove some NC Assembler Recipes
 val qmdremovals =
 [
 <qmd:part:4>*6,
 <qmd:chemical_dust:1>*3,
-<qmd:source>.withTag({particle_storage: {particle_amount: 50000000}}),
+<qmd:source>.withTag({storage: {amount: 10000000}}),
 <qmd:part:6>*6,
 <qmd:part:3>,
 <qmd:semiconductor:4>,
@@ -1007,7 +1011,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_goldtungsten
 // Tungsten Filament
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_tungsten_filament", "assemblermktwo", 100)
 	.addEnergyPerTickInput(7500)
-	.addItemOutput(<qmd:source>.withTag({particle_storage: {particle_amount: 50000000}}))
+	.addItemOutput(<qmd:source>.withTag({storage: {amount: 6000}}))
 	.addItemInput(<ore:ingotTungsten>, 2)
 	.build();
 
@@ -1989,4 +1993,4 @@ addDescription(<rockhounding_chemistry:alloy_blocks_deco:11>, "Can be used in bo
 */
 
 ##########################################################################################
-print("==================== end of assembling_machine_recipes.zs ====================");
+print("==================== end of assemblerrecipes.zs ====================");
