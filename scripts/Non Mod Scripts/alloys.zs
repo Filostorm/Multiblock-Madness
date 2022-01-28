@@ -64,7 +64,7 @@ ArcFurnace.addRecipe(<enderio:item_alloy_ingot:5>, <minecraft:iron_ingot>, null,
 
 // Steel //
 for item in <ore:ingotSteel>.items{ArcFurnace.removeRecipe(item);}
-ArcFurnace.addRecipe(<thermalfoundation:material:160>*2, <minecraft:iron_ingot>*2, <immersiveengineering:material:7>*2, 400, 512, [<immersiveengineering:material:6>], "Alloying");
+ArcFurnace.addRecipe(<thermalfoundation:material:160>*2, <minecraft:iron_ingot>*2, <immersiveengineering:material:7>*2, 400, 512, [<ore:fuelCoke>], "Alloying");
 ArcFurnace.addRecipe(<thermalfoundation:material:160>, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 400, 512, [<minecraft:coal>], "Alloying");
 ArcFurnace.addRecipe(<thermalfoundation:material:160>, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 400, 512, [<minecraft:coal:1>*2], "Alloying");
 
