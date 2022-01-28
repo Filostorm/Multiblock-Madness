@@ -88,7 +88,7 @@ mods.jei.JEI.removeAndHide(<advancedrocketry:precisionassemblingmachine>);
 
 // Remove all TR Assembler Recipes
 
-	mods.jei.JEI.removeAndHide(<techreborn:assembling_machine>);
+mods.jei.JEI.removeAndHide(<techreborn:assembling_machine>);
 //mods.techreborn.assemblingMachine.removeAll();
 
 // Remove some NC Assembler Recipes
@@ -96,7 +96,7 @@ val qmdremovals =
 [
 <qmd:part:4>*6,
 <qmd:chemical_dust:1>*3,
-<qmd:source>.withTag({storage: {amount: 6000}}),
+//<qmd:source>.withTag({storage: {amount: 6000}}),
 <qmd:part:6>*6,
 <qmd:part:3>,
 <qmd:semiconductor:4>,
