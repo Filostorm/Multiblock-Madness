@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
-print("==================== loading mods Fossils.zs ====================");
+print("==================== loading mods fossils.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -96,4 +96,4 @@ for tinyDust, material in tinyDustMap {
 }
 
 ##########################################################################################
-print("==================== end of Fossils.zs ====================");
+print("==================== end of fossils.zs ====================");

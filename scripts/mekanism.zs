@@ -6,7 +6,7 @@ import mods.mekatweaker.InfuserType;
 import mods.appliedenergistics2.Grinder;
 
 
-print("==================== loading Mekanism.zs ====================");
+print("==================== loading mekanism.zs ====================");
 ##########################################################################################
 
 
@@ -69,28 +69,73 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-//no more GBG
+
+// --== Intermediate Components ==-- //
+
+//Teleportation core
+recipes.addShapedMirrored(<mekanism:teleportationcore>, [[<moreplates:osgloglas_plate>, <threng:material:6>, <enderio:item_material:35>],[<contenttweaker:component_mek_alloy>, <waystones:warp_stone>, <contenttweaker:component_mek_alloy>], [<enderio:item_material:35>, <threng:material:6>, <moreplates:osgloglas_plate>]]);
+  
+//Green Plastic
+recipes.addShaped(<mekanism:glowplasticblock:2>, [[<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>],[<appliedenergistics2:paint_ball:33>, <mekanism:plasticblock:15>, <appliedenergistics2:paint_ball:33>], [<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>]]);
+recipes.addShaped(<mekanism:glowplasticblock:2>, [[<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>],[<appliedenergistics2:paint_ball:33>, <mekanism:plasticblock:2>, <appliedenergistics2:paint_ball:33>], [<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>]]);
+
+//Lime Plastic
+recipes.addShaped(<mekanism:glowplasticblock:10>, [[<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>],[<appliedenergistics2:paint_ball:25>, <mekanism:plasticblock:15>, <appliedenergistics2:paint_ball:25>], [<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>]]);
+recipes.addShaped(<mekanism:glowplasticblock:10>, [[<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>],[<appliedenergistics2:paint_ball:25>, <mekanism:plasticblock:10>, <appliedenergistics2:paint_ball:25>], [<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>]]);
+
+// New Metallurgic Infuser Recipes
+
+//OutputStack[, InputStack, InfusionString]
+infuser.removeRecipe(<mekanism:enrichedalloy>);
+infuser.removeRecipe(<mekanism:reinforcedalloy>);
+infuser.removeRecipe(<mekanism:atomicalloy>);
+//infuser.removeRecipe(<thermalfoundation:material:163>);
+//InfusionString, InputInfusion, InputStack, OutputStack //InfusionString = CARBON;TIN;DIAMOND;REDSTONE;FUNGI;BIO;OBSIDIAN
+
+InfuserType.addTypeObject(<techreborn:ingot:3>, "CHROME", 100);
+<techreborn:ingot:3>.addTooltip(format.white("100 Chromium"));
+
+InfuserType.addTypeObject(<contenttweaker:compressed_chrome>, "CHROME", 200);
+<contenttweaker:compressed_chrome>.addTooltip(format.white("200 Chromium"));
+
+mods.mekanism.enrichment.addRecipe(<techreborn:ingot:3>, <contenttweaker:compressed_chrome>);
+
+infuser.addRecipe("REDSTONE", 20, <thermalfoundation:material:132>, <mekanism:enrichedalloy>);
+infuser.addRecipe("DIAMOND", 10, <thermalfoundation:material:134>, <mekanism:reinforcedalloy>);
+infuser.addRecipe("OBSIDIAN", 10, <techreborn:ingot:15>, <mekanism:atomicalloy>);
+
+//Advanced Circuit
+recipes.addShaped(<mekanism:controlcircuit:1>, [[null, <mekanism:enrichediron>, null],[<mekanism:enrichedalloy>, <mekanism:controlcircuit>, <mekanism:enrichedalloy>], [null, <mekanism:enrichediron>, null]]);
+//Elite Circuit
+recipes.addShaped(<mekanism:controlcircuit:2>, [[null, <moreplates:refined_obsidian_plate>, null],[<mekanism:reinforcedalloy>, <mekanism:controlcircuit:1>, <mekanism:reinforcedalloy>], [null, <moreplates:refined_obsidian_plate>, null]]);
+//Ultimate Circuit
+recipes.addShaped(<mekanism:controlcircuit:3>, [[null, <thermalfoundation:material:327>, null],[<mekanism:atomicalloy>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>], [null, <thermalfoundation:material:327>, null]]);
+
+
+// --== Machines and Tools ==-- //
+
+// no more GBG
 	mods.jei.JEI.removeAndHide(<mekanismgenerators:generator:3>);
 
 //Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
 
 Grinder.addRecipe(<thermalfoundation:material:800>, <minecraft:planks>, 4, <techreborn:smalldust:46>*2, 0.5, <techreborn:smalldust:46>*2, 0.5);
 
-//Pump
+// Pump
 recipes.addShaped(<mekanism:machineblock:12>, [[null, <minecraft:bucket>, null],[<ore:circuitBasic>, <immersiveengineering:metal_decoration0:5>, <ore:circuitBasic>], [<ore:platerefinedIron>, <ore:platerefinedIron>, <ore:platerefinedIron>]]);
 
-//Filter Upgrade
+// Filter Upgrade
 recipes.addShaped(<mekanism:filterupgrade>, [[null, <thermalfoundation:glass:3>, null],[<ore:plateBam>, <ore:dustTin>, <ore:plateBam>], [null, <thermalfoundation:glass:3>, null]]);
 
-//Evap Tank
+// Thermal Evaporation Block
 recipes.addShaped(<mekanism:basicblock2> * 4, [[<mekanism:enrichedalloy>, <moreplates:refined_obsidian_plate>, <mekanism:enrichedalloy>],[<moreplates:refined_obsidian_plate>, <contenttweaker:gear_thermal_alloy>, <moreplates:refined_obsidian_plate>], [<mekanism:enrichedalloy>, <moreplates:refined_obsidian_plate>, <mekanism:enrichedalloy>]]);
 //recipes.addShaped(<mekanism:basicblock2> * 8, [[<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>],[<ore:plateVanasteel>, <contenttweaker:gear_thermal_alloy>, <ore:plateVanasteel>], [<mekanism:enrichedalloy>, <ore:plateVanasteel>, <mekanism:enrichedalloy>]]);
 
-//Induction
+// Induction
 recipes.addShaped(<mekanism:basicblock2:1> * 4, [[<mekanism:reinforcedalloy>, <moreplates:osgloglas_plate>, <mekanism:reinforcedalloy>],[<moreplates:osgloglas_plate>, <contenttweaker:gear_thermal_alloy>, <moreplates:osgloglas_plate>], [<mekanism:reinforcedalloy>, <moreplates:osgloglas_plate>, <mekanism:reinforcedalloy>]]);
 //recipes.addShaped(<mekanism:basicblock2:1> * 8, [[<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>],[<ore:plateVanasteel>, <contenttweaker:gear_thermal_alloy>, <ore:plateVanasteel>], [<mekanism:reinforcedalloy>, <ore:plateVanasteel>, <mekanism:reinforcedalloy>]]);
 
-//Turbine
+// Turbine
 //recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>],[<thermalfoundation:material:352>, <moreplates:osmium_gear>, <thermalfoundation:material:352>], [<mekanism:atomicalloy>, <thermalfoundation:material:352>, <mekanism:atomicalloy>]]);
 //recipes.addShaped(<mekanismgenerators:generator:10> * 8, [[<mekanism:atomicalloy>, <ore:plateVanasteel>, <mekanism:atomicalloy>],[<ore:plateVanasteel>, <moreplates:osmium_gear>, <ore:plateVanasteel>], [<mekanism:atomicalloy>, <ore:plateVanasteel>, <mekanism:atomicalloy>]]);
 
@@ -114,43 +159,15 @@ craft.remake(<mekanismgenerators:generator:8>, ["pretty",
 
 recipes.addShaped(<mekanismgenerators:generator:10> * 4, [[<nuclearcraft:part:3>, <nuclearcraft:pellet_thorium>, <nuclearcraft:part:3>],[<jaopca:item_platesuperalloy>, <mekanismgenerators:reactor:1>, <jaopca:item_platesuperalloy>], [<nuclearcraft:part:3>, <extendedcrafting:material:18>, <nuclearcraft:part:3>]]);
 
-//rEACTOR bIZZ
+// rEACTOR bIZZ
 recipes.addShaped(<mekanismgenerators:reactor:1> * 4, [[<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>],[<mekanism:basicblock:8>, <contenttweaker:gear_mek_alloy>, <mekanism:basicblock:8>], [<techreborn:plates:38>, <mekanism:basicblock:8>, <techreborn:plates:38>]]);
 recipes.addShaped(<mekanismgenerators:reactor>, [[<mekanism:controlcircuit:3>, <powersuits:powerarmorcomponent:8>, <mekanism:controlcircuit:3>],[<mekanismgenerators:reactor:1>, <mekanism:gastank>.withTag({tier: 3}), <mekanismgenerators:reactor:1>], [<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);
 
-
+// Configurator
 recipes.addShapeless(<mekanism:configurator>, [<enderio:item_yeta_wrench>,<actuallyadditions:item_battery>]);
 
-
-//OutputStack[, InputStack, InfusionString]
-infuser.removeRecipe(<mekanism:enrichedalloy>);
-infuser.removeRecipe(<mekanism:reinforcedalloy>);
-infuser.removeRecipe(<mekanism:atomicalloy>);
-//infuser.removeRecipe(<thermalfoundation:material:163>);
-//InfusionString, InputInfusion, InputStack, OutputStack //InfusionString = CARBON;TIN;DIAMOND;REDSTONE;FUNGI;BIO;OBSIDIAN
-
-InfuserType.addTypeObject(<techreborn:ingot:3>, "CHROME", 100);
-<techreborn:ingot:3>.addTooltip(format.white("100 Chromium"));
-
-InfuserType.addTypeObject(<contenttweaker:compressed_chrome>, "CHROME", 200);
-<contenttweaker:compressed_chrome>.addTooltip(format.white("200 Chromium"));
-
-mods.mekanism.enrichment.addRecipe(<techreborn:ingot:3>, <contenttweaker:compressed_chrome>);
-
-infuser.addRecipe("REDSTONE", 20, <thermalfoundation:material:132>, <mekanism:enrichedalloy>);
-infuser.addRecipe("DIAMOND", 10, <thermalfoundation:material:134>, <mekanism:reinforcedalloy>);
-infuser.addRecipe("OBSIDIAN", 10, <techreborn:ingot:15>, <mekanism:atomicalloy>);
-
-
-//Basic Tank
+// Basic Tank
 recipes.addShaped(<mekanism:machineblock2:11>, [[<thermalfoundation:material:321>, <embers:fluid_gauge>, <thermalfoundation:material:321>],[<moreplates:electrum_stick>, null, <moreplates:electrum_stick>], [<thermalfoundation:material:321>, <embers:pipe>, <thermalfoundation:material:321>]]);
-
-//Advanced Circuit
-recipes.addShaped(<mekanism:controlcircuit:1>, [[null, <mekanism:enrichediron>, null],[<mekanism:enrichedalloy>, <mekanism:controlcircuit>, <mekanism:enrichedalloy>], [null, <mekanism:enrichediron>, null]]);
-//Elite Circuit
-recipes.addShaped(<mekanism:controlcircuit:2>, [[null, <moreplates:refined_obsidian_plate>, null],[<mekanism:reinforcedalloy>, <mekanism:controlcircuit:1>, <mekanism:reinforcedalloy>], [null, <moreplates:refined_obsidian_plate>, null]]);
-//Ultimate Circuit
-recipes.addShaped(<mekanism:controlcircuit:3>, [[null, <thermalfoundation:material:327>, null],[<mekanism:atomicalloy>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>], [null, <thermalfoundation:material:327>, null]]);
 
 recipes.addShapeless("basictoadvancedtank",
     <mekanism:machineblock2:11>.withTag({tier: 1}), 
@@ -175,45 +192,34 @@ recipes.addShapeless("elitetoultimatetank",
     
 
 
-//Tier Installers
+// Tier Installers
 recipes.addShaped(<mekanism:tierinstaller:3>, [[<mekanism:atomicalloy>, <ore:circuitUltimate>, <mekanism:atomicalloy>],[<techreborn:plates:38>, <ore:plankWood>, <techreborn:plates:38>], [<mekanism:atomicalloy>, <ore:circuitUltimate>, <mekanism:atomicalloy>]]);
 recipes.addShaped(<mekanism:tierinstaller:2>, [[<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>],[<moreplates:vivid_alloy_gear>, <ore:plankWood>, <moreplates:vivid_alloy_gear>], [<mekanism:reinforcedalloy>, <ore:circuitElite>, <mekanism:reinforcedalloy>]]);
 recipes.addShaped(<mekanism:tierinstaller:1>, [[<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>],[<moreplates:energetic_alloy_gear>, <ore:plankWood>, <moreplates:energetic_alloy_gear>], [<mekanism:enrichedalloy>, <ore:circuitAdvanced>, <mekanism:enrichedalloy>]]);
 recipes.addShaped(<mekanism:tierinstaller>, [[<moreplates:redstone_alloy_plate>, <ore:circuitBasic>, <moreplates:redstone_alloy_plate>],[<moreplates:electrical_steel_gear>, <ore:plankWood>, <moreplates:electrical_steel_gear>], [<moreplates:redstone_alloy_plate>, <ore:circuitBasic>, <moreplates:redstone_alloy_plate>]]);
 
-//Teleportation core
-recipes.addShapedMirrored(<mekanism:teleportationcore>, [[<moreplates:osgloglas_plate>, <threng:material:6>, <enderio:item_material:35>],[<contenttweaker:component_mek_alloy>, <waystones:warp_stone>, <contenttweaker:component_mek_alloy>], [<enderio:item_material:35>, <threng:material:6>, <moreplates:osgloglas_plate>]]);
-  
-//Green Plastic
-recipes.addShaped(<mekanism:glowplasticblock:2>, [[<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>],[<appliedenergistics2:paint_ball:33>, <mekanism:plasticblock:15>, <appliedenergistics2:paint_ball:33>], [<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>]]);
-recipes.addShaped(<mekanism:glowplasticblock:2>, [[<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>],[<appliedenergistics2:paint_ball:33>, <mekanism:plasticblock:2>, <appliedenergistics2:paint_ball:33>], [<appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>, <appliedenergistics2:paint_ball:33>]]);
-
-//Lime Plastic
-recipes.addShaped(<mekanism:glowplasticblock:10>, [[<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>],[<appliedenergistics2:paint_ball:25>, <mekanism:plasticblock:15>, <appliedenergistics2:paint_ball:25>], [<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>]]);
-recipes.addShaped(<mekanism:glowplasticblock:10>, [[<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>],[<appliedenergistics2:paint_ball:25>, <mekanism:plasticblock:10>, <appliedenergistics2:paint_ball:25>], [<appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>, <appliedenergistics2:paint_ball:25>]]);
-
-//Digital Miner
+// Digital Miner
 recipes.addShaped(<mekanism:machineblock:4>, [[<contenttweaker:component_mek_alloy>, <mekanism:controlcircuit:2>, <contenttweaker:component_mek_alloy>],[<mekanism:teleportationcore>, <mekanism:basicblock:8>, <mekanism:teleportationcore>], [<mekanism:robit>, <appliedenergistics2:material:47>, <mekanism:robit>]]);
 
-//Solar Panel
+// Solar Panel
 recipes.addShaped(<mekanismgenerators:solarpanel>, [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],[<enderio:item_material:38>, <mekanism:enrichedalloy>, <enderio:item_material:38>], [<moreplates:osmium_plate>, <moreplates:osmium_plate>, <moreplates:osmium_plate>]]);
 
 
-//Solar Neutron Activator
+// Solar Neutron Activator
 //InputGas[, OutputGas]
 mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>, <gas:tritium>);
 //InputGas, OutputGas
 mods.mekanism.solarneutronactivator.addRecipe(<gas:lithium>*2, <gas:tritium>*2);
 
-//NO MORE SALT HACKS
+// NO MORE SALT HACKS
 mods.mekanism.GasConversion.unregister(<ore:dustSalt>, <gas:hydrogenchloride>);
 mods.mekanism.GasConversion.unregister(<ore:itemSalt>, <gas:hydrogenchloride>);
 
-//Osmium Dust
+// Osmium Dust
 mods.mekanism.GasConversion.register(<mekanism:dust:2>, <gas:liquidosmium> * 200);
 
 
-//New Recipes
+// New Recipes //
 # [Metallurgic Infuser] from [Steel Casing][+5]
 craft.remake(<mekanism:machineblock:8>, ["pretty",
   "§ ¤ §",
@@ -654,4 +660,4 @@ craft.remake(<mekanism:portableteleporter>, ["pretty",
 });
 
 ##########################################################################################
-print("==================== end of Mekanism.zs ====================");
+print("==================== end of mekanism.zs ====================");

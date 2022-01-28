@@ -13,7 +13,7 @@ import mods.tconstruct.Melting;
 import crafttweaker.item.IIngredient;
 
 
-print("==================== loading mods blank.zs ====================");
+print("==================== loading twilight_forest.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -160,4 +160,4 @@ recipes.addShaped(<twilightforest:fiery_pickaxe>, [[<twilightforest:fiery_ingot>
 recipes.addShapeless(<twilightforest:transformation_powder>, [<deepmoblearning:living_matter_twilight>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
 
 ##########################################################################################
-print("==================== end of mods blank.zs ====================");
+print("==================== end of twilight_forest.zs ====================");

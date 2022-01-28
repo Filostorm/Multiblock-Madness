@@ -1,5 +1,4 @@
 #loader contenttweaker
-#priority 101
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.IItemRightClick;
@@ -7,8 +6,9 @@ import mods.contenttweaker.Commands;
 import mods.contenttweaker.IItemColorSupplier;
 import mods.contenttweaker.Color;
 
+#priority 105
 
-print("==================== loading Items.zs ====================");
+print("==================== loading items.zs ====================");
 ##########################################################################################
 
 VanillaFactory.createItem("hastelloyfoil").register();
@@ -280,6 +280,12 @@ agitatorHastelloy.maxDamage = 8192;
 agitatorHastelloy.register();
 
 
+// Thanks Recoherent!
+VanillaFactory.createItem("matrix_deposition_+").register();
+VanillaFactory.createItem("matrix_deposition_-").register();
+VanillaFactory.createItem("incoherent").register();
+VanillaFactory.createItem("neutronic").register();
+
 
 
 /* COMING SOON TO A PACK NEAR YOU
@@ -304,4 +310,4 @@ warp_remover.itemShiftRightClick = function(stack, world, player, hand) {
 warp_remover.register();*/
 
 ##########################################################################################
-print("==================== end of Items.zs ====================");
+print("==================== end of items.zs ====================");

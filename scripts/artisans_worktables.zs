@@ -1,41 +1,20 @@
 ##########################################################################################
-#priority 99
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
-print("==================== loading mods artisansworktables.zs ====================");
+#priority 98
+
+print("==================== loading artisans_worktables.zs ====================");
 ##########################################################################################
-mods.unidict.removalByKind.get("Crafting").remove("plate");
-mods.unidict.removalByKind.get("Crafting").remove("rod");
-mods.unidict.removalByKind.get("Crafting").remove("stick");
-mods.unidict.removalByKind.get("Crafting").remove("gear");
-
-
-recipes.remove(<ore:plateAluminum>);
-recipes.remove(<ore:plateBronze>);
-recipes.remove(<ore:plateConstantan>);
-recipes.remove(<ore:plateCopper>);
-recipes.remove(<ore:plateElectrum>);
-recipes.remove(<ore:plateGold>);
-recipes.remove(<ore:plateInvar>);
-recipes.remove(<ore:plateIron>);
-recipes.remove(<ore:plateLead>);
-recipes.remove(<ore:plateNickel>);
-recipes.remove(<ore:platePlatinum>);
-recipes.remove(<ore:plateSignalum>);
-recipes.remove(<ore:plateSilver>);
-recipes.remove(<ore:plateSteel>);
-recipes.remove(<ore:plateTin>);
-
-//Tool Box
-recipes.addShaped(<artisanworktables:mechanical_toolbox>, [[<thermalfoundation:material:24>, <thermalfoundation:material:355>, <thermalfoundation:material:24>],[<minecraft:stone_button>, <artisanworktables:toolbox>, <minecraft:stone_button>], [<thermalfoundation:material:24>, <thermalfoundation:material:355>, <thermalfoundation:material:24>]]);
-recipes.addShaped(<artisanworktables:toolbox>, [[<enderio:item_material:10>, <thermalfoundation:material:320>, <enderio:item_material:10>],[<minecraft:stone_button>, <minecraft:chest>, <minecraft:stone_button>], [<enderio:item_material:10>, <thermalfoundation:material:320>, <enderio:item_material:10>]]);
-
 
 val recipestoRemove =
 [
   <embers:plate_dawnstone>,
+  <randomthings:fertilizeddirt>,
+  <farmingforblockheads:fertilizer>,
+  <farmingforblockheads:fertilizer:1>,
+  <farmingforblockheads:fertilizer:2>,
 ]
  as IItemStack[];
 
@@ -43,7 +22,13 @@ for item in recipestoRemove {
 	recipes.remove(item);
 }
 
-//Mason
+
+//Tool Box
+recipes.addShaped(<artisanworktables:mechanical_toolbox>, [[<thermalfoundation:material:24>, <thermalfoundation:material:355>, <thermalfoundation:material:24>],[<minecraft:stone_button>, <artisanworktables:toolbox>, <minecraft:stone_button>], [<thermalfoundation:material:24>, <thermalfoundation:material:355>, <thermalfoundation:material:24>]]);
+recipes.addShaped(<artisanworktables:toolbox>, [[<enderio:item_material:10>, <thermalfoundation:material:320>, <enderio:item_material:10>],[<minecraft:stone_button>, <minecraft:chest>, <minecraft:stone_button>], [<enderio:item_material:10>, <thermalfoundation:material:320>, <enderio:item_material:10>]]);
+
+
+//--------------Mason Table------------------//
 
 recipes.addShaped(<artisanworktables:worktable:2>, [[<minecraft:brick>, <minecraft:brick>, <minecraft:brick>],[null, <ore:logWood>, null], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
 
@@ -59,11 +44,15 @@ RecipeBuilder.get("mason")
   .create();
 
 
-//Blacksmith
+//--------------Blacksmith------------------//
 
-recipes.addShaped(<artisanworktables:worktable:3>, [[<ore:plateInvar>, <ore:plateInvar>, <ore:plateInvar>],[null, <ore:logWood>, null], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
+recipes.addShaped(<artisanworktables:worktable:3>, [
+  [<ore:plateInvar>, <ore:plateInvar>, <ore:plateInvar>],
+  [null, <ore:logWood>, null], 
+  [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
 
 
+//--------------Plates------------------
 
 val artisansPlates as IItemStack[IOreDictEntry] = {
 	<ore:ingotBronze>: <thermalfoundation:material:355>,
@@ -112,6 +101,44 @@ RecipeBuilder.get("blacksmith")
   .addOutput(plate)
   .create();
 }
+
+
+//--------------Gears------------------
+
+recipes.addShaped(<artisanworktables:workstation:3>, [
+[<thermalfoundation:material:352>, <thermalfoundation:material:352>, <thermalfoundation:material:352>],
+[<thermalfoundation:material:352>, <artisanworktables:worktable:3>, <thermalfoundation:material:352>], 
+[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>]
+]);
+
+<ore:stickIronwood>.add(<contenttweaker:rod_ironwood>);
+
+val artisansGears as IOreDictEntry[][IItemStack] = {
+  <thermalfoundation:material:288>:[<ore:ingotSteel>,<ore:stickSteel>],
+  <thermalfoundation:material:24>:[<ore:ingotIron>,<ore:stickIron>],
+  <thermalfoundation:material:25>:[<ore:ingotGold>,<ore:stickGold>],
+  <thaumicperiphery:gear_brass>:[<ore:ingotBrass>,<ore:stickBrass>],
+  <thermalfoundation:material:292>:[<ore:ingotConstantan>,<ore:stickConstantan>],
+  <moreplates:ardite_gear>:[<ore:ingotArdite>,<ore:stickArdite>],
+  <thermalfoundation:material:256>:[<ore:ingotCopper>,<ore:stickCopper>],
+  <thermalfoundation:material:291>:[<ore:ingotBronze>,<ore:stickBronze>],
+  <moreplates:ironwood_gear>:[<ore:ingotIronwood>,<ore:stickIronwood>],
+} as IOreDictEntry[][IItemStack];
+
+for gear, material in artisansGears {
+  RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, material[0], null],
+    [material[0], material[1], material[0]],
+    [null, material[0], null]])
+  .setFluid(<liquid:lava> * 50)
+  .addTool(<ore:artisansFile>, 20)
+  .addTool(<ore:artisansHammer>, 20)
+  .addOutput(gear)
+  .create();
+}
+
+
 //--------------Rods------------------
 
 val artisansRods as IItemStack[IOreDictEntry] = {
@@ -141,124 +168,27 @@ RecipeBuilder.get("blacksmith")
   .create();
 }
 
-
-
-//--------------Gears------------------
-recipes.addShaped(<artisanworktables:workstation:3>, [
-[<thermalfoundation:material:352>, <thermalfoundation:material:352>, <thermalfoundation:material:352>],
-[<thermalfoundation:material:352>, <artisanworktables:worktable:3>, <thermalfoundation:material:352>], 
-[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>]
-]);
-
-
-//Steel
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <thermalfoundation:material:160>, null],
-    [<thermalfoundation:material:160>, <ore:stickSteel>, <thermalfoundation:material:160>],
-    [null, <thermalfoundation:material:160>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<thermalfoundation:material:288>)
-  .create();
-
-  //Iron
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <minecraft:iron_ingot>, null],
-    [<minecraft:iron_ingot>, <ore:stickIron>, <minecraft:iron_ingot>],
-    [null, <minecraft:iron_ingot>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<thermalfoundation:material:24>)
-  .create();
-
-  //Gold
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <minecraft:gold_ingot>, null],
-    [<minecraft:gold_ingot>, <ore:stickGold>, <minecraft:gold_ingot>],
-    [null, <minecraft:gold_ingot>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<thermalfoundation:material:25>)
-  .create();
-
-  //Brass
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <ore:ingotBrass>, null],
-    [<ore:ingotBrass>, <ore:stickBrass>, <ore:ingotBrass>],
-    [null, <ore:ingotBrass>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<thaumicperiphery:gear_brass>)
-  .create();
-
-  //Constantan
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <thermalfoundation:material:164>, null],
-    [<thermalfoundation:material:164>, <ore:stickConstantan>, <thermalfoundation:material:164>],
-    [null, <thermalfoundation:material:164>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<thermalfoundation:material:292>)
-  .create();
-
-    //Ardite
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <tconstruct:ingots:1>, null],
-    [<tconstruct:ingots:1>, <ore:stickArdite>, <tconstruct:ingots:1>],
-    [null, <tconstruct:ingots:1>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<moreplates:ardite_gear>)
-  .create();
-
-    //Copper
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <ore:ingotCopper>, null],
-    [<ore:ingotCopper>, <ore:stickCopper>, <ore:ingotCopper>],
-    [null, <ore:ingotCopper>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<thermalfoundation:material:256>)
-  .create();
-
-    //Bronze
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <ore:ingotBronze>, null],
-    [<ore:ingotBronze>, <ore:stickBronze>, <ore:ingotBronze>],
-    [null, <ore:ingotBronze>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<thermalfoundation:material:291>)
-  .create();
-
-    //Ironwood
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <ore:ingotIronwood>, null],
-    [<ore:ingotIronwood>, <contenttweaker:rod_ironwood>, <ore:ingotIronwood>],
-    [null, <ore:ingotIronwood>, null]])
-  .setFluid(<liquid:lava> * 50)
-  .addTool(<ore:artisansFile>, 20)
-  .addTool(<ore:artisansHammer>, 20)
-  .addOutput(<moreplates:ironwood_gear>)
-  .create();
   
+//--------------Wires------------------
+<ore:artisansCutters>.add(<immersiveengineering:tool:1>);
+
+val WireCutting as IItemStack[IOreDictEntry] = {
+  <ore:plateCopper>:<immersiveengineering:material:20>,
+  <ore:plateElectrum>:<immersiveengineering:material:21>,
+  <ore:plateAluminum>:<immersiveengineering:material:22>,
+  <ore:plateSteel>:<immersiveengineering:material:23>,
+} as IItemStack[IOreDictEntry];
+
+for plate, wire in WireCutting {
+  RecipeBuilder.get("blacksmith")
+  .setShapeless([plate])
+  .setFluid(<liquid:lava> * 25)
+  .addTool(<ore:artisansCutters>, 10)
+  .addOutput(wire)
+  .create();
+	recipes.remove(wire);
+}
+
 
 ###   ARMOR    ###
 recipes.addShaped(<artisanworktables:workshop:3>, [[<moreplates:ironwood_plate>, <moreplates:ironwood_plate>, <moreplates:ironwood_plate>],[<moreplates:ironwood_plate>, <artisanworktables:workstation:3>, <moreplates:ironwood_plate>], [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]]);
@@ -417,26 +347,102 @@ RecipeBuilder.get("blacksmith")
   .create();
 
 
+//--------------Farmers Table------------------//
 
-//--------------Wires------------------
-<ore:artisansCutters>.add(<immersiveengineering:tool:1>);
+recipes.addShaped(<artisanworktables:workstation:10>, [[<thermalfoundation:material:355>, <ore:dirt>, <thermalfoundation:material:355>],[null, <immersiveengineering:treated_wood>, null], [<immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>]]);
 
-val WireCutting as IItemStack[IOreDictEntry] = {
-  <ore:plateCopper>:<immersiveengineering:material:20>,
-  <ore:plateElectrum>:<immersiveengineering:material:21>,
-  <ore:plateAluminum>:<immersiveengineering:material:22>,
-  <ore:plateSteel>:<immersiveengineering:material:23>,
-} as IItemStack[IOreDictEntry];
-
-for plate, wire in WireCutting {
-  RecipeBuilder.get("blacksmith")
-  .setShapeless([plate])
-  .setFluid(<liquid:lava> * 25)
-  .addTool(<ore:artisansCutters>, 10)
-  .addOutput(wire)
+// Crop Sticks
+RecipeBuilder.get("farmer")
+  .setShapeless([<ore:logWood>])
+  .setFluid(<liquid:creosote> * 500)
+  .addTool(<ore:artisansHandsaw>, 5)
+//  .addTool(<ore:artisansTSquare>, 1)
+  .addOutput(<agricraft:crop_sticks>*4)
+  .setExtraOutputOne(<thermalfoundation:material:800>, 0.10)
   .create();
-	recipes.remove(wire);
-}
+RecipeBuilder.get("farmer")
+  .setShapeless([<ore:logWood>])
+  .setFluid(<liquid:sap> * 250)
+  .addTool(<ore:artisansHandsaw>, 5)
+//  .addTool(<ore:artisansTSquare>, 1)
+  .addOutput(<agricraft:crop_sticks>*8)
+  .setExtraOutputOne(<thermalfoundation:material:800>, 0.10)
+  .create();
+RecipeBuilder.get("farmer")
+  .setShapeless([<ore:logWood>])
+  .setFluid(<liquid:resin> * 250)
+  .addTool(<ore:artisansHandsaw>, 5)
+//  .addTool(<ore:artisansTSquare>, 1)
+  .addOutput(<agricraft:crop_sticks>*8)
+  .setExtraOutputOne(<thermalfoundation:material:800>, 0.10)
+  .create();
+
+//Elemental Soil
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [null, <thermalfoundation:fertilizer:1>, null],
+    [<thermalfoundation:fertilizer:1>, <prefab:block_compressed_dirt>, <thermalfoundation:fertilizer:1>],
+    [null, <thermalfoundation:fertilizer:1>, null]])
+  .setSecondaryIngredients([<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})])
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<contenttweaker:elemental_soil> * 9)
+  .create();
+  
+//Phyto-BIG BOI GROW
+  RecipeBuilder.get("farmer")
+  .setShapeless([<thermalfoundation:fertilizer>])
+  .setFluid(<liquid:sap> * 200)
+  .addOutput(<thermalfoundation:fertilizer:1>)
+  .create();
+
+//Phyto-Gro
+  RecipeBuilder.get("farmer")
+  .setShapeless([<cyclicmagic:peat_fuel>, <ore:dustCharcoal>, <ore:dustSaltpeter>])
+  .addOutput(<thermalfoundation:fertilizer> * 4)
+  .create();
+
+  RecipeBuilder.get("farmer")
+  .setShapeless([ <cyclicmagic:peat_fuel_enriched>, <ore:dustCharcoal>, <contenttweaker:limestone_flux>])
+  .addOutput(<thermalfoundation:fertilizer> * 16)
+  .create();
+
+
+//Fertilized Soil
+  RecipeBuilder.get("farmer")
+  .setShaped([
+    [<minecraft:dye:15>, <minecraft:rotten_flesh>, <minecraft:dye:15>],
+    [<minecraft:rotten_flesh>, <minecraft:dirt>, <minecraft:rotten_flesh>],
+    [<minecraft:dye:15>, <minecraft:rotten_flesh>, <minecraft:dye:15>]])
+  .addTool(<ore:artisansTrowel>, 5)
+  .addOutput(<randomthings:fertilizeddirt>)
+  .create();
+
+
+//Colored Fertilizer
+  RecipeBuilder.get("farmer")
+  .setShaped([
+    [<ore:dyeGreen>, <ore:dyeGreen>, <ore:dyeGreen>],
+    [<minecraft:gold_nugget>, <minecraft:wheat_seeds>, <minecraft:gold_nugget>],
+    [<minecraft:dye:15>, <minecraft:dye:15>, <minecraft:dye:15>]])
+  .addOutput(<farmingforblockheads:fertilizer:1> * 4)
+  .create();
+
+  RecipeBuilder.get("farmer")
+  .setShaped([
+    [<ore:dyeYellow>, <ore:dyeYellow>, <ore:dyeYellow>],
+    [<minecraft:gold_nugget>, <minecraft:wheat_seeds>, <minecraft:gold_nugget>],
+    [<minecraft:dye:15>, <minecraft:dye:15>, <minecraft:dye:15>]])
+  .addOutput(<farmingforblockheads:fertilizer:2> * 4)
+  .create();
+
+  RecipeBuilder.get("farmer")
+  .setShaped([
+    [<ore:dyeRed>, <ore:dyeRed>, <ore:dyeRed>],
+    [<minecraft:gold_nugget>, <minecraft:wheat_seeds>, <minecraft:gold_nugget>],
+    [<minecraft:dye:15>, <minecraft:dye:15>, <minecraft:dye:15>]])
+  .addOutput(<farmingforblockheads:fertilizer> * 4)
+  .create();
+
 
 ##########################################################################################
-print("==================== end of mods artisansworktables.zs ====================");
+print("==================== end of artisans_worktables.zs ====================");

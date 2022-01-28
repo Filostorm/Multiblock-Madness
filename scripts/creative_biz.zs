@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 
 import mods.thaumcraft.Infusion;
 import mods.botaniatweaks.Agglomeration;
@@ -51,32 +52,7 @@ for item in EXitemstoRemove {
 	mods.avaritia.ExtremeCrafting.remove(item);
 }
 
-
-//Crystal Matrix unpacking
-recipes.addShapeless(<avaritia:resource:1> * 9, [<avaritia:block_resource:2>]);
-
-//Entasngled Singularities
-mods.techreborn.implosionCompressor.addRecipe(<appliedenergistics2:material:48> * 2, null, <appliedenergistics2:material:47>, <techreborn:dust:19>*2, 40, 500);
-
-
-//Luminessence
-recipes.removeShapeless(<extendedcrafting:material:7> * 2, [<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:redstone>, <minecraft:gunpowder>]);
-/* MOVED TO CONFIG
-Vat.removeRecipe(<liquid:liquid_sunshine>);
-Vat.addRecipe(<liquid:liquid_sunshine>, 0.5, <liquid:glowstone_nak>, 
-[<mowziesmobs:glowing_jelly>,<randomthings:glowingmushroom>,<thermalfoundation:material:894>,<enderio:block_holy_fog>],[3,2,1.5,1], 
-[<arcanearchives:radiant_dust>,<astralsorcery:itemusabledust>,<thaumcraft:nitor_yellow>,<botania:corporeaspark>],[1,1,2,3], 100000);
-*/
-Crystallizer.addRecipe(<liquid:liquid_sunshine>*1000, <extendedcrafting:material:7>, 1, 8);
-
-
-//Ultime Ingot
-Agglomeration.addRecipe(<extendedcrafting:material:32>, 
-[<contenttweaker:ingot_thermal_alloy>, <extendedcrafting:material:48>, <contenttweaker:ingot_mek_alloy>, <techreborn:ingot:25>, <plustic:mirioningot>]
-,1000000,0x004a80,0xa432a8,
-<avaritia:block_resource:2>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:4>,
-null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
-);
+// ----==== RENAMING & TOOLTIPS ====---- //
 
 <extendedcrafting:material>.displayName = "Midnight Ingot";
 <extendedcrafting:storage>.displayName = "Midnight Block";
@@ -103,6 +79,22 @@ null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
 <extendedcrafting:table_elite>.addTooltip(format.lightPurple("Shift-Right click the previous tier table with the catalyst"));
 <extendedcrafting:table_ultimate>.addTooltip(format.lightPurple("Shift-Right click the previous tier table with the catalyst"));
 
+
+// ----==== ENDGAME MATERIALS ====---- //
+
+//Midnight Block Uncrafting
+recipes.addShapeless(<extendedcrafting:material> * 9, [<extendedcrafting:storage>]);
+
+//Luminessence
+recipes.removeShapeless(<extendedcrafting:material:7> * 2, [<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:redstone>, <minecraft:gunpowder>]);
+/* MOVED TO CONFIG
+Vat.removeRecipe(<liquid:liquid_sunshine>);
+Vat.addRecipe(<liquid:liquid_sunshine>, 0.5, <liquid:glowstone_nak>, 
+[<mowziesmobs:glowing_jelly>,<randomthings:glowingmushroom>,<thermalfoundation:material:894>,<enderio:block_holy_fog>],[3,2,1.5,1], 
+[<arcanearchives:radiant_dust>,<astralsorcery:itemusabledust>,<thaumcraft:nitor_yellow>,<botania:corporeaspark>],[1,1,2,3], 100000);
+*/
+Crystallizer.addRecipe(<liquid:liquid_sunshine>*1000, <extendedcrafting:material:7>, 1, 8);
+
 // ExC Components
 Empowerer.addRecipe(<extendedcrafting:material:14>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered:5>, <advancedrocketry:ic>, <botania:rune:3>, 1000000, 400, [0.9, 0.8, 1]);
 Empowerer.addRecipe(<extendedcrafting:material:15>, <extendedcrafting:material:2>, <extendedcrafting:material:7>, <actuallyadditions:item_crystal_empowered>, <qmd:semiconductor:4>, <botania:rune:1>, 1000000, 400, [0.9, 0.9, 0.1]);
@@ -124,44 +116,9 @@ CombinationCrafting.addRecipe(<extendedcrafting:material:19>, 16000000, <extende
 [<extendedcrafting:material:7>, <extendedcrafting:material:14>, <extendedcrafting:material:32>, <extendedcrafting:material:15>, <extendedcrafting:material:7>, <extendedcrafting:material:16>, <extendedcrafting:material:32>, <extendedcrafting:material:17>]);
 
 
-//New Neutronium Essence output
-recipes.addShaped(<avaritia:resource:2> * 3, [[<mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>],[<mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>], [<mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>]]);
+//Entangled Singularities
+mods.techreborn.implosionCompressor.addRecipe(<appliedenergistics2:material:48> * 2, null, <appliedenergistics2:material:47>, <techreborn:dust:19>*2, 40, 500);
 
-
-//mods.iceandfire.recipes.addFireDragonForgeRecipe(<techreborn:ingot:25>, <actuallyadditions:item_crystal_empowered:3>, <extendedcrafting:material>);
-
-<avaritia:resource:2>.addTooltip(format.lightPurple("Collected by Orbital Mining from a Space Station"));
-
-//AR Creative Power Plug
-recipes.addShaped(<libvulpes:creativepowerbattery>, [[<ore:circuitUltimate>, <extendedcrafting:material:19>, <ore:circuitUltimate>],[<avaritia:resource:6>, <libvulpes:forgepowerinput>, <avaritia:resource:6>], [<ore:circuitUltimate>, <extendedcrafting:material:19>, <mekanism:controlcircuit:3>]]);
-
-//Infinity ingot
-mods.techreborn.fusionReactor.addRecipe(<avaritia:resource:5>, <avaritia:resource:4>*4, <avaritia:resource:6>, 100000000, -25000000, 2400, 50);
-
-
-mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:insanium:1>, [
-	[null, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, null], 
-	[<ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceSupremium>, <ore:essenceSupremium>], 
-	[<ore:essenceSupremium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
-	[<ore:essenceSupremium>, <ore:essenceInsanium>, <techreborn:uumatter>, <ore:shardProsperity>, <extendedcrafting:material:13>, <ore:shardProsperity>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
-	[<ore:essenceSupremium>, <ore:essenceInsanium>, <techreborn:uumatter>, <extendedcrafting:material:13>, <ore:seedWheat>, <extendedcrafting:material:13>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
-	[<ore:essenceSupremium>, <ore:essenceInsanium>, <techreborn:uumatter>, <ore:shardProsperity>, <extendedcrafting:material:13>, <ore:shardProsperity>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
-	[<ore:essenceSupremium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
-	[<ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceSupremium>, <ore:essenceSupremium>], 
-	[null, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, null]
-]);
-
-//Sponge
-Infusion.registerRecipe("creative_flux_sponge", "", 
-<thaumcraft:creative_flux_sponge>, 20, 
-[<aspect:caeles>*10, <aspect:vacuos>*200, <aspect:aer>*50], 
-<openblocks:sponge>, 
-[<extendedcrafting:trimmed:5>,<thaumcraft:plate:3>, <botania:manaresource:8>, <thaumcraft:sanity_soap>,
-<extendedcrafting:trimmed:5>,<thaumcraft:plate:3>, <botania:manaresource:8>, <thaumcraft:bath_salts>]);
-
-
-//Midnight Block Uncrafting
-recipes.addShapeless(<extendedcrafting:material> * 9, [<extendedcrafting:storage>]);
 
 //Twilight Ingot
 <extendedcrafting:material:48>.displayName = "Twilight Ingot";
@@ -182,7 +139,101 @@ EnderCrafting.addShaped(<extendedcrafting:material:40>,
 [<thermalfoundation:material:1028>, <actuallyadditions:item_misc:19>, <thermalfoundation:material:1028>], 
 [null, <thermalfoundation:material:1028>, null]]);
 
-//Cosmic Meatballs
+
+// Crystaltine
+mods.extendedcrafting.TableCrafting.remove(<extendedcrafting:material:24>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:material:24>, [
+    [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <arcanearchives:shaped_quartz>], 
+    [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:5>, <enderio:item_alloy_endergy_ingot:1>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:2>, <arcanearchives:shaped_quartz>], 
+    [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:5>, <enderio:item_alloy_endergy_ingot:1>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:2>, <arcanearchives:shaped_quartz>], 
+    [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <arcanearchives:shaped_quartz>]
+]);
+
+// Starmetal Cluster
+Infusion.registerRecipe("starmetal_cluster", "", 
+<contenttweaker:starmetal_cluster>, 10, 
+[<aspect:tenebrae>*50, <aspect:lux>*50], 
+<thaumcraft:ingot:1>, 
+[<jaopca:item_crystalastralstarmetal>,<jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>,
+<jaopca:item_crystalastralstarmetal>,<jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>]);
+
+//Crystal Matrix unpacking
+recipes.addShapeless(<avaritia:resource:1> * 9, [<avaritia:block_resource:2>]);
+
+
+//Ultime Ingot
+Agglomeration.addRecipe(<extendedcrafting:material:32>, 
+[<contenttweaker:ingot_thermal_alloy>, <extendedcrafting:material:48>, <contenttweaker:ingot_mek_alloy>, <techreborn:ingot:25>, <plustic:mirioningot>]
+,1000000,0x004a80,0xa432a8,
+<avaritia:block_resource:2>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:4>,
+null, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:4>
+);
+
+
+//New Neutronium Essence output
+recipes.addShaped(<avaritia:resource:2> * 3, [[<mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>],[<mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>], [<mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>, <mysticalagradditions:neutronium_essence>]]);
+
+
+//mods.iceandfire.recipes.addFireDragonForgeRecipe(<techreborn:ingot:25>, <actuallyadditions:item_crystal_empowered:3>, <extendedcrafting:material>);
+
+<avaritia:resource:2>.addTooltip(format.lightPurple("Collected by Orbital Mining from a Space Station"));
+
+/*mods.qmd.target_chamber.addRecipe(IIngredient inputItem, IIngredient inputParticle, IIngredient outputItem, IIngredient outputParticle1, IIngredient outputParticle2, IIngredient outputParticle3, long maxEnergy, double crossSection, {long energyReleased, double processRadiation})
+Note: the input particles amount is the amount of particles needed to convert the item, Its energy is the minimum energy and its focus is the minimum focus. The output particles amount is the max amount/t released per input particle/t. The convention(i.e not required but recommended) is that positive particles are in outputParticle1, neutral particles in outputParticle2 and negitive particles in outputParticle3. This is because outputParticle2 can't be steered so will always come out the back of the chamber.
+*/
+
+//Neutronium
+/*
+mods.qmd.target_chamber.addRecipe(<extendedcrafting:material>, ((<particle:neutron>*1000000)^50000)~2.0, <avaritia:resource:4>, 
+null, null, null, 53000, 0.28, -100000, 0.001);
+*/
+
+
+//Infinity ingot
+mods.techreborn.fusionReactor.addRecipe(<avaritia:resource:5>, <avaritia:resource:4>*4, <avaritia:resource:6>, 100000000, -25000000, 2400, 50);
+
+
+// Bedrock
+recipes.addShapeless(<avaritia:resource:3> * 9, [<avaritia:resource:4>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<minecraft:bedrock>, 100000000, <avaritia:block_resource:1>, 
+[<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,
+<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,
+<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,
+<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>]);
+
+
+// ----==== CREATIVE ITEMS ====---- //
+
+// Creative Storage
+mods.extendedcrafting.TableCrafting.addShaped(0, <storagedrawers:upgrade_creative>, [
+	[<appliedenergistics2:material:47>, <actuallyadditions:block_giant_chest_large>, <mekanism:basicblock:6>.withTag({tier: 3}), <actuallyadditions:block_giant_chest_large>, <appliedenergistics2:material:47>], 
+	[<actuallyadditions:block_giant_chest_large>, <storagedrawers:upgrade_storage:4>, <storagedrawers:upgrade_storage:4>, <storagedrawers:upgrade_storage:4>, <actuallyadditions:block_giant_chest_large>], 
+	[<mekanism:basicblock:6>.withTag({tier: 3}), <storagedrawers:upgrade_storage:4>, <extendedcrafting:material:13>, <storagedrawers:upgrade_storage:4>, <mekanism:basicblock:6>.withTag({tier: 3})], 
+	[<actuallyadditions:block_giant_chest_large>, <storagedrawers:upgrade_storage:4>, <storagedrawers:upgrade_storage:4>, <storagedrawers:upgrade_storage:4>, <actuallyadditions:block_giant_chest_large>], 
+	[<appliedenergistics2:material:47>, <actuallyadditions:block_giant_chest_large>, <mekanism:basicblock:6>.withTag({tier: 3}), <actuallyadditions:block_giant_chest_large>, <appliedenergistics2:material:47>]
+]);
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:insanium:1>, [
+	[null, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, null], 
+	[<ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceSupremium>, <ore:essenceSupremium>], 
+	[<ore:essenceSupremium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
+	[<ore:essenceSupremium>, <ore:essenceInsanium>, <techreborn:uumatter>, <ore:shardProsperity>, <extendedcrafting:material:13>, <ore:shardProsperity>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
+	[<ore:essenceSupremium>, <ore:essenceInsanium>, <techreborn:uumatter>, <extendedcrafting:material:13>, <ore:seedWheat>, <extendedcrafting:material:13>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
+	[<ore:essenceSupremium>, <ore:essenceInsanium>, <techreborn:uumatter>, <ore:shardProsperity>, <extendedcrafting:material:13>, <ore:shardProsperity>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
+	[<ore:essenceSupremium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceSupremium>], 
+	[<ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceInsanium>, <ore:essenceSupremium>, <ore:essenceSupremium>], 
+	[null, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, <ore:essenceSupremium>, null]
+]);
+
+// Sponge
+Infusion.registerRecipe("creative_flux_sponge", "", 
+<thaumcraft:creative_flux_sponge>, 20, 
+[<aspect:caeles>*10, <aspect:vacuos>*200, <aspect:aer>*50], 
+<openblocks:sponge>, 
+[<extendedcrafting:trimmed:5>,<thaumcraft:plate:3>, <botania:manaresource:8>, <thaumcraft:sanity_soap>,
+<extendedcrafting:trimmed:5>,<thaumcraft:plate:3>, <botania:manaresource:8>, <thaumcraft:bath_salts>]);
+
+// Cosmic Meatballs
 mods.extendedcrafting.TableCrafting.addShapeless(0, <avaritia:cosmic_meatballs>*4, [<avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, 
 <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <xlfoodmod:super_energy_drink>, 
 <xlfoodmod:grilled_cheese_sandwich>, <xlfoodmod:strawberry_icecream>, <xlfoodmod:vegetable_soup>, <xlfoodmod:cheeseburger>, <avaritia:resource:2>, 
@@ -193,7 +244,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(0, <avaritia:cosmic_meatballs>*
 <xlfoodmod:slice_of_pizza>, <xlfoodmod:beef_stew>, <xlfoodmod:hot_dog>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, 
 <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>]);
 
-//Cosmic stew
+// Cosmic stew
 mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:ultimate_stew>, [
 	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
 	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
@@ -207,7 +258,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:ultimate_stew>, [
 ]);
 
 
-//Endest Pearl
+// Endest Pearl
 mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:endest_pearl>, [
 	[null, null, null, <ore:endstone>, <ore:endstone>, <ore:endstone>, null, null, null], 
 	[null, null, <ore:endstone>, <ore:endstone>, <rftools:infused_enderpearl>, <ore:endstone>, <ore:endstone>, null, null], 
@@ -220,7 +271,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:endest_pearl>, [
 	[null, null, null, <ore:endstone>, <ore:endstone>, <ore:endstone>, null, null, null]
 ]);
 
-//Infinity Catalyst
+// Infinity Catalyst
 mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:resource:5>, [
 	[null, null, null, null, <enderio:item_material:55>, null, null, null, null], 
 	[null, <extendedcrafting:singularity_custom:12>, null, null, <ebwizardry:astral_diamond>, null, null, <extendedcrafting:singularity_custom:5>, null], 
@@ -233,7 +284,10 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:resource:5>, [
 	[null, null, null, null, <techreborn:cloakingdevice>, null, null, null, null]
 ]);
 
-//Guilty Pool
+// AR Creative Power Plug
+recipes.addShaped(<libvulpes:creativepowerbattery>, [[<ore:circuitUltimate>, <extendedcrafting:material:19>, <ore:circuitUltimate>],[<avaritia:resource:6>, <libvulpes:forgepowerinput>, <avaritia:resource:6>], [<ore:circuitUltimate>, <extendedcrafting:material:19>, <mekanism:controlcircuit:3>]]);
+
+// Guilty Pool
 mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool:1>, [
 	[null, null, null, null, null, null, null, null, null], 
 	[null, null, null, null, null, null, null, null, null], 
@@ -248,7 +302,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool:1>, [
 recipes.addShapeless(<botania:pool:1>, [<botania:manatablet>.withTag({mana: 500000, creative: 1 as byte})]);
 recipes.addShapeless(<botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}), [<botania:pool:1>]);
 
-//Creative Tank
+// Creative Tank
 mods.extendedcrafting.TableCrafting.addShaped(0,<mekanism:machineblock2:11>.withTag({tier: 4}), [
 	[<techreborn:quantum_tank>, <thaumadditions:mithminite_plate>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <thaumadditions:mithminite_plate>, <techreborn:quantum_tank>], 
 	[<thaumadditions:mithminite_plate>, <avaritia:resource:5>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <ore:plateCrystalMatrix>, <avaritia:resource:5>, <thaumadditions:mithminite_plate>], 
@@ -276,7 +330,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <mekanism:machineblock2:11>.wit
 recipes.addShapeless(<mekanism:machineblock2:11>.withTag({tier: 4}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte})]);
 recipes.addShapeless(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}), [<mekanism:machineblock2:11>.withTag({tier: 4})]);
 
-//Creative Essentia Cell
+// Creative Essentia Cell
 mods.extendedcrafting.TableCrafting.addShaped(0, <thaumicenergistics:essentia_cell_creative>, [
 	[<threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>], 
 	[<threng:material:14>, <ore:ingotInfinity>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <thaumadditions:mithrillium_resonator>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <ore:ingotInfinity>, <threng:material:14>], 
@@ -289,7 +343,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <thaumicenergistics:essentia_ce
 	[<threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>]
 ]);
 
-//Wireless Termanal
+// Wireless Termanal
 mods.extendedcrafting.TableCrafting.addShaped(0, <ae2wtlib:wut_creative>.withTag({StoredTerminals: [{ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "wft:wft_creative", Count: 1 as byte, Damage: 0 as short}, {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "wct:wct_creative", Count: 1 as byte, Damage: 0 as short}], IsInRange: 0 as byte, SelectedTerminal: 0, internalCurrentPower: 1600000.0}), [
 	[<enderutilities:frame>, <enderutilities:frame>, <enderutilities:frame>, <enderutilities:frame>, <enderio:item_capacitor_stellar>, <enderutilities:frame>, <enderutilities:frame>, <enderutilities:frame>, <enderutilities:frame>], 
 	[<enderutilities:frame>, <enderio:block_enhanced_wireless_charger>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <appliedenergistics2:wireless_access_point>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <enderio:block_enhanced_wireless_charger>, <enderutilities:frame>], 
@@ -302,7 +356,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <ae2wtlib:wut_creative>.withTag
 	[<enderutilities:frame>, <enderutilities:frame>, <enderutilities:frame>, <enderutilities:frame>, <enderio:item_capacitor_stellar>, <enderutilities:frame>, <enderutilities:frame>, <enderutilities:frame>, <enderutilities:frame>]
 ]);
 
-//COil
+// Genesis Coil
 mods.extendedcrafting.TableCrafting.addShaped(0, <randomthings:spectrecoil_genesis>, [
 	[null, null, null, null, null, null, null, null, null], 
 	[null, null, null, null, null, null, null, null, null], 
@@ -314,6 +368,77 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <randomthings:spectrecoil_genes
 	[null, null, null, null, null, null, null, null, null], 
 	[null, null, null, null, null, null, null, null, null]
 ]);
+
+// Tokens
+val Tokens as ILiquidStack[IItemStack] = {
+	<contenttweaker:token_tier1>: <liquid:moltentokeniron>,
+	<contenttweaker:token_tier2>: <liquid:moltentokenbronze>,
+	<contenttweaker:token_tier3>: <liquid:moltentokensteel>,
+	<contenttweaker:token_tier4>: <liquid:moltentokenrefinediron>,
+	<contenttweaker:token_tier5>: <liquid:moltentokenosmium>,
+	<contenttweaker:token_tier6>: <liquid:moltentokeniridium>,
+	<contenttweaker:token_tier7>: <liquid:moltentokenultimate>,
+	<contenttweaker:token_tier8>: <liquid:moltentokeninfinity>,
+} as ILiquidStack[IItemStack];
+for token, molten in Tokens {
+// Casting.addTableRecipe(token, <avaritia:resource:5>, molten, 1000, false, 50);
+mods.nuclearcraft.Infuser.addRecipe(<avaritia:resource:5>, molten * 1000, token, 20.0, 16.0);
+mods.thermalexpansion.Transposer.addFillRecipe(token, <avaritia:resource:5>, molten * 1000, 8000000);
+}
+
+/*
+Alloy.addRecipe(<liquid:moltentokeniron> * 1000, [<liquid:iron> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokenbronze> * 1000, [<liquid:bronze> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokensteel> * 1000, [<liquid:steel> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokenrefinediron> * 1000, [<liquid:refined_iron> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokenosmium> * 1000, [<liquid:osmium> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokeniridium> * 1000, [<liquid:iridium> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokenultimate> * 1000, [<liquid:ultimate> * 1296, <liquid:moltenbedrock> * 1000]);
+Alloy.addRecipe(<liquid:moltentokeninfinity> * 1000, [<liquid:infinity> * 1296, <liquid:moltenbedrock> * 1000]);
+*/
+
+/*
+val adventureTokens as ILiquidStack[IItemStack] = {
+	<contenttweaker:adventure_token_tier1>: <liquid:moltentokeniron>,
+	<contenttweaker:adventure_token_tier2>: <liquid:moltentokenbronze>,
+	<contenttweaker:adventure_token_tier3>: <liquid:moltentokensteel>,
+	<contenttweaker:adventure_token_tier4>: <liquid:moltentokenrefinediron>,
+	<contenttweaker:adventure_token_tier5>: <liquid:moltentokenosmium>,
+} as ILiquidStack[IItemStack];
+for token, molten in adventureTokens {
+Casting.addTableRecipe(token, <avaritia:infinity_sword>, molten, 1000, false, 50);
+}
+val techTokens as ILiquidStack[IItemStack] = {
+	<contenttweaker:tech_token_tier1>: <liquid:moltentokeniron>,
+	<contenttweaker:tech_token_tier2>: <liquid:moltentokenbronze>,
+	<contenttweaker:tech_token_tier3>: <liquid:moltentokensteel>,
+	<contenttweaker:tech_token_tier4>: <liquid:moltentokenrefinediron>,
+	<contenttweaker:tech_token_tier5>: <liquid:moltentokenosmium>,
+} as ILiquidStack[IItemStack];
+for token, molten in techTokens {
+Casting.addTableRecipe(token, <avaritiaio:infinitecapacitor>, molten, 1000, false, 50);
+}
+val exploringTokens as ILiquidStack[IItemStack] = {
+	<contenttweaker:exploring_token_tier1>: <liquid:moltentokeniron>,
+	<contenttweaker:exploring_token_tier2>: <liquid:moltentokenbronze>,
+	<contenttweaker:exploring_token_tier3>: <liquid:moltentokensteel>,
+	<contenttweaker:exploring_token_tier4>: <liquid:moltentokenrefinediron>,
+	<contenttweaker:exploring_token_tier5>: <liquid:moltentokenosmium>,
+} as ILiquidStack[IItemStack];
+for token, molten in exploringTokens {
+Casting.addTableRecipe(token, <avaritia:infinity_axe>, molten, 1000, false, 50);
+}
+val magicTokens as ILiquidStack[IItemStack] = {
+	<contenttweaker:magic_token_tier1>: <liquid:moltentokeniron>,
+	<contenttweaker:magic_token_tier2>: <liquid:moltentokenbronze>,
+	<contenttweaker:magic_token_tier3>: <liquid:moltentokensteel>,
+	<contenttweaker:magic_token_tier4>: <liquid:moltentokenrefinediron>,
+	<contenttweaker:magic_token_tier5>: <liquid:moltentokenosmium>,
+} as ILiquidStack[IItemStack];
+for token, molten in magicTokens {
+Casting.addTableRecipe(token, <avaritia:infinity_bow>, molten, 1000, false, 50);
+}
+*/
 
 //Creative Cell
 mods.extendedcrafting.TableCrafting.addShaped(0, <appliedenergistics2:creative_storage_cell>, [
@@ -331,50 +456,7 @@ recipes.addShapeless(<appliedenergistics2:creative_storage_cell>, [<storagedrawe
 recipes.addShapeless(<storagedrawers:upgrade_creative:1>, [<appliedenergistics2:creative_storage_cell>]);
 
 
-//Creative Storage
-mods.extendedcrafting.TableCrafting.addShaped(0, <storagedrawers:upgrade_creative>, [
-	[<appliedenergistics2:material:47>, <actuallyadditions:block_giant_chest_large>, <mekanism:basicblock:6>.withTag({tier: 3}), <actuallyadditions:block_giant_chest_large>, <appliedenergistics2:material:47>], 
-	[<actuallyadditions:block_giant_chest_large>, <storagedrawers:upgrade_storage:4>, <storagedrawers:upgrade_storage:4>, <storagedrawers:upgrade_storage:4>, <actuallyadditions:block_giant_chest_large>], 
-	[<mekanism:basicblock:6>.withTag({tier: 3}), <storagedrawers:upgrade_storage:4>, <extendedcrafting:material:13>, <storagedrawers:upgrade_storage:4>, <mekanism:basicblock:6>.withTag({tier: 3})], 
-	[<actuallyadditions:block_giant_chest_large>, <storagedrawers:upgrade_storage:4>, <storagedrawers:upgrade_storage:4>, <storagedrawers:upgrade_storage:4>, <actuallyadditions:block_giant_chest_large>], 
-	[<appliedenergistics2:material:47>, <actuallyadditions:block_giant_chest_large>, <mekanism:basicblock:6>.withTag({tier: 3}), <actuallyadditions:block_giant_chest_large>, <appliedenergistics2:material:47>]
-]);
-
-
-/*mods.qmd.target_chamber.addRecipe(IIngredient inputItem, IIngredient inputParticle, IIngredient outputItem, IIngredient outputParticle1, IIngredient outputParticle2, IIngredient outputParticle3, long maxEnergy, double crossSection, {long energyReleased, double processRadiation})
-Note: the input particles amount is the amount of particles needed to convert the item, Its energy is the minimum energy and its focus is the minimum focus. The output particles amount is the max amount/t released per input particle/t. The convention(i.e not required but recommended) is that positive particles are in outputParticle1, neutral particles in outputParticle2 and negitive particles in outputParticle3. This is because outputParticle2 can't be steered so will always come out the back of the chamber.
-*/
-
-//Neutronium
-/*
-mods.qmd.target_chamber.addRecipe(<extendedcrafting:material>, ((<particle:neutron>*1000000)^50000)~2.0, <avaritia:resource:4>, 
-null, null, null, 53000, 0.28, -100000, 0.001);
-*/
-
-recipes.addShapeless(<avaritia:resource:3> * 9, [<avaritia:resource:4>]);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<minecraft:bedrock>, 100000000, <avaritia:block_resource:1>, 
-[<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,
-<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,
-<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,
-<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>,<enderio:block_infinity:2>]);
-
-mods.extendedcrafting.TableCrafting.remove(<extendedcrafting:material:24>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:material:24>, [
-    [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <arcanearchives:shaped_quartz>], 
-    [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:5>, <enderio:item_alloy_endergy_ingot:1>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:2>, <arcanearchives:shaped_quartz>], 
-    [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:5>, <enderio:item_alloy_endergy_ingot:1>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal_empowered:2>, <arcanearchives:shaped_quartz>], 
-    [<arcanearchives:shaped_quartz>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:1>, <arcanearchives:shaped_quartz>]
-]);
-
-Infusion.registerRecipe("starmetal_cluster", "", 
-<contenttweaker:starmetal_cluster>, 10, 
-[<aspect:tenebrae>*50, <aspect:lux>*50], 
-<thaumcraft:ingot:1>, 
-[<jaopca:item_crystalastralstarmetal>,<jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>,
-<jaopca:item_crystalastralstarmetal>,<jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>, <jaopca:item_crystalastralstarmetal>]);
-
-
-// Temporary Ultimate Crafting Table Avaritia Recipes
+// Temporary Ultimate Crafting Table Avaritia Recipes //
 val avaritiaitemstoRemove =
 [
 <avaritia:infinity_helmet>,
@@ -546,7 +628,6 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalmechanics:creative_mec
 	[<mysticalmechanics:mergebox_frame>, <ore:gearCrystalMatrix>, <mysticalmechanics:axle_iron>, <ore:gearCrystalMatrix>, <mysticalmechanics:axle_iron>, <ore:gearCrystalMatrix>, <mysticalmechanics:axle_iron>, <ore:gearCrystalMatrix>, <mysticalmechanics:mergebox_frame>], 
 	[<ore:gearInfinity>, <mysticalmechanics:mergebox_frame>, <ore:gearInfinity>, <mysticalmechanics:axle_iron>, <mysticalmechanics:mergebox_frame>, <mysticalmechanics:axle_iron>, <ore:gearInfinity>, <mysticalmechanics:mergebox_frame>, <ore:gearInfinity>]
 ]);
-
 
 ##########################################################################################
 print("==================== end of creative biz.zs ====================");

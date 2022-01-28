@@ -1,7 +1,9 @@
-#priority 100
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
-print("==================== loading mods blank.zs ====================");
+
+#priority 101
+
+print("==================== loading ore_dic.zs ====================");
 ##########################################################################################
 
 <ore:plateVoid>.remove(<moreplates:void_plate>);
@@ -249,4 +251,4 @@ for item in hiddenGlass {
 <ore:blockGlassHardened>.add(<thermalfoundation:glass:3>);
 
 ##########################################################################################
-print("==================== end of mods blank.zs ====================");
+print("==================== end of ore_dic.zs ====================");

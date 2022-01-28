@@ -1,10 +1,13 @@
 #loader contenttweaker
-#priority 97
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Fluid;
 import mods.contenttweaker.BlockMaterial;
 import mods.contenttweaker.Color;
 
+#priority 103
+
+print("==================== loading fluids.zs ====================");
+##########################################################################################
 
 var moltenEmbers = VanillaFactory.createFluid("moltenEmbers", Color.fromHex("ed5126"));
 moltenEmbers.temperature = 6000;
@@ -127,3 +130,6 @@ crystalSlurry.gaseous = false;
 crystalSlurry.luminosity = 0;
 crystalSlurry.viscosity = 1000;
 crystalSlurry.register();
+
+##########################################################################################
+print("==================== end of fluids.zs ====================");

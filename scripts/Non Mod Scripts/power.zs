@@ -1,6 +1,9 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IIngredient;
+
+#priority 97
+
 print("==================== loading mods power.zs ====================");
 ##########################################################################################
 

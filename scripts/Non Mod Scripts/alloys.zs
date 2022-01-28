@@ -1,5 +1,3 @@
-#priority 98
-
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import mods.immersiveengineering.ArcFurnace;
@@ -14,6 +12,18 @@ import mods.tcomplement.highoven.HighOven;
 import mods.tcomplement.Overrides;
 import mods.tconstruct.Melting;
 //import mods.enderio.AlloySmelter;
+import crafttweaker.item.IIngredient;
+import mods.thermalexpansion.Compactor;
+import mods.immersiveengineering.MetalPress;
+import mods.appliedenergistics2.Inscriber;
+import mods.threng.Aggregator;
+import mods.nuclearcraft.Infuser;
+import mods.thermalexpansion.Transposer;
+import mods.inworldcrafting.FluidToItem;
+import mods.inworldcrafting.FluidToFluid;
+import mods.bloodmagic.TartaricForge;
+
+#priority 98
 
 print("==================== loading alloys.zs ====================");
 ##########################################################################################
@@ -368,28 +378,6 @@ recipes.addShaped(<contenttweaker:block_xp>,
 [<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>,<contenttweaker:ingot_xp>]]);
 recipes.addShapeless(<contenttweaker:ingot_xp>*9, [<contenttweaker:block_xp>]);
 
-// Refined Obsidian (Finally) //
-Melter.removeRecipeWithInput(<mekanism:otherdust:5>);
-Melting.removeRecipe(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
-Overrides.removeRecipe(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
-HighOven.removeMeltingOverride(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
-ArcFurnace.removeRecipe(<mekanism:ingot>);
-
-
-// Refined Iron melting bug //
-val ironChestDupe =
-[
-	<ironchest:iron_chest>,
-	<ironchest:wood_iron_chest_upgrade>,
-]
- as IItemStack[];
-
-for item in ironChestDupe {
-Melting.removeRecipe(<liquid:refined_iron>, item);
-Overrides.removeRecipe(<liquid:refined_iron>, item);
-HighOven.removeMeltingOverride(<liquid:refined_iron>, item);
-}
-
 // Adaptive Ingot Recipes //
 val alloystoAdapt =
 [
@@ -420,177 +408,148 @@ InductionSmelter.addRecipe(item * 3, <contenttweaker:adaptive_ingot>, item, 1500
 }
 
 // --==NC Fuels for Induction Furnace/Alloy Smelter==-- //
-// Recipes for Zirconium/Carbide variants of all isotopes/fuels for the Induction Furnace/Alloy Smelter
+// Recipes for Zirconium/Carbide variants of all isotopes/fuels for the Induction Furnace
 
-val NormFuel = [
-<nuclearcraft:uranium>,
-<nuclearcraft:uranium:5>,
-<nuclearcraft:uranium:10>,
-<nuclearcraft:neptunium>,
-<nuclearcraft:neptunium:5>,
-<nuclearcraft:plutonium>,
-<nuclearcraft:plutonium:5>,
-<nuclearcraft:plutonium:10>,
-<nuclearcraft:plutonium:15>,
-<nuclearcraft:americium>,
-<nuclearcraft:americium:5>,
-<nuclearcraft:americium:10>,
-<nuclearcraft:curium>,
-<nuclearcraft:curium:5>,
-<nuclearcraft:curium:10>,
-<nuclearcraft:curium:15>,
-<nuclearcraft:berkelium>,
-<nuclearcraft:berkelium:5>,
-<nuclearcraft:californium>,
-<nuclearcraft:californium:5>,
-<nuclearcraft:californium:10>,
-<nuclearcraft:californium:15>,
-<nuclearcraft:pellet_thorium>,
-<nuclearcraft:pellet_uranium>,
-<nuclearcraft:pellet_uranium:2>,
-<nuclearcraft:pellet_uranium:4>,
-<nuclearcraft:pellet_uranium:6>,
-<nuclearcraft:pellet_neptunium>,
-<nuclearcraft:pellet_neptunium:2>,
-<nuclearcraft:pellet_plutonium>,
-<nuclearcraft:pellet_plutonium:2>,
-<nuclearcraft:pellet_plutonium:4>,
-<nuclearcraft:pellet_plutonium:6>,
-<nuclearcraft:pellet_mixed>,
-<nuclearcraft:pellet_mixed:2>,
-<nuclearcraft:pellet_americium>,
-<nuclearcraft:pellet_americium:2>,
-<nuclearcraft:pellet_curium>,
-<nuclearcraft:pellet_curium:2>,
-<nuclearcraft:pellet_curium:4>,
-<nuclearcraft:pellet_curium:6>,
-<nuclearcraft:pellet_curium:8>,
-<nuclearcraft:pellet_curium:10>,
-<nuclearcraft:pellet_berkelium>,
-<nuclearcraft:pellet_berkelium:2>,
-<nuclearcraft:pellet_californium>,
-<nuclearcraft:pellet_californium:2>,
-<nuclearcraft:pellet_californium:4>,
-<nuclearcraft:pellet_californium:6>
-] as IItemStack[];
+val fuelalloying as IItemStack[][IItemStack] = {
+	<nuclearcraft:uranium>:[<nuclearcraft:uranium:4>,<nuclearcraft:uranium:1>],
+	<nuclearcraft:uranium:5>:[<nuclearcraft:uranium:9>,<nuclearcraft:uranium:6>],
+	<nuclearcraft:uranium:10>:[<nuclearcraft:uranium:14>,<nuclearcraft:uranium:11>],
+	<nuclearcraft:neptunium>:[<nuclearcraft:neptunium:4>,<nuclearcraft:neptunium:1>],
+	<nuclearcraft:neptunium:5>:[<nuclearcraft:neptunium:9>,<nuclearcraft:neptunium:6>],
+	<nuclearcraft:plutonium>:[<nuclearcraft:plutonium:4>,<nuclearcraft:plutonium:1>],
+	<nuclearcraft:plutonium:5>:[<nuclearcraft:plutonium:9>,<nuclearcraft:plutonium:6>],
+	<nuclearcraft:plutonium:10>:[<nuclearcraft:plutonium:14>,<nuclearcraft:plutonium:11>],
+	<nuclearcraft:plutonium:15>:[<nuclearcraft:plutonium:19>,<nuclearcraft:plutonium:16>],
+	<nuclearcraft:americium>:[<nuclearcraft:americium:4>,<nuclearcraft:americium:1>],
+	<nuclearcraft:americium:5>:[<nuclearcraft:americium:9>,<nuclearcraft:americium:6>],
+	<nuclearcraft:americium:10>:[<nuclearcraft:americium:14>,<nuclearcraft:americium:11>],
+	<nuclearcraft:curium>:[<nuclearcraft:curium:4>,<nuclearcraft:curium:1>],
+	<nuclearcraft:curium:5>:[<nuclearcraft:curium:9>,<nuclearcraft:curium:6>],
+	<nuclearcraft:curium:10>:[<nuclearcraft:curium:14>,<nuclearcraft:curium:11>],
+	<nuclearcraft:curium:15>:[<nuclearcraft:curium:19>,<nuclearcraft:curium:16>],
+	<nuclearcraft:berkelium>:[<nuclearcraft:berkelium:4>,<nuclearcraft:berkelium:1>],
+	<nuclearcraft:berkelium:5>:[<nuclearcraft:berkelium:9>,<nuclearcraft:berkelium:6>],
+	<nuclearcraft:californium>:[<nuclearcraft:californium:4>,<nuclearcraft:californium:1>],
+	<nuclearcraft:californium:5>:[<nuclearcraft:californium:9>,<nuclearcraft:californium:6>],
+	<nuclearcraft:californium:10>:[<nuclearcraft:californium:14>,<nuclearcraft:californium:11>],
+	<nuclearcraft:californium:15>:[<nuclearcraft:californium:19>,<nuclearcraft:californium:16>],
+	<nuclearcraft:pellet_thorium>:[<nuclearcraft:fuel_thorium:3>,<nuclearcraft:pellet_thorium:1>],
+	<nuclearcraft:pellet_uranium>:[<nuclearcraft:fuel_uranium:3>,<nuclearcraft:pellet_uranium:1>],
+	<nuclearcraft:pellet_uranium:2>:[<nuclearcraft:fuel_uranium:7>,<nuclearcraft:pellet_uranium:3>],
+	<nuclearcraft:pellet_uranium:4>:[<nuclearcraft:fuel_uranium:11>,<nuclearcraft:pellet_uranium:5>],
+	<nuclearcraft:pellet_uranium:6>:[<nuclearcraft:fuel_uranium:15>,<nuclearcraft:pellet_uranium:7>],
+	<nuclearcraft:pellet_neptunium>:[<nuclearcraft:fuel_neptunium:3>,<nuclearcraft:pellet_neptunium:1>],
+	<nuclearcraft:pellet_neptunium:2>:[<nuclearcraft:fuel_neptunium:7>,<nuclearcraft:pellet_neptunium:3>],
+	<nuclearcraft:pellet_plutonium>:[<nuclearcraft:fuel_plutonium:3>,<nuclearcraft:pellet_plutonium:1>],
+	<nuclearcraft:pellet_plutonium:2>:[<nuclearcraft:fuel_plutonium:7>,<nuclearcraft:pellet_plutonium:3>],
+	<nuclearcraft:pellet_plutonium:4>:[<nuclearcraft:fuel_plutonium:11>,<nuclearcraft:pellet_plutonium:5>],
+	<nuclearcraft:pellet_plutonium:6>:[<nuclearcraft:fuel_plutonium:15>,<nuclearcraft:pellet_plutonium:7>],
+	<nuclearcraft:pellet_mixed>:[<nuclearcraft:fuel_mixed:3>,<nuclearcraft:pellet_mixed:1>],
+	<nuclearcraft:pellet_mixed:2>:[<nuclearcraft:fuel_mixed:7>,<nuclearcraft:pellet_mixed:3>],
+	<nuclearcraft:pellet_americium>:[<nuclearcraft:fuel_americium:3>,<nuclearcraft:pellet_americium:1>],
+	<nuclearcraft:pellet_americium:2>:[<nuclearcraft:fuel_americium:7>,<nuclearcraft:pellet_americium:3>],
+	<nuclearcraft:pellet_curium>:[<nuclearcraft:fuel_curium:3>,<nuclearcraft:pellet_curium:1>],
+	<nuclearcraft:pellet_curium:2>:[<nuclearcraft:fuel_curium:7>,<nuclearcraft:pellet_curium:3>],
+	<nuclearcraft:pellet_curium:4>:[<nuclearcraft:fuel_curium:11>,<nuclearcraft:pellet_curium:5>],
+	<nuclearcraft:pellet_curium:6>:[<nuclearcraft:fuel_curium:15>,<nuclearcraft:pellet_curium:7>],
+	<nuclearcraft:pellet_curium:8>:[<nuclearcraft:fuel_curium:19>,<nuclearcraft:pellet_curium:9>],
+	<nuclearcraft:pellet_curium:10>:[<nuclearcraft:fuel_curium:23>,<nuclearcraft:pellet_curium:11>],
+	<nuclearcraft:pellet_berkelium>:[<nuclearcraft:fuel_berkelium:3>,<nuclearcraft:pellet_berkelium:1>],
+	<nuclearcraft:pellet_berkelium:2>:[<nuclearcraft:fuel_berkelium:7>,<nuclearcraft:pellet_berkelium:3>],
+	<nuclearcraft:pellet_californium>:[<nuclearcraft:fuel_californium:3>,<nuclearcraft:pellet_californium:1>],
+	<nuclearcraft:pellet_californium:2>:[<nuclearcraft:fuel_californium:7>,<nuclearcraft:pellet_californium:3>],
+	<nuclearcraft:pellet_californium:4>:[<nuclearcraft:fuel_californium:11>,<nuclearcraft:pellet_californium:5>],
+	<nuclearcraft:pellet_californium:6>:[<nuclearcraft:fuel_californium:15>,<nuclearcraft:pellet_californium:7>],
+} as IItemStack[][IItemStack];
 
-// Zirconium Fuels and Isotopes
-val ZircFuel = [
-<nuclearcraft:uranium:4>,
-<nuclearcraft:uranium:9>,
-<nuclearcraft:uranium:14>,
-<nuclearcraft:neptunium:4>,
-<nuclearcraft:neptunium:9>,
-<nuclearcraft:plutonium:4>,
-<nuclearcraft:plutonium:9>,
-<nuclearcraft:plutonium:14>,
-<nuclearcraft:plutonium:19>,
-<nuclearcraft:americium:4>,
-<nuclearcraft:americium:9>,
-<nuclearcraft:americium:14>,
-<nuclearcraft:curium:4>,
-<nuclearcraft:curium:9>,
-<nuclearcraft:curium:14>,
-<nuclearcraft:curium:19>,
-<nuclearcraft:berkelium:4>,
-<nuclearcraft:berkelium:9>,
-<nuclearcraft:californium:4>,
-<nuclearcraft:californium:9>,
-<nuclearcraft:californium:14>,
-<nuclearcraft:californium:19>,
-<nuclearcraft:fuel_thorium:3>,
-<nuclearcraft:fuel_uranium:3>,
-<nuclearcraft:fuel_uranium:7>,
-<nuclearcraft:fuel_uranium:11>,
-<nuclearcraft:fuel_uranium:15>,
-<nuclearcraft:fuel_neptunium:3>,
-<nuclearcraft:fuel_neptunium:7>,
-<nuclearcraft:fuel_plutonium:3>,
-<nuclearcraft:fuel_plutonium:7>,
-<nuclearcraft:fuel_plutonium:11>,
-<nuclearcraft:fuel_plutonium:15>,
-<nuclearcraft:fuel_mixed:3>,
-<nuclearcraft:fuel_mixed:7>,
-<nuclearcraft:fuel_americium:3>,
-<nuclearcraft:fuel_americium:7>,
-<nuclearcraft:fuel_curium:3>,
-<nuclearcraft:fuel_curium:7>,
-<nuclearcraft:fuel_curium:11>,
-<nuclearcraft:fuel_curium:15>,
-<nuclearcraft:fuel_curium:19>,
-<nuclearcraft:fuel_curium:23>,
-<nuclearcraft:fuel_berkelium:3>,
-<nuclearcraft:fuel_berkelium:7>,
-<nuclearcraft:fuel_californium:3>,
-<nuclearcraft:fuel_californium:7>,
-<nuclearcraft:fuel_californium:11>,
-<nuclearcraft:fuel_californium:15>,
-] as IItemStack[];
-
-for i, item in NormFuel {
-InductionSmelter.addRecipe(ZircFuel[i], item, <rockhounding_chemistry:metal_items:1>, 20000);
-//AlloySmelter.addRecipe(ZircFuel[i], [item, <ore:ingotZirconium>], 20000);
+for fuel, newfuel in fuelalloying {
+InductionSmelter.addRecipe(newfuel[0], fuel, <nuclearcraft:ingot:10>, 20000);
+InductionSmelter.addRecipe(newfuel[1], fuel, <nuclearcraft:ingot:8>, 20000);
 }
 
 
-// Carbide Fuels and Isotopes
-val CarbFuel = [
-<nuclearcraft:uranium:1>,
-<nuclearcraft:uranium:6>,
-<nuclearcraft:uranium:11>,
-<nuclearcraft:neptunium:1>,
-<nuclearcraft:neptunium:6>,
-<nuclearcraft:plutonium:1>,
-<nuclearcraft:plutonium:6>,
-<nuclearcraft:plutonium:11>,
-<nuclearcraft:plutonium:16>,
-<nuclearcraft:americium:1>,
-<nuclearcraft:americium:6>,
-<nuclearcraft:americium:11>,
-<nuclearcraft:curium:1>,
-<nuclearcraft:curium:6>,
-<nuclearcraft:curium:11>,
-<nuclearcraft:curium:16>,
-<nuclearcraft:berkelium:1>,
-<nuclearcraft:berkelium:6>,
-<nuclearcraft:californium:1>,
-<nuclearcraft:californium:6>,
-<nuclearcraft:californium:11>,
-<nuclearcraft:californium:16>,
-<nuclearcraft:pellet_thorium:1>,
-<nuclearcraft:pellet_uranium:1>,
-<nuclearcraft:pellet_uranium:3>,
-<nuclearcraft:pellet_uranium:5>,
-<nuclearcraft:pellet_uranium:7>,
-<nuclearcraft:pellet_neptunium:1>,
-<nuclearcraft:pellet_neptunium:3>,
-<nuclearcraft:pellet_plutonium:1>,
-<nuclearcraft:pellet_plutonium:3>,
-<nuclearcraft:pellet_plutonium:5>,
-<nuclearcraft:pellet_plutonium:7>,
-<nuclearcraft:pellet_mixed:1>,
-<nuclearcraft:pellet_mixed:3>,
-<nuclearcraft:pellet_americium:1>,
-<nuclearcraft:pellet_americium:3>,
-<nuclearcraft:pellet_curium:1>,
-<nuclearcraft:pellet_curium:3>,
-<nuclearcraft:pellet_curium:5>,
-<nuclearcraft:pellet_curium:7>,
-<nuclearcraft:pellet_curium:9>,
-<nuclearcraft:pellet_curium:11>,
-<nuclearcraft:pellet_berkelium:1>,
-<nuclearcraft:pellet_berkelium:3>,
-<nuclearcraft:pellet_californium:1>,
-<nuclearcraft:pellet_californium:3>,
-<nuclearcraft:pellet_californium:5>,
-<nuclearcraft:pellet_californium:7>
-] as IItemStack[];
+#####################################################################
+##############     CONTENTTWEAKER MATERIALS      ####################
+#####################################################################
 
-for i, item in NormFuel {
-InductionSmelter.addRecipe(CarbFuel[i], item, <rockhounding_chemistry:metal_items:7>, 20000);
-InductionSmelter.addRecipe(CarbFuel[i], item, <nuclearcraft:ingot:8>, 20000);
-//AlloySmelter.addRecipe(CarbFuel[i], [item, <ore:ingotGraphite>], 20000);
+//Thermal Alloy
+recipes.addShaped(<contenttweaker:stacc_thermal_alloy> * 3, [[<thermalfoundation:material:357>, <thermalfoundation:material:357>, <thermalfoundation:material:357>],[<thermalfoundation:material:358>, <thermalfoundation:material:358>, <thermalfoundation:material:358>], [<thermalfoundation:material:359>, <thermalfoundation:material:359>, <thermalfoundation:material:359>]]);
+
+//Hot
+mods.thermalexpansion.Infuser.addRecipe(<contenttweaker:hot_thermal_alloy>, <contenttweaker:stacc_thermal_alloy>, 25000);
+
+//Cooled
+
+Transposer.addFillRecipe(<contenttweaker:ingot_thermal_alloy>, <contenttweaker:hot_thermal_alloy>, <liquid:emergency_coolant> * 1000, 10000);
+mods.nuclearcraft.Infuser.addRecipe(<contenttweaker:hot_thermal_alloy>, <liquid:emergency_coolant>*1000, <contenttweaker:ingot_thermal_alloy>);
+
+/* Osmium option
+Transposer.addFillRecipe(<contenttweaker:ingot_thermal_alloy>, <contenttweaker:hot_thermal_alloy>, <liquid:osmium> * 144, 10000);
+mods.nuclearcraft.Infuser.addRecipe(<contenttweaker:hot_thermal_alloy>, <liquid:osmium>*144, <contenttweaker:ingot_thermal_alloy>);
+*/
+
+//Fluid?
+//Melting.addRecipe(<liquid:orichalcum> * 1296, <contenttweaker:sub_block_holder_0>);
+//Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0>, null, <liquid:orichalcum>, 1296);
+
+//Starmetal Plated Platinum
+Inscriber.addRecipe(<contenttweaker:prepared_starmetal>, <thermalfoundation:material:134>, false, <appliedenergistics2:material:45>, <astralsorcery:itemcraftingcomponent:2>);
+blastFurnace.addRecipe(<contenttweaker:ingot_reinforced_starmetal>, null, <contenttweaker:prepared_starmetal>, null, 300, 512, 2000);
+Aggregator.addRecipe(<contenttweaker:ingot_reinforced_starmetal>, <thermalfoundation:material:134>, <astralsorcery:itemcraftingcomponent:2>, <appliedenergistics2:material:45>);
+
+
+val depletedUranium =
+[
+<nuclearcraft:depleted_fuel_uranium:9>,
+<nuclearcraft:depleted_fuel_uranium:10>,
+<nuclearcraft:depleted_fuel_uranium:11>,
+<nuclearcraft:depleted_fuel_uranium:13>,
+<nuclearcraft:depleted_fuel_uranium:14>,
+<nuclearcraft:depleted_fuel_uranium:15>,
+]
+ as IItemStack[];
+for item in depletedUranium {
+<ore:depletedUranium>.add(item);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy>, <techreborn:ingot:14>, item * 3, 50000);
 }
+
+val rareIsotopes =
+[
+<nuclearcraft:fission_dust:5>,
+<nuclearcraft:fission_dust:8>,
+<nuclearcraft:fission_dust:9>,
+<nuclearcraft:fission_dust:10>,
+<nuclearcraft:fission_dust:7>
+]
+ as IItemStack[];
+for item in rareIsotopes {
+<ore:rareIsotopes>.add(item);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy> * 5, <techreborn:ingot:14> * 5, item, 50000);
+}
+
+//Staballoy
+AlloyFurnace.addRecipe(<ore:ingotTitanium>, <ore:depletedUranium>*3, <contenttweaker:ingot_staballoy>);
+AlloyFurnace.addRecipe(<ore:ingotTitanium>, <ore:ingotTBU>, <contenttweaker:ingot_staballoy>);
+AlloyFurnace.addRecipe(<ore:ingotTitanium>*3, <ore:dustMolybdenum>, <contenttweaker:ingot_staballoy>*3);
+AlloyFurnace.addRecipe(<ore:ingotTitanium>*5, <ore:rareIsotopes>, <contenttweaker:ingot_staballoy>*5);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy>, <techreborn:ingot:14>, <nuclearcraft:pellet_thorium>, 50000);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy> * 3, <techreborn:ingot:14>, <nuclearcraft:fission_dust:6>, 50000);
+
+//This is probably way too high lol
+mods.nuclearcraft.FissionIrradiator.addRecipe(<contenttweaker:ingot_staballoy>, <contenttweaker:excited_mek_alloy>, 200000, 0, 0.25, 0);
+mods.nuclearcraft.Radiation.setRadiationLevel(<contenttweaker:excited_mek_alloy>, 100);
+
+//Has an upgraded alloy smelter recipe
+mods.inworldcrafting.FluidToItem.transform(<contenttweaker:ingot_mek_alloy>, <liquid:radaway>, [<contenttweaker:component_mek_alloy>,<contenttweaker:excited_mek_alloy>], true);
+
+
+//Mirion
+blastFurnace.addRecipe(<contenttweaker:hot_cobalt>, null, <tconstruct:ingots>, <mysticalagriculture:crafting:32>, 250, 1024, 3000);
+
+FluidToFluid.transform(<liquid:base_mirion>, <liquid:glass>, [<contenttweaker:hot_cobalt>], true);
+FluidToFluid.transform(<liquid:prepared_mirion>, <liquid:base_mirion>, [<botania:manaresource>,<botania:manaresource:7>,<botania:manaresource:4>], true);
+FluidToItem.transform(<plustic:mirioningot>*2, <liquid:prepared_mirion>, [<enderio:item_material:16>], true);
+
 
 ##########################################################################################
 print("==================== end of alloys.zs ====================");
