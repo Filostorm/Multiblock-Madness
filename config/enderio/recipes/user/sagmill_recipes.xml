@@ -167,54 +167,6 @@
 
 <!-- General Compatability Recipes -->
 
-<!-- Crushed Slate 1 -->
-<recipe name="MBM: Crushed Slate 1" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="bloodmagic:slate" />
-    <output name="contenttweaker:slatedust" chance="1.0" amount="2"/>
-  </sagmilling>
-</recipe>
-
-<!-- Crushed Slate 2 -->
-<recipe name="MBM: Crushed Slate 2" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="bloodmagic:slate:1" />
-    <output name="contenttweaker:slatedust" chance="1.0" amount="4"/>
-  </sagmilling>
-</recipe>
-
-<!-- Crushed Slate 3 -->
-<recipe name="MBM: Crushed Slate 3" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="bloodmagic:slate:2" />
-    <output name="contenttweaker:slatedust" chance="1.0" amount="8"/>
-  </sagmilling>
-</recipe>
-
-<!-- Crushed Slate 4 -->
-<recipe name="MBM: Crushed Slate 4" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="bloodmagic:slate:3" />
-    <output name="contenttweaker:slatedust" chance="1.0" amount="16"/>
-  </sagmilling>
-</recipe>
-
-<!-- Crushed Slate 5 -->
-<recipe name="MBM: Crushed Slate 5" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="bloodmagic:slate:4" />
-    <output name="contenttweaker:slatedust" chance="1.0" amount="32"/>
-  </sagmilling>
-</recipe>
-
-<!-- Clay Dust -->
-<recipe name="MBM: Clay Dust" required="true">
-  <sagmilling energy="5000" bonus="none">
-    <input name="blockClay" />
-    <output name="dustClay" chance="1.0" amount="4"/>
-  </sagmilling>
-</recipe>
-
 <!-- Limestone Flux -->
 <recipe name="MBM: Limestone Flux" required="true">
   <sagmilling energy="5000" bonus="none">

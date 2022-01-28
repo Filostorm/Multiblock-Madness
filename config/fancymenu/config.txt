@@ -72,3 +72,13 @@ B:showvanillamovewarning = 'false';
 ##[ui]
 
 F:uiscale = '1.0';
+
+
+##[multiplayer_screen]
+
+B:show_server_icons = 'true';
+
+
+##[singleplayer_screen]
+
+B:show_world_icons = 'true';
