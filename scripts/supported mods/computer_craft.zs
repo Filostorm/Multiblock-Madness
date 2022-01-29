@@ -1,8 +1,8 @@
-#modloaded woot
+#modloaded computercraft
 import crafttweaker.item.IItemStack;
 import mods.tconstruct.Casting;
 import mods.artisanworktables.builder.RecipeBuilder;
-print("==================== loading woot.zs ====================");
+print("==================== loading computer_craft.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -20,4 +20,4 @@ for item in itemstoRemove {
 recipes.addShaped(<computercraft:cable:1>, [[<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>],[<thermalfoundation:material:32>, <minecraft:redstone>, <thermalfoundation:material:32>], [<thermalfoundation:material:32>, <thermalfoundation:material:32>, <thermalfoundation:material:32>]]);
 
 ##########################################################################################
-print("==================== end of woot.zs ====================");
+print("==================== end of computer_craft.zs ====================");

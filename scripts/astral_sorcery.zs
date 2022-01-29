@@ -9,7 +9,7 @@ import mods.astralsorcery.StarlightInfusion;
 import mods.appliedenergistics2.Grinder;
 import mods.astralsorcery.Lightwell;
 
-print("==================== loading Astral Sorcery ====================");
+print("==================== loading astral_sorcery.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -119,13 +119,6 @@ Altar.addAttunementAltarRecipe("multiblockmadness:shaped/internal/altar/runealta
 			<botania:manaresource:23>, <botania:manaresource:23>, <bloodmagic:blood_rune>, <bloodmagic:blood_rune>]);
 */
 
-//Starmetal Block recipes
-recipes.addShapeless(<astralsorcery:itemcraftingcomponent:1> * 9, [<contenttweaker:starmetal_block>]);
-recipes.addShaped(<contenttweaker:starmetal_block>, [[<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:1>],[<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:1>], [<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:1>]]);
-Melting.addRecipe(<liquid:starmetal> * 1296, <contenttweaker:starmetal_block>);
-Casting.addBasinRecipe(<contenttweaker:starmetal_block>, null, <liquid:starmetal>, 1296);
-
-
 //Illumination Powder
 StarlightInfusion.addInfusion(<arcanearchives:radiant_dust>, <astralsorcery:itemusabledust>*8, false, 0.5, 200);
 
@@ -155,4 +148,4 @@ Lightwell.addLiquefaction(<contenttweaker:stable_celestial_crystal>, <liquid:ast
 
 
 ##########################################################################################
-print("==================== end of Astral Sorcery ====================");
+print("==================== end of astral_sorcery.zs ====================");

@@ -5,7 +5,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.nuclearcraft.AlloyFurnace;
 import mods.immersiveengineering.Crusher;
 
-print("==================== loading mods enderIO.zs ====================");
+print("==================== loading mods enderio.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -76,6 +76,9 @@ val itemstoHide =
 for item in itemstoHide {
 	mods.jei.JEI.removeAndHide(item);
 }
+
+// Components //
+
 //Parts t2
 InductionSmelter.addRecipe(<enderio:item_material:2>*4, <enderio:item_material:69>*4, <techreborn:ingot:15>, 50000);
 ///AlloySmelter.addRecipe(<enderio:item_material:2>*4, [<enderio:item_material:69>*4, <techreborn:ingot:15>], 50000);
@@ -85,18 +88,20 @@ InductionSmelter.addRecipe(<enderio:item_material:68>*4, <enderio:item_material:
 //AlloySmelter.addRecipe(<enderio:item_material:68>*4, [<enderio:item_material:2>*4, <enderio:item_alloy_endergy_ingot:2>], 50000);
 AlloyFurnace.addRecipe(<enderio:item_material:2>*4, <enderio:item_alloy_endergy_ingot:2>, <enderio:item_material:68>*4);
 
-//YETA
-recipes.addShaped(<enderio:item_yeta_wrench>, [[<thermalfoundation:material:160>, null, <thermalfoundation:material:160>],[null, <enderio:item_material:10>, null], [null, <thermalfoundation:material:160>, null]]);
-
-//Probe
-recipes.addShaped(<enderio:item_conduit_probe>, [[<thermalfoundation:material:224>, null, <thermalfoundation:material:224>],[<thermalfoundation:material:32>, <enderio:item_yeta_wrench>, <thermalfoundation:material:32>], [<thermalfoundation:material:32>, <enderio:item_material:20>, <thermalfoundation:material:32>]]);
-
-
 //dark bars
 recipes.addShaped(<enderio:block_dark_iron_bars> * 8, [[<jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>], [<jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>, <jaopca:item_stickdarksteel>]]);
 //end bars
 recipes.addShaped(<enderio:block_end_iron_bars> * 8, [[<jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>], [<jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>, <jaopca:item_stickendsteel>]]);
 
+//Simple Chassis
+recipes.addShaped(<enderio:item_material>, [[<minecraft:iron_bars>, <enderio:item_material:75>, <minecraft:iron_bars>],[<moreplates:conductive_iron_gear>, <thermalexpansion:frame:64>, <moreplates:conductive_iron_gear>], [<minecraft:iron_bars>, <enderio:item_material:75>, <minecraft:iron_bars>]]);
+//recipes.addShaped(<enderio:item_material>, [[<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>],[<minecraft:iron_bars>, <thermalexpansion:frame:64>, <minecraft:iron_bars>], [<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>]]);
+
+//cant make frames the normal way
+InductionSmelter.removeRecipe(<enderio:item_material:51>, <enderio:item_material>);
+InductionSmelter.removeRecipe(<enderio:item_material:52>, <enderio:item_material>);
+//mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:1>);
+//mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:53>);
 
 //Binder
 <enderio:item_material:22>.displayName = "Universal Binder";
@@ -104,24 +109,43 @@ recipes.addShapedMirrored(<enderio:item_material:22>*8, [[<ore:sand>, <minecraft
 recipes.addShapeless(<embers:blend_caminite>*4, [<enderio:item_material:22>,<enderio:item_material:22>]);
 recipes.addShapeless(<tconstruct:soil>*8, [<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>,<enderio:item_material:22>]);
 
+// Stone Gear
+recipes.addShaped(<enderio:item_material:10>, [[null, <ore:stone>, null],[<ore:stone>, <enderio:item_material:9>, <ore:stone>], [null, <ore:stone>, null]]);
+// Wood Gear
+recipes.addShaped(<enderio:item_material:9>, [[null, <ore:stickWood>, null],[<ore:stickWood>, null, <ore:stickWood>], [null, <ore:stickWood>, null]]);
+
+<ore:fusedGlass>.add(<tconstruct:clear_glass>);
+
+//AlloySmelter.removeRecipe(<enderio:item_material:75>);
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<enderio:item_material:75>, <enderio:item_material:20>, 5000);
+
+// Pulsating Crystal
+Casting.removeTableRecipe(<enderio:item_material:14>);
+InductionSmelter.addRecipe(<enderio:item_material:14>, <minecraft:diamond>, <enderio:item_alloy_ingot:5>, 30000);
+AlloyFurnace.addRecipe(<minecraft:diamond>, <enderio:item_alloy_ingot:5>, <enderio:item_material:14>);
+
+
+// Machines and Tools //
+
+//YETA
+recipes.addShaped(<enderio:item_yeta_wrench>, [[<thermalfoundation:material:160>, null, <thermalfoundation:material:160>],[null, <enderio:item_material:10>, null], [null, <thermalfoundation:material:160>, null]]);
+
+//Probe
+recipes.addShaped(<enderio:item_conduit_probe>, [[<thermalfoundation:material:224>, null, <thermalfoundation:material:224>],[<thermalfoundation:material:32>, <enderio:item_yeta_wrench>, <thermalfoundation:material:32>], [<thermalfoundation:material:32>, <enderio:item_material:20>, <thermalfoundation:material:32>]]);
+
 //Travel Anchors
 recipes.addShaped(<enderio:block_travel_anchor>, [[<enderutilities:enderpart>, <enderio:item_material:4>, <enderutilities:enderpart>],[<enderio:item_material:4>, <minecraft:diamond>, <enderio:item_material:4>], [<enderutilities:enderpart>, <enderio:item_material:4>, <enderutilities:enderpart>]]);
 
 
-//4x FAcad
+//4x Facade
 recipes.addShaped(<enderio:item_conduit_facade> * 4, [[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],[<enderio:item_material:4>, null, <enderio:item_material:4>], [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]]);
 
-
-//Simple Chassis
-recipes.addShaped(<enderio:item_material>, [[<minecraft:iron_bars>, <enderio:item_material:75>, <minecraft:iron_bars>],[<moreplates:conductive_iron_gear>, <thermalexpansion:frame:64>, <moreplates:conductive_iron_gear>], [<minecraft:iron_bars>, <enderio:item_material:75>, <minecraft:iron_bars>]]);
-//recipes.addShaped(<enderio:item_material>, [[<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>],[<minecraft:iron_bars>, <thermalexpansion:frame:64>, <minecraft:iron_bars>], [<thermalfoundation:material:288>, <enderio:item_material:75>, <thermalfoundation:material:288>]]);
 
 //Cyclic Crafter
 recipes.addShaped(<cyclicmagic:auto_crafter>, [[<moreplates:knightslime_plate>, <ore:workbench>, <moreplates:knightslime_plate>],[<enderio:item_capacitor_grainy>, <thermalexpansion:frame:64>, <enderio:item_capacitor_grainy>], [<moreplates:knightslime_plate>, <rockhounding_chemistry:misc_items:1>, <moreplates:knightslime_plate>]]);
 
 //Crafter
 recipes.addShaped(<enderio:block_crafter>, [[<moreplates:electrical_steel_plate>, <moreplates:electrical_steel_plate>, <moreplates:electrical_steel_plate>],[<moreplates:redstone_alloy_plate>, <cyclicmagic:auto_crafter>, <moreplates:redstone_alloy_plate>], [<enderio:item_material:11>, <ore:circuitBasic>, <enderio:item_material:11>]]);
-
 
 //Painter
 recipes.addShaped(<enderio:block_painter>, [[<actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_misc:7>],[<enderio:item_material:11>, <enderio:item_material>, <enderio:item_material:11>], [<enderio:item_alloy_ingot>, <enderio:item_alloy_ingot>, <enderio:item_alloy_ingot>]]);
@@ -130,33 +154,9 @@ recipes.addShaped(<enderio:block_painter>, [[<actuallyadditions:item_misc:7>, <a
 <thaumcraft:jar_brain>.addTooltip(format.darkPurple("Not consumed when used for crafting"));
 recipes.addShaped(<enderio:item_advanced_item_filter>, [[<minecraft:redstone>, <minecraft:paper>, <minecraft:redstone>],[<minecraft:paper>, <thaumcraft:jar_brain>.reuse(), <minecraft:paper>], [<minecraft:redstone>, <minecraft:paper>, <minecraft:redstone>]]);
 
-//stone gear
-recipes.addShaped(<enderio:item_material:10>, [[null, <ore:stone>, null],[<ore:stone>, <enderio:item_material:9>, <ore:stone>], [null, <ore:stone>, null]]);
-//wood gear
-recipes.addShaped(<enderio:item_material:9>, [[null, <ore:stickWood>, null],[<ore:stickWood>, null, <ore:stickWood>], [null, <ore:stickWood>, null]]);
-
-<ore:fusedGlass>.add(<tconstruct:clear_glass>);
-
-//AlloySmelter.removeRecipe(<enderio:item_material:75>);
-mods.actuallyadditions.AtomicReconstructor.addRecipe(<enderio:item_material:75>, <enderio:item_material:20>, 5000);
-
-//pulsating crystal
-Casting.removeTableRecipe(<enderio:item_material:14>);
-InductionSmelter.addRecipe(<enderio:item_material:14>, <minecraft:diamond>, <enderio:item_alloy_ingot:5>, 30000);
-AlloyFurnace.addRecipe(<minecraft:diamond>, <enderio:item_alloy_ingot:5>, <enderio:item_material:14>);
-
-Crusher.addRecipe(<enderio:item_material:36>, <enderio:item_material:14>, 1024);
-
 //XP Obelisk
 recipes.addShaped(<enderio:block_experience_obelisk>, [[null, <enderio:item_xp_transfer>, null],[<enderio:item_alloy_ingot:7>, <enderio:block_tank>, <enderio:item_alloy_ingot:7>], [<enderio:item_alloy_ingot:1>, <enderio:item_material>, <enderio:item_alloy_ingot:1>]]);
 recipes.addShaped(<enderio:item_xp_transfer>, [[null, null, <enderio:item_alloy_ingot:7>],[null, <enderio:item_material:71>, null], [<enderio:item_alloy_ingot:1>, null, null]]);
-
-
-//cant make frames the normal way
-InductionSmelter.removeRecipe(<enderio:item_material:51>, <enderio:item_material>);
-InductionSmelter.removeRecipe(<enderio:item_material:52>, <enderio:item_material>);
-//mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:1>);
-//mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:53>);
 
 //Redstone stuff
 recipes.addShaped(<enderio:item_redstone_timer_filter>, [[<deepmoblearning:soot_covered_redstone>, <enderio:item_material:60>, <minecraft:clock>]]);
@@ -387,4 +387,4 @@ craft.remake(<enderio:item_capacitor_silver>, ["pretty",
 });
 
 ##########################################################################################
-print("==================== end of mods enderIO.zs ====================");
+print("==================== end of mods enderio.zs ====================");

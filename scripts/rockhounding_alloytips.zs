@@ -1,5 +1,8 @@
 import crafttweaker.item.IItemStack;
 
+print("==================== loading rockhounding_alloytips.zs ====================");
+##########################################################################################
+
 //Thanks Hacatu!
 
 val alloyComponentStrsMap as string[][IItemStack] = {
@@ -233,3 +236,5 @@ for alloyItem, componentStrs in alloyComponentStrsMap {
 	}
 }
 
+##########################################################################################
+print("==================== end of rockhounding_alloytips.zs ====================");

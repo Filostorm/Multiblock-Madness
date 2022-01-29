@@ -4,7 +4,7 @@ import loottweaker.vanilla.loot.LootPool;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded loottweaker
 
-print("==================== loading Loot.zs ====================");
+print("==================== loading Ice and Fire Loot.zs ====================");
 ##########################################################################################
 
 
@@ -72,4 +72,4 @@ print("==================== loading Loot.zs ====================");
 	
 		
 ##########################################################################################
-print("==================== end of Loot.zs ====================");
+print("==================== end of Ice and Fire Loot.zs ====================");

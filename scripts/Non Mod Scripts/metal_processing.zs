@@ -19,8 +19,10 @@ import mods.mekanism.enrichment;
 import mods.embers.Stamper;
 import mods.techreborn.industrialGrinder;
 
+#priority 100
 
-print("==================== loading Metal Processing.zs ====================");
+
+print("==================== loading metal_processing.zs ====================");
 ##########################################################################################
 /*
 val itemstoRemove =
@@ -997,4 +999,4 @@ for item in Tier6Ingots {
 item.addTooltip(format.darkPurple("Tier 6 Metal"));
 }
 ##########################################################################################
-print("==================== end of Metal Processing.zs ====================");
+print("==================== end of metal_processing.zs ====================");

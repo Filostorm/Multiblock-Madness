@@ -1,6 +1,5 @@
  	##########################################################################################
 #modloaded tconstruct
-#priority 100
 
 import mods.tconstruct.Alloy;
 import mods.tconstruct.Casting;
@@ -14,8 +13,12 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import mods.immersiveengineering.MetalPress;
 import mods.rockhounding_chemistry.LabBlender;
+import mods.immersiveengineering.ArcFurnace;
+import mods.chisel.Carving;
 
-print("==================== loading mods tinkersconstruct.zs ====================");
+#priority 100
+
+print("==================== loading tinkersconstruct.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -36,41 +39,26 @@ for item in itemstoRemove {
 mods.jei.JEI.removeAndHide(<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 0 as short}}));
 mods.jei.JEI.removeAndHide(<tconstruct:smeltery_controller>);
 mods.jei.JEI.removeAndHide(<tcomplement:alloy_tank>);
-/*
-// smeltery controller
-recipes.remove(<tconstruct:smeltery_controller>);
-recipes.addShaped(<tconstruct:smeltery_controller>, [[<tconstruct:materials>, <embers:plate_dawnstone>, <tconstruct:materials>],[<embers:plate_dawnstone>, <tcomplement:melter>, <embers:plate_dawnstone>], [<tconstruct:materials>, <embers:plate_dawnstone>, <tconstruct:materials>]]);
-*/
-
-/* New Scorched Recipe
-recipes.addShaped(<tcomplement:materials:1> * 8, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <embers:dust_ember>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
-recipes.addShapeless(<tcomplement:scorched_faucet>, [<embers:dust_ember>,<tconstruct:faucet>]);
-recipes.addShapeless(<tcomplement:high_oven_io>, [<embers:dust_ember>,<tconstruct:smeltery_io>]);
-recipes.addShapeless(<tcomplement:scorched_casting:1>, [<embers:dust_ember>,<tconstruct:casting:1>]);
-recipes.addShapeless(<tcomplement:scorched_casting>, [<embers:dust_ember>,<tconstruct:casting>]);
-recipes.addShapeless(<tcomplement:scorched_block:3>, [<embers:dust_ember>,<tconstruct:seared:3>]);
-*/
-LabBlender.add([<rockhounding_chemistry:chemical_items:20>*4, <actuallyadditions:item_crystal:3>, <embers:dust_ember>, <thaumcraft:stone_arcane_brick>*2], <tcomplement:materials:1>*8);
 
 val smelteryHeart = <ore:smelteryHeart>;
 smelteryHeart.add(<tconstruct:seared_tank>);
 smelteryHeart.add(<tconstruct:seared_tank:1>);
 smelteryHeart.add(<tconstruct:seared_tank:2>);
 
-//Alloy Tank
-//recipes.addShaped(<tcomplement:alloy_tank>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <thermalfoundation:material:291>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
+### New Melter Fuels ###
 
-
+	// Pyrotheum
 	<liquid:pyrotheum>.definition.temperature = 5300;
 	mods.tconstruct.Fuel.registerFuel(<liquid:pyrotheum> * 25, 400);
-	//Embers
+
+	// Embers
 	<liquid:moltenembers>.definition.temperature = 6300;
 	mods.tconstruct.Fuel.registerFuel(<liquid:moltenembers> * 50, 50);
-	/*
-	//Starlight
-	<liquid:astralsorcery.liquidstarlight>.definition.temperature = 4300;
-	mods.tconstruct.Fuel.registerFuel(<liquid:astralsorcery.liquidstarlight> * 50, 200);
-*/
+	
+	// Starlight
+	/*<liquid:astralsorcery.liquidstarlight>.definition.temperature = 4300;
+	mods.tconstruct.Fuel.registerFuel(<liquid:astralsorcery.liquidstarlight> * 50, 200);*/
+
 
 ### CRAFTING RECIPES ###
 
@@ -81,20 +69,79 @@ recipes.addShaped(<tcomplement:high_oven_controller>, [[<tcomplement:materials:1
 // Melter
 recipes.addShaped(<tcomplement:melter>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, null, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 
+// Smart IO
+recipes.addShaped(<tinker_io:smart_output>, [[<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>],[<arcanearchives:shaped_quartz>, <tconstruct:casting>, <arcanearchives:shaped_quartz>], [<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>]]);
 
+// Smart Upgrades
+recipes.addShaped(<tinker_io:upg:4>, [[<embers:nugget_dawnstone>, <minecraft:diamond>, <embers:nugget_dawnstone>],[<minecraft:diamond>, <tinker_io:upg:3>, <minecraft:diamond>], [<embers:nugget_dawnstone>, <minecraft:diamond>, <embers:nugget_dawnstone>]]);
+recipes.addShaped(<tinker_io:upg:2>, [[<thermalfoundation:material:162>, <minecraft:iron_ingot>, <thermalfoundation:material:162>],[<minecraft:iron_ingot>, <tinker_io:upg:1>, <minecraft:iron_ingot>], [<thermalfoundation:material:162>, <minecraft:iron_ingot>, <thermalfoundation:material:162>]]);
 
-### MELTING ###
-//remove
-Melting.removeRecipe(<liquid:fossil_tar>, <minecraft:coal>);
-Melting.removeRecipe(<liquid:dark_steel>, <enderio:item_dark_steel_sword>);
+// Reinforcement Modifier
+MetalPress.addRecipe(<tconstruct:materials:14>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:mold>, 2000);
 
-/* bottled time
+//Limestone Flux
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:limestoneforFlux>, <bloodmagic:cutting_fluid:1>], 200,200,1);
+
+// Scorched Brick
+LabBlender.add([<rockhounding_chemistry:chemical_items:20>*4, <actuallyadditions:item_crystal:3>, <embers:dust_ember>, <thaumcraft:stone_arcane_brick>*2], <tcomplement:materials:1>*8);
+
+/*
+// Alloy Tank
+//recipes.addShaped(<tcomplement:alloy_tank>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <thermalfoundation:material:291>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
+
+// Smeltery Controller
+recipes.remove(<tconstruct:smeltery_controller>);
+recipes.addShaped(<tconstruct:smeltery_controller>, [[<tconstruct:materials>, <embers:plate_dawnstone>, <tconstruct:materials>],[<embers:plate_dawnstone>, <tcomplement:melter>, <embers:plate_dawnstone>], [<tconstruct:materials>, <embers:plate_dawnstone>, <tconstruct:materials>]]);
+
+// New Scorched Recipe
+recipes.addShaped(<tcomplement:materials:1> * 8, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <embers:dust_ember>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
+recipes.addShapeless(<tcomplement:scorched_faucet>, [<embers:dust_ember>,<tconstruct:faucet>]);
+recipes.addShapeless(<tcomplement:high_oven_io>, [<embers:dust_ember>,<tconstruct:smeltery_io>]);
+recipes.addShapeless(<tcomplement:scorched_casting:1>, [<embers:dust_ember>,<tconstruct:casting:1>]);
+recipes.addShapeless(<tcomplement:scorched_casting>, [<embers:dust_ember>,<tconstruct:casting>]);
+recipes.addShapeless(<tcomplement:scorched_block:3>, [<embers:dust_ember>,<tconstruct:seared:3>]);
+
+// Bottled Time
 recipes.remove(<randomthings:timeinabottle>.*);
 Melting.removeRecipe(<liquid:gold>, <minecraft:clock>);
 Melting.addRecipe(<liquid:moltenTime> * 250, <minecraft:clock>);
 Casting.addBasinRecipe(<randomthings:timeinabottle>.withTag({timeData: {storedTime: 6000}}), <extrautils2:klein>, <liquid:moltenTime>, 144, true, 100);
 */
-//---------Special Dusts
+
+
+### MELTING ###
+
+// Removals //
+Melting.removeRecipe(<liquid:fossil_tar>, <minecraft:coal>);
+Melting.removeRecipe(<liquid:dark_steel>, <enderio:item_dark_steel_sword>);
+
+val moltentoremove = [
+<liquid:melodic_alloy>,
+<liquid:crystalline_alloy>,
+<liquid:enderium>,
+<liquid:lumium>,
+<liquid:signalum>,
+<liquid:platinum>,
+<liquid:lead_platinum>,
+<liquid:iridium>,
+<liquid:refinedobsidian>,
+<liquid:refinedglowstone>,
+<liquid:osgloglas>,
+<liquid:osmiridium>,
+<liquid:terrasteel>,
+<liquid:elementium>,
+<liquid:titanium>,
+<liquid:osmium>,
+<liquid:mirion>,
+<liquid:crystalline_pink_slime>,
+<liquid:stellar_alloy>,
+] as ILiquidStack[];
+
+for moltenfluid in moltentoremove {
+	Melting.removeRecipe(moltenfluid);
+}
+
+// Additions //
 Melting.addRecipe(<liquid:inert_metal> * 144,<contenttweaker:inert_ingot>);
 Melting.addRecipe(<liquid:inert_metal> * 1296,<contenttweaker:sub_block_holder_0:2>);
 Melting.addRecipe(<liquid:ender> * 1000, <actuallyadditions:block_misc:6>, 500);
@@ -103,9 +150,22 @@ Melting.addRecipe(<liquid:quartz> * 666, <minecraft:quartz>);
 Melting.addRecipe(<liquid:quartz> * 2664, <minecraft:quartz_block>);
 Melting.addRecipe(<liquid:stone> * 648, <additionalcompression:cobblestone_compressed>);
 
+Melting.addRecipe(<liquid:dawnstone> * 1296, <embers:block_dawnstone>);
+Melting.addRecipe(<liquid:dawnstone> * 576, <embers:gear_dawnstone>);
+Melting.addRecipe(<liquid:dawnstone> * 144, <embers:plate_dawnstone>);
+Melting.addRecipe(<liquid:dawnstone> * 144, <embers:ingot_dawnstone>);
+Melting.addRecipe(<liquid:dawnstone> * 16, <embers:nugget_dawnstone>);
+
+Melting.addRecipe(<liquid:starmetal> * 1296, <contenttweaker:starmetal_block>);
+
+## Blank Cast Resmelting
+Melting.addRecipe(<liquid:alubrass> * 144, <ore:cast>);
+
 
 ### ALLOYING ###
-// remove alloys
+
+/*
+// Remove Alloys //
 Alloy.removeRecipe(<liquid:steel>, [<liquid:iron>, <liquid:coal>]);
 Alloy.removeRecipe(<liquid:vibrant_alloy>);
 Alloy.removeRecipe(<liquid:energetic_alloy>);
@@ -130,23 +190,17 @@ Alloy.removeRecipe(<liquid:clay>);
 Alloy.removeRecipe(<liquid:tough>);
 Alloy.removeRecipe(<liquid:manyullyn>);
 
-
-//smart upgrades
-recipes.addShaped(<tinker_io:upg:4>, [[<embers:nugget_dawnstone>, <minecraft:diamond>, <embers:nugget_dawnstone>],[<minecraft:diamond>, <tinker_io:upg:3>, <minecraft:diamond>], [<embers:nugget_dawnstone>, <minecraft:diamond>, <embers:nugget_dawnstone>]]);
-recipes.addShaped(<tinker_io:upg:2>, [[<thermalfoundation:material:162>, <minecraft:iron_ingot>, <thermalfoundation:material:162>],[<minecraft:iron_ingot>, <tinker_io:upg:1>, <minecraft:iron_ingot>], [<thermalfoundation:material:162>, <minecraft:iron_ingot>, <thermalfoundation:material:162>]]);
-
-
-/*
 Alloy.removeRecipe(<liquid:osmiridium>);
 Alloy.removeRecipe(<liquid:mirion>);
 Alloy.removeRecipe(<liquid:osgloglas>);
+
+// Inert Metal //
+Alloy.addRecipe(<liquid:inert_metal> * 72, [<liquid:silver> * 72, <liquid:lead> * 36]);
 */
 
-//inert 
-Alloy.addRecipe(<liquid:inert_metal> * 72, [<liquid:silver> * 72, <liquid:lead> * 36]);
-
 ### CASTING ###
-//remove
+
+// Removals //
 Casting.removeTableRecipe(<tcomplement:materials:1>);
 Casting.removeTableRecipe(<enderio:item_material:11>);
 Casting.removeTableRecipe(<enderio:item_material:12>);
@@ -157,138 +211,59 @@ Casting.removeBasinRecipe(<tcomplement:scorched_block>);
 Casting.removeBasinRecipe(<tcomplement:scorched_block:1>);
 Casting.removeBasinRecipe(<tcomplement:scorched_block:10>);
 Casting.removeBasinRecipe(<tcomplement:scorched_slab2:2>);
-//new metals
+
+// Additions //
+// Tough Alloy Block
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:6>, null, <liquid:tough>, 1296);
 
-//fused quartz
+// Fused Quartz
 Casting.addBasinRecipe(<enderio:block_fused_quartz>, null, <liquid:quartz>, 2664, false, 100);
 
-//tool forge
+// Tool Forge
 Casting.addBasinRecipe(<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 4 as short}}), <tconstruct:tooltables:3>, <liquid:pigiron>, 5184, true, 400);
 
-//armor forge
+// Armour Forge
 Casting.addBasinRecipe(<conarm:armorforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 3 as short}}), <tconstruct:tooltables:3>, <liquid:knightslime>, 5184, true, 400);
 
-//inert ingot
+// Inert Ingot
 Casting.addTableRecipe(<contenttweaker:inert_ingot>, <tconstruct:cast_custom>, <liquid:inert_metal>, 144, false, 50);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:2>, null, <liquid:inert_metal>, 1296);
 
-//inert ingot
-Casting.addTableRecipe(<contenttweaker:inert_ingot>, <tconstruct:cast_custom>, <liquid:inert_metal>, 144, false, 50);
-Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:2>, null, <liquid:inert_metal>, 1296);
-
-//Ender Shard
+// Ender Shard
 Casting.addTableRecipe(<enderio:item_material:62>, <tconstruct:cast_custom>, <liquid:ender>, 50, false, 50);
 
+// Dawnstone
+Casting.addBasinRecipe(<embers:block_dawnstone>, null, <liquid:dawnstone>, 1296);
+Casting.addTableRecipe(<embers:gear_dawnstone>, <tconstruct:cast_custom:4>, <liquid:dawnstone>, 576, false, 250);
+Casting.addTableRecipe(<embers:plate_dawnstone>, <tconstruct:cast_custom:3>, <liquid:dawnstone>, 144, false, 100);
+Casting.addTableRecipe(<embers:ingot_dawnstone>, <tconstruct:cast_custom>, <liquid:dawnstone>, 144, false, 100);
 
-//Orichalcum
+//Starmetal Block
+Casting.addBasinRecipe(<contenttweaker:starmetal_block>, null, <liquid:starmetal>, 1296);
+
+// Orichalcum
 	Casting.addTableRecipe(<contenttweaker:material_part:20>,<tconstruct:cast_custom>, <liquid:orichalcum>, 144, false, 50);
 	Casting.addTableRecipe(<contenttweaker:material_part:21>,<tconstruct:cast_custom:4>, <liquid:orichalcum>, 576, false, 200);
 	Casting.addTableRecipe(<contenttweaker:material_part:22>,<tconstruct:cast_custom:3>, <liquid:orichalcum>, 144, false, 50);
 
 Melting.addRecipe(<liquid:orichalcum> * 1296, <contenttweaker:sub_block_holder_0>);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0>, null, <liquid:orichalcum>, 1296);
-recipes.addShaped(<contenttweaker:sub_block_holder_0>, [
-	[<contenttweaker:material_part:20>, <contenttweaker:material_part:20>, <contenttweaker:material_part:20>],
-	[<contenttweaker:material_part:20>, <contenttweaker:material_part:20>, <contenttweaker:material_part:20>], 
-	[<contenttweaker:material_part:20>, <contenttweaker:material_part:20>, <contenttweaker:material_part:20>]
-]);
-recipes.addShapeless(<contenttweaker:material_part:20> * 9, [<contenttweaker:sub_block_holder_0>]);
 
-//Palladuim
+// Palladium
 	Casting.addTableRecipe(<contenttweaker:material_part:30>,<tconstruct:cast_custom>, <liquid:palladium>, 144, false, 50);
 	Casting.addTableRecipe(<contenttweaker:material_part:31>,<tconstruct:cast_custom:4>, <liquid:palladium>, 576, false, 200);
 	Casting.addTableRecipe(<contenttweaker:material_part:32>,<tconstruct:cast_custom:3>, <liquid:palladium>, 144, false, 50);
 
-//Adamantine
+// Adamantine
 	Casting.addTableRecipe(<contenttweaker:material_part:10>,<tconstruct:cast_custom>, <liquid:adamantine>, 144, false, 50);
 	Casting.addTableRecipe(<contenttweaker:material_part:11>,<tconstruct:cast_custom:4>, <liquid:adamantine>, 576, false, 200);
 	Casting.addTableRecipe(<contenttweaker:material_part:12>,<tconstruct:cast_custom:3>, <liquid:adamantine>, 144, false, 50);
 
 Melting.addRecipe(<liquid:adamantine> * 1296, <contenttweaker:sub_block_holder_0:1>);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, null, <liquid:adamantine>, 1296);
-recipes.addShaped(<contenttweaker:sub_block_holder_0:1>, [
-	[<contenttweaker:material_part:10>, <contenttweaker:material_part:10>, <contenttweaker:material_part:10>],
-	[<contenttweaker:material_part:10>, <contenttweaker:material_part:10>, <contenttweaker:material_part:10>], 
-	[<contenttweaker:material_part:10>, <contenttweaker:material_part:10>, <contenttweaker:material_part:10>]
-]);
-recipes.addShapeless(<contenttweaker:material_part:10> * 9, [<contenttweaker:sub_block_holder_0:1>]);
 
 
-mods.thermalexpansion.Crucible.addRecipe(<liquid:moltenbedrock> * 100, <minecraft:bedrock>, 4000000);
-mods.nuclearcraft.Melter.addRecipe(<minecraft:bedrock>, <liquid:moltenbedrock> * 100, 10.0, 16.0);
-
-/*
-Alloy.addRecipe(<liquid:moltentokeniron> * 1000, [<liquid:iron> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokenbronze> * 1000, [<liquid:bronze> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokensteel> * 1000, [<liquid:steel> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokenrefinediron> * 1000, [<liquid:refined_iron> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokenosmium> * 1000, [<liquid:osmium> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokeniridium> * 1000, [<liquid:iridium> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokenultimate> * 1000, [<liquid:ultimate> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokeninfinity> * 1000, [<liquid:infinity> * 1296, <liquid:moltenbedrock> * 1000]);
-*/
-
-val Tokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:token_tier5>: <liquid:moltentokenosmium>,
-	<contenttweaker:token_tier6>: <liquid:moltentokeniridium>,
-	<contenttweaker:token_tier7>: <liquid:moltentokenultimate>,
-	<contenttweaker:token_tier8>: <liquid:moltentokeninfinity>,
-} as ILiquidStack[IItemStack];
-for token, molten in Tokens {
-// Casting.addTableRecipe(token, <avaritia:resource:5>, molten, 1000, false, 50);
-mods.nuclearcraft.Infuser.addRecipe(<avaritia:resource:5>, molten * 1000, token, 20.0, 16.0);
-mods.thermalexpansion.Transposer.addFillRecipe(token, <avaritia:resource:5>, molten * 1000, 8000000);
-}
-/*
-val adventureTokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:adventure_token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:adventure_token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:adventure_token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:adventure_token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:adventure_token_tier5>: <liquid:moltentokenosmium>,
-} as ILiquidStack[IItemStack];
-for token, molten in adventureTokens {
-Casting.addTableRecipe(token, <avaritia:infinity_sword>, molten, 1000, false, 50);
-}
-val techTokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:tech_token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:tech_token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:tech_token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:tech_token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:tech_token_tier5>: <liquid:moltentokenosmium>,
-} as ILiquidStack[IItemStack];
-for token, molten in techTokens {
-Casting.addTableRecipe(token, <avaritiaio:infinitecapacitor>, molten, 1000, false, 50);
-}
-val exploringTokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:exploring_token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:exploring_token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:exploring_token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:exploring_token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:exploring_token_tier5>: <liquid:moltentokenosmium>,
-} as ILiquidStack[IItemStack];
-for token, molten in exploringTokens {
-Casting.addTableRecipe(token, <avaritia:infinity_axe>, molten, 1000, false, 50);
-}
-val magicTokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:magic_token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:magic_token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:magic_token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:magic_token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:magic_token_tier5>: <liquid:moltentokenosmium>,
-} as ILiquidStack[IItemStack];
-for token, molten in magicTokens {
-Casting.addTableRecipe(token, <avaritia:infinity_bow>, molten, 1000, false, 50);
-}
-*/
-
-
-//MORE CASTS
+// MORE CASTS //
 val moreIngotCasting =
 [
 <embers:archaic_brick>,
@@ -311,11 +286,16 @@ Casting.addTableRecipe(<tconstruct:cast_custom:4>, item, <liquid:brass>, 144, tr
 }
 
 
-//Dawnstone block
-Melting.addRecipe(<liquid:dawnstone> * 1296, <embers:block_dawnstone>);
-Casting.addBasinRecipe(<embers:block_dawnstone>, null, <liquid:dawnstone>, 1296);
+### DRYING ###
+
+// porcelain brick | Ceramics
+//Drying.addRecipe(<ceramics:unfired_clay:5>, <ceramics:unfired_clay:4>, 160);
+
 
 ### HIGH OVEN ###
+
+// High Oven Fuels //
+
 // HighOven.removeFuel(IIngredient fuel);
 HighOven.removeFuel(<minecraft:coal:1>);
 HighOven.removeFuel(<ore:blockCharcoal>);
@@ -331,20 +311,18 @@ HighOven.addFuel(<mysticalagriculture:coal:4>, 30000, 60);
 HighOven.addFuel(<mysticalagradditions:insanium:5>, 45000, 100);
 
 
+// High Oven Recipe Removals //
+
 // HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
 HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
 HighOven.removeMixRecipe(<liquid:dark_chocolate>);
-//New steel recipe
-// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
 
+// High Oven New Recipes //
+
+// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
 
 var pigIron = HighOven.manageMixRecipe(<liquid:pigiron>, <liquid:iron>);
 pigIron.addPurifier(<thaumcraft:chunk:2>, 80);
-
-
-//Limestone Flux
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:limestoneforFlux>, <bloodmagic:cutting_fluid:1>], 200,200,1);
-
 
 var steel = HighOven.newMixRecipe(<liquid:steel> * 144, <liquid:iron> * 144, 1350);
 //steel.addOxidizer(<minecraft:redstone>, 33);
@@ -378,33 +356,126 @@ dawnstone.addPurifier(<ore:dustCopper>, 100);
 dawnstone.addPurifier(<rockhounding_chemistry:alloy_items_deco:15>, 20); 
 dawnstone.register();
 
-
-
 var prudentium = HighOven.newMixRecipe(<liquid:prudentium> * 36, <liquid:inferium> * 36, 1300);
 prudentium.addPurifier(<mysticalagriculture:crafting:1>, 100);
 prudentium.register();
 
 
-### DRYING ###
 
-// porcelain brick | Ceramics
-//Drying.addRecipe(<ceramics:unfired_clay:5>, <ceramics:unfired_clay:4>, 160);
-
-## Blank Cast Resmelting
-Melting.addRecipe(<liquid:alubrass> * 144, <ore:cast>);
-
-
-//Smart IO
-recipes.addShaped(<tinker_io:smart_output>, [[<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>],[<arcanearchives:shaped_quartz>, <tconstruct:casting>, <arcanearchives:shaped_quartz>], [<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>]]);
-
-//Reinforcement Modefier
-MetalPress.addRecipe(<tconstruct:materials:14>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:mold>, 2000);
-
-/* REMOVED UNTIL MORE TESTING
 /////////////////////////
-// Immersive Tinker's //
+// Immersive Tinker's ///
 /////////////////////////
 #######################################################
+
+
+// Tinkers Steel Casts, Cast Chiseling
+Carving.addGroup("claycast");
+Carving.addGroup("cast");
+Carving.addGroup("steelcast");
+
+val CasttoSteelCast as IItemStack[IItemStack] = {
+<tconstruct:cast>:<contenttweaker:steelcast>,
+<tconstruct:cast>.withTag({PartType: "conarm:armor_plate"}):<contenttweaker:steelcast_armor_plate>,
+<tconstruct:cast>.withTag({PartType: "conarm:armor_trim"}):<contenttweaker:steelcast_armor_trim>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:arrow_head"}):<contenttweaker:steelcast_arrow_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:arrow_shaft"}):<contenttweaker:steelcast_arrow_shaft>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:axe_head"}):<contenttweaker:steelcast_axe_head>,
+<tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}):<contenttweaker:steelcast_battery_cell>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:binding"}):<contenttweaker:steelcast_binding>,
+<tconstruct:cast>.withTag({PartType: "conarm:boots_core"}):<contenttweaker:steelcast_boots_core>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:bow_limb"}):<contenttweaker:steelcast_bow_limb>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:bow_string"}):<contenttweaker:steelcast_bow_string>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:broad_axe_head"}):<contenttweaker:steelcast_broad_axe_head>,
+<tconstruct:cast>.withTag({PartType: "conarm:chest_core"}):<contenttweaker:steelcast_chest_core>,
+<tconstruct:cast>.withTag({PartType: "tcomplement:chisel_head"}):<contenttweaker:steelcast_chisel_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:cross_guard"}):<contenttweaker:steelcast_cross_guard>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:excavator_head"}):<contenttweaker:steelcast_excavator_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}):<contenttweaker:steelcast_fletching>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:hammer_head"}):<contenttweaker:steelcast_hammer_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:hand_guard"}):<contenttweaker:steelcast_hand_guard>,
+<tconstruct:cast>.withTag({PartType: "conarm:helmet_core"}):<contenttweaker:steelcast_helmet_core>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:kama_head"}):<contenttweaker:steelcast_kama_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:knife_blade"}):<contenttweaker:steelcast_knife_blade>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:large_plate"}):<contenttweaker:steelcast_large_plate>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:large_sword_blade"}):<contenttweaker:steelcast_large_sword_blade>,
+<tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}):<contenttweaker:steelcast_laser_medium>,
+<tconstruct:cast>.withTag({PartType: "conarm:leggings_core"}):<contenttweaker:steelcast_leggings_core>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:pan_head"}):<contenttweaker:steelcast_pan_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:pick_head"}):<contenttweaker:steelcast_pick_head>,
+<tconstruct:cast>.withTag({PartType: "plustic:pipe_piece"}):<contenttweaker:steelcast_pipe_piece>,
+<tconstruct:cast>.withTag({PartType: "conarm:polishing_kit"}):<contenttweaker:steelcast_polishing_kit>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:scythe_head"}):<contenttweaker:steelcast_scythe_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:sharpening_kit"}):<contenttweaker:steelcast_sharpening_kit>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:shovel_head"}):<contenttweaker:steelcast_shovel_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:sign_head"}):<contenttweaker:steelcast_sign_head>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:sword_blade"}):<contenttweaker:steelcast_sword_blade>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:tool_rod"}):<contenttweaker:steelcast_tool_rod>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:tough_binding"}):<contenttweaker:steelcast_tough_binding>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:tough_tool_rod"}):<contenttweaker:steelcast_tough_tool_rod>,
+<tconstruct:cast>.withTag({PartType: "tconstruct:wide_guard"}):<contenttweaker:steelcast_wide_guard>,
+} as IItemStack[IItemStack];
+
+for brasscast, steelcast in CasttoSteelCast {
+	recipes.addShapeless(steelcast, [brasscast, <ore:plateSteel>]);
+	Carving.addVariation("cast", brasscast);
+	Carving.addVariation("steelcast", steelcast);
+}
+
+Carving.addVariation("cast", <tcomplement:cast>);
+Carving.addVariation("cast", <tconstruct:cast>.withTag({PartType: "tconstruct:shard"}));
+Carving.addVariation("cast", <tconstruct:cast_custom>);
+Carving.addVariation("cast", <tconstruct:cast_custom:1>);
+Carving.addVariation("cast", <tconstruct:cast_custom:2>);
+Carving.addVariation("cast", <tconstruct:cast_custom:3>);
+Carving.addVariation("cast", <tconstruct:cast_custom:4>);
+
+val claycast = [
+<tconstruct:clay_cast>.withTag({PartType: "conarm:armor_plate"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:armor_trim"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:arrow_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:arrow_shaft"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:axe_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "plustic:battery_cell"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:binding"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:boots_core"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:bow_limb"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:bow_string"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:broad_axe_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:chest_core"}),
+<tconstruct:clay_cast>.withTag({PartType: "tcomplement:chisel_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:cross_guard"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:excavator_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:fletching"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:hammer_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:hand_guard"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:helmet_core"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:kama_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:knife_blade"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:large_plate"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:large_sword_blade"}),
+<tconstruct:clay_cast>.withTag({PartType: "plustic:laser_medium"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:leggings_core"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:pan_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:pick_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "plustic:pipe_piece"}),
+<tconstruct:clay_cast>.withTag({PartType: "conarm:polishing_kit"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:scythe_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:sharpening_kit"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:shovel_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:sign_head"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:sword_blade"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:tool_rod"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:tough_binding"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:tough_tool_rod"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:wide_guard"}),
+<tconstruct:clay_cast>.withTag({PartType: "tconstruct:shard"}),
+<tcomplement:cast_clay>,
+] as IItemStack[];
+
+for cast in claycast {
+	Carving.addVariation("claycast", cast);
+}
+
 
 // Most Parts
 var matpresser as IItemStack[string] = {
@@ -477,72 +548,93 @@ var matpresser as IItemStack[string] = {
 	"emerald_plustic" : <minecraft:emerald>,
 };
 
-var tconPartsMappresser as IData[][IItemStack] = {
-	<tconstruct:tool_rod> : [1, "tconstruct:tool_rod"],
-	<tconstruct:pick_head> : [3, "tconstruct:pick_head"],
-	<tconstruct:shovel_head> : [2, "tconstruct:shovel_head"],
-	<tconstruct:axe_head> : [3, "tconstruct:axe_head"],
-	<tconstruct:sword_blade> : [2, "tconstruct:sword_blade"],
-	<tconstruct:kama_head> : [2, "tconstruct:kama_head"],
-	<tconstruct:wide_guard> : [1 , "tconstruct:wide_guard"],
-	<tconstruct:hand_guard> : [1, "tconstruct:hand_guard"],
-	<tconstruct:binding> : [1, "tconstruct:binding"],
-	<tconstruct:pan_head> : [4, "tconstruct:pan_head"],
-	<tconstruct:sign_head> : [3, "tconstruct:sign_head"],
-	<tconstruct:sharpening_kit> : [2, "tconstruct:sharpening_kit"],
-	<tconstruct:arrow_head> : [2, "tconstruct:arrow_head"],
-	<tconstruct:knife_blade> : [1, "tconstruct:knife_blade"],
-	<tconstruct:cross_guard> : [1, "tconstruct:cross_guard"],
-	<tconstruct:tough_binding> : [3, "tconstruct:tough_binding"],
-	<tconstruct:tough_tool_rod> : [3, "tconstruct:tough_tool_rod"],
-	<tconstruct:scythe_head> : [8, "tconstruct:scythe_head"],
-	<tconstruct:large_sword_blade> : [8, "tconstruct:large_sword_blade"],
-	<tconstruct:broad_axe_head> : [8, "tconstruct:broad_axe_head"],
-	<tconstruct:excavator_head> : [8, "tconstruct:excavator_head"],
-	<tconstruct:hammer_head> : [8, "tconstruct:hammer_head"],
-	<tconstruct:large_plate> : [8, "tconstruct:large_plate"],
-	<tcomplement:chisel_head> : [1, "tcomplement:chisel_head"],
-	<conarm:boots_core> :  [4, "conarm:boots_core"],
-	<conarm:leggings_core> : [5, "conarm:leggings_core"],
-	<conarm:chest_core> : [6, "conarm:chest_core"],
-	<conarm:helmet_core> : [4, "conarm:helmet_core"],
-	<conarm:armor_plate> : [3, "conarm:armor_plate"],
-	<conarm:armor_trim> : [1, "conarm:armor_trim"],
-	<plustic:pipe_piece> : [12, "plustic:pipe_piece"],
-	<conarm:polishing_kit> : [2, "conarm:polishing_kit"],
-	<tconstruct:bow_limb> : [3, "tconstruct:bow_limb"],	
+var tconPartsMappresser as int[IItemStack[]] = {
+	[<tconstruct:tool_rod> , <contenttweaker:steelcast_tool_rod>] : 1,
+	[<tconstruct:pick_head> , <contenttweaker:steelcast_pick_head>] : 3,
+	[<tconstruct:shovel_head> , <contenttweaker:steelcast_shovel_head>] : 2,
+	[<tconstruct:axe_head> , <contenttweaker:steelcast_axe_head>] : 3,
+	[<tconstruct:sword_blade> , <contenttweaker:steelcast_sword_blade>] : 2,
+	[<tconstruct:kama_head> , <contenttweaker:steelcast_kama_head>] : 2,
+	[<tconstruct:wide_guard> , <contenttweaker:steelcast_wide_guard>] : 1,
+	[<tconstruct:hand_guard> , <contenttweaker:steelcast_hand_guard>] : 1,
+	[<tconstruct:binding> , <contenttweaker:steelcast_binding>] : 1,
+	[<tconstruct:pan_head> , <contenttweaker:steelcast_pan_head>] : 4,
+	[<tconstruct:sign_head> , <contenttweaker:steelcast_sign_head>] : 3,
+	[<tconstruct:sharpening_kit> , <contenttweaker:steelcast_sharpening_kit>] : 2,
+	[<tconstruct:arrow_head> , <contenttweaker:steelcast_arrow_head>] : 2,
+	[<tconstruct:knife_blade> , <contenttweaker:steelcast_knife_blade>] : 1,
+	[<tconstruct:cross_guard> , <contenttweaker:steelcast_cross_guard>] : 1,
+	[<tconstruct:tough_binding> , <contenttweaker:steelcast_tough_binding>] : 3,
+	[<tconstruct:tough_tool_rod> , <contenttweaker:steelcast_tough_tool_rod>] : 3,
+	[<tconstruct:scythe_head> , <contenttweaker:steelcast_scythe_head>] : 8,
+	[<tconstruct:large_sword_blade> , <contenttweaker:steelcast_large_sword_blade>] : 8,
+	[<tconstruct:broad_axe_head> , <contenttweaker:steelcast_broad_axe_head>] : 8,
+	[<tconstruct:excavator_head> , <contenttweaker:steelcast_excavator_head>] : 8,
+	[<tconstruct:hammer_head> , <contenttweaker:steelcast_hammer_head>] : 8,
+	[<tconstruct:large_plate> , <contenttweaker:steelcast_large_plate>] : 8,
+	[<tcomplement:chisel_head> , <contenttweaker:steelcast_chisel_head>] : 1,
+	[<conarm:boots_core> , <contenttweaker:steelcast_boots_core>] : 4,
+	[<conarm:leggings_core> , <contenttweaker:steelcast_leggings_core>] : 5,
+	[<conarm:chest_core> , <contenttweaker:steelcast_chest_core>] : 6,
+	[<conarm:helmet_core> , <contenttweaker:steelcast_helmet_core>] : 4, 
+	[<conarm:armor_plate> , <contenttweaker:steelcast_armor_plate>] : 3,
+	[<conarm:armor_trim> , <contenttweaker:steelcast_armor_trim>] : 1,
+	[<plustic:pipe_piece> , <contenttweaker:steelcast_pipe_piece>] : 12,
+	[<conarm:polishing_kit> , <contenttweaker:steelcast_polishing_kit>] : 2,
+	[<tconstruct:bow_limb> , <contenttweaker:steelcast_bow_limb>] : 3,	
 };
 
 for mat, ingot in matpresser {
-	for part, info in tconPartsMappresser {
-		mods.immersiveengineering.MetalPress.addRecipe(part.withTag({Material: mat}), ingot, <tconstruct:cast>.withTag({PartType: info[1]}), 2000, info[0]);
+	for item, quantity in tconPartsMappresser {
+		MetalPress.addRecipe(item[0].withTag({Material: mat}), ingot, item[1], 2000, quantity);
+//		ArcFurnace.addRecipe(ingot * quantity, item[0].withTag({Material: mat}), null, 100, 512);
 	}
 }
 
 // Arrow Shaft
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "fierymetal"}), <twilightforest:fiery_ingot>, <tconstruct:cast>.withTag({PartType: "tconstruct:arrow_shaft"}), 2000, 2);
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "enderium_plustic"}), <thermalfoundation:material:167>, <tconstruct:cast>.withTag({PartType: "tconstruct:arrow_shaft"}), 2000, 2);
+MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "fierymetal"}), <twilightforest:fiery_ingot>, <contenttweaker:steelcast_arrow_shaft>, 2000, 2);
+MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "enderium_plustic"}), <thermalfoundation:material:167>, <contenttweaker:steelcast_arrow_shaft>, 2000, 2);
+
+//ArcFurnace.addRecipe(<twilightforest:fiery_ingot> * 2, <tconstruct:arrow_shaft>.withTag({Material: "fierymetal"}), null, 100, 512);
+//ArcFurnace.addRecipe(<thermalfoundation:material:167> * 2, <tconstruct:arrow_shaft>.withTag({Material: "enderium_plustic"}), null, 100, 512);
 
 // Fletching
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}), 2000, 2);
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "invar"}), <thermalfoundation:material:162>, <tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}), 2000, 2);
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:arrow_shaft>.withTag({Material: "titanium"}), <techreborn:ingot:14>, <tconstruct:cast>.withTag({PartType: "tconstruct:fletching"}), 2000, 2);
+MetalPress.addRecipe(<tconstruct:fletching>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <contenttweaker:steelcast_fletching>, 2000, 2);
+MetalPress.addRecipe(<tconstruct:fletching>.withTag({Material: "invar"}), <thermalfoundation:material:162>, <contenttweaker:steelcast_fletching>, 2000, 2);
+MetalPress.addRecipe(<tconstruct:fletching>.withTag({Material: "titanium"}), <techreborn:ingot:14>, <contenttweaker:steelcast_fletching>, 2000, 2);
+
+/*ArcFurnace.addRecipe(<thermalfoundation:material:133> * 2, <tconstruct:fletching>.withTag({Material: "nickel"}), null, 100, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:162> * 2, <tconstruct:fletching>.withTag({Material: "invar"}), null, 100, 512);
+ArcFurnace.addRecipe(<techreborn:ingot:14> * 2, <tconstruct:fletching>.withTag({Material: "titanium"}), null, 100, 512);*/
 
 // Laser Medium
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedobsidian"}), <mekanism:ingot>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedglowstone"}), <mekanism:ingot:3>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "infinity_avaritia_plustic"}), <avaritia:resource:6>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "starmetal"}), <astralsorcery:itemcraftingcomponent:1>, <tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), 2000, 8);
+MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedobsidian"}), <mekanism:ingot>, <contenttweaker:steelcast_laser_medium>, 2000, 8);
+MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "refinedglowstone"}), <mekanism:ingot:3>, <contenttweaker:steelcast_laser_medium>, 2000, 8);
+MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "infinity_avaritia_plustic"}), <avaritia:resource:6>, <contenttweaker:steelcast_laser_medium>, 2000, 8);
+MetalPress.addRecipe(<plustic:laser_medium>.withTag({Material: "starmetal"}), <astralsorcery:itemcraftingcomponent:1>, <contenttweaker:steelcast_laser_medium>, 2000, 8);
+
+/*ArcFurnace.addRecipe(<mekanism:ingot>, <plustic:laser_medium>.withTag({Material: "refinedobsidian"}), null, 100, 512);
+ArcFurnace.addRecipe(<mekanism:ingot:3>, <plustic:laser_medium>.withTag({Material: "refinedglowstone"}), null, 100, 512);
+ArcFurnace.addRecipe(<avaritia:resource:6>, <plustic:laser_medium>.withTag({Material: "infinity_avaritia_plustic"}), null, 100, 512);
+ArcFurnace.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <plustic:laser_medium>.withTag({Material: "starmetal"}), null, 100, 512);*/
 
 // Bowstring
-mods.immersiveengineering.MetalPress.addRecipe(<tconstruct:bow_string>.withTag({Material: "soularium"}), <enderio:item_alloy_ingot:7>, <tconstruct:cast>.withTag({PartType: "tconstruct:bow_string"}), 2000, 1);
+MetalPress.addRecipe(<tconstruct:bow_string>.withTag({Material: "soularium"}), <enderio:item_alloy_ingot:7>, <contenttweaker:steelcast_bow_string>, 2000, 1);
+
+//ArcFurnace.addRecipe(<enderio:item_alloy_ingot:7>, <tconstruct:bow_string>.withTag({Material: "soularium"}), null, 100, 512);
 
 // Battery Cell
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "manyullyn"}), <tconstruct:ingots:2>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "copper"}), <thermalfoundation:material:128>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "silver"}), <thermalfoundation:material:130>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-mods.immersiveengineering.MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "osmium"}), <mekanism:ingot:1>, <tconstruct:cast>.withTag({PartType: "plustic:battery_cell"}), 2000, 8);
-*/
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "manyullyn"}), <tconstruct:ingots:2>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "copper"}), <thermalfoundation:material:128>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "silver"}), <thermalfoundation:material:130>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "nickel"}), <thermalfoundation:material:133>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+MetalPress.addRecipe(<plustic:battery_cell>.withTag({Material: "osmium"}), <mekanism:ingot:1>, <contenttweaker:steelcast_battery_cell>, 2000, 8);
+
+/*ArcFurnace.addRecipe(<tconstruct:ingots:2> * 8, <plustic:battery_cell>.withTag({Material: "manyullyn"}), null, 100, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:128> * 8, <plustic:battery_cell>.withTag({Material: "copper"}), null, 100, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:130> * 8, <plustic:battery_cell>.withTag({Material: "silver"}), null, 100, 512);
+ArcFurnace.addRecipe(<thermalfoundation:material:133> * 8, <plustic:battery_cell>.withTag({Material: "nickel"}), null, 100, 512);
+ArcFurnace.addRecipe(<mekanism:ingot:1> * 8, <plustic:battery_cell>.withTag({Material: "osmium"}), null, 100, 512);*/
+
 ##########################################################################################
-print("==================== end of mods tinkersconstruct.zs ====================");
+print("==================== end of tinkersconstruct.zs ====================");

@@ -1,6 +1,6 @@
 ##########################################################################################
 #modloaded botania
-#priority 100
+#priority 1
 
 import crafttweaker.item.IItemStack;
 import mods.botania.Apothecary;
@@ -14,7 +14,6 @@ import mods.botaniatweaks.Agglomeration;
 import mods.immersiveengineering.Crusher;
 import mods.inworldcrafting.FluidToItem;
 import mods.nuclearcraft.Manufactory;
-import mods.nuclearcraft.Melter;
 import mods.thaumcraft.ArcaneWorkbench;
 import mods.thaumcraft.Infusion;
 import mods.thermalexpansion.Insolator;
@@ -22,10 +21,8 @@ import mods.thermalexpansion.Pulverizer;
 import mods.thermalexpansion.Transposer;
 import crafttweaker.item.IIngredient;
 
-print("==================== loading mods botania.zs ====================");
+print("==================== loading botania.zs ====================");
 ##########################################################################################
-
-//mods.botania.ElvenTrade.addRecipe([<minecraft:iron_ingot>], [<minecraft:dirt>,<minecraft:grass>]);
 
 val remove =
 [
@@ -51,23 +48,83 @@ for item in remove {
 recipes.remove(item);
 }
 
-
 <botania:enchanter>.addTooltip(format.green("Use the Lexica Botania to create"));
 
-//Mana Gun
-recipes.addShaped(<botania:managun>, [[<botania:spreader:1>, <embers:diffraction_barrel>, <botania:manaresource:2>],[null, <botania:livingwood>, <minecraft:tnt>], [null, null, <botania:livingwood>]]);
 
-//Enchanted Soil
-recipes.addShapeless(<botania:enchantedsoil>, [<minecraft:grass>,<botania:overgrowthseed>]);
+### CRAFTING RECIPES ###
 
-//mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance, @Optional int water);
-## Black Lotus
-Insolator.addRecipe(<actuallyadditions:block_black_lotus>, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer>, 1000, <actuallyadditions:block_black_lotus>, 100, 1000);
-Insolator.addRecipe(<actuallyadditions:block_black_lotus>*2, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:1>, 7500, <botania:blacklotus>, 25, 2500);
-Insolator.addRecipe(<actuallyadditions:block_black_lotus>*3, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:2>, 15000, <botania:blacklotus:1>, 5, 5000);
+// Petal Apothecary
+recipes.addShaped(<botania:altar>, [[<moreplates:enori_plate>, <astralsorcery:itemusabledust>, <moreplates:enori_plate>],[null, <thaumcraft:stone_arcane>, null], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
+
+// Mana Spreader
+recipes.addShapedMirrored(<botania:spreader>, [[<botania:livingwood>, <botania:livingwood>, <botania:livingwood>],[<ore:plateBrass>, <botania:petal:*>, null], [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>]]);
+
+<ore:anyCharm>.add(<twilightforest:charm_of_keeping_1>);
+<ore:anyCharm>.add(<twilightforest:charm_of_life_1>);
+
+// Alchemy Catalyst
+ArcaneWorkbench.registerShapedRecipe("alchemycatalyst", "", 100,
+    [<aspect:perditio>*8,<aspect:ordo>*8],
+    <botania:alchemycatalyst>, [
+    [<botania:livingrock>, <twilightforest:naga_scale>, <botania:livingrock>],
+    [<ore:anyCharm>, <twilightforest:magic_map_focus>, <twilightforest:transformation_powder>], 
+    [<botania:livingrock>, <twilightforest:naga_scale>, <botania:livingrock>]
+]);
+
+// Runic Altar
+mods.astralsorcery.Altar.addAttunementAltarRecipe("multiblockmadness:shaped/internal/altar/runealtar", <botania:runealtar>, 1000, 300, [
+
+			<arcanearchives:quartz_sliver>, <arcanearchives:quartz_sliver>, <arcanearchives:quartz_sliver>,
+
+			<botania:livingrock>, <botania:livingrock>, <botania:livingrock>,
+
+			<botania:livingrock>, <astralsorcery:itemshiftingstar>, <botania:livingrock>,
+
+			<botania:manaresource:23>, <botania:manaresource:23>, <bloodmagic:blood_rune>, <bloodmagic:blood_rune>]);
 
 
-// living wood
+// Third Eye
+Infusion.registerRecipe("thirdeye", "", 
+<botania:thirdeye>, 5, 
+[<aspect:sensus>*150, <aspect:praecantatio>*100, <aspect:spiritus>*50], 
+<minecraft:ender_eye>, 
+[<botania:pistonrelay>,<bloodmagic:component:26>, <botania:manaresource:2>, <botania:rune:7>,
+<botania:pistonrelay>,<bloodmagic:component:26>, <botania:manaresource:2>, <botania:rune:5>]);
+
+# [Terrestrial Agglomeration Plate] from [Block of Hardened Thermalloy][+6]
+craft.remake(<botania:terraplate>, ["pretty",
+  "¤ * ☼",
+  "T § T",
+  "M A M"], {
+  "¤": <ore:gearPalisEmpowered>,             # Empowered Palis Gear
+  "*": <contenttweaker:terrestrial_crystal>, # Terrestrial Crystal
+  "☼": <ore:gearVoidEmpowered>,              # Empowered Void Gear
+  "T": <bloodmagic:teleposer>,            # Teleposer
+  "§": <contenttweaker:block_thermal_alloy>, # Block of Hardened Thermalloy
+  "M": <ore:runeManaB>,                      # Rune of Mana
+  "A": <ore:runeAutumnB>,                    # Rune of Autumn
+});
+
+//mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int instability, CTAspectStack[] aspects, IIngredient centralItem, IIngredient[] recipe);
+
+//Nature Pylon
+mods.thaumcraft.Infusion.registerRecipe("nature_pylon", "", 
+<botania:pylon:1>, 5, 
+[<aspect:herba>*200, <aspect:praecantatio>*100, <aspect:alienis>*50, <aspect:chronos>*50], 
+<botania:pylon>, [<botania:livingwood:5>,<botania:manaresource:4>,<botania:livingwood:5>, <minecraft:ender_eye>,<botania:livingwood:5>,<botania:manaresource:4>, <botania:livingwood:5>,<minecraft:glowstone_dust>]);
+
+//Gateway Core
+mods.thaumcraft.Infusion.registerRecipe("gateway_core", "", 
+<botania:alfheimportal>, 10, 
+[<aspect:praecantatio>*200, <aspect:permutatio>*100, <aspect:alienis>*50, <aspect:chronos>*50], 
+<waystones:warp_stone>, 
+[<botania:manaresource:4>,<botania:livingwood:5>, <botania:manaresource:4>, <bloodmagic:slate:4>,
+<botania:manaresource:4>,<botania:livingwood:5>, <botania:manaresource:4>, <bloodmagic:slate:4>]);
+
+
+### PURE DAISY ###
+
+// Living Wood
 PureDaisy.removeRecipe(<botania:livingwood>);
 
 val livingWood =
@@ -90,7 +147,7 @@ PureDaisy.addRecipe(item, <botania:livingwood>);
 }
 
 
-// living stone
+// Living Stone
 val plantsformossy =
 [
 <minecraft:tallgrass:1>,
@@ -118,24 +175,13 @@ FluidToItem.transform(<minecraft:mossy_cobblestone>, <liquid:water>, [<ore:cobbl
 <jaopca:item_stickmanasteel>.displayName = "Manasilver Rod";
 */
 
-### CRAFTING RECIPES ###
-recipes.addShaped(<botania:altar>, [[<moreplates:enori_plate>, <astralsorcery:itemusabledust>, <moreplates:enori_plate>],[null, <thaumcraft:stone_arcane>, null], [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>]]);
-
-//spreader
-recipes.addShapedMirrored(<botania:spreader>, [[<botania:livingwood>, <botania:livingwood>, <botania:livingwood>],[<ore:plateBrass>, <botania:petal:*>, null], [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>]]);
+//Shaped Quartz
+//PureDaisy.addRecipe(<arcanearchives:raw_quartz_cluster>, <arcanearchives:shaped_quartz>);
+PureDaisy.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:storage_shaped_quartz>);
 
 
-mods.astralsorcery.Altar.addAttunementAltarRecipe("multiblockmadness:shaped/internal/altar/runealtar", <botania:runealtar>, 1000, 300, [
+### MANA INFUSION ###
 
-			<arcanearchives:quartz_sliver>, <arcanearchives:quartz_sliver>, <arcanearchives:quartz_sliver>,
-
-			<botania:livingrock>, <botania:livingrock>, <botania:livingrock>,
-
-			<botania:livingrock>, <astralsorcery:itemshiftingstar>, <botania:livingrock>,
-
-			<botania:manaresource:23>, <botania:manaresource:23>, <bloodmagic:blood_rune>, <bloodmagic:blood_rune>]);
-
-### INFUSION ###
 //Mana Powder
 ManaInfusion.removeRecipe(<botania:manaresource:23>);
 ManaInfusion.addInfusion(<botania:manaresource:23>,<minecraft:gunpowder>,10000);
@@ -166,6 +212,43 @@ ManaInfusion.addInfusion(<botania:manaresource:2>*2,<actuallyadditions:item_crys
 ManaInfusion.addInfusion(<botania:storage:3>*2,<actuallyadditions:block_crystal_empowered:2>,15000);
 
 
+### RUNIC ALTAR ###
+
+//Rune of Air
+RuneAltar.removeRecipe(<botania:rune:3>);
+RuneAltar.addRecipe(<botania:rune:3>,[<ore:ingotBrass>, <thermalfoundation:material:894>, <thermalfoundation:material:1026>, <botania:manaresource>, <botania:manaresource:23>], 15000);
+
+//Rune of Earth
+RuneAltar.removeRecipe(<botania:rune:2>);
+RuneAltar.addRecipe(<botania:rune:2>,[<mysticalworld:wet_mud_block>, <twilightforest:steeleaf_ingot>, <thermalfoundation:material:1027>, <botania:manaresource>, <botania:manaresource:23>], 15000);
+
+//Rune of Fire
+RuneAltar.removeRecipe(<botania:rune:1>);
+RuneAltar.addRecipe(<botania:rune:1>,[<thaumcraft:alumentum>, <tconstruct:firewood:1>, <thermalfoundation:material:1024>, <botania:manaresource>, <botania:manaresource:23>], 15000);
+
+//Lavawood
+Transposer.addFillRecipe(<tconstruct:firewood>, <minecraft:planks>, <liquid:lava>*250, 2500);
+mods.nuclearcraft.Infuser.addRecipe(<ore:plankWood>, <liquid:lava>*250, <tconstruct:firewood>);
+
+//Rune of Water
+RuneAltar.removeRecipe(<botania:rune>);
+RuneAltar.addRecipe(<botania:rune>,[<minecraft:prismarine_shard>, <actuallyadditions:item_crystal:4>, <thermalfoundation:material:1025>, <botania:manaresource>, <botania:manaresource:23>], 15000);
+
+// Wet Dirt
+recipes.remove(<mysticalworld:wet_mud_block>);
+recipes.addShaped(<mysticalworld:wet_mud_block>*8, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>,  <liquid:water>*1000, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+Transposer.addFillRecipe(<mysticalworld:wet_mud_block>, <minecraft:dirt>, <liquid:water>*125, 2500);
+//mods.nuclearcraft.Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
+
+//Rune of Mana
+RuneAltar.removeRecipe(<botania:rune:8>);
+RuneAltar.addRecipe(<botania:rune:8>,[<botania:manaresource:2>, <botania:manaresource:2>, <contenttweaker:ingot_reinforced_starmetal>, <contenttweaker:ingot_reinforced_starmetal>, <enderio:item_alloy_endergy_ingot:5>, <enderio:item_alloy_endergy_ingot:5>], 25000);
+
+//Voidstone Rune
+RuneAltar.addRecipe(<chisel:energizedvoidstone:4>*4,[<chisel:energizedvoidstone:2>,<botania:rune:7>,<chisel:energizedvoidstone:2>,<botania:rune:6>,<chisel:energizedvoidstone:2>,<botania:rune:5>,<chisel:energizedvoidstone:2>,<botania:rune:4>], 20000);
+
+
+### TERRESTRIAL AGGLOMERATION ###
 
 //Terrasteel
 Agglomeration.removeRecipe(<botania:manaresource:4>, [<botania:manaresource:1>, <botania:manaresource>, <botania:manaresource:2>]);
@@ -175,61 +258,13 @@ Agglomeration.addRecipe(<botania:manaresource:4>,
 ,500000,0x0000FF,0x00FF00,
 <bloodarsenal:blood_infused_iron_block>,<actuallyadditions:block_crystal_empowered:1>,<actuallyadditions:block_crystal_empowered:3>);
 
-//mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int instability, CTAspectStack[] aspects, IIngredient centralItem, IIngredient[] recipe);
-//Glimering Wood
-mods.astralsorcery.StarlightInfusion.addInfusion(<botania:livingwood>, <botania:livingwood:5>, false, 0.1, 100);
-mods.astralsorcery.StarlightInfusion.addInfusion(<botania:dreamwood>, <botania:dreamwood:5>, false, 0.1, 100);
-
-
-
-//Nature Pylon
-mods.thaumcraft.Infusion.registerRecipe("nature_pylon", "", 
-<botania:pylon:1>, 5, 
-[<aspect:herba>*200, <aspect:praecantatio>*100, <aspect:alienis>*50, <aspect:chronos>*50], 
-<botania:pylon>, [<botania:livingwood:5>,<botania:manaresource:4>,<botania:livingwood:5>, <minecraft:ender_eye>,<botania:livingwood:5>,<botania:manaresource:4>, <botania:livingwood:5>,<minecraft:glowstone_dust>]);
-
-//Gateway Core
-mods.thaumcraft.Infusion.registerRecipe("gateway_core", "", 
-<botania:alfheimportal>, 10, 
-[<aspect:praecantatio>*200, <aspect:permutatio>*100, <aspect:alienis>*50, <aspect:chronos>*50], 
-<waystones:warp_stone>, 
-[<botania:manaresource:4>,<botania:livingwood:5>, <botania:manaresource:4>, <bloodmagic:slate:4>,
-<botania:manaresource:4>,<botania:livingwood:5>, <botania:manaresource:4>, <bloodmagic:slate:4>]);
-
-//Aster Diamond
+//Astral Diamond
 Agglomeration.addRecipe(<ebwizardry:astral_diamond>, [<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcraftingcomponent:2>, <botania:manaresource:2>,<thaumcraft:quicksilver>],250000,0x0000FF,0x8afff7,<astralsorcery:blockinfusedwood:6>,<contenttweaker:starmetal_block>,<astralsorcery:blockblackmarble>);
 
-//Voidstone Rune
-RuneAltar.addRecipe(<chisel:energizedvoidstone:4>*4,[<chisel:energizedvoidstone:2>,<botania:rune:7>,<chisel:energizedvoidstone:2>,<botania:rune:6>,<chisel:energizedvoidstone:2>,<botania:rune:5>,<chisel:energizedvoidstone:2>,<botania:rune:4>], 20000);
 
+### MORE RECIPES ###
 
-//Rune of Mana
-RuneAltar.removeRecipe(<botania:rune:8>);
-RuneAltar.addRecipe(<botania:rune:8>,[<botania:manaresource:2>, <botania:manaresource:2>, <contenttweaker:ingot_reinforced_starmetal>, <contenttweaker:ingot_reinforced_starmetal>, <enderio:item_alloy_endergy_ingot:5>, <enderio:item_alloy_endergy_ingot:5>], 25000);
-
-//Rune of Air
-RuneAltar.removeRecipe(<botania:rune:3>);
-RuneAltar.addRecipe(<botania:rune:3>,[<ore:ingotBrass>, <thermalfoundation:material:894>, <thermalfoundation:material:1026>, <botania:manaresource>, <botania:manaresource:23>], 15000);
-
-//Rune of Earth
-RuneAltar.removeRecipe(<botania:rune:2>);
-RuneAltar.addRecipe(<botania:rune:2>,[<mysticalworld:wet_mud_block>, <twilightforest:steeleaf_ingot>, <thermalfoundation:material:1027>, <botania:manaresource>, <botania:manaresource:23>], 15000);
-//Wet Mud
-Transposer.addFillRecipe(<mysticalworld:wet_mud_block>, <minecraft:dirt>, <liquid:water>*125, 2500);
-//mods.nuclearcraft.Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
-
-//Rune of Fire
-RuneAltar.removeRecipe(<botania:rune:1>);
-RuneAltar.addRecipe(<botania:rune:1>,[<thaumcraft:alumentum>, <tconstruct:firewood:1>, <thermalfoundation:material:1024>, <botania:manaresource>, <botania:manaresource:23>], 15000);
-//Lavawood
-Transposer.addFillRecipe(<tconstruct:firewood>, <minecraft:planks>, <liquid:lava>*250, 2500);
-mods.nuclearcraft.Infuser.addRecipe(<ore:plankWood>, <liquid:lava>*250, <tconstruct:firewood>);
-
-//Rune of Water
-RuneAltar.removeRecipe(<botania:rune>);
-RuneAltar.addRecipe(<botania:rune>,[<minecraft:prismarine_shard>, <actuallyadditions:item_crystal:4>, <thermalfoundation:material:1025>, <botania:manaresource>, <botania:manaresource:23>], 15000);
-
-
+// Petal Duplication & Crushing
 val petalDupe as IItemStack[IItemStack] = {
 <botania:petal>:<botania:dye>,
 <botania:petal:1>:<botania:dye:1>,
@@ -260,23 +295,21 @@ Pulverizer.addRecipe(dust, petal, 1500, dust, 10);
 mods.mekanism.crusher.addRecipe(petal, dust);
 }
 
-val tinyDustMap as IItemStack[IItemStack] = {
-} as IItemStack[IItemStack];
-
-for tinyDust, material in tinyDustMap {
-	mods.fossils.recipes.addSifterOutput(material, tinyDust, 1);
-}
 //mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance, @Optional int water);
+## Black Lotus
+Insolator.addRecipe(<actuallyadditions:block_black_lotus>, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer>, 1000, <actuallyadditions:block_black_lotus>, 100, 1000);
+Insolator.addRecipe(<actuallyadditions:block_black_lotus>*2, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:1>, 7500, <botania:blacklotus>, 25, 2500);
+Insolator.addRecipe(<actuallyadditions:block_black_lotus>*3, <actuallyadditions:block_black_lotus>, <thermalfoundation:fertilizer:2>, 15000, <botania:blacklotus:1>, 5, 5000);
 
-//Shaped Quartz
-//PureDaisy.addRecipe(<arcanearchives:raw_quartz_cluster>, <arcanearchives:shaped_quartz>);
-PureDaisy.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:storage_shaped_quartz>);
+//Glimering Wood
+mods.astralsorcery.StarlightInfusion.addInfusion(<botania:livingwood>, <botania:livingwood:5>, false, 0.1, 100);
+mods.astralsorcery.StarlightInfusion.addInfusion(<botania:dreamwood>, <botania:dreamwood:5>, false, 0.1, 100);
 
-
+//mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance, @Optional int water);
 
 mods.botania.ManaInfusion.removeRecipe(<minecraft:flint>);
 
-//Spark augmets
+// Spark Augments
 recipes.addShapeless(<botania:sparkupgrade:3>, [<botania:rune:3>,<astralsorcery:itemusabledust>,<bloodmagic:component:29>,<botania:manaresource>]);
 recipes.addShapeless(<botania:sparkupgrade:2>, [<botania:rune:2>,<astralsorcery:itemusabledust>,<bloodmagic:component:29>,<botania:manaresource>]);
 recipes.addShapeless(<botania:sparkupgrade:1>, [<botania:rune:1>,<astralsorcery:itemusabledust>,<bloodmagic:component:29>,<botania:manaresource>]);
@@ -305,47 +338,14 @@ mods.botania.Apothecary.addRecipe("entropinnyum",
 <botania:specialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Degrades after 1 hour!"));
 <botania:floatingspecialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Degrades after 1 hour!"));
 
-
-//Third Eye
-Infusion.registerRecipe("thirdeye", "", 
-<botania:thirdeye>, 5, 
-[<aspect:sensus>*150, <aspect:praecantatio>*100, <aspect:spiritus>*50], 
-<minecraft:ender_eye>, 
-[<botania:pistonrelay>,<bloodmagic:component:26>, <botania:manaresource:2>, <botania:rune:7>,
-<botania:pistonrelay>,<bloodmagic:component:26>, <botania:manaresource:2>, <botania:rune:5>]);
-
-//elementium
-Melter.addRecipe(<botania:manaresource:7>, <liquid:elementium>*144);
-
-
-<ore:anyCharm>.add(<twilightforest:charm_of_keeping_1>);
-<ore:anyCharm>.add(<twilightforest:charm_of_life_1>);
-
-//alchemycatalyst
-ArcaneWorkbench.registerShapedRecipe("alchemycatalyst", "", 100,
-    [<aspect:perditio>*8,<aspect:ordo>*8],
-    <botania:alchemycatalyst>, [
-    [<botania:livingrock>, <twilightforest:naga_scale>, <botania:livingrock>],
-    [<ore:anyCharm>, <twilightforest:magic_map_focus>, <twilightforest:transformation_powder>], 
-    [<botania:livingrock>, <twilightforest:naga_scale>, <botania:livingrock>]
-]);
-
 //Mana Vial
 recipes.addShaped(<botania:vial>, [[<botania:managlass>, null, <botania:managlass>], [null, <botania:managlass>, null]]);
 
+//Mana Gun
+recipes.addShaped(<botania:managun>, [[<botania:spreader:1>, <embers:diffraction_barrel>, <botania:manaresource:2>],[null, <botania:livingwood>, <minecraft:tnt>], [null, null, <botania:livingwood>]]);
 
-# [Terrestrial Agglomeration Plate] from [Block of Hardened Thermalloy][+6]
-craft.remake(<botania:terraplate>, ["pretty",
-  "¤ * ☼",
-  "T § T",
-  "M A M"], {
-  "¤": <ore:gearPalisEmpowered>,             # Empowered Palis Gear
-  "*": <contenttweaker:terrestrial_crystal>, # Terrestrial Crystal
-  "☼": <ore:gearVoidEmpowered>,              # Empowered Void Gear
-  "T": <bloodmagic:teleposer>,            # Teleposer
-  "§": <contenttweaker:block_thermal_alloy>, # Block of Hardened Thermalloy
-  "M": <ore:runeManaB>,                      # Rune of Mana
-  "A": <ore:runeAutumnB>,                    # Rune of Autumn
-});
+//Enchanted Soil
+recipes.addShapeless(<botania:enchantedsoil>, [<minecraft:grass>,<botania:overgrowthseed>]);
+
 ##########################################################################################
-print("==================== end of mods botania.zs ====================");
+print("==================== end of botania.zs ====================");

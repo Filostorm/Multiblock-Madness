@@ -5,7 +5,7 @@ import mods.bloodmagic.BloodAltar;
 import mods.bloodmagic.AlchemyTable;
 import mods.immersiveengineering.Squeezer;
 
-print("==================== loading Deep Mob Learning.zs ====================");
+print("==================== loading deep_mob_learning.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -140,4 +140,4 @@ for matter, item in MobAlchemy {
 	AlchemyTable.addRecipe(matter, [<contenttweaker:blank_matter>,<aetherworks:item_resource>, item,item,item,item], 1000,200,3);
 }
 ##########################################################################################
-print("==================== end of Deep Mob Learning.zs ====================");
+print("==================== end of deep_mob_learning.zs ====================");

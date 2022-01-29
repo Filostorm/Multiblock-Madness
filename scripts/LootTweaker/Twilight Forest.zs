@@ -4,7 +4,7 @@ import loottweaker.vanilla.loot.LootPool;
 import crafttweaker.item.IItemStack as IItemStack;
 #modloaded loottweaker
 
-print("==================== loading TF Loot.zs ====================");
+print("==================== loading Twilight Forest Loot.zs ====================");
 ##########################################################################################
 
 
@@ -117,4 +117,4 @@ print("==================== loading TF Loot.zs ====================");
 	
 		
 ##########################################################################################
-print("==================== end of TF Loot.zs ====================");
+print("==================== end of Twilight Forest Loot.zs ====================");

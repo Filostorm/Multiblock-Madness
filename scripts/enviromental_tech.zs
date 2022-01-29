@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack;
 import mods.rockhounding_chemistry.PullingCrucible;
 import crafttweaker.item.IIngredient;
 
-print("==================== loading mods enviromental tech.zs ====================");
+print("==================== loading mods enviromental_tech.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -343,4 +343,4 @@ craft.remake(<environmentaltech:structure_frame_6>, ["pretty",
 
 
 ##########################################################################################
-print("==================== end of mods enviromental tech.zs ====================");
+print("==================== end of mods enviromental_tech.zs ====================");

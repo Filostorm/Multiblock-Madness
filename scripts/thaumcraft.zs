@@ -1,6 +1,6 @@
 ##########################################################################################
 #modloaded thaumcraft
-#priority 100
+#priority 1
 
 import mods.thaumcraft.ArcaneWorkbench;
 import mods.thaumcraft.Crucible;
@@ -10,7 +10,7 @@ import mods.arcanearchives.GCT;
 import mods.thaumcraft.SalisMundus;
 import mods.botania.PureDaisy;
 
-print("==================== loading mods thaumcraft.zs ====================");
+print("==================== loading thaumcraft.zs ====================");
 ##########################################################################################
 
 
@@ -275,4 +275,4 @@ Infusion.registerRecipe("mithminite", "",
 <thaumadditions:mithrillium_ingot>, <thaumcraft:quicksilver>]);
 
 ##########################################################################################
-print("==================== end of mods thaumcraft.zs ====================");
+print("==================== end of thaumcraft.zs ====================");

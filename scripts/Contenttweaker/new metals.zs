@@ -1,5 +1,4 @@
 #loader contenttweaker
-#priority 96
 import mods.contenttweaker.Color;
 import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.VanillaFactory;
@@ -7,6 +6,11 @@ import mods.contenttweaker.Item;
 import mods.contenttweaker.IItemRightClick;
 import mods.contenttweaker.Commands;
 import mods.contenttweaker.IItemColorSupplier;
+
+#priority 102
+
+print("==================== loading new metals.zs ====================");
+##########################################################################################
 
 //Inert Metal
 var inertcolor = Color.fromHex("B1A3C4") as Color;
@@ -170,3 +174,6 @@ Palladiumblock.addDataValue("harvestTool", "pickaxe");
 //armor.addDataValue("enchantability", "10");
 //armor.addDataValue("reduction", "2,5,6,2");
 //armor.addDataValue("toughness", "2");
+
+##########################################################################################
+print("==================== end of new metals.zs ====================");

@@ -3,7 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.tcomplement.highoven.HighOven;
 import mods.tcomplement.highoven.MixRecipeBuilder;
 import mods.tcomplement.highoven.MixRecipeManager;
-print("==================== loading mods lycanitesmobs.zs ====================");
+print("==================== loading mods Lycanitesmobs.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -225,4 +225,4 @@ recipes.addShapeless(<lycanitesmobs:venomshotcharge> * 4, [<lycanitesmobs:poison
     <lycanitesmobs:arcanelaserstormcharge>.setAspects(<aspect:ordo> * 10, <aspect:perditio> * 10, <aspect:motus> * 10);
 
 ##########################################################################################
-print("==================== end of mods lycanitesmobs.zs ====================");
+print("==================== end of mods Lycanitesmobs.zs ====================");

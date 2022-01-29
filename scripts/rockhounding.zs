@@ -4,7 +4,7 @@ import mods.rockhounding_chemistry.Transposer;
 import mods.rockhounding_chemistry.LabBlender;
 
 
-print("==================== loading mods rockhounding.zs ====================");
+print("==================== loading rockhounding.zs ====================");
 ##########################################################################################
 
 val EletrochemicalCTSR = <rockhounding_chemistry:machines_e:7>;
@@ -512,4 +512,4 @@ for item in highColorName {
 (item).addTooltip(format.darkGreen("High-Grade Leachate Shard"));
 }
 ##########################################################################################
-print("==================== end of mods rockhounding.zs ====================");
+print("==================== end of rockhounding.zs ====================");

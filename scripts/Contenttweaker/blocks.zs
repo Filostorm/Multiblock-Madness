@@ -1,7 +1,8 @@
 #loader contenttweaker
-#priority 98
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
+
+#priority 104
 
 print("==================== loading blocks.zs ====================");
 ##########################################################################################
@@ -341,5 +342,6 @@ book_block.setFullBlock(false);
 book_block.setTranslucent(true);
 book_block.setBlockLayer("CUTOUT");
 book_block.register();
+
 ##########################################################################################
 print("==================== end of blocks.zs ====================");

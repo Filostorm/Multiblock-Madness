@@ -1,6 +1,9 @@
 import mods.chisel.Carving;
 import crafttweaker.item.IItemStack;
 
+print("==================== loading chisel.zs ====================");
+##########################################################################################
+
 //add fan block recipe
 Carving.removeVariation("factory", <chisel:technical:4>);
 recipes.addShaped(<chisel:technical:4>, [[<advgenerators:iron_frame>, <nuclearcraft:compound:2>, <advgenerators:iron_frame>],[<nuclearcraft:compound:2>, <libvulpes:productfan:6>, <nuclearcraft:compound:2>], [<advgenerators:iron_frame>, <techreborn:part:29>, <advgenerators:iron_frame>]]);
@@ -28,3 +31,6 @@ val newvoidstomeitems =
 for item in newvoidstomeitems {
 Carving.addVariation("newvoidstone", item);
 }
+
+##########################################################################################
+print("==================== end of chisel.zs ====================");

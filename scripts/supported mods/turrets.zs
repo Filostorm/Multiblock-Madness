@@ -1,6 +1,6 @@
 #modloaded openmodularturrets
 import crafttweaker.item.IItemStack;
-print("==================== loading woot.zs ====================");
+print("==================== loading turrets.zs ====================");
 ##########################################################################################
 
 val itemstoRemove =
@@ -22,4 +22,4 @@ recipes.addShaped(<openmodularturrets:intermediate_tiered:1>, [[null, <thermalfo
 recipes.addShaped(<openmodularturrets:turret_base>, [[<thermalfoundation:material:320>, <openmodularturrets:intermediate_tiered>, <thermalfoundation:material:320>],[<thermalfoundation:material:257>, <thaumadditions:iron_framed_greatwood>, <thermalfoundation:material:257>], [<thermalfoundation:material:320>, <enderio:item_capacitor_grainy>, <thermalfoundation:material:320>]]);
 
 ##########################################################################################
-print("==================== end of woot.zs ====================");
+print("==================== end of turrets.zs ====================");

@@ -1,4 +1,4 @@
-#priority 98
+#priority 99
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.WeightedItemStack;
@@ -22,6 +22,29 @@ import crafttweaker.liquid.ILiquidStack;
 print("==================== loading parts.zs ====================");
 ##########################################################################################
 
+################# PART CRAFTING REMOVAL #######################
+
+mods.unidict.removalByKind.get("Crafting").remove("plate");
+mods.unidict.removalByKind.get("Crafting").remove("rod");
+mods.unidict.removalByKind.get("Crafting").remove("stick");
+mods.unidict.removalByKind.get("Crafting").remove("gear");
+
+recipes.remove(<ore:plateAluminum>);
+recipes.remove(<ore:plateBronze>);
+recipes.remove(<ore:plateConstantan>);
+recipes.remove(<ore:plateCopper>);
+recipes.remove(<ore:plateElectrum>);
+recipes.remove(<ore:plateGold>);
+recipes.remove(<ore:plateInvar>);
+recipes.remove(<ore:plateIron>);
+recipes.remove(<ore:plateLead>);
+recipes.remove(<ore:plateNickel>);
+recipes.remove(<ore:platePlatinum>);
+recipes.remove(<ore:plateSignalum>);
+recipes.remove(<ore:plateSilver>);
+recipes.remove(<ore:plateSteel>);
+recipes.remove(<ore:plateTin>);
+
 val itemstoRemove =
 [
 	<embers:blend_caminite>,
@@ -34,12 +57,17 @@ val itemstoRemove =
 	<jaopca:item_stickthaumium>,
 	<moreplates:electrum_stick>,
 	<libvulpes:productrod:4>,
+	<jaopca:item_gearbloodbronze>,
+	<jaopca:item_gearferroboron>,
+	<jaopca:item_geartungstencarbide>,
+	<jaopca:item_gearzinc>,
 ]
  as IItemStack[];
 
 for item in itemstoRemove {
 	recipes.remove(item);
 }
+
 
 ################# BLOCKS #######################
 
@@ -48,6 +76,9 @@ val mapNewBlocks as IItemStack[IItemStack] = {
 	<contenttweaker:ingot_mek_alloy>:<contenttweaker:block_mek_alloy>,
 	<contenttweaker:inert_ingot>:<contenttweaker:sub_block_holder_0:2>,
 	<nuclearcraft:alloy:1>:<contenttweaker:sub_block_holder_0:6>,
+	<contenttweaker:material_part:20>:<contenttweaker:sub_block_holder_0>,
+	<contenttweaker:material_part:10>:<contenttweaker:sub_block_holder_0:1>,
+	<astralsorcery:itemcraftingcomponent:1>:<contenttweaker:starmetal_block>,
 } as IItemStack[IItemStack];
 
 for ingot, block in mapNewBlocks {
@@ -59,45 +90,6 @@ recipes.addShaped(block, [
 recipes.addShapeless(ingot * 9, [block]);
 }
 
-
-################# RODS #######################
-
-val metalPressRods as IItemStack[IItemStack] = {
-	<contenttweaker:rod_nimonic>:<rockhounding_chemistry:alloy_items_tech:16>,
-	<contenttweaker:rod_scal>:<rockhounding_chemistry:alloy_items_tech:4>,
-	<contenttweaker:rod_vanasteel>:<rockhounding_chemistry:alloy_items_tech:40>,
-	<contenttweaker:rod_bam>:<rockhounding_chemistry:alloy_items_tech:7>,
-	<contenttweaker:rod_ironwood>:<twilightforest:ironwood_ingot>,
-	<contenttweaker:rod_thermal_alloy>:<contenttweaker:ingot_thermal_alloy>,
-	<contenttweaker:rod_mek_alloy>:<contenttweaker:ingot_mek_alloy>,
-} as IItemStack[IItemStack];
-
-for rod, material in metalPressRods {
-	MetalPress.addRecipe(rod*2, material, <immersiveengineering:mold:2>, 2000);
-}
-
-
-################# GEARS #######################
-
-AtomicReconstructor.removeRecipe(<moreplates:restonia_gear>);
-MetalPress.addRecipe(<thaumicperiphery:gear_brass>, <ore:ingotBrass>, <immersiveengineering:mold:1>, 2000, 4);
-
-val mapNewGears as IItemStack[IItemStack] = {
-	<modularmachinery:itemmodularium>:<contenttweaker:gear_modularium>,
-	<contenttweaker:ingot_thermal_alloy>:<contenttweaker:gear_thermal_alloy>,
-	<contenttweaker:ingot_mek_alloy>:<contenttweaker:gear_mek_alloy>,
-	<actuallyadditions:item_crystal>:<moreplates:restonia_gear>,
-	<actuallyadditions:item_crystal_empowered:4>:<moreplates:empowered_emeradic_gear>,
-	<actuallyadditions:item_crystal_empowered:2>:<moreplates:empowered_diamatine_gear>,
-	<actuallyadditions:item_crystal_empowered:5>:<moreplates:empowered_enori_gear>,
-	<actuallyadditions:item_crystal_empowered:1>:<moreplates:empowered_palis_gear>,
-	<actuallyadditions:item_crystal_empowered:3>:<moreplates:empowered_void_gear>,
-} as IItemStack[IItemStack];
-
-for material, output in mapNewGears {
-	MetalPress.addRecipe(output, material*4, <immersiveengineering:mold:1>, 2000);
-	Compactor.addGearRecipe(output, material*4, 4000);
-}
 
 ################# PLATES #######################
 
@@ -136,20 +128,69 @@ for material, output in mapNewPlates {
 }
 
 
+################# GEARS #######################
+
+AtomicReconstructor.removeRecipe(<moreplates:restonia_gear>);
+MetalPress.addRecipe(<thaumicperiphery:gear_brass>, <ore:ingotBrass>, <immersiveengineering:mold:1>, 2000, 4);
+
+val mapNewGears as IItemStack[IItemStack] = {
+	<modularmachinery:itemmodularium>:<contenttweaker:gear_modularium>,
+	<contenttweaker:ingot_thermal_alloy>:<contenttweaker:gear_thermal_alloy>,
+	<contenttweaker:ingot_mek_alloy>:<contenttweaker:gear_mek_alloy>,
+	<actuallyadditions:item_crystal>:<moreplates:restonia_gear>,
+	<actuallyadditions:item_crystal_empowered:4>:<moreplates:empowered_emeradic_gear>,
+	<actuallyadditions:item_crystal_empowered:2>:<moreplates:empowered_diamatine_gear>,
+	<actuallyadditions:item_crystal_empowered:5>:<moreplates:empowered_enori_gear>,
+	<actuallyadditions:item_crystal_empowered:1>:<moreplates:empowered_palis_gear>,
+	<actuallyadditions:item_crystal_empowered:3>:<moreplates:empowered_void_gear>,
+} as IItemStack[IItemStack];
+
+for material, output in mapNewGears {
+	MetalPress.addRecipe(output, material*4, <immersiveengineering:mold:1>, 2000);
+	Compactor.addGearRecipe(output, material*4, 4000);
+}
+
+
+################# RODS #######################
+
+val metalPressRods as IItemStack[IItemStack] = {
+	<contenttweaker:rod_nimonic>:<rockhounding_chemistry:alloy_items_tech:16>,
+	<contenttweaker:rod_scal>:<rockhounding_chemistry:alloy_items_tech:4>,
+	<contenttweaker:rod_vanasteel>:<rockhounding_chemistry:alloy_items_tech:40>,
+	<contenttweaker:rod_bam>:<rockhounding_chemistry:alloy_items_tech:7>,
+	<contenttweaker:rod_ironwood>:<twilightforest:ironwood_ingot>,
+	<contenttweaker:rod_thermal_alloy>:<contenttweaker:ingot_thermal_alloy>,
+	<contenttweaker:rod_mek_alloy>:<contenttweaker:ingot_mek_alloy>,
+} as IItemStack[IItemStack];
+
+for rod, material in metalPressRods {
+	MetalPress.addRecipe(rod*2, material, <immersiveengineering:mold:2>, 2000);
+}
+
+
 ################# SCAFFOLDING #######################
 
-recipes.addShaped(<contenttweaker:scal_scaffolding> * 6, [[<rockhounding_chemistry:alloy_items_tech:4>, <rockhounding_chemistry:alloy_items_tech:4>, <rockhounding_chemistry:alloy_items_tech:4>],[null, <contenttweaker:rod_scal>, null], [<contenttweaker:rod_scal>, null, <contenttweaker:rod_scal>]]);
-recipes.addShaped(<contenttweaker:bam_scaffolding> * 6, [[<rockhounding_chemistry:alloy_items_tech:7>, <rockhounding_chemistry:alloy_items_tech:7>, <rockhounding_chemistry:alloy_items_tech:7>],[null, <contenttweaker:rod_bam>, null], [<contenttweaker:rod_bam>, null, <contenttweaker:rod_bam>]]);
-recipes.addShaped(<contenttweaker:nimonic_scaffolding> * 6, [[<rockhounding_chemistry:alloy_items_tech:16>, <rockhounding_chemistry:alloy_items_tech:16>, <rockhounding_chemistry:alloy_items_tech:16>],[null, <contenttweaker:rod_nimonic>, null], [<contenttweaker:rod_nimonic>, null, <contenttweaker:rod_nimonic>]]);
-recipes.addShaped(<contenttweaker:vanasteel_scaffolding> * 6, [[<rockhounding_chemistry:alloy_items_tech:40>, <rockhounding_chemistry:alloy_items_tech:40>, <rockhounding_chemistry:alloy_items_tech:40>],[null, <contenttweaker:rod_vanasteel>, null], [<contenttweaker:rod_vanasteel>, null, <contenttweaker:rod_vanasteel>]]);
-recipes.addShaped(<contenttweaker:invar_scaffolding> * 6, [[<thermalfoundation:material:162>, <thermalfoundation:material:162>, <thermalfoundation:material:162>],[null, <moreplates:invar_stick>, null], [<moreplates:invar_stick>, null, <moreplates:invar_stick>]]);
-recipes.addShaped(<jaopca:block_scaffoldingnichrome> * 6, [[<ore:ingotNichrome>, <ore:ingotNichrome>, <ore:ingotNichrome>],[null, <jaopca:item_sticknichrome>, null], [<jaopca:item_sticknichrome>, null, <jaopca:item_sticknichrome>]]);
-recipes.addShaped(<jaopca:block_scaffoldingstainlesssteel> * 6, [[<ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>],[null, <jaopca:item_stickstainlesssteel>, null], [<jaopca:item_stickstainlesssteel>, null, <jaopca:item_stickstainlesssteel>]]);
-recipes.addShaped(<jaopca:block_scaffoldingthaumium> * 6, [[<thaumcraft:ingot>, <thaumcraft:ingot>, <thaumcraft:ingot>],[null, <jaopca:item_stickthaumium>, null], [<jaopca:item_stickthaumium>, null, <jaopca:item_stickthaumium>]]);
-recipes.addShaped(<contenttweaker:ironwood_scaffolding> * 6, [[<twilightforest:ironwood_ingot>, <twilightforest:ironwood_ingot>, <twilightforest:ironwood_ingot>],[null, <contenttweaker:rod_ironwood>, null], [<contenttweaker:rod_ironwood>, null, <contenttweaker:rod_ironwood>]]);
-recipes.addShaped(<contenttweaker:scaffolding_thermal_alloy> * 6, [[<contenttweaker:ingot_thermal_alloy>, <contenttweaker:ingot_thermal_alloy>, <contenttweaker:ingot_thermal_alloy>],[null, <contenttweaker:rod_thermal_alloy>, null], [<contenttweaker:rod_thermal_alloy>, null, <contenttweaker:rod_thermal_alloy>]]);
-recipes.addShaped(<contenttweaker:scaffolding_mek_alloy> * 6, [[<contenttweaker:ingot_mek_alloy>, <contenttweaker:ingot_mek_alloy>, <contenttweaker:ingot_mek_alloy>],[null, <contenttweaker:rod_mek_alloy>, null], [<contenttweaker:rod_mek_alloy>, null, <contenttweaker:rod_mek_alloy>]]);
-recipes.addShaped(<contenttweaker:scaffolding_plastic> * 6, [[<mekanism:polyethene:2>, <mekanism:polyethene:2>, <mekanism:polyethene:2>],[null, <mekanism:polyethene:3>, null], [<mekanism:polyethene:3>, null, <mekanism:polyethene:3>]]);
+val scaffoldingRecipes as IItemStack[][IItemStack] = {
+	<contenttweaker:scal_scaffolding>:[<rockhounding_chemistry:alloy_items_tech:4>, <contenttweaker:rod_scal>],
+	<contenttweaker:bam_scaffolding>:[<rockhounding_chemistry:alloy_items_tech:7>, <contenttweaker:rod_bam>],
+	<contenttweaker:nimonic_scaffolding>:[<rockhounding_chemistry:alloy_items_tech:16>, <contenttweaker:rod_nimonic>],
+	<contenttweaker:vanasteel_scaffolding>:[<rockhounding_chemistry:alloy_items_tech:40>, <contenttweaker:rod_vanasteel>],
+	<contenttweaker:invar_scaffolding>:[<thermalfoundation:material:162>, <moreplates:invar_stick>],
+	<jaopca:block_scaffoldingnichrome>:[<rockhounding_chemistry:alloy_items_tech:22>, <jaopca:item_sticknichrome>],
+	<jaopca:block_scaffoldingstainlesssteel>:[<qmd:ingot_alloy:2>, <jaopca:item_stickstainlesssteel>],
+	<jaopca:block_scaffoldingthaumium>:[<thaumcraft:ingot>, <jaopca:item_stickthaumium>],
+	<contenttweaker:ironwood_scaffolding>:[<twilightforest:ironwood_ingot>, <contenttweaker:rod_ironwood>],
+	<contenttweaker:scaffolding_thermal_alloy>:[<contenttweaker:ingot_thermal_alloy>, <contenttweaker:rod_thermal_alloy>],
+	<contenttweaker:scaffolding_mek_alloy>:[<contenttweaker:ingot_mek_alloy>, <contenttweaker:rod_mek_alloy>],
+	<contenttweaker:scaffolding_plastic>:[<mekanism:polyethene:2>, <mekanism:polyethene:3>],
+} as IItemStack[][IItemStack];
+
+for scaffolding, material in scaffoldingRecipes {
+recipes.addShaped(scaffolding * 6, [
+	[material[0], material[0], material[0]],
+	[null, material[1], null], 
+	[material[1], null, material[1]]]);
+}
 
 /* Moved
 //scaffolding
@@ -349,153 +390,6 @@ for rod, wire in latheWires {
 	Lathe.addRecipe(wire*4, 60, 5000, rod);
 }
 */
-
-###################################################
-############     CRUSHING      ####################
-###################################################
-
-
-//clay dust
-Crusher.removeRecipe(<minecraft:clay_ball>);
-Crusher.addRecipe(<techreborn:dust:12>*4,<minecraft:clay>, 1024);
-Crusher.addRecipe(<techreborn:dust:12>,<minecraft:clay_ball>, 1024);
-Manufactory.removeRecipeWithInput(<minecraft:clay>);
-Manufactory.addRecipe(<minecraft:clay>, <techreborn:dust:12> * 4);
-Manufactory.addRecipe(<minecraft:clay_ball>, <techreborn:dust:12>);
-Pulverizer.removeRecipe(<minecraft:clay>);
-Pulverizer.addRecipe(<techreborn:dust:12>*4, <minecraft:clay>, 2000);
-Pulverizer.addRecipe(<techreborn:dust:12>, <minecraft:clay_ball>, 1500);
-crusher.addRecipe(<minecraft:clay>, <techreborn:dust:12> * 4);
-crusher.addRecipe(<minecraft:clay_ball>, <techreborn:dust:12>);
-//SagMill.addRecipe([<techreborn:dust:12>*4], [1] , <minecraft:clay>, "NONE");
-
-//limestone
-val limestoneforFlux = <ore:limestoneforFlux>;
-limestoneforFlux.add(<quark:limestone>);
-limestoneforFlux.add(<quark:limestone:1>);
-limestoneforFlux.add(<chisel:limestone2:7>);
-for item in limestoneforFlux.items{
-Crusher.addRecipe(<contenttweaker:limestone_flux>*3, item, 1024, <contenttweaker:limestone_flux>, 0.5);
-Pulverizer.addRecipe(<contenttweaker:limestone_flux>*4, item, 1500, <contenttweaker:limestone_flux>, 50);
-crusher.addRecipe(item, <contenttweaker:limestone_flux> * 4);
-}
-
-Manufactory.addRecipe(<ore:limestoneforFlux>, <contenttweaker:limestone_flux>*4);
-//SagMill.addRecipe([<contenttweaker:limestone_flux>*3], [1] , <ore:limestoneforFlux>, "MULTIPLY_OUTPUT");
-
-
-//Radiant Dust
-Crusher.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 1024, <arcanearchives:radiant_dust>*3, 0.5);
-Manufactory.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:radiant_dust>*9);
-Pulverizer.addRecipe(<arcanearchives:radiant_dust>*9, <arcanearchives:storage_raw_quartz>, 1500, <arcanearchives:radiant_dust>*3, 50);
-crusher.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:radiant_dust>*9);
-//SagMill.addRecipe([<arcanearchives:radiant_dust>*9], [1] , <arcanearchives:storage_raw_quartz>, "MULTIPLY_OUTPUT");
-
-
-//Ember Grit
-Crusher.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 2048, <embers:dust_ember>, 0.1);
-Manufactory.addRecipe(<embers:crystal_ember>, <embers:dust_ember>);
-Pulverizer.addRecipe(<embers:dust_ember>, <embers:crystal_ember>, 1500, <embers:dust_ember>, 10);
-crusher.addRecipe(<embers:crystal_ember>, <embers:dust_ember>);
-//SagMill.addRecipe([<embers:dust_ember>], [1] , <embers:crystal_ember>, "NONE");
-
-
-//Graphite
-//SagMill.addRecipe([<nuclearcraft:dust:8>], [1] , <thermalfoundation:material:768>, "NONE");
-Pulverizer.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 1500);
-crusher.addRecipe(<thermalfoundation:material:768>, <nuclearcraft:dust:8>);
-
-//Slates
-Crusher.addRecipe(<contenttweaker:slatedust>*2, <bloodmagic:slate>, 2048);
-Crusher.addRecipe(<contenttweaker:slatedust>*4, <bloodmagic:slate:1>, 2048);
-Crusher.addRecipe(<contenttweaker:slatedust>*8, <bloodmagic:slate:2>, 2048);
-Crusher.addRecipe(<contenttweaker:slatedust>*16, <bloodmagic:slate:3>, 2048);
-Crusher.addRecipe(<contenttweaker:slatedust>*32, <bloodmagic:slate:4>, 2048);
-Manufactory.addRecipe(<bloodmagic:slate>, <contenttweaker:slatedust>*2);
-Manufactory.addRecipe(<bloodmagic:slate:1>, <contenttweaker:slatedust>*4);
-Manufactory.addRecipe(<bloodmagic:slate:2>, <contenttweaker:slatedust>*8);
-Manufactory.addRecipe(<bloodmagic:slate:3>, <contenttweaker:slatedust>*16);
-Manufactory.addRecipe(<bloodmagic:slate:4>, <contenttweaker:slatedust>*32);
-Pulverizer.addRecipe(<contenttweaker:slatedust>*2, <bloodmagic:slate>, 10000);
-Pulverizer.addRecipe(<contenttweaker:slatedust>*4, <bloodmagic:slate:1>, 10000);
-Pulverizer.addRecipe(<contenttweaker:slatedust>*8, <bloodmagic:slate:2>, 10000);
-Pulverizer.addRecipe(<contenttweaker:slatedust>*16, <bloodmagic:slate:3>, 10000);
-Pulverizer.addRecipe(<contenttweaker:slatedust>*32, <bloodmagic:slate:4>, 10000);
-crusher.addRecipe(<bloodmagic:slate>, <contenttweaker:slatedust> * 2);
-crusher.addRecipe(<bloodmagic:slate:1>, <contenttweaker:slatedust> * 4);
-crusher.addRecipe(<bloodmagic:slate:2>, <contenttweaker:slatedust> * 8);
-crusher.addRecipe(<bloodmagic:slate:3>, <contenttweaker:slatedust> * 16);
-crusher.addRecipe(<bloodmagic:slate:4>, <contenttweaker:slatedust> * 32);
-
-Crusher.addRecipe(<nuclearcraft:dust:8>, <thermalfoundation:material:768>, 2048);
-Crusher.addRecipe(<rockhounding_chemistry:chemical_dusts:24>,<techreborn:plates:2>, 2048);
-
-//Silicon dust
-Crusher.addRecipe(<rockhounding_chemistry:chemical_dusts:42>, <nuclearcraft:gem:6>, 1024);
-Manufactory.addRecipe(<nuclearcraft:gem:6>, <rockhounding_chemistry:chemical_dusts:42>);
-//SagMill.addRecipe([<rockhounding_chemistry:chemical_dusts:42>], [1] , <nuclearcraft:gem:6>, "NONE");
-
-//Skystone dust
-Crusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>, 1024);
-//SagMill.addRecipe([<appliedenergistics2:material:45>], [1] , <appliedenergistics2:sky_stone_block>, "NONE");
-
-
-//Pristine dust
-Crusher.addRecipe(<contenttweaker:pristine_dust>, <ore:pristineMatter>, 1024);
-Manufactory.addRecipe(<ore:pristineMatter>, <contenttweaker:pristine_dust>);
-crusher.addRecipe(<ore:pristineMatter>, <contenttweaker:pristine_dust>);
-
-val pristines = <ore:pristineMatter>;
-
-for item in pristines.items {
-Pulverizer.addRecipe(<contenttweaker:pristine_dust>, item, 10000);
-}
-
-//SagMill.addRecipe([<contenttweaker:pristine_dust>], [1] , <ore:pristineMatter>, "NONE");
-
-//Flux BLocks
-Crusher.addRecipe(<fluxnetworks:fluxcore>*4, <fluxnetworks:fluxblock>, 1024, <fluxnetworks:flux>*5, 0.9);
-Pulverizer.addRecipe(<fluxnetworks:fluxcore>*4, <fluxnetworks:fluxblock>, 1500, <fluxnetworks:flux>*5, 90);
-//SagMill.addRecipe([<fluxnetworks:fluxcore>*4,<fluxnetworks:flux>*5], [1,0.9] , <fluxnetworks:fluxblock>, "NONE");
-
-//Plutonium
-/*
-val plutoniumDust =
-[
-	<ore:ingotPlutonium242All>,
-	<ore:ingotPlutonium241All>,
-	<ore:ingotPlutonium239All>,
-	<ore:ingotPlutonium238All>,
-]
- as IOreDictEntry[];
-for item in plutoniumDust {
-Manufactory.addRecipe(item, <techreborn:dust:67>);
-}
-*/
-val ingotPlutonium as IIngredient = (<ore:ingotPlutonium242All>|<ore:ingotPlutonium241All>|<ore:ingotPlutonium239All>|<ore:ingotPlutonium238All>) as IIngredient;
-Manufactory.addRecipe(ingotPlutonium, <techreborn:dust:67>);
-
-//Wither Ash
-Crusher.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 1024);
-Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
-Pulverizer.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 2000);
-crusher.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
-//SagMill.addRecipe([<quark:black_ash>*3], [1] , <minecraft:skull:1>, "MULTIPLY_OUTPUT");
-
-//Thermal Ruby dust
-Pulverizer.addRecipe(<techreborn:dust:43>, <techreborn:gem>, 2000);
-
-//Marble
-Crusher.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 1024);
-Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
-Pulverizer.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 2000);
-crusher.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
-
-//Basalt
-Crusher.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 1024);
-Manufactory.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
-Pulverizer.addRecipe(<quark:black_ash>*3, <minecraft:skull:1>, 2000);
-crusher.addRecipe(<minecraft:skull:1>, <quark:black_ash>*3);
 
 
 ##########################################################################################
