@@ -35,7 +35,9 @@ print("==================== loading alloys.zs ====================");
 
 // Inert Ingot //
 ArcFurnace.addRecipe(<contenttweaker:inert_ingot>*2, <thermalfoundation:material:130>*2, null, 400, 1024, [<thermalfoundation:material:131>]);
-//AlloySmelter.addRecipe(<contenttweaker:inert_ingot>*2, [<thermalfoundation:material:130>*2,<thermalfoundation:material:131>], 5000);
+ArcFurnace.addRecipe(<contenttweaker:inert_ingot>*2, <thermalfoundation:material:130>*2, null, 400, 1024, [<thermalfoundation:material:131>]);
+AlloyFurnace.addRecipe(<thermalfoundation:material:130>*2, <thermalfoundation:material:131>, <contenttweaker:inert_ingot>*2);
+InductionSmelter.addRecipe(<contenttweaker:inert_ingot>*2, <thermalfoundation:material:130>*2, <thermalfoundation:material:131>, 20000);
 
 // Fused Quartz //
 ArcFurnace.addRecipe(<enderio:block_fused_quartz>, <ore:blockQuartz>, null, 200, 1024);

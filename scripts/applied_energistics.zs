@@ -53,6 +53,7 @@ val itemstoRemove =
 	<appliedenergistics2:material:42>,
 	<appliedenergistics2:material:28>,
 	<appliedenergistics2:material:25>,
+	<appliedenergistics2:part:261>,
 ]
  as IItemStack[];
 
@@ -199,8 +200,8 @@ recipes.addShaped(<appliedenergistics2:material:52>, [[<appliedenergistics2:quar
 recipes.addShaped(<appliedenergistics2:material:52> * 2, [[<appliedenergistics2:quartz_glass>, <minecraft:glowstone_dust>, <appliedenergistics2:quartz_glass>],[<minecraft:glowstone_dust>, <rockhounding_chemistry:misc_items:1>, <minecraft:glowstone_dust>], [<rockhounding_chemistry:alloy_items_tech:4>, <rockhounding_chemistry:alloy_items_tech:4>, <rockhounding_chemistry:alloy_items_tech:4>]]);
 
 // Fluid I/O
-recipes.addShaped(<appliedenergistics2:part:261>, [[<minecraft:dye:4>, <appliedenergistics2:material:43>, <minecraft:dye:4>], [<thermalfoundation:material:132>, <minecraft:piston>, <thermalfoundation:material:132>]]);
-recipes.addShaped(<appliedenergistics2:part:261> * 2, [[<minecraft:dye:4>, <appliedenergistics2:material:43>, <minecraft:dye:4>], [<rockhounding_chemistry:alloy_items_tech:4>, <minecraft:piston>, <rockhounding_chemistry:alloy_items_tech:4>]]);
+recipes.addShaped(<appliedenergistics2:part:261>, [[<thermalfoundation:material:132>, <appliedenergistics2:material:43>, <thermalfoundation:material:132>], [<minecraft:dye:4>, <minecraft:piston>, <minecraft:dye:4>]]);
+recipes.addShaped(<appliedenergistics2:part:261> * 2, [[<rockhounding_chemistry:alloy_items_tech:4>, <appliedenergistics2:material:43>, <rockhounding_chemistry:alloy_items_tech:4>], [<minecraft:dye:4>, <minecraft:piston>, <minecraft:dye:4>]]);
 recipes.addShaped(<appliedenergistics2:part:241>, [[<minecraft:dye:4>, <appliedenergistics2:material:44>, <minecraft:dye:4>], [<thermalfoundation:material:132>, <minecraft:sticky_piston>, <thermalfoundation:material:132>]]);
 recipes.addShaped(<appliedenergistics2:part:241>*2, [[<minecraft:dye:4>, <appliedenergistics2:material:44>, <minecraft:dye:4>], [<rockhounding_chemistry:alloy_items_tech:4>, <minecraft:sticky_piston>, <rockhounding_chemistry:alloy_items_tech:4>]]);
 
