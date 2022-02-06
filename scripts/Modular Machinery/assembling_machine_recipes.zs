@@ -96,8 +96,6 @@ val qmdremovals =
 [
 <qmd:part:4>*6,
 <qmd:chemical_dust:1>*3,
-<qmd:source>.withTag({storage: {amount: 10000000}}),
-<qmd:part:6>*6,
 <qmd:part:3>,
 <qmd:semiconductor:4>,
 <qmd:semiconductor:5>,

@@ -90,7 +90,7 @@ Melting.removeRecipe(<liquid:osmium>, <mekanism:dust:2>);
 Melting.removeRecipe(<liquid:osmium>, <rockhounding_chemistry:chemical_dusts:38>);
 Melting.removeRecipe(<liquid:osmium>, <mekanism:oreblock>);
 Overrides.removeRecipe(<liquid:osmium>, <mekanism:oreblock>);
-HighOven.removeMeltingOverride(<liquid:osmium>, <mekanism:oreblock>);
+HighOven.removeMeltingOverride(<liquid:osmium>);
 mods.embers.Melter.remove(<mekanism:oreblock>);
 Melter.removeRecipeWithInput(<mekanism:dust:2>);
 Melter.removeRecipeWithInput(<mekanism:oreblock>);

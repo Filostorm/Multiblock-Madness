@@ -31543,7 +31543,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "High Density Poly Ethylene!",
+          "name:8": "High Density Poly-Ethylene!",
           "desc:8": "Use up some of that HDPE!"
         }
       },
@@ -54933,7 +54933,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Possible Reactor Design",
-          "desc:8": "This is the design shown when looking at the Fission Controller Multiblock Visualizer.\n\nRecommended to understand the basic concepts before attempting to build this or your own reactor.\n\nUse §2LEU 235 Nitride or Oxide§r in this Reactor."
+          "desc:8": "This is the design shown when looking at the Fission Controller Multiblock Visualizer.\n\n§6Recommended to understand the basic concepts before attempting to build this or your own reactor!\n\n§rUse §2LEU 235 Nitride or Oxide§r in this Reactor."
         }
       },
       "tasks:9": {

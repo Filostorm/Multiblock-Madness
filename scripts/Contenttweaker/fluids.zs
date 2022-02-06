@@ -16,8 +16,7 @@ moltenEmbers.luminosity = 15;
 moltenEmbers.viscosity = 2000;
 moltenEmbers.stillLocation = "contenttweaker:fluids/molten_embers";
 moltenEmbers.flowingLocation = "contenttweaker:fluids/molten_embers";
-moltenEmbers.material = <blockmaterial:lava>;
-
+//moltenEmbers.material = <blockmaterial:lava>; Need to drop things into it lol
 moltenEmbers.register();
 
 var moltenBedrock = VanillaFactory.createFluid("moltenBedrock", Color.fromHex("200a2e"));
@@ -131,5 +130,20 @@ crystalSlurry.luminosity = 0;
 crystalSlurry.viscosity = 1000;
 crystalSlurry.register();
 
+
+var limestoneSlurry = VanillaFactory.createFluid("limestone_slurry", Color.fromHex("ccb985"));
+limestoneSlurry.temperature = 500;
+limestoneSlurry.gaseous = false;
+limestoneSlurry.luminosity = 0;
+limestoneSlurry.viscosity = 1500;
+limestoneSlurry.register();
+
+
+var drillingFluid = VanillaFactory.createFluid("drilling_fluid", Color.fromHex("4a4a4a"));
+drillingFluid.temperature = 500;
+drillingFluid.gaseous = false;
+drillingFluid.luminosity = 0;
+drillingFluid.viscosity = 3000;
+drillingFluid.register();
 ##########################################################################################
 print("==================== end of fluids.zs ====================");
