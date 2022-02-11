@@ -92,8 +92,8 @@ Manufactory.addRecipe(<ore:bouleSilicon>, <advancedrocketry:wafer>*4);
 FissionIrradiator.removeRecipeWithInput(<qmd:semiconductor:3>);
 FissionIrradiator.addRecipe(<ore:waferSilicon>, <qmd:semiconductor:1>, 120000, 0, 0, 0);
 
-target_chamber.removeRecipeWithInput(<qmd:semiconductor:3>, ((<particle:boron_ion>*120000)^600)~2.0);
-target_chamber.addRecipe(<ore:waferSilicon>, ((<particle:boron_ion>*120000)^600)~2.0, <qmd:semiconductor>, 
+target_chamber.removeRecipeWithInput(<qmd:semiconductor:3>, ((<particle:boron_ion>*1000000)^600)~2.0);
+target_chamber.addRecipe(<ore:waferSilicon>, ((<particle:boron_ion>*1000000)^600)~2.0, <qmd:semiconductor>, 
 null, null, null, 
 1000, 1.0, 0, 0);
 

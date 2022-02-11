@@ -2,18 +2,18 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.modularmachinery.RecipePrimer;
 
-print("==================== loading mods crystal_infuser.zs ====================");
+print("==================== loading mods nature_infuser.zs ====================");
 ##########################################################################################
 
 ##############################################
 ##
-##           Crystal Infuser
+##           Nature Infuser
 ##
 ##############################################
 
 // Terrestrial Crystal
-val crystalInfusing = mods.modularmachinery.RecipeBuilder.newBuilder("crystal_infuser_celestial", "crystal_infuser", 400, 0);
-crystalInfusing.addManaInput(2000);
+val crystalInfusing = mods.modularmachinery.RecipeBuilder.newBuilder("nature_infuser_celestial", "crystal_infuser", 400, 0);
+crystalInfusing.addManaInput(20000);
 crystalInfusing.addItemInput(<ore:CelestialCrystal>);
 crystalInfusing.addItemInput(<bloodmagic:slate:3>);
 crystalInfusing.addItemInput(<actuallyadditions:item_fertilizer>);
@@ -24,12 +24,54 @@ crystalInfusing.addItemOutput(<contenttweaker:terrestrial_crystal>);
 crystalInfusing.build();
 
 // Terrestrial Crystal recharging
-val crystalReInfusing = mods.modularmachinery.RecipeBuilder.newBuilder("crystal_infuser_dun", "crystal_infuser", 400, 0);
-crystalReInfusing.addManaInput(2000);
+val crystalReInfusing = mods.modularmachinery.RecipeBuilder.newBuilder("nature_infuser_dun", "crystal_infuser", 400, 0);
+crystalReInfusing.addManaInput(20000);
 crystalReInfusing.addItemInput(<contenttweaker:dun_crystal>);
 crystalReInfusing.addItemInput(<botania:rune:2>);
 crystalReInfusing.addItemOutput(<contenttweaker:terrestrial_crystal>).setChance(0.9);
 crystalReInfusing.build();
 
+// Elemental Soil
+mods.modularmachinery.RecipeBuilder.newBuilder("nature_infuser" + "_elemental_soil", "crystal_infuser", 200, 0)
+    .addManaInput(2000)
+    .addItemInput(<prefab:block_compressed_dirt>)
+    .addItemInput(<thermalfoundation:fertilizer:1> * 4)
+    .addItemOutput(<contenttweaker:elemental_soil> * 9);
+
+// Fertilised dirt
+mods.modularmachinery.RecipeBuilder.newBuilder("nature_infuser" + "_fertilizeddirt", "crystal_infuser", 50, 0)
+    .addManaInput(500)
+    .addItemInput(<minecraft:dirt> * 2)
+    .addItemInput(<minecraft:rotten_flesh> * 4)
+    .addItemInput(<minecraft:dye:15> * 4)    
+    .addItemOutput(<randomthings:fertilizeddirt> * 2);
+
+// Green Fertilizer
+mods.modularmachinery.RecipeBuilder.newBuilder("nature_infuser" + "_green_fertilizer", "crystal_infuser", 50, 0)
+    .addManaInput(500)
+    .addItemInput(<ore:dyeGreen>, 3)
+    .addItemInput(<minecraft:gold_nugget> * 2)
+    .addItemInput(<minecraft:wheat_seeds>)    
+    .addItemInput(<minecraft:dye:15> * 3)    
+    .addItemOutput(<farmingforblockheads:fertilizer:1> * 8);
+
+// Yellow Fertilizer
+mods.modularmachinery.RecipeBuilder.newBuilder("nature_infuser" + "_yellow_fertilizer", "crystal_infuser", 50, 0)
+    .addManaInput(500)
+    .addItemInput(<ore:dyeYellow>, 3)
+    .addItemInput(<minecraft:gold_nugget> * 2)
+    .addItemInput(<minecraft:wheat_seeds>)    
+    .addItemInput(<minecraft:dye:15> * 3)    
+    .addItemOutput(<farmingforblockheads:fertilizer:2> * 8);
+
+// Red Fertilizer
+mods.modularmachinery.RecipeBuilder.newBuilder("nature_infuser" + "_red_fertilizer", "crystal_infuser", 50, 0)
+    .addManaInput(500)
+    .addItemInput(<ore:dyeRed>, 3)
+    .addItemInput(<minecraft:gold_nugget> * 2)
+    .addItemInput(<minecraft:wheat_seeds>)    
+    .addItemInput(<minecraft:dye:15> * 3)    
+    .addItemOutput(<farmingforblockheads:fertilizer> * 8);
+
 ##########################################################################################
-print("==================== end of mods crystal_infuser.zs ====================");
+print("==================== end of mods nature_infuser.zs ====================");
