@@ -57,6 +57,7 @@ drillingFluid.build();
 
 val missionLunar = mods.modularmachinery.RecipeBuilder.newBuilder("quarry-lunar", "quarry", 10, 0);
 missionLunar.addEnergyPerTickInput(200000);
+//missionLunar.addDimensionRequirement([3]);
 missionLunar.addFluidInput(<liquid:drilling_fluid>*5);
 missionLunar.addItemOutput(<advancedrocketry:moonturf>).setChance(0.5);
 missionLunar.addItemOutput(<advancedrocketry:moonturf_dark>).setChance(0.5);

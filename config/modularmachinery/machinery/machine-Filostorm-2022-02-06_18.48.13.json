@@ -1,0 +1,4058 @@
+{
+    "parts": [
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 17,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 17,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 16,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 17,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 15,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 17,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 16,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 15,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 16,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 17,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 16,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 16,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 16,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 16,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 16,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 16,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 16,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": 13,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 15,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 16,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 13,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 13,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 13,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 13,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 13,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": 13,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 16,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 15,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 15,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 12,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 15,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": 12,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 15,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": 12,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 12,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 15,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 15,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 15,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": 11,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 15,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 11,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 14,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 11,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 11,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"1"},
+            "elements": [
+                "immersiveengineering:storage_slab@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 10,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 11,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 11,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 8,
+            "y": -2,
+            "z": 11,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -1,
+            "z": 11,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 14,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 14,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 14,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 10,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"1"},
+            "elements": [
+                "immersiveengineering:storage_slab@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 9,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 10,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"1"},
+            "elements": [
+                "immersiveengineering:storage_slab@8"
+            ]
+        },
+        {
+            "x": 8,
+            "y": -1,
+            "z": 11,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 14,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 13,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 9,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 9,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 13,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 13,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 13,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 8,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 9,
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 0,
+            "z": 10,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 13,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 13,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 9,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 13,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 9,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"1"},
+            "elements": [
+                "immersiveengineering:storage_slab@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 8,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 9,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"1"},
+            "elements": [
+                "immersiveengineering:storage_slab@8"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 9,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -2,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 10,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 10,
+            "y": -2,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 13,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 12,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 8,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"1"},
+            "elements": [
+                "immersiveengineering:storage_slab@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 8,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"1"},
+            "elements": [
+                "immersiveengineering:storage_slab@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 8,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 9,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 10,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": 9,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 0,
+            "z": 9,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 12,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 12,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 8,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 12,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 8,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 10,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 8,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 8,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 0,
+            "z": 9,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 9,
+            "y": 0,
+            "z": 9,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 3,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 12,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 10,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 9,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 8,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 9,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 0,
+            "z": 8,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": 7,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 11,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 7,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 10,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 11,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 7,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 7,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"1"},
+            "elements": [
+                "immersiveengineering:storage_slab@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 7,
+            "elements": [
+                "mob_grinding_utils:spikes@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 7,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 0,
+            "z": 8,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 9,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 8,
+            "y": -2,
+            "z": 7,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -1,
+            "z": 7,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 8,
+            "y": -1,
+            "z": 7,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 8,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 8,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 8,
+            "z": 11,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 6,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": 6,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": 6,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 6,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 8,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 7,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 10,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:storage@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 8,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 8,
+            "z": 10,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 8,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 8,
+            "z": 10,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:factory@6"
+            ]
+        },
+        {
+            "x": 7,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 7,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 7,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 9,
+            "z": 10,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 7,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 8,
+            "z": 9,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 8,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 8,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 8,
+            "z": 9,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 9,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 7,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 8,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 9,
+            "z": 9,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 8,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 8,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 8,
+            "z": 8,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 8,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 8,
+            "z": 8,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 19,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 9,
+            "z": 8,
+            "elements": [
+                "chisel:tyrian@15"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 19,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 8,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 8,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 8,
+            "z": 7,
+            "elements": [
+                "chisel:technicalnew@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 18,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 18,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 18,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 17,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 18,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 17,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 17,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 18,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 17,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 17,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 17,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 17,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 17,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 18,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 17,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 17,
+            "nbt": {"casingColor":"15119454","ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"shieldingRadResistance":"0.0d","radiationResistance":"0.0d"}},"id":"minecraft:tilecolorablemachinecomponent"},
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 17,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 17,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 16,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 17,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 16,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 16,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "techreborn:storage2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "chisel:technical@11"
+            ]
+        }
+    ]}
