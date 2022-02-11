@@ -223,6 +223,7 @@ val softGlass =
 <thermalfoundation:glass_alloy:4>,
 <thermalfoundation:glass_alloy:5>,
 <thermalfoundation:glass_alloy>,
+<thermalfoundation:glass>,
 <thermalfoundation:glass:1>,
 <thermalfoundation:glass:2>,
 <thermalfoundation:glass:4>,
@@ -238,7 +239,6 @@ for item in softGlass {
 
 val hiddenGlass =
 [
-<thermalfoundation:glass>,
 <thermalfoundation:glass:7>,
 <thermalfoundation:glass_alloy:6>,
 <thermalfoundation:glass_alloy:7>,

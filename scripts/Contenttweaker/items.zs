@@ -178,6 +178,13 @@ VanillaFactory.createItem("hot_cobalt").register();
 
 VanillaFactory.createItem("crystal_seed").register();
 
+
+VanillaFactory.createItem("dust_barite").register();
+VanillaFactory.createItem("dust_barium_sulfide").register();
+VanillaFactory.createItem("dust_barium_sulfate").register();
+
+
+
 var activatedaspectuscopper = VanillaFactory.createItem("activatedaspectuscopper");
 activatedaspectuscopper.maxStackSize = 1;
 activatedaspectuscopper.rarity = "rare";
@@ -285,6 +292,8 @@ VanillaFactory.createItem("matrix_deposition_+").register();
 VanillaFactory.createItem("matrix_deposition_-").register();
 VanillaFactory.createItem("incoherent").register();
 VanillaFactory.createItem("neutronic").register();
+
+
 
 
 

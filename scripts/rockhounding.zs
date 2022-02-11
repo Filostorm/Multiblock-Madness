@@ -309,6 +309,7 @@ Transposer.add(<liquid:sodium_hydroxide>*1000, <liquid:sodium_hydroxide_solution
 Transposer.add(<liquid:argon>*1000, <liquid:argon>*1000);
 Transposer.add(<liquid:fluegas>*1000, <liquid:flue_gas>*1000);
 Transposer.add(<liquid:flue_gas>*1000, <liquid:fluegas>*1000);
+Transposer.add(<liquid:helium>*1000, <liquid:helium>*1000);
 //Transposer.add(<liquid:hydrochloric_acid>*1000, <liquid:hydrogenchloride>*1000); not sure what liquid:hydrogenchloride should be, its not a fluid
 
 
