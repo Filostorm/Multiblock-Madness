@@ -1,11 +1,10 @@
-
-import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.botaniatweaks.Agglomeration;
 import crafttweaker.item.IIngredient;
 import mods.thaumcraft.Crucible;
-import mods.modularmachinery.RecipePrimer;
+import mods.nuclearcraft.Infuser;
+import mods.thermalexpansion.Transposer;
 
 print("==================== loading agricraft.zs ====================");
 ##########################################################################################
@@ -41,6 +40,17 @@ Crucible.registerRecipe("white_petal", "",
     <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "botania:white_flower_plant", agri_growth: 1 as byte}), <botania:doubleflower1>,
 	[<aspect:sensus> * 20, <aspect:herba> * 10]
 );
+
+// Crop Sticks
+Infuser.addRecipe(<ore:logWood>, <liquid:creosote> * 500, <agricraft:crop_sticks> * 4);
+Infuser.addRecipe(<ore:logWood>, <liquid:sap> * 250, <agricraft:crop_sticks> * 8);
+Infuser.addRecipe(<ore:logWood>, <liquid:resin> * 250, <agricraft:crop_sticks> * 8);
+
+for item in <ore:logWood>.items {
+    Transposer.addFillRecipe(<agricraft:crop_sticks> * 4, item, <liquid:creosote> * 500, 4000);
+    Transposer.addFillRecipe(<agricraft:crop_sticks> * 8, item, <liquid:sap> * 250, 4000);
+    Transposer.addFillRecipe(<agricraft:crop_sticks> * 8, item, <liquid:resin> * 250, 4000);
+}
 
 ##########################################################################################
 print("==================== end of agricraft.zs ====================");

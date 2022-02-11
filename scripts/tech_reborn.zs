@@ -103,7 +103,8 @@ val itemstoHide =
 <techreborn:part:25>,
 <techreborn:pump>,
 <techreborn:plates:3>,
-<techreborn:plates:4>
+<techreborn:plates:4>,
+<techreborn:dust:9>
 ]
  as IItemStack[];
 
