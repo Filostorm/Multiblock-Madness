@@ -96,7 +96,7 @@ val qmdremovals =
 [
 <qmd:part:4>*6,
 <qmd:chemical_dust:1>*3,
-<qmd:source>.withTag({storage: {amount: 10000000}}),
+<qmd:source>.withTag({particle_storage: {particle_amount: 50000000}}),
 <qmd:part:6>*6,
 <qmd:part:3>,
 <qmd:semiconductor:4>,
@@ -1011,7 +1011,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_goldtungsten
 // Tungsten Filament
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_tungsten_filament", "assemblermktwo", 100)
 	.addEnergyPerTickInput(7500)
-	.addItemOutput(<qmd:source>.withTag({storage: {amount: 6000}}))
+	.addItemOutput(<qmd:source>.withTag({particle_storage: {particle_amount: 50000000}}))
 	.addItemInput(<ore:ingotTungsten>, 2)
 	.build();
 

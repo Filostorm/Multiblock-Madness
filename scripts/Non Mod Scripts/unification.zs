@@ -92,8 +92,8 @@ Manufactory.addRecipe(<ore:bouleSilicon>, <advancedrocketry:wafer>*4);
 FissionIrradiator.removeRecipeWithInput(<qmd:semiconductor:3>);
 FissionIrradiator.addRecipe(<ore:waferSilicon>, <qmd:semiconductor:1>, 120000, 0, 0, 0);
 
-target_chamber.removeRecipeWithInput(<qmd:semiconductor:3>, ((<particle:boron_ion>*120000)^600)~2.0);
-target_chamber.addRecipe(<ore:waferSilicon>, ((<particle:boron_ion>*120000)^600)~2.0, <qmd:semiconductor>, 
+target_chamber.removeRecipeWithInput(<qmd:semiconductor:3>, ((<particle:boron_ion>*1000000)^600)~2.0);
+target_chamber.addRecipe(<ore:waferSilicon>, ((<particle:boron_ion>*1000000)^600)~2.0, <qmd:semiconductor>, 
 null, null, null, 
 1000, 1.0, 0, 0);
 
@@ -268,7 +268,6 @@ ChanceItemIngredient.create(<mekanism:dust:2>, 5, 0),
 null, 
 null);
 
-/* These need to be updated!
 // New Target Chamber Recipes
 target_chamber.removeRecipeWithInput(<qmd:ingot2:2>, (<particle:proton>*50000000)^200000);
 target_chamber.removeRecipeWithInput(<qmd:ingot2:2>, (<particle:proton>*5000000)^6580000);
@@ -300,7 +299,7 @@ target_chamber.addRecipe(<thaumcraft:quicksilver>, (<particle:deuteron>*10000000
 target_chamber.addRecipe(<thaumcraft:quicksilver>, <particle:antideuteron>*1000000, <qmd:waste_spallation2:3>, 
 <particle:pion_plus>*4, <particle:pion_naught>*4, <particle:pion_minus>*4, 
 10000000, 1.0, 2090000, 0);
-*/
+
 // New Industrial Grinder Mercury Recipes
 industrialGrinder.addRecipe(<thermalfoundation:material:1>*3, <techreborn:smalldust:14>, <techreborn:smalldust:34>, null, <ore:oreGold>, null, <liquid:mercury>*288, 100, 128);
 industrialGrinder.addRecipe(<minecraft:diamond>*2, <techreborn:smalldust:16>*3, null, null, <ore:oreDiamond>, null, <liquid:mercury>*288, 100, 64);
