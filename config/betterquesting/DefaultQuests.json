@@ -20263,7 +20263,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Building the Launch Pad",
-          "desc:8": "Assemble a base of Launch Pads, with the Structure Tower beside it. Place the §bRocket Assembling Machine§r next to, and one above, your square of pads."
+          "desc:8": "Assemble a base of Launch Pads, with the Structure Tower beside it. Place the §bRocket Assembling Machine§r next to, and one above, your square of pads.\n\nRocket Fuel will be quite challanging, but stick with it!"
         }
       },
       "tasks:9": {
@@ -21925,7 +21925,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Implosion Compresser",
-          "desc:8": "The recipe for Block of Biotite requires you to have at least 2 Transformer upgrades in the Compressor."
+          "desc:8": "This machine is used for Iridium Alloy Plates later on."
         }
       },
       "tasks:9": {
@@ -21946,12 +21946,6 @@
             "1:10": {
               "id:8": "techreborn:machine_casing",
               "Count:3": 26,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "techreborn:upgrades",
-              "Count:3": 2,
               "Damage:2": 1,
               "OreDict:8": ""
             }
@@ -23573,7 +23567,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:stone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "289:10": {
       "questID:3": 289,
@@ -41047,7 +41054,7 @@
     "490:10": {
       "questID:3": 490,
       "preRequisites:11": [
-        457
+        687
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -53793,7 +53800,9 @@
     },
     "687:10": {
       "questID:3": 687,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        457
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -53804,7 +53813,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "advancedrocketry:precisionlaseretcher",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -53814,18 +53823,92 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "ismain:1": 1,
+          "name:8": "The Laser Etcher",
+          "desc:8": "This Machine is used in the creation of Advanced Rocketry Circuits"
         }
       },
       "tasks:9": {
         "0:10": {
-          "index:3": 1,
-          "taskID:8": "bq_standard:checkbox"
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "advancedrocketry:precisionlaseretcher",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "advancedrocketry:vacuumlaser",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "libvulpes:enhancedmotor",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "blockMotor"
+            },
+            "3:10": {
+              "id:8": "libvulpes:forgepowerinput",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "libvulpes:hatch",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "libvulpes:hatch",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "libvulpes:structuremachine",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "7:10": {
+              "id:8": "advancedrocketry:structuretower",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "8:10": {
+              "id:8": "minecraft:stone_slab",
+              "Count:3": 7,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "libvulpes:elitemotor",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "688:10": {
       "questID:3": 688,
@@ -53891,7 +53974,9 @@
     },
     "689:10": {
       "questID:3": 689,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        761
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -53902,7 +53987,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "nuclearcraft:pellet_thorium",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -53913,17 +53998,73 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "TBU Fuel",
+          "desc:8": "Creating §6TBU§r is significantly changed from previous versions of Nuclearcraft. \n\nFirst you’ll need to run your Thorium§r through a Decay Hastener, which will give you §dProtactinium-Enriched Thorium Dust§r, then Irradiate that in your newly built Nuclear Reactor. §6\n\nTBU§r is one of the simpler methods of creating §eRocket Fuel and Stabablloy§r, if not the most efficent."
         }
       },
       "tasks:9": {
         "0:10": {
-          "index:3": 2,
-          "taskID:8": "bq_standard:checkbox"
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "techreborn:ingot",
+              "Count:3": 1,
+              "Damage:2": 23,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "nuclearcraft:fission_dust",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "nuclearcraft:pellet_thorium",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
+            "0:10": {
+              "id:8": "contenttweaker:excited_mek_alloy",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "contenttweaker:ingot_staballoy",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "nuclearcraft:pellet_thorium",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "nuclearcraft:ore",
+              "Count:3": 64,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "690:10": {
       "questID:3": 690,
@@ -66531,15 +66672,15 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -180,
+          "x:3": -168,
           "y:3": 84,
           "id:3": 11,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": 84,
+          "x:3": -336,
+          "y:3": 96,
           "id:3": 43,
           "sizeY:3": 24
         },
@@ -66615,7 +66756,7 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -144,
+          "x:3": -132,
           "y:3": 60,
           "id:3": 288,
           "sizeY:3": 24
@@ -66657,7 +66798,7 @@
         },
         "18:10": {
           "sizeX:3": 30,
-          "x:3": -204,
+          "x:3": -192,
           "y:3": 48,
           "id:3": 358,
           "sizeY:3": 30
@@ -66672,7 +66813,7 @@
         "20:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": -24,
+          "y:3": -36,
           "id:3": 364,
           "sizeY:3": 24
         },
@@ -66706,7 +66847,7 @@
         },
         "25:10": {
           "sizeX:3": 30,
-          "x:3": -204,
+          "x:3": -192,
           "y:3": 0,
           "id:3": 457,
           "sizeY:3": 30
@@ -66741,7 +66882,7 @@
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": -60,
+          "x:3": -48,
           "y:3": 0,
           "id:3": 469,
           "sizeY:3": 24
@@ -66762,8 +66903,8 @@
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": -144,
-          "y:3": -36,
+          "x:3": -120,
+          "y:3": -48,
           "id:3": 490,
           "sizeY:3": 24
         },
@@ -66798,7 +66939,7 @@
         "38:10": {
           "sizeX:3": 24,
           "x:3": -300,
-          "y:3": -36,
+          "y:3": -48,
           "id:3": 506,
           "sizeY:3": 24
         },
@@ -66818,12 +66959,26 @@
         },
         "41:10": {
           "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": -36,
+          "id:3": 687,
+          "sizeY:3": 24
+        },
+        "42:10": {
+          "sizeX:3": 24,
+          "x:3": -264,
+          "y:3": 0,
+          "id:3": 689,
+          "sizeY:3": 24
+        },
+        "43:10": {
+          "sizeX:3": 24,
           "x:3": -300,
           "y:3": 36,
           "id:3": 761,
           "sizeY:3": 24
         },
-        "42:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 0,
@@ -68043,47 +68198,33 @@
         },
         "53:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -72,
-          "id:3": 687,
-          "sizeY:3": 24
-        },
-        "54:10": {
-          "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": -96,
-          "id:3": 689,
-          "sizeY:3": 24
-        },
-        "55:10": {
-          "sizeX:3": 24,
           "x:3": -48,
           "y:3": -84,
           "id:3": 695,
           "sizeY:3": 24
         },
-        "56:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -108,
           "id:3": 696,
           "sizeY:3": 24
         },
-        "57:10": {
+        "55:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 60,
           "id:3": 700,
           "sizeY:3": 24
         },
-        "58:10": {
+        "56:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 84,
           "id:3": 701,
           "sizeY:3": 24
         },
-        "59:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": -12,

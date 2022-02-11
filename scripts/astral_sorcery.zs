@@ -8,6 +8,7 @@ import mods.astralsorcery.LightTransmutation;
 import mods.astralsorcery.StarlightInfusion;
 import mods.appliedenergistics2.Grinder;
 import mods.astralsorcery.Lightwell;
+import mods.astralsorcery.Utils;
 
 print("==================== loading astral_sorcery.zs ====================");
 ##########################################################################################
@@ -146,6 +147,22 @@ Infusion.registerRecipe("chalice", "",
 //Stable Celestial Crystal
 Lightwell.addLiquefaction(<contenttweaker:stable_celestial_crystal>, <liquid:astralsorcery.liquidstarlight>, 2, 0.6, 0x6603fc);
 
+//Utils.getCrystalORIngredient(boolean hasToBeCelestial, boolean hasToBeAttuned);
+//val attunedCrystal = Utils.getCrystalORIngredient(false, true);
+
+
+/*work on this later
+//Early Collectors
+Altar.addAttunementAltarRecipe("internal/altar/collectorcrystal", <astralsorcery:blockcollectorcrystal>, 1500, 200, [
+
+			<astralsorcery:itemcraftingcomponent:2>, <bloodmagic:slate:1>, <astralsorcery:itemcraftingcomponent:2>,
+
+			<botania:manaresource:23>, <astralsorcery:itemtunedrockcrystal>.marked("crystal"), <botania:manaresource:23>,
+
+			<astralsorcery:itemcraftingcomponent:2>, <bloodmagic:slate:1>, <astralsorcery:itemcraftingcomponent:2>,
+
+			<arcanearchives:shaped_quartz>, <arcanearchives:shaped_quartz>, <arcanearchives:shaped_quartz>, <arcanearchives:shaped_quartz>]
+);*/
 
 ##########################################################################################
 print("==================== end of astral_sorcery.zs ====================");

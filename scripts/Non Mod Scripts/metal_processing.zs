@@ -390,7 +390,7 @@ Pulverizer.addRecipe(<techreborn:dust:54> * 3, <jaopca:item_clustertitanium>, 30
 //Iron
 MineralSizer.add(<minecraft:iron_ore>, [<jaopca:item_crushedlumpiron>*2], [4]);
 LeachingVat.add(<jaopca:item_crushedlumpiron>, [<jaopca:item_leachedshardiron>*2], [4.21F], <liquid:leachate>*50);
-ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardiron>, ["dustIron", "dustNickel","dustChromium", "dustCarbon"], [200, 35, 20, 9]);
+ChemicalExtractor.add("Oxide", <jaopca:item_leachedshardiron>, ["dustIron", "dustNickel","dustChromium", "dustCarbon"], [200, 35, 25, 9]);
 
 val ironProcessing =[
 	<jaopca:item_crushedlumpiron>,
@@ -898,6 +898,7 @@ enrichment.addRecipe(item, <thermalfoundation:material:71>);
 
 blastFurnace.addRecipe(<thermalfoundation:material:135>*2, null, <ore:clusterIridium>, null, 2000, 2048, 3500);
 
+
 ////////////////////////////////////////
 
 //New Ores
@@ -905,6 +906,10 @@ furnace.addRecipe(<contenttweaker:material_part:10>, <contenttweaker:sub_block_h
 furnace.addRecipe(<contenttweaker:material_part:30>, <contenttweaker:sub_block_holder_0:3>, 0.0);
 furnace.addRecipe(<contenttweaker:material_part:20>, <contenttweaker:sub_block_holder_0:7>, 0.0);
 
+
+//Chrome
+furnace.remove(<techreborn:ingot:3>);
+blastFurnace.addRecipe(<techreborn:ingot:3>, null, <techreborn:dust:10>, null, 50, 256, 2000);
 
 ##################################
 #####   	Ingot Tiers		######

@@ -143,14 +143,14 @@
 	</Recipe>
 		<Recipe timeRequired="60" power ="100000">
 		<input>
+			<itemStack>threng:material;2;5</itemStack>
+			<itemStack>ebwizardry:grand_crystal;2;0</itemStack>
 			<itemStack>rftools:infused_diamond;1;0</itemStack>
-			<itemStack>threng:material;1;5</itemStack>
-			<itemStack>ebwizardry:grand_crystal</itemStack>
 			<itemStack>contenttweaker:starmetal_cluster;1;0</itemStack>
-			<fluidStack>aetherworks.aetherium_gas;200</fluidStack>
+			<fluidStack>aetherworks.aetherium_gas;244</fluidStack>
 		</input>
 		<output>
-			<itemStack>contenttweaker:crystal_lattice</itemStack>
+			<itemStack>contenttweaker:crystal_lattice;2</itemStack>
 		</output>
 	</Recipe>
 		<Recipe timeRequired="60" power ="20000">

@@ -3,6 +3,7 @@
 import crafttweaker.item.IItemStack;
 import mods.immersiveengineering.Crusher;
 import mods.thermalexpansion.Pulverizer;
+import crafttweaker.item.IIngredient;
 import mods.mekanism.enrichment;
 
 print("==================== loading advanced_rocketry.zs ====================");
@@ -54,6 +55,20 @@ recipes.addShaped(<advancedrocketry:vacuumlaser>, [[null, <minecraft:glass>, nul
 
 // Precision Laser etcher
 recipes.addShaped(<advancedrocketry:precisionlaseretcher>, [[<ore:plateGold>, <advancedrocketry:misc>, <ore:plateGold>],[<advancedrocketry:ic:4>, <libvulpes:structuremachine>, <advancedrocketry:ic:3>], [<ore:circuitElite>, <ore:circuitElite>, <ore:circuitElite>]]);
+
+
+
+val tier3Capacitor as IIngredient = (<enderio:item_basic_capacitor:2>|<enderio:item_capacitor_vivid>) as IIngredient;
+# [User Interface] from [Tablet Case (Tier 2)][+3]
+craft.remake(<advancedrocketry:misc>, ["pretty",
+  "G G G",
+  "□ : □",
+  "□ E □"], {
+  "G": <qmd:luminous_paint>,           # Green Radioluminescent Paint
+  "□": <ore:plateWhitegold>,           # White Gold Plate
+  ":": <ore:oc:tabletCase2>,           # Tablet Case (Tier 2)
+  "E": tier3Capacitor, # Endergised Capacitor
+});
 
 ##########################################################################################
 print("==================== end of advanced_rocketry.zs ====================");

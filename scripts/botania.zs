@@ -165,15 +165,6 @@ PureDaisy.addRecipe(<minecraft:mossy_cobblestone>, <botania:livingrock>);
 
 FluidToItem.transform(<minecraft:mossy_cobblestone>, <liquid:water>, [<ore:cobblestone>, <ore:plants>], true);
 
-/* Does not work with botania items for some reason
-<botania:manaresource>.displayName = "Manasilver Ingot";
-<botania:manaresource:17>.displayName = "Manasilver Nugget";
-<botania:storage>.displayName = "Block of Manasilver";
-<mysticalagriculture:manasteel_essence>.displayName = "Manasilver Essence";
-<mysticalagriculture:manasteel_seeds>.displayName = "Manasilver Seeds";
-<plustic:plustic.molten_manasteel>.displayName = "Molten Manasilver";
-<jaopca:item_stickmanasteel>.displayName = "Manasilver Rod";
-*/
 
 //Shaped Quartz
 //PureDaisy.addRecipe(<arcanearchives:raw_quartz_cluster>, <arcanearchives:shaped_quartz>);
@@ -184,9 +175,9 @@ PureDaisy.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:storage
 
 //Mana Powder
 ManaInfusion.removeRecipe(<botania:manaresource:23>);
-ManaInfusion.addInfusion(<botania:manaresource:23>,<minecraft:gunpowder>,10000);
-ManaInfusion.addInfusion(<botania:manaresource:23>,<contenttweaker:slatedust>,5000);
+//ManaInfusion.addInfusion(<botania:manaresource:23>,<minecraft:gunpowder>,10000);
 ManaInfusion.addInfusion(<botania:manaresource:23>,<embers:dust_ember>,7500);
+ManaInfusion.addInfusion(<botania:manaresource:23>,<contenttweaker:slatedust>,5000);
 
 //Essence of Mana
 ManaInfusion.addInfusion(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}), <thaumcraft:nugget:9>, 1000);

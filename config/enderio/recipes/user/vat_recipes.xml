@@ -23,5 +23,6 @@
     </fermenting>
   </recipe>
 
+<recipe name="Rocket Fuel"><disabled/></recipe>
 
 </enderio:recipes>

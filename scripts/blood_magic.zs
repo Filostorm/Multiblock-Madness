@@ -85,6 +85,13 @@ val bloodOrbLeast = [
 	bloodOrb[5],
 ] as IIngredient[];*/
 
+/*
+mods.bloodmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
+The syphon value is the amount of Life Essence to syphon from the Blood Altar over the course of the craft.
+The consumeRate is how quickly the Life Essence is syphoned.
+The drainRate is how quickly progress is lost if the Blood Altar runs out of Life Essence during the craft.
+*/
+
 #--------------Weak blood orb
 BloodAltar.removeRecipe(<minecraft:diamond>);
 BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <twilightforest:naga_scale>, 0, 2000, 12, 12);
@@ -94,24 +101,25 @@ BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <
 
 #--------------apprentice blood orb
 BloodAltar.removeRecipe(<minecraft:redstone_block>);
-BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <botania:rune:4>, 1, 5000, 30, 20);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}), <botania:rune:4>, 1, 5000, 15, 10);
 
 #--------------magician blood orb
 BloodAltar.removeRecipe(<minecraft:gold_block>);
-BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <embers:ember_cluster>, 2, 20000, 100, 20);
+BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <embers:ember_cluster>, 2, 20000, 200, 20);
 
 
 //dawn inscription
 BloodAltar.removeRecipe(<minecraft:glowstone>);
-BloodAltar.addRecipe(<bloodmagic:inscription_tool:6>.withTag({uses: 10}), <embers:block_dawnstone>, 5, 200000, 400, 200);
+BloodAltar.addRecipe(<bloodmagic:inscription_tool:6>.withTag({uses: 10}), <embers:block_dawnstone>, 5, 200000, 100, 100);
+
 
 //Awakened Activation Crystal
-BloodAltar.addRecipe(<bloodmagic:activation_crystal:1>, <actuallyadditions:item_misc:19>, 3, 40000, 200, 100);
+BloodAltar.addRecipe(<bloodmagic:activation_crystal:1>, <actuallyadditions:item_misc:19>, 3, 40000, 50, 50);
 
 
 //dusk inscription
 mods.thermalexpansion.InductionSmelter.addRecipe(<quark:biotite>, <actuallyadditions:item_misc:5>, <botania:manaresource:15>*8, 5000);
-mods.techreborn.implosionCompressor.addRecipe(<quark:biotite_block>, null, <quark:biotite>*9, <minecraft:tnt>*16, 40, 50000);
+mods.techreborn.implosionCompressor.addRecipe(<quark:biotite_block>, null, <quark:biotite>*9, <minecraft:tnt>*16, 40, 10000);
 mods.thermalexpansion.Pulverizer.removeRecipe(<quark:biotite_block>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<quark:biotite_slab>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<quark:biotite_block:1>);
@@ -119,7 +127,7 @@ mods.thermalexpansion.Pulverizer.removeRecipe(<quark:biotite_stairs>);
 mods.thermalexpansion.Pulverizer.addRecipe(<quark:biotite>*9, <quark:biotite_block>, 3000);
 
 BloodAltar.removeRecipe(<minecraft:coal_block>);
-BloodAltar.addRecipe(<bloodmagic:inscription_tool:5>.withTag({uses: 10}), <quark:biotite_block>, 3, 50000, 200, 20);
+BloodAltar.addRecipe(<bloodmagic:inscription_tool:5>.withTag({uses: 10}), <quark:biotite_block>, 3, 50000, 25, 20);
 
 
 //Extra Rune Recipes
@@ -294,6 +302,9 @@ recipes.addShapeless(<bloodmagic:blood_rune>, [item]);
 //Ritual Dismantler
 TartaricForge.removeRecipe([<bloodmagic:item_demon_crystal:2>, <bloodmagic:item_demon_crystal:2>, <bloodmagic:blood_shard>, <bloodmagic:ritual_diviner>]);
 mods.inworldcrafting.FluidToItem.transform(<bloodmagic:ritual_dismantler>, <liquid:liquid_death>, [<bloodmagic:ritual_diviner>,<bloodmagic:blood_shard>], true);
+
+//"Easy" Blood Diamonds
+mods.inworldcrafting.FluidToItem.transform(<bloodarsenal:blood_diamond>, <liquid:refined_life_essence>, [<botania:manaresource:2>,<minecraft:dragon_breath>], true);
 
 ##########################################################################################
 print("==================== end of blood_magic.zs ====================");

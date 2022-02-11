@@ -32,6 +32,9 @@ print("==================== loading ore_dic.zs ====================");
 */
 <ore:circuitBasic>.add(<thaumcraft:mechanism_complex>);
 
+//AR Circuits are cool!
+<ore:circuitBasic>.add(<advancedrocketry:ic>);
+<ore:circuitAdvanced>.add(<advancedrocketry:ic:2>);
 
 val tierOnePlate =
 [

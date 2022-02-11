@@ -45,19 +45,18 @@ blastFurnace.addRecipe(<contenttweaker:dust_barium_sulfide>, null, <contenttweak
 Precipitator.add("Barium Sulfate", <contenttweaker:dust_barium_sulfide>, null, <liquid:sulfuric_acid>*100, <liquid:toxic_waste>*100, <contenttweaker:dust_barium_sulfate>);
 
 // Drilling Fluid
-val drillingFluid = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-drilling-fluid", "mixer-dust", 200, 0);
-drillingFluid.addMysticalMechanicsInput(40, 80);
-drillingFluid.addFluidInput(<liquid:lubricant>*250);
-drillingFluid.addItemInput(<techreborn:dust:12>);
-drillingFluid.addItemInput(<rockhounding_chemistry:chemical_dusts:23>);
+val drillingFluid = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-drilling-fluid", "mixer-dust", 100, 0);
+drillingFluid.addFluidInput(<liquid:lubricant>*500);
+drillingFluid.addItemInput(<techreborn:dust:12>*8);
+drillingFluid.addItemInput(<rockhounding_chemistry:chemical_dusts:23>*3);
 drillingFluid.addItemInput(<contenttweaker:dust_barium_sulfate>);
-drillingFluid.addFluidOutput(<liquid:drilling_fluid>*250);
+drillingFluid.addFluidOutput(<liquid:drilling_fluid>*500);
 drillingFluid.build();
 
-
-val missionLunar = mods.modularmachinery.RecipeBuilder.newBuilder("quarry-lunar", "quarry", 10, 0);
-missionLunar.addEnergyPerTickInput(200000);
-//missionLunar.addDimensionRequirement([3]);
+/* Will return the next update!
+val missionLunar = mods.modularmachinery.RecipeBuilder.newBuilder("quarry-lunar", "quarry", 1, 0);
+missionLunar.addEnergyPerTickInput(5000000);
+missionLunar.addDimensionRequirement([3]);
 missionLunar.addFluidInput(<liquid:drilling_fluid>*5);
 missionLunar.addItemOutput(<advancedrocketry:moonturf>).setChance(0.5);
 missionLunar.addItemOutput(<advancedrocketry:moonturf_dark>).setChance(0.5);
@@ -72,7 +71,7 @@ missionLunar.addItemOutput(<astralsorcery:blockcustomore:1>).setChance(0.05);
 missionLunar.addItemOutput(<astralsorcery:blockcustomore>).setChance(0.05);
 missionLunar.addItemOutput(<fluxnetworks:fluxblock>).setChance(0.02);
 missionLunar.build();
-
+*/
 
 
 ##########################################################################################

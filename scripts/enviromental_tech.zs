@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import mods.rockhounding_chemistry.PullingCrucible;
 import crafttweaker.item.IIngredient;
+import mods.thermalexpansion.Transposer;
 
 print("==================== loading mods enviromental_tech.zs ====================");
 ##########################################################################################
@@ -137,6 +138,7 @@ PullingCrucible.add(<actuallyadditions:item_crystal_empowered:4>, <thermalfounda
 
 //Tier 3
 mods.nuclearcraft.Infuser.addRecipe(<environmentaltech:erodium_crystal>, <liquid:refined_life_essence>*250, <environmentaltech:kyronite_crystal>);
+Transposer.addFillRecipe(<environmentaltech:kyronite_crystal>, <environmentaltech:erodium_crystal>, <liquid:refined_life_essence> * 250, 10000);
 
 //Tier 4
 mods.nuclearcraft.FissionIrradiator.addRecipe(<environmentaltech:kyronite_crystal>, <environmentaltech:pladium_crystal>, 200000, 0, 0.15, 0);

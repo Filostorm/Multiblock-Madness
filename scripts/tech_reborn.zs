@@ -41,7 +41,6 @@ val itemstoRemove =
 <techreborn:part:1>,
 <techreborn:part:7>,
 <techreborn:solar_panel>,
-<techreborn:quantum_tank>,
 <techreborn:rockcutter>,
 <techreborn:ingot:21>,
 <techreborn:part:3>,
@@ -228,9 +227,6 @@ Transposer.addFillRecipe(<techreborn:part:36>, <techreborn:dynamiccell>.withTag(
 //Data Control
 recipes.addShaped(<techreborn:part:1>*4, [[<ore:circuitAdvanced>, <techreborn:part:2>, <ore:circuitAdvanced>],[<techreborn:part:2>, <jaopca:item_platestainlesssteel>, <techreborn:part:2>], [<ore:circuitAdvanced>, <techreborn:part:2>, <ore:circuitAdvanced>]]);
 
-//UGE tank
-recipes.addShaped(<techreborn:quantum_tank>, [[<ore:circuitAdvanced>, <thermalfoundation:material:326>, <ore:circuitAdvanced>],[<thermalfoundation:material:326>, <fluiddrawers:tank>, <thermalfoundation:material:326>], [<ore:circuitAdvanced>, <thermalfoundation:material:326>, <ore:circuitAdvanced>]]);
-
 // Grinder
 //recipes.addShaped(<techreborn:grinder>, [[<minecraft:flint>, <minecraft:flint>, <minecraft:flint>],[<ore:cobblestone>, <techreborn:machine_frame>, <ore:cobblestone>], [null, <ore:circuitBasic>, null]]);
 // Chem Reactor
@@ -392,5 +388,19 @@ industrialElectrolyzer.removeInputRecipe(<techreborn:dust:20>);
 //TOO MUCH TNT
 mods.techreborn.implosionCompressor.addRecipe(<techreborn:plates:38>, <techreborn:dust:15>*4, <techreborn:ingot:22>, <mekanism:obsidiantnt>, 20, 32);
 
+//For making the Infinity Catlysts
+<techreborn:cloakingdevice>.maxStackSize = 64;
+
+# [Quantum Tank] from [Basic Tank][+4]
+craft.remake(<techreborn:quantum_tank>, ["pretty",
+  "A s A",
+  "U B U",
+  "A S A"], {
+  "A": <ore:plateiridiumAlloy> | <ore:plateIridiumAlloy>, # Iridium Alloy Plate
+  "s": <advancedrocketry:misc>,           # User Interface
+  "U": <ore:circuitUltimate>,             # Ultimate Control Circuit
+  "B": <fluiddrawers:tank>,               # Basic Tank
+  "S": <appliedenergistics2:material:47>, # Singularity
+});
 ##########################################################################################
 print("==================== end of tech_reborn.zs ====================");

@@ -218,7 +218,7 @@ Crystallizer.addRecipe(<liquid:condensed_aetherium> * 10, <thermalfoundation:geo
 mods.embers.DawnstoneAnvil.add([<contenttweaker:crystal_seed>*4],<thermalfoundation:geode>,null);
 
 //Gas Form
-mods.nuclearcraft.Enricher.addRecipe(<contenttweaker:crystal_seed>, <liquid:aerotheum> * 500, <liquid:aetherworks.aetherium_gas> * 200);
+mods.nuclearcraft.Enricher.addRecipe(<contenttweaker:crystal_seed>, <liquid:aerotheum> * 500, <liquid:aetherworks.aetherium_gas> * 244);
 
 ##=======================================================
 ##LEACHING VAT

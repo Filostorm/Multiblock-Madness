@@ -90,7 +90,7 @@
 		</output>
 	</Recipe>
 
-	<Recipe timeRequired="50" power ="100000">
+	<Recipe timeRequired="50" power ="20000">
 		<input>
 			<fluidStack>limestone_slurry;1000</fluidStack>
 		</input>
