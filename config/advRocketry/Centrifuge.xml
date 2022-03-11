@@ -32,6 +32,11 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
+
+	
+
+	<!-- Centrifuging Recipes -->
+	
 	<Recipe timeRequired="200" power ="40000">
 		<input>
 			<fluidStack>compressed_air;16000</fluidStack>
@@ -81,15 +86,6 @@
 			<itemStack>jaopca:item_dusttinyiridium;0.01;0</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="50" power ="100000">
-		<input>
-			<fluidStack>water;10000</fluidStack>
-		</input>
-		<output>
-			<fluidStack>heavy_water;100</fluidStack>
-		</output>
-	</Recipe>
-
 	<Recipe timeRequired="50" power ="20000">
 		<input>
 			<fluidStack>limestone_slurry;1000</fluidStack>
@@ -98,7 +94,21 @@
 			<itemStack>contenttweaker:dust_barite;1;0</itemStack>
 		</output>
 	</Recipe>
-		</Recipe>
+
+
+
+	<!-- NC:O Centrifuge Compat -->
+
+	<!-- Isotope Separation Recipes -->
+
+	<Recipe timeRequired="50" power ="100000">
+		<input>
+			<fluidStack>water;10000</fluidStack>
+		</input>
+		<output>
+			<fluidStack>heavy_water;100</fluidStack>
+		</output>
+	</Recipe>
 	<Recipe timeRequired="12" power ="40000">
 		<input>
 			<fluidStack>boron;384</fluidStack>
@@ -135,6 +145,10 @@
 			<fluidStack>redstone;800</fluidStack>
 		</output>
 	</Recipe>
+
+
+	<!-- Na-K Separation Recipes -->
+
 	<Recipe timeRequired="4" power ="40000">
 		<input>
 			<fluidStack>iron_nak;288</fluidStack>
@@ -414,6 +428,10 @@
 			<fluidStack>nak;288</fluidStack>
 		</output>
 	</Recipe>
+
+
+	<!-- Depleted FLiBe Separation Recipes -->
+
 	<Recipe timeRequired="4" power ="40000">
 		<input>
 			<fluidStack>depleted_tbu_fluoride_flibe;144</fluidStack>
@@ -657,6 +675,10 @@
 			<fluidStack>flibe;144</fluidStack>
 		</output>
 	</Recipe>
+
+
+	<!-- Depleted Fuel to Isotopes Separation Recipes -->
+
 	<Recipe timeRequired="9" power ="40000">
 		<input>
 			<fluidStack>depleted_tbu;288</fluidStack>
@@ -1006,4 +1028,6 @@
 			<fluidStack>californium_252;64</fluidStack>
 			<fluidStack>californium_252;64</fluidStack>
 			<fluidStack>europium_155;20</fluidStack>
+		</output>
+	</Recipe>
 </Recipes>
