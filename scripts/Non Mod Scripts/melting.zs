@@ -362,92 +362,6 @@ Crucible.addRecipe(<liquid:strontium_90> * 1296, <qmd:strontium_90_block>, 32000
 // --==Magma Crucible & Melter Recipe Compat==-- //
 // For recipes in the TiC Melter, but not in the NC Melter or Magma Crucible
 
-// Nugget, Ingot and Block Melting Recipes
-
-val generalmeltingone as IItemStack[][ILiquidStack] = {
-	<liquid:base_essence>:[<mysticalagriculture:crafting:39>,<mysticalagriculture:crafting:32>,<mysticalagriculture:ingot_storage>,],
-	<liquid:pigiron>:[<tconstruct:nuggets:4>,<tconstruct:ingots:4>,<tconstruct:metal:4>,],
-	<liquid:knightslime>:[<tconstruct:nuggets:3>,<tconstruct:ingots:3>,<tconstruct:metal:3>,],
-	<liquid:alumite>:[<plustic:alumitenugget>,<plustic:alumiteingot>,<plustic:alumiteblock>,],
-	<liquid:osgloglas>:[<plustic:osgloglasnugget>,<plustic:osgloglasingot>,<plustic:osgloglasblock>,],
-	<liquid:osmiridium>:[<plustic:osmiridiumnugget>,<plustic:osmiridiumingot>,<plustic:osmiridiumblock>,],
-	<liquid:mirion>:[<plustic:mirionnugget>,<plustic:mirioningot>,<plustic:mirionblock>,],
-	<liquid:thaumium>:[<thaumcraft:nugget:6>,<thaumcraft:ingot>,<thaumcraft:metal_thaumium>,],
-	<liquid:alubrass>:[<tconstruct:nuggets:5>,<tconstruct:ingots:5>,<tconstruct:metal:5>,],
-	<liquid:soulium>:[<mysticalagriculture:crafting:45>,<mysticalagriculture:crafting:38>,<mysticalagriculture:ingot_storage:6>,],
-	<liquid:refined_iron>:[<techreborn:nuggets:19>,<techreborn:ingot:19>,<techreborn:storage2:10>,],
-	<liquid:dawnstone>:[<embers:nugget_dawnstone>,<embers:ingot_dawnstone>,<embers:block_dawnstone>,],
-	<liquid:elementium>:[<botania:manaresource:19>,<botania:manaresource:7>,<botania:storage:2>,],
-} as IItemStack[][ILiquidStack];
-
-for fluid, material in generalmeltingone {
-	Crucible.addRecipe(fluid * 16, material[0], 500);
-	Crucible.addRecipe(fluid * 144, material[1], 4000);
-	Crucible.addRecipe(fluid * 1296, material[2], 32000);
-	Melter.addRecipe(material[0], fluid * 16, 0.11);
-	Melter.addRecipe(material[1], fluid * 144);
-	Melter.addRecipe(material[2], fluid * 1296, 9.0);
-}
-
-
-// Nugget, Ingot, Dust and Block Melting Recipes
-
-val generalmeltingtwo as IItemStack[][ILiquidStack] = {
-	<liquid:molten_vanasteel>:[<rockhounding_chemistry:alloy_items_tech:41>,<rockhounding_chemistry:alloy_items_tech:40>,<rockhounding_chemistry:alloy_items_tech:39>,<rockhounding_chemistry:alloy_blocks_tech:13>],
-	<liquid:molten_cunife>:[<rockhounding_chemistry:alloy_items_tech:26>,<rockhounding_chemistry:alloy_items_tech:25>,<rockhounding_chemistry:alloy_items_tech:24>,<rockhounding_chemistry:alloy_blocks_tech:8>],
-	<liquid:molten_inconel>:[<rockhounding_chemistry:alloy_items_tech_b:5>,<rockhounding_chemistry:alloy_items_tech_b:4>,<rockhounding_chemistry:alloy_items_tech_b:3>,<rockhounding_chemistry:alloy_blocks_tech_b:1>],
-	<liquid:molten_corten>:[<rockhounding_chemistry:alloy_items_deco:23>,<rockhounding_chemistry:alloy_items_deco:22>,<rockhounding_chemistry:alloy_items_deco:21>,<rockhounding_chemistry:alloy_blocks_deco:7>],
-	<liquid:molten_zircaloy>:[<rockhounding_chemistry:alloy_items_tech_b:8>,<nuclearcraft:alloy:12>,<rockhounding_chemistry:alloy_items_tech_b:6>,<rockhounding_chemistry:alloy_blocks_tech_b:2>],
-	<liquid:molten_stellite>:[<rockhounding_chemistry:alloy_items_tech:11>,<rockhounding_chemistry:alloy_items_tech:10>,<rockhounding_chemistry:alloy_items_tech:9>,<rockhounding_chemistry:alloy_blocks_tech:3>],
-	<liquid:molten_nimonic>:[<rockhounding_chemistry:alloy_items_tech:17>,<rockhounding_chemistry:alloy_items_tech:16>,<rockhounding_chemistry:alloy_items_tech:15>,<rockhounding_chemistry:alloy_blocks_tech:5>],
-	<liquid:molten_nial>:[<rockhounding_chemistry:alloy_items_tech_b:2>,<rockhounding_chemistry:alloy_items_tech_b:1>,<rockhounding_chemistry:alloy_items_tech_b>,<rockhounding_chemistry:alloy_blocks_tech_b>],
-	<liquid:molten_pewter>:[<rockhounding_chemistry:alloy_items_deco:20>,<rockhounding_chemistry:alloy_items_deco:19>,<rockhounding_chemistry:alloy_items_deco:18>,<rockhounding_chemistry:alloy_blocks_deco:6>],
-	<liquid:molten_scal>:[<rockhounding_chemistry:alloy_items_tech:5>,<rockhounding_chemistry:alloy_items_tech:4>,<rockhounding_chemistry:alloy_items_tech:3>,<rockhounding_chemistry:alloy_blocks_tech:1>],
-	<liquid:molten_tantaloy>:[<rockhounding_chemistry:alloy_items_tech:47>,<rockhounding_chemistry:alloy_items_tech:45>,<rockhounding_chemistry:alloy_items_tech:46>,<rockhounding_chemistry:alloy_blocks_tech:15>],
-	<liquid:molten_cupronickel>:[<rockhounding_chemistry:alloy_items_tech:14>,<rockhounding_chemistry:alloy_items_tech:12>,<rockhounding_chemistry:alloy_items_tech:13>,<rockhounding_chemistry:alloy_blocks_tech:4>],
-	<liquid:molten_bam>:[<rockhounding_chemistry:alloy_items_tech:8>,<rockhounding_chemistry:alloy_items_tech:6>,<rockhounding_chemistry:alloy_items_tech:7>,<rockhounding_chemistry:alloy_blocks_tech:2>],
-	<liquid:molten_cube>:[<rockhounding_chemistry:alloy_items_tech:2>,<rockhounding_chemistry:alloy_items_tech>,<rockhounding_chemistry:alloy_items_tech:1>,<rockhounding_chemistry:alloy_blocks_tech>],
-	<liquid:molten_nichrome>:[<rockhounding_chemistry:alloy_items_tech:23>,<rockhounding_chemistry:alloy_items_tech:21>,<rockhounding_chemistry:alloy_items_tech:22>,<rockhounding_chemistry:alloy_blocks_tech:7>],
-	<liquid:molten_hydronalium>:[<rockhounding_chemistry:alloy_items_tech:38>,<rockhounding_chemistry:alloy_items_tech:36>,<rockhounding_chemistry:alloy_items_tech:37>,<rockhounding_chemistry:alloy_blocks_tech:12>],
-	<liquid:molten_hastelloy>:[<rockhounding_chemistry:alloy_items_tech:20>,<rockhounding_chemistry:alloy_items_tech:18>,<rockhounding_chemistry:alloy_items_tech:19>,<rockhounding_chemistry:alloy_blocks_tech:6>],
-	<liquid:starmetal>:[<jaopca:item_nuggetastralstarmetal>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:2>,<contenttweaker:starmetal_block>],
-} as IItemStack[][ILiquidStack];
-
-for fluid, material in generalmeltingtwo {
-	Crucible.addRecipe(fluid * 16, material[0], 500);
-	Crucible.addRecipe(fluid * 144, material[1], 4000);
-	Crucible.addRecipe(fluid * 144, material[2], 4000);
-	Crucible.addRecipe(fluid * 1296, material[3], 32000);
-	Melter.addRecipe(material[0], fluid * 16, 0.11);
-	Melter.addRecipe(material[1], fluid * 144);
-	Melter.addRecipe(material[2], fluid * 144);
-	Melter.addRecipe(material[3], fluid * 1296, 9.0);
-}
-
-
-// Ingot and Block Melting Recipes
-
-val generalmeltingthree as IItemStack[][ILiquidStack] = {
-	<liquid:inert_metal>:[<contenttweaker:inert_ingot>,<contenttweaker:sub_block_holder_0:2>],
-	<liquid:fierymetal>:[<twilightforest:fiery_ingot>,<twilightforest:block_storage:1>],
-	<liquid:knightmetal>:[<twilightforest:knightmetal_ingot>,<twilightforest:knightmetal_block>],
-	<liquid:dragonsteel_ice>:[<iceandfire:dragonsteel_ice_ingot>,<iceandfire:dragonsteel_ice_block>],
-	<liquid:dragonsteel_fire>:[<iceandfire:dragonsteel_fire_ingot>,<iceandfire:dragonsteel_fire_block>],
-	<liquid:molten_blood_infused_iron>:[<bloodarsenal:base_item:4>,<bloodarsenal:blood_infused_iron_block>],
-	<liquid:bloodbronze>:[<bloodtinker:blood_bronze_ingot>,<bloodtinker:blood_bronze_block>],
-	<liquid:stainless_steel>:[<qmd:ingot_alloy:2>,<jaopca:block_blockstainlesssteel>],
-	<liquid:tin_silver>:[<nuclearcraft:alloy:8>,<jaopca:block_blocktinsilver>],
-} as IItemStack[][ILiquidStack];
-
-for fluid, material in generalmeltingthree {
-	Crucible.addRecipe(fluid * 144, material[0], 4000);
-	Crucible.addRecipe(fluid * 1296, material[1], 32000);
-	Melter.addRecipe(material[0], fluid * 144);
-	Melter.addRecipe(material[1], fluid * 1296, 9.0);
-}
-
-
-/* DOESN'T WORK 
 // Nugget, Ingot, Dust and Block Melting Recipes
 // 1st material is nuggets, 2nd material is ingots, 3rd material is dusts, 4th material is blocks
 
@@ -495,24 +409,28 @@ val generalmelting as IItemStack[][ILiquidStack] = {
 } as IItemStack[][ILiquidStack];
 
 for fluid, material in generalmelting {
-	if (material[0] != null) {
-	Crucible.addRecipe(fluid * 16, material[0], 500);
-	Melter.addRecipe(material[0], fluid * 16, 0.11);
+
+	if (!(isNull(material[0]))) {
+		Crucible.addRecipe(fluid * 16, material[0], 500);
+		Melter.addRecipe(material[0], fluid * 16, 0.11);
 	}
-	if (material[1] != null) {
-	Crucible.addRecipe(fluid * 144, material[1], 4000);
-	Melter.addRecipe(material[1], fluid * 144);
+
+	if (!(isNull(material[1]))) {
+		Crucible.addRecipe(fluid * 144, material[1], 4000);
+		Melter.addRecipe(material[1], fluid * 144);
 	}
-	if (material[2] != null) {
-	Crucible.addRecipe(fluid * 144, material[2], 4000);
-	Melter.addRecipe(material[2], fluid * 144);
+
+	if (!(isNull(material[2]))) {
+		Crucible.addRecipe(fluid * 144, material[2], 4000);
+		Melter.addRecipe(material[2], fluid * 144);
 	}
-	if (material[3] != null) {
-	Crucible.addRecipe(fluid * 1296, material[3], 32000);
-	Melter.addRecipe(material[3], fluid * 1296, 9.0);
+
+	if (!(isNull(material[3]))) {
+		Crucible.addRecipe(fluid * 1296, material[3], 32000);
+		Melter.addRecipe(material[3], fluid * 1296, 9.0);
 	}
 }
-*/
+
 
 // Blood
 Melter.addRecipe(<minecraft:rotten_flesh>, <liquid:blood> * 40, 0.5);
@@ -578,9 +496,9 @@ val ironChestDupe =
  as IItemStack[];
 
 for item in ironChestDupe {
-Melting.removeRecipe(<liquid:refined_iron>, item);
-Overrides.removeRecipe(<liquid:refined_iron>, item);
-HighOven.removeMeltingOverride(<liquid:refined_iron>, item);
+	Melting.removeRecipe(<liquid:refined_iron>, item);
+	Overrides.removeRecipe(<liquid:refined_iron>, item);
+	HighOven.removeMeltingOverride(<liquid:refined_iron>, item);
 }
 
 ##########################################################################################

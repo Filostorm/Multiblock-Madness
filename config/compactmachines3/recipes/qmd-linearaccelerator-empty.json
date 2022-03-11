@@ -1,5 +1,5 @@
 {
-  "name": "cm3qmd:linear_accelerator",
+  "name": "cm3qmd:linear_accelerator_empty",
 
   "disabled": false,
 
@@ -12,7 +12,6 @@
   "catalyst": "contenttweaker:purpleprint",
   "catalyst-meta": 0,
   
-
   "input-types": {
     "a": {
       "id": "qmd:accelerator_casing",
@@ -64,78 +63,6 @@
       }
     },
     "h": {
-      "id": "qmd:accelerator_cooler1",
-      "meta": 1,
-      "item": {
-        "id": "qmd:accelerator_cooler1",
-        "meta": 1,
-        "count": 12
-      }
-    },
-    "i": {
-      "id": "qmd:accelerator_cooler1",
-      "meta": 8,
-      "item": {
-        "id": "qmd:accelerator_cooler1",
-        "meta": 8,
-        "count": 8
-      }
-    },
-    "j": {
-      "id": "qmd:accelerator_cooler1",
-      "meta": 3,
-      "item": {
-        "id": "qmd:accelerator_cooler1",
-        "meta": 3,
-        "count": 12
-      }
-    },
-    "k": {
-      "id": "qmd:accelerator_cavity",
-      "meta": 1,
-      "item": {
-        "id": "qmd:accelerator_cavity",
-        "meta": 1,
-        "count": 8
-      }
-    },
-    "l": {
-      "id": "qmd:accelerator_cooler2",
-      "meta": 5,
-      "item": {
-        "id": "qmd:accelerator_cooler1",
-        "meta": 5,
-        "count": 8
-      }
-    },
-    "m": {
-      "id": "qmd:accelerator_cavity",
-      "meta": 0,
-      "item": {
-        "id": "qmd:accelerator_cavity",
-        "meta": 0,
-        "count": 8
-      }
-    },
-    "n": {
-      "id": "qmd:accelerator_magnet",
-      "meta": 1,
-      "item": {
-        "id": "qmd:accelerator_magnet",
-        "meta": 1,
-        "count": 20
-      }
-    },
-    "o": {
-      "id": "qmd:accelerator_cooler1",
-      "meta": 2,
-      "item": {
-        "id": "qmd:accelerator_cooler1",
-        "meta": 5,
-        "count": 12
-      }
-    },
-    "p": {
       "id": "qmd:accelerator_beam_port",
       "meta": 1,
       "item": {
@@ -144,7 +71,7 @@
         "count": 1
       }
     },
-    "q": {
+    "i": {
       "id": "qmd:accelerator_beam",
       "meta": 0,
       "item": {
@@ -153,7 +80,7 @@
         "count": 11
       }
     },
-    "r": {
+    "j": {
       "id": "qmd:accelerator_source",
       "meta": 5,
       "item": {
@@ -183,42 +110,18 @@
       "nbt": "{isRedstonePowered:0b,fluidConnection3:{sorption1:1,sorption0:3},alternateComparator:0b,fluidConnection2:{sorption1:1,sorption0:3},fluidConnection1:{sorption1:1,sorption0:3},fluidConnection0:{sorption1:1,sorption0:3},fluidConnection5:{sorption1:1,sorption0:3},fluidConnection4:{sorption1:1,sorption0:3},redstoneControl:0b,radiationLevel:0.0d,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"qmd:accelerator_vent\"}"
     },
     "a:B": {
-      "nbt": "{redstoneControl:0b,isRedstonePowered:0b,multiblockData:{coolantIn:5140,dipoleStrength:0.0d,energyStorage:{energy:3960000L,capacity:3960000L},quadrupoleStrength:2.5d,maxOperatingTemp:39.0d,errorCode:0,ParticleStorage2:{maxEnergy:9223372036854775807L,minEnergy:0L,particle_stack:{amount:0,focus:0.0d,meanEnergy:0L},capacity:2147483647},cold:1b,ParticleStorage1:{maxEnergy:9223372036854775807L,minEnergy:0L,particle_stack:{amount:0,focus:0.0d,meanEnergy:0L},capacity:2147483647},ParticleStorage0:{maxEnergy:9223372036854775807L,minEnergy:0L,particle_stack:{amount:0,focus:0.0d,meanEnergy:0L},capacity:2147483647},coolantOut:328960,quadrapoleNumber:5,RFCavityNumber:2,energyPercentage:0,logicID:\"linear_accelerator\",rawHeating:3780L,efficiency:0.7571428571428571d,heatBuffer:{heatStored:1479857L,heatCapacity:2475000L},computerControlled:0b,tanks1:{FluidName:\"neon\",Amount:62720,capacity:316800},dipoleNumber:0,cooling:5140L,requiredEnergy:15188L,tanks0:{Empty:\"\",capacity:990},isAcceleratorOn:0b,logic:{excessCoolant:810},acceleratingVoltage:700},radiationLevel:0.0d,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_casing\"}"
+      "nbt": "{redstoneControl:0b,isRedstonePowered:0b,multiblockData:{coolantIn:5140,dipoleStrength:0.0d,energyStorage:{energy:3960000L,capacity:3960000L},quadrupoleStrength:0.0d,maxOperatingTemp:400.0d,errorCode:0,ParticleStorage2:{maxEnergy:9223372036854775807L,minEnergy:0L,particle_stack:{amount:0,focus:0.0d,meanEnergy:0L},capacity:2147483647},cold:1b,ParticleStorage1:{maxEnergy:9223372036854775807L,minEnergy:0L,particle_stack:{amount:0,focus:0.0d,meanEnergy:0L},capacity:2147483647},ParticleStorage0:{maxEnergy:9223372036854775807L,minEnergy:0L,particle_stack:{amount:0,focus:0.0d,meanEnergy:0L},capacity:2147483647},coolantOut:328960,quadrapoleNumber:0,RFCavityNumber:0,energyPercentage:0,logicID:\"linear_accelerator\",rawHeating:0L,efficiency:NaNd,heatBuffer:{heatStored:1778907L,heatCapacity:2475000L},computerControlled:0b,tanks1:{FluidName:\"neon\",Amount:62720,capacity:316800},dipoleNumber:0,cooling:0L,requiredEnergy:0L,tanks0:{Empty:\"\",capacity:990},isAcceleratorOn:0b,logic:{excessCoolant:810},acceleratingVoltage:0},radiationLevel:0.0d,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_casing\"}"
     },
     "a:C": {
       "nbt": "{redstoneControl:0b,isRedstonePowered:0b,radiationLevel:0.0d,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_casing\"}"
     },
     "h:A": {
-      "nbt": "{redstoneControl:0b,coolingRate:55,isRedstonePowered:0b,radiationLevel:0.0d,name:\"iron\",ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_cooleriron\",ruleID:\"iron_cooler\"}"
-    },
-    "i:A": {
-      "nbt": "{redstoneControl:0b,coolingRate:95,isRedstonePowered:0b,radiationLevel:0.0d,name:\"gold\",ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_coolergold\",ruleID:\"gold_cooler\"}"
-    },
-    "j:A": {
-      "nbt": "{redstoneControl:0b,coolingRate:75,isRedstonePowered:0b,radiationLevel:0.0d,name:\"quartz\",ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_coolerquartz\",ruleID:\"quartz_cooler\"}"
-    },
-    "k:A": {
-      "nbt": "{redstoneControl:0b,isRedstonePowered:0b,isFunctional:1b,radiationLevel:0.0d,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_cavitymagnesium_diboride\"}"
-    },
-    "l:A": {
-      "nbt": "{redstoneControl:0b,coolingRate:180,isRedstonePowered:0b,radiationLevel:0.0d,name:\"manganese\",ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_coolermanganese\",ruleID:\"manganese_cooler\"}"
-    },
-    "m:A": {
-      "nbt": "{redstoneControl:0b,isRedstonePowered:0b,isFunctional:1b,radiationLevel:0.0d,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_cavitycopper\"}"
-    },
-    "n:A": {
-      "nbt": "{redstoneControl:0b,isRedstonePowered:0b,isFunctional:1b,radiationLevel:0.0d,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_magnetmagnesium_diboride\"}"
-    },
-    "o:A": {
-      "nbt": "{redstoneControl:0b,coolingRate:115,isRedstonePowered:0b,radiationLevel:0.0d,name:\"redstone\",ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_coolerredstone\",ruleID:\"redstone_cooler\"}"
-    },
-    "p:A": {
       "nbt": "{redstoneControl:0b,mode:1,isRedstonePowered:0b,triggered:0b,radiationLevel:0.0d,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_beam_port\",setting:0}"
     },
-    "q:A": {
+    "i:A": {
       "nbt": "{redstoneControl:0b,isRedstonePowered:0b,isFunctional:1b,radiationLevel:0.0d,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},alternateComparator:0b,id:\"qmd:accelerator_beam\"}"
     },
-    "r:A": {
+    "j:A": {
       "nbt": "{isRedstonePowered:0b,alternateComparator:0b,redstoneControl:0b,inventoryConnection0:{sorption0:2},inventoryConnection1:{sorption0:2},radiationLevel:0.0d,inventoryConnection4:{sorption0:2},ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},inventoryConnection5:{sorption0:2},Items:[],inventoryConnection2:{sorption0:2},id:\"qmd:accelerator_source\",inventoryConnection3:{sorption0:2}}"
     }
   },
@@ -318,47 +221,47 @@
       ],
       [
         "a:C",
-        "m:A",
-        "j:A",
-        "l:A",
-        "i:A",
-        "l:A",
-        "j:A",
-        "k:A",
-        "j:A",
-        "h:A",
-        "i:A",
-        "h:A",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
         "a:C"
       ],
       [
         "a:C",
-        "m:A",
-        "o:A",
-        "n:A",
-        "h:A",
-        "n:A",
-        "o:A",
-        "k:A",
-        "o:A",
-        "n:A",
-        "n:A",
-        "n:A",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
         "a:C"
       ],
       [
         "a:C",
-        "m:A",
-        "j:A",
-        "l:A",
-        "i:A",
-        "l:A",
-        "j:A",
-        "k:A",
-        "j:A",
-        "h:A",
-        "i:A",
-        "h:A",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
         "a:C"
       ],
       [
@@ -395,47 +298,47 @@
       ],
       [
         "a:C",
-        "m:A",
-        "o:A",
-        "n:A",
-        "h:A",
-        "n:A",
-        "o:A",
-        "k:A",
-        "o:A",
-        "n:A",
-        "n:A",
-        "n:A",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
         "a:C"
       ],
       [
-        "r:A",
-        "q:A",
-        "q:A",
-        "q:A",
-        "q:A",
-        "q:A",
-        "q:A",
-        "q:A",
-        "q:A",
-        "q:A",
-        "q:A",
-        "q:A",
-        "p:A"
+        "j:A",
+        "i:A",
+        "i:A",
+        "i:A",
+        "i:A",
+        "i:A",
+        "i:A",
+        "i:A",
+        "i:A",
+        "i:A",
+        "i:A",
+        "i:A",
+        "h:A"
       ],
       [
         "a:C",
-        "m:A",
-        "o:A",
-        "n:A",
-        "h:A",
-        "n:A",
-        "o:A",
-        "k:A",
-        "o:A",
-        "n:A",
-        "n:A",
-        "n:A",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
         "a:C"
       ],
       [
@@ -472,47 +375,47 @@
       ],
       [
         "a:C",
-        "m:A",
-        "j:A",
-        "l:A",
-        "i:A",
-        "l:A",
-        "j:A",
-        "k:A",
-        "j:A",
-        "h:A",
-        "i:A",
-        "h:A",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
         "a:C"
       ],
       [
         "a:C",
-        "m:A",
-        "o:A",
-        "n:A",
-        "h:A",
-        "n:A",
-        "o:A",
-        "k:A",
-        "o:A",
-        "n:A",
-        "n:A",
-        "n:A",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
         "a:C"
       ],
       [
         "a:C",
-        "m:A",
-        "j:A",
-        "l:A",
-        "i:A",
-        "l:A",
-        "j:A",
-        "k:A",
-        "j:A",
-        "h:A",
-        "i:A",
-        "h:A",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
         "a:C"
       ],
       [
@@ -609,5 +512,4 @@
       ]
     ]
   ]
-  
 }
