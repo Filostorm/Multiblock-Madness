@@ -96,18 +96,6 @@ GCT.replaceRecipe("stormway", <arcanearchives:stormway>.withTag({charge: 30, inf
 <arcanearchives:stormway>.addTooltip(format.lightPurple("Used to activate the Twilight Forest Portal"));
 
 
-//Gate Knightmetal
-furnace.remove(<twilightforest:knightmetal_ingot>);
-val KnightmetalMelting =
-[
-	<twilightforest:armor_shard_cluster>
-]
- as IItemStack[];
-
-for item in KnightmetalMelting {
-Melting.removeRecipe(<liquid:knightmetal>, item);
-Overrides.removeRecipe(<liquid:knightmetal>, item);
-}
 
 
 /*

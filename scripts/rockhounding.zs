@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import mods.rockhounding_chemistry.MaterialCabinet;
 import mods.rockhounding_chemistry.Transposer;
 import mods.rockhounding_chemistry.LabBlender;
+import mods.rockhounding_chemistry.ProfilingBench;
 
 
 print("==================== loading rockhounding.zs ====================");
@@ -336,15 +337,15 @@ mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingsteel>
 
 mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <contenttweaker:gearcrushingdarksteel>, 6);
 mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingdarksteel>);
-<contenttweaker:gearcrushingdarksteel>.addTooltip("Crushes 32 Stacks");
+<contenttweaker:gearcrushingdarksteel>.addTooltip("Crushes 64 Stacks");
 
 mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_deco:22>, <contenttweaker:gearcrushingcortensteel>, 6);
 mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingcortensteel>);
-<contenttweaker:gearcrushingcortensteel>.addTooltip("Crushes 64 Stacks");
+<contenttweaker:gearcrushingcortensteel>.addTooltip("Crushes 128 Stacks");
 
 mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:40>, <contenttweaker:gearcrushingvanasteel>, 6);
 mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingvanasteel>);
-<contenttweaker:gearcrushingvanasteel>.addTooltip("Crushes 128 Stacks");
+<contenttweaker:gearcrushingvanasteel>.addTooltip("Crushes 256 Stacks");
 
 /*
 recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({ench: [{lvl: 1 as short, id: 34 as short}], RepairCost: 1}), [[null, <moreplates:invar_stick>, null],[<rockhounding_chemistry:misc_items:3>, <moreplates:invar_stick>, <rockhounding_chemistry:misc_items:3>], [<rockhounding_chemistry:misc_items:3>, <moreplates:invar_stick>, <rockhounding_chemistry:misc_items:3>]]);
@@ -369,29 +370,34 @@ recipes.addShaped(<contenttweaker:agitatorsteel>, [[null, <contenttweaker:rodste
 mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <contenttweaker:roddarksteel>*4, 2);
 mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <contenttweaker:foildarksteel>*8, 3);
 mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatordarksteel>);
-<contenttweaker:agitatordarksteel>.addTooltip("Mixes 32 Stacks");
+<contenttweaker:agitatordarksteel>.addTooltip("Mixes 64 Stacks");
 recipes.addShaped(<contenttweaker:agitatordarksteel>, [[null, <contenttweaker:roddarksteel>, null],[<contenttweaker:foildarksteel>, <contenttweaker:roddarksteel>, <contenttweaker:foildarksteel>], [<contenttweaker:foildarksteel>, <contenttweaker:roddarksteel>, <contenttweaker:foildarksteel>]]);
 
 mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:37>, <contenttweaker:rodhydronalium>*4, 2);
 mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:37>, <contenttweaker:foilhydronalium>*8, 3);
 mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorhydronalium>);
-<contenttweaker:agitatorhydronalium>.addTooltip("Mixes 64 Stacks");
+<contenttweaker:agitatorhydronalium>.addTooltip("Mixes 128 Stacks");
 recipes.addShaped(<contenttweaker:agitatorhydronalium>, [[null, <contenttweaker:rodhydronalium>, null],[<contenttweaker:foilhydronalium>, <contenttweaker:rodhydronalium>, <contenttweaker:foilhydronalium>], [<contenttweaker:foilhydronalium>, <contenttweaker:rodhydronalium>, <contenttweaker:foilhydronalium>]]);
 
 
 //mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:40>, <contenttweaker:agitatorhastelloy>, 6);
 recipes.addShaped(<contenttweaker:agitatorhastelloy>, [[null, <rockhounding_chemistry:misc_items:27>, null],[<contenttweaker:hastelloyfoil>, <rockhounding_chemistry:misc_items:27>, <contenttweaker:hastelloyfoil>], [<contenttweaker:hastelloyfoil>, <rockhounding_chemistry:misc_items:27>, <contenttweaker:hastelloyfoil>]]);
 mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorhastelloy>);
-<contenttweaker:agitatorhastelloy>.addTooltip("Mixes 128 Stacks");
+<contenttweaker:agitatorhastelloy>.addTooltip("Mixes 256 Stacks");
 
 
-mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:19>, <contenttweaker:hastelloyfoil>*8, 3);
-mods.rockhounding_chemistry.ProfilingBench.add(<minecraft:gold_ingot>, <contenttweaker:goldfoil>*8, 3);
+ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:19>, <contenttweaker:hastelloyfoil>*8, 3);
+ProfilingBench.add(<minecraft:gold_ingot>, <contenttweaker:goldfoil>*8, 3);
+
+//Electrum Foil
+ProfilingBench.add("ingotElectrum", <contenttweaker:foil_electrum>*8, 3);
+
+
 
 mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:goldfoil> * 4, <thermalfoundation:material:33>, 1500);
 mods.thermalexpansion.Compactor.addStorageRecipe(<rockhounding_chemistry:misc_items:3> * 4, <thermalfoundation:material:32>, 1500);
-mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:storage:4>, <contenttweaker:aluminumcasing>*20, 5);
-mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:storage:6>, <contenttweaker:casingplatinum>*20, 5);
+ProfilingBench.add(<thermalfoundation:storage:4>, <contenttweaker:aluminumcasing>*20, 5);
+ProfilingBench.add(<thermalfoundation:storage:6>, <contenttweaker:casingplatinum>*20, 5);
 
 //input stack: the oredict-based items to be shaped
 //mods.rockhounding_chemistry.ProfilingBench.add("blockGlass", <minecraft:empty_bottle>*4, 0);

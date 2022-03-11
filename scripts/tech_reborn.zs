@@ -12,6 +12,7 @@ import mods.techreborn.fusionReactor;
 import mods.techreborn.scrapbox;
 import mods.techreborn.fluidReplicator;
 import mods.techreborn.industrialElectrolyzer;
+import mods.rockhounding_chemistry.ProfilingBench;
 import mods.extendedcrafting.CombinationCrafting;
 
 print("==================== loading tech_reborn.zs ====================");
@@ -52,7 +53,8 @@ val itemstoRemove =
 <techreborn:recycler>,
 <techreborn:fluid_replicator>,
 <powersuits:powerarmorcomponent:14>,
-//<powersuits:powerarmorcomponent:11>,
+<techreborn:cable:7>,
+<techreborn:cable:4>,
 ]
  as IItemStack[];
 
@@ -257,6 +259,11 @@ mods.techreborn.industrialGrinder.addRecipe(<thermalfoundation:material:70>, <me
 //Gold Cable
 assemblingMachine.addRecipe(<techreborn:cable:6>, <techreborn:cable:2>, <ore:itemRubber>, 100, 32);
 */
+
+
+//Glass Fiber Cable
+ProfilingBench.add(<techreborn:reinforced_glass>, <techreborn:cable:4>*2, 1);
+
 
 ############################################
 ############  Rolling Machine  #############

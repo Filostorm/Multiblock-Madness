@@ -81,40 +81,6 @@ VanillaFactory.createItem("steelcast_tough_tool_rod").register();
 VanillaFactory.createItem("steelcast_wide_guard").register();
 
 
-
-/*
-VanillaFactory.createItem("adventure_token_tier1").register();
-VanillaFactory.createItem("exploring_token_tier1").register();
-VanillaFactory.createItem("mining_token_tier1").register();
-VanillaFactory.createItem("tech_token_tier1").register();
-VanillaFactory.createItem("magic_token_tier1").register();
-
-VanillaFactory.createItem("adventure_token_tier2").register();
-VanillaFactory.createItem("exploring_token_tier2").register();
-VanillaFactory.createItem("mining_token_tier2").register();
-VanillaFactory.createItem("tech_token_tier2").register();
-VanillaFactory.createItem("magic_token_tier2").register();
-
-VanillaFactory.createItem("adventure_token_tier3").register();
-VanillaFactory.createItem("exploring_token_tier3").register();
-VanillaFactory.createItem("mining_token_tier3").register();
-VanillaFactory.createItem("tech_token_tier3").register();
-VanillaFactory.createItem("magic_token_tier3").register();
-
-VanillaFactory.createItem("adventure_token_tier4").register();
-VanillaFactory.createItem("exploring_token_tier4").register();
-VanillaFactory.createItem("mining_token_tier4").register();
-VanillaFactory.createItem("tech_token_tier4").register();
-VanillaFactory.createItem("magic_token_tier4").register();
-
-VanillaFactory.createItem("adventure_token_tier5").register();
-VanillaFactory.createItem("exploring_token_tier5").register();
-VanillaFactory.createItem("mining_token_tier5").register();
-VanillaFactory.createItem("tech_token_tier5").register();
-VanillaFactory.createItem("magic_token_tier5").register();
-*/
-
-
 VanillaFactory.createItem("token_tier1").register();
 VanillaFactory.createItem("token_tier2").register();
 VanillaFactory.createItem("token_tier3").register();
@@ -139,6 +105,10 @@ VanillaFactory.createItem("rodinvar").register();
 VanillaFactory.createItem("rodsteel").register();
 VanillaFactory.createItem("roddarksteel").register();
 VanillaFactory.createItem("rodhydronalium").register();
+
+VanillaFactory.createItem("foil_electrum").register();
+
+
 
 VanillaFactory.createItem("purpleprint").register();
 VanillaFactory.createItem("ingot_xp").register();
@@ -232,21 +202,21 @@ gearcrushingsteel.register();
 var gearcrushingdarksteel = VanillaFactory.createItem("gearcrushingdarksteel");
 gearcrushingdarksteel.maxStackSize = 1;
 gearcrushingdarksteel.rarity = "uncommon";
-gearcrushingdarksteel.maxDamage = 2048;
+gearcrushingdarksteel.maxDamage = 4096;
 //gearcrushingdarksteel.glowing = true;
 gearcrushingdarksteel.register();
 
 var gearcrushingCortensteel = VanillaFactory.createItem("gearcrushingcortensteel");
 gearcrushingCortensteel.maxStackSize = 1;
 gearcrushingCortensteel.rarity = "rare";
-gearcrushingCortensteel.maxDamage = 4096;
+gearcrushingCortensteel.maxDamage = 8192;
 //gearcrushingCortensteel.glowing = true;
 gearcrushingCortensteel.register();
 
 var gearcrushingVanasteel = VanillaFactory.createItem("gearcrushingvanasteel");
 gearcrushingVanasteel.maxStackSize = 1;
 gearcrushingVanasteel.rarity = "epic";
-gearcrushingVanasteel.maxDamage = 8192;
+gearcrushingVanasteel.maxDamage = 16384;
 //gearcrushingVanasteel.glowing = true;
 gearcrushingVanasteel.register();
 
@@ -268,21 +238,21 @@ agitatorsteel.register();
 var agitatordarksteel = VanillaFactory.createItem("agitatordarksteel");
 agitatordarksteel.maxStackSize = 1;
 agitatordarksteel.rarity = "uncommon";
-agitatordarksteel.maxDamage = 2048;
+agitatordarksteel.maxDamage = 4096;
 //agitatordarksteel.glowing = true;
 agitatordarksteel.register();
 
 var agitatorHydronalium = VanillaFactory.createItem("agitatorhydronalium");
 agitatorHydronalium.maxStackSize = 1;
 agitatorHydronalium.rarity = "rare";
-agitatorHydronalium.maxDamage = 4096;
+agitatorHydronalium.maxDamage = 8192;
 //agitatorHydronalium.glowing = true;
 agitatorHydronalium.register();
 
 var agitatorHastelloy = VanillaFactory.createItem("agitatorhastelloy");
 agitatorHastelloy.maxStackSize = 1;
 agitatorHastelloy.rarity = "epic";
-agitatorHastelloy.maxDamage = 8192;
+agitatorHastelloy.maxDamage = 16384;
 //agitatorHastelloy.glowing = true;
 agitatorHastelloy.register();
 

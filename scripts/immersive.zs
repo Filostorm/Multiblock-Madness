@@ -201,8 +201,7 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:5>*3, [
 
 
 // Redstone block
-recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 1, [[<thermalfoundation:material:32>, <actuallyadditions:item_crystal>, <thermalfoundation:material:32>],[<actuallyadditions:item_crystal>, <thermalfoundation:material:291>, <actuallyadditions:item_crystal>], [<thermalfoundation:material:32>, <actuallyadditions:item_crystal>, <thermalfoundation:material:32>]]);
-recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 3, [[<thermalfoundation:material:352>, <actuallyadditions:item_crystal>, <thermalfoundation:material:352>],[<actuallyadditions:item_crystal>, <mysticalmechanics:gear_gold_on>, <actuallyadditions:item_crystal>], [<thermalfoundation:material:352>, <actuallyadditions:item_crystal>, <thermalfoundation:material:352>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 1, [[<ore:plateSteel>, <actuallyadditions:item_crystal>, <ore:plateSteel>],[<actuallyadditions:item_crystal>, <mysticalmechanics:gear_gold_on>, <actuallyadditions:item_crystal>], [<ore:plateSteel>, <actuallyadditions:item_crystal>, <ore:plateSteel>]]);
 
 
 // Kinetic Dynamo
@@ -286,16 +285,6 @@ Crusher.addRecipe(<techreborn:dust:5>*2, <techreborn:ore:4>, 2048, <thermalfound
 //mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Ores");
 
 
-
-val removeArc =
-[   
-<techreborn:ingot:3>,
-]
-as IItemStack[];
-
-for item in removeArc {
-mods.immersiveengineering.ArcFurnace.removeRecipe(item);
-}
 
 
 //

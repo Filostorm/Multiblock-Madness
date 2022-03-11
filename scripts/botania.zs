@@ -338,5 +338,30 @@ recipes.addShaped(<botania:managun>, [[<botania:spreader:1>, <embers:diffraction
 //Enchanted Soil
 recipes.addShapeless(<botania:enchantedsoil>, [<minecraft:grass>,<botania:overgrowthseed>]);
 
+# [Master Corporea Spark] from [Corporea Spark][+4]
+craft.remake(<botania:corporeaspark:1>, ["pretty",
+  "M ⌃ M",
+  "a C a",
+  "M E M"], {
+  "M": <botania:managlass>,                    # Managlass
+  "⌃": <arcanearchives:storage_shaped_quartz>, # Shaped Radiant Quartz Block
+  "a": <ore:clothManaweave>,                   # Manaweave Cloth
+  "C": <botania:corporeaspark>,                # Corporea Spark
+  "E": <treasure2:ember_key>.anyDamage(),      # Ember Key
+});
+
+# [Corporea Spark] from [Spark][+3]
+craft.remake(<botania:corporeaspark>, ["pretty",
+  "  *  ",
+  "M S M",
+  "  □  "], {
+  "*": <arcanearchives:monitoring_crystal>, # Monitoring Crystal
+  "M": <ore:powderMana>,                    # Mana Powder
+  "S": <botania:spark>,                     # Spark
+  "□": <ore:plateThaumium>,                 # Thaumium Plate
+});
+
+# [Monitoring Crystal] from [Mana Diamond][+2]
+
 ##########################################################################################
 print("==================== end of botania.zs ====================");

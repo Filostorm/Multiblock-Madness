@@ -4,7 +4,7 @@
   "disabled": false,
 
   "target-item": "contenttweaker:plate_engineering",
-  "target-count": 1,
+  "target-count": 2,
 
   "duration": 100,
   "symmetrical": true,
@@ -19,7 +19,7 @@
     },
     "b": {
       "id": "immersiveengineering:metal_decoration0",
-      "meta": 3
+      "meta": 6
     },
     "c": {
       "id": "immersiveengineering:metal_decoration0",
@@ -32,62 +32,47 @@
     "e": {
       "id": "immersiveengineering:metal_decoration0",
       "meta": 4
+    },
+    "f": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 3
     }
   },
   "shape": [
     [
       [
+        "a",
+        "a",
+        "a",
+        "a",
         "a"
       ],
       [
+        "a",
+        "d",
+        "c",
+        "b",
         "a"
       ],
       [
+        "a",
+        "e",
+        "f",
+        "e",
         "a"
       ],
       [
-        "a"
-      ]
-    ],
-    [
-      [
-        "a"
-      ],
-      [
-        "b"
-      ],
-      [
-        "c"
-      ],
-      [
-        "a"
-      ]
-    ],
-    [
-      [
+        "a",
+        "b",
+        "c",
+        "d",
         "a"
       ],
       [
-        "d"
-      ],
-      [
-        "e"
-      ],
-      [
-        "a"
-      ]
-    ],
-    [
-      [
-        "a"
-      ],
-      [
-        "a"
-      ],
-      [
-        "a"
-      ],
-      [
+        "a",
+        "a",
+        "a",
+        "a",
         "a"
       ]
     ]

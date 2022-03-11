@@ -43,9 +43,6 @@ val itemstoRemove =
 	<appliedenergistics2:fluid_interface>,
 	<appliedenergistics2:part:460>,
 	<appliedenergistics2:material:35>,
-	<ae2fc:ingredient_buffer>,
-	<ae2fc:fluid_discretizer>,
-	<ae2fc:fluid_pattern_encoder>,
 	<appliedenergistics2:part:300>,
 	<appliedenergistics2:part:302>,
 	<appliedenergistics2:part:320>,
@@ -107,11 +104,6 @@ craft.remake(<appliedenergistics2:memory_card>, ["pretty",
   "A": <rockhounding_chemistry:misc_items:10>, # Advanced Logic Chip
 });
 
-//Fluid crafting stuff
-recipes.addShaped(<ae2fc:ingredient_buffer> * 2, [[<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:material:35>, <rockhounding_chemistry:alloy_parts:10>],[<appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:43>], [<rockhounding_chemistry:alloy_parts:10>, <appliedenergistics2:material:54>, <rockhounding_chemistry:alloy_parts:10>]]);
-recipes.addShaped(<ae2fc:ingredient_buffer>, [[<thermalfoundation:material:324>, <appliedenergistics2:material:35>, <thermalfoundation:material:324>],[<appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:43>], [<thermalfoundation:material:324>, <appliedenergistics2:material:54>, <thermalfoundation:material:324>]]);
-recipes.addShaped(<ae2fc:fluid_discretizer>, [[<moreplates:dark_steel_plate>, <threng:material>, <moreplates:dark_steel_plate>],[<appliedenergistics2:part:221>, <threng:material:4>, <appliedenergistics2:part:220>], [<moreplates:dark_steel_plate>, <threng:material>, <moreplates:dark_steel_plate>]]);
-recipes.addShaped(<ae2fc:fluid_pattern_encoder>, [[<actuallyadditions:block_crystal:1>, <appliedenergistics2:material:24>, <actuallyadditions:block_crystal:1>],[<moreplates:dark_steel_plate>, <ore:workbench>, <moreplates:dark_steel_plate>], [<moreplates:dark_steel_plate>, <moreplates:dark_steel_plate>, <moreplates:dark_steel_plate>]]);
 
 // 1k Storage Component
 recipes.addShaped(<appliedenergistics2:material:35>, [[<moreplates:redstone_alloy_plate>, Certus, <moreplates:redstone_alloy_plate>],[Certus, <appliedenergistics2:material:22>, Certus], [<moreplates:redstone_alloy_plate>, Certus, <moreplates:redstone_alloy_plate>]]);

@@ -70,21 +70,6 @@ Crusher.removeRecipesForInput(<libvulpes:productingot:3>);
 Pulverizer.removeRecipe(<libvulpes:productingot:3>);
 Pulverizer.addRecipe(<rockhounding_chemistry:chemical_dusts:42>, <nuclearcraft:gem:6>, 2000);
 
-/*
-// Silicon Plates
-mods.thermalexpansion.Compactor.removeStorageRecipe(<libvulpes:productingot:3>);
-mods.thermalexpansion.Compactor.addStorageRecipe(<techreborn:plates:11>, <nuclearcraft:gem:6>, 4000);
-
-mods.techreborn.blastFurnace.removeRecipe(<techreborn:plates:11>);
-
-mods.nuclearcraft.Pressurizer.removeRecipeWithOutput(<techreborn:plates:11>);
-mods.nuclearcraft.Pressurizer.addRecipe(<ore:itemSilicon>, <techreborn:plates:11>);
-
-MetalPress.removeRecipe(<techreborn:plates:11>);
-MetalPress.removeRecipe(<libvulpes:productplate:3>);
-MetalPress.addRecipe(<techreborn:plates:11>, <nuclearcraft:gem:6>, <immersiveengineering:mold>, 2000);
-*/
-
 // New Silicon Wafer Recipes
 Manufactory.removeRecipeWithInput(<qmd:semiconductor:2>);
 Manufactory.addRecipe(<ore:bouleSilicon>, <advancedrocketry:wafer>*4);

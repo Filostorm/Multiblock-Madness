@@ -26,7 +26,6 @@ for item in itemstoRemove {
 recipes.addShaped(<storagenetwork:controller>, [[<actuallyadditions:block_crystal:1>, <storagenetwork:process_kabel>, <actuallyadditions:block_crystal:1>],[<storagenetwork:process_kabel>, <rockhounding_chemistry:misc_items:1>, <storagenetwork:process_kabel>], [<actuallyadditions:block_crystal:1>, <storagenetwork:process_kabel>, <actuallyadditions:block_crystal:1>]]);
 recipes.addShaped(<storagenetwork:request>, [[<moreplates:restonia_plate>, <storagenetwork:simple_kabel>, <moreplates:restonia_plate>],[<storagenetwork:simple_kabel>, <engineersdecor:treated_wood_crafting_table>, <storagenetwork:simple_kabel>], [<moreplates:restonia_plate>, <storagenetwork:simple_kabel>, <moreplates:restonia_plate>]]);
 recipes.addShaped(<storagenetwork:master>, [[<moreplates:void_plate>, <storagenetwork:kabel>, <moreplates:void_plate>],[<storagenetwork:kabel>, <rockhounding_chemistry:misc_items:1>, <storagenetwork:kabel>], [<moreplates:void_plate>, <storagenetwork:kabel>, <moreplates:void_plate>]]);
-recipes.addShaped(<storagenetwork:kabel> * 8, [[<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>],[<thermalfoundation:material:161>, <minecraft:redstone>, <thermalfoundation:material:161>], [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]]);
 recipes.addShaped(<storagenetwork:process_kabel> * 4, [[<enderio:item_alloy_ingot:5>, <storagenetwork:kabel>, <enderio:item_alloy_ingot:5>],[<storagenetwork:kabel>, <minecraft:observer>, <storagenetwork:kabel>], [<enderio:item_alloy_ingot:5>, <storagenetwork:kabel>, <enderio:item_alloy_ingot:5>]]);
 recipes.addShapedMirrored(<storagenetwork:storage_kabel> * 2, [[<minecraft:piston>, <storagenetwork:simple_kabel>, <minecraft:sticky_piston>],[<storagenetwork:simple_kabel>, <ore:chestWood>, <storagenetwork:simple_kabel>], [<minecraft:sticky_piston>, <storagenetwork:simple_kabel>, <minecraft:piston>]]);
 
@@ -50,6 +49,16 @@ recipes.addShaped("remotefour", <storagenetwork:remote:1>, [[<moreplates:end_ste
 	    return out.withTag(ins.sncontroller.tag);
     }, null);
 recipes.addShaped(<storagenetwork:remote:1>, [[<moreplates:end_steel_plate>, <appliedenergistics2:material:41>, <moreplates:end_steel_plate>],[<enderutilities:enderpart:2>, <storagenetwork:master>, <enderutilities:enderpart:2>], [<moreplates:end_steel_plate>, <techreborn:part:3>, <moreplates:end_steel_plate>]]);
+
+# [Storage Cable]*2 from [Redstone][+2]
+craft.remake(<storagenetwork:kabel> * 2, ["pretty",
+  "I I I",
+  "G ♥ G",
+  "I I I"], {
+  "I": <contenttweaker:foil_electrum>,        # Electrum Foil
+  "G": <rockhounding_chemistry:misc_items:7>, # Glass Pipe
+  "♥": <ore:dustRedstone>, # Redstone
+});
 
 
 ##########################################################################################

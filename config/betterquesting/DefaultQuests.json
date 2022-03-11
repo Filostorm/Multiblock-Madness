@@ -1966,7 +1966,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "The Melter",
-          "desc:8": "Upgrading your equipment with metal.\n\nPlace the Melter on top of the lava filled tank. Insert 2 gold or clay, then right click the attached faucet to pour it onto a casting table with a tool part, ingot, plate, or gear, to make a cast.\n\n§cThe Melter can only hold one type of liquid at a time!§r\n\n§bThe Token can be spent in the Shop chapter.\n\n§5The §5Tier 6 Seed can be converted down at a 1:2 ratio, then back up. Choose wisely!"
+          "desc:8": "Upgrading your equipment with metal!\n\nPlace the Melter on top of the lava filled tank. Insert 2 gold or clay, then right click the attached faucet to pour it onto a casting table with a tool part, ingot, plate, or gear, to make a cast.\n\n§cThe Melter can only hold one type of liquid at a time!§r\n\n§bThe Token can be spent in the Shop chapter.\n\n§5The §5Tier 6 Seed can be converted down at a 1:2 ratio, then back up. Choose wisely!"
         }
       },
       "tasks:9": {
@@ -3222,7 +3222,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Akashic Tome",
-          "desc:8": "This is basically a hand held book shelf. Craft it together with any book to add it.\n\nRight click with it to open the book menu, then once you are done looking at whichever book just left click the air with it.\n\n§bThe filled Tome is craftable, so if you do lose your Tome, just craft another."
+          "desc:8": "This is basically a hand held book shelf. Craft it together with any book to add it.\n\nRight click with it to open the book menu, then once you are done looking at whichever book just left click the air with it.\n\n§bThe filled Tome is craftable, so if you do lose your Tome, just craft another. (It\u0027s the recipe with gold ingots)"
         }
       },
       "tasks:9": {
@@ -5233,7 +5233,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Transferring Mechanical Power",
-          "desc:8": "Axles go between the Steam engine output and the Gearbox, which has the input facing you when you place it. \n\nThe Gearbox needs a gear on any face with an Axle to complete the connection.\n\nWhenever you make a right turn with an Axle, you will need a Gearbox there.\n\n§6Holding the Tinker\u0027s Lens in your offhand will be very helpfull when setting up a Mechanical System!"
+          "desc:8": "Axles go between the Steam engine output and the Gearbox, which has the input facing you when you place it. \n\nThe Gearbox needs a gear on any face with an Axle to complete the connection.\n\nWhenever you make a right turn with an Axle, you will need a Gearbox there.\n\n§6Holding the Tinker\u0027s Lens in your offhand will be very helpfull when setting up a Mechanical System!\n\n§4Gearboxes and Mergeboxes may only be rotated with the Quartz Wrench!"
         }
       },
       "tasks:9": {
@@ -5273,9 +5273,12 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "thermalfoundation:material",
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "appliedenergistics2:nether_quartz_wrench",
               "Count:3": 1,
-              "Damage:2": 25,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -5419,7 +5422,8 @@
     "55:10": {
       "questID:3": 55,
       "preRequisites:11": [
-        468
+        468,
+        106
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5489,7 +5493,7 @@
     "56:10": {
       "questID:3": 56,
       "preRequisites:11": [
-        355
+        460
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6100,7 +6104,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Multiblocks!",
-          "desc:8": "This is used to visualize some multiblock structures in JEI. \n\nShouldn\u0027t have to say this, but don\u0027t actually do one of these crafts!"
+          "desc:8": "This is used to visualize some multiblock structures in JEI. \n\nShouldn\u0027t have to say this, but don\u0027t actually do one of these crafts!\n\n§6Most Multiblocks have a §9Capsule blueprint §6that is craftable and is used to place the entire Multiblock in just one click! Crafting one doesnt consume the MB parts, just the Paper, Buttons, and Lapis.§r"
         }
       },
       "tasks:9": {
@@ -6653,7 +6657,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Actual Magic Flowers",
-          "desc:8": "Drop the correct petals, then some seeds into a filled Petal Apothecary.\n\nPlacing the correct blocks around the Pure Daisy will slowly transform them.\n\n§bCheck out what other blocks can be transformed!\n§r\n\nThe §aMunchdew§r will eat leaves in an area around itself as long as possible, then take a break when it runs out or fills up. Each leaf eaten will generate some amount of §3§1§9Mana§r.\n\n§6Try Bonsai Pots!"
+          "desc:8": "Drop the correct petals, then some seeds into a filled Petal Apothecary.\n\nPlacing the correct blocks around the Pure Daisy will slowly transform them.\n\n§bCheck out what other blocks can be transformed!\n§r\n\nThe §aMunchdew§r will eat leaves in an area around itself as long as possible, then take a break when it runs out or fills up. Each leaf eaten will generate some amount of §3§1§9Mana§r.\n\n§6Try Bonsai Pots for a source of leaves!"
         }
       },
       "tasks:9": {
@@ -6929,16 +6933,6 @@
                 "Book:8": "rockhounding_chemistry:xml/chembook.xml"
               },
               "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "rockhounding_chemistry:machines_a",
-              "Count:3": 1,
-              "tag:10": {
-                "Energy:3": 0,
-                "Fuel:3": 0
-              },
-              "Damage:2": 11,
               "OreDict:8": ""
             }
           }
@@ -7287,7 +7281,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 1,
           "consume:1": 0,
           "requiredItems:9": {
@@ -7670,7 +7664,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Acquire Salt",
-          "desc:8": "Place the pump over a water source block and supply redstone to the back. It has a chance to consume the source block over time.\n\nPipe water into the Evaporation Tank, wait, then pipe raw salt to the seasoning rack.\n\nThis is a slow process, and weather and biome will have an effect on how long it takes. It is advised to have multiple tanks evaporating at once."
+          "desc:8": "Place the pump over a water source block and supply redstone to the back. It has a chance to consume the source block over time.\n\nPipe water into the Evaporation Tank, wait, then pipe raw salt to the seasoning rack.\n\n\nFor the next quest, we\u0027ll be using the Brine from an intermediate step of evaporation, but the salt will be used later.\n\n\nThis is a slow process, and weather and biome will have an effect on how long it takes. It is advised to have multiple tanks evaporating at once."
         }
       },
       "tasks:9": {
@@ -9101,7 +9095,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "The Mixer",
-          "desc:8": "The Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input)."
+          "desc:8": "The Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input).\n\nCan attach a Faucet right to the output!"
         }
       },
       "tasks:9": {
@@ -9606,6 +9600,12 @@
               },
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "15:10": {
+              "id:8": "modularmachinery:blockcasing",
+              "Count:3": 4,
+              "Damage:2": 5,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -9613,12 +9613,24 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
             "0:10": {
+              "id:8": "thermalfoundation:material",
+              "Count:3": 64,
+              "Damage:2": 134,
+              "OreDict:8": ""
+            },
+            "1:10": {
               "id:8": "techreborn:ingot",
-              "Count:3": 16,
+              "Count:3": 64,
+              "Damage:2": 15,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "techreborn:ingot",
+              "Count:3": 64,
               "Damage:2": 14,
               "OreDict:8": ""
             }
@@ -10072,7 +10084,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "name:8": "Dense Component",
           "desc:8": "The Hydrogen Chloride can be made into Hydrochloric Acid, or you can follow Rockhounding\u0027s method."
         }
@@ -12369,7 +12381,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Brine",
-          "desc:8": "A key step in metal processing.\n\nRight click on the tank with the Mod Wrench until it shows purging Brine. Then all you need to do is pipe the Brine into a tank for storage."
+          "desc:8": "Right click on the tank with the Mod Wrench until it shows purging Brine. Then all you need to do is pipe the Brine into a tank for storage."
         }
       },
       "tasks:9": {
@@ -13014,7 +13026,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Fluid Filtering",
-          "desc:8": "Inside the Fluidpedia, use the Ampoule on whichever fluid you want to be filtered, then you can use it to set the filters in the next quest.\n\n§cIn the current version of Rockhounding, the letter sorting is broken! Use the arrows instead."
+          "desc:8": "I\u0027ve pre filtered the two needed fluids in the rewarded Ampoules, but you may need this later on. Most machines will auto filter, except the one in the next quest.\n\n\nInside the Fluidpedia, use the Ampoule on whichever fluid you want to be filtered, then you can use it to set the filters in RH Tanks or Gas Holders/Vessels.\n\n§cIn the current version of Rockhounding, the letter sorting is broken! Use the arrows instead."
         }
       },
       "tasks:9": {
@@ -13027,13 +13039,6 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "rockhounding_chemistry:sampling_ampoule",
-              "Count:3": 1,
-              "tag:10": {},
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
               "id:8": "rockhounding_chemistry:machines_d",
               "Count:3": 1,
               "tag:10": {
@@ -13055,7 +13060,24 @@
             "0:10": {
               "id:8": "rockhounding_chemistry:sampling_ampoule",
               "Count:3": 1,
-              "tag:10": {},
+              "tag:10": {
+                "Fluid:10": {
+                  "FluidName:8": "salt_brine",
+                  "Amount:3": 1000
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "rockhounding_chemistry:sampling_ampoule",
+              "Count:3": 1,
+              "tag:10": {
+                "Fluid:10": {
+                  "FluidName:8": "water",
+                  "Amount:3": 1000
+                }
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -13094,7 +13116,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Electrochemical CSTR",
-          "desc:8": "Assemble this as shown in the guide book, then set the filters in the fluid input as shown in JEI to create Sodium Hydroxide.\n\nPipe the Saturated Brine and Water into the fluid input. Start the process in the Electrochemical CSTR.\n\nIf you\u0027ve done everything correctly, Sodium Hydroxide should start outputting on the bottom.\n\n§cThe Power Station needs RF and Fuel."
+          "desc:8": "Assemble this as shown in the guide book, then set the filters in the fluid input as shown in JEI to create Sodium Hydroxide. §6Be sure to always match Primary and Secondary sides!§r\n\nPipe the Saturated Brine and Water into the fluid input. Start the process in the Electrochemical CSTR.\n\nIf you\u0027ve done everything correctly, Sodium Hydroxide should start outputting on the bottom.\n\n§cThe Power Station needs RF and Fuel."
         }
       },
       "tasks:9": {
@@ -14346,18 +14368,8 @@
           "taskID:8": "bq_standard:retrieval"
         },
         "1:10": {
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "requiredFluids:9": {
-            "0:10": {
-              "FluidName:8": "liquid_ammonia",
-              "Amount:3": 1
-            }
-          },
-          "ignoreNBT:1": 0,
           "index:3": 1,
-          "consume:1": 0,
-          "taskID:8": "bq_standard:fluid"
+          "taskID:8": "bq_standard:checkbox"
         }
       },
       "rewards:9": {}
@@ -14425,18 +14437,8 @@
           "taskID:8": "bq_standard:retrieval"
         },
         "1:10": {
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "requiredFluids:9": {
-            "0:10": {
-              "FluidName:8": "nitric_acid",
-              "Amount:3": 1
-            }
-          },
-          "ignoreNBT:1": 0,
           "index:3": 1,
-          "consume:1": 0,
-          "taskID:8": "bq_standard:fluid"
+          "taskID:8": "bq_standard:checkbox"
         }
       },
       "rewards:9": {}
@@ -14970,7 +14972,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Leaching Vat (4x Ore)",
-          "desc:8": "4x ore processing, as well as a main component in the processing of Uninspected Minerals.\n\nThe Leaching Vat will also need two gas tanks supplied with Water Vapor, a Power Station supplied with Fuel, and a Server.\n\nEach process will consume 160mb of Hydrochloric Acid, and 240mb of Sodium Hydroxide."
+          "desc:8": "4x ore processing, as well as a main component in the processing of Uninspected Minerals.\n\n§bEach Sealed Vat will need a Slurry Agitatior of some type as well.§r\n\nThe Leaching Vat will also need two gas tanks supplied with Water Vapor, a Power Station supplied with Fuel, and a Server.\n\nEach process will consume 160mb of Hydrochloric Acid, and 240mb of Sodium Hydroxide."
         }
       },
       "tasks:9": {
@@ -15023,12 +15025,13 @@
               "OreDict:8": ""
             },
             "4:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+              "id:8": "rockhounding_chemistry:machines_b",
+              "Count:3": 2,
+              "tag:10": {
+                "Energy:3": 0,
+                "Fuel:3": 0
               },
-              "id:8": "rockhounding_chemistry:slurry_agitator",
-              "Count:3": 3,
-              "Damage:2": 0,
+              "Damage:2": 9,
               "OreDict:8": ""
             },
             "5:10": {
@@ -16914,7 +16917,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:compressed_chrome",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "202:10": {
       "questID:3": 202,
@@ -17280,7 +17296,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "The Crusher",
-          "desc:8": "§l§l§l§rFlip to Heavy Machinery \u003e Crusher in your Engineer\u0027s Manual, then craft it together with the Projector to configure it.§r\n\nMiddle Click with the Projector to rotate, then left click to anchor your hologram, then place the blocks as shown. Shift-right click on a block with the Projector to remove the Hologram if you want to move it.\n\nAfter you finish, right click one of the center fences with the Engineer\u0027s Hammer to complete the machine!\n\nThrow Coke Coal into the top to create some Coke Dust.\n\nThis can also be used to double ore, just feed it through the Crusher and you will get two dusts, along with a chance at a byproduct!"
+          "desc:8": "§l§l§l§rFlip to Heavy Machinery \u003e Crusher in your Engineer\u0027s Manual, then craft it together with the Projector to configure it.§r\n\nMiddle Click with the Projector to rotate, then left click to anchor your hologram, then place the blocks as shown. Shift-right click on a block with the Projector to remove the Hologram if you want to move it.\n\n§9§6Most Multiblocks have a §9Capsule blueprint §6that is craftable and is used to place the entire Multiblock in just one click! Crafting one doesnt consume the MB parts, just the Paper, Buttons, and Lapis.§r\n\nAfter you finish, right click one of the center fences with the Engineer\u0027s Hammer to complete the machine!\n\nThrow Coke Coal into the top to create some Coke Dust.\n\nThis can also be used to double ore, just feed it through the Crusher and you will get two dusts, along with a chance at a byproduct!"
         }
       },
       "tasks:9": {
@@ -17389,7 +17405,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Travel to the Twilight Forest!",
-          "desc:8": "Craft the Stormway, then throw it into a 2x2 pool of water surrounded by flowers.\n\nYou can find Glowstone and other ores hanging on the inside of Hollow Hills, along with lots of loot and monsters.\n\n§bMight be a good idea to bring some Data Models along with you!"
+          "desc:8": "Craft the Stormway, then throw it into a 2x2 pool of water surrounded by flowers.\n\nYou can find §9Aetherium§r and other gems hanging on the inside of Hollow Hills, along with lots of loot and monsters.\n\nBlack Quartz and Charged Certus are much more common as well.\n\nLimestone is only found here, which is needed for the High Oven.\n\n§bMight be a good idea to bring some Data Models along with you!"
         }
       },
       "tasks:9": {
@@ -17681,7 +17697,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Squeezer",
-          "desc:8": "Reuse the Projector from the last quest.\n\nHammer the center barrel to complete the Industrial Squeezer.\n\nYou can also create plant oil here, which is one of the ingreidents for Bio-Diesel."
+          "desc:8": "Hammer the center barrel to complete the Industrial Squeezer.\n\nYou can also create plant oil here, which is one of the ingreidents for Bio-Diesel."
         }
       },
       "tasks:9": {
@@ -18400,7 +18416,7 @@
             "0:10": {
               "id:8": "storagedrawers:upgrade_storage",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 4,
               "OreDict:8": ""
             },
             "1:10": {
@@ -20161,7 +20177,8 @@
     "242:10": {
       "questID:3": 242,
       "preRequisites:11": [
-        244
+        797,
+        662
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -20173,21 +20190,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "bloodmagic:activation_crystal",
+            "id:8": "nuclearcraft:californium",
             "Count:3": 1,
-            "tag:10": {
-              "binding:10": {
-                "name:8": "Filostorm",
-                "id:10": {
-                  "L:4": -5854321833218265537,
-                  "M:4": -3354768958829737557
-                }
-              }
-            },
-            "Damage:2": 1,
+            "Damage:2": 15,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -20195,46 +20200,37 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "-REMOVED Farming Will-",
-          "desc:8": "Grinding Will by killing mobs is old school. Cycle through the rituals until you get to the §4Gathering of the Forsaken Souls."
+          "ismain:1": 1,
+          "name:8": "Nuclearcraft Overhauled",
+          "desc:8": "If you\u0027ve played NC before, you\u0027re going to have to forget just about everything you know about how Reactors work.\n\nThe following quests will guide you through building a Reactor, and also a Turbine, which is needed to convert the steam produced by the Reactor into RF.\n\nThe §bQMD Quests§r will be revealed once you\u0027ve completed the 4 quests that seem to dead end.\n\nHere\u0027s a few Chassis to get you started!"
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
           "index:3": 0,
-          "consume:1": 1,
-          "requiredItems:9": {
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
             "0:10": {
-              "id:8": "bloodmagic:ritual_controller",
-              "Count:3": 1,
-              "Damage:2": 0,
+              "id:8": "nuclearcraft:part",
+              "Count:3": 4,
+              "Damage:2": 12,
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "bloodmagic:ritual_stone",
-              "Count:3": 44,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bloodmagic:activation_crystal",
-              "Count:3": 1,
-              "Damage:2": 1,
+              "id:8": "nuclearcraft:part",
+              "Count:3": 2,
+              "Damage:2": 10,
               "OreDict:8": ""
             }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          }
         }
-      },
-      "rewards:9": {}
+      }
     },
     "243:10": {
       "questID:3": 243,
@@ -20301,7 +20297,9 @@
     },
     "244:10": {
       "questID:3": 244,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        736
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -20312,7 +20310,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "bloodmagic:demon_crystallizer",
+            "id:8": "nuclearcraft:turbine_rotor_blade_steel",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -20323,8 +20321,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "-REMOVED Aura Will-",
-          "desc:8": "Quests coming Soon (TM)"
+          "name:8": "Possible Turbine Design",
+          "desc:8": "This is the design shown when looking at the Turbine Controller Multiblock Visualizer.\n\nYou\u0027ll also need 16 Turbine Blades of any type.\n\n§6Recommended to understand the basic concepts before attempting to build this or your own Turbine!"
         }
       },
       "tasks:9": {
@@ -20334,26 +20332,59 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "bloodmagic:demon_crucible",
+              "id:8": "nuclearcraft:turbine_controller",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "bloodmagic:demon_crystallizer",
-              "Count:3": 1,
+              "id:8": "nuclearcraft:turbine_casing",
+              "Count:3": 60,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "2:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "id:8": "bloodmagic:demon_will_gauge",
+              "id:8": "nuclearcraft:turbine_glass",
+              "Count:3": 35,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "nuclearcraft:turbine_inlet",
               "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "nuclearcraft:turbine_outlet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "nuclearcraft:turbine_dynamo_coil",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "nuclearcraft:turbine_dynamo_coil",
+              "Count:3": 6,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "7:10": {
+              "id:8": "nuclearcraft:turbine_rotor_bearing",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "8:10": {
+              "id:8": "nuclearcraft:turbine_rotor_shaft",
+              "Count:3": 4,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -20992,7 +21023,9 @@
     },
     "254:10": {
       "questID:3": 254,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        300
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -21003,8 +21036,15 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "apotheosis:hellshelf",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "arcanearchives:mountaintear",
             "Count:3": 1,
+            "tag:10": {
+              "charge:3": 25,
+              "infinite:1": 0
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -21014,8 +21054,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Infinite Lava!",
+          "desc:8": "Make sure the Light Well has sky access!"
         }
       },
       "tasks:9": {
@@ -21025,65 +21065,18 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "apotheosis:hellshelf",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "thaumadditions:phantom_ink_phial",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "ebwizardry:crystal_block",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "3:10": {
-              "id:8": "enderio:item_material",
-              "Count:3": 1,
-              "Damage:2": 72,
-              "OreDict:8": ""
-            },
-            "4:10": {
-              "id:8": "minecraft:nether_brick",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "5:10": {
-              "id:8": "minecraft:red_nether_brick",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "6:10": {
-              "id:8": "minecraft:nether_star",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "7:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
-              "id:8": "botania:manainkwell",
+              "id:8": "arcanearchives:mountaintear",
               "Count:3": 1,
               "tag:10": {
-                "mana:3": 7500
+                "charge:3": 25,
+                "infinite:1": 0
               },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "8:10": {
-              "id:8": "contenttweaker:book_block",
-              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -21091,7 +21084,33 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "arcanearchives:mountaintear",
+              "Count:3": 1,
+              "tag:10": {
+                "charge:3": 25,
+                "infinite:1": 0
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "astralsorcery:blockwell",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "255:10": {
       "questID:3": 255,
@@ -22037,7 +22056,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Extractor",
-          "desc:8": "Great way to process Rubber."
+          "desc:8": "Great way to process Rubber and empty Cells."
         }
       },
       "tasks:9": {
@@ -25977,7 +25996,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Crystal Refining",
-          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some Size for Cutting.\n\nDropping a Rock Crystal into placed Liquid Starlight, it will absorb it over time to increase its Size.\n\nOnce it reaches the max Size, it will split into two, which have the chance to be higher Purity."
+          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some Size for Cutting. §cDon\u0027t let it get two small!§r\n\nDropping a Rock Crystal into placed §bLiquid Starlight§r, it will absorb it over time to increase its Size.\n\nOnce it reaches the max Size, it will split into two, which have the chance to be higher Purity."
         }
       },
       "tasks:9": {
@@ -27544,7 +27563,8 @@
         398,
         19,
         380,
-        56
+        56,
+        674
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -31551,7 +31571,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "High Density Poly-Ethylene!",
-          "desc:8": "Use up some of that HDPE!"
+          "desc:8": "Craft up some HDPE!"
         }
       },
       "tasks:9": {
@@ -34238,7 +34258,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Tier 2 Blood Orb",
-          "desc:8": "§d§5§fRight click to link the §cBlood Orb§r to you. It is used for crafting, and placing it in a filled altar will store LP (Blood) for rituials and the Alchemy Table. \n\nHigher tiers of orbs hold more LP and can be used for more advanced crafts."
+          "desc:8": "There are a few ways to get the Cryotheum needed, one is to use §dPristine Matter Powder§r to craft §9Thermal Matter§r, which you can then turn into Blizz loot with the §6Loot Fabricator§r. The other is to find a Cold Biome (Maybe with the Nature\u0027s Compass) and use some §5Nocturnal Powder§r.\n\n§d§5§fRight click to link the §cBlood Orb§r to you. It is used for crafting, and placing it in a filled altar will store LP (Blood) for rituials and the Alchemy Table. \n\nHigher tiers of orbs hold more LP and can be used for more advanced crafts."
         }
       },
       "tasks:9": {
@@ -38439,7 +38459,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Manganese",
-          "desc:8": "Cook the Crushed Rhodochrosite, put it in the Arc Furnace, then put it in the Blast Furnace. After you smelt this ingot, crush it up and add it to the Metal Alloyer from Rockhounding."
+          "desc:8": "Cook the §cCrushed Rhodochrosite§r, put it in the Arc Furnace, then put it in the Blast Furnace. After you smelt this ingot, crush it up and add it to the Metal Alloyer from Rockhounding."
         }
       },
       "tasks:9": {
@@ -38737,8 +38757,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:compressed_chrome",
-              "Count:3": 1,
+              "id:8": "mekanism:otherdust",
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -41575,7 +41595,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Fluid Infuser",
-          "desc:8": "One way to automate clay, as well as treated wood."
+          "desc:8": "One way to automate clay, as well as treated wood. Also used for a bunch of Heat Sinks."
         }
       },
       "tasks:9": {
@@ -42200,14 +42220,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "techreborn:dynamiccell",
-              "Count:3": 1,
-              "tag:10": {
-                "Fluid:10": {
-                  "FluidName:8": "liquidethene",
-                  "Amount:3": 1000
-                }
-              },
+              "id:8": "mysticalagriculture:nature_essence",
+              "Count:3": 64,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -43602,7 +43616,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Blue Juice",
-          "desc:8": "Assemble these parts as shown when looking at the Prism recipe. \n\nDuring the night, you will start to accumulate Impure Aetherium in the fluid tank, which can then be refined."
+          "desc:8": "Assemble these parts as shown when looking at the Prism recipe. \n\nDuring the night, you will start to accumulate Impure Aetherium in the fluid tank, which can then be refined.\n\n§9You can find the Aetherium Shards in Twilight Forest hills."
         }
       },
       "tasks:9": {
@@ -43662,17 +43676,23 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
+          "rewardID:8": "bq_standard:choice",
           "index:3": 0,
-          "rewards:9": {
+          "choices:9": {
             "0:10": {
+              "id:8": "thermalfoundation:geode",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "forge:bucketfilled",
               "Count:3": 1,
               "tag:10": {
-                "FluidName:8": "electrum",
+                "FluidName:8": "crystal_slurry",
                 "Amount:3": 1000
               },
               "Damage:2": 0,
@@ -44276,7 +44296,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Crafting Calculator",
-          "desc:8": "This can be used to determine the cost of a crafting recipe.\n\n§cDon\u0027t add an Arc Furnace recipe, it will cause a crash!"
+          "desc:8": "This can be used to determine the cost of a crafting recipe.\n"
         }
       },
       "tasks:9": {
@@ -46428,7 +46448,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "name:8": "Separator",
           "desc:8": "Running §2Uranium§r through the Separator, then combining the results, will get you your first fuel."
         }
@@ -46458,6 +46478,12 @@
               "id:8": "nuclearcraft:uranium",
               "Count:3": 1,
               "Damage:2": 10,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "nuclearcraft:pellet_uranium",
+              "Count:3": 1,
+              "Damage:2": 4,
               "OreDict:8": ""
             }
           },
@@ -48945,7 +48971,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Infinity Catalyst!",
-          "desc:8": "Forged in the heat of a laptop running Minecraft.\n\nYou\u0027ll need 22 of these to beat the pack!"
+          "desc:8": "Forged in the heat of a laptop running Minecraft.\n\nYou\u0027ll need 23 of these to beat the pack!"
         }
       },
       "tasks:9": {
@@ -49395,7 +49421,9 @@
     },
     "617:10": {
       "questID:3": 617,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        456
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -49418,7 +49446,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Zirconium",
-          "desc:8": ""
+          "desc:8": "Primarily found by rock crushing Diorite."
         }
       },
       "tasks:9": {
@@ -49637,7 +49665,7 @@
     "621:10": {
       "questID:3": 621,
       "preRequisites:11": [
-        558
+        560
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -50203,10 +50231,10 @@
     "630:10": {
       "questID:3": 630,
       "preRequisites:11": [
-        621,
         634,
         620,
-        626
+        626,
+        621
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -50763,7 +50791,9 @@
     },
     "639:10": {
       "questID:3": 639,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        207
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -50771,12 +50801,12 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
+          "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "rockhounding_chemistry:alloy_items_tech",
+            "id:8": "simplevoidworld:portal",
             "Count:3": 1,
-            "Damage:2": 7,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -50785,8 +50815,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "-REMOVED chap 5-",
-          "desc:8": ""
+          "name:8": "Simple Void World!",
+          "desc:8": "Build your entire base in a Void World!\n\n§6§1§9Aetherium is found inside Hollow Hills.\n\n§b§r§cThis also requires you to have an Atomic Reconstructor."
         }
       },
       "tasks:9": {
@@ -50796,32 +50826,19 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "rockhounding_chemistry:alloy_items_tech",
+              "id:8": "simplevoidworld:portal",
               "Count:3": 1,
-              "Damage:2": 7,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "rockhounding_chemistry:alloy_items_tech",
-              "Count:3": 1,
-              "Damage:2": 7,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
+      "rewards:9": {}
     },
     "640:10": {
       "questID:3": 640,
@@ -52190,7 +52207,9 @@
     "662:10": {
       "questID:3": 662,
       "preRequisites:11": [
-        570
+        570,
+        729,
+        617
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -52542,9 +52561,8 @@
     "667:10": {
       "questID:3": 667,
       "preRequisites:11": [
-        662,
-        797,
-        232
+        232,
+        242
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -52946,68 +52964,6 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "rockhounding_chemistry:alloy_items_tech",
-            "Count:3": 1,
-            "Damage:2": 19,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Hastelloy",
-          "desc:8": ""
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 1,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "rockhounding_chemistry:alloy_items_tech",
-              "Count:3": 1,
-              "Damage:2": 19,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "rockhounding_chemistry:alloy_items_tech",
-              "Count:3": 1,
-              "Damage:2": 19,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "674:10": {
-      "questID:3": 674,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
@@ -53022,7 +52978,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Dup quest",
           "desc:8": "No Description"
         }
       },
@@ -53033,6 +52989,145 @@
         }
       },
       "rewards:9": {}
+    },
+    "674:10": {
+      "questID:3": 674,
+      "preRequisites:11": [
+        352
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "modulardiversity:blockmanainputhatch",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 1,
+          "name:8": "Crystal Infuser",
+          "desc:8": "You\u0027ll need to shoot the Mana Input Hatch with a Mana Spreader for the recipe to work. It has a §overy §rlarge mana buffer."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "modularmachinery:itemblueprint",
+              "Count:3": 1,
+              "tag:10": {
+                "dynamicmachine:8": "modularmachinery:crystal_infuser"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "modularmachinery:blockcontroller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "modularmachinery:blockinputbus",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "modularmachinery:blockoutputbus",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "modulardiversity:blockmanainputhatch",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "bloodmagic:ritual_controller",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "botania:livingrock",
+              "Count:3": 8,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "7:10": {
+              "id:8": "botania:livingwood",
+              "Count:3": 4,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "8:10": {
+              "id:8": "botania:quartztypemana",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "9:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bloodmagic:inscription_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "uses:3": 10
+              },
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "bloodmagic:slate",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "moreplates:empowered_void_gear",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "moreplates:empowered_palis_gear",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "675:10": {
       "questID:3": 675,
@@ -53810,7 +53905,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "advancedrocketry:precisionlaseretcher",
@@ -53984,7 +54079,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "nuclearcraft:pellet_thorium",
@@ -53999,7 +54094,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "TBU Fuel",
-          "desc:8": "Creating §6TBU§r is significantly changed from previous versions of Nuclearcraft. \n\nFirst you’ll need to run your Thorium§r through a Decay Hastener, which will give you §dProtactinium-Enriched Thorium Dust§r, then Irradiate that in your newly built Nuclear Reactor. §6\n\nTBU§r is one of the simpler methods of creating §eRocket Fuel and Stabablloy§r, if not the most efficent."
+          "desc:8": "Creating §6TBU§r is significantly changed from previous versions of Nuclearcraft. \n\nFirst you’ll need to run your Thorium§r through a Decay Hastener, which will give you §dProtactinium-Enriched Thorium Dust§r, then Irradiate that in your newly built Nuclear Reactor. §6\n\nTBU§r is one of the simpler methods of creating §eRocket Fuel§r and §eStabablloy§r, if not the most efficent."
         }
       },
       "tasks:9": {
@@ -56213,7 +56308,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "nuclearcraft:part",
-              "Count:3": 4,
+              "Count:3": 1,
               "Damage:2": 12,
               "OreDict:8": ""
             }
@@ -56333,9 +56428,9 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "rockhounding_chemistry:chemical_dusts",
+            "id:8": "nuclearcraft:gem_dust",
             "Count:3": 1,
-            "Damage:2": 18,
+            "Damage:2": 10,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -56717,7 +56812,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 1,
+          "ismain:1": 0,
           "name:8": "Trace Gases",
           "desc:8": "Compressed air can be centrifuged into its pure ocmposite gases, notably §9Oxygen§r and §aNitrogen§r for fuel processing. The other gases have their own uses, especially as extremely cold coolants. \n\nBe sure to save large quantities of the rare gases!"
         }
@@ -56787,7 +56882,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 1,
+          "ismain:1": 0,
           "name:8": "Compressed Air",
           "desc:8": "This chain or the Rockhounding method of obtaining §9Oxygen §rand §e§aNitrogen§r will be used to create §2Nuclear Fuels§r."
         }
@@ -56852,7 +56947,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 1,
+          "ismain:1": 0,
           "name:8": "Chill Out",
           "desc:8": "Gases such as §cHelium§r or §dArgon§r can be supercooled into fluids to make extremely efficient coolants for your particle accelerators. Many high-tier components of these multiblocks have a maximum temperature they can run at, so better coolants may become required."
         }
@@ -57288,7 +57383,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Turn On the Lights",
-          "desc:8": "Your reactor just keeps making all this §7High-Pressure Steam§r! If only there was some convenient multiblock structure you could use to process that into §eslightly ludicrous amounts of power§r!\n\nEnter the §9Turbine§r: steam goes in, power comes out the coils. It\u0027s all quite simple; however, be warned: if you put §c§rmore steam in§r than the turbine can handle, it will spin too fast and §cexplode§r! Avoid this by using the §aReactor Planner§r to make sure it can handle §7more mB/t§r than your reactors produce. Did I mention you can make §9one big turbine§r and run the outputs of all of your reactors into it?"
+          "desc:8": "You\u0027ll need a turbine to process your §7High Pressure Steam§r into RF! The NC turbine has been buffed to output 16x default power, so its definitely worth setting up.\n\n\nYour §6Turbine Rotor Bearings §rwill go in the center of two opposite sides, with the §aRotor Shafts§r connecting them. Place the §5Turbine Blades§r on each open face of the §aRotor Shaft§r.\n\nOn the same walls that have the §6Rotor Bearings§r, place the §d§bCoils§r, making sure to follow the guidelines so they are valid. These are where you pipe the RF out. \nYou\u0027ll also need to place your Fluid In/Output Ports on these walls, making sure they are directly in line with each other.\n\nThats about it! One last thing is to make sure you keep the Outlet empty of §7Exhaust Steam§r, because if it backs up your Turbine will stop running.\n\nAn average Reactor will only produce roughly 1/4 the max amount of steam an avarage Turbine can handle."
         }
       },
       "tasks:9": {
@@ -57303,6 +57398,42 @@
             "0:10": {
               "id:8": "nuclearcraft:turbine_controller",
               "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "nuclearcraft:turbine_rotor_bearing",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "nuclearcraft:turbine_rotor_shaft",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "nuclearcraft:turbine_dynamo_coil",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "nuclearcraft:turbine_inlet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "nuclearcraft:turbine_outlet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "nuclearcraft:turbine_casing",
+              "Count:3": 16,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -58976,7 +59107,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 1,
           "name:8": "Reactor Building 102: Heat Sinks",
-          "desc:8": "§9§rThis quest will teach you the intricacies of how to keep §9Heat Sinks§r activated, §7Conductors§r, and about §bActive Moderator Blocks§r.\n\n§9Heat Sinks §rcome in many different varieties, and each one has its own set of rules to be valid. \n\n\nNow the rules required to ensure active §9Heat Sinks. §r\n\n1. They must start connected to a§6 Fuel Cell§r to be considered active. You\u0027ll want to make sure each §6Fuel Cell§r is connected to the §9Heat Sink§r \"network\", so they all receive enough cooling.\n\n2. Any §9Heat Sinks§r that are not connected by a face to another §9Heat Sink§r will not be active. This can be bypassed by using a §7Conductor§r to connect valid §9Heat Sinks§r.\n\n3. Active §bModerator Blocks§r are those directly adjacent to a §6Fuel Cell§r.\n\n\n\nIf building a reactor for power, you\u0027ll want to match the heat as close as possible to prevent loss of Steam."
+          "desc:8": "§9§rThis quest will teach you the intricacies of how to keep §9Heat Sinks§r activated, §7Conductors§r, and about §bActive Moderator Blocks§r.\n\n§9Heat Sinks §rcome in many different varieties, and each one has its own set of rules to be valid. \n\n\nNow the rules required to ensure active §9Heat Sinks. §r\n\n1. They must start connected to a§6 Fuel Cell§r to be considered active. \n\n2. Any §9Heat Sinks§r that are not connected by a face to another §9Heat Sink§r or a §6Fuel Cell§r will not be active. This can be bypassed by using a §7Fission Reactor Conductor§r to connect valid §9Heat Sinks§r.\n\n3. Active §bModerator Blocks§r are those directly adjacent to a §6Fuel Cell§r.\n\n\n§cEach §6Fuel Cell§r§r §cmust have enough heatsinks providing cooling for itself or it will melt down!§r\n\n\nIf building a reactor for power, you\u0027ll want to match the heat as close as possible to prevent loss of Steam."
         }
       },
       "tasks:9": {
@@ -59088,7 +59219,6 @@
       "preRequisites:11": [
         679,
         760,
-        456,
         369
       ],
       "properties:10": {
@@ -61259,7 +61389,7 @@
     "796:10": {
       "questID:3": 796,
       "preRequisites:11": [
-        81
+        761
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -61282,8 +61412,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Some Handy Redstone Items",
-          "desc:8": "Read the Jei info tab on these."
+          "name:8": "Wireless Redstone!",
+          "desc:8": "These are super helpful for enabling your Neutron Sources."
         }
       },
       "tasks:9": {
@@ -61303,12 +61433,6 @@
             },
             "1:10": {
               "id:8": "randomthings:positionfilter",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "randomthings:contactlever",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -61347,7 +61471,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "name:8": "Heavy Water",
           "desc:8": "Pumping water with an installed Filter Upgrade will extract Heavy Water instead."
         }
@@ -61546,7 +61670,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Reactor Troubleshooting",
-          "desc:8": "§8§3Melted Cells?§r Make sure each §6Cell§r is getting enough cooling! Double check the heating and cooling rules in the previous chapters. Remember, §1§9Heat Sink§r§9s§r need to be connected to a §6Cell§r directly or through other active §9Heat Sinks§,.\n\n§b§3Reactor not starting?§r Make sure you\u0027ve reached the §cCriticality factor§r for your supplied fuel! Double check the §aFlux Factor§r rules in the Fuel Cell quest.\n\n§3Reactor Controller Melted?§r Pump the Steam out!"
+          "desc:8": "§8§3Melted Cells?§r Make sure §leach §6Cell§r is getting enough cooling! Double check the heating and cooling rules in the previous chapters. Remember, §1§9Heat Sink§r§9s§r need to be connected to a §6Cell§r directly or through other active §9Heat Sinks§,.\n\n§b§3Reactor not starting?§r Make sure you\u0027ve reached the §cCriticality factor§r for your supplied fuel! Double check the §aFlux Factor§r rules in the Fuel Cell quest.\n\n§3Reactor Controller Melted?§r Pump the Steam out!"
         }
       },
       "tasks:9": {
@@ -61718,8 +61842,12 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "ae2fc:ingredient_buffer",
+            "id:8": "betterquesting:placeholder",
             "Count:3": 1,
+            "tag:10": {
+              "orig_meta:3": 0,
+              "orig_id:8": "volumetricflask:o_interface"
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -61730,7 +61858,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Autocrafting With Fluids!",
-          "desc:8": "By placing a §5Fluid Discretizer§r on your ME network, all your stored fluids will be accessible as \"fluid drop\" items, which allows them to be used for autocrafting. Simply encode a recipe with fluids using the §9Fluid Pattern Encoder§r, and any ME interface will be able to send those fluids for autocrafting.\n\nThe output of a recipe can also contain fluids, and you can use fluid interfaces or fluid import busses to return the crafting results in much the same way you would for items.\n\nYou can even use fluids in PackagedAuto recipes! Just switch your package recipe encoder to \"fluid processing\" mode and your packagers and unpackagers will do the rest.\n\nIf using fluid crafting for something with seperate in/outputs, you\u0027ll need to use the §6Ingredient Buffer§r to store the items/fluids before sending them to the correct hatches."
+          "desc:8": "This Interface is used for processing Patterns with§6 Volumetric Flasks§r.\n\nLike the ME Interface, Volumetric Interface will push to target machine ONLY if ALL ingredients can be inserted. Using a Buffer is a good method if you want to automate something where the fluid and items are input in separate blocks.\n\n"
         }
       },
       "tasks:9": {
@@ -61743,14 +61871,12 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "ae2fc:part_fluid_pattern_terminal",
+              "id:8": "betterquesting:placeholder",
               "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "ae2fc:fluid_discretizer",
-              "Count:3": 1,
+              "tag:10": {
+                "orig_meta:3": 0,
+                "orig_id:8": "volumetricflask:o_interface"
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -61764,8 +61890,12 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "ae2fc:ingredient_buffer",
+              "id:8": "betterquesting:placeholder",
               "Count:3": 1,
+              "tag:10": {
+                "orig_meta:3": 0,
+                "orig_id:8": "volumetricflask:buffer"
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -62042,6 +62172,65 @@
           }
         }
       }
+    },
+    "805:10": {
+      "questID:3": 805,
+      "preRequisites:11": [
+        801
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "betterquesting:placeholder",
+            "Count:3": 1,
+            "tag:10": {
+              "orig_meta:3": 0,
+              "orig_id:8": "volumetricflask:filler"
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "The Filler",
+          "desc:8": "The Filler, when connected to your AE Network, will automatically fill §6Volumetric Flasks§r§r with stored fluid when requested by a crafting recipe."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "betterquesting:placeholder",
+              "Count:3": 1,
+              "tag:10": {
+                "orig_meta:3": 0,
+                "orig_id:8": "volumetricflask:filler"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -62872,14 +63061,14 @@
         "6:10": {
           "sizeX:3": 24,
           "x:3": -36,
-          "y:3": -24,
+          "y:3": -144,
           "id:3": 620,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
           "x:3": -36,
-          "y:3": -144,
+          "y:3": -24,
           "id:3": 621,
           "sizeY:3": 24
         },
@@ -63371,6 +63560,13 @@
           "x:3": -216,
           "y:3": 0,
           "id:3": 495,
+          "sizeY:3": 24
+        },
+        "47:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": -12,
+          "id:3": 639,
           "sizeY:3": 24
         }
       },
@@ -65003,8 +65199,8 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 84,
-          "y:3": -84,
+          "x:3": 72,
+          "y:3": 12,
           "id:3": 55,
           "sizeY:3": 24
         },
@@ -65123,7 +65319,7 @@
         "19:10": {
           "sizeX:3": 24,
           "x:3": 120,
-          "y:3": -84,
+          "y:3": -12,
           "id:3": 610,
           "sizeY:3": 24
         },
@@ -65151,7 +65347,7 @@
         "23:10": {
           "sizeX:3": 24,
           "x:3": 120,
-          "y:3": -12,
+          "y:3": -84,
           "id:3": 787,
           "sizeY:3": 24
         },
@@ -65255,418 +65451,446 @@
         },
         "1:10": {
           "sizeX:3": 36,
-          "x:3": -30,
+          "x:3": 36,
           "y:3": -18,
-          "id:3": 257,
+          "id:3": 242,
           "sizeY:3": 36
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 151,
-          "y:3": 68,
-          "id:3": 456,
+          "x:3": 204,
+          "y:3": -84,
+          "id:3": 244,
           "sizeY:3": 24
         },
         "3:10": {
+          "sizeX:3": 36,
+          "x:3": -90,
+          "y:3": -18,
+          "id:3": 257,
+          "sizeY:3": 36
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -78,
+          "y:3": 48,
+          "id:3": 456,
+          "sizeY:3": 24
+        },
+        "5:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": -102,
           "id:3": 489,
           "sizeY:3": 24
         },
-        "4:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": -54,
           "id:3": 559,
           "sizeY:3": 24
         },
-        "5:10": {
+        "7:10": {
           "sizeX:3": 36,
           "x:3": 966,
           "y:3": -18,
           "id:3": 560,
           "sizeY:3": 36
         },
-        "6:10": {
+        "8:10": {
           "sizeX:3": 24,
-          "x:3": 18,
+          "x:3": -42,
           "y:3": -12,
           "id:3": 570,
           "sizeY:3": 24
         },
-        "7:10": {
+        "9:10": {
           "sizeX:3": 24,
-          "x:3": 54,
+          "x:3": -42,
+          "y:3": 30,
+          "id:3": 617,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -6,
           "y:3": -12,
           "id:3": 662,
           "sizeY:3": 24
         },
-        "8:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": 90,
           "y:3": -12,
           "id:3": 667,
           "sizeY:3": 24
         },
-        "9:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": 150,
           "y:3": 24,
           "id:3": 679,
           "sizeY:3": 24
         },
-        "10:10": {
+        "13:10": {
           "sizeX:3": 24,
-          "x:3": 204,
+          "x:3": 240,
           "y:3": -48,
           "id:3": 705,
           "sizeY:3": 24
         },
-        "11:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": 306,
           "y:3": -30,
           "id:3": 715,
           "sizeY:3": 24
         },
-        "12:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": 282,
           "y:3": -66,
           "id:3": 716,
           "sizeY:3": 24
         },
-        "13:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": 258,
           "y:3": -102,
           "id:3": 717,
           "sizeY:3": 24
         },
-        "14:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": 372,
           "y:3": -12,
           "id:3": 719,
           "sizeY:3": 24
         },
-        "15:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": 318,
           "y:3": -66,
           "id:3": 720,
           "sizeY:3": 24
         },
-        "16:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 240,
-          "y:3": -48,
+          "y:3": 24,
           "id:3": 721,
           "sizeY:3": 24
         },
-        "17:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": 102,
           "id:3": 722,
           "sizeY:3": 24
         },
-        "18:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 229,
           "y:3": 68,
           "id:3": 723,
           "sizeY:3": 24
         },
-        "19:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 306,
           "y:3": 6,
           "id:3": 724,
           "sizeY:3": 24
         },
-        "20:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 318,
           "y:3": 42,
           "id:3": 726,
           "sizeY:3": 24
         },
-        "21:10": {
+        "24:10": {
           "sizeX:3": 24,
-          "x:3": 54,
-          "y:3": -96,
+          "x:3": -42,
+          "y:3": -54,
           "id:3": 729,
           "sizeY:3": 24
         },
-        "22:10": {
+        "25:10": {
           "sizeX:3": 24,
-          "x:3": 18,
-          "y:3": -54,
+          "x:3": -78,
+          "y:3": -72,
           "id:3": 730,
           "sizeY:3": 24
         },
-        "23:10": {
+        "26:10": {
           "sizeX:3": 24,
-          "x:3": 90,
-          "y:3": -96,
+          "x:3": -6,
+          "y:3": -84,
           "id:3": 731,
           "sizeY:3": 24
         },
-        "24:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 486,
           "y:3": -12,
           "id:3": 733,
           "sizeY:3": 24
         },
-        "25:10": {
+        "28:10": {
           "sizeX:3": 36,
           "x:3": 560,
           "y:3": -18,
           "id:3": 734,
           "sizeY:3": 36
         },
-        "26:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 661,
           "y:3": 30,
           "id:3": 735,
           "sizeY:3": 24
         },
-        "27:10": {
+        "30:10": {
           "sizeX:3": 24,
-          "x:3": 240,
-          "y:3": 24,
+          "x:3": 204,
+          "y:3": -48,
           "id:3": 736,
           "sizeY:3": 24
         },
-        "28:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 766,
           "y:3": 30,
           "id:3": 737,
           "sizeY:3": 24
         },
-        "29:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 732,
           "y:3": 30,
           "id:3": 738,
           "sizeY:3": 24
         },
-        "30:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 766,
           "y:3": -53,
           "id:3": 739,
           "sizeY:3": 24
         },
-        "31:10": {
+        "34:10": {
           "sizeX:3": 36,
           "x:3": 810,
           "y:3": -18,
           "id:3": 740,
           "sizeY:3": 36
         },
-        "32:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 712,
           "y:3": -12,
           "id:3": 741,
           "sizeY:3": 24
         },
-        "33:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 661,
           "y:3": -54,
           "id:3": 742,
           "sizeY:3": 24
         },
-        "34:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 870,
           "y:3": 5,
           "id:3": 743,
           "sizeY:3": 24
         },
-        "35:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 870,
           "y:3": -31,
           "id:3": 744,
           "sizeY:3": 24
         },
-        "36:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 922,
           "y:3": -48,
           "id:3": 745,
           "sizeY:3": 24
         },
-        "37:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 922,
           "y:3": 24,
           "id:3": 746,
           "sizeY:3": 24
         },
-        "38:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 712,
           "y:3": 67,
           "id:3": 747,
           "sizeY:3": 24
         },
-        "39:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 698,
           "y:3": 30,
           "id:3": 748,
           "sizeY:3": 24
         },
-        "40:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 766,
           "y:3": 67,
           "id:3": 749,
           "sizeY:3": 24
         },
-        "41:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 816,
           "y:3": 67,
           "id:3": 750,
           "sizeY:3": 24
         },
-        "42:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": 904,
           "y:3": -12,
           "id:3": 752,
           "sizeY:3": 24
         },
-        "43:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": 126,
           "y:3": -12,
           "id:3": 759,
           "sizeY:3": 24
         },
-        "44:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": 162,
           "y:3": -12,
           "id:3": 760,
           "sizeY:3": 24
         },
-        "45:10": {
+        "48:10": {
           "sizeX:3": 36,
           "x:3": 198,
           "y:3": -18,
           "id:3": 761,
           "sizeY:3": 36
         },
-        "46:10": {
+        "49:10": {
           "sizeX:3": 24,
           "x:3": 410,
           "y:3": -12,
           "id:3": 774,
           "sizeY:3": 24
         },
-        "47:10": {
+        "50:10": {
           "sizeX:3": 24,
           "x:3": 448,
           "y:3": -12,
           "id:3": 775,
           "sizeY:3": 24
         },
-        "48:10": {
+        "51:10": {
           "sizeX:3": 24,
           "x:3": 610,
           "y:3": -12,
           "id:3": 776,
           "sizeY:3": 24
         },
-        "49:10": {
+        "52:10": {
           "sizeX:3": 24,
           "x:3": 566,
           "y:3": 30,
           "id:3": 777,
           "sizeY:3": 24
         },
-        "50:10": {
+        "53:10": {
           "sizeX:3": 24,
           "x:3": 610,
           "y:3": -54,
           "id:3": 778,
           "sizeY:3": 24
         },
-        "51:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": 524,
           "y:3": -54,
           "id:3": 779,
           "sizeY:3": 24
         },
-        "52:10": {
+        "55:10": {
           "sizeX:3": 24,
           "x:3": 566,
           "y:3": -54,
           "id:3": 780,
           "sizeY:3": 24
         },
-        "53:10": {
+        "56:10": {
           "sizeX:3": 24,
           "x:3": 661,
           "y:3": -12,
           "id:3": 781,
           "sizeY:3": 24
         },
-        "54:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": 524,
           "y:3": 30,
           "id:3": 782,
           "sizeY:3": 24
         },
-        "55:10": {
+        "58:10": {
           "sizeX:3": 24,
           "x:3": 766,
           "y:3": -12,
           "id:3": 783,
           "sizeY:3": 24
         },
-        "56:10": {
+        "59:10": {
           "sizeX:3": 24,
           "x:3": 610,
           "y:3": 67,
           "id:3": 784,
           "sizeY:3": 24
         },
-        "57:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": 610,
           "y:3": 30,
           "id:3": 785,
           "sizeY:3": 24
         },
-        "58:10": {
+        "61:10": {
           "sizeX:3": 24,
           "x:3": 486,
           "y:3": -54,
           "id:3": 786,
           "sizeY:3": 24
         },
-        "59:10": {
+        "62:10": {
           "sizeX:3": 24,
-          "x:3": 54,
-          "y:3": -54,
+          "x:3": 252,
+          "y:3": -12,
+          "id:3": 796,
+          "sizeY:3": 24
+        },
+        "63:10": {
+          "sizeX:3": 24,
+          "x:3": -6,
+          "y:3": -48,
           "id:3": 797,
           "sizeY:3": 24
         },
-        "60:10": {
+        "64:10": {
           "sizeX:3": 24,
           "x:3": 204,
           "y:3": 24,
@@ -65987,13 +66211,6 @@
           "y:3": 0,
           "id:3": 793,
           "sizeY:3": 24
-        },
-        "42:10": {
-          "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": 72,
-          "id:3": 796,
-          "sizeY:3": 24
         }
       },
       "lineID:3": 10,
@@ -66255,6 +66472,13 @@
           "x:3": 246,
           "y:3": -60,
           "id:3": 801,
+          "sizeY:3": 24
+        },
+        "34:10": {
+          "sizeX:3": 24,
+          "x:3": 264,
+          "y:3": -24,
+          "id:3": 805,
           "sizeY:3": 24
         }
       },
@@ -66946,7 +67170,7 @@
         "39:10": {
           "sizeX:3": 24,
           "x:3": -228,
-          "y:3": 120,
+          "y:3": 114,
           "id:3": 599,
           "sizeY:3": 24
         },
@@ -67022,8 +67246,8 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": -216,
+          "x:3": 60,
+          "y:3": -180,
           "id:3": 56,
           "sizeY:3": 24
         },
@@ -67246,8 +67470,8 @@
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": -120,
+          "x:3": 168,
+          "y:3": -84,
           "id:3": 366,
           "sizeY:3": 24
         },
@@ -67359,7 +67583,7 @@
         "50:10": {
           "sizeX:3": 24,
           "x:3": 24,
-          "y:3": -252,
+          "y:3": -216,
           "id:3": 460,
           "sizeY:3": 24
         },
@@ -67414,8 +67638,8 @@
         },
         "58:10": {
           "sizeX:3": 24,
-          "x:3": 30,
-          "y:3": -288,
+          "x:3": 36,
+          "y:3": -258,
           "id:3": 499,
           "sizeY:3": 24
         },
@@ -67449,19 +67673,26 @@
         },
         "63:10": {
           "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": -120,
+          "id:3": 674,
+          "sizeY:3": 24
+        },
+        "64:10": {
+          "sizeX:3": 24,
           "x:3": -156,
           "y:3": -30,
           "id:3": 732,
           "sizeY:3": 24
         },
-        "64:10": {
+        "65:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -132,
           "id:3": 753,
           "sizeY:3": 24
         },
-        "65:10": {
+        "66:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": -120,
@@ -67645,159 +67876,166 @@
         },
         "22:10": {
           "sizeX:3": 24,
+          "x:3": 360,
+          "y:3": -48,
+          "id:3": 254,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
           "x:3": 450,
           "y:3": 72,
           "id:3": 274,
           "sizeY:3": 24
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 216,
           "y:3": 0,
           "id:3": 297,
           "sizeY:3": 24
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 168,
           "y:3": 0,
           "id:3": 298,
           "sizeY:3": 24
         },
-        "25:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 264,
           "y:3": 0,
           "id:3": 299,
           "sizeY:3": 24
         },
-        "26:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 0,
           "id:3": 300,
           "sizeY:3": 24
         },
-        "27:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 36,
           "id:3": 301,
           "sizeY:3": 24
         },
-        "28:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 216,
           "y:3": -48,
           "id:3": 302,
           "sizeY:3": 24
         },
-        "29:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 36,
           "id:3": 303,
           "sizeY:3": 24
         },
-        "30:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 168,
           "y:3": -48,
           "id:3": 304,
           "sizeY:3": 24
         },
-        "31:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 264,
           "y:3": -48,
           "id:3": 319,
           "sizeY:3": 24
         },
-        "32:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 540,
           "y:3": 6,
           "id:3": 396,
           "sizeY:3": 24
         },
-        "33:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 0,
           "id:3": 410,
           "sizeY:3": 24
         },
-        "34:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": 0,
           "id:3": 411,
           "sizeY:3": 24
         },
-        "35:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 126,
           "y:3": -48,
           "id:3": 412,
           "sizeY:3": 24
         },
-        "36:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 90,
           "y:3": -48,
           "id:3": 413,
           "sizeY:3": 24
         },
-        "37:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 126,
           "y:3": -84,
           "id:3": 414,
           "sizeY:3": 24
         },
-        "38:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 96,
           "y:3": 36,
           "id:3": 415,
           "sizeY:3": 24
         },
-        "39:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 36,
           "id:3": 416,
           "sizeY:3": 24
         },
-        "40:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 90,
           "y:3": -84,
           "id:3": 417,
           "sizeY:3": 24
         },
-        "41:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 144,
           "y:3": 36,
           "id:3": 418,
           "sizeY:3": 24
         },
-        "42:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": 108,
           "id:3": 423,
           "sizeY:3": 24
         },
-        "43:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 414,
           "y:3": 84,
           "id:3": 462,
           "sizeY:3": 24
         },
-        "44:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": 450,
           "y:3": 0,
@@ -67946,285 +68184,257 @@
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 0,
-          "id:3": 242,
-          "sizeY:3": 24
-        },
-        "18:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 24,
-          "id:3": 244,
-          "sizeY:3": 24
-        },
-        "19:10": {
-          "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": -24,
-          "id:3": 254,
-          "sizeY:3": 24
-        },
-        "20:10": {
-          "sizeX:3": 24,
           "x:3": 12,
           "y:3": -84,
           "id:3": 265,
           "sizeY:3": 24
         },
-        "21:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": -192,
           "id:3": 305,
           "sizeY:3": 24
         },
-        "22:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": -216,
           "id:3": 308,
           "sizeY:3": 24
         },
-        "23:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": -192,
           "id:3": 316,
           "sizeY:3": 24
         },
-        "24:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": -144,
           "id:3": 353,
           "sizeY:3": 24
         },
-        "25:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 204,
           "y:3": -120,
           "id:3": 399,
           "sizeY:3": 24
         },
-        "26:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 228,
           "y:3": -96,
           "id:3": 400,
           "sizeY:3": 24
         },
-        "27:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": -72,
           "id:3": 421,
           "sizeY:3": 24
         },
-        "28:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": -60,
           "id:3": 426,
           "sizeY:3": 24
         },
-        "29:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -36,
           "id:3": 428,
           "sizeY:3": 24
         },
-        "30:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 276,
           "y:3": -48,
           "id:3": 429,
           "sizeY:3": 24
         },
-        "31:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 102,
           "y:3": 60,
           "id:3": 435,
           "sizeY:3": 24
         },
-        "32:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": -60,
           "id:3": 439,
           "sizeY:3": 24
         },
-        "33:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": -24,
           "id:3": 454,
           "sizeY:3": 24
         },
-        "34:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 0,
           "y:3": -36,
           "id:3": 458,
           "sizeY:3": 24
         },
-        "35:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": -12,
           "id:3": 463,
           "sizeY:3": 24
         },
-        "36:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 54,
           "y:3": 12,
           "id:3": 470,
           "sizeY:3": 24
         },
-        "37:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 78,
           "y:3": 36,
           "id:3": 481,
           "sizeY:3": 24
         },
-        "38:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": 12,
           "id:3": 485,
           "sizeY:3": 24
         },
-        "39:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": -156,
           "id:3": 502,
           "sizeY:3": 24
         },
-        "40:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -180,
           "id:3": 508,
           "sizeY:3": 24
         },
-        "41:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 126,
           "y:3": 84,
           "id:3": 524,
           "sizeY:3": 24
         },
-        "42:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 150,
           "y:3": 108,
           "id:3": 527,
           "sizeY:3": 24
         },
-        "43:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": -264,
           "id:3": 537,
           "sizeY:3": 24
         },
-        "44:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 96,
           "y:3": 96,
           "id:3": 591,
           "sizeY:3": 24
         },
-        "45:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": -168,
           "id:3": 592,
           "sizeY:3": 24
         },
-        "46:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 72,
           "id:3": 612,
           "sizeY:3": 24
         },
-        "47:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": -168,
           "id:3": 619,
           "sizeY:3": 24
         },
-        "48:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 48,
           "id:3": 629,
           "sizeY:3": 24
         },
-        "49:10": {
-          "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": -288,
-          "id:3": 639,
-          "sizeY:3": 24
-        },
-        "50:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -84,
           "id:3": 671,
           "sizeY:3": 24
         },
-        "51:10": {
+        "47:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": -48,
-          "id:3": 674,
+          "x:3": 12,
+          "y:3": 24,
+          "id:3": 673,
           "sizeY:3": 24
         },
-        "52:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 36,
           "id:3": 678,
           "sizeY:3": 24
         },
-        "53:10": {
+        "49:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": -84,
           "id:3": 695,
           "sizeY:3": 24
         },
-        "54:10": {
+        "50:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -108,
           "id:3": 696,
           "sizeY:3": 24
         },
-        "55:10": {
+        "51:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 60,
           "id:3": 700,
           "sizeY:3": 24
         },
-        "56:10": {
+        "52:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 84,
           "id:3": 701,
           "sizeY:3": 24
         },
-        "57:10": {
+        "53:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": -12,

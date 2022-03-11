@@ -112,7 +112,6 @@ val recipestoRemove =
 <actuallyadditions:item_boots_obsidian>,
 <mekanism:saltblock>,
 <tconstruct:materials:19>,
-<arcanearchives:radiant_resonator>,
 <randomthings:idcard>,
 <fluiddrawers:tank>,
 <prefab:item_bundle_of_timber>,
@@ -253,6 +252,7 @@ val itemstoRemove =
 <enderio:item_material:33>,
 <qmd:dust2:3>,
 <qmd:dust2:4>,
+<cyclicmagic:sound_player>,
 ]
  as IItemStack[];
 
@@ -403,9 +403,6 @@ recipes.addShaped(<quark:spruce_trapdoor> * 6, [[null, <minecraft:iron_nugget>, 
 ## MISCELLANEOUS RECIPE ADDITIONS
 ##=======================================================
 
-//Radiant Resonators
-recipes.addShaped(<arcanearchives:radiant_resonator>, [[<thermalfoundation:material:33>, <minecraft:iron_bars>, <thermalfoundation:material:33>],[<contenttweaker:greatwood_handle>, <minecraft:water_bucket>, <contenttweaker:greatwood_handle>], [<contenttweaker:greatwood_handle>, null, <contenttweaker:greatwood_handle>]]);
-<arcanearchives:radiant_resonator>.addTooltip(format.red("Max 3 per player"));
 
 // Miniaturisation Field Projector
 recipes.addShapedMirrored(<compactmachines3:fieldprojector>, [[<deepmoblearning:soot_covered_plate>, <deepmoblearning:soot_covered_plate>, <deepmoblearning:soot_covered_plate>],[<enderio:item_material:62>, <randomthings:advancedredstonetorch_on>, <deepmoblearning:soot_covered_plate>], [<embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>, <embers:block_caminite_brick_slab>]]);
@@ -472,8 +469,6 @@ recipes.removeShaped(<minecraft:chainmail_boots>, [[<iceandfire:chain_link>, nul
 recipes.removeShaped(<minecraft:chainmail_helmet>, [[<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>],[<iceandfire:chain_link>, null, <iceandfire:chain_link>], [null, null, null]]);
 recipes.removeShaped(<minecraft:chainmail_leggings>, [[<iceandfire:chain_link>, <iceandfire:chain_link>, <iceandfire:chain_link>],[<iceandfire:chain_link>, null, <iceandfire:chain_link>], [<iceandfire:chain_link>, null, <iceandfire:chain_link>]]);
 
-//Ember Key
-mods.inworldcrafting.FluidToItem.transform(<treasure2:ember_key>, <liquid:moltenembers>, [<arcanearchives:radiant_key>], true);
 
 //Salt Block
 recipes.addShaped(<mekanism:saltblock>, [[<ore:itemSalt>, <ore:itemSalt>],[<ore:itemSalt>, <ore:itemSalt>]]);
