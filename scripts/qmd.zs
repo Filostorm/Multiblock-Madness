@@ -35,7 +35,7 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:nd_yag>*432, <rockhounding_chem
 recipes.addShaped(<contenttweaker:plating_elite> * 4, [[null, <nuclearcraft:part:3>, null],[<nuclearcraft:part:3>, null, <nuclearcraft:part:3>], [null, <nuclearcraft:part:3>, null]]);
 
 // Neutronium
-mods.qmd.accelerator_source.addRecipe(<contenttweaker:incoherent>, ((<particle:filon>*100000)^30000)~1.02);
+mods.qmd.accelerator_source.addRecipe(<contenttweaker:incoherent>, ((<particle:filon>*10000)^30000)~1.02);
 mods.qmd.target_chamber.addRecipe(<contenttweaker:neutronic>, ((<particle:filon>*1000000)^50000)~2.0, <avaritia:resource:4>, null, null, null, 53000, 0.28, -100000, 0.001);
 
 ##########################################################################################

@@ -56044,8 +56044,14 @@
           "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "qmd:beamline",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "patchouli:guide_book",
             "Count:3": 1,
+            "tag:10": {
+              "patchouli:book:8": "qmd:guide"
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -56056,42 +56062,16 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "QMD 101: Particles",
-          "desc:8": "§bThe quests from this point on are not required to beat the pack. Neutronium can also be collected by the Orbital Miner.§r However, there are major§f bragging rights to make it this way.\n\n§9Quantum Minecraft Dynamics §fis a mod that brings §5High-Energy Particle Physics§f to Minecraft. While it may seem complicated at first glance, the mod becomes much more understandable when you understand the concepts behind it. \n\nBesides this in-game quest book guide, §9Quantum Minecraft Dynamics§r § also has its own §2Guide Book§r already present in the Akashic Tome (albeit incomplete). A more complete version can be found on the §Q§Q§2QMD Github Wiki.§f\n\nOf course, the §N§2Nuclearcraft Official Discord§r also has channels to discuss high-energy particle smashing! Make sure to check out §7#qmd§r for support.\n\nWithout further ado, let\u0027s get into the tutorial!\n\nIn short, the entire mod revolves around manipulating §5particles§f to do various things. §5Particles§f are created and accelerated in §3§1§9§b§3Linear Accelerators§f, accelerated further in §3Synchrotron Accelerators§f, then used for recipes in various §3multiblock machines§f, including:\n\n§3§f- Target Chamber\n- Collision Chamber\n- Neutral Exotic Containment\n- Decay Chamber\n\nThese recipes produce new §eitems§f or even new types of §5particles§f, which can then be used in further recipes. All §3Multiblocks§f above will be gone into detail in subsequent quests. Since the entire mod revolves around §5particles§f, it is only natural that we understand how they work before we do anything involving them.\n\nMuch like how regular §eitems§f are stored in stacks, §5particles§f in §9QMD §fare stored in §\"\"particle stacks\"§f. However, unlike item stacks, particle stacks cannot be held by the player. Instead, §pparticle stacks§f can only be manipulated in §9QMD\u0027s §3Multiblock Machines§f, many of which were mentioned above, and transported between said machines via§7 §8beamline pipes.§f Even within said §3Multiblocks§f, particles are transported via §7§8beam blocks§f.\n\nParticle stacks have 3 properties:\n§4- Amount (pu/t)\n§6- Energy (eV)\n§b- Focus§f\n\nAll recipes require particle stacks to have a minimum §bfocus§f and to be within a certain §6energy range (e.g 10-20 MeV)§f for the recipe to work (relevant values can be seen in §2JEI§f). §3\n§A§fAs most newly-created particles start out with no §6energy §fand barely any §bfocus§f, §3Accelerators§e §fare used in order to get particle stacks to the relevant § §6energy§f and §bfocus§f§f. How §3Accelerators§f do this, and how they are constructed will be covered in the next quest. \n\nBesides being used as a requirement in some recipes, §bfocus §falso determines how far a given particle stack will travel. This is because a particle stack loses a certain amount of §bfocus§f per §8beamline pipe/beam block§f travelled (the amount of §bfocus§f lost per block is the attenuation rate of the relevant block, seen in their tooltip). A particle stack with a §a§bfocus§f less than or equal to zero will not travel any further. \n\n§fThe §4amount§f of §d§5particles§e§f in the particle stack determines the rate of §eitem §fproduction and §4amount§f of new §5particles §e§fproduced from said recipe (can be seen and calculated from §2JEI§f information). Unlike §6energy §for §bfocus§f, §3Accelerators§f cannot directly affect a particle stack\u0027s §4amount (pu/t)§f. A particle stack\u0027s §4amount§f is solely dependent on the source of the §5particle§f, as will be seen in the next quest and subsequent quests."
+          "desc:8": "§b§bThe quests from this point on are §cnot required§f§b to beat the pack. Neutronium can also be collected by the Orbital Miner. However, there are §6major bragging rights§f§b to make it this way.\n\n\n§f§nWhat is QMD?\n\n§9Quantum Minecraft Dynamics §fis a mod that brings §5High-Energy Particle Physics§f to Minecraft. While it may seem complicated at first glance, the mod becomes much more understandable when you understand the concepts behind it. \n\nBesides this in-game quest book guide, QMD § also has its own §2Guide Book§r already present in the Akashic Tome (albeit incomplete). A more complete version can be found on the §Q§Q§2QMD Github Wiki.§f\n\nOf course, the §N§2Nuclearcraft Official Discord§r also has channels to discuss high-energy particle smashing! Make sure to check out §7#qmd§r for support.\n\nWithout further ado, let\u0027s get into the tutorial!\n\n\n§nQuick Summary§r\n\nIn short, QMD revolves around §6producing, manipulating and utilising §5particles§r, via §3specially designed Multiblocks§r, for various recipes. These recipes produce §enew items§r or even §5new types of particles§r, which can then be used in further recipes. In addition, QMD contains other fun things, such as §cpowerful weapons§r or §6extreme power generation§r!\n\n\n§nBrief Introduction to Multiblocks§r\n\nAs mentioned before, particles are manipulated in various ways in QMD\u0027s various multiblocks. There are three types of multiblocks in QMD:\n\n§3-Accelerators\n§a-Particle Chambers\n§7-Vacuum Chambers§r\n\nParticles are produced and accelerated in §3Accelerators§r, then used for recipes in §aParticle Chambers§r and §7Vacuum Chambers§r. All Multiblocks will be covered in subsequent quests, and more details can also be found on the §2QMD Github Wiki§r.\n\nSince the entire mod revolves around particles, it is only natural that we understand them before we do anything involving them.\n\n\n§nWhat are Particles?§r\n\nUnlike most mods that handle items, fluids or even gases, QMD instead deals with particles. Each particle has a set of properties that can be viewed in §2JEI§r. \n\nMuch like how regular §eitems§f are stored in §astacks§r, QMD §5particles§f are stored in §\"§2\"particle stacks\"§f. However, unlike item stacks, particle stacks cannot be held by the player. Instead, §pparticle stacks§f can only be manipulated in §9QMD\u0027s§f §3specialised Multiblock Machines§f, and transported via §7Beamline Pipes§r.\n\nMore details about particle properties and transport will be covered in \"Particle Properties\" and \"Transporting Particles\", and more information about particles can also be found on the §2QMD Github Wiki§f at §nhttps://github.com/Lach01298/QMD/wiki/Particles.\n"
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "qmd:beamline",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "qmd:beamline",
-              "Count:3": 8,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
+      "rewards:9": {}
     },
     "720:10": {
       "questID:3": 720,
@@ -56970,7 +56950,7 @@
     "733:10": {
       "questID:3": 733,
       "preRequisites:11": [
-        775
+        774
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -56993,8 +56973,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "QMD 104: The Target Chamber",
-          "desc:8": "Now that you have a fully functional §3Linear Accelerator§f, it\u0027s time to §9§rput those §5particles§f to use§r! \n\nThe §aTarget Chamber§r allows you to smash your high-velocity particles into §eitems§f to obtain new §eitems§f, and even, in some cases, new §5particles§f! It\u0027s the primary §3multiblock§f in which recipes are processed, although more will be unlocked later on.\n\nTo construct a §aTarget Chamber§f, construct a cube of §8§7Particle Chamber Casings§f or §7Glass§f. They can be any odd size, from 3 to 9 across. There must also be a §7Target Chamber Controller §fand a §7Particle Chamber Energy Port§f. In the centre, place a §7Particle Chamber Block§f and connect it to any one of the four sides with §7Particle Chamber Beam Blocks§f. Where the §7Beam Blocks§f meet the casing, place a §7Particle Chamber Beam Port §fin input mode. This is where the §5particle§f beam from your §3Linear Accelerator§f, and subsequently any setup, will be input into the §aTarget Chamber§f. \n\nIf the recipe outputs §d§5particles§f you would like to use in other recipes, simply extend 1-3 more §7Beam Block§f lines from 1-3 of the remaining sides of the §7Particle Chamber Block§f to the casing, and place §8§7Particle Chamber Beam Ports§f in output mode where they meet the casing. Neutral §5particles§f will come out of the side opposite of the input, while charged §5particles§f will come out of the remaining two sides (the direction can be changed by shift right clicking the relevant §7Particle Chamber Beam Port§f with the multitool). A screenshot of a §aTarget Chamber§f can be found on the §2QMD§f §2Github Wiki§f.\n\n§cThe particle chamber must be connected directly to the linear accelerator via a beamline pipe, otherwise particles will not be transported from the linear accelerator to the particle chamber!\n\n§fIf your §aTarget Chamber§f has been supplied with §eitems§f and §5particles§f within the recipe\u0027s §6energy range§f exceeding the recipe\u0027s required §bfocus§f, as well as power, the §aTarget Chamber§f will start processing the recipe, producing new §eitems§f and §5particles§f (if any) which are output as particle stacks from the output §7Particle Chamber Beam Ports.\n\n§fThe time taken for a recipe to process, in ticks, is given as the §4amount§f of §5particles§f required for the recipe (e.g 120kpu) divided by the §4amount§f of §5particles§f in the particle stack (e.g 100 pu/t). In this case, the recipe will take 60s to process.\n\nThe resulting §5particle§f§5s§e §fand their particle stack properties can be seen in the target chamber§f GUI. More details on how the resulting particle stack properties are calculated can be found in the \"Target Chamber Maths\" quest."
+          "name:8": "QMD 103: The Target Chamber",
+          "desc:8": "Now that you have a fully functional §3Linear Accelerator§f, it\u0027s time to §9§rput those §5particles§f to use§r! \n\nThe §aTarget Chamber§r is a §aParticle Chamber§r, and it allows you to smash your high-velocity particles into items to obtain §enew items§f, and even, in some cases, §5new particles§f! It\u0027s the primary multiblock in which recipes are processed, although more will be unlocked later on.\n\n\n§nConstruction§r\n\nA visualisation of a Target Chamber can be found in §2JEI§r (5x5x5) and on the §2QMD§f §2Github Wiki§f.\n\nCasing Material: §7Particle Chamber Casing/Glass§r\n\nDimensions: Any odd size from 3x3x3 to 9x9x9, with a §7Particle Chamber Block§r in the centre and §7Particle Chamber Beam Blocks§r between the Particle Chamber and input side\n\nRequired blocks on sides:\n- §7Target Chamber Controller\n§-- §7Particle Chamber Energy Port§f\n- §7Particle Chamber Beam Port§r in §ainput§r mode in the centre of any side (this is where particles are input into the Target Chamber)\n\n§cNote: §rThe target chamber must be connected directly to the linear accelerator via a beamline pipe, otherwise particles will not be transported from the linear accelerator to the particle chamber!§r\n\nAny remaining empty space can be filled up by detectors to improve §eTarget Chamber Efficiency§r, which will be covered in the \"Detectors\" quest.\n\n\n§r§nTarget Chamber Recipes§r\n\nIn order to process a recipe, the Target chamber must be supplied with:\n- §6Power§r\n- §eRequired item§r in input slot\n- Particles within the §6recipe\u0027s energy range§r exceeding the §brequired focus§r (the focus of the particle in the recipe in §2JEI§r)\n\nOnce these requirements are met, Target Chamber§f will start processing the recipe, producing new §eitems§f and §5particles§f (if any).§r The \"Particle Outputs\" quest goes into more detail on how to obtain output particles.\n\n§fThe §4amount of particles§r required for a recipe to be processed once is the amount shown in §2JEI§r. Thus, the time taken for a recipe to process, in ticks, is given as the amount of particles required for the recipe (e.g 1Mpu) divided by the amount of particles in the particle stack (e.g 10000 pu/t). In this case, the recipe will take 5s to process.\n\nThe resulting §5particle§f§5s§e §fand their particle stack properties can be seen in the §2Target Chamber GUI§r. More details on how the resulting particle stack properties are calculated can be found in the \"Target Chamber Maths\" quest."
         }
       },
       "tasks:9": {
@@ -57087,8 +57067,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "QMD 105: Putting it all together (again)",
-          "desc:8": "You\u0027ve finally done it: the laws of physics §c§rbend§r* before your engineering might, as you hit rocks together so hard they make §6§rgold§r. Now, you need to put those skills to the test: §d§eP-Type Doped Silicon §fis your aim. \n\nIf you\u0027ve followed the tutorial, you should now have a §3Linear Accelerator§f capable of accelerating§5 Boron Ions§f to between §6600KeV and 1MeV§f, as well as a §bfocus§f greater than §b2§f. This §3Linear Accelerator§f should be directly connected via §8Beamline Pipes§f to a §aTarget Chamber§f containing §eSilicon Wafers§f.\n\nBefore switching on your §3Linear Accelerator§f, first:\n\n1. Make sure both your §3Linear Accelerator §fand §aTarget Chamber§f are powered with sufficient power.\n\n2. Make sure that the total §9cooling§f exceeds the total §cheating§f in your §3Linear Accelerator§f.\n\n3. Make sure that your §3Linear Accelerator§f has been topped up with the appropiate §1coolant§f and has been cooled below the maximum temperature as shown in the §3Accelerator§f GUI, and that the supercooler cooling loop has been set up.\n\nNow, simply place §eDiborane Canisters§f in the Ion Source§f and give the Linear Accelerator Controller§f a §4redstone signal§f, and the §aTarget Chamber§f should produce §eP-Type Doped Silicon§f.\n\nCongratulations! You\u0027ve built your first complete §9QMD§f setup and manufactured your first §9QMD§f item!\n\nDue to the vast differences in §5particles §fand §5particle properties§f§f required in different recipes, you\u0027ll probably have to construct an entirely new setup for each new §eitem§f you make. However, the basic principles remain the same: accelerate §5particles§f until their §6energy§f and §bfocus§f match that required by the recipe. \n\nAll the best on your §9QMD§f journey!\n\n*Disclaimer: The laws of physics don\u0027t actually bend before your engineering might, as you\u0027re using the laws of physics to their fullest extent to accelerate §5particles§f to immense speeds. Apologies in advance for ruining your moment of victory."
+          "name:8": "QMD 104: Putting it all together (again)",
+          "desc:8": "You\u0027ve finally done it: the laws of physics §c§rbend§r* before your engineering might, as you hit rocks together so hard they make §6§rgold§r. Now, you need to put those skills to the test: §d§eP-Type Doped Silicon §fis your aim. \n\nIf you\u0027ve been following the tutorial, you should now have a §3Linear Accelerator§f capable of accelerating Boron Ions§f to between §6600KeV and 1MeV§f, with a §bfocus§f greater than §b2§f. The Linear Accelerator§f should be directly connected via §7Beamline Pipes§f to a §aTarget Chamber§f containing §eSilicon Wafers§f.\n\n\n§nSafety Precautions§r\n\nBefore switching on your Linear Accelerator§f, first:\n\n1. Make sure both your §3Linear Accelerator §fand §aTarget Chamber§f are powered with sufficient power.\n\n2. Make sure that the Linear Accelerator§f\u0027s §9total cooling§f exceeds the §ctotal heating§f.\n\n3. Make sure that your Linear Accelerator§f has been topped up with the appropiate §1coolant§f, and that the current temperature is §6below§r the §cmaximum temperature§r.\n\n4. Make sure that the supercooler cooling loop has been set up, and is fast enough to supply the Accelerator with the required coolant.\n\n\n§nSwitching it all on§r\n\nNow, simply place §eDiborane Canisters§f in the Ion Source§f and give the Linear Accelerator Controller§f a §4redstone signal§f, and the Target Chamber§f should start producing §eP-Type Doped Silicon§f.\n\nCongratulations! You\u0027ve built your first complete QMD§f setup and manufactured your first QMD§f-exclusive product!\n\n\nDue to the §6vast differences in particles and particle properties§f§f required in different recipes, you\u0027ll almost always have to construct an entirely new setup for §eeach new item§r you make. However, the basic principles remain the same: accelerate particles§f until their §6energy§f and §bfocus§f match that required by the recipe. \n\nAll the best on your §9QMD§f journey!\n\n\n*Disclaimer: The laws of physics don\u0027t actually bend before your engineering might, as you\u0027re using the laws of physics to their fullest extent to accelerate particles§f to immense speeds. Apologies in advance for ruining your moment of victory."
         }
       },
       "tasks:9": {
@@ -57224,7 +57204,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Blasting Metals Harder",
-          "desc:8": "Blasting metals in the §aTarget Chamber§f with §5particles§f at even higher §6energies§f, in the §61GeV-20GeV§f range, produces §eSpallation Waste§f. These piles of metal have undergone fusion, allowing you to turn basic metals such as §eLead§r into much more interesting metals like§§ §eIridium§r or §eHafnium§r!\n\nThese collisions also produce §5exotic new particles§f, which will be very useful for producing exotic fluids like §6antimatter§f or §6muonium§f later."
+          "desc:8": "Blasting metals in the §aTarget Chamber§f with particles at even higher energies§f, in the §61GeV-20GeV§f range, produces §eSpallation Waste§f. These piles of metal have undergone fusion, allowing you to turn basic metals such as §eLead§r into much more interesting metals like§§ §eIridium§r or §eHafnium§r!\n\nThese collisions also produce §5exotic new particles§f, which will be very useful for producing exotic fluids like §6antimatter§f or §6muonium§f later."
         }
       },
       "tasks:9": {
@@ -57355,7 +57335,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Challenge: Black Mesa\u0027s Finest",
-          "desc:8": "Particle physics isn\u0027t §oall§r big, dangerous structures for making things go fast and then explode; it\u0027s also big, dangerous §cguns§r for making things go fast and then explode!\n\nThe §eLepton Cannon§r is an extremely advanced particle weapon that uses various leptons such as §6Tauonium§r as ammunition to annihilate those pesky mobs trying to steal your trade secrets! Refinement of this §6material§r will require some pretty advanced §3multiblocks§f; check §2JEI§f to see what steps of particle collision you need to create the §5Tau§o§r and §5Anti-Tau§r particles, before putting them into a §7Neutral Containment Unit§r for storage in cells!\n\n§cTauonium requires the highest collision energy in the mod; you will need to accelerate protons to 150GeV to make Tauonium via Higgs decay. Good luck.§f\n\nGive em\u0027 hell, Gordon."
+          "desc:8": "Particle physics isn\u0027t §oall§r big, dangerous structures for making things go fast and then explode; it\u0027s also big, dangerous §cguns§r for making things go fast and then explode!\n\nThe §eLepton Cannon§r is an extremely advanced particle weapon that uses various leptons such as §6Tauonium§r as ammunition to annihilate those pesky mobs trying to steal your trade secrets! Refinement of this material§r will require some pretty advanced multiblocks§f; check §2JEI§f to see what steps of particle collision you need to create the §5Tau§o§r and §5Anti-Tau§r particles, before putting them into a §7Neutral Containment Unit§r for storage in cells!\n\n§cTauonium requires the highest collision energy in the mod; you will need to accelerate protons to 150GeV to make Tauonium via Higgs decay. Good luck.§f\n\nGive em\u0027 hell, Gordon."
         }
       },
       "tasks:9": {
@@ -57494,7 +57474,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Small Hadron Collider",
-          "desc:8": "The §aCollision Chamber§r allows you to take two particle beams and §csmash them together§r! This has two primary functions. The first is to construct §5larger matter/antimatter particles§f from more basic particles like §5protons, antiprotons and deuterons.§f This requires particle beams with very low, but not zero, §6energy§f to converge in the §aCollision Chamber§f. The second is to smash two §6extremely high energy§f particle beams to produce §5new, exotic particles§f! Both come with their own challenges, as will be detailed later.\n\nTo construct a §aCollision Chamber, §fconstruct a 17 long cuboid of §7Particle Chamber Casings or Glass.§f The ends must be squares of odd size from 3 to 15 across, however there is no point in constructing one larger than 11x11. There must also be a §7Collision Chamber Controller§f and a §7Particle Chamber Energy Port§f in the casing. Down the middle of the long axis, there must be a line of §7Particle Chamber blocks.§f \n\nAt each end, there must be a §7Particle Chamber Beam Port in input mode.§f 2 blocks away from each square end, on the horizontals, there must be§7 Particle Chamber Beam Blocks§f connecting the Particle Chamber axis to §7Particle Chamber Beam Ports in output mode.§f  The two input §5particles§f are inserted through the opposite input §7Beam Ports§f, while output §5particles§f are outputted through the four output §7Beam Ports§f. The port which they are output from can be changed by shift right clicking the §7Beam Port§f with a multitool - this switches the output slot of the §7Beam Port§f with the one clockwise of it, viewed from the top. A screenshot of a §aCollision Chamber§f can be found on the §2QMD Github Wiki.§f \n\nIn order for a recipe to work, both input particle beams must have a §bfocus§f above 5 and §6energy§f above that shown in §2JEI§f. The sum of the input particle beam\u0027s §6energies§f must be within the §6energy range§f stated in §2JEI§f. If these requirements are met and the §aCollision Chamber§f is powered, it will start processing the recipe, producing new §5particles§f as particle stacks which are output through the four output §7Beam Ports§f. \n\nThe resulting §5particle§f§5s§e §fand their particle stack properties can be seen in the collision chamber GUI. More details on how the resulting particle stack properties are calculated can be found on the §2QMD Github Wiki.§f\n\nMuch like other §aParticle Chambers§f, §aCollision Chambers§f can also have detectors placed in them, increasing their efficiency. A higher efficiency increases the §4amount§f of §5particles§f in the resulting particle stacks, although the §4amount§f may never be higher than that stated in §2JEI§f. Detectors are primarily useful for §aCollision Chamber§f recipes with very low cross-sections, especially the §6high-energy§f collisions. More details on the §4amount§f calculation for output particle stacks and efficiency can be found on the §2QMD Github Wiki§f.\n\nThe remaining portion of this quest will cover common challenges in completing §aCollision Chamber§f recipes.\n\nThe main challenge in the first function of the §aCollision Chamber§f, which is combining beams of §5particles§f at very low non-zero §6energies§f, is decelerating the §5particles§f to a very low §6non-zero energy§f. Even with §3Decelerator §4redstone control§f, the lowest §6non-zero energy§f (i.e. 1/15th of the maximum §6particle beam energy§f the §3Decelerator§f may decelerate as determined by the formula E\u003dEf(1-Sr/15)) may already exceed the limit set in §2JEI§f (typically 10MeV). \n\nOne way to circumvent this is to ensure that the energy of the §5particle§f producing the §5antiparticle§f in the §aTarget Chamber§f is as close to the §6minimum energy§f as possible. This ensures that the §5antiparticles§f produced are of §6low energy§f, thus a weak §3Decelerator§f whose lowest §6non-zero energy§f is below the limit set in §2JEI§f may be used.\n\nAnother way to solve this problem is to use a §3Linear Accelerator§f to accelerate a particle beam which has had its §6energy§f reduced to 0eV by a §3Decelerator§f. §3Linear Accelerators§f are still able to accelerate 0eV particle beams, and offer much finer control over the §6energy§f of an output §5particle§f than §3Synchrotrons§f or §3Decelerators§f, making them perfect for accelerating particle beams to the §6low non-zero energies§f required in such recipes.\n\nThe main challenge in the second function of the §aCollision Chamber§f, which is to smash two §6extremely high energy§f particle beams together, is building a §3Synchrotron§f capable of accelerating §5particles§f to those §6high energies§f. §aCollision Chambers§f demand §6extremely high energies§f in the range of §6100GeV-150GeV§f. As it is a lot easier to accelerate §5heavy particles§f rather than §5light particles§f, due to them being affected by different factors, it is recommended that you pick the recipes involving §5protons§f or §5antiprotons§f, and avoid the recipe involving §5electrons§f and §5positrons§f. Even then, it\u0027s highly recommended that you read up on the formulas governing the output§6 energy§f of an output beam from a §3Synchrotron§f, and use those to calculate a §3Synchrotron§f powerful enough for these recipes.\n\nGood luck completing the §aCollision Chamber§f recipes!"
+          "desc:8": "The §aCollision Chamber§r allows you to take two particle beams and §csmash them together§r! This can either be used for creating larger particles such as §5Anti-Helium 3§r by merging low-energy beams, or creating entirely new particles by smashing §6extremely high-energy beams§r together!\n\n\n§nConstruction§r\n\nA screenshot of a Collision Chamber can be found on the §2QMD Github Wiki.§f \n\nCasing Material: §7Particle Chamber Casing/Glass§r\n\nDimensions: 17 blocks long, ends must be odd squares ranging from 3x3 to 15x15, with a line of §7Particle Chamber Beam Blocks§r in the middle, and Particle Chamber Beam Block lines connecting the central axis to the long sides 2 blocks away from the square ends\n\nRequired blocks on sides:\n- §7Collision Chamber Controller§f\n- §7Particle Chamber Energy Port§f\n- §72 Particle Chamber Beam Ports§r in §ainput§r mode in the centre of the opposite square ends\n- §74 Particle Chamber Beam Ports§r in §coutput§r mode, each 2 blocks away from the square end on the long side\n\n\n§nRecipes§r\n\nIn order for a recipe to work, both input particle beams must have a §bfocus§f above 5 and §6energy§f above that shown in §2JEI§f. The sum of the input particle beams\u0027 energies must be §6within the energy range§f stated in JEI. If these requirements are met, the collision chamber will start processing the recipe, producing new particles which are output through the four output Beam Ports. \n\nThe output port which a certain particle is output from can be changed by shift right clicking the Beam Port with a §8multitool§r - this switches the output slot of the Beam Port with the one clockwise of it (viewed from the top).\n\nThe resulting particle stacks and their properties can be seen in the §2Collision Chamber GUI§r. More details on how the resulting particle stack properties are calculated can be found on the §2QMD Github Wiki.§f\n\n\n§nDetectors§r\n\nMuch like other Particle Chambers, Collision Chambers can also have §edetectors§r placed in them, increasing their efficiency. A higher efficiency §6increases§r the amount of particles in the output particle stacks, although the amount may never be higher than that stated in §2JEI§f. \n\nDetectors are primarily useful for Collision Chamber recipes with §cvery low cross-sections§r, especially the §6high-energy§f collisions. More details on the amount calculation for output particle stacks and efficiency can be found on the §2QMD Github Wiki§f."
         }
       },
       "tasks:9": {
@@ -57562,7 +57542,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Neutral Exotic Containment",
-          "desc:8": "The §7Neutral Containment Chamber§r creates §6neutrally charged exotic matter§f from one or more particle beams, and stores such §6matter§f safely in itself. These fluids can also be transferred to special §econtainment cells§f. These filled §econtainment cells§f can then be used in various gadgets and recipes.\n\nTo construct a §7Neutral Containment Chamber§r§f, construct a 7x7x7 or 9x9x9 cube of §7Containment Casing or Glass.§f In the centre of each side face, a §7Containment Beam Port or Containment Laser§f must be placed, and 2 of each must be placed opposite of each other in a §7Containment Chamber§f. There must be a §7Containment Coolant Vent§f in input and output modes as well as a §7Containment Energy Port§f. Inside, on the top and bottom, there must be a ring of §7Containment Coils§f with the sides of the ring one block away from the walls of the Chamber. A screenshot of a §7Neutral Containment Chamber§r§f§f can be found on the §2QMD Github Wiki§f.\n\nThe §7Neutral Containment Chamber§f must be constantly supplied with power and §1active coolant§f that is capable of §9cooling§f it below the maximum operating temperature, much like an §3Accelerator§f. \n\nMake sure the needs of the§7 Neutral Containment Chamber§f are constantly met! If any of the below happen while it contains §6exotic fluid§f:\n\n- Runs out of power\n- Temperature rises above the maximum operating temperature\n- The Chamber is broken\n\nThe Chamber will fail, leading to §4catastrophic§f results!\n\nIn order to create §6exotic matter§f, the required particle beams as stated in §2JEI§f must have an §6energy§f of §60eV§f (with the exception of §5glueballs§f, which can have any §6energy§f) and a §bfocus§f greater than that listed in §2JEI§f. If the particle beams required meet the criteria, §6exotic matter§f is created. The number of ticks it takes to create 1mb of §6exotic matter§f is the §4amount§f of §5particles§f required for the recipe, divided by the §4amount§f of §5particles§f in the particle stack. If there are two beams, the time taken will be the larger of the two beams.\n\nTo fill a §ecell§f with §6exotic matter§f, simply pipe an empty §ecell§f into the chamber via the controller or a §7Containment Item Port§f, and the chamber will automatically fill the cell with the §6exotic matter§f it is currently holding."
+          "desc:8": "The §7Neutral Containment Chamber§r creates §6neutrally charged exotic matter§f from one or more particle beams and stores it safely in itself. These fluids can also be transferred to special §econtainment cells§f, which can then be used in various gadgets and recipes.\n\n\n§nConstruction§r\n\nA visualisation of a §7Neutral Containment Chamber§r§f§f (7x7x7) can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nCasing: §7Vacuum Chamber Casing/Glass§r\n\nDimensions: 7x7x7 / 9x9x9, with rings of §7Vacuum Chamber Coils§r on the top and bottom one block away from Chamber Walls\n\nRequired blocks on sides:\n- §7Exotic Containment Chamber Controller§r\n- §72 Vacuum Chamber Coolant Vents§r in §ainput§r and §coutput§r mode\n- §7Vacuum Chamber Energy Port§r\n- §72 Vacuum Chamber Beam Ports§r in §ainput§r mode, in the centre of two opposite sides\n- §72 Vacuum Chamber Lasers§r in the centre of the other two faces \n\n\n§nRequirements§r\n\nThe Neutral Containment Chamber must be §nconstantly supplied§r with §6power§r and §1active coolant§f with a temperature below 104K. If any of the below happen while it contains §6exotic fluid§f:\n\n- Runs out of power\n- Temperature rises above the maximum operating temperature\n- The Chamber is broken\n\nThe Chamber will fail, leading to §4catastrophic§f results!\n\n\n§nRecipes§r\n\nIn order to create §6exotic matter§f, the required particle beams as stated in §2JEI§f must have an §6energy§f of §60eV§f (with the exception of §5glueballs§f, which can have any energy) and sufficient §bfocus§f for the recipe. If the particle beams required meet the criteria, exotic matter is created. \n\nThe number of ticks it takes to create 1mb of exotic matter is the amount of particles required for the recipe, divided by the amount of particles in the particle stack. If there are two beams, the time taken will be the larger of the two beams.\n\nTo fill a cell with exotic matter, simply pipe an §eempty cell§f into the chamber via the controller or a §7Containment Item Port§f, and the chamber will automatically fill the cell with the exotic matter it is currently holding."
         }
       },
       "tasks:9": {
@@ -57769,7 +57749,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Strontium",
-          "desc:8": "§eStrontium§f is an important material only obtainable via §9QMD§f. It\u0027s required to manufacture §eBSCCO§f, a superconductor material required for further progression in the mod.\n\nThere are two main ways of making §eStrontium§f. The first way is obtaining §eStrontium§f from §eLight Fission Waste§f. While this method is feasible for obtaining trace amounts of §eStrontium§f, it is slow and takes a long time to obtain mass amounts of §eStrontium§f.\n\nThe second, much faster way is striking §eZirconium§r with §5Neutrons§f in a §aTarget Chamber§f. While this method is more challenging than the first method, as a §5neutron§f of the right §6energy§f must be procured from a separate §aTarget Chamber§f recipe, this method is much more feasible for obtaining §eStrontium§f, especially if you\u0027re planning to use §eElite Processors §fto make §eEV Capacitors§f.\n\nHint: One of the §eitems§f you need to manufacture for later use produces §5neutrons§f as a byproduct. If only you could find a way to make it produce a §5neutron§f of the correct §6energy§f..."
+          "desc:8": "§eStrontium§f is an important material §conly obtainable via QMD§f. It\u0027s required to manufacture §eBSCCO§f, a superconductor material required for further progression in the mod.\n\nThere are two main ways of making Strontium§f. \n\nThe first way is obtaining Strontium§f from §eLight Fission Waste§f. While this method is feasible for obtaining trace amounts of Strontium§f, it is slow and takes a long time to obtain mass amounts of Strontium§f.\n\nThe second, much faster way is striking §eZirconium§r with §5Neutrons§f in a §aTarget Chamber§f. As a neutron§f of the §6right energy§f must be procured from a separate Target Chamber Recipe§r, this method is significantly more challenging. However, it is §6much more feasible§r for obtaining Strontium§f, especially if you\u0027re planning to use §eElite Processors §fto make §eEV Capacitors§f.\n\nHint: One of the items§f you need to manufacture for later use produces neutrons§f as a byproduct. If only you could find a way to make it produce a neutron§f of the correct energy§f..."
         }
       },
       "tasks:9": {
@@ -57842,7 +57822,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Exotic Smoothie",
-          "desc:8": "§6Muonium§f is made from combining §5Muons§f and §5Anti-Muons§f in a §7Neutral Containment Chamber§f. The simplest way to make §6muonium§f has already been detailed in a questline, but if you\u0027re feeling daring, you can attempt to make §6muonium§f from the other methods involving §aCollision Chamber§f recipes as well. \n\nYou\u0027ll need quite a fair bit of this to make §eNeutronic Matrixes§f for §8Neutronium, §fso make sure to fully automate it!"
+          "desc:8": "§6Muonium§f is made from combining §5Muons§f and §5Anti-Muons§f in a §7Neutral Containment Chamber§f. The simplest way to make muonium§f has already been detailed in a questline, but if you\u0027re feeling daring, you can attempt to make muonium§f from the other methods involving §aCollision Chamber§f recipes as well. \n\nYou\u0027ll need quite a fair bit of this to make §eNeutronic Matrixes§f for §8Neutronium, §fso make sure to fully automate it!"
         }
       },
       "tasks:9": {
@@ -57861,8 +57841,8 @@
               "id:8": "qmd:cell",
               "Count:3": 1,
               "tag:10": {
-                "storage:10": {
-                  "amount:3": 200
+                "particle_storage:10": {
+                  "particle_amount:3": 10000
                 }
               },
               "Damage:2": 7,
@@ -57910,7 +57890,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Heavy Explosives",
-          "desc:8": "§6Anti-Helium 3§f is made by combining §5Anti-Helion§f and §5Positrons §fin a §7Neutral Containment Chamber§f. \n\nWhile there are several methods of obtaining §5Positrons§f, the simplest is using a §eSodium-22 Source§f in a §3Linear Accelerator§f. §3Linear Accelerators§f can accelerate §5particles§f at §60eV§f, thus you only need to raise the §bfocus§f of the §5positron§f to be greater than §b2§f.\n\n§5Anti-Helion§f is obtained via collision of §5Anti-Protons and Anti-Deuterons§f in a §aCollision Chamber§f. The tricky part is the §6energy§f - the recipe requires both particle beams to have an §6energy above 700keV§f and for their §6combined energy§f to be less than §610MeV§f. However, there are a few ways of solving this problem, which are detailed in the \"Small Hadron Collider\" quest. It\u0027s up to you how you want to obtain §5anti-protons and anti-deuterons§f - §2JEI§f showcases multiple ways of making both.\n\nAs you only need one §eincoherent matrix§f to get all the §5Filons§f you need, you won\u0027t need much §6Anti-Helium 3§f, but constructing the entire setup will still be a challenge!"
+          "desc:8": "§6Anti-Helium-3§f is made by combining §5Anti-Helion§f and §5Positrons §fin a §7Neutral Containment Chamber§f. \n\nWhile there are several methods of obtaining Positrons§f, the simplest is using a §eSodium-22 Source§f in a §3LINAC§r. LINACs can accelerate particles§f at §60eV§f, thus you only need to raise the §bfocus§f of the positron§f to be greater than §b2§f.\n\nAnti-Helion§f is obtained via collision of §5Anti-Protons and Anti-Deuterons§f in a §aCollision Chamber§f. The tricky part is the energy§f - the recipe requires both particle beams to have an §6energy above 700keV§f and for their §6combined energy§f to be less than §610MeV§f. However, there are a few ways of solving this problem, which are detailed in the \"Collision Chamber Tips\" quest. It\u0027s up to you how you want to obtain anti-protons and anti-deuterons§f - §2JEI§f showcases multiple ways of making both.\n\nAs you only need §eone incoherent matrix§f to get all the §5Filons§f you need, you won\u0027t need much Anti-Helium 3§f, but constructing the entire setup will still be a challenge!"
         }
       },
       "tasks:9": {
@@ -57929,8 +57909,8 @@
               "id:8": "qmd:cell",
               "Count:3": 1,
               "tag:10": {
-                "storage:10": {
-                  "amount:3": 600
+                "particle_storage:10": {
+                  "particle_amount:3": 100000
                 }
               },
               "Damage:2": 4,
@@ -57970,7 +57950,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Eye Pain",
-          "desc:8": "The §eIncoherent Matrix§f is used to produce §5Filons§f in an §8Ion Source§f. As it has no durability, you\u0027ll only need one of these to produce as many §5Filons§f as you need."
+          "desc:8": "The §eIncoherent Matrix§f is used to produce §5Filons§f in an Ion Source. As it has no durability, you\u0027ll only need one of these to produce as many Filons§f as you need."
         }
       },
       "tasks:9": {
@@ -58054,7 +58034,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Nihilism",
-          "desc:8": "The §eNeutronic Matrix§f is used as the base material in a §aTarget Chamber§f which the §5Filon§f collides with to produce §9§8Neutronium§f. You\u0027ll need one of these for each §8Neutronium Ingot§f you want to produce."
+          "desc:8": "The §eNeutronic Matrix§f is used as the base material in a §aTarget Chamber§f which the §5Filon§f collides with to produce §9§8Neutronium§f. You\u0027ll need one of these for each Neutronium Ingot you want to produce."
         }
       },
       "tasks:9": {
@@ -58178,7 +58158,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The Sands of Time",
-          "desc:8": "The §aDecay Chamber§r allows you to decompose the §5particles§f in a beam into their §5constituent particles§r. This can be very important for turning huge particles like §5Alpha Particles§r into smaller components for refining.\n\n§aDecay Chambers§f are constructed exactly like §aTarget Chambers§f, only with a §7Decay Chamber Controller§f instead. A screenshot of a §aDecay Chamber§r can be found on the §2QMD Github Wiki.§f \n\nThe §aDecay Chamber§f also requires power and a §5particle beam§f. The resulting §5particles§f and their particle stack properties can be seen in the decay chamber GUI, and are calculated the same way as §aTarget Chambers§f as detailed in the \"Target Chamber Maths\" quest.\n\n§aDecay Chambers§f can also have detectors installed in them to increase efficiency. Although efficiency won\u0027t increase the speed of the recipe in §aDecay Chambers§f, it will increase the §4amount§f of §5particles§f in the resulting particle stacks, although the §4amount§f may never be higher than that stated in §2JEI§f. More details on the §4amount§f calculation for output particle stacks can be found in the \"Target Chamber Maths\" quest."
+          "desc:8": "The §aDecay Chamber§r allows you to decompose the particles§f in a beam into their constituent particles§r. This can be very important for turning huge particles like §5Alpha Particles§r into smaller components for refining.\n\n\n§nConstruction§r\n\nDecay Chambers§f are constructed exactly like Target Chambers§f, only with a §7Decay Chamber Controller§f instead. A visualisation of a Decay Chamber§r (5x5x5) can be found in §2JEI§r and on the §2QMD Github Wiki.§f \n\n\n§nRequirements and Recipes§r\n\nThe Decay Chamber§f requires §6power§r and a §5particle beam§f. The resulting particles§f and their particle stack properties can be seen in the §2Decay Chamber GUI§r.\n\nDecay Chamber§f output beam calculations are exactly the same as Target Chamber output beam calculations. More details on the calculation for output particle stacks can be found in the \"Target Chamber Particle Properties\" quest.\n\nDecay Chambers§f can also have detectors installed in them to increase §eefficiency§r. Although efficiency won\u0027t increase the speed of the recipe in Decay Chambers§f, it will increase the §4amount§f of particles§f in the resulting particle stacks, although the amount§f may never be higher than that stated in §2JEI§f. "
         }
       },
       "tasks:9": {
@@ -58377,7 +58357,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Low-Gravity Deposition Chamber",
-          "desc:8": "The §7Low-Gravity Deposition Chamber§f is used to deposit §6exotic matter§f onto specially-prepaird §eDeposition Matrices§r. Due to its incredibly sensitive nature, it can §9only be built in space§r. This includes the moon or space stations."
+          "desc:8": "The §7Low-Gravity Deposition Chamber§f is used to deposit §6exotic matter§f onto specially-prepared §eDeposition Matrices§r. Due to its incredibly sensitive nature, it can §9only be built in space§r. This includes the moon or space stations."
         }
       },
       "tasks:9": {
@@ -59843,7 +59823,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "QMD 102: The Linear Accelerator",
-          "desc:8": "Now that you know how §5particles §fand particle stacks work, it\u0027s time to make use of those concepts to construct your first §3Linear Accelerator§f!\n\n§3Linear Accelerators§f (also known as §3LINACs§f) are your gateway to §9§1§9QMD§f, providing your first method of §5particle§f manipulation. Being an entry-level §3Accelerator§f, they also provide the particle stacks required for any recipe in §9QMD§f. \n\nTo construct a §3Linear Accelerator§f, make a cuboid of §7Accelerator Glass §for §7Accelerator Casings§f which is 5 blocks wide, 5 blocks tall, and as long as you want it (Min. 6 blocks, Max. 100 blocks). There must also be a §7Linear Accelerator Controller, Accelerator Coolant Vents§f in §aInput§e§f and §cOutput§f mode and an §7Accelerator Energy Port§f. Down the centre, there must be a continuous line of §7Accelerator Beam Blocks§f. \n\nWhere the §7Accelerator Beam Blocks §fmeet the §7Accelerator Casing§f, there must be an §7Accelerator Ion source§f at one end and an §7Accelerator Beam Port§f at the other. The particle stack can be conceptualised as a continuous beam travelling from the §7Ion Source§e§f to the §7Beam Port§f through the line of §7Beam Blocks. §fIt is recommend to leave one end of the §3Linear Accelerator §fopen, in the case that you need to increase the length of the §3Linear Accelerator §fto fit more components or coolers in. A screenshot of a §3Linear Accelerator §fcan be found on the §2QMD Github Wiki§f.\n\n§cNote: The Linear Accelerator can also be used to accelerate existing particle stacks by replacing the Accelerator Ion Source with an Accelerator Beam Port on input mode, then piping the particle stack in via that beam port.\n\n§fThe §\n§8Ion Source§f creates particle stacks from items placed in it, and recipes for §5particles §fcan be seen in §2JEI§f, as well as their relevant properties (§4amount§f, §6energy§e §fand §bfocus§f). While §6energy§f and §bfocus§f can subsequently be increased by §3Accelerators§f, §4Amount§f remains fixed and cannot be modified by §3Accelerators§f, only being dependent on the item placed in the §8Ion Source§f.\n\n§fThere are two types of components that can be constructed in a §3Linear Accelerator§f to do such a task: the §bQuadrapole Magnet§f and §dRadio Frequency Cavity (RF Cavity). §fThe §eDipole Magnet§f cannot be constructed in a §3Linear Accelerator§f despite being an accelerator component, and thus will be covered in a later quest.\n\nA §bQuadrapole Magnet§f is constructed from §74 Accelerator Electromagnets §fof the same type around the accelerator beam. §b§fEach §bQuadrapole Magnet §fstructure increases the quadrapole strength of the §3Accelerator§f§f by the amount as stated in the tooltip of the §7Electromagnet§f the structure is made out of. The total Quadrapole Strength can be seen in the accelerator§f GUI. \n\nThe total §bfocus§f gained can be found by multiplying the total Quadrapole Strength of the §3Linear Accelerator§f with the numerical value of the §5particle\u0027s§f charge, while the total §bfocus§f lost is the length of the beamline (seen in the accelerator GUI) multiplied by the beam block\u0027s attenutation rate. This is true for §nall§f §3accelerators§f!\n\nAn §dRF cavity§f is constructed from §d§f§7RF Cavity blocks§f of the same type in a ring of 8 around the accelerator beam. Each §dRF cavity§f structure increases the accelerating voltage of the §4§3accelerator§f by the amount as stated in the tooltip of the §8§7RF cavity§f the structure is made out of. The total accelerating voltage of the §3accelerator§f can be seen in the accelerator §fGUI.\n\nFor §3Linear Accelerators§f, the resulting particle\u0027s §6energy§f is calculated via the formula Emax\u003d E0 +|q|V, where E0 is the energy of the initial particle stack (normally 0 for an Ion source), |q| is the particle\u0027s numerical charge value (which can be seen in §a§2JEI§f under particle properties) and V is the accelerating voltage of the §3Linear Accelerator§f.\n\nWhen constructing your §3Linear Accelerator§f, first find a §7§ §2§aTarget Chamber§f recipe you would like to do via §2JEI§k§f, then look at the input §5particle§f and its properties, and place enough components in your §3accelerator§f to get your §5particle§f to the desired §6energy§f and §bfocus§f.\n\nYou\u0027ll probably want to make §eP-Type Doped Silicon§f §fin order to make §eAdvanced Processors§e§f to progress further in §9QMD§f. §eP-Type Doped Silicon §frequires §5Boron Ions §faccelerated to §6600KeV-1MeV§f with a §bfocus§f of§b 2§f. Thus, you\u0027ll want to place §dRF cavities§f in your accelerator until the accelerating voltage is between §6600KeV §fand §61MeV§f, and §bQuadrapole Magnets§f until the §bfocus§f of the §5Boron Ion§f is above §b2§f, taking into account §bfocus§f lost by the §5particle§f when travelling through §8particle blocks and beamline tubes §f(as mentioned in the previous quest).\n\n§c§fA resulting particle stack\u0027s properties can be seen in the accelerator §fGUI when the §3accelerator§f is given a §4redstone signal§f to switch it on. However,§c don\u0027t switch on your Linear Accelerator yet!§f Your §3Linear Accelerator§e§f has not been §9cooled§f yet, and will §cexplode§f if switched on! §9Cooling Mechanics§f will be covered in the next quest."
+          "desc:8": "Now that you know how §5particles§r work, it\u0027s time to make use of those concepts to construct your first §3QMD Multiblock§r! This quest will talk about §3Linear Accelerators§f (also known as §3LINACs§f), the first Accelerator you will build.\n\n\n§nLinear Accelerators\n\n§3LINACs§f are your gateway to §9§1§9QMD§f, providing your first method of §5particle manipulation§r. Being an entry-level Accelerator§f, they also produce the particles required for any recipe in QMD§f. \n\n\n§nConstruction§r\n\nA visualisation of an empty and filled §3Linear Accelerator§r is avaliable in §2JEI§r and the §2QMD Github Wiki§r.\n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions: 5 blocks wide, 5 blocks tall, variable length (Min. 6 blocks, Max. 100 blocks), with a continuous line of §7Accelerator Beam Blocks§f in the centre\n\nRequired blocks on long sides:\n- §7Linear Accelerator Controller\n§r- §72 Accelerator Coolant Vents§f in §aInput§e§f and §cOutput§f mode\n§-- §7Accelerator Energy Port§f\n\nRequired blocks at the ends of the Accelerator, in the centre:\n- §7Accelerator Ion source§f facing inwards at one end \n- §7Accelerator Beam Port§f in §cOutput§r mode at the other end \n\nThe particle stack is produced by the §7Ion Source§r and exits the Accelerator via the §7Beam Port§r. \n\n§cNote:§r The Linear Accelerator can also be used to accelerate existing particle stacks by replacing the Accelerator Ion Source with an Accelerator Beam Port on input mode, then piping the particle stack in via that beam port.\n\n\nThe remaining empty space in the Linear Accelerator can now be filled up with §7Accelerator Components§r (§bQuadrapole Magnets§r and §dRF Cavities§r, covered in relevant quests below), to accelerate particles, and §9Coolers§r (covered in \"Passive Cooling\"), to cool the Accelerator.\n\n\n§nRequirements§r\n\nAll Accelerators have similar requirements for operation.\n\n1. Accelerators must be supplied with §6power§r to operate. \n\n2. Accelerators must be cooled with §9coolers§r (passive cooling) and §1coolant§r (active cooling) in order to not §coverheat§r and §cexplode§r. Cooling mechanics are covered in the quests above.\n\n3. Accelerators are switched on via a §credstone signal§r. The output particle\u0027s energy is §c(redstone strength)§r/15 of the §6maximum particle energy§f, which is covered in the \"RF Cavity\" quest.\n\nIn addition, for a LINAC to produce §5particles§r, the §7Ion Source§r must be supplied with §efilled canisters§r. Ion sources are covered in \"Ion Source\"."
         }
       },
       "tasks:9": {
@@ -59862,32 +59842,14 @@
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "qmd:accelerator_source",
-              "Count:3": 1,
+              "id:8": "qmd:accelerator_casing",
+              "Count:3": 64,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "2:10": {
-              "id:8": "qmd:accelerator_beam_port",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "3:10": {
-              "id:8": "qmd:accelerator_energy_port",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "4:10": {
-              "id:8": "qmd:accelerator_casing",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "5:10": {
               "id:8": "qmd:accelerator_beam",
-              "Count:3": 1,
+              "Count:3": 6,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -59901,14 +59863,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "qmd:canister",
-              "Count:3": 8,
-              "tag:10": {
-                "storage:10": {
-                  "amount:3": 6000
-                }
-              },
-              "Damage:2": 6,
+              "id:8": "qmd:accelerator_glass",
+              "Count:3": 64,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -59941,8 +59898,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "QMD 103: Accelerator Cooling",
-          "desc:8": "Being a very sophisticated piece of machinery, your §3Linear Accelerator§f must be cooled in order for it to function. All §3Accelerator§f components produce §cheat§f, and if any component §coverheats§e§f while operating, it will §cexplode§f! §4§3Accelerators§f must be cooled with both §9Accelerator Coolers§f and an §1active coolant§f to operate. Both mechanics will be covered in this quest.\n\nNote that §nall§f§f §2§3Accelerators§f utilise the same heating mechanic, even §3Beam Diverters§f! Thus, anything stated in this guide will hold true for all §3Accelerator Multiblocks§f.\n\nThere are 2 sources of §cheating§f in an §3accelerator§f. \n\nThe first source of heating is §cexternal heating§f, which is higher when the difference between the §3accelerator§f and warm external environment is higher and the surface area of the §3accelerator§f is higher*. \n\nThe second source of heating is §cinternal heating§f, caused by §3accelerator§f components and only present when an §3accelerator§f is §nswitched on§f. The sum of the §cheat§f produced by all §3accelerator§f components (each individual component\u0027s §cheat§f production can be seen in the tooltip of the block used to construct that component) gives the §cinternal heating§f. \n\nBoth the §cinternal heating§f and §cexternal heating§f add up to give the §3accelerator\u0027s §f§cmaximum heating§f.\n\nIn order to prevent your §3accelerator§f from §cexploding§f when operating, the sum of the §9cooling§f from all the §9Accelerator Coolers§f placed in the §3accelerator §e§fmust exceed the §cmaximum heating§f of the §3accelerator§f. Both the max§c§fimum §cheating§f and maximum §9cooling§f§f can be seen by hovering over the heat bar in the accelerator§f GUI.\n\n§9Accelerator Coolers§f, much like §2Nuclearcraft: Overhaul §fcoolers§f, have placement rules regarding where they can be placed (next to an electromagnet, next to an RF Cavity, etc.). It is highly recommended that you play around with §9Accelerator Cooler§f configurations to find efficient ways to arrange §9coolers§f and components to maximise §9cooling§f, and thus the number of components you can fit into your §3accelerator§f. \n\nNote that some §9coolers§f will not be avaliable for use in §3Linear Accelerators§f as they are dependent on §8electromagnet yokes§f for placement, a block part of §edipole magnets§f which cannot be constructed in §3Linear Accelerators§f.\n\nEven when the §3§f§9cooling§f is higher than §cmaximum heating§f, the temperature§f of the §3accelerator§f must be cooled below the lowest operating temperature out of all the components in the §3accelerator§,. §fThe operating temperature of a component can be §fseen in the tooltip of the block used to§f construct that specific component. This maximum temperature the §3accelerator§f can be at before it stops working can be viewed in the accelerator§f GUI.\n\nTo do this, an §1active coolant§f that can cool the accelerator below the lowest operating temperature is supplied via an input coolant vent, and used up coolant is emptied from the §3§foutput coolant vent. §1Active coolants §fcool an §3accelerator§f to its own temperature, provided that §9cooling §fis higher than §cmaximum heating§f. \n\nValid §1active coolants§f and their temperatures can be seen in §2JEI§f via accelerator controllers. §c§f§1Coolant§f use rate as well as exhaust coolant output rate can be seen via the §9coolant bar§f in the accelerator§e§f GUI, while the temperature of the §3accelerator §fcan be seen in the GUI itself.\n\nFor example, if an §3accelerator§e§f contains a Nb-Sn quadrapole (operating temperature of 18K) and an Nb-Ti quadrapole (operating temperature of 10K), the §3accelerator§f must be cooled below 10K to operate. As liquid helium is the only §2§1active coolant§f with a temperature below 10K (temperature of 4K), it is the only §1active coolant§f that can be used to cool the §3accelerator§f below 4K in this scenario.\n\n§cNote that used up coolant must constantly be emptied from the accelerator for it to work, otherwise new coolant cannot be input into the accelerator to keep cooling it and the accelerator will overheat and explode!\n\n§fWith the exception of water, all §1active coolants§f are output in their gaseous forms in the same ratio as their gas:liquid conversion ratio in a supercooler. What this means is that you can form a closed loop of §1active coolant§f by pumping exhaust §1coolant§f from the output coolant vent of an §3accelerator§f into a Supercooler to turn it back into its liquid version, then pump the now cooled §1active coolant§f back into the input coolant vent of the §3accelerator§f, with no loss in §1active coolant§f.\n\n*More details on external heating calculation can be found on the §2QMD Github Wiki§f."
+          "name:8": "Passive Cooling",
+          "desc:8": "§lPassive Cooling Requirement:§r The §9sum of the cooling§f from all §9Accelerator Coolers §e§fmust §6exceed§r the §cmaximum heating§f (the sum of all component heating and external heating) of the accelerator§f. \n\nBoth the cooling and max§c§fimum heating§f can be seen by hovering over the §cheat bar§r (second bar from the left) in the §2Accelerator GUI§r. \n\n\n§nFull Explanation§r\n\nEach component (e.g Quadrapole, RF Cavity) placed in an Accelerator §cheats it up§r by the amount shown in the component block\u0027s §6tooltip§r (Note: This is the heating value of §6the entire component§r, not just one block!). Thus, §9Accelerator Coolers§r are required to cool the Accelerator.\n\n§9Accelerator Coolers§f can be placed in §6any remaining unoccupied space§r in an Accelerator, and they cool the Accelerator by the amount shown in their §6tooltip§r. However, much like §2Nuclearcraft: Overhaul §fcoolers§f, they have placement rules regarding where they can be placed (next to an electromagnet, next to an RF Cavity, etc.). \n\nIt is highly recommended that you play around with §9Accelerator Cooler configurations§r to find efficient ways to arrange coolers§f and components to maximise §9cooling§f, and thus the number of components you can fit into your accelerator§f."
         }
       },
       "tasks:9": {
@@ -59956,19 +59913,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "qmd:part",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "qmd:accelerator_vent",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "nuclearcraft:supercooler",
-              "Count:3": 1,
+              "Count:3": 16,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -59978,36 +59923,25 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 1,
+          "choices:9": {
             "0:10": {
-              "id:8": "enderio:block_tank",
-              "Count:3": 1,
-              "tag:10": {
-                "enderio:data:10": {
-                  "faceModes-:1": 1,
-                  "voidMode:3": 2,
-                  "outputQueue:10": {
-                    "size:3": 0
-                  },
-                  "tank:10": {
-                    "FluidName:8": "liquid_helium",
-                    "Capacity:3": 16000,
-                    "Amount:3": 16000
-                  },
-                  "inventory:10": {
-                    "size:3": 5,
-                    "4+:1": 1,
-                    "3+:1": 1,
-                    "2+:1": 1,
-                    "1+:1": 1,
-                    "0+:1": 1
-                  },
-                  "redstoneControlMode:3": 0
-                }
-              },
-              "Damage:2": 0,
+              "id:8": "qmd:accelerator_cooler1",
+              "Count:3": 8,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "qmd:accelerator_cooler2",
+              "Count:3": 8,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "qmd:accelerator_cooler2",
+              "Count:3": 8,
+              "Damage:2": 7,
               "OreDict:8": ""
             }
           }
@@ -60017,7 +59951,7 @@
     "776:10": {
       "questID:3": 776,
       "preRequisites:11": [
-        734
+        816
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -60041,7 +59975,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The Synchrotron",
-          "desc:8": "You\u0027ve probably found out by now that your §3Linear Accelerator§f is pretty weak, and has difficulty getting the §6energy§f of a particle beam anywhere above §620MeV§f. Enter: §3Synchrotron Accelerators§f.\n\nThe §3Synchrotron Accelerator§f is a cyclic §3Particle Accelerator§f in which the accelerating particle beam travels around a fixed closed-loop path. §3Synchrotron Accelerators§f are capable of imparting §4massive§f amounts of §6energy§f to §5particles§f, up to the GeV or even TeV range! You will need §3Synchrotrons§f capable of accelerating §5particles§f to the §6150GeV§f range for the highest-energy recipes in the mod, and they\u0027re quite capable of reaching that §6energy§f requirement.\n\nHowever, §cSynchrotrons are not replacements for Linear Accelerators!§f A §3Synchrotron§f can only accelerate §5particles§f with a minimum §6energy§f of §65MeV§f, and cannot have §8Ion Sources§f placed in them. Thus, §3Linear Accelerators§f will still act as the start of any §9QMD§f setup, producing §5particles§f and accelerating them to the required §65MeV§f before the §3Synchrotron§f accelerates them to much greater §6energies§f.\n\nBefore delving into §3Synchrotron§f construction, it\u0027s worth talking about §eDipole Magnets§f first. §eDipole Magnets§f bend the path of particle beams, and are created by placing an §7Accelerator Electromagnet§f of the same type above and below a beam and the filling the rest of the 3x3x3 space around that beam with §7Accelerator Electromagnet Yokes§f. They can be placed §nanywhere§f in a §3Synchrotron§f, even on straight beam lines! However, a minimum of 4 §eDipole Magnets§f must be placed in the corners of a §3Synchrotron.§f \n\nEach §eDipole Magnet§f structure increases the Dipole Strength of the §4§3accelerator§f by the amount as stated in the tooltip of the §8§7Electromagnet§f the structure is made out of. The total Dipole Strength of the §3accelerator§f can be seen in the accelerator §fGUI.\n\nTo construct a §3Synchrotron§f, construct a square torus of §7Accelerator Glass§f or §7Casings§f that is 5 blocks wide, 5 blocks tall, and as large as you want it (min. exterior length: 11 blocks, max: 100 blocks). Like all §3Accelerators§f, they require a §7Coolant vent§f in input and output modes and an §7Energy Port§f. There must be a continuous ring of §7Accelerator Beams§f down the centre, like in the §3Linear Accelerator§f. Any §7Beam Port§f must be placed on the same level as the beam ring and there must be a §7beam block§f connecting it to the beam ring. At each corner and beam port intersection, there must be a §eDipole Magnet§f. A screenshot of a §3Synchrotron Accelerator§f can be found on the §2QMD Github Wiki.§f \n\nUnlike the §3Linear Accelerator§f, §3Synchrotrons§f can have multiple §7Beam Ports§f, but only one can be an input and output at any given time. A §4redstone pulse§f applied to a §7beam port§f will make that beam port the active beam port. What it switches to (either output or input) can be controlled by shift right clicking the beam port with the multitool.\n\nA §3Synchrotron Accelerator§f has the same requirements as the §3Linear Accelerator§f and any other §3Accelerator§f, requring power, §9cooling§f and §1active coolant§f. A §4redstone signal§f applied to the §7Synchrotron Accelerator Controller§f will switch it on. Just like a §3Linear Accelerator§f, when a §3Synchrotron§f is switched on, the resulting §5particle\u0027s§f properties can be seen in the accelerator GUI.\n\nThe §bfocus§f gained or lost by a §5particle§f travelling through a §3Synchrotron§f is calculated in exactly the same way as a §3Linear Accelerator§f.\n\nOn the other hand, the §6energy§f of a §5particle§f is affedted by different factors based on how heavy the §5particle§f is. While the energy of both increases when the radius of the §3Synchrotron§f increases, for heavier §5particles§f like the §5proton§f, the output §6energy§f increases when the Dipole Strength increases, while for lighter §5particles§f like the §5electron§f, the output §6energy§f increases when Accelerating Voltage increases. The formulas governing the output §6energy§f are detailed in the quest \"Synchrotron Maths\".\n\nThe strength of the §4redstone signal§f changes the output §6particle energy§f to be (redstone strength)/15 of the §6maximum particle energy§f. While the output §6particle energy§f of a §3Linear Accelerator§f can also be modified this way, this function is much more useful for the §3Synchrotron§f, where a precise §6energy§f that matches that of the recipe is harder to achieve than in a §3Linear Accelerator§f.\n\nIn order to use a §3Synchrotron§f in a §9QMD§f setup, you first need a §3Linear Accelerator§f capable of accelerating a §5particle§f up to §65MeV§f, while giving it a high enough §bfocus§f to enter the §3Synchrotron§f. I would recommend designing a standard §3Linear Accelerator§f design for this purpose, such that you can use it in any §9QMD§f setup you construct subsequently.\n\nAfter this, you need to construct a §3Synchrotron§f capable of providing the §6energy§f and §bfocus§f required for your recipe. While an understanding of the §6energy§f calculation for an output §5particle§f can prove very handy, it\u0027s not mandatory, and it\u0027s possible to get by through messing around with a §3Synchrotron\u0027s§f components in a creative testing world until it emits a §5particle§f with the desired §bfocus§f and §6energy§f as seen in the accelerator GUI. §4Redstone control§f can also prove to be handy if you have constructed a §3Synchrotron§f that\u0027s too strong, or are aiming for a very specific particle §6energy§f."
+          "desc:8": "You\u0027ve probably found out by now that your Linear Accelerator is pretty weak, and has difficulty accelerating particles anywhere above §620MeV§f. Enter: §3Synchrotron Accelerators§f.\n\nThe Synchrotron is a cyclic §3Particle Accelerator§f capable of imparting §4massive§f amounts of energy to particles, up to the GeV or even TeV range!\n\nHowever, §cSynchrotrons are not replacements for Linear Accelerators!§f A Synchrotron§f §ccannot§r have §7Ion Sources§f placed in them, and can only accelerate particles§f with a §6minimum energy§f of §65MeV§f. Thus, you will still need §3LINACs§r to produce and accelerate particles up to 5MeV for use in Synchrotrons.\n\n\n§nConstruction§r\n\nA visualisation of a Synchrotron can be found on the §2QMD Github Wiki.§f \n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions:§r A square torus with variable exterior length (min. exterior length: 11 blocks, max: 100 blocks), and tunnels 5 blocks wide, 5 blocks tall, with a continuous ring of §7Accelerator Beam Blocks§r down the centre of the tunnels and §eDipole Magnets§r in the corners\n\nRequired blocks on sides:\n- §7Synchrotron Controller§r\n- §72 Accelerator Coolant Vents§r in §aInput§r and §cOutput§r mode\n- §7Accelerator Energy Port§r\n- §72 Accelerator Beam Ports§r in §aInput§r and §cOutput§r mode at the same level as the beam ring, connected to the beam ring by a §7Beam Block§r, with a §eDipole Magnet§r at the beam block intersection\n\n§cNote:§r §eDipole Magnets§r can be placed §nanywhere§f in a Synchrotron, §ceven on straight beam lines§r! However, a minimum of 4 Dipole Magnets must be placed in the corners of a Synchrotron.§f \n\nUnlike the LINAC, Synchrotrons§f can have §7more than two Beam Ports§f, but there can only be one input and one output port at any time. Applying a §credstone pulse§f to a beam port will activate it, and its active state (input/output) can be controlled by shift right clicking the beam port with the §8Multitool§r.\n\n\n§nRequirements§r\n\nA Synchrotron has the same requirements as the Linear Accelerator§f and any other Accelerator§f, requring §6power, §9cooling§f and §1active coolant§f. \n\nA §credstone signal§f applied to the §7Synchrotron Accelerator Controller§f will switch it on, with the output particle\u0027s energy being §c(redstone strength)§r/15 of the §6maximum particle energy§f. Just like a Linear Accelerator, when a Synchrotron is switched on, the resulting particle\u0027s properties can be seen in the §2Accelerator GUI§r."
         }
       },
       "tasks:9": {
@@ -60081,7 +60015,7 @@
     "777:10": {
       "questID:3": 777,
       "preRequisites:11": [
-        734
+        816
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -60105,7 +60039,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Diversion",
-          "desc:8": "The §3Beam Diverter§f allows you to turn beams 90 degrees in any direction, even vertically! This is especially useful in more complex §9QMD§f setups. §3Beam Diverters§f can essentially be thought of as §3mini accelerators§f, whose only purpose is to bend a particle beam.\n\nTo construct a §3Beam Diverter§f, construct a 5x5x5 cube of accelerator casing that has a §eDipole Magnet§f filling the centre. The §eDipole Magnet§f can also be in the vertical direction. §eDipole Magnets §fand their construction are covered in the quest on §3Synchrotrons§f. Note that all the same requirements of a accelerator are required, thus it must have a §7Coolant vent§f in input output mode and an §7Energy Port§f. §3Beam Diverters§f do not need §9coolers§f in them, however they still need to be cooled with §1active coolant§f and powered. A screenshot of a §3Beam Diverter§f can be found on the §2QMD Github Wiki§f.\n\nTo activate the §3Beam Diverter§f, simply give the Beam Diverter Controller a §4redstone signal§f.\n\nThe §6maximum energy§f the §3Beam Diverter§f can bend is dependent on the electromagnet used, with stronger electromagnets capable of bending higher energy beams. Particle beams also lose §6energy§f and §bfocus §fwhen bent in the §3Beam Diverter§f, with the energy loss increasing as the particle beam\u0027s initial §6energy§f increases.\n\nBoth the maximum energy and energy loss can be seen in the beam diverter GUI, while the §bfocus§f loss is calculated as per normal. \n\nMore details on the maximum energy and energy loss calculations can be found on the §2QMD Github Wiki§f."
+          "desc:8": "The §3Beam Diverter§f allows you to turn beams 90 degrees in any direction, even vertically! This is especially useful in more complex §9QMD setups§r that require manipulation of multiple beams. Beam Diverters§f can essentially be thought of as §3mini accelerators§f, whose only purpose is to bend a particle beam.\n\n\n§nConstruction§r\n\nA visualisation of a Beam Diverter can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions: 5x5x5 with a §eDipole Magnet§r within, in either horizontal or vertical direction\n\nRequired blocks on sides:\n- §7Beam Diverter Controller§r\n- §72 Accelerator Coolant Vents§f in §aInput§e§f and §cOutput§f mode\n- §7Accelerator Energy Port§f§r \n- §72 Accelerator Beam Blocks§r in §aInput§e§f and §cOutput§f mode in the directions you want to turn the beam in\n\n\n§nRequirements§r\n\nBeam Diverters require §6power§r and §1active coolant§r, like all other accelerators. However, they do not require §9coolers§f.\n\nTo activate the Beam Diverter, simply give the Beam Diverter Controller a §credstone signal§f.\n\nBeam Diverters can only bend particle beams with energies below their §6maximum energy§.§r. This is dependent on the electromagnet used in the Dipole Magnet, with stronger electromagnets capable of bending higher energy beams. \n\n\n§nOutput Particle Properties§r§r\n\nParticle beams lose §6energy§f and §bfocus §fwhen bent in the Beam Diverter, with the energy loss increasing as the particle beam\u0027s §6initial energy§f increases. Both the maximum energy and energy loss can be seen in the §2Beam Diverter GUI§r, while the §bfocus loss§r is calculated as per normal. \n\nMore details on the maximum energy and energy loss calculations can be found on the §2QMD Github Wiki§f."
         }
       },
       "tasks:9": {
@@ -60145,7 +60079,7 @@
     "778:10": {
       "questID:3": 778,
       "preRequisites:11": [
-        734
+        776
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -60157,7 +60091,23 @@
           "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "qmd:canister",
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "slots:3": 0,
+                "charms:9": {
+                  "0:10": {
+                    "duration:3": 0,
+                    "charm:10": {
+                      "name:8": "treasure2:glorious_harvesting"
+                    },
+                    "value:6": 75.0,
+                    "percent:6": 5.0
+                  }
+                }
+              },
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "treasure2:dwarven_talisman",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -60169,7 +60119,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Neutral Particles",
-          "desc:8": "A particularly astute player may have noticed that all §3accelerator§f formulas require the §5particle\u0027s§f charge. Thus, how are §5neutral particles§f accelerated? The short answer: §cThey aren\u0027t.§f\n\nNeutral, or §5chargeless particles§f cannot be interacted with in any way by §3accelerators§f. They can\u0027t even have their beams bent by §3beam diverters!§f Their particle stack properties (§6energy, §bfocus, §4amount§f) are solely dependent on the recipe from which they are produced. The relevant calculations for §aTarget Chamber §f(and by extension, §aDecay Chamber§f) recipes can be found in the quest \"Target Chamber Maths\". \n\nTo use a §5neutral particle§f in a recipe, it must be created with the right §6energy§f and sufficient§b focus§f in whichever recipe you plan to use to create it. This will almost certainly require you to determine the correct recipe to use to obtain such a §5particle§f, calculate the §6energy§f of the input §5particle§f used in the recipe such that the neutral §5particle§f created is of the correct§6 energy§f, and ensure the §bfocus§f is high enough such that the created§5 neutral particle§f has enough §bfocus§f to reach its §aTarget Chamber§f and carry out your desired recipe. The §aTarget Chamber§f in which this recipe is carried out must also be directly behind the §b§aTarget Chamber§f that created the §5neutral particle§f, as the §5neutral particle§f beam cannot be diverted.\n\nWhile you\u0027re unlikely to be using §5neutral particles§f in many recipes, knowing how to use them is still a useful skill, and will immediately come in handy in the next quest."
+          "desc:8": "A particularly astute player may have noticed that all accelerator formulas require the particle\u0027s charge. Thus, how are §5neutral particles§f accelerated? The short answer: §cThey aren\u0027t.§f\n\nNeutral, or §5chargeless particles§f cannot be accelerated in any way by §3accelerators§f. They can\u0027t even have their beams bent by §3beam diverters§r! Their particle stack properties (§6energy, §bfocus, §4amount§f) are solely dependent on the recipe from which they are produced. \n\n\n§nHow to use Neutral Particles§r\n\nIf this is the case, how do we utilise neutral particles? \n\nTo use a neutral particle, it must be §ncreated§r with enough §6energy§f and §bfocus§f to carry out your desired recipe. This differs from most particles, which can be accelerated/decelerated to obtain the desired energy and focus.\n\nIt is recommended that you find suitable recipes that are capable of producing a neutral particle with the required energy and focus by calculating their §5output particle properties§r. The relevant calculations for §aTarget Chamber §fand §aDecay Chamber§f recipes can be found in the quest \"Target Chamber Particle Properties\". \n\nIn addition, the multiblock in which the recipe is carried out must also be §ndirectly behind§r the multiblock that created the neutral particle, as the neutral particle beam §ccannot be diverted§r.\n\nWhile you won\u0027t be using neutral particles in many recipes, knowing how to use them is still a useful skill, and will immediately come in handy in the next quest."
         }
       },
       "tasks:9": {
@@ -60207,7 +60157,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Detectors",
-          "desc:8": "As you already know, the §4amount§f of §5particles§e§f in a particle stack is solely dependent on the item placed in the §8Ion Source§f, and cannot be modified by §3Accelerators§f. Does that mean there is no way to increase the speed of §aTarget Chamber§e§f recipes?\n\nEnter: detectors. Detectors increase the efficiency of any §aParticle Chamber§f, including the §aTarget Chamber§f. \n\nFor the §aTarget Chamber§f specifically, a higher efficiency leads to the recipe being processed faster, with the new recipe time being the old recipe time divided by the §aTarget Chamber§f efficiency.\n\nFor both the §aTarget Chamber§f and other §aParticle Chambers§f, a higher efficiency also increases the §4amount§f of §5particles§f in the resulting particle stacks, although the §4amount§f may never be higher than that stated in §2JEI§f. More details on the §4amount§f calculation for output particle stacks can be found in the \"Target Chamber Maths\" quest."
+          "desc:8": "As you already know, the amount of particles in a particle stack is §csolely dependent§r on the item placed in the Ion Source, and §ncannot be modified§r by Accelerators. Does that mean there is no way to increase the speed of Target Chamber recipes?\n\nEnter: §6Detectors§r. Detectors increase the §eefficiency§r of §aany Particle Chamber§f, including the Target Chamber. A visualisation of a 5x5x5 target chamber can be found in §2JEI§r.\n\nFor the Target Chamber specifically, a higher efficiency §6lowers the amount of particles required§r for a recipe to be processed, leading to recipes being completed faster. The new amount of particles required is equal to the original amount divided by the Target Chamber Efficiency, although the amount required §ccan never be lower than 1Mpu§r.\n\nFor both the Target Chamber§f and other Particle Chambers§f, a higher efficiency also increases the §4amount§f of §5particles§f in the resulting particle stacks, although the amount may never be higher than that stated in §2JEI§f. More details on the amount calculation for output particle stacks can be found in the \"Target Chamber Particle Properties\" quest."
         }
       },
       "tasks:9": {
@@ -60284,7 +60234,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Better Detectors",
-          "desc:8": "Now that you can make §e§6§eadvanced processors§f, you have access to better detectors.\n\nThese detectors won\u0027t replace your old detectors completely, but will certainly help in improving §aparticle chamber §fefficiency."
+          "desc:8": "Now that you can make §e§6§eadvanced processors§f, you have access to better detectors.\n\nThese detectors won\u0027t replace your old detectors completely, but will certainly help in improving §eparticle chamber efficiency§r."
         }
       },
       "tasks:9": {
@@ -60371,7 +60321,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Blasting Metals",
-          "desc:8": "With the higher §6energies§f from your §3Synchrotron Accelerator§f, you are now capable of accelerating §5particles §fto the §6100MeV-1GeV §frange. §5Protons§f with this energy collide with §emetals §for §eradioactive isotopes§f in §aTarget Chambers§f to produce §elight fission waste§f and §eheavy fission waste§f, respectively.\n\nWhile §eheavy fission waste§f isn\u0027t mandatory for progression, producing §eNeodymium §fand §eMolybdenum§f which can also be obtained with other methods, §elight fission waste§f is one of the two ways to make §eStrontium§f, a material that can only be obtained via §9QMD§f and is crucial for further progression in the mod."
+          "desc:8": "With the §6higher energies§f from your §3Synchrotron Accelerator§f, you are now capable of accelerating particles §fto the §6100MeV-1GeV §frange. Protons§f with this energy collide with metals or radioactive isotopes in Target Chambers to produce §elight fission waste§f and §eheavy fission waste§f, respectively.\n\nWhile heavy fission waste§f isn\u0027t mandatory for progression, producing Neodymium §fand Molybdenum§f which can also be obtained with other methods, light fission waste§f is one of the two ways to make §eStrontium§f, a material that can only be obtained via QMD§f and is §6crucial§r for further progression in the mod."
         }
       },
       "tasks:9": {
@@ -60511,7 +60461,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Deceleration",
-          "desc:8": "§3Decelerators§f lower the energy of §5particles§f that go in them. This is especially useful for creating §5antimatter compounds§f and §6exotic matter§f in §7Neutral Exotic Containment.\n\n§3Decelerators §fare built in the exact same way as §3Synchrotrons§f, with three notable differences:\n\n1. They require a §7Decelerator Controller.§f\n\n2. They cannot have §7Synchrotron Ports§f installed.§f\n\n3. Only one §dRF Cavity§f is required; any more than one serves no purpose and wastes power.\n\nA screenshot of a §3Decelerator§f can be found on the §2QMD Github Wiki.§f \n\nMuch like §3Synchrotrons, Decelerators§f can also have multiple Beam Ports. The rules regarding these are the same as in the §3Synchrotron§f.\n\nA §3Decelerator§f has the same requirements as any other §3Accelerator§f, requring power, §9cooling§f and §1active coolant§f. A §4redstone signal§f applied to the §7Decelerator Controller§f will switch it on. Just like any other §3Accelerator§f, when a §3Decelerator§f is switched on, the resulting §5particle\u0027s§f properties can be seen in the accelerator GUI.\n\nThe §bfocus§f gained or lost by a §5particle§f travelling through a §3Decelerator§f is calculated in exactly the same way as any other §3Accelerator§f.\n\n§3Decelerators§f reduce the §6energy§f of any §5particle§f input into them to 0eV. The maximum §6energy§f a §5particle§f piped in can have is the same as the §3Synchrotron\u0027s§f max particle energy from the Dipole Strength. This is Ef\u003d(q*Bd*R)^2/(2m) where q is the §5particle\u0027s§f charge, Bd is the Dipole Strength of the §3Decelerator§f, R is the radius of the §3Decelerator§f and m is the mass of the particle in MeV/c^2. \n\nWhat this means is that the exact same design for a §3Synchrotron§f can be used for a §3Decelerator§f, where the maximum §6energy§f of an input §5particle§f for the §3Decelerator§f is equal to the maximum §6energy§f of the §3Synchrotron§f design (provided the §3Synchrotron§f was designed to accelerate heavy particles like §5protons§f).\n\nThe §6energy§f of the output §5particles§f is determined by the §4redstone signal strength§f applied to the controller. A strength of 15 will reduce the particle\u0027s §6energy§f to 0eV, required for creating §6exotic fluids§f in §7Neutral Exotic Containment§f. For any other §4redstone strength§f, the output §6particle energy§f is E\u003dEf(1-Sr/15) where Sr is the redstone signal strength. This is useful for §aCollision Chamber§f recipes that require a very small non-zero §6energy§f, like §5anti-triton§f."
+          "desc:8": "§3Decelerators§f lower the energy of particles that go in them to a minimum of §60eV§r. This is especially useful for creating §5antimatter compounds§r and §6exotic matter§r in §7Neutral Exotic Containment§r.\n\n\n§nConstruction§r\n\nA screenshot of a §3Decelerator§f can be found on the §2QMD Github Wiki.§f \n\nDecelerators are built in the exact same way as Synchrotrons, with three notable differences:\n\n1. They require a §7Decelerator Controller.§f\n2. They cannot have §7Synchrotron Ports§f installed.§f\n3. Only one §dRF Cavity§f is required; any more than one serves no purpose and wastes power.\n\n\n§nRequirements§r\n\nA Decelerator has the same requirements as any other Accelerator, requring §6power§r, §9cooling§f and §1active coolant§f. \n\nA §credstone signal§f applied to the §7Decelerator Controller§f will switch it on. When a Decelerator is switched on, the resulting particle\u0027s properties can be seen in the §2Accelerator GUI§r.\n\n\n§nOutput Particle Properties§r\n\nThe §bfocus§f gained or lost by a particle travelling through a Decelerator is calculated in exactly the same way as any other Accelerator.\n\nDecelerators §9lower§r the energy of particle inputs to a minimum of 0eV. However, they can only accept particle inputs with energies below their §6maximum energy§r. This maximum energy is calculated exactly the same way as the Synchrotron\u0027s §emaximum energy from Dipole Strength§r as discussed in the quest \"Synchrotron Particle Properties\".\n\nWhat this means is that the exact same design for a Synchrotron can be used for a Decelerator, as the §6maximum energy§f of the resultant Decelerator will be equal to the §emaximum energy from Dipole Strength§r of the §3Synchrotron§f.\n\n\n§nRedstone Control§r\n\nThe energy of the output particles is given by (15 - §cRedstone Signal Strength§r)/15 * §6Maximum Energy§r. This means that a signal strength of 15 lowers the energy to 0eV, while anything lower lowers the energy to a fraction of the maximum energy. This is useful for §aCollision Chamber recipes§r that require a very small non-zero §6energy§f, like §5anti-triton§f."
         }
       },
       "tasks:9": {
@@ -60575,7 +60525,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Let There Be Light",
-          "desc:8": "Did someone say \"light\"?\n\n§7Synchrotron Ports§f are special ports that act like §7Beam Ports§f, but emit §5Synchrotron Radiation (High Energy Photons) §fwhen §5particles§f are being accelerated in the §3Synchrotron§f. They follow the same placement rules as §7Beam Ports§f.\n\nThe §4amount (pu/t) §fof §5photons§f produced, as well as their §bfocus§f, is equal to the §4amount§f and §bfocus §fof the particle stack being accelerated in the §3Synchrotron. §f\n\nThe §6energy§f (in MeV) is Es\u003dE^3/(2πR(1000m)^3) where E is the energy (in MeV) of the §5particle§f outputted by the §3Synchrotron§f, R is the radius of the §3Synchrotron§f and m is the mass of the particle in MeV/c^2. Therefore, light §5particles§f like §5electrons§f are best used to generate §5photons§f.\n\nWhile §5Photons§f aren\u0027t used in many recipes, they may still prove to be useful, depending on the §eitems§f you\u0027re trying to acquire."
+          "desc:8": "Did someone say \"light\"?\n\n§7Synchrotron Ports§f are special ports that act like §7Beam Ports§f, but emit §5Synchrotron Radiation (High Energy Photons) §fwhen particles§f are being accelerated in the Synchrotron. They follow the same placement rules as Beam Ports.\n\nThe §4amount (pu/t) §fof photons§f produced, as well as their §bfocus§f, is equal to the amount and focus §fof the particle stack being accelerated in the Synchrotron. §f\n\nThe §6energy§f (in MeV) is given by:\n\n§6Energy of Photon (MeV)§r \u003d \n(§6Energy of Particle (MeV)§r)^3 / (2π * §7Synchrotron \nRadius§r * (1000 * §dParticle Mass (MeV/c^2)§r)^3) \n\nTherefore, §elight particles§f like §5electrons§f are best used to generate photons§f.\n\nWhile Photons§f aren\u0027t used in many recipes, they may still prove to be useful, depending on the items§f you\u0027re trying to acquire."
         }
       },
       "tasks:9": {
@@ -60653,8 +60603,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Synchrotron Maths",
-          "desc:8": "This quest details the maths behind the §6energy§f of a resultant §\n§5particle§\n§f from a §3Synchrotron§f. While it isn\u0027t completely necessary for §3Synchrotron§f construction, an understanding of the formulas can help greatly when planning out a new §3Synchrotron§f.\n\nThe §6energy§f of the resulting particle stack is limited by 2 factors: the Dipole Field Strength and Synchrotron Radiation Losses. Essentially, both factors put a separate limit on the §7§6energy§e§f of the resulting particle stack (which can be calculated), and the lower limit becomes the maximum §6energy§f of the resulting particle stack (at maximum §4redstone strength§f).\n\nThe maximum §6energy§f (in GeV) from the Dipole Strength is Ef\u003d(q*Bd*R)^2/(2m) where q is the §5particle\u0027s§f charge, Bd is the total Dipole Strength of the §3Synchrotron§f, R is the radius of the §3Synchrotron§f and m is the mass of the §5particle§f in MeV/c^2. This will be the limiting factor for heavier §5particles§f, like the §5proton§f.\n\nThe maximum §6energy§f (in GeV) from the Radiation losses is Er\u003dm(3VR/|q|)^0.25 where V is the §3Synchrotron\u0027s§f voltage (in kV). This will be the limiting factor for lighter §5particles§f, like the §5electron§f.\n\nWhen using the formulas to calculate an appropiate §3Synchrotron§f for your recipe, it helps to have standard §9cooler§f configurations and patterns to be used in a §3Synchrotron§f, such that you are able to calculate standard §3Synchrotron§f radii and §9cooling rates§f based on the number of §bDipole Magnets§f you wish to put in the §2§3Synchrotron.§f After which, you can calculate the Dipole Strength needed through the formula Bd\u003d(2mEf)^0.5/qR, and determine if the §9cooling rate§f is high enough for the §bDipole Magnets§f required to attain that Dipole Strength. If not, you\u0027ll need to make your §3Synchrotron§f larger, such that it can fit more §9coolers§f and the dipole strength required decreases. \n\nThis method makes it simpler to calculate a suitable §3Synchrotron§f for §6high-energy§f recipes, such as §aCollision Chamber§f recipes (which can require up to §6150GeV!§f). As mentioned before, §4Redstone control§f can also prove to be handy if you have constructed a §3Synchrotron§f that\u0027s too strong, or are aiming for a very specific particle §6energy§f."
+          "name:8": "Synchrotron Particle Properties",
+          "desc:8": "§lTL:DR No Maths version:§r §bFocus§r is calculated exactly the same as a LINAC. For heavier particles (e.g. Proton), §6energy§r is increased with §eDipole Strength§r, while for lighter particles (e.g. Electron), §6energy§r is increased with §eAccelerator Voltage§r.\n\n\nThis quest details the maths behind the §bfocus§r and §6energy§f of a resultant §\n§5particle§\n§f from a §3Synchrotron§f. While it isn\u0027t completely necessary, an understanding of the formulas can help greatly when planning out a new Synchrotron and figuring out if a given design can provide the energy needed for your desired recipe.\n\n§\n\nThe §bfocus§f gained or lost by a §5particle§f travelling through a Synchrotron is calculated with the same formulas as the LINAC. The length of the Synchrotron can be found in the §2Accelerator GUI§r.\n\n\nThe §6maximum energy§f of the resulting particle stack is the smaller of these two values: the Dipole Field Strength and Synchrotron Radiation Losses. \n\n\nThe maximum energy from the Dipole Strength is the limiting factor for heavier particles, like the proton. It is given by: \n\n§6Maximum Energy from Dipole Strength (GeV)§r \u003d  \n(|§dcharge§r| * §eTotal Dipole Strength§r * §7Synchrotron \nRadius§r)^2 / (2 * §dParticle Mass (MeV/c^2)§r)\n\n\nThe maximum energy from the Radiation losses is the limiting factor for lighter particles, like the electron. It is given by:\n\n§6Maximum Energy from Radiation Losses (GeV) § \u003d \n§dParticle Mass (MeV/c^2)§r * (3 * §eTotal Accelerating \nVoltage (kV)§r * §7Synchrotron Radius§r / |§dcharge§r|)^0.25"
         }
       },
       "tasks:9": {
@@ -60694,8 +60644,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Target Chamber Maths",
-          "desc:8": "This quest details how the properties of resultant particle stacks in §aTarget Chamber§f recipes are calculated, as well as how they are affected by detectors. While this knowledge isn\u0027t mandatory for understanding how §aTarget Chambers§f work, it can prove handy for obtaining §5particles§f with very specific §6energy§f, an especially useful skill when dealing with§5 neutral particles!§f\n\nThe §bfocus§f of the output beams is the same as the input beam, deducting away the distance both the input and output beam travelled in the §aTarget Chamber§f multiplied by the beam attenuation rate. \n\nThe §6energy§f of any given output particle beam in a recipe is given by E\u003d(E0+Q)/n, where E0 is the input §6particle energy§f, Q is the §6energy released§f and n is the total amount of §5particles§f outputted in the recipe.\n\nThe §4amount§f of each output particle beam\u0027s particle stack is given by aout\u003dain*a*Σ where ain is the §4amount§f of the input particle stack, a is the §4amount§f given in the recipe as stated in §2JEI§f and Σ\u003dmin(ση,1). σ is the recipe\u0027s Cross-Section and η is the §aTarget Chamber\u0027s§f efficiency.\n\nWhat this formula essentially means is that an output beam\u0027s §4amount§f is a fraction of the input beam\u0027s §4amount§f, where the fraction is the cross section of the recipe, for recipes in which output beams are only one pu (i.e a\u003d1). Detectors increase §aTarget Chamber§f efficiency and thus the §4amount§f of an output particle beam up to the §4amount§f of the input beam, but can never surpass it, since Σ is capped at one. The only way of getting a higher §4amount §fout is to have a recipe that outputs more than one pu (i.e a\u003e1). \n\n§aDecay Chamber§f output beam calculations are exactly the same as §aTarget Chamber§e§f output beam calculations. "
+          "name:8": "Target Chamber Particle Properties",
+          "desc:8": "This quest details how the properties of particle stacks produced in §aTarget Chamber Recipes§r are calculated, as well as how they are affected by §etarget chamber efficiency§r. While this knowledge isn\u0027t mandatory for understanding how Target Chambers§f work, it can prove handy for obtaining particles§f with §6very specific energies§f, an especially useful skill when dealing with§5 neutral particles!§f\n\n\n§nFormulas§r\n\nThe §bfocus§f of the output beams is equal to the focus of the input beam, taking into account focus loss from the input hatch to the output hatch as given in the \"Transporting Particles\" quest.\n\n\nThe §6energy§f of any given output particle beam in a recipe is given by the following formula:\n\n§6Output Particle Energy§r \u003d (§6Input Particle Energy§r + §6Energy Released by Recipe§r)/\nNumber of output particles\n\nThe energy released by the recipe is shown in §2JEI§r.\n\n\nThe §4amount§f of each output particle beam\u0027s particle stack is given by the following formula:\n\n§4Output Particle Amount§r \u003d §4Input Particle Amount§r * a * Σ\n\nwhere a is the §4amount§f of the output particle given in the recipe in §2JEI§f, and \n\nΣ \u003d min(σ * η , 1)\n\nwhere σ is the recipe\u0027s Cross-Section and η is the §eTarget Chamber\u0027s efficiency§r.\n\n\n§nAmount Formula Explanation§r\n\nWhat this formula essentially means is that an output beam\u0027s §4amount§f is a fraction of the input beam\u0027s amount, where the fraction is the cross section of the recipe. Detectors §6increase§r Target Chamber§f efficiency and thus the amount of an output particle beam up to the amount of the input beam, but can §cnever surpass it§r, since Σ is capped at one. The only way of getting a higher amou §fout is to have a recipe that outputs more than one pu (i.e a \u003e 1). "
         }
       },
       "tasks:9": {
@@ -62035,6 +61985,1067 @@
                 "TrophyColorBlue:3": 190,
                 "TrophyName:8": "The Fusion Reactior",
                 "TrophyColorRed:3": 123
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "805:10": {
+      "questID:3": 805,
+      "preRequisites:11": [
+        719
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "slots:3": 0,
+                "charms:9": {
+                  "0:10": {
+                    "duration:3": 0,
+                    "charm:10": {
+                      "name:8": "treasure2:glorious_illumination"
+                    },
+                    "illuminationCoords:9": {},
+                    "value:6": 30.0,
+                    "percent:6": 0.0
+                  }
+                }
+              },
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "treasure2:mirthas_torch",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Particle Properties",
+          "desc:8": "Much like how §aitem stacks§r have properties (amount of items in a stack), §2particle stacks§r also have their own properties. However, unlike item stacks, particle stacks have 3 properties:\n\n§4- Amount (pu/t)\n§6- Energy (eV)\n§b- Focus§f\n\n§4Amount§r is the amount of particles, measured in particle units (pu). Particles are produced at a given rate, measured in particle units per tick (pu/t), and that amount §ccannot§r be modified by Accelerators.\n\n§6Energy§r is the energy of the particles, measured in Electron Volts (eV). It can be increased or decreased by Accelerators.\n\n§bFocus§r is how focused or confined the particles are. It can be increased by Accelerators.\n\n\n§nIntroduction to QMD Recipes§r\n\nAll recipes involving particles require particle stacks to have a §bminimum focus§f, and §6energy§r within a certain §6energy range (e.g 10-20 MeV)§f for the recipe to work (relevant values can be seen in §2JEI§f). Recipes require a §4cumulative amount of particles§r to be completed, thus allowing the speed of a recipe to be calculated with (pu required)/(pu/t).\n\n§A§fAs most newly-created particles start out with no §6energy §fand barely any §bfocus§f, §3Accelerators§e §fare used in order to get particle stacks to the relevant § §6energy§f and §bfocus§f§f. How §3Accelerators§f do this, and how they are constructed will be covered in \"QMD 102: The Linear Accelerator\" and relevant quests."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "806:10": {
+      "questID:3": 806,
+      "preRequisites:11": [
+        719
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:beamline",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Transporting Particles",
+          "desc:8": "Particle stacks cannot be handled directly by the player. Instead, they can only be transported via §7beam blocks§r (inside multiblocks) and §7beamline pipes§r (outside multiblocks). They can be imagined as §6beams§r travelling through beam blocks to their destination. \n\nAs beamline pipes cannot be turned on their own, §3Beam Diverters§r are required to rotate the direction of a beam, and will be covered in a later quest.\n\n\nParticle stacks also §close focus§r for every block they travel! The amount lost per block is based on the §battenuation rate (default 0.02)§r and the §4pu/t§r of the particle stack, via the equation:\n\n§bFocus Lost per Block§r \u003d §b\nattenuation rate§r * (1 + |§dcharge§r|*(§4pu/t§r / 10000)^0.5)\n\nThe charge of a particle can be found in §2JEI§r, under particle properties.\n\nIf the focus is less than or equal to 0, the particle stack will not travel any further. Thus, make sure to minimise the distance particles travel in your QMD setups to minimise focus loss!\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:beamline",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "qmd:beamline",
+              "Count:3": 30,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "807:10": {
+      "questID:3": 807,
+      "preRequisites:11": [
+        774
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:accelerator_vent",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Active Cooling",
+          "desc:8": "§lActive Cooling Requirement:§r An accelerator§f must be §nconstantly supplied§r with an §1active coolant§r, whose §ctemperature§r is §6below§r the §cmaximum temperature§r (the lowest maximum operating temperature out of all components) of the accelerator.\n\nThe accelerator\u0027s current temperature and maximum temperature can be viewed in the §2Accelerator GUI§r. \n\n\n§nFull Explanation§r\n\nComponents are only capable of operating when they are §9cooled§r below their §cmaximum operating temperature§r, as seen in the §6tooltip§r of the block used to construct that component. Thus, §1active coolant§r is required to lower the accelerator\u0027s temperature.\n\nActive coolants §fcool an accelerator§f to their own temperature, provided that the §9passive cooling§r requirement is met (see the quest \"Passive Cooling\"). Valid active coolants§f and their temperatures can be seen in §2JEI§f via Accelerator Controllers.\n\n\nWhen an accelerator is supplied with active coolant via the §9input§r coolant vent, it is converted into the resultant hot coolant (as seen in the JEI recipe), which is output from the §coutput§r cooler vent. Coolant§f use rate as well as exhaust coolant output rate can be seen via the §9coolant bar§f (third bar from the left) in the §2Accelerator GUI§r.\n\n§cNote:§r Used up coolant must constantly be emptied from the accelerator for it to work, otherwise new coolant cannot be input into the accelerator to cool it and the accelerator will §coverheat and explode§r!\n\n\n§r§nSupercooler Loop§r\n\n§fWith the exception of water, §nall active coolants§f are output in their gaseous forms in the same ratio as their gas:liquid conversion ratio in a supercooler. Thus, you can form a §6closed loop of active coolant§f by pumping §cexhaust coolant§f from the output coolant vent  into a Supercooler, then pumping the §9cooled active coolant§f back into the input coolant vent, with no loss in active coolant§f.\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_vent",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:block_tank",
+              "Count:3": 1,
+              "tag:10": {
+                "enderio:data:10": {
+                  "faceModes-:1": 1,
+                  "voidMode:3": 2,
+                  "outputQueue:10": {
+                    "size:3": 0
+                  },
+                  "tank:10": {
+                    "FluidName:8": "liquid_helium",
+                    "Capacity:3": 16000,
+                    "Amount:3": 16000
+                  },
+                  "inventory:10": {
+                    "size:3": 5,
+                    "4+:1": 1,
+                    "3+:1": 1,
+                    "2+:1": 1,
+                    "1+:1": 1,
+                    "0+:1": 1
+                  },
+                  "redstoneControlMode:3": 0
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "808:10": {
+      "questID:3": 808,
+      "preRequisites:11": [
+        774
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:accelerator_source",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Ion Source",
+          "desc:8": "The §7Ion Source§f creates §5particle stacks§r from items placed in it. \n\nRecipes for particles §fcan be seen in §2JEI§f via the Ion Source. Particles are produced with their relevant properties (§4amount§f, §6energy§e §fand §bfocus§f) as shown in the recipe in §2JEI§r, and the particles (pu) in the item will be slowly consumed, at the rate (pu/t) shown in §2JEI§r."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_source",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "qmd:canister",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "qmd:canister",
+              "Count:3": 8,
+              "tag:10": {
+                "particle_storage:10": {
+                  "particle_amount:3": 10000000
+                }
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "809:10": {
+      "questID:3": 809,
+      "preRequisites:11": [
+        774
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:accelerator_cavity",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "RF Cavity",
+          "desc:8": "An §dRF cavity§f is constructed from §d§f§7RF Cavity blocks§f of the same type in a ring of 8 around the accelerator beam. Each §dRF cavity structure§r increases the §eAccelerating Voltage§r of the accelerator by the amount stated in the §8§7RF cavity\u0027s§r tooltip. The §etotal Accelerating Voltage§r of the accelerator can be seen in the §2Accelerator GUI§r.\n\n\nFor §3Linear Accelerators§f, the resulting particle\u0027s §6energy§f is calculated via the formula:\n\n§6Resulting Energy§r \u003d \n§6Initial Energy§r + |§dcharge§r| * §eTotal Accelerating Voltage§r\n\nThe charge of a particle can be found in §2JEI§r, under particle properties."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_cavity",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_cavity",
+              "Count:3": 8,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_cavity",
+              "Count:3": 8,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "810:10": {
+      "questID:3": 810,
+      "preRequisites:11": [
+        774
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "OR",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:accelerator_magnet",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Quadrapole Magnet",
+          "desc:8": "A §bQuadrapole Magnet§f is constructed from §74 Accelerator Electromagnets §fof the same type around the accelerator beam. §b§fEach §bQuadrapole Magnet structure§r increases the §eQuadrapole Strength§r of the Accelerator§f§f by the amount stated in the §7Electromagnet\u0027s§r tooltip. The §etotal Quadrapole Strength§r can be seen in the §2Accelerator GUI§r. \n\n\nFor §nall accelerators,§r the resultant §bfocus§r can be calculated by the given formula:\n\n§bResultant Focus§r \u003d \n§bInitial Focus§r + |§dcharge§r| * (§eTotal Quadrapole Strength§r) - §bFocus Lost per Block§r * (§7Length of Accelerator§r)\n\nwhere the length of the accelerator can be found in the §2Accelerator GUI§r, and §bfocus lost per block§r is as given in \"Transporting Particles\":\n\n§bFocus Lost per Block§r \u003d §b\nattenuation rate§r * (1 + |§dcharge§r|*(§4pu/t§r / 10000)^0.5)"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_magnet",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_magnet",
+              "Count:3": 4,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_magnet",
+              "Count:3": 4,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "811:10": {
+      "questID:3": 811,
+      "preRequisites:11": [
+        774
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "jecalculation:item_calculator",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "I Hate Maths",
+          "desc:8": "Don\u0027t want to do maths just to find the resultant properties of your particle? You can view them in the §2Accelerator GUI§r itself! \n\nA resulting §5particle stack§r and its §6properties§r can be viewed by hovering over the box in the GUI when the Accelerator is switched on with a §credstone signal§r. You can view the properties of a particle in §nany multiblock§r in this manner! \n\nMake sure that all the requirements of the Accelerator are met first though, otherwise it may §cexplode§r!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "jecalculation:item_calculator",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "812:10": {
+      "questID:3": 812,
+      "preRequisites:11": [
+        816
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:beam_splitter_controller",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Splitting Beams",
+          "desc:8": "§3Beam Splitters§r are almost exactly the same as §3Beam Diverters§r. However, the key difference is that they split beams instead of bending them. This can come in handy if you want to use a beam of exotic particles for multiple recipes in different multiblocks, or have a beam multiplication setup.\n\n\n§nConstruction§r\n\nA visualisation of a Beam Splitter can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nBeam Splitters are constructed exactly the same as Beam Diverters, except they have §ntwo§r §coutput§r particle hatches for the two beams, and use a §7Beam Splitter Controller§r instead.\n\n\n§nRequirements§r\n\nBeam Splitters require §6power§r and §1active coolant§r, like all other accelerators. However, they do not require §9coolers§f.\n\nTo activate the Beam Splitter, simply give the Beam Splitter Controller a §credstone signal§f.\n\nBeam Splitters can only bend particle beams with energies below their §6maximum energy§.§r. This is dependent on the electromagnet used in the Dipole Magnet, with stronger electromagnets capable of bending higher energy beams. \n\n\n§nOutput Particle Properties§r\n\nIn the Beam Splitter, particle beams are split into two equal beams, each with §4half the amount§r of the original beam. They also lose §6energy§f and §bfocus§r, with the energy loss increasing as the particle beam\u0027s §6initial energy§f increases. Both the maximum energy and energy loss can be seen in the §2Beam Splitter GUI§r, while the §bfocus loss§r is calculated as per normal. \n\nMore details on the maximum energy and energy loss calculations can be found on the §2QMD Github Wiki§f."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:beam_splitter_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_magnet",
+              "Count:3": 2,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "813:10": {
+      "questID:3": 813,
+      "preRequisites:11": [
+        733
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:particle_chamber_beam_port",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Particle Outputs",
+          "desc:8": "Want the §5particles§r from your Particle Chamber Recipes for use in other recipes? Construct beam block lines from 1-3 of the remaining sides of the §7Particle Chamber Block§f to the casing, and place §8§7Particle Chamber Beam Ports§f in §coutput§r mode where they meet the casing. A visualisation of a 5x5x5 Target Chamber with 3 outputs is avaliable in §2JEI§r.\n\nOutput neutral particles§f will come out of the side opposite of the input, while output charged particles§f will come out of the remaining two sides. The direction of the charged particle outputs can be changed by shift right clicking the relevant §7Particle Chamber Beam Port§f with the §8multitool§r."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:particle_chamber_beam",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "qmd:particle_chamber_beam_port",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:part",
+              "Count:3": 1,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "814:10": {
+      "questID:3": 814,
+      "preRequisites:11": [
+        776
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "slots:3": 0,
+                "charms:9": {
+                  "0:10": {
+                    "duration:3": 0,
+                    "charm:10": {
+                      "name:8": "treasure2:salandaars_convalescence"
+                    },
+                    "value:6": 300.0,
+                    "percent:6": 0.0
+                  }
+                }
+              },
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "treasure2:medics_token",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Beam Multiplication",
+          "desc:8": "Beam Multiplication is the concept of increasing the §4amount§r of particles in a beam by using recipes that have output beams with a larger amount than the input beam. This can be used to §espeed up recipes§r in the Target Chamber, produce rare particle beams with §4large amounts of particles§r, or even §6produce more power§r in the Nucleosynthesis Chamber!\n\nSo, how do we actually multiply a beam? We just need to follow this fundamental principle:\n\n§oAny Particle Chamber recipe with an output beam whose amount is greater than 1pu can emit a beam with more particles than the original beam.§r\n\n\n§nExample: Multiplying a Proton Beam§r\n\nLet\u0027s try to multiply a proton beam. We are looking for §aTarget Chamber recipes§r that produce output beams with more than 1pu. One good example is the §eproton-silicon recipe§r, which outputs a 3pu proton beam. While the recipe only has a cross-section of 20%, we can get a full proton beam by increasing the §etarget chamber efficiency§r with detectors until we get an output proton beam with 3 times the amount of the original beam. This means that if the input beam was a §410kpu/t§r proton beam, the output beam can reach a maximum of §430kpu/t§r!\n\nWe can multiply the beam further by sending the §430kpu/t§r proton beam into a §asecond target chamber with silicon§r to get a §490kpu/t beam§r, and repeat until we get a beam with a satisfactory amount.\n\n\n§nBeware of Focus Loss§r\n\nHowever, there are practical limits to how much you can multiply particle beams. The more particles you have in a beam, the larger the §bfocus loss per block§r (calculated in the quest \"Transporting Particles\"). Therefore, avoid multiplying beams too much or transporting large beams over too large of a distance!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "815:10": {
+      "questID:3": 815,
+      "preRequisites:11": [
+        741
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:nucleosynthesis_chamber_controller",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Power of the Stars",
+          "desc:8": "The §7Nucleosynthesis Chamber§r fuses two elements together under a particle beam to create §enew elements§r! These reactions also release §clarge amounts of heat§r, which can be used to generate §6immense power§r!\n\n§nConstruction§r\n\nA visualisation of a §7Nucleosynthesis Chamber§r§f§f can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nCasing: §7Vacuum Chamber Casing/Glass§r\n\nDimensions: 5 wide x 7 long x 11 tall, with §7Vacuum Chamber Beam Blocks§r in an \"n\" shape, §7Vacuum Chamber Plasma Nozzles§r facing inward and a §7Vacuum Chamber Plasma Glass§r container in the middle\n\nRequired blocks on sides:\n- §7Nucleosynthesis Chamber Controller§r\n- §72 Vacuum Chamber Coolant Vents§r in §ainput§r and §coutput§r mode\n- §72 Vacuum Chamber Heater Vents§r in §ainput§r and §coutput§r mode\n- §7Vacuum Chamber Energy Port§r\n\nRequired blocks on sides next to Vacuum Chamber Beam Blocks:\n- §7Vacuum Chamber Beam Port§r in §ainput§r mode\n- §74 Vacuum Chamber Fluid Ports§r, 2 in §ainput§r and 2 in §coutput§r mode\n\n§cNote:§r The vacuum chamber glass must be connected to any of the other blocks in the multiblock via §7Vacuum Heaters§r, otherwise the multiblock will not form! §9Cooling mechanics§r will be covered in \"Cooling Fusion\".\n\n§nRequirements§r\n\nIn order to process a recipe, the Nucleosynthesis Chamber must be supplied with:\n- §6Power§r\n- §9Passive Cooling§r from Vacuum Heaters (§9Cooling mechanics§r covered in \"Cooling Fusion\")\n- §8Liquid Mercury§r (absorbs heat from the reaction and becomes hot mercury, mercury consumption rate can be seen by hovering over the first bar from the right in the §2Chamber GUI§r)\n- §1Active Coolant§r with a temperature below 104K (used for cooling magnets, magnet heat bar and coolant consumption rate can be seen by hovering over the second bar from the left in the §2Chamber GUI§r)\n- The two fluids in the desired recipe\n- The particle beam in the desired recipe with an energy of §60eV§r and sufficient §bfocus§r\n\nMake sure all the requirements are met, otherwise the multiblock may §cexplode§r and leak §dhot plasma§r!\n\nIf all the requirements are met, the Nucleosynthesis Chamber will begin converting the two fluids and particle beam into the output fluids, producing §8hot mercury§r in the process. \n\nMore details about recipe time and heat generation are covered in \"Nucleosynthesis Recipes\", while more details about Hot Mercury production are covered in \"Cooling Fusion\"."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:nucleosynthesis_chamber_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:part",
+              "Count:3": 8,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "816:10": {
+      "questID:3": 816,
+      "preRequisites:11": [
+        734
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:accelerator_yoke",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Dipole Magnets",
+          "desc:8": "§eDipole Magnets§f bend the path of particle beams, and are used in every other Accelerator besides the LINAC. They are constructed by placing an §7Accelerator Electromagnet§f of the same type above and below a beam, then filling the rest of the 3x3x3 space around that beam with §7Accelerator Electromagnet Yokes§f. \n\nEach Dipole Magnet structure increases the §eDipole Strength§r of the accelerator by the amount as stated in the tooltip of the Electromagnet the structure is made out of. The §eTotal Dipole Strength§r of an accelerator can be seen in the §2Accelerator GUI§r."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:accelerator_yoke",
+              "Count:3": 20,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "nuclearcraft:part",
+              "Count:3": 4,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "817:10": {
+      "questID:3": 817,
+      "preRequisites:11": [
+        739
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "betterquesting:placeholder",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Collision Chamber Tips",
+          "desc:8": "This quest will cover common challenges in completing §aCollision Chamber§f recipes.\n\n\n§nObtaining Low Energy Particles§r\n\nThe first main challenge of the Collision Chamber is decelerating particles to a very low §6non-zero energy§f when merging them to make larger molecules (e.g. making §5Anti-Helium 3§r). Even with §3Decelerator §credstone control§f, the §6lowest non-zero energy§r (i.e. 1/15th of the Decelerator\u0027s maximum energy, obtained with a redstone signal strength of §c14§r) may already exceed the limit set in §2JEI§f (typically 10MeV). \n\nOne way to circumvent this is to ensure that the §6energy of the particle§r used to produce the antiparticle is as close to the §6minimum energy§f of the recipe as possible. This ensures that the antiparticles produced are of §6low energy§f, thus a weak Decelerator whose §6lowest non-zero energy§f is below the limit set in §2JEI§f may be used.\n\nAnother way to solve this problem is to lower the particle\u0027s energy to 0eV with a §3Decelerator§f, then use a §3LINAC§r to increase the particle\u0027s energy to the required amount. LINACs are still able to accelerate 0eV particle beams, and offer §emuch finer control§r over the energy of an output particle than Synchrotrons or Decelerators. This makes them perfect for providing the §6low non-zero energies§f required in such recipes.\n\n\n§nObtaining High Energy Particles§r\n\nThe second main challenge of the Collision Chamber is building a §3Synchrotron§f capable of accelerating particles to §6extremely high energies§f in the range of §6100GeV-150GeV§f, to be smashed together in the Collision Chamber. As it is much easier to accelerate §5heavy particles§f rather than §5light particles§f, it is recommended that you pick recipes involving §5protons or antiprotons§r, and avoid recipes involving §5electrons and positrons§r. Planning ahead using the formulas discussed in \"Synchrotron Properties\" can also be very handy.\n\n\nGood luck completing the §aCollision Chamber§f recipes!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "818:10": {
+      "questID:3": 818,
+      "preRequisites:11": [
+        774
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "betterquesting:placeholder",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Making P-Type Doped Silicon",
+          "desc:8": "You\u0027ll probably want to make §eP-Type Doped Silicon§f §fin order to make §eAdvanced Processors§e§f to progress further in §9QMD§f. \n\nP-Type Doped Silicon §frequires §5Boron Ions §faccelerated to §6600KeV-1MeV§f with a §bfocus§f of§b 2§f. Thus, you\u0027ll want to place §dRF cavities§f in your accelerator until the accelerating voltage is between §6600KeV §fand §61MeV§f, and §bQuadrapole Magnets§f until the focus§f of the Boron Ion§f is above 2§f. Both components are covered in the quests above.\n\nIf you need help designing your first LINAC, a working design for this recipe is shown in §2JEI§r. However, I recommend that you try designing one yourself first, and only use the design in JEI if you are stuck!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "819:10": {
+      "questID:3": 819,
+      "preRequisites:11": [
+        776
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "betterquesting:placeholder",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Using Synchrotrons",
+          "desc:8": "In order to use a §3Synchrotron§f in a §9QMD§f setup, you need to first construct a §3LINAC§r to provide particles of at least 5MeV to the Synchrotron. Then, you need to construct a Synchrotron capable of providing the §6energy§f and §bfocus§f required for your recipe. \n\nWhile an understanding of the §6energy calculation§r for an output particle can prove very handy, it\u0027s not mandatory, and it\u0027s possible to get by through messing around with a Synchrotron\u0027s components in a creative testing world until it emits a particle with the desired §bfocus§f and §6energy§f as seen in the §2Accelerator GUI§r.\n\nIn addition, §credstone control§f can also prove to be handy if you have constructed a Synchrotron that\u0027s too strong, or are aiming for a §6very specific§r particle energy."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "820:10": {
+      "questID:3": 820,
+      "preRequisites:11": [
+        815
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:vacuum_chamber_plasma_nozzle",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Nucleosynthesis Recipes",
+          "desc:8": "This quest covers various calculations for Nucleosynthesis Recipes, such as §erecipe time§r and §crate of heat production§r.\n\nThe §4amount of particles§r required for a recipe to be processed once is the amount shown in §2JEI§r. Thus, the time taken for a recipe to process, in ticks, is given as the amount of particles required for the recipe (e.g §4155.9kpu§r) divided by the amount of particles in the particle stack (e.g §410000 pu/t§r). In this case, the recipe will take ~16t to process.\n\nWhen a recipe is complete, it produces both output fluids and §cheat§r. The rate of heat production is given by the amount of heat produced (e.g. §c17.6kH§r) divided by the recipe time given above (e.g. 15.59t). In this case, the rate of heat production will be §c~1130H/t§r. This heat is converted into §8Hot Mercury§r, as covered in the quest \"Cooling Fusion\"."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "821:10": {
+      "questID:3": 821,
+      "preRequisites:11": [
+        815
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "CHAIN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "qmd:vacuum_chamber_heater",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Cooling Fusion",
+          "desc:8": "Much like §3Accelerators§r, the Nucleosynthesis Chamber must also be §9cooled passively§r. However, unlike Accelerators, the Nucleosynthesis Chamber produces a useful cooling product: §8Hot Mercury§r, which can be used to generate §6large amounts of power§r in an §2NC:O Turbine§r!\n\n\n§nCooling§r\n\nIn order to get rid of the heat produced, §7Vacuum Heaters§r must be placed inside the Nucleosynthesis Chamber to §9cool§r it. Much like Accelerator Coolers, Vacuum Heaters also have placement rules regarding where they can be placed. Both the total cooling and heating§f can be seen by hovering over the §cheat bar§r (second bar from the right) in the §2Chamber GUI§r. The §9total cooling§r must exceed the §ctotal heating§r, otherwise the chamber will §cexplode§r!\n\n\n§nPower§r\n\nCooling the Nucleosynthesis Chamber also produces Hot Mercury. The §8rate of hot mercury production (mb/t)§r is equal to the §crate of heat production (H/t)§r (calculated in the quest \"Nucleosynthesis Recipes\") multiplied by the §eoutput efficiency§r, which is given by the §crate of heat production§r divided by the §9total cooling§r. Thus, you should ensure that the total cooling is as close to the rate of heat production as possible!\n\nAs the rate of heat production is variable and dependent on both the recipe you choose and the §4amount of particles§r in the input beam, it is recommended that you calculate the rate of heat production beforehand, then place Vacuum Heaters to get total cooling as close as possible to the rate of heat production."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "qmd:vacuum_chamber_heater",
+              "Count:3": 4,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "qmd:vacuum_chamber_heater",
+              "Count:3": 4,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:block_tank",
+              "Count:3": 1,
+              "tag:10": {
+                "enderio:data:10": {
+                  "faceModes-:1": 1,
+                  "voidMode:3": 2,
+                  "outputQueue:10": {
+                    "size:3": 0
+                  },
+                  "tank:10": {
+                    "FluidName:8": "mercury",
+                    "Capacity:3": 16000,
+                    "Amount:3": 16000
+                  },
+                  "inventory:10": {
+                    "size:3": 5,
+                    "4+:1": 1,
+                    "3+:1": 1,
+                    "2+:1": 1,
+                    "1+:1": 1,
+                    "0+:1": 1
+                  },
+                  "redstoneControlMode:3": 0
+                }
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -65283,7 +66294,7 @@
         },
         "5:10": {
           "sizeX:3": 36,
-          "x:3": 966,
+          "x:3": 1069,
           "y:3": -18,
           "id:3": 560,
           "sizeY:3": 36
@@ -65416,22 +66427,22 @@
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": 486,
+          "x:3": 516,
           "y:3": -12,
           "id:3": 733,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 36,
-          "x:3": 560,
+          "x:3": 590,
           "y:3": -18,
           "id:3": 734,
           "sizeY:3": 36
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 661,
-          "y:3": 30,
+          "x:3": 764,
+          "y:3": 32,
           "id:3": 735,
           "sizeY:3": 24
         },
@@ -65444,105 +66455,105 @@
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": 766,
-          "y:3": 30,
+          "x:3": 868,
+          "y:3": 32,
           "id:3": 737,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": 732,
-          "y:3": 30,
+          "x:3": 836,
+          "y:3": 32,
           "id:3": 738,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 766,
-          "y:3": -53,
+          "x:3": 868,
+          "y:3": -56,
           "id:3": 739,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 36,
-          "x:3": 810,
+          "x:3": 913,
           "y:3": -18,
           "id:3": 740,
           "sizeY:3": 36
         },
         "32:10": {
-          "sizeX:3": 24,
-          "x:3": 712,
-          "y:3": -12,
+          "sizeX:3": 36,
+          "x:3": 810,
+          "y:3": -18,
           "id:3": 741,
-          "sizeY:3": 24
+          "sizeY:3": 36
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": 661,
-          "y:3": -54,
+          "x:3": 764,
+          "y:3": -56,
           "id:3": 742,
           "sizeY:3": 24
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": 870,
+          "x:3": 973,
           "y:3": 5,
           "id:3": 743,
           "sizeY:3": 24
         },
         "35:10": {
           "sizeX:3": 24,
-          "x:3": 870,
+          "x:3": 973,
           "y:3": -31,
           "id:3": 744,
           "sizeY:3": 24
         },
         "36:10": {
           "sizeX:3": 24,
-          "x:3": 922,
+          "x:3": 1025,
           "y:3": -48,
           "id:3": 745,
           "sizeY:3": 24
         },
         "37:10": {
           "sizeX:3": 24,
-          "x:3": 922,
+          "x:3": 1025,
           "y:3": 24,
           "id:3": 746,
           "sizeY:3": 24
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": 712,
-          "y:3": 67,
+          "x:3": 816,
+          "y:3": 68,
           "id:3": 747,
           "sizeY:3": 24
         },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": 698,
-          "y:3": 30,
+          "x:3": 796,
+          "y:3": 32,
           "id:3": 748,
           "sizeY:3": 24
         },
         "40:10": {
           "sizeX:3": 24,
-          "x:3": 766,
-          "y:3": 67,
+          "x:3": 868,
+          "y:3": 68,
           "id:3": 749,
           "sizeY:3": 24
         },
         "41:10": {
           "sizeX:3": 24,
-          "x:3": 816,
-          "y:3": 67,
+          "x:3": 919,
+          "y:3": 68,
           "id:3": 750,
           "sizeY:3": 24
         },
         "42:10": {
           "sizeX:3": 24,
-          "x:3": 904,
+          "x:3": 1007,
           "y:3": -12,
           "id:3": 752,
           "sizeY:3": 24
@@ -65570,92 +66581,92 @@
         },
         "46:10": {
           "sizeX:3": 24,
-          "x:3": 410,
+          "x:3": 444,
           "y:3": -12,
           "id:3": 774,
           "sizeY:3": 24
         },
         "47:10": {
           "sizeX:3": 24,
-          "x:3": 448,
-          "y:3": -12,
+          "x:3": 476,
+          "y:3": -56,
           "id:3": 775,
           "sizeY:3": 24
         },
         "48:10": {
           "sizeX:3": 24,
-          "x:3": 610,
+          "x:3": 680,
           "y:3": -12,
           "id:3": 776,
           "sizeY:3": 24
         },
         "49:10": {
           "sizeX:3": 24,
-          "x:3": 566,
-          "y:3": 30,
+          "x:3": 640,
+          "y:3": 32,
           "id:3": 777,
           "sizeY:3": 24
         },
         "50:10": {
           "sizeX:3": 24,
-          "x:3": 610,
-          "y:3": -54,
+          "x:3": 720,
+          "y:3": -56,
           "id:3": 778,
           "sizeY:3": 24
         },
         "51:10": {
           "sizeX:3": 24,
-          "x:3": 524,
-          "y:3": -54,
+          "x:3": 556,
+          "y:3": -56,
           "id:3": 779,
           "sizeY:3": 24
         },
         "52:10": {
           "sizeX:3": 24,
-          "x:3": 566,
-          "y:3": -54,
+          "x:3": 596,
+          "y:3": -56,
           "id:3": 780,
           "sizeY:3": 24
         },
         "53:10": {
           "sizeX:3": 24,
-          "x:3": 661,
+          "x:3": 764,
           "y:3": -12,
           "id:3": 781,
           "sizeY:3": 24
         },
         "54:10": {
           "sizeX:3": 24,
-          "x:3": 524,
-          "y:3": 30,
+          "x:3": 556,
+          "y:3": 32,
           "id:3": 782,
           "sizeY:3": 24
         },
         "55:10": {
           "sizeX:3": 24,
-          "x:3": 766,
+          "x:3": 869,
           "y:3": -12,
           "id:3": 783,
           "sizeY:3": 24
         },
         "56:10": {
           "sizeX:3": 24,
-          "x:3": 610,
-          "y:3": 67,
+          "x:3": 680,
+          "y:3": 32,
           "id:3": 784,
           "sizeY:3": 24
         },
         "57:10": {
           "sizeX:3": 24,
-          "x:3": 610,
-          "y:3": 30,
+          "x:3": 680,
+          "y:3": -56,
           "id:3": 785,
           "sizeY:3": 24
         },
         "58:10": {
           "sizeX:3": 24,
-          "x:3": 486,
-          "y:3": -54,
+          "x:3": 516,
+          "y:3": -56,
           "id:3": 786,
           "sizeY:3": 24
         },
@@ -65671,6 +66682,125 @@
           "x:3": 204,
           "y:3": 24,
           "id:3": 799,
+          "sizeY:3": 24
+        },
+        "61:10": {
+          "sizeX:3": 24,
+          "x:3": 372,
+          "y:3": -56,
+          "id:3": 805,
+          "sizeY:3": 24
+        },
+        "62:10": {
+          "sizeX:3": 24,
+          "x:3": 372,
+          "y:3": 32,
+          "id:3": 806,
+          "sizeY:3": 24
+        },
+        "63:10": {
+          "sizeX:3": 24,
+          "x:3": 412,
+          "y:3": -56,
+          "id:3": 807,
+          "sizeY:3": 24
+        },
+        "64:10": {
+          "sizeX:3": 24,
+          "x:3": 444,
+          "y:3": 32,
+          "id:3": 808,
+          "sizeY:3": 24
+        },
+        "65:10": {
+          "sizeX:3": 24,
+          "x:3": 412,
+          "y:3": 32,
+          "id:3": 809,
+          "sizeY:3": 24
+        },
+        "66:10": {
+          "sizeX:3": 24,
+          "x:3": 476,
+          "y:3": 32,
+          "id:3": 810,
+          "sizeY:3": 24
+        },
+        "67:10": {
+          "sizeX:3": 24,
+          "x:3": 444,
+          "y:3": -56,
+          "id:3": 811,
+          "sizeY:3": 24
+        },
+        "68:10": {
+          "sizeX:3": 24,
+          "x:3": 596,
+          "y:3": 32,
+          "id:3": 812,
+          "sizeY:3": 24
+        },
+        "69:10": {
+          "sizeX:3": 24,
+          "x:3": 516,
+          "y:3": 32,
+          "id:3": 813,
+          "sizeY:3": 24
+        },
+        "70:10": {
+          "sizeX:3": 24,
+          "x:3": 720,
+          "y:3": 32,
+          "id:3": 814,
+          "sizeY:3": 24
+        },
+        "71:10": {
+          "sizeX:3": 24,
+          "x:3": 816,
+          "y:3": -56,
+          "id:3": 815,
+          "sizeY:3": 24
+        },
+        "72:10": {
+          "sizeX:3": 24,
+          "x:3": 640,
+          "y:3": -12,
+          "id:3": 816,
+          "sizeY:3": 24
+        },
+        "73:10": {
+          "sizeX:3": 24,
+          "x:3": 920,
+          "y:3": -56,
+          "id:3": 817,
+          "sizeY:3": 24
+        },
+        "74:10": {
+          "sizeX:3": 24,
+          "x:3": 444,
+          "y:3": 68,
+          "id:3": 818,
+          "sizeY:3": 24
+        },
+        "75:10": {
+          "sizeX:3": 24,
+          "x:3": 640,
+          "y:3": -56,
+          "id:3": 819,
+          "sizeY:3": 24
+        },
+        "76:10": {
+          "sizeX:3": 24,
+          "x:3": 788,
+          "y:3": -92,
+          "id:3": 820,
+          "sizeY:3": 24
+        },
+        "77:10": {
+          "sizeX:3": 24,
+          "x:3": 844,
+          "y:3": -92,
+          "id:3": 821,
           "sizeY:3": 24
         }
       },
