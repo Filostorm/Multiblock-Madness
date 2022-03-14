@@ -19,6 +19,9 @@ tile.contenttweaker.starmetal_block.name=Block of Starmetal
 
 item.contenttweaker.hastelloyfoil.name=Hastelloy Foil
 item.contenttweaker.goldfoil.name=Gold Foil
+item.contenttweaker.foil_electrum.name=Electrum Foil
+
+
 item.contenttweaker.aluminumcasing.name=Aluminum Casing
 item.contenttweaker.inert_ingot.name=Inert Ingot
 item.contenttweaker.rod_bam.name=BAM Rod

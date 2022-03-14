@@ -78,6 +78,7 @@ val mapNewBlocks as IItemStack[IItemStack] = {
 	<nuclearcraft:alloy:1>:<contenttweaker:sub_block_holder_0:6>,
 	<contenttweaker:material_part:20>:<contenttweaker:sub_block_holder_0>,
 	<contenttweaker:material_part:10>:<contenttweaker:sub_block_holder_0:1>,
+	<contenttweaker:material_part:30>:<contenttweaker:sub_block_holder_0:4>,
 	<astralsorcery:itemcraftingcomponent:1>:<contenttweaker:starmetal_block>,
 } as IItemStack[IItemStack];
 

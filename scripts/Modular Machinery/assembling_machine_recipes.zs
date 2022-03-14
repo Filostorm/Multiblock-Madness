@@ -270,7 +270,13 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_gold_cable",
 	.addItemInput(<ore:itemRubber>)
 	.build();
 
-
+// HV Cable
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_hv_cable", "assemblermkone", 20)
+	.addEnergyPerTickInput(500)
+	.addItemOutput(<techreborn:cable:7>)
+	.addItemInput(<techreborn:cable:3>)
+	.addItemInput(<ore:itemRubber>,3)
+	.build();
 
 // AA Coils //
 
@@ -1336,6 +1342,16 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_gold_cable"
 	.addItemInput(<techreborn:cable:2>)
 	.addItemInput(<ore:itemRubber>)
 	.build();
+
+// HV Cable
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_hv_cable", "assemblermkfour", 1)
+	.addEnergyPerTickInput(160000)
+	.addItemOutput(<techreborn:cable:7>)
+	.addItemInput(<techreborn:cable:3>)
+	.addItemInput(<ore:itemRubber>,3)
+	.build();
+
+
 
 
 

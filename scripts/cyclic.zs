@@ -85,7 +85,7 @@ recipes.addShaped(<cyclicmagic:builder_pattern>, [[<moreplates:redstone_alloy_pl
 recipes.addShaped(<cyclicmagic:block_anvil>, [[<actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:2>, <actuallyadditions:block_crystal:2>],[<advgenerators:iron_wiring>, <ore:circuitAdvanced>, <advgenerators:iron_wiring>], [<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>]]);
 
 //Chorus
-ManaInfusion.addAlchemy(<cyclicmagic:glowing_chorus>,<minecraft:chorus_fruit>,20000);
+ManaInfusion.addAlchemy(<cyclicmagic:glowing_chorus>,<minecraft:chorus_fruit>,50000);
 BloodAltar.addRecipe(<cyclicmagic:corrupted_chorus>, <minecraft:chorus_fruit>, 3, 5000, 25, 25);
 
 //Users Things

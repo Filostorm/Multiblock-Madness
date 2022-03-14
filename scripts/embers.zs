@@ -225,8 +225,36 @@ mods.nuclearcraft.Enricher.addRecipe(<contenttweaker:crystal_seed>, <liquid:aero
 ##=======================================================
 //mods.rockhounding_chemistry.LeachingVat.add(<thermalfoundation:geode>, [<minecraft:diamond>, <minecraft:emerald>, <minecraft:dye:4>, <techreborn:gem:1>, <techreborn:gem>,<techreborn:gem:4>,<techreborn:gem:3>,<thaumcraft:amber>,<techreborn:gem:2>], [2.10F, 5.69F, 7.51F, 3.80F, 10.07F, 8.40F, 12.93F, 4.32F, 5.20F], <liquid:crystal_slurry>*1000);
 
-mods.rockhounding_chemistry.LeachingVat.add(<thermalfoundation:geode>, [<contenttweaker:crystal_seed>, <aetherworks:item_resource>], [2.10F, 5.69F], <liquid:crystal_slurry> * 1000);
-
+mods.rockhounding_chemistry.LeachingVat.add(<thermalfoundation:geode>, [
+	<contenttweaker:crystal_seed>,
+	<aetherworks:item_resource>,
+	<rftools:dimensional_shard>,
+	<mysticalagriculture:crafting:5>,
+	<mysticalagradditions:stuff>, //Netherstar shard
+	<minecraft:prismarine_shard>,
+	<twilightforest:armor_shard>,
+	<actuallyadditions:item_crystal_shard>,
+	<actuallyadditions:item_crystal_shard:1>,
+	<actuallyadditions:item_crystal_shard:2>,
+	<actuallyadditions:item_crystal_shard:3>,
+	<actuallyadditions:item_crystal_shard:4>,
+	<actuallyadditions:item_crystal_shard:5>
+	],
+ 	[
+	 2.10F,
+	 3.18F,
+	 7.06F,
+	 8.72F,
+	 5.23F,
+	 6.49F,
+	 4.57F,
+	 9.20F,
+	 11.83F,
+	 8.50F,
+	 10.02F,
+	 11.39F,
+	 12.15F
+	], <liquid:crystal_slurry> * 300);
 
 ##=======================================================
 ##RETENTION VAT
@@ -243,6 +271,11 @@ MetalFormer.removeRecipesByOutput(<aetherworks:item_resource:5>);
 //New Materials
 MetalFormer.addRecipe(<embers:ingot_dawnstone>, <liquid:aetherworks.aetherium_gas>*144, <aetherworks:item_resource:4>, 2100);
 MetalFormer.addRecipe(<mysticalworld:amethyst_gem>, <liquid:aetherworks.aetherium_gas>*576, <aetherworks:item_resource:5>, 2500);
+
+
+
+<mysticalmechanics:gearbox_frame>.addTooltip(format.red("Only rotate with an AE Quartz Wrench"));
+<mysticalmechanics:mergebox_frame>.addTooltip(format.red("Only rotate with an AE Quartz Wrench"));
 
 ##########################################################################################
 print("==================== end of embers.zs ====================");

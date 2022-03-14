@@ -163,6 +163,184 @@
 </recipe>
 
 
+<!-- Lead -->
+<recipe name="MBM: Lead 1" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:sulfide_shards:3" />
+    <output name="dustLead" chance="0.44"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Lead 2" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:chromate_shards:3" />
+    <output name="dustLead" chance="0.34"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Lead 3" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:chromate_shards:5" />
+    <output name="dustLead" chance="0.31"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Lead 4" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:chromate_shards:1" />
+    <output name="dustLead" chance="0.32"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Lead 5" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:arsenate_shards:1" />
+    <output name="dustLead" chance="0.3"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Lead 6" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:chromate_shards:4" />
+    <output name="dustLead" chance="0.26"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Lead 7" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:halide_shards" />
+    <output name="dustLead" chance="0.25"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Lead 8" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:vanadate_shards:2" />
+    <output name="dustLead" chance="0.24"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Lead 9" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:sulfate_shards:8" />
+    <output name="dustLead" chance="0.22"/>
+  </sagmilling>
+</recipe>
+
+<!-- Iron -->
+<recipe name="MBM: Iron 1" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:native_shards:2" />
+    <output name="dustIron" chance="0.41"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Iron 2" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:native_shards" />
+    <output name="dustIron" chance="0.27"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Iron 3" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:borate_shards:2" />
+    <output name="dustIron" chance="0.23"/>
+  </sagmilling>
+</recipe>
+
+
+<!-- Tin -->
+<recipe name="MBM: Tin 1" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:oxide_shards:6" />
+    <output name="dustTin" chance="0.40"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Tin 2" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:borate_shards:4" />
+    <output name="dustTin" chance="0.20"/>
+  </sagmilling>
+</recipe>
+
+<!-- Nickel -->
+<recipe name="MBM: Nickel 1" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:oxide_shards:21" />
+    <output name="dustNickel" chance="0.39"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Nickel 2" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:native_shards:3" />
+    <output name="dustNickel" chance="0.3"/>
+  </sagmilling>
+</recipe>
+
+<!-- Gold -->
+<recipe name="MBM: Gold 1" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:native_shards:6" />
+    <output name="dustGold" chance="0.32"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Gold 2" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:native_shards:7" />
+    <output name="dustGold" chance="0.2"/>
+  </sagmilling>
+</recipe>
+
+<!-- Copper -->
+<recipe name="MBM: Copper 1" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:oxide_shards:4" />
+    <output name="dustCopper" chance="0.22"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Copper 2" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:carbonate_shards:2" />
+    <output name="dustCopper" chance="0.22"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Copper 3" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:sulfide_shards:11" />
+    <output name="dustCopper" chance="0.22"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Copper 4" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:sulfate_shards:9" />
+    <output name="dustCopper" chance="0.2"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Copper 5" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:native_shards:1" />
+    <output name="dustCopper" chance="0.3"/>
+  </sagmilling>
+</recipe>
+
+<recipe name="MBM: Copper 6" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="rockhounding_chemistry:sulfide_shards:17" />
+    <output name="dustCopper" chance="0.25"/>
+  </sagmilling>
+</recipe>
+
+
+
+
 <!-- From parts.zs -->
 
 <!-- General Compatability Recipes -->

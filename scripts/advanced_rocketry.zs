@@ -27,8 +27,18 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-//mods.advancedrocketry.Lathe.removeRecipe(titaniumRod.withDamage(1)*2);
-//mods.advancedrocketry.Lathe.addRecipe(<minecraft:log>*1, 80, 100, <minecraft:planks>*4);
+val itemstoHide =
+[
+<advancedrocketry:bipropellantfueltank>,
+<advancedrocketry:advbipropellantrocketmotor>,
+<advancedrocketry:bipropellantrocketmotor>,
+]
+ as IItemStack[];
+
+for item in itemstoHide {
+	mods.jei.JEI.removeAndHide(item);
+}
+
 
 recipes.addShaped(<libvulpes:advstructuremachine> * 5, [[<libvulpes:structuremachine>, <techreborn:plates:38>, <libvulpes:structuremachine>],[<techreborn:plates:38>, <libvulpes:structuremachine>, <techreborn:plates:38>], [<libvulpes:structuremachine>, <techreborn:plates:38>, <libvulpes:structuremachine>]]);
 

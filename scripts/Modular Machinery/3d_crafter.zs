@@ -363,13 +363,14 @@ manapool.build();
 ##plateEngineering
 val plateEngineering = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-plateengineering", "minifield-crafter", 200, 0);
 plateEngineering.addEnergyPerTickInput(4000);
-plateEngineering.addItemInput(<immersiveengineering:metal_decoration1:1> * 12);
-plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:3>);
-plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:7>);
-plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:4>);
-plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:5>);
+plateEngineering.addItemInput(<immersiveengineering:metal_decoration1:1> * 16);
+plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:3>);   //Redstone
+plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:7>*2); // Radiatior
+plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:4>*2); // Light
+plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:5>*2); // Heavy
+plateEngineering.addItemInput(<immersiveengineering:metal_decoration0:6>*2); // Genorator
 plateEngineering.addItemInput(<immersiveengineering:material:26>);
-plateEngineering.addItemOutput(<contenttweaker:plate_engineering>);
+plateEngineering.addItemOutput(<contenttweaker:plate_engineering>*2);
 plateEngineering.build();
 
 ##hellShelf

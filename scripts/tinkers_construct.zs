@@ -23,12 +23,11 @@ print("==================== loading tinkersconstruct.zs ====================");
 
 val itemstoRemove =
 [
-	<tinker_io:upg:4>,
-	<tinker_io:upg:2>,
 	<tinker_io:smart_output>,
 	<tcomplement:melter>,
 	<tcomplement:alloy_tank>,
 	<tconstruct:materials:14>,
+	<tcomplement:high_oven_controller>,
 ]
  as IItemStack[];
 
@@ -36,9 +35,21 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-mods.jei.JEI.removeAndHide(<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 0 as short}}));
-mods.jei.JEI.removeAndHide(<tconstruct:smeltery_controller>);
-mods.jei.JEI.removeAndHide(<tcomplement:alloy_tank>);
+val itemstoRemoveandHide =
+[
+	<tconstruct:toolforge>.withTag({textureBlock: {id: "enderio:block_alloy", Count: 1 as byte, Damage: 0 as short}}),
+	<tconstruct:smeltery_controller>,
+	<tcomplement:alloy_tank>,
+	<tinker_io:upg:6>,
+	<tinker_io:cd_lonesome_avenue>,
+]
+ as IItemStack[];
+
+for item in itemstoRemoveandHide {
+	mods.jei.JEI.removeAndHide(item);
+}
+ 
+
 
 val smelteryHeart = <ore:smelteryHeart>;
 smelteryHeart.add(<tconstruct:seared_tank>);
@@ -63,7 +74,6 @@ smelteryHeart.add(<tconstruct:seared_tank:2>);
 ### CRAFTING RECIPES ###
 
 // High Oven Controller
-recipes.remove(<tcomplement:high_oven_controller>);
 recipes.addShaped(<tcomplement:high_oven_controller>, [[<tcomplement:materials:1>, <contenttweaker:noon_ingot>, <tcomplement:materials:1>],[<contenttweaker:noon_ingot>, <thaumcraft:alumentum>, <contenttweaker:noon_ingot>], [<tcomplement:materials:1>, <contenttweaker:noon_ingot>, <tcomplement:materials:1>]]);
 
 // Melter
@@ -71,10 +81,6 @@ recipes.addShaped(<tcomplement:melter>, [[<tconstruct:materials>, <tconstruct:ma
 
 // Smart IO
 recipes.addShaped(<tinker_io:smart_output>, [[<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>],[<arcanearchives:shaped_quartz>, <tconstruct:casting>, <arcanearchives:shaped_quartz>], [<tconstruct:materials>, <arcanearchives:shaped_quartz>, <tconstruct:materials>]]);
-
-// Smart Upgrades
-recipes.addShaped(<tinker_io:upg:4>, [[<embers:nugget_dawnstone>, <minecraft:diamond>, <embers:nugget_dawnstone>],[<minecraft:diamond>, <tinker_io:upg:3>, <minecraft:diamond>], [<embers:nugget_dawnstone>, <minecraft:diamond>, <embers:nugget_dawnstone>]]);
-recipes.addShaped(<tinker_io:upg:2>, [[<thermalfoundation:material:162>, <minecraft:iron_ingot>, <thermalfoundation:material:162>],[<minecraft:iron_ingot>, <tinker_io:upg:1>, <minecraft:iron_ingot>], [<thermalfoundation:material:162>, <minecraft:iron_ingot>, <thermalfoundation:material:162>]]);
 
 // Reinforcement Modifier
 MetalPress.addRecipe(<tconstruct:materials:14>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:mold>, 2000);
@@ -85,28 +91,56 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:
 // Scorched Brick
 LabBlender.add([<rockhounding_chemistry:chemical_items:20>*4, <actuallyadditions:item_crystal:3>, <embers:dust_ember>, <thaumcraft:stone_arcane_brick>*2], <tcomplement:materials:1>*8);
 
-/*
-// Alloy Tank
-//recipes.addShaped(<tcomplement:alloy_tank>, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <thermalfoundation:material:291>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
+# [Slot Upgrade I] from [Base Upgrade][+2]
+craft.remake(<tinker_io:upg:1>, ["pretty",
+  "□ R □",
+  "R B R",
+  "□ R □"], {
+  "□": <ore:plateBronze>,						# Bronze Plate
+  "R": <arcanearchives:radiant_chest>,         # Radiant Chest
+  "B": <tinker_io:upg>,                        # Base Upgrade
+});
 
-// Smeltery Controller
-recipes.remove(<tconstruct:smeltery_controller>);
-recipes.addShaped(<tconstruct:smeltery_controller>, [[<tconstruct:materials>, <embers:plate_dawnstone>, <tconstruct:materials>],[<embers:plate_dawnstone>, <tcomplement:melter>, <embers:plate_dawnstone>], [<tconstruct:materials>, <embers:plate_dawnstone>, <tconstruct:materials>]]);
+# [Slot Upgrade II] from [Slot Upgrade I][+2]
+craft.remake(<tinker_io:upg:2>, ["pretty",
+  "□ * □",
+  "* S *",
+  "□ * □"], {
+  "□": <ore:plateInvar>,						 # Invar Plate
+  "*": <embers:crystal_ember>,                # Ember Crystal
+  "S": <tinker_io:upg:1>,                     # Slot Upgrade I
+});
 
-// New Scorched Recipe
-recipes.addShaped(<tcomplement:materials:1> * 8, [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],[<tconstruct:materials>, <embers:dust_ember>, <tconstruct:materials>], [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
-recipes.addShapeless(<tcomplement:scorched_faucet>, [<embers:dust_ember>,<tconstruct:faucet>]);
-recipes.addShapeless(<tcomplement:high_oven_io>, [<embers:dust_ember>,<tconstruct:smeltery_io>]);
-recipes.addShapeless(<tcomplement:scorched_casting:1>, [<embers:dust_ember>,<tconstruct:casting:1>]);
-recipes.addShapeless(<tcomplement:scorched_casting>, [<embers:dust_ember>,<tconstruct:casting>]);
-recipes.addShapeless(<tcomplement:scorched_block:3>, [<embers:dust_ember>,<tconstruct:seared:3>]);
+# [Slot Upgrade III] from [Slot Upgrade II][+2]
+craft.remake(<tinker_io:upg:3>, ["pretty",
+  "□ I □",
+  "I S I",
+  "□ I □"], {
+  "□": <ore:plateElectrum>,						 # Electrum Plate
+  "I": <astralsorcery:itemusabledust>,           # Illumination Powder
+  "S": <tinker_io:upg:2>,                        # Slot Upgrade II
+});
 
-// Bottled Time
-recipes.remove(<randomthings:timeinabottle>.*);
-Melting.removeRecipe(<liquid:gold>, <minecraft:clock>);
-Melting.addRecipe(<liquid:moltenTime> * 250, <minecraft:clock>);
-Casting.addBasinRecipe(<randomthings:timeinabottle>.withTag({timeData: {storedTime: 6000}}), <extrautils2:klein>, <liquid:moltenTime>, 144, true, 100);
-*/
+# [Slot Upgrade IV] from [Slot Upgrade III][+2]
+craft.remake(<tinker_io:upg:4>, ["pretty",
+  "□ ■ □",
+  "■ S ■",
+  "□ ■ □"], {
+  "□": <ore:plateDiamatine>, # Diamatine Plate
+  "■": <ore:blockGlassHardened> | <ore:blockGlassHardenedWhite> | <ore:fusedQuartz>, # Fused Quartz
+  "S": <tinker_io:upg:3>,    # Slot Upgrade III
+});
+
+# [Basin Upgrade] from [Base Upgrade][+3]
+craft.remake(<tinker_io:upg:7>, ["pretty",
+  "o C o",
+  "C B C",
+  "o ■ o"], {
+  "o": <ore:obsidian>,         # Obsidian
+  "C": <tconstruct:casting:1>, # Casting Basin
+  "B": <tinker_io:upg>,        # Base Upgrade
+  "■": <ore:blockEmerald>,     # Block of Emerald
+});
 
 
 ### MELTING ###

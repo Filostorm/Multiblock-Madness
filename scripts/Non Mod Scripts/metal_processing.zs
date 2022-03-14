@@ -760,6 +760,7 @@ enrichment.addRecipe(item, <thermalfoundation:material:68>);
 }
 
 blastFurnace.addRecipe(<thermalfoundation:material:132> * 2, null, <jaopca:item_clusteraluminium>, null, 80, 128, 1500);
+ArcFurnace.addRecipe(<thermalfoundation:material:132>*2, <jaopca:item_clusteraluminium>, null, 100, 512);
 
 ////////////////////////////////////////
 ##Platinum
@@ -909,7 +910,26 @@ furnace.addRecipe(<contenttweaker:material_part:20>, <contenttweaker:sub_block_h
 
 //Chrome
 furnace.remove(<techreborn:ingot:3>);
-blastFurnace.addRecipe(<techreborn:ingot:3>, null, <techreborn:dust:10>, null, 50, 256, 2000);
+ArcFurnace.removeRecipe(<techreborn:ingot:3>); 
+
+blastFurnace.addRecipe(<techreborn:ingot:3>, null, <ore:dustChrome>, null, 100, 1024, 2000);
+
+for item in <ore:dustChrome>.items{
+mods.thermalexpansion.RedstoneFurnace.addRecipe(<techreborn:ingot:3>, item, 3600);
+}
+
+
+//Gate Knightmetal
+furnace.remove(<twilightforest:knightmetal_ingot>);
+Melting.removeRecipe(<liquid:knightmetal>, <twilightforest:armor_shard_cluster>);
+Overrides.removeRecipe(<liquid:knightmetal>, <twilightforest:armor_shard_cluster>);
+ArcFurnace.removeRecipe(<twilightforest:knightmetal_ingot>);
+
+ArcFurnace.addRecipe(<twilightforest:knightmetal_ingot>, <twilightforest:armor_shard_cluster>, null, 100, 1024);
+blastFurnace.addRecipe(<twilightforest:knightmetal_ingot>, null, <twilightforest:armor_shard_cluster>, null, 100, 512, 1500);
+
+
+
 
 ##################################
 #####   	Ingot Tiers		######

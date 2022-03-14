@@ -10,7 +10,7 @@
         <input name="mowziesmobs:glowing_jelly" multiplier="2.5"/>
         <input name="randomthings:glowingmushroom" multiplier="2.0"/>
         <input name="clathrateGlowstone" multiplier="1.5"/>
-        <input name="enderio:block_holy_fog" multiplier="1.0"/>
+        <input name="enderio:block_holier_fog" multiplier="1.0"/>
       </inputgroup>
       <inputgroup>
         <input name="arcanearchives:radiant_dust" multiplier="1.0"/>
