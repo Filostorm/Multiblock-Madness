@@ -96,7 +96,7 @@
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockcasing@4"
     ],
-    "crystal_infuser": [
+    "nature_infuser": [
         "modularmachinery:blockinputbus",
         "modularmachinery:blockoutputbus",
         "modulardiversity:blockmanainputhatch"

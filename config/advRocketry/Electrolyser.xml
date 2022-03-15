@@ -32,6 +32,9 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="true">
+
+	<!-- Electrolysing Recipes -->
+
 	<Recipe timeRequired="2" power ="40000">
 		<input>
 			<fluidStack>water;500</fluidStack>
@@ -68,6 +71,13 @@
 			<fluidStack>chlorine;250</fluidStack>
 		</output>
 	</Recipe>
+
+
+
+	<!-- NC:O Electrolyser Compat -->
+
+	<!-- Generic Electrolyser Recipes -->
+
 	<Recipe timeRequired="2" power ="40000">
 		<input>
 			<fluidStack>hydrofluoric_acid;500</fluidStack>
@@ -95,6 +105,10 @@
 			<fluidStack>oxygen;1000</fluidStack>
 		</output>
 	</Recipe>
+
+
+	<!-- Depleted Fluoride Fuel Electrolysis -->
+
 	<Recipe timeRequired="2" power ="40000">
 		<input>
 			<fluidStack>depleted_tbu_fluoride;144</fluidStack>

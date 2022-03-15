@@ -263,11 +263,11 @@ target_chamber.removeRecipeWithInput(<qmd:ingot2:2>, <particle:antideuteron>*100
 
 target_chamber.addRecipe(<thaumcraft:quicksilver>, (<particle:proton>*50000000)^200000, <qmd:waste_fission>, 
 null, <particle:neutron>, null, 
-1000000, 0.01, 0, 0);
+1000000, 0.02, 0, 0);
 
 target_chamber.addRecipe(<thaumcraft:quicksilver>, (<particle:proton>*5000000)^6580000, <qmd:waste_spallation2:3>, 
 <particle:proton>, null, <particle:antiproton>, 
-20000000, 0.1, -6580000, 0);
+20000000, 0.2, -6580000, 0);
 
 target_chamber.addRecipe(<thaumcraft:quicksilver>, (<particle:proton>*5000000)^1540000, <qmd:waste_spallation2:3>, 
 <particle:pion_plus>, null, <particle:pion_minus>, 
@@ -279,7 +279,7 @@ target_chamber.addRecipe(<thaumcraft:quicksilver>, <particle:antiproton>*1000000
 
 target_chamber.addRecipe(<thaumcraft:quicksilver>, (<particle:deuteron>*10000000)^13100000, <qmd:waste_spallation2:3>, 
 <particle:deuteron>, null, <particle:antideuteron>, 
-20000000, 0.05, -13100000, 0);
+20000000, 0.1, -13100000, 0);
 
 target_chamber.addRecipe(<thaumcraft:quicksilver>, <particle:antideuteron>*1000000, <qmd:waste_spallation2:3>, 
 <particle:pion_plus>*4, <particle:pion_naught>*4, <particle:pion_minus>*4, 

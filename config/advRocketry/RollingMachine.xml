@@ -32,6 +32,11 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
+
+
+	
+	<!-- AR Tanks -->
+
 	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<itemStack>libvulpes:productsheet;2;6</itemStack>
@@ -68,6 +73,10 @@
 			<itemStack>advancedrocketry:pressuretank</itemStack>
 		</output>
 	</Recipe>
+
+
+	<!-- AR Sheets -->
+
 	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>plateIron</oreDict>
@@ -131,6 +140,11 @@
 			<itemStack>advancedrocketry:productsheet;1;1</itemStack>
 		</output>
 	</Recipe>
+
+
+
+	<!-- 1 Block -> 9 Plates Recipes -->
+
 	<Recipe timeRequired="30" power ="15000">
 		<input>
 			<oreDict>blockVanasteel</oreDict>
@@ -1052,6 +1066,7 @@
 
 
 
+	<!-- Heavy Plates -->
 
 	<Recipe timeRequired="30" power ="15000">
 		<input>
@@ -1215,6 +1230,11 @@
 			<itemStack>jaopca:item_platedensetungstencarbide</itemStack>
 		</output>
 	</Recipe>
+
+
+
+	<!-- Coal/Charcoal/Coke to Carbon Ingots -->
+	
 	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>blockCoal;9</oreDict>
