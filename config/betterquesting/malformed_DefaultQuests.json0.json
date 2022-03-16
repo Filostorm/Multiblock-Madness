@@ -62126,7 +62126,11 @@
     "805:10": {
       "questID:3": 805,
       "preRequisites:11": [
+<<<<<<< HEAD
         719
+=======
+        801
+>>>>>>> parent of 4079cd2... Removed filler quest
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -62135,6 +62139,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
+<<<<<<< HEAD
           "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
@@ -62157,6 +62162,17 @@
             },
             "id:8": "treasure2:mirthas_torch",
             "Count:3": 1,
+=======
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "betterquesting:placeholder",
+            "Count:3": 1,
+            "tag:10": {
+              "orig_meta:3": 0,
+              "orig_id:8": "volumetricflask:filler"
+            },
+>>>>>>> parent of 4079cd2... Removed filler quest
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -62166,11 +62182,47 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
+<<<<<<< HEAD
           "name:8": "Particle Properties",
           "desc:8": "Much like how §aitem stacks§r have properties (amount of items in a stack), §2particle stacks§r also have their own properties. However, unlike item stacks, particle stacks have 3 properties:\n\n§4- Amount (pu/t)\n§6- Energy (eV)\n§b- Focus§f\n\n§4Amount§r is the amount of particles, measured in particle units (pu). Particles are produced at a given rate, measured in particle units per tick (pu/t), and that amount §ccannot§r be modified by Accelerators.\n\n§6Energy§r is the energy of the particles, measured in Electron Volts (eV). It can be increased or decreased by Accelerators.\n\n§bFocus§r is how focused or confined the particles are. It can be increased by Accelerators.\n\n\n§nIntroduction to QMD Recipes§r\n\nAll recipes involving particles require particle stacks to have a §bminimum focus§f, and §6energy§r within a certain §6energy range (e.g 10-20 MeV)§f for the recipe to work (relevant values can be seen in §2JEI§f). Recipes require a §4cumulative amount of particles§r to be completed, thus allowing the speed of a recipe to be calculated with (pu required)/(pu/t).\n\n§A§fAs most newly-created particles start out with no §6energy §fand barely any §bfocus§f, §3Accelerators§e §fare used in order to get particle stacks to the relevant § §6energy§f and §bfocus§f§f. How §3Accelerators§f do this, and how they are constructed will be covered in \"QMD 102: The Linear Accelerator\" and relevant quests."
         }
       },
       "tasks:9": {
+=======
+          "name:8": "The Filler",
+          "desc:8": "The Filler, when connected to your AE Network, will automatically fill §6Volumetric Flasks§r§r with stored fluid when requested by a crafting recipe."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "betterquesting:placeholder",
+              "Count:3": 1,
+              "tag:10": {
+                "orig_meta:3": 0,
+                "orig_id:8": "volumetricflask:filler"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    }
+  },
+  "questLines:9": {
+    "0:10": {
+      "quests:9": {
+>>>>>>> parent of 4079cd2... Removed filler quest
         "0:10": {
           "index:3": 0,
           "taskID:8": "bq_standard:checkbox"

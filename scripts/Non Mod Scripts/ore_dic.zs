@@ -110,7 +110,7 @@ recipes.addShapeless(<minecraft:wooden_pressure_plate>, [<ore:pressurePlateWood>
 
 //<ore:lapotronCrystal>.add(<contenttweaker:lazurite_gem>);
 
-<ore:componentComputerChip>.add(<qmd:semiconductor:6>);
+//<ore:componentComputerChip>.add(<qmd:semiconductor:6>);
 //<ore:stickInvar>.add(<tconstruct:tool_rod>.withTag({Material: "invar"}));
 
 
