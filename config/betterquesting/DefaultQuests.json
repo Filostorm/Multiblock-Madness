@@ -53033,7 +53033,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "Crystal Infuser",
+          "name:8": "Nature Infuser",
           "desc:8": "You\u0027ll need to shoot the Mana Input Hatch with a Mana Spreader for the recipe to work. It has a §overy §rlarge mana buffer."
         }
       },
@@ -53050,7 +53050,7 @@
               "id:8": "modularmachinery:itemblueprint",
               "Count:3": 1,
               "tag:10": {
-                "dynamicmachine:8": "modularmachinery:crystal_infuser"
+                "dynamicmachine:8": "modularmachinery:nature_infuser"
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -53065,13 +53065,13 @@
               "id:8": "modularmachinery:blockinputbus",
               "Count:3": 1,
               "Damage:2": 2,
-              "OreDict:8": ""
+              "OreDict:8": "itemInputHatch"
             },
             "3:10": {
               "id:8": "modularmachinery:blockoutputbus",
               "Count:3": 1,
               "Damage:2": 1,
-              "OreDict:8": ""
+              "OreDict:8": "itemOutputHatch"
             },
             "4:10": {
               "id:8": "modulardiversity:blockmanainputhatch",

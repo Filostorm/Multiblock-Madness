@@ -169,6 +169,7 @@ Insolator.addRecipe(item*5, item, <thermalfoundation:fertilizer:2>, 5000);
 }
 
 
+
 // Watering Cans
 recipes.removeShaped(<thermalcultivation:watering_can>, [[<thermalfoundation:material:128>, null, null],[<thermalfoundation:material:128>, <minecraft:bucket>, <thermalfoundation:material:128>], [null, <thermalfoundation:material:128>, null]]);
 recipes.removeShaped(<thermalcultivation:watering_can:1>, [[null, <minecraft:dye:15>, null],[<thermalfoundation:material:162>, <thermalcultivation:watering_can>, <thermalfoundation:material:162>], [<minecraft:dye:15>, <minecraft:redstone>, <minecraft:dye:15>]]);
@@ -176,8 +177,40 @@ recipes.addShaped(<thermalcultivation:watering_can:1>, [[null, <cyclicmagic:peat
 recipes.addShaped(<thermalcultivation:watering_can>, [[<thermalfoundation:material:128>, null, null],[<thermalfoundation:material:128>, <actuallyadditions:item_fertilizer>, <thermalfoundation:material:128>], [null, <thermalfoundation:material:128>, null]]);
 
 
+
+
+val hardenedGlassMap = [
+<thermalfoundation:material:64>,
+<thermalfoundation:material:66>,
+<thermalfoundation:material:67>,
+<thermalfoundation:material:97>,
+<thermalfoundation:material:69>,
+<thermalfoundation:material:101>,
+<thermalfoundation:material:102>,
+<thermalfoundation:material:96>,
+<thermalfoundation:material:100>,
+<thermalfoundation:material:68>,
+<thermalfoundation:material:98>,
+<thermalfoundation:material:70>,
+<thermalfoundation:material:99>,
+<thermalfoundation:material:65>,
+<thermalfoundation:material:103>,
+<thermalfoundation:material:71>,
+] as IItemStack[];
+
+for dust in hardenedGlassMap {
+	InductionSmelter.removeRecipe(<thermalfoundation:glass:3>, dust);
+}
+
+
+
+//Enderium Glass
+blastFurnace.addRecipe(<thermalfoundation:glass_alloy:7>*2, null, <techreborn:reinforced_glass>*2, <thermalfoundation:material:103>, 300, 1024, 2000);
+
+//Lumium Glass
+blastFurnace.addRecipe(<thermalfoundation:glass_alloy:6>*2, null, <techreborn:reinforced_glass>*2, <thermalfoundation:material:102>, 300, 1024, 2000);
+
 //Iridium Glass
-InductionSmelter.removeRecipe(<thermalfoundation:glass:3>, <thermalfoundation:material:71>);
 blastFurnace.addRecipe(<thermalfoundation:glass:7>*4, null, <techreborn:reinforced_glass>*4, <techreborn:plates:38>, 600, 2048, 3500);
 
 // Resonant Cell Upgrade
