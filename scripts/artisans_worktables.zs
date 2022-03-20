@@ -71,6 +71,7 @@ val artisansPlates as IItemStack[IOreDictEntry] = {
   <ore:ingotIronwood>:<moreplates:ironwood_plate>,
   <ore:ingotBrass>:<thaumcraft:plate>,
   <ore:ingotThaumium>:<thaumcraft:plate:2>,
+  <ore:ingotTinSilver>:<jaopca:item_platetinsilver>,
   <ore:gemQuartz>:<moreplates:nether_quartz_plate>,
 } as IItemStack[IOreDictEntry];
 

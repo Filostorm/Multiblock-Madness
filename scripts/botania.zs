@@ -361,7 +361,48 @@ craft.remake(<botania:corporeaspark>, ["pretty",
   "□": <ore:plateThaumium>,                 # Thaumium Plate
 });
 
-# [Monitoring Crystal] from [Mana Diamond][+2]
+//Red String
+craft.reshapeless(<botania:manaresource:12>, "*⌃sM", {
+  "*": <actuallyadditions:block_crystal>, # Restonia Crystal Block
+  "⌃": <ore:gemQuartzBlack>,              # Black Quartz
+  "s": <ore:string> | <ore:cropFlax>,     # String
+  "M": <ore:powderMana>,                  # Mana Powder
+});
 
+# [Corporea Crystal Cube] from [Diamatine Crystal Block][+3]
+craft.remake(<botania:corporeacrystalcube>, ["pretty",
+  "  C  ",
+  "S * S",
+  "S E S"], {
+  "C": <botania:corporeaspark>,             # Corporea Spark
+  "S": <ebwizardry:transportation_stone>,   # Stone of Transportation
+  "*": <actuallyadditions:block_crystal:2>, # Diamatine Crystal Block
+  "E": <contenttweaker:elemental_soil>,     # Elemental Soil
+});
+
+# [Corporea Index] from [Corporea Spark][+5]
+craft.remake(<botania:corporeaindex>, ["pretty",
+  "E q E",
+  "▬ C ▬",
+  "* n *"], {
+  "E": <ore:bEnderAirBottle>,       # Ender Air Bottle
+  "q": <ore:quicksilver>,           # Quicksilver
+  "▬": <contenttweaker:noon_ingot>, # Daybound Ingot
+  "C": <botania:corporeaspark>,     # Corporea Spark
+  "*": <minecraft:end_crystal>,     # End Crystal
+  "n": <ore:nitor>,                 # Yellow Nitor
+});
+
+
+# [End Crystal] from [Nether Star][+3]
+craft.remake(<minecraft:end_crystal>, ["pretty",
+  "M M M",
+  "M S M",
+  "▬ P ▬"], {
+  "M": <botania:managlass>, # Managlass
+  "S": <ore:netherStar>,    # Nether Star
+  "▬": <ore:ingotSoulium>,  # Soulium Ingot
+  "P": <ore:itemGhastTear>, # Ghast Tear
+});
 ##########################################################################################
 print("==================== end of botania.zs ====================");

@@ -80,16 +80,16 @@ item.contenttweaker.vis_meal.name=§5Crystal Growth Powder
 item.contenttweaker.ingot_xp.name=XP Infused Glowstone
 tile.contenttweaker.block_xp.name=Block of XP Infused Glowstone
 
-fluid.moltenEmbers=Molten Embers
-fluid.moltenBedrock=Molten Bedrock
-fluid.moltenTokenIron=Essence of Tier 1
-fluid.moltenTokenBronze=Essence of Tier 2
-fluid.moltenTokenSteel=Essence of Tier 3
-fluid.moltenTokenRefinedIron=Essence of Tier 4
-fluid.moltenTokenOsmium=Essence of Tier 5
-fluid.moltenTokenIridium=Essence of Tier 6
-fluid.moltenTokenUltimate=Essence of Tier 7
-fluid.moltenTokenInfinity=Essence of Tier 8
+fluid.moltenembers=Molten Embers
+fluid.moltenbedrock=Molten Bedrock
+fluid.moltentokeniron=Essence of Tier 1
+fluid.moltentokenbronze=Essence of Tier 2
+fluid.moltentokensteel=Essence of Tier 3
+fluid.moltentokenrefinediron=Essence of Tier 4
+fluid.moltentokenosmium=Essence of Tier 5
+fluid.moltentokeniridium=Essence of Tier 6
+fluid.moltentokenultimate=Essence of Tier 7
+fluid.moltentokeninfinity=Essence of Tier 8
 
 
 item.contenttweaker.compressed_chrome.name=Compressed Chrome

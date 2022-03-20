@@ -66,7 +66,7 @@ recipes.addShaped(<deepmoblearning:simulation_chamber>, [[<contenttweaker:plate_
 //mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
 
 //Thermal
-mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_thermal_elemental>, [<contenttweaker:pristine_dust>, <ore:dustElemental>], 1000,100,2);
+mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_thermal_elemental>, [<contenttweaker:pristine_dust>, <ore:dustElemental>], 1000,100,1);
 
 //TF Stuff
 mods.bloodmagic.AlchemyTable.addRecipe(<deepmoblearning:pristine_matter_twilight_glacier>, [<contenttweaker:pristine_dust>, <twilightforest:arctic_fur>], 2000,100,1);
@@ -137,7 +137,7 @@ val MobAlchemy as IItemStack[IItemStack] = {
 } as IItemStack[IItemStack];
 
 for matter, item in MobAlchemy {
-	AlchemyTable.addRecipe(matter, [<contenttweaker:blank_matter>,<aetherworks:item_resource>, item,item,item,item], 1000,200,3);
+	AlchemyTable.addRecipe(matter, [<contenttweaker:blank_matter>,<aetherworks:item_resource>, item,item,item,item], 1000,200,2);
 }
 ##########################################################################################
 print("==================== end of deep_mob_learning.zs ====================");

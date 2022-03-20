@@ -273,9 +273,12 @@ MetalFormer.addRecipe(<embers:ingot_dawnstone>, <liquid:aetherworks.aetherium_ga
 MetalFormer.addRecipe(<mysticalworld:amethyst_gem>, <liquid:aetherworks.aetherium_gas>*576, <aetherworks:item_resource:5>, 2500);
 
 
-
+//Bad Crashing, Bad!
 <mysticalmechanics:gearbox_frame>.addTooltip(format.red("Only rotate with an AE Quartz Wrench"));
 <mysticalmechanics:mergebox_frame>.addTooltip(format.red("Only rotate with an AE Quartz Wrench"));
 
+//Stamper alt recipes for if infuser doesnt work
+Stamper.add(<botania:dreamwood:5>, <liquid:aetherworks.aetherium_gas>*18, <embers:stamp_flat>, <botania:dreamwood>);
+Stamper.add(<astralsorcery:itemcraftingcomponent:4>, <liquid:aetherworks.aetherium_gas>*144, <embers:stamp_flat>, <astralsorcery:itemcraftingcomponent>);
 ##########################################################################################
 print("==================== end of embers.zs ====================");

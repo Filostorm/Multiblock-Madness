@@ -386,5 +386,14 @@ craft.remake(<enderio:item_capacitor_silver>, ["pretty",
   "C": <immersiveengineering:material:27>,   # Circuit Board
 });
 
+# [Quite Clear Glass]*8 from [Infused Enderpearl][+1]
+craft.remake(<enderio:block_holy_fused_glass> * 8, ["pretty",
+  "■ ■ ■",
+  "■ I ■",
+  "■ ■ ■"], {
+  "■": <ore:fusedGlass>,                    # Clear Glass
+  "I": <rftools:infused_enderpearl>,        # Infused Enderpearl
+});
+
 ##########################################################################################
 print("==================== end of mods enderio.zs ====================");

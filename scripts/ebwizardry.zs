@@ -36,5 +36,18 @@ recipes.addShaped(<ebwizardry:arcane_workbench>, [[<minecraft:gold_ingot>, <mine
 
 ManaInfusion.addInfusion(<ebwizardry:grand_crystal>,<ebwizardry:magic_crystal>,250000);
 <ebwizardry:grand_crystal>.addTooltip(format.aqua("Created by dropping a Magic Crystal into a Mana Pool at least 1/4 full"));
+
+
+# [Stone of Transportation]*2 from [Emeradic Crystal Block][+3]
+craft.remake(<ebwizardry:transportation_stone> * 2, ["pretty",
+  "A E A",
+  "M * M",
+  "A E A"], {
+  "A": <thaumcraft:stone_arcane>,           # Arcane Stone
+  "E": <enderutilities:enderpart:15>,       # Ender Core (Basic)
+  "M": <ebwizardry:medium_mana_flask>,      # Medium Mana Flask
+  "*": <actuallyadditions:block_crystal:4>, # Emeradic Crystal Block
+});
+
 ##########################################################################################
 print("==================== end of mods ebwizardry.zs ====================");

@@ -307,6 +307,7 @@ Transposer.add(<liquid:raw_syngas>*1000, <liquid:raw_syngas>*1000);
 Transposer.add(<liquid:silicone>*1000, <liquid:silicone>*1000);
 Transposer.add(<liquid:syngas>*1000, <liquid:syngas>*1000);
 Transposer.add(<liquid:sodium_hydroxide>*1000, <liquid:sodium_hydroxide_solution>*1000);
+Transposer.add(<liquid:sodium_hydroxide_solution>*1000, <liquid:sodium_hydroxide>*1000);
 Transposer.add(<liquid:argon>*1000, <liquid:argon>*1000);
 Transposer.add(<liquid:fluegas>*1000, <liquid:flue_gas>*1000);
 Transposer.add(<liquid:flue_gas>*1000, <liquid:fluegas>*1000);
@@ -329,23 +330,23 @@ recipes.remove(<rockhounding_chemistry:machines_a:11>);
 
 mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:162>, <contenttweaker:gearcrushinginvar>, 6);
 mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushinginvar>);
-<contenttweaker:gearcrushinginvar>.addTooltip("Crushes 8 Stacks");
+<contenttweaker:gearcrushinginvar>.addTooltip("Crushes 8 Stacks before breaking");
 
 mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:160>, <contenttweaker:gearcrushingsteel>, 6);
 mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingsteel>);
-<contenttweaker:gearcrushingsteel>.addTooltip("Crushes 16 Stacks");
+<contenttweaker:gearcrushingsteel>.addTooltip("Crushes 16 Stacks before breaking");
 
 mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <contenttweaker:gearcrushingdarksteel>, 6);
 mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingdarksteel>);
-<contenttweaker:gearcrushingdarksteel>.addTooltip("Crushes 64 Stacks");
+<contenttweaker:gearcrushingdarksteel>.addTooltip("Crushes 64 Stacks before breaking");
 
 mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_deco:22>, <contenttweaker:gearcrushingcortensteel>, 6);
 mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingcortensteel>);
-<contenttweaker:gearcrushingcortensteel>.addTooltip("Crushes 128 Stacks");
+<contenttweaker:gearcrushingcortensteel>.addTooltip("Crushes 128 Stacks before breaking");
 
 mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:40>, <contenttweaker:gearcrushingvanasteel>, 6);
 mods.rockhounding_chemistry.CrushingGears.add(<contenttweaker:gearcrushingvanasteel>);
-<contenttweaker:gearcrushingvanasteel>.addTooltip("Crushes 256 Stacks");
+<contenttweaker:gearcrushingvanasteel>.addTooltip("Crushes 256 Stacks before breaking");
 
 /*
 recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({ench: [{lvl: 1 as short, id: 34 as short}], RepairCost: 1}), [[null, <moreplates:invar_stick>, null],[<rockhounding_chemistry:misc_items:3>, <moreplates:invar_stick>, <rockhounding_chemistry:misc_items:3>], [<rockhounding_chemistry:misc_items:3>, <moreplates:invar_stick>, <rockhounding_chemistry:misc_items:3>]]);
@@ -358,32 +359,32 @@ recipes.addShaped(<rockhounding_chemistry:slurry_agitator>.withTag({Unbreakable:
 mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:162>, <contenttweaker:rodinvar>*4, 2);
 mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:162>, <contenttweaker:foilinvar>*8, 3);
 mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorinvar>);
-<contenttweaker:agitatorinvar>.addTooltip("Mixes 8 Stacks");
+<contenttweaker:agitatorinvar>.addTooltip("Mixes 8 Stacks before breaking");
 recipes.addShaped(<contenttweaker:agitatorinvar>, [[null, <contenttweaker:rodinvar>, null],[<contenttweaker:foilinvar>, <contenttweaker:rodinvar>, <contenttweaker:foilinvar>], [<contenttweaker:foilinvar>, <contenttweaker:rodinvar>, <contenttweaker:foilinvar>]]);
 
 mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:160>, <contenttweaker:rodsteel>*4, 2);
 mods.rockhounding_chemistry.ProfilingBench.add(<thermalfoundation:material:160>, <contenttweaker:foilsteel>*8, 3);
 mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorsteel>);
-<contenttweaker:agitatorsteel>.addTooltip("Mixes 16 Stacks");
+<contenttweaker:agitatorsteel>.addTooltip("Mixes 16 Stacks before breaking before breaking");
 recipes.addShaped(<contenttweaker:agitatorsteel>, [[null, <contenttweaker:rodsteel>, null],[<contenttweaker:foilsteel>, <contenttweaker:rodsteel>, <contenttweaker:foilsteel>], [<contenttweaker:foilsteel>, <contenttweaker:rodsteel>, <contenttweaker:foilsteel>]]);
 
 mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <contenttweaker:roddarksteel>*4, 2);
 mods.rockhounding_chemistry.ProfilingBench.add(<enderio:item_alloy_ingot:6>, <contenttweaker:foildarksteel>*8, 3);
 mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatordarksteel>);
-<contenttweaker:agitatordarksteel>.addTooltip("Mixes 64 Stacks");
+<contenttweaker:agitatordarksteel>.addTooltip("Mixes 64 Stacks before breaking");
 recipes.addShaped(<contenttweaker:agitatordarksteel>, [[null, <contenttweaker:roddarksteel>, null],[<contenttweaker:foildarksteel>, <contenttweaker:roddarksteel>, <contenttweaker:foildarksteel>], [<contenttweaker:foildarksteel>, <contenttweaker:roddarksteel>, <contenttweaker:foildarksteel>]]);
 
 mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:37>, <contenttweaker:rodhydronalium>*4, 2);
 mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:37>, <contenttweaker:foilhydronalium>*8, 3);
 mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorhydronalium>);
-<contenttweaker:agitatorhydronalium>.addTooltip("Mixes 128 Stacks");
+<contenttweaker:agitatorhydronalium>.addTooltip("Mixes 128 Stacks before breaking");
 recipes.addShaped(<contenttweaker:agitatorhydronalium>, [[null, <contenttweaker:rodhydronalium>, null],[<contenttweaker:foilhydronalium>, <contenttweaker:rodhydronalium>, <contenttweaker:foilhydronalium>], [<contenttweaker:foilhydronalium>, <contenttweaker:rodhydronalium>, <contenttweaker:foilhydronalium>]]);
 
 
 //mods.rockhounding_chemistry.ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:40>, <contenttweaker:agitatorhastelloy>, 6);
 recipes.addShaped(<contenttweaker:agitatorhastelloy>, [[null, <rockhounding_chemistry:misc_items:27>, null],[<contenttweaker:hastelloyfoil>, <rockhounding_chemistry:misc_items:27>, <contenttweaker:hastelloyfoil>], [<contenttweaker:hastelloyfoil>, <rockhounding_chemistry:misc_items:27>, <contenttweaker:hastelloyfoil>]]);
 mods.rockhounding_chemistry.SlurryAgitators.add(<contenttweaker:agitatorhastelloy>);
-<contenttweaker:agitatorhastelloy>.addTooltip("Mixes 256 Stacks");
+<contenttweaker:agitatorhastelloy>.addTooltip("Mixes 256 Stacks before breaking");
 
 
 ProfilingBench.add(<rockhounding_chemistry:alloy_items_tech:19>, <contenttweaker:hastelloyfoil>*8, 3);

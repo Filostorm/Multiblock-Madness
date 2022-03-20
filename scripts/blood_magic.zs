@@ -268,6 +268,41 @@ Pressurizer.addRecipe(<contenttweaker:slatedust>*4, <bloodmagic:blood_rune>);
 <chisel:energizedvoidstone:6>.addTooltip(format.darkPurple("Used as the tier 3 Capstones for the Blood Altar"));
 AlchemyTable.addRecipe(<chisel:energizedvoidstone:6> *4, [<botania:thirdeye>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>,<chisel:energizedvoidstone>], 1000, 100, 2);
 AnimusPlugin.removeComponentMapping(<blockstate:minecraft:glowstone>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:minecraft:sea_lantern>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=0>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=1>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=10>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=11>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=12>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=13>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=14>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=15>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=2>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=3>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=4>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=5>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=6>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=7>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=8>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone:variation=9>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=0>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=1>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=10>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=11>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=12>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=13>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=14>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=2>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=3>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=4>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=5>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=6>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=7>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=8>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone1:variation=9>,"GLOWSTONE");
+AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone2:variation=0>,"GLOWSTONE");
+
+
 AnimusPlugin.addComponentMapping(<blockstate:chisel:energizedvoidstone:variation=6>, "GLOWSTONE");
 
 
@@ -305,6 +340,19 @@ mods.inworldcrafting.FluidToItem.transform(<bloodmagic:ritual_dismantler>, <liqu
 
 //"Easy" Blood Diamonds
 mods.inworldcrafting.FluidToItem.transform(<bloodarsenal:blood_diamond>, <liquid:refined_life_essence>, [<botania:manaresource:2>,<minecraft:dragon_breath>], true);
+
+# [Bloodstone Brick] from [Weak Blood Shard][+2]
+craft.remake(<bloodmagic:decorative_brick:1>*2, ["pretty",
+  "¤ S ¤",
+  "S W S",
+  "¤ S ¤"], {
+  "¤": <ore:plateBloodBronze>,          # Blood Bronze Plate
+  "S": <tcomplement:scorched_block:3>, # Scorched Bricks
+  "W": <bloodmagic:blood_shard>,       # Weak Blood Shard
+});
+//Brick Swaping
+recipes.addShaped(<bloodmagic:decorative_brick:1> * 4, [[<bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>],[<bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>]]);
+furnace.addRecipe(<bloodmagic:decorative_brick>, <bloodmagic:decorative_brick:1>, 0.0);
 
 ##########################################################################################
 print("==================== end of blood_magic.zs ====================");

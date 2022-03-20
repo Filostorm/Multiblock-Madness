@@ -198,7 +198,7 @@ craft.remake(<environmentaltech:void_ore_miner_cont_4>, ["pretty",
   "◙": <environmentaltech:structure_frame_4>,     # Structure Frame Tier 4
   "o": <ore:componentControlCircuit>,             # Control Circuit
   "■": <ore:blockPladium>,                        # Pladium
-  "D": <nuclearcraft:lithium_ion_battery_du>.withTag({}), # DU Lithium Ion Battery
+  "D": <nuclearcraft:lithium_ion_battery_du>,     # DU Lithium Ion Battery
   "E": <ore:itemEnhancedMachineChassi>,           # Enhanced Machine Chassis
   "C": <enderio:item_capacitor_crystalline>,      # Crystalline Capacitor
   "V": <environmentaltech:void_ore_miner_cont_3>, # Void Ore Miner Controller Tier 3
