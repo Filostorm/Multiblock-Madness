@@ -552,6 +552,9 @@ FluidToFluid.transform(<liquid:base_mirion>, <liquid:glass>, [<contenttweaker:ho
 FluidToFluid.transform(<liquid:prepared_mirion>, <liquid:base_mirion>, [<botania:manaresource>,<botania:manaresource:7>,<botania:manaresource:4>], true);
 FluidToItem.transform(<plustic:mirioningot>*2, <liquid:prepared_mirion>, [<enderio:item_material:16>], true);
 
+//Tin Silver
+ArcFurnace.addRecipe(<nuclearcraft:alloy:8>*4, <thermalfoundation:material:130>, null, 400, 512, [<thermalfoundation:material:129>*3]);
+ArcFurnace.addRecipe(<nuclearcraft:alloy:8>*4, <thermalfoundation:material:129>*3, null, 400, 512, [<thermalfoundation:material:130>]);
 
 ##########################################################################################
 print("==================== end of alloys.zs ====================");
