@@ -145,5 +145,13 @@ drillingFluid.gaseous = false;
 drillingFluid.luminosity = 0;
 drillingFluid.viscosity = 3000;
 drillingFluid.register();
+
+
+var moltenModularium = VanillaFactory.createFluid("molten_modularium", Color.fromHex("e6b45e"));
+moltenModularium.temperature = 3000;
+moltenModularium.luminosity = 15;
+moltenModularium.viscosity = 1000;
+moltenModularium.material = <blockmaterial:lava>;
+moltenModularium.register();
 ##########################################################################################
 print("==================== end of fluids.zs ====================");

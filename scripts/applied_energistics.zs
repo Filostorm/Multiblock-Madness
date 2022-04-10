@@ -303,5 +303,138 @@ mods.threng.Centrifuge.addRecipe(<nuclearcraft:flour>, <natura:materials>);
 Insolator.removeRecipe(<appliedenergistics2:crystal_seed>, <minecraft:glowstone_dust>);
 Insolator.addRecipe(<appliedenergistics2:material:10>,<appliedenergistics2:crystal_seed>.withTag({progress: 0}), <minecraft:glowstone_dust>, 90000, null, 0, 3000);
 
+
+var basicHousing = <appliedenergistics2:material:39>;
+var advancedHousing = <aeadditions:storage.casing>;
+var fluidHousing = <aeadditions:storage.casing:1>;
+var gasHousing = <aeadditions:storage.casing:2>;
+
+
+# [ME Storage Housing] from [Quartz Glass][+2]
+craft.remake(basicHousing, ["pretty",
+  "⌃ п ⌃",
+  "п   п",
+  "□ □ □"], {
+  "⌃": <appliedenergistics2:quartz_glass>,         # Quartz Glass
+  "п": <ore:plateRestonia>,                        # Restonia Plate
+  "□": <ore:plateAluminum> | <ore:plateAluminium>, # Aluminum Plate
+});
+
+# [ME Storage Housing]*2 from [Quartz Glass][+2]
+craft.make(basicHousing * 2, ["pretty",
+  "⌃ □ ⌃",
+  "□   □",
+  "п п п"], {
+  "⌃": <appliedenergistics2:quartz_glass>, # Quartz Glass
+  "□": <ore:plateRestonia>,                # Restonia Plate
+  "п": <ore:plateScal>,                    # ScAl Plate
+});
+
+# [Advanced Storage Housing] from [ME Storage Housing][+3]
+craft.remake(advancedHousing, ["pretty",
+  "R ▬ R",
+  "▬ M ▬",
+  "□ □ □"], {
+  "R": <ore:glassReinforced>,             # Reinforced Glass
+  "▬": <ore:ingotFluixSteel>,             # Fluix Platinum Ingot
+  "M": <appliedenergistics2:material:39>, # ME Storage Housing
+  "□": <ore:plateDiamatine>,              # Diamatine Plate
+});
+
+# [Fluid Storage Housing] from [ME Storage Housing][+3]
+craft.remake(fluidHousing, ["pretty",
+  "⌃ п ⌃",
+  "п M п",
+  "□ □ □"], {
+  "⌃": <appliedenergistics2:quartz_vibrant_glass>, # Vibrant Quartz Glass
+  "п": <ore:plateTinSilver>,                       # Tin Silver Plate
+  "M": <appliedenergistics2:material:39>,          # ME Storage Housing
+  "□": <ore:platePalis>,                           # Palis Plate
+});
+
+# [Gas Storage Housing] from [ME Storage Housing][+3]
+craft.remake(gasHousing, ["pretty",
+  "⌃ п ⌃",
+  "п M п",
+  "□ □ □"], {
+  "⌃": <appliedenergistics2:quartz_vibrant_glass>, # Vibrant Quartz Glass
+  "п": <ore:plateElectrum>,   # Electrum Plate
+  "M": <appliedenergistics2:material:39>,          # ME Storage Housing
+  "□": <ore:plateEnori>,                           # Enori Plate
+});
+
+val basicHousingMap as IItemStack[IItemStack] = {
+<appliedenergistics2:storage_cell_1k>:<appliedenergistics2:material:35>,
+<appliedenergistics2:storage_cell_4k>:<appliedenergistics2:material:36>,
+<appliedenergistics2:storage_cell_16k>:<appliedenergistics2:material:37>,
+<appliedenergistics2:storage_cell_64k>:<appliedenergistics2:material:38>,
+<appliedenergistics2:spatial_storage_cell_2_cubed>:<appliedenergistics2:material:32>,
+<appliedenergistics2:spatial_storage_cell_16_cubed>:<appliedenergistics2:material:33>,
+<appliedenergistics2:spatial_storage_cell_128_cubed>:<appliedenergistics2:material:34>,
+<thaumicenergistics:essentia_cell_1k>:<thaumicenergistics:essentia_component_1k>,
+<thaumicenergistics:essentia_cell_4k>:<thaumicenergistics:essentia_component_4k>,
+<thaumicenergistics:essentia_cell_16k>:<thaumicenergistics:essentia_component_16k>,
+<thaumicenergistics:essentia_cell_64k>:<thaumicenergistics:essentia_component_64k>,
+} as IItemStack[IItemStack];
+
+for cell, component in basicHousingMap {
+	recipes.removeShaped(cell, [
+		[<appliedenergistics2:quartz_glass>, <minecraft:redstone>, <appliedenergistics2:quartz_glass>],
+		[<minecraft:redstone>, component, <minecraft:redstone>], 
+		[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]
+	]);
+
+}
+
+val advancedHousingMap as IItemStack[IItemStack] = {
+<aeadditions:storage.physical>:<aeadditions:storage.component>,
+<aeadditions:storage.physical:1>:<aeadditions:storage.component:1>,
+<aeadditions:storage.physical:2>:<aeadditions:storage.component:2>,
+<aeadditions:storage.physical:3>:<aeadditions:storage.component:3>,
+} as IItemStack[IItemStack];
+
+for cell, component in advancedHousingMap {
+	recipes.removeShaped(cell, [
+		[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
+		[<appliedenergistics2:material:8>, component, <appliedenergistics2:material:8>], 
+		[<minecraft:diamond>, <minecraft:diamond>, <minecraft:diamond>]
+	]);
+}
+
+val fluidHousingMap as IItemStack[IItemStack] = {
+<appliedenergistics2:fluid_storage_cell_1k>:<appliedenergistics2:material:54>,
+<appliedenergistics2:fluid_storage_cell_4k>:<appliedenergistics2:material:55>,
+<appliedenergistics2:fluid_storage_cell_16k>:<appliedenergistics2:material:56>,
+<appliedenergistics2:fluid_storage_cell_64k>:<appliedenergistics2:material:57>,
+<aeadditions:storage.fluid>:<aeadditions:storage.component:4>,
+<aeadditions:storage.fluid:1>:<aeadditions:storage.component:5>,
+<aeadditions:storage.fluid:2>:<aeadditions:storage.component:6>,
+} as IItemStack[IItemStack];
+
+for cell, component in fluidHousingMap {
+	recipes.removeShaped(cell, [
+		[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
+		[<appliedenergistics2:material:8>, component, <appliedenergistics2:material:8>], 
+		[<aeadditions:certustank>, <aeadditions:certustank>, <aeadditions:certustank>]
+	]);
+}
+
+val gasHousingMap as IItemStack[IItemStack] = {
+<aeadditions:storage.gas>:<aeadditions:storage.component:7>,
+<aeadditions:storage.gas:1>:<aeadditions:storage.component:8>,
+<aeadditions:storage.gas:2>:<aeadditions:storage.component:9>,
+<aeadditions:storage.gas:3>:<aeadditions:storage.component:10>,
+<aeadditions:storage.gas:4>:<aeadditions:storage.component:11>,
+<aeadditions:storage.gas:5>:<aeadditions:storage.component:12>,
+<aeadditions:storage.gas:6>:<aeadditions:storage.component:13>,
+} as IItemStack[IItemStack];
+
+for cell, component in gasHousingMap {
+	recipes.removeShaped(cell, [
+		[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
+		[<appliedenergistics2:material:8>, component, <appliedenergistics2:material:8>], 
+		[<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>]
+	]);
+}
 ##########################################################################################
 print("==================== end of applied_energistics.zs ====================");

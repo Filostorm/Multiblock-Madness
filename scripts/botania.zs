@@ -173,24 +173,8 @@ PureDaisy.addRecipe(<arcanearchives:storage_raw_quartz>, <arcanearchives:storage
 
 ### MANA INFUSION ###
 
-//Mana Powder
-ManaInfusion.removeRecipe(<botania:manaresource:23>);
-//ManaInfusion.addInfusion(<botania:manaresource:23>,<minecraft:gunpowder>,10000);
-ManaInfusion.addInfusion(<botania:manaresource:23>,<embers:dust_ember>,7500);
-ManaInfusion.addInfusion(<botania:manaresource:23>,<contenttweaker:slatedust>,5000);
-
 //Essence of Mana
 ManaInfusion.addInfusion(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}), <thaumcraft:nugget:9>, 1000);
-
-//Mana Steel
-ManaInfusion.removeRecipe(<botania:storage>);
-ManaInfusion.removeRecipe(<ore:ingotManasteel>);
-ManaInfusion.removeRecipe(<mystgears:gear_manasteel>);
-
-ManaInfusion.addInfusion(<botania:manaresource>,<contenttweaker:inert_ingot>,10000);
-ManaInfusion.addInfusion(<botania:manaresource>*2,<contenttweaker:material_part:20>,10000);
-ManaInfusion.addInfusion(<botania:storage>,<contenttweaker:sub_block_holder_0:2>,100000);
-ManaInfusion.addInfusion(<botania:storage>*2,<contenttweaker:sub_block_holder_0>,100000);
 
 //Mana Diamond
 ManaInfusion.removeRecipe(<botania:storage:3>);
@@ -202,6 +186,41 @@ ManaInfusion.addInfusion(<botania:storage:3>,<actuallyadditions:block_crystal:2>
 ManaInfusion.addInfusion(<botania:manaresource:2>*2,<actuallyadditions:item_crystal_empowered:2>,1500);
 ManaInfusion.addInfusion(<botania:storage:3>*2,<actuallyadditions:block_crystal_empowered:2>,15000);
 
+###TheSmartNoob's Changes###
+
+//Mana Steel
+ManaInfusion.removeRecipe(<botania:storage>);
+ManaInfusion.removeRecipe(<ore:ingotManasteel>);
+ManaInfusion.removeRecipe(<mystgears:gear_manasteel>);
+
+//Unchanged innert metal to manasteel
+ManaInfusion.addInfusion(<botania:manaresource>,<contenttweaker:inert_ingot>,10000);
+//10 Percent mana cost reduction orichalcum to manasteel
+ManaInfusion.addInfusion(<botania:manaresource>*2,<contenttweaker:material_part:20>,9000);
+//1 Mithrillium to 4 manasteel at 75 percent of original mana cost
+ManaInfusion.addInfusion(<botania:manaresource>*4,<thaumadditions:mithrillium_ingot>,7500);
+//1 Adaminite to 8 manasteel at 50 percent of original mana cost
+ManaInfusion.addInfusion(<botania:manaresource>*8,<thaumadditions:adaminite_ingot>,5000);
+//1 Mithminite to 16 manasteel at 25 percent of original mana cost
+ManaInfusion.addInfusion(<botania:manaresource>*16,<thaumadditions:mithminite_ingot>,2500);
+//block of manasteel craft fixes
+ManaInfusion.addInfusion(<botania:storage>,<contenttweaker:sub_block_holder_0:2>,90000);
+ManaInfusion.addInfusion(<botania:storage>*2,<contenttweaker:sub_block_holder_0>,81000);
+ManaInfusion.addInfusion(<botania:storage>*4,<thaumadditions:mithrillium_block>,67500);
+ManaInfusion.addInfusion(<botania:storage>*8,<thaumadditions:adaminite_block>,45000);
+ManaInfusion.addInfusion(<botania:storage>*16,<thaumadditions:mithminite_block>,22500);
+
+//Mana Powder
+ManaInfusion.removeRecipe(<botania:manaresource:23>);
+
+//Unchanged ember grit to mana powder
+ManaInfusion.addInfusion(<botania:manaresource:23>,<embers:dust_ember>,7500);
+//crushed slate to 2 mana powder at a slightly increased from original mana cost
+ManaInfusion.addInfusion(<botania:manaresource:23>*2,<contenttweaker:slatedust>,6750);
+//mana-infused dust to 4 mana powder at 75 percent of the original mana cost
+ManaInfusion.addInfusion(<botania:manaresource:23>*4,<thermalfoundation:material:72>,5625);
+//mana dust to 8 mana powder at the original cost of the crushed slate to mana powder recipe
+ManaInfusion.addInfusion(<botania:manaresource:23>*8,<thermalfoundation:material:1028>,5000);
 
 ### RUNIC ALTAR ###
 

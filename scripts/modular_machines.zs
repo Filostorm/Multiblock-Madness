@@ -2,6 +2,8 @@ import mods.modularmachinery.RecipePrimer;
 import crafttweaker.item.IItemStack;
 import mods.actuallyadditions.Empowerer;
 import mods.extendedcrafting.CombinationCrafting;
+import mods.tconstruct.Melting;
+import mods.tconstruct.Casting;
 
 print("==================== loading modular_machines.zs ====================");
 ##########################################################################################
@@ -45,14 +47,12 @@ val itemstoHide =
     <modulardiversity:blockemberoutputhatch:5>,
     <modulardiversity:blockemberoutputhatch:6>,
     <modulardiversity:blockemberoutputhatch:7>,
-
     <modularmachinery:blockinputbus>,
     <modularmachinery:blockfluidinputhatch>,
     <modularmachinery:blockenergyinputhatch>,
     <modularmachinery:blockenergyoutputhatch>,
     <modularmachinery:blockfluidoutputhatch>,
     <modularmachinery:blockoutputbus>,
-
 ]
  as IItemStack[];
 
@@ -62,10 +62,18 @@ for item in itemstoHide {
 }
 
 //Modularium
-//Transposer.addFillRecipe(<ore:ingotLead>, <thermalfoundation:material:160>, <liquid:dawnstone> * 144, 10000);
 mods.inworldcrafting.FluidToItem.transform(<modularmachinery:itemmodularium>, <liquid:moltenembers>, [<thermalfoundation:material>,<thermalfoundation:material:1>], false);
 
+Melting.addRecipe(<liquid:molten_modularium> * 576, <contenttweaker:gear_modularium>);
+Melting.addRecipe(<liquid:molten_modularium> * 144, <modularmachinery:itemmodularium>);
+Melting.addRecipe(<liquid:molten_modularium> * 144, <contenttweaker:plate_modularium>);
+
+Casting.addTableRecipe(<contenttweaker:gear_modularium>, <tconstruct:cast_custom:4>, <liquid:molten_modularium>, 576, false, 250);
+Casting.addTableRecipe(<contenttweaker:plate_modularium>, <tconstruct:cast_custom:3>, <liquid:molten_modularium>, 144, false, 100);
+Casting.addTableRecipe(<modularmachinery:itemmodularium>, <tconstruct:cast_custom>, <liquid:molten_modularium>, 144, false, 100);
+
 //Controller
+
 //recipes.addShaped(<modularmachinery:blockcontroller>, [[<ore:circuitAdvanced>, <rockhounding_chemistry:misc_items:1>, <ore:circuitAdvanced>],[<jaopca:item_platetough>, <modularmachinery:blockcasing>, <jaopca:item_platetough>], [<actuallyadditions:block_crystal>, <moreplates:energetic_alloy_gear>, <actuallyadditions:block_crystal>]]);
 recipes.addShaped(<modularmachinery:blockcontroller>, [[<contenttweaker:plate_modularium>, <thermalfoundation:material:258>, <contenttweaker:plate_modularium>],[<thermalfoundation:material:259>, <minecraft:redstone_block>, <thermalfoundation:material:261>], [<contenttweaker:plate_modularium>, <thermalfoundation:material:257>, <contenttweaker:plate_modularium>]]);
 

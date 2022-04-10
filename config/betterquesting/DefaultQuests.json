@@ -9070,8 +9070,8 @@
       "questID:3": 102,
       "preRequisites:11": [
         236,
-        252,
-        52
+        52,
+        454
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9905,7 +9905,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
@@ -9993,7 +9993,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
@@ -10133,7 +10133,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "NORMAL",
@@ -10298,7 +10298,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
@@ -10507,7 +10507,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
@@ -10528,8 +10528,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "First Storage Cell",
-          "desc:8": "Feel free to upgrade to 4k or higher as soon as possible."
+          "name:8": "Storage Cells",
+          "desc:8": "These go into your Drives, and are where your items are stored."
         }
       },
       "tasks:9": {
@@ -10786,8 +10786,8 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "OR",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
@@ -10803,7 +10803,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 1,
-          "name:8": "1k Storage Component",
+          "name:8": "Storage Components",
           "desc:8": "These can be crafted into storage discs, or used in crafting CPU\u0027s."
         }
       },
@@ -10820,6 +10820,40 @@
               "id:8": "appliedenergistics2:material",
               "Count:3": 1,
               "Damage:2": 35,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:material",
+              "Count:3": 1,
+              "Damage:2": 36,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 2,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "appliedenergistics2:material",
+              "Count:3": 1,
+              "Damage:2": 37,
               "OreDict:8": ""
             }
           },
@@ -10850,7 +10884,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
@@ -10920,7 +10954,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
@@ -11311,7 +11345,7 @@
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
+          "lockedprogress:1": 1,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
@@ -12534,7 +12568,8 @@
     "149:10": {
       "questID:3": 149,
       "preRequisites:11": [
-        542
+        542,
+        207
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12543,7 +12578,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "naturescompass:naturescompass",
@@ -12559,7 +12594,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Finding Biomes",
-          "desc:8": "With Nature\u0027s Compass you can choose a biome, and it will point to the closest one."
+          "desc:8": "With Nature\u0027s Compass you can choose a biome, and it will point to the closest one.\n\n§6Amber is found inside Hollow Hills."
         }
       },
       "tasks:9": {
@@ -12592,10 +12627,16 @@
                 "astralsorcery:cap_item_amulet_holder:10": {}
               },
               "id:8": "botania:brewvial",
-              "Count:3": 1,
+              "Count:3": 2,
               "tag:10": {
                 "brewKey:8": "speed"
               },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "cyclicmagic:glowing_chorus",
+              "Count:3": 5,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -21064,7 +21105,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -35919,8 +35960,8 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "translocators:translocator_part",
-            "Count:3": 2,
+            "id:8": "appliedenergistics2:drive",
+            "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -35930,8 +35971,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Translocators",
-          "desc:8": "These can transfer very fast across a single block space."
+          "name:8": "Digital Storage",
+          "desc:8": "With the Arc Furnace unlocked, you have access to §bDigital Storage§r! Crafting and the Controller will be coming up in the next chapter, but feel free to start AE now.\n\nThere is also a dedicated chapter for §bApplied Energistics§r if you like rewards."
         }
       },
       "tasks:9": {
@@ -35944,8 +35985,24 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "translocators:translocator_part",
-              "Count:3": 2,
+              "id:8": "appliedenergistics2:drive",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "appliedenergistics2:part",
+              "Count:3": 1,
+              "Damage:2": 360,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "appliedenergistics2:storage_cell_4k",
+              "Count:3": 1,
+              "tag:10": {},
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -35959,15 +36016,25 @@
           "index:3": 0,
           "choices:9": {
             "0:10": {
-              "id:8": "translocators:translocator_part",
-              "Count:3": 2,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "appliedenergistics2:storage_cell_4k",
+              "Count:3": 1,
+              "tag:10": {},
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
-              "id:8": "translocators:translocator_part",
-              "Count:3": 2,
-              "Damage:2": 1,
+              "id:8": "appliedenergistics2:part",
+              "Count:3": 8,
+              "Damage:2": 56,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "enderio:item_me_conduit",
+              "Count:3": 8,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -38385,19 +38452,33 @@
     },
     "454:10": {
       "questID:3": 454,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        252,
+        300,
+        22
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
+          "tasklogic:8": "OR",
           "repeattime:3": -1,
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "modularmachinery:itemmodularium",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {
+                "AS_Amulet_HolderLeast:4": -5854321833218265537,
+                "AS_Amulet_HolderMost:4": -3354768958829737557
+              }
+            },
+            "id:8": "forge:bucketfilled",
             "Count:3": 1,
+            "tag:10": {
+              "FluidName:8": "moltenembers",
+              "Amount:3": 1000
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -38406,9 +38487,9 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Modularium -Unused atm-",
-          "desc:8": "Used for Modular Machines."
+          "ismain:1": 1,
+          "name:8": "Molten Embers and Modularium",
+          "desc:8": "Besides using a bucket of §4Molten Embers§r to craft your all your §6Modularium§r, you\u0027ll also need it in your Melter to melt down §6Modularium§r for gears!\n\nIf you still have a bit of lava in your Melter after swaping the fuel source over to §4Molten Embers§r, you can just break and replace it to void the internal buffer."
         }
       },
       "tasks:9": {
@@ -38418,10 +38499,43 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -5854321833218265537,
+                  "AS_Amulet_HolderMost:4": -3354768958829737557
+                }
+              },
+              "id:8": "forge:bucketfilled",
+              "Count:3": 1,
+              "tag:10": {
+                "FluidName:8": "moltenembers",
+                "Amount:3": 1000
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
               "id:8": "modularmachinery:itemmodularium",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "contenttweaker:gear_modularium",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -50803,7 +50917,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "simplevoidworld:portal",
@@ -59035,7 +59149,7 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "packagedexcrafting:advanced_crafter",
+              "id:8": "packagedexcrafting:ultimate_crafter",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -59047,12 +59161,18 @@
               "OreDict:8": ""
             },
             "2:10": {
+              "id:8": "packagedexcrafting:marked_pedestal",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
               "id:8": "packagedexcrafting:ender_crafter",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "3:10": {
+            "4:10": {
               "id:8": "packagedauto:unpackager",
               "Count:3": 1,
               "Damage:2": 0,
@@ -64416,180 +64536,187 @@
         },
         "22:10": {
           "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": -24,
+          "id:3": 149,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
           "x:3": 276,
           "y:3": -144,
           "id:3": 202,
           "sizeY:3": 24
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -36,
           "y:3": -60,
           "id:3": 207,
           "sizeY:3": 24
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -186,
           "id:3": 214,
           "sizeY:3": 24
         },
-        "25:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": -48,
           "id:3": 230,
           "sizeY:3": 24
         },
-        "26:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 6,
           "y:3": -222,
           "id:3": 233,
           "sizeY:3": 24
         },
-        "27:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": -54,
           "id:3": 239,
           "sizeY:3": 24
         },
-        "28:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": -138,
           "id:3": 240,
           "sizeY:3": 24
         },
-        "29:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": -120,
           "y:3": -60,
           "id:3": 261,
           "sizeY:3": 24
         },
-        "30:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": -120,
           "y:3": -24,
           "id:3": 263,
           "sizeY:3": 24
         },
-        "31:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -60,
           "id:3": 272,
           "sizeY:3": 24
         },
-        "32:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": -96,
           "id:3": 273,
           "sizeY:3": 24
         },
-        "33:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": -120,
           "y:3": -228,
           "id:3": 275,
           "sizeY:3": 24
         },
-        "34:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 168,
           "y:3": -60,
           "id:3": 286,
           "sizeY:3": 24
         },
-        "35:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -228,
           "id:3": 289,
           "sizeY:3": 24
         },
-        "36:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": -120,
           "y:3": -144,
           "id:3": 313,
           "sizeY:3": 24
         },
-        "37:10": {
+        "38:10": {
           "sizeX:3": 36,
           "x:3": 54,
           "y:3": -192,
           "id:3": 314,
           "sizeY:3": 36
         },
-        "38:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 114,
           "y:3": -186,
           "id:3": 317,
           "sizeY:3": 24
         },
-        "39:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": -24,
           "id:3": 340,
           "sizeY:3": 24
         },
-        "40:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 168,
           "y:3": -132,
           "id:3": 344,
           "sizeY:3": 24
         },
-        "41:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": -36,
           "id:3": 422,
           "sizeY:3": 24
         },
-        "42:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -96,
           "id:3": 442,
           "sizeY:3": 24
         },
-        "43:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 300,
           "y:3": -96,
           "id:3": 446,
           "sizeY:3": 24
         },
-        "44:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": -216,
           "y:3": -36,
           "id:3": 492,
           "sizeY:3": 24
         },
-        "45:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": -216,
           "y:3": -84,
           "id:3": 493,
           "sizeY:3": 24
         },
-        "46:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": -216,
           "y:3": 0,
           "id:3": 495,
           "sizeY:3": 24
         },
-        "47:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": -12,
@@ -67122,243 +67249,236 @@
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 120,
-          "y:3": 72,
-          "id:3": 149,
-          "sizeY:3": 24
-        },
-        "8:10": {
-          "sizeX:3": 24,
           "x:3": 228,
           "y:3": 72,
           "id:3": 152,
           "sizeY:3": 24
         },
-        "9:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 72,
           "id:3": 203,
           "sizeY:3": 24
         },
-        "10:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": 228,
           "y:3": 36,
           "id:3": 205,
           "sizeY:3": 24
         },
-        "11:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": 0,
           "id:3": 216,
           "sizeY:3": 24
         },
-        "12:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": -36,
           "id:3": 217,
           "sizeY:3": 24
         },
-        "13:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 0,
           "id:3": 218,
           "sizeY:3": 24
         },
-        "14:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": 36,
           "id:3": 219,
           "sizeY:3": 24
         },
-        "15:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 0,
           "id:3": 220,
           "sizeY:3": 24
         },
-        "16:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 0,
           "id:3": 255,
           "sizeY:3": 24
         },
-        "17:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": -36,
           "id:3": 256,
           "sizeY:3": 24
         },
-        "18:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": -36,
           "id:3": 287,
           "sizeY:3": 24
         },
-        "19:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": -72,
           "id:3": 342,
           "sizeY:3": 24
         },
-        "20:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": -36,
           "id:3": 346,
           "sizeY:3": 24
         },
-        "21:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 0,
           "id:3": 347,
           "sizeY:3": 24
         },
-        "22:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 72,
           "id:3": 348,
           "sizeY:3": 24
         },
-        "23:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 36,
           "id:3": 349,
           "sizeY:3": 24
         },
-        "24:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 108,
           "id:3": 350,
           "sizeY:3": 24
         },
-        "25:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 36,
           "id:3": 395,
           "sizeY:3": 24
         },
-        "26:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 108,
           "id:3": 407,
           "sizeY:3": 24
         },
-        "27:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 72,
           "id:3": 420,
           "sizeY:3": 24
         },
-        "28:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 36,
           "id:3": 424,
           "sizeY:3": 24
         },
-        "29:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 36,
           "id:3": 500,
           "sizeY:3": 24
         },
-        "30:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 72,
           "id:3": 512,
           "sizeY:3": 24
         },
-        "31:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 36,
           "y:3": 108,
           "id:3": 513,
           "sizeY:3": 24
         },
-        "32:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": -36,
           "id:3": 515,
           "sizeY:3": 24
         },
-        "33:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": -72,
           "id:3": 516,
           "sizeY:3": 24
         },
-        "34:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 36,
           "id:3": 517,
           "sizeY:3": 24
         },
-        "35:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 72,
           "id:3": 538,
           "sizeY:3": 24
         },
-        "36:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": -36,
           "id:3": 754,
           "sizeY:3": 24
         },
-        "37:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": 108,
           "id:3": 788,
           "sizeY:3": 24
         },
-        "38:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 72,
           "id:3": 790,
           "sizeY:3": 24
         },
-        "39:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 36,
           "id:3": 791,
           "sizeY:3": 24
         },
-        "40:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 120,
           "y:3": 108,
           "id:3": 792,
           "sizeY:3": 24
         },
-        "41:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 0,
@@ -67671,8 +67791,8 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 336,
-          "y:3": 138,
+          "x:3": 360,
+          "y:3": 144,
           "id:3": 38,
           "sizeY:3": 24
         },
@@ -68987,8 +69107,8 @@
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 312,
-          "y:3": -42,
+          "x:3": 300,
+          "y:3": -48,
           "id:3": 69,
           "sizeY:3": 24
         },
@@ -69022,14 +69142,14 @@
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 360,
-          "y:3": 0,
+          "x:3": 372,
+          "y:3": -36,
           "id:3": 252,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 360,
+          "x:3": 336,
           "y:3": -48,
           "id:3": 254,
           "sizeY:3": 24
@@ -69183,12 +69303,19 @@
         },
         "44:10": {
           "sizeX:3": 24,
+          "x:3": 360,
+          "y:3": 0,
+          "id:3": 454,
+          "sizeY:3": 24
+        },
+        "45:10": {
+          "sizeX:3": 24,
           "x:3": 414,
           "y:3": 84,
           "id:3": 462,
           "sizeY:3": 24
         },
-        "45:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": 450,
           "y:3": 0,
@@ -69428,159 +69555,152 @@
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 252,
-          "y:3": -24,
-          "id:3": 454,
-          "sizeY:3": 24
-        },
-        "31:10": {
-          "sizeX:3": 24,
           "x:3": 0,
           "y:3": -36,
           "id:3": 458,
           "sizeY:3": 24
         },
-        "32:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 84,
           "y:3": -12,
           "id:3": 463,
           "sizeY:3": 24
         },
-        "33:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 54,
           "y:3": 12,
           "id:3": 470,
           "sizeY:3": 24
         },
-        "34:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 78,
           "y:3": 36,
           "id:3": 481,
           "sizeY:3": 24
         },
-        "35:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": 12,
           "id:3": 485,
           "sizeY:3": 24
         },
-        "36:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": -156,
           "id:3": 502,
           "sizeY:3": 24
         },
-        "37:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -180,
           "id:3": 508,
           "sizeY:3": 24
         },
-        "38:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 126,
           "y:3": 84,
           "id:3": 524,
           "sizeY:3": 24
         },
-        "39:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 150,
           "y:3": 108,
           "id:3": 527,
           "sizeY:3": 24
         },
-        "40:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": -264,
           "id:3": 537,
           "sizeY:3": 24
         },
-        "41:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 96,
           "y:3": 96,
           "id:3": 591,
           "sizeY:3": 24
         },
-        "42:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 108,
           "y:3": -168,
           "id:3": 592,
           "sizeY:3": 24
         },
-        "43:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 72,
           "id:3": 612,
           "sizeY:3": 24
         },
-        "44:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": -168,
           "id:3": 619,
           "sizeY:3": 24
         },
-        "45:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 48,
           "id:3": 629,
           "sizeY:3": 24
         },
-        "46:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": 60,
           "y:3": -84,
           "id:3": 671,
           "sizeY:3": 24
         },
-        "47:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 36,
           "id:3": 678,
           "sizeY:3": 24
         },
-        "48:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": -48,
           "y:3": -84,
           "id:3": 695,
           "sizeY:3": 24
         },
-        "49:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -108,
           "id:3": 696,
           "sizeY:3": 24
         },
-        "50:10": {
+        "49:10": {
           "sizeX:3": 24,
           "x:3": 156,
           "y:3": 60,
           "id:3": 700,
           "sizeY:3": 24
         },
-        "51:10": {
+        "50:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 84,
           "id:3": 701,
           "sizeY:3": 24
         },
-        "52:10": {
+        "51:10": {
           "sizeX:3": 24,
           "x:3": 24,
           "y:3": -12,

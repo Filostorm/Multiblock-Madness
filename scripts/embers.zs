@@ -79,10 +79,12 @@ Lightwell.addLiquefaction(<embers:aspectus_lead>, <liquid:lead>, 1.2, 1.5, 0x5c6
 Lightwell.addLiquefaction(<embers:aspectus_dawnstone>, <liquid:dawnstone>, 1.2, 1.5, 0xe89e43);
 
 // Molten Embers
+/*
 Melting.addRecipe(<liquid:moltenembers> * 100, <embers:shard_ember>,1000);
 Melting.addRecipe(<liquid:moltenembers> * 600, <embers:crystal_ember>,2000);
 Melting.addRecipe(<liquid:moltenembers> * 2000, <embers:ember_cluster>,4000);
 Melting.addRecipe(<liquid:moltenembers> * 50, <embers:dust_ember>,1000);
+*/
 
 Lightwell.addLiquefaction(<embers:shard_ember>, <liquid:moltenembers>, 1, 0.6, 0xc97c28);
 Lightwell.addLiquefaction(<embers:crystal_ember>, <liquid:moltenembers>, 2, 0.6, 0xc97c28);

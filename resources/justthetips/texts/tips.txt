@@ -9,7 +9,6 @@ The Small Plate Presser can be used as an extremely fast stoneworks factory
 You can pump out fluids and pipe in items from the bottom of Lightwells
 Using tools with Thaumcraft’s Refining infusion can allow for ore tripling
 You can right click Mekanism alloys on placed Mekanism cables to upgrade them, with 8 cables per alloy
-You can repair most tools, including Tinkers’ tools, with a Cyclic Powered Anvil
 If you’re struggling to find a Blizz in a cold biome, use Nocturnal Powder to force mob to spawns
 You only need 400 Ember in the Beam Cannon to trigger the Alchemy Pedestal
 Embers Dawnstone Mail is a great way to get full knockback resistance
