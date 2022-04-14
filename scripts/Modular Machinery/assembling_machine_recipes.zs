@@ -1010,7 +1010,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_plastic_scin
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermktwo" + "_goldtungsten_wire", "assemblermktwo", 100)
 	.addEnergyPerTickInput(7500)
 	.addItemOutput(<qmd:part:6>*6)
-	.addItemInput(<ore:ingotTungsten>, 4)
+	.addItemInput(<ore:plateTungsten>, 4)
 	.addItemInput(<ore:ingotGold>, 2)
 	.build();
 

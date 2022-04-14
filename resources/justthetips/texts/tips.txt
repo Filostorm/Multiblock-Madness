@@ -9,7 +9,7 @@ The Small Plate Presser can be used as an extremely fast stoneworks factory
 You can pump out fluids and pipe in items from the bottom of Lightwells
 Using tools with Thaumcraft’s Refining infusion can allow for ore tripling
 You can right click Mekanism alloys on placed Mekanism cables to upgrade them, with 8 cables per alloy
-If you’re struggling to find a Blizz in a cold biome, use Nocturnal Powder to force mob to spawns
+If you’re struggling to find a Blizz in a cold biome, use Nocturnal Powder to force mobs to spawn
 You only need 400 Ember in the Beam Cannon to trigger the Alchemy Pedestal
 Embers Dawnstone Mail is a great way to get full knockback resistance
 Astral Sorcery Aevitas Rituals work on Bonsai Trees
@@ -18,7 +18,7 @@ Using a Scanner set to find chests can help you find structures underground!
 You can craft Ender-IO filters together to copy the settings
 The Mekanism Thermal Evaporation Tower is an easy way to get lots of salt for your Rockhounding setup
 Don’t forget to update your questbook after each update!
-Time In A Bottle is extremely useful, craft one as soon as you can!
+The Time In A Bottle is extremely useful, craft one as soon as you can!
 The Silktouch enchantment can move spawners!
 The effects of multiple sprinklers in the same area stack
 Dragon lairs are a great source of Californium!
@@ -28,3 +28,22 @@ Basic Tanks from Fluid Drawers are a great way to organize liquid!
 Shaped Radiant Quartz can be made with the Pure Daisy
 Broken Ancient Pieces from Fossils can be used on in a Tool Station
 The Diesel Generator is Loud and Obnoxious
+Hate rain? Check out the Teru Teru Bozu from Botania, or the Rain Shield from Random Things!
+You can use Thermal Dynamics Redstone Servos with Structural Ducts to transmit redstone signals
+Blood Magic Teleposers allow for easy long-range transportation of Botania Mana Pools and Astral Temple Crystals. Even works with sparks!
+The Ender Utilities dolly is very convenient for moving 1 tile high Rockhounding blocks
+RFTools' RF Network monitor will highlight all nearby RF holding blocks and tell you their current storage/maximum capacity
+The Random Things Chunk Analyser can scan your current chunk, making it useful for finding ores
+You can grow twilight saplings in bonsai pots to get roots, which can be converted via pure daisies into livingroots to create ironwood
+/integrateddyanmics networkdiagnostics is great to find out what exactly you did with ID that's destroying TPS
+Avoid Cyclic Block Placers if you can, they impact FPS even when they are idle
+The Lens of the Miner is a neat way to obtain automated ores in the early game
+Don't break your Quantum Tanks with a pickaxe, or you'll lose all the contents!
+The Cooking with Blockheads Sink with AA Fluid Lasers makes a singularity per tick with the AE2 matter condenser, for free!
+You can use the dolly on the High Oven Controller so it doesn't lose temperature or consume fuel
+The Knowledge of the Ages enchant is extremely powerful for obtaining experience
+You can use the Time in a Bottle in an Automated User
+The Vis Motor can generate easy embers rotational power, at the cost of Vis
+Twilight Forest Hollow Hills contain a bunch of nice loot, including Aetherium Ore!
+Your Modular Machine is stuck? Give it a redstone signal, and it will stop crafting
+Infuse a Brew of Vanity's Emptiness in a Tainted Blood Pendant to prevent mobs from spawning around you!

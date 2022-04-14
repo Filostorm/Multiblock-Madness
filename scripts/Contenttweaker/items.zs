@@ -153,6 +153,8 @@ VanillaFactory.createItem("dust_barite").register();
 VanillaFactory.createItem("dust_barium_sulfide").register();
 VanillaFactory.createItem("dust_barium_sulfate").register();
 
+VanillaFactory.createItem("ore_gen_info").register();
+
 
 
 var activatedaspectuscopper = VanillaFactory.createItem("activatedaspectuscopper");

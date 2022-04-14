@@ -364,6 +364,7 @@ Crucible.addRecipe(<liquid:strontium_90> * 1296, <qmd:strontium_90_block>, 32000
 
 // Nugget, Ingot, Dust and Block Melting Recipes
 // 1st material is nuggets, 2nd material is ingots, 3rd material is dusts, 4th material is blocks
+// We should convert this into a universal script for all added parts :D
 
 val generalmelting as IItemStack[][ILiquidStack] = {
 	<liquid:base_essence>:[<mysticalagriculture:crafting:39>,<mysticalagriculture:crafting:32>, null, <mysticalagriculture:ingot_storage>,],

@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.jaopca.JAOPCA;
 import mods.bloodmagic.TartaricForge;
+import crafttweaker.data.IData;
 
 #priority 100
 
@@ -311,79 +312,6 @@ for item in duststoRemove {
 	mods.jei.JEI.removeAndHide(item);
 }
 
-
-##=======================================================
-## JEI THINGS
-##=======================================================
-
-// JEI Renaming //
-
-// Nether Quartz --> Quartz
-<minecraft:quartz>.displayName = "Quartz";
-
-
-// JEI Tooltips //
-<mystgears:bellows_mechanical>.addTooltip(format.gold("Place by a furnace to speed up"));
-
-<immersiveengineering:stone_decoration:1>.addTooltip(format.darkRed("Your first Steel is made in the High Oven"));
-
-<tombstone:crafting_ingredient:3>.addTooltip(format.darkRed("Uncommon drop from Mobs"));
-
-<contenttweaker:purpleprint>.addTooltip(format.lightPurple("Not for Crafting!"));
-
-<translocators:translocator_part>.addTooltip("Hold Shift to see available modifiers");
-<translocators:translocator_part:1>.addTooltip("Hold Shift to see available modifiers");
-<translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n"))+(format.red("- Add Redstone to enable toggling in/output\n"))+(format.gray("- Add Iron to emit a signal when input is full of filtered item\n"))+(format.aqua("- Add a Diamond Nugget to enable fine tuning of filter supply and demand")));
-<translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n"))+(format.red("- Add Redstone to enable toggling in/output")));
-
-// Fake Angel Ring
-<contenttweaker:angelring_fake>.addTooltip(format.gold("Looking for flight? Hold shift:"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Vicio Ritual (Limited Area)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Glowing Chorus Fruit (2:00 Per)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Thaumostaic Harness (Requires stored Vis)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.gray("-Air Sigil (Launches you when used)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Glitch Armor"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Vicio Star Mantle (Requires a perk for Creative Flight)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Mithnimite Armor"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Jetpack (Requires Hydrogen)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Wings of the Bat (Needs to Recharge)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Environmental Controller (Limited Area)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Supremium Armor"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Flugel Tiara (Eye of the Flugel for infinite time)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Nanobot Beacon (Limited Area)"));
-
-//mods.jei.JEI.addDescription(<immersiveengineering:stone_decoration:1>,"Your first Steel is made in the High Oven");
-
-
-// Item Additions to JEI //
-
-//mods.jei.JEI.addItem(<tconstruct:toolforge>);
-
-mods.jei.JEI.addItem(<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 4 as short}}));
-mods.jei.JEI.addItem(<conarm:armorforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 3 as short}}));
-
-//mods.jei.JEI.addItem(<rockhounding_chemistry:machines_e:1>);
-
-
-// Changing Max Stack Size //
-<tombstone:impregnated_diamond>.maxStackSize = 64;
-<techreborn:lapotroncrystal>.withTag({energy: 0}).maxStackSize = 64;
-<techreborn:energycrystal>.withTag({energy: 0}).maxStackSize = 64;
-<techreborn:lapotronicorb>.withTag({energy: 0}).maxStackSize = 64;
-
-
-// Hiding JEI Categories //
-mods.jei.JEI.hideCategory("Painter");
-mods.jei.JEI.hideCategory("mekanism.combiner");
-mods.jei.JEI.hideCategory("EIOWC");
-mods.jei.JEI.hideCategory("EIOWO");
-mods.jei.JEI.hideCategory("thermalexpansion.factorizer_combine");
-mods.jei.JEI.hideCategory("thermalexpansion.factorizer_split");
-mods.jei.JEI.hideCategory("EIOTank");
-mods.jei.JEI.hideCategory("tinker_io:smart_output");
-//mods.jei.JEI.hideCategory("embers.dawnstone_anvil");
-
-
 ##=======================================================
 ## RECIPE CONFLICTS
 ##=======================================================
@@ -456,6 +384,76 @@ recipes.addShaped(<akashictome:tome>.withTag({"akashictome:data": {
   cookingforblockheads: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "cookingforblockheads:recipe_book", Count: 1 as byte, tag: {"akashictome:definedMod": "cookingforblockheads"}, Damage: 1 as short}, 
   nuclearcraft: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "nuclearcraft", "patchouli:book": "nuclearcraft:guide"}, Damage: 0 as short}}}),
 [[null, <minecraft:gold_ingot>, null],[<minecraft:gold_ingot>, <ore:bookshelf>, <minecraft:gold_ingot>], [null, <minecraft:gold_ingot>, null]]);
+
+########################################################################################
+# Chest with all avaliable patterns
+# Credits to the E2E-E Dev!
+
+# generate all possible patterns
+var dataList_allPatterns = [] as IData;
+var k = 0 as byte;
+for item in loadedMods["tconstruct"].items {
+	if (!item.definition.id.startsWith("tconstruct:pattern")) continue;
+	if(isNull(item.tag) || isNull(item.tag.PartType)) continue;
+
+	dataList_allPatterns += [{
+		Slot: k,
+		id: "tconstruct:pattern",
+		Count: 1 as byte,
+		Damage: 0 as short,
+		tag: item.tag
+	}] as IData; 
+	k += 1;
+}
+
+# [Pattern_Chest] from [Oak_Chest][+4]
+recipes.removeByRecipeName("tconstruct:tools/table/chest/pattern");
+craft.make(<tconstruct:tooltables:4>.withTag({
+		inventory: {Items: dataList_allPatterns}
+	} as IData), ["pretty",
+  "# a #",
+  "p c p",
+  "# M #"], {
+  "p": <ore:pattern>,        # Blank Pattern
+  "a": <tconstruct:book>,    # Materials and You
+  "#": <storagedrawers:basicdrawers>,     # Drawer
+  "c": <ore:chest> | <tconstruct:tooltables:4>, # Oak Chest
+  "M": <conarm:book>         # Materials and You - Armory Addendum
+});
+########################################################################################
+
+// Oredict Morphing Tool
+recipes.remove(<morphtool:tool>);
+recipes.addShaped("Morphing Tool", <morphtool:tool>, [
+	[null, <ore:dyeGreen>, <ore:dyeBlue>], 
+	[null, <ore:ingotIron>, <ore:dyeRed>], 
+	[<ore:ingotIron>, null, null]]);
+
+// Super Morph-O-Tool
+val superMOT = <morphtool:tool>.withTag({"morphtool:is_morphing": 1 as byte, "morphtool:data": {
+	rftools:             {id:"rftools:smartwrench",                         Count: 1 as byte, Damage: 0 as short},
+	botania:             {id:"botania:twigwand",                            Count: 1 as byte, Damage: 0 as short, tag: {color1: 9, color2: 9}},
+	enderio:             {id:"enderio:item_yeta_wrench",                    Count: 1 as byte, Damage: 0 as short},
+	thermalfoundation:   {id:"thermalfoundation:wrench",                    Count: 1 as byte, Damage: 0 as short},
+	actuallyadditions:   {id:"actuallyadditions:item_laser_wrench",         Count: 1 as byte, Damage: 0 as short},
+	techreborn:          {id:"techreborn:wrench",                           Count: 1 as byte, Damage: 0 as short},
+	opencomputers:       {id:"opencomputers:wrench",                        Count: 1 as byte, Damage: 0 as short},
+	integrateddynamics:  {id:"integrateddynamics:wrench",                   Count: 1 as byte, Damage: 0 as short},
+	architecturecraft:   {id:"architecturecraft:hammer",                    Count: 1 as byte, Damage: 0 as short},
+	appliedenergistics2: {id:"appliedenergistics2:network_tool",            Count: 1 as byte, Damage: 0 as short},
+	bloodmagic:          {id:"bloodmagic:ritual_reader",                    Count: 1 as byte, Damage: 0 as short},
+	environmentaltech:   {id:"environmentaltech:tool_multiblock_assembler", Count: 1 as byte, Damage: 0 as short},
+	mekanism:            {id:"mekanism:configurator",                       Count: 1 as byte, Damage: 0 as short},
+	immersiveengineering:{id:"immersiveengineering:tool",                   Count: 1 as byte, Damage: 0 as short},
+	arcanearchives:      {id:"arcanearchives:scepter_manipulation",         Count: 1 as byte, Damage: 0 as short},
+	},
+});
+
+recipes.addShaped("Superwrench", superMOT, [
+	[null, <mystgears:gear_thaumium>, null],
+	[<thermalfoundation:material:290>, <morphtool:tool>, <jaopca:item_gearbloodbronze>], 
+	[null, <thermalfoundation:material:288>, null]
+]);
 
 //Simple Void World
 recipes.addShaped(<simplevoidworld:portal>, [[<minecraft:obsidian>, <aetherworks:item_resource:2>, <minecraft:obsidian>],[<aetherworks:item_resource:2>, <actuallyadditions:block_crystal:2>, <aetherworks:item_resource:2>], [<minecraft:obsidian>, <aetherworks:item_resource:2>, <minecraft:obsidian>]]);

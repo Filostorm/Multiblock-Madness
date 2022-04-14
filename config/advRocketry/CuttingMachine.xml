@@ -45,7 +45,7 @@
 			<itemStack>advancedrocketry:itemcircuitplate;1;1</itemStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:ic;4;2</itemStack>
+			<itemStack>advancedrocketry:ic;3;2</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="5000">
@@ -53,7 +53,7 @@
 			<itemStack>advancedrocketry:itemcircuitplate</itemStack>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:ic;4</itemStack>
+			<itemStack>advancedrocketry:ic;3</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="80" power ="5000">

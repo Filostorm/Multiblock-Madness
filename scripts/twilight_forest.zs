@@ -11,6 +11,7 @@ import mods.thaumcraft.Crucible;
 import mods.tcomplement.Overrides;
 import mods.tconstruct.Melting;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.WeightedItemStack;
 
 
 print("==================== loading twilight_forest.zs ====================");

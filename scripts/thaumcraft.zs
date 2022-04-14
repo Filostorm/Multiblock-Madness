@@ -274,5 +274,8 @@ Infusion.registerRecipe("mithminite", "",
 [<thaumadditions:mithrillium_ingot>, <thaumcraft:quicksilver>,
 <thaumadditions:mithrillium_ingot>, <thaumcraft:quicksilver>]);
 
+// Ancient Rock to Ancient Stone
+furnace.addRecipe(<thaumcraft:stone_ancient>, <thaumcraft:stone_ancient_rock>);
+
 ##########################################################################################
 print("==================== end of thaumcraft.zs ====================");

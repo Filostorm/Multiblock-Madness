@@ -233,5 +233,26 @@ item.contenttweaker.dust_barium_sulfide.name=Barium Sulfide
 fluid.drilling_fluid=Drilling Fluid
 fluid.limestone_slurry=Limestone Slurry
 
+item.contenttweaker.ore_gen_info.name=§7Ore Generation Information§r
+
 
 fluid.molten_modularium=Molten Modularium
+
+requious.jei.recipe.excavator=Excavator Veins
+requious.jei.recipe.pumpjack=Pumpjack Veins
+requious.jei.recipe.diesel_generator=Diesel Generator Fuels
+requious.jei.recipe.ore_generation=Ore Generation
+requious.jei.recipe.turbine=Turbine Fuels
+requious.jei.recipe.fallen_tower=Mark of the Fallen Tower
+requious.jei.recipe.mineralis=Mineralis Ritual
+requious.jei.recipe.chalice=Chalice Interactions
+requious.jei.recipe.lens_of_the_miner=Lens of the Miner Ores
+requious.jei.recipe.neromantic_prime=Neromantic Prime Veins
+requious.jei.recipe.smeltery_fuel=Smeltery Fuels
+requious.jei.recipe.laser_drill=Laser Drill Ores
+requious.jei.recipe.oc_printer3d=3D Printer
+requious.jei.recipe.electronics_assembler=Electronics Assembler
+requious.jei.recipe.oil_generator=Oil Generator Fuels
+requious.jei.recipe.ember_bore=Ember Bore
+
+material.Dilithium.name=Dilithium

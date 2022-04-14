@@ -32,5 +32,21 @@ for item in newvoidstomeitems {
 Carving.addVariation("newvoidstone", item);
 }
 
+// LittleTiles Tools
+var littleTilesTools = [
+	<littletiles:wrench>,
+	<littletiles:container>,
+	<littletiles:saw>,
+	<littletiles:colortube>,
+	<littletiles:chisel>,
+	<littletiles:hammer>
+] as IItemStack[];
+
+Carving.addGroup("littleTiles");
+
+for i in littleTilesTools {
+	Carving.addVariation("littleTiles", i);
+}
+
 ##########################################################################################
 print("==================== end of chisel.zs ====================");
