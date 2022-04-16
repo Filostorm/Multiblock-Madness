@@ -296,7 +296,7 @@ MachineWall.build();
 val MachineOne = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machineone", "minifield-crafter", 200, 0);
 MachineOne.addEnergyPerTickInput(1000);
 MachineOne.addItemInput(<compactmachines3:wallbreakable>*26);
-MachineOne.addItemInput(<minecraft:ender_pearl>);
+MachineOne.addItemInput(<minecraft:ender_eye>);
 MachineOne.addItemOutput(<compactmachines3:machine>);
 MachineOne.build();
 

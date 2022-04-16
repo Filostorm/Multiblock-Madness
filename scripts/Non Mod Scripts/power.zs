@@ -185,6 +185,7 @@ mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:rocketfuel>, 20000000);
 
 // Other Fuels
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fluidnitrodiesel>, 10000000);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:fluidmethane>, 1200000);
 
 // Reactant Dynamo //
 

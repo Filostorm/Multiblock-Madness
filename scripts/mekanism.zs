@@ -105,9 +105,9 @@ infuser.addRecipe("DIAMOND", 10, <thermalfoundation:material:134>, <mekanism:rei
 infuser.addRecipe("OBSIDIAN", 10, <techreborn:ingot:15>, <mekanism:atomicalloy>);
 
 //Advanced Circuit
-recipes.addShaped(<mekanism:controlcircuit:1>, [[null, <mekanism:enrichediron>, null],[<mekanism:enrichedalloy>, <mekanism:controlcircuit>, <mekanism:enrichedalloy>], [null, <mekanism:enrichediron>, null]]);
+recipes.addShaped(<mekanism:controlcircuit:1> * 2, [[<mekanism:controlcircuit>, <mekanism:enrichediron>, null],[<mekanism:enrichedalloy>, <jaopca:item_platehslasteel>, <mekanism:enrichedalloy>], [null, <mekanism:enrichediron>, <mekanism:controlcircuit>]]);
 //Elite Circuit
-recipes.addShaped(<mekanism:controlcircuit:2>, [[null, <moreplates:refined_obsidian_plate>, null],[<mekanism:reinforcedalloy>, <mekanism:controlcircuit:1>, <mekanism:reinforcedalloy>], [null, <moreplates:refined_obsidian_plate>, null]]);
+recipes.addShaped(<mekanism:controlcircuit:2> * 2, [[<mekanism:controlcircuit:1>, <moreplates:refined_obsidian_plate>, null],[<mekanism:reinforcedalloy>, <jaopca:item_platethermoconducting>, <mekanism:reinforcedalloy>], [null, <moreplates:refined_obsidian_plate>, <mekanism:controlcircuit:1>]]);
 //Ultimate Circuit
 recipes.addShaped(<mekanism:controlcircuit:3>, [[null, <thermalfoundation:material:327>, null],[<mekanism:atomicalloy>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>], [null, <thermalfoundation:material:327>, null]]);
 
