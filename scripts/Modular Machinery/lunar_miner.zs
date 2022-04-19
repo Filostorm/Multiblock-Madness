@@ -17,6 +17,12 @@ print("==================== loading mods lunar_miner.zs ====================");
 ##
 ##############################################
 
+//Barite + Carbon = Barium Sulfide + Carbon Dioxide + Water = Barium Carbonate(Hydrogen Sulfide) = Barium Oxide(Carbon Dioxide) = Barium(Oxygen)
+// + Hydrochloric acid = Barium Chloride + Sufuric Acid = 
+//calcium + Carbon = Calcite
+
+
+
 //Limestone slurry
 SlurryPond.add(<rockhounding_chemistry:chemical_items:20>, <liquid:nitric_acid>*25, <liquid:limestone_slurry>*100);
 
@@ -44,6 +50,8 @@ blastFurnace.addRecipe(<contenttweaker:dust_barium_sulfide>, null, <contenttweak
 //Barium Sulfate
 Precipitator.add("Barium Sulfate", <contenttweaker:dust_barium_sulfide>, null, <liquid:sulfuric_acid>*100, <liquid:toxic_waste>*100, <contenttweaker:dust_barium_sulfate>);
 
+
+
 // Drilling Fluid
 val drillingFluid = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-drilling-fluid", "mixer-dust", 100, 0);
 drillingFluid.addFluidInput(<liquid:lubricant>*500);
@@ -52,6 +60,7 @@ drillingFluid.addItemInput(<rockhounding_chemistry:chemical_dusts:23>*3);
 drillingFluid.addItemInput(<contenttweaker:dust_barium_sulfate>);
 drillingFluid.addFluidOutput(<liquid:drilling_fluid>*500);
 drillingFluid.build();
+
 
 /* Will return the next update!
 val missionLunar = mods.modularmachinery.RecipeBuilder.newBuilder("quarry-lunar", "quarry", 1, 0);

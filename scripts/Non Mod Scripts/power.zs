@@ -213,5 +213,42 @@ mods.thermalexpansion.ReactantDynamo.addReactionElemental(<thermalfoundation:mat
 mods.jei.JEI.removeAndHide(<mekanismgenerators:generator>);
 mods.jei.JEI.removeAndHide(<enderio:block_lava_generator>);
 
+// RH Coins in Numismatic Dynamo
+val RHCoins = {
+	"Titanium"		: 90000,
+	"Vanadium"		: 180000,
+	"Cube"			: 90000,
+	"Scal"			: 160000,
+	"Bam"			: 180000,
+	"Stellite"		: 180000,
+	"Nimonic"		: 210000,
+	"Hastelloy"		: 240000,
+	"Nichrome"		: 90000,
+	"Cunife"		: 120000,
+	"Tinite"		: 300000,
+	"Hydronalium"	: 150000,
+	"Vanasteel"		: 180000,
+	"Widia"			: 240000,
+	"Tantaloy"		: 240000,
+	"Mischmetal"	: 360000,
+	"Rosegold"		: 120000,
+	"Greengold"		: 150000,
+	"Whitegold"		: 180000,
+	"Shibuichi"		: 120000,
+	"Tombak"		: 150000,
+	"Pewter"		: 150000,
+	"Corten"		: 180000,
+	"Shakudo"		: 90000,
+	"Purplegold"	: 90000,
+	"Nial"			: 90000,
+	"Nib"			: 180000,
+	"Cosm"			: 180000,
+	"Inconel"		: 180000,
+	"Zircaloy"		: 90000
+} as int[string];
+
+for item in RHCoins {
+	mods.thermalexpansion.NumisticDynamo.addFuel(oreDict.get("coin"~item).firstItem, RHCoins[item]);
+}
 ##########################################################################################
 print("==================== end of mods power.zs ====================");

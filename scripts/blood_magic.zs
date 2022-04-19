@@ -34,6 +34,7 @@ val itemstoRemove =
 	<bloodmagic:blood_rune>,
 	<bloodmagic:alchemy_table>,
 	<bloodmagic:activation_crystal:1>,
+	<bloodmagic:decorative_brick>,
 ]
  as IItemStack[];
 

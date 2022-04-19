@@ -245,6 +245,14 @@ recipes.addShaped(<actuallyadditions:item_food:3>, [[<actuallyadditions:item_foo
 // Phantom Face
 recipes.addShaped(<actuallyadditions:block_phantomface>, [[null, <ore:chestWood>, null],[<actuallyadditions:item_crystal:2>, <actuallyadditions:block_misc:6>, <actuallyadditions:item_crystal:2>], [null, <actuallyadditions:item_misc:8>, null]]);
 
+# [Laser Wrench] from [Basic Coil][+1]
+craft.remake(<actuallyadditions:item_laser_wrench>, ["pretty",
+  "    B",
+  "  *  ",
+  "*    "], {
+  "B": <actuallyadditions:item_misc:7>,    # Basic Coil
+  "*": <actuallyadditions:item_crystal:5>, # Enori Crystal
+});
 
 ##########################################################################################
 print("==================== end of actuallyadditions.zs ====================");

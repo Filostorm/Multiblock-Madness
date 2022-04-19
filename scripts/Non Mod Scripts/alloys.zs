@@ -535,7 +535,7 @@ AlloyFurnace.addRecipe(<ore:ingotTitanium>, <ore:ingotTBU>, <contenttweaker:ingo
 AlloyFurnace.addRecipe(<ore:ingotTitanium>*3, <ore:dustMolybdenum>, <contenttweaker:ingot_staballoy>*3);
 AlloyFurnace.addRecipe(<ore:ingotTitanium>*5, <ore:rareIsotopes>, <contenttweaker:ingot_staballoy>*5);
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy>, <techreborn:ingot:14>, <nuclearcraft:pellet_thorium>, 50000);
-mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy> * 3, <techreborn:ingot:14>, <nuclearcraft:fission_dust:6>, 50000);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy> * 3, <techreborn:ingot:14>*3, <nuclearcraft:fission_dust:6>, 50000);
 
 //This is probably way too high lol
 mods.nuclearcraft.FissionIrradiator.addRecipe(<contenttweaker:ingot_staballoy>, <contenttweaker:excited_mek_alloy>, 200000, 0, 0.25, 0);
@@ -555,6 +555,10 @@ FluidToItem.transform(<plustic:mirioningot>*2, <liquid:prepared_mirion>, [<ender
 //Tin Silver
 ArcFurnace.addRecipe(<nuclearcraft:alloy:8>*4, <thermalfoundation:material:130>, null, 400, 512, [<thermalfoundation:material:129>*3]);
 ArcFurnace.addRecipe(<nuclearcraft:alloy:8>*4, <thermalfoundation:material:129>*3, null, 400, 512, [<thermalfoundation:material:130>]);
+
+
+//Inconel
+//[Nichrome*13, Molybdenum*10, Invar*10, Chrome*7, Nickel*3], <Inconel 625>*43
 
 ##########################################################################################
 print("==================== end of alloys.zs ====================");

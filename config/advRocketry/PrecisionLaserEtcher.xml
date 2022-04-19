@@ -49,7 +49,6 @@
 			<itemStack>advancedrocketry:wafer</itemStack>
 			<itemStack>techreborn:part;4;42</itemStack>
 			<itemStack>actuallyadditions:item_misc;2;8</itemStack>
-			<itemStack>advgenerators:iron_tubing;2;0</itemStack>
 		</input>
 		<output>
 			<itemStack>advancedrocketry:itemcircuitplate;1;1</itemStack>

@@ -219,8 +219,8 @@ ManaInfusion.addInfusion(<botania:manaresource:23>,<embers:dust_ember>,7500);
 ManaInfusion.addInfusion(<botania:manaresource:23>*2,<contenttweaker:slatedust>,6750);
 //mana-infused dust to 4 mana powder at 75 percent of the original mana cost
 ManaInfusion.addInfusion(<botania:manaresource:23>*4,<thermalfoundation:material:72>,5625);
-//mana dust to 8 mana powder at the original cost of the crushed slate to mana powder recipe
-ManaInfusion.addInfusion(<botania:manaresource:23>*8,<thermalfoundation:material:1028>,5000);
+//mana dust to 16 mana powder at the original cost of the crushed slate to mana powder recipe
+ManaInfusion.addInfusion(<botania:manaresource:23>*16,<thermalfoundation:material:1028>,5000);
 
 ### RUNIC ALTAR ###
 

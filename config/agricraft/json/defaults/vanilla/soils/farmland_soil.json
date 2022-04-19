@@ -13,6 +13,56 @@
         "*"
       ],
       "useOreDict": true
+    },
+    {
+      "item": "farmingforblockheads:fertilized_farmland_stable",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    },
+    {
+      "item": "farmingforblockheads:fertilized_farmland_healthy_stable",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    },
+    {
+      "item": "farmingforblockheads:fertilized_farmland_rich_stable",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    },
+    {
+      "item": "farmingforblockheads:fertilized_farmland_healthy",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    },
+    {
+      "item": "farmingforblockheads:fertilized_farmland_rich",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
     }
   ]
 }

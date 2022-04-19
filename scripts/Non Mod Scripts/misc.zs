@@ -99,7 +99,6 @@ val recipestoRemove =
 <minecraft:iron_bars>,
 <enderio:block_dark_iron_bars>,
 <enderio:block_end_iron_bars>,
-<scannable:scanner>,
 <scannable:module_blank>,
 <cookingforblockheads:sink>,
 <thaumadditions:iron_framed_greatwood>,
@@ -253,7 +252,10 @@ val itemstoRemove =
 <enderio:item_material:33>,
 <qmd:dust2:3>,
 <qmd:dust2:4>,
-<cyclicmagic:sound_player>,
+<botania_tweaks:basic_extended_crafty_crate>,
+<botania_tweaks:advanced_extended_crafty_crate>,
+<botania_tweaks:elite_extended_crafty_crate>,
+<botania_tweaks:ultimate_extended_crafty_crate>,
 ]
  as IItemStack[];
 
@@ -550,7 +552,19 @@ furnace.addRecipe(<chisel:energizedvoidstone:2>, <chisel:energizedvoidstone>, 1.
 mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<minecraft:ender_pearl>, <enderore:dust_ender>, 75);
 
 // Scanner
-recipes.addShaped(<scannable:scanner>, [[<minecraft:iron_bars>, null, <minecraft:iron_bars>],[<botania:manaresource:1>, <rockhounding_chemistry:misc_items:1>, <botania:manaresource:1>], [<moreplates:conductive_iron_plate>, <embers:ember_detector>, <moreplates:conductive_iron_plate>]]);
+# [Scanner] from [Basic Logic Chip][+5]
+craft.remake(<scannable:scanner>, ["pretty",
+  "I A I",
+  "P B P",
+  "□ ¤ □"], {
+  "I": <ore:barsIron>,                        # Iron Bars
+  "A": <immersiveengineering:toolupgrade:6>,  # Amplifier Electron Tubes
+  "P": <ore:manaPearl>,                       # Mana Pearl
+  "B": <rockhounding_chemistry:misc_items:1>, # Basic Logic Chip
+  "□": <ore:plateSteel>,                      # Steel Plate
+  "¤": <ore:gearPrudentium>,              # Energetic Alloy Gear
+});
+
 recipes.addShaped(<scannable:module_blank> * 3, [[<moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>, <moreplates:pulsating_iron_plate>],[<enderio:item_material:22>, <minecraft:paper>, <enderio:item_material:22>], [<enderio:item_material:22>, <moreplates:void_plate>, <enderio:item_material:22>]]);
 
 

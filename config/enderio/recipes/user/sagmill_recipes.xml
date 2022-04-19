@@ -11,7 +11,7 @@
 
 <recipe name="MBM: Rock Crystal" required="true">
   <sagmilling energy="5000" bonus="none">
-    <input name="astralsorcery:blockcustomore" />
+    <input name="astralsorcery:blockcustomore:0" />
     <output name="astralsorcery:itemrockcrystalsimple" chance="1.0"/>
     <output name="astralsorcery:itemrockcrystalsimple" chance="0.5"/>
     <output name="astralsorcery:itemrockcrystalsimple" chance="0.25"/>
