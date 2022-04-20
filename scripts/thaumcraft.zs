@@ -277,5 +277,18 @@ Infusion.registerRecipe("mithminite", "",
 // Ancient Rock to Ancient Stone
 furnace.addRecipe(<thaumcraft:stone_ancient>, <thaumcraft:stone_ancient_rock>);
 
+//We Silver now
+<thaumadditions:iron_framed_greatwood>.displayName = "Silver Framed Greatwood";
+
+# [Machine Blueprint] from [Greatwood Planks][+1]
+craft.remake(<thaumadditions:iron_framed_greatwood>*4, ["pretty",
+  "□ # □",
+  "# □ #",
+  "□ # □"], {
+  "□": <ore:plateSilver>, # Silver Plate
+  "#": <thaumcraft:plank_greatwood>,                        # Greatwood Planks
+});
+
+
 ##########################################################################################
 print("==================== end of thaumcraft.zs ====================");

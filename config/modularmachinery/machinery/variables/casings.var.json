@@ -110,6 +110,19 @@
     "quarry_warning": [
         "chisel:factory@6",
         "chisel:factory@7"
+    ],
+    "vis_battery": [
+        "thaumcraft:vis_battery",
+        "thaumcraft:vis_battery@1",
+        "thaumcraft:vis_battery@2",
+        "thaumcraft:vis_battery@3",
+        "thaumcraft:vis_battery@4",
+        "thaumcraft:vis_battery@5",
+        "thaumcraft:vis_battery@6",
+        "thaumcraft:vis_battery@7",
+        "thaumcraft:vis_battery@8",
+        "thaumcraft:vis_battery@9",
+        "thaumcraft:vis_battery@10"
     ]
     
     
