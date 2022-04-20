@@ -10,7 +10,7 @@ import crafttweaker.item.IIngredient;
 <thaumadditions:mithminite_block>.addTooltip(format.darkAqua("When used in the Arcane Assembler, reduces fluid and time required by 30%"));
 
 ##Warding Sigil
-val Warding_sigil = mods.modularmachinery.RecipeBuilder.newBuilder("thaum-warding_sigil", "arcaneassembler", 60, 0);
+val Warding_sigil = mods.modularmachinery.RecipeBuilder.newBuilder("thaum_warding_sigil", "arcane-assembler", 60, 0);
 Warding_sigil.addFluidInput(<liquid:crystal_water> * 100);
 Warding_sigil.addItemInput(<thaumcraft:brain>);
 Warding_sigil.addItemInput(<thaumcraft:tallow> * 2);

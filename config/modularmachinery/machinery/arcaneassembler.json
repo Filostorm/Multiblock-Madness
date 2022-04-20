@@ -2,7 +2,7 @@
     "registryname": "arcane-assembler", 
     "localizedname": "Arcane Assembler", 
     "requires-blueprint": true,
-    "color": "757575",
+    "color": "2e1902",
     "modifiers": [
         {
             "x": 2,
@@ -105,6 +105,38 @@
         }
     ],
     "parts": [
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:arcane_ear@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:arcane_ear@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:arcane_ear@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:arcane_ear@9"
+            ]
+        },
         {
             "x": 0,
             "y": -1,
@@ -332,22 +364,6 @@
         {
             "x": 0,
             "y": 1,
-            "z": 0,
-            "elements": [
-                "thaumcraft:arcane_ear"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "thaumcraft:arcane_ear"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
             "z": 1,
             "elements": [
                 "thaumcraft:arcane_workbench_charger@0"
@@ -367,22 +383,6 @@
             "z": 2,
             "elements": [
                 "thaumcraft:slab_greatwood@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "thaumcraft:arcane_ear"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "thaumcraft:arcane_ear"
             ]
         },
         {
