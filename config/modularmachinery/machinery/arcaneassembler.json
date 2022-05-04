@@ -1,0 +1,445 @@
+{    
+    "registryname": "arcane-assembler", 
+    "localizedname": "Arcane Assembler", 
+    "requires-blueprint": true,
+    "color": "2e1902",
+    "modifiers": [
+        {
+            "x": 2,
+            "y": -1,
+            "z": -1,
+            "elements": "thaumcraft:metal_alchemical_advanced",
+            "description": "Upgrade Constructs to reduce time required by 5%",
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.95
+            }
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -1,
+            "elements": "thaumcraft:metal_alchemical_advanced",
+            "description": "Upgrade Constructs to reduce time required by 5%",
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.95
+            }
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 3,
+            "elements": "thaumcraft:metal_alchemical_advanced",
+            "description": "Upgrade Constructs to reduce time required by 5%",
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.95
+            }
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 3,
+            "elements": "thaumcraft:metal_alchemical_advanced",
+            "description": "Upgrade Constructs to reduce time required by 5%",
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.95
+            }
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": "thaumcraft:matrix_speed",
+            "description": "Replace Thaumium Block to reduce time required by 20%",
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.8
+            }
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements":  "thaumcraft:matrix_cost",
+            "description": "Replace Thaumium Block to reduce input fluid by 20%",
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.8
+            }
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements":  "thaumadditions:mithminite_block",
+            "description": "Replace Thaumium Block to reduce input fluid and crafting time by 30%",
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.7
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.7
+                }            
+                ]
+        }
+    ],
+    "parts": [
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:arcane_ear@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:arcane_ear@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:arcane_ear@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:arcane_ear@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "thaumcraft:metal_alchemical@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "thaumcraft:metal_alchemical@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "thaumcraft:metal_alchemical@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "thaumcraft:metal_alchemical@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "vis_battery"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "vis_battery"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "vis_battery"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "vis_battery"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "vis_battery"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "vis_battery"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "vis_battery"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "vis_battery"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_item_fluid"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_item_fluid"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_item_fluid"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "thaumicaugmentation:stability_field_generator@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "thaumcraft:arcane_workbench@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:stability_field_generator@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "thaumicaugmentation:stability_field_generator@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:slab_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:arcane_workbench_charger@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:slab_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:slab_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:slab_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "thaumadditions:iron_framed_greatwood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "thaumicaugmentation:stability_field_generator@9"
+            ]
+        }
+    ]
+}

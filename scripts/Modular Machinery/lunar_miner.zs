@@ -17,8 +17,7 @@ print("==================== loading mods lunar_miner.zs ====================");
 ##
 ##############################################
 
-//Barite + Carbon = Barium Sulfide + Carbon Dioxide + Water = Barium Carbonate(Hydrogen Sulfide) = Barium Oxide(Carbon Dioxide) = Barium(Oxygen)
-// + Hydrochloric acid = Barium Chloride + Sufuric Acid = 
+//Barite{ore} + Carbon = Barium Sulfide + Carbon Dioxide + Water = Barium Carbonate(Hydrogen Sulfide) = Barium Oxide(Carbon Dioxide) = Barium(Oxygen)
 //calcium + Carbon = Calcite
 
 
