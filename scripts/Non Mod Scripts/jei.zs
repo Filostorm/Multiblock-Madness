@@ -6,6 +6,8 @@ import mods.requious.SlotVisual;
 import crafttweaker.liquid.ILiquidStack;
 import mods.requious.GaugeDirection;
 import mods.jei.JEI.addDescription;
+import crafttweaker.data.IData;
+import crafttweaker.potions.IPotionEffect;
 
 #priority -1
 
@@ -887,16 +889,118 @@ val emberRecipes = AssemblyRecipe.create(function(container) {
 emberRecipes.requireItem("information", <minecraft:book>.withDisplayName("§fAny Dimension"));
 ember_bore.addJEIRecipe(emberRecipes);
 
-// TODO --== Stellar Refraction Table ==-- //
+// --== Stellar Refraction Table ==-- //
+// TODO Can consider replacing books with items representing enchants for better readability?
 var refraction_table = <assembly:refraction_table>;
 refraction_table.addJEICatalyst(<astralsorcery:blockmapdrawingtable>);
 refraction_table.addJEICatalyst(<astralsorcery:iteminfusedglass>);
+refraction_table.setJEIItemSlot(0, 0, "constellation");
+refraction_table.setJEIDurationSlot(1, 0, "duration", getVisSlots(1,7));
+refraction_table.setJEIItemSlot(2, 0, "enchantment");
+refraction_table.setJEIItemSlot(3, 0, "potion");
+
+
+// Doesn't work because java throws up a nullpointerexception for some reason
+// function enchantedBook(enchantments as int[][]) as IItemStack {
+//   var enchantmentList = [] as IData;
+//   for enchantment in enchantments {
+//     var enchantment_nbt = {
+//       lvl: enchantment[1],
+//       id: enchantment[0]
+//     } as IData;
+//     enchantmentList += enchantment_nbt;
+//   }
+//   return <minecraft:enchanted_book>.withTag({StoredEnchantments: enchantmentList});
+// }
+
+// TODO refactor both enchantedBook and astralPotion to be less jank and have more sane input values
+// Returns an enchanted book given a 2D array of enchantment ids to levels. Can only accept up to 4 enchants
+function enchantedBook(enchantments as int[][]) as IItemStack {
+  var enchant_count = enchantments.length;
+
+  if (enchant_count == 1) {
+    return <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: enchantments[0][1], id: enchantments[0][0]}]});
+  }
+  else if (enchant_count == 2) {
+    return <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: enchantments[0][1], id: enchantments[0][0]}, 
+    {lvl: enchantments[1][1], id: enchantments[1][0]}]});
+  }
+  else if (enchant_count == 3) {
+    return <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: enchantments[0][1], id: enchantments[0][0]}, 
+    {lvl: enchantments[1][1], id: enchantments[1][0]},
+    {lvl: enchantments[2][1], id: enchantments[2][0]}]});
+  }
+  else if (enchant_count == 4) {
+    return <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: enchantments[0][1], id: enchantments[0][0]}, 
+    {lvl: enchantments[1][1], id: enchantments[1][0]},
+    {lvl: enchantments[2][1], id: enchantments[2][0]},
+    {lvl: enchantments[3][1], id: enchantments[3][0]}]});    
+  }
+}
+
+// Returns an AS potion given a 2D array of potion names to amplifiers. Can only accept up to 3 potion effects  
+function astralPotion(potions as int[][]) as IItemStack {
+  var potion_count = potions.length;
+
+  if (potion_count == 1) {
+    return <minecraft:potion>.withTag({CustomPotionEffects: 
+    [{Ambient: 0 as byte, CurativeItems: [{ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "minecraft:milk_bucket", Count: 1 as byte, Damage: 0 as short}], 
+    ShowParticles: 1 as byte, Duration: 7200, Id: potions[0][0], Amplifier: potions[0][1]}], 
+    Potion: "minecraft:water", display: {LocName: "potion.as.crafted.name"}});
+  }
+  else if (potion_count == 2) {
+    return <minecraft:potion>.withTag({CustomPotionEffects: 
+    [{Ambient: 0 as byte, CurativeItems: [{ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "minecraft:milk_bucket", Count: 1 as byte, Damage: 0 as short}], 
+    ShowParticles: 1 as byte, Duration: 7200, Id: potions[0][0], Amplifier: potions[0][1]}, 
+    {Ambient: 0 as byte, CurativeItems: [{ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "minecraft:milk_bucket", Count: 1 as byte, Damage: 0 as short}], 
+    ShowParticles: 1 as byte, Duration: 7200, Id: potions[1][0], Amplifier: potions[1][1]}], 
+    Potion: "minecraft:water", display: {LocName: "potion.as.crafted.name"}});
+  }
+  else if (potion_count == 3) {
+    return <minecraft:potion>.withTag({CustomPotionEffects: 
+    [{Ambient: 0 as byte, CurativeItems: [{ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "minecraft:milk_bucket", Count: 1 as byte, Damage: 0 as short}], 
+    ShowParticles: 1 as byte, Duration: 7200, Id: potions[0][0], Amplifier: potions[0][1]}, 
+    {Ambient: 0 as byte, CurativeItems: [{ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "minecraft:milk_bucket", Count: 1 as byte, Damage: 0 as short}], 
+    ShowParticles: 1 as byte, Duration: 7200, Id: potions[1][0], Amplifier: potions[1][1]},
+    {Ambient: 0 as byte, CurativeItems: [{ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "minecraft:milk_bucket", Count: 1 as byte, Damage: 0 as short}], 
+    ShowParticles: 1 as byte, Duration: 7200, Id: potions[2][0], Amplifier: potions[2][1]}], 
+    Potion: "minecraft:water", display: {LocName: "potion.as.crafted.name"}});
+  }
+}
+
+// Enchantments are input in the format [[id as int, lvl as int], [...], ...] 
+// Potions are input in the format [[id as int, amplifier as int], [...], ...]
+function addRefractionRecipe(info as string, enchantments as int[][], potions as int[][]) {
+    val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("enchantment", enchantedBook(enchantments));
+      container.addItemOutput("potion", astralPotion(potions));
+    });
+    assRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation." ~ info}}
+      ).withDisplayName("§f" ~ info));
+    <assembly:refraction_table>.addJEIRecipe(assRec);
+}
+
+addRefractionRecipe("discidia", [[16, 7], [48, 7]], [[5, 3]]);
+addRefractionRecipe("armara", [[0, 5]], [[11, 2]]);
+addRefractionRecipe("vicio", [[2, 5]], [[1, 3]]);
+addRefractionRecipe("aevitas", [[70, 3]], [[10, 3]]);
+addRefractionRecipe("evorsio", [[32, 5]], [[3, 3]]);
+addRefractionRecipe("lucerna", [[96, 1]], [[16, 2]]);
+addRefractionRecipe("mineralis", [[35, 3]], [[13, 4]]);
+addRefractionRecipe("horologium", [[35, 6], [21, 5]], [[3, 8], [1, 4]]);
+addRefractionRecipe("octans", [[5, 4]], [[13, 4]]);
+addRefractionRecipe("bootes", [[33, 1]], [[23, 5]]);
+addRefractionRecipe("fornax", [[20, 3], [50, 2], [97, 1]], [[23, 5]]);
+addRefractionRecipe("pelotrio", [[51, 1], [62, 6]], [[10, 4]]);
+addRefractionRecipe("gelu", [[9, 2], [2, 4], [34, 4]], [[2, 1], [12, 0], [11, 2]]);
+addRefractionRecipe("ulteria", [[34, 3], [1, 6], [3, 6], [4, 6]], [[18, 2], [10, 1], [22, 2]]);
+addRefractionRecipe("alcara", [[22, 7], [62, 5], [61, 6]], [[17, 2], [14, 1], [26, 4]]);
+addRefractionRecipe("vorux", [[17, 7], [18, 7], [16, 4], [48, 4]], [[5, 3], [4, 3], [11, 1]]);
 
 
 // TODO --== Apotheosis Enchants ==-- //
 var apotheosis_enchants = <assembly:apotheosis_enchants>;
-
-
 
 ##########################################################################################
 print("==================== end of jei.zs ====================");
