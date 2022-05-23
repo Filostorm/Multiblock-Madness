@@ -3,6 +3,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.addDescription;
 import crafttweaker.formatting.IFormattedText;
+import crafttweaker.data.IData;
 
 #priority -1
 
@@ -215,6 +216,15 @@ addDescription(<liquid:aetherworks.impure_aetherium_gas>, "Obtained from the Aet
 <enderio:block_soul_binder>.addShiftTooltip("Base Power Consumption: §c40 kRF/t§r");
 <enderio:block_powered_spawner>.addShiftTooltip("Base Power Consumption: §c1280 RF/t§r");
 
+<qmd:ore_leacher>.addTooltip("Base Power Consumption: §c2500 RF/t§r");
+<qmd:atmosphere_collector>.addTooltip("Power Consumption: §c5000 RF/t§r");
+
+<threng:machine>.addTooltip("Power Consumption: §c54-2500 RF/t§r");
+<threng:machine:1>.addTooltip("Power Consumption: §c54-2500 RF/t§r");
+<threng:machine:5>.addTooltip("Power Consumption: §c80-4166 RF/t§r");
+
+<advancedrocketry:spacelaser>.addTooltip("Power Consumption: §c20 kRF/t§r");
+
 
 // --== Embers Documentation ==-- //
 
@@ -304,7 +314,7 @@ for seed in embers_crystal_seeds {
 <bloodmagic:blood_rune:10>.addTooltip("§f+1000 Charge");
 
 
-// TODO ET Multiblock JEI Descriptions ==-- //
+// --== ET Multiblock JEI Descriptions ==-- //
 
 val nanobot_modifier = [
   <environmentaltech:modifier_speed>,
@@ -342,82 +352,135 @@ for modifier in miner_modifier {
 <environmentaltech:modifier_piezo>.addTooltip("§fSolar Array Modifier");
 <environmentaltech:modifier_piezo>.addTooltip("§fAllows Solar Array to work in rain");
 
-// # Solar Panels
-// val or_above = " " ~ desc.local("et.or_above");
-// for i,a in [
-// 	[4,16,9],
-// 	[4,24,25],
-// 	[8,32,49],
-// 	[8,40,81],
-// 	[12,48,121],
-// 	[12,56,169],
-// ] as int[][] {
-// 	desc.jei(
-// 		itemUtils.getItem("environmentaltech:solar_cont_"~(i+1)),
-// 		"solar_cont", a[0], a[1], (i+1) as string ~ (i==5?"":or_above), a[2]
-// 	);
-// }
+// Solar Arrays
+// Map format: [solars]: [[tier], [power output ranging from litherite to aethium solar cells], [modifiers, structure frames, solar cells], [dimensions]]
+val et_solars = {
+  <environmentaltech:solar_cont_1>:[[1], [549, 729, 1098, 1467, 2205, 2943], [4,16,9], ["5x2x5"]],
+  <environmentaltech:solar_cont_2>:[[2], [4300, 5734, 8601, 11468, 17203, 22937], [4,24,25], ["7x2x7"]],
+  <environmentaltech:solar_cont_3>:[[3], [39016, 52022, 78033, 104044, 156067, 208089], [8,32,49], ["9x2x9"]],
+  <environmentaltech:solar_cont_4>:[[4], [109247, 145662, 218494, 291325, 436988, 582651], [8,40,81], ["11x2x11"]],
+  <environmentaltech:solar_cont_5>:[[5], [456950, 609266, 913900, 1218533, 1827800, 2437066], [12,48,121], ["13x2x13"]],
+  <environmentaltech:solar_cont_6>:[[6], [1787014, 2382685, 3574028, 4765371, 7148057, 9530743], [12,56,169], ["15x2x15"]],
+} as IData[][][IItemStack];
 
-// # Void Ore Miner
-// desc.jei(<environmentaltech:void_ore_miner_cont_1>, "et_cont_1", 24, 20, 2);
+for solar, values in et_solars {
+  addDescription(solar, ["Power Output:",
+  "Litherite Cells: " ~ values[1][0] ~ " RF/t",
+  "Erodium Cells: " ~ values[1][1] ~ " RF/t",
+  "Kyronite Cells: " ~ values[1][2] ~ " RF/t",
+  "Pladium Cells: " ~ values[1][3] ~ " RF/t",
+  "Ionite Cells: " ~ values[1][4] ~ " RF/t",
+  "Aethium Cells: " ~ values[1][5] ~ " RF/t",
+  "",
+  "Dimensions: " ~ values[3][0],
+  "",
+  "Required Blocks:",
+  "" ~ values[2][0] ~ " Null or Piezo Modifiers in any combination",
+  "" ~ values[2][1] ~ " Structure frames tier " ~ values[0][0] ~ " or above",
+  "" ~ values[2][2] ~ " Solar Cells of any type"
+  ]);
+}
 
-// for i,a in [
-// 	[4,32,16,3],
-// 	[8,56,52,4],
-// 	[12,56,56,5],
-// 	[16,72,36,6],
-// 	[20,92,56,6],
-// ] as int[][] {
-// 	desc.jei(
-// 		itemUtils.getItem("environmentaltech:void_ore_miner_cont_"~(i+2)),
-// 		"et_miner_cont_any", a[0], a[1], (i+2) as string ~ (i==4?"":or_above), a[2], a[3]
-// 	);
-// }
+// Void Miners
+// Map format: [miners]:[[tier], [base power, max power], [base operation time, fastest operation time], 
+// [speed modifier count, accuracy modifier count], [modifiers, structure frames, structure panels, laser cores], [dimensions]]
+val et_miners = {
+  [<environmentaltech:void_ore_miner_cont_2>]:[[2], [3125, 19668], [320, 80], [4, 0], [4,32,16,3], ["7x5x7"]],
+  [<environmentaltech:void_ore_miner_cont_3>]:[[3], [6250, 74787], [160, 32], [5, 3], [8,56,52,4], ["11x6x11"]],
+  [<environmentaltech:void_ore_miner_cont_4>]:[[4], [12500, 224928], [80, 16], [5, 7], [12,56,56,5], ["11x7x11"]],
+  [<environmentaltech:void_ore_miner_cont_5>]:[[5], [25000, 1368391], [40, 4], [6, 10], [16,72,36,6], ["11x8x11"]],
+  [<environmentaltech:void_ore_miner_cont_6>]:[[6], [50000, 8324860], [20, 1], [7, 13], [20,92,56,6], ["13x8x13"]],
+  [<environmentaltech:void_res_miner_cont_2>, <environmentaltech:void_botanic_miner_cont_2>]:[[2], [200, 1258], [320, 80], [4, 0], [4,32,16,3], ["7x5x7"]],
+  [<environmentaltech:void_res_miner_cont_3>, <environmentaltech:void_botanic_miner_cont_3>]:[[3], [400, 4786], [160, 32], [5, 3], [8,56,52,4], ["11x6x11"]],
+  [<environmentaltech:void_res_miner_cont_4>, <environmentaltech:void_botanic_miner_cont_4>]:[[4], [800, 14395], [80, 16], [5, 7], [12,56,56,5], ["11x7x11"]],
+  [<environmentaltech:void_res_miner_cont_5>, <environmentaltech:void_botanic_miner_cont_5>]:[[5], [1600, 87577], [40, 4], [6, 10], [16,72,36,6], ["11x8x11"]],
+  [<environmentaltech:void_res_miner_cont_6>, <environmentaltech:void_botanic_miner_cont_6>]:[[6], [3200, 532790], [20, 1], [7, 13], [20,92,56,6], ["13x8x13"]],
+} as IData[][][IItemStack[]];
 
-// # Void Resource Miner
-// desc.jei(<environmentaltech:void_res_miner_cont_1>, "et_cont_1", 24, 20, 2 );
-// for i,a in [
-// 	[4,32,16,3],
-// 	[8,56,52,4],
-// 	[12,56,56,5],
-// 	[16,72,36,6],
-// 	[20,92,56,6],
-// ] as int[][] {
-// 	desc.jei(
-// 		itemUtils.getItem("environmentaltech:void_res_miner_cont_"~(i+2)),
-// 		"et_miner_cont_any", a[0], a[1], (i+2) as string ~ (i==4?"":or_above), a[2], a[3]
-// 	);
-// }
+for miners, values in et_miners {
+  addDescription(miners, [
+    "Base power consumption:", 
+    "" ~ values[1][0] ~ " RF/t",
+    "Max power consumption:", 
+    "" ~ values[1][1] ~ " RF/t",
+    "Base operation time: " ~ values[2][0] ~ " t",
+    "Fastest operation time: " ~ values[2][1] ~ " t",
+    "",
+    "Optimal Modifier Combination: " ~ values[3][0] ~ " speed & " ~ values[3][1] ~ " luck modifiers",
+    "Dimensions: " ~ values[5][0],
+    "",
+    "Required Blocks:",
+		"" ~ values[4][0] ~ " Null or Miner Modifiers in any combination",
+		"" ~ values[4][1] ~ " Structure Frames tier " ~ values[0][0] ~ " or above",
+		"" ~ values[4][2] ~ " Structure Panels",
+		"" ~ values[4][3] ~ " Laser Cores",
+		"1 Laser Lens of any type"
+  ]);
+}
 
-// # Nanobot Beacon
-// for i,a in [
-// 	[4,20,12],
-// 	[8,36,24],
-// 	[12,56,40],
-// 	[16,80,60],
-// 	[20,108,84],
-// 	[24,140,112],
-// ] as int[][] {
-// 	desc.jei(
-// 		itemUtils.getItem("environmentaltech:nano_cont_personal_"~(i+1)),
-// 		"nano_cont_personal", a[0], a[1], (i+1) as string ~ (i==5?"":or_above), a[2]
-// 	);
-// }
+// Map format: [miners]: [[power consumption, operation time], [structure frames, structure panels, laser cores]]
+val t1_et_miners = {
+  [<environmentaltech:void_ore_miner_cont_1>]: [[2500, 400], [24, 20, 2]],
+  [<environmentaltech:void_res_miner_cont_1>, <environmentaltech:void_botanic_miner_cont_1>]: [[160, 400], [24, 20, 2]],
+} as IData[][][IItemStack[]];
 
-// # Lightning Rod
-// for i,a in [
-// 	[4,3,3],
-// 	[4,4,4],
-// 	[4,5,5],
-// 	[13,4,16],
-// 	[13,6,22],
-// 	[13,8,28],
-// ] as int[][] {
-// 	desc.jei(
-// 		itemUtils.getItem("environmentaltech:nano_cont_personal_"~(i+1)),
-// 		"nano_cont_personal", a[0], (i+1) as string ~ (i==5?"":or_above), a[1], a[2]
-// 	);
-// }
+for miners, values in t1_et_miners {
+  addDescription(miners, [
+    "Power Consumption: " ~ values[0][0] ~ " RF/t",
+    "Operation time: " ~ values[0][1] ~ " t",
+    "Dimensions: 7x4x7",
+    "",
+    "Required Blocks:",
+		"" ~ values[1][0] ~ " Structure Frames tier 1 or above",
+		"" ~ values[1][1] ~ " Structure Panels",
+		"" ~ values[1][2] ~ " Laser Cores",
+		"1 Laser Lens of any type"
+  ]);
+}
+
+// Beacons
+// Map format: [beacons]: [[tier], [modifiers, structure frames, structure panels], [dimensions]]
+val et_beacons = {
+  [<environmentaltech:nano_cont_ranged_1>, <environmentaltech:nano_cont_personal_1>]: [[1], [4,20,12], ["5x3x5"]],
+  [<environmentaltech:nano_cont_ranged_2>, <environmentaltech:nano_cont_personal_2>]: [[2], [8,36,24], ["7x4x7"]],
+  [<environmentaltech:nano_cont_ranged_3>, <environmentaltech:nano_cont_personal_3>]: [[3], [12,56,40], ["9x5x9"]],
+  [<environmentaltech:nano_cont_ranged_4>, <environmentaltech:nano_cont_personal_4>]: [[4], [16,80,60], ["11x6x11"]],
+  [<environmentaltech:nano_cont_ranged_5>, <environmentaltech:nano_cont_personal_5>]: [[5], [20,108,84], ["13x7x13"]],
+  [<environmentaltech:nano_cont_ranged_6>, <environmentaltech:nano_cont_personal_6>]: [[6], [24,140,112], ["15x8x15"]],
+} as IData[][][IItemStack[]];
+
+for beacons, values in et_beacons {
+  addDescription(beacons, [
+    "Dimensions: " ~ values[2][0],
+    "",
+    "Required Blocks:",
+		"" ~ values[1][0] ~ " Null or Beacon Modifiers in any combination",
+		"" ~ values[1][1] ~ " Structure Frames tier " ~ values[0][0] ~ " or above",
+		"" ~ values[1][2] ~ " Structure Panels"
+  ]);
+}
+
+// Lightning Rods
+
+val et_lightning_rods = {
+  <environmentaltech:lightning_cont_1>: [[1], [4,3,3], ["3x7x3"]],
+  <environmentaltech:lightning_cont_2>: [[1], [4,4,4], ["3x9x3"]],
+  <environmentaltech:lightning_cont_3>: [[1], [4,5,5], ["3x11x3"]],
+  <environmentaltech:lightning_cont_4>: [[1], [13,4,16], ["3x13x3"]],
+  <environmentaltech:lightning_cont_5>: [[1], [13,6,22], ["3x18x3"]],
+  <environmentaltech:lightning_cont_6>: [[1], [13,8,28], ["3x23x3"]],
+} as IData[][][IItemStack];
+
+for lightning_rods, values in et_lightning_rods {
+  addDescription(lightning_rods, [
+    "Dimensions: " ~ values[2][0],
+    "",
+    "Required Blocks:",
+    "" ~ values[1][0] ~ " Structure Frames tier " ~ values[0][0] ~ " or above",
+		"" ~ values[1][1] ~ " Lightning Rods",
+		"" ~ values[1][2] ~ " Insulated Lightning Rods"
+  ]);
+}
 
 
 // --== Machine upgrade descriptions ==-- //
