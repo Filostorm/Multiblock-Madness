@@ -1158,6 +1158,17 @@
 			<itemStack>contenttweaker:plate_thermal_alloy;9;0</itemStack>
 		</output>
 	</Recipe>
+	
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<itemStack>jaopca:block_blockthermoconducting</itemStack>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platethermoconducting;9;0</itemStack>
+		</output>
+	</Recipe>
+
 	<Recipe timeRequired="30" power ="20000">
 		<input>
 			<oreDict>blockBlackIron</oreDict>
@@ -1230,16 +1241,6 @@
 			<itemStack>jaopca:item_platedensetungstencarbide</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="30" power ="20000">
-		<input>
-			<oreDict>plateThermoconducting;9</oreDict>
-			<fluidStack>lubricant;5</fluidStack>
-		</input>
-		<output>
-			<itemStack>jaopca:block_blockthermoconducting</itemStack>
-		</output>
-	</Recipe>
-
 
 
 	<!-- Coal/Charcoal/Coke to Carbon Ingots -->

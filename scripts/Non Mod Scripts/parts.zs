@@ -121,6 +121,7 @@ val mapNewPlates as IItemStack[IItemStack] = {
 	<actuallyadditions:item_crystal:3>:<moreplates:void_plate>,
 	<actuallyadditions:item_crystal:2>:<moreplates:diamatine_plate>,
 	<aetherworks:item_resource:4>:<aetherworks:item_resource:3>,
+	<actuallyadditions:item_crystal:1>:<moreplates:palis_plate>,
 } as IItemStack[IItemStack];
 
 for material, output in mapNewPlates {
@@ -145,6 +146,7 @@ val mapNewGears as IItemStack[IItemStack] = {
 	<actuallyadditions:item_crystal_empowered:5>:<moreplates:empowered_enori_gear>,
 	<actuallyadditions:item_crystal_empowered:1>:<moreplates:empowered_palis_gear>,
 	<actuallyadditions:item_crystal_empowered:3>:<moreplates:empowered_void_gear>,
+	<actuallyadditions:item_crystal_empowered>:<moreplates:empowered_restonia_gear>,
 } as IItemStack[IItemStack];
 
 for material, output in mapNewGears {

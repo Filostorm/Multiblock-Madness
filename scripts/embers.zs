@@ -80,6 +80,9 @@ Lightwell.addLiquefaction(<embers:aspectus_copper>, <liquid:copper>, 1.2, 1.5, 0
 Lightwell.addLiquefaction(<embers:aspectus_iron>, <liquid:iron>, 1.2, 1.5, 0xa6a6a6);
 Lightwell.addLiquefaction(<embers:aspectus_lead>, <liquid:lead>, 1.2, 1.5, 0x5c6f7a);
 Lightwell.addLiquefaction(<embers:aspectus_dawnstone>, <liquid:dawnstone>, 1.2, 1.5, 0xe89e43);
+Lightwell.addLiquefaction(<contenttweaker:aspectus_gold>, <liquid:gold>, 1.2, 1.5, 0xd3d92b);
+Lightwell.addLiquefaction(<contenttweaker:aspectus_tin>, <liquid:tin>, 1.2, 1.5, 0xd5dbd8);
+Lightwell.addLiquefaction(<contenttweaker:aspectus_nickel>, <liquid:nickel>, 1.2, 1.5, 0xc8db97);
 
 // Molten Embers
 /*
@@ -163,10 +166,6 @@ mods.embers.Alchemy.add(<embers:seed_dawnstone>, [<minecraft:quartz>,<embers:ing
 
 // Remove Tungsten Melting
 mods.embers.Melter.remove(<liquid:tungsten>);
-
-//Glowstone Flows up :(
-//mods.embers.Melter.add(<liquid:glowstone> * 250, <minecraft:glowstone_dust>);
-//mods.embers.Melter.add(<liquid:glowstone> * 1000, <minecraft:glowstone>);
 
 //New Aspectus recipes
 /*
@@ -282,8 +281,49 @@ MetalFormer.addRecipe(<mysticalworld:amethyst_gem>, <liquid:aetherworks.aetheriu
 <mysticalmechanics:gearbox_frame>.addTooltip(format.red("Only rotate with an AE Quartz Wrench"));
 <mysticalmechanics:mergebox_frame>.addTooltip(format.red("Only rotate with an AE Quartz Wrench"));
 
+# [Windup Box] from [Gold Gear][+3]
+craft.remake(<mystgears:windup_box>, ["pretty",
+  "▬ ▬ ▬",
+  "I ¤ ◙",
+  "▬ ▬ ▬"], {
+  "▬": <ore:ingotIron>,                    # Iron Ingot
+  "I": <mysticalmechanics:axle_iron>,      # Iron Axle
+  "¤": <ore:gearGold>,                     # Gold Gear
+  "◙": <mysticalmechanics:mergebox_frame>, # Mergebox Frame
+});
+
 //Stamper alt recipes for if infuser doesnt work
 Stamper.add(<botania:dreamwood:5>, <liquid:aetherworks.aetherium_gas>*18, <embers:stamp_flat>, <botania:dreamwood>);
 Stamper.add(<astralsorcery:itemcraftingcomponent:4>, <liquid:aetherworks.aetherium_gas>*144, <embers:stamp_flat>, <astralsorcery:itemcraftingcomponent>);
+
+//Contenttweaker Aspectus Creation
+val customAspecti = {
+<contenttweaker:aspectus_gold> : <liquid:gold>,
+<contenttweaker:aspectus_tin> : <liquid:tin>,
+<contenttweaker:aspectus_nickel> : <liquid:nickel>
+} as ILiquidStack[IItemStack];
+
+for aspectus, molten in customAspecti {
+	Stamper.add(aspectus, molten*576, <embers:stamp_plate>, <embers:shard_ember>);
+}
+
+# [Moonlight Amplifier] from [Resonating Gem][+3]
+craft.remake(<aetherworks:moonlight_amplifier>, ["pretty",
+  "▬ e ▬",
+  "▬ ◊ e",
+  "A A A"], {
+  "▬": <ore:ingotDawnstone>,                    # Dawnstone Ingot
+  "e": <ore:lensAether>,                        # Aetherium Lens
+  "◊": <astralsorcery:itemcraftingcomponent:4>, # Resonating Gem
+  "A": <embers:archaic_brick>,                  # Archaic Brick
+});
+
+var defaultBoreSet = mods.embers.EmberBore.getDefault();
+defaultBoreSet.clear();
+
+var borerecipe = mods.embers.EmberBore.create([0] as int[], ["minecraft:plains"] as string[]);
+borerecipe.addOutput(<minecraft:diamond> % 20);
+borerecipe.addOutput(<minecraft:dirt> % 100);
+
 ##########################################################################################
 print("==================== end of embers.zs ====================");

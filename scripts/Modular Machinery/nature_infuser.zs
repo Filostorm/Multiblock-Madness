@@ -30,6 +30,7 @@ crystalReInfusing.addItemInput(<contenttweaker:dun_crystal>);
 crystalReInfusing.addItemInput(<botania:rune:2>);
 crystalReInfusing.addItemOutput(<contenttweaker:terrestrial_crystal>).setChance(0.9);
 crystalReInfusing.build();
+<contenttweaker:dun_crystal>.addTooltip(format.red("Has a 10% chance to break when recharging"));
 
 // Elemental Soil
 mods.modularmachinery.RecipeBuilder.newBuilder("nature_infuser" + "_elemental_soil", "nature_infuser", 200, 0)

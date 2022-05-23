@@ -123,6 +123,12 @@
         "thaumcraft:vis_battery@8",
         "thaumcraft:vis_battery@9",
         "thaumcraft:vis_battery@10"
+    ],
+    "arcane_trapdoor": [
+        "thaumicaugmentation:arcane_trapdoor_wood@12",
+        "thaumicaugmentation:arcane_trapdoor_wood@0",
+        "thaumicaugmentation:arcane_trapdoor_wood@8",
+        "thaumicaugmentation:arcane_trapdoor_wood@4"
     ]
     
     

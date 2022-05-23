@@ -375,6 +375,10 @@ val basicHousingMap as IItemStack[IItemStack] = {
 <thaumicenergistics:essentia_cell_4k>:<thaumicenergistics:essentia_component_4k>,
 <thaumicenergistics:essentia_cell_16k>:<thaumicenergistics:essentia_component_16k>,
 <thaumicenergistics:essentia_cell_64k>:<thaumicenergistics:essentia_component_64k>,
+<appliedenergistics2:fluid_storage_cell_1k>:<appliedenergistics2:material:54>,
+<appliedenergistics2:fluid_storage_cell_4k>:<appliedenergistics2:material:55>,
+<appliedenergistics2:fluid_storage_cell_16k>:<appliedenergistics2:material:56>,
+<appliedenergistics2:fluid_storage_cell_64k>:<appliedenergistics2:material:57>,
 } as IItemStack[IItemStack];
 
 for cell, component in basicHousingMap {
@@ -407,17 +411,23 @@ val fluidHousingMap as IItemStack[IItemStack] = {
 <appliedenergistics2:fluid_storage_cell_16k>:<appliedenergistics2:material:56>,
 <appliedenergistics2:fluid_storage_cell_64k>:<appliedenergistics2:material:57>,
 <aeadditions:storage.fluid>:<aeadditions:storage.component:4>,
-<aeadditions:storage.fluid:1>:<aeadditions:storage.component:5>,
-<aeadditions:storage.fluid:2>:<aeadditions:storage.component:6>,
+//<aeadditions:storage.fluid:1>:<aeadditions:storage.component:5>,
+//<aeadditions:storage.fluid:2>:<aeadditions:storage.component:6>,
 } as IItemStack[IItemStack];
 
 for cell, component in fluidHousingMap {
-	recipes.removeShaped(cell, [
-		[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
-		[<appliedenergistics2:material:8>, component, <appliedenergistics2:material:8>], 
-		[<aeadditions:certustank>, <aeadditions:certustank>, <aeadditions:certustank>]
-	]);
+recipes.remove(cell);
+recipes.addShapeless(cell, [<aeadditions:storage.casing:1>,component]);
+//	recipes.removeShaped(cell, [
+//		[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
+//		[<appliedenergistics2:material:8>, component, <appliedenergistics2:material:8>], 
+//		[<aeadditions:certustank>, <aeadditions:certustank>, <aeadditions:certustank>]
+//	]);
 }
+recipes.remove(<aeadditions:storage.fluid:1>);
+recipes.remove(<aeadditions:storage.fluid:2>);
+recipes.remove(<aeadditions:storage.component:5>);
+recipes.remove(<aeadditions:storage.component:6>);
 
 val gasHousingMap as IItemStack[IItemStack] = {
 <aeadditions:storage.gas>:<aeadditions:storage.component:7>,

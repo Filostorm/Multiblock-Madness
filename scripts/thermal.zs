@@ -409,5 +409,14 @@ craft.remake(<thermalexpansion:machine:13>.withTag({Level: 1 as byte}), ["pretty
   "♥": <thermalfoundation:material:513>,            # Redstone Reception Coil
 });
 
+//Not sure why its needed...
+# [Block of Coal Coke] from [Coal Coke]
+craft.remake(<thermalfoundation:storage_resource:1>, ["pretty",
+  "C C C",
+  "C C C",
+  "C C C"], {
+  "C": <ore:fuelCoke>, # Coal Coke
+});
+
 ##########################################################################################
 print("==================== end of thermal.zs ====================");
