@@ -74,7 +74,7 @@ addInsOuts(excavator, [[1,0], [2,0]], [[4,0], [5,0], [6,0], [7,0], [8,0], [9,0]]
 
 // Adds an Excavator Vein to the RQ JEI Page. Can accept a maximum of 2 dimensions and 6 ores. Quantity of ore is determined by percentage of ore in vein.
 
-function addvein(info as IIngredient, dimensions as IIngredient[], ores as IItemStack[]) {
+function addvein(info as string, dimensions as IIngredient[], ores as IItemStack[]) {
     val assRec = AssemblyRecipe.create(function(container) {
       for i, output in ores {
         if(isNull(output)) continue;
@@ -85,7 +85,7 @@ function addvein(info as IIngredient, dimensions as IIngredient[], ores as IItem
       if(isNull(input)) continue;
       assRec.requireItem("item_input"~i, input);
     }
-    assRec.requireItem("information", info);
+    assRec.requireItem("information", <minecraft:book>.withDisplayName(info));
     <assembly:excavator>.addJEIRecipe(assRec);
 }
 
@@ -110,35 +110,35 @@ var rarity =
   <minecraft:wool:10>.withDisplayName("§d§lVery Rare§r")
 ] as IItemStack[];
 
-addvein(<minecraft:book>.withDisplayName("§fBauxite"), [dimensionItem[0], dimensionItem[3]], [<techreborn:ore:4> * 70, <thermalfoundation:ore:4> * 19, <libvulpes:ore0:8> * 9, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fCassiterite"), [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore:1> * 98, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fCoal"), [dimensionItem[0], dimensionItem[3]], [<minecraft:coal_ore> * 95, <minecraft:diamond_ore> * 1, <minecraft:emerald_ore> * 1, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fCopper"), [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore> * 67, <minecraft:gold_ore> * 26, <thermalfoundation:ore:5> * 6, <rockhounding_chemistry:uninspected_mineral>]);
-addvein(<minecraft:book>.withDisplayName("§fRare Earth"), [dimensionItem[0], dimensionItem[3]], [<rockhounding_chemistry:uninspected_mineral> * 85, <minecraft:diamond_ore> * 15]);
-addvein(<minecraft:book>.withDisplayName("§fSilt"), [dimensionItem[0]], [<minecraft:clay> * 50, <minecraft:sand> * 30, <minecraft:gravel> * 20]);
-addvein(<minecraft:book>.withDisplayName("§fGalena"), [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 51, <thermalfoundation:ore:2> * 19, <thermalfoundation:ore:3> * 28, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fSilver"), [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 12, <thermalfoundation:ore:2> * 71, <thermalfoundation:ore:3> * 15, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fLead"), [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 22, <thermalfoundation:ore:2> * 13, <thermalfoundation:ore:3> * 64, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fBauxite", [dimensionItem[0], dimensionItem[3]], [<techreborn:ore:4> * 70, <thermalfoundation:ore:4> * 19, <libvulpes:ore0:8> * 9, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fCassiterite", [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore:1> * 98, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fCoal", [dimensionItem[0], dimensionItem[3]], [<minecraft:coal_ore> * 95, <minecraft:diamond_ore> * 1, <minecraft:emerald_ore> * 1, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fCopper", [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore> * 67, <minecraft:gold_ore> * 26, <thermalfoundation:ore:5> * 6, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fRare Earth", [dimensionItem[0], dimensionItem[3]], [<rockhounding_chemistry:uninspected_mineral> * 85, <minecraft:diamond_ore> * 15]);
+addvein("§fSilt", [dimensionItem[0]], [<minecraft:clay> * 50, <minecraft:sand> * 30, <minecraft:gravel> * 20]);
+addvein("§fGalena", [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 51, <thermalfoundation:ore:2> * 19, <thermalfoundation:ore:3> * 28, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fSilver", [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 12, <thermalfoundation:ore:2> * 71, <thermalfoundation:ore:3> * 15, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fLead", [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 22, <thermalfoundation:ore:2> * 13, <thermalfoundation:ore:3> * 64, <rockhounding_chemistry:uninspected_mineral> * 1]);
 
-addvein(<minecraft:book>.withDisplayName("§fIron"), [dimensionItem[0], dimensionItem[3]], [<minecraft:iron_ore> * 58, <thermalfoundation:ore:5> * 21, <thermalfoundation:ore:1> * 20, <rockhounding_chemistry:uninspected_mineral> * 1]);
-addvein(<minecraft:book>.withDisplayName("§fLapis"), [dimensionItem[0], dimensionItem[3]], [<minecraft:lapis_ore> * 69, <minecraft:iron_ore> * 30, <rockhounding_chemistry:uninspected_mineral> * 1]);
-addvein(<minecraft:book>.withDisplayName("§fMagnetite"), [dimensionItem[0], dimensionItem[3]], [<minecraft:iron_ore> * 83, <minecraft:gold_ore> * 15, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fNickel"), [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore:5> * 80, <thermalfoundation:ore:6> * 5, <minecraft:iron_ore> * 14, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fUranium"), [dimensionItem[0], dimensionItem[3]], [<nuclearcraft:ore:4> * 55, <thermalfoundation:ore:3> * 24, <nuclearcraft:ore:5> * 10, <nuclearcraft:ore:3> * 10, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fIron", [dimensionItem[0], dimensionItem[3]], [<minecraft:iron_ore> * 58, <thermalfoundation:ore:5> * 21, <thermalfoundation:ore:1> * 20, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fLapis", [dimensionItem[0], dimensionItem[3]], [<minecraft:lapis_ore> * 69, <minecraft:iron_ore> * 30, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fMagnetite", [dimensionItem[0], dimensionItem[3]], [<minecraft:iron_ore> * 83, <minecraft:gold_ore> * 15, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fNickel", [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore:5> * 80, <thermalfoundation:ore:6> * 5, <minecraft:iron_ore> * 14, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fUranium", [dimensionItem[0], dimensionItem[3]], [<nuclearcraft:ore:4> * 55, <thermalfoundation:ore:3> * 24, <nuclearcraft:ore:5> * 10, <nuclearcraft:ore:3> * 10, <rockhounding_chemistry:uninspected_mineral> * 1]);
 
-addvein(<minecraft:book>.withDisplayName("§fRaw Stone"), [dimensionItem[0]], [<minecraft:stone:1> * 20, <minecraft:stone:3> * 20, <minecraft:stone:5> * 20, <quark:limestone> * 15, <astralsorcery:blockmarble> * 15, <quark:basalt> * 15]);
+addvein("§fRaw Stone", [dimensionItem[0]], [<minecraft:stone:1> * 20, <minecraft:stone:3> * 20, <minecraft:stone:5> * 20, <quark:limestone> * 15, <astralsorcery:blockmarble> * 15, <quark:basalt> * 15]);
 
-addvein(<minecraft:book>.withDisplayName("§fCinnabar"), [dimensionItem[0], dimensionItem[3]], [<minecraft:redstone_ore> * 67, <techreborn:ore:6> * 26, <techreborn:ore:2> * 6, <rockhounding_chemistry:uninspected_mineral> * 1]);
-addvein(<minecraft:book>.withDisplayName("§fQuartzite"), [dimensionItem[0], dimensionItem[3]], [<minecraft:quartz_ore> * 40, <appliedenergistics2:quartz_ore> * 41, <actuallyadditions:block_misc:3> * 14, <appliedenergistics2:charged_quartz_ore> * 5]);
+addvein("§fCinnabar", [dimensionItem[0], dimensionItem[3]], [<minecraft:redstone_ore> * 67, <techreborn:ore:6> * 26, <techreborn:ore:2> * 6, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fQuartzite", [dimensionItem[0], dimensionItem[3]], [<minecraft:quartz_ore> * 40, <appliedenergistics2:quartz_ore> * 41, <actuallyadditions:block_misc:3> * 14, <appliedenergistics2:charged_quartz_ore> * 5]);
 
-addvein(<minecraft:book>.withDisplayName("§fOsmium"), [dimensionItem[3]], [<mekanism:oreblock> * 56, <thermalfoundation:ore:6> * 20, <minecraft:gold_ore> * 20, <rockhounding_chemistry:uninspected_mineral> * 4]);
-addvein(<minecraft:book>.withDisplayName("§fPlatinum"), [dimensionItem[3]], [<thermalfoundation:ore:6> * 64, <thermalfoundation:ore:5> * 20, <mekanism:oreblock> * 14, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fOsmium", [dimensionItem[3]], [<mekanism:oreblock> * 56, <thermalfoundation:ore:6> * 20, <minecraft:gold_ore> * 20, <rockhounding_chemistry:uninspected_mineral> * 4]);
+addvein("§fPlatinum", [dimensionItem[3]], [<thermalfoundation:ore:6> * 64, <thermalfoundation:ore:5> * 20, <mekanism:oreblock> * 14, <rockhounding_chemistry:uninspected_mineral>]);
 
-addvein(<minecraft:book>.withDisplayName("§fGold"), [dimensionItem[3]], [<minecraft:gold_ore> * 67,  <thermalfoundation:ore> * 22, <thermalfoundation:ore:5> * 6, <enderore:ore_ender> * 4, <rockhounding_chemistry:uninspected_mineral>]);
-addvein(<minecraft:book>.withDisplayName("§fVoidstone"), [dimensionItem[3]], [<minecraft:gold_ore> * 45, <minecraft:iron_ore> * 40, <chisel:voidstone> * 5, <mekanism:oreblock> * 8, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fGold", [dimensionItem[3]], [<minecraft:gold_ore> * 67,  <thermalfoundation:ore> * 22, <thermalfoundation:ore:5> * 6, <enderore:ore_ender> * 4, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fVoidstone", [dimensionItem[3]], [<minecraft:gold_ore> * 45, <minecraft:iron_ore> * 40, <chisel:voidstone> * 5, <mekanism:oreblock> * 8, <rockhounding_chemistry:uninspected_mineral> * 2]);
 
-addvein(<minecraft:book>.withDisplayName("§fPyrite"), [dimensionItem[1]], [<techreborn:ore:5> * 65, <techreborn:ore:7> * 19, <minecraft:iron_ore> * 15, <rockhounding_chemistry:uninspected_mineral>]);
-addvein(<minecraft:book>.withDisplayName("§fSphalerite"), [dimensionItem[1]], [<techreborn:ore:7> * 63, <techreborn:ore:5> * 26, <minecraft:iron_ore> * 10, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fPyrite", [dimensionItem[1]], [<techreborn:ore:5> * 65, <techreborn:ore:7> * 19, <minecraft:iron_ore> * 15, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fSphalerite", [dimensionItem[1]], [<techreborn:ore:7> * 63, <techreborn:ore:5> * 26, <minecraft:iron_ore> * 10, <rockhounding_chemistry:uninspected_mineral>]);
 
 
 
@@ -837,6 +837,106 @@ addRefractionRecipe("vorux", [<enchantment:minecraft:smite> * 7, <enchantment:mi
 
 // TODO --== Apotheosis Enchants ==-- //
 var apotheosis_enchants = <assembly:apotheosis_enchants>;
+
+val enchantment_list = [
+  <enchantment:advancedrocketry:spacebreathing> * 20,
+  <enchantment:apotheosis:berserk> * 7,
+  <enchantment:apotheosis:capturing> * 16,
+  <enchantment:apotheosis:depth_miner> * 13,
+  <enchantment:apotheosis:hell_infusion> * 14,
+  <enchantment:apotheosis:icy_thorns> * 8,
+  <enchantment:apotheosis:knowledge> * 10,
+  <enchantment:apotheosis:life_mending> * 5,
+  <enchantment:apotheosis:magic_protection> * 7,
+  <enchantment:apotheosis:mounted_strike> * 17,
+  <enchantment:apotheosis:natures_blessing> * 15,
+  <enchantment:apotheosis:reflective> * 21,
+  <enchantment:apotheosis:scavenger> * 3,
+  <enchantment:apotheosis:shield_bash> * 16,
+  <enchantment:apotheosis:splitting> * 18,
+  <enchantment:apotheosis:stable_footing> * 1,
+  <enchantment:apotheosis:tempting> * 1,
+  <enchantment:apotheosis:true_infinity> * 1,
+  <enchantment:astralsorcery:enchantment.as.nightvision> * 20,
+  <enchantment:astralsorcery:enchantment.as.smelting> * 1,
+  <enchantment:capsule:recall> * 1,
+  <enchantment:cofhcore:holding> * 17,
+  <enchantment:cofhcore:insight> * 17,
+  <enchantment:cofhcore:leech> * 16,
+  <enchantment:cofhcore:multishot> * 17,
+  <enchantment:cofhcore:smashing> * 1,
+  <enchantment:cofhcore:smelting> * 1,
+  <enchantment:cofhcore:soulbound> * 17,
+  <enchantment:cofhcore:vorpal> * 17,
+  <enchantment:cyclicmagic:enchantment.autosmelt> * 18,
+  <enchantment:cyclicmagic:enchantment.beheading> * 18,
+  <enchantment:cyclicmagic:enchantment.excavation> * 18,
+  <enchantment:cyclicmagic:enchantment.launch> * 18,
+  <enchantment:cyclicmagic:enchantment.lifeleech> * 18,
+  <enchantment:cyclicmagic:enchantment.magnet> * 18,
+  <enchantment:cyclicmagic:enchantment.multishot> * 18,
+  <enchantment:cyclicmagic:enchantment.quickdraw> * 18,
+  <enchantment:cyclicmagic:enchantment.reach> * 18,
+  <enchantment:cyclicmagic:enchantment.venom> * 18,
+  <enchantment:cyclicmagic:enchantment.waterwalking> * 18,
+  <enchantment:cyclicmagic:enchantment.expboost> * 18,
+  <enchantment:ebwizardry:flaming_weapon> * 20,
+  <enchantment:ebwizardry:freezing_weapon> * 20,
+  <enchantment:ebwizardry:frost_protection> * 25,
+  <enchantment:ebwizardry:magic_bow> * 20,
+  <enchantment:ebwizardry:magic_protection> * 25,
+  <enchantment:ebwizardry:magic_sword> * 18,
+  <enchantment:ebwizardry:shock_protection> * 25,
+  <enchantment:endercore:autosmelt> * 1,
+  <enchantment:endercore:xpboost> * 17,
+  <enchantment:enderio:repellent> * 20,
+  <enchantment:enderio:shimmer> * 1,
+  <enchantment:enderio:soulbound> * 1,
+  <enchantment:enderio:witherarrow> * 1,
+  <enchantment:enderio:witherweapon> * 1,
+  <enchantment:fossil:archeology> * 14,
+  <enchantment:fossil:paleontology> * 14,
+  <enchantment:minecraft:aqua_affinity> * 1,
+  <enchantment:minecraft:bane_of_arthropods> * 24,
+  <enchantment:minecraft:binding_curse> * 1,
+  <enchantment:minecraft:blast_protection> * 25,
+  <enchantment:minecraft:depth_strider> * 19,
+  <enchantment:minecraft:efficiency> * 16,
+  <enchantment:minecraft:feather_falling> * 33,
+  <enchantment:minecraft:fire_aspect> * 16,
+  <enchantment:minecraft:fire_protection> * 25,
+  <enchantment:minecraft:flame> * 1,
+  <enchantment:minecraft:fortune> * 5,
+  <enchantment:minecraft:frost_walker> * 19,
+  <enchantment:minecraft:infinity> * 1,
+  <enchantment:minecraft:knockback> * 16,
+  <enchantment:minecraft:looting> * 16,
+  <enchantment:minecraft:luck_of_the_sea> * 16,
+  <enchantment:minecraft:lure> * 16,
+  <enchantment:minecraft:mending> * 7,
+  <enchantment:minecraft:power> * 20,
+  <enchantment:minecraft:projectile_protection> * 34,
+  <enchantment:minecraft:protection> * 19,
+  <enchantment:minecraft:punch> * 10,
+  <enchantment:minecraft:respiration> * 18,
+  <enchantment:minecraft:sharpness> * 18,
+  <enchantment:minecraft:silk_touch> * 1,
+  <enchantment:minecraft:smite> * 24,
+  <enchantment:minecraft:sweeping> * 22,
+  <enchantment:minecraft:thorns> * 16,
+  <enchantment:minecraft:unbreaking> * 16,
+  <enchantment:minecraft:vanishing_curse> * 1,
+  <enchantment:openblocks:explosive> * 3,
+  <enchantment:openblocks:flim_flam> * 17,
+  <enchantment:openblocks:last_stand> * 2,
+  <enchantment:randomthings:magnetic> * 16,
+  <enchantment:tombstone:blessing> * 1,
+  <enchantment:tombstone:curse_of_bones> * 3,
+  <enchantment:tombstone:magic_siphon> * 5,
+  <enchantment:tombstone:plague_bringer> * 3,
+  <enchantment:tombstone:shadow_step> * 17,
+  <enchantment:tombstone:soulbound> * 1
+] as IEnchantment[];
 
 ##########################################################################################
 print("==================== end of jei_requious.zs ====================");

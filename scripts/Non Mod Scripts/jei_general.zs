@@ -102,128 +102,171 @@ addDescription(<liquid:aetherworks.impure_aetherium_gas>, "Obtained from the Aet
 
 // --== Power consumption tooltips ==-- //
 
-<actuallyadditions:block_furnace_double>.addTooltip("Power Consumption: §c25 RF/t§r");
-<actuallyadditions:block_canola_press>.addTooltip("Power Consumption: §c35 RF/t§r");
+// Actually Additions
+
 <actuallyadditions:block_farmer>.addTooltip("§c700 RF§7 per plant planted");
 <actuallyadditions:block_farmer>.addTooltip("§c600 RF§7 per plant harvested");
 
-<immersiveengineering:metal_device1>.addTooltip("Power Consumption: §c32 RF/t§r");
-<immersiveengineering:metal_device1:13>.addTooltip("Power Consumption: §c200 RF/t§r");
+
+// Immersive Engineering
+
 <immersiveengineering:metal_device1:5>.addTooltip("Charging Rate: §6256 RF/t§r");
 <immersiveengineering:metal_multiblock>.addTooltip("Power Consumption: §c~150 RF/t§r");
 <immersiveengineering:metal_multiblock:1>.addTooltip("Power Consumption: §c20-160 RF/t§r");
 <immersiveengineering:metal_multiblock:4>.addTooltip("Power Consumption: §c~5 RF/t§7 per slot");
 <immersiveengineering:metal_multiblock:5>.addTooltip("Power Consumption: §c~480 RF/t§r");
-<immersiveengineering:metal_multiblock:6>.addTooltip("Power Consumption: §c16 RF/t§r");
 <immersiveengineering:metal_multiblock:7>.addTooltip("Power Consumption: §c80 RF/t§7 per slot");
 <immersiveengineering:metal_multiblock:8>.addTooltip("Power Consumption: §c80 RF/t§7 per slot");
-<immersiveengineering:metal_multiblock:9>.addTooltip("Power Consumption: §c80 RF/t§r");
-<immersiveengineering:metal_multiblock:11>.addTooltip("Power Consumption: §c4096 RF/t§r");
 <immersiveengineering:metal_multiblock:13>.addTooltip("Power Consumption: §c512-2048 RF/t§7 per slot");
 <immersiveengineering:metal_multiblock:15>.addTooltip("Power Consumption: §c6 RF/t§7 per slot");
 
-<immersivepetroleum:metal_multiblock>.addTooltip("Power Consumption: §c2048 RF/t§r");
-<immersivepetroleum:metal_multiblock:2>.addTooltip("Power Consumption: §c1024 RF/t§r");
 
-<immersivetech:metal_multiblock>.addTooltip("Power Consumption: §c500 RF/t§r");
-<immersivetech:metal_multiblock1:2>.addTooltip("Power Consumption: §c64 RF/t§r");
-<immersivetech:metal_multiblock1:6>.addTooltip("Power Consumption: §c2048 RF/t§r");
-<immersivetech:metal_multiblock1:8>.addTooltip("Power Consumption: §c512 RF/t§r");
+// Miscellaneous
 
-<deepmoblearning:simulation_chamber>.addTooltip("Power Consumption: §c512-6666 RF/t§r");
-<deepmoblearning:extraction_chamber>.addTooltip("Power Consumption: §c256 RF/t§r");
-
-
-<enderio:block_painter>.addTooltip("Base Power Consumption: §c500 RF/t§r");
-<enderio:block_niard>.addTooltip("Base Power Consumption: §c5 RF/t§r");
-<enderio:block_crafter>.addTooltip("Base Power Consumption: §c10 RF/t§r");
-
-<nuclearcraft:manufactory>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:separator>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:decay_hastener>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:fuel_reprocessor>.addTooltip("Base Power Consumption: §c2000 RF/t§r");
-<nuclearcraft:alloy_furnace>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:infuser>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:melter>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:supercooler>.addTooltip("Base Power Consumption: §c400-2000 RF/t§r");
-<nuclearcraft:electrolyzer>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-
-<nuclearcraft:assembler>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:pressurizer>.addTooltip("Base Power Consumption: §c1000-2000 RF/t§r");
-<nuclearcraft:chemical_reactor>.addTooltip("Base Power Consumption: §c500-1000 RF/t§r");
-<nuclearcraft:salt_mixer>.addTooltip("Base Power Consumption: §c2000 RF/t§r");
-<nuclearcraft:crystallizer>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:enricher>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:extractor>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:centrifuge>.addTooltip("Base Power Consumption: §c1000 RF/t§r");
-<nuclearcraft:rock_crusher>.addTooltip("Base Power Consumption: §c2000 RF/t§r");
-
-<appliedenergistics2:charger>.addTooltip("Power Consumption: §c~60 RF/t§r");
-<appliedenergistics2:inscriber>.addTooltip("Base Power Consumption: §c20 RF/t§r");
-<ae2stuff:inscriber>.addTooltip("Base Power Consumption: §c20 RF/t§r");
-<appliedenergistics2:quartz_growth_accelerator>.addTooltip("Power Consumption: §c16 RF/t§r");
-<ae2stuff:grower>.addTooltip("Power Consumption: §c200 RF/t§r");
-
-<thermalexpansion:machine>.addShiftTooltip("Base Power Consumption: §c250 RF/t§r");
-<thermalexpansion:machine:1>.addShiftTooltip("Base Power Consumption: §c500 RF/t§r");
-<thermalexpansion:machine:2>.addShiftTooltip("Base Power Consumption: §c500 RF/t§r");
-<thermalexpansion:machine:3>.addShiftTooltip("Base Power Consumption: §c500 RF/t§r");
-<thermalexpansion:machine:4>.addShiftTooltip("Base Power Consumption: §c500 RF/t§r");
-<thermalexpansion:machine:5>.addShiftTooltip("Base Power Consumption: §c500 RF/t§r");
-<thermalexpansion:machine:6>.addShiftTooltip("Base Power Consumption: §c1000 RF/t§r");
-<thermalexpansion:machine:7>.addShiftTooltip("Base Power Consumption: §c500 RF/t§r");
-<thermalexpansion:machine:8>.addShiftTooltip("Base Power Consumption: §c400 RF/t§r");
-<thermalexpansion:machine:9>.addShiftTooltip("Base Power Consumption: §c1000 RF/t§r");
-<thermalexpansion:machine:10>.addShiftTooltip("Base Power Consumption: §c500 RF/t§r");
-<thermalexpansion:machine:11>.addShiftTooltip("Base Power Consumption: §c50 RF/t§r");
-<thermalexpansion:machine:12>.addShiftTooltip("Base Power Consumption: §c250 RF/t§r");
-<thermalexpansion:machine:13>.addShiftTooltip("Base Power Consumption: §c500 RF/t§r");
-<thermalexpansion:machine:14>.addShiftTooltip("Base Power Consumption: §c100 RF/t§r");
-<thermalexpansion:machine:15>.addShiftTooltip("Base Power Consumption: §c100 RF/t§r");
-
-<mekanism:machineblock>.addShiftTooltip("Base Power Consumption: §c100 RF/t§r");
-<mekanism:machineblock:1>.addShiftTooltip("Base Power Consumption: §c200 RF/t§r");
-<mekanism:machineblock:3>.addShiftTooltip("Base Power Consumption: §c100 RF/t§r");
-<mekanism:machineblock:4>.addShiftTooltip("Base Power Consumption: §c1600 RF/t§r");
-<mekanism:machineblock:8>.addShiftTooltip("Base Power Consumption: §c100 RF/t§r");
-<mekanism:machineblock:9>.addShiftTooltip("Base Power Consumption: §c400 RF/t§r");
-<mekanism:machineblock:10>.addShiftTooltip("Base Power Consumption: §c60 RF/t§r");
-<mekanism:machineblock:12>.addShiftTooltip("Base Power Consumption: §c40 RF/t§r");
-<mekanism:machineblock2:0>.addShiftTooltip("Base Power Consumption: §c100 RF/t§r");
-<mekanism:machineblock2:1>.addShiftTooltip("Base Power Consumption: §c200 RF/t§r");
-<mekanism:machineblock2:2>.addShiftTooltip("Base Power Consumption: §c200 RF/t§r");
-<mekanism:machineblock2:3>.addShiftTooltip("Base Power Consumption: §c800 RF/t§r");
-<mekanism:machineblock2:4>.addShiftTooltip("Base Power Consumption: §c160 RF/t§r");
-<mekanism:machineblock2:5>.addShiftTooltip("Base Power Consumption: §c60 RF/t§r");
-<mekanism:machineblock2:6>.addShiftTooltip("Base Power Consumption: §c800 RF/t§r");
-<mekanism:machineblock2:7>.addShiftTooltip("Base Power Consumption: §c400 RF/t§r");
-<mekanism:machineblock2:8>.addShiftTooltip("Base Power Consumption: §c800 RF/t§r");
-<mekanism:machineblock2:9>.addShiftTooltip("Base Power Consumption: §c200 RF/t§r");
-<mekanism:machineblock2:12>.addShiftTooltip("Base Power Consumption: §c200 RF/t§r");
-<mekanism:machineblock2:13>.addShiftTooltip("Base Power Consumption: §c2000 RF/t§r");
-<mekanism:machineblock3:5>.addShiftTooltip("Base Power Consumption: §c20 RF/t§r");
-
-<enderio:block_alloy_smelter>.addShiftTooltip("Base Power Consumption: §c1000 RF/t§r");
-<enderio:block_enhanced_alloy_smelter>.addShiftTooltip("Base Power Consumption: §c4000 RF/t§r");
-<enderio:block_sag_mill>.addShiftTooltip("Base Power Consumption: §c100 RF/t§r");
-<enderio:block_enhanced_sag_mill>.addShiftTooltip("Base Power Consumption: §c4000 RF/t§r");
-<enderio:block_vat>.addShiftTooltip("Base Power Consumption: §c1000 RF/t§r");
-<enderio:block_enhanced_vat>.addShiftTooltip("Base Power Consumption: §c4000 RF/t§r");
 <enderio:block_wired_charger>.addShiftTooltip("Base Charging Rate: §610 kRF/t§r");
 <enderio:block_enhanced_wired_charger>.addShiftTooltip("Base Charging Rate: §620 kRF/t§r");
-<enderio:block_farm_station>.addShiftTooltip("Base Power Consumption: §c1440 RF/t§r");
-<enderio:block_slice_and_splice>.addShiftTooltip("Base Power Consumption: §c20 kRF/t§r");
-<enderio:block_soul_binder>.addShiftTooltip("Base Power Consumption: §c40 kRF/t§r");
-<enderio:block_powered_spawner>.addShiftTooltip("Base Power Consumption: §c1280 RF/t§r");
 
-<qmd:ore_leacher>.addTooltip("Base Power Consumption: §c2500 RF/t§r");
-<qmd:atmosphere_collector>.addTooltip("Power Consumption: §c5000 RF/t§r");
+<deepmoblearning:simulation_chamber>.addTooltip("Power Consumption: §c512-6666 RF/t§r");
 
 <threng:machine>.addTooltip("Power Consumption: §c54-2500 RF/t§r");
 <threng:machine:1>.addTooltip("Power Consumption: §c54-2500 RF/t§r");
 <threng:machine:5>.addTooltip("Power Consumption: §c80-4166 RF/t§r");
 
 <advancedrocketry:spacelaser>.addTooltip("Power Consumption: §c20 kRF/t§r");
+
+
+// Common Power Consumption Tooltips
+
+val machine_power = {
+  // QMD Machine
+  <qmd:atmosphere_collector>: 5000,
+
+  // AE2 Machines
+  <appliedenergistics2:quartz_growth_accelerator>: 16,
+  <ae2stuff:grower>: 200,
+
+  // IE Machines
+  <immersivepetroleum:metal_multiblock>: 2048,
+  <immersivepetroleum:metal_multiblock:2>: 1024,
+  <immersivetech:metal_multiblock>: 500,
+  <immersivetech:metal_multiblock1:2>: 64,
+  <immersivetech:metal_multiblock1:6>: 2048,
+  <immersivetech:metal_multiblock1:8>: 512,
+  <immersiveengineering:metal_device1>: 32,
+  <immersiveengineering:metal_device1:13>: 200,
+  <immersiveengineering:metal_multiblock:6>: 16,
+  <immersiveengineering:metal_multiblock:9>: 80,
+  <immersiveengineering:metal_multiblock:11>: 4096,
+
+  // DML
+  <deepmoblearning:extraction_chamber>: 256,
+
+  // Actually Additions
+  <actuallyadditions:block_furnace_double>: 25,
+  <actuallyadditions:block_canola_press>: 35,
+} as int[IItemStack];
+
+for machine, power in machine_power {
+  machine.addTooltip("Power Consumption: §c" ~ power ~ " RF/t");
+}
+
+val machine_base_power = {
+  // NC:O Machines
+  <nuclearcraft:manufactory>: 1000,
+  <nuclearcraft:separator>: 1000,
+  <nuclearcraft:decay_hastener>: 1000,
+  <nuclearcraft:fuel_reprocessor>: 2000,
+  <nuclearcraft:alloy_furnace>: 1000,
+  <nuclearcraft:infuser>: 1000,
+  <nuclearcraft:melter>: 1000,
+  <nuclearcraft:supercooler>: 2000,
+  <nuclearcraft:electrolyzer>: 1000,
+  <nuclearcraft:assembler>: 1000,
+  <nuclearcraft:pressurizer>: 2000,
+  <nuclearcraft:chemical_reactor>: 1000,
+  <nuclearcraft:salt_mixer>: 2000,
+  <nuclearcraft:crystallizer>: 1000,
+  <nuclearcraft:enricher>: 1000,
+  <nuclearcraft:extractor>: 1000,
+  <nuclearcraft:centrifuge>: 1000,
+  <nuclearcraft:rock_crusher>: 2000,
+
+  // AE2 Machines
+  <appliedenergistics2:charger>: 60,
+  <appliedenergistics2:inscriber>: 20,
+  <ae2stuff:inscriber>: 20,
+
+  // EnderIO Machines
+  <enderio:block_painter>: 500,
+  <enderio:block_niard>: 5,
+  <enderio:block_crafter>: 10,
+
+  // QMD Machine
+  <qmd:ore_leacher>: 2500
+} as int[IItemStack];
+
+for machine, power in machine_base_power {
+  machine.addTooltip("Base Power Consumption: §c" ~ power ~ " RF/t");
+}
+
+val machine_base_power_shift = {
+  // Thermal Machines
+  <thermalexpansion:machine>: 250,
+  <thermalexpansion:machine:1>: 500,
+  <thermalexpansion:machine:2>: 500,
+  <thermalexpansion:machine:3>: 500,
+  <thermalexpansion:machine:4>: 500,
+  <thermalexpansion:machine:5>: 500,
+  <thermalexpansion:machine:6>: 1000,
+  <thermalexpansion:machine:7>: 500,
+  <thermalexpansion:machine:8>: 400,
+  <thermalexpansion:machine:9>: 1000,
+  <thermalexpansion:machine:10>: 500,
+  <thermalexpansion:machine:11>: 50,
+  <thermalexpansion:machine:12>: 250,
+  <thermalexpansion:machine:13>: 500,
+  <thermalexpansion:machine:14>: 100,
+  <thermalexpansion:machine:15>: 100,
+
+  // Mek Machines
+  <mekanism:machineblock>: 100,
+  <mekanism:machineblock:1>: 200,
+  <mekanism:machineblock:3>: 100,
+  <mekanism:machineblock:4>: 1600,
+  <mekanism:machineblock:8>: 100,
+  <mekanism:machineblock:9>: 400,
+  <mekanism:machineblock:10>: 60,
+  <mekanism:machineblock:12>: 40,
+  <mekanism:machineblock2:0>: 100,
+  <mekanism:machineblock2:1>: 200,
+  <mekanism:machineblock2:2>: 200,
+  <mekanism:machineblock2:3>: 800,
+  <mekanism:machineblock2:4>: 160,
+  <mekanism:machineblock2:5>: 60,
+  <mekanism:machineblock2:6>: 800,
+  <mekanism:machineblock2:7>: 400,
+  <mekanism:machineblock2:8>: 800,
+  <mekanism:machineblock2:9>: 200,
+  <mekanism:machineblock2:12>: 200,
+  <mekanism:machineblock2:13>: 2000,
+  <mekanism:machineblock3:5>: 20,
+
+  // EnderIO Machines
+  <enderio:block_alloy_smelter>: 1000,
+  <enderio:block_enhanced_alloy_smelter>: 4000,
+  <enderio:block_sag_mill>: 100,
+  <enderio:block_enhanced_sag_mill>: 4000,
+  <enderio:block_vat>: 1000,
+  <enderio:block_enhanced_vat>: 4000,
+  <enderio:block_farm_station>: 1440,
+  <enderio:block_slice_and_splice>: 20,
+  <enderio:block_soul_binder>: 40,
+  <enderio:block_powered_spawner>: 1280,
+} as int[IItemStack];
+
+for machine, power in machine_base_power_shift {
+  machine.addShiftTooltip("Base Power Consumption: §c" ~ power ~ " RF/t");
+}
 
 
 // --== Embers Documentation ==-- //
