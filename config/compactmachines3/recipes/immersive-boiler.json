@@ -1,0 +1,132 @@
+{
+    "name": "cm3immersive:boiler",
+  
+    "disabled": false,
+  
+    "target-item": "immersivetech:metal_multiblock",
+    "target-count": 1,
+     "target-meta": 4,
+
+    "duration": 200,
+    "symmetrical": true,
+  
+    "catalyst": "contenttweaker:purpleprint",
+    "catalyst-meta": 0,
+
+    "input-types": {
+      "a": {
+        "id": "immersiveengineering:sheetmetal",
+        "meta": 9
+      },
+      "b": {
+        "id": "immersiveengineering:metal_device1",
+        "meta": 6
+      },
+      "c": {
+        "id": "immersiveengineering:metal_decoration1",
+        "meta": 1
+      },
+      "d": {
+        "id": "immersiveengineering:metal_decoration0",
+        "meta": 5
+      },
+      "e": {
+        "id": "immersiveengineering:metal_decoration0",
+        "meta": 3
+      }
+    },
+    "input-nbt": {
+      "b:A": {
+        "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:4b}"
+      },
+      "b:B": {
+        "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:12b}"
+      },
+      "b:C": {
+        "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:8b}"
+      }
+    },
+    "shape": [
+      [
+        [
+          "_",
+          "d",
+          "d"
+        ],
+        [
+          "a",
+          "b:C",
+          "a"
+        ],
+        [
+          "a",
+          "b:B",
+          "a"
+        ],
+        [
+          "a",
+          "b:B",
+          "a"
+        ],
+        [
+          "a",
+          "b:A",
+          "a"
+        ]
+      ],
+      [
+        [
+          "e",
+          "d",
+          "d"
+        ],
+        [
+          "a",
+          "a",
+          "a"
+        ],
+        [
+          "a",
+          "a",
+          "a"
+        ],
+        [
+          "a",
+          "a",
+          "a"
+        ],
+        [
+          "a",
+          "a",
+          "a"
+        ]
+      ],
+      [
+        [
+          "c",
+          "b:C",
+          "c"
+        ],
+        [
+          "c",
+          "b:B",
+          "c"
+        ],
+        [
+          "c",
+          "b:B",
+          "c"
+        ],
+        [
+          "c",
+          "b:B",
+          "c"
+        ],
+        [
+          "c",
+          "b:A",
+          "c"
+        ]
+      ]
+    ]
+  }
