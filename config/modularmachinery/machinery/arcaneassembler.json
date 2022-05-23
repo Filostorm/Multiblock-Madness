@@ -2,7 +2,7 @@
     "registryname": "arcane-assembler", 
     "localizedname": "Arcane Assembler", 
     "requires-blueprint": true,
-    "color": "2e1902",
+    "color": "523312",
     "modifiers": [
         {
             "x": 2,
@@ -110,7 +110,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "thaumcraft:arcane_ear@9"
+                "arcane_trapdoor"
             ]
         },
         {
@@ -118,7 +118,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "thaumcraft:arcane_ear@9"
+                "arcane_trapdoor"
             ]
         },
         {
@@ -126,7 +126,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "thaumcraft:arcane_ear@9"
+                "arcane_trapdoor"
             ]
         },
         {
@@ -134,7 +134,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "thaumcraft:arcane_ear@9"
+                "arcane_trapdoor"
             ]
         },
         {

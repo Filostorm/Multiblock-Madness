@@ -1,38 +1,38 @@
 <OreConfig>
-    <oreGen temp="0">
+    <OreGen temp="0">
       <ore block="iceandfire:dragon_bone_block" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="botania:blazeblock" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="extendedcrafting:storage 2" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="mysticalworld:pearl_block" minHeight="40" maxHeight="80" clumpSize="8" chancePerChunk="5" />
-    </oreGen>
-    <oreGen temp="1">
+    </OreGen>
+    <OreGen temp="1">
       <ore block="iceandfire:sapphire_block" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="twilightforest:block_storage 4" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="fossil:skull_block" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="arcanearchives:storage_shaped_quartz" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
-    </oreGen>
-    <oreGen temp="2">
+    </OreGen>
+    <OreGen temp="2">
       <ore block="immersiveengineering:storage 5" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="additionalcompression:cookie_compressed" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="additionalcompression:spidereye_compressed" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="actuallyadditions:block_misc 6" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
-    </oreGen>
-    <oreGen temp="3">
+    </OreGen>
+    <OreGen temp="3">
       <ore block="quark:biotite_block" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="thaumcraft:amber_block" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="minecraft:bone_block" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="extendedcrafting:storage 3" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
-    </oreGen>
-    <oreGen temp="4">
+    </OreGen>
+    <OreGen temp="4">
       <ore block="thaumicaugmentation:starfield_glass" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="thaumicaugmentation:starfield_glass 2" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="thaumicaugmentation:starfield_glass 1" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="appliedenergistics2:fluix_block" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
-    </oreGen>
-    <oreGen temp="5">
+    </OreGen>
+    <OreGen temp="5">
       <ore block="twilightforest:aurora_block" minHeight="40" maxHeight="80" clumpSize="8" chancePerChunk="5" />
       <ore block="extendedcrafting:storage 1" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="contenttweaker:starmetal_block" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
       <ore block="appliedenergistics2:controller" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="5" />
-    </oreGen>
+    </OreGen>
 </OreConfig>

@@ -296,6 +296,10 @@ Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0>, null, <liquid:oricha
 Melting.addRecipe(<liquid:adamantine> * 1296, <contenttweaker:sub_block_holder_0:1>);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, null, <liquid:adamantine>, 1296);
 
+// Prudentium Gears
+Melting.addRecipe(<liquid:prudentium> * 576, <moreplates:prudentium_gear>);
+Casting.addTableRecipe(<moreplates:prudentium_gear>,<tconstruct:cast_custom:4>, <liquid:prudentium>, 576, false, 200);
+
 
 // MORE CASTS //
 val moreIngotCasting =

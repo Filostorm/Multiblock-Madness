@@ -328,6 +328,8 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:boosted_diesel>, 450);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:blended_diesel>, 200);
 mods.nuclearcraft.Enricher.addRecipe(<aetherworks:item_resource>, <liquid:blended_diesel>*250, <liquid:boosted_diesel>*250);
 
+
+
 /* Might change later idk
 //Components
 Blueprint.removeRecipe(<immersiveengineering:material:8>);

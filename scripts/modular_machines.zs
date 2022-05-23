@@ -284,7 +284,7 @@ for item in blockemberinput {
 recipes.addShaped(<modulardiversity:blockmystmechinput>, [[<thermalfoundation:material:323>, <thermalfoundation:material:25>, <thermalfoundation:material:323>],[<contenttweaker:gear_modularium>, <mysticalmechanics:gearbox_frame>, <contenttweaker:gear_modularium>], [<thermalfoundation:material:323>, <deepmoblearning:soot_covered_redstone>, <thermalfoundation:material:323>]]);
 
 //Mana Input
-recipes.addShaped(<modulardiversity:blockmanainputhatch>, [[<thermalfoundation:material:357>, <mysticalagriculture:infusion_crystal>, <thermalfoundation:material:357>],[<contenttweaker:gear_modularium>, <botania:rfgenerator>, <contenttweaker:gear_modularium>], [<thermalfoundation:material:357>, <botania:tinyplanet>, <thermalfoundation:material:357>]]);
+recipes.addShaped(<modulardiversity:blockmanainputhatch>, [[<thermalfoundation:material:357>, <mysticalagriculture:infusion_crystal> | <mysticalagriculture:master_infusion_crystal>, <thermalfoundation:material:357>],[<contenttweaker:gear_modularium>, <botania:rfgenerator>, <contenttweaker:gear_modularium>], [<thermalfoundation:material:357>, <botania:tinyplanet>, <thermalfoundation:material:357>]]);
 
 ##########################################################################################
 print("==================== end of modular_machines.zs ====================");

@@ -485,11 +485,6 @@ mods.thermalexpansion.Infuser.addRecipe(<contenttweaker:hot_thermal_alloy>, <con
 Transposer.addFillRecipe(<contenttweaker:ingot_thermal_alloy>, <contenttweaker:hot_thermal_alloy>, <liquid:emergency_coolant> * 1000, 10000);
 mods.nuclearcraft.Infuser.addRecipe(<contenttweaker:hot_thermal_alloy>, <liquid:emergency_coolant>*1000, <contenttweaker:ingot_thermal_alloy>);
 
-/* Osmium option
-Transposer.addFillRecipe(<contenttweaker:ingot_thermal_alloy>, <contenttweaker:hot_thermal_alloy>, <liquid:osmium> * 144, 10000);
-mods.nuclearcraft.Infuser.addRecipe(<contenttweaker:hot_thermal_alloy>, <liquid:osmium>*144, <contenttweaker:ingot_thermal_alloy>);
-*/
-
 //Fluid?
 //Melting.addRecipe(<liquid:orichalcum> * 1296, <contenttweaker:sub_block_holder_0>);
 //Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0>, null, <liquid:orichalcum>, 1296);
@@ -537,9 +532,9 @@ AlloyFurnace.addRecipe(<ore:ingotTitanium>*5, <ore:rareIsotopes>, <contenttweake
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy>, <techreborn:ingot:14>, <nuclearcraft:pellet_thorium>, 50000);
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ingot_staballoy> * 3, <techreborn:ingot:14>*3, <nuclearcraft:fission_dust:6>, 50000);
 
-//This is probably way too high lol
+//This is probably way too high lol. Narrator: It was way too high (100 -> 0.02)
 mods.nuclearcraft.FissionIrradiator.addRecipe(<contenttweaker:ingot_staballoy>, <contenttweaker:excited_mek_alloy>, 200000, 0, 0.25, 0);
-mods.nuclearcraft.Radiation.setRadiationLevel(<contenttweaker:excited_mek_alloy>, 100);
+mods.nuclearcraft.Radiation.setRadiationLevel(<contenttweaker:excited_mek_alloy>, 0.02);
 
 //Has an upgraded alloy smelter recipe
 mods.inworldcrafting.FluidToItem.transform(<contenttweaker:ingot_mek_alloy>, <liquid:radaway>, [<contenttweaker:component_mek_alloy>,<contenttweaker:excited_mek_alloy>], true);

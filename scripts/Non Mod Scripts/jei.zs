@@ -37,8 +37,12 @@ print("==================== loading jei.zs ====================");
 
 <translocators:translocator_part>.addTooltip("Hold Shift to see available modifiers");
 <translocators:translocator_part:1>.addTooltip("Hold Shift to see available modifiers");
-<translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n"))+(format.red("- Add Redstone to enable toggling in/output\n"))+(format.gray("- Add Iron to emit a signal when input is full of filtered item\n"))+(format.aqua("- Add a Diamond Nugget to enable fine tuning of filter supply and demand")));
-<translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n"))+(format.red("- Add Redstone to enable toggling in/output")));
+<translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n")));
+<translocators:translocator_part>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output\n")));
+<translocators:translocator_part>.addShiftTooltip((format.gray("- Add Iron to emit a signal when input is full of filtered item\n")));
+<translocators:translocator_part>.addShiftTooltip((format.aqua("- Add a Diamond Nugget to enable fine tuning of filter supply and demand")));
+<translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n")));
+<translocators:translocator_part:1>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output")));
 
 <mekanism:tierinstaller:3>.addTooltip(format.lightPurple("Only works on Bins, Energy Cubes, Tanks and Gas Tanks"));
 
@@ -578,7 +582,7 @@ add_meteor_recipe(<immersiveengineering:storage:5>, 6, 2500000, [
 <rockhounding_chemistry:uninspected_mineral> * 5
 ]);
 
-add_meteor_recipe(<thermalfoundation:storage:7>, 4, 5000000, [
+add_meteor_recipe(<botania:conjurationcatalyst>, 4, 5000000, [
 <thermalfoundation:ore:7> * 64,
 <thermalfoundation:ore:6> * 18,
 <mekanism:oreblock> * 18

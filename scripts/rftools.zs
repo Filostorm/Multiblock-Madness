@@ -24,6 +24,7 @@ recipes.addShaped(<rftools:space_chamber> * 2, [[<minecraft:stained_glass:11>, <
 //Quarry
 ##Moved to Modular Machines
 //recipes.addShaped(<rftools:shape_card:2>, [[<techreborn:plates:31>, <techreborn:plates:32>, <techreborn:plates:31>],[<techreborn:plates:32>, <rftools:shape_card>, <techreborn:plates:32>], [<techreborn:plates:31>, <techreborn:plates:32>, <techreborn:plates:31>]]);
+recipes.addShaped(<rftools:shape_card:2>, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>, <rftools:shape_card:5>, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 
 //Powercell
 recipes.addShapedMirrored(<rftools:powercell> * 2, [[<minecraft:prismarine>, <randomthings:spectrelens>, <minecraft:redstone_block>],[<randomthings:spectrelens>, <rftools:machine_frame>, <randomthings:spectrelens>], [<minecraft:redstone_block>, <randomthings:spectrelens>, <minecraft:prismarine>]]);
