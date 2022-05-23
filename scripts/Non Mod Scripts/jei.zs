@@ -892,9 +892,15 @@ emberRecipes.requireItem("information", <minecraft:book>.withDisplayName("§fAny
 ember_bore.addJEIRecipe(emberRecipes);
 
 // TODO --== Stellar Refraction Table ==-- //
+var refraction_table = <assembly:refraction_table>;
+refraction_table.addJEICatalyst(<astralsorcery:blockmapdrawingtable>);
+refraction_table.addJEICatalyst(<astralsorcery:iteminfusedglass>);
 
 
 // TODO --== Apotheosis Enchants ==-- //
+var apotheosis_enchants = <assembly:apotheosis_enchants>;
+
+
 
 ##########################################################################################
 print("==================== end of jei.zs ====================");
