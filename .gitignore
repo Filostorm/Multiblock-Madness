@@ -5,3 +5,5 @@
 !/resources
 !*.md
 !.gitignore
+.zsrc
+Probe.cfg

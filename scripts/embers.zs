@@ -48,13 +48,16 @@ for item in itemstoRemove {
 
 // JEI Tooltips //
 
-<embers:ember_emitter>.addTooltip(format.red("Requires a Redstone signal to Function"));
-<embers:ember_receiver>.addTooltip(format.red("Shift right click here first, then right click the Emitter with the Tinkers hammer to connect"));
+<embers:ember_emitter>.addTooltip(format.red("Requires a Redstone Signal to function"));
+<embers:ember_pulser>.addTooltip(format.red("Requires a Redstone Signal to function"));
+<embers:ember_receiver>.addTooltip(format.red("Shift right click here first, then right click the Ember Emitter with the Tinkers hammer to connect"));
+<embers:ember_funnel>.addTooltip(format.red("Shift right click here first, then right click the Ember Ejector with the Tinkers hammer to connect"));
 
 <embers:crystal_ember>.addTooltip(format.red("Extracted from Bedrock with the Ember Bore"));
 <embers:shard_ember>.addTooltip(format.red("Extracted from Bedrock with the Ember Bore"));
 <embers:dust_ember>.addTooltip(format.red("Extracted from Bedrock with the Ember Bore"));
 <embers:dust_ash>.addTooltip(format.red("Created by burning an item in the Cinder Plinth"));
+<embers:cinder_plinth>.addTooltip(format.red("Burns items and produces ash piles"));
 
 
 // Materials and Components //
