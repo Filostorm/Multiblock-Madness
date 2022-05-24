@@ -314,13 +314,5 @@ craft.remake(<aetherworks:moonlight_amplifier>, ["pretty",
   "◊": <astralsorcery:itemcraftingcomponent:4>, # Resonating Gem
   "A": <embers:archaic_brick>,                  # Archaic Brick
 });
-
-var defaultBoreSet = mods.embers.EmberBore.getDefault();
-defaultBoreSet.clear();
-
-var borerecipe = mods.embers.EmberBore.create([0] as int[], ["minecraft:plains"] as string[]);
-borerecipe.addOutput(<minecraft:diamond> % 20);
-borerecipe.addOutput(<minecraft:dirt> % 100);
-
 ##########################################################################################
 print("==================== end of embers.zs ====================");
