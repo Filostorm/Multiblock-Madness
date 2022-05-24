@@ -854,62 +854,120 @@ for y in 0 .. 4 {
 // Adds Enchantments to the RQ JEI page. 
 
 function add_enchants(type as IItemStack, enchantments as IEnchantment[]) {
+  var eio_enchants = {
+    <enchantment:enderio:repellent> * 20:37,
+    <enchantment:enderio:shimmer> * 1:39,
+    <enchantment:enderio:soulbound> * 1:31,
+    <enchantment:enderio:witherarrow> * 1:36,
+    <enchantment:enderio:witherweapon> * 1:38,
+  } as int[IEnchantment];
+
   val assRec = AssemblyRecipe.create(function(container) {
       for i, enchantment in enchantments {
         if(isNull(enchantment)) continue;
-        container.addItemOutput("enchant_book" ~ i, enchantedBook([enchantment]));
+        // If enchantment is an eio enchantment, create the book using the id
+        if (eio_enchants.keys has enchantment) {
+          container.addItemOutput("enchant_book" ~ i, enchantedBook_int(eio_enchants[enchantment], enchantment.level));
+        } 
+        else {
+          container.addItemOutput("enchant_book" ~ i, enchantedBook([enchantment]));
+        }
       }
     });
     assRec.requireItem("type", type);
   <assembly:apotheosis_enchants>.addJEIRecipe(assRec);
 }
 
-
 // Adds tooltips for enchanted books of all levels of the given IEnchantment and adds the highest level book to JEI.
 
 function bookTooltips(enchantment as IEnchantment) {
-  // Add maximum level tooltip to the highest level book
-  val maxbook = <minecraft:enchanted_book>.withTag({StoredEnchantments: enchantment.makeTag().ench});
-  maxbook.addTooltip("§2Maximum Level");
+  // If enchantment is an eio enchantment, redirect to eio_book_tooltips
+  var eio_enchants = {
+    <enchantment:enderio:repellent> * 20:37,
+    <enchantment:enderio:shimmer> * 1:39,
+    <enchantment:enderio:soulbound> * 1:31,
+    <enchantment:enderio:witherarrow> * 1:36,
+    <enchantment:enderio:witherweapon> * 1:38,
+  } as int[IEnchantment];
 
-  // If highest level is 1, no additional actions required
-  val highestlevel = enchantment.level;
-  if (highestlevel > 1) {
-    // Loop through all lower-level books, add belowmaxleveldesc tooltip
-    val belowmaxleveldesc = "§6Max Level: " ~ highestlevel as string;
-    val enchant_definition = enchantment.definition;
+  if (eio_enchants.keys has enchantment) {
+    bookTooltips_int(eio_enchants[enchantment], enchantment.level);
+  }
+  else
+  {
+    // Add maximum level tooltip to the highest level book
+    val maxbook = <minecraft:enchanted_book>.withTag({StoredEnchantments: enchantment.makeTag().ench});
+    maxbook.addTooltip("§2Maximum Level");
 
-    for i in 1 to highestlevel {
-      var lowerlevelenchant = enchant_definition * i;
-      <minecraft:enchanted_book>.withTag({StoredEnchantments: lowerlevelenchant.makeTag().ench}).addTooltip(belowmaxleveldesc);
+    // If highest level is 1, no additional actions required
+    val highestlevel = enchantment.level;
+    if (highestlevel > 1) {
+      // Loop through all lower-level books, add belowmaxleveldesc tooltip
+      val belowmaxleveldesc = "§6Max Level: " ~ highestlevel as string;
+      val enchant_definition = enchantment.definition;
+
+      for i in 1 to highestlevel {
+        var lowerlevelenchant = enchant_definition * i;
+        <minecraft:enchanted_book>.withTag({StoredEnchantments: lowerlevelenchant.makeTag().ench}).addTooltip(belowmaxleveldesc);
+      }
+
+      // Add highest level book to JEI (doesn't work for some reason)
+      // addItem(maxbook);
     }
-
-    // Add highest level book to JEI (doesn't work for some reason)
-    addItem(maxbook);
   }
 }
+
+// Does the same thing as the above function, but accepts the enchantment_id and highestlevel as inputs.
+// This is solely because EIO enchants are janky
+
+function bookTooltips_int(ench_id as int, highestlevel as int) {
+  val maxbook = <minecraft:enchanted_book>.withTag({StoredEnchantments: {lvl: highestlevel, id: ench_id}});
+  maxbook.addTooltip("§2Maximum Level");
+
+  if (highestlevel > 1) {
+    val belowmaxleveldesc = "§6Max Level: " ~ highestlevel as string;
+    for i in 1 to highestlevel {
+      <minecraft:enchanted_book>.withTag({StoredEnchantments: {lvl: i, id: ench_id}}).addTooltip(belowmaxleveldesc);
+    }
+  }
+}
+
+// Creates an enchanted book from the ench_id and level.
+// This is solely because EIO enchants are janky
+
+function enchantedBook_int(ench_id as int, level as int) as IItemStack {
+  return <minecraft:enchanted_book>.withTag({StoredEnchantments: {lvl: level, id: ench_id}});
+}
+
+
+var ench_desc_items = [<minecraft:enchanting_table>, <apotheosis:hellshelf>] as IItemStack[];
+addDescription(ench_desc_items, "These JEI pages contain max level enchants in text form, if you prefer.");
+
 
 val general_enchants = [
   <enchantment:apotheosis:life_mending> * 5,
   <enchantment:minecraft:mending> * 7,
   <enchantment:minecraft:unbreaking> * 16,
   <enchantment:cofhcore:soulbound> * 17,
-  <enchantment:enderio:soulbound> * 1,
   <enchantment:tombstone:soulbound> * 1,
-  <enchantment:enderio:shimmer> * 1,
   <enchantment:minecraft:vanishing_curse> * 1,
   <enchantment:apotheosis:splitting> * 18, // Anvil
   <enchantment:capsule:recall> * 1, // Capsules
   <enchantment:cofhcore:holding> * 17, // All powered items
   <enchantment:cofhcore:insight> * 17, // All tools and weapons
   <enchantment:endercore:xpboost> * 17, // All tools and weapons
-  <enchantment:openblocks:flim_flam> * 17 // Weaopons and armour
+  <enchantment:openblocks:flim_flam> * 17, // Weaopons and armour
+  <enchantment:enderio:soulbound> * 1, // Broken
+  <enchantment:enderio:shimmer> * 1 // Broken
 ] as IEnchantment[];
 
 add_enchants(<minecraft:book>.withDisplayName("§fGeneral Enchants"), general_enchants);
+var general_enchants_description = "General Enchants:" as string;
 for enchant in general_enchants {
   bookTooltips(enchant);
+  general_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, general_enchants_description.split("!!"));
 
 
 val tool_enchants = [
@@ -925,15 +983,18 @@ val tool_enchants = [
   <enchantment:cofhcore:smelting> * 1,
   <enchantment:cyclicmagic:enchantment.excavation> * 18,
   <enchantment:cyclicmagic:enchantment.expboost> * 18,
-  <enchantment:endercore:autosmelt> * 1,
   <enchantment:fossil:archeology> * 14,
-  <enchantment:fossil:paleontology> * 14
+  <enchantment:fossil:paleontology> * 14,
+  <enchantment:endercore:autosmelt> * 1 // Broken
 ] as IEnchantment[];
 
 add_enchants(<minecraft:diamond_pickaxe>.withDisplayName("§fTool Enchants"), tool_enchants);
+var tool_enchants_description = "Tool Enchants:" as string;
 for enchant in tool_enchants {
   bookTooltips(enchant);
+  tool_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, tool_enchants_description.split("!!"));
 
 
 val fishing_rod_enchants = [
@@ -942,9 +1003,12 @@ val fishing_rod_enchants = [
 ] as IEnchantment[];
 
 add_enchants(<minecraft:fishing_rod>.withDisplayName("§fFishing Rod Enchants"), fishing_rod_enchants);
+var fishing_rod_enchants_description = "Fishing Rod Enchants:" as string;
 for enchant in fishing_rod_enchants {
   bookTooltips(enchant);
+  fishing_rod_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, fishing_rod_enchants_description.split("!!"));
 
 
 val hoe_enchants = [
@@ -953,9 +1017,12 @@ val hoe_enchants = [
 ] as IEnchantment[];
 
 add_enchants(<minecraft:diamond_hoe>.withDisplayName("§fHoe Enchants"), hoe_enchants);
+var hoe_enchants_description = "Hoe Enchants:" as string;
 for enchant in hoe_enchants {
   bookTooltips(enchant);
+  hoe_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, hoe_enchants_description.split("!!"));
 
 
 val shield_enchants = [
@@ -964,9 +1031,12 @@ val shield_enchants = [
 ] as IEnchantment[];
 
 add_enchants(<minecraft:shield>.withDisplayName("§fShield Enchants"), shield_enchants);
+var shield_enchants_description = "Shield Enchants:" as string;
 for enchant in shield_enchants {
   bookTooltips(enchant);
+  shield_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, shield_enchants_description.split("!!"));
 
 
 val weapon_enchants = [
@@ -980,12 +1050,9 @@ val weapon_enchants = [
   <enchantment:minecraft:fire_aspect> * 16,
   <enchantment:tombstone:magic_siphon> * 5,
   <enchantment:tombstone:plague_bringer> * 3,
-  // Check if these enchants work
   <enchantment:ebwizardry:flaming_weapon> * 20,
   <enchantment:ebwizardry:freezing_weapon> * 20,
   <enchantment:ebwizardry:magic_sword> * 18,
-
-  <enchantment:enderio:witherweapon> * 1,
   <enchantment:apotheosis:capturing> * 16,
   <enchantment:apotheosis:hell_infusion> * 14,
   <enchantment:apotheosis:knowledge> * 10,
@@ -994,13 +1061,17 @@ val weapon_enchants = [
   <enchantment:cofhcore:vorpal> * 17,
   <enchantment:cyclicmagic:enchantment.beheading> * 18,
   <enchantment:cyclicmagic:enchantment.lifeleech> * 18,
-  <enchantment:cyclicmagic:enchantment.venom> * 18
+  <enchantment:cyclicmagic:enchantment.venom> * 18,
+  <enchantment:enderio:witherweapon> * 1 // Broken
 ] as IEnchantment[];
 
 add_enchants(<minecraft:diamond_sword>.withDisplayName("§fWeapon Enchants"), weapon_enchants);
+var weapon_enchants_description = "Weapon Enchants:" as string;
 for enchant in weapon_enchants {
   bookTooltips(enchant);
+  weapon_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, weapon_enchants_description.split("!!"));
 
 
 val bow_enchants = [
@@ -1010,18 +1081,19 @@ val bow_enchants = [
   <enchantment:minecraft:flame> * 1,
   <enchantment:cyclicmagic:enchantment.multishot> * 18,
   <enchantment:apotheosis:true_infinity> * 1,
-  // Check if this enchant works
   <enchantment:ebwizardry:magic_bow> * 20,
-
-  <enchantment:enderio:witherarrow> * 1,
   <enchantment:cyclicmagic:enchantment.quickdraw> * 18,
-  <enchantment:cofhcore:multishot> * 17
+  <enchantment:cofhcore:multishot> * 17,
+  <enchantment:enderio:witherarrow> * 1 // Broken
 ] as IEnchantment[];
 
 add_enchants(<minecraft:bow>.withDisplayName("§fBow Enchants"), bow_enchants);
+var bow_enchants_description = "Bow Enchants:" as string;
 for enchant in bow_enchants {
   bookTooltips(enchant);
+  bow_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, bow_enchants_description.split("!!"));
 
 
 val armour_enchants = [
@@ -1039,16 +1111,19 @@ val armour_enchants = [
   <enchantment:minecraft:thorns> * 16,
   <enchantment:apotheosis:berserk> * 7,
   <enchantment:apotheosis:magic_protection> * 7,
-  <enchantment:enderio:repellent> * 20,
   <enchantment:openblocks:explosive> * 3,
   <enchantment:tombstone:blessing> * 1,
-  <enchantment:apotheosis:rebounding> * 21
+  <enchantment:apotheosis:rebounding> * 21,
+  <enchantment:enderio:repellent> * 20 // Broken
 ] as IEnchantment[];
 
 add_enchants(<minecraft:armor_stand>.withDisplayName("§fArmour Enchants"), armour_enchants);
+var armour_enchants_description = "Armour Enchants:" as string;
 for enchant in armour_enchants {
   bookTooltips(enchant);
+  armour_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, armour_enchants_description.split("!!"));
 
 
 val helmet_enchants = [
@@ -1058,9 +1133,12 @@ val helmet_enchants = [
 ] as IEnchantment[];
 
 add_enchants(<minecraft:diamond_helmet>.withDisplayName("§fHelmet Enchants"), helmet_enchants);
+var helmet_enchants_description = "Helmet Enchants:" as string;
 for enchant in helmet_enchants {
   bookTooltips(enchant);
+  helmet_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, helmet_enchants_description.split("!!"));
 
 
 val chestplate_enchants = [
@@ -1069,9 +1147,12 @@ val chestplate_enchants = [
 ] as IEnchantment[];
 
 add_enchants(<minecraft:diamond_chestplate>.withDisplayName("§fChestplate Enchants"), chestplate_enchants);
+var chestplate_enchants_description = "Chestplate Enchants:" as string;
 for enchant in chestplate_enchants {
   bookTooltips(enchant);
+  chestplate_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, chestplate_enchants_description.split("!!"));
 
 
 val boot_enchants = [
@@ -1085,9 +1166,12 @@ val boot_enchants = [
 ] as IEnchantment[];
 
 add_enchants(<minecraft:diamond_boots>.withDisplayName("§fBoot Enchants"), boot_enchants);
+var boot_enchants_description = "Boot Enchants:" as string;
 for enchant in boot_enchants {
   bookTooltips(enchant);
+  boot_enchants_description += "!!" ~ enchant.displayName;
 }
+addDescription(ench_desc_items, boot_enchants_description.split("!!"));
 
 
 ##########################################################################################
