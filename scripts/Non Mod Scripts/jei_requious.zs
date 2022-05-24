@@ -10,6 +10,7 @@ import crafttweaker.data.IData;
 import crafttweaker.formatting.IFormattedText;
 import crafttweaker.enchantments.IEnchantment;
 import crafttweaker.potions.IPotionEffect;
+import mods.jei.JEI.addItem;
 
 #priority -1
 
@@ -835,108 +836,259 @@ addRefractionRecipe("vorux", [<enchantment:minecraft:smite> * 7, <enchantment:mi
 [<potion:minecraft:strength>.makePotionEffect(7200, 3), <potion:minecraft:resistance>.makePotionEffect(7200, 1),<potion:minecraft:mining_fatigue>.makePotionEffect(7200, 3)]);
 
 
-// TODO --== Apotheosis Enchants ==-- //
-var apotheosis_enchants = <assembly:apotheosis_enchants>;
+// --== Apotheosis Enchants ==-- //
 
-val enchantment_list = [
-  <enchantment:advancedrocketry:spacebreathing> * 20,
-  <enchantment:apotheosis:berserk> * 7,
-  <enchantment:apotheosis:capturing> * 16,
-  <enchantment:apotheosis:depth_miner> * 13,
-  <enchantment:apotheosis:hell_infusion> * 14,
-  <enchantment:apotheosis:icy_thorns> * 8,
-  <enchantment:apotheosis:knowledge> * 10,
+var apotheosis_enchants = <assembly:apotheosis_enchants>;
+apotheosis_enchants.setJEIItemSlot(0, 0, "type");
+apotheosis_enchants.addJEICatalyst(<minecraft:enchanting_table>);
+apotheosis_enchants.addJEICatalyst(<apotheosis:hellshelf>);
+
+k = 0;
+for y in 0 .. 4 {
+  for x in 2 .. 9 {
+    apotheosis_enchants.setJEIItemSlot(x, y, 'enchant_book'~k);
+    k += 1;
+  }
+}
+
+// Adds Enchantments to the RQ JEI page. 
+
+function add_enchants(type as IItemStack, enchantments as IEnchantment[]) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      for i, enchantment in enchantments {
+        if(isNull(enchantment)) continue;
+        container.addItemOutput("enchant_book" ~ i, enchantedBook([enchantment]));
+      }
+    });
+    assRec.requireItem("type", type);
+  <assembly:apotheosis_enchants>.addJEIRecipe(assRec);
+}
+
+
+// Adds tooltips for enchanted books of all levels of the given IEnchantment and adds the highest level book to JEI.
+
+function bookTooltips(enchantment as IEnchantment) {
+  // Add maximum level tooltip to the highest level book
+  val maxbook = <minecraft:enchanted_book>.withTag({StoredEnchantments: enchantment.makeTag().ench});
+  maxbook.addTooltip("§2Maximum Level");
+
+  // If highest level is 1, no additional actions required
+  val highestlevel = enchantment.level;
+  if (highestlevel > 1) {
+    // Loop through all lower-level books, add belowmaxleveldesc tooltip
+    val belowmaxleveldesc = "§6Max Level: " ~ highestlevel as string;
+    val enchant_definition = enchantment.definition;
+
+    for i in 1 to highestlevel {
+      var lowerlevelenchant = enchant_definition * i;
+      <minecraft:enchanted_book>.withTag({StoredEnchantments: lowerlevelenchant.makeTag().ench}).addTooltip(belowmaxleveldesc);
+    }
+
+    // Add highest level book to JEI (doesn't work for some reason)
+    addItem(maxbook);
+  }
+}
+
+val general_enchants = [
   <enchantment:apotheosis:life_mending> * 5,
-  <enchantment:apotheosis:magic_protection> * 7,
-  <enchantment:apotheosis:mounted_strike> * 17,
-  <enchantment:apotheosis:natures_blessing> * 15,
-  <enchantment:apotheosis:reflective> * 21,
-  <enchantment:apotheosis:scavenger> * 3,
-  <enchantment:apotheosis:shield_bash> * 16,
-  <enchantment:apotheosis:splitting> * 18,
-  <enchantment:apotheosis:stable_footing> * 1,
-  <enchantment:apotheosis:tempting> * 1,
-  <enchantment:apotheosis:true_infinity> * 1,
-  <enchantment:astralsorcery:enchantment.as.nightvision> * 20,
+  <enchantment:minecraft:mending> * 7,
+  <enchantment:minecraft:unbreaking> * 16,
+  <enchantment:cofhcore:soulbound> * 17,
+  <enchantment:enderio:soulbound> * 1,
+  <enchantment:tombstone:soulbound> * 1,
+  <enchantment:enderio:shimmer> * 1,
+  <enchantment:minecraft:vanishing_curse> * 1,
+  <enchantment:apotheosis:splitting> * 18, // Anvil
+  <enchantment:capsule:recall> * 1, // Capsules
+  <enchantment:cofhcore:holding> * 17, // All powered items
+  <enchantment:cofhcore:insight> * 17, // All tools and weapons
+  <enchantment:endercore:xpboost> * 17, // All tools and weapons
+  <enchantment:openblocks:flim_flam> * 17 // Weaopons and armour
+] as IEnchantment[];
+
+add_enchants(<minecraft:book>.withDisplayName("§fGeneral Enchants"), general_enchants);
+for enchant in general_enchants {
+  bookTooltips(enchant);
+}
+
+
+val tool_enchants = [
+  <enchantment:minecraft:efficiency> * 16,
+  <enchantment:minecraft:silk_touch> * 1,
+  <enchantment:minecraft:fortune> * 5,
+  <enchantment:cyclicmagic:enchantment.autosmelt> * 18,
+  <enchantment:cyclicmagic:enchantment.magnet> * 18,
+  <enchantment:randomthings:magnetic> * 16,
+  <enchantment:apotheosis:depth_miner> * 13,
   <enchantment:astralsorcery:enchantment.as.smelting> * 1,
-  <enchantment:capsule:recall> * 1,
-  <enchantment:cofhcore:holding> * 17,
-  <enchantment:cofhcore:insight> * 17,
-  <enchantment:cofhcore:leech> * 16,
-  <enchantment:cofhcore:multishot> * 17,
   <enchantment:cofhcore:smashing> * 1,
   <enchantment:cofhcore:smelting> * 1,
-  <enchantment:cofhcore:soulbound> * 17,
-  <enchantment:cofhcore:vorpal> * 17,
-  <enchantment:cyclicmagic:enchantment.autosmelt> * 18,
-  <enchantment:cyclicmagic:enchantment.beheading> * 18,
   <enchantment:cyclicmagic:enchantment.excavation> * 18,
-  <enchantment:cyclicmagic:enchantment.launch> * 18,
-  <enchantment:cyclicmagic:enchantment.lifeleech> * 18,
-  <enchantment:cyclicmagic:enchantment.magnet> * 18,
-  <enchantment:cyclicmagic:enchantment.multishot> * 18,
-  <enchantment:cyclicmagic:enchantment.quickdraw> * 18,
-  <enchantment:cyclicmagic:enchantment.reach> * 18,
-  <enchantment:cyclicmagic:enchantment.venom> * 18,
-  <enchantment:cyclicmagic:enchantment.waterwalking> * 18,
   <enchantment:cyclicmagic:enchantment.expboost> * 18,
-  <enchantment:ebwizardry:flaming_weapon> * 20,
-  <enchantment:ebwizardry:freezing_weapon> * 20,
-  <enchantment:ebwizardry:frost_protection> * 25,
-  <enchantment:ebwizardry:magic_bow> * 20,
-  <enchantment:ebwizardry:magic_protection> * 25,
-  <enchantment:ebwizardry:magic_sword> * 18,
-  <enchantment:ebwizardry:shock_protection> * 25,
   <enchantment:endercore:autosmelt> * 1,
-  <enchantment:endercore:xpboost> * 17,
-  <enchantment:enderio:repellent> * 20,
-  <enchantment:enderio:shimmer> * 1,
-  <enchantment:enderio:soulbound> * 1,
-  <enchantment:enderio:witherarrow> * 1,
-  <enchantment:enderio:witherweapon> * 1,
   <enchantment:fossil:archeology> * 14,
-  <enchantment:fossil:paleontology> * 14,
-  <enchantment:minecraft:aqua_affinity> * 1,
-  <enchantment:minecraft:bane_of_arthropods> * 24,
-  <enchantment:minecraft:binding_curse> * 1,
-  <enchantment:minecraft:blast_protection> * 25,
-  <enchantment:minecraft:depth_strider> * 19,
-  <enchantment:minecraft:efficiency> * 16,
-  <enchantment:minecraft:feather_falling> * 33,
-  <enchantment:minecraft:fire_aspect> * 16,
-  <enchantment:minecraft:fire_protection> * 25,
-  <enchantment:minecraft:flame> * 1,
-  <enchantment:minecraft:fortune> * 5,
-  <enchantment:minecraft:frost_walker> * 19,
-  <enchantment:minecraft:infinity> * 1,
-  <enchantment:minecraft:knockback> * 16,
-  <enchantment:minecraft:looting> * 16,
+  <enchantment:fossil:paleontology> * 14
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_pickaxe>.withDisplayName("§fTool Enchants"), tool_enchants);
+for enchant in tool_enchants {
+  bookTooltips(enchant);
+}
+
+
+val fishing_rod_enchants = [
   <enchantment:minecraft:luck_of_the_sea> * 16,
-  <enchantment:minecraft:lure> * 16,
-  <enchantment:minecraft:mending> * 7,
-  <enchantment:minecraft:power> * 20,
-  <enchantment:minecraft:projectile_protection> * 34,
-  <enchantment:minecraft:protection> * 19,
-  <enchantment:minecraft:punch> * 10,
-  <enchantment:minecraft:respiration> * 18,
+  <enchantment:minecraft:lure> * 16
+] as IEnchantment[];
+
+add_enchants(<minecraft:fishing_rod>.withDisplayName("§fFishing Rod Enchants"), fishing_rod_enchants);
+for enchant in fishing_rod_enchants {
+  bookTooltips(enchant);
+}
+
+
+val hoe_enchants = [
+  <enchantment:apotheosis:natures_blessing> * 15,
+  <enchantment:apotheosis:tempting> * 1
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_hoe>.withDisplayName("§fHoe Enchants"), hoe_enchants);
+for enchant in hoe_enchants {
+  bookTooltips(enchant);
+}
+
+
+val shield_enchants = [
+  <enchantment:apotheosis:reflective> * 21,
+  <enchantment:apotheosis:shield_bash> * 16
+] as IEnchantment[];
+
+add_enchants(<minecraft:shield>.withDisplayName("§fShield Enchants"), shield_enchants);
+for enchant in shield_enchants {
+  bookTooltips(enchant);
+}
+
+
+val weapon_enchants = [
   <enchantment:minecraft:sharpness> * 18,
-  <enchantment:minecraft:silk_touch> * 1,
   <enchantment:minecraft:smite> * 24,
+  <enchantment:minecraft:bane_of_arthropods> * 24,
+  <enchantment:apotheosis:mounted_strike> * 17,
   <enchantment:minecraft:sweeping> * 22,
-  <enchantment:minecraft:thorns> * 16,
-  <enchantment:minecraft:unbreaking> * 16,
-  <enchantment:minecraft:vanishing_curse> * 1,
-  <enchantment:openblocks:explosive> * 3,
-  <enchantment:openblocks:flim_flam> * 17,
-  <enchantment:openblocks:last_stand> * 2,
-  <enchantment:randomthings:magnetic> * 16,
-  <enchantment:tombstone:blessing> * 1,
-  <enchantment:tombstone:curse_of_bones> * 3,
+  <enchantment:minecraft:looting> * 16,
+  <enchantment:minecraft:knockback> * 16,
+  <enchantment:minecraft:fire_aspect> * 16,
   <enchantment:tombstone:magic_siphon> * 5,
   <enchantment:tombstone:plague_bringer> * 3,
-  <enchantment:tombstone:shadow_step> * 17,
-  <enchantment:tombstone:soulbound> * 1
+  // Check if these enchants work
+  <enchantment:ebwizardry:flaming_weapon> * 20,
+  <enchantment:ebwizardry:freezing_weapon> * 20,
+  <enchantment:ebwizardry:magic_sword> * 18,
+
+  <enchantment:enderio:witherweapon> * 1,
+  <enchantment:apotheosis:capturing> * 16,
+  <enchantment:apotheosis:hell_infusion> * 14,
+  <enchantment:apotheosis:knowledge> * 10,
+  <enchantment:apotheosis:scavenger> * 3,
+  <enchantment:cofhcore:leech> * 16,
+  <enchantment:cofhcore:vorpal> * 17,
+  <enchantment:cyclicmagic:enchantment.beheading> * 18,
+  <enchantment:cyclicmagic:enchantment.lifeleech> * 18,
+  <enchantment:cyclicmagic:enchantment.venom> * 18
 ] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_sword>.withDisplayName("§fWeapon Enchants"), weapon_enchants);
+for enchant in weapon_enchants {
+  bookTooltips(enchant);
+}
+
+
+val bow_enchants = [
+  <enchantment:minecraft:infinity> * 1,
+  <enchantment:minecraft:power> * 20,
+  <enchantment:minecraft:punch> * 10,
+  <enchantment:minecraft:flame> * 1,
+  <enchantment:cyclicmagic:enchantment.multishot> * 18,
+  <enchantment:apotheosis:true_infinity> * 1,
+  // Check if this enchant works
+  <enchantment:ebwizardry:magic_bow> * 20,
+
+  <enchantment:enderio:witherarrow> * 1,
+  <enchantment:cyclicmagic:enchantment.quickdraw> * 18,
+  <enchantment:cofhcore:multishot> * 17
+] as IEnchantment[];
+
+add_enchants(<minecraft:bow>.withDisplayName("§fBow Enchants"), bow_enchants);
+for enchant in bow_enchants {
+  bookTooltips(enchant);
+}
+
+
+val armour_enchants = [
+  <enchantment:ebwizardry:frost_protection> * 25,
+  <enchantment:ebwizardry:magic_protection> * 25,
+  <enchantment:ebwizardry:shock_protection> * 25,
+  <enchantment:minecraft:blast_protection> * 25,
+  <enchantment:minecraft:fire_protection> * 25,
+  <enchantment:minecraft:projectile_protection> * 34,
+  <enchantment:minecraft:protection> * 19,
+  <enchantment:minecraft:binding_curse> * 1,
+  <enchantment:advancedrocketry:spacebreathing> * 20,
+  <enchantment:openblocks:last_stand> * 2,
+  <enchantment:apotheosis:icy_thorns> * 8,
+  <enchantment:minecraft:thorns> * 16,
+  <enchantment:apotheosis:berserk> * 7,
+  <enchantment:apotheosis:magic_protection> * 7,
+  <enchantment:enderio:repellent> * 20,
+  <enchantment:openblocks:explosive> * 3,
+  <enchantment:tombstone:blessing> * 1,
+  <enchantment:apotheosis:rebounding> * 21
+] as IEnchantment[];
+
+add_enchants(<minecraft:armor_stand>.withDisplayName("§fArmour Enchants"), armour_enchants);
+for enchant in armour_enchants {
+  bookTooltips(enchant);
+}
+
+
+val helmet_enchants = [
+  <enchantment:astralsorcery:enchantment.as.nightvision> * 20,
+  <enchantment:minecraft:aqua_affinity> * 1,
+  <enchantment:minecraft:respiration> * 18,
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_helmet>.withDisplayName("§fHelmet Enchants"), helmet_enchants);
+for enchant in helmet_enchants {
+  bookTooltips(enchant);
+}
+
+
+val chestplate_enchants = [
+  <enchantment:tombstone:curse_of_bones> * 3,
+  <enchantment:cyclicmagic:enchantment.reach> * 18
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_chestplate>.withDisplayName("§fChestplate Enchants"), chestplate_enchants);
+for enchant in chestplate_enchants {
+  bookTooltips(enchant);
+}
+
+
+val boot_enchants = [
+  <enchantment:apotheosis:stable_footing> * 1,
+  <enchantment:cyclicmagic:enchantment.launch> * 18,
+  <enchantment:minecraft:depth_strider> * 19,
+  <enchantment:minecraft:feather_falling> * 33,
+  <enchantment:minecraft:frost_walker> * 19,
+  <enchantment:cyclicmagic:enchantment.waterwalking> * 18,
+  <enchantment:tombstone:shadow_step> * 17
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_boots>.withDisplayName("§fBoot Enchants"), boot_enchants);
+for enchant in boot_enchants {
+  bookTooltips(enchant);
+}
+
 
 ##########################################################################################
 print("==================== end of jei_requious.zs ====================");

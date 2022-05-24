@@ -35,13 +35,11 @@ print("==================== loading jei_general.zs ====================");
 
 <contenttweaker:ore_gen_info>.addTooltip("§fView uses in JEI to see ore vein generation§r");
 
-// <translocators:translocator_part>.addTooltip("Hold Shift to see available modifiers");
-// <translocators:translocator_part:1>.addTooltip("Hold Shift to see available modifiers");
-<translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n")), "Hold Shift to see available modifiers");
-<translocators:translocator_part>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output\n")));
-<translocators:translocator_part>.addShiftTooltip((format.gray("- Add Iron to emit a signal when input is full of filtered item\n")));
+<translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed")), "Hold Shift to see available modifiers");
+<translocators:translocator_part>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output")));
+<translocators:translocator_part>.addShiftTooltip((format.gray("- Add Iron to emit a signal when input is full of filtered item")));
 <translocators:translocator_part>.addShiftTooltip((format.aqua("- Add a Diamond Nugget to enable fine tuning of filter supply and demand")));
-<translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n")), "Hold Shift to see available modifiers");
+<translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed")), "Hold Shift to see available modifiers");
 <translocators:translocator_part:1>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output")));
 
 
@@ -419,7 +417,7 @@ for solar, values in et_solars {
   "",
   "Required Blocks:",
   "" ~ values[2][0] ~ " Null or Piezo Modifiers in any combination",
-  "" ~ values[2][1] ~ " Structure frames tier " ~ values[0][0] ~ " or above",
+  "" ~ values[2][1] ~ " Structure Frames tier " ~ values[0][0] ~ " or above",
   "" ~ values[2][2] ~ " Solar Cells of any type"
   ]);
 }
@@ -581,7 +579,9 @@ var resonantUpgrade2 = "§4Increases Energy per Operation to 2x.";
 <contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Environmental Controller (Limited Area)"));
 <contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Supremium Armor"));
 <contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Flugel Tiara (Eye of the Flugel for infinite time)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Nanobot Beacon (Limited Area)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Ranged Nano Bot Beacon (Limited Area)"));
+<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Personal Nano Bot Beacon"));
+
 
 //mods.jei.JEI.addItem(<tconstruct:toolforge>);
 
