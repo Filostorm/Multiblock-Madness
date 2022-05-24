@@ -854,26 +854,12 @@ for y in 0 .. 4 {
 // Adds Enchantments to the RQ JEI page. 
 
 function add_enchants(type as IItemStack, enchantments as IEnchantment[]) {
-  var eio_enchants = {
-    <enchantment:enderio:repellent> * 20:37,
-    <enchantment:enderio:shimmer> * 1:39,
-    <enchantment:enderio:soulbound> * 1:31,
-    <enchantment:enderio:witherarrow> * 1:36,
-    <enchantment:enderio:witherweapon> * 1:38,
-  } as int[IEnchantment];
-
   val assRec = AssemblyRecipe.create(function(container) {
       for i, enchantment in enchantments {
         if(isNull(enchantment)) continue;
         // If enchantment is an eio enchantment, create the book using the id
-        if (eio_enchants.keys has enchantment) {
-          container.addItemOutput("enchant_book" ~ i, enchantedBook_int(eio_enchants[enchantment], enchantment.level));
-        } 
-        else {
           container.addItemOutput("enchant_book" ~ i, enchantedBook([enchantment]));
-        }
-      }
-    });
+      }});
     assRec.requireItem("type", type);
   <assembly:apotheosis_enchants>.addJEIRecipe(assRec);
 }
@@ -932,31 +918,24 @@ function bookTooltips_int(ench_id as int, highestlevel as int) {
   }
 }
 
-// Creates an enchanted book from the ench_id and level.
-// This is solely because EIO enchants are janky
-
-function enchantedBook_int(ench_id as int, level as int) as IItemStack {
-  return <minecraft:enchanted_book>.withTag({StoredEnchantments: {lvl: level, id: ench_id}});
-}
-
 
 var ench_desc_items = [<minecraft:enchanting_table>, <apotheosis:hellshelf>] as IItemStack[];
 addDescription(ench_desc_items, "These JEI pages contain max level enchants in text form, if you prefer.");
 
 
 val general_enchants = [
-  <enchantment:apotheosis:life_mending> * 5,
   <enchantment:minecraft:mending> * 7,
   <enchantment:minecraft:unbreaking> * 16,
+  <enchantment:apotheosis:life_mending> * 5,
   <enchantment:cofhcore:soulbound> * 17,
   <enchantment:tombstone:soulbound> * 1,
-  <enchantment:minecraft:vanishing_curse> * 1,
-  <enchantment:apotheosis:splitting> * 18, // Anvil
-  <enchantment:capsule:recall> * 1, // Capsules
   <enchantment:cofhcore:holding> * 17, // All powered items
   <enchantment:cofhcore:insight> * 17, // All tools and weapons
   <enchantment:endercore:xpboost> * 17, // All tools and weapons
   <enchantment:openblocks:flim_flam> * 17, // Weaopons and armour
+  <enchantment:apotheosis:splitting> * 18, // Anvil
+  <enchantment:capsule:recall> * 1, // Capsules
+  <enchantment:minecraft:vanishing_curse> * 1,
   <enchantment:enderio:soulbound> * 1, // Broken
   <enchantment:enderio:shimmer> * 1 // Broken
 ] as IEnchantment[];
@@ -965,23 +944,23 @@ add_enchants(<minecraft:book>.withDisplayName("§fGeneral Enchants"), general_en
 var general_enchants_description = "General Enchants:" as string;
 for enchant in general_enchants {
   bookTooltips(enchant);
-  general_enchants_description += "!!" ~ enchant.displayName;
+  general_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, general_enchants_description.split("!!"));
+addDescription(ench_desc_items, general_enchants_description);
 
 
 val tool_enchants = [
   <enchantment:minecraft:efficiency> * 16,
   <enchantment:minecraft:silk_touch> * 1,
   <enchantment:minecraft:fortune> * 5,
+  <enchantment:cofhcore:smashing> * 1,
   <enchantment:cyclicmagic:enchantment.autosmelt> * 18,
+  <enchantment:astralsorcery:enchantment.as.smelting> * 1,
+  <enchantment:cofhcore:smelting> * 1,
+  <enchantment:apotheosis:depth_miner> * 13,
+  <enchantment:cyclicmagic:enchantment.excavation> * 18,
   <enchantment:cyclicmagic:enchantment.magnet> * 18,
   <enchantment:randomthings:magnetic> * 16,
-  <enchantment:apotheosis:depth_miner> * 13,
-  <enchantment:astralsorcery:enchantment.as.smelting> * 1,
-  <enchantment:cofhcore:smashing> * 1,
-  <enchantment:cofhcore:smelting> * 1,
-  <enchantment:cyclicmagic:enchantment.excavation> * 18,
   <enchantment:cyclicmagic:enchantment.expboost> * 18,
   <enchantment:fossil:archeology> * 14,
   <enchantment:fossil:paleontology> * 14,
@@ -992,9 +971,9 @@ add_enchants(<minecraft:diamond_pickaxe>.withDisplayName("§fTool Enchants"), to
 var tool_enchants_description = "Tool Enchants:" as string;
 for enchant in tool_enchants {
   bookTooltips(enchant);
-  tool_enchants_description += "!!" ~ enchant.displayName;
+  tool_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, tool_enchants_description.split("!!"));
+addDescription(ench_desc_items, tool_enchants_description);
 
 
 val fishing_rod_enchants = [
@@ -1006,9 +985,9 @@ add_enchants(<minecraft:fishing_rod>.withDisplayName("§fFishing Rod Enchants"),
 var fishing_rod_enchants_description = "Fishing Rod Enchants:" as string;
 for enchant in fishing_rod_enchants {
   bookTooltips(enchant);
-  fishing_rod_enchants_description += "!!" ~ enchant.displayName;
+  fishing_rod_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, fishing_rod_enchants_description.split("!!"));
+addDescription(ench_desc_items, fishing_rod_enchants_description);
 
 
 val hoe_enchants = [
@@ -1020,9 +999,9 @@ add_enchants(<minecraft:diamond_hoe>.withDisplayName("§fHoe Enchants"), hoe_enc
 var hoe_enchants_description = "Hoe Enchants:" as string;
 for enchant in hoe_enchants {
   bookTooltips(enchant);
-  hoe_enchants_description += "!!" ~ enchant.displayName;
+  hoe_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, hoe_enchants_description.split("!!"));
+addDescription(ench_desc_items, hoe_enchants_description);
 
 
 val shield_enchants = [
@@ -1034,9 +1013,9 @@ add_enchants(<minecraft:shield>.withDisplayName("§fShield Enchants"), shield_en
 var shield_enchants_description = "Shield Enchants:" as string;
 for enchant in shield_enchants {
   bookTooltips(enchant);
-  shield_enchants_description += "!!" ~ enchant.displayName;
+  shield_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, shield_enchants_description.split("!!"));
+addDescription(ench_desc_items, shield_enchants_description);
 
 
 val weapon_enchants = [
@@ -1044,8 +1023,16 @@ val weapon_enchants = [
   <enchantment:minecraft:smite> * 24,
   <enchantment:minecraft:bane_of_arthropods> * 24,
   <enchantment:apotheosis:mounted_strike> * 17,
+  <enchantment:apotheosis:hell_infusion> * 14,
   <enchantment:minecraft:sweeping> * 22,
+  <enchantment:cofhcore:vorpal> * 17,
   <enchantment:minecraft:looting> * 16,
+  <enchantment:apotheosis:scavenger> * 3,
+  <enchantment:apotheosis:capturing> * 16,
+  <enchantment:cyclicmagic:enchantment.beheading> * 18,
+  <enchantment:apotheosis:knowledge> * 10,
+  <enchantment:cofhcore:leech> * 16,
+  <enchantment:cyclicmagic:enchantment.lifeleech> * 18,
   <enchantment:minecraft:knockback> * 16,
   <enchantment:minecraft:fire_aspect> * 16,
   <enchantment:tombstone:magic_siphon> * 5,
@@ -1053,14 +1040,6 @@ val weapon_enchants = [
   <enchantment:ebwizardry:flaming_weapon> * 20,
   <enchantment:ebwizardry:freezing_weapon> * 20,
   <enchantment:ebwizardry:magic_sword> * 18,
-  <enchantment:apotheosis:capturing> * 16,
-  <enchantment:apotheosis:hell_infusion> * 14,
-  <enchantment:apotheosis:knowledge> * 10,
-  <enchantment:apotheosis:scavenger> * 3,
-  <enchantment:cofhcore:leech> * 16,
-  <enchantment:cofhcore:vorpal> * 17,
-  <enchantment:cyclicmagic:enchantment.beheading> * 18,
-  <enchantment:cyclicmagic:enchantment.lifeleech> * 18,
   <enchantment:cyclicmagic:enchantment.venom> * 18,
   <enchantment:enderio:witherweapon> * 1 // Broken
 ] as IEnchantment[];
@@ -1069,21 +1048,21 @@ add_enchants(<minecraft:diamond_sword>.withDisplayName("§fWeapon Enchants"), we
 var weapon_enchants_description = "Weapon Enchants:" as string;
 for enchant in weapon_enchants {
   bookTooltips(enchant);
-  weapon_enchants_description += "!!" ~ enchant.displayName;
+  weapon_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, weapon_enchants_description.split("!!"));
+addDescription(ench_desc_items, weapon_enchants_description);
 
 
 val bow_enchants = [
-  <enchantment:minecraft:infinity> * 1,
   <enchantment:minecraft:power> * 20,
   <enchantment:minecraft:punch> * 10,
   <enchantment:minecraft:flame> * 1,
-  <enchantment:cyclicmagic:enchantment.multishot> * 18,
+  <enchantment:minecraft:infinity> * 1,
   <enchantment:apotheosis:true_infinity> * 1,
-  <enchantment:ebwizardry:magic_bow> * 20,
-  <enchantment:cyclicmagic:enchantment.quickdraw> * 18,
+  <enchantment:cyclicmagic:enchantment.multishot> * 18,
   <enchantment:cofhcore:multishot> * 17,
+  <enchantment:cyclicmagic:enchantment.quickdraw> * 18,
+  <enchantment:ebwizardry:magic_bow> * 20,
   <enchantment:enderio:witherarrow> * 1 // Broken
 ] as IEnchantment[];
 
@@ -1091,29 +1070,29 @@ add_enchants(<minecraft:bow>.withDisplayName("§fBow Enchants"), bow_enchants);
 var bow_enchants_description = "Bow Enchants:" as string;
 for enchant in bow_enchants {
   bookTooltips(enchant);
-  bow_enchants_description += "!!" ~ enchant.displayName;
+  bow_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, bow_enchants_description.split("!!"));
+addDescription(ench_desc_items, bow_enchants_description);
 
 
 val armour_enchants = [
-  <enchantment:ebwizardry:frost_protection> * 25,
-  <enchantment:ebwizardry:magic_protection> * 25,
-  <enchantment:ebwizardry:shock_protection> * 25,
+  <enchantment:minecraft:protection> * 19,
+  <enchantment:minecraft:projectile_protection> * 34,
   <enchantment:minecraft:blast_protection> * 25,
   <enchantment:minecraft:fire_protection> * 25,
-  <enchantment:minecraft:projectile_protection> * 34,
-  <enchantment:minecraft:protection> * 19,
-  <enchantment:minecraft:binding_curse> * 1,
-  <enchantment:advancedrocketry:spacebreathing> * 20,
-  <enchantment:openblocks:last_stand> * 2,
-  <enchantment:apotheosis:icy_thorns> * 8,
-  <enchantment:minecraft:thorns> * 16,
-  <enchantment:apotheosis:berserk> * 7,
+  <enchantment:ebwizardry:frost_protection> * 25,  
+  <enchantment:ebwizardry:magic_protection> * 25,
+  <enchantment:ebwizardry:shock_protection> * 25,
   <enchantment:apotheosis:magic_protection> * 7,
+  <enchantment:openblocks:last_stand> * 2,
+  <enchantment:minecraft:thorns> * 16,
+  <enchantment:apotheosis:icy_thorns> * 8,
+  <enchantment:apotheosis:berserk> * 7,
   <enchantment:openblocks:explosive> * 3,
   <enchantment:tombstone:blessing> * 1,
   <enchantment:apotheosis:rebounding> * 21,
+  <enchantment:advancedrocketry:spacebreathing> * 20,
+  <enchantment:minecraft:binding_curse> * 1,
   <enchantment:enderio:repellent> * 20 // Broken
 ] as IEnchantment[];
 
@@ -1121,47 +1100,47 @@ add_enchants(<minecraft:armor_stand>.withDisplayName("§fArmour Enchants"), armo
 var armour_enchants_description = "Armour Enchants:" as string;
 for enchant in armour_enchants {
   bookTooltips(enchant);
-  armour_enchants_description += "!!" ~ enchant.displayName;
+  armour_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, armour_enchants_description.split("!!"));
+addDescription(ench_desc_items, armour_enchants_description);
 
 
 val helmet_enchants = [
-  <enchantment:astralsorcery:enchantment.as.nightvision> * 20,
-  <enchantment:minecraft:aqua_affinity> * 1,
   <enchantment:minecraft:respiration> * 18,
+  <enchantment:minecraft:aqua_affinity> * 1,
+  <enchantment:astralsorcery:enchantment.as.nightvision> * 20,
 ] as IEnchantment[];
 
 add_enchants(<minecraft:diamond_helmet>.withDisplayName("§fHelmet Enchants"), helmet_enchants);
 var helmet_enchants_description = "Helmet Enchants:" as string;
 for enchant in helmet_enchants {
   bookTooltips(enchant);
-  helmet_enchants_description += "!!" ~ enchant.displayName;
+  helmet_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, helmet_enchants_description.split("!!"));
+addDescription(ench_desc_items, helmet_enchants_description);
 
 
 val chestplate_enchants = [
-  <enchantment:tombstone:curse_of_bones> * 3,
-  <enchantment:cyclicmagic:enchantment.reach> * 18
+  <enchantment:cyclicmagic:enchantment.reach> * 18,
+  <enchantment:tombstone:curse_of_bones> * 3
 ] as IEnchantment[];
 
 add_enchants(<minecraft:diamond_chestplate>.withDisplayName("§fChestplate Enchants"), chestplate_enchants);
 var chestplate_enchants_description = "Chestplate Enchants:" as string;
 for enchant in chestplate_enchants {
   bookTooltips(enchant);
-  chestplate_enchants_description += "!!" ~ enchant.displayName;
+  chestplate_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, chestplate_enchants_description.split("!!"));
+addDescription(ench_desc_items, chestplate_enchants_description);
 
 
 val boot_enchants = [
-  <enchantment:apotheosis:stable_footing> * 1,
-  <enchantment:cyclicmagic:enchantment.launch> * 18,
-  <enchantment:minecraft:depth_strider> * 19,
   <enchantment:minecraft:feather_falling> * 33,
+  <enchantment:minecraft:depth_strider> * 19,
   <enchantment:minecraft:frost_walker> * 19,
   <enchantment:cyclicmagic:enchantment.waterwalking> * 18,
+  <enchantment:apotheosis:stable_footing> * 1,  
+  <enchantment:cyclicmagic:enchantment.launch> * 18,
   <enchantment:tombstone:shadow_step> * 17
 ] as IEnchantment[];
 
@@ -1169,9 +1148,9 @@ add_enchants(<minecraft:diamond_boots>.withDisplayName("§fBoot Enchants"), boot
 var boot_enchants_description = "Boot Enchants:" as string;
 for enchant in boot_enchants {
   bookTooltips(enchant);
-  boot_enchants_description += "!!" ~ enchant.displayName;
+  boot_enchants_description += "\n" ~ enchant.displayName ~ "§r";
 }
-addDescription(ench_desc_items, boot_enchants_description.split("!!"));
+addDescription(ench_desc_items, boot_enchants_description);
 
 
 ##########################################################################################
