@@ -1,0 +1,110 @@
+{
+    "name": "cm3immersive:alternator",
+  
+    "disabled": false,
+  
+    "target-item": "immersivetech:metal_multiblock",
+    "target-count": 1,
+     "target-meta": 5,
+
+    "duration": 200,
+    "symmetrical": true,
+  
+    "catalyst": "contenttweaker:purpleprint",
+    "catalyst-meta": 0,
+
+
+    "input-types": {
+      "a": {
+        "id": "immersiveengineering:metal_decoration0",
+        "meta": 4
+      },
+      "b": {
+        "id": "immersiveengineering:metal_decoration0",
+        "meta": 6
+      },
+      "c": {
+        "id": "immersiveengineering:sheetmetal",
+        "meta": 8
+      },
+      "d": {
+        "id": "immersiveengineering:metal_decoration0",
+        "meta": 7
+      },
+      "e": {
+        "id": "immersiveengineering:metal_decoration0",
+        "meta": 2
+      },
+      "f": {
+        "id": "immersiveengineering:metal_decoration0",
+        "meta": 5
+      },
+      "g": {
+        "id": "immersiveengineering:storage",
+        "meta": 8
+      }
+    },
+    "shape": [
+      [
+        [
+          "a",
+          "_",
+          "b",
+          "c"
+        ],
+        [
+          "a",
+          "_",
+          "b",
+          "e"
+        ],
+        [
+          "a",
+          "_",
+          "b",
+          "c"
+        ]
+      ],
+      [
+        [
+          "a",
+          "d",
+          "b",
+          "e"
+        ],
+        [
+          "a",
+          "f",
+          "g",
+          "g"
+        ],
+        [
+          "a",
+          "d",
+          "b",
+          "e"
+        ]
+      ],
+      [
+        [
+          "a",
+          "d",
+          "b",
+          "c"
+        ],
+        [
+          "a",
+          "f",
+          "b",
+          "e"
+        ],
+        [
+          "a",
+          "d",
+          "b",
+          "c"
+        ]
+      ]
+    ]
+  
+  }

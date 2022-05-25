@@ -6,164 +6,20 @@ import mods.requious.SlotVisual;
 import crafttweaker.liquid.ILiquidStack;
 import mods.requious.GaugeDirection;
 import mods.jei.JEI.addDescription;
+import crafttweaker.data.IData;
+import crafttweaker.formatting.IFormattedText;
+import crafttweaker.enchantments.IEnchantment;
+import crafttweaker.potions.IPotionEffect;
+import mods.jei.JEI.addItem;
 
 #priority -1
 
-print("==================== loading jei.zs ====================");
+print("==================== loading jei_requious.zs ====================");
 ##########################################################################################
 
 ##=======================================================
-## JEI THINGS
+## UTILITY FUNCTIONS
 ##=======================================================
-
-// --== JEI Renaming ==-- //
-
-// Nether Quartz --> Quartz
-<minecraft:quartz>.displayName = "Quartz";
-
-
-// --== JEI Tooltips ==-- //
-
-// General Tooltips
-<mystgears:bellows_mechanical>.addTooltip(format.gold("Place by a furnace to speed up"));
-
-<immersiveengineering:stone_decoration:1>.addTooltip(format.darkRed("Your first Steel is made in the High Oven"));
-
-<tombstone:crafting_ingredient:3>.addTooltip(format.darkRed("Uncommon drop from Mobs"));
-
-<contenttweaker:purpleprint>.addTooltip(format.lightPurple("Not for Crafting!"));
-
-<contenttweaker:ore_gen_info>.addTooltip("§fView uses in JEI to see ore vein generation§r");
-
-<translocators:translocator_part>.addTooltip("Hold Shift to see available modifiers");
-<translocators:translocator_part:1>.addTooltip("Hold Shift to see available modifiers");
-<translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n")));
-<translocators:translocator_part>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output\n")));
-<translocators:translocator_part>.addShiftTooltip((format.gray("- Add Iron to emit a signal when input is full of filtered item\n")));
-<translocators:translocator_part>.addShiftTooltip((format.aqua("- Add a Diamond Nugget to enable fine tuning of filter supply and demand")));
-<translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed\n")));
-<translocators:translocator_part:1>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output")));
-
-<mekanism:tierinstaller:3>.addTooltip(format.lightPurple("Only works on Bins, Energy Cubes, Tanks and Gas Tanks"));
-
-<bloodmagic:item_demon_crystal>.addTooltip("§bObtained from the Demon Crystalliser§r");
-<bloodmagic:item_demon_crystal:1>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
-<bloodmagic:item_demon_crystal:2>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
-<bloodmagic:item_demon_crystal:3>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
-<bloodmagic:item_demon_crystal:4>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
-addDescription(<liquid:blockfluidantimatter>, "Obtained from striking Life Essence with Lightning§r");
-<liquid:blockfluidantimatter>.addTooltip("§6Obtained from striking Life Essence with Lightning");
-
-<techreborn:part:33>.addTooltip("§6Obtained from the Recycler§r");
-
-<astralsorcery:blockgemcrystals>.addTooltip("§bCreated by throwing a Rock Crystal and Glowstone Dust in Starlight§r");
-<astralsorcery:itemperkgem>.addTooltip("§bGrows from a Gem Crystal Cluster§r");
-<astralsorcery:itemperkgem>.addTooltip("§bForms around Noon and Midnight§r");
-<astralsorcery:itemperkgem:1>.addTooltip("§bGrows from a Gem Crystal Cluster§r");
-<astralsorcery:itemperkgem:1>.addTooltip("§bForms around Night to Morning§r");
-<astralsorcery:itemperkgem:2>.addTooltip("§bGrows from a Gem Crystal Cluster§r");
-<astralsorcery:itemperkgem:2>.addTooltip("§bForms around Afternoon and Evening§r");
-
-addDescription(<liquid:aetherworks.impure_aetherium_gas>, "Obtained from the Aether Collector§r");
-<liquid:aetherworks.impure_aetherium_gas>.addTooltip("§9Obtained from the Aether Collector");
-
-
-// TODO Power consumption tooltips
-
-// TODO Power production tooltips
-
-// Machine upgrade descriptions
-
-var shiftToolTip = "§7Hold §e§oShift§r for Details§r" as string;
-
-<techreborn:upgrades>.addTooltip(shiftToolTip);
-<techreborn:upgrades>.addShiftTooltip("§aReduces Recipe Time to 0.33x.");
-<techreborn:upgrades>.addShiftTooltip("§4Multiplies Power Consumption by 4x.");
-
-<techreborn:upgrades:2>.addTooltip(shiftToolTip);
-<techreborn:upgrades:2>.addShiftTooltip("§aIncreases power storage by 160kRF.§r");
-
-<techreborn:upgrades:1>.addTooltip(shiftToolTip);
-<techreborn:upgrades:1>.addShiftTooltip("§aMultiplies Maximum Power Input by 4x.§r");
-
-var reinforcedUpgrade = "§aAdds an extra augment slot.§r\n§4Increases Energy per Operation to 1.25x." as string;
-var signalumUpgrade = "§aIncreases Power Usage to 2.5x.§r\n§aAdds an extra augment slot.\n§4Increases Energy per Operation to 1.5x." as string;
-var resonantUpgrade = "§aIncreases Power Usage to 8x.§r\n§aAdds an extra augment slot.\n§4Increases Energy per Operation to 2x." as string;
-
-<thermalfoundation:upgrade:1>.addShiftTooltip(reinforcedUpgrade);
-<thermalfoundation:upgrade:33>.addShiftTooltip(reinforcedUpgrade);
-
-<thermalfoundation:upgrade:2>.addShiftTooltip(signalumUpgrade);
-<thermalfoundation:upgrade:34>.addShiftTooltip(signalumUpgrade);
-
-<thermalfoundation:upgrade:3>.addShiftTooltip(resonantUpgrade);
-<thermalfoundation:upgrade:35>.addShiftTooltip(resonantUpgrade);
-
-
-// Fake Angel Ring
-<contenttweaker:angelring_fake>.addTooltip(format.gold("Looking for flight? Hold shift:"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Vicio Ritual (Limited Area)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Glowing Chorus Fruit (2:00 Per)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Thaumostaic Harness (Requires stored Vis)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.gray("-Air Sigil (Launches you when used)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Glitch Armor"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Vicio Star Mantle (Requires a perk for Creative Flight)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Mithnimite Armor"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Jetpack (Requires Hydrogen)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Wings of the Bat (Needs to Recharge)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Environmental Controller (Limited Area)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.gold("-Supremium Armor"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Flugel Tiara (Eye of the Flugel for infinite time)"));
-<contenttweaker:angelring_fake>.addShiftTooltip(format.blue("-Nanobot Beacon (Limited Area)"));
-
-//mods.jei.JEI.addDescription(<immersiveengineering:stone_decoration:1>,"Your first Steel is made in the High Oven");
-
-
-// --== JEI Tags ==-- //
-// TODO JEI Tags
-
-
-
-
-
-
-
-
-
-// --== Item Additions to JEI ==-- //
-
-//mods.jei.JEI.addItem(<tconstruct:toolforge>);
-
-mods.jei.JEI.addItem(<tconstruct:toolforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 4 as short}}));
-mods.jei.JEI.addItem(<conarm:armorforge>.withTag({textureBlock: {id: "tconstruct:metal", Count: 1 as byte, Damage: 3 as short}}));
-
-//mods.jei.JEI.addItem(<rockhounding_chemistry:machines_e:1>);
-
-
-// --== Changing Max Stack Size ==-- //
-<tombstone:impregnated_diamond>.maxStackSize = 64;
-<techreborn:lapotroncrystal>.withTag({energy: 0}).maxStackSize = 64;
-<techreborn:energycrystal>.withTag({energy: 0}).maxStackSize = 64;
-<techreborn:lapotronicorb>.withTag({energy: 0}).maxStackSize = 64;
-
-
-// --== Hiding JEI Categories ==-- //
-mods.jei.JEI.hideCategory("Painter");
-mods.jei.JEI.hideCategory("mekanism.combiner");
-mods.jei.JEI.hideCategory("EIOWC");
-mods.jei.JEI.hideCategory("EIOWO");
-mods.jei.JEI.hideCategory("thermalexpansion.factorizer_combine");
-mods.jei.JEI.hideCategory("thermalexpansion.factorizer_split");
-mods.jei.JEI.hideCategory("EIOTank");
-mods.jei.JEI.hideCategory("tinker_io:smart_output");
-//mods.jei.JEI.hideCategory("embers.dawnstone_anvil");
-
-
-##=======================================================
-## REQUIOUS FRAKTO JEI CATEGORIES
-##=======================================================
-
-// --== Utility Functions ==-- //
 
 // Credits to the E2E-E Dev!
 // Functions that get textures from either the assembly_gauges or assembly_slots photos at the x and y coordinates supplied
@@ -202,6 +58,9 @@ function addInsOuts(ass as Assembly, inputs as int[][], outputs as int[][]) {
 }
 
 
+##=======================================================
+## REQUIOUS FRAKTO JEI CATEGORIES
+##=======================================================
 
 // --== Excavator Veins ==-- //
 
@@ -216,7 +75,7 @@ addInsOuts(excavator, [[1,0], [2,0]], [[4,0], [5,0], [6,0], [7,0], [8,0], [9,0]]
 
 // Adds an Excavator Vein to the RQ JEI Page. Can accept a maximum of 2 dimensions and 6 ores. Quantity of ore is determined by percentage of ore in vein.
 
-function addvein(info as IIngredient, dimensions as IIngredient[], ores as IItemStack[]) {
+function addvein(info as string, dimensions as IIngredient[], ores as IItemStack[]) {
     val assRec = AssemblyRecipe.create(function(container) {
       for i, output in ores {
         if(isNull(output)) continue;
@@ -227,7 +86,7 @@ function addvein(info as IIngredient, dimensions as IIngredient[], ores as IItem
       if(isNull(input)) continue;
       assRec.requireItem("item_input"~i, input);
     }
-    assRec.requireItem("information", info);
+    assRec.requireItem("information", <minecraft:book>.withDisplayName(info));
     <assembly:excavator>.addJEIRecipe(assRec);
 }
 
@@ -252,35 +111,35 @@ var rarity =
   <minecraft:wool:10>.withDisplayName("§d§lVery Rare§r")
 ] as IItemStack[];
 
-addvein(<minecraft:book>.withDisplayName("§fBauxite"), [dimensionItem[0], dimensionItem[3]], [<techreborn:ore:4> * 70, <thermalfoundation:ore:4> * 19, <libvulpes:ore0:8> * 9, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fCassiterite"), [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore:1> * 98, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fCoal"), [dimensionItem[0], dimensionItem[3]], [<minecraft:coal_ore> * 95, <minecraft:diamond_ore> * 1, <minecraft:emerald_ore> * 1, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fCopper"), [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore> * 67, <minecraft:gold_ore> * 26, <thermalfoundation:ore:5> * 6, <rockhounding_chemistry:uninspected_mineral>]);
-addvein(<minecraft:book>.withDisplayName("§fRare Earth"), [dimensionItem[0], dimensionItem[3]], [<rockhounding_chemistry:uninspected_mineral> * 85, <minecraft:diamond_ore> * 15]);
-addvein(<minecraft:book>.withDisplayName("§fSilt"), [dimensionItem[0]], [<minecraft:clay> * 50, <minecraft:sand> * 30, <minecraft:gravel> * 20]);
-addvein(<minecraft:book>.withDisplayName("§fGalena"), [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 51, <thermalfoundation:ore:2> * 19, <thermalfoundation:ore:3> * 28, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fSilver"), [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 12, <thermalfoundation:ore:2> * 71, <thermalfoundation:ore:3> * 15, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fLead"), [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 22, <thermalfoundation:ore:2> * 13, <thermalfoundation:ore:3> * 64, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fBauxite", [dimensionItem[0], dimensionItem[3]], [<techreborn:ore:4> * 70, <thermalfoundation:ore:4> * 19, <libvulpes:ore0:8> * 9, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fCassiterite", [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore:1> * 98, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fCoal", [dimensionItem[0], dimensionItem[3]], [<minecraft:coal_ore> * 95, <minecraft:diamond_ore> * 1, <minecraft:emerald_ore> * 1, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fCopper", [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore> * 67, <minecraft:gold_ore> * 26, <thermalfoundation:ore:5> * 6, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fRare Earth", [dimensionItem[0], dimensionItem[3]], [<rockhounding_chemistry:uninspected_mineral> * 85, <minecraft:diamond_ore> * 15]);
+addvein("§fSilt", [dimensionItem[0]], [<minecraft:clay> * 50, <minecraft:sand> * 30, <minecraft:gravel> * 20]);
+addvein("§fGalena", [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 51, <thermalfoundation:ore:2> * 19, <thermalfoundation:ore:3> * 28, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fSilver", [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 12, <thermalfoundation:ore:2> * 71, <thermalfoundation:ore:3> * 15, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fLead", [dimensionItem[0], dimensionItem[3]], [<techreborn:ore> * 22, <thermalfoundation:ore:2> * 13, <thermalfoundation:ore:3> * 64, <rockhounding_chemistry:uninspected_mineral> * 1]);
 
-addvein(<minecraft:book>.withDisplayName("§fIron"), [dimensionItem[0], dimensionItem[3]], [<minecraft:iron_ore> * 58, <thermalfoundation:ore:5> * 21, <thermalfoundation:ore:1> * 20, <rockhounding_chemistry:uninspected_mineral> * 1]);
-addvein(<minecraft:book>.withDisplayName("§fLapis"), [dimensionItem[0], dimensionItem[3]], [<minecraft:lapis_ore> * 69, <minecraft:iron_ore> * 30, <rockhounding_chemistry:uninspected_mineral> * 1]);
-addvein(<minecraft:book>.withDisplayName("§fMagnetite"), [dimensionItem[0], dimensionItem[3]], [<minecraft:iron_ore> * 83, <minecraft:gold_ore> * 15, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fNickel"), [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore:5> * 80, <thermalfoundation:ore:6> * 5, <minecraft:iron_ore> * 14, <rockhounding_chemistry:uninspected_mineral> * 2]);
-addvein(<minecraft:book>.withDisplayName("§fUranium"), [dimensionItem[0], dimensionItem[3]], [<nuclearcraft:ore:4> * 55, <thermalfoundation:ore:3> * 24, <nuclearcraft:ore:5> * 10, <nuclearcraft:ore:3> * 10, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fIron", [dimensionItem[0], dimensionItem[3]], [<minecraft:iron_ore> * 58, <thermalfoundation:ore:5> * 21, <thermalfoundation:ore:1> * 20, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fLapis", [dimensionItem[0], dimensionItem[3]], [<minecraft:lapis_ore> * 69, <minecraft:iron_ore> * 30, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fMagnetite", [dimensionItem[0], dimensionItem[3]], [<minecraft:iron_ore> * 83, <minecraft:gold_ore> * 15, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fNickel", [dimensionItem[0], dimensionItem[3]], [<thermalfoundation:ore:5> * 80, <thermalfoundation:ore:6> * 5, <minecraft:iron_ore> * 14, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fUranium", [dimensionItem[0], dimensionItem[3]], [<nuclearcraft:ore:4> * 55, <thermalfoundation:ore:3> * 24, <nuclearcraft:ore:5> * 10, <nuclearcraft:ore:3> * 10, <rockhounding_chemistry:uninspected_mineral> * 1]);
 
-addvein(<minecraft:book>.withDisplayName("§fRaw Stone"), [dimensionItem[0]], [<minecraft:stone:1> * 20, <minecraft:stone:3> * 20, <minecraft:stone:5> * 20, <quark:limestone> * 15, <astralsorcery:blockmarble> * 15, <quark:basalt> * 15]);
+addvein("§fRaw Stone", [dimensionItem[0]], [<minecraft:stone:1> * 20, <minecraft:stone:3> * 20, <minecraft:stone:5> * 20, <quark:limestone> * 15, <astralsorcery:blockmarble> * 15, <quark:basalt> * 15]);
 
-addvein(<minecraft:book>.withDisplayName("§fCinnabar"), [dimensionItem[0], dimensionItem[3]], [<minecraft:redstone_ore> * 67, <techreborn:ore:6> * 26, <techreborn:ore:2> * 6, <rockhounding_chemistry:uninspected_mineral> * 1]);
-addvein(<minecraft:book>.withDisplayName("§fQuartzite"), [dimensionItem[0], dimensionItem[3]], [<minecraft:quartz_ore> * 40, <appliedenergistics2:quartz_ore> * 41, <actuallyadditions:block_misc:3> * 14, <appliedenergistics2:charged_quartz_ore> * 5]);
+addvein("§fCinnabar", [dimensionItem[0], dimensionItem[3]], [<minecraft:redstone_ore> * 67, <techreborn:ore:6> * 26, <techreborn:ore:2> * 6, <rockhounding_chemistry:uninspected_mineral> * 1]);
+addvein("§fQuartzite", [dimensionItem[0], dimensionItem[3]], [<minecraft:quartz_ore> * 40, <appliedenergistics2:quartz_ore> * 41, <actuallyadditions:block_misc:3> * 14, <appliedenergistics2:charged_quartz_ore> * 5]);
 
-addvein(<minecraft:book>.withDisplayName("§fOsmium"), [dimensionItem[3]], [<mekanism:oreblock> * 56, <thermalfoundation:ore:6> * 20, <minecraft:gold_ore> * 20, <rockhounding_chemistry:uninspected_mineral> * 4]);
-addvein(<minecraft:book>.withDisplayName("§fPlatinum"), [dimensionItem[3]], [<thermalfoundation:ore:6> * 64, <thermalfoundation:ore:5> * 20, <mekanism:oreblock> * 14, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fOsmium", [dimensionItem[3]], [<mekanism:oreblock> * 56, <thermalfoundation:ore:6> * 20, <minecraft:gold_ore> * 20, <rockhounding_chemistry:uninspected_mineral> * 4]);
+addvein("§fPlatinum", [dimensionItem[3]], [<thermalfoundation:ore:6> * 64, <thermalfoundation:ore:5> * 20, <mekanism:oreblock> * 14, <rockhounding_chemistry:uninspected_mineral>]);
 
-addvein(<minecraft:book>.withDisplayName("§fGold"), [dimensionItem[3]], [<minecraft:gold_ore> * 67,  <thermalfoundation:ore> * 22, <thermalfoundation:ore:5> * 6, <enderore:ore_ender> * 4, <rockhounding_chemistry:uninspected_mineral>]);
-addvein(<minecraft:book>.withDisplayName("§fVoidstone"), [dimensionItem[3]], [<minecraft:gold_ore> * 45, <minecraft:iron_ore> * 40, <chisel:voidstone> * 5, <mekanism:oreblock> * 8, <rockhounding_chemistry:uninspected_mineral> * 2]);
+addvein("§fGold", [dimensionItem[3]], [<minecraft:gold_ore> * 67,  <thermalfoundation:ore> * 22, <thermalfoundation:ore:5> * 6, <enderore:ore_ender> * 4, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fVoidstone", [dimensionItem[3]], [<minecraft:gold_ore> * 45, <minecraft:iron_ore> * 40, <chisel:voidstone> * 5, <mekanism:oreblock> * 8, <rockhounding_chemistry:uninspected_mineral> * 2]);
 
-addvein(<minecraft:book>.withDisplayName("§fPyrite"), [dimensionItem[1]], [<techreborn:ore:5> * 65, <techreborn:ore:7> * 19, <minecraft:iron_ore> * 15, <rockhounding_chemistry:uninspected_mineral>]);
-addvein(<minecraft:book>.withDisplayName("§fSphalerite"), [dimensionItem[1]], [<techreborn:ore:7> * 63, <techreborn:ore:5> * 26, <minecraft:iron_ore> * 10, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fPyrite", [dimensionItem[1]], [<techreborn:ore:5> * 65, <techreborn:ore:7> * 19, <minecraft:iron_ore> * 15, <rockhounding_chemistry:uninspected_mineral>]);
+addvein("§fSphalerite", [dimensionItem[1]], [<techreborn:ore:7> * 63, <techreborn:ore:5> * 26, <minecraft:iron_ore> * 10, <rockhounding_chemistry:uninspected_mineral>]);
 
 
 
@@ -891,16 +750,408 @@ val emberRecipes = AssemblyRecipe.create(function(container) {
 emberRecipes.requireItem("information", <minecraft:book>.withDisplayName("§fAny Dimension"));
 ember_bore.addJEIRecipe(emberRecipes);
 
-// TODO --== Stellar Refraction Table ==-- //
+// --== Stellar Refraction Table ==-- //
+// TODO Can consider replacing books with items representing enchants for better readability?
 var refraction_table = <assembly:refraction_table>;
 refraction_table.addJEICatalyst(<astralsorcery:blockmapdrawingtable>);
 refraction_table.addJEICatalyst(<astralsorcery:iteminfusedglass>);
+refraction_table.setJEIItemSlot(0, 0, "constellation");
+refraction_table.setJEIDurationSlot(1, 0, "duration", getVisSlots(1,7));
+refraction_table.setJEIItemSlot(2, 0, "enchantment");
+refraction_table.setJEIItemSlot(3, 0, "potion");
 
 
-// TODO --== Apotheosis Enchants ==-- //
+// Doesn't work because CT can't cast IData[] to IData
+// function enchantedBook(enchantments as int[][]) as IItemStack {
+//   var enchantmentList = [] as IData[];
+//   for enchantment in enchantments {
+//     var enchantment_nbt = {
+//       lvl: enchantment[1],
+//       id: enchantment[0]
+//     } as IData;
+//     enchantmentList += enchantment_nbt;
+//   }
+//   return <minecraft:enchanted_book>.withTag({StoredEnchantments: enchantmentList});
+// }
+
+// Returns an enchanted book given a 2D array of enchantment ids to levels. Can only accept up to 4 enchants
+
+function enchantedBook(enchantments as IEnchantment[]) as IItemStack {
+  var enchant_count = enchantments.length;
+
+  if (enchant_count == 1) {
+    return <minecraft:enchanted_book>.withTag({StoredEnchantments: enchantments[0].makeTag().ench});
+  }
+  else if (enchant_count == 2) {
+    return <minecraft:enchanted_book>.withTag({StoredEnchantments: [enchantments[0].makeTag().ench[0], 
+    enchantments[1].makeTag().ench[0]]});
+  }
+  else if (enchant_count == 3) {
+    return <minecraft:enchanted_book>.withTag({StoredEnchantments: [enchantments[0].makeTag().ench[0], 
+    enchantments[1].makeTag().ench[0], enchantments[2].makeTag().ench[0]]});
+  }
+  else if (enchant_count == 4) {
+    return <minecraft:enchanted_book>.withTag({StoredEnchantments: [enchantments[0].makeTag().ench[0], 
+    enchantments[1].makeTag().ench[0], enchantments[2].makeTag().ench[0], enchantments[3].makeTag().ench[0]]});    
+  }
+}
+
+// Adds Refraction Table outputs to the RQ JEI Page.
+
+function addRefractionRecipe(info as string, enchantments as IEnchantment[], potions as IPotionEffect[]) {
+    val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("enchantment", enchantedBook(enchantments));
+      container.addItemOutput("potion", itemUtils.createPotion(potions).withDisplayName("§fStardew"));
+    });
+    assRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation." ~ info}}
+      ).withDisplayName("§f" ~ info));
+    <assembly:refraction_table>.addJEIRecipe(assRec);
+}
+
+addRefractionRecipe("discidia", [<enchantment:minecraft:sharpness> * 7, <enchantment:minecraft:power> * 7], [<potion:minecraft:strength>.makePotionEffect(7200, 3)]);
+addRefractionRecipe("armara", [<enchantment:minecraft:protection> * 5], [<potion:minecraft:resistance>.makePotionEffect(7200, 2)]);
+addRefractionRecipe("vicio", [<enchantment:minecraft:feather_falling> * 5], [<potion:minecraft:speed>.makePotionEffect(7200, 3)]);
+addRefractionRecipe("aevitas", [<enchantment:minecraft:mending> * 3], [<potion:minecraft:regeneration>.makePotionEffect(7200, 3)]);
+addRefractionRecipe("evorsio", [<enchantment:minecraft:efficiency> * 5], [<potion:minecraft:haste>.makePotionEffect(7200, 3)]);
+addRefractionRecipe("lucerna", [<enchantment:astralsorcery:enchantment.as.nightvision> * 1], [<potion:minecraft:night_vision>.makePotionEffect(7200, 2)]);
+addRefractionRecipe("mineralis", [<enchantment:minecraft:fortune> * 3], [<potion:minecraft:haste>.makePotionEffect(7200, 3)]);
+addRefractionRecipe("horologium", [<enchantment:minecraft:fortune> * 6, <enchantment:minecraft:looting> * 6], 
+[<potion:minecraft:speed>.makePotionEffect(7200, 4), <potion:minecraft:haste>.makePotionEffect(7200, 8)]);
+addRefractionRecipe("octans", [<enchantment:minecraft:respiration> * 4], [<potion:minecraft:water_breathing>.makePotionEffect(7200, 4)]);
+addRefractionRecipe("bootes", [<enchantment:minecraft:silk_touch> * 1], [<potion:minecraft:saturation>.makePotionEffect(7200, 5)]);
+addRefractionRecipe("fornax", [<enchantment:minecraft:fire_aspect> * 3, <enchantment:minecraft:flame> * 2, 
+<enchantment:astralsorcery:enchantment.as.smelting> * 1], [<potion:minecraft:fire_resistance>.makePotionEffect(7200, 0)]);
+addRefractionRecipe("pelotrio", [<enchantment:minecraft:infinity> * 1, <enchantment:minecraft:lure> * 6], 
+[<potion:minecraft:regeneration>.makePotionEffect(7200, 4), <potion:minecraft:absorption>.makePotionEffect(7200, 4)]);
+addRefractionRecipe("gelu", [<enchantment:minecraft:frost_walker> * 2, <enchantment:minecraft:feather_falling> * 4, <enchantment:minecraft:unbreaking> * 4], 
+[<potion:minecraft:resistance>.makePotionEffect(7200, 2), <potion:minecraft:fire_resistance>.makePotionEffect(7200, 0), <potion:minecraft:slowness>.makePotionEffect(7200, 1)]);
+addRefractionRecipe("ulteria", [<enchantment:minecraft:unbreaking> * 3, <enchantment:minecraft:fire_protection> * 6, 
+<enchantment:minecraft:blast_protection> * 6, <enchantment:minecraft:projectile_protection> * 6], 
+[<potion:minecraft:absorption>.makePotionEffect(7200, 2), <potion:minecraft:regeneration>.makePotionEffect(7200, 1), <potion:minecraft:weakness>.makePotionEffect(7200, 2)]);
+addRefractionRecipe("alcara", [<enchantment:minecraft:sweeping> * 7, <enchantment:minecraft:lure> * 5, <enchantment:minecraft:luck_of_the_sea> * 6], 
+[<potion:minecraft:luck>.makePotionEffect(7200, 4), <potion:minecraft:invisibility>.makePotionEffect(7200, 1),<potion:minecraft:hunger>.makePotionEffect(7200, 2)]);
+addRefractionRecipe("vorux", [<enchantment:minecraft:smite> * 7, <enchantment:minecraft:bane_of_arthropods> * 7, 
+<enchantment:minecraft:sharpness> * 4, <enchantment:minecraft:power> * 4], 
+[<potion:minecraft:strength>.makePotionEffect(7200, 3), <potion:minecraft:resistance>.makePotionEffect(7200, 1),<potion:minecraft:mining_fatigue>.makePotionEffect(7200, 3)]);
+
+
+// --== Apotheosis Enchants ==-- //
+
 var apotheosis_enchants = <assembly:apotheosis_enchants>;
+apotheosis_enchants.setJEIItemSlot(0, 0, "type");
+apotheosis_enchants.addJEICatalyst(<minecraft:enchanting_table>);
+apotheosis_enchants.addJEICatalyst(<apotheosis:hellshelf>);
 
+k = 0;
+for y in 0 .. 4 {
+  for x in 2 .. 9 {
+    apotheosis_enchants.setJEIItemSlot(x, y, 'enchant_book'~k);
+    k += 1;
+  }
+}
+
+// Adds Enchantments to the RQ JEI page. 
+
+function add_enchants(type as IItemStack, enchantments as IEnchantment[]) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      for i, enchantment in enchantments {
+        if(isNull(enchantment)) continue;
+        // If enchantment is an eio enchantment, create the book using the id
+          container.addItemOutput("enchant_book" ~ i, enchantedBook([enchantment]));
+      }});
+    assRec.requireItem("type", type);
+  <assembly:apotheosis_enchants>.addJEIRecipe(assRec);
+}
+
+// Adds tooltips for enchanted books of all levels of the given IEnchantment and adds the highest level book to JEI.
+
+function bookTooltips(enchantment as IEnchantment) {
+  // If enchantment is an eio enchantment, redirect to eio_book_tooltips
+  var eio_enchants = {
+    <enchantment:enderio:repellent> * 20:37,
+    <enchantment:enderio:shimmer> * 1:39,
+    <enchantment:enderio:soulbound> * 1:31,
+    <enchantment:enderio:witherarrow> * 1:36,
+    <enchantment:enderio:witherweapon> * 1:38,
+  } as int[IEnchantment];
+
+  if (eio_enchants.keys has enchantment) {
+    bookTooltips_int(eio_enchants[enchantment], enchantment.level);
+  }
+  else
+  {
+    // Add maximum level tooltip to the highest level book
+    val maxbook = <minecraft:enchanted_book>.withTag({StoredEnchantments: enchantment.makeTag().ench});
+    maxbook.addTooltip("§2Maximum Level");
+
+    // If highest level is 1, no additional actions required
+    val highestlevel = enchantment.level;
+    if (highestlevel > 1) {
+      // Loop through all lower-level books, add belowmaxleveldesc tooltip
+      val belowmaxleveldesc = "§6Max Level: " ~ highestlevel as string;
+      val enchant_definition = enchantment.definition;
+
+      for i in 1 to highestlevel {
+        var lowerlevelenchant = enchant_definition * i;
+        <minecraft:enchanted_book>.withTag({StoredEnchantments: lowerlevelenchant.makeTag().ench}).addTooltip(belowmaxleveldesc);
+      }
+
+      // Add highest level book to JEI (doesn't work for some reason)
+      // addItem(maxbook);
+    }
+  }
+}
+
+// Does the same thing as the above function, but accepts the enchantment_id and highestlevel as inputs.
+// This is solely because EIO enchants are janky
+
+function bookTooltips_int(ench_id as int, highestlevel as int) {
+  val maxbook = <minecraft:enchanted_book>.withTag({StoredEnchantments: {lvl: highestlevel, id: ench_id}});
+  maxbook.addTooltip("§2Maximum Level");
+
+  if (highestlevel > 1) {
+    val belowmaxleveldesc = "§6Max Level: " ~ highestlevel as string;
+    for i in 1 to highestlevel {
+      <minecraft:enchanted_book>.withTag({StoredEnchantments: {lvl: i, id: ench_id}}).addTooltip(belowmaxleveldesc);
+    }
+  }
+}
+
+
+var ench_desc_items = [<minecraft:enchanting_table>, <apotheosis:hellshelf>] as IItemStack[];
+addDescription(ench_desc_items, "These JEI pages contain max level enchants in text form, if you prefer.");
+
+
+val general_enchants = [
+  <enchantment:minecraft:mending> * 7,
+  <enchantment:minecraft:unbreaking> * 16,
+  <enchantment:apotheosis:life_mending> * 5,
+  <enchantment:cofhcore:soulbound> * 17,
+  <enchantment:tombstone:soulbound> * 1,
+  <enchantment:cofhcore:holding> * 17, // All powered items
+  <enchantment:cofhcore:insight> * 17, // All tools and weapons
+  <enchantment:endercore:xpboost> * 17, // All tools and weapons
+  <enchantment:openblocks:flim_flam> * 17, // Weaopons and armour
+  <enchantment:apotheosis:splitting> * 18, // Anvil
+  <enchantment:capsule:recall> * 1, // Capsules
+  <enchantment:minecraft:vanishing_curse> * 1,
+  <enchantment:enderio:soulbound> * 1, // Broken
+  <enchantment:enderio:shimmer> * 1 // Broken
+] as IEnchantment[];
+
+add_enchants(<minecraft:book>.withDisplayName("§fGeneral Enchants"), general_enchants);
+var general_enchants_description = "General Enchants:" as string;
+for enchant in general_enchants {
+  bookTooltips(enchant);
+  general_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, general_enchants_description);
+
+
+val tool_enchants = [
+  <enchantment:minecraft:efficiency> * 16,
+  <enchantment:minecraft:silk_touch> * 1,
+  <enchantment:minecraft:fortune> * 5,
+  <enchantment:cofhcore:smashing> * 1,
+  <enchantment:cyclicmagic:enchantment.autosmelt> * 18,
+  <enchantment:astralsorcery:enchantment.as.smelting> * 1,
+  <enchantment:cofhcore:smelting> * 1,
+  <enchantment:apotheosis:depth_miner> * 13,
+  <enchantment:cyclicmagic:enchantment.excavation> * 18,
+  <enchantment:cyclicmagic:enchantment.magnet> * 18,
+  <enchantment:randomthings:magnetic> * 16,
+  <enchantment:cyclicmagic:enchantment.expboost> * 18,
+  <enchantment:fossil:archeology> * 14,
+  <enchantment:fossil:paleontology> * 14,
+  <enchantment:endercore:autosmelt> * 1 // Broken
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_pickaxe>.withDisplayName("§fTool Enchants"), tool_enchants);
+var tool_enchants_description = "Tool Enchants:" as string;
+for enchant in tool_enchants {
+  bookTooltips(enchant);
+  tool_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, tool_enchants_description);
+
+
+val fishing_rod_enchants = [
+  <enchantment:minecraft:luck_of_the_sea> * 16,
+  <enchantment:minecraft:lure> * 16
+] as IEnchantment[];
+
+add_enchants(<minecraft:fishing_rod>.withDisplayName("§fFishing Rod Enchants"), fishing_rod_enchants);
+var fishing_rod_enchants_description = "Fishing Rod Enchants:" as string;
+for enchant in fishing_rod_enchants {
+  bookTooltips(enchant);
+  fishing_rod_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, fishing_rod_enchants_description);
+
+
+val hoe_enchants = [
+  <enchantment:apotheosis:natures_blessing> * 15,
+  <enchantment:apotheosis:tempting> * 1
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_hoe>.withDisplayName("§fHoe Enchants"), hoe_enchants);
+var hoe_enchants_description = "Hoe Enchants:" as string;
+for enchant in hoe_enchants {
+  bookTooltips(enchant);
+  hoe_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, hoe_enchants_description);
+
+
+val shield_enchants = [
+  <enchantment:apotheosis:reflective> * 21,
+  <enchantment:apotheosis:shield_bash> * 16
+] as IEnchantment[];
+
+add_enchants(<minecraft:shield>.withDisplayName("§fShield Enchants"), shield_enchants);
+var shield_enchants_description = "Shield Enchants:" as string;
+for enchant in shield_enchants {
+  bookTooltips(enchant);
+  shield_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, shield_enchants_description);
+
+
+val weapon_enchants = [
+  <enchantment:minecraft:sharpness> * 18,
+  <enchantment:minecraft:smite> * 24,
+  <enchantment:minecraft:bane_of_arthropods> * 24,
+  <enchantment:apotheosis:mounted_strike> * 17,
+  <enchantment:apotheosis:hell_infusion> * 14,
+  <enchantment:minecraft:sweeping> * 22,
+  <enchantment:cofhcore:vorpal> * 17,
+  <enchantment:minecraft:looting> * 16,
+  <enchantment:apotheosis:scavenger> * 3,
+  <enchantment:apotheosis:capturing> * 16,
+  <enchantment:cyclicmagic:enchantment.beheading> * 18,
+  <enchantment:apotheosis:knowledge> * 10,
+  <enchantment:cofhcore:leech> * 16,
+  <enchantment:cyclicmagic:enchantment.lifeleech> * 18,
+  <enchantment:minecraft:knockback> * 16,
+  <enchantment:minecraft:fire_aspect> * 16,
+  <enchantment:tombstone:magic_siphon> * 5,
+  <enchantment:tombstone:plague_bringer> * 3,
+  <enchantment:ebwizardry:flaming_weapon> * 20,
+  <enchantment:ebwizardry:freezing_weapon> * 20,
+  <enchantment:ebwizardry:magic_sword> * 18,
+  <enchantment:cyclicmagic:enchantment.venom> * 18,
+  <enchantment:enderio:witherweapon> * 1 // Broken
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_sword>.withDisplayName("§fWeapon Enchants"), weapon_enchants);
+var weapon_enchants_description = "Weapon Enchants:" as string;
+for enchant in weapon_enchants {
+  bookTooltips(enchant);
+  weapon_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, weapon_enchants_description);
+
+
+val bow_enchants = [
+  <enchantment:minecraft:power> * 20,
+  <enchantment:minecraft:punch> * 10,
+  <enchantment:minecraft:flame> * 1,
+  <enchantment:minecraft:infinity> * 1,
+  <enchantment:apotheosis:true_infinity> * 1,
+  <enchantment:cyclicmagic:enchantment.multishot> * 18,
+  <enchantment:cofhcore:multishot> * 17,
+  <enchantment:cyclicmagic:enchantment.quickdraw> * 18,
+  <enchantment:ebwizardry:magic_bow> * 20,
+  <enchantment:enderio:witherarrow> * 1 // Broken
+] as IEnchantment[];
+
+add_enchants(<minecraft:bow>.withDisplayName("§fBow Enchants"), bow_enchants);
+var bow_enchants_description = "Bow Enchants:" as string;
+for enchant in bow_enchants {
+  bookTooltips(enchant);
+  bow_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, bow_enchants_description);
+
+
+val armour_enchants = [
+  <enchantment:minecraft:protection> * 19,
+  <enchantment:minecraft:projectile_protection> * 34,
+  <enchantment:minecraft:blast_protection> * 25,
+  <enchantment:minecraft:fire_protection> * 25,
+  <enchantment:ebwizardry:frost_protection> * 25,  
+  <enchantment:ebwizardry:magic_protection> * 25,
+  <enchantment:ebwizardry:shock_protection> * 25,
+  <enchantment:apotheosis:magic_protection> * 7,
+  <enchantment:openblocks:last_stand> * 2,
+  <enchantment:minecraft:thorns> * 16,
+  <enchantment:apotheosis:icy_thorns> * 8,
+  <enchantment:apotheosis:berserk> * 7,
+  <enchantment:openblocks:explosive> * 3,
+  <enchantment:tombstone:blessing> * 1,
+  <enchantment:apotheosis:rebounding> * 21,
+  <enchantment:advancedrocketry:spacebreathing> * 20,
+  <enchantment:minecraft:binding_curse> * 1,
+  <enchantment:enderio:repellent> * 20 // Broken
+] as IEnchantment[];
+
+add_enchants(<minecraft:armor_stand>.withDisplayName("§fArmour Enchants"), armour_enchants);
+var armour_enchants_description = "Armour Enchants:" as string;
+for enchant in armour_enchants {
+  bookTooltips(enchant);
+  armour_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, armour_enchants_description);
+
+
+val helmet_enchants = [
+  <enchantment:minecraft:respiration> * 18,
+  <enchantment:minecraft:aqua_affinity> * 1,
+  <enchantment:astralsorcery:enchantment.as.nightvision> * 20,
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_helmet>.withDisplayName("§fHelmet Enchants"), helmet_enchants);
+var helmet_enchants_description = "Helmet Enchants:" as string;
+for enchant in helmet_enchants {
+  bookTooltips(enchant);
+  helmet_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, helmet_enchants_description);
+
+
+val chestplate_enchants = [
+  <enchantment:cyclicmagic:enchantment.reach> * 18,
+  <enchantment:tombstone:curse_of_bones> * 3
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_chestplate>.withDisplayName("§fChestplate Enchants"), chestplate_enchants);
+var chestplate_enchants_description = "Chestplate Enchants:" as string;
+for enchant in chestplate_enchants {
+  bookTooltips(enchant);
+  chestplate_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, chestplate_enchants_description);
+
+
+val boot_enchants = [
+  <enchantment:minecraft:feather_falling> * 33,
+  <enchantment:minecraft:depth_strider> * 19,
+  <enchantment:minecraft:frost_walker> * 19,
+  <enchantment:cyclicmagic:enchantment.waterwalking> * 18,
+  <enchantment:apotheosis:stable_footing> * 1,  
+  <enchantment:cyclicmagic:enchantment.launch> * 18,
+  <enchantment:tombstone:shadow_step> * 17
+] as IEnchantment[];
+
+add_enchants(<minecraft:diamond_boots>.withDisplayName("§fBoot Enchants"), boot_enchants);
+var boot_enchants_description = "Boot Enchants:" as string;
+for enchant in boot_enchants {
+  bookTooltips(enchant);
+  boot_enchants_description += "\n" ~ enchant.displayName ~ "§r";
+}
+addDescription(ench_desc_items, boot_enchants_description);
 
 
 ##########################################################################################
-print("==================== end of jei.zs ====================");
+print("==================== end of jei_requious.zs ====================");

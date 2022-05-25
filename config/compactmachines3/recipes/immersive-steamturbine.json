@@ -1,0 +1,221 @@
+{
+    "name": "cm3immersive:steamturbine",
+  
+    "disabled": false,
+  
+    "target-item": "immersivetech:metal_multiblock",
+    "target-count": 1,
+     "target-meta": 3,
+
+    "duration": 200,
+    "symmetrical": true,
+  
+    "catalyst": "contenttweaker:purpleprint",
+    "catalyst-meta": 0,
+    
+    "input-types": {
+        "a": {
+          "id": "immersiveengineering:metal_device1",
+          "meta": 6
+        },
+        "b": {
+          "id": "immersiveengineering:sheetmetal",
+          "meta": 8
+        },
+        "c": {
+          "id": "immersiveengineering:metal_decoration0",
+          "meta": 5
+        },
+        "d": {
+          "id": "immersiveengineering:metal_decoration1",
+          "meta": 1
+        },
+        "e": {
+          "id": "immersiveengineering:metal_decoration0",
+          "meta": 7
+        },
+        "f": {
+          "id": "immersiveengineering:storage",
+          "meta": 8
+        },
+        "g": {
+          "id": "immersiveengineering:metal_decoration0",
+          "meta": 3
+        }
+      },
+      "input-nbt": {
+        "a:A": {
+          "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:5b}"
+        },
+        "a:B": {
+          "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:34b}"
+        },
+        "a:C": {
+          "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:48b}"
+        },
+        "a:D": {
+          "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:16b}"
+        },
+        "a:E": {
+          "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:0b}"
+        },
+        "a:F": {
+          "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:8b}"
+        }
+      },
+      "shape": [
+        [
+          [
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_"
+          ],
+          [
+            "_",
+            "_",
+            "_",
+            "a:E",
+            "e",
+            "e",
+            "e",
+            "e",
+            "_",
+            "_"
+          ],
+          [
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_",
+            "_"
+          ]
+        ],
+        [
+          [
+            "_",
+            "_",
+            "b",
+            "c",
+            "_",
+            "c",
+            "b",
+            "b",
+            "c",
+            "_"
+          ],
+          [
+            "a:F",
+            "_",
+            "b",
+            "c",
+            "_",
+            "c",
+            "b",
+            "b",
+            "c",
+            "_"
+          ],
+          [
+            "a:A",
+            "_",
+            "b",
+            "c",
+            "_",
+            "c",
+            "b",
+            "b",
+            "c",
+            "_"
+          ]
+        ],
+        [
+          [
+            "g",
+            "b",
+            "b",
+            "c",
+            "_",
+            "c",
+            "b",
+            "b",
+            "c",
+            "_"
+          ],
+          [
+            "f",
+            "f",
+            "f",
+            "f",
+            "f",
+            "f",
+            "f",
+            "f",
+            "f",
+            "f"
+          ],
+          [
+            "a:B",
+            "a:C",
+            "a:D",
+            "c",
+            "_",
+            "c",
+            "b",
+            "b",
+            "c",
+            "_"
+          ]
+        ],
+        [
+          [
+            "d",
+            "b",
+            "b",
+            "c",
+            "_",
+            "c",
+            "b",
+            "b",
+            "c",
+            "_"
+          ],
+          [
+            "d",
+            "b",
+            "b",
+            "c",
+            "_",
+            "c",
+            "b",
+            "b",
+            "c",
+            "_"
+          ],
+          [
+            "d",
+            "b",
+            "b",
+            "c",
+            "_",
+            "c",
+            "b",
+            "b",
+            "c",
+            "_"
+          ]
+        ]
+      ]
+    
+  }
