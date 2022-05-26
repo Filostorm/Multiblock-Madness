@@ -158,7 +158,10 @@ var simpleItems = [
 	//Custom Embers Aspecti
 	"aspectus_gold",
 	"aspectus_tin",
-	"aspectus_nickel"
+	"aspectus_nickel",
+
+	//Pearl Mote
+	"primordial_mote",
 ] as string[];
 
 for item in simpleItems {

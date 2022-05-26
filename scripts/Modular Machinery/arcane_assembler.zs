@@ -32,9 +32,9 @@ import crafttweaker.liquid.ILiquidStack;
 
 //Blueprint Recipe//
 recipes.addShaped("blueprint_arcaneassembler", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:arcane-assembler"}), 
-	[[<ore:paperBlack>, <thaumcraft:metal_alchemical_advanced>, <ore:paperBlack>], 
+	[[<ore:paperBlack>, <thaumcraft:metal_alchemical>, <ore:paperBlack>], 
 	[<thaumicenergistics:essentia_component_4k>, <ore:paperBlack>, <thaumicenergistics:essentia_component_4k>], 
-	[<ore:paperBlack>, <thaumcraft:metal_alchemical_advanced>, <ore:paperBlack>]]
+	[<ore:paperBlack>, <thaumcraft:metal_alchemical>, <ore:paperBlack>]]
 );
 
 //Multiplies Crystal Fluid amount used in all recipes
@@ -97,7 +97,8 @@ var complexMechanism = <thaumcraft:mechanism_complex>;
 var wardingSigil = <thaumicaugmentation:material:1>;
 var essentiaFilter = <thaumcraft:filter>;
 var rareEarths = <thaumcraft:nugget:10>;
-var primordialPearl = <thaumcraft:primordial_pearl:7>;
+var primordialPearl = <thaumcraft:primordial_pearl>;
+var primordialMote = <contenttweaker:primordial_mote>;
 var alchConstruct = <thaumcraft:metal_alchemical>;
 var visResonator = <thaumcraft:vis_resonator>;
 var essentiaTube = <thaumcraft:tube>;
@@ -120,6 +121,9 @@ Mixer.addRecipe(<liquid:crystal_water>*(n/2), water*n, [<thaumcraft:salis_mundus
 Enricher.addRecipe(<thaumcraft:salis_mundus>, water*n, <liquid:crystal_water>*(n/2));
 }
 
+
+##Split the Pearl
+MMArcaneAssembler("primordial_mote", primordialMote*8, [primordialPearl], [], 20);
 
 
 //Thaumcraft (mostly)
@@ -219,7 +223,7 @@ MMArcaneAssembler("tadd_adaminite_smelter", <thaumadditions:adaminite_smelter>, 
 MMArcaneAssembler("tadd_mithminite_smelter", <thaumadditions:mithminite_smelter>, [<thaumadditions:adaminite_smelter>, <thaumcraft:metal_alchemical_advanced>, <thaumadditions:mithminite_plate>*5], ["plateBrass-2"], 1500);
 
 ##Advanced Alchemical Construct
-MMArcaneAssembler("thaum_adv_alch_construct", <thaumcraft:metal_alchemical_advanced>, [alchConstruct*2, primordialPearl], ["plateVoid-2"], 200);
+MMArcaneAssembler("thaum_adv_alch_construct", <thaumcraft:metal_alchemical_advanced>, [alchConstruct*2, primordialMote], ["plateVoid-2"], 200);
 
 ##Smeltery Aux Augments
 MMArcaneAssembler("thaum_aux_slurry_pump", <thaumcraft:smelter_aux>, [plankGreatwood*2, alchConstruct, <thaumcraft:tube_filter>, <thaumcraft:bellows>], ["plateBrass-2", "plateIron-2"], 100);
