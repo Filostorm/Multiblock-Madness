@@ -1,0 +1,116 @@
+{
+  "name": "cm3immersive:meltingcrucible",
+
+  "disabled": false,
+
+  "target-item": "immersivetech:metal_multiblock1",
+  "target-count": 1,
+   "target-meta": 8,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "contenttweaker:purpleprint",
+  "catalyst-meta": 0,
+  
+  "input-types": {
+    "a": {
+      "id": "immersiveengineering:sheetmetal_slab",
+      "meta": 8
+    },
+    "b": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 4
+    },
+    "c": {
+      "id": "immersivetech:metal_barrel",
+      "meta": 2
+    },
+    "d": {
+      "id": "immersiveengineering:metal_decoration1",
+      "meta": 1
+    },
+    "e": {
+      "id": "immersiveengineering:metal_device1",
+      "meta": 1
+    },
+    "f": {
+      "id": "immersiveengineering:metal_decoration0",
+      "meta": 3
+    },
+    "g": {
+      "id": "immersiveengineering:metal_device1",
+      "meta": 6
+    }
+  },
+  "input-nbt": {
+    "a:A": {
+      "nbt": "{ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:ieslab\",slabType:0}"
+    },
+    "c:A": {
+      "nbt": "{sideConfig:[I;1,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersivetech:barrelsteel\",tank:{Empty:\"\"}}"
+    },
+    "e:A": {
+      "nbt": "{ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},facing:2,active:0b,ifluxEnergy:0,id:\"immersiveengineering:furnaceheater\"}"
+    },
+    "g:A": {
+      "nbt": "{sideConfig:[I;0,0,0,0,0,0],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"immersiveengineering:fluidpipe\",connections:0b}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "a:A",
+        "a:A"
+      ],
+      [
+        "_",
+        "a:A",
+        "a:A"
+      ]
+    ],
+    [
+      [
+        "f",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "c:A",
+        "c:A"
+      ],
+      [
+        "b",
+        "c:A",
+        "c:A"
+      ]
+    ],
+    [
+      [
+        "d",
+        "g:A",
+        "d"
+      ],
+      [
+        "d",
+        "e:A",
+        "d"
+      ],
+      [
+        "b",
+        "d",
+        "d"
+      ]
+    ]
+  ]
+
+
+
+}
