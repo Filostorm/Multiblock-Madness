@@ -265,3 +265,12 @@ requious.jei.recipe.refraction_table=Stellar Refraction Table
 requious.jei.recipe.apotheosis_enchants=Highest Level Enchants
 
 material.Dilithium.name=Dilithium
+
+
+item.contenttweaker.inactive_cloaking_device.name=Inactive Cloaking Device
+item.contenttweaker.inactive_lapotronic_orb.name=Inactive Lapotronic Orb
+item.contenttweaker.inactive_lapotron_crystal.name=Inactive Lapotron Crystal
+item.contenttweaker.inactive_energy_crystal.name=Inactive Energy Crystal
+item.contenttweaker.inactive_lithium_battery.name=Inactive Lithium Battery
+item.contenttweaker.inactive_trbattery.name=Inactive Battery
+item.contenttweaker.inactive_energy_tablet.name=Inactive Energy Tablet

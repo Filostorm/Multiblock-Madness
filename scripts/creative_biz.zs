@@ -281,7 +281,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:resource:5>, [
 	[null, null, null, <extendedcrafting:singularity_custom:8>, <ore:blockFiery>, <extendedcrafting:singularity_custom:10>, null, null, null], 
 	[null, null, <extendedcrafting:singularity_custom:1>, null, <avaritia:endest_pearl>, null, <extendedcrafting:singularity_custom:2>, null, null], 
 	[null, <extendedcrafting:singularity_custom:3>, null, null, <ore:CelestialCrystal>, null, null, <extendedcrafting:singularity_custom:11>, null], 
-	[null, null, null, null, <techreborn:cloakingdevice>, null, null, null, null]
+	[null, null, null, null, <ore:cloakingDeviceReplacement>, null, null, null, null]
 ]);
 
 // AR Creative Power Plug

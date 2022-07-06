@@ -162,6 +162,15 @@ var simpleItems = [
 
 	//Pearl Mote
 	"primordial_mote",
+
+	//Fake Batteries
+	"inactive_cloaking_device",
+	"inactive_trbattery",
+	"inactive_lithium_battery",
+	"inactive_energy_tablet",
+	"inactive_lapotronic_orb",
+	"inactive_energy_crystal",
+	"inactive_lapotron_crystal",
 ] as string[];
 
 for item in simpleItems {

@@ -253,5 +253,21 @@ for item in hiddenGlass {
 
 <ore:blockGlassHardened>.add(<thermalfoundation:glass:3>);
 
+//TSN880's Techreborn battery oredicts
+<ore:energyCrystalReplacement>.add(<techreborn:energycrystal>);
+<ore:energyCrystalReplacement>.add(<contenttweaker:inactive_energy_crystal>);
+<ore:cloakingDeviceReplacement>.add(<techreborn:cloakingdevice>);
+<ore:cloakingDeviceReplacement>.add(<contenttweaker:inactive_cloaking_device>);
+<ore:lapotronCrystalReplacement>.add(<techreborn:lapotroncrystal>);
+<ore:lapotronCrystalReplacement>.add(<contenttweaker:inactive_lapotron_crystal>);
+<ore:lapotronicOrbReplacement>.add(<techreborn:lapotronicorb>);
+<ore:lapotronicOrbReplacement>.add(<contenttweaker:inactive_lapotronic_orb>);
+<ore:trbatteryReplacement>.add(<techreborn:rebattery>);
+<ore:trbatteryReplacement>.add(<contenttweaker:inactive_trbattery>);
+<ore:lithiumBatteryReplacement>.add(<techreborn:lithiumbattery>);
+<ore:lithiumBatteryReplacement>.add(<contenttweaker:inactive_lithium_battery>);
+<ore:mekTabletReplacement>.add(<mekanism:energytablet>);
+<ore:mekTabletReplacement>.add(<contenttweaker:inactive_energy_tablet>);
+
 ##########################################################################################
 print("==================== end of ore_dic.zs ====================");

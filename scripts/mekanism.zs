@@ -435,7 +435,7 @@ craft.remake(<mekanism:energycube>.withTag({tier: 0}), ["pretty",
   "п ⌂ п",
   "□ b □"], {
   "□": <ore:plateRestonia>,                  # Restonia Plate
-  "b": <ore:battery>,                        # Energy Tablet
+  "b": <ore:mekTabletReplacement>,                        # Energy Tablet
   "п": <contenttweaker:plate_thermal_alloy>, # Fluid Enriched Alloy Plate
   "⌂": <mekanism:basicblock:8>,              # Steel Casing
 });
@@ -459,7 +459,7 @@ craft.remake(<mekanism:machineblock3:4>, ["pretty",
   "□": <ore:plateRestonia>,      # Restonia Plate
   "S": <mekanism:basicblock2:5>, # Superheating Element
   "¤": <ore:gearTin>,            # Tin Gear
-  "b": <ore:battery>,            # Energy Tablet
+  "b": <ore:mekTabletReplacement>,            # Energy Tablet
 });
 
 # [Formulaic Assemblicator] from [Simple Machine Chassis][+4]
@@ -581,7 +581,7 @@ craft.remake(<mekanismgenerators:generator:9>, ["pretty",
   "□ п □"], {
   "□": <contenttweaker:plate_mek_alloy>, # Heavy Alloy Plate
   "п": <ore:plateTinite>,                # Tinite Plate
-  "b": <ore:battery>,                    # Energy Tablet
+  "b": <ore:mekTabletReplacement>,                    # Energy Tablet
 });
 
 # [Pressure Disperser] from [Dense Component][+2]
@@ -624,7 +624,7 @@ craft.remake(<mekanism:machineblock2:13>, ["pretty",
   "D ⌂ L",
   "D b  "], {
   "D": <contenttweaker:component_mek_alloy>, # Dense Component
-  "b": <ore:battery>,                        # Energy Tablet
+  "b": <ore:mekTabletReplacement>,                        # Energy Tablet
   "⌂": <mekanism:basicblock:8>,              # Steel Casing
   "L": <ore:etLaserLens>,                    # Clear Laser Lens
 });
@@ -654,10 +654,17 @@ craft.remake(<mekanism:portableteleporter>, ["pretty",
   "  b  ",
   "E T E",
   "  b  "], {
-  "b": <ore:battery>,                # Energy Tablet
+  "b": <ore:mekTabletReplacement>,                # Energy Tablet
   "E": <ore:circuitElite>,           # Elite Control Circuit
   "T": <mekanism:teleportationcore>, # Teleportation Core
 });
+
+//Energy tablet replacement
+recipes.replaceAllOccurences(<mekanism:energytablet>, <ore:mekTabletReplacement>);
+recipes.remove(<mekanism:energytablet>);
+recipes.addShaped("mektabletreplacement", <contenttweaker:inactive_energy_tablet>, [[<ore:dustRedstone>, <ore:ingotGold>, <ore:dustRedstone>], [<mekanism:enrichedalloy>, <ore:ingotGold>, <mekanism:enrichedalloy>], [<ore:dustRedstone>, <ore:ingotGold>, <ore:dustRedstone>]]);
+recipes.addShapeless(<mekanism:energytablet>, [<contenttweaker:inactive_energy_tablet>]);
+recipes.addShapeless(<contenttweaker:inactive_energy_tablet>, [<mekanism:energytablet>]);
 
 ##########################################################################################
 print("==================== end of mekanism.zs ====================");

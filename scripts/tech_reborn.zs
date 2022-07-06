@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.actuallyadditions.Empowerer;
 import mods.techreborn.extractor;
 import mods.techreborn.wireMill;
@@ -218,7 +219,7 @@ recipes.addShaped(<techreborn:industrial_grinder>, [[<moreplates:osmium_plate>, 
 recipes.addShaped(<techreborn:fluid_replicator>, [[<techreborn:plates:33>, <techreborn:part>, <techreborn:plates:33>],[<techreborn:part>, <techreborn:machine_frame:2>, <techreborn:part>], [<techreborn:part:17>, <techreborn:industrial_electrolyzer>, <techreborn:part:17>]]);
 
 //Rockcutter
-recipes.addShaped(<techreborn:rockcutter>.withTag({ench: [{lvl: 1 as short, id: 33 as short}], energy: 0}), [[<mekanism:otherdust>, <techreborn:ingot:19>, null],[<mekanism:otherdust>, <techreborn:ingot:19>, null], [<mekanism:otherdust>, <ore:circuitBasic>, <techreborn:rebattery>]]);
+recipes.addShaped(<techreborn:rockcutter>.withTag({ench: [{lvl: 1 as short, id: 33 as short}], energy: 0}), [[<mekanism:otherdust>, <techreborn:ingot:19>, null],[<mekanism:otherdust>, <techreborn:ingot:19>, null], [<mekanism:otherdust>, <ore:circuitBasic>, <ore:trbatteryReplacement>]]);
 
 //Overclocker
 recipes.addShaped(<techreborn:upgrades>, [[null, <techreborn:part:38>, null], [<techreborn:cable:6>, <ore:circuitElite>, <techreborn:cable:6>]]);
@@ -318,8 +319,15 @@ Centrifuge.addRecipe([<rockhounding_chemistry:chemical_dusts:44> % 100, <nuclear
 fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidheliumplasma", Amount: 1000}}));
 fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidhelium3", Amount: 1000}}));
 
+val heliumCells as IIngredient = (
+<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "helium", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "helium", Amount: 1000}}) | 
+<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "liquid_helium", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "liquid_helium", Amount: 1000}}) |
+<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "helium_3", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "helium_3", Amount: 1000}})
+) as IIngredient;
+
 // More Helium
-recipes.addShaped(<techreborn:part:7>, [[null, <thermalfoundation:material:129>, null],[<thermalfoundation:material:129>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "helium", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "helium", Amount: 1000}}), <thermalfoundation:material:129>], [null, <thermalfoundation:material:129>, null]]);
+recipes.addShaped(<techreborn:part:7>, [[null, <thermalfoundation:material:129>, null],[<thermalfoundation:material:129>, heliumCells, <thermalfoundation:material:129>], [null, <thermalfoundation:material:129>, null]]);
+
 
 scrapbox.addScrapboxDrop(<jaopca:item_dusttinyiridium>);
 scrapbox.removeRecipe(<thermalfoundation:material:199>);
@@ -398,6 +406,56 @@ mods.techreborn.implosionCompressor.addRecipe(<techreborn:plates:38>, <techrebor
 
 //For making the Infinity Catlysts
 <techreborn:cloakingdevice>.maxStackSize = 64;
+
+//Techreborn nbtless item replacement
+recipes.replaceAllOccurences(<techreborn:rebattery>, <ore:trbatteryReplacement>);
+recipes.replaceAllOccurences(<techreborn:lithiumbattery>, <ore:lithiumBatteryReplacement>);
+recipes.replaceAllOccurences(<techreborn:energycrystal>, <ore:energyCrystalReplacement>);
+recipes.replaceAllOccurences(<techreborn:lapotroncrystal>, <ore:lapotronCrystalReplacement>);
+recipes.replaceAllOccurences(<techreborn:cloakingdevice>, <ore:cloakingDeviceReplacement>);
+recipes.replaceAllOccurences(<techreborn:lapotronicorb>, <ore:lapotronicOrbReplacement>);
+
+########################################################
+##############  Nbtless item recipe replace  ###########
+########################################################
+
+//Techreborn Battery
+recipes.remove(<techreborn:rebattery>);
+recipes.addShaped("trbatteryreplacement", <contenttweaker:inactive_trbattery>, [[null, <techreborn:cable:5>, null], [<ore:ingotTin>, <ore:dustRedstone>, <ore:ingotTin>], [<ore:ingotTin>, <ore:dustRedstone>, <ore:ingotTin>]]);
+recipes.addShapeless(<techreborn:rebattery>.withTag({energy: 0}), [<contenttweaker:inactive_trbattery>]);
+recipes.addShapeless(<contenttweaker:inactive_trbattery>, [<techreborn:rebattery>]);
+
+//Techreborn Lithium Battery
+recipes.remove(<techreborn:lithiumbattery>);
+recipes.addShaped("trlithiumbatteryreplacement", <contenttweaker:inactive_lithium_battery>, [[null, <techreborn:cable:6>, null], [<ore:plateAluminum>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidlithium", Amount: 1000}}), <ore:plateAluminum>], [<ore:plateAluminum>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidlithium", Amount: 1000}}), <ore:plateAluminum>]]);
+recipes.addShapeless(<techreborn:lithiumbattery>.withTag({energy: 0}), [<contenttweaker:inactive_lithium_battery>]);
+recipes.addShapeless(<contenttweaker:inactive_lithium_battery>, [<techreborn:lithiumbattery>]);
+
+//Techreborn Energy Crystal
+recipes.remove(<techreborn:energycrystal>);
+recipes.addShaped("trenergycrystalreplacement", <contenttweaker:inactive_energy_crystal>, [[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>], [<ore:dustRedstone>, <ore:gemDiamond>, <ore:dustRedstone>], [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]]);
+recipes.addShaped("trenergycrystalreplacement2", <contenttweaker:inactive_energy_crystal>, [[<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>], [<ore:dustRedstone>, <ore:gemRuby>, <ore:dustRedstone>], [<ore:dustRedstone>, <ore:dustRedstone>, <ore:dustRedstone>]]);
+recipes.addShapeless(<techreborn:energycrystal>.withTag({energy: 0}), [<contenttweaker:inactive_energy_crystal>]);
+recipes.addShapeless(<contenttweaker:inactive_energy_crystal>, [<techreborn:energycrystal>]);
+
+//Techreborn Lapotronic Crystal
+recipes.remove(<techreborn:lapotroncrystal>);
+recipes.addShaped("trlapotroncrystalreplacement", <contenttweaker:inactive_lapotron_crystal>, [[<minecraft:dye:4>, <ore:circuitBasic>, <minecraft:dye:4>], [<minecraft:dye:4>, <ore:energyCrystalReplacement>, <minecraft:dye:4>], [<minecraft:dye:4>, <ore:circuitBasic>, <minecraft:dye:4>]]);
+recipes.addShaped("trlapotroncrystalreplacement2", <contenttweaker:inactive_lapotron_crystal>, [[<minecraft:dye:4>, <ore:circuitBasic>, <minecraft:dye:4>], [<minecraft:dye:4>, <ore:gemSapphire>, <minecraft:dye:4>], [<minecraft:dye:4>, <ore:circuitBasic>, <minecraft:dye:4>]]);
+recipes.addShapeless(<techreborn:lapotroncrystal>.withTag({energy: 0}), [<contenttweaker:inactive_lapotron_crystal>]);
+recipes.addShapeless(<contenttweaker:inactive_lapotron_crystal>, [<techreborn:lapotroncrystal>]);
+
+//Techreborn Lapotronic Orb
+recipes.remove(<techreborn:lapotronicorb>);
+recipes.addShaped("trlapotronicorbreplacement", <contenttweaker:inactive_lapotronic_orb>, [[<ore:lapotronCrystalReplacement>, <ore:lapotronCrystalReplacement>, <ore:lapotronCrystalReplacement>], [<ore:lapotronCrystalReplacement>, <ore:plateIridiumAlloy>, <ore:lapotronCrystalReplacement>], [<ore:lapotronCrystalReplacement>, <ore:lapotronCrystalReplacement>, <ore:lapotronCrystalReplacement>]]);
+recipes.addShapeless(<techreborn:lapotronicorb>.withTag({energy: 0}), [<contenttweaker:inactive_lapotronic_orb>]);
+recipes.addShapeless(<contenttweaker:inactive_lapotronic_orb>, [<techreborn:lapotronicorb>]);
+
+//Techreborn Cloaking Device
+recipes.remove(<techreborn:cloakingdevice>);
+recipes.addShaped("trcloakingdevicereplacement", <contenttweaker:inactive_cloaking_device>, [[<ore:ingotChrome>, <ore:plateIridiumAlloy>, <ore:ingotChrome>], [<ore:plateIridiumAlloy>, <ore:lapotronicOrbReplacement>, <ore:plateIridiumAlloy>], [<ore:ingotChrome>, <ore:plateIridiumAlloy>, <ore:ingotChrome>]]);
+recipes.addShapeless(<techreborn:cloakingdevice>.withTag({energy: 0}), [<contenttweaker:inactive_cloaking_device>]);
+recipes.addShapeless(<contenttweaker:inactive_cloaking_device>, [<techreborn:cloakingdevice>]);
 
 # [Quantum Tank] from [Basic Tank][+4]
 craft.remake(<techreborn:quantum_tank>, ["pretty",

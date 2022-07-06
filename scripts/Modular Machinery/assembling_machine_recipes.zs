@@ -251,7 +251,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkone" + "_energy_flow_
 	.addEnergyPerTickInput(5000)
 	.addItemOutput(<techreborn:part>)
 	.addItemInput(<techreborn:part:43>)
-	.addItemInput(<techreborn:lapotroncrystal>)
+	.addItemInput(<contenttweaker:inactive_lapotron_crystal>)
 	.build();
 
 // Data Orb
@@ -1107,7 +1107,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_highly_adv
 // Lapotron Crystal
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_lapotron_crystal", "assemblermkthree", 50)
 	.addEnergyPerTickInput(120000)
-	.addItemOutput(<techreborn:lapotroncrystal>*4)
+	.addItemOutput(<contenttweaker:inactive_lapotron_crystal>*4)
 	.addItemInput(<contenttweaker:lazurite_gem>)
 	.addItemInput(<ore:circuitAdvanced>)
 	.addFluidInput(<liquid:lapis>*4000)
@@ -1116,7 +1116,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_lapotron_c
 // Lapotronic Energy Orb
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_lapotronic_energy_orb", "assemblermkthree", 100)
 	.addEnergyPerTickInput(240000)
-	.addItemOutput(<techreborn:lapotronicorb>*4)
+	.addItemOutput(<contenttweaker:inactive_lapotronic_orb>*4)
 	.addItemInput(<ore:lapotronCrystal>,8)
 	.addItemInput(<ore:plateiridiumAlloy>)
 	.addFluidInput(<liquid:lapis>*8000)
@@ -1324,7 +1324,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_energy_flow
 	.addEnergyPerTickInput(1600000)
 	.addItemOutput(<techreborn:part>)
 	.addItemInput(<techreborn:part:43>)
-	.addItemInput(<techreborn:lapotroncrystal>)
+	.addItemInput(<contenttweaker:inactive_lapotron_crystal>)
 	.build();
 
 // Data Orb
@@ -1830,7 +1830,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_component_m
 // Lapotronic Energy Orb
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_lapotronic_energy_orb", "assemblermkfour", 12)
 	.addEnergyPerTickInput(1920000)
-	.addItemOutput(<techreborn:lapotronicorb>*4)
+	.addItemOutput(<contenttweaker:inactive_lapotronic_orb>*4)
 	.addItemInput(<ore:lapotronCrystal>,8)
 	.addItemInput(<ore:plateiridiumAlloy>)
 	.addFluidInput(<liquid:lapis>*8000)
