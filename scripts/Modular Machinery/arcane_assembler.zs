@@ -15,20 +15,26 @@ import crafttweaker.liquid.ILiquidStack;
 <thaumadditions:mithminite_block>.addTooltip(format.darkAqua("Arcane Assembler Modifier: -30% Fluid Use & Recipe Time"));
 
 // Warded Block Breaking Tooltip //
-<thaumicaugmentation:material:1>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to remove"));
-<thaumicaugmentation:arcane_trapdoor_wood>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:arcane_trapdoor_metal>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:arcane_trapdoor_silverwood>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:warded_button_silverwood>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:warded_button_greatwood>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:warded_button_arcane_stone>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:warded_pressure_plate_greatwood>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:warded_pressure_plate_silverwood>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:warded_pressure_plate_arcane_stone>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:arcane_door>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:arcane_door:1>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:arcane_door:2>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
-<thaumicaugmentation:warded_chest>.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
+val wardedBlocks = [
+	<thaumicaugmentation:material:1>,
+	<thaumicaugmentation:arcane_trapdoor_wood>,
+	<thaumicaugmentation:arcane_trapdoor_metal>,
+	<thaumicaugmentation:arcane_trapdoor_silverwood>,
+	<thaumicaugmentation:warded_button_silverwood>,
+	<thaumicaugmentation:warded_button_greatwood>,
+	<thaumicaugmentation:warded_button_arcane_stone>,
+	<thaumicaugmentation:warded_pressure_plate_greatwood>,
+	<thaumicaugmentation:warded_pressure_plate_silverwood>,
+	<thaumicaugmentation:warded_pressure_plate_arcane_stone>,
+	<thaumicaugmentation:arcane_door>,
+	<thaumicaugmentation:arcane_door:1>,
+	<thaumicaugmentation:arcane_door:2>,
+	<thaumicaugmentation:warded_chest>
+] as IItemStack[];
+
+for block in wardedBlocks {
+	block.addTooltip(format.gold("Shift-Click with a Caster's Gauntlet to break"));
+}
 
 //Blueprint Recipe//
 recipes.addShaped("blueprint_arcaneassembler", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:arcane-assembler"}), 
@@ -156,7 +162,7 @@ MMArcaneAssembler("thaum_revealing_goggles", <thaumcraft:goggles>, [<minecraft:l
 MMArcaneAssembler("thaum_blank_control_seal", <thaumcraft:seal>*3, [<minecraft:clay_ball>, <thaumcraft:tallow>], ["dyeRed-1", "nitor-1"], 20);
 
 ##Vision Module
-MMArcaneAssembler("thaum_vision_module", <thaumcraft:module:0>, [<minecraft:glass_bottle>, <minecraft:fermented_spider_eye>, simpleMechanism], ["plateBrass-2"], 50);
+MMArcaneAssembler("thaum_vision_module", <thaumcraft:module:0>, [<minecraft:glass_bottle>*2, <minecraft:fermented_spider_eye>*2, simpleMechanism], ["plateBrass-2"], 50);
 
 ##Aggression Module
 MMArcaneAssembler("thaum_aggression_module", <thaumcraft:module:1>, [<minecraft:blaze_powder>, simpleMechanism], ["paneGlass-3", "plateBrass-2"], 50);
@@ -246,7 +252,7 @@ MMArcaneAssembler("thaum_mnemonic_matrix", <thaumcraft:brain_box>, [<thaumcraft:
 MMArcaneAssembler("thaum_clockwork_mind", <thaumcraft:mind>, [simpleMechanism, <minecraft:comparator>], ["paneGlass-3", "plateBrass-2"], 25);
 
 ##Vis Battery
-MMArcaneAssembler("thaum_vis_battery", <thaumcraft:vis_battery>, [<thaumcraft:slab_arcane_stone>*8, visResonator], [], 50);
+MMArcaneAssembler("thaum_vis_battery", <thaumcraft:vis_battery>, [<thaumcraft:slab_arcane_stone>*8, visResonator, <libvulpes:battery:0>], [], 50);
 
 ##Vis Generator
 MMArcaneAssembler("thaum_vis_generator", <thaumcraft:vis_generator>, [<minecraft:redstone>, rareEarths*2, <minecraft:piston>, visResonator], ["plankWood-4"], 25);
@@ -302,8 +308,8 @@ MMArcaneAssembler("taug_vis_regen_lattice", <thaumicaugmentation:material:0>, [p
 ##Impetus Tech
 MMArcaneAssembler("taug_impetus_relay", <thaumicaugmentation:impetus_relay>, [impetusJewel, <embers:ember_relay>], ["plateVoid-1"], 25);
 MMArcaneAssembler("taug_impetus_gate", <thaumicaugmentation:impetus_gate>, [wardingSigil, <thaumicaugmentation:impetus_relay>, <minecraft:comparator>], ["plateVoid-2"], 100);
-MMArcaneAssembler("taug_impetus_drainer", <thaumicaugmentation:impetus_drainer>, [impetusJewel, stoneEldritch*2, <minecraft:iron_bars>], ["plateVoid-4", "ingotVoid-1"], 50);
-MMArcaneAssembler("taug_impetus_diffuser", <thaumicaugmentation:impetus_diffuser>, [impetusJewel, stoneArcane*2], ["plateIron-2", "plateVoid-2"], 50);
+MMArcaneAssembler("taug_impetus_drainer", <thaumicaugmentation:impetus_drainer>, [impetusJewel, stoneEldritch*2, <minecraft:iron_bars>], ["plateVoid-4", "blockVoid-1"], 50);
+MMArcaneAssembler("taug_impetus_diffuser", <thaumicaugmentation:impetus_diffuser>, [impetusJewel, stoneArcane*2], ["plateIron-2", "plateVoid-3"], 50);
 MMArcaneAssembler("taug_impetus_generator", <thaumicaugmentation:impetus_generator>, [stoneEldritch*4, <minecraft:redstone>, rareEarths*2, <minecraft:piston>, impetusJewel], [], 100);
 
 ##Void Recharge Pedestal
@@ -336,10 +342,10 @@ MMArcaneAssembler("taug_key_iron", <thaumicaugmentation:key:0>, [zombieBrain], [
 MMArcaneAssembler("tadd_flight_device", <thaumadditions:levitation_device>, [complexMechanism*2, <thaumcraft:levitator>, <thaumcraft:alumentum>], ["plateIron-4", "nitor-1"], 20);
 
 ##Adaminite Fabric
-MMArcaneAssembler("tadd_adaminite_fabric", <thaumadditions:adaminite_fabric>, [<thaumcraft:fabric>*8], ["ingotAdaminite-1"], 200);
+MMArcaneAssembler("tadd_adaminite_fabric", <thaumadditions:adaminite_fabric>*2, [<thaumcraft:fabric>*8], ["ingotAdaminite-1"], 200);
 
 ##Mithminite Fabric
-MMArcaneAssembler("tadd_mithminite_fabric", <thaumadditions:mithminite_fabric>, [<thaumadditions:adaminite_fabric>*4], ["ingotMithminite-1"], 400);
+MMArcaneAssembler("tadd_mithminite_fabric", <thaumadditions:mithminite_fabric>*2, [<thaumadditions:adaminite_fabric>*4], ["ingotMithminite-1"], 400);
 
 ##Disenchant Fabric
 MMArcaneAssembler("tadd_disenchant_fabric", <thaumadditions:disenchant_fabric>, [<thaumcraft:fabric>*4, <thaumcraft:salis_mundus>], [], 150);
@@ -422,7 +428,7 @@ MMArcaneAssembler("thaum_infusionstone_speed", <thaumcraft:matrix_speed>, [stone
 MMArcaneAssembler("thaum_infusionstone_cost", <thaumcraft:matrix_cost>, [stoneArcane*4, <thaumcraft:alumentum>*4], ["blockDiamond-1"], 500);
 
 ##Caster's Gauntlet
-MMArcaneAssembler("thaum_gauntlet", <thaumcraft:caster_basic>, [<minecraft:leather>, visResonator, <thaumcraft:thaumometer>], ["ingotIron-3"], 100);
+MMArcaneAssembler("thaum_gauntlet", <thaumcraft:caster_basic>, [<minecraft:leather>*4, visResonator, <thaumcraft:thaumometer>], ["ingotIron-3"], 100);
 
 ##Essentia Resonator
 MMArcaneAssembler("thaum_essentia_resonator", <thaumcraft:resonator>, [getVisCrystal("ordo")], ["plateIron-4", "gemQuartz-1", "stickWood-1"], 50);
@@ -526,7 +532,7 @@ for modifier in taugModifiers {
 }
 
 ##Vis Battery Aug
-MMArcaneAssembler("taug_augment_battery", <thaumicaugmentation:augment_vis_battery>, [stoneArcane*4, <thaumcraft:vis_battery>, <thaumcraft:morphic_resonator>*4], [], 50);
+MMArcaneAssembler("taug_augment_battery", <thaumicaugmentation:augment_vis_battery>, [stoneArcane*4, <thaumcraft:vis_battery>*4, <thaumcraft:morphic_resonator>], [], 50);
 
 ##Impetus Conductor
 MMArcaneAssembler("taug_impetus_conductor", <thaumicaugmentation:augment_caster_rift_energy_storage>, [<thaumicaugmentation:material:3>], ["plateThaumium-1"], 25);
@@ -545,7 +551,7 @@ MMArcaneAssembler("taug_impulseaug_burst", <thaumicaugmentation:impulse_cannon_a
 MMArcaneAssembler("taug_celestial_observer", <thaumicaugmentation:celestial_observer_placer>, [<thaumcraft:thaumometer>, <thaumcraft:mind:0>, plankGreatwood*2, simpleMechanism], ["ingotGold-2", "blockGlass-2"], 100);
 
 ##Impetus Resonator
-MMArcaneAssembler("taug_impetus_resonator", <thaumicaugmentation:impetus_linker>, [impetusJewel, getVisCrystal("ordo")], ["plateVoid-3"], 125);
+MMArcaneAssembler("taug_impetus_resonator", <thaumicaugmentation:impetus_linker>, [impetusJewel], ["plateVoid-3", "stickWood-1"], 125);
 
 
 //TAdditions funnies
