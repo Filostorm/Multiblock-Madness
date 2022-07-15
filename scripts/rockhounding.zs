@@ -44,6 +44,8 @@ recipes.addShaped(<rockhounding_chemistry:gasline_duct> * 16, [[<contenttweaker:
 recipes.addShaped(<rockhounding_chemistry:gasline_duct> * 8, [[<rockhounding_chemistry:misc_items:3>, <rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:misc_items:3>],[<rockhounding_chemistry:misc_items:3>, <rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:misc_items:3>], [<rockhounding_chemistry:misc_items:3>, <rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:misc_items:3>]]);
 recipes.addShaped(<rockhounding_chemistry:gasline_pump> * 2, [[<contenttweaker:hastelloyfoil>, <rockhounding_chemistry:misc_items:7>, <contenttweaker:hastelloyfoil>],[<contenttweaker:hastelloyfoil>, <minecraft:piston>, <contenttweaker:hastelloyfoil>], [<contenttweaker:hastelloyfoil>, <minecraft:redstone_block>, <contenttweaker:hastelloyfoil>]]);
 
+//compressing unit stacksize increase
+<rockhounding_chemistry:misc_items:9>.maxStackSize = 64;
 
 //Item Detector
 recipes.remove(<rockhounding_chemistry:misc_items:11>);
@@ -313,6 +315,7 @@ Transposer.add(<liquid:fluegas>*1000, <liquid:flue_gas>*1000);
 Transposer.add(<liquid:flue_gas>*1000, <liquid:fluegas>*1000);
 Transposer.add(<liquid:helium>*1000, <liquid:helium>*1000);
 Transposer.add(<liquid:neon>*1000, <liquid:neon>*1000);
+Transposer.add(<liquid:propylene>*1000, <liquid:propylene>*1000);
 //Transposer.add(<liquid:hydrochloric_acid>*1000, <liquid:hydrogenchloride>*1000); not sure what liquid:hydrogenchloride should be, its not a fluid
 
 

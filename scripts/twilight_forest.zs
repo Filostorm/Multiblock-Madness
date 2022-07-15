@@ -12,6 +12,7 @@ import mods.tcomplement.Overrides;
 import mods.tconstruct.Melting;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.WeightedItemStack;
+import crafttweaker.event.PlayerInteractBlockEvent;
 
 
 print("==================== loading twilight_forest.zs ====================");
@@ -148,5 +149,12 @@ recipes.addShaped(<twilightforest:fiery_pickaxe>, [[<twilightforest:fiery_ingot>
 //transformation_powder
 recipes.addShapeless(<twilightforest:transformation_powder>, [<deepmoblearning:living_matter_twilight>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
 
+
+//Stop Uncrafting Table from working
+events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent) {
+    if (event.block.definition.id == <twilightforest:uncrafting_table>.definition.id) {
+        event.cancel();
+    }
+});
 ##########################################################################################
 print("==================== end of twilight_forest.zs ====================");
