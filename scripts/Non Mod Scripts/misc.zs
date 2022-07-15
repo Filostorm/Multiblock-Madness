@@ -522,7 +522,7 @@ recipes.addShaped(<minecraft:gunpowder> * 15, [[<techreborn:uumatter>, <techrebo
 
 recipes.addShaped(<immersiveengineering:stone_decoration:2>, [[<thermalfoundation:material:352>],[<tcomplement:scorched_block:3>], [<embers:shard_ember>]]);
 
-recipes.addShapeless(<minecraft:paper> * 3, [<questbook:itemquestbook>]);
+recipes.addShapeless(<minecraft:paper> * 3, [<betterquesting:quest_book>]);
 
 //recipes.remove(<thermalexpansion:reservoir>);
 //recipes.addShaped(<thermalexpansion:reservoir>, [[null, <thermalfoundation:material:321>, null],[<thermalfoundation:material:320>, <forge:bucketfilled>.withTag({FluidName: "gold", Amount: 1000}), <thermalfoundation:material:320>], [null, <thermalfoundation:material:512>, null]]);

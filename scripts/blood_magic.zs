@@ -67,24 +67,7 @@ Crucible.registerRecipe("BucketLife", "",
 	[<aspect:victus> * 10, <aspect:mortuus> * 1, <aspect:auram> * 1]
 );
 
-/*
-val bloodOrb = [
-	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}),
-	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}),
-	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}),
-	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}),
-	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}),
-	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}),
-] as IItemStack[];
 
-val bloodOrbLeast = [
-	bloodOrb[0]|bloodOrb[1]|bloodOrb[2]|bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
-	bloodOrb[1]|bloodOrb[2]|bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
-	bloodOrb[2]|bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
-	bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
-	bloodOrb[4]|bloodOrb[5],
-	bloodOrb[5],
-] as IIngredient[];*/
 
 /*
 mods.bloodmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
@@ -354,6 +337,39 @@ craft.remake(<bloodmagic:decorative_brick:1>*2, ["pretty",
 //Brick Swaping
 recipes.addShaped(<bloodmagic:decorative_brick:1> * 4, [[<bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>],[<bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>]]);
 furnace.addRecipe(<bloodmagic:decorative_brick>, <bloodmagic:decorative_brick:1>, 0.0);
+
+val bloodOrb = [
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}),
+] as IItemStack[];
+
+val bloodOrbLeast = [
+	bloodOrb[0]|bloodOrb[1]|bloodOrb[2]|bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
+	bloodOrb[1]|bloodOrb[2]|bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
+	bloodOrb[2]|bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
+	bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
+	bloodOrb[4]|bloodOrb[5],
+	bloodOrb[5],
+] as IIngredient[];
+
+# [Stasis Plate] from [Colored Lens][+3]
+craft.remake(<bloodarsenal:stasis_plate>, ["pretty",
+  "□ □ □",
+  "□ C □",
+  "▬ W ▬"], {
+  "□": <bloodarsenal:base_item:5>,        # Stasis Plate
+  "C": <astralsorcery:itemcoloredlens:3>, # Colored Lens
+  "▬": <ore:ingotBloodInfusedIron>,       # Blood Infused Iron Ingot
+  "W": bloodOrbLeast[3].reuse(), # any of the last 3 tiers of Blood Orb
+});
+
+//Inert Blood-Iron Ingot
+TartaricForge.removeRecipe([<minecraft:iron_ingot>, <bloodarsenal:base_item:2>, <bloodmagic:component:8>, <forge:bucketfilled>.withTag({FluidName: "lifeessence", Amount: 1000})]);
+TartaricForge.addRecipe(<bloodarsenal:base_item:3>,[<ore:ingotRefinedIron>, <contenttweaker:blood_crystal>, <bloodmagic:component:8>, <ore:quartzMana>], 128,32);
 
 ##########################################################################################
 print("==================== end of blood_magic.zs ====================");

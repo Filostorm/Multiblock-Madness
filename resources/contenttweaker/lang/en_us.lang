@@ -95,6 +95,9 @@ fluid.moltentokeniridium=Essence of Tier 6
 fluid.moltentokenultimate=Essence of Tier 7
 fluid.moltentokeninfinity=Essence of Tier 8
 
+fluid.neutronic_matrix=Supercritical Neutronic Matrix
+fluid.incoherent_matrix=Sublimated Incoherent Matrix
+fluid.neutronium=Cosmic Neutronium
 
 item.contenttweaker.compressed_chrome.name=Compressed Chrome
 

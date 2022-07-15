@@ -153,5 +153,38 @@ moltenModularium.luminosity = 15;
 moltenModularium.viscosity = 1000;
 moltenModularium.material = <blockmaterial:lava>;
 moltenModularium.register();
+
+
+
+var neutronicMatrix = VanillaFactory.createFluid("neutronic_matrix", Color.fromHex("2a2b4a"));
+neutronicMatrix.temperature = 1000;
+neutronicMatrix.gaseous = false;
+neutronicMatrix.luminosity = 0;
+neutronicMatrix.viscosity = 1000;
+//neutronicMatrix.stillLocation = "contenttweaker:fluids/condensed_aetherium";
+//neutronicMatrix.flowingLocation = "contenttweaker:fluids/condensed_aetherium";
+neutronicMatrix.material = <blockmaterial:lava>;
+neutronicMatrix.register();
+
+
+var incoherentMatrix = VanillaFactory.createFluid("incoherent_matrix", Color.fromHex("590b5c"));
+incoherentMatrix.temperature = 0;
+incoherentMatrix.gaseous = true;
+incoherentMatrix.luminosity = 15;
+incoherentMatrix.viscosity = 4000;
+//incoherentMatrix.stillLocation = "contenttweaker:fluids/condensed_aetherium";
+//incoherentMatrix.flowingLocation = "contenttweaker:fluids/condensed_aetherium";
+incoherentMatrix.material = <blockmaterial:lava>;
+incoherentMatrix.register();
+
+var neutronium = VanillaFactory.createFluid("neutronium", Color.fromHex("18091c"));
+neutronium.temperature = 10000;
+neutronium.gaseous = false;
+neutronium.luminosity = 15;
+neutronium.viscosity = 100;
+//neutronium.stillLocation = "contenttweaker:fluids/condensed_aetherium";
+//neutronium.flowingLocation = "contenttweaker:fluids/condensed_aetherium";
+neutronium.material = <blockmaterial:lava>;
+neutronium.register();
 ##########################################################################################
 print("==================== end of fluids.zs ====================");

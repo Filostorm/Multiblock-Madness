@@ -8,6 +8,10 @@ import mods.extendedcrafting.CombinationCrafting;
 import mods.actuallyadditions.Empowerer;
 import mods.nuclearcraft.Crystallizer;
 
+import mods.thermalexpansion.Crucible;
+import mods.nuclearcraft.Melter;
+import mods.nuclearcraft.IngotFormer;
+
 print("==================== loading creative biz.zs ====================");
 ##########################################################################################
 

@@ -261,7 +261,7 @@ Infusion.removeRecipe(<thaumadditions:adaminite_ingot>);
 Infusion.registerRecipe("adaminite", "", 
 <thaumadditions:adaminite_ingot>, 10, 
 [<aspect:spiritus>*120, <aspect:victus>*100, <aspect:praecantatio>*100, <aspect:infernum>*100, <aspect:permutatio>*40, <aspect:metallum>*40, <aspect:alkimia>*30, <aspect:draco>*20,<aspect:visum>*20], 
-<thaumadditions:mithrillium_ingot>, 
+<ore:ingotAdamantine>, 
 [<thaumcraft:primordial_pearl>.anyDamage(), <minecraft:nether_star>,
 <thaumcraft:fabric>, <minecraft:nether_star>]);
 

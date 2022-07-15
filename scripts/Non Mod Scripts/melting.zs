@@ -67,6 +67,7 @@ val ingotstoformmap as ILiquidStack[IItemStack] = {
 	<rockhounding_chemistry:alloy_items_tech_b:4>:<liquid:molten_inconel>,
 	<nuclearcraft:alloy:12>:<liquid:molten_zircaloy>,
 	<tcomplement:edibles:30>:<liquid:chocolate_liquor>,
+	<avaritia:resource:4>:<liquid:neutronium>, //Neutronium
 } as ILiquidStack[IItemStack];
 
 for item, liquid in ingotstoformmap {
@@ -407,6 +408,8 @@ val generalmelting as IItemStack[][ILiquidStack] = {
 	<liquid:bloodbronze>:[null, <bloodtinker:blood_bronze_ingot>, null, <bloodtinker:blood_bronze_block>],
 	<liquid:stainless_steel>:[null, <qmd:ingot_alloy:2>, null, <jaopca:block_blockstainlesssteel>],
 	<liquid:tin_silver>:[null, <nuclearcraft:alloy:8>, null, <jaopca:block_blocktinsilver>],
+	<liquid:neutronic_matrix>:[null,<contenttweaker:neutronic>,null,null], 	//Stuff for Neutronium
+	<liquid:incoherent_matrix>:[null,<contenttweaker:incoherent>,null,null],//Stuff for Neutronium
 } as IItemStack[][ILiquidStack];
 
 for fluid, material in generalmelting {

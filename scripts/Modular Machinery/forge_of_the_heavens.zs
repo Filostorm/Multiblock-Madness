@@ -27,7 +27,7 @@ CyrstalMatrixIngot.build();
 // Positive Deposition Matrix
 val PositiveDispositionMatrix = mods.modularmachinery.RecipeBuilder.newBuilder("forge-positivedispositionmatrix", "heavens-forge", 400, 0);
 PositiveDispositionMatrix.addMekanismLaserInput(100000000);
-PositiveDispositionMatrix.addItemInput(<rockhounding_chemistry:alloy_items_gems:4>);
+PositiveDispositionMatrix.addItemInput(<ore:nuggetYagEr>,3);
 PositiveDispositionMatrix.addItemInput(<contenttweaker:material_part:10>);
 PositiveDispositionMatrix.addItemInput(<rockhounding_chemistry:alloy_items_deco:22>);
 PositiveDispositionMatrix.addItemInput(<libvulpes:productgem>);
@@ -38,7 +38,7 @@ PositiveDispositionMatrix.build();
 // Negative Deposition Matrix
 val NegitiveDispositionMatrix = mods.modularmachinery.RecipeBuilder.newBuilder("forge-negitivedispositionmatrix", "heavens-forge", 400, 0);
 NegitiveDispositionMatrix.addMekanismLaserInput(100000000);
-NegitiveDispositionMatrix.addItemInput(<rockhounding_chemistry:alloy_items_gems:7>);
+NegitiveDispositionMatrix.addItemInput(<ore:nuggetYagYb>,3);
 NegitiveDispositionMatrix.addItemInput(<rockhounding_chemistry:alloy_items_deco:31>);
 NegitiveDispositionMatrix.addItemInput(<avaritia:resource:1>);
 NegitiveDispositionMatrix.addItemInput(<extendedcrafting:material>);

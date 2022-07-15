@@ -91,6 +91,9 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:
 // Scorched Brick
 LabBlender.add([<rockhounding_chemistry:chemical_items:20>*4, <actuallyadditions:item_crystal:3>, <embers:dust_ember>, <thaumcraft:stone_arcane_brick>*2], <tcomplement:materials:1>*8);
 
+//New verison of RH seems to only accept ore dicts
+//LabBlender.add([<rockhounding_chemistry:chemical_items:20>, <actuallyadditions:item_crystal:3>, <embers:dust_ember>, <thaumcraft:stone_arcane_brick>], [4, 1, 1, 2], <tcomplement:materials:1>*8);
+
 # [Slot Upgrade I] from [Base Upgrade][+2]
 craft.remake(<tinker_io:upg:1>, ["pretty",
   "□ R □",

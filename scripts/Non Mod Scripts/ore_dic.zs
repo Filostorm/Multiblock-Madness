@@ -24,6 +24,8 @@ print("==================== loading ore_dic.zs ====================");
 <ore:dustEnder>.add(<techreborn:dust:20>);
 <ore:dustEnder>.add(<enderore:dust_ender>);
 
+//Should fix wrong ore output in places
+<ore:oreUranium>.remove(<immersiveengineering:ore:5>);
 
 //<ore:NeutronPile>.add(<avaritia:resource:2>);
 /*
