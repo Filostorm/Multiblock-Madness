@@ -20,6 +20,9 @@ mods.qmd.target_chamber.addRecipe(<contenttweaker:neutronic>, ((<particle:filon>
 //mods.qmd.nucleosynthesis_chamber.addRecipe(IIngredient inputFluid1, IIngredient inputFluid2, IIngredient inputParticle, IIngredient outputFluid1, IIngredient outputFluid2, {long maxEnergy}, {long heatRelased})
 mods.qmd.nucleosynthesis_chamber.addRecipe(<liquid:neutronic_matrix>*144, <liquid:incoherent_matrix>*144, <particle:higgs_boson>*37000000, <liquid:neutronium>*144, null, 1000, 9030);
 
+//fixes broken particle recipe involving uranium 235 that should have been fixed by now
+mods.qmd.target_chamber.removeRecipeWithInput(<ore:ingotUranium238>, (<particle:neutron>*1000000)^26000);
+mods.qmd.target_chamber.addRecipe(<ore:ingotUranium238>, (<particle:neutron>*1000000)^26000, <ore:ingotUranium235>, null, <particle:neutron>*4, null, 34000, 0.55, -17800);
 
 # [Accelerator Electromagnet Yoke]*4 from [Bioplastic][+1]
 craft.remake(<qmd:accelerator_yoke> * 4, ["pretty",
