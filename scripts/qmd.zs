@@ -18,7 +18,7 @@ mods.qmd.accelerator_source.addRecipe(<contenttweaker:incoherent>, ((<particle:f
 mods.qmd.target_chamber.addRecipe(<contenttweaker:neutronic>, ((<particle:filon>*1000000)^50000)~2.0, <avaritia:resource:4>, null, null, null, 53000, 0.28, -100000, 0.001);
 */
 //mods.qmd.nucleosynthesis_chamber.addRecipe(IIngredient inputFluid1, IIngredient inputFluid2, IIngredient inputParticle, IIngredient outputFluid1, IIngredient outputFluid2, {long maxEnergy}, {long heatRelased})
-mods.qmd.nucleosynthesis_chamber.addRecipe(<liquid:neutronic_matrix>*144, <liquid:incoherent_matrix>*144, <particle:higgs_boson>*37000000, <liquid:neutronium>*144, null, 1000, 9030);
+mods.qmd.nucleosynthesis_chamber.addRecipe(<liquid:neutronic_matrix>*144, <liquid:incoherent_matrix>*144, <particle:higgs_boson>*37000000, <liquid:neutronium>*288, null, 1000, 9030);
 
 
 # [Accelerator Electromagnet Yoke]*4 from [Bioplastic][+1]
