@@ -256,6 +256,13 @@ val itemstoRemove =
 <botania_tweaks:advanced_extended_crafty_crate>,
 <botania_tweaks:elite_extended_crafty_crate>,
 <botania_tweaks:ultimate_extended_crafty_crate>,
+
+<immersivetech:stone_decoration>, //Advanced Coke Oven
+<immersivetech:stone_decoration_slab>,
+
+<advgenerators:turbine_rotor_gold>,
+<advgenerators:turbine_gold>,
+<advgenerators:turbine_kit_gold>,
 ]
  as IItemStack[];
 

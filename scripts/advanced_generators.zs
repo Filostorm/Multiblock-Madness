@@ -40,5 +40,9 @@ recipes.addShaped(<advgenerators:pressure_valve>, [[null, <moreplates:dark_steel
 // Advanced pressure valve
 Transposer.addFillRecipe(<advgenerators:advanced_pressure_valve>, <advgenerators:pressure_valve>, <liquid:enderium> * 1296, 10000);
 
+// Fix missing smelting 
+//furnace.addRecipe(<minecraft:gold_ingot> * 11, <advgenerators:turbine_rotor_gold>, 0.0); // Gold turbine is removed; never had blades?
+furnace.addRecipe(<tconstruct:ingots:2> * 11, <advgenerators:turbine_rotor_manyullyn>, 0.0);
+
 ##########################################################################################
 print("==================== end of advanced_generators.zs ====================");
