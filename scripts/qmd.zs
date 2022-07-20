@@ -5,6 +5,9 @@ print("==================== loading qmd.zs ====================");
 mods.nuclearcraft.Melter.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <liquid:nd_yag>*432);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:nd_yag>*432, <rockhounding_chemistry:alloy_items_gems:1>, 4000);
 
+//qmd bugged recipe fix
+mods.qmd.target_chamber.removeRecipeWithInput(<ore:ingotUranium238>, (<particle:neutron>*1000000)^26000);
+mods.qmd.target_chamber.addRecipe(<ore:ingotUranium238>, (<particle:neutron>*1000000)^26000, <ore:ingotUranium235>, null, <particle:neutron>*4, null, 34000, 0.55, -17800);
 
 // Recoherent's QMD Neutronium
 // Thanks Reco!
@@ -29,5 +32,11 @@ craft.remake(<qmd:accelerator_yoke> * 4, ["pretty",
   "□": <ore:plateStainlessSteel>, # Stainless Steel Plate
   "b": <ore:bioplastic>,          # Bioplastic
 });
+
+//sodium, iridium, cobalt, and calcium source stack size fix
+<qmd:source:1>.maxStackSize = 1;
+<qmd:source:2>.maxStackSize = 1;
+<qmd:source:3>.maxStackSize = 1;
+<qmd:source:4>.maxStackSize = 1;
 ##########################################################################################
 print("==================== end of qmd.zs ====================");
