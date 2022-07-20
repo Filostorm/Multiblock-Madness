@@ -29,5 +29,11 @@ craft.remake(<qmd:accelerator_yoke> * 4, ["pretty",
   "□": <ore:plateStainlessSteel>, # Stainless Steel Plate
   "b": <ore:bioplastic>,          # Bioplastic
 });
+
+//sodium, iridium, cobalt, and calcium source stack size fix
+<qmd:source:1>.maxStackSize = 1;
+<qmd:source:2>.maxStackSize = 1;
+<qmd:source:3>.maxStackSize = 1;
+<qmd:source:4>.maxStackSize = 1;
 ##########################################################################################
 print("==================== end of qmd.zs ====================");
