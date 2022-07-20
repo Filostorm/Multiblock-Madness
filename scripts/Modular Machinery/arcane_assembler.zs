@@ -134,6 +134,12 @@ MMArcaneAssembler("primordial_mote", primordialMote*8, [primordialPearl], [], 20
 
 //Thaumcraft (mostly)
 //other things are sprinkled if category is relevant
+
+
+##Enchanted Fabric
+MMArcaneAssembler("thaum_fabric", <thaumcraft:fabric>, [], ["blockWool-1", "string-4"], 5);
+
+
 ##Potion Sprayer
 MMArcaneAssembler("thaum_potion_sprayer", <thaumcraft:potion_sprayer>, [<minecraft:dispenser>, <minecraft:brewing_stand>, alchConstruct], ["plateBrass-2", "plateIron-4"], 75);
 
