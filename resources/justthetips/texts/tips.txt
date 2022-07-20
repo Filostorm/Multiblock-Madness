@@ -34,9 +34,8 @@ Blood Magic Teleposers allow for easy long-range transportation of Botania Mana 
 The Ender Utilities dolly is very convenient for moving 1 tile high Rockhounding blocks
 RFTools' RF Network monitor will highlight all nearby RF holding blocks and tell you their current storage/maximum capacity
 The Random Things Chunk Analyser can scan your current chunk, making it useful for finding ores
-You can grow twilight saplings in bonsai pots to get roots, which can be converted via pure daisies into livingroots to create ironwood
+You can grow Twilight Saplings in bonsai pots to get Roots, which can be converted via pure daisies into Livingroots to create Ironwood
 /integrateddyanmics networkdiagnostics is great to find out what exactly you did with ID that's destroying TPS
-Avoid Cyclic Block Placers if you can, they impact FPS even when they are idle
 The Lens of the Miner is a neat way to obtain automated ores in the early game
 Don't break your Quantum Tanks with a pickaxe, or you'll lose all the contents!
 The Cooking with Blockheads Sink with AA Fluid Lasers makes a singularity per tick with the AE2 matter condenser, for free!
