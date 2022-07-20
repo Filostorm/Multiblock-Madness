@@ -23302,7 +23302,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place the §6Beam Cannon§r facing the Exchange Tablet, with the Pedestals nearby. \n\nItems get placed on the sides and top of the Exchange Tablet.\n\nThe relevant §dAspectus §rgo in the Pedestals, then place the minimum amount of §eash§r for your chosen recipe in each one.\n\n\nPower the §6§r§6Beam Cannon§r with Embers, then supply a redstone signal to fire at the Exchange Table.\n\nThe recipe will fail, and you\u0027ll be left with some waste that will inform you of the difrence in the amount of §eash §rneeded to correctly perform the recipe.",
+          "desc:8": "Place the §6Beam Cannon§r facing the Exchange Tablet, with the Pedestals nearby. \n\nItems get placed on the sides and top of the Exchange Tablet.\n\nThe relevant §dAspectus §rgo in the Pedestals, then place the minimum amount of §eash§r for your chosen recipe in each one.\n\n\nPower the §6§r§6Beam Cannon§r with Embers, then supply a redstone signal to fire at the Exchange Table.\n\nThe recipe will fail, and you\u0027ll be left with some waste that will inform you of the difference in the amount of §eash §rneeded to correctly perform the recipe.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63061,7 +63061,7 @@
       "tasks:9": {
         "0:10": {
           "autoConsume:1": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
