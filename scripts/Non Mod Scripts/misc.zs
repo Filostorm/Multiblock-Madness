@@ -648,5 +648,7 @@ recipes.addShaped(<contenttweaker:grindingball_mixedwill>, [
 recipes.remove(<apotheosis:hellshelf>);
 TartaricForge.addRecipe(<contenttweaker:book_block>,[<minecraft:book>, <botania:manainkwell>, <thaumadditions:phantom_ink_phial>, <botania:rune:8>], 1000,100);
 
+//soda can stack fix
+<xlfoodmod:super_energy_drink>.maxStackSize = 64;
 ##########################################################################################
 print("==================== end of misc.zs ====================");
