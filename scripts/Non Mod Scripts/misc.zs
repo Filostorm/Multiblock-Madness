@@ -650,5 +650,12 @@ TartaricForge.addRecipe(<contenttweaker:book_block>,[<minecraft:book>, <botania:
 
 //soda can stack fix
 <xlfoodmod:super_energy_drink>.maxStackSize = 64;
+
+//chocolate ingot fix
+recipes.addShapeless(<tcomplement:edibles:10>, [<nuclearcraft:milk_chocolate>]);
+recipes.addShapeless(<tcomplement:edibles:11>, [<nuclearcraft:dark_chocolate>]);
+recipes.addShapeless(<nuclearcraft:milk_chocolate>, [<tcomplement:edibles:10>]);
+recipes.addShapeless(<nuclearcraft:dark_chocolate>, [<tcomplement:edibles:11>]);
+
 ##########################################################################################
 print("==================== end of misc.zs ====================");
