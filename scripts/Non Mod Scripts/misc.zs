@@ -657,5 +657,27 @@ recipes.addShapeless(<tcomplement:edibles:11>, [<nuclearcraft:dark_chocolate>]);
 recipes.addShapeless(<nuclearcraft:milk_chocolate>, [<tcomplement:edibles:10>]);
 recipes.addShapeless(<nuclearcraft:dark_chocolate>, [<tcomplement:edibles:11>]);
 
+//Lollipop Recipes, becuse why not?
+mods.jei.JEI.addItem(<tombstone:lollipop:0>);
+recipes.addShaped(<tombstone:lollipop:0>, [[<tombstone:crafting_ingredient:3>, <ore:dyeYellow>], [<minecraft:stick>, <minecraft:sugar>]]);
+recipes.addShaped(<tombstone:lollipop:1>, [[<tombstone:crafting_ingredient:3>, <ore:dyeBlue>], [<minecraft:stick>, <minecraft:sugar>]]);
+recipes.addShaped(<tombstone:lollipop:2>, [[<tombstone:crafting_ingredient:3>, <ore:dyeLime>], [<minecraft:stick>, <minecraft:sugar>]]);
+recipes.addShaped(<tombstone:lollipop:3>, [[<tombstone:crafting_ingredient:3>, <ore:dyePurple>], [<minecraft:stick>, <minecraft:sugar>]]);
+recipes.addShaped(<tombstone:lollipop:4>, [[<tombstone:crafting_ingredient:3>, <ore:dyeRed>], [<minecraft:stick>, <minecraft:sugar>]]);
+
+//coffee and cappuccino recipe fix
+recipes.removeShapeless(<xlfoodmod:coffee>, [<xlfoodmod:coffee>, <minecraft:milk_bucket>]);
+recipes.addShapeless(<xlfoodmod:cappuccino>, [<xlfoodmod:coffee>, <minecraft:milk_bucket>]);
+
+//bowl fix for natura
+recipes.removeShaped(<natura:empty_bowls> * 4, [[<natura:nether_planks>, null, <natura:nether_planks>], [null, <natura:nether_planks>, null]]);
+recipes.removeShaped(<natura:empty_bowls:1> * 4, [[<natura:nether_planks:1>, null, <natura:nether_planks:1>], [null, <natura:nether_planks:1>, null]]);
+recipes.removeShaped(<natura:empty_bowls:2> * 4, [[<natura:nether_planks:2>, null, <natura:nether_planks:2>], [null, <natura:nether_planks:2>, null]]);
+recipes.removeShaped(<natura:empty_bowls:3> * 4, [[<natura:nether_planks:3>, null, <natura:nether_planks:3>], [null, <natura:nether_planks:3>, null]]);
+recipes.addShaped(<natura:empty_bowls> * 4, [[<natura:nether_planks>, <ore:artisansHandsaw>.reuse().transformDamage(5), <natura:nether_planks>], [null, <natura:nether_planks>, null]]);
+recipes.addShaped(<natura:empty_bowls:1> * 4, [[<natura:nether_planks:1>, <ore:artisansHandsaw>.reuse().transformDamage(5), <natura:nether_planks:1>], [null, <natura:nether_planks:1>, null]]);
+recipes.addShaped(<natura:empty_bowls:2> * 4, [[<natura:nether_planks:2>, <ore:artisansHandsaw>.reuse().transformDamage(5), <natura:nether_planks:2>], [null, <natura:nether_planks:2>, null]]);
+recipes.addShaped(<natura:empty_bowls:3> * 4, [[<natura:nether_planks:3>, <ore:artisansHandsaw>.reuse().transformDamage(5), <natura:nether_planks:3>], [null, <natura:nether_planks:3>, null]]);
+
 ##########################################################################################
 print("==================== end of misc.zs ====================");
