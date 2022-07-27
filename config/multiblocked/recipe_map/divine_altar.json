@@ -1,0 +1,71 @@
+{
+  "name": "divine_altar",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "recipes": [
+    {
+      "uid": "822b77c6-15d9-4cb4-9a3b-cd1f444aff3f",
+      "duration": 5,
+      "inputs": {
+        "item": [
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{ForgeCaps:{\"astralsorcery:cap_item_amulet_holder\":{}},id:\"thaumicperiphery:malignant_heart\",Count:1b,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"bloodarsenal:blood_diamond\",Count:1b,Damage:2s}"
+              ]
+            }
+          },
+          {
+            "chance": 0.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"botania:manaresource\",Count:1b,Damage:14s}"
+              ]
+            }
+          }
+        ],
+        "tc6_aspect": [
+          {
+            "chance": 1.0,
+            "content": {
+              "aspect": "caeles",
+              "amount": 100
+            }
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"contenttweaker:ichor\",Count:1b,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      },
+      "tickInputs": {
+        "bg_lp": [
+          {
+            "chance": 1.0,
+            "content": 100
+          }
+        ]
+      }
+    }
+  ]
+}

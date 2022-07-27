@@ -1,0 +1,149 @@
+{
+  "consumeCatalyst": false,
+  "location": "multiblocked:divine_altar",
+  "traits": {
+    "bg_lp": {
+      "x": 55,
+      "y": 63,
+      "width": 60,
+      "height": 18,
+      "textType": 3
+    }
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "state": {
+      "id": "bloodmagic:decorative_brick",
+      "meta": 0
+    },
+    "type": "blockstate"
+  },
+  "isOpaqueCube": true,
+  "basePattern": {
+    "structureDir": [
+      "RIGHT",
+      "UP",
+      "FRONT"
+    ],
+    "pattern": [
+      [
+        " ABA ",
+        "  C  "
+      ],
+      [
+        "AABAA",
+        "     "
+      ],
+      [
+        "BBBBB",
+        "C D C"
+      ],
+      [
+        "AABAA",
+        "     "
+      ],
+      [
+        " A@A ",
+        "  E  "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "thaumcraft:stone_arcane_brick",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "multiblocked:divine_altar",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "bloodmagic:decorative_brick",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "thaumcraft:pedestal_eldritch",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "io": "IN"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "bloodarsenal:stasis_plate",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "io": "OUT"
+      },
+      "G": {
+        "capability": "tc6_aspect",
+        "type": "capability"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "G"
+      ]
+    }
+  },
+  "recipeMap": "divine_altar"
+}

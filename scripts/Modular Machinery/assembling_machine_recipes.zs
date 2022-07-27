@@ -1155,6 +1155,16 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_bscco_dust
 	.addItemInput(<qmd:chemical_dust:4>*3)
 	.build();
 
+// BSCCO Dust without QMD 
+mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_bscco_dust_magic", "assemblermkthree", 50)
+	.addEnergyPerTickInput(60000)
+	.addItemOutput(<qmd:chemical_dust:1>*3)
+	.addItemInput(<ore:dustBismuth>, 2)
+	.addItemInput(<contenttweaker:sanctified_ash>*2)
+	.addItemInput(<ore:dustCalcium>, 2)
+	.addItemInput(<qmd:chemical_dust:4>*3)
+	.build();
+
 // BSCCO Wire
 mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkthree" + "_bscco_wire", "assemblermkthree", 50)
 	.addEnergyPerTickInput(60000)

@@ -37,7 +37,6 @@ for item in itemstoRemove {
 
 <twilightforest:uberous_soil>.addTooltip(format.gold("Looted from Troll Caves"));
 
-<twilightforest:transformation_powder>.addTooltip(format.gold("Found in Twilight Forest hollow hills"));
 
 <twilightforest:charm_of_keeping_1>.addTooltip(format.gold("Found in Twilight Forest structures"));
 <twilightforest:charm_of_life_1>.addTooltip(format.gold("Found in Twilight Forest structures"));
@@ -97,8 +96,21 @@ Crucible.registerRecipe("weather_egg_rain", "",
 GCT.replaceRecipe("stormway", <arcanearchives:stormway>.withTag({charge: 30, infinite: 0 as byte, toggle: 0 as byte}), [<arcanearchives:shaped_quartz>,<ore:nitor>,<randomthings:weatheregg:2>,<minecraft:redstone>*16]);
 <arcanearchives:stormway>.addTooltip(format.lightPurple("Used to activate the Twilight Forest Portal"));
 
-
-
+//Transformation Powder
+val lichScepter =
+[
+<twilightforest:lifedrain_scepter>,
+<twilightforest:shield_scepter>,
+<twilightforest:zombie_scepter>,
+<twilightforest:twilight_scepter>
+]
+ as IItemStack[];
+for item in lichScepter {
+<ore:lichScepter>.add(item);
+}
+<twilightforest:transformation_powder>.addTooltip(format.gold("Found in Twilight Forest hollow hills"));
+mods.bloodmagic.AlchemyTable.addRecipe(<twilightforest:transformation_powder>*16, [<ore:lichScepter>, <bloodmagic:cutting_fluid:1>], 20,200,0);
+recipes.addShapeless(<twilightforest:transformation_powder>, [<deepmoblearning:living_matter_twilight>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
 
 /*
 //Ember [is] Boring 
@@ -146,8 +158,6 @@ recipes.addShaped(<twilightforest:fiery_boots>, [[<twilightforest:fiery_ingot>, 
 recipes.addShaped(<twilightforest:fiery_chestplate>, [[<twilightforest:fiery_ingot>, null, <twilightforest:fiery_ingot>],[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>], [<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>]]);
 recipes.addShaped(<twilightforest:fiery_pickaxe>, [[<twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>, <twilightforest:fiery_ingot>],[null, <minecraft:blaze_rod>, null], [null, <minecraft:blaze_rod>, null]]);
 
-//transformation_powder
-recipes.addShapeless(<twilightforest:transformation_powder>, [<deepmoblearning:living_matter_twilight>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
 
 
 //Stop Uncrafting Table from working

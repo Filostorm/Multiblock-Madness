@@ -42829,14 +42829,14 @@
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 14,
+            "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "qmd:ingot"
+            "id:8": "contenttweaker:solar_ingot"
           },
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Strontium",
+          "name:8": "Solar Ingot",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -42844,7 +42844,7 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "ALWAYS"
+          "visibility:8": "NORMAL"
         }
       },
       "questID:3": 514,
@@ -42855,9 +42855,9 @@
           "rewards:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 14,
+              "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "qmd:ingot"
+              "id:8": "contenttweaker:solar_ingot"
             }
           }
         }
@@ -42873,9 +42873,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 14,
+              "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "qmd:ingot"
+              "id:8": "contenttweaker:solar_ingot"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -45932,7 +45932,8 @@
         12,
         745,
         746,
-        457
+        457,
+        815
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -50366,15 +50367,12 @@
     },
     "630:10": {
       "preRequisites:11": [
-        634,
-        620,
-        626,
-        621
+        825
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§r§1C§bo§cn§1§dg§2§5r§3a§dt§au§9l§ea§ct§2i§1§3§4o§6n§8s§k§r§7§r§9! §r\n\nShare base screenshots with the world!",
+          "desc:8": "Just a little bit farther!\n\nYou\u0027ll probably need most, if not all, of the creative items to get the §6Ultimate Singularity§r.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -50390,7 +50388,7 @@
           "issilent:1": 0,
           "lockedprogress:1": 0,
           "name:8": "The Creative Cell",
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
           "simultaneous:1": 0,
@@ -58157,7 +58155,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§6Anti-Helium-3§f is made by combining §5Anti-Helion§f and §5Positrons §fin a §7Neutral Containment Chamber§f. \n\nWhile there are several methods of obtaining Positrons§f, the simplest is using a §eSodium-22 Source§f in a §3LINAC§r. LINACs can accelerate particles§f at §60eV§f, thus you only need to raise the §bfocus§f of the positron§f to be greater than §b2§f.\n\nAnti-Helion§f is obtained via collision of §5Anti-Protons and Anti-Deuterons§f in a §aCollision Chamber§f. The tricky part is the energy§f - the recipe requires both particle beams to have an §6energy above 700keV§f and for their §6combined energy§f to be less than §610MeV§f. However, there are a few ways of solving this problem, which are detailed in the \"Collision Chamber Tips\" quest. It\u0027s up to you how you want to obtain anti-protons and anti-deuterons§f - §2JEI§f showcases multiple ways of making both.\n\nAs you only need §eone incoherent matrix§f to get all the §5Filons§f you need, you won\u0027t need much Anti-Helium 3§f, but constructing the entire setup will still be a challenge!",
+          "desc:8": "§6Anti-Helium-3§f is made by combining §5Anti-Helion§f and §5Positrons §fin a §7Neutral Containment Chamber§f. \n\nWhile there are several methods of obtaining Positrons§f, the simplest is using a §eSodium-22 Source§f in a §3LINAC§r. LINACs can accelerate particles§f at §60eV§f, thus you only need to raise the §bfocus§f of the positron§f to be greater than §b2§f.\n\nAnti-Helion§f is obtained via collision of §5Anti-Protons and Anti-Deuterons§f in a §aCollision Chamber§f. The tricky part is the energy§f - the recipe requires both particle beams to have an §6energy above 700keV§f and for their §6combined energy§f to be less than §610MeV§f. However, there are a few ways of solving this problem, which are detailed in the \"Collision Chamber Tips\" quest. It\u0027s up to you how you want to obtain anti-protons and anti-deuterons§f - §2JEI§f showcases multiple ways of making both.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -58225,7 +58223,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §eIncoherent Matrix§f is used to produce §5Filons§f in an Ion Source. As it has no durability, you\u0027ll only need one of these to produce as many Filons§f as you need.",
+          "desc:8": "The §eIncoherent Matrix§f is used as one half of the process for synthesizing §5Neutronium§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -58309,7 +58307,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §eNeutronic Matrix§f is used as the base material in a §aTarget Chamber§f which the §5Filon§f collides with to produce §9§8Neutronium§f. You\u0027ll need one of these for each Neutronium Ingot you want to produce.",
+          "desc:8": "The §eNeutronic Matrix§f is used as one half of the process for synthesizing §5Neutronium§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -59604,7 +59602,7 @@
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "Insanium",
+          "name:8": "Insanium Ingot",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -60805,7 +60803,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Did someone say \"light\"?\n\n§7Synchrotron Ports§f are special ports that act like §7Beam Ports§f, but emit §5Synchrotron Radiation (High Energy Photons) §fwhen particles§f are being accelerated in the Synchrotron. They follow the same placement rules as Beam Ports.\n\nThe §4amount (pu/t) §fof photons§f produced, as well as their §bfocus§f, is equal to the amount and focus §fof the particle stack being accelerated in the Synchrotron. §f\n\nThe §6energy§f (in MeV) is given by:\n\n§6Energy of Photon (MeV)§r \u003d \n(§6Energy of Particle (MeV)§r)^3 / (2π * §7Synchrotron \nRadius§r * (1000 * §dParticle Mass (MeV/c^2)§r)^3) \n\nTherefore, §elight particles§f like §5electrons§f are best used to generate photons§f.\n\nWhile Photons§f aren\u0027t used in many recipes, they may still prove to be useful, depending on the items§f you\u0027re trying to acquire.",
+          "desc:8": "Did someone say \"light\"?\n\n§7Synchrotron Ports§f are special ports that act like §7Beam Ports§f, but emit §5Synchrotron Radiation (High Energy Photons) §fwhen particles§f are being accelerated in the Synchrotron. They follow the same placement rules as Beam Ports.\n\nThe §4amount (pu/t) §fof photons§f produced, as well as their §bfocus§f, is equal to the amount and focus §fof the particle stack being accelerated in the Synchrotron. §f\n\nThe §6energy§f (in MeV) is given by:\n\n§6Energy of Photon (MeV)§r \u003d \n(§6Energy of Particle (MeV)§r)^3 / (2π * §7Synchrotron \nRadius§r * (1000 * §dParticle Mass (MeV/c^2)§r)^3) \n\nTherefore, §elight particles§f like §5electrons§f are best used to generate photons§f.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -62957,7 +62955,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §7Nucleosynthesis Chamber§r fuses two elements together under a particle beam to create §enew elements§r! These reactions also release §clarge amounts of heat§r, which can be used to generate §6immense power§r!\n\n§nConstruction§r\n\nA visualisation of a §7Nucleosynthesis Chamber§r§f§f can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nCasing: §7Vacuum Chamber Casing/Glass§r\n\nDimensions: 5 wide x 7 long x 11 tall, with §7Vacuum Chamber Beam Blocks§r in an \"n\" shape, §7Vacuum Chamber Plasma Nozzles§r facing inward and a §7Vacuum Chamber Plasma Glass§r container in the middle\n\nRequired blocks on sides:\n- §7Nucleosynthesis Chamber Controller§r\n- §72 Vacuum Chamber Coolant Vents§r in §ainput§r and §coutput§r mode\n- §72 Vacuum Chamber Heater Vents§r in §ainput§r and §coutput§r mode\n- §7Vacuum Chamber Energy Port§r\n\nRequired blocks on sides next to Vacuum Chamber Beam Blocks:\n- §7Vacuum Chamber Beam Port§r in §ainput§r mode\n- §74 Vacuum Chamber Fluid Ports§r, 2 in §ainput§r and 2 in §coutput§r mode\n\n§cNote:§r The vacuum chamber glass must be connected to any of the other blocks in the multiblock via §7Vacuum Heaters§r, otherwise the multiblock will not form! §9Cooling mechanics§r will be covered in \"Cooling Fusion\".\n\n§nRequirements§r\n\nIn order to process a recipe, the Nucleosynthesis Chamber must be supplied with:\n- §6Power§r\n- §9Passive Cooling§r from Vacuum Heaters (§9Cooling mechanics§r covered in \"Cooling Fusion\")\n- §8Liquid Mercury§r (absorbs heat from the reaction and becomes hot mercury, mercury consumption rate can be seen by hovering over the first bar from the right in the §2Chamber GUI§r)\n- §1Active Coolant§r with a temperature below 104K (used for cooling magnets, magnet heat bar and coolant consumption rate can be seen by hovering over the second bar from the left in the §2Chamber GUI§r)\n- The two fluids in the desired recipe\n- The particle beam in the desired recipe with an energy of §60eV§r and sufficient §bfocus§r\n\nMake sure all the requirements are met, otherwise the multiblock may §cexplode§r and leak §dhot plasma§r!\n\nIf all the requirements are met, the Nucleosynthesis Chamber will begin converting the two fluids and particle beam into the output fluids, producing §8hot mercury§r in the process. \n\nMore details about recipe time and heat generation are covered in \"Nucleosynthesis Recipes\", while more details about Hot Mercury production are covered in \"Cooling Fusion\".",
+          "desc:8": "The §7Nucleosynthesis Chamber§r fuses two elements together under a particle beam to create §enew elements§r! These reactions also release §clarge amounts of heat§r, which can be used to generate §6immense power§r!\n\n§nConstruction§r\n\nA visualisation of a §7Nucleosynthesis Chamber§r§f§f can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nCasing: §7Vacuum Chamber Casing/Glass§r\n\nDimensions: 5 wide x 11 long x 7 tall, with §7Vacuum Chamber Beam Blocks§r in an \"n\" shape, §7Vacuum Chamber Plasma Nozzles§r facing inward and a §7Vacuum Chamber Plasma Glass§r container in the middle\n\nRequired blocks on sides:\n- §7Nucleosynthesis Chamber Controller§r\n- §72 Vacuum Chamber Coolant Vents§r in §ainput§r and §coutput§r mode\n- §72 Vacuum Chamber Heater Vents§r in §ainput§r and §coutput§r mode\n- §7Vacuum Chamber Energy Port§r\n\nRequired blocks on sides next to Vacuum Chamber Beam Blocks:\n- §7Vacuum Chamber Beam Port§r in §ainput§r mode\n- §74 Vacuum Chamber Fluid Ports§r, 2 in §ainput§r and 2 in §coutput§r mode\n\n§cNote:§r The vacuum chamber glass must be connected to any of the other blocks in the multiblock via §7Vacuum Heaters§r, otherwise the multiblock will not form! §9Cooling mechanics§r will be covered in \"Cooling Fusion\".\n\n§nRequirements§r\n\nIn order to process a recipe, the Nucleosynthesis Chamber must be supplied with:\n- §6Power§r\n- §9Passive Cooling§r from Vacuum Heaters (§9Cooling mechanics§r covered in \"Cooling Fusion\")\n- §8Liquid Mercury§r (absorbs heat from the reaction and becomes hot mercury, mercury consumption rate can be seen by hovering over the first bar from the right in the §2Chamber GUI§r)\n- §1Active Coolant§r with a temperature below 104K (used for cooling magnets, magnet heat bar and coolant consumption rate can be seen by hovering over the second bar from the left in the §2Chamber GUI§r)\n- The two fluids in the desired recipe\n- The particle beam in the desired recipe with an energy of §60eV§r and sufficient §bfocus§r\n\nMake sure all the requirements are met, otherwise the multiblock may §cexplode§r and leak §dhot plasma§r!\n\nIf all the requirements are met, the Nucleosynthesis Chamber will begin converting the two fluids and particle beam into the output fluids, producing §8hot mercury§r in the process. \n\nMore details about recipe time and heat generation are covered in \"Nucleosynthesis Recipes\", while more details about Hot Mercury production are covered in \"Cooling Fusion\".",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63008,6 +63006,72 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "qmd:nucleosynthesis_chamber_controller"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:containment_beam_port"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:containment_energy_port"
+            },
+            "3:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:containment_vent"
+            },
+            "4:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:vacuum_chamber_heater_vent"
+            },
+            "5:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:vacuum_chamber_fluid_port"
+            },
+            "6:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:vacuum_chamber_beam"
+            },
+            "7:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:vacuum_chamber_plasma_glass"
+            },
+            "8:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:vacuum_chamber_plasma_nozzle"
+            },
+            "9:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:containment_glass"
+            },
+            "10:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "qmd:containment_casing"
+            },
+            "11:10": {
+              "Count:3": 1,
+              "Damage:2": 7,
+              "OreDict:8": "",
+              "id:8": "qmd:vacuum_chamber_heater"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -63184,7 +63248,20 @@
         }
       },
       "questID:3": 819,
-      "rewards:9": {},
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:redstone_relay"
+            }
+          }
+        }
+      },
       "tasks:9": {
         "0:10": {
           "index:3": 0,
@@ -63387,6 +63464,174 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "environmentaltech:aethium_crystal"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "823:10": {
+      "preRequisites:11": [
+        626,
+        620,
+        634,
+        824
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "You might want to set up those creative items!\n\n\nBlock overlay textures by Puzzlebark from Zedtech.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "multiblocked:laser_combiner"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "The Laser Fabricator",
+          "questlogic:8": "OR",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 823,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "multiblocked:laser_combiner"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "extendedcrafting:singularity_ultimate"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "824:10": {
+      "preRequisites:11": [
+        633
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Don\u0027t forget to keep your LP stocked by keeping a Blood Orb in a Blood Altar!\n\nThese Multiblocks are made using §6Multiblocked§r, so you can see the item preview when looking in JEI.\n\nYou can use any type of Jar for the Altar§r.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "contenttweaker:ichor"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Altar of the Blood God",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 824,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "multiblocked:divine_altar"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:ichor"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "825:10": {
+      "preRequisites:11": [
+        823
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "You\u0027ll need to loot §5Anu\u0027s Castle§r to get §6The Ancient Clock§r if you aren\u0027t using QMD.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "contenttweaker:time_artifact"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "The Vibrant Relic",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "ALWAYS"
+        }
+      },
+      "questID:3": 825,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:time_artifact"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -64205,15 +64450,15 @@
           "id:3": 131,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 72,
-          "y:3": -60
+          "x:3": -12,
+          "y:3": -192
         },
         "2:10": {
           "id:3": 359,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 72,
-          "y:3": -108
+          "x:3": -60,
+          "y:3": -192
         },
         "3:10": {
           "id:3": 558,
@@ -64240,22 +64485,22 @@
           "id:3": 620,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -36,
-          "y:3": -144
+          "x:3": -24,
+          "y:3": -108
         },
         "7:10": {
           "id:3": 621,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -36,
-          "y:3": -24
+          "x:3": -60,
+          "y:3": 0
         },
         "8:10": {
           "id:3": 626,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -36,
-          "y:3": -108
+          "y:3": -144
         },
         "9:10": {
           "id:3": 628,
@@ -64266,24 +64511,24 @@
         },
         "10:10": {
           "id:3": 630,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 36,
-          "y:3": -84
+          "sizeX:3": 36,
+          "sizeY:3": 36,
+          "x:3": 120,
+          "y:3": -96
         },
         "11:10": {
           "id:3": 633,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -12,
-          "y:3": -84
+          "x:3": -36,
+          "y:3": -36
         },
         "12:10": {
           "id:3": 634,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -36,
-          "y:3": -60
+          "x:3": -24,
+          "y:3": -72
         },
         "13:10": {
           "id:3": 727,
@@ -64389,6 +64634,27 @@
           "sizeY:3": 24,
           "x:3": -252,
           "y:3": -192
+        },
+        "28:10": {
+          "id:3": 823,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 36,
+          "y:3": -90
+        },
+        "29:10": {
+          "id:3": 824,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 12,
+          "y:3": -48
+        },
+        "30:10": {
+          "id:3": 825,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 78,
+          "y:3": -90
         }
       }
     },
@@ -65017,8 +65283,8 @@
           "id:3": 514,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": -588,
-          "y:3": 516
+          "x:3": -192,
+          "y:3": 468
         },
         "34:10": {
           "id:3": 520,
@@ -65887,6 +66153,13 @@
           "sizeY:3": 24,
           "x:3": -624,
           "y:3": 516
+        },
+        "158:10": {
+          "id:3": 742,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -588,
+          "y:3": 516
         }
       }
     },
@@ -66694,7 +66967,7 @@
           "id:3": 560,
           "sizeX:3": 36,
           "sizeY:3": 36,
-          "x:3": 1069,
+          "x:3": 1098,
           "y:3": -18
         },
         "8:10": {
@@ -67002,7 +67275,7 @@
           "id:3": 776,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 680,
+          "x:3": 678,
           "y:3": -12
         },
         "52:10": {
@@ -67065,15 +67338,15 @@
           "id:3": 785,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 680,
-          "y:3": -56
+          "x:3": 678,
+          "y:3": -66
         },
         "61:10": {
           "id:3": 786,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 516,
-          "y:3": -56
+          "y:3": -66
         },
         "62:10": {
           "id:3": 796,
@@ -67122,7 +67395,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 444,
-          "y:3": 32
+          "y:3": 42
         },
         "69:10": {
           "id:3": 809,
@@ -67143,7 +67416,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 444,
-          "y:3": -56
+          "y:3": -66
         },
         "72:10": {
           "id:3": 812,
@@ -67157,7 +67430,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 516,
-          "y:3": 32
+          "y:3": 42
         },
         "74:10": {
           "id:3": 814,
@@ -67170,8 +67443,8 @@
           "id:3": 815,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 816,
-          "y:3": -56
+          "x:3": 1044,
+          "y:3": -12
         },
         "76:10": {
           "id:3": 816,
@@ -67192,28 +67465,28 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 444,
-          "y:3": 68
+          "y:3": 78
         },
         "79:10": {
           "id:3": 819,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 640,
+          "x:3": 636,
           "y:3": -56
         },
         "80:10": {
           "id:3": 820,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 788,
-          "y:3": -92
+          "x:3": 1080,
+          "y:3": -72
         },
         "81:10": {
           "id:3": 821,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 844,
-          "y:3": -92
+          "x:3": 1080,
+          "y:3": 48
         }
       }
     },

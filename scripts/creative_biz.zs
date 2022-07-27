@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 import mods.thaumcraft.Infusion;
@@ -196,6 +197,8 @@ null, null, null, 53000, 0.28, -100000, 0.001);
 //Infinity ingot
 mods.techreborn.fusionReactor.addRecipe(<avaritia:resource:5>, <avaritia:resource:4>*4, <avaritia:resource:6>, 100000000, -25000000, 2400, 50);
 
+//Vibrant Relic
+mods.techreborn.fusionReactor.addRecipe(<fossil:time_machine>, <fossil:ancient_clock>, <contenttweaker:time_artifact>, 100000000, -25000000, 3000, 50);
 
 // Bedrock
 recipes.addShapeless(<avaritia:resource:3> * 9, [<avaritia:resource:4>]);
@@ -261,6 +264,18 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:ultimate_stew>, [
 	[<ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>]
 ]);
 
+// Cosmic stew
+mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:ultimate_stew>, [
+	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
+	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
+	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
+	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
+	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <avaritia:cosmic_meatballs>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
+	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
+	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
+	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
+	[<ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>]
+]);
 
 // Endest Pearl
 mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:endest_pearl>, [
@@ -373,6 +388,28 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <randomthings:spectrecoil_genes
 	[null, null, null, null, null, null, null, null, null]
 ]);
 
+//Clock
+<fossil:ancient_clock>.addTooltip(format.gold("Can be found guarded by Anubus"));
+mods.extendedcrafting.TableCrafting.addShaped(0, <fossil:ancient_clock>, [
+	[null, null, null, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, null, null, null], 
+	[null, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <avaritia:endest_pearl>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, null], 
+	[null, <contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>, <avaritia:endest_pearl>, <contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>, null], 
+	[<contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <avaritia:endest_pearl>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>], 
+	[<contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <apotheosis:hellshelf>, <avaritia:endest_pearl>, <avaritia:endest_pearl>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>], 
+	[<contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>], 
+	[null, <contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>, null], 
+	[null, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, null], 
+	[null, null, null, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, <contenttweaker:solar_ingot>, null, null, null]
+]);
+recipes.remove(<fossil:time_machine>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <fossil:time_machine>, [
+	[<ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <ore:growthcatalystGold>, <ore:growthcatalystGold>, <ore:growthcatalystGold>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>], 
+	[<ore:plateStellarAlloy>, <ore:compressedObsidian2>, <ore:compressedObsidian2>, <ore:gearCosmicNeutronium>, <ore:gearCosmicNeutronium>, <ore:gearCosmicNeutronium>, <ore:compressedObsidian2>, <ore:compressedObsidian2>, <ore:plateStellarAlloy>], 
+	[<ore:growthcatalystGold>, <ore:compressedObsidian2>, <ore:compressedObsidian2>, <ore:gearCosmicNeutronium>, <extendedcrafting:singularity_ultimate>, <ore:gearCosmicNeutronium>, <ore:compressedObsidian2>, <ore:compressedObsidian2>, <ore:growthcatalystGold>], 
+	[<ore:plateStellarAlloy>, <ore:compressedObsidian2>, <ore:compressedObsidian2>, <ore:gearCosmicNeutronium>, <ore:gearCosmicNeutronium>, <ore:gearCosmicNeutronium>, <ore:compressedObsidian2>, <ore:compressedObsidian2>, <ore:plateStellarAlloy>], 
+	[<ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <ore:growthcatalystGold>, <ore:growthcatalystGold>, <ore:growthcatalystGold>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>, <ore:plateStellarAlloy>]
+]);
+
 // Tokens
 val Tokens as ILiquidStack[IItemStack] = {
 	<contenttweaker:token_tier1>: <liquid:moltentokeniron>,
@@ -390,70 +427,17 @@ mods.nuclearcraft.Infuser.addRecipe(<avaritia:resource:5>, molten * 1000, token,
 mods.thermalexpansion.Transposer.addFillRecipe(token, <avaritia:resource:5>, molten * 1000, 8000000);
 }
 
-/*
-Alloy.addRecipe(<liquid:moltentokeniron> * 1000, [<liquid:iron> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokenbronze> * 1000, [<liquid:bronze> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokensteel> * 1000, [<liquid:steel> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokenrefinediron> * 1000, [<liquid:refined_iron> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokenosmium> * 1000, [<liquid:osmium> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokeniridium> * 1000, [<liquid:iridium> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokenultimate> * 1000, [<liquid:ultimate> * 1296, <liquid:moltenbedrock> * 1000]);
-Alloy.addRecipe(<liquid:moltentokeninfinity> * 1000, [<liquid:infinity> * 1296, <liquid:moltenbedrock> * 1000]);
-*/
-
-/*
-val adventureTokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:adventure_token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:adventure_token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:adventure_token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:adventure_token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:adventure_token_tier5>: <liquid:moltentokenosmium>,
-} as ILiquidStack[IItemStack];
-for token, molten in adventureTokens {
-Casting.addTableRecipe(token, <avaritia:infinity_sword>, molten, 1000, false, 50);
-}
-val techTokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:tech_token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:tech_token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:tech_token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:tech_token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:tech_token_tier5>: <liquid:moltentokenosmium>,
-} as ILiquidStack[IItemStack];
-for token, molten in techTokens {
-Casting.addTableRecipe(token, <avaritiaio:infinitecapacitor>, molten, 1000, false, 50);
-}
-val exploringTokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:exploring_token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:exploring_token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:exploring_token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:exploring_token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:exploring_token_tier5>: <liquid:moltentokenosmium>,
-} as ILiquidStack[IItemStack];
-for token, molten in exploringTokens {
-Casting.addTableRecipe(token, <avaritia:infinity_axe>, molten, 1000, false, 50);
-}
-val magicTokens as ILiquidStack[IItemStack] = {
-	<contenttweaker:magic_token_tier1>: <liquid:moltentokeniron>,
-	<contenttweaker:magic_token_tier2>: <liquid:moltentokenbronze>,
-	<contenttweaker:magic_token_tier3>: <liquid:moltentokensteel>,
-	<contenttweaker:magic_token_tier4>: <liquid:moltentokenrefinediron>,
-	<contenttweaker:magic_token_tier5>: <liquid:moltentokenosmium>,
-} as ILiquidStack[IItemStack];
-for token, molten in magicTokens {
-Casting.addTableRecipe(token, <avaritia:infinity_bow>, molten, 1000, false, 50);
-}
-*/
 
 //Creative Cell
 mods.extendedcrafting.TableCrafting.addShaped(0, <appliedenergistics2:creative_storage_cell>, [
 	[<threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>], 
-	[<threng:material:14>, <ore:ingotInfinity>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <ae2wtlib:wut_creative>.reuse(), <extendedcrafting:material:48>, <extendedcrafting:material:48>, <ore:ingotInfinity>, <threng:material:14>], 
+	[<threng:material:14>, <ore:ingotInfinity>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <storagedrawers:upgrade_creative>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <ore:ingotInfinity>, <threng:material:14>], 
 	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
 	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
-	[<threng:material:14>, <mekanism:machineblock2:11>.withTag({tier: 4}).reuse(), <techreborn:quantum_chest>, <aeadditions:storage.component:3>, <storagedrawers:upgrade_creative>, <aeadditions:storage.component:3>, <techreborn:quantum_chest>, <randomthings:spectrecoil_genesis>.reuse(), <threng:material:14>], 
+	[<threng:material:14>, <storagedrawers:upgrade_creative>, <techreborn:quantum_chest>, <aeadditions:storage.component:3>, <contenttweaker:time_artifact>, <aeadditions:storage.component:3>, <techreborn:quantum_chest>, <storagedrawers:upgrade_creative>, <threng:material:14>], 
 	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
 	[<threng:material:14>, <extendedcrafting:material:48>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <techreborn:quantum_chest>, <extendedcrafting:material:48>, <threng:material:14>], 
-	[<threng:material:14>, <ore:ingotInfinity>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <botania:pool:1>.reuse(), <extendedcrafting:material:48>, <extendedcrafting:material:48>, <ore:ingotInfinity>, <threng:material:14>], 
+	[<threng:material:14>, <ore:ingotInfinity>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <storagedrawers:upgrade_creative>, <extendedcrafting:material:48>, <extendedcrafting:material:48>, <ore:ingotInfinity>, <threng:material:14>], 
 	[<threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>, <threng:material:14>]
 ]);
 recipes.addShapeless(<appliedenergistics2:creative_storage_cell>, [<storagedrawers:upgrade_creative:1>]);
@@ -633,5 +617,95 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalmechanics:creative_mec
 	[<ore:gearInfinity>, <mysticalmechanics:mergebox_frame>, <ore:gearInfinity>, <mysticalmechanics:axle_iron>, <mysticalmechanics:mergebox_frame>, <mysticalmechanics:axle_iron>, <ore:gearInfinity>, <mysticalmechanics:mergebox_frame>, <ore:gearInfinity>]
 ]);
 
+
+///////////////////////////////////////////////
+//////////// MBD Recipes ///////////////////////
+/////////////////////////////////////////////////
+val bloodOrb = [
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}),
+	<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}),
+] as IItemStack[];
+
+val bloodOrbLeast = [
+	bloodOrb[0]|bloodOrb[1]|bloodOrb[2]|bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
+	bloodOrb[1]|bloodOrb[2]|bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
+	bloodOrb[2]|bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
+	bloodOrb[3]|bloodOrb[4]|bloodOrb[5],
+	bloodOrb[4]|bloodOrb[5],
+	bloodOrb[5],
+] as IIngredient[];
+
+<multiblocked:divine_altar>.addTooltip(format.gold("Place under the Jar"));
+# [tile.multiblocked.divine_altar.name] from [Archmage Blood Orb][+4]
+craft.remake(<multiblocked:divine_altar>, ["pretty",
+  "□ R □",
+  "E A E",
+  "□ B □"], {
+  "□": <ore:plateAdaminite>,              # Adaminite Plate
+  "R": <bloodmagic:teleposition_focus:2>, # Reinforced Teleposition Focus
+  "E": <bloodmagic:slate:4>,              # Ethereal Slate
+  "A": bloodOrbLeast[4].reuse(), # Archmage Blood Orb
+  "B": <bloodtinker:bloody_thorn_ring>,   # Bloodrose Ring
+});
+
+# [tile.multiblocked.laser_combiner.name] from [Steel Chassis][+4]
+craft.remake(<multiblocked:laser_combiner>, ["pretty",
+  "□ U □",
+  "L ◙ L",
+  "□ T □"], {
+  "□": <ore:plateElite>,               # Elite Plating
+  "U": <advancedrocketry:misc>,        # User Interface
+  "L": <qmd:discharge_lamp2:1>,                  # Laser Assembly
+  "◙": <ore:steelFrame>,               # Steel Chassis
+  "T": <extendedcrafting:material:13>, # The Ultimate Catalyst
+});
+
+# [tile.multiblocked.part_fluid_in.name] from [Steel Chassis][+3]
+craft.remake(<multiblocked:part_fluid_in>, ["pretty",
+  "□ L □",
+  "F ◙ F",
+  "□ L □"], {
+  "□": <ore:plateElite>,                    # Elite Plating
+  "L": <translocators:translocator_part:1>, # Liquid Translocator
+  "F": <actuallyadditions:block_laser_relay_fluids>, # Fluid Laser Relay
+  "◙": <ore:steelFrame>,                    # Steel Chassis
+});
+
+# [tile.multiblocked.part_power_in.name] from [Steel Chassis][+3]
+craft.remake(<multiblocked:part_power_in>, ["pretty",
+  "□ G □",
+  "G ◙ G",
+  "□ ¤ □"], {
+  "□": <ore:plateElite>,                     # Elite Plating
+  "G": <fluxnetworks:gargantuanfluxstorage>, # Gargantuan Flux Storage
+  "◙": <ore:steelFrame>,                     # Steel Chassis
+  "¤": <ore:gearInfinity>,                   # Infinity Gear
+});
+
+# [tile.multiblocked.part_item_in.name] from [Steel Chassis][+3]
+craft.remake(<multiblocked:part_item_in>, ["pretty",
+  "□ I □",
+  "A ◙ A",
+  "□ I □"], {
+  "□": <ore:plateElite>,                  # Elite Plating
+  "I": <translocators:translocator_part>, # Item Translocator
+  "A": <actuallyadditions:block_laser_relay_item_whitelist>, # Advanced Item Laser Relay
+  "◙": <ore:steelFrame>,                  # Steel Chassis
+});
+
+# [tile.multiblocked.part_item_out.name] from [Steel Chassis][+3]
+craft.remake(<multiblocked:part_item_out>, ["pretty",
+  "□ A □",
+  "I ◙ I",
+  "□ A □"], {
+  "□": <ore:plateElite>,                  # Elite Plating
+  "A": <actuallyadditions:block_laser_relay_item_whitelist>, # Advanced Item Laser Relay
+  "I": <translocators:translocator_part>, # Item Translocator
+  "◙": <ore:steelFrame>,                  # Steel Chassis
+});
 ##########################################################################################
 print("==================== end of creative biz.zs ====================");

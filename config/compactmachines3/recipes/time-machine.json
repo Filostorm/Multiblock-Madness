@@ -1,0 +1,28 @@
+{
+  "name": "cm3mbm:time_artifact",
+
+  "disabled": false,
+
+  "target-item": "contenttweaker:time_artifact",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "fossil:ancient_clock",
+  "catalyst-meta": 0,
+  
+  "input-types": {
+    "a": {
+      "id": "fossil:time_machine",
+      "meta": 0
+    }
+  },
+  "shape": [
+    [
+      [
+        "a"
+      ]
+    ]
+  ]
+}

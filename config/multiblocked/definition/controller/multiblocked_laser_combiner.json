@@ -1,0 +1,304 @@
+{
+  "consumeCatalyst": false,
+  "location": "multiblocked:laser_combiner",
+  "traits": {},
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:port_base",
+    "frontTexture": "multiblocked:controller/overlay_front",
+    "type": "gregtech"
+  },
+  "workingRenderer": {
+    "baseTexture": "multiblocked:port_base",
+    "frontTexture": "multiblocked:controller/overlay_front_active",
+    "type": "gregtech"
+  },
+  "isOpaqueCube": true,
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "AAAAAAAAAAA",
+        "ABBBBCBBBBA",
+        "ABBBBBBBBBA",
+        "ABBBBBBBBBA",
+        "ABBBBBBBBBA",
+        "ABBBBBBBBBA",
+        "AAAAAAAAAAA"
+      ],
+      [
+        "AAAAAAAAAAA",
+        "@    D    B",
+        "B    D    B",
+        "B    D    B",
+        "B    D    B",
+        "B    D    B",
+        "ABBBBBBBBBA"
+      ],
+      [
+        "AAAAAAAAAAA",
+        "B         B",
+        "B         B",
+        "B         B",
+        "B         B",
+        "B    D    B",
+        "ABBBBBBBBBA"
+      ],
+      [
+        "AAAAAAAAAAA",
+        "B         B",
+        "B         B",
+        "B         B",
+        "B         B",
+        "B    D    B",
+        "ABBBBBBBBBA"
+      ],
+      [
+        "AAAAAAAAAAA",
+        "B    E    B",
+        "B    E    B",
+        "B    E    B",
+        "B         B",
+        "B    D    B",
+        "ABBBBBBBBBA"
+      ],
+      [
+        "AAAAAHAAAAA",
+        "CD  E E  DC",
+        "BD  E E  DB",
+        "BD  E E  DB",
+        "BD   F   DB",
+        "BDDDDDDDDDB",
+        "ABBBBGBBBBA"
+      ],
+      [
+        "AAAAAAAAAAA",
+        "B    E    B",
+        "B    E    B",
+        "B    E    B",
+        "B         B",
+        "B    D    B",
+        "ABBBBBBBBBA"
+      ],
+      [
+        "AAAAAAAAAAA",
+        "B         B",
+        "B         B",
+        "B         B",
+        "B         B",
+        "B    D    B",
+        "ABBBBBBBBBA"
+      ],
+      [
+        "AAAAAAAAAAA",
+        "B         B",
+        "B         B",
+        "B         B",
+        "B         B",
+        "B    D    B",
+        "ABBBBBBBBBA"
+      ],
+      [
+        "AAAAAAAAAAA",
+        "B    D    B",
+        "B    D    B",
+        "B    D    B",
+        "B    D    B",
+        "B    D    B",
+        "ABBBBBBBBBA"
+      ],
+      [
+        "AAAAAAAAAAA",
+        "ABBBBCBBBBA",
+        "ABBBBBBBBBA",
+        "ABBBBBBBBBA",
+        "ABBBBBBBBBA",
+        "ABBBBBBBBBA",
+        "AAAAAAAAAAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "qmd:containment_casing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "multiblocked:laser_combiner",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "qmd:containment_glass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "C": {
+        "states": [
+          {
+            "id": "multiblocked:part_item_in",
+            "meta": 0
+          }
+        ],
+        "type": "states",
+        "minCount": 3,
+        "maxCount": 3,
+        "previewCount": 3,
+        "io": "IN"
+      },
+      "D": {
+        "states": [
+          {
+            "id": "qmd:vacuum_chamber_beam",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "RF": {
+        "blocks": [
+          {
+            "id": "multiblocked:part_power_in"
+          }
+        ],
+        "type": "blocks",
+        "minCount": 0,
+        "io": "IN"
+      },
+      "E": {
+        "states": [
+          {
+            "id": "qmd:vacuum_chamber_plasma_glass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "F": {
+        "states": [
+          {
+            "id": "qmd:vacuum_chamber_plasma_nozzle",
+            "meta": 1
+          }
+        ],
+        "type": "states"
+      },
+      "Fl": {
+        "blocks": [
+          {
+            "id": "multiblocked:part_fluid_in"
+          }
+        ],
+        "type": "blocks",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "Io": {
+        "blocks": [
+          {
+            "id": "multiblocked:part_item_out"
+          }
+        ],
+        "type": "blocks",
+        "io": "OUT"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C",
+        "Fl"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "RF"
+      ],
+      "H": [
+        "Io"
+      ]
+    }
+  },
+  "recipeMap": "laser_combiner"
+}

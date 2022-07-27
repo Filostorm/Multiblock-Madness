@@ -15,13 +15,18 @@ mods.qmd.target_chamber.addRecipe(<ore:ingotUranium238>, (<particle:neutron>*100
 // Elite Plating
 recipes.addShaped(<contenttweaker:plating_elite> * 4, [[null, <nuclearcraft:part:3>, null],[<nuclearcraft:part:3>, null, <nuclearcraft:part:3>], [null, <nuclearcraft:part:3>, null]]);
 
+//Filon
+//mods.qmd.target_chamber.addRecipe(IIngredient inputItem, IIngredient inputParticle, IIngredient outputItem, IIngredient outputParticle1, IIngredient outputParticle2, IIngredient outputParticle3, long maxEnergy, double crossSection, {long energyReleased, double processRadiation})
+var ultimateIngot = <extendedcrafting:material:32>;
+mods.qmd.target_chamber.addRecipe(ultimateIngot, (<particle:photon>*51000000)^18000, <contenttweaker:solar_ingot>, null, <particle:filon>, null, 22000, 0.2, 15000);
+
 // Neutronium
 /*
 mods.qmd.accelerator_source.addRecipe(<contenttweaker:incoherent>, ((<particle:filon>*10000)^30000)~1.02);
 mods.qmd.target_chamber.addRecipe(<contenttweaker:neutronic>, ((<particle:filon>*1000000)^50000)~2.0, <avaritia:resource:4>, null, null, null, 53000, 0.28, -100000, 0.001);
 */
 //mods.qmd.nucleosynthesis_chamber.addRecipe(IIngredient inputFluid1, IIngredient inputFluid2, IIngredient inputParticle, IIngredient outputFluid1, IIngredient outputFluid2, {long maxEnergy}, {long heatRelased})
-mods.qmd.nucleosynthesis_chamber.addRecipe(<liquid:neutronic_matrix>*144, <liquid:incoherent_matrix>*144, <particle:higgs_boson>*37000000, <liquid:neutronium>*288, null, 1000, 9030);
+mods.qmd.nucleosynthesis_chamber.addRecipe(<liquid:neutronic_matrix>*36, <liquid:incoherent_matrix>*36, <particle:filon>*4890000, <liquid:neutronium>*72, null, 10000, 4370);
 
 
 # [Accelerator Electromagnet Yoke]*4 from [Bioplastic][+1]

@@ -1,0 +1,24 @@
+{
+  "canShared": true,
+  "location": "multiblocked:part_item_out",
+  "traits": {
+    "background": "multiblocked:textures/gui/fluid_hatch_gui.png",
+    "item": [
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "x": 79,
+        "y": 71,
+        "autoIO": true
+      }
+    ]
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:port_base",
+    "frontTexture": "multiblocked:overlay_pipe_out",
+    "type": "gregtech"
+  },
+  "isOpaqueCube": true
+}

@@ -97,7 +97,10 @@ Melter.addRecipe(<thermalfoundation:material:818>, <liquid:biocrude> * 100);
 Melter.addRecipe(<thermalfoundation:material:819>, <liquid:biocrude> * 150);
 
 
-
+//UwU MATTER
+Melter.addRecipe(<techreborn:uumatter>, <liquid:uu_matter>);
+Crucible.addRecipe(<liquid:uu_matter>, <techreborn:uumatter>, 5000);
+IngotFormer.addRecipe(<liquid:uu_matter>, <techreborn:uumatter>);
 
 // --==Magma Crucible Recipe Compat==-- //
 // For recipes in the Melter but not in the Magma Crucible

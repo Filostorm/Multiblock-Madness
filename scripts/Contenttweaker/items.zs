@@ -38,7 +38,10 @@ var simpleItems = [
 	"clump_titanium",
 	"crystal_seed",
 	"ore_gen_info",
-	
+	"time_artifact",
+	"ichor",
+	"sanctified_ash",
+
 	//Custom RH Parts
 	"foilinvar",
 	"foilsteel",
@@ -122,6 +125,8 @@ var simpleItems = [
 	"adaptive_ingot",
 	"hot_cobalt",
 	"ingot_xp",
+	"solar_ingot",
+	"solar_shard",
 
 	//Reinforced Starmetal
 	"prepared_starmetal",
@@ -144,7 +149,7 @@ var simpleItems = [
 	"gear_mek_alloy",
 	"rod_mek_alloy",
 	
-	// Thanks Recoherent!
+	//Recoherent's Stuff
 	"matrix_deposition_+",
 	"matrix_deposition_-",
 	"incoherent",

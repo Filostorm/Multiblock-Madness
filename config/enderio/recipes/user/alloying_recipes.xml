@@ -1481,5 +1481,13 @@
   </alloying>
 </recipe>
 
+<!-- Sanctified Ashes -->
+<recipe name="MBM: Sanctified Ashes" required="true">
+  <alloying energy="100000" exp="0.1">
+    <input name="bloodmagic:arcane_ashes"/>
+    <input name="contenttweaker:ichor"/>
+    <output name="contenttweaker:sanctified_ash"/>
+  </alloying>
+</recipe>
 
 </enderio:recipes>

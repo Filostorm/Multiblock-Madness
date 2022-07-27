@@ -186,5 +186,14 @@ neutronium.viscosity = 100;
 //neutronium.flowingLocation = "contenttweaker:fluids/condensed_aetherium";
 neutronium.material = <blockmaterial:lava>;
 neutronium.register();
+
+
+
+var uu_matter = VanillaFactory.createFluid("uu_matter", Color.fromHex("571673"));
+uu_matter.temperature = 3000;
+uu_matter.gaseous = false;
+uu_matter.viscosity = 1000;
+uu_matter.material = <blockmaterial:lava>;
+uu_matter.register();
 ##########################################################################################
 print("==================== end of fluids.zs ====================");

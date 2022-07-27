@@ -81,6 +81,16 @@ item.contenttweaker.casingplatinum.name=Platinum Casing
 item.contenttweaker.purpleprint.name=§5Multiblock Visualizer
 item.contenttweaker.vis_meal.name=§5Crystal Growth Powder
 
+
+item.contenttweaker.solar_ingot.name=§6Solar Ingot
+item.contenttweaker.solar_shard.name=§6Solar Fragment
+
+item.contenttweaker.ichor.name=§6Ichor
+
+item.contenttweaker.time_artifact.name=§2Vibrant Relic
+
+item.contenttweaker.sanctified_ash.name=§eSanctified Ashes
+
 item.contenttweaker.ingot_xp.name=XP Infused Glowstone
 tile.contenttweaker.block_xp.name=Block of XP Infused Glowstone
 
@@ -98,6 +108,8 @@ fluid.moltentokeninfinity=Essence of Tier 8
 fluid.neutronic_matrix=Supercritical Neutronic Matrix
 fluid.incoherent_matrix=Sublimated Incoherent Matrix
 fluid.neutronium=Cosmic Neutronium
+
+fluid.uu_matter=Decompressed UU Matter
 
 item.contenttweaker.compressed_chrome.name=Compressed Chrome
 
@@ -244,6 +256,22 @@ fluid.drilling_fluid=Drilling Fluid
 fluid.limestone_slurry=Limestone Slurry
 
 item.contenttweaker.ore_gen_info.name=§7Ore Generation Information§r
+
+
+tile.multiblocked.laser_combiner.name=Laser Fabricator
+laser_combiner.name=Laser Fabricator
+multiblocked.laser_combiner.description=Hopefully you've got a lot of stuff!
+multiblocked.recipe_map.laser_combiner=Laser Fabricator
+
+tile.multiblocked.divine_altar.name=Altar of the Blood God
+divine_altar.name=Altar of the Blood God
+multiblocked.divine_altar.description=That blood isn't red...
+multiblocked.recipe_map.divine_altar=Altar of the Blood God
+
+tile.multiblocked.part_item_in.name=Item Input Bus
+tile.multiblocked.part_item_out.name=Item Output Bus
+tile.multiblocked.part_fluid_in.name=Fluid Input Hatch
+tile.multiblocked.part_power_in.name=Forge Energy Input Hatch
 
 
 fluid.molten_modularium=Molten Modularium

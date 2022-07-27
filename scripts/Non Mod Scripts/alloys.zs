@@ -555,5 +555,10 @@ ArcFurnace.addRecipe(<nuclearcraft:alloy:8>*4, <thermalfoundation:material:129>*
 //Inconel
 //[Nichrome*13, Molybdenum*10, Invar*10, Chrome*7, Nickel*3], <Inconel 625>*43
 
+
+//Sanctified Ashes
+AlloyFurnace.addRecipe(<bloodmagic:arcane_ashes>, <contenttweaker:ichor>, <contenttweaker:sanctified_ash>);
+InductionSmelter.addRecipe(<contenttweaker:sanctified_ash>, <bloodmagic:arcane_ashes>, <contenttweaker:ichor>, 40000);
+
 ##########################################################################################
 print("==================== end of alloys.zs ====================");

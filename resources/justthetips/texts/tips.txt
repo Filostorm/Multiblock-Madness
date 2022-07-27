@@ -31,7 +31,6 @@ The Diesel Generator is Loud and Obnoxious
 Hate rain? Check out the Teru Teru Bozu from Botania, or the Rain Shield from Random Things!
 You can use Thermal Dynamics Redstone Servos with Structural Ducts to transmit redstone signals
 Blood Magic Teleposers allow for easy long-range transportation of Botania Mana Pools and Astral Temple Crystals. Even works with sparks!
-The Ender Utilities dolly is very convenient for moving 1 tile high Rockhounding blocks
 RFTools' RF Network monitor will highlight all nearby RF holding blocks and tell you their current storage/maximum capacity
 The Random Things Chunk Analyser can scan your current chunk, making it useful for finding ores
 You can grow Twilight Saplings in bonsai pots to get Roots, which can be converted via pure daisies into Livingroots to create Ironwood
@@ -46,3 +45,4 @@ The Vis Motor can generate easy embers rotational power, at the cost of Vis
 Twilight Forest Hollow Hills contain a bunch of nice loot, including Aetherium Ore!
 Your Modular Machine is stuck? Give it a redstone signal, and it will stop crafting
 Infuse a Brew of Vanity's Emptiness in a Tainted Blood Pendant to prevent mobs from spawning around you!
+Need more Vis to craft an advanced Thaumcraft item? Try placing the Arcane Workbench in the Twilight Forest!

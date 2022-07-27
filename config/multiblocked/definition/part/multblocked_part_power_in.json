@@ -1,0 +1,26 @@
+{
+  "canShared": true,
+  "location": "multiblocked:part_power_in",
+  "traits": {
+    "forge_energy": {
+      "cIO": 2,
+      "gIO": 2,
+      "x": 28,
+      "y": 65,
+      "width": 120,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "capacity": 100000000,
+      "maxReceive": 10000000,
+      "maxExtract": 10000000
+    }
+  },
+  "allowRotate": true,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:port_base",
+    "frontTexture": "multiblocked:overlay_energy_in_multi",
+    "type": "gregtech"
+  },
+  "isOpaqueCube": true
+}
