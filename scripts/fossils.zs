@@ -95,5 +95,11 @@ for tinyDust, material in tinyDustMap {
 	mods.fossils.recipes.addSifterOutput(material, tinyDust, 1);
 }
 
+//bio-goo fix
+recipes.removeShapeless(<fossil:bio_goo>, [<ore:egg>, <minecraft:wheat>, <minecraft:rotten_flesh>, <minecraft:milk_bucket>]);
+recipes.removeShapeless(<fossil:bio_goo> * 4, [<ore:egg>, <minecraft:wheat>, <fossil:failuresaurus_flesh>, <minecraft:milk_bucket>]);
+recipes.addShapeless(<fossil:bio_goo> * 4, [<minecraft:egg>, <minecraft:wheat>, <fossil:failuresaurus_flesh>, <minecraft:milk_bucket>]);
+recipes.addShapeless(<fossil:bio_goo>, [<minecraft:egg>, <minecraft:wheat>, <minecraft:rotten_flesh>, <minecraft:milk_bucket>]);
+
 ##########################################################################################
 print("==================== end of fossils.zs ====================");
