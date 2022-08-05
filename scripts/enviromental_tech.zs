@@ -288,7 +288,7 @@ craft.remake(<environmentaltech:structure_frame_2>, ["pretty",
   "* ◙ *",
   "□ ╳ □"], {
   "□": <contenttweaker:plate_thermal_alloy>,  # Fluid Enriched Alloy Plate
-  "D": <techreborn:part:3>,                   # Data Orb
+  "D": <ore:circuitElite>,                    # Elite Control Circuit
   "*": <ore:crystalErodium>,                  # Erodium Crystal
   "◙": <environmentaltech:structure_frame_1>, # Structure Frame Tier 1
   "╳": <ore:itemWeatherCrystal>,              # Weather Crystal
@@ -300,7 +300,7 @@ craft.remake(<environmentaltech:structure_frame_3>, ["pretty",
   "* ◙ *",
   "□ B □"], {
   "□": <contenttweaker:plate_mek_alloy>,      # Heavy Alloy Plate
-  "E": <ore:circuitElite>,                    # Elite Control Circuit
+  "E": <techreborn:part:3>,                   # Data Orb
   "*": <ore:crystalKyronite>,                 # Kyronite Crystal
   "◙": <environmentaltech:structure_frame_2>, # Structure Frame Tier 2
   "B": <enderio:item_material:42>,        # Frank n Zombie
