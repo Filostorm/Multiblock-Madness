@@ -679,5 +679,8 @@ recipes.addShaped(<natura:empty_bowls:1> * 4, [[<natura:nether_planks:1>, <ore:a
 recipes.addShaped(<natura:empty_bowls:2> * 4, [[<natura:nether_planks:2>, <ore:artisansHandsaw>.reuse().transformDamage(5), <natura:nether_planks:2>], [null, <natura:nether_planks:2>, null]]);
 recipes.addShaped(<natura:empty_bowls:3> * 4, [[<natura:nether_planks:3>, <ore:artisansHandsaw>.reuse().transformDamage(5), <natura:nether_planks:3>], [null, <natura:nether_planks:3>, null]]);
 
+//santa hat all year round
+recipes.addShaped(<tombstone:christmas_hat>, [[<ore:dyeRed>, <apotheosis:lucky_foot>, <ore:dyeRed>], [<tombstone:crafting_ingredient:3>, <iceandfire:sheep_helmet>, <tombstone:crafting_ingredient:3>]]);
+
 ##########################################################################################
 print("==================== end of misc.zs ====================");
