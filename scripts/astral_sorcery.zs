@@ -9,6 +9,10 @@ import mods.astralsorcery.StarlightInfusion;
 import mods.appliedenergistics2.Grinder;
 import mods.astralsorcery.Lightwell;
 import mods.astralsorcery.Utils;
+import crafttweaker.event.EntityJoinWorldEvent;
+import crafttweaker.data.IData;
+import crafttweaker.player.IPlayer;
+import crafttweaker.entity.IEntity;
 
 print("==================== loading astral_sorcery.zs ====================");
 ##########################################################################################
@@ -133,7 +137,118 @@ LightTransmutation.addTransmutation(<embers:ashen_stone>, <appliedenergistics2:s
 LiquidInteraction.addInteraction(<liquid:petrotheum> * 50, 0.5, <liquid:astralsorcery.liquidstarlight> * 200, 0.5, 89, <appliedenergistics2:sky_stone_block>);
 LiquidInteraction.addInteraction(<liquid:petrotheum> * 50, 0.5, <liquid:astralsorcery.liquidstarlight> * 200, 0.5, 10, <appliedenergistics2:smooth_sky_stone_block>);
 LiquidInteraction.addInteraction(<liquid:petrotheum> * 50, 0.5, <liquid:astralsorcery.liquidstarlight> * 200, 0.5, 1, <contenttweaker:starmetal_block>);
-
+//Netherack, Magma Block, Ash (not Ketchum, the block one)
+LiquidInteraction.addInteraction(<liquid:fiery_essence> * 20, 0.5, <liquid:lifeessence> * 125, 0.5, 65, <minecraft:magma>);
+LiquidInteraction.addInteraction(<liquid:fiery_essence> * 20, 0.5, <liquid:lifeessence> * 125, 0.5, 20, <minecraft:netherrack>);
+LiquidInteraction.addInteraction(<liquid:fiery_essence> * 20, 0.5, <liquid:lifeessence> * 125, 0.5, 15, <iceandfire:ash>);
+//Corrosive Demonic Will
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 53, <bloodmagic:monster_soul:1>.withTag({souls: 2.0}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 52, <bloodmagic:monster_soul:1>.withTag({souls: 2.1}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 51, <bloodmagic:monster_soul:1>.withTag({souls: 2.2}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 50, <bloodmagic:monster_soul:1>.withTag({souls: 2.3}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 49, <bloodmagic:monster_soul:1>.withTag({souls: 2.4}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 47, <bloodmagic:monster_soul:1>.withTag({souls: 2.5}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 46, <bloodmagic:monster_soul:1>.withTag({souls: 2.6}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 45, <bloodmagic:monster_soul:1>.withTag({souls: 2.7}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 44, <bloodmagic:monster_soul:1>.withTag({souls: 2.8}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 43, <bloodmagic:monster_soul:1>.withTag({souls: 2.9}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 41, <bloodmagic:monster_soul:1>.withTag({souls: 3.0}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 40, <bloodmagic:monster_soul:1>.withTag({souls: 3.1}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 39, <bloodmagic:monster_soul:1>.withTag({souls: 3.2}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 38, <bloodmagic:monster_soul:1>.withTag({souls: 3.3}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 37, <bloodmagic:monster_soul:1>.withTag({souls: 3.4}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 36, <bloodmagic:monster_soul:1>.withTag({souls: 3.5}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.8, 34, <bloodmagic:monster_soul:1>.withTag({souls: 3.6}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.8, 33, <bloodmagic:monster_soul:1>.withTag({souls: 3.7}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.8, 32, <bloodmagic:monster_soul:1>.withTag({souls: 3.8}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.8, 31, <bloodmagic:monster_soul:1>.withTag({souls: 3.9}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 30, <bloodmagic:monster_soul:1>.withTag({souls: 4.0}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 28, <bloodmagic:monster_soul:1>.withTag({souls: 4.1}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 26, <bloodmagic:monster_soul:1>.withTag({souls: 4.2}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 24, <bloodmagic:monster_soul:1>.withTag({souls: 4.3}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 22, <bloodmagic:monster_soul:1>.withTag({souls: 4.4}));
+LiquidInteraction.addInteraction(<liquid:hydrofluoric_acid> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 20, <bloodmagic:monster_soul:1>.withTag({souls: 4.5}));
+//Destructive Demonic Will
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 53, <bloodmagic:monster_soul:2>.withTag({souls: 2.0}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 52, <bloodmagic:monster_soul:2>.withTag({souls: 2.1}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 51, <bloodmagic:monster_soul:2>.withTag({souls: 2.2}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 50, <bloodmagic:monster_soul:2>.withTag({souls: 2.3}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 49, <bloodmagic:monster_soul:2>.withTag({souls: 2.4}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.5, 47, <bloodmagic:monster_soul:2>.withTag({souls: 2.5}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 46, <bloodmagic:monster_soul:2>.withTag({souls: 2.6}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 45, <bloodmagic:monster_soul:2>.withTag({souls: 2.7}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 44, <bloodmagic:monster_soul:2>.withTag({souls: 2.8}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 43, <bloodmagic:monster_soul:2>.withTag({souls: 2.9}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.6, 41, <bloodmagic:monster_soul:2>.withTag({souls: 3.0}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 40, <bloodmagic:monster_soul:2>.withTag({souls: 3.1}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 39, <bloodmagic:monster_soul:2>.withTag({souls: 3.2}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 38, <bloodmagic:monster_soul:2>.withTag({souls: 3.3}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 37, <bloodmagic:monster_soul:2>.withTag({souls: 3.4}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.7, 36, <bloodmagic:monster_soul:2>.withTag({souls: 3.5}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.8, 34, <bloodmagic:monster_soul:2>.withTag({souls: 3.6}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.8, 33, <bloodmagic:monster_soul:2>.withTag({souls: 3.7}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.8, 32, <bloodmagic:monster_soul:2>.withTag({souls: 3.8}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.8, 31, <bloodmagic:monster_soul:2>.withTag({souls: 3.9}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 30, <bloodmagic:monster_soul:2>.withTag({souls: 4.0}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 28, <bloodmagic:monster_soul:2>.withTag({souls: 4.1}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 26, <bloodmagic:monster_soul:2>.withTag({souls: 4.2}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 24, <bloodmagic:monster_soul:2>.withTag({souls: 4.3}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 22, <bloodmagic:monster_soul:2>.withTag({souls: 4.4}));
+LiquidInteraction.addInteraction(<liquid:napalm> * 100, 0.5, <liquid:molten_demon_will> * 10, 0.9, 20, <bloodmagic:monster_soul:2>.withTag({souls: 4.5}));
+//Vengeful Demonic Will
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.5, 53, <bloodmagic:monster_soul:3>.withTag({souls: 2.0}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.5, 52, <bloodmagic:monster_soul:3>.withTag({souls: 2.1}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.5, 51, <bloodmagic:monster_soul:3>.withTag({souls: 2.2}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.5, 50, <bloodmagic:monster_soul:3>.withTag({souls: 2.3}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.5, 49, <bloodmagic:monster_soul:3>.withTag({souls: 2.4}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.5, 47, <bloodmagic:monster_soul:3>.withTag({souls: 2.5}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.6, 46, <bloodmagic:monster_soul:3>.withTag({souls: 2.6}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.6, 45, <bloodmagic:monster_soul:3>.withTag({souls: 2.7}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.6, 44, <bloodmagic:monster_soul:3>.withTag({souls: 2.8}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.6, 43, <bloodmagic:monster_soul:3>.withTag({souls: 2.9}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.6, 41, <bloodmagic:monster_soul:3>.withTag({souls: 3.0}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.7, 40, <bloodmagic:monster_soul:3>.withTag({souls: 3.1}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.7, 39, <bloodmagic:monster_soul:3>.withTag({souls: 3.2}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.7, 38, <bloodmagic:monster_soul:3>.withTag({souls: 3.3}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.7, 37, <bloodmagic:monster_soul:3>.withTag({souls: 3.4}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.7, 36, <bloodmagic:monster_soul:3>.withTag({souls: 3.5}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.8, 34, <bloodmagic:monster_soul:3>.withTag({souls: 3.6}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.8, 33, <bloodmagic:monster_soul:3>.withTag({souls: 3.7}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.8, 32, <bloodmagic:monster_soul:3>.withTag({souls: 3.8}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.8, 31, <bloodmagic:monster_soul:3>.withTag({souls: 3.9}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.9, 30, <bloodmagic:monster_soul:3>.withTag({souls: 4.0}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.9, 28, <bloodmagic:monster_soul:3>.withTag({souls: 4.1}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.9, 26, <bloodmagic:monster_soul:3>.withTag({souls: 4.2}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.9, 24, <bloodmagic:monster_soul:3>.withTag({souls: 4.3}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.9, 22, <bloodmagic:monster_soul:3>.withTag({souls: 4.4}));
+LiquidInteraction.addInteraction(<liquid:pigiron> * 144, 0.5, <liquid:molten_demon_will> * 10, 0.9, 20, <bloodmagic:monster_soul:3>.withTag({souls: 4.5}));
+//Steadfast Demonic Will
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.5, 53, <bloodmagic:monster_soul:4>.withTag({souls: 2.0}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.5, 52, <bloodmagic:monster_soul:4>.withTag({souls: 2.1}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.5, 51, <bloodmagic:monster_soul:4>.withTag({souls: 2.2}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.5, 50, <bloodmagic:monster_soul:4>.withTag({souls: 2.3}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.5, 49, <bloodmagic:monster_soul:4>.withTag({souls: 2.4}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.5, 47, <bloodmagic:monster_soul:4>.withTag({souls: 2.5}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.6, 46, <bloodmagic:monster_soul:4>.withTag({souls: 2.6}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.6, 45, <bloodmagic:monster_soul:4>.withTag({souls: 2.7}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.6, 44, <bloodmagic:monster_soul:4>.withTag({souls: 2.8}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.6, 43, <bloodmagic:monster_soul:4>.withTag({souls: 2.9}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.6, 41, <bloodmagic:monster_soul:4>.withTag({souls: 3.0}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.7, 40, <bloodmagic:monster_soul:4>.withTag({souls: 3.1}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.7, 39, <bloodmagic:monster_soul:4>.withTag({souls: 3.2}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.7, 38, <bloodmagic:monster_soul:4>.withTag({souls: 3.3}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.7, 37, <bloodmagic:monster_soul:4>.withTag({souls: 3.4}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.7, 36, <bloodmagic:monster_soul:4>.withTag({souls: 3.5}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.8, 34, <bloodmagic:monster_soul:4>.withTag({souls: 3.6}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.8, 33, <bloodmagic:monster_soul:4>.withTag({souls: 3.7}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.8, 32, <bloodmagic:monster_soul:4>.withTag({souls: 3.8}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.8, 31, <bloodmagic:monster_soul:4>.withTag({souls: 3.9}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.9, 30, <bloodmagic:monster_soul:4>.withTag({souls: 4.0}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.9, 28, <bloodmagic:monster_soul:4>.withTag({souls: 4.1}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.9, 26, <bloodmagic:monster_soul:4>.withTag({souls: 4.2}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.9, 24, <bloodmagic:monster_soul:4>.withTag({souls: 4.3}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.9, 22, <bloodmagic:monster_soul:4>.withTag({souls: 4.4}));
+LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.9, 20, <bloodmagic:monster_soul:4>.withTag({souls: 4.5}));
 
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/chalice");
 
@@ -163,6 +278,23 @@ Altar.addAttunementAltarRecipe("internal/altar/collectorcrystal", <astralsorcery
 
 			<arcanearchives:shaped_quartz>, <arcanearchives:shaped_quartz>, <arcanearchives:shaped_quartz>, <arcanearchives:shaped_quartz>]
 );*/
+
+
+/*events.onEntityJoinWorld(function(event as crafttweaker.event.EntityJoinWorldEvent){
+    if(event.entity.definition.id == "minecraft:item"){
+        val will = event.entity.getPickedResult();
+        if(will.matches(<bloodmagic:monster_soul:*>)){
+            if(!isNull(will.tag.MBM_will_info)){
+                val willTag = will.tag.MBM_will_info;
+                if(!isNull(willTag.min) && !isNull(willTag.max)){
+                    will.withTag({
+                        souls: event.world.getRandom().nextDouble(willTag.min, willTag.max)
+                    });
+                }
+            }
+        }
+    }
+});*/
 
 ##########################################################################################
 print("==================== end of astral_sorcery.zs ====================");
