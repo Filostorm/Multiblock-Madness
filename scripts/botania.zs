@@ -331,6 +331,8 @@ mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "dan
 mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "munchdew"}));
 mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "kekimurus"}));
 mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "entropinnyum"}));
+mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "orechid"}));
+mods.botania.Apothecary.removeRecipe(<botania:specialflower>.withTag({type: "orechidIgnem"}));
 
 mods.botania.Apothecary.addRecipe("dandelifeon",
 [<ore:petalPurple>, <ore:petalPurple>, <ore:petalGreen>, <ore:petalLime>, <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>]);
@@ -344,6 +346,11 @@ mods.botania.Apothecary.addRecipe("kekimurus",
 mods.botania.Apothecary.addRecipe("entropinnyum", 
 [<ore:petalRed>,<ore:petalRed>,<ore:petalGray>,<ore:petalGray>,<ore:petalWhite>,<ore:petalWhite>,<botania:rune:13>,<botania:rune:1>,<botania:manaresource:8>]);
 
+mods.botania.Apothecary.addRecipe("orechid", 
+[<ore:petalGray>,<ore:petalGray>,<ore:petalYellow>,<ore:petalGreen>,<ore:petalRed>,<botania:rune:15>,<botania:rune:11>,<botania:manaresource:6>,<arcanearchives:slaughtergleam>]);
+
+mods.botania.Apothecary.addRecipe("orechidIgnem", 
+[<ore:petalRed>,<ore:petalRed>,<ore:petalWhite>,<ore:petalWhite>,<ore:petalPink>,<botania:rune:15>,<botania:rune:11>,<botania:manaresource:6>,<arcanearchives:slaughtergleam>]);
 
 <botania:specialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Degrades after 1 hour!"));
 <botania:floatingspecialflower>.withTag({type: "endoflame"}).addTooltip(format.red("Degrades after 1 hour!"));
@@ -423,5 +430,9 @@ craft.remake(<minecraft:end_crystal>, ["pretty",
   "▬": <ore:ingotSoulium>,  # Soulium Ingot
   "P": <ore:itemGhastTear>, # Ghast Tear
 });
+
+//orechid ignem energized glowstone
+mods.botania.OrechidIgnem.addOre(<ore:oreClathrateGlowstone>, 2000);
+
 ##########################################################################################
 print("==================== end of botania.zs ====================");
