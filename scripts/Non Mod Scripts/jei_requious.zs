@@ -560,8 +560,11 @@ add_everflow_chalice(<liquid:water> * 10, <liquid:lava> * 10, [<minecraft:cobble
 add_everflow_chalice(<liquid:water> * 10, <liquid:astralsorcery.liquidstarlight> * 10, [<minecraft:ice> * 100]);
 add_everflow_chalice(<liquid:lava> * 10, <liquid:astralsorcery.liquidstarlight> * 10, [<minecraft:sand> * 99, <astralsorcery:blockcustomsandore> * 1]);
 add_everflow_chalice(<liquid:petrotheum> * 25, <liquid:astralsorcery.liquidstarlight> * 100, [<appliedenergistics2:sky_stone_block> * 89, <appliedenergistics2:smooth_sky_stone_block> * 10, <contenttweaker:starmetal_block> * 1]);
-
-
+add_everflow_chalice(<liquid:fiery_essence> * 20, <liquid:lifeessence> * 125, [<minecraft:magma> * 65, <minecraft:netherrack> * 20, <iceandfire:ash> * 15]);
+add_everflow_chalice(<liquid:hydrofluoric_acid> * 100, <liquid:molten_demon_will> * 10, [<bloodmagic:monster_soul:1> * 100, <bloodmagic:monster_soul:1>.withTag({display: {Lore: ["Minimum Ammount"]}, souls: 2.0}) * 1, <bloodmagic:monster_soul:1>.withTag({display: {Lore: ["Maximum Ammount"]}, souls: 4.5}) * 1]);
+add_everflow_chalice(<liquid:napalm> * 100, <liquid:molten_demon_will> * 10, [<bloodmagic:monster_soul:2> * 100, <bloodmagic:monster_soul:2>.withTag({display: {Lore: ["Minimum Ammount"]}, souls: 2.0}) * 1, <bloodmagic:monster_soul:2>.withTag({display: {Lore: ["Maximum Ammount"]}, souls: 4.5}) * 1]);
+add_everflow_chalice(<liquid:pigiron> * 144, <liquid:molten_demon_will> * 10, [<bloodmagic:monster_soul:3> * 100, <bloodmagic:monster_soul:3>.withTag({display: {Lore: ["Minimum Ammount"]}, souls: 2.0}) * 1, <bloodmagic:monster_soul:3>.withTag({display: {Lore: ["Maximum Ammount"]}, souls: 4.5}) * 1]);
+add_everflow_chalice(<liquid:liquidfusionfuel> * 10, <liquid:molten_demon_will> * 10, [<bloodmagic:monster_soul:4> * 100, <bloodmagic:monster_soul:4>.withTag({display: {Lore: ["Minimum Ammount"]}, souls: 2.0}) * 1, <bloodmagic:monster_soul:4>.withTag({display: {Lore: ["Maximum Ammount"]}, souls: 4.5}) * 1]);
 
 // --== Lens of the Miner ==-- //
 
