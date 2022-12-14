@@ -593,6 +593,10 @@ recipes.addShapeless(<minecraft:melon> * 9, [<minecraft:melon_block>]);
 */
 
 
+// Quest Book
+
+recipes.addShapeless(<betterquesting:quest_book>, [<minecraft:book>,<minecraft:leather>]);
+
 
 // Food Items //
 

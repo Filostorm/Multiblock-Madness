@@ -92,6 +92,14 @@ recipes.addShaped(block, [
 recipes.addShapeless(ingot * 9, [block]);
 }
 
+// Neutronium Blocks
+
+recipes.addShaped(<avaritia:block_resource>, [
+	[<ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>],
+	[<ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>], 
+	[<ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>, <ore:ingotCosmicNeutronium>]
+]);
+
 
 ################# PLATES #######################
 
