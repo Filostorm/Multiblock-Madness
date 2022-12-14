@@ -137,6 +137,9 @@ LightTransmutation.addTransmutation(<embers:ashen_stone>, <appliedenergistics2:s
 LiquidInteraction.addInteraction(<liquid:petrotheum> * 50, 0.5, <liquid:astralsorcery.liquidstarlight> * 200, 0.5, 89, <appliedenergistics2:sky_stone_block>);
 LiquidInteraction.addInteraction(<liquid:petrotheum> * 50, 0.5, <liquid:astralsorcery.liquidstarlight> * 200, 0.5, 10, <appliedenergistics2:smooth_sky_stone_block>);
 LiquidInteraction.addInteraction(<liquid:petrotheum> * 50, 0.5, <liquid:astralsorcery.liquidstarlight> * 200, 0.5, 1, <contenttweaker:starmetal_block>);
+
+// Commenting out the new chalice interactions until they are fully implemented
+/* 
 //Netherack, Magma Block, Ash (not Ketchum, the block one)
 LiquidInteraction.addInteraction(<liquid:fiery_essence> * 20, 0.5, <liquid:lifeessence> * 125, 0.5, 65, <minecraft:magma>);
 LiquidInteraction.addInteraction(<liquid:fiery_essence> * 20, 0.5, <liquid:lifeessence> * 125, 0.5, 20, <minecraft:netherrack>);
@@ -249,6 +252,7 @@ LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:mo
 LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.9, 24, <bloodmagic:monster_soul:4>.withTag({souls: 4.3}));
 LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.9, 22, <bloodmagic:monster_soul:4>.withTag({souls: 4.4}));
 LiquidInteraction.addInteraction(<liquid:liquidfusionfuel> * 10, 0.5, <liquid:molten_demon_will> * 10, 0.9, 20, <bloodmagic:monster_soul:4>.withTag({souls: 4.5}));
+*/
 
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/chalice");
 
