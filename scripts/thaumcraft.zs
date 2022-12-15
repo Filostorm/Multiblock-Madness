@@ -9,6 +9,8 @@ import crafttweaker.item.IItemStack;
 import mods.arcanearchives.GCT;
 import mods.thaumcraft.SalisMundus;
 import mods.botania.PureDaisy;
+import mods.thermalexpansion.Insolator;
+
 
 print("==================== loading thaumcraft.zs ====================");
 ##########################################################################################
@@ -288,6 +290,12 @@ craft.remake(<thaumadditions:iron_framed_greatwood>*4, ["pretty",
   "□": <ore:plateSilver>, # Silver Plate
   "#": <thaumcraft:plank_greatwood>,                        # Greatwood Planks
 });
+
+
+// Void Seeds Phytogenic Insolator Recipe
+Insolator.addRecipe(<thaumcraft:void_seed>, <thaumadditions:void_seed>, <thermalfoundation:fertilizer>, 9600, <thaumadditions:void_fruit>, 5, 2400);
+Insolator.addRecipe(<thaumcraft:void_seed>*2, <thaumadditions:void_seed>, <thermalfoundation:fertilizer:1>, 14400, <thaumadditions:void_fruit>, 10, 3600);
+Insolator.addRecipe(<thaumcraft:void_seed>*3, <thaumadditions:void_seed>, <thermalfoundation:fertilizer:2>, 19200, <thaumadditions:void_fruit>, 15, 4800);
 
 
 ##########################################################################################
