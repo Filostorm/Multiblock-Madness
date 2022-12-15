@@ -317,5 +317,99 @@ craft.remake(<aetherworks:moonlight_amplifier>, ["pretty",
   "◊": <astralsorcery:itemcraftingcomponent:4>, # Resonating Gem
   "A": <embers:archaic_brick>,                  # Archaic Brick
 });
+
+// Stamper Recipes //
+
+val stamperRecipesToRemove =
+[
+	<mystgears:gear_infinity>,
+	<mystgears:gear_terrasteel>,
+	<mystgears:gear_diamond>,
+	<nuclearcraft:ingot:5>,
+	<contenttweaker:material_part:10>,
+	<nuclearcraft:ingot:6>,
+	<techreborn:ingot:23>,
+	<astralsorcery:itemcraftingcomponent:1>,
+	<nuclearcraft:ingot:7>,
+	<immersiveengineering:metal:5>,
+	<techreborn:ingot:15>,
+	<thermalfoundation:material:132>,
+	<thermalfoundation:material:132>,
+	<thermalfoundation:material:260>,
+	<thermalfoundation:material:260>,
+	<techreborn:plates:32>,
+	<thermalfoundation:material:324>,
+	<thermalfoundation:material:324>
+]
+ as IItemStack[];
+
+for item in stamperRecipesToRemove {
+	Stamper.remove(item);
+}
+
+// Ingots
+
+val ingotStamper =
+{
+<liquid:conductive_iron>:<enderio:item_alloy_ingot:4>,
+<liquid:pulsating_iron>:<enderio:item_alloy_ingot:5>,
+<liquid:inert_metal>:<contenttweaker:inert_ingot>,
+<liquid:invar>:<thermalfoundation:material:162>,
+<liquid:constantan>:<thermalfoundation:material:164>,
+<liquid:brass>:<techreborn:ingot:1>,
+<liquid:manasteel>:<botania:manaresource>,
+<liquid:thaumium>:<thaumcraft:ingot>,
+<liquid:steel>:<thermalfoundation:material:160>,
+<liquid:knightslime>:<tconstruct:ingots:3>,
+<liquid:pigiron>:<tconstruct:ingots:4>,
+<liquid:prudentium>:<mysticalagriculture:crafting:34>
+}
+as IItemStack[ILiquidStack];
+
+for fluid, ingot in ingotStamper {
+	Stamper.add(ingot, fluid * 144, <embers:stamp_bar>);
+}
+
+
+// Plates
+
+val plateStamper =
+{
+<liquid:conductive_iron>:<moreplates:conductive_iron_plate>,
+<liquid:pulsating_iron>:<moreplates:pulsating_iron_plate>,
+<liquid:invar>:<thermalfoundation:material:354>,
+<liquid:constantan>:<thermalfoundation:material:356>,
+<liquid:brass>:<thaumcraft:plate>,
+<liquid:palladium>:<contenttweaker:material_part:32>,
+<liquid:orichalcum>:<contenttweaker:material_part:22>,
+<liquid:steel>:<thermalfoundation:material:352>,
+<liquid:knightslime>:<moreplates:knightslime_plate>
+}
+as IItemStack[ILiquidStack];
+
+for fluid, plate in plateStamper {
+	Stamper.add(plate, fluid * 144, <embers:stamp_plate>);
+}
+
+
+// Gears
+
+val gearStamper =
+{
+<liquid:invar>:<thermalfoundation:material:290>,
+<liquid:constantan>:<thermalfoundation:material:292>,
+<liquid:conductive_iron>:<moreplates:conductive_iron_gear>,
+<liquid:ardite>:<moreplates:ardite_gear>,
+<liquid:cobalt>:<moreplates:cobalt_gear>,
+<liquid:palladium>:<contenttweaker:material_part:31>,
+<liquid:orichalcum>:<contenttweaker:material_part:21>,
+<liquid:steel>:<thermalfoundation:material:288>
+}
+as IItemStack[ILiquidStack];
+
+for fluid, gear in gearStamper {
+	Stamper.add(gear, fluid * 576, <embers:stamp_gear>);
+}
+
 ##########################################################################################
 print("==================== end of embers.zs ====================");

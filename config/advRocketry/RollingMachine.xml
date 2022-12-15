@@ -1063,6 +1063,15 @@
 			<itemStack>jaopca:item_platetinsilver;9;0</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockPulsatingIron</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>moreplates:pulsating_iron_plate;9;0</itemStack>
+		</output>
+	</Recipe>
 
 
 

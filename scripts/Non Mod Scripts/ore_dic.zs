@@ -271,5 +271,8 @@ for item in hiddenGlass {
 <ore:mekTabletReplacement>.add(<mekanism:energytablet>);
 <ore:mekTabletReplacement>.add(<contenttweaker:inactive_energy_tablet>);
 
+<ore:stickConductiveIron>.add(<contenttweaker:rod_conductive_iron>);
+<ore:stickDawnstone>.add(<contenttweaker:rod_dawnstone>);
+
 ##########################################################################################
 print("==================== end of ore_dic.zs ====================");

@@ -73,6 +73,11 @@ val artisansPlates as IItemStack[IOreDictEntry] = {
   <ore:ingotThaumium>:<thaumcraft:plate:2>,
   <ore:ingotTinSilver>:<jaopca:item_platetinsilver>,
   <ore:gemQuartz>:<moreplates:nether_quartz_plate>,
+  <ore:ingotConductiveIron>:<moreplates:conductive_iron_plate>,
+  <ore:ingotPulsatingIron>:<moreplates:pulsating_iron_plate>,
+  <ore:ingotPalladium>:<contenttweaker:material_part:32>,
+  <ore:ingotOrichalcum>:<contenttweaker:material_part:22>,
+  <ore:ingotKnightslime>:<moreplates:knightslime_plate>
 } as IItemStack[IOreDictEntry];
 
 for ingot, plate in artisansPlates {
@@ -115,15 +120,28 @@ recipes.addShaped(<artisanworktables:workstation:3>, [
 <ore:stickIronwood>.add(<contenttweaker:rod_ironwood>);
 
 val artisansGears as IOreDictEntry[][IItemStack] = {
-  <thermalfoundation:material:288>:[<ore:ingotSteel>,<ore:stickSteel>],
   <thermalfoundation:material:24>:[<ore:ingotIron>,<ore:stickIron>],
   <thermalfoundation:material:25>:[<ore:ingotGold>,<ore:stickGold>],
-  <thaumicperiphery:gear_brass>:[<ore:ingotBrass>,<ore:stickBrass>],
-  <thermalfoundation:material:292>:[<ore:ingotConstantan>,<ore:stickConstantan>],
-  <moreplates:ardite_gear>:[<ore:ingotArdite>,<ore:stickArdite>],
   <thermalfoundation:material:256>:[<ore:ingotCopper>,<ore:stickCopper>],
+  <thermalfoundation:material:257>:[<ore:ingotTin>,<ore:stickTin>],
+  <thermalfoundation:material:258>:[<ore:ingotSilver>,<ore:stickSilver>],
+  <thermalfoundation:material:259>:[<ore:ingotLead>,<ore:stickLead>],
+  <thermalfoundation:material:261>:[<ore:ingotNickel>,<ore:stickNickel>],
   <thermalfoundation:material:291>:[<ore:ingotBronze>,<ore:stickBronze>],
+  <thermalfoundation:material:292>:[<ore:ingotConstantan>,<ore:stickConstantan>],
+  <thermalfoundation:material:289>:[<ore:ingotElectrum>,<ore:stickElectrum>],
+  <thermalfoundation:material:290>:[<ore:ingotInvar>,<ore:stickInvar>],
+  <moreplates:conductive_iron_gear>:[<ore:ingotConductiveIron>,<ore:stickConductiveIron>],
+  <thaumicperiphery:gear_brass>:[<ore:ingotBrass>,<ore:stickBrass>],
+  <moreplates:cobalt_gear>:[<ore:ingotCobalt>,<ore:stickCobalt>],
+  <moreplates:ardite_gear>:[<ore:ingotArdite>,<ore:stickArdite>],
+  <mystgears:gear_thaumium>:[<ore:ingotThaumium>,<ore:stickThaumium>],
+  <mystgears:gear_manasteel>:[<ore:ingotManasteel>,<ore:stickManasteel>],
   <moreplates:ironwood_gear>:[<ore:ingotIronwood>,<ore:stickIronwood>],
+  <contenttweaker:material_part:31>:[<ore:ingotPalladium>,<ore:stickPalladium>],
+  <contenttweaker:material_part:21>:[<ore:ingotOrichalcum>,<ore:stickOrichalcum>],
+  <thermalfoundation:material:288>:[<ore:ingotSteel>,<ore:stickSteel>],
+  <embers:gear_dawnstone>:[<ore:ingotDawnstone>,<ore:stickDawnstone>]
 } as IOreDictEntry[][IItemStack];
 
 for gear, material in artisansGears {
@@ -155,6 +173,16 @@ val artisansRods as IItemStack[IOreDictEntry] = {
   <ore:ingotCopper>:<libvulpes:productrod:4>,
   <ore:ingotThaumium>:<jaopca:item_stickthaumium>,
   <ore:ingotIronwood>:<contenttweaker:rod_ironwood>,
+  <ore:ingotPalladium>:<contenttweaker:material_part:34>,
+  <ore:ingotOrichalcum>:<contenttweaker:material_part:24>,
+  <ore:ingotManasteel>:<jaopca:item_stickmanasteel>,
+  <ore:ingotSilver>:<moreplates:silver_stick>,
+  <ore:ingotNickel>:<immersiveposts:metal_rods:4>,
+  <ore:ingotLead>:<immersiveposts:metal_rods:2>,
+  <ore:ingotTin>:<moreplates:tin_stick>,
+  <ore:ingotConductiveIron>:<contenttweaker:rod_conductive_iron>,
+  <ore:ingotCobalt>:<jaopca:item_stickcobalt>,
+  <ore:ingotDawnstone>:<contenttweaker:rod_dawnstone>
 } as IItemStack[IOreDictEntry];
 
 for ingot, rod in artisansRods {

@@ -62,6 +62,8 @@ var simpleItems = [
 	"rod_vanasteel",
 	"rod_nimonic",
 	"rod_ironwood",
+	"rod_conductive_iron",
+	"rod_dawnstone",
 	
 	//Steel Casts
 	"steelcast",

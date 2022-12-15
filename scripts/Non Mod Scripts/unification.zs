@@ -350,6 +350,12 @@ Pressurizer.addRecipe(<techreborn:dust:20>, <minecraft:ender_pearl>);
 removeAndHide(<rockhounding_chemistry:chemical_items:8>);
 furnace.remove(<rockhounding_chemistry:metal_items:7>, <rockhounding_chemistry:chemical_items:8>);
 
+// Removing TR Brass Plate
+Casting.removeTableRecipe(<techreborn:plates:18>);
+Casting.addTableRecipe(<thaumcraft:plate>, <tconstruct:cast_custom:3>, <liquid:brass>, 144);
+Pressurizer.removeRecipeWithOutput(<techreborn:plates:18>);
+Pressurizer.addRecipe(<ore:ingotBrass>, <thaumcraft:plate>);
+removeAndHide(<techreborn:plates:18>);
 
 ##########################################################################################
 print("==================== end of unification.zs ====================");
