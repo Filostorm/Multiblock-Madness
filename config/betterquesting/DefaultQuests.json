@@ -1,4 +1,5 @@
 {
+  "build:8": "4.0.5",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -15256,7 +15257,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place the Test Tube and a Graduated Cylinder in the Glassware Holder, then the last two Cylinders in the Cabinets.\nKeep the Reaction Stabilizer supplied with Ferrous Catalysts, so your shards don\u0027t dissolve.\n\nWhen Extracting dusts from a shard, you will always recover §a§220%§r of the available minerals, plus a precentage of the remaining, equal to the §2§r§aRecovery Efficiency %§r.§r This amount can be raised by increasing the Reaction Intensity, which will also increase the amount of acid required per operation.\n\n§6Dissolution Chance§r and §eStabilization§r determine the chance the shard will be lost, if you don\u0027t have Ferrous Catalyst\u0027s installed. Its recommended to attach a Catalyst Regenerator to the Reaction Stabilizer so you dont have to worry about that.\n\n§rExtracted dusts will need to be piped out of the Lab Balance to be usable.\n\nYou will also need a Power Station with RF and Fuel.",
+          "desc:8": "Place the Test Tube and a Graduated Cylinder in the Glassware Holder, then the last two Cylinders in the Cabinets.\nKeep the Reaction Stabilizer supplied with Ferrous Catalysts, so your shards don\u0027t dissolve.\n\nWhen Extracting dusts from a shard, you will always recover §a§220%§r of the available minerals, plus a precentage of the remaining, equal to the §2§r§aRecovery Efficiency %§r.§r This amount can be raised by increasing the Reaction Intensity, which will also increase the amount of acid required per operation.\n\n§6Dissolution Chance§r and §eStabilization§r determine the chance the shard will be lost, if you don\u0027t have Ferrous Catalyst\u0027s installed. Its recommended to attach a Catalyst Regenerator to the Reaction Stabilizer so you dont have to worry about that.\n\n§rExtracted dusts will need to be piped out of the Lab Balance to be usable.\n\nYou will also need a Power Station with RF and Fuel.\n\nSpeed upgrades go in the Glassware Holder instead of the Extraction Controller.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18161,7 +18162,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "These store one type of item, in very high quantitys.\n",
+          "desc:8": "These store one type of item, in very high quantities.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18359,7 +18360,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Placing down the Framing Table, then adding the Framed Drawer as well as a block or two, will allow for custom made drawers.",
+          "desc:8": "Placing down the Framing Table, then adding the Framed Drawer as well as a block or two, will allow for custom made drawers. Alternatively, you can frame Framed Drawers directly in a crafting table.\n\nThe Hand Framing Tool allows you to frame Framed Drawers placed in-world. First, place the blocks used for framing with the Hand Framing Tool in a crafting table to set the framing blocks. Then, right click Framed Drawers with the tool to frame them.\n\nWhen filled with sticks, the Hand Framing Tool can be used to convert non-framed drawers into their framed versions by right clicking them, consuming 8 sticks per drawer. Fill the tool with sticks with a crafting table.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18416,6 +18417,15 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "storagedrawers:customdrawers"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "contenttweaker:hand_framing_tool"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -23108,7 +23118,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Supply with Diesel or Bio-Diesel. Outputs 4096 RF a tick.\n\nConnect the §6Portable Generator§r directly with an IE cable to burn up some of the Gasoline.",
+          "desc:8": "Supply with Diesel or Bio-Diesel. Outputs 8192 RF/t.\n\nConnect the §6Portable Generator§r directly with an IE cable to burn up some of the Gasoline.\n\nEnergy values of fuels in the Diesel Generator are available in JEI by viewing the uses of the IE projector.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -23202,7 +23212,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This machine requires over 4k power to run, but will never run out of ores.\n\nUse a §2Core Sample Drill§r in various chunks to find a good location to build your Excavator. \n\nAfter placing the drill and supplying power, right click it to start. Right click it again to extract the sample. Use your Engineers Manual to see what each ore vein will give if you.\n\nEach chunk has a different type of vein, and you can turn on chunk borders by pressing F9.\n\nShift-right click to place the Samples.\n",
+          "desc:8": "This machine requires over 4k power to run, but will never run out of ores.\n\nUse a §2Core Sample Drill§r in various chunks to find a good location to build your Excavator. View the uses of the Core Sample Drill in JEI to find ore vein generation information for the excavator.\n\nAfter placing the drill and supplying power, right click it to start. Right click it again to extract the sample. Ore Vein information can be viewed in both JEI and the Engineer\u0027s Manual.\n\nEach chunk has a different type of vein, and you can turn on chunk borders by pressing F9.\n\nShift-right click to place the Samples.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27202,7 +27212,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Use the Core Sample Drill in various chunks to find a good location to build your Pumpjack. \n\nAfter placing the drill and supplying power, right click it to start. Right click it again to extract the sample. Use your Engineers Manual to see what each ore vein will give if you build an Excavator on it.\n\nEach chunk has a different type of vein, and you can turn on chunk borders by pressing F9.\n\nShift-right click to place the Samples.\n\n§bYou\u0027ll need 5 Pumpjacks on oil to supply the Distillation Tower full time.",
+          "desc:8": "Use the Core Sample Drill in various chunks to find a good location to build your Pumpjack. View the uses of the Core Sample Drill in JEI to find fluid vein generation information for the pumpjack.\n\nAfter placing the drill and supplying power, right click it to start. Right click it again to extract the sample. Fluid Vein information can be viewed in both JEI and the Engineer\u0027s Manual.\n\nEach chunk has a different type of vein, and you can turn on chunk borders by pressing F9.\n\nShift-right click to place the Samples.\n\n§bYou\u0027ll need 5 Pumpjacks on oil to supply the Distillation Tower full time.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -40724,7 +40734,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place blocks together to form the multiblock.\n\nHas many blocks that can be used to upgrade the machine, refer to the controller for possible blocks.",
+          "desc:8": "Place blocks together to form the multiblock.\n\nHas many blocks that can be used to upgrade the machine, refer to the controller for possible blocks.\n\nEnergy values of fuels in Gas Turbines (without efficiency upgrades) are available in JEI by viewing the uses of the Gas Turbine Controller.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -44676,7 +44686,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Mining levels and example materials:\n§dYou can explore to get access to up to §rReinforced§d level, or progress through the chapters for the rest!\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron, Copper, Tin)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)\n\n§rOre spawns in veins of several types of metal or gems:\n\n§5§7§5100% Coal \n§rY levels: 80-20\n\n§589% Coal \n10% Diamond\n1% Rock Crystal\n§rY levels: 20-0\n\n§765% Iron \n20% Nickel\n15% Gold\n§6§rY levels: 64-10\n\n§670% Copper\n25% Palladium\n5% Blaze\n§rY levels: §r60-20\n\n§785% Tin\n10% Iron\n5% Lead\n§rY levels: 80-40\n\n§845% Lead\n45% Silver\n10% Galena\n§rY levels: 35-5\n\n§c65% Redstone\n15% Ruby\n10% Cinnabar\n10% Destabilized Redstone\n§rY levels: 20-5\n\n§f40% Quartz\n40% Certus Quartz\n10% Black Quartz\n5% Charged Certus Quartz\n5% Magic Crystal Ore\n§7Y levels: 20-70\n\n§975% Lapis\n15% Sapphire\n10% Prismarine Ore\n§rY levels: 20-5\n\n§790% Bauxite\n5% Aluminum\n5% Rutile\n§rY levels: 20-0\n\n§240% Ender Ore \n30% Emerald\n20% Slime Ore\n10% Fossil\n§rY levels: 30-5\n\nAll Veins have a 1% chance to spawn Uninspected Materials.\n\n§rHold the Divining Rod in your off hand while you are mining to have the ore of that type to light up.",
+          "desc:8": "Mining levels and example materials:\n§dYou can explore to get access to up to §rReinforced§d level, or progress through the chapters for the rest!\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron, Copper, Tin)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)\n\n§rOre spawns in veins of several types of metal or gems. Ore generation information can be found in JEI by viewing the uses of the Ore Generation Book in JEI.\n\n§rHold the Divining Rod in your off hand while you are mining to have the ore of that type to light up.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -44786,6 +44796,18 @@
           },
           "index:3": 0,
           "rewardID:8": "bq_standard:choice"
+        },
+        "1:10": {
+          "index:3": 1,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:ore_gen_info"
+            }
+          }
         }
       },
       "tasks:9": {
@@ -70016,7 +70038,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 0.0,

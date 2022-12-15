@@ -33,7 +33,14 @@ print("==================== loading jei_general.zs ====================");
 
 <contenttweaker:purpleprint>.addTooltip(format.lightPurple("Not for Crafting!"));
 
-<contenttweaker:ore_gen_info>.addTooltip("§fView uses in JEI to see ore vein generation§r");
+<contenttweaker:ore_gen_info>.addTooltip("§fPress U to view ore vein generation§r");
+<immersiveengineering:metal_device1:7>.addTooltip("§fPress U to view Excavator and Pumpjack veins§r");
+<advgenerators:turbine_controller>.addTooltip("§fPress U to view AG Turbine Fuels§r");
+<astralsorcery:blockchalice>.addTooltip("§fPress U to view chalice fluid interaction recipes§r");
+<actuallyadditions:item_mining_lens>.addTooltip("§fPress U to view Lens of the Miner ores§r");
+<astralsorcery:blockborehead>.addTooltip("§fPress U to view Neromatic Prime fluids§r");
+<advancedrocketry:spacelaser>.addTooltip("§fPress U to view Orbital Laser materials§r");
+<astralsorcery:blockmapdrawingtable>.addTooltip("§fPress U to view Refraction Table recipes§r");
 
 <translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed")), "Hold Shift to see available modifiers");
 <translocators:translocator_part>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output")));
