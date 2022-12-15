@@ -264,19 +264,6 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:ultimate_stew>, [
 	[<ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>]
 ]);
 
-// Cosmic stew
-mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:ultimate_stew>, [
-	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
-	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
-	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
-	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
-	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <avaritia:cosmic_meatballs>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
-	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
-	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
-	[<ore:nuggetCosmicNeutronium>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <natura:edibles:11>, <ore:nuggetCosmicNeutronium>], 
-	[<ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>, <ore:nuggetCosmicNeutronium>]
-]);
-
 // Endest Pearl
 mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:endest_pearl>, [
 	[null, null, null, <ore:endstone>, <ore:endstone>, <ore:endstone>, null, null, null], 
