@@ -292,6 +292,24 @@ MachineWall.addItemInput(<minecraft:redstone>*2);
 MachineWall.addItemOutput(<compactmachines3:wallbreakable>*16);
 MachineWall.build();
 
+##Compact Machine Tunnel
+val MachineTunnel = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machinetunnel", "minifield-crafter", 100, 0);
+MachineTunnel.addEnergyPerTickInput(1000);
+MachineTunnel.addItemInput(<compactmachines3:wallbreakable>);
+MachineTunnel.addItemInput(<minecraft:hopper>);
+MachineTunnel.addItemInput(<minecraft:redstone>*9);
+MachineTunnel.addItemOutput(<compactmachines3:tunneltool>*2);
+MachineTunnel.build();
+
+##Compact Machine Redstone Tunnel
+val MachineRedstoneTunnel = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machineredstonetunnel", "minifield-crafter", 100, 0);
+MachineRedstoneTunnel.addEnergyPerTickInput(1000);
+MachineRedstoneTunnel.addItemInput(<compactmachines3:wallbreakable>);
+MachineRedstoneTunnel.addItemInput(<minecraft:redstone_block>);
+MachineRedstoneTunnel.addItemInput(<minecraft:redstone>*9);
+MachineRedstoneTunnel.addItemOutput(<compactmachines3:redstonetunneltool>*2);
+MachineRedstoneTunnel.build();
+
 ##Compact Machine 1
 val MachineOne = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machineone", "minifield-crafter", 200, 0);
 MachineOne.addEnergyPerTickInput(1000);
@@ -317,6 +335,35 @@ MachineThree.addItemInput(<minecraft:gold_block>);
 MachineThree.addItemInput(<minecraft:ender_pearl>);
 MachineThree.addItemOutput(<compactmachines3:machine:2>);
 MachineThree.build();
+
+##Compact Machine 4
+val MachineFour = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machinefour", "minifield-crafter", 500, 0);
+MachineFour.addEnergyPerTickInput(4000);
+MachineFour.addItemInput(<compactmachines3:wallbreakable>*64);
+MachineFour.addItemInput(<compactmachines3:wallbreakable>*34);
+MachineFour.addItemInput(<minecraft:ender_eye>);
+MachineFour.addItemOutput(<compactmachines3:machine:3>);
+MachineFour.build();
+
+##Compact Machine 5
+val MachineFive = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machinefive", "minifield-crafter", 600, 0);
+MachineFive.addEnergyPerTickInput(4000);
+MachineFive.addItemInput(<compactmachines3:wallbreakable>*64);
+MachineFive.addItemInput(<compactmachines3:wallbreakable>*34);
+MachineFive.addItemInput(<minecraft:diamond_block>);
+MachineFive.addItemInput(<minecraft:ender_pearl>);
+MachineFive.addItemOutput(<compactmachines3:machine:4>);
+MachineFive.build();
+
+##Compact Machine 6
+val MachineSix = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-machinesix", "minifield-crafter", 700, 0);
+MachineSix.addEnergyPerTickInput(4000);
+MachineSix.addItemInput(<compactmachines3:wallbreakable>*64);
+MachineSix.addItemInput(<compactmachines3:wallbreakable>*34);
+MachineSix.addItemInput(<minecraft:emerald_block>);
+MachineSix.addItemInput(<minecraft:ender_pearl>);
+MachineSix.addItemOutput(<compactmachines3:machine:5>);
+MachineSix.build();
 
 ##TCconstruct
 val TCconstruct = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-tcconstruct", "minifield-crafter", 400, 0);
