@@ -15,6 +15,7 @@ import mods.techreborn.fluidReplicator;
 import mods.techreborn.industrialElectrolyzer;
 import mods.rockhounding_chemistry.ProfilingBench;
 import mods.extendedcrafting.CombinationCrafting;
+import mods.immersiveengineering.ArcFurnace;
 
 print("==================== loading tech_reborn.zs ====================");
 ##########################################################################################
@@ -141,13 +142,14 @@ recipes.addShaped(<techreborn:ingot:21> * 2, [[<ore:ingotRefinedIron>, <ore:ingo
 // Refined Iron
 furnace.remove(<techreborn:ingot:19>);
 blastFurnace.removeRecipe(<techreborn:ingot:19>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>*2, <minecraft:iron_ingot>, <thermalfoundation:material:865>, 400, 512, [<contenttweaker:limestone_flux>, <contenttweaker:slatedust>], "Alloying");
-mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 300, 512, [<contenttweaker:limestone_flux>], "Alloying");
+ArcFurnace.addRecipe(<techreborn:ingot:19>*2, <minecraft:iron_ingot>, <thermalfoundation:material:865>, 400, 512, [<contenttweaker:limestone_flux>, <contenttweaker:slatedust>], "Alloying");
+ArcFurnace.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 300, 512, [<contenttweaker:limestone_flux>], "Alloying");
 mods.thermalexpansion.InductionSmelter.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <contenttweaker:limestone_flux>, 10000, <thermalfoundation:material:864>, 25);
 blastFurnace.addRecipe(<techreborn:ingot:19>*2, <thermalfoundation:material:865>, <minecraft:iron_ingot>, <contenttweaker:slatedust>, 200, 256, 1000);
 
 // Plutonium
 blastFurnace.addRecipe(<techreborn:ingot:25>, null, <techreborn:dust:67>, null, 400, 768, 2500);
+ArcFurnace.removeRecipe(<techreborn:ingot:25>);
 
 // Hot Tungstensteel Ingot
 blastFurnace.removeRecipe(<techreborn:ingot:16>);

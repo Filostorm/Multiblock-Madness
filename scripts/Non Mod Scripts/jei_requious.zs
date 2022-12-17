@@ -843,6 +843,136 @@ addRefractionRecipe("vorux", [<enchantment:minecraft:smite> * 7, <enchantment:mi
 [<potion:minecraft:strength>.makePotionEffect(7200, 3), <potion:minecraft:resistance>.makePotionEffect(7200, 1),<potion:minecraft:mining_fatigue>.makePotionEffect(7200, 3)]);
 
 
+// --== Attunement Altar ==-- //
+var attunement_altar = <assembly:attunement_altar>;
+attunement_altar.addJEICatalyst(<astralsorcery:blockattunementaltar>);
+attunement_altar.setJEIItemSlot(0, 0, "input");
+attunement_altar.setJEIItemSlot(1, 0, "constellation");
+attunement_altar.setJEIDurationSlot(2, 0, "duration", getVisSlots(1,7));
+attunement_altar.setJEIItemSlot(3, 0, "output");
+
+function add_celestial_attunement_recipe(constellation as string) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("output", <astralsorcery:itemtunedcelestialcrystal>.withTag(
+        {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation, 
+        crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}
+        }}));
+    });
+    assRec.requireItem("input", <astralsorcery:itemcelestialcrystal>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}}));
+    assRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+      ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(assRec);  
+}
+
+function add_rock_attunement_recipe(constellation as string) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("output", <astralsorcery:itemtunedrockcrystal>.withTag(
+        {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation, 
+        crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}
+        }}));
+    });
+    assRec.requireItem("input", <astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}}));
+    assRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+      ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(assRec);  
+}
+
+function add_misc_attunement_recipe(input as IItemStack, constellation as string, output as IItemStack) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("output", output);
+    });
+    assRec.requireItem("input", input);
+    assRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+      ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(assRec);  
+}
+
+
+// Self Attunement
+
+val self_attunement_list = [
+  "discidia",
+  "armara",
+  "vicio",
+  "aevitas",
+  "evorsio"
+] as string[];
+
+for constellation in self_attunement_list {
+  add_misc_attunement_recipe(<minecraft:armor_stand>.withDisplayName("§fSelf Attunement"), constellation, 
+  <minecraft:armor_stand>.withTag({ench: [{lvl: 1 as short, id: 31 as short}]}).withDisplayName("§f" ~ constellation ~ " attunement"));
+}
+
+
+// Crystal Attunement
+
+val constellation_list = [
+  "discidia",
+  "armara",
+  "vicio",
+  "aevitas",
+  "evorsio",
+  "lucerna",
+  "mineralis",
+  "horologium",
+  "octans",
+  "bootes",
+  "fornax",
+  "pelotrio"
+] as string[];
+
+val trait_list = [
+  "gelu",
+  "ulteria",
+  "alcara",
+  "vorux"
+] as string[];
+
+for constellation in constellation_list {
+  add_rock_attunement_recipe(constellation);
+}
+
+for constellation in constellation_list {
+  add_celestial_attunement_recipe(constellation);
+}
+
+for constellation in trait_list {
+  val rockRec = AssemblyRecipe.create(function(container) {
+    container.addItemOutput("output", <astralsorcery:itemtunedrockcrystal>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation.discidia", trait: "astralsorcery.constellation." ~ constellation, 
+      crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}}));
+  });
+  rockRec.requireItem("input", <astralsorcery:itemtunedrockcrystal>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation.discidia",
+      crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}
+      }).withDisplayName("§fAny attuned rock crystal"));
+  rockRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+    {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+    ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(rockRec);
+}
+
+for constellation in trait_list {
+  val celestialRec = AssemblyRecipe.create(function(container) {
+    container.addItemOutput("output", <astralsorcery:itemtunedcelestialcrystal>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation.discidia", trait: "astralsorcery.constellation." ~ constellation, 
+      crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}}));
+  });
+  celestialRec.requireItem("input", <astralsorcery:itemtunedcelestialcrystal>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation.discidia",
+      crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}
+      }).withDisplayName("§fAny attuned celestial crystal"));
+  celestialRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+    {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+    ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(celestialRec);  
+}
+
+
+
 // --== Apotheosis Enchants ==-- //
 
 var apotheosis_enchants = <assembly:apotheosis_enchants>;

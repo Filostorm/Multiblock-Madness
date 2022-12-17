@@ -119,6 +119,7 @@ var simpleItems = [
 	//Modularium Parts
 	"gear_modularium",
 	"plate_modularium",
+	"rod_modularium",
 	
 	//Assorted Ingots
 	"inert_ingot",

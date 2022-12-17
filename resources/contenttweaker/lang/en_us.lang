@@ -158,6 +158,7 @@ item.contenttweaker.clump_titanium.name=Crystalized Titanium
 
 item.contenttweaker.gear_modularium.name=Modularium Gear
 item.contenttweaker.plate_modularium.name=Modularium Plate
+item.contenttweaker.rod_modularium.name=Modularium Rod
 
 item.contenttweaker.prepared_starmetal.name=Starmetal-Plated Platinum
 item.contenttweaker.ingot_reinforced_starmetal.name=§9Reinforced Starmetal
@@ -295,11 +296,14 @@ requious.jei.recipe.electronics_assembler=Electronics Assembler
 requious.jei.recipe.oil_generator=Oil Generator Fuels
 requious.jei.recipe.ember_bore=Ember Bore
 requious.jei.recipe.refraction_table=Stellar Refraction Table
+requious.jei.recipe.attunement_altar=Attunement Altar
 requious.jei.recipe.apotheosis_enchants=Highest Level Enchants
 
 material.Dilithium.name=Dilithium
 item.battery.0.name=Small Battery
 item.battery.1.name=Battery Pack
+
+tile.turret.name=Ember Turret
 
 item.contenttweaker.inactive_cloaking_device.name=Inactive Cloaking Device
 item.contenttweaker.inactive_lapotronic_orb.name=Inactive Lapotronic Orb

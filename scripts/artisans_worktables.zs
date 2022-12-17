@@ -141,7 +141,9 @@ val artisansGears as IOreDictEntry[][IItemStack] = {
   <contenttweaker:material_part:31>:[<ore:ingotPalladium>,<ore:stickPalladium>],
   <contenttweaker:material_part:21>:[<ore:ingotOrichalcum>,<ore:stickOrichalcum>],
   <thermalfoundation:material:288>:[<ore:ingotSteel>,<ore:stickSteel>],
-  <embers:gear_dawnstone>:[<ore:ingotDawnstone>,<ore:stickDawnstone>]
+  <embers:gear_dawnstone>:[<ore:ingotDawnstone>,<ore:stickDawnstone>],
+  <moreplates:prudentium_gear>:[<ore:ingotPrudentium>,<ore:stickPrudentium>],
+  <contenttweaker:gear_modularium>:[<ore:ingotModularium>,<ore:stickModularium>]
 } as IOreDictEntry[][IItemStack];
 
 for gear, material in artisansGears {
@@ -182,7 +184,9 @@ val artisansRods as IItemStack[IOreDictEntry] = {
   <ore:ingotTin>:<moreplates:tin_stick>,
   <ore:ingotConductiveIron>:<contenttweaker:rod_conductive_iron>,
   <ore:ingotCobalt>:<jaopca:item_stickcobalt>,
-  <ore:ingotDawnstone>:<contenttweaker:rod_dawnstone>
+  <ore:ingotDawnstone>:<contenttweaker:rod_dawnstone>,
+  <ore:ingotPrudentium>:<jaopca:item_stickprudentium>,
+  <ore:ingotModularium>:<contenttweaker:rod_modularium>
 } as IItemStack[IOreDictEntry];
 
 for ingot, rod in artisansRods {

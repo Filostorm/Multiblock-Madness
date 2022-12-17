@@ -60,8 +60,7 @@ val itemstoRemove =
 <mekanism:filterupgrade>,
 <mekanism:machineblock:12>,
 <mekanismgenerators:generator:8>,
-<mekanism:machineblock2:4>,
-<mekanism:machineblock:2>
+<mekanism:machineblock2:4>
 ]
  as IItemStack[];
 

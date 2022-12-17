@@ -45,21 +45,6 @@ for item in itemstoRemove {
 	recipes.remove(item);
 }
 
-
-// JEI Tooltips //
-
-<embers:ember_emitter>.addTooltip(format.red("Requires a Redstone Signal to function"));
-<embers:ember_pulser>.addTooltip(format.red("Requires a Redstone Signal to function"));
-<embers:ember_receiver>.addTooltip(format.red("Shift right click here first, then right click the Ember Emitter with the Tinkers hammer to connect"));
-<embers:ember_funnel>.addTooltip(format.red("Shift right click here first, then right click the Ember Ejector with the Tinkers hammer to connect"));
-
-<embers:crystal_ember>.addTooltip(format.red("Extracted from Bedrock with the Ember Bore"));
-<embers:shard_ember>.addTooltip(format.red("Extracted from Bedrock with the Ember Bore"));
-<embers:dust_ember>.addTooltip(format.red("Extracted from Bedrock with the Ember Bore"));
-<embers:dust_ash>.addTooltip(format.red("Created by burning an item in the Cinder Plinth"));
-<embers:cinder_plinth>.addTooltip(format.red("Burns items and produces ash piles"));
-
-
 // Materials and Components //
 
 // Caminite Blend
@@ -351,6 +336,7 @@ for item in stamperRecipesToRemove {
 
 val ingotStamper =
 {
+<liquid:molten_modularium>:<modularmachinery:itemmodularium>,
 <liquid:conductive_iron>:<enderio:item_alloy_ingot:4>,
 <liquid:pulsating_iron>:<enderio:item_alloy_ingot:5>,
 <liquid:inert_metal>:<contenttweaker:inert_ingot>,
@@ -375,6 +361,7 @@ for fluid, ingot in ingotStamper {
 
 val plateStamper =
 {
+<liquid:molten_modularium>:<contenttweaker:plate_modularium>,
 <liquid:conductive_iron>:<moreplates:conductive_iron_plate>,
 <liquid:pulsating_iron>:<moreplates:pulsating_iron_plate>,
 <liquid:invar>:<thermalfoundation:material:354>,
@@ -396,6 +383,7 @@ for fluid, plate in plateStamper {
 
 val gearStamper =
 {
+<liquid:molten_modularium>:<contenttweaker:gear_modularium>,
 <liquid:invar>:<thermalfoundation:material:290>,
 <liquid:constantan>:<thermalfoundation:material:292>,
 <liquid:conductive_iron>:<moreplates:conductive_iron_gear>,
@@ -403,7 +391,8 @@ val gearStamper =
 <liquid:cobalt>:<moreplates:cobalt_gear>,
 <liquid:palladium>:<contenttweaker:material_part:31>,
 <liquid:orichalcum>:<contenttweaker:material_part:21>,
-<liquid:steel>:<thermalfoundation:material:288>
+<liquid:steel>:<thermalfoundation:material:288>,
+<liquid:prudentium>:<moreplates:prudentium_gear>
 }
 as IItemStack[ILiquidStack];
 

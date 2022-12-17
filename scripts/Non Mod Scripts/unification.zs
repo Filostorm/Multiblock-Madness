@@ -31,6 +31,7 @@ import mods.mekanism.crusher;
 import mods.mekanism.enrichment;
 import mods.qmd.target_chamber;
 import mods.qmd.ore_leacher;
+import mods.rockhounding_chemistry.LabBlender;
 
 #priority 98
 
@@ -349,6 +350,9 @@ Pressurizer.addRecipe(<techreborn:dust:20>, <minecraft:ender_pearl>);
 // Removing RH:C Graphite Compound
 removeAndHide(<rockhounding_chemistry:chemical_items:8>);
 furnace.remove(<rockhounding_chemistry:metal_items:7>, <rockhounding_chemistry:chemical_items:8>);
+LabBlender.remove(<rockhounding_chemistry:chemical_items:8>);
+LabBlender.remove(<rockhounding_chemistry:chemical_items:8>);
+LabBlender.remove(<rockhounding_chemistry:chemical_items:8>);
 
 // Removing TR Brass Plate
 Casting.removeTableRecipe(<techreborn:plates:18>);

@@ -61,7 +61,8 @@ val itemstoRemove =
 	<jaopca:item_gearferroboron>,
 	<jaopca:item_geartungstencarbide>,
 	<jaopca:item_gearzinc>,
-	<jaopca:item_stickcobalt>
+	<jaopca:item_stickcobalt>,
+	<jaopca:item_stickprudentium>
 ]
  as IItemStack[];
 
@@ -171,7 +172,8 @@ val metalPressRods as IItemStack[IItemStack] = {
 	<contenttweaker:rod_thermal_alloy>:<contenttweaker:ingot_thermal_alloy>,
 	<contenttweaker:rod_mek_alloy>:<contenttweaker:ingot_mek_alloy>,
 	<contenttweaker:rod_conductive_iron>:<enderio:item_alloy_ingot:4>,
-	<contenttweaker:rod_dawnstone>:<embers:ingot_dawnstone>
+	<contenttweaker:rod_dawnstone>:<embers:ingot_dawnstone>,
+	<contenttweaker:rod_modularium>:<modularmachinery:itemmodularium>,
 } as IItemStack[IItemStack];
 
 for rod, material in metalPressRods {

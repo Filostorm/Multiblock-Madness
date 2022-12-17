@@ -263,6 +263,10 @@ val itemstoRemove =
 <advgenerators:turbine_rotor_gold>,
 <advgenerators:turbine_gold>,
 <advgenerators:turbine_kit_gold>,
+<botania_tweaks:dire_crafty_crate>,
+<avaritia:extreme_crafting_table>,
+
+<mekanism:machineblock:2>
 ]
  as IItemStack[];
 

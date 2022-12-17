@@ -363,6 +363,22 @@
 			<itemStack>contenttweaker:rod_dawnstone;4;0</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>mysticalagriculture:crafting;1;34</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickprudentium;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>modularmachinery:itemmodularium</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_modularium;4;0</itemStack>
+		</output>
+	</Recipe>
 
 
 

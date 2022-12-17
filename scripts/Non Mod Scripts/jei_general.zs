@@ -38,9 +38,7 @@ print("==================== loading jei_general.zs ====================");
 <advgenerators:turbine_controller>.addTooltip("§fPress U to view AG Turbine Fuels§r");
 <astralsorcery:blockchalice>.addTooltip("§fPress U to view chalice fluid interaction recipes§r");
 <actuallyadditions:item_mining_lens>.addTooltip("§fPress U to view Lens of the Miner ores§r");
-<astralsorcery:blockborehead>.addTooltip("§fPress U to view Neromatic Prime fluids§r");
 <advancedrocketry:spacelaser>.addTooltip("§fPress U to view Orbital Laser materials§r");
-<astralsorcery:blockmapdrawingtable>.addTooltip("§fPress U to view Refraction Table recipes§r");
 
 <translocators:translocator_part>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed")), "Hold Shift to see available modifiers");
 <translocators:translocator_part>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output")));
@@ -49,31 +47,9 @@ print("==================== loading jei_general.zs ====================");
 <translocators:translocator_part:1>.addShiftTooltip((format.yellow("- Add Glowstone to increase transfer speed")), "Hold Shift to see available modifiers");
 <translocators:translocator_part:1>.addShiftTooltip((format.red("- Add Redstone to enable toggling in/output")));
 
-
 <mekanism:tierinstaller:3>.addTooltip(format.lightPurple("Only works on Bins, Energy Cubes, Tanks and Gas Tanks"));
 
-<bloodmagic:item_demon_crystal>.addTooltip("§bObtained from the Demon Crystalliser§r");
-<bloodmagic:item_demon_crystal:1>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
-<bloodmagic:item_demon_crystal:2>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
-<bloodmagic:item_demon_crystal:3>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
-<bloodmagic:item_demon_crystal:4>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
-addDescription(<liquid:blockfluidantimatter>, "Obtained from striking Life Essence with Lightning§r");
-<liquid:blockfluidantimatter>.addTooltip("§6Obtained from striking Life Essence with Lightning");
-
 <techreborn:part:33>.addTooltip("§6Obtained from the Recycler§r");
-
-<astralsorcery:blockgemcrystals>.addTooltip("§bCreated by throwing a Rock Crystal and Glowstone Dust in Starlight§r");
-<astralsorcery:itemperkgem>.addTooltip("§bGrows from a Gem Crystal Cluster§r");
-<astralsorcery:itemperkgem>.addTooltip("§bForms around Noon and Midnight§r");
-<astralsorcery:itemperkgem:1>.addTooltip("§bGrows from a Gem Crystal Cluster§r");
-<astralsorcery:itemperkgem:1>.addTooltip("§bForms around Night to Morning§r");
-<astralsorcery:itemperkgem:2>.addTooltip("§bGrows from a Gem Crystal Cluster§r");
-<astralsorcery:itemperkgem:2>.addTooltip("§bForms around Afternoon and Evening§r");
-
-addDescription(<liquid:aetherworks.impure_aetherium_gas>, "Obtained from the Aether Collector§r");
-<liquid:aetherworks.impure_aetherium_gas>.addTooltip("§9Obtained from the Aether Collector");
-
-//mods.jei.JEI.addDescription(<immersiveengineering:stone_decoration:1>,"Your first Steel is made in the High Oven");
 
 
 // --== Power production tooltips ==-- //
@@ -276,6 +252,31 @@ for machine, power in machine_base_power_shift {
 
 // --== Embers Documentation ==-- //
 
+<embers:ember_emitter>.addTooltip(format.red("Requires a Redstone Signal to function"));
+<embers:ember_pulser>.addTooltip(format.red("Requires a Redstone Signal to function"));
+<embers:ember_receiver>.addTooltip(format.red("Shift right click here first, then right click the Ember Emitter with the Tinkers hammer to connect"));
+<embers:ember_funnel>.addTooltip(format.red("Shift right click here first, then right click the Ember Ejector with the Tinkers hammer to connect"));
+
+<embers:crystal_ember>.addTooltip(format.red("Extracted from Bedrock with the Ember Bore"));
+<embers:shard_ember>.addTooltip(format.red("Extracted from Bedrock with the Ember Bore"));
+<embers:dust_ember>.addTooltip(format.red("Extracted from Bedrock with the Ember Bore"));
+<embers:dust_ash>.addTooltip(format.red("Created by burning an item in the Cinder Plinth"));
+<embers:cinder_plinth>.addTooltip(format.red("Burns items and produces ash piles"));
+
+<embers:item_pump>.addTooltip(format.red("Requires a Redstone Signal to function"));
+<embers:pump>.addTooltip(format.red("Requires a Redstone Signal to function"));
+<embers:vacuum>.addTooltip(format.red("Requires a Redstone Signal to function"));
+<embers:item_transfer>.addTooltip("§fFilters Items");
+<embers:item_transfer>.addTooltip("§fRight click with an item to let it through");
+<embers:fluid_transfer>.addTooltip("§fFilters Fluids");
+<embers:fluid_transfer>.addTooltip("§fRight click with a fluid to let it through");
+<embers:item_dropper>.addTooltip("§fDrops any items piped through the top");
+
+<embers:breaker>.addTooltip("§fAutomatically breaks blocks in front of it");
+<embers:breaker>.addTooltip("§fPlace a bin behind it to auto-collect drops");
+
+<embers:bin>.addTooltip("§fAutomatically collects outputs from some Embers machines");
+
 <embers:steam_engine>.addTooltip("§fProduces 20R with Coal and Water");
 <embers:steam_engine>.addTooltip("§fProduces 40R with Steam");
 <mystgears:vis_motor>.addTooltip("§fProduces 30R§r");
@@ -317,6 +318,8 @@ for machine, power in machine_base_power_shift {
 <embers:catalytic_plug>.addTooltip("§fPlace two to quadruple machine speed");
 <embers:catalytic_plug>.addTooltip("§fRequires Alchemical Slurry");
 
+<embers:mini_boiler>.addTooltip("§fPlace next to any Embers machine and supply water to produce steam");
+
 <embers:heat_coil>.addTooltip("§fSmelts items with Ember power");
 
 <embers:inferno_forge>.addTooltip("§fUsed to upgrade Embers Gear");
@@ -348,8 +351,230 @@ for seed in embers_crystal_seeds {
 }
 
 
-// --== BM Rune Documentation ==-- //
+<embers:tinker_lens>.addTooltip("§fHold in hand to examine functionality of embers machines");
+<embers:ember_detector>.addTooltip("§6Used to find ember-rich locations§r");
+<embers:field_chart>.addTooltip("§6Used to find ember-rich locations");
+<embers:ember_gauge>.addTooltip("§fPlace on Embers machine to view Embers amount");
+<embers:fluid_gauge>.addTooltip("§fPlace on Embers machine to view Fluid amount");
+<embers:clockwork_attenuator>.addTooltip("§fPlace on Embers machine to control speed");
+<embers:clockwork_attenuator>.addTooltip("§fRight Click / Shift Right Click to change speed");
+
+<embers:mech_actuator_single>.addTooltip("§fPlace next to a suitable Embers machine to power with §eMechanical Power§r§r");
+<embers:mech_actuator>.addTooltip("§fPlace next to a suitable Embers machine to power with §eMechanical Power§r§r");
+
+val mechanical_embers_machines = [
+  <embers:ember_bore>,
+  <embers:mechanical_pump>,
+  <embers:stamper>,
+  <embers:mixer>,
+  <embers:auto_hammer>
+] as IItemStack[];
+
+for machines in mechanical_embers_machines {
+  machines.addTooltip("§fCan be powered with §eMechanical Power");
+}
+
+
+// --== Astral Documentation ==-- //
+
+val astralblockgem = [
+  <astralsorcery:blockgemcrystals>,
+  <astralsorcery:blockgemcrystals:1>,
+  <astralsorcery:blockgemcrystals:2>,
+  <astralsorcery:blockgemcrystals:3>,
+  <astralsorcery:blockgemcrystals:4>
+] as IItemStack[];
+
+for block in astralblockgem {
+  block.addTooltip("§bCreated by throwing a Rock Crystal and Glowstone Dust in Starlight§r");
+}
+
+
+val astralcelestialgem = [
+  <astralsorcery:blockcelestialcrystals>,
+  <astralsorcery:blockcelestialcrystals:1>,
+  <astralsorcery:blockcelestialcrystals:2>,
+  <astralsorcery:blockcelestialcrystals:3>,
+  <astralsorcery:blockcelestialcrystals:4>
+] as IItemStack[];
+
+for block in astralcelestialgem {
+  block.addTooltip("§bCreated by throwing a Rock Crystal and Stardust in Starlight§r");
+}
+
+<astralsorcery:itemperkgem>.addTooltip("§bGrows from a Gem Crystal Cluster§r");
+<astralsorcery:itemperkgem>.addTooltip("§bForms around Noon and Midnight§r");
+<astralsorcery:blockgemcrystals:2>.addTooltip("§bForms around Noon and Midnight§r");
+<astralsorcery:itemperkgem:1>.addTooltip("§bGrows from a Gem Crystal Cluster§r");
+<astralsorcery:itemperkgem:1>.addTooltip("§bForms around Night to Morning§r");
+<astralsorcery:blockgemcrystals:3>.addTooltip("§bForms around Night to Morning§r");
+<astralsorcery:itemperkgem:2>.addTooltip("§bGrows from a Gem Crystal Cluster§r");
+<astralsorcery:itemperkgem:2>.addTooltip("§bForms around Afternoon and Evening§r");
+<astralsorcery:blockgemcrystals:4>.addTooltip("§bForms around Afternoon and Evening§r");
+
+<astralsorcery:itemhandtelescope>.addTooltip("§bUsed to find bright constellations at night§r");
+<astralsorcery:blockmachine>.addTooltip("§bUsed to find dim constellations at night§r");
+<astralsorcery:blockobservatory>.addTooltip("§bUsed to find faint constellations at night§r");
+<astralsorcery:itemsextant>.addTooltip("§bRight click certain blocks to view multiblock visualisations§r");
+<astralsorcery:itemsextant>.addTooltip("§bAlso used to find generated structures at night§r");
+
+<astralsorcery:itemknowledgeshare>.addTooltip("§bUsed to transfer Astral Knowledge progress between players§r");
+<astralsorcery:itemknowledgeshare>.addTooltip("§bRight click to store your Astral Knowledge progress§r");
+
+<astralsorcery:blockcelestialgateway>.addTooltip("§bUsed for teleportation§r");
+<astralsorcery:blockcelestialgateway>.addTooltip("§bConstruct celestial gateways and stand on them to teleport between them§r");
+
+<astralsorcery:blockritualpedestal>.addTooltip("§bPress U to view ritual effects§r");
+<astralsorcery:blockmapdrawingtable>.addTooltip("§bPress U to view Refraction Table recipes§r");
+<astralsorcery:iteminfusedglass>.addTooltip("§bPress U to view Refraction Table recipes§r");
+<astralsorcery:blockattunementaltar>.addTooltip("§bPress U to view Attunement Altar recipes§r");
+
+<astralsorcery:blocktreebeacon>.addTooltip("§bConverts trees into spectral trees that drop tree items§r");
+
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.discidia"}}).addTooltip("§bResets all attunement perk selections§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.discidia"}}).addTooltip("§bChanges base attunement to Discidia§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.discidia"}}).addTooltip("§bAll attunement levels are kept§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.armara"}}).addTooltip("§bResets all attunement perk selections§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.armara"}}).addTooltip("§bChanges base attunement to Armara§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.armara"}}).addTooltip("§bAll attunement levels are kept§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.vicio"}}).addTooltip("§bResets all attunement perk selections§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.vicio"}}).addTooltip("§bChanges base attunement to Vicio§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.vicio"}}).addTooltip("§bAll attunement levels are kept§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.aevitas"}}).addTooltip("§bResets all attunement perk selections§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.aevitas"}}).addTooltip("§bChanges base attunement to Aevitas§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.aevitas"}}).addTooltip("§bAll attunement levels are kept§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.evorsio"}}).addTooltip("§bResets all attunement perk selections§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.evorsio"}}).addTooltip("§bChanges base attunement to Evorsio§r");
+<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.evorsio"}}).addTooltip("§bAll attunement levels are kept§r");
+<astralsorcery:itemperkseal>.addTooltip("§bBlocks the effect of an attunement perk§r");
+<astralsorcery:itemperkseal>.addTooltip("§bDouble click a disabled perk to reenable it§r");
+
+
+addDescription(<astralsorcery:blockritualpedestal>, [
+  "Ritual Effects:",
+  "Aevitas: Nearby living entities receive Regeneration, plants experience accelerated growth",
+  "",
+  "Armara: Hostile mobs and projectiles are repelled away from the Pedestal",
+  "",
+  "Discidia: Hostile mobs nearby take damage over time",
+  "",
+  "Evoriso: Breaks solid blocks near the Pedestal",
+  "",
+  "Vicio: Grants creative flight to entities nearby",
+  "",
+  "Bootes: Nearby animals 'shed' their drops as if they were slain",
+  "",
+  "Fornax: Nearby blocks become their burnt or smelted counterparts",
+  "",
+  "Horologium: Nearby machines experience bonus ticks and work faster",
+  "",
+  "Lucerna: Prevents hostile mobs from spawning nearby",
+  "",
+  "Mineralis: Nearby stone is converted into ores, possible ores shown in JEI",
+  "",
+  "Octans: Nearby water blocks become easier to fish",
+  "",
+  "Pelotorio: Higher chance of entities spawning nearby, including hostile mobs",
+  "",
+  "",
+  "Ritual Modifiers:",
+  "Gelu: Increases range, reduces potency",
+  "",
+  "Ulteria: Increases potency, reduces range",
+  "",
+  "Vorux: Increases range and potency, increases crystal fracture rate",
+  "",
+  "Alcara: Corrupts the effect of the original ritual, increases crystal fracture rate",
+  "",
+  "",
+  "Alcara Ritual Effects:",
+  "Aevitas: Nearby living entities receive Weakness IV, Mining Fatigue III, Hunger III, and Bleeding III, has a chance to destroy crops",
+  "",
+  "Armara: Hostile mobs and projectiles are buffed in speed and attack strength",
+  "",
+  "Discidia: Hostile mobs near the Pedestal receive Resistance III, Damages players, Nearby animals receive Inner Wealth",
+  "",
+  "Evoriso: Places random solid blocks in a 33x33x33 cube around the Pedestal", 
+  "",
+  "Vicio: Entities near the Pedestal receive Fatigue and Slowness",
+  "",
+  "Bootes: Kills animals instantly while also granting them Inner Wealth",
+  "",
+  "Fornax: Places Ice near the pedestal",
+  "",
+  "Horologium: Freezes both mobs and machines",
+  "",
+  "Lucerna: Makes the night last longer in the world it's in",
+  "",
+  "Mineralis: Creates 3x3 stone platforms underneath entities when there is space beneath them, which may contain ores",
+  "",
+  "Octans: Places water near the pedestal",
+  "",
+  "Pelotrio: Skeletons within range are turned to Wither Skeletons and given Inner Wealth IV"
+]);
+
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.pelotrio"}}).addTooltip("§bCreates spectral tools that break blocks or attack mobs§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.bootes"}}).addTooltip("§bGives a chance of spawning a Flare when attacked§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.octans"}}).addTooltip("§bGives Water Breathing§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.horologium"}}).addTooltip("§bNearby entities freeze momentarily when being attacked§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.mineralis"}}).addTooltip("§bWhen holding a block in hand, outlines identical blocks in world§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.lucerna"}}).addTooltip("§bHostile mobs emit light particles revealing their locations§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.evorsio"}}).addTooltip("§bSpeeds up block breaking§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.evorsio"}}).addTooltip("§bDeals significant damage to nearby hostile mobs when one is slain§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.aevitas"}}).addTooltip("§bRegenerates health and hunger§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.vicio"}}).addTooltip("§bGives elytra-like gliding§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.armara"}}).addTooltip("§bSometimes blocks attacks§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia"}}).addTooltip("§bWhen attacked, damage taken is stored§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia"}}).addTooltip("§bStored damage is released upon hitting an entity§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.fornax"}}).addTooltip("§bWhile on fire:§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.fornax"}}).addTooltip("§bConverts fire damage into healing§r");
+<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.fornax"}}).addTooltip("§bMelts or burns block beneath feet§r");
+
+
+<astralsorcery:itemwand>.withTag({astralsorcery: {AugmentName: "astralsorcery.constellation.armara"}}).addTooltip("§bCreates a shield that gives Absorption and Resistance when attacked§r");
+<astralsorcery:itemwand>.withTag({astralsorcery: {AugmentName: "astralsorcery.constellation.aevitas"}}).addTooltip("§bCreates a temporary floor under your feet while held§r");
+<astralsorcery:itemwand>.withTag({astralsorcery: {AugmentName: "astralsorcery.constellation.vicio"}}).addTooltip("§bLaunches you through the air§r");
+<astralsorcery:itemwand>.withTag({astralsorcery: {AugmentName: "astralsorcery.constellation.discidia"}}).addTooltip("§bIncreases damage of consecutive hits on the same mob up to 2x§r");
+<astralsorcery:itemwand>.withTag({astralsorcery: {AugmentName: "astralsorcery.constellation.evorsio"}}).addTooltip("§bGives a chance of AOE mining§r");
+
+<astralsorcery:itemgrapplewand>.addTooltip("§bActs as a grappling hook§r");
+<astralsorcery:itemilluminationwand>.addTooltip("§bRight click to place lights§r");
+<astralsorcery:itemilluminationwand>.addTooltip("§bShift right click to make block indestructable§r");
+<astralsorcery:itemarchitectwand>.addTooltip("§bActs as a builder's wand§r");
+<astralsorcery:itemarchitectwand>.addTooltip("§bHold §6Shift§b for controls§r");
+<astralsorcery:itemarchitectwand>.addShiftTooltip("§bShift Right Click blocks to select them§r");
+<astralsorcery:itemarchitectwand>.addShiftTooltip("§bRight Click to place blocks§r");
+<astralsorcery:itemarchitectwand>.addShiftTooltip("§bLeft Click air to deselect blocks§r");
+<astralsorcery:itemexchangewand>.addTooltip("§bActs as an exchanging gadget§r");
+<astralsorcery:itemexchangewand>.addTooltip("§bHold §6Shift§b for controls§r");
+<astralsorcery:itemexchangewand>.addShiftTooltip("§bShift Right Click blocks to select them§r");
+<astralsorcery:itemexchangewand>.addShiftTooltip("§bRight Click to replace blocks§r");
+<astralsorcery:itemexchangewand>.addShiftTooltip("§bLeft Click air to deselect blocks§r");
+
+
+<astralsorcery:blockworldilluminator>.addTooltip("§bIlluminates a large area around it§r");
+
+<astralsorcery:blockborehead:1>.addTooltip("§bTraps entities§r");
+<astralsorcery:blockborehead>.addTooltip("§bMines fluid veins, fills nearby Chalices with mined fluid§r");
+<astralsorcery:blockborehead>.addTooltip("§bSearch for fluid veins with the Ichosic Resonator§r");
+<astralsorcery:blockborehead>.addTooltip("§bPress U to view Neromatic Prime fluids§r");
+
+<astralsorcery:blockrituallink>.addTooltip("§bUsed to transport ritual effects to any location§r");
+<astralsorcery:blockrituallink>.addTooltip("§bPlace 5 blocks above ritual pedestal and link to another ritual anchor§r");
+
+<astralsorcery:itemskyresonator>.addTooltip("§bFosic: Find areas with high starlight at night§r");
+<astralsorcery:itemskyresonator>.addTooltip("§bDomic: View range of rituals§r");
+<astralsorcery:itemskyresonator>.addTooltip("§bIchosic: Find Neromatic Prime fluid veins at night§r");
+
+<astralsorcery:itemenchantmentamulet>.addTooltip("§bIncreases the level of up to 3 random enchantments§r");
+<astralsorcery:itemenchantmentamulet>.addTooltip("§bEnchantments randomly selected upon crafting§r");
+
+<astralsorcery:itemcoloredlens:6>.addTooltip("§bRays passing through can pass through blocks, losing potency§r");
+
+
+// --== BM Documentation ==-- //
 // Credits to the E2E-E Dev!
+// TODO
 
 <bloodmagic:blood_rune:1>.addTooltip("§f+20% Crafting / Orb filling speed");
 <bloodmagic:blood_rune:3>.addTooltip("§f+10% LP from rituals/dagger of sacrifice");
@@ -360,6 +585,20 @@ for seed in embers_crystal_seeds {
 <bloodmagic:blood_rune:8>.addTooltip("§f+2% maximum blood orb capacity");
 <bloodmagic:blood_rune:9>.addTooltip("§f-1 tick between processes (default is 20)");
 <bloodmagic:blood_rune:10>.addTooltip("§f+1000 Charge");
+
+<bloodmagic:item_demon_crystal>.addTooltip("§bObtained from the Demon Crystalliser§r");
+<bloodmagic:item_demon_crystal:1>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
+<bloodmagic:item_demon_crystal:2>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
+<bloodmagic:item_demon_crystal:3>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
+<bloodmagic:item_demon_crystal:4>.addTooltip("§bObtained from the Resonance of the Faceted Crystal ritual§r");
+addDescription(<liquid:blockfluidantimatter>, "Obtained from striking Life Essence with Lightning§r");
+<liquid:blockfluidantimatter>.addTooltip("§6Obtained from striking Life Essence with Lightning");
+
+addDescription(<liquid:aetherworks.impure_aetherium_gas>, "Obtained from the Aether Collector§r");
+<liquid:aetherworks.impure_aetherium_gas>.addTooltip("§9Obtained from the Aether Collector");
+
+// --== TC Documentation ==-- //
+// TODO
 
 
 // --== ET Multiblock JEI Descriptions ==-- //

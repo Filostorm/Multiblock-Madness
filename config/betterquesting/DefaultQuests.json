@@ -5061,7 +5061,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Anyone standing next to the flower will find their xp being turned in mana.",
+          "desc:8": "Anyone standing next to the flower will find their xp being turned into mana.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6307,7 +6307,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Right click to enter THE BENEATH.\n\nOnce you enter, look for the giant cavern.\n\n§bThis is great place to run Pumpjacks and the Excavator!",
+          "desc:8": "Right click to enter THE BENEATH.\n\nOnce you enter, look for the giant cavern.\n\n§bThis is a great place to run Pumpjacks and the Excavator!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12146,7 +12146,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Throw the §dSalis Mundus§r on the Caldron to turn it into a Crucible. Fill with water, then heat.\n\nThis can be a messy process, with wasted Essentia converting into §5Flux§r and polluting the atmosphere. This can cause §5Void Rifts§r, which can destroy blocks if left unattended. Look in the top left corner of the screen while holding the §6Thaumometer§r to check your Vis/Flux levels. The Dark Purple is how much §5Flux§r is in the chunk.\n\nUse §bQuartz Slivers§r to clean up after a craft, but make sure to unlock the research first!\n\n§6This will be used to make Brass until you get access to Zinc.",
+          "desc:8": "Throw the §dSalis Mundus§r on the Cauldron to turn it into a Crucible. Fill with water, then heat with fire or lava below the Crucible.\n\nThis can be a messy process, with wasted Essentia converting into §5Flux§r and polluting the atmosphere. This can cause §5Void Rifts§r, which can destroy blocks if left unattended. Look in the top left corner of the screen while holding the §6Thaumometer§r to check your Vis/Flux levels. The Dark Purple is how much §5Flux§r is in the chunk.\n\nUse §bQuartz Slivers§r to clean up after a craft, but make sure to unlock the research first!\n\n§6This will be used to make Brass until you get access to Zinc.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -16873,7 +16873,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The final upgrade, Advanced Machine Casings, each count for an additonal 20 heat. (You\u0027ll need 34 if you want fully upgrade your Blast Furnace)\n\nChrome can be found by electrolizing Ruby dust.\n\n",
+          "desc:8": "The final upgrade, Advanced Machine Casings, each count for an additonal 20 heat. (You\u0027ll need 34 if you want to fully upgrade your Blast Furnace)\n\nChrome can be found by electrolyzing Ruby dust.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 34,
@@ -20459,7 +20459,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "After selecting the §9§1Mark of the Falling Tower §rin your Ritual Diviner (Shift-Left click 3 times), right click on your placed Master Ritual Stone with it until completed.\n\nNext you\u0027ll need to activate the Ritual using the crystal. §cBe sure check if you have enough LP in your network§r using a §eDivination or Seer\u0027s sigil§r, then throw your catalyst on top. \n\n§bIt might be a good idea to place a block directly above your ritual stone before activating, so your formation doesn\u0027t get destroyed!",
+          "desc:8": "After selecting the §9§1Mark of the Falling Tower §rin your Ritual Diviner (Shift-Left click 3 times), right click on your placed Master Ritual Stone with it until completed. You can view all available Mark of the Falling Tower recipes by viewing the uses of the Master Ritual Stone in JEI.\n\nNext you\u0027ll need to activate the Ritual using the crystal. §cBe sure to check if you have enough LP in your network§r using a §eDivination or Seer\u0027s sigil§r, then throw your catalyst on top. \n\n§bIt might be a good idea to place a block directly above your ritual stone before activating, so your formation doesn\u0027t get destroyed!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26634,7 +26634,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Acts similar to the Looking Glass, but can be placed and snaps to the constellations.",
+          "desc:8": "Acts similar to the Looking Glass, but can be placed and snaps to the constellations.\n\nCan be used to find dim constellations.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31135,7 +31135,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9§bNether Brick blocks are a good source of Nether essence.\n\n§rKilling mobs using the Sentient Sword will cause them to drop Demon Will, which then increases its damage while in your inventory",
+          "desc:8": "§9§bNether Brick blocks are a good source of Nether essence.\n\n§rKilling mobs using the Sentient Sword will cause them to drop Demon Will, which then increases its damage while in your inventory.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31795,7 +31795,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "An advanced alloy smelter, can also be used to process ores",
+          "desc:8": "An advanced alloy smelter, can also be used to process ores.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -32760,7 +32760,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Same as before, but takes §e52§e Runes§r of any type",
+          "desc:8": "Same as before, but takes §e52§e Runes§r of any type.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47194,7 +47194,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "",
+          "desc:8": "Forged from the darkness of the beneath.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -50394,7 +50394,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Just a little bit farther!\n\nYou\u0027ll probably need most, if not all, of the creative items to get the §6Ultimate Singularity§r.\n\n",
+          "desc:8": "§r§\n§cC§6o§en§ag§2r§ba§9t§3u§3l§da§5t§fi§7on§6s§b!§r\n\nShare base screenshots with the world!\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -50641,7 +50641,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Infinite fluids!\n\n§bMight want to look at which items are metable...",
+          "desc:8": "Infinite fluids!\n\n§bMight want to look at which items are meltable...",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54084,7 +54084,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This Machine is used in the creation of Advanced Rocketry Circuits",
+          "desc:8": "This Machine is used in the creation of Advanced Rocketry Circuits.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -58790,7 +58790,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Filling one of these with Starlight and placing it near the Starlight Infuser will automagically fill any places it was consumed during a craft.\n\n§6You can also create Sky Stone by placing a second one filled with Tectonic Petrotheum near by!",
+          "desc:8": "Filling one of these with Starlight and placing it near the Starlight Infuser will automagically fill any places it was consumed during a craft.\n\n§6You can also create Sky Stone by placing a second one filled with Tectonic Petrotheum near by!\n\n§fContainment Chalice Fluid recipes can be viewed in JEI by viewing the uses of the Containment Chalice.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -58954,7 +58954,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Tranquility Guide by §bDiamondSentinel§r:\n-First, you need to build an incense altar. Nothing works without it. \n-The incense altar goes on a 3x3 square of other stuff. What it is doesn\u0027t matter. \n-From here on, in each cardinal direction add another few rows of a type of path. \n-Wooden (3 rows past altar) caps at 60%, Stone (2 rows past wooden) caps at 120%, worn stone (2 rows past stone) caps at 200%, and obsidian (2 rows past worn stone) caps at 300%. \n-There are 7 categories of \"tranquility\" that you can gain. These blocks go on the same y coordinate as the paths, and up to 2 levels higher (so 3+ block tall trees don\u0027t help). Mix and match categories as much as you can, but don\u0027t bother with anything other than the best of each category. \n  §a §e-Crop - Potatoes, Carrots, Wheat, and Wart all give the same bonus. Pick your favorite. \n   §7-Earthen - Farmlands your best. Fortunate. \n   §c-Fire - Actual fire works best here. Light it on Netherack. (also gives a bonus)\n   §6-Lava - Self explanatory.\n   §2§a-Plants - Leaves. Keep away from fire and lava layers. \n   §2-Tree - Logs. See above. \n   §1§9-Water - Life Essence is your friend here.\n§r- Last note: Use your sigil of divination to figure out what your bonus is. The bottom number is the % increase, the top is your raw score.",
+          "desc:8": "The incense altar allows you to drain 90% of your current health with the sacrificial dagger, and applies bonus LP depending on the tranquility bonus given by the Incense Altar. It also applies Soul Fray, preventing you from using the sacrificial dagger for a certain amount of time.\n\nTranquility Guide by §bDiamondSentinel§r:\n\nFirst, you need to build an incense altar. Nothing works without it. The incense altar goes on a 3x3 square of other stuff. What it is doesn\u0027t matter. \n\nFrom here on, in each cardinal direction, add another few rows of a type of path. The paths used cap the tranquility bonus:\n\n- Wooden (3 rows past altar) caps at 60%, \n- Stone (2 rows past wooden) caps at 120%\n- Worn stone (2 rows past stone) caps at 200%\n- Obsidian (2 rows past worn stone) caps at 300%\n\nThere are 7 categories of \"tranquility\" that you can gain. These blocks go on the same y coordinate as the paths, and up to 2 levels higher (so 3+ block tall trees don\u0027t help). Mix and match categories as much as you can, but don\u0027t bother with anything other than the best of each category. \n\n  §a §e- Crop - Potatoes, Carrots, Wheat, and Wart all give the same bonus. Pick your favorite.\n   §7- Earthen - Farmland\u0027s your best. Fortunate. \n   §c- Fire - Actual fire works best here. Light it on Netherack. (also gives a bonus)\n   §6- Lava - Self explanatory.\n   §2§a- Plants - Leaves. Keep away from fire and lava layers. \n   §2- Tree - Logs. See above. \n   §1§9- Water - Life Essence is your friend here.\n\n§rUse your sigil of divination to figure out what your bonus is. The bottom number is the % increase, the top is your raw score.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -59105,7 +59105,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Filling the Midnight Frames with Luminessence will make all crafts faster. With all 8 replaced its about a 60% speed buff.",
+          "desc:8": "Filling the Midnight Frames with Luminessence will make all crafts faster. With all 8 replaced, it\u0027s about a 60% speed buff.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 14,
@@ -63502,7 +63502,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You might want to set up those creative items!\n\n\nBlock overlay textures by Puzzlebark from Zedtech.",
+          "desc:8": "You might want to set up those creative items! You\u0027ll probably need most, if not all, of the creative items to get the §6Ultimate Singularity§r.\n\nBlock overlay textures by Puzzlebark from Zedtech.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,

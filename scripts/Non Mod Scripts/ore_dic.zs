@@ -273,6 +273,15 @@ for item in hiddenGlass {
 
 <ore:stickConductiveIron>.add(<contenttweaker:rod_conductive_iron>);
 <ore:stickDawnstone>.add(<contenttweaker:rod_dawnstone>);
+<ore:stickModularium>.add(<contenttweaker:rod_modularium>);
+
+<ore:gearHeavyAlloy>.add(<contenttweaker:gear_mek_alloy>);
+<ore:gearThermalAlloy>.add(<contenttweaker:gear_thermal_alloy>);
+<ore:gearModularium>.add(<contenttweaker:gear_modularium>);
+
+<ore:ingotHeavyAlloy>.add(<contenttweaker:ingot_mek_alloy>);
+<ore:ingotThermalAlloy>.add(<contenttweaker:ingot_thermal_alloy>);
+<ore:ingotModularium>.add(<modularmachinery:itemmodularium>);
 
 ##########################################################################################
 print("==================== end of ore_dic.zs ====================");
