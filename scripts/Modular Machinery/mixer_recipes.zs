@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.modularmachinery.RecipePrimer;
+import mods.jei.JEI.addDescription;
 
 print("==================== loading mods mixer_recipeszs ====================");
 ##########################################################################################
@@ -10,6 +11,14 @@ print("==================== loading mods mixer_recipeszs ====================");
 ##           The Mixer
 ##
 ##############################################
+
+// Modifier Tooltip
+
+<thermalfoundation:storage_alloy:1>.addTooltip(format.gold("Mixer Modifier: 2x Speed"));
+addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mixer"}), 
+"Central Block Upgrade",
+"Electrum: 2x Speed");
+
 
 // Bronze
 val fluidBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-bronze", "mixer", 240, 0);

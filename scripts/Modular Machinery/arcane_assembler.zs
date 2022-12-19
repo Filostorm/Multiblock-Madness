@@ -6,13 +6,29 @@ import crafttweaker.data.IData;
 import mods.immersiveengineering.Mixer;
 import mods.nuclearcraft.Enricher;
 import crafttweaker.liquid.ILiquidStack;
+import mods.jei.JEI.addDescription;
 
 
 // Arcane Assembler Upgrade Tooltips //
-<thaumcraft:metal_alchemical_advanced>.addTooltip(format.darkAqua("Arcane Assembler Modifier: -5% Recipe Time"));
+
+<thaumcraft:metal_alchemical_advanced>.addTooltip(format.darkAqua("Arcane Assembler Modifier: +5% Speed"));
 <thaumcraft:matrix_cost>.addTooltip(format.darkAqua("Arcane Assembler Modifier: -20% Fluid Use"));
-<thaumcraft:matrix_speed>.addTooltip(format.darkAqua("Arcane Assembler Modifier: -20% Recipe Time"));
-<thaumadditions:mithminite_block>.addTooltip(format.darkAqua("Arcane Assembler Modifier: -30% Fluid Use & Recipe Time"));
+<thaumcraft:matrix_speed>.addTooltip(format.darkAqua("Arcane Assembler Modifier: +25% Speed"));
+<thaumadditions:mithminite_block>.addTooltip(format.darkAqua("Arcane Assembler Modifier: -30% Fluid Use, +42% Speed"));
+
+// Arcane Assembler JEI Description //
+
+addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:arcane-assembler"}), 
+"Upgrade Effects multiply with each other!",
+"",
+"Central Block Modifier",
+"Infusion Cost Stone: -20% Fluid Use",
+"Infusion Speed Stone: +25% Speed",
+"Mithminite: -30% Fluid Use, +42% Speed",
+"",
+"Alchemical Construct Upgrade",
+"Advanced Alchemical Constructs: +5% Speed each");
+
 
 // Warded Block Breaking Tooltip //
 val wardedBlocks = [

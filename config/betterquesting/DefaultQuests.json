@@ -5944,7 +5944,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place this block under a Mana Pool to unlock more crafting recipes!\n\n§bRaven Feathers make great Fletching!",
+          "desc:8": "Place this block under a Mana Pool to unlock more crafting recipes!\n\n§bNeed more vis? The Twilight Forest contains plenty of Vis! Alternatively, craft a workbench charger!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9082,7 +9082,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input).\n\nCan attach a Faucet right to the output!",
+          "desc:8": "All the custom Multiblocks will require the blueprint inside to function. You can use them to display a hologram while assembling the machine.\n\nThe Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input).\n\nCan attach a Faucet right to the output!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -39351,7 +39351,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "All modular machines require the blueprint to be placed inside to run. You can use it to display a hologram while assembling the machine.\n\nThe in/outputs can go under any of the Projectors, and can be any size.\n\n\n§bUpgrading the casing will increase speed by a small amount for each one replaced, as well as RF/t consumption.",
+          "desc:8": "Used to process Miniaturisation Recipes more easily, at the cost of RF.\n\nThe in/outputs can go under any of the Projectors, and can be any size.\n\n§nAvailable Upgrades\n\n§rView available upgrades for this multiblock either through the JEI description for the blueprint or searching the multiblock name in JEI.\n\n§rUpgrading the casing will increase speed by a small amount for each one replaced, as well as RF/t consumption.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47129,7 +47129,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "",
+          "desc:8": "Shiny!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48275,7 +48275,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "",
+          "desc:8": "Where light meets dark.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -61841,7 +61841,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "All the custom Multiblocks will require the blueprint inside to function.",
+          "desc:8": "You\u0027ll be using this multiblock to assemble many complex items!\n\n§nAvailable Upgrades§r\n\nView available upgrades for this multiblock either through the JEI description for the blueprint or searching the multiblock name in JEI.\n\nThe central block (Refined Iron) can be replaced with another modifier block for a speed upgrade, at the cost of increased power consumption. The coils can also be replaced with higher tier coils for increased speed and power consumption.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,

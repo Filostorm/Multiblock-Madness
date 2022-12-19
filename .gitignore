@@ -1,6 +1,8 @@
 /*
 !/config
+!/config/AppliedEnergistics2/*
 /config/AppliedEnergistics2/VersionChecker.cfg
+!/config/jei/*
 /config/jei/bookmarks.ini
 !/scripts
 !/resources

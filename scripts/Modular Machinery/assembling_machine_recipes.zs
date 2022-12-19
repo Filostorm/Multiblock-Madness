@@ -1865,128 +1865,125 @@ mods.modularmachinery.RecipeBuilder.newBuilder("assemblermkfour" + "_ev_capacito
 
 // Basic Assembling Machine Modifiers //
 
-// Tooltips
-var t1modifiers as IItemStack[] = [
-<techreborn:storage2:10>,
-<thermalfoundation:storage:6>,
-<thermalfoundation:storage_alloy:7>,
-<mekanism:basicblock>,
-<plustic:osgloglasblock>
-];
+var t1modifiers as string[IItemStack] = {
+<thermalfoundation:storage:6>:"2x Speed, 2.67x Power Consumption",
+<thermalfoundation:storage_alloy:7>:"2.5x Speed, 5x Power Consumption",
+<mekanism:basicblock>:"3x Speed, 4x Power Consumption",
+<plustic:osgloglasblock>:"3.75x Speed, 7.5x Power Consumption",
+};
 
-for item in t1modifiers {
+for item, desc in t1modifiers {
 	item.addTooltip(format.white("Basic Assembling Machine Modifier"));
+	item.addTooltip(format.white(desc));
 }
 
-// JEI Descriptions
-addDescription(<thermalfoundation:storage:6>, "When used as Basic Assembling Machine Modifier:", "2x Speed, 2.67x Power Consumption");
-addDescription(<thermalfoundation:storage_alloy:7>, "When used as Basic Assembling Machine Modifier:", "2.5x Speed, 5x Power Consumption");
-addDescription(<mekanism:basicblock>, "When used as Basic Assembling Machine Modifier:", "3x Speed, 4x Power Consumption");
-addDescription(<plustic:osgloglasblock>, "When used as Basic Assembling Machine Modifier:", "3.75x Speed, 7.5x Power Consumption");
-
+<techreborn:machine_casing:1>.addShiftTooltip(format.white("Basic Assembling Machine Modifier"));
+<techreborn:machine_casing:1>.addShiftTooltip(format.white("+7% Speed, +7% Power Consumption"));
+<techreborn:machine_casing:2>.addShiftTooltip(format.white("Basic Assembling Machine Modifier"));
+<techreborn:machine_casing:2>.addShiftTooltip(format.white("+14% Speed, +14% Power Consumption"));
+<techreborn:fusion_coil>.addShiftTooltip(format.white("Basic Assembling Machine Modifier"));
+<techreborn:fusion_coil>.addShiftTooltip(format.white("+22% Speed, +22% Power Consumption"));
 
 addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkone"}), 
-"Central block modifer:",
+"Upgrade Effects multiply with each other!",
+"",
+"Central Block Modifer",
 "Platinum: 2x Speed, 2.67x Power Consumption",
 "Enderium: 2.5x Speed, 5x Power Consumption",
 "Osmium: 3x Speed, 4x Power Consumption",
-"Osgloglas: 3.75x Speed, 7.5x Power Consumption");
+"Osgloglas: 3.75x Speed, 7.5x Power Consumption",
+"",
+"Casing Upgrade",
+"Reinforced Machine Casing: +7% Speed, +7% Power Consumption each",
+"Advanced Machine Casing: +14% Speed, +14% Power Consumption each",
+"Fusion Coil: +22% Speed, +22% Power Consumption each");
+
 
 // Advanced Assembling Machine Modifiers //
 
-// Tooltips
-var t2modifiers as IItemStack[] = [
+var t2modifiers as string[IItemStack] = {
+<techreborn:storage2>:"1.5x Speed, 3x Power Consumption",
+<thermalfoundation:storage:7>:"3x Speed, 4x Power Consumption",
+<plustic:osmiridiumblock>:"3.75x Speed, 7.5x Power Consumption",
+<enderio:block_alloy_endergy:3>:"4.8x Speed, 1.2x Fluid Consumption, 10.8x Power Consumption",
+};
 
-//<techreborn:storage:2>,
-//<techreborn:storage:10>,
-
-<techreborn:storage2>,
-<thermalfoundation:storage:7>,
-<plustic:osmiridiumblock>,
-<enderio:block_alloy_endergy:3>
-];
-
-for item in t2modifiers {
-	item.addTooltip(format.white("Advanced Assembling Machine Modifier"));
+for item, desc in t2modifiers {
+	item.addTooltip(format.yellow("Advanced Assembling Machine Modifier"));
+	item.addTooltip(format.yellow(desc));
 }
 
-// JEI Descriptions
-addDescription(<techreborn:storage2>, "When used as Advanced Assembling Machine Modifier:", "1.5x Speed, 3x Power Consumption");
-addDescription(<thermalfoundation:storage:7>, "When used as Advanced Assembling Machine Modifier:", "3x Speed, 4x Power Consumption");
-addDescription(<plustic:osmiridiumblock>, "When used as Advanced Assembling Machine Modifier:", "3.75x Speed, 7.5x Power Consumption");
-addDescription(<enderio:block_alloy_endergy:3>, "When used as Advanced Assembling Machine Modifier:", "4.8x Speed, 1.2x Fluid Consumption, 10.8x Power Consumption");
-
+<techreborn:machine_casing:2>.addShiftTooltip(format.yellow("Advanced Assembling Machine Modifier"));
+<techreborn:machine_casing:2>.addShiftTooltip(format.yellow("+7% Speed, +7% Power Consumption"));
+<techreborn:fusion_coil>.addShiftTooltip(format.yellow("Advanced Assembling Machine Modifier"));
+<techreborn:fusion_coil>.addShiftTooltip(format.yellow("+14% Speed, +14% Power Consumption"));
 
 addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermktwo"}), 
-"Central block modifer",
+"Upgrade Effects multiply with each other!",
+"",
+"Central Block Modifier",
 "Tungstensteel: 1.5x Speed, 3x Power Consumption",
 "Iridium: 3x Speed, 4x Power Consumption",
 "Osmiridium: 3.75x Speed, 7.5x Power Consumption",
-"Stellar Alloy: 4.8x Speed, 1.2x Fluid Consumption, 10.8x Power Consumption");
+"Stellar Alloy: 4.8x Speed, 1.2x Fluid Consumption, 10.8x Power Consumption",
+"",
+"Casing Upgrade",
+"Advanced Machine Casing: +7% Speed, +7% Power Consumption each",
+"Fusion Coil: +14% Speed, +14% Power Consumption each");
+
 
 // Elite Assembling Machine Modifiers //
 
-// Tooltips
-var t3modifiers as IItemStack[] = [
-<extendedcrafting:storage>,
-<extendedcrafting:storage:3>,
-<extendedcrafting:storage:7>
-];
+var t3modifiers as string[IItemStack] = {
+<extendedcrafting:storage:3>:"2x Speed, 2.66x Power Consumption",
+<extendedcrafting:storage:7>:"2.5x Speed, 5x Power Consumption",
+<avaritia:block_resource:2>:"3x Speed, 4x Power Consumption",
+<extendedcrafting:storage:4>:"3.75x Speed, 1.3x Fluid Consumption, 7.5x Power Consumption",
+};
 
-for item in t3modifiers {
+for item, desc in t3modifiers {
 	item.addTooltip(format.blue("Elite Assembling Machine Modifier"));
+	item.addTooltip(format.blue(desc));
 }
 
-// JEI Descriptions
-addDescription(<extendedcrafting:storage:3>, "When used as Elite Assembling Machine Modifier:", "2x Speed, 2.66x Power Consumption");
-addDescription(<extendedcrafting:storage:7>, "When used as Elite Assembling Machine Modifier:", "2.5x Speed, 5x Power Consumption");
-
+<techreborn:fusion_coil>.addShiftTooltip(format.blue("Elite Assembling Machine Modifier"));
+<techreborn:fusion_coil>.addShiftTooltip(format.blue("+7% Speed, +7% Power Consumption"));
 
 addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkthree"}), 
-"Central block modifer",
+"Upgrade Effects multiply with each other!",
+"",
+"Central Block Modifier",
 "Crystaltine: 2x Speed, 2.66x Power Consumption",
 "Twilight Ingot: 2.5x Speed, 5x Power Consumption",
 "Crystal Matrix: 3x Speed, 4x Power Consumption",
-"Ultimate Ingot: 3.75x Speed, 1.3x Fluid Consumption, 7.5x Power Consumption");
+"Ultimate Ingot: 3.75x Speed, 1.3x Fluid Consumption, 7.5x Power Consumption",
+"",
+"Casing Upgrade",
+"Fusion Coil: +7% Speed, +7% Power Consumption each");
 
 
 // Mass Manufacturer Modifiers //
 
-// Tooltips
-var t4modifiers as IItemStack[] = [
-<avaritia:block_resource>,
-<avaritia:block_resource:1>
-];
+var t4modifiers as string[IItemStack] = {
+<extendedcrafting:storage:4>:"Recipe input & output x2, 2x Power Consumption",
+<avaritia:block_resource>:"Recipe input & output x4, 3x Power Consumption",
+<avaritia:block_resource:1>:"Recipe input & output x16, 25% chance to not consume fluid, 4x Power Consumption",
+};
 
-for item in t4modifiers {
+for item, desc in t4modifiers {
 	item.addTooltip(format.aqua("Mass Manufacturer Modifier"));
+	item.addTooltip(format.aqua(desc));
 }
-
-var t34modifiers as IItemStack[] = [
-<avaritia:block_resource:2>,
-<extendedcrafting:storage:4>
-];
-
-for item in t34modifiers {
-	item.addTooltip(format.aqua("Elite Assembling Machine and Mass Manufacturer Modifier"));
-}
-
-// JEI Descriptions
-addDescription(<avaritia:block_resource>, "When used as Mass Manufacturer Modifier:", "Multiplies recipes' input and output by 4, 3x Power Consumption");
-addDescription(<avaritia:block_resource:1>, "When used as Mass Manufacturer Modifier:", "Multiplies recipes' input and output by 16, 25% chance to not consume fluid, 4x Power Consumption");
-
-addDescription(<avaritia:block_resource:2>, "Can be used in both Elite Assembling Machine and Mass Manufacturer.", "", "When used as Elite Assembling Machine Modifier:", 
-"3x Speed, 4x Power Consumption");
-addDescription(<extendedcrafting:storage:4>, "Can be used in both Elite Assembling Machine and Mass Manufacturer.", "", "When used as Elite Assembling Machine Modifier:", 
-"3.75x Speed, 1.3x Fluid Consumption, 7.5x Power Consumption", "", "When used as Mass Manufacturer Modifier:", "Multiplies recipes' input and output by 2, 2x Power Consumption");
-
 
 
 addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assemblermkfour"}), 
-"Central block modifer",
-"Ultimate Ingot: Multiplies recipes' input and output by 2, 2x Power Consumption",
-"Neutronium: Multiplies recipes' input and output by 4, 3x Power Consumption",
-"Infinity Ingot: Multiplies recipes' input and output by 16, 25% chance to not consume fluid, 4x Power Consumption");
+"Upgrade Effects multiply with each other!",
+"",
+"Central Block Modifier",
+"Ultimate Ingot: Recipe input & output x2, 2x Power Consumption",
+"Neutronium: Recipe input & output x4, 3x Power Consumption",
+"Infinity Ingot: Recipe input & output x16, 25% chance to not consume fluid, 4x Power Consumption");
+
 
 /*
 // Special Modifiers //

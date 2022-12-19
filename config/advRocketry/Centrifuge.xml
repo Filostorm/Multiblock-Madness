@@ -70,8 +70,7 @@
 			<fluidStack>diesel;216</fluidStack>
 			<fluidStack>lubricant;72</fluidStack>
 			<fluidStack>refined_oil;600</fluidStack>	
-			<itemStack>immersivepetroleum:material;1;0</itemStack>
-			<itemStack>thermalfoundation:material;3;833</itemStack>
+			<itemStack>thermalfoundation:material;4;833</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="100" power ="40000">

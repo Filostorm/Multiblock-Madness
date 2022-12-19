@@ -1,13 +1,33 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.modularmachinery.RecipePrimer;
+import mods.jei.JEI.addDescription;
+
 
 print("==================== loading mods forge_of_the_heavens.zs ====================");
 ##########################################################################################
 
 ##############################################
 ##
-##           Forge of the Heavens
+##           Forge of the Heavens Tooltips & Descriptions
+##
+##############################################
+
+<avaritia:block_resource:2>.addTooltip(format.aqua("Forge of the Heavens Modifier: -50% Fluid Use"));
+<extendedcrafting:lamp:1>.addTooltip(format.aqua("Forge of the Heavens Modifier: +11% Speed"));
+
+addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:heavens-forge"}), 
+"Upgrade effects multiply with each other!",
+"",
+"Central Block Upgrade",
+"Crystal Matrix: -50% Fluid Use",
+"",
+"Midnight Frame Upgrade",
+"Luminessence: +11% Speed each");
+
+##############################################
+##
+##           Forge of the Heavens Recipes
 ##
 ##############################################
 
@@ -91,9 +111,6 @@ Mirion.addFluidInput(<liquid:base_essence>* 144);
 Mirion.addItemOutput(<plustic:mirioningot>);
 Mirion.build();
 
-
-// Forge of the Heavens Upgrade Tooltips //
-<avaritia:block_resource:2>.addTooltip(format.aqua("Forge of the Heavens fluid modifier"));
 
 ##########################################################################################
 print("==================== end of mods forge_of_the_heavens.zs ====================");

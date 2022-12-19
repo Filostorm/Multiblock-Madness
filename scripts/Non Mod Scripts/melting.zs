@@ -413,6 +413,7 @@ val generalmelting as IItemStack[][ILiquidStack] = {
 	<liquid:tin_silver>:[null, <nuclearcraft:alloy:8>, null, <jaopca:block_blocktinsilver>],
 	<liquid:neutronic_matrix>:[null,<contenttweaker:neutronic>,null,null], 	//Stuff for Neutronium
 	<liquid:incoherent_matrix>:[null,<contenttweaker:incoherent>,null,null],//Stuff for Neutronium
+	<liquid:fossil_tar>:[<fossil:tardrop>, <thermalfoundation:material:833>, null, null]
 } as IItemStack[][ILiquidStack];
 
 for fluid, material in generalmelting {

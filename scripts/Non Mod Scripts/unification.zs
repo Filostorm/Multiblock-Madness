@@ -6,6 +6,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.removeAndHide;
 import mods.tconstruct.Casting;
+import mods.tconstruct.Melting;
 import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.ArcFurnace;
@@ -32,6 +33,11 @@ import mods.mekanism.enrichment;
 import mods.qmd.target_chamber;
 import mods.qmd.ore_leacher;
 import mods.rockhounding_chemistry.LabBlender;
+import modtweaker.tconstruct.ITICMaterial;
+import modtweaker.tconstruct.ITICMaterialDefinition;
+import mods.contenttweaker.tconstruct.Material;
+import mods.thermalexpansion.Transposer;
+import mods.nuclearcraft.Infuser;
 
 #priority 98
 
@@ -329,6 +335,42 @@ Pressurizer.removeRecipeWithInput(<techreborn:part:34>);
 
 // Smelting recipe for Carbon Bricks
 furnace.addRecipe(<advancedrocketry:misc:1>, <ore:dustCarbon>);
+
+
+##=======================================================
+## Tar Unification
+##=======================================================
+
+// Basically, because both Immersive Petroleum and Fossils and Archaeology are really annoying, I can't fully unify tar
+// So instead, limited unification, where Solidified Tar can be melted into molten tar, which can't be converted back
+
+<thermalfoundation:material:833>.displayName = "Solidified Tar";
+<thermalfoundation:material:892>.displayName = "Oil Residue";
+
+// Add tar balls as a tinkers material
+
+val tarmat = <ticonmaterial:tar_slime>;
+tarmat.addItem(<thermalfoundation:material:833>);
+
+// Tar Balls -> Tar
+
+Melting.addRecipe(<liquid:fossil_tar> * 144, <thermalfoundation:material:833>, 1000);
+IngotFormer.addRecipe(<liquid:fossil_tar> * 16, <fossil:tardrop>);
+
+// Tar Fossil Recipes
+
+Transposer.addFillRecipe(<fossil:tar_fossil>, <fossil:biofossil>, <liquid:fossil_tar> * 16, 2000);
+Infuser.addRecipe(<fossil:biofossil>, <liquid:fossil_tar> * 16, <fossil:tar_fossil>, 0.2, 0.5);
+
+
+// Asphalt Concrete recipe for Tar Balls  
+
+recipes.addShaped(<immersivepetroleum:stone_decoration> * 12, [[<ore:crystalSlag>, <thermalfoundation:material:833>, <ore:crystalSlag>],[<minecraft:gravel>, <minecraft:water_bucket>, <minecraft:gravel>], [<ore:crystalSlag>, <thermalfoundation:material:833>, <ore:crystalSlag>]]);
+recipes.addShaped(<immersivepetroleum:stone_decoration> * 8, [[<ore:sand>, <thermalfoundation:material:833>, <ore:sand>],[<minecraft:gravel>, <minecraft:water_bucket>, <minecraft:gravel>], [<ore:sand>, <thermalfoundation:material:833>, <ore:sand>]]);
+
+// Remove tar drop analysing
+
+mods.fossils.recipes.removeAnalyzerInput(<fossil:tardrop>);
 
 
 ##=======================================================

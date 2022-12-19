@@ -283,5 +283,12 @@ for item in hiddenGlass {
 <ore:ingotThermalAlloy>.add(<contenttweaker:ingot_thermal_alloy>);
 <ore:ingotModularium>.add(<modularmachinery:itemmodularium>);
 
+<ore:foodMeat>.add(<mysticalworld:venison>);
+<ore:foodMeat>.add(<twilightforest:raw_meef>);
+<ore:listAllmeatraw>.add(<twilightforest:raw_meef>);
+
+<ore:tar>.add(<thermalfoundation:material:833>);
+
+
 ##########################################################################################
 print("==================== end of ore_dic.zs ====================");

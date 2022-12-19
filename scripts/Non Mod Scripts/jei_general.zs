@@ -36,7 +36,6 @@ print("==================== loading jei_general.zs ====================");
 <contenttweaker:ore_gen_info>.addTooltip("§fPress U to view ore vein generation§r");
 <immersiveengineering:metal_device1:7>.addTooltip("§fPress U to view Excavator and Pumpjack veins§r");
 <advgenerators:turbine_controller>.addTooltip("§fPress U to view AG Turbine Fuels§r");
-<astralsorcery:blockchalice>.addTooltip("§fPress U to view chalice fluid interaction recipes§r");
 <actuallyadditions:item_mining_lens>.addTooltip("§fPress U to view Lens of the Miner ores§r");
 <advancedrocketry:spacelaser>.addTooltip("§fPress U to view Orbital Laser materials§r");
 
@@ -428,6 +427,7 @@ for block in astralcelestialgem {
 <astralsorcery:blockmapdrawingtable>.addTooltip("§bPress U to view Refraction Table recipes§r");
 <astralsorcery:iteminfusedglass>.addTooltip("§bPress U to view Refraction Table recipes§r");
 <astralsorcery:blockattunementaltar>.addTooltip("§bPress U to view Attunement Altar recipes§r");
+<astralsorcery:blockchalice>.addTooltip("§bPress U to view chalice fluid interaction recipes§r");
 
 <astralsorcery:blocktreebeacon>.addTooltip("§bConverts trees into spectral trees that drop tree items§r");
 
@@ -558,6 +558,7 @@ addDescription(<astralsorcery:blockritualpedestal>, [
 <astralsorcery:blockborehead>.addTooltip("§bMines fluid veins, fills nearby Chalices with mined fluid§r");
 <astralsorcery:blockborehead>.addTooltip("§bSearch for fluid veins with the Ichosic Resonator§r");
 <astralsorcery:blockborehead>.addTooltip("§bPress U to view Neromatic Prime fluids§r");
+<astralsorcery:blockbore>.addTooltip("§bPress U to view Neromatic Prime fluids§r");
 
 <astralsorcery:blockrituallink>.addTooltip("§bUsed to transport ritual effects to any location§r");
 <astralsorcery:blockrituallink>.addTooltip("§bPlace 5 blocks above ritual pedestal and link to another ritual anchor§r");
@@ -806,6 +807,23 @@ var resonantUpgrade2 = "§4Increases Energy per Operation to 2x.";
 <thermalfoundation:upgrade:35>.addShiftTooltip(resonantUpgrade1);
 <thermalfoundation:upgrade:35>.addShiftTooltip(augmentSlot);
 <thermalfoundation:upgrade:35>.addShiftTooltip(resonantUpgrade2);
+
+<techreborn:part:15>.addTooltip(format.white("Blast Furnace Upgrade: +500 Heat"));
+<techreborn:part:14>.addTooltip(format.white("Blast Furnace Upgrade: +500 Heat"));
+<techreborn:machine_casing:1>.addShiftTooltip(format.white("Blast Furnace Modifier: +20 Heat"));
+<techreborn:machine_casing:2>.addShiftTooltip(format.white("Blast Furnace Modifier: +20 Heat"));
+
+addDescription(<techreborn:industrial_blast_furnace>,
+"Base Heat: 1020",
+"",
+"General Upgrades",
+"Filling inside with Lava: +500 Heat",
+"4 Kanthal Heating Coils: +500 Heat",
+"4 Nichrome Heating Coils: +500 Heat",
+"",
+"Casing Upgrades",
+"Reinforced Machine Casing: +20 Heat each",
+"Advanced Machine Casing: +40 Heat each");
 
 
 ##=======================================================

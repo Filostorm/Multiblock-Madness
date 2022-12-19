@@ -1,13 +1,49 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.modularmachinery.RecipePrimer;
+import mods.jei.JEI.addDescription;
 
 print("==================== loading mods shadow_condenser.zs ====================");
 ##########################################################################################
 
 ##############################################
 ##
-##           Shadow Condenser
+##           Shadow Condenser Tooltips & Descriptions
+##
+##############################################
+
+// Shadow Condenser Upgrade Tooltips //
+
+<iceandfire:dragonsteel_ice_block>.addTooltip(format.darkPurple("Shadow Condenser Modifier: -50% Fluid Use"));
+<deepmoblearning:infused_ingot_block>.addTooltip(format.darkPurple("Shadow Condenser Modifier: 20% Chance to not consume items"));
+<environmentaltech:aethium>.addTooltip(format.darkPurple("Shadow Condenser Modifier: 2x Speed"));
+<thaumcraft:metal_void>.addTooltip(format.darkPurple("Shadow Condenser Modifier: 2x Output"));
+<thaumadditions:mithrillium_block>.addTooltip(format.darkPurple("Shadow Condenser Modifier: 3x Output"));
+<thaumadditions:adaminite_block>.addTooltip(format.darkPurple("Shadow Condenser Modifier: 4x Output"));
+<thaumadditions:mithminite_block>.addTooltip(format.darkPurple("Shadow Condenser Modifier: 5x Output"));
+
+// Shadow Condenser JEI Description //
+
+addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:darkness-collector"}), 
+"Back Modifier",
+"Aethium: 2x Speed",
+"",
+"Left Modfiier",
+"Ice Dragonsteel: -50% Fluid Use",
+"",
+"Right Modifier",
+"Glitch Infused Block: 20% Chance to not consume items",
+"",
+"Front Modifier",
+"Void Metal: 2x Output",
+"Mithrillium: 3x Output",
+"Adaminite: 4x Output",
+"Mithminite: 5x Output");
+
+
+##############################################
+##
+##           Shadow Condenser Recipes
 ##
 ##############################################
 
@@ -32,14 +68,6 @@ VoidSeed.addItemOutput(<thaumcraft:void_seed>);
 VoidSeed.addDimensionRequirement([10]);
 VoidSeed.build();
 
-// Shadow Condenser Upgrade Tooltips //
-<iceandfire:dragonsteel_ice_block>.addTooltip(format.darkPurple("Shadow Condenser fluid modifier"));
-<deepmoblearning:infused_ingot_block>.addTooltip(format.darkPurple("Shadow Condenser item modifier"));
-<environmentaltech:aethium>.addTooltip(format.darkPurple("Shadow Condenser speed modifier"));
-<thaumcraft:metal_void>.addTooltip(format.darkPurple("Shadow Condenser 2x output modifier"));
-<thaumadditions:mithrillium_block>.addTooltip(format.darkPurple("Shadow Condenser 3x output modifier"));
-<thaumadditions:adaminite_block>.addTooltip(format.darkPurple("Shadow Condenser 4x output modifier"));
-<thaumadditions:mithminite_block>.addTooltip(format.darkPurple("Shadow Condenser 5x output modifier"));
 
 ##########################################################################################
 print("==================== end of mods shadow_condenser.zs ====================");

@@ -549,7 +549,7 @@ var matpresser as IItemStack[string] = {
 	"dragonsteel_fire" : <iceandfire:dragonsteel_fire_ingot>,
 	"dragonsteel_ice" : <iceandfire:dragonsteel_ice_ingot>,
 	"blood_infused_iron" : <bloodarsenal:base_item:4>,
-	"tar_slime" : <fossil:tardrop>,
+	"tar_slime" : <thermalfoundation:material:833>,
 	"ma.soulium" : <mysticalagriculture:crafting:38>,
 	"ma.base_essence" : <mysticalagriculture:crafting:5>,
 	"ma.inferium" : <mysticalagriculture:crafting:33>,
