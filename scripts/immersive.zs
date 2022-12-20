@@ -333,7 +333,7 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:boosted_diesel>*250, <liquid:b
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:boosted_diesel>, 450);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:blended_diesel>, 200);
 mods.nuclearcraft.Enricher.addRecipe(<aetherworks:item_resource>, <liquid:blended_diesel>*250, <liquid:boosted_diesel>*250);
-
+mods.thermalexpansion.Imbuer.addRecipe(<liquid:boosted_diesel>*250, <aetherworks:item_resource>, <liquid:blended_diesel>*250, 10000);
 
 
 /* Might change later idk

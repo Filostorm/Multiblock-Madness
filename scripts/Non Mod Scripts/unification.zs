@@ -5,6 +5,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.removeAndHide;
+import mods.jei.JEI.hide;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Melting;
 import mods.immersiveengineering.Crusher;
@@ -38,6 +39,7 @@ import modtweaker.tconstruct.ITICMaterialDefinition;
 import mods.contenttweaker.tconstruct.Material;
 import mods.thermalexpansion.Transposer;
 import mods.nuclearcraft.Infuser;
+import crafttweaker.item.IItemTransformer;
 
 #priority 98
 
@@ -374,13 +376,79 @@ mods.fossils.recipes.removeAnalyzerInput(<fossil:tardrop>);
 
 
 ##=======================================================
-## Other Unifications
+## Gem Unification
 ##=======================================================
 
-// --==Pressuriser-Enrichment Chamber Compat==-- //
-enrichment.addRecipe(<nuclearcraft:gem_dust:1>, <nuclearcraft:gem>);
-enrichment.addRecipe(<nuclearcraft:gem_dust:4>, <nuclearcraft:gem:1>);
-enrichment.addRecipe(<nuclearcraft:gem_dust:8>, <nuclearcraft:gem:3>);
+// Treasure2 Amulets
+
+val unbTreTool = <treasure2:treasure_tool>.reuse();
+
+recipes.addShaped(<treasure2:ruby_gold_ring>, [[null, <treasure2:gold_ring>, unbTreTool],[null, <minecraft:glowstone_dust>, null], [null, <ore:gemRuby>, null]]);
+recipes.addShaped(<treasure2:ruby_gold_amulet>, [[null, <treasure2:gold_necklace>, unbTreTool],[null, <minecraft:glowstone_dust>, null], [null, <ore:gemRuby>, null]]);
+recipes.addShaped(<treasure2:sapphire_gold_ring>, [[null, <treasure2:gold_ring>, unbTreTool],[null, <minecraft:glowstone_dust>, null], [null, <ore:gemSapphire>, null]]);
+recipes.addShaped(<treasure2:sapphire_amulet>, [[null, <treasure2:gold_necklace>, unbTreTool],[null, <minecraft:glowstone_dust>, null], [null, <ore:gemSapphire>, null]]);
+recipes.addShaped(<treasure2:sapphire_silver_amulet>, [[null, <treasure2:silver_necklace>, unbTreTool],[null, <minecraft:glowstone_dust>, null], [null, <ore:gemSapphire>, null]]);
+recipes.addShaped(<treasure2:amethyst_silver_ring>, [[null, <treasure2:silver_ring>, unbTreTool],[null, <minecraft:glowstone_dust>, null], [null, <ore:gemAmethyst>, null]]);
+recipes.addShaped(<treasure2:amethyst_gold_amulet>, [[null, <treasure2:gold_necklace>, unbTreTool],[null, <minecraft:glowstone_dust>, null], [null, <ore:gemAmethyst>, null]]);
+
+recipes.addShapeless(<mysticalworld:amethyst_gem>, [<treasure2:amethyst>]);
+
+
+// --== Sapphire ==-- //
+
+recipes.addShapeless(<techreborn:gem:1>, [<treasure2:sapphire>]);
+recipes.addShapeless(<techreborn:gem:1>, [<iceandfire:sapphire_gem>]);
+recipes.remove(<iceandfire:sapphire_block>);
+furnace.remove(<iceandfire:sapphire_gem>);
+
+// enrichment.removeRecipe(<iceandfire:sapphire_gem>);
+enrichment.addRecipe(<techreborn:ore:3>, <techreborn:gem:1> * 2);
+Crusher.removeRecipe(<iceandfire:sapphire_gem>);
+Crusher.addRecipe(<techreborn:gem:1> * 2, <techreborn:ore:3>, 1024);
+
+// --== Ruby ==-- //
+
+recipes.addShapeless(<techreborn:gem>, [<treasure2:ruby>]);
+
+// enrichment.removeRecipe(<treasure2:ruby>);
+enrichment.addRecipe(<techreborn:ore:2>, <techreborn:gem> * 2);
+Crusher.removeRecipe(<treasure2:ruby>);
+Crusher.addRecipe(<techreborn:gem> * 2, <techreborn:ore:2>, 1024);
+
+val gemsToRemove = [
+	<treasure2:sapphire>,
+	<treasure2:ruby>,
+	<treasure2:amethyst>,
+	<iceandfire:sapphire_gem>,
+	<iceandfire:sapphire_block>
+] as IItemStack[];
+
+for gem in gemsToRemove {
+	removeAndHide(gem);
+}
+
+##=======================================================
+## Fluid Unification
+##=======================================================
+
+// TODO
+
+removeAndHide(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluiddeuterium", Amount: 1000}}));
+hide(<liquid:fluiddeuterium>);
+
+removeAndHide(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidtritium", Amount: 1000}}));
+hide(<liquid:fluidtritium>);
+
+removeAndHide(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidhelium", Amount: 1000}}));
+hide(<liquid:fluidhelium>);
+
+removeAndHide(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidmercury", Amount: 1000}}));
+hide(<liquid:fluidmercury>);
+
+
+##=======================================================
+## Other Unifications
+##=======================================================
 
 // Ender Pearl Dust Compat
 AlloyFurnace.addRecipe(<enderio:item_alloy_ingot:1>, <techreborn:dust:20>, <enderio:item_alloy_ingot:2>, 1, 2);

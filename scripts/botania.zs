@@ -14,6 +14,7 @@ import mods.botaniatweaks.Agglomeration;
 import mods.immersiveengineering.Crusher;
 import mods.inworldcrafting.FluidToItem;
 import mods.nuclearcraft.Manufactory;
+import mods.nuclearcraft.Infuser;
 import mods.thaumcraft.ArcaneWorkbench;
 import mods.thaumcraft.Infusion;
 import mods.thermalexpansion.Insolator;
@@ -248,7 +249,8 @@ RuneAltar.addRecipe(<botania:rune>,[<minecraft:prismarine_shard>, <actuallyaddit
 recipes.remove(<mysticalworld:wet_mud_block>);
 recipes.addShaped(<mysticalworld:wet_mud_block>*8, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>,  <liquid:water>*1000, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 Transposer.addFillRecipe(<mysticalworld:wet_mud_block>, <minecraft:dirt>, <liquid:water>*125, 2500);
-//mods.nuclearcraft.Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
+Infuser.removeRecipeWithInput(<ore:dirt>, <liquid:water>);
+Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
 
 //Rune of Mana
 RuneAltar.removeRecipe(<botania:rune:8>);

@@ -7,6 +7,7 @@ import mods.immersiveengineering.Mixer;
 import mods.nuclearcraft.Enricher;
 import crafttweaker.liquid.ILiquidStack;
 import mods.jei.JEI.addDescription;
+import mods.thermalexpansion.Imbuer;
 
 
 // Arcane Assembler Upgrade Tooltips //
@@ -141,6 +142,7 @@ val waterMap as int[ILiquidStack] = {
 for water, n in waterMap {
 Mixer.addRecipe(<liquid:crystal_water>*(n/2), water*n, [<thaumcraft:salis_mundus>], 2048);
 Enricher.addRecipe(<thaumcraft:salis_mundus>, water*n, <liquid:crystal_water>*(n/2));
+Imbuer.addRecipe(<liquid:crystal_water>*(n/2), <thaumcraft:salis_mundus>, water*n, 10000);
 }
 
 
@@ -592,14 +594,7 @@ MMArcaneAssembler("tadd_vis_scribing_tools", <thaumadditions:vis_scribing_tools>
 ##Essentia Pistol
 MMArcaneAssembler("tadd_essentia_gun", <thaumadditions:essentia_pistol>, [simpleMechanism, <minecraft:stone_button>, plankGreatwood*2, <thaumadditions:aura_disperser>], ["ingotThaumium-2"], 100);
 
-##Seal Globe
-MMArcaneAssembler("tadd_seal_globe", <thaumadditions:seal_globe>, [getVisCrystal("imperium"), visResonator], ["ingotGold-2", "blockGlass-5"], 100);
-
-##Arcane Seal
-MMArcaneAssembler("tadd_seal", <thaumadditions:seal>*2, [], ["woolBlock-1", "nuggetGold-4",], 50);
-
-##Bone-eye
-MMArcaneAssembler("tadd_boneeye", <thaumadditions:bone_eye>, [<minecraft:spider_eye>], ["ingotThaumium-1", "gemQuartz-2"], 100);
+##Seal Globe<appliedenergistics2:material:24>
 /*
 //Currently not in 3.0.3+, commented out for now, uncomment when updating tadditions
 ##Crystal Lamp
@@ -678,3 +673,5 @@ for aspect in aspectList {
 ##TEnergistics Terminals
 MMArcaneAssembler("tenergistics_arcane_terminal", <thaumicenergistics:arcane_terminal>, [<appliedenergistics2:part:380>, <thaumcraft:arcane_workbench>, <appliedenergistics2:material:23>], [], 50);
 MMArcaneAssembler("tenergistics_essentia_terminal", <thaumicenergistics:essentia_terminal>, [<appliedenergistics2:part:180>, <appliedenergistics2:material:22>, <thaumcraft:salis_mundus>, <thaumicenergistics:diffusion_core>, <thaumicenergistics:coalescence_core>], [], 25);
+MMArcaneAssembler("tenergistics_arcane_inscriber", <thaumicenergistics:arcane_inscriber>, [<appliedenergistics2:part:340>, <thaumcraft:arcane_workbench>, <appliedenergistics2:material:24>], [], 50);
+MMArcaneAssembler("tenergistics_knowledge_core", <thaumicenergistics:blank_knowledge_core>, [<appliedenergistics2:quartz_vibrant_glass> * 4, <thaumcraft:brain>, <appliedenergistics2:material:23>], ["dyeBlue-3"], 100);

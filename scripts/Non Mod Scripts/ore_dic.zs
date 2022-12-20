@@ -289,6 +289,14 @@ for item in hiddenGlass {
 
 <ore:tar>.add(<thermalfoundation:material:833>);
 
+<ore:gemSapphire>.remove(<iceandfire:sapphire_gem>);
+<ore:gemRuby>.remove(<treasure2:ruby>);
+<ore:ruby>.remove(<treasure2:ruby>);
+// <ore:oreSapphire>.remove(<iceandfire:sapphire_ore>);
+<ore:gemSapphire>.remove(<treasure2:sapphire>);
+<ore:sapphire>.remove(<treasure2:sapphire>);
+
+<ore:blockSapphire>.remove(<iceandfire:sapphire_block>);
 
 ##########################################################################################
 print("==================== end of ore_dic.zs ====================");

@@ -208,6 +208,8 @@ mods.embers.DawnstoneAnvil.add([<contenttweaker:crystal_seed>*4],<thermalfoundat
 
 //Gas Form
 mods.nuclearcraft.Enricher.addRecipe(<contenttweaker:crystal_seed>, <liquid:aerotheum> * 500, <liquid:aetherworks.aetherium_gas> * 244);
+mods.thermalexpansion.Imbuer.addRecipe(<liquid:aetherworks.aetherium_gas> * 244, <contenttweaker:crystal_seed>, <liquid:aerotheum> * 500, 10000);
+
 
 ##=======================================================
 ##LEACHING VAT

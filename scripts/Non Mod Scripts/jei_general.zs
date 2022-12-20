@@ -373,6 +373,21 @@ for machines in mechanical_embers_machines {
   machines.addTooltip("§fCan be powered with §eMechanical Power");
 }
 
+<mystgears:redstone_dynamo>.addTooltip("§fConverts Mechanical Power to RF");
+<mystgears:essentia_motor>.addTooltip(format.white("Produces 40R with machina"));
+<mystgears:essentia_motor>.addTooltip(format.white("Produces 70R with motus"));
+<mystgears:essentia_motor>.addTooltip(format.white("Produces 100R with potentia"));
+
+<mystgears:windup_box>.addTooltip(format.white("Stores Mechanical Energy"));
+<mystgears:windup_box>.addTooltip(format.white("A Redstone Signal enables output Mechanical Power"));
+
+<mystgears:crafter_mechanical>.addTooltip(format.white("Crafts items with Mechanical Power"));
+<mystgears:mechanical_dial>.addTooltip(format.white("Place on Embers machine to view Rotational Speed"));
+
+<mystgears:drill_diamond>.addTooltip(format.white("Breaks blocks in front of it with Mechanical Power"));
+<mystgears:drill>.addTooltip(format.white("Breaks blocks in front of it with Mechanical Power"));
+
+<mystgears:mechanical_turret>.addTooltip(format.white("Auto-Fires Ember Bullets when equipped with the Ember Gatling Gun"));
 
 // --== Astral Documentation ==-- //
 
@@ -541,13 +556,11 @@ addDescription(<astralsorcery:blockritualpedestal>, [
 <astralsorcery:itemilluminationwand>.addTooltip("§bRight click to place lights§r");
 <astralsorcery:itemilluminationwand>.addTooltip("§bShift right click to make block indestructable§r");
 <astralsorcery:itemarchitectwand>.addTooltip("§bActs as a builder's wand§r");
-<astralsorcery:itemarchitectwand>.addTooltip("§bHold §6Shift§b for controls§r");
-<astralsorcery:itemarchitectwand>.addShiftTooltip("§bShift Right Click blocks to select them§r");
+<astralsorcery:itemarchitectwand>.addShiftTooltip("§bShift Right Click blocks to select them§r", "§bHold §6Shift§b for controls§r");
 <astralsorcery:itemarchitectwand>.addShiftTooltip("§bRight Click to place blocks§r");
 <astralsorcery:itemarchitectwand>.addShiftTooltip("§bLeft Click air to deselect blocks§r");
 <astralsorcery:itemexchangewand>.addTooltip("§bActs as an exchanging gadget§r");
-<astralsorcery:itemexchangewand>.addTooltip("§bHold §6Shift§b for controls§r");
-<astralsorcery:itemexchangewand>.addShiftTooltip("§bShift Right Click blocks to select them§r");
+<astralsorcery:itemexchangewand>.addShiftTooltip("§bShift Right Click blocks to select them§r", "§bHold §6Shift§b for controls§r");
 <astralsorcery:itemexchangewand>.addShiftTooltip("§bRight Click to replace blocks§r");
 <astralsorcery:itemexchangewand>.addShiftTooltip("§bLeft Click air to deselect blocks§r");
 
@@ -597,6 +610,137 @@ addDescription(<liquid:blockfluidantimatter>, "Obtained from striking Life Essen
 
 addDescription(<liquid:aetherworks.impure_aetherium_gas>, "Obtained from the Aether Collector§r");
 <liquid:aetherworks.impure_aetherium_gas>.addTooltip("§9Obtained from the Aether Collector");
+
+<animus:fragmenthealing>.addTooltip(format.white("Gives Regeneration, more fragments increase Regeneration"));
+<animus:fragmenthealing>.addTooltip(format.darkRed("Cannot be removed from inventory!"));
+
+
+<bloodmagic:sigil_divination>.addTooltip(format.white("Displays Blood Altar and Life Essence Network information"));
+
+<bloodmagic:sigil_air>.addTooltip(format.white("Launches you forward"));
+<bloodmagic:sigil_air>.addTooltip(format.red("LP Cost: 50 LP"));
+
+<bloodmagic:sigil_water>.addTooltip(format.white("Creates Water"));
+<bloodmagic:sigil_water>.addTooltip(format.red("LP Cost: 100 LP"));
+
+<bloodmagic:sigil_lava>.addTooltip(format.white("Creates Lava"));
+<bloodmagic:sigil_lava>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodmagic:sigil_void>.addTooltip(format.white("Removes fluid source blocks"));
+<bloodmagic:sigil_void>.addTooltip(format.red("LP Cost: 50 LP"));
+
+<bloodmagic:sigil_green_grove>.addTooltip(format.white("Grows all plants within a radius"));
+<bloodmagic:sigil_green_grove>.addTooltip(format.white("Right click plant to grow instantly"));
+<bloodmagic:sigil_green_grove>.addTooltip(format.red("LP Cost: 30 LP/s, 150LP per click"));
+
+<bloodmagic:sigil_blood_light>.addTooltip(format.white("Right click to place lights"));
+<bloodmagic:sigil_blood_light>.addTooltip(format.red("LP Cost: 10 LP"));
+
+<bloodmagic:sigil_elemental_affinity>.addTooltip(format.white("Immunity to drowning, fire and fall damage"));
+<bloodmagic:sigil_elemental_affinity>.addTooltip(format.red("LP Cost: 20 LP/s"));
+
+<bloodmagic:sigil_magnetism>.addTooltip(format.white("Attracts items within a 5 block radius"));
+<bloodmagic:sigil_magnetism>.addTooltip(format.red("LP Cost: 5 LP/s"));
+
+<bloodmagic:sigil_suppression>.addTooltip(format.white("Removes fluids within a 5 block radius temporarily"));
+<bloodmagic:sigil_suppression>.addTooltip(format.red("LP Cost: 400 LP every few seconds"));
+
+<bloodmagic:sigil_haste>.addTooltip(format.white("Gives Speed, Jump Boost and Step Assist"));
+<bloodmagic:sigil_haste>.addTooltip(format.red("LP Cost: 25 LP/s"));
+
+<bloodmagic:sigil_fast_miner>.addTooltip(format.white("Gives Haste"));
+<bloodmagic:sigil_fast_miner>.addTooltip(format.red("LP Cost: 10 LP/s"));
+
+<bloodmagic:sigil_seer>.addTooltip(format.white("Displays more Blood Altar and Life Essence Network information"));
+
+<bloodmagic:sigil_phantom_bridge>.addTooltip(format.white("Creates a temporary floor under your feet"));
+<bloodmagic:sigil_phantom_bridge>.addTooltip(format.red("LP Cost: 10 LP/s, 1 LP per block created"));
+
+<bloodmagic:sigil_whirlwind>.addTooltip(format.white("Deflects Projectiles"));
+<bloodmagic:sigil_whirlwind>.addTooltip(format.red("LP Cost: 50 LP/s"));
+
+<bloodmagic:sigil_compression>.addTooltip(format.white("Compresses items into block form"));
+<bloodmagic:sigil_compression>.addTooltip(format.red("LP Cost: 40 LP/s"));
+
+<bloodmagic:sigil_ender_severance>.addTooltip(format.white("Prevents endermen from teleporting within a 10 block radius"));
+<bloodmagic:sigil_ender_severance>.addTooltip(format.red("LP Cost: 10 LP/s"));
+
+<bloodmagic:sigil_holding>.addTooltip(format.white("Holds multiple sigils"));
+
+<bloodmagic:sigil_teleposition>.addTooltip(format.white("Teleports you to linked teleposer"));
+<bloodmagic:sigil_teleposition>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodmagic:sigil_transposition>.addTooltip(format.white("Stores and places blocks"));
+<bloodmagic:sigil_transposition>.addTooltip(format.white("Shift click to store block, right click to place"));
+<bloodmagic:sigil_transposition>.addTooltip(format.red("LP Cost: 5000 LP"));
+
+// TODO find cost
+
+<bloodmagic:sigil_claw>.addTooltip(format.white("Allows you to cling to walls"));
+// <bloodmagic:sigil_claw>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodmagic:sigil_bounce>.addTooltip(format.white("Allows you to bounce"));
+// <bloodmagic:sigil_bounce>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodmagic:sigil_frost>.addTooltip(format.white("Temporarily freezes water around you"));
+// <bloodmagic:sigil_frost>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodarsenal:sigil_augmented_holding>.addTooltip(format.white("Holds even more sigils"));
+
+<bloodarsenal:sigil_lightning>.addTooltip(format.white("Summons lightning, shift right click for more lightning"));
+// <bloodarsenal:sigil_lightning>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodarsenal:sigil_divinity>.addTooltip(format.white("Makes you invincible"));
+// <bloodarsenal:sigil_divinity>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodarsenal:sigil_swimming>.addTooltip(format.white("Gives water breathing, increases swimming speed and underwater mining speed"));
+// <bloodarsenal:sigil_swimming>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodarsenal:sigil_ender>.addTooltip(format.white("Right click to open ender chest"));
+<bloodarsenal:sigil_ender>.addTooltip(format.white("Shift Right click to teleport"));
+// <bloodarsenal:sigil_ender>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<animus:sigil_chains>.addTooltip(format.white("Can transport mobs"));
+// <animus:sigil_chains>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<animus:sigil_transposition>.addTooltip(format.white("Moves blocks"));
+// <animus:sigil_transposition>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<animus:sigil_consumption>.addTooltip(format.white("Spreads Antimatter to all blocks of the same type nearby"));
+// <animus:sigil_consumption>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<animus:sigil_storm>.addTooltip(format.white("Summons lightning"));
+// <animus:sigil_storm>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<animus:sigil_leech>.addTooltip(format.white("Consumes plants in inventory and around you to restore hunger"));
+// <animus:sigil_leech>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodarsenal:sigil_sentience>.addTooltip(format.white("Summons a spectral version of the tool in your main hand"));
+<bloodarsenal:sigil_sentience>.addTooltip(format.white("Spectral tools act on blocks and mobs from afar"));
+// <bloodarsenal:sigil_sentience>.addTooltip(format.red("LP Cost: 1000 LP"));
+
+<bloodarsenal:self_sacrifice_amulet>.addTooltip(format.white("Collects LP when taking damage"));
+<bloodarsenal:sacrifice_amulet>.addTooltip(format.white("Collects LP when dealing damage to mobs"));
+<bloodarsenal:vampire_ring>.addTooltip(format.white("Collects LP from nearby bleeding mobs"));
+
+// TODO add stats
+
+<bloodmagic:sacrificial_dagger>.addTooltip(format.white("Deals self-damage which is converted into LP at a nearby Blood Altar"));
+<bloodmagic:dagger_of_sacrifice>.addTooltip(format.white("Instantly kills mobs when near a Blood Altar"));
+<bloodmagic:dagger_of_sacrifice>.addTooltip(format.white("Adds LP per mob kill"));
+<bloodarsenal:glass_sacrificial_dagger>.addTooltip(format.white("Gives more LP than the Sacrificial Dagger"));
+<bloodarsenal:glass_dagger_of_sacrifice>.addTooltip(format.white("Gives more LP than the Dagger of Sacrifice"));
+
+<bloodarsenal:altare_aenigmatica>.addTooltip(format.white("Helpful for automating the Blood Altar"));
+addDescription(<bloodarsenal:altare_aenigmatica>,
+"This block can be used to automate charging a blood orb and crafting items on a single Blood Altar!",
+"",
+"Place the block facing the Blood Altar. The green dot must be facing the Blood Altar. Then, right click a blood orb with the block.",
+"Now, place the blood orb in the orb slot and input any items you want to convert into the 9 slots on the left.",
+"The block will automatically switch between charging the blood orb and converting items placed in the 9 slots.");
+
+<bloodarsenal:stasis_plate>.addTooltip(format.white("Used in Blood Arsenal Rituals"));
+
 
 // --== TC Documentation ==-- //
 // TODO

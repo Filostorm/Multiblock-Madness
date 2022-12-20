@@ -504,7 +504,7 @@ recipes.addShaped(<quark:rope> * 2, [[<ore:string>, <ore:string>, <ore:string>],
 recipes.addShaped(<mob_grinding_utils:tank>, [[<thermalfoundation:material:32>, <minecraft:glass_pane>, <thermalfoundation:material:32>],[<moreplates:invar_stick>, <openblocks:tank>, <moreplates:invar_stick>], [<thermalfoundation:material:32>, <minecraft:glass_pane>, <thermalfoundation:material:32>]]);
 
 // XP Shower
-recipes.addShaped(<openblocks:xp_shower>, [[null, null, null],[<contenttweaker:plate_engineering>, <contenttweaker:plate_mek_alloy>, <contenttweaker:plate_mek_alloy>], [null, null, <enderio:block_dark_iron_bars>]]);
+recipes.addShaped(<openblocks:xp_shower>, [[null, null, null],[<contenttweaker:plate_engineering>, <jaopca:item_platehslasteel>, <jaopca:item_platehslasteel>], [null, null, <enderio:block_dark_iron_bars>]]);
 
 
 //Igniter
@@ -695,7 +695,6 @@ recipes.addShaped(<natura:empty_bowls:3> * 4, [[<natura:nether_planks:3>, <ore:a
 //santa hat all year round
 recipes.addShaped(<tombstone:christmas_hat>, [[<ore:dyeRed>, <apotheosis:lucky_foot>, <ore:dyeRed>], [<tombstone:crafting_ingredient:3>, <iceandfire:sheep_helmet>, <tombstone:crafting_ingredient:3>]]);
 
-// I&F Capsule Recipes
 
 ##########################################################################################
 print("==================== end of misc.zs ====================");
