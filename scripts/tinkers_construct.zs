@@ -152,26 +152,48 @@ craft.remake(<tinker_io:upg:7>, ["pretty",
 Melting.removeRecipe(<liquid:fossil_tar>, <minecraft:coal>);
 Melting.removeRecipe(<liquid:dark_steel>, <enderio:item_dark_steel_sword>);
 
+// All alloys post blast furnace as well as RH alloys requiring rare elements are removed from Tinkers Melting
+
 val moltentoremove = [
-<liquid:melodic_alloy>,
-<liquid:crystalline_alloy>,
-<liquid:enderium>,
-<liquid:lumium>,
-<liquid:signalum>,
-<liquid:platinum>,
-<liquid:lead_platinum>,
-<liquid:iridium>,
-<liquid:refinedobsidian>,
-<liquid:refinedglowstone>,
-<liquid:osgloglas>,
-<liquid:osmiridium>,
-<liquid:terrasteel>,
-<liquid:elementium>,
-<liquid:titanium>,
-<liquid:osmium>,
-<liquid:mirion>,
-<liquid:crystalline_pink_slime>,
-<liquid:stellar_alloy>,
+	<liquid:melodic_alloy>,
+	<liquid:crystalline_alloy>,
+	<liquid:enderium>,
+	<liquid:lumium>,
+	<liquid:signalum>,
+	<liquid:platinum>,
+	<liquid:lead_platinum>,
+	<liquid:iridium>,
+	<liquid:refinedobsidian>,
+	<liquid:refinedglowstone>,
+	<liquid:osgloglas>,
+	<liquid:osmiridium>,
+	<liquid:terrasteel>,
+	<liquid:elementium>,
+	<liquid:titanium>,
+	<liquid:osmium>,
+	<liquid:mirion>,
+	<liquid:crystalline_pink_slime>,
+	<liquid:stellar_alloy>,
+	<liquid:stainless_steel>,
+	<liquid:potassium>,
+	<liquid:sodium>,
+	<liquid:supremium>,
+	<liquid:manyullyn>,
+	<liquid:superium>,
+	<liquid:manganese>,
+	<liquid:molten_nichrome>,
+	<liquid:molten_scal>,
+	<liquid:molten_stellite>,
+	<liquid:molten_nimonic>,
+	<liquid:molten_hastelloy>,
+	<liquid:molten_cunife>,
+	<liquid:molten_hydronalium>,
+	<liquid:molten_vanasteel>,
+	<liquid:molten_tantaloy>,
+	<liquid:molten_inconel>,
+	<liquid:molten_pewter>,
+	<liquid:molten_corten>,
+	<liquid:molten_vanadium>
 ] as ILiquidStack[];
 
 for moltenfluid in moltentoremove {
@@ -201,7 +223,7 @@ Melting.addRecipe(<liquid:alubrass> * 144, <ore:cast>);
 Melting.addRecipe(<liquid:orichalcum> * 1296, <contenttweaker:sub_block_holder_0>);
 Melting.addRecipe(<liquid:adamantine> * 1296, <contenttweaker:sub_block_holder_0:1>);
 
-// Melting recipes for all 3 custom metals
+// Melting and casting recipes for all 3 custom metals
 // Format is fluid:[nugget,dust,ingot,plate,gear,block,ore]
 val materialMelting as IItemStack[][ILiquidStack] = {
 	<liquid:palladium>:[<contenttweaker:material_part:33>, <contenttweaker:material_part:35>, <contenttweaker:material_part:30>, <contenttweaker:material_part:32>, <contenttweaker:material_part:31>, <contenttweaker:sub_block_holder_0:4>, <contenttweaker:sub_block_holder_0:3>],
@@ -218,6 +240,12 @@ for fluid, items in materialMelting {
 	Melting.addRecipe(fluid * 1296, items[5]);
 	Melting.addRecipe(fluid * 144, items[6]);
 	HighOven.addMeltingOverride(fluid * 288, items[6]);
+
+	Casting.addTableRecipe(items[2], <tconstruct:cast_custom>, fluid, 144, false, 50);
+	Casting.addTableRecipe(items[4], <tconstruct:cast_custom:4>, fluid, 576, false, 200);
+	Casting.addTableRecipe(items[3], <tconstruct:cast_custom:3>, fluid, 144, false, 50);
+	Casting.addTableRecipe(items[0], <tconstruct:cast_custom:1>, fluid, 16, false, 5);
+	Casting.addBasinRecipe(items[5], null, fluid, 1296);
 }
 
 ### ALLOYING ###
@@ -259,16 +287,33 @@ Alloy.addRecipe(<liquid:inert_metal> * 72, [<liquid:silver> * 72, <liquid:lead> 
 ### CASTING ###
 
 // Removals //
-Casting.removeTableRecipe(<tcomplement:materials:1>);
-Casting.removeTableRecipe(<enderio:item_material:11>);
-Casting.removeTableRecipe(<enderio:item_material:12>);
-Casting.removeTableRecipe(<enderio:item_material:13>);
-Casting.removeTableRecipe(<enderio:item_material:73>);
-Casting.removeTableRecipe(<enderio:item_material:15>);
-Casting.removeBasinRecipe(<tcomplement:scorched_block>);
-Casting.removeBasinRecipe(<tcomplement:scorched_block:1>);
-Casting.removeBasinRecipe(<tcomplement:scorched_block:10>);
-Casting.removeBasinRecipe(<tcomplement:scorched_slab2:2>);
+
+val castTableToRemove = [
+	<tcomplement:materials:1>,
+	<enderio:item_material:11>,
+	<enderio:item_material:12>,
+	<enderio:item_material:13>,
+	<enderio:item_material:73>,
+	<enderio:item_material:15>,
+	<qmd:ingot:12>,
+	<qmd:ingot:11>
+] as IItemStack[];
+
+for item in castTableToRemove {
+	Casting.removeTableRecipe(item);
+}
+
+val castBasinToRemove = [
+	<tcomplement:scorched_block>,
+	<tcomplement:scorched_block:1>,
+	<tcomplement:scorched_block:10>,
+	<tcomplement:scorched_slab2:2>,
+] as IItemStack[];
+
+for item in castBasinToRemove {
+	Casting.removeBasinRecipe(item);
+}
+
 
 // Additions //
 // Tough Alloy Block
@@ -295,10 +340,12 @@ Casting.addBasinRecipe(<embers:block_dawnstone>, null, <liquid:dawnstone>, 1296)
 Casting.addTableRecipe(<embers:gear_dawnstone>, <tconstruct:cast_custom:4>, <liquid:dawnstone>, 576, false, 250);
 Casting.addTableRecipe(<embers:plate_dawnstone>, <tconstruct:cast_custom:3>, <liquid:dawnstone>, 144, false, 100);
 Casting.addTableRecipe(<embers:ingot_dawnstone>, <tconstruct:cast_custom>, <liquid:dawnstone>, 144, false, 100);
+Casting.addTableRecipe(<embers:nugget_dawnstone>, <tconstruct:cast_custom:1>, <liquid:dawnstone>, 16, false, 10);
 
 //Starmetal Block
 Casting.addBasinRecipe(<contenttweaker:starmetal_block>, null, <liquid:starmetal>, 1296);
 
+/*
 // Orichalcum
 	Casting.addTableRecipe(<contenttweaker:material_part:20>,<tconstruct:cast_custom>, <liquid:orichalcum>, 144, false, 50);
 	Casting.addTableRecipe(<contenttweaker:material_part:21>,<tconstruct:cast_custom:4>, <liquid:orichalcum>, 576, false, 200);
@@ -318,6 +365,7 @@ Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:4>, null, <liquid:pall
 	Casting.addTableRecipe(<contenttweaker:material_part:11>,<tconstruct:cast_custom:4>, <liquid:adamantine>, 576, false, 200);
 	Casting.addTableRecipe(<contenttweaker:material_part:12>,<tconstruct:cast_custom:3>, <liquid:adamantine>, 144, false, 50);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, null, <liquid:adamantine>, 1296);
+*/
 
 // Prudentium Gears
 Melting.addRecipe(<liquid:prudentium> * 576, <moreplates:prudentium_gear>);

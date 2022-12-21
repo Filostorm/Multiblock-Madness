@@ -71,7 +71,7 @@ for item in itemstoRemove {
 }
 
 
-################# BLOCKS #######################
+################# BLOCKS AND NUGGETS #######################
 
 
 val mapNewBlocks as IItemStack[IItemStack] = {
@@ -94,9 +94,46 @@ recipes.addShaped(block, [
 recipes.addShapeless(ingot * 9, [block]);
 }
 
+val mapNewNuggets as IItemStack[IItemStack] = {
+	<contenttweaker:material_part:33>:<contenttweaker:material_part:30>,
+	<contenttweaker:material_part:23>:<contenttweaker:material_part:20>,
+	<contenttweaker:material_part:13>:<contenttweaker:material_part:10>,
+	<contenttweaker:material_part:4>:<contenttweaker:material_part:5>,
+} as IItemStack[IItemStack];
+
+for nugget, ingot in mapNewNuggets {
+recipes.addShaped(ingot, [
+	[nugget, nugget, nugget],
+	[nugget, nugget, nugget], 
+	[nugget, nugget, nugget]
+]);
+recipes.addShapeless(nugget * 9, [ingot]);
+}
+
 // Neutronium Blocks
 
 recipes.addShapeless(<avaritia:resource:4> * 9, [<avaritia:block_resource>]);
+
+// MA Blocks and Nuggets
+// Format is ingot:[block,nugget]
+
+val maParts = {
+	<mysticalagriculture:crafting:32>:[<mysticalagriculture:ingot_storage>, <mysticalagriculture:crafting:39>],
+	<mysticalagriculture:crafting:34>:[<mysticalagriculture:ingot_storage:2>, <mysticalagriculture:crafting:41>],
+	<mysticalagriculture:crafting:35>:[<mysticalagriculture:ingot_storage:3>, <mysticalagriculture:crafting:42>],
+	<mysticalagriculture:crafting:36>:[<mysticalagriculture:ingot_storage:4>, <mysticalagriculture:crafting:43>],
+	<mysticalagriculture:crafting:37>:[<mysticalagriculture:ingot_storage:5>, <mysticalagriculture:crafting:44>],
+	<mysticalagradditions:insanium:2>:[<mysticalagradditions:storage:1>, <mysticalagradditions:insanium:3>],
+} as IItemStack[][IItemStack];
+
+for ingot, parts in maParts {
+	recipes.addShapeless(ingot * 9, [parts[0]]);
+	recipes.addShaped(ingot, [
+		[parts[1], parts[1], parts[1]],
+		[parts[1], parts[1], parts[1]], 
+		[parts[1], parts[1], parts[1]]
+	]);	
+}
 
 
 ################# PLATES #######################

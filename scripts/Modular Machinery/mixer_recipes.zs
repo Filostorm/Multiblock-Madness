@@ -14,14 +14,16 @@ print("==================== loading mods mixer_recipeszs ====================");
 
 // Modifier Tooltip
 
-<thermalfoundation:storage_alloy:1>.addTooltip(format.gold("Mixer Modifier: 2x Speed"));
+<mysticalagriculture:ingot_storage:2>.addTooltip(format.gold("Mixer Modifier: 1.5x Speed"));
+<twilightforest:knightmetal_block>.addTooltip(format.gold("Mixer Modifier: 2x Speed"));
 addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mixer"}), 
 "Central Block Upgrade",
-"Electrum: 2x Speed");
+"Prudentium: 1.5x Speed",
+"Knightmetal: 2x Speed");
 
 
 // Bronze
-val fluidBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-bronze", "mixer", 240, 0);
+val fluidBronze = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-bronze", "mixer", 180, 0);
 fluidBronze.addEmberInput(160);
 fluidBronze.addMysticalMechanicsInput(20, 39);
 fluidBronze.addItemInput(<ore:ingotCopper>,3);
@@ -30,7 +32,7 @@ fluidBronze.addFluidOutput(<liquid:bronze>*576);
 fluidBronze.build();
 
 // Bronzefast
-val fluidBronzeFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-bronze-fast", "mixer", 160, 0);
+val fluidBronzeFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-bronze-fast", "mixer", 120, 0);
 fluidBronzeFast.addEmberInput(160);
 fluidBronzeFast.addMysticalMechanicsInput(40, 80);
 fluidBronzeFast.addItemInput(<ore:ingotCopper>,3);
@@ -39,7 +41,7 @@ fluidBronzeFast.addFluidOutput(<liquid:bronze>*576);
 fluidBronzeFast.build();
 
 // Constantan
-val fluidconstantan = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-constantan", "mixer", 120, 0);
+val fluidconstantan = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-constantan", "mixer", 90, 0);
 fluidconstantan.addEmberInput(80);
 fluidconstantan.addMysticalMechanicsInput(20, 39);
 fluidconstantan.addItemInput(<ore:ingotCopper>);
@@ -48,7 +50,7 @@ fluidconstantan.addFluidOutput(<liquid:constantan>*288);
 fluidconstantan.build();
 
 // ConstantanFast
-val fluidconstantanFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-constantan-fast", "mixer", 80, 0);
+val fluidconstantanFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-constantan-fast", "mixer", 60, 0);
 fluidconstantanFast.addEmberInput(80);
 fluidconstantanFast.addMysticalMechanicsInput(40, 80);
 fluidconstantanFast.addItemInput(<ore:ingotCopper>);
@@ -57,7 +59,7 @@ fluidconstantanFast.addFluidOutput(<liquid:constantan>*288);
 fluidconstantanFast.build();
 
 // Invar
-val fluidinvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-invar", "mixer", 180, 0);
+val fluidinvar = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-invar", "mixer", 135, 0);
 fluidinvar.addEmberInput(120);
 fluidinvar.addMysticalMechanicsInput(20, 39);
 fluidinvar.addItemInput(<ore:ingotIron>,2);
@@ -66,7 +68,7 @@ fluidinvar.addFluidOutput(<liquid:invar>*432);
 fluidinvar.build();
 
 // InvarFast
-val fluidinvarFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-invar-fast", "mixer", 120, 0);
+val fluidinvarFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-invar-fast", "mixer", 90, 0);
 fluidinvarFast.addEmberInput(120);
 fluidinvarFast.addMysticalMechanicsInput(40, 80);
 fluidinvarFast.addItemInput(<ore:ingotIron>,2);
@@ -75,7 +77,7 @@ fluidinvarFast.addFluidOutput(<liquid:invar>*432);
 fluidinvarFast.build();
 
 // Electrum
-val fluidelectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-electrum", "mixer", 120, 0);
+val fluidelectrum = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-electrum", "mixer", 90, 0);
 fluidelectrum.addEmberInput(80);
 fluidelectrum.addMysticalMechanicsInput(20, 39);
 fluidelectrum.addItemInput(<ore:ingotGold>);
@@ -84,7 +86,7 @@ fluidelectrum.addFluidOutput(<liquid:electrum>*288);
 fluidelectrum.build();
 
 // ElectrumFast
-val fluidelectrumFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-electrum-fast", "mixer", 80, 0);
+val fluidelectrumFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-electrum-fast", "mixer", 60, 0);
 fluidelectrumFast.addEmberInput(80);
 fluidelectrumFast.addMysticalMechanicsInput(40, 80);
 fluidelectrumFast.addItemInput(<ore:ingotGold>);
@@ -93,7 +95,7 @@ fluidelectrumFast.addFluidOutput(<liquid:electrum>*288);
 fluidelectrumFast.build();
 
 // Inert_metal
-val fluidinert_metal = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-inert_metal", "mixer", 120, 0);
+val fluidinert_metal = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-inert_metal", "mixer", 90, 0);
 fluidinert_metal.addEmberInput(80);
 fluidinert_metal.addMysticalMechanicsInput(20, 39);
 fluidinert_metal.addItemInput(<ore:ingotSilver>,2);
@@ -102,7 +104,7 @@ fluidinert_metal.addFluidOutput(<liquid:inert_metal>*288);
 fluidinert_metal.build();
 
 // Inert_metalFast
-val fluidinert_metalFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-inert_metal-fast", "mixer", 80, 0);
+val fluidinert_metalFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-inert_metal-fast", "mixer", 60, 0);
 fluidinert_metalFast.addEmberInput(80);
 fluidinert_metalFast.addMysticalMechanicsInput(40, 80);
 fluidinert_metalFast.addItemInput(<ore:ingotSilver>,2);
@@ -111,7 +113,7 @@ fluidinert_metalFast.addFluidOutput(<liquid:inert_metal>*288);
 fluidinert_metalFast.build();
 
 // Tin_silver
-val fluidtin_silver = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-tin-silver", "mixer", 240, 0);
+val fluidtin_silver = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-tin-silver", "mixer", 180, 0);
 fluidtin_silver.addEmberInput(80);
 fluidtin_silver.addMysticalMechanicsInput(20, 39);
 fluidtin_silver.addItemInput(<ore:ingotSilver>);
@@ -120,7 +122,7 @@ fluidtin_silver.addFluidOutput(<liquid:tin_silver>*576);
 fluidtin_silver.build();
 
 // Tin_silverFast
-val fluidtin_silverFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-tin-silver-fast", "mixer", 160, 0);
+val fluidtin_silverFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-tin-silver-fast", "mixer", 120, 0);
 fluidtin_silverFast.addEmberInput(80);
 fluidtin_silverFast.addMysticalMechanicsInput(40, 80);
 fluidtin_silverFast.addItemInput(<ore:ingotSilver>);
@@ -131,7 +133,7 @@ fluidtin_silverFast.build();
 
 
 // Conductive_iron
-val fluidconductive_iron = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-conductive_iron", "mixer", 60, 0);
+val fluidconductive_iron = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-conductive_iron", "mixer", 45, 0);
 fluidconductive_iron.addEmberInput(80);
 fluidconductive_iron.addMysticalMechanicsInput(40, 59);
 fluidconductive_iron.addItemInput(<minecraft:iron_ingot>);
@@ -140,7 +142,7 @@ fluidconductive_iron.addFluidOutput(<liquid:conductive_iron>*144);
 fluidconductive_iron.build();
 
 // Conductive_ironFast
-val fluidconductive_ironFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-conductive_iron-fast", "mixer", 40, 0);
+val fluidconductive_ironFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-conductive_iron-fast", "mixer", 30, 0);
 fluidconductive_ironFast.addEmberInput(80);
 fluidconductive_ironFast.addMysticalMechanicsInput(60, 100);
 fluidconductive_ironFast.addItemInput(<minecraft:iron_ingot>);
@@ -149,7 +151,7 @@ fluidconductive_ironFast.addFluidOutput(<liquid:conductive_iron>*144);
 fluidconductive_ironFast.build();
 
 // Pulsating_iron
-val fluidpulsating_iron = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-pulsating_iron", "mixer", 60, 0);
+val fluidpulsating_iron = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-pulsating_iron", "mixer", 45, 0);
 fluidpulsating_iron.addEmberInput(80);
 fluidpulsating_iron.addMysticalMechanicsInput(40, 59);
 fluidpulsating_iron.addItemInput(<minecraft:iron_ingot>);
@@ -158,7 +160,7 @@ fluidpulsating_iron.addFluidOutput(<liquid:pulsating_iron>*144);
 fluidpulsating_iron.build();
 
 // Pulsating_ironFast
-val fluidpulsating_ironFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-pulsating_iron-fast", "mixer", 40, 0);
+val fluidpulsating_ironFast = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-pulsating_iron-fast", "mixer", 30, 0);
 fluidpulsating_ironFast.addEmberInput(80);
 fluidpulsating_ironFast.addMysticalMechanicsInput(60, 100);
 fluidpulsating_ironFast.addItemInput(<minecraft:iron_ingot>);
@@ -169,7 +171,7 @@ fluidpulsating_ironFast.build();
 
 
 // Quartz for fused
-val fluidquartz = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-quartz", "mixer", 80, 0);
+val fluidquartz = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-quartz", "mixer", 60, 0);
 fluidquartz.addEmberInput(80);
 //fluidquartz.addMysticalMechanicsInput(20, 60);
 fluidquartz.addItemInput(<minecraft:quartz>);
@@ -177,7 +179,7 @@ fluidquartz.addFluidOutput(<liquid:quartz>*666);
 fluidquartz.build();
 
 // Glass
-val fluidglass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-glass", "mixer", 80, 0);
+val fluidglass = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-glass", "mixer", 60, 0);
 fluidglass.addEmberInput(80);
 //fluidglass.addMysticalMechanicsInput(20, 60);
 fluidglass.addItemInput(<minecraft:sand>);
@@ -185,7 +187,7 @@ fluidglass.addFluidOutput(<liquid:glass>*1000);
 fluidglass.build();
 
 // Blood
-val fluidblood = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-blood", "mixer", 50, 0);
+val fluidblood = mods.modularmachinery.RecipeBuilder.newBuilder("mixer-fluid-blood", "mixer", 30, 0);
 fluidblood.addEmberInput(40);
 //fluidblood.addMysticalMechanicsInput(20, 60);
 fluidblood.addItemInput(<ore:listAllmeatraw>);

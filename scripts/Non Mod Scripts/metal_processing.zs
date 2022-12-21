@@ -947,6 +947,8 @@ val Tier3Ingots =[
 <mysticalagriculture:crafting:34>,
 <embers:ingot_dawnstone>,
 <thermalfoundation:material:160>,
+<tconstruct:ingots:3>,
+<tconstruct:ingots:4>,
 ] as IItemStack[];
 for item in Tier3Ingots {
 item.addTooltip(format.darkRed("Tier 3 Metal"));
@@ -982,6 +984,9 @@ val Tier5Ingots =[
 <enderio:item_alloy_ingot:8>,
 <enderio:item_alloy_ingot:2>,
 <enderio:item_alloy_endergy_ingot:6>,
+<contenttweaker:ingot_thermal_alloy>,
+<mysticalagriculture:crafting:37>,
+<threng:material>,
 ] as IItemStack[];
 for item in Tier5Ingots {
 item.addTooltip(format.gold("Tier 5 Metal"));
@@ -998,6 +1003,10 @@ val Tier6Ingots =[
 <advancedrocketry:productingot:1>,
 <advancedrocketry:productingot>,
 <mysticalagradditions:insanium:2>,
+<contenttweaker:ingot_mek_alloy>,
+<techreborn:ingot:17>,
+<mekanism:ingot:3>,
+<mekanism:ingot>
 ] as IItemStack[];
 for item in Tier6Ingots {
 item.addTooltip(format.darkPurple("Tier 6 Metal"));

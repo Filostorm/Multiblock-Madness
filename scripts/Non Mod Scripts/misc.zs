@@ -267,7 +267,8 @@ val itemstoRemove =
 <botania_tweaks:dire_crafty_crate>,
 <avaritia:extreme_crafting_table>,
 
-<mekanism:machineblock:2>
+<mekanism:machineblock:2>,
+<qmd:ingot>
 ]
  as IItemStack[];
 
