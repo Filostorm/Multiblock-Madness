@@ -183,7 +183,7 @@ val itemstoRemove =
 <mysticalworld:gold_dust_tiny>,
 <mysticalworld:copper_dust_tiny>,
 <mysticalworld:silver_dust_tiny>,
-<embers:ingot_aluminum>,
+// <embers:ingot_aluminum>,
 <openblocks:generic:4>,
 <enderio:block_simple_crafter>,
 <enderio:block_simple_wired_charger>,

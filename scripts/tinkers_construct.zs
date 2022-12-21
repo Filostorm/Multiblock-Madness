@@ -198,6 +198,27 @@ Melting.addRecipe(<liquid:starmetal> * 1296, <contenttweaker:starmetal_block>);
 ## Blank Cast Resmelting
 Melting.addRecipe(<liquid:alubrass> * 144, <ore:cast>);
 
+Melting.addRecipe(<liquid:orichalcum> * 1296, <contenttweaker:sub_block_holder_0>);
+Melting.addRecipe(<liquid:adamantine> * 1296, <contenttweaker:sub_block_holder_0:1>);
+
+// Melting recipes for all 3 custom metals
+// Format is fluid:[nugget,dust,ingot,plate,gear,block,ore]
+val materialMelting as IItemStack[][ILiquidStack] = {
+	<liquid:palladium>:[<contenttweaker:material_part:33>, <contenttweaker:material_part:35>, <contenttweaker:material_part:30>, <contenttweaker:material_part:32>, <contenttweaker:material_part:31>, <contenttweaker:sub_block_holder_0:4>, <contenttweaker:sub_block_holder_0:3>],
+	<liquid:orichalcum>:[<contenttweaker:material_part:23>, <contenttweaker:material_part:25>, <contenttweaker:material_part:20>, <contenttweaker:material_part:22>, <contenttweaker:material_part:21>, <contenttweaker:sub_block_holder_0>, <contenttweaker:sub_block_holder_0:7>],
+	<liquid:adamantine>:[<contenttweaker:material_part:13>, <contenttweaker:material_part:15>, <contenttweaker:material_part:10>, <contenttweaker:material_part:12>, <contenttweaker:material_part:11>, <contenttweaker:sub_block_holder_0:1>, <contenttweaker:sub_block_holder_0:8>],
+} as IItemStack[][ILiquidStack];
+
+for fluid, items in materialMelting {
+	Melting.addRecipe(fluid * 16, items[0]);
+	Melting.addRecipe(fluid * 144, items[1]);
+	Melting.addRecipe(fluid * 144, items[2]);
+	Melting.addRecipe(fluid * 144, items[3]);
+	Melting.addRecipe(fluid * 576, items[4]);
+	Melting.addRecipe(fluid * 1296, items[5]);
+	Melting.addRecipe(fluid * 144, items[6]);
+	HighOven.addMeltingOverride(fluid * 288, items[6]);
+}
 
 ### ALLOYING ###
 
@@ -283,20 +304,19 @@ Casting.addBasinRecipe(<contenttweaker:starmetal_block>, null, <liquid:starmetal
 	Casting.addTableRecipe(<contenttweaker:material_part:21>,<tconstruct:cast_custom:4>, <liquid:orichalcum>, 576, false, 200);
 	Casting.addTableRecipe(<contenttweaker:material_part:22>,<tconstruct:cast_custom:3>, <liquid:orichalcum>, 144, false, 50);
 
-Melting.addRecipe(<liquid:orichalcum> * 1296, <contenttweaker:sub_block_holder_0>);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0>, null, <liquid:orichalcum>, 1296);
 
 // Palladium
 	Casting.addTableRecipe(<contenttweaker:material_part:30>,<tconstruct:cast_custom>, <liquid:palladium>, 144, false, 50);
 	Casting.addTableRecipe(<contenttweaker:material_part:31>,<tconstruct:cast_custom:4>, <liquid:palladium>, 576, false, 200);
 	Casting.addTableRecipe(<contenttweaker:material_part:32>,<tconstruct:cast_custom:3>, <liquid:palladium>, 144, false, 50);
+	
+Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:4>, null, <liquid:palladium>, 1296);
 
 // Adamantine
 	Casting.addTableRecipe(<contenttweaker:material_part:10>,<tconstruct:cast_custom>, <liquid:adamantine>, 144, false, 50);
 	Casting.addTableRecipe(<contenttweaker:material_part:11>,<tconstruct:cast_custom:4>, <liquid:adamantine>, 576, false, 200);
 	Casting.addTableRecipe(<contenttweaker:material_part:12>,<tconstruct:cast_custom:3>, <liquid:adamantine>, 144, false, 50);
-
-Melting.addRecipe(<liquid:adamantine> * 1296, <contenttweaker:sub_block_holder_0:1>);
 Casting.addBasinRecipe(<contenttweaker:sub_block_holder_0:1>, null, <liquid:adamantine>, 1296);
 
 // Prudentium Gears

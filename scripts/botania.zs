@@ -249,7 +249,7 @@ RuneAltar.addRecipe(<botania:rune>,[<minecraft:prismarine_shard>, <actuallyaddit
 recipes.remove(<mysticalworld:wet_mud_block>);
 recipes.addShaped(<mysticalworld:wet_mud_block>*8, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>,  <liquid:water>*1000, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 Transposer.addFillRecipe(<mysticalworld:wet_mud_block>, <minecraft:dirt>, <liquid:water>*125, 2500);
-Infuser.removeRecipeWithInput(<ore:dirt>, <liquid:water>);
+// Infuser.removeRecipeWithInput(<ore:dirt>, <liquid:water>);
 Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
 
 //Rune of Mana

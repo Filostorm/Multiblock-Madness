@@ -4498,7 +4498,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble a 4x4 base, then place 2 exterior layers, so you have a 2x2 open interior.\n\nYou have two options for heating: Advanced Solar Panels on each 4 corners (these need to be inset one block.)\n\nOr you can use Heaters placed adjacent to a valve. §c§rRemember to set the RF usage in the machine!",
+          "desc:8": "Used to produce large amounts of brine and lithium.\n\nAssemble a 4x4 base, then place 2 exterior layers, so you have a 2x2 open interior.\n\nYou have two options for heating. The first is Advanced Solar Panels on the 4 corners. These need to be inset one block.\n\nAlternatively, you can use Heaters placed adjacent to a valve. §c§rRemember to set the RF usage in the machine!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9484,7 +9484,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The second highest tier of Assembling Machine.",
+          "desc:8": "The second highest tier of Assembling Machine, used to manufacture some of the most complex items.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9727,7 +9727,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Until you unlock the Ender IO Alloy Smelter, you\u0027ll need to do the in-world crafting method.",
+          "desc:8": "Used to create highly advanced machines.\n\nUntil you unlock the Ender IO Alloy Smelter, you\u0027ll need to do the in-world crafting method.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -16679,7 +16679,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Replacing the casing with Reinforced will increase heat by 20 each, for a total of 680. (You\u0027ll need 34 if you want fully upgrade your Blast Furnace)",
+          "desc:8": "Replacing the casing with Reinforced will increase heat by 20 each, for a total of 680. You\u0027ll need 34 if you want to fully upgrade your Blast Furnace.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 34,
@@ -16873,7 +16873,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The final upgrade, Advanced Machine Casings, each count for an additonal 20 heat. (You\u0027ll need 34 if you want to fully upgrade your Blast Furnace)\n\nChrome can be found by electrolyzing Ruby dust.\n\n",
+          "desc:8": "The final upgrade, Advanced Machine Casings, each count for an additonal 20 heat. You\u0027ll need 34 if you want to fully upgrade your Blast Furnace.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 34,
@@ -16924,7 +16924,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Right clicking the Blast Furnace with 4 Nichrome Coils will increase heat by another 500.",
+          "desc:8": "Right clicking the Blast Furnace with 4 Nichrome Coils will increase heat by another 500.\n\nChrome can be found by electrolyzing Ruby dust.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 4,
@@ -21790,7 +21790,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Can be used to process ore for byproducts.",
+          "desc:8": "Can be used to process ores for byproducts.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26865,7 +26865,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Most crafts require a Blood Orb, but if a recipe is Tier 0 it can be done without. You can check a recipe by hovering over the arrow in JEI.",
+          "desc:8": "Most crafts require a Blood Orb, but if a recipe is Tier 0 it can be done without one. You can check a recipe by hovering over the arrow in JEI.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -30633,7 +30633,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place the Relays on the Sooty Marble for extra crafting slots.",
+          "desc:8": "Used to make some of the most magical items!\n\nPlace the Relays on the Sooty Marble for extra crafting slots.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -32703,7 +32703,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Using 28 Runes, upgrade your Altar to tier 4.\n\nThis will allow you to start creating the more powerful rituals.",
+          "desc:8": "Using 28 Runes, upgrade your Altar to tier 4.\n\nThis will allow you to start creating more powerful rituals.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -39465,7 +39465,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Second Tier of the Assembling Machine Multiblock!",
+          "desc:8": "Second Tier of the Assembling Machine Multiblock! Required for Space-Age machinery.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -39612,7 +39612,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The two main ways to abtain Iridium Ore at this point are the §1§5Mark of the Falling Tower§r, and traveling to the §2§6§rMoon to mine some there.\n\nYou also can use highly advanced ore processing to collect some dust as a byproduct.",
+          "desc:8": "The two main ways to abtain Iridium Ore at this point are the §1§5Mark of the Falling Tower§r, and traveling to the §2§6§rMoon to mine some there.\n\nYou can also use highly advanced ore processing to collect some dust as a byproduct.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -44824,7 +44824,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§cThis Multiblock will only function in the Beneath!\n\n",
+          "desc:8": "Used to make Midnight Ingots.\n\n§cThis Multiblock will only function in the Beneath!\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -50281,7 +50281,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Infinite Power! For Advanced Rocketry multiblocks.",
+          "desc:8": "Infinite Power!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -53181,7 +53181,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ll need to shoot the Mana Input Hatch with a Mana Spreader for the recipe to work. It has a §overy §rlarge mana buffer.",
+          "desc:8": "Used to make various nature-related items.\n\nYou\u0027ll need to shoot the Mana Input Hatch with a Mana Spreader for the recipe to work. It has a §overy §rlarge mana buffer.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,

@@ -135,23 +135,6 @@ recipes.addShaped(<embers:block_furnace>, [[<embers:brick_caminite>, <embers:pla
 recipes.addShaped(<embers:alchemy_tablet>, [[null, <embers:plate_dawnstone>, null],[<embers:stairs_caminite_brick>, <moreplates:energetic_silver_plate>, <embers:stairs_caminite_brick>], [<embers:block_caminite_brick>, <embers:ingot_dawnstone>, <embers:block_caminite_brick>]]);
 
 
-## Embers Mixer ##
-
-// Dawnstone
-Mixer.remove(<liquid:dawnstone> * 8);
-Mixer.add(<liquid:dawnstone> * 144,[<liquid:gold> * 144,<liquid:copper> * 144,<liquid:glowstone> * 125]);
-
-// Inert Metal
-Mixer.add(<liquid:inert_metal> * 72, [<liquid:silver> * 72, <liquid:lead> * 36]);
-
-EmberGeneration.addMetalCoefficient(<embers:block_dawnstone>,3);
-
-mods.embers.Alchemy.add(<embers:seed_dawnstone>, [<minecraft:quartz>,<embers:ingot_dawnstone>,<embers:ingot_dawnstone>,<embers:shard_ember>,<embers:shard_ember>], {"iron":48 to 64,"dawnstone":48 to 64});
-//mods.embers.Alchemy.remove(IItemStack <output>);
-
-// Remove Tungsten Melting
-mods.embers.Melter.remove(<liquid:tungsten>);
-
 //New Aspectus recipes
 /*
 val aspectustoRemove =
@@ -312,21 +295,11 @@ val stamperRecipesToRemove =
 	<mystgears:gear_infinity>,
 	<mystgears:gear_terrasteel>,
 	<mystgears:gear_diamond>,
-	<nuclearcraft:ingot:5>,
-	<contenttweaker:material_part:10>,
-	<nuclearcraft:ingot:6>,
-	<techreborn:ingot:23>,
-	<astralsorcery:itemcraftingcomponent:1>,
-	<nuclearcraft:ingot:7>,
-	<immersiveengineering:metal:5>,
 	<techreborn:ingot:15>,
 	<thermalfoundation:material:132>,
-	<thermalfoundation:material:132>,
-	<thermalfoundation:material:260>,
 	<thermalfoundation:material:260>,
 	<techreborn:plates:32>,
 	<thermalfoundation:material:324>,
-	<thermalfoundation:material:324>
 ]
  as IItemStack[];
 
@@ -338,19 +311,24 @@ for item in stamperRecipesToRemove {
 
 val ingotStamper =
 {
-<liquid:molten_modularium>:<modularmachinery:itemmodularium>,
-<liquid:conductive_iron>:<enderio:item_alloy_ingot:4>,
-<liquid:pulsating_iron>:<enderio:item_alloy_ingot:5>,
-<liquid:inert_metal>:<contenttweaker:inert_ingot>,
-<liquid:invar>:<thermalfoundation:material:162>,
-<liquid:constantan>:<thermalfoundation:material:164>,
-<liquid:brass>:<techreborn:ingot:1>,
-<liquid:manasteel>:<botania:manaresource>,
-<liquid:thaumium>:<thaumcraft:ingot>,
-<liquid:steel>:<thermalfoundation:material:160>,
-<liquid:knightslime>:<tconstruct:ingots:3>,
-<liquid:pigiron>:<tconstruct:ingots:4>,
-<liquid:prudentium>:<mysticalagriculture:crafting:34>
+	<liquid:molten_modularium>:<modularmachinery:itemmodularium>,
+	<liquid:conductive_iron>:<enderio:item_alloy_ingot:4>,
+	<liquid:pulsating_iron>:<enderio:item_alloy_ingot:5>,
+	<liquid:inert_metal>:<contenttweaker:inert_ingot>,
+	<liquid:invar>:<thermalfoundation:material:162>,
+	<liquid:constantan>:<thermalfoundation:material:164>,
+	<liquid:brass>:<techreborn:ingot:1>,
+	<liquid:manasteel>:<botania:manaresource>,
+	<liquid:thaumium>:<thaumcraft:ingot>,
+	<liquid:steel>:<thermalfoundation:material:160>,
+	<liquid:knightslime>:<tconstruct:ingots:3>,
+	<liquid:pigiron>:<tconstruct:ingots:4>,
+	<liquid:prudentium>:<mysticalagriculture:crafting:34>,
+
+	<liquid:ardite>:<tconstruct:ingots:1>,
+	<liquid:cobalt>:<tconstruct:ingots>,
+	<liquid:orichalcum>:<contenttweaker:material_part:20>,
+	<liquid:palladium>:<contenttweaker:material_part:30>,
 }
 as IItemStack[ILiquidStack];
 
@@ -401,6 +379,100 @@ as IItemStack[ILiquidStack];
 for fluid, gear in gearStamper {
 	Stamper.add(gear, fluid * 576, <embers:stamp_gear>);
 }
+
+## Mixer Recipes ##
+
+// Dawnstone
+Mixer.remove(<liquid:dawnstone> * 8);
+Mixer.add(<liquid:dawnstone> * 36,[<liquid:gold> * 36,<liquid:copper> * 36,<liquid:glowstone> * 25]);
+
+// Inert Metal
+Mixer.add(<liquid:inert_metal> * 16, [<liquid:silver> * 16, <liquid:lead> * 8]);
+
+EmberGeneration.addMetalCoefficient(<embers:block_dawnstone>,3);
+
+mods.embers.Alchemy.add(<embers:seed_dawnstone>, [<minecraft:quartz>,<embers:ingot_dawnstone>,<embers:ingot_dawnstone>,<embers:shard_ember>,<embers:shard_ember>], {"iron":48 to 64,"dawnstone":48 to 64});
+//mods.embers.Alchemy.remove(IItemStack <output>);
+
+// Other Metals
+// Mixer.remove(<liquid:electrum> * 8);
+// Mixer.remove(<liquid:bronze> * 8);
+
+Mixer.add(<liquid:bronze> * 16, [<liquid:copper> * 12, <liquid:tin> * 4]);
+Mixer.add(<liquid:electrum> * 16, [<liquid:silver> * 8, <liquid:gold> * 8]);
+Mixer.add(<liquid:constantan> * 16, [<liquid:copper> * 8, <liquid:nickel> * 8]);
+Mixer.add(<liquid:invar> * 12, [<liquid:iron> * 8, <liquid:nickel> * 4]);
+Mixer.add(<liquid:conductive_iron>* 36, [<liquid:iron> * 36, <liquid:redstone> * 25]);
+Mixer.add(<liquid:pulsating_iron> * 72, [<liquid:iron> * 72, <liquid:ender> * 125]);
+
+## Melter Recipes ##
+
+// Dust Melting Recipes
+val dustMelting = {
+	<liquid:iron>:<thermalfoundation:material>,
+	<liquid:gold>:<thermalfoundation:material:1>,
+	<liquid:silver>:<thermalfoundation:material:66>,
+	<liquid:copper>:<thermalfoundation:material:64>,
+	<liquid:lead>:<thermalfoundation:material:67>,
+	<liquid:nickel>:<thermalfoundation:material:69>,
+	<liquid:tin>:<thermalfoundation:material:65>,
+	<liquid:electrum>:<thermalfoundation:material:97>,
+	<liquid:bronze>:<thermalfoundation:material:99>
+} as IItemStack[ILiquidStack];
+
+for fluid, item in dustMelting {
+	mods.embers.Melter.add(fluid * 144, item);
+}
+
+// Ingot, Nugget, Dust and Plate melting recipes for all metals up to ch3
+// Format is fluid:[nugget,ingot,dust,plate]
+val meltingList = {
+	<liquid:ardite>:[<tconstruct:nuggets:1>, <tconstruct:ingots:1>, <jaopca:item_dustardite>, null],
+	<liquid:cobalt>:[<tconstruct:nuggets>, <tconstruct:ingots>, <rockhounding_chemistry:chemical_dusts:25>, null],
+	<liquid:knightslime>:[<tconstruct:nuggets:3>, <tconstruct:ingots:3>, null, <moreplates:knightslime_plate>],
+	<liquid:invar>:[<thermalfoundation:material:226>, <thermalfoundation:material:162>, <thermalfoundation:material:98>, <thermalfoundation:material:354>],
+	<liquid:pulsating_iron>:[<enderio:item_alloy_nugget:5>, <enderio:item_alloy_ingot:5>, null, <moreplates:pulsating_iron_plate>],
+	<liquid:steel>:[<thermalfoundation:material:224>, <thermalfoundation:material:160>, <thermalfoundation:material:96>, <thermalfoundation:material:352>],
+	<liquid:thaumium>:[<thaumcraft:nugget:6>, <thaumcraft:ingot>, null, <thaumcraft:plate:2>],
+	<liquid:constantan>:[<thermalfoundation:material:228>, <thermalfoundation:material:164>, <thermalfoundation:material:100>, <thermalfoundation:material:356>],
+	<liquid:prudentium>:[<mysticalagriculture:crafting:41>, <mysticalagriculture:crafting:34>, null, null],
+	<liquid:conductive_iron>:[<enderio:item_alloy_nugget:4>, <enderio:item_alloy_ingot:4>, null, <moreplates:conductive_iron_plate>],
+	<liquid:pigiron>:[<tconstruct:nuggets:4>, <tconstruct:ingots:4>, null, null],
+	<liquid:manasteel>:[<botania:manaresource:17>, <botania:manaresource>, null, null],
+	<liquid:palladium>:[<contenttweaker:material_part:33>, <contenttweaker:material_part:30>, <contenttweaker:material_part:35>, <contenttweaker:material_part:32>],
+	<liquid:orichalcum>:[<contenttweaker:material_part:23>, <contenttweaker:material_part:20>, <contenttweaker:material_part:25>, <contenttweaker:material_part:22>]
+} as IItemStack[][ILiquidStack];
+
+for fluid, items in meltingList {
+	mods.embers.Melter.add(fluid * 16, items[0]);
+	mods.embers.Melter.add(fluid * 144, items[1]);
+
+	if (!(isNull(items[2]))) {
+		mods.embers.Melter.add(fluid * 144, items[2]);
+	}
+
+	if (!(isNull(items[3]))) {
+		mods.embers.Melter.add(fluid * 144, items[3]);
+	}
+}
+
+// Modularium Melting Recipes
+mods.embers.Melter.add(<liquid:molten_modularium> * 144, <modularmachinery:itemmodularium>);
+mods.embers.Melter.add(<liquid:molten_modularium> * 144, <contenttweaker:plate_modularium>);
+
+// Inert Metal Melting
+mods.embers.Melter.add(<liquid:inert_metal> * 144, <contenttweaker:inert_ingot>);
+
+// Brass Melting Recipes
+mods.embers.Melter.add(<liquid:brass> * 16, <ore:nuggetBrass>);
+mods.embers.Melter.add(<liquid:brass> * 144, <ore:ingotBrass>);
+mods.embers.Melter.add(<liquid:brass> * 144, <ore:plateBrass>);
+
+// Remove Tungsten and Aluminium Melting
+mods.embers.Melter.remove(<liquid:tungsten>);
+mods.embers.Melter.remove(<liquid:tungsten>);
+mods.embers.Melter.remove(<liquid:tungsten>);
+mods.embers.Melter.remove(<liquid:aluminum>);
 
 ##########################################################################################
 print("==================== end of embers.zs ====================");

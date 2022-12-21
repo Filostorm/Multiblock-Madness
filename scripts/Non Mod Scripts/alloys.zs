@@ -468,8 +468,8 @@ val fuelalloying as IItemStack[][IItemStack] = {
 } as IItemStack[][IItemStack];
 
 for fuel, newfuel in fuelalloying {
-InductionSmelter.addRecipe(newfuel[0], fuel, <nuclearcraft:ingot:10>, 20000);
-InductionSmelter.addRecipe(newfuel[1], fuel, <nuclearcraft:ingot:8>, 20000);
+	InductionSmelter.addRecipe(newfuel[0], fuel, <nuclearcraft:ingot:10>, 20000);
+	InductionSmelter.addRecipe(newfuel[1], fuel, <nuclearcraft:ingot:8>, 20000);
 }
 
 

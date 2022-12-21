@@ -344,27 +344,6 @@ for cluster, item in clusterOreMap {
 	enrichment.addRecipe(cluster, item * 3);
 }
 
-
-############### /Hacatu #####################
-
-val ingotFluidMap as ILiquidStack[IItemStack] = {
-	<contenttweaker:material_part:10>: <fluid:adamantine>,
-	<tconstruct:ingots:1>: <fluid:ardite>,
-	<astralsorcery:itemcraftingcomponent:1>: <fluid:starmetal>,
-	<nuclearcraft:ingot:5>: <fluid:boron>,
-	<tconstruct:ingots>: <fluid:cobalt>,
-	<nuclearcraft:ingot:6>: <fluid:lithium>,
-	<nuclearcraft:ingot:7>: <fluid:magnesium>,
-	<contenttweaker:material_part:20>: <fluid:orichalcum>,
-	<contenttweaker:material_part:30>: <fluid:palladium>,
-	<techreborn:ingot:23>: <fluid:thorium>,
-	<immersiveengineering:metal:5>: <fluid:uranium>,
-} as ILiquidStack[IItemStack];
-
-for ingot, fluid in ingotFluidMap {
-	Stamper.add(ingot,fluid*144,<embers:stamp_bar>);
-}
-
 // Fixing byproducts of certain clusters
 
 

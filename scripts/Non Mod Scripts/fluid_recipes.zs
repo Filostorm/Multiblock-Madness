@@ -80,7 +80,16 @@ Transposer.addFillRecipe(<qmd:discharge_lamp2>, <qmd:discharge_lamp:6>, <liquid:
 
 // End Stone
 
-for item in <ore:sandstone>.items {
+val oreSandstoneRed = [
+    <minecraft:sandstone>,
+    <minecraft:sandstone:1>,
+    <minecraft:sandstone:2>,
+    <minecraft:red_sandstone>,
+    <minecraft:red_sandstone:1>,
+    <minecraft:red_sandstone:2>,
+] as IItemStack[];
+
+for item in oreSandstoneRed {
     Transposer.addFillRecipe(<minecraft:end_stone>, item, <liquid:ender> * 250, 10000);
 }
 

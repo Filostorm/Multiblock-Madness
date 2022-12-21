@@ -301,6 +301,9 @@ for machine, power in machine_base_power_shift {
 ## EMBERS TOOLTIPS
 ##=======================================================
 
+// TODO
+// Embers Tools, Item Requision + Eye of the ancients, Motive Core
+
 <embers:ember_emitter>.addTooltip(format.red("Requires a Redstone Signal to function"));
 <embers:ember_pulser>.addTooltip(format.red("Requires a Redstone Signal to function"));
 <embers:ember_receiver>.addTooltip(format.red("Shift right click here first, then right click the Ember Emitter with the Tinkers hammer to connect"));
@@ -390,7 +393,7 @@ val embers_crystal_seeds = [
   <embers:seed_silver>,
   <embers:seed_lead>,
   <embers:seed_dawnstone>,
-  <embers:seed_aluminum>,
+//  <embers:seed_aluminum>,
   <embers:seed_nickel>,
   <embers:seed_tin>
 ] as IItemStack[];
