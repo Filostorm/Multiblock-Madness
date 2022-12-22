@@ -431,20 +431,25 @@ for gem in gemsToRemove {
 ## Fluid Unification
 ##=======================================================
 
-// TODO
+val TRfluids = [
+	<liquid:fluiddeuterium>,
+	<liquid:fluidtritium>,
+	<liquid:fluidhelium>,
+	<liquid:fluidmercury>,
+	<liquid:fluidberylium>,
+	<liquid:fluidpotassium>,
+	<liquid:fluidnitrogen>,
+	<liquid:fluidcalcium>,
+	<liquid:fluidsodium>,
+	<liquid:fluidlithium>,
+	<liquid:fluidsilicon>,
+	<liquid:fluidcompressedair>,
+	<liquid:fluidhydrogen>,
+] as ILiquidStack[];
 
-removeAndHide(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluiddeuterium", Amount: 1000}}));
-hide(<liquid:fluiddeuterium>);
-
-removeAndHide(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidtritium", Amount: 1000}}));
-hide(<liquid:fluidtritium>);
-
-removeAndHide(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidhelium", Amount: 1000}}));
-hide(<liquid:fluidhelium>);
-
-removeAndHide(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidmercury", Amount: 1000}}));
-hide(<liquid:fluidmercury>);
-
+for fluid in TRfluids {
+	hide(fluid);
+}
 
 ##=======================================================
 ## Other Unifications

@@ -4,6 +4,8 @@ import mods.mekanism.infuser;
 import mod.mekanism.gas.IGasStack;
 import mods.mekatweaker.InfuserType;
 import mods.appliedenergistics2.Grinder;
+import mods.mekanism.separator;
+import mods.nuclearcraft.Electrolyzer;
 
 
 print("==================== loading mekanism.zs ====================");
@@ -664,6 +666,12 @@ recipes.remove(<mekanism:energytablet>);
 recipes.addShaped("mektabletreplacement", <contenttweaker:inactive_energy_tablet>, [[<ore:dustRedstone>, <ore:ingotGold>, <ore:dustRedstone>], [<mekanism:enrichedalloy>, <ore:ingotGold>, <mekanism:enrichedalloy>], [<ore:dustRedstone>, <ore:ingotGold>, <ore:dustRedstone>]]);
 recipes.addShapeless(<mekanism:energytablet>, [<contenttweaker:inactive_energy_tablet>]);
 recipes.addShapeless(<contenttweaker:inactive_energy_tablet>, [<mekanism:energytablet>]);
+
+// NC Heavy Water Electrolysis in Electrolytic Separator
+separator.addRecipe(<liquid:heavy_water> * 2, 4000.0, <gas:deuterium> * 2, <gas:oxygen>);
+
+// Mek Heavy Water Electrolysis in NC Electrolyser
+Electrolyzer.addRecipe(<liquid:heavywater> * 250, <liquid:deuterium> * 500, <liquid:oxygen> * 250, null, null, 0.5);
 
 ##########################################################################################
 print("==================== end of mekanism.zs ====================");

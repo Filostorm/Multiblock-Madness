@@ -45,7 +45,6 @@ for output, input in oxygenRecipes {
 Transposer.addFillRecipe(<qmd:chemical_dust:6>, <qmd:dust:14>, <liquid:hydrochloric_acid> * 2000, 10000);
 
 // Silicon Carbide Fiber
-Transposer.addFillRecipe(<nuclearcraft:part:13>, <powersuits:powerarmorcomponent:14>, <liquid:fluidsilicon> * 288, 20000);
 Transposer.addFillRecipe(<nuclearcraft:part:13>, <powersuits:powerarmorcomponent:14>, <liquid:silicon> * 288, 20000);
 
 // Supercold Ice
@@ -59,9 +58,9 @@ for item in <ore:blockGlassHardened>.items {
 }
 
 val QMDlamps = {
-    <qmd:discharge_lamp:1>:[<liquid:hydrogen>, <liquid:liquidhydrogen>, <liquid:fluidhydrogen>],
+    <qmd:discharge_lamp:1>:[<liquid:hydrogen>, <liquid:liquidhydrogen>],
     <qmd:discharge_lamp:2>:[<liquid:helium>],
-    <qmd:discharge_lamp:3>:[<liquid:nitrogen>, <liquid:fluidnitrogen>],
+    <qmd:discharge_lamp:3>:[<liquid:nitrogen>],
     <qmd:discharge_lamp:4>:[<liquid:oxygen>, <liquid:liquidoxygen>],
     <qmd:discharge_lamp:5>:[<liquid:neon>],
     <qmd:discharge_lamp:6>:[<liquid:argon>],
@@ -111,7 +110,7 @@ Transposer.addFillRecipe(<minecraft:clay>, <minecraft:hardened_clay>, <liquid:wa
 // Canisters
 
 val canisters = {
-    <qmd:canister:1>.withTag({particle_storage: {particle_amount: 10000000}}):[<liquid:hydrogen>, <liquid:liquidhydrogen>, <liquid:fluidhydrogen>],
+    <qmd:canister:1>.withTag({particle_storage: {particle_amount: 10000000}}):[<liquid:hydrogen>, <liquid:liquidhydrogen>],
     <qmd:canister:2>.withTag({particle_storage: {particle_amount: 10000000}}):[<liquid:deuterium>, <liquid:liquiddeuterium>],
     <qmd:canister:3>.withTag({particle_storage: {particle_amount: 10000000}}):[<liquid:tritium>, <liquid:liquidtritium>],
     <qmd:canister:4>.withTag({particle_storage: {particle_amount: 10000000}}):[<liquid:helium_3>],
@@ -157,6 +156,8 @@ for items, fluid in NCItems {
     Transposer.addFillRecipe(items[1], items[0], fluid * 1000, 10000);
 }
 
+// Additional Heavy Water Moderator Recipe
+Transposer.addFillRecipe(<nuclearcraft:heavy_water_moderator>, <nuclearcraft:part:11>, <liquid:heavy_water> * 1000, 10000);
 
 // --==NC Fuels for Fluid Transposer==-- //
 // Recipes for Oxide/Nitride variants of all isotopes/fuels for the Fluid Transposer
@@ -186,6 +187,7 @@ val fuelalloying as IItemStack[][IItemStack] = {
     <nuclearcraft:californium:10>:[<nuclearcraft:californium:12>,<nuclearcraft:californium:13>],
     <nuclearcraft:californium:15>:[<nuclearcraft:californium:17>,<nuclearcraft:californium:18>],
     <qmd:copernicium>:[<qmd:copernicium:2>,<qmd:copernicium:3>],
+    <nuclearcraft:pellet_thorium>:[<nuclearcraft:fuel_thorium:1>,<nuclearcraft:fuel_thorium:2>],
     <nuclearcraft:pellet_uranium>:[<nuclearcraft:fuel_uranium:1>,<nuclearcraft:fuel_uranium:2>],
     <nuclearcraft:pellet_uranium:2>:[<nuclearcraft:fuel_uranium:5>,<nuclearcraft:fuel_uranium:6>],
     <nuclearcraft:pellet_uranium:4>:[<nuclearcraft:fuel_uranium:9>,<nuclearcraft:fuel_uranium:10>],
@@ -196,6 +198,7 @@ val fuelalloying as IItemStack[][IItemStack] = {
     <nuclearcraft:pellet_plutonium:2>:[<nuclearcraft:fuel_plutonium:5>,<nuclearcraft:fuel_plutonium:6>],
     <nuclearcraft:pellet_plutonium:4>:[<nuclearcraft:fuel_plutonium:9>,<nuclearcraft:fuel_plutonium:10>],
     <nuclearcraft:pellet_plutonium:6>:[<nuclearcraft:fuel_plutonium:13>,<nuclearcraft:fuel_plutonium:14>],
+    <nuclearcraft:pellet_mixed>:[<nuclearcraft:fuel_mixed:1>,<nuclearcraft:fuel_mixed:2>],
     <nuclearcraft:pellet_americium>:[<nuclearcraft:fuel_americium:1>,<nuclearcraft:fuel_americium:2>],
     <nuclearcraft:pellet_americium:2>:[<nuclearcraft:fuel_americium:5>,<nuclearcraft:fuel_americium:6>],
     <nuclearcraft:pellet_curium>:[<nuclearcraft:fuel_curium:1>,<nuclearcraft:fuel_curium:2>],
@@ -217,7 +220,6 @@ for fuel, newfuel in fuelalloying {
     Transposer.addFillRecipe(newfuel[0], fuel, <liquid:oxygen> * 1000, 12000);
     Transposer.addFillRecipe(newfuel[0], fuel, <liquid:liquidoxygen> * 1000, 12000);
     Transposer.addFillRecipe(newfuel[1], fuel, <liquid:nitrogen> * 1000, 12000);
-    Transposer.addFillRecipe(newfuel[1], fuel, <liquid:fluidnitrogen> * 1000, 12000);
 }
 
 

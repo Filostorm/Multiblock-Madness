@@ -38,7 +38,8 @@ print("==================== loading jei_tooltips.zs ====================");
 <mekanism:tierinstaller:3>.addTooltip(format.lightPurple("Only works on Bins, Energy Cubes, Tanks and Gas Tanks"));
 
 <techreborn:part:33>.addTooltip("§6Obtained from the Recycler§r");
-
+<techreborn:recycler>.addTooltip(format.white("Produces Scrap from any item"));
+<techreborn:scrapboxinator>.addTooltip(format.white("Automatically opens scrap boxes"));
 
 // --== Machine upgrade descriptions ==-- //
 
@@ -804,6 +805,22 @@ addDescription(<bloodarsenal:altare_aenigmatica>,
 
 <bloodarsenal:stasis_plate>.addTooltip(format.white("Used in Blood Arsenal Rituals"));
 
+<bloodmagic:sentient_armour_boots>.addTooltip(format.white("Created by the Sentient Armour Gem"));
+<bloodmagic:sentient_armour_leggings>.addTooltip(format.white("Created by the Sentient Armour Gem"));
+<bloodmagic:sentient_armour_chest>.addTooltip(format.white("Created by the Sentient Armour Gem"));
+<bloodmagic:sentient_armour_helmet>.addTooltip(format.white("Created by the Sentient Armour Gem"));
+
+<bloodmagic:sentient_armour_gem>.addTooltip(format.white("Replaces armour with Sentient Armour temporarily"));
+<bloodmagic:sentient_armour_gem>.addTooltip(format.white("Sentient Armour takes on enchantments of original armour"));
+<bloodmagic:sentient_armour_gem>.addTooltip(format.white("Armour consumes will instead of durability when damages"));
+
+<bloodarsenal:blood_capacitor>.addTooltip(format.red("Stores 10 MRF"));
+<animus:keybinding>.addTooltip(format.white("Allows you to share someone's Life Essence Network"));
+<bloodmagic:lava_crystal>.addTooltip(format.white("Acts as a fuel source in a furnace, consumes 50 LP"));
+<bloodmagic:lava_crystal>.addTooltip(format.white("Can also light fires for 50 LP"));
+
+<bloodmagic:pack_sacrifice>.addTooltip(format.white("Slowly gains LP when attacking mobs"));
+<bloodmagic:pack_self_sacrifice>.addTooltip(format.white("Slowly gains LP through self-damage"));
 
 ##=======================================================
 ## THAUMCRAFT TOOLTIPS
