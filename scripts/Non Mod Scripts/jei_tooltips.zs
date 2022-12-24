@@ -302,8 +302,13 @@ for machine, power in machine_base_power_shift {
 ## EMBERS TOOLTIPS
 ##=======================================================
 
-// TODO
-// Embers Tools, Item Requision + Eye of the ancients, Motive Core
+<embers:tinker_lens>.addTooltip("§fHold in hand to examine functionality of embers machines");
+<embers:ember_detector>.addTooltip("§6Used to find ember-rich locations§r");
+<embers:field_chart>.addTooltip("§6Used to find ember-rich locations");
+<embers:ember_gauge>.addTooltip("§fPlace on Embers machine to view Embers amount");
+<embers:fluid_gauge>.addTooltip("§fPlace on Embers machine to view Fluid amount");
+<embers:clockwork_attenuator>.addTooltip("§fPlace on Embers machine to control speed");
+<embers:clockwork_attenuator>.addTooltip("§fRight Click / Shift Right Click to change speed");
 
 <embers:ember_emitter>.addTooltip(format.red("Requires a Redstone Signal to function"));
 <embers:ember_pulser>.addTooltip(format.red("Requires a Redstone Signal to function"));
@@ -325,10 +330,15 @@ for machine, power in machine_base_power_shift {
 <embers:fluid_transfer>.addTooltip("§fRight click with a fluid to let it through");
 <embers:item_dropper>.addTooltip("§fDrops any items piped through the top");
 
+<embers:golems_eye>.addTooltip("§fUsed to create complex filters for Embers Item Transfer");
+<embers:item_request>.addTooltip("§fUsed to keep a stock of items in an inventory");
+<embers:item_request>.addTooltip("§fCan also make connected extractors automatically extract selected items");
+
 <embers:breaker>.addTooltip("§fAutomatically breaks blocks in front of it");
 <embers:breaker>.addTooltip("§fPlace a bin behind it to auto-collect drops");
 
 <embers:bin>.addTooltip("§fAutomatically collects outputs from some Embers machines");
+<embers:bin>.addTooltip("§fPlace below a suitable Embers machine to collect outputs");
 
 <embers:steam_engine>.addTooltip("§fProduces 20R with Coal and Water");
 <embers:steam_engine>.addTooltip("§fProduces 40R with Steam");
@@ -375,17 +385,104 @@ for machine, power in machine_base_power_shift {
 
 <embers:heat_coil>.addTooltip("§fSmelts items with Ember power");
 
-<embers:inferno_forge>.addTooltip("§fUsed to upgrade Embers Gear");
+<embers:inferno_forge>.addTooltip("§fUsed to level up Gear with an Ancient Motive Core attached");
+addDescription(<embers:inferno_forge>, "Gear with an Ancient Motive Core attached slowly gain heat from normal use.", "",
+"When the heat bar is filled, place the gear into the top hatch along with a few Ember Crystals and close the hatch. If the upgrade is successful,
+the heat bar will be reset and the gear will gain a level, granting an additional Embers Modifier Slot.", "",
+"Embers Modifiers can then be applied to the gear at a Dawnstone Anvil.");
 
 <embers:large_tank>.addTooltip("§fStores fluids");
 <embers:large_tank>.addTooltip("§fPlace Caminite Rings on top to increase fluid storage");
+<embers:large_tank>.addTooltip("§fPlace Caminite Valves for more I/O Ports");
 
-<embers:stone_edge>.addTooltip("§fEach Ring increases the reservoir's fluid storage by 40B");
+<embers:stone_valve>.addTooltip(format.white("Adds four I/O Ports for the Embers Reservoir"));
+<embers:stone_edge>.addTooltip("§fEach Ring increases the Embers Reservoir's fluid storage by 40B");
 <embers:charger>.addTooltip("§fCharges Embers items with Ember");
 <embers:ember_siphon>.addTooltip("§fPlace under an Embers Charger to invert its function");
 
 <embers:ember_injector>.addTooltip("§fGenerates metal with Embers Crystal Seeds");
 <embers:ember_injector>.addTooltip("§fPlace next to crystal seed and supply with Ember");
+
+<embers:axe_clockwork>.addTooltip(format.white("Uses Ember instead of Durability"));
+<embers:pickaxe_clockwork>.addTooltip(format.white("Uses Ember instead of Durability"));
+<embers:grandhammer>.addTooltip(format.white("Uses Ember instead of Durability"));
+
+<embers:staff_ember>.addTooltip(format.white("Creates fireballs made of Ember"));
+<embers:ignition_cannon>.addTooltip(format.white("Fires bolts made of Ember"));
+
+<embers:ember_jar>.addTooltip(format.white("Contained Ember can be accessed anywhere in inventory"));
+<embers:ember_bulb>.addTooltip(format.white("Contained Ember can be accessed from bauble slot"));
+<embers:ember_cartridge>.addTooltip(format.white("Must be held in hand to be used"));
+
+<embers:glimmer_shard>.addTooltip(format.white("Right click to place lights"));
+<embers:glimmer_shard>.addTooltip(format.white("Recharges in sunlight"));
+<embers:glimmer_lamp>.addTooltip(format.white("Right click to place lights"));
+<embers:glimmer_lamp>.addTooltip(format.white("Recharges in sunlight, can place more lights before recharging"));
+
+<embers:inflictor_gem>.addTooltip(format.white("When taking damage and held in hand, absorbs damage type"));
+<embers:inflictor_gem>.addTooltip(format.white("Place in a Crafting Table with an Ashen Chestplate and String"));
+<embers:inflictor_gem>.addTooltip(format.white("to reduce damage taken from that type by 33%"));
+<embers:inflictor_gem>.addTooltip(format.white("7 Gems may be placed on a single Chestplate at once"));
+
+<embers:ashen_cloak_chest>.addTooltip(format.white("Can hold up to 7 Inflictor Gems"));
+<embers:ashen_cloak_chest>.addTooltip(format.white("Each gem reduces a single type of damage by 33%"));
+
+<embers:isolated_materia>.addTooltip(format.white("Can be used in place of repair material of any tool in a Dawnstone Anvil"));
+
+<embers:dawnstone_mail>.addTooltip(format.white("Protects you from all knockback"));
+<embers:nonbeliever_amulet>.addTooltip(format.white("Reduces magic damage by 90%"));
+<embers:ashen_amulet>.addTooltip(format.white("Mobs slain will only drop ash"));
+<embers:explosion_charm>.addTooltip(format.white("Protects you from explosions"));
+
+<embers:ember_ring>.addTooltip(format.white("Reduces Embers cost of Embers Gear by 10%"));
+<embers:ember_amulet>.addTooltip(format.white("Reduces Embers cost of Embers Gear by 15%"));
+<embers:ember_belt>.addTooltip(format.white("Reduces Embers cost of Embers Gear by 25%"));
+
+<embers:ancient_motive_core>.addTooltip(format.white("Attach to Gear at a Dawnstone Anvil to allow Embers Modifiers to be applied"));
+
+val emberArmourModifiers = [
+  <embers:jet_augment>,
+  <embers:flame_barrier>,
+  <embers:intelligent_apparatus>,
+  <embers:eldritch_insignia>,
+  <embers:shifting_scales>,
+  <embers:tinker_lens>,
+] as IItemStack[];
+
+for item in emberArmourModifiers {
+  item.addTooltip(format.gold("Embers Modifier - Armour"));
+}
+
+<embers:superheater>.addTooltip(format.gold("Embers Modifier - Weapon and Tool"));
+<embers:caster_orb>.addTooltip(format.gold("Embers Modifier - Weapon and Tool"));
+<embers:resonating_bell>.addTooltip(format.gold("Embers Modifier - Weapon and Tool"));
+
+<embers:winding_gears>.addTooltip(format.gold("Embers Modifier - Tool, Weapon and Armour"));
+<embers:blasting_core>.addTooltip(format.gold("Embers Modifier - Tool, Weapon and Armour"));
+
+<embers:diffraction_barrel>.addTooltip(format.gold("Embers Modifier - Projectile"));
+<embers:focal_lens>.addTooltip(format.gold("Embers Modifier - Projectile"));
+
+<embers:diffraction_barrel>.addTooltip(format.white("Weapon fires a spread of projectiles"));
+<embers:focal_lens>.addTooltip(format.white("Weapon produces homing projectiles or a piercing ray"));
+
+<embers:superheater>.addTooltip(format.white("Autosmelts blocks and drops and applies burning damage, consumes Ember"));
+<embers:blasting_core>.addTooltip(format.white("When applied to tools, breaks nearby blocks when a block is broken"));
+<embers:blasting_core>.addTooltip(format.white("When applied to weapons or armour, creates explosions"));
+<embers:caster_orb>.addTooltip(format.white("Creates Ember projectiles with Ember"));
+<embers:caster_orb>.addTooltip(format.white("Affected by Embers Projectile Modifiers"));
+<embers:resonating_bell>.addTooltip(format.white("Right click a block to highlight identical blocks nearby"));
+<embers:winding_gears>.addTooltip(format.white("Wind up a weapon by right clicking, left click while wound up to autoattack"));
+<embers:winding_gears>.addTooltip(format.white("Wound up boots increase jump height and negate fall damage, but require a wound up tool in hand"));
+
+
+<embers:tinker_lens>.addTooltip(format.white("Apply to helmet to receive tinkers lens functionality while wearing the helmet"));
+<embers:shifting_scales>.addTooltip(format.white("Protective scales grow when standing still"));
+<embers:shifting_scales>.addTooltip(format.white("Scales break away and reduce damage when you are attached"));
+<embers:jet_augment>.addTooltip(format.white("Allows you to dash, consumes Ember"));
+<embers:flame_barrier>.addTooltip(format.white("Attackers take damage and are set on fire, consumes Ember"));
+<embers:intelligent_apparatus>.addTooltip(format.white("Increases Experience gained from killing mobs"));
+<embers:eldritch_insignia>.addTooltip(format.white("Scares away some mobs"));
 
 val embers_crystal_seeds = [
   <embers:seed_iron>,
@@ -402,15 +499,6 @@ val embers_crystal_seeds = [
 for seed in embers_crystal_seeds {
   seed.addTooltip("§fGenerates metal with the Ember Injector");
 }
-
-
-<embers:tinker_lens>.addTooltip("§fHold in hand to examine functionality of embers machines");
-<embers:ember_detector>.addTooltip("§6Used to find ember-rich locations§r");
-<embers:field_chart>.addTooltip("§6Used to find ember-rich locations");
-<embers:ember_gauge>.addTooltip("§fPlace on Embers machine to view Embers amount");
-<embers:fluid_gauge>.addTooltip("§fPlace on Embers machine to view Fluid amount");
-<embers:clockwork_attenuator>.addTooltip("§fPlace on Embers machine to control speed");
-<embers:clockwork_attenuator>.addTooltip("§fRight Click / Shift Right Click to change speed");
 
 <embers:mech_actuator_single>.addTooltip("§fPlace next to a suitable Embers machine to power with §eMechanical Power§r§r");
 <embers:mech_actuator>.addTooltip("§fPlace next to a suitable Embers machine to power with §eMechanical Power§r§r");
@@ -442,7 +530,6 @@ for machines in mechanical_embers_machines {
 <mystgears:drill>.addTooltip(format.white("Breaks blocks in front of it with Mechanical Power"));
 
 <mystgears:mechanical_turret>.addTooltip(format.white("Auto-Fires Ember Bullets when equipped with the Ember Gatling Gun"));
-
 
 ##=======================================================
 ## ASTRAL TOOLTIPS

@@ -3,6 +3,7 @@ import mods.tconstruct.Alloy;
 import mods.tconstruct.Melting;
 import mods.tconstruct.Casting;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.oredict.IOreDictEntry;
 import mods.embers.Mixer;
 import mods.embers.EmberGeneration;
 import crafttweaker.item.IItemStack;
@@ -288,7 +289,9 @@ craft.remake(<aetherworks:moonlight_amplifier>, ["pretty",
   "A": <embers:archaic_brick>,                  # Archaic Brick
 });
 
-// Stamper Recipes //
+##=======================================================
+## STAMPER RECIPES
+##=======================================================
 
 val stamperRecipesToRemove =
 [
@@ -307,80 +310,46 @@ for item in stamperRecipesToRemove {
 	Stamper.remove(item);
 }
 
-// Ingots
+// Recipes for ingot, plate and gear stamper recipes up to ch3
+// Format is fluid:[ingot, plate, gear]
+val stamperList = {
+	<liquid:molten_modularium>:[<modularmachinery:itemmodularium>, <contenttweaker:plate_modularium>, <contenttweaker:gear_modularium>],
+	<liquid:conductive_iron>:[<enderio:item_alloy_ingot:4>, <moreplates:conductive_iron_plate>, <moreplates:conductive_iron_gear>],
+	<liquid:pulsating_iron>:[<enderio:item_alloy_ingot:5>, <moreplates:pulsating_iron_plate>, null],
+	<liquid:inert_metal>:[<contenttweaker:inert_ingot>, null, null],
+	<liquid:invar>:[<thermalfoundation:material:162>, <thermalfoundation:material:354>, <thermalfoundation:material:290>],
+	<liquid:constantan>:[<thermalfoundation:material:164>, <thermalfoundation:material:356>, <thermalfoundation:material:292>],
+	<liquid:brass>:[<techreborn:ingot:1>, <thaumcraft:plate>, null],
+	<liquid:manasteel>:[<botania:manaresource>, null, null],
+	<liquid:thaumium>:[<thaumcraft:ingot>, null, null],
+	<liquid:steel>:[<thermalfoundation:material:160>, <thermalfoundation:material:352>, <thermalfoundation:material:288>],
+	<liquid:knightslime>:[<tconstruct:ingots:3>, <moreplates:knightslime_plate>, null],
+	<liquid:pigiron>:[<tconstruct:ingots:4>, null, null],
+	<liquid:prudentium>:[<mysticalagriculture:crafting:34>, null, <moreplates:prudentium_gear>],
+	<liquid:ardite>:[<tconstruct:ingots:1>, null, <moreplates:ardite_gear>],
+	<liquid:cobalt>:[<tconstruct:ingots>, null, <moreplates:cobalt_gear>],
+	<liquid:orichalcum>:[<contenttweaker:material_part:20>, <contenttweaker:material_part:22>, <contenttweaker:material_part:21>],
+	<liquid:palladium>:[<contenttweaker:material_part:30>, <contenttweaker:material_part:32>, <contenttweaker:material_part:31>],
+	<liquid:starmetal>:[<astralsorcery:itemcraftingcomponent:1>, null, null]
+} as IItemStack[][ILiquidStack];
 
-val ingotStamper =
-{
-	<liquid:molten_modularium>:<modularmachinery:itemmodularium>,
-	<liquid:conductive_iron>:<enderio:item_alloy_ingot:4>,
-	<liquid:pulsating_iron>:<enderio:item_alloy_ingot:5>,
-	<liquid:inert_metal>:<contenttweaker:inert_ingot>,
-	<liquid:invar>:<thermalfoundation:material:162>,
-	<liquid:constantan>:<thermalfoundation:material:164>,
-	<liquid:brass>:<techreborn:ingot:1>,
-	<liquid:manasteel>:<botania:manaresource>,
-	<liquid:thaumium>:<thaumcraft:ingot>,
-	<liquid:steel>:<thermalfoundation:material:160>,
-	<liquid:knightslime>:<tconstruct:ingots:3>,
-	<liquid:pigiron>:<tconstruct:ingots:4>,
-	<liquid:prudentium>:<mysticalagriculture:crafting:34>,
+for fluid, parts in stamperList {
+	if (!(isNull(parts[0]))) {
+		Stamper.add(parts[0], fluid * 144, <embers:stamp_bar>);
+	}
 
-	<liquid:ardite>:<tconstruct:ingots:1>,
-	<liquid:cobalt>:<tconstruct:ingots>,
-	<liquid:orichalcum>:<contenttweaker:material_part:20>,
-	<liquid:palladium>:<contenttweaker:material_part:30>,
-}
-as IItemStack[ILiquidStack];
+	if (!(isNull(parts[1]))) {
+		Stamper.add(parts[1], fluid * 144, <embers:stamp_plate>);
+	}
 
-for fluid, ingot in ingotStamper {
-	Stamper.add(ingot, fluid * 144, <embers:stamp_bar>);
-}
-
-
-// Plates
-
-val plateStamper =
-{
-<liquid:molten_modularium>:<contenttweaker:plate_modularium>,
-<liquid:conductive_iron>:<moreplates:conductive_iron_plate>,
-<liquid:pulsating_iron>:<moreplates:pulsating_iron_plate>,
-<liquid:invar>:<thermalfoundation:material:354>,
-<liquid:constantan>:<thermalfoundation:material:356>,
-<liquid:brass>:<thaumcraft:plate>,
-<liquid:palladium>:<contenttweaker:material_part:32>,
-<liquid:orichalcum>:<contenttweaker:material_part:22>,
-<liquid:steel>:<thermalfoundation:material:352>,
-<liquid:knightslime>:<moreplates:knightslime_plate>
-}
-as IItemStack[ILiquidStack];
-
-for fluid, plate in plateStamper {
-	Stamper.add(plate, fluid * 144, <embers:stamp_plate>);
+	if (!(isNull(parts[2]))) {
+		Stamper.add(parts[2], fluid * 576, <embers:stamp_gear>);
+	}
 }
 
-
-// Gears
-
-val gearStamper =
-{
-<liquid:molten_modularium>:<contenttweaker:gear_modularium>,
-<liquid:invar>:<thermalfoundation:material:290>,
-<liquid:constantan>:<thermalfoundation:material:292>,
-<liquid:conductive_iron>:<moreplates:conductive_iron_gear>,
-<liquid:ardite>:<moreplates:ardite_gear>,
-<liquid:cobalt>:<moreplates:cobalt_gear>,
-<liquid:palladium>:<contenttweaker:material_part:31>,
-<liquid:orichalcum>:<contenttweaker:material_part:21>,
-<liquid:steel>:<thermalfoundation:material:288>,
-<liquid:prudentium>:<moreplates:prudentium_gear>
-}
-as IItemStack[ILiquidStack];
-
-for fluid, gear in gearStamper {
-	Stamper.add(gear, fluid * 576, <embers:stamp_gear>);
-}
-
-## Mixer Recipes ##
+##=======================================================
+## MIXER RECIPES
+##=======================================================
 
 // Dawnstone
 Mixer.remove(<liquid:dawnstone> * 8);
@@ -405,7 +374,9 @@ Mixer.add(<liquid:invar> * 12, [<liquid:iron> * 8, <liquid:nickel> * 4]);
 Mixer.add(<liquid:conductive_iron>* 36, [<liquid:iron> * 36, <liquid:redstone> * 25]);
 Mixer.add(<liquid:pulsating_iron> * 72, [<liquid:iron> * 72, <liquid:ender> * 125]);
 
-## Melter Recipes ##
+##=======================================================
+## MELTER RECIPES
+##=======================================================
 
 // Dust Melting Recipes
 val dustMelting = {
@@ -424,6 +395,23 @@ for fluid, item in dustMelting {
 	mods.embers.Melter.add(fluid * 144, item);
 }
 
+// Ore Melting Recipes
+/*
+val oreMelting = {
+	<liquid:cobalt>:<ore:oreCobalt>,
+	<liquid:ardite>:<ore:oreArdite>,
+	<liquid:starmetal>:<ore:oreAstralStarmetal>,
+} as IOreDictEntry[ILiquidStack];
+
+for fluid, ore in oreMelting {
+	mods.embers.Melter.add(fluid * 288, ore, fluid * 16);
+}
+*/
+mods.embers.Melter.add(<liquid:cobalt> * 288, <ore:oreCobalt>, <liquid:iron> * 16);
+mods.embers.Melter.add(<liquid:ardite> * 288, <ore:oreArdite>, <liquid:gold> * 16);
+mods.embers.Melter.add(<liquid:starmetal> * 288, <ore:oreAstralStarmetal>, <liquid:astralsorcery.liquidstarlight> * 16);
+
+
 // Ingot, Nugget, Dust and Plate melting recipes for all metals up to ch3
 // Format is fluid:[nugget,ingot,dust,plate]
 val meltingList = {
@@ -440,7 +428,8 @@ val meltingList = {
 	<liquid:pigiron>:[<tconstruct:nuggets:4>, <tconstruct:ingots:4>, null, null],
 	<liquid:manasteel>:[<botania:manaresource:17>, <botania:manaresource>, null, null],
 	<liquid:palladium>:[<contenttweaker:material_part:33>, <contenttweaker:material_part:30>, <contenttweaker:material_part:35>, <contenttweaker:material_part:32>],
-	<liquid:orichalcum>:[<contenttweaker:material_part:23>, <contenttweaker:material_part:20>, <contenttweaker:material_part:25>, <contenttweaker:material_part:22>]
+	<liquid:orichalcum>:[<contenttweaker:material_part:23>, <contenttweaker:material_part:20>, <contenttweaker:material_part:25>, <contenttweaker:material_part:22>],
+	<liquid:starmetal>:[<jaopca:item_nuggetastralstarmetal>, <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:2>, null]
 } as IItemStack[][ILiquidStack];
 
 for fluid, items in meltingList {

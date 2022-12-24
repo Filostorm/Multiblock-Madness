@@ -29,8 +29,12 @@ import mods.thermalexpansion.Pulverizer;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.InductionSmelter;
+import mods.mekanism.infuser;
 import mods.mekanism.crusher;
 import mods.mekanism.enrichment;
+import mods.mekanism.chemical.dissolution;
+import mods.mekanism.chemical.injection;
+import mods.mekanism.purification;
 import mods.qmd.target_chamber;
 import mods.qmd.ore_leacher;
 import mods.rockhounding_chemistry.LabBlender;
@@ -40,6 +44,8 @@ import mods.contenttweaker.tconstruct.Material;
 import mods.thermalexpansion.Transposer;
 import mods.nuclearcraft.Infuser;
 import crafttweaker.item.IItemTransformer;
+import mods.appliedenergistics2.Grinder;
+import mod.mekanism.gas.IGasStack;
 
 #priority 98
 
@@ -426,6 +432,196 @@ val gemsToRemove = [
 for gem in gemsToRemove {
 	removeAndHide(gem);
 }
+
+##=======================================================
+## Metal Unification
+##=======================================================
+
+// Removing useless furnace recipes
+val furnToRemove = {
+	<enderio:item_material:27>:<thermalfoundation:material:129>,
+	<enderio:item_material:26>:<thermalfoundation:material:128>,
+	<enderio:item_material:31>:<tconstruct:ingots>,
+	<actuallyadditions:item_dust:2>:<minecraft:diamond>,
+	<libvulpes:productdust:3>:<nuclearcraft:gem:6>,
+	<natura:materials:2>:<minecraft:bread>,
+	<enderio:item_material:21>:<minecraft:bread>,
+	<appliedenergistics2:material:4>:<minecraft:bread>,
+	<natura:materials:1>:<minecraft:bread>,
+	<enderio:item_material:30>:<tconstruct:ingots:1>,
+	<actuallyadditions:item_dust:3>:<minecraft:emerald>,
+} as IItemStack[IItemStack];
+
+for input, output in furnToRemove {
+	furnace.remove(output, input);
+}
+
+// Removing useless crusher recipes
+crusher.removeRecipe(<techreborn:dust:45>, <iceandfire:sapphire_gem>);
+crusher.removeRecipe(<techreborn:dust:45>, <treasure2:sapphire>);
+crusher.removeRecipe(<techreborn:dust:43>, <treasure2:ruby>);
+
+// Removing useless metallurgic infuser recipes
+
+val hohlarumRemove = [
+	<techreborn:dust:24>,
+	<rockhounding_chemistry:chemical_dusts:28>,
+	<enderio:item_material:25>,
+	<bloodmagic:component:20>,
+	<libvulpes:productdust:2>,
+	<mekanism:dust:1>,
+	<immersiveengineering:metal:19>,
+	<appliedenergistics2:material:51>,
+	<actuallyadditions:item_dust:1>
+] as IItemStack[];
+
+for item in hohlarumRemove {
+	infuser.removeRecipe(<mekanismgenerators:hohlraum>, item);
+}
+
+infuser.removeRecipe(<mekanism:controlcircuit>, <qmd:ingot:8>);
+infuser.removeRecipe(<mekanism:controlcircuit>, <rockhounding_chemistry:metal_items:2>);
+
+infuser.removeRecipe(<mekanism:otherdust:5>, <techreborn:dust:35>);
+infuser.removeRecipe(<mekanism:otherdust:5>, <nuclearcraft:gem_dust:3>);
+infuser.removeRecipe(<mekanism:otherdust:5>, <enderio:item_material:29>);
+infuser.removeRecipe(<mekanism:otherdust:5>, <mekanism:otherdust:6>);
+
+// Fixing Enrichment Chamber Recipes
+
+enrichment.removeRecipe(<nuclearcraft:gem_dust>);
+enrichment.removeRecipe(<actuallyadditions:item_dust:3>);
+
+enrichment.addRecipe(<mekanism:otherdust>, <minecraft:diamond>);
+enrichment.addRecipe(<techreborn:dust:18>, <minecraft:emerald>);
+
+// Removing useless purification, chemical injection, chemical dissolution and quartz grindstone recipes
+val oresToRemove = [
+	[<embers:ore_copper>, <immersiveengineering:ore>, <techreborn:ore2>, <mekanism:oreblock:1>, <nuclearcraft:ore>, <libvulpes:ore0:4>],
+	[<embers:ore_tin>, <nuclearcraft:ore:1>, <mekanism:oreblock:2>, <libvulpes:ore0:5>, <techreborn:ore2:1>],
+	[<techreborn:ore:13>, <immersiveengineering:ore:3>, <embers:ore_silver>, <iceandfire:silver_ore>],
+	[<nuclearcraft:ore:2>, <techreborn:ore:12>, <immersiveengineering:ore:2>, <embers:ore_lead>],
+	[<embers:ore_nickel>, <immersiveengineering:ore:4>],
+	[<immersiveengineering:ore:1>, <libvulpes:ore0:9>],
+	[<techreborn:ore:1>, <libvulpes:ore0:10>]
+] as IItemStack[][];
+
+val slurryToRemove = [
+	<gas:copper>,
+	<gas:tin>,
+	<gas:silver>,
+	<gas:lead>,
+	<gas:slurryNickel>,
+	<gas:slurryAluminium>,
+	<gas:slurryIridium>
+] as IGasStack[];
+
+val shardsToRemove = [
+	<mekanism:shard:3>,
+	<mekanism:shard:4>,
+	<mekanism:shard:5>,
+	<mekanism:shard:6>,
+	<jaopca:item_shardnickel>,
+	<jaopca:item_shardaluminium>,
+	<jaopca:item_shardiridium>
+] as IItemStack[];
+
+val clumpsToRemove = [
+	<mekanism:clump:3>,
+	<mekanism:clump:4>,
+	<mekanism:clump:5>,
+	<mekanism:clump:6>,
+	<jaopca:item_clumpnickel>,
+	<jaopca:item_clumpaluminium>,
+	<jaopca:item_clumpiridium>,
+] as IItemStack[];
+
+val dustsToRemove = [
+	<thermalfoundation:material:64>,
+	<thermalfoundation:material:65>,
+	<thermalfoundation:material:66>,
+	<thermalfoundation:material:67>,
+	<thermalfoundation:material:69>,
+	<thermalfoundation:material:68>,
+	<thermalfoundation:material:71>
+] as IItemStack[];
+
+for i, ores in oresToRemove {
+	for ore in ores {
+		dissolution.removeRecipe(slurryToRemove[i], ore);
+		injection.removeRecipe(shardsToRemove[i], ore);
+		purification.removeRecipe(clumpsToRemove[i], ore);
+		Grinder.removeRecipe(ore);
+	}
+}
+
+// Removing more useless quartz grindstone recipes
+
+val uselessGrindertoRemove = [
+	<immersiveengineering:metal>,
+	<embers:ingot_copper>,
+	<libvulpes:productingot:4>,
+	<nuclearcraft:ingot>,
+	<rockhounding_chemistry:metal_items:11>,
+	<techreborn:ingot:4>,
+	<mysticalworld:copper_ingot>,
+	<mekanism:ingot:5>,
+	<nuclearcraft:alloy>,
+	<mekanism:ingot:2>,
+	<techreborn:ingot:2>,
+	<nuclearcraft:ingot:12>,
+	<rockhounding_chemistry:metal_items:3>,
+	<libvulpes:productingot:9>,
+	<qmd:ingot:5>,
+	<embers:ingot_nickel>,
+	<techreborn:ingot:9>,
+	<immersiveengineering:metal:4>,
+	<rockhounding_chemistry:metal_items:13>,
+	<nuclearcraft:ingot:2>,
+	<immersiveengineering:metal:2>,
+	<techreborn:ingot:8>,
+	<rockhounding_chemistry:metal_items:5>,
+	<embers:ingot_lead>,
+	<nuclearcraft:ingot:13>,
+	<iceandfire:silver_ingot>,
+	<techreborn:ingot:11>,
+	<mysticalworld:silver_ingot>,
+	<embers:ingot_silver>,
+	<libvulpes:productingot:5>,
+	<nuclearcraft:ingot:1>,
+	<mekanism:ingot:6>,
+	<embers:ingot_tin>,
+	<qmd:ingot:10>,
+	<techreborn:ingot:10>,
+	<rockhounding_chemistry:metal_items:6>,
+	<qmd:ingot:8>,
+	<rockhounding_chemistry:metal_items:2>,
+	<techreborn:ingot:13>,
+	<techreborn:ingot>,
+	<immersiveengineering:metal:1>,
+	<techreborn:ingot:5>,
+	<immersiveengineering:metal:7>,
+	<plustic:invaringot>,
+	<techreborn:ingot:6>,
+	<rockhounding_chemistry:metal_items:9>,
+	<qmd:ingot:7>,
+	<jaopca:item_crystalplatinum>,
+	<mekanism:crystal:1>,
+	<mekanism:crystal:2>,
+	<mekanism:crystal:3>,
+	<mekanism:crystal:4>,
+	<mekanism:crystal:5>,
+	<mekanism:crystal:6>,
+	<jaopca:item_crystalaluminium>,
+	<jaopca:item_crystalnickel>,
+	<mekanism:crystal>,
+	<immersiveengineering:metal:3>,
+] as IItemStack[];
+
+for item in uselessGrindertoRemove {
+	Grinder.removeRecipe(item);
+}
+
 
 ##=======================================================
 ## Fluid Unification

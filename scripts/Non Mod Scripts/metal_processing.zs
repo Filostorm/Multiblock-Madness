@@ -18,6 +18,7 @@ import mods.thermalexpansion.Pulverizer;
 import mods.mekanism.enrichment;
 import mods.embers.Stamper;
 import mods.techreborn.industrialGrinder;
+import mods.appliedenergistics2.Grinder;
 
 #priority 100
 
@@ -238,28 +239,24 @@ industrialGrinder.removeInputRecipe(<nuclearcraft:ore:4>);
 ##              ORE PROCESSING
 ##=======================================================
 
+// TC Clusters //
+
 ############### Hacatu #####################
 
 val clusterFluidMap as ILiquidStack[IOreDictEntry] = {
-	<ore:clusterAdamantine>: <fluid:adamantine>,
+	<ore:clusterAstralStarmetal>: <fluid:starmetal>,
 	//<ore:clusterAluminium>: {},
 	<ore:clusterArdite>: <fluid:ardite>,
-	<ore:clusterAstralStarmetal>: <fluid:starmetal>,
-	<ore:clusterBoron>: <fluid:boron>,
 	<ore:clusterCobalt>: <fluid:cobalt>,
 	//<ore:clusterIridium>: {},
-	<ore:clusterLithium>: <fluid:lithium>,
-	<ore:clusterMagnesium>: <fluid:magnesium>,
 	//<ore:clusterMithril>: {},
 	<ore:clusterNickel>: <fluid:nickel>,
 	<ore:clusterOrichalcum>: <fluid:orichalcum>,
 	//<ore:clusterOsmium>: {},
 	<ore:clusterPalladium>: <fluid:palladium>,
 	//<ore:clusterPlatinum>: {},
-	<ore:clusterThorium>: <fluid:thorium>,
 	//<ore:clusterTitanium>: {},
 	//<ore:clusterTungsten>: {},
-	<ore:clusterUranium>: <fluid:uranium>,
 	<ore:clusterIron>: <fluid:iron>,
 	<ore:clusterGold>: <fluid:gold>,
 	<ore:clusterCopper>: <fluid:copper>,
@@ -273,6 +270,20 @@ val clusterFluidMap as ILiquidStack[IOreDictEntry] = {
 for cluster, fluid in clusterFluidMap {
 	Melting.addRecipe(fluid * 288, cluster);
 	mods.embers.Melter.add(fluid * 432, cluster);
+	mods.nuclearcraft.Melter.addRecipe(cluster, fluid * 432);
+}
+
+val clusterFluidMapnoEmbers as ILiquidStack[IOreDictEntry] = {
+	<ore:clusterAdamantine>: <fluid:adamantine>,
+	<ore:clusterBoron>: <fluid:boron>,
+	<ore:clusterLithium>: <fluid:lithium>,
+	<ore:clusterMagnesium>: <fluid:magnesium>,
+	<ore:clusterThorium>: <fluid:thorium>,
+	<ore:clusterUranium>: <fluid:uranium>,	
+} as ILiquidStack[IOreDictEntry];
+
+for cluster, fluid in clusterFluidMapnoEmbers {
+	Melting.addRecipe(fluid * 288, cluster);
 	mods.nuclearcraft.Melter.addRecipe(cluster, fluid * 432);
 }
 
@@ -346,16 +357,14 @@ for cluster, item in clusterOreMap {
 
 // Fixing byproducts of certain clusters
 
-
 val clusterstofix =
 [
-<jaopca:item_clusteraluminium>,
-<jaopca:item_clusterardite>,
-<jaopca:item_clustercobalt>,
-<jaopca:item_clustermithril>,
-<jaopca:item_clustertitanium>
-]
- as IItemStack[];
+	<jaopca:item_clusteraluminium>,
+	<jaopca:item_clusterardite>,
+	<jaopca:item_clustercobalt>,
+	<jaopca:item_clustermithril>,
+	<jaopca:item_clustertitanium>
+] as IItemStack[];
 
 for item in clusterstofix {
 	Pulverizer.removeRecipe(item);
@@ -365,6 +374,132 @@ Pulverizer.addRecipe(<jaopca:item_dustardite> * 3, <jaopca:item_clusterardite>, 
 Pulverizer.addRecipe(<rockhounding_chemistry:chemical_dusts:25> * 3, <jaopca:item_clustercobalt>, 3000, <thermalfoundation:material>, 20);
 Pulverizer.addRecipe(<thermalfoundation:material:72> * 3, <jaopca:item_clustermithril>, 3000, <thermalfoundation:material:1>, 20);
 Pulverizer.addRecipe(<techreborn:dust:54> * 3, <jaopca:item_clustertitanium>, 3000);
+
+// Fixing byproducts of Cobalt and Ardite ore
+Pulverizer.removeRecipe(<tconstruct:ore>);
+Pulverizer.removeRecipe(<tconstruct:ore:1>);
+Pulverizer.addRecipe(<rockhounding_chemistry:chemical_dusts:25> * 2, <tconstruct:ore>, 4000, <thermalfoundation:material>, 10);
+Pulverizer.addRecipe(<jaopca:item_dustardite> * 2, <tconstruct:ore:1>, 4000, <thermalfoundation:material:1>, 10);
+
+
+// Quartz Grindstone and Grindstone //
+// Adding all recipes up to ch3, all ch4 recipes and beyond removed
+
+// Remove recipes from AS Grindstone
+
+val ASGrindstonetoRemove = [
+	<thermalfoundation:material:70>,
+	<thermalfoundation:material:71>,
+	<thermalfoundation:material:72>,
+	<mekanism:dust:2>,
+	<libvulpes:productdust>,
+	<techreborn:dust:54>,
+	<techreborn:dust:55>,
+	<contenttweaker:material_part:15>,
+	<techreborn:dust:50>,
+	<techreborn:dust:30>,
+	<techreborn:dust:39>,
+	<thermalfoundation:material:68>,
+	<techreborn:dust:5>,
+	<techreborn:dust:36>,
+	<techreborn:dust:48>,
+	<techreborn:dust:65>,
+	<immersiveengineering:metal:14>,
+	<nuclearcraft:dust:5>,
+	<mekanism:otherdust:4>,
+
+	<rockhounding_chemistry:chemical_dusts:38>,
+	<qmd:dust:8>,
+
+	<rockhounding_chemistry:chemical_dusts:50>,
+	<qmd:dust:3>,
+	<libvulpes:productdust:7>,
+
+	<rockhounding_chemistry:chemical_dusts:51>,
+	<qmd:dust>,
+
+	<immersiveengineering:metal:10>,
+	<techreborn:dust:1>,
+	<nuclearcraft:dust:12>,
+	<rockhounding_chemistry:chemical_dusts:16>,
+	<libvulpes:productdust:9>,
+
+	<nuclearcraft:dust:3>,
+	<rockhounding_chemistry:chemical_dusts:48>,
+
+	<techreborn:dust:66>,
+	<nuclearcraft:dust:4>,
+
+	<nuclearcraft:dust:6>,
+	<rockhounding_chemistry:chemical_dusts:32>,
+
+	<nuclearcraft:dust:7>,
+	<rockhounding_chemistry:chemical_dusts:33>,
+] as IItemStack[];
+
+for item in ASGrindstonetoRemove {
+	mods.astralsorcery.Grindstone.removeRecipe(item);
+}
+
+// Add recipes to Quartz Grindstone
+
+val AEGrindstoneOrestoAdd = {
+	<contenttweaker:sub_block_holder_0:3>:<contenttweaker:material_part:35>,
+	<contenttweaker:sub_block_holder_0:7>:<contenttweaker:material_part:25>,
+	<tconstruct:ore>:<rockhounding_chemistry:chemical_dusts:25>,
+	<minecraft:diamond_ore>:<mekanism:otherdust>,
+	<minecraft:redstone_ore>:<minecraft:redstone> * 4,
+	<minecraft:emerald_ore>:<techreborn:dust:18>,
+	<mysticalworld:quartz_ore>:<nuclearcraft:gem_dust:2>,
+	<mysticalworld:granite_quartz_ore>:<nuclearcraft:gem_dust:2>,
+	<techreborn:ore>:<techreborn:ore>,
+	<techreborn:ore:2>:<techreborn:dust:43>,
+	<techreborn:ore:3>:<techreborn:dust:45>,
+	<techreborn:ore:6>:<thermalfoundation:material:866>,
+	<actuallyadditions:block_misc:3>:<actuallyadditions:item_dust:7>,
+	<astralsorcery:blockcustomsandore>:<jaopca:item_dustaquamarine>,
+	<thaumcraft:ore_cinnabar>:<thermalfoundation:material:866>,
+} as IItemStack[IItemStack];
+
+for input, output in AEGrindstoneOrestoAdd {
+	Grinder.addRecipe(output, input, 4, output, 1);
+}
+
+val AEGrindstoneDuststoAdd = {
+	<minecraft:lapis_ore>:<actuallyadditions:item_dust:4> * 6,
+	<thermalfoundation:material:164>:<thermalfoundation:material:100>,
+	<minecraft:diamond>:<mekanism:otherdust>,
+	<techreborn:gem>:<techreborn:dust:43>,
+	<contenttweaker:material_part:30>:<contenttweaker:material_part:35>,
+	<contenttweaker:material_part:20>:<contenttweaker:material_part:25>,
+	<actuallyadditions:item_misc:5>:<actuallyadditions:item_dust:7>,
+	<tconstruct:ingots>:<rockhounding_chemistry:chemical_dusts:25>,
+	<minecraft:emerald>:<techreborn:dust:18>,
+	<minecraft:dye:4>:<actuallyadditions:item_dust:4>,
+	<techreborn:gem:1>:<techreborn:dust:45>,
+	<thermalfoundation:material:160>:<thermalfoundation:material:96>,
+} as IItemStack[IItemStack];
+
+for input, output in AEGrindstoneDuststoAdd {
+	Grinder.addRecipe(output, input, 4);
+}
+
+// Remove recipes from Quartz Grindstone
+
+val AEGrindstonetoRemove = [
+	<thermalfoundation:ore:6>,
+	<thermalfoundation:material:134>,
+	<mekanism:oreblock>,
+	<mekanism:ingot:1>,
+	<techreborn:ingot:18>,
+	<thermalfoundation:ore:4>,
+	<thermalfoundation:material:132>,
+] as IItemStack[];
+
+for item in AEGrindstonetoRemove {
+	Grinder.removeRecipe(item);
+}
+
 
 //Iron
 MineralSizer.add(<minecraft:iron_ore>, [<jaopca:item_crushedlumpiron>*2], [4]);
