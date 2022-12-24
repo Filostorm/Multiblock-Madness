@@ -69,7 +69,7 @@ val newboilerfluids =
  as ILiquidStack[];
 
 for fluid in newboilerfluids {
-    mods.immersivetechnology.Boiler.addFuel(fluid, 4, 10);
+    mods.immersivetechnology.Boiler.addFuel(fluid, 1, 10);
 }
 
 // New Gas Turbine Fuel Recipes
