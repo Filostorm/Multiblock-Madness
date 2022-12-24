@@ -33,6 +33,7 @@ for item in removestuff {
 
 val removerecipes =
 [   
+    <actuallyadditions:block_furnace_solar>,
     <actuallyadditions:block_farmer>,
     <actuallyadditions:block_misc:7>,
     <actuallyadditions:item_misc:16>,
@@ -45,6 +46,19 @@ val removerecipes =
     <actuallyadditions:block_phantomface>,
     <actuallyadditions:block_misc:8>,
     <actuallyadditions:block_xp_solidifier>,
+    <actuallyadditions:block_heat_collector>,
+    <actuallyadditions:block_enervator>,
+    <actuallyadditions:block_energizer>,
+    <actuallyadditions:item_drill:3>,
+    <actuallyadditions:block_bio_reactor>,
+    <actuallyadditions:block_item_repairer>,
+    <actuallyadditions:item_drill_upgrade_speed_iii>,
+    <actuallyadditions:item_drill_upgrade_fortune_ii>,
+    <actuallyadditions:item_drill_upgrade_fortune>,
+    <actuallyadditions:item_drill_upgrade_five_by_five>,
+    <actuallyadditions:item_drill_upgrade_silk_touch>,
+    <actuallyadditions:block_fishing_net>,
+    <actuallyadditions:block_shock_suppressor>,
 ]
 as IItemStack[];
 for item in removerecipes {
@@ -209,11 +223,15 @@ recipes.addShaped(<actuallyadditions:block_lava_factory_controller>, [[<actually
 
 // Casing
 recipes.addShaped(<actuallyadditions:block_misc:7> * 4, [[<actuallyadditions:block_crystal:5>, <actuallyadditions:block_misc:9>, <actuallyadditions:block_crystal:5>]]);
+
 // Farmer
 recipes.addShaped(<actuallyadditions:block_farmer>, [[<actuallyadditions:item_misc:7>, <thermalfoundation:material:288>, <actuallyadditions:item_misc:7>],[<thermalfoundation:material:288>, <actuallyadditions:block_misc:7>, <thermalfoundation:material:288>], [<actuallyadditions:item_misc:7>, <thermalfoundation:material:288>, <actuallyadditions:item_misc:7>]]);
 
 // Drill Core
 recipes.addShaped(<actuallyadditions:item_misc:16>, [[<thermalfoundation:storage_alloy>, <actuallyadditions:item_misc:7>, <thermalfoundation:storage_alloy>],[<actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal>, <actuallyadditions:item_misc:7>], [<thermalfoundation:storage_alloy>, <actuallyadditions:item_misc:7>, <thermalfoundation:storage_alloy>]]);
+
+// Drill
+recipes.addShaped(<actuallyadditions:item_drill:3>, [[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal:2>],[<actuallyadditions:item_misc:7>, <actuallyadditions:item_misc:16>, <actuallyadditions:item_misc:7>], [<actuallyadditions:block_crystal:5>, <actuallyadditions:block_crystal:5>, <actuallyadditions:block_crystal:5>]]);
 
 // Leaf Gen
 recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[<actuallyadditions:item_crystal:5>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal>, <ore:treeLeaves>, <actuallyadditions:item_crystal>], [<actuallyadditions:item_crystal:5>, <actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal:5>]]);
@@ -227,14 +245,24 @@ recipes.addShaped(<actuallyadditions:item_bag>, [[<mysticalagriculture:crafting:
 // XP Solidifer
 recipes.addShaped(<actuallyadditions:block_xp_solidifier>, [[<actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>],[<actuallyadditions:block_crystal:2>, <actuallyadditions:item_misc:8>, <actuallyadditions:block_crystal:2>], [<actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>]]);
 
+//Solar
+recipes.addShaped(<actuallyadditions:block_furnace_solar>, [[<actuallyadditions:item_crystal:5>, <minecraft:quartz>, <actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal>, <actuallyadditions:item_crystal:2>, <actuallyadditions:item_crystal>], [<actuallyadditions:item_crystal:5>, <actuallyadditions:block_misc:7>, <actuallyadditions:item_crystal:5>]]);
+
+//Heat Collector
+recipes.addShaped(<actuallyadditions:block_heat_collector>, [[<minecraft:iron_bars>, <tconstruct:large_plate>.withTag({Material: "copper"}).onlyWithTag({Material: "copper"}), <minecraft:iron_bars>],[<actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal:5>, <actuallyadditions:item_misc:7>], [<minecraft:iron_bars>, <actuallyadditions:block_misc:9>, <minecraft:iron_bars>]]);
+
 // Moved Paper cups
 
-<ore:foodCookedFish>.add(<minecraft:cooked_fish>);
-<ore:foodCookedFish>.add(<minecraft:cooked_fish:1>);
-<ore:foodCookedFish>.add(<fossil:sturgeon_cooked>);
-<ore:foodCookedFish>.add(<fossil:alligator_gar_cooked>);
-<ore:foodCookedFish>.add(<fossil:coelacanth_cooked>);
-
+val addCookedFish as IItemStack[] = [
+    <fossil:coelacanth_cooked>,
+    <fossil:alligator_gar_cooked>,
+    <fossil:sturgeon_cooked>,
+    <minecraft:cooked_fish:1>,
+    <minecraft:cooked_fish>
+];
+for item in addCookedFish {
+    <ore:foodCookedFish>.add(item);
+}
 
 <ore:paperCup>.add(<actuallyadditions:item_misc>);
 <ore:paperCup>.add(<xlfoodmod:paper_cup>);
@@ -244,6 +272,31 @@ recipes.addShaped(<actuallyadditions:item_food:3>, [[<actuallyadditions:item_foo
 
 // Phantom Face
 recipes.addShaped(<actuallyadditions:block_phantomface>, [[null, <ore:chestWood>, null],[<actuallyadditions:item_crystal:2>, <actuallyadditions:block_misc:6>, <actuallyadditions:item_crystal:2>], [null, <actuallyadditions:item_misc:8>, null]]);
+
+//Enervator 
+recipes.addShaped(<actuallyadditions:block_enervator>, [[null, <actuallyadditions:item_crystal>, null],[<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_misc:7>], [null, <actuallyadditions:item_crystal>, null]]);
+
+//Energizer
+recipes.addShaped(<actuallyadditions:block_energizer>, [[<actuallyadditions:item_crystal>, null, <actuallyadditions:item_crystal>],[<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_misc:7>], [<actuallyadditions:item_crystal>, null, <actuallyadditions:item_crystal>]]);
+
+//Bio Reactor
+recipes.addShaped(<actuallyadditions:block_bio_reactor>, [[<actuallyadditions:item_crystal:5>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal:5>, <ore:treeSapling>, <actuallyadditions:item_crystal:5>], [<actuallyadditions:item_crystal:5>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_crystal:5>]]);
+
+//Item Repairer
+recipes.addShaped(<actuallyadditions:block_item_repairer>, [[<actuallyadditions:block_crystal:2>, <actuallyadditions:item_misc:7>, <actuallyadditions:block_crystal:2>],[<jaopca:item_gearbloodbronze>, <actuallyadditions:block_battery_box>, <jaopca:item_gearbloodbronze>], [<immersiveengineering:metal_decoration0:5>, <actuallyadditions:block_misc:9>, <immersiveengineering:metal_decoration0:5>]]);
+
+//Drill Upgrades
+recipes.addShaped(<actuallyadditions:item_drill_upgrade_speed_iii>, [[<actuallyadditions:block_crystal>, <actuallyadditions:item_misc:7>, <actuallyadditions:block_crystal>],[<xlfoodmod:speedy_energy_drink>, <embers:gear_dawnstone>, <xlfoodmod:speedy_energy_drink>], [<actuallyadditions:block_crystal>, <actuallyadditions:item_misc:7>, <actuallyadditions:block_crystal>]]);
+recipes.addShaped(<actuallyadditions:item_drill_upgrade_fortune_ii>, [[<tconstruct:large_plate>.withTag({Material: "palis_actadd_plustic"}).onlyWithTag({Material: "palis_actadd_plustic"}), <minecraft:experience_bottle>, <tconstruct:large_plate>.withTag({Material: "palis_actadd_plustic"}).onlyWithTag({Material: "palis_actadd_plustic"})],[<embers:gear_dawnstone>, <actuallyadditions:item_drill_upgrade_fortune>, <embers:gear_dawnstone>], [<tconstruct:large_plate>.withTag({Material: "palis_actadd_plustic"}).onlyWithTag({Material: "palis_actadd_plustic"}), <arcanearchives:mindspindle>, <tconstruct:large_plate>.withTag({Material: "palis_actadd_plustic"}).onlyWithTag({Material: "palis_actadd_plustic"})]]);
+recipes.addShaped(<actuallyadditions:item_drill_upgrade_fortune>, [[<minecraft:glowstone>, <actuallyadditions:block_crystal:1>, <minecraft:glowstone>],[<actuallyadditions:item_misc:7>, <contenttweaker:aspectus_gold>, <actuallyadditions:item_misc:7>], [<minecraft:glowstone>, <actuallyadditions:block_crystal:1>, <minecraft:glowstone>]]);
+recipes.addShaped(<actuallyadditions:item_drill_upgrade_five_by_five>, [[<actuallyadditions:block_crystal:2>, <tconstruct:materials:13>, <actuallyadditions:block_crystal:2>],[<minecraft:piston>, <actuallyadditions:item_misc:7>, <minecraft:piston>], [<actuallyadditions:block_crystal:2>, <tconstruct:materials:12>, <actuallyadditions:block_crystal:2>]]);
+recipes.addShaped(<actuallyadditions:item_drill_upgrade_silk_touch>, [[<tconstruct:materials:15>, <actuallyadditions:item_crystal:2>, <tconstruct:materials:15>],[<actuallyadditions:item_crystal:2>, <actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal:2>], [<tconstruct:materials:15>, <actuallyadditions:item_crystal:2>, <tconstruct:materials:15>]]);
+
+//Fishing Net
+recipes.addShaped(<actuallyadditions:block_fishing_net>, [[<openblocks:generic:5>, <openblocks:generic:5>, <openblocks:generic:5>],[<openblocks:generic:5>, <actuallyadditions:item_crystal:4>, <openblocks:generic:5>], [<openblocks:generic:5>, <openblocks:generic:5>, <openblocks:generic:5>]]);
+
+//Shock Absorber
+recipes.addShaped(<actuallyadditions:block_shock_suppressor>, [[<minecraft:obsidian>, <actuallyadditions:item_crystal:3>, <minecraft:obsidian>],[<actuallyadditions:item_crystal:3>, <actuallyadditions:item_misc:7>, <actuallyadditions:item_crystal:3>], [<minecraft:obsidian>, <actuallyadditions:item_crystal:3>, <minecraft:obsidian>]]);
 
 # [Laser Wrench] from [Basic Coil][+1]
 craft.remake(<actuallyadditions:item_laser_wrench>, ["pretty",

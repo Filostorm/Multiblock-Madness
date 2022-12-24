@@ -111,6 +111,7 @@ MetalPress.removeRecipe(<moreplates:nether_quartz_plate>);
 // Recipe Additions
 MetalPress.addRecipe(<thaumcraft:plate:3>, <thaumcraft:ingot:1>, <immersiveengineering:mold>, 2000);
 Pressurizer.addRecipe(<thaumcraft:ingot:1>, <thaumcraft:plate:3>);
+MetalPress.addRecipe(<enderio:item_material:3>, <enderio:item_material:38>*3, <immersiveengineering:mold>, 2000);
 
 val mapNewPlates as IItemStack[IItemStack] = {
 	<modularmachinery:itemmodularium>:<contenttweaker:plate_modularium>,

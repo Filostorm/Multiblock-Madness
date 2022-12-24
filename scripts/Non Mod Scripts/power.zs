@@ -12,14 +12,19 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:canolaoil>, 12);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:refinedcanolaoil>, 44);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:crystaloil>, 244);
 
-/*
+
 // --==Immersive Tech Rebalance==-- //
 
 // Steam Turbine conversion rate is now roughly 1mb steam --> 4RF
-mods.immersivetechnology.SteamTurbine.removeFuel(<liquid:steam>);
+mods.immersivetechnology.Boiler.removeRecipe(<liquid:water>);
+mods.immersivetechnology.Boiler.removeRecipe(<liquid:distwater>);
 
-# mods.immersivetechnology.SteamTurbine.addFuel(<liquid:exhauststeam> * 6300, <liquid:steam> * 6300, 1); //Revert back to this if you can find out how the IT config works
+mods.immersivetechnology.Boiler.addRecipe(<liquid:steam> * 5670, <liquid:water> * 3100, 2);
+mods.immersivetechnology.Boiler.addRecipe(<liquid:steam> * 6300, <liquid:distwater> * 3100, 2);
+
+mods.immersivetechnology.SteamTurbine.removeFuel(<liquid:steam>);
 mods.immersivetechnology.SteamTurbine.addFuel(<liquid:exhauststeam> * 3150, <liquid:steam> * 3150, 1);
+// mods.immersivetechnology.SteamTurbine.addFuel(<liquid:exhauststeam> * 6300, <liquid:steam> * 6300, 1);
 
 // Readjusting Cooling Tower, Distiller and Boiler recipes to new steam values above
 //// mods.immersivetechnology.CoolingTower.addRecipe(ILiquidStack outputFluid1, ILiquidStack outputFluid2, ILiquidStack outputFluid3, ILiquidStack inputFluid1, ILiquidStack inputFluid2, int time);
@@ -32,12 +37,7 @@ mods.immersivetechnology.CoolingTower.addRecipe(<liquid:distwater> * 5500, <liqu
 mods.immersivetechnology.Distiller.removeRecipe(<liquid:water>);
 mods.immersivetechnology.Distiller.addRecipe(<liquid:distwater> * 6300, <liquid:water> * 12600, <mekanism:salt>, 1000, 2, 1);
 
-mods.immersivetechnology.Boiler.removeRecipe(<liquid:water>);
-mods.immersivetechnology.Boiler.removeRecipe(<liquid:distwater>);
 
-mods.immersivetechnology.Boiler.addRecipe(<liquid:steam> * 11340, <liquid:water> * 6300, 2);
-mods.immersivetechnology.Boiler.addRecipe(<liquid:steam> * 12600, <liquid:distwater> * 6300, 2);
-*/
 // New Boiler Fuel Recipes
 
 val boilerfluidstoremove =
@@ -69,7 +69,7 @@ val newboilerfluids =
  as ILiquidStack[];
 
 for fluid in newboilerfluids {
-    mods.immersivetechnology.Boiler.addFuel(fluid, 1, 10);
+    mods.immersivetechnology.Boiler.addFuel(fluid, 4, 10);
 }
 
 // New Gas Turbine Fuel Recipes
@@ -105,13 +105,13 @@ val newgasturbinefluids =
 for fluid in newgasturbinefluids {
     mods.immersivetechnology.GasTurbine.addFuel(<liquid:fluegas> * 1000, fluid, 10);
 }
-/*
+
 // New Solar Tower Recipes
 mods.immersivetechnology.SolarTower.removeRecipe(<liquid:water>);
 mods.immersivetechnology.SolarTower.removeRecipe(<liquid:distwater>);
 mods.immersivetechnology.SolarTower.addRecipe(<liquid:steam> * 22680, <liquid:water> * 12600, 10);
 mods.immersivetechnology.SolarTower.addRecipe(<liquid:steam> * 25200, <liquid:distwater> * 12600, 10);
-*/
+
 // --==Thermal Dynamo Rebalance==-- //
 
 // Compression Dynamo //

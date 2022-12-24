@@ -94,7 +94,7 @@ addDescription(<liquid:aetherworks.impure_aetherium_gas>, "Obtained from the Aet
 
 <mekanismgenerators:generator:6>.addShiftTooltip("Generation Rate: §624-192 RF/t§r");
 <mekanismgenerators:generator:1>.addShiftTooltip("Generation Rate: §6~80 RF/t§r");
-<mekanismgenerators:generator:1>.addShiftTooltip("Generation Rate: §6~480 RF/t§r");
+<mekanismgenerators:generator:5>.addShiftTooltip("Generation Rate: §6~480 RF/t§r");
 <mekanismgenerators:generator:4>.addShiftTooltip("Generation Rate: §6140 RF/t§r");
 
 

@@ -5130,7 +5130,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §dSteam Engine§r can either have coal and water piped into it, or steam.\n\nA §dSteam Engine§r running on water and coal will produce §a20 rotational power§r, while one running on steam will produce §a40 RP§r.\n\nPlacing a §9Mini Boiler§r next to any Ember processing machine and filling it with water will create steam! Explosions are disabled in this pack, so no need to worry.\n\n§6The Ember Bore can be made much faster by switching to mechanical power.§r",
+          "desc:8": "The §dSteam Engine§r can either have coal and water piped into it, or steam.\n\nA §dSteam Engine§r running on water and coal will produce §a20 rotational power§r, while one running on steam will produce §a40 RP§r.\n\nPlacing a §9Mini Boiler§r next to any Ember processing machine and filling it with water will create steam! Explosions are disabled in this pack, so no need to worry.\n\n§6The Ember Bore can be made much faster by switching to mechanical power (requires at least 15RP).§r",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24090,72 +24090,64 @@
           "partialMatch:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "Count:3": 12,
+              "Count:3": 31,
               "Damage:2": 8,
-              "OreDict:8": "blockSteel",
-              "id:8": "immersiveengineering:storage"
+              "OreDict:8": "",
+              "id:8": "immersiveengineering:sheetmetal"
             },
             "1:10": {
-              "Count:3": 28,
+              "Count:3": 24,
               "Damage:2": 5,
               "OreDict:8": "",
               "id:8": "immersiveengineering:metal_decoration0"
             },
             "2:10": {
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": "blockSteel",
+              "id:8": "thermalfoundation:storage_alloy"
+            },
+            "3:10": {
+              "Count:3": 9,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "immersiveengineering:metal_decoration0"
+            },
+            "4:10": {
+              "Count:3": 8,
+              "Damage:2": 7,
+              "OreDict:8": "",
+              "id:8": "immersiveengineering:metal_decoration0"
+            },
+            "5:10": {
               "Count:3": 8,
               "Damage:2": 6,
               "OreDict:8": "",
               "id:8": "immersiveengineering:metal_decoration0"
             },
-            "3:10": {
-              "Count:3": 5,
-              "Damage:2": 2,
-              "OreDict:8": "",
-              "id:8": "immersiveengineering:metal_device0",
-              "tag:10": {
-                "sideConfig_0:3": 0,
-                "sideConfig_1:3": 1,
-                "sideConfig_2:3": 0,
-                "sideConfig_3:3": 0,
-                "sideConfig_4:3": 0,
-                "sideConfig_5:3": 0
-              }
-            },
-            "4:10": {
-              "Count:3": 6,
-              "Damage:2": 2,
-              "OreDict:8": "",
-              "id:8": "immersiveengineering:metal_decoration0"
-            },
-            "5:10": {
-              "Count:3": 4,
-              "Damage:2": 7,
-              "OreDict:8": "",
-              "id:8": "immersiveengineering:metal_decoration0"
-            },
             "6:10": {
-              "Count:3": 1,
-              "Damage:2": 3,
-              "OreDict:8": "",
-              "id:8": "immersiveengineering:metal_decoration0"
-            },
-            "7:10": {
-              "Count:3": 35,
-              "Damage:2": 8,
-              "OreDict:8": "",
-              "id:8": "immersiveengineering:sheetmetal"
-            },
-            "8:10": {
               "Count:3": 6,
               "Damage:2": 6,
               "OreDict:8": "",
               "id:8": "immersiveengineering:metal_device1"
             },
-            "9:10": {
+            "7:10": {
+              "Count:3": 4,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "immersiveengineering:metal_decoration0"
+            },
+            "8:10": {
               "Count:3": 3,
               "Damage:2": 1,
               "OreDict:8": "",
               "id:8": "immersiveengineering:metal_decoration1"
+            },
+            "9:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": "",
+              "id:8": "immersiveengineering:metal_decoration0"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -60253,7 +60245,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ve probably found out by now that your Linear Accelerator is pretty weak, and has difficulty accelerating particles anywhere above §620MeV§f. Enter: §3Synchrotron Accelerators§f.\n\nThe Synchrotron is a cyclic §3Particle Accelerator§f capable of imparting §4massive§f amounts of energy to particles, up to the GeV or even TeV range!\n\nHowever, §cSynchrotrons are not replacements for Linear Accelerators!§f A Synchrotron§f §ccannot§r have §7Ion Sources§f placed in them, and can only accelerate particles§f with a §6minimum energy§f of §65MeV§f. Thus, you will still need §3LINACs§r to produce and accelerate particles up to 5MeV for use in Synchrotrons.\n\n\n§nConstruction§r\n\nA visualisation of a Synchrotron can be found on the §2QMD Github Wiki.§f \n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions:§r A square torus with variable exterior length (min. exterior length: 11 blocks, max: 100 blocks), and tunnels 5 blocks wide, 5 blocks tall, with a continuous ring of §7Accelerator Beam Blocks§r down the centre of the tunnels and §eDipole Magnets§r in the corners. Dipole Magnets are discussed in the next quest.\n\nRequired blocks on sides:\n- §7Synchrotron Controller§r\n- §72 Accelerator Coolant Vents§r in §aInput§r and §cOutput§r mode\n- §7Accelerator Energy Port§r\n- §72 Accelerator Beam Ports§r in §aInput§r and §cOutput§r mode at the same level as the beam ring, connected to the beam ring by a §7Beam Block§r, with a §eDipole Magnet§r at the beam block intersection\n\n§cNote:§r §eDipole Magnets§r can be placed §nanywhere§f in a Synchrotron, §ceven on straight beam lines§r! However, a minimum of 4 Dipole Magnets must be placed in the corners of a Synchrotron.§f \n\nUnlike the LINAC, Synchrotrons§f can have §7more than two Beam Ports§f, but there can only be one input and one output port at any time. Applying a §credstone pulse§f to a beam port will activate it, and its active state (input/output) can be controlled by shift right clicking the beam port with the §8Multitool§r.\n\n\n§nRequirements§r\n\nA Synchrotron has the same requirements as the Linear Accelerator§f and any other Accelerator§f, requring §6power, §9cooling§f and §1active coolant§f. \n\nA §credstone signal§f applied to the §7Synchrotron Accelerator Controller§f will switch it on, with the output particle\u0027s energy being §c(redstone strength)§r/15 of the §6maximum particle energy§f. Just like a Linear Accelerator, when a Synchrotron is switched on, the resulting particle\u0027s properties can be seen in the §2Accelerator GUI§r.",
+          "desc:8": "You\u0027ve probably found out by now that your Linear Accelerator is pretty weak, and has difficulty accelerating particles anywhere above §620MeV§f. Enter: §3Synchrotron Accelerators§f.\n\nThe Synchrotron is a cyclic §3Particle Accelerator§f capable of imparting §4massive§f amounts of energy to particles, up to the GeV or even TeV range!\n\nHowever, §cSynchrotrons are not replacements for Linear Accelerators!§f A Synchrotron§f §ccannot§r have §7Ion Sources§f placed in them, and can only accelerate particles§f with a §6minimum energy§f of §65MeV§f. Thus, you will still need §3LINACs§r to produce and accelerate particles up to 5MeV for use in Synchrotrons.\n\n\n§nConstruction§r\n\nA visualisation of a Synchrotron can be found on the §2QMD Github Wiki.§f \n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions:§r A square torus with variable exterior length (min. exterior length: 11 blocks, max: 100 blocks), and tunnels 5 blocks wide, 5 blocks tall, with a continuous ring of §7Accelerator Beam Blocks§r down the centre of the tunnels and §eDipole Magnets§r in the corners. Dipole Magnets are discussed in the next quest.\n\nRequired blocks on sides:\n- §7Synchrotron Controller§r\n- §72 Accelerator Coolant Vents§r in §aInput§r and §cOutput§r mode\n- §7Accelerator Energy Port§r\n- §72 Accelerator Beam Ports§r in §aInput§r and §cOutput§r mode at the same level as the beam ring, connected to the beam ring by a §7Beam Block§r, with a §eDipole Magnet§r at the beam block intersection\n\n§cNote:§r §eDipole Magnets§r can be placed §nanywhere§f in a Synchrotron, §ceven on straight beam lines§r! However, a minimum of 4 Dipole Magnets must be placed in the corners of a Synchrotron.§f \n\nUnlike the LINAC, Synchrotrons§f can have §7more than two Beam Ports§f, but there can only be one input and one output port at any time. Applying a §credstone pulse§f to a beam port will activate it, and its active state (input/output) can be controlled by shift right clicking the beam port with the §8Multitool§r.\n\n\n§nRequirements§r\n\nA Synchrotron has the same requirements as the Linear Accelerator§f and any other Accelerator§f, requiring §6power, §9cooling§f and §1active coolant§f. \n\nA §credstone signal§f applied to the §7Synchrotron Accelerator Controller§f will switch it on, with the output particle\u0027s energy being §c(redstone strength)§r/15 of the §6maximum particle energy§f. Just like a Linear Accelerator, when a Synchrotron is switched on, the resulting particle\u0027s properties can be seen in the §2Accelerator GUI§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,

@@ -35,6 +35,7 @@ val removerecipes =
 <immersiveengineering:stone_decoration>,
 <immersiveengineering:material:8>,
 <immersiveengineering:material:9>,
+<engineersdecor:small_solar_panel>,
 ]
 as IItemStack[];
 for item in removerecipes {
@@ -241,7 +242,8 @@ Infusion.registerRecipe("electrodes", "",
 [<immersiveengineering:material:19>, <immersivepetroleum:material>, <immersivepetroleum:material>,<immersivepetroleum:material>,
 <immersiveengineering:material:19>, <immersivepetroleum:material>, <immersivepetroleum:material>, <immersivepetroleum:material>]);
 
-
+// Solar
+recipes.addShaped(<engineersdecor:small_solar_panel>, [[<enderio:item_material:38>, <enderio:item_material:38>, <enderio:item_material:38>],[<actuallyadditions:item_misc:7>, <thermalfoundation:material:160>, <actuallyadditions:item_misc:7>], [<actuallyadditions:block_misc:7>, <immersiveengineering:metal_device0>, <actuallyadditions:block_misc:7>]]);
 
 // Concrete
 recipes.addShaped(<immersiveengineering:stone_decoration_slab:5>, [[<immersiveengineering:stone_device:4>], [<immersiveengineering:stone_device:4>]]);

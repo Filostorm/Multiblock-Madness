@@ -71,7 +71,7 @@ AdamantineOre.addDataValue("harvestTool", "pickaxe");
 var AdamantineArmor = Adamantine.registerPart("armor").getData();
 AdamantineArmor.addDataValue("durability", "100");
 AdamantineArmor.addDataValue("enchantability", "8");
-AdamantineArmor.addDataValue("reduction", "9,12,15,7");
+AdamantineArmor.addDataValue("reduction", "6,8,10,6");
 AdamantineArmor.addDataValue("toughness", "2");
 
 var Adamantinemolten = Adamantine.registerPart("molten").getData();
@@ -101,7 +101,7 @@ var OrichalcumArmor = Orichalcum.registerPart("armor").getData();
 OrichalcumArmor.addDataValue("durability", "200");
 OrichalcumArmor.addDataValue("enchantability", "10");
 OrichalcumArmor.addDataValue("reduction", "5,7,10,4");
-OrichalcumArmor.addDataValue("toughness", "8");
+OrichalcumArmor.addDataValue("toughness", "3");
 
 var Orichalcummolten = Orichalcum.registerPart("molten").getData();
 Orichalcummolten.addDataValue("temperature", "1000");
