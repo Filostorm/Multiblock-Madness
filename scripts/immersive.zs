@@ -250,7 +250,7 @@ Infusion.registerRecipe("electrodestar", "",
 <immersiveengineering:material:19>, <thermalfoundation:material:833>, <thermalfoundation:material:833>, <thermalfoundation:material:833>]);
 
 // Solar
-recipes.addShaped(<engineersdecor:small_solar_panel>, [[<enderio:item_material:38>, <enderio:item_material:38>, <enderio:item_material:38>],[<actuallyadditions:item_misc:7>, <thermalfoundation:material:160>, <actuallyadditions:item_misc:7>], [<actuallyadditions:block_misc:7>, <immersiveengineering:metal_device0>, <actuallyadditions:block_misc:7>]]);
+recipes.addShaped(<engineersdecor:small_solar_panel>, [[<enderio:item_material:38>, <enderio:item_material:38>, <enderio:item_material:38>],[<rockhounding_chemistry:misc_items:1>, <thermalfoundation:material:352>, <rockhounding_chemistry:misc_items:1>], [<actuallyadditions:block_misc:7>, <immersiveengineering:metal_device0>, <actuallyadditions:block_misc:7>]]);
 
 // Concrete
 recipes.addShaped(<immersiveengineering:stone_decoration_slab:5>, [[<immersiveengineering:stone_device:4>], [<immersiveengineering:stone_device:4>]]);

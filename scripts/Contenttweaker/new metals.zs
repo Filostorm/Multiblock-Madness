@@ -71,7 +71,7 @@ AdamantineOre.addDataValue("harvestTool", "pickaxe");
 var AdamantineArmor = Adamantine.registerPart("armor").getData();
 AdamantineArmor.addDataValue("durability", "100");
 AdamantineArmor.addDataValue("enchantability", "8");
-AdamantineArmor.addDataValue("reduction", "6,8,10,6");
+AdamantineArmor.addDataValue("reduction", "7,10,12,8");
 AdamantineArmor.addDataValue("toughness", "2");
 
 var Adamantinemolten = Adamantine.registerPart("molten").getData();

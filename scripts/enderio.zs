@@ -140,9 +140,9 @@ AlloyFurnace.addRecipe(<minecraft:diamond>, <enderio:item_alloy_ingot:5>, <ender
 // Machines and Tools //
 
 //Solar
-recipes.addShaped(<enderio:block_solar_panel>, [[<enderio:item_material:69>, <ore:paneGlassColorless>, <enderio:item_material:69>],[<enderio:item_material:38>, <enderio:item_material:38>, <enderio:item_material:38>], [<enderio:item_capacitor_grainy>, <immersiveengineering:wirecoil>, <enderio:item_capacitor_grainy>]]);
-recipes.addShaped(<enderio:block_solar_panel:1>, [[<enderio:item_material:38>, <ore:blockGlassHardened>, <enderio:item_material:38>],[<embers:plate_dawnstone>, <enderio:block_solar_panel>, <embers:plate_dawnstone>], [tier1Capacitor, <enderio:item_material:69>, tier1Capacitor]]);
-recipes.addShaped(<enderio:block_solar_panel:2>, [[<tconstruct:large_plate>.withTag({Material: "pulsating_iron"}), <ore:enlightenedFusedQuartz>, <tconstruct:large_plate>.withTag({Material: "pulsating_iron"})],[<enderio:item_alloy_ingot:1>, <enderio:item_material:3>, <enderio:item_alloy_ingot:1>], [tier1Capacitor, <enderio:block_solar_panel:1>, tier1Capacitor]]);
+recipes.addShaped(<enderio:block_solar_panel>, [[<enderio:item_material:69>, <ore:blockGlassHardened>, <enderio:item_material:69>],[<thermalfoundation:material:352>, <enderio:item_material:38>, <thermalfoundation:material:352>], [<enderio:item_capacitor_grainy>, <actuallyadditions:item_misc:7>, <enderio:item_capacitor_grainy>]]);
+recipes.addShaped(<enderio:block_solar_panel:1>, [[<embers:plate_dawnstone>, <ore:blockGlassHardened>, <embers:plate_dawnstone>],[<thermalfoundation:material:352>, <enderio:item_material:3>, <thermalfoundation:material:352>], [tier1Capacitor, <enderio:block_solar_panel>, tier1Capacitor]]);
+recipes.addShaped(<enderio:block_solar_panel:2>, [[<moreplates:pulsating_iron_plate>, <ore:enlightenedFusedQuartz>, <moreplates:pulsating_iron_plate>],[<moreplates:energetic_alloy_plate>, <enderio:item_material:3>, <moreplates:energetic_alloy_plate>], [tier2Capacitor, <enderio:block_solar_panel:1>, tier2Capacitor]]);
 recipes.addShaped(<enderio:block_solar_panel:3>, [[<enderio:item_material:35>, <ore:enlightenedFusedQuartz>, <enderio:item_material:35>],[<enderio:item_material:3>, <enderio:item_material:3>, <enderio:item_material:3>], [tier2Capacitor, <enderio:block_solar_panel:2>, tier2Capacitor]]);
 
 //Photovoltaic Dust
