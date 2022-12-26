@@ -560,11 +560,15 @@ add_everflow_chalice(<liquid:water> * 10, <liquid:lava> * 10, [<minecraft:cobble
 add_everflow_chalice(<liquid:water> * 10, <liquid:astralsorcery.liquidstarlight> * 10, [<minecraft:ice> * 100]);
 add_everflow_chalice(<liquid:lava> * 10, <liquid:astralsorcery.liquidstarlight> * 10, [<minecraft:sand> * 99, <astralsorcery:blockcustomsandore> * 1]);
 add_everflow_chalice(<liquid:petrotheum> * 25, <liquid:astralsorcery.liquidstarlight> * 100, [<appliedenergistics2:sky_stone_block> * 89, <appliedenergistics2:smooth_sky_stone_block> * 10, <contenttweaker:starmetal_block> * 1]);
+
+// Commenting out the new chalice interactions until they are fully implemented
+/*
 add_everflow_chalice(<liquid:fiery_essence> * 20, <liquid:lifeessence> * 125, [<minecraft:magma> * 65, <minecraft:netherrack> * 20, <iceandfire:ash> * 15]);
 add_everflow_chalice(<liquid:hydrofluoric_acid> * 100, <liquid:molten_demon_will> * 10, [<bloodmagic:monster_soul:1> * 100, <bloodmagic:monster_soul:1>.withTag({display: {Lore: ["Minimum Ammount"]}, souls: 2.0}) * 1, <bloodmagic:monster_soul:1>.withTag({display: {Lore: ["Maximum Ammount"]}, souls: 4.5}) * 1]);
 add_everflow_chalice(<liquid:napalm> * 100, <liquid:molten_demon_will> * 10, [<bloodmagic:monster_soul:2> * 100, <bloodmagic:monster_soul:2>.withTag({display: {Lore: ["Minimum Ammount"]}, souls: 2.0}) * 1, <bloodmagic:monster_soul:2>.withTag({display: {Lore: ["Maximum Ammount"]}, souls: 4.5}) * 1]);
 add_everflow_chalice(<liquid:pigiron> * 144, <liquid:molten_demon_will> * 10, [<bloodmagic:monster_soul:3> * 100, <bloodmagic:monster_soul:3>.withTag({display: {Lore: ["Minimum Ammount"]}, souls: 2.0}) * 1, <bloodmagic:monster_soul:3>.withTag({display: {Lore: ["Maximum Ammount"]}, souls: 4.5}) * 1]);
 add_everflow_chalice(<liquid:liquidfusionfuel> * 10, <liquid:molten_demon_will> * 10, [<bloodmagic:monster_soul:4> * 100, <bloodmagic:monster_soul:4>.withTag({display: {Lore: ["Minimum Ammount"]}, souls: 2.0}) * 1, <bloodmagic:monster_soul:4>.withTag({display: {Lore: ["Maximum Ammount"]}, souls: 4.5}) * 1]);
+*/
 
 // --== Lens of the Miner ==-- //
 
@@ -727,7 +731,27 @@ for fluid, values in oilgeneratorfuels {
   oil_generator.addJEIRecipe(assRec);
 }
 
+// --== Matter Fabricator ==-- //
 
+var matter_fabricator = <assembly:matter_fabricator>;
+matter_fabricator.addJEICatalyst(<techreborn:matter_fabricator>);
+matter_fabricator.setJEIItemSlot(0, 0, "input");
+matter_fabricator.setJEIEnergySlot(1, 0, "energy", "rf");
+matter_fabricator.setJEIItemSlot(2, 0, "output");
+
+// Adds a Matter Fabricator recipe to the RQ JEI page.
+
+function add_matter_fabricator(input as IItemStack, energy as int) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("output", <techreborn:uumatter>);
+    });
+    assRec.requireItem("input", input);
+    assRec.requireEnergy("energy", energy);
+  <assembly:matter_fabricator>.addJEIRecipe(assRec);  
+}
+
+add_matter_fabricator(<techreborn:part:33> * 30, 120000);
+add_matter_fabricator(<techreborn:scrapbox> * 3, 120000);
 
 // --== Ember Bore ==-- //
 
@@ -837,6 +861,136 @@ addRefractionRecipe("alcara", [<enchantment:minecraft:sweeping> * 7, <enchantmen
 addRefractionRecipe("vorux", [<enchantment:minecraft:smite> * 7, <enchantment:minecraft:bane_of_arthropods> * 7, 
 <enchantment:minecraft:sharpness> * 4, <enchantment:minecraft:power> * 4], 
 [<potion:minecraft:strength>.makePotionEffect(7200, 3), <potion:minecraft:resistance>.makePotionEffect(7200, 1),<potion:minecraft:mining_fatigue>.makePotionEffect(7200, 3)]);
+
+
+// --== Attunement Altar ==-- //
+var attunement_altar = <assembly:attunement_altar>;
+attunement_altar.addJEICatalyst(<astralsorcery:blockattunementaltar>);
+attunement_altar.setJEIItemSlot(0, 0, "input");
+attunement_altar.setJEIItemSlot(1, 0, "constellation");
+attunement_altar.setJEIDurationSlot(2, 0, "duration", getVisSlots(1,7));
+attunement_altar.setJEIItemSlot(3, 0, "output");
+
+function add_celestial_attunement_recipe(constellation as string) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("output", <astralsorcery:itemtunedcelestialcrystal>.withTag(
+        {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation, 
+        crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}
+        }}));
+    });
+    assRec.requireItem("input", <astralsorcery:itemcelestialcrystal>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}}));
+    assRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+      ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(assRec);  
+}
+
+function add_rock_attunement_recipe(constellation as string) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("output", <astralsorcery:itemtunedrockcrystal>.withTag(
+        {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation, 
+        crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}
+        }}));
+    });
+    assRec.requireItem("input", <astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}}));
+    assRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+      ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(assRec);  
+}
+
+function add_misc_attunement_recipe(input as IItemStack, constellation as string, output as IItemStack) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("output", output);
+    });
+    assRec.requireItem("input", input);
+    assRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+      ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(assRec);  
+}
+
+
+// Self Attunement
+
+val self_attunement_list = [
+  "discidia",
+  "armara",
+  "vicio",
+  "aevitas",
+  "evorsio"
+] as string[];
+
+for constellation in self_attunement_list {
+  add_misc_attunement_recipe(<minecraft:armor_stand>.withDisplayName("§fSelf Attunement"), constellation, 
+  <minecraft:armor_stand>.withTag({ench: [{lvl: 1 as short, id: 31 as short}]}).withDisplayName("§f" ~ constellation ~ " attunement"));
+}
+
+
+// Crystal Attunement
+
+val constellation_list = [
+  "discidia",
+  "armara",
+  "vicio",
+  "aevitas",
+  "evorsio",
+  "lucerna",
+  "mineralis",
+  "horologium",
+  "octans",
+  "bootes",
+  "fornax",
+  "pelotrio"
+] as string[];
+
+val trait_list = [
+  "gelu",
+  "ulteria",
+  "alcara",
+  "vorux"
+] as string[];
+
+for constellation in constellation_list {
+  add_rock_attunement_recipe(constellation);
+}
+
+for constellation in constellation_list {
+  add_celestial_attunement_recipe(constellation);
+}
+
+for constellation in trait_list {
+  val rockRec = AssemblyRecipe.create(function(container) {
+    container.addItemOutput("output", <astralsorcery:itemtunedrockcrystal>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation.discidia", trait: "astralsorcery.constellation." ~ constellation, 
+      crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}}));
+  });
+  rockRec.requireItem("input", <astralsorcery:itemtunedrockcrystal>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation.discidia",
+      crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}
+      }).withDisplayName("§fAny attuned rock crystal"));
+  rockRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+    {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+    ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(rockRec);
+}
+
+for constellation in trait_list {
+  val celestialRec = AssemblyRecipe.create(function(container) {
+    container.addItemOutput("output", <astralsorcery:itemtunedcelestialcrystal>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation.discidia", trait: "astralsorcery.constellation." ~ constellation, 
+      crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}}));
+  });
+  celestialRec.requireItem("input", <astralsorcery:itemtunedcelestialcrystal>.withTag(
+      {astralsorcery: {constellationName: "astralsorcery.constellation.discidia",
+      crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}
+      }).withDisplayName("§fAny attuned celestial crystal"));
+  celestialRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+    {astralsorcery: {constellationName: "astralsorcery.constellation." ~ constellation}}
+    ).withDisplayName("§f" ~ constellation));
+  <assembly:attunement_altar>.addJEIRecipe(celestialRec);  
+}
+
 
 
 // --== Apotheosis Enchants ==-- //

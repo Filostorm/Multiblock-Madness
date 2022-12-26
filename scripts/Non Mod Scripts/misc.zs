@@ -146,6 +146,7 @@ val recipestoRemove =
 <iceandfire:chain_link>,
 <extendedcrafting:material:2>,
 <jaopca:item_gearthermoconducting>,
+<openblocks:xp_shower>
 ]
  as IItemStack[];
 
@@ -182,7 +183,7 @@ val itemstoRemove =
 <mysticalworld:gold_dust_tiny>,
 <mysticalworld:copper_dust_tiny>,
 <mysticalworld:silver_dust_tiny>,
-<embers:ingot_aluminum>,
+// <embers:ingot_aluminum>,
 <openblocks:generic:4>,
 <enderio:block_simple_crafter>,
 <enderio:block_simple_wired_charger>,
@@ -263,6 +264,11 @@ val itemstoRemove =
 <advgenerators:turbine_rotor_gold>,
 <advgenerators:turbine_gold>,
 <advgenerators:turbine_kit_gold>,
+<botania_tweaks:dire_crafty_crate>,
+<avaritia:extreme_crafting_table>,
+
+<mekanism:machineblock:2>,
+<qmd:ingot>
 ]
  as IItemStack[];
 
@@ -498,6 +504,10 @@ recipes.addShaped(<quark:rope> * 2, [[<ore:string>, <ore:string>, <ore:string>],
 //XP Tank
 recipes.addShaped(<mob_grinding_utils:tank>, [[<thermalfoundation:material:32>, <minecraft:glass_pane>, <thermalfoundation:material:32>],[<moreplates:invar_stick>, <openblocks:tank>, <moreplates:invar_stick>], [<thermalfoundation:material:32>, <minecraft:glass_pane>, <thermalfoundation:material:32>]]);
 
+// XP Shower
+recipes.addShaped(<openblocks:xp_shower>, [[null, null, null],[<contenttweaker:plate_engineering>, <jaopca:item_platehslasteel>, <jaopca:item_platehslasteel>], [null, null, <enderio:block_dark_iron_bars>]]);
+
+
 //Igniter
 recipes.addShapedMirrored(<randomthings:igniter>, [[<ore:cobblestone>, <ore:cobblestone>, <ore:netherrack>],[<ore:cobblestone>, <enderio:item_material>, <ore:netherrack>], [<ore:cobblestone>, <ore:cobblestone>, <ore:netherrack>]]);
 
@@ -593,6 +603,10 @@ recipes.addShapeless(<minecraft:melon> * 9, [<minecraft:melon_block>]);
 */
 
 
+// Quest Book
+
+recipes.addShapeless(<betterquesting:quest_book>, [<minecraft:book>,<minecraft:leather>]);
+
 
 // Food Items //
 
@@ -681,6 +695,7 @@ recipes.addShaped(<natura:empty_bowls:3> * 4, [[<natura:nether_planks:3>, <ore:a
 
 //santa hat all year round
 recipes.addShaped(<tombstone:christmas_hat>, [[<ore:dyeRed>, <apotheosis:lucky_foot>, <ore:dyeRed>], [<tombstone:crafting_ingredient:3>, <iceandfire:sheep_helmet>, <tombstone:crafting_ingredient:3>]]);
+
 
 ##########################################################################################
 print("==================== end of misc.zs ====================");

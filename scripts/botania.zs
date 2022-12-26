@@ -14,6 +14,7 @@ import mods.botaniatweaks.Agglomeration;
 import mods.immersiveengineering.Crusher;
 import mods.inworldcrafting.FluidToItem;
 import mods.nuclearcraft.Manufactory;
+import mods.nuclearcraft.Infuser;
 import mods.thaumcraft.ArcaneWorkbench;
 import mods.thaumcraft.Infusion;
 import mods.thermalexpansion.Insolator;
@@ -211,14 +212,14 @@ ManaInfusion.addInfusion(<botania:manaresource>*2,<contenttweaker:material_part:
 ManaInfusion.addInfusion(<botania:manaresource>*4,<thaumadditions:mithrillium_ingot>,7500);
 //1 Adaminite to 8 manasteel at 50 percent of original mana cost
 ManaInfusion.addInfusion(<botania:manaresource>*8,<thaumadditions:adaminite_ingot>,5000);
-//1 Mithminite to 16 manasteel at 25 percent of original mana cost
-ManaInfusion.addInfusion(<botania:manaresource>*16,<thaumadditions:mithminite_ingot>,2500);
+//1 Mithminite to 32 manasteel at 25 percent of original mana cost
+ManaInfusion.addInfusion(<botania:manaresource>*32,<thaumadditions:mithminite_ingot>,2500);
 //block of manasteel craft fixes
 ManaInfusion.addInfusion(<botania:storage>,<contenttweaker:sub_block_holder_0:2>,90000);
 ManaInfusion.addInfusion(<botania:storage>*2,<contenttweaker:sub_block_holder_0>,81000);
 ManaInfusion.addInfusion(<botania:storage>*4,<thaumadditions:mithrillium_block>,67500);
 ManaInfusion.addInfusion(<botania:storage>*8,<thaumadditions:adaminite_block>,45000);
-ManaInfusion.addInfusion(<botania:storage>*16,<thaumadditions:mithminite_block>,22500);
+ManaInfusion.addInfusion(<botania:storage>*32,<thaumadditions:mithminite_block>,22500);
 
 //Mana Powder
 ManaInfusion.removeRecipe(<botania:manaresource:23>);
@@ -229,8 +230,8 @@ ManaInfusion.addInfusion(<botania:manaresource:23>,<embers:dust_ember>,7500);
 ManaInfusion.addInfusion(<botania:manaresource:23>*2,<contenttweaker:slatedust>,6750);
 //mana-infused dust to 4 mana powder at 75 percent of the original mana cost
 ManaInfusion.addInfusion(<botania:manaresource:23>*4,<thermalfoundation:material:72>,5625);
-//mana dust to 16 mana powder at the original cost of the crushed slate to mana powder recipe
-ManaInfusion.addInfusion(<botania:manaresource:23>*16,<thermalfoundation:material:1028>,5000);
+//mana dust to 32 mana powder at the original cost of the crushed slate to mana powder recipe
+ManaInfusion.addInfusion(<botania:manaresource:23>*32,<thermalfoundation:material:1028>,5000);
 
 ### RUNIC ALTAR ###
 
@@ -258,7 +259,8 @@ RuneAltar.addRecipe(<botania:rune>,[<minecraft:prismarine_shard>, <actuallyaddit
 recipes.remove(<mysticalworld:wet_mud_block>);
 recipes.addShaped(<mysticalworld:wet_mud_block>*8, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>,  <liquid:water>*1000, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
 Transposer.addFillRecipe(<mysticalworld:wet_mud_block>, <minecraft:dirt>, <liquid:water>*125, 2500);
-//mods.nuclearcraft.Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
+// Infuser.removeRecipeWithInput(<ore:dirt>, <liquid:water>);
+Infuser.addRecipe(<minecraft:dirt>, <liquid:water>*125, <mysticalworld:wet_mud_block>);
 
 //Rune of Mana
 RuneAltar.removeRecipe(<botania:rune:8>);

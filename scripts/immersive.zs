@@ -242,6 +242,13 @@ Infusion.registerRecipe("electrodes", "",
 [<immersiveengineering:material:19>, <immersivepetroleum:material>, <immersivepetroleum:material>,<immersivepetroleum:material>,
 <immersiveengineering:material:19>, <immersivepetroleum:material>, <immersivepetroleum:material>, <immersivepetroleum:material>]);
 
+Infusion.registerRecipe("electrodestar", "", 
+<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1 as byte}), 3, 
+[<aspect:machina>*50, <aspect:fabrico>*50, <aspect:ordo>*25], 
+<bloodmagic:slate:2>, 
+[<immersiveengineering:material:19>, <thermalfoundation:material:833>, <thermalfoundation:material:833>,<thermalfoundation:material:833>,
+<immersiveengineering:material:19>, <thermalfoundation:material:833>, <thermalfoundation:material:833>, <thermalfoundation:material:833>]);
+
 // Solar
 recipes.addShaped(<engineersdecor:small_solar_panel>, [[<enderio:item_material:38>, <enderio:item_material:38>, <enderio:item_material:38>],[<actuallyadditions:item_misc:7>, <thermalfoundation:material:160>, <actuallyadditions:item_misc:7>], [<actuallyadditions:block_misc:7>, <immersiveengineering:metal_device0>, <actuallyadditions:block_misc:7>]]);
 
@@ -329,7 +336,7 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:boosted_diesel>*250, <liquid:b
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:boosted_diesel>, 450);
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:blended_diesel>, 200);
 mods.nuclearcraft.Enricher.addRecipe(<aetherworks:item_resource>, <liquid:blended_diesel>*250, <liquid:boosted_diesel>*250);
-
+mods.thermalexpansion.Imbuer.addRecipe(<liquid:boosted_diesel>*250, <aetherworks:item_resource>, <liquid:blended_diesel>*250, 10000);
 
 
 /* Might change later idk

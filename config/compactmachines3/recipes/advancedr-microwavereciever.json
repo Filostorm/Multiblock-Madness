@@ -12,16 +12,22 @@
   "catalyst": "contenttweaker:purpleprint",
   "catalyst-meta": 0,
  
+
   "input-types": {
     "a": {
       "id": "advancedrocketry:solarpanel",
       "meta": 0
     },
     "b": {
+      "id": "libvulpes:forgepoweroutput",
+      "meta": 0
+    },
+    "c": {
       "id": "advancedrocketry:microwavereciever",
-      "meta": 4,
+      "meta": 5,
       "item": {
         "id": "advancedrocketry:microwavereciever",
+        "meta": 0,
         "count": 1
       }
     }
@@ -45,9 +51,9 @@
       [
         "a",
         "a",
-        "b",
+        "c",
         "a",
-        "a"
+        "b"
       ],
       [
         "a",

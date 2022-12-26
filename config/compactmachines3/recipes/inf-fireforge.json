@@ -1,0 +1,116 @@
+{
+  "name": "cm3ar:inffireforge",
+
+  "disabled": false,
+
+  "target-item": "iceandfire:dragonforge_fire_core_disabled",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "contenttweaker:purpleprint",
+  "catalyst-meta": 0,
+
+
+
+  "input-types": {
+    "a": {
+      "id": "iceandfire:dragon_bone_block",
+      "meta": 0
+    },
+    "b": {
+      "id": "iceandfire:dragonforge_fire_brick",
+      "meta": 0
+    },
+    "c": {
+      "id": "iceandfire:dragonforge_fire_input",
+      "meta": 0
+    },
+    "d": {
+      "id": "iceandfire:dragonforge_fire_brick",
+      "meta": 1,
+      "item": {
+        "id": "iceandfire:dragonforge_fire_brick",
+        "meta": 0,
+        "count": 5
+      }
+    },
+    "e": {
+      "id": "iceandfire:dragonforge_fire_core",
+      "meta": 0,
+      "item": {
+        "id": "iceandfire:dragonforge_fire_core_disabled",
+        "meta": 0,
+        "count": 1
+      }
+    }
+  },
+  "input-nbt": {
+    "b:A": {
+      "nbt": "{ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"minecraft:dragonforgebrick\"}"
+    },
+    "c:A": {
+      "nbt": "{ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"minecraft:dragonforgeinput\"}"
+    },
+    "d:A": {
+      "nbt": "{ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"minecraft:dragonforgebrick\"}"
+    },
+    "e:A": {
+      "nbt": "{CookTime:0,ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},Items:[],id:\"minecraft:dragonforge\"}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "a",
+        "b:A",
+        "a"
+      ],
+      [
+        "b:A",
+        "d:A",
+        "b:A"
+      ],
+      [
+        "a",
+        "b:A",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b:A",
+        "c:A",
+        "b:A"
+      ],
+      [
+        "d:A",
+        "e:A",
+        "d:A"
+      ],
+      [
+        "b:A",
+        "d:A",
+        "b:A"
+      ]
+    ],
+    [
+      [
+        "a",
+        "b:A",
+        "a"
+      ],
+      [
+        "b:A",
+        "d:A",
+        "b:A"
+      ],
+      [
+        "a",
+        "b:A",
+        "a"
+      ]
+    ]
+  ]
+}

@@ -8,7 +8,22 @@
             "x": 0,
             "y": -1,
             "z": 2,
-            "elements": "thermalfoundation:storage_alloy@1",
+            "elements": "mysticalagriculture:ingot_storage@2",
+            "description": "1.5x speed when replacing center block",
+            "modifiers": [
+            {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.66
+            }         
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": "twilightforest:knightmetal_block",
             "description": "2x speed when replacing center block",
             "modifiers": [
             {

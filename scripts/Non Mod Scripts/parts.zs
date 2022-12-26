@@ -61,6 +61,8 @@ val itemstoRemove =
 	<jaopca:item_gearferroboron>,
 	<jaopca:item_geartungstencarbide>,
 	<jaopca:item_gearzinc>,
+	<jaopca:item_stickcobalt>,
+	<jaopca:item_stickprudentium>
 ]
  as IItemStack[];
 
@@ -69,7 +71,7 @@ for item in itemstoRemove {
 }
 
 
-################# BLOCKS #######################
+################# BLOCKS AND NUGGETS #######################
 
 
 val mapNewBlocks as IItemStack[IItemStack] = {
@@ -90,6 +92,47 @@ recipes.addShaped(block, [
 	[ingot, ingot, ingot]
 ]);
 recipes.addShapeless(ingot * 9, [block]);
+}
+
+val mapNewNuggets as IItemStack[IItemStack] = {
+	<contenttweaker:material_part:33>:<contenttweaker:material_part:30>,
+	<contenttweaker:material_part:23>:<contenttweaker:material_part:20>,
+	<contenttweaker:material_part:13>:<contenttweaker:material_part:10>,
+	<contenttweaker:material_part:4>:<contenttweaker:material_part:5>,
+} as IItemStack[IItemStack];
+
+for nugget, ingot in mapNewNuggets {
+recipes.addShaped(ingot, [
+	[nugget, nugget, nugget],
+	[nugget, nugget, nugget], 
+	[nugget, nugget, nugget]
+]);
+recipes.addShapeless(nugget * 9, [ingot]);
+}
+
+// Neutronium Blocks
+
+recipes.addShapeless(<avaritia:resource:4> * 9, [<avaritia:block_resource>]);
+
+// MA Blocks and Nuggets
+// Format is ingot:[block,nugget]
+
+val maParts = {
+	<mysticalagriculture:crafting:32>:[<mysticalagriculture:ingot_storage>, <mysticalagriculture:crafting:39>],
+	<mysticalagriculture:crafting:34>:[<mysticalagriculture:ingot_storage:2>, <mysticalagriculture:crafting:41>],
+	<mysticalagriculture:crafting:35>:[<mysticalagriculture:ingot_storage:3>, <mysticalagriculture:crafting:42>],
+	<mysticalagriculture:crafting:36>:[<mysticalagriculture:ingot_storage:4>, <mysticalagriculture:crafting:43>],
+	<mysticalagriculture:crafting:37>:[<mysticalagriculture:ingot_storage:5>, <mysticalagriculture:crafting:44>],
+	<mysticalagradditions:insanium:2>:[<mysticalagradditions:storage:1>, <mysticalagradditions:insanium:3>],
+} as IItemStack[][IItemStack];
+
+for ingot, parts in maParts {
+	recipes.addShapeless(ingot * 9, [parts[0]]);
+	recipes.addShaped(ingot, [
+		[parts[1], parts[1], parts[1]],
+		[parts[1], parts[1], parts[1]], 
+		[parts[1], parts[1], parts[1]]
+	]);	
 }
 
 
@@ -166,6 +209,9 @@ val metalPressRods as IItemStack[IItemStack] = {
 	<contenttweaker:rod_ironwood>:<twilightforest:ironwood_ingot>,
 	<contenttweaker:rod_thermal_alloy>:<contenttweaker:ingot_thermal_alloy>,
 	<contenttweaker:rod_mek_alloy>:<contenttweaker:ingot_mek_alloy>,
+	<contenttweaker:rod_conductive_iron>:<enderio:item_alloy_ingot:4>,
+	<contenttweaker:rod_dawnstone>:<embers:ingot_dawnstone>,
+	<contenttweaker:rod_modularium>:<modularmachinery:itemmodularium>,
 } as IItemStack[IItemStack];
 
 for rod, material in metalPressRods {

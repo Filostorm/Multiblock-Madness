@@ -271,5 +271,32 @@ for item in hiddenGlass {
 <ore:mekTabletReplacement>.add(<mekanism:energytablet>);
 <ore:mekTabletReplacement>.add(<contenttweaker:inactive_energy_tablet>);
 
+<ore:stickConductiveIron>.add(<contenttweaker:rod_conductive_iron>);
+<ore:stickDawnstone>.add(<contenttweaker:rod_dawnstone>);
+<ore:stickModularium>.add(<contenttweaker:rod_modularium>);
+
+<ore:gearHeavyAlloy>.add(<contenttweaker:gear_mek_alloy>);
+<ore:gearThermalAlloy>.add(<contenttweaker:gear_thermal_alloy>);
+<ore:gearModularium>.add(<contenttweaker:gear_modularium>);
+
+<ore:ingotHeavyAlloy>.add(<contenttweaker:ingot_mek_alloy>);
+<ore:ingotThermalAlloy>.add(<contenttweaker:ingot_thermal_alloy>);
+<ore:ingotModularium>.add(<modularmachinery:itemmodularium>);
+
+<ore:foodMeat>.add(<mysticalworld:venison>);
+<ore:foodMeat>.add(<twilightforest:raw_meef>);
+<ore:listAllmeatraw>.add(<twilightforest:raw_meef>);
+
+<ore:tar>.add(<thermalfoundation:material:833>);
+
+<ore:gemSapphire>.remove(<iceandfire:sapphire_gem>);
+<ore:gemRuby>.remove(<treasure2:ruby>);
+<ore:ruby>.remove(<treasure2:ruby>);
+// <ore:oreSapphire>.remove(<iceandfire:sapphire_ore>);
+<ore:gemSapphire>.remove(<treasure2:sapphire>);
+<ore:sapphire>.remove(<treasure2:sapphire>);
+
+<ore:blockSapphire>.remove(<iceandfire:sapphire_block>);
+
 ##########################################################################################
 print("==================== end of ore_dic.zs ====================");

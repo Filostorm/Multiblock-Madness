@@ -1,4 +1,5 @@
 {
+  "build:8": "4.0.5",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -8,7 +9,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§rWhen a tool loses all of its durabilty it is unusable until you repair it in the Tool Station with the same material as the tool head, or craft it together with a matching sharping kit.\n\nIf you place your Pattern Chest next to your Stencil Table and Part Builder, it will add its functinalty to both.\n\n",
+          "desc:8": "§rWhen a tool loses all of its durability, it is unusable until you repair it in the Tool Station with the same material as the tool head, or craft it together with a matching sharping kit.\n\nIf you place your Pattern Chest next to your Stencil Table and Part Builder, it will add its functionality to both.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1645,7 +1646,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "How to use:\n\nPlace any block, then place the projector on top, facing the direction you want the field to be. Right click the projector to see the placement guide for the projector across from it. Right click either projector to see where to place the two side projectors. Be sure that each projector is facing in, and that the ground is flat.\n\nIf assembeled correctly, an §e§6orange holographic cube§r will form in the center. This is where you will construct the recipes.\n\nFor every arrow beyond the first, you will need each projector to be one block higher.",
+          "desc:8": "Here is where the pack really starts!\n\nHow to use:\n\nPlace any block, then place the projector on top, facing the direction you want the field to be. Right click the projector to see the placement guide for the projector across from it. Right click either projector to see where to place the two side projectors. Be sure that each projector is facing in, and that the ground is flat.\n\nIf assembled correctly, an §e§6orange holographic cube§r will form in the center. This is where you will construct the recipes.\n\nFor every arrow beyond the first, you will need each projector to be one block higher.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -3554,7 +3555,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Right click with the Chisel to open the block chisel menu, then put something that can be chiseled, for example cobblestone. Then you click a variant to chisel all the cobble in the upper left slot into the one you picked. You can also leave a chiseled block in the slot, which will enable you to chisel inworld blocks of the same type with left click.",
+          "desc:8": "Right click with the Chisel to open the block chisel menu, then put something that can be chiseled, for example cobblestone. Then, click a variant to chisel all the cobble in the upper left slot into the one you picked. You can also leave a chiseled block in the slot, which will enable you to chisel inworld blocks of the same type with left click.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -4497,7 +4498,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble a 4x4 base, then place 2 exterior layers, so you have a 2x2 open interior.\n\nYou have two options for heating: Advanced Solar Panels on each 4 corners (these need to be inset one block.)\n\nOr you can use Heaters placed adjacent to a valve. §c§rRemember to set the RF usage in the machine!",
+          "desc:8": "Used to produce large amounts of brine and lithium.\n\nAssemble a 4x4 base, then place 2 exterior layers, so you have a 2x2 open interior.\n\nYou have two options for heating. The first is Advanced Solar Panels on the 4 corners. These need to be inset one block.\n\nAlternatively, you can use Heaters placed adjacent to a valve. §c§rRemember to set the RF usage in the machine!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -5060,7 +5061,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Anyone standing next to the flower will find their xp being turned in mana.",
+          "desc:8": "Anyone standing next to the flower will find their xp being turned into mana.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -5943,7 +5944,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place this block under a Mana Pool to unlock more crafting recipes!\n\n§bRaven Feathers make great Fletching!",
+          "desc:8": "Place this block under a Mana Pool to unlock more crafting recipes!\n\n§bNeed more vis? The Twilight Forest contains plenty of Vis! Alternatively, craft a workbench charger!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6306,7 +6307,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Right click to enter THE BENEATH.\n\nOnce you enter, look for the giant cavern.\n\n§bThis is great place to run Pumpjacks and the Excavator!",
+          "desc:8": "Right click to enter THE BENEATH.\n\nOnce you enter, look for the giant cavern.\n\n§bThis is a great place to run Pumpjacks and the Excavator!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9081,7 +9082,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input).\n\nCan attach a Faucet right to the output!",
+          "desc:8": "All the custom Multiblocks will require the blueprint inside to function. You can use them to display a hologram while assembling the machine.\n\nThe Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input).\n\nCan attach a Faucet right to the output!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9483,7 +9484,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The second highest tier of Assembling Machine.",
+          "desc:8": "The second highest tier of Assembling Machine, used to manufacture some of the most complex items.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9726,7 +9727,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Until you unlock the Ender IO Alloy Smelter, you\u0027ll need to do the in-world crafting method.",
+          "desc:8": "Used to create highly advanced machines.\n\nUntil you unlock the Ender IO Alloy Smelter, you\u0027ll need to do the in-world crafting method.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12145,7 +12146,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Throw the §dSalis Mundus§r on the Caldron to turn it into a Crucible. Fill with water, then heat.\n\nThis can be a messy process, with wasted Essentia converting into §5Flux§r and polluting the atmosphere. This can cause §5Void Rifts§r, which can destroy blocks if left unattended. Look in the top left corner of the screen while holding the §6Thaumometer§r to check your Vis/Flux levels. The Dark Purple is how much §5Flux§r is in the chunk.\n\nUse §bQuartz Slivers§r to clean up after a craft, but make sure to unlock the research first!\n\n§6This will be used to make Brass until you get access to Zinc.",
+          "desc:8": "Throw the §dSalis Mundus§r on the Cauldron to turn it into a Crucible. Fill with water, then heat with fire or lava below the Crucible.\n\nThis can be a messy process, with wasted Essentia converting into §5Flux§r and polluting the atmosphere. This can cause §5Void Rifts§r, which can destroy blocks if left unattended. Look in the top left corner of the screen while holding the §6Thaumometer§r to check your Vis/Flux levels. The Dark Purple is how much §5Flux§r is in the chunk.\n\nUse §bQuartz Slivers§r to clean up after a craft, but make sure to unlock the research first!\n\n§6This will be used to make Brass until you get access to Zinc.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -15256,7 +15257,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place the Test Tube and a Graduated Cylinder in the Glassware Holder, then the last two Cylinders in the Cabinets.\nKeep the Reaction Stabilizer supplied with Ferrous Catalysts, so your shards don\u0027t dissolve.\n\nWhen Extracting dusts from a shard, you will always recover §a§220%§r of the available minerals, plus a precentage of the remaining, equal to the §2§r§aRecovery Efficiency %§r.§r This amount can be raised by increasing the Reaction Intensity, which will also increase the amount of acid required per operation.\n\n§6Dissolution Chance§r and §eStabilization§r determine the chance the shard will be lost, if you don\u0027t have Ferrous Catalyst\u0027s installed. Its recommended to attach a Catalyst Regenerator to the Reaction Stabilizer so you dont have to worry about that.\n\n§rExtracted dusts will need to be piped out of the Lab Balance to be usable.\n\nYou will also need a Power Station with RF and Fuel.",
+          "desc:8": "Place the Test Tube and a Graduated Cylinder in the Glassware Holder, then the last two Cylinders in the Cabinets.\nKeep the Reaction Stabilizer supplied with Ferrous Catalysts, so your shards don\u0027t dissolve.\n\nWhen Extracting dusts from a shard, you will always recover §a§220%§r of the available minerals, plus a precentage of the remaining, equal to the §2§r§aRecovery Efficiency %§r.§r This amount can be raised by increasing the Reaction Intensity, which will also increase the amount of acid required per operation.\n\n§6Dissolution Chance§r and §eStabilization§r determine the chance the shard will be lost, if you don\u0027t have Ferrous Catalyst\u0027s installed. Its recommended to attach a Catalyst Regenerator to the Reaction Stabilizer so you dont have to worry about that.\n\n§rExtracted dusts will need to be piped out of the Lab Balance to be usable.\n\nYou will also need a Power Station with RF and Fuel.\n\nSpeed upgrades go in the Glassware Holder instead of the Extraction Controller.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -16678,7 +16679,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Replacing the casing with Reinforced will increase heat by 20 each, for a total of 680. (You\u0027ll need 34 if you want fully upgrade your Blast Furnace)",
+          "desc:8": "Replacing the casing with Reinforced will increase heat by 20 each, for a total of 680. You\u0027ll need 34 if you want to fully upgrade your Blast Furnace.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 34,
@@ -16872,7 +16873,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The final upgrade, Advanced Machine Casings, each count for an additonal 20 heat. (You\u0027ll need 34 if you want fully upgrade your Blast Furnace)\n\nChrome can be found by electrolizing Ruby dust.\n\n",
+          "desc:8": "The final upgrade, Advanced Machine Casings, each count for an additonal 20 heat. You\u0027ll need 34 if you want to fully upgrade your Blast Furnace.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 34,
@@ -16923,7 +16924,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Right clicking the Blast Furnace with 4 Nichrome Coils will increase heat by another 500.",
+          "desc:8": "Right clicking the Blast Furnace with 4 Nichrome Coils will increase heat by another 500.\n\nChrome can be found by electrolyzing Ruby dust.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 4,
@@ -18161,7 +18162,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "These store one type of item, in very high quantitys.\n",
+          "desc:8": "These store one type of item, in very high quantities.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18359,7 +18360,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Placing down the Framing Table, then adding the Framed Drawer as well as a block or two, will allow for custom made drawers.",
+          "desc:8": "Placing down the Framing Table, then adding the Framed Drawer as well as a block or two, will allow for custom made drawers. Alternatively, you can frame Framed Drawers directly in a crafting table.\n\nThe Hand Framing Tool allows you to frame Framed Drawers placed in-world. First, place the blocks used for framing with the Hand Framing Tool in a crafting table to set the framing blocks. Then, right click Framed Drawers with the tool to frame them.\n\nWhen filled with sticks, the Hand Framing Tool can be used to convert non-framed drawers into their framed versions by right clicking them, consuming 8 sticks per drawer. Fill the tool with sticks with a crafting table.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18416,6 +18417,15 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "storagedrawers:customdrawers"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "contenttweaker:hand_framing_tool"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -20449,7 +20459,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "After selecting the §9§1Mark of the Falling Tower §rin your Ritual Diviner (Shift-Left click 3 times), right click on your placed Master Ritual Stone with it until completed.\n\nNext you\u0027ll need to activate the Ritual using the crystal. §cBe sure check if you have enough LP in your network§r using a §eDivination or Seer\u0027s sigil§r, then throw your catalyst on top. \n\n§bIt might be a good idea to place a block directly above your ritual stone before activating, so your formation doesn\u0027t get destroyed!",
+          "desc:8": "After selecting the §9§1Mark of the Falling Tower §rin your Ritual Diviner (Shift-Left click 3 times), right click on your placed Master Ritual Stone with it until completed. You can view all available Mark of the Falling Tower recipes by viewing the uses of the Master Ritual Stone in JEI.\n\nNext you\u0027ll need to activate the Ritual using the crystal. §cBe sure to check if you have enough LP in your network§r using a §eDivination or Seer\u0027s sigil§r, then throw your catalyst on top. \n\n§bIt might be a good idea to place a block directly above your ritual stone before activating, so your formation doesn\u0027t get destroyed!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -21780,7 +21790,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Can be used to process ore for byproducts.",
+          "desc:8": "Can be used to process ores for byproducts.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -23108,7 +23118,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Supply with Diesel or Bio-Diesel. Outputs 4096 RF a tick.\n\nConnect the §6Portable Generator§r directly with an IE cable to burn up some of the Gasoline.",
+          "desc:8": "Supply with Diesel or Bio-Diesel. Outputs 8192 RF/t.\n\nConnect the §6Portable Generator§r directly with an IE cable to burn up some of the Gasoline.\n\nEnergy values of fuels in the Diesel Generator are available in JEI by viewing the uses of the IE projector.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -23202,7 +23212,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This machine requires over 4k power to run, but will never run out of ores.\n\nUse a §2Core Sample Drill§r in various chunks to find a good location to build your Excavator. \n\nAfter placing the drill and supplying power, right click it to start. Right click it again to extract the sample. Use your Engineers Manual to see what each ore vein will give if you.\n\nEach chunk has a different type of vein, and you can turn on chunk borders by pressing F9.\n\nShift-right click to place the Samples.\n",
+          "desc:8": "This machine requires over 4k power to run, but will never run out of ores.\n\nUse a §2Core Sample Drill§r in various chunks to find a good location to build your Excavator. View the uses of the Core Sample Drill in JEI to find ore vein generation information for the excavator.\n\nAfter placing the drill and supplying power, right click it to start. Right click it again to extract the sample. Ore Vein information can be viewed in both JEI and the Engineer\u0027s Manual.\n\nEach chunk has a different type of vein, and you can turn on chunk borders by pressing F9.\n\nShift-right click to place the Samples.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24381,7 +24391,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Resonating Wand is used to start Starlight crafting by using it on the table after the icon of the craft shows up.\n\nThe Morphing Tool is used similar to the Akashic Tome, but it will automagicly switch to the correct tool.",
+          "desc:8": "The Resonating Wand is used to start Starlight crafting by using it on the table after the icon of the craft shows up.\n\nThe Morphing Tool is used similarly to the Akashic Tome, but it will automagically switch to the correct tool.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26016,7 +26026,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some Size for Cutting. §cDon\u0027t let it get two small!§r\n\nDropping a Rock Crystal into placed §bLiquid Starlight§r, it will absorb it over time to increase its Size.\n\nOnce it reaches the max Size, it will split into two, which have the chance to be higher Purity.",
+          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some Size for Cutting. §cDon\u0027t let it get two small!§r\n\nDropping a Rock Crystal into placed §bLiquid Starlight§r will cause it to absorb it over time, increasing its Size.\n\nOnce it reaches max Size, it will split into two, one of which has the chance of being higher Purity.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26616,7 +26626,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Acts similar to the Looking Glass, but can be placed and snaps to the constellations.",
+          "desc:8": "Acts similar to the Looking Glass, but can be placed and snaps to the constellations.\n\nCan be used to find dim constellations.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26847,7 +26857,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Most crafts require a Blood Orb, but if a recipe is Tier 0 it can be done without. You can check a recipe by hovering over the arrow in JEI.",
+          "desc:8": "Most crafts require a Blood Orb, but if a recipe is Tier 0 it can be done without one. You can check a recipe by hovering over the arrow in JEI.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27194,7 +27204,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Use the Core Sample Drill in various chunks to find a good location to build your Pumpjack. \n\nAfter placing the drill and supplying power, right click it to start. Right click it again to extract the sample. Use your Engineers Manual to see what each ore vein will give if you build an Excavator on it.\n\nEach chunk has a different type of vein, and you can turn on chunk borders by pressing F9.\n\nShift-right click to place the Samples.\n\n§bYou\u0027ll need 5 Pumpjacks on oil to supply the Distillation Tower full time.",
+          "desc:8": "Use the Core Sample Drill in various chunks to find a good location to build your Pumpjack. View the uses of the Core Sample Drill in JEI to find fluid vein generation information for the pumpjack.\n\nAfter placing the drill and supplying power, right click it to start. Right click it again to extract the sample. Fluid Vein information can be viewed in both JEI and the Engineer\u0027s Manual.\n\nEach chunk has a different type of vein, and you can turn on chunk borders by pressing F9.\n\nShift-right click to place the Samples.\n\n§bYou\u0027ll need 5 Pumpjacks on oil to supply the Distillation Tower full time.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -30615,7 +30625,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place the Relays on the Sooty Marble for extra crafting slots.",
+          "desc:8": "Used to make some of the most magical items!\n\nPlace the Relays on the Sooty Marble for extra crafting slots.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31117,7 +31127,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§9§bNether Brick blocks are a good source of Nether essence.\n\n§rKilling mobs using the Sentient Sword will cause them to drop Demon Will, which then increases its damage while in your inventory",
+          "desc:8": "§9§bNether Brick blocks are a good source of Nether essence.\n\n§rKilling mobs using the Sentient Sword will cause them to drop Demon Will, which then increases its damage while in your inventory.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31718,7 +31728,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:master_infusion_crystal"
           },
-          "ismain:1": 1,
+          "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
           "name:8": "Master Infusion Crystal",
@@ -31729,7 +31739,7 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "ALWAYS"
+          "visibility:8": "NORMAL"
         }
       },
       "questID:3": 366,
@@ -31777,7 +31787,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "An advanced alloy smelter, can also be used to process ores",
+          "desc:8": "An advanced alloy smelter, can also be used to process ores.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -32685,7 +32695,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Using 28 Runes, upgrade your Altar to tier 4.\n\nThis will allow you to start creating the more powerful rituals.",
+          "desc:8": "Using 28 Runes, upgrade your Altar to tier 4.\n\nThis will allow you to start creating more powerful rituals.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -32742,7 +32752,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Same as before, but takes §e52§e Runes§r of any type",
+          "desc:8": "Same as before, but takes §e52§e Runes§r of any type.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34874,7 +34884,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Here is where the pack really starts!\n\nThese will grow crystals over time. \n\n§b§cOnly 3 Resonators will be active per player.\n\n§bMaybe look into an Auto Breaker?",
+          "desc:8": "These will grow crystals over time. \n\n§b§cOnly 3 Resonators will be active per player.\n\n§bMaybe look into an Auto Breaker?",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -35227,7 +35237,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Can also be created by shift-right clicking on a chest. \n\nHolds up to 256 items in a single slot, and is connected to your magical storage network.",
+          "desc:8": "Can also be created by shift-right clicking raw radiant quartz on a chest. \n\nHolds up to 256 items in a single slot, and is connected to your magical storage network.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -35291,7 +35301,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Can also be created by shift-right clicking on a crafting table. \n\nCan save the last recipe crafted by clicking one of the slots to the right.",
+          "desc:8": "Can also be created by shift-right clicking raw radiant quartz on a crafting table. \n\nCan save the last recipe crafted by clicking one of the slots to the right.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37112,7 +37122,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.\n\n",
+          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.\n\nHover over a Master Ritual stone to see an outline of the ritual and hold down right click to place the ritual.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37198,7 +37208,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.",
+          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.\n\nShift right click the Ritual Tinkerer to cycle through different modes that allow you to adjust various aspects of BM rituals.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37242,6 +37252,15 @@
               },
               "OreDict:8": "",
               "id:8": "bloodmagic:ritual_diviner"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "bloodmagic:ritual_reader"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -39333,7 +39352,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "All modular machines require the blueprint to be placed inside to run. You can use it to display a hologram while assembling the machine.\n\nThe in/outputs can go under any of the Projectors, and can be any size.\n\n\n§bUpgrading the casing will increase speed by a small amount for each one replaced, as well as RF/t consumption.",
+          "desc:8": "Used to process Miniaturisation Recipes more easily, at the cost of RF.\n\nThe in/outputs can go under any of the Projectors, and can be any size.\n\n§nAvailable Upgrades\n\n§rView available upgrades for this multiblock either through the JEI description for the blueprint or searching the multiblock name in JEI.\n\n§rUpgrading the casing will increase speed by a small amount for each one replaced, as well as RF/t consumption.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -39447,7 +39466,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Second Tier of the Assembling Machine Multiblock!",
+          "desc:8": "Second Tier of the Assembling Machine Multiblock! Required for Space-Age machinery.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -39594,7 +39613,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The two main ways to abtain Iridium Ore at this point are the §1§5Mark of the Falling Tower§r, and traveling to the §2§6§rMoon to mine some there.\n\nYou also can use highly advanced ore processing to collect some dust as a byproduct.",
+          "desc:8": "The two main ways to abtain Iridium Ore at this point are the §1§5Mark of the Falling Tower§r, and traveling to the §2§6§rMoon to mine some there.\n\nYou can also use highly advanced ore processing to collect some dust as a byproduct.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -40073,7 +40092,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The first way to use §dDeep Mob Learning§r will be to fight in Trials, which are unlocked when you get access to basic alloys. \n\nWhen killing one of the mobs listed on the Trail Key, while there is a matching §bData Model§r inside a §bLearner§r, the §bKey §rwill become attuned at whatever level the §bData Model§r is.\n\nKill mobs of the model types inside your §bDeep Learner §rto level them up.",
+          "desc:8": "The first way to use §dDeep Mob Learning§r will be to fight in Trials, which are unlocked when you get access to basic alloys. \n\nWhen killing one of the mobs listed on the Trial Key, while there is a matching §bData Model§r inside a §bLearner§r, the §bKey §rwill become attuned at whatever level the §bData Model§r is.\n\nKill mobs of the model types inside your §bDeep Learner §rto level them up.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -40716,7 +40735,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place blocks together to form the multiblock.\n\nHas many blocks that can be used to upgrade the machine, refer to the controller for possible blocks.",
+          "desc:8": "Place blocks together to form the multiblock.\n\nHas many blocks that can be used to upgrade the machine, refer to the controller for possible blocks.\n\nEnergy values of fuels in Gas Turbines (without efficiency upgrades) are available in JEI by viewing the uses of the Gas Turbine Controller.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -44668,7 +44687,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Mining levels and example materials:\n§dYou can explore to get access to up to §rReinforced§d level, or progress through the chapters for the rest!\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron, Copper, Tin)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)\n\n§rOre spawns in veins of several types of metal or gems:\n\n§5§7§5100% Coal \n§rY levels: 80-20\n\n§589% Coal \n10% Diamond\n1% Rock Crystal\n§rY levels: 20-0\n\n§765% Iron \n20% Nickel\n15% Gold\n§6§rY levels: 64-10\n\n§670% Copper\n25% Palladium\n5% Blaze\n§rY levels: §r60-20\n\n§785% Tin\n10% Iron\n5% Lead\n§rY levels: 80-40\n\n§845% Lead\n45% Silver\n10% Galena\n§rY levels: 35-5\n\n§c65% Redstone\n15% Ruby\n10% Cinnabar\n10% Destabilized Redstone\n§rY levels: 20-5\n\n§f40% Quartz\n40% Certus Quartz\n10% Black Quartz\n5% Charged Certus Quartz\n5% Magic Crystal Ore\n§7Y levels: 20-70\n\n§975% Lapis\n15% Sapphire\n10% Prismarine Ore\n§rY levels: 20-5\n\n§790% Bauxite\n5% Aluminum\n5% Rutile\n§rY levels: 20-0\n\n§240% Ender Ore \n30% Emerald\n20% Slime Ore\n10% Fossil\n§rY levels: 30-5\n\nAll Veins have a 1% chance to spawn Uninspected Materials.\n\n§rHold the Divining Rod in your off hand while you are mining to have the ore of that type to light up.",
+          "desc:8": "§nMining levels and example materials§r\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron, Copper, Tin)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)§r\n\n§dYou can explore to get access to up to §rReinforced§d level, or progress through the chapters for the rest!\n\n§rOre spawns in veins of several types of metal or gems. Ore generation information can be found in JEI by viewing the uses of the Ore Generation Book in JEI.\n\n§rHold the Divining Rod in your off hand while you are mining to have the ore of that type to light up.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -44778,6 +44797,18 @@
           },
           "index:3": 0,
           "rewardID:8": "bq_standard:choice"
+        },
+        "1:10": {
+          "index:3": 1,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:ore_gen_info"
+            }
+          }
         }
       },
       "tasks:9": {
@@ -44794,7 +44825,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§cThis Multiblock will only function in the Beneath!\n\n",
+          "desc:8": "Used to make Midnight Ingots.\n\n§cThis Multiblock will only function in the Beneath!\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47099,7 +47130,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "",
+          "desc:8": "Shiny!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -47164,7 +47195,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "",
+          "desc:8": "Forged from the darkness of the beneath.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48245,7 +48276,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "",
+          "desc:8": "Where light meets dark.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -50251,7 +50282,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Infinite Power! For Advanced Rocketry multiblocks.",
+          "desc:8": "Infinite Power!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -50364,7 +50395,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Just a little bit farther!\n\nYou\u0027ll probably need most, if not all, of the creative items to get the §6Ultimate Singularity§r.\n\n",
+          "desc:8": "§r§\n§cC§6o§en§ag§2r§ba§9t§3u§3l§da§5t§fi§7on§6s§b!§r\n\nShare base screenshots with the world!\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -50611,7 +50642,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Infinite fluids!\n\n§bMight want to look at which items are metable...",
+          "desc:8": "Infinite fluids!\n\n§bMight want to look at which items are meltable...",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -53151,7 +53182,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ll need to shoot the Mana Input Hatch with a Mana Spreader for the recipe to work. It has a §overy §rlarge mana buffer.",
+          "desc:8": "Used to make various nature-related items.\n\nYou\u0027ll need to shoot the Mana Input Hatch with a Mana Spreader for the recipe to work. It has a §overy §rlarge mana buffer.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54054,7 +54085,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This Machine is used in the creation of Advanced Rocketry Circuits",
+          "desc:8": "This Machine is used in the creation of Advanced Rocketry Circuits.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -58760,7 +58791,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Filling one of these with Starlight and placing it near the Starlight Infuser will automagically fill any places it was consumed during a craft.\n\n§6You can also create Sky Stone by placing a second one filled with Tectonic Petrotheum near by!",
+          "desc:8": "Filling one of these with Starlight and placing it near the Starlight Infuser will automagically fill any places it was consumed during a craft.\n\n§6You can also create Sky Stone by placing a second one filled with Tectonic Petrotheum near by!\n\n§fContainment Chalice Fluid recipes can be viewed in JEI by viewing the uses of the Containment Chalice.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -58924,7 +58955,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Tranquility Guide by §bDiamondSentinel§r:\n-First, you need to build an incense altar. Nothing works without it. \n-The incense altar goes on a 3x3 square of other stuff. What it is doesn\u0027t matter. \n-From here on, in each cardinal direction add another few rows of a type of path. \n-Wooden (3 rows past altar) caps at 60%, Stone (2 rows past wooden) caps at 120%, worn stone (2 rows past stone) caps at 200%, and obsidian (2 rows past worn stone) caps at 300%. \n-There are 7 categories of \"tranquility\" that you can gain. These blocks go on the same y coordinate as the paths, and up to 2 levels higher (so 3+ block tall trees don\u0027t help). Mix and match categories as much as you can, but don\u0027t bother with anything other than the best of each category. \n  §a §e-Crop - Potatoes, Carrots, Wheat, and Wart all give the same bonus. Pick your favorite. \n   §7-Earthen - Farmlands your best. Fortunate. \n   §c-Fire - Actual fire works best here. Light it on Netherack. (also gives a bonus)\n   §6-Lava - Self explanatory.\n   §2§a-Plants - Leaves. Keep away from fire and lava layers. \n   §2-Tree - Logs. See above. \n   §1§9-Water - Life Essence is your friend here.\n§r- Last note: Use your sigil of divination to figure out what your bonus is. The bottom number is the % increase, the top is your raw score.",
+          "desc:8": "The incense altar allows you to drain 90% of your current health with the sacrificial dagger, and applies bonus LP based on the tranquility bonus given by the Incense Altar. When this bonus is available, the sacrifical dagger gains a gold outline and shimmers. It also applies Soul Fray, preventing you from using the sacrificial dagger for a certain amount of time.\n\nTranquility Guide by §bDiamondSentinel§r:\n\nFirst, you need to build an incense altar. Nothing works without it. The incense altar goes on a 3x3 square of other stuff. What it is doesn\u0027t matter. \n\nFrom here on, in each cardinal direction, add another few rows of a type of path. The paths used cap the tranquility bonus:\n\n- Wooden (3 rows past altar) caps at 60%, \n- Stone (2 rows past wooden) caps at 120%\n- Worn stone (2 rows past stone) caps at 200%\n- Obsidian (2 rows past worn stone) caps at 300%\n\nThere are 7 categories of \"tranquility\" that you can gain. These blocks go on the same y coordinate as the paths, and up to 2 levels higher (so 3+ block tall trees don\u0027t help). Mix and match categories as much as you can, but don\u0027t bother with anything other than the best of each category. \n\n  §a §e- Crop - Potatoes, Carrots, Wheat, and Wart all give the same bonus. Pick your favorite.\n   §7- Earthen - Farmland\u0027s your best. Fortunate. \n   §c- Fire - Actual fire works best here. Light it on Netherack. (also gives a bonus)\n   §6- Lava - Self explanatory.\n   §2§a- Plants - Leaves. Keep away from fire and lava layers. \n   §2- Tree - Logs. See above. \n   §1§9- Water - Life Essence is your friend here.\n\n§rUse your sigil of divination to figure out what your bonus is. The bottom number is the tranquility bonus, the top is your raw tranquility score.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -59075,7 +59106,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Filling the Midnight Frames with Luminessence will make all crafts faster. With all 8 replaced its about a 60% speed buff.",
+          "desc:8": "Filling the Midnight Frames with Luminessence will make all crafts faster. With all 8 replaced, it\u0027s about a 60% speed buff.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 14,
@@ -61811,7 +61842,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "All the custom Multiblocks will require the blueprint inside to function.",
+          "desc:8": "You\u0027ll be using this multiblock to assemble many complex items!\n\n§nAvailable Upgrades§r\n\nView available upgrades for this multiblock either through the JEI description for the blueprint or searching the multiblock name in JEI.\n\nThe central block (Refined Iron) can be replaced with another modifier block for a speed upgrade, at the cost of increased power consumption. The coils can also be replaced with higher tier coils for increased speed and power consumption.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63472,7 +63503,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You might want to set up those creative items!\n\n\nBlock overlay textures by Puzzlebark from Zedtech.",
+          "desc:8": "You might want to set up those creative items! You\u0027ll probably need most, if not all, of the creative items to get the §6Ultimate Singularity§r.\n\nBlock overlay textures by Puzzlebark from Zedtech.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63624,6 +63655,335 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "contenttweaker:time_artifact"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "826:10": {
+      "preRequisites:11": [
+        380
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The Altare Aenigmatica can be used to automate charging a blood orb and crafting items on a single Blood Altar!\n\nPlace the block facing the Blood Altar. The green dot must be facing the Blood Altar. Then, right click the block with a blood orb. Next, place the blood orb in the orb slot. Now, insert items you want to place in the Blood Altar in the 9 slots on the left.\n\nThe block will automatically switch between charging the blood orb and placing items placed in the 9 slots in the Blood Altar. Note that you still need to extract the finished products yourself!\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "bloodarsenal:altare_aenigmatica"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Further Blood Altar Automation",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 826,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodarsenal:stasis_plate"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodarsenal:blood_capacitor"
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodarsenal:altare_aenigmatica"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "827:10": {
+      "preRequisites:11": [
+        351
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §bDemon Crucible§r extracts will from tartaric gems or will crystals and inserts it into the chunk\u0027s atmosphere. \n\nAtmospheric will can be used by rituals in the same chunk for §6bonus effects or enhancements§r. §bHellfire Forges§r containing tartaric gems of the same will type will automatically absorb atmospheric will from the same chunk.\n\nThe §bDemon Crystalliser§r draws will from the chunk\u0027s atmosphere and slowly forms §bwill crystal clusters§r. The first crystal takes substantially more time and will to form than subsequent crystals in a cluster. \n\nRight click a crystal cluster while holding a §btartaric gem§r with §9more than 1000 will§r to harvest all will crystals except the first one.\n\nThe §bDemon Will Aura Gauge§r allows you to view the quantity of all five types of will in the current chunk\u0027s atmosphere.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "bloodmagic:demon_crystallizer"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Will Crystals",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 827,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystal"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystal"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystal"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystal"
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crucible"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystallizer"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_will_gauge"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "828:10": {
+      "preRequisites:11": [
+        827
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§nResonance of the Faceted Crystal§r\n\nThis ritual can be used to obtain your first §dcoloured will crystals§r. Assemble the ritual with the §britual diviner§r and place a demon crystalliser on top. Fill the chunk with raw will using a demon crucible to grow a will crystal cluster on the demon crystalliser.\n\nWhen active, the ritual will §6transform§r raw will crystals in the crystalliser cluster into the four coloured will crystals.\n\n§nGathering of the Forsaken Souls§r\n\nNow that you have all five types of will, you can use this ritual for §6much faster will farming§r. Assemble the ritual and place crystal clusters of all 5 types on top. It\u0027s also recommended to construct a §bCrack of the Fractured Crystal§r ritual beneath the above ritual to harvest will crystals without breaking the crystal clusters. You\u0027ll need a §5vacuum chest§r to pick up the harvested crystals.\n\nNext, build a mob farm with §6multiple types of mobs§r (can be either hostile or passive) beneath the rituals. The §bForsaken Souls§r ritual kills mobs within its range to speed up crystal cluster growth and reduce will cost of crystals. More mob types§6 increases the efficiency§r, allowing a net positive on will.\n\nFinally, pipe some harvested crystals into demon crystallisers to fill the chunk with all five types of will. If done correctly, the setup will yield a §6surplus§r of all five types of will crystals.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "bloodmagic:item_demon_crystal"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Automating Will",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 828,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 4,
+              "Damage:2": 2,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "bloodmagic:soul_gem",
+              "tag:10": {}
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            },
+            "4:10": {
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "829:10": {
+      "preRequisites:11": [
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Whoppers or Hoppers can auto-insert items into the melter and auto-extract items from casting tables or basins. \n\nThe redstone clock can auto-activate seared faucets for automatic casting of ingots or blocks.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "tconstruct:wooden_hopper"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Melter Automation",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 829,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "tconstruct:cast_custom"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "tconstruct:wooden_hopper"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "cyclicmagic:clock"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -63828,6 +64188,13 @@
           "sizeY:3": 36,
           "x:3": -390,
           "y:3": 42
+        },
+        "25:10": {
+          "id:3": 829,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -180,
+          "y:3": -24
         }
       }
     },
@@ -68770,6 +69137,20 @@
           "sizeY:3": 24,
           "x:3": 66,
           "y:3": 0
+        },
+        "45:10": {
+          "id:3": 827,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -140,
+          "y:3": 140
+        },
+        "46:10": {
+          "id:3": 828,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -108,
+          "y:3": 156
         }
       }
     },
@@ -69267,6 +69648,13 @@
           "sizeY:3": 24,
           "x:3": -276,
           "y:3": -120
+        },
+        "68:10": {
+          "id:3": 826,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 132,
+          "y:3": -246
         }
       }
     },
@@ -70008,7 +70396,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 0.0,

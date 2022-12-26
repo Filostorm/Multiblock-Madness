@@ -26,7 +26,7 @@ Endoflames only last one hour before decaying!
 Attaching a Scarab Gem to a tool is a great way to boost early game power!
 Basic Tanks from Fluid Drawers are a great way to organize liquid!
 Shaped Radiant Quartz can be made with the Pure Daisy
-Broken Ancient Pieces from Fossils can be used on in a Tool Station
+Broken Ancient Pieces from Fossils can be used on tinkers tools in a Tool Station
 The Diesel Generator is Loud and Obnoxious
 Hate rain? Check out the Teru Teru Bozu from Botania, or the Rain Shield from Random Things!
 You can use Thermal Dynamics Redstone Servos with Structural Ducts to transmit redstone signals
@@ -46,3 +46,24 @@ Twilight Forest Hollow Hills contain a bunch of nice loot, including Aetherium O
 Your Modular Machine is stuck? Give it a redstone signal, and it will stop crafting
 Infuse a Brew of Vanity's Emptiness in a Tainted Blood Pendant to prevent mobs from spawning around you!
 Need more Vis to craft an advanced Thaumcraft item? Try placing the Arcane Workbench in the Twilight Forest!
+Radiant Amphoras can be linked to a radiant tank by right clicking, which is handy for collecting fluids!
+Radiant Amphoras can be used for fluid crafting
+You can use the dolly to move 1 block high Rockhounding machines
+Environmental Tech multiblocks can share blocks!
+Stuck designing a Nuclearcraft Overhauled reactor? leu-235.com can autogenerate a design for you!
+Modular Machines can have multiple inputs and outputs of the same type
+The RH Chemical Extractor is guaranteed to extract at least 20% material from a shard even at extraction level 1
+The Astral Sorcery Neromantic Prime can obtain lots of useful liquids
+Mekanism gases can be converted into Nuclearcraft fluids and vice versa by pumping the gas into the NC:O machine directly
+The creeper statue can be used to create entangled singularities
+The Vis Generator can be used for early game power, at the cost of vis
+The labeler from Integrated Dynamics lets you rename items for free
+Set atomic reconstructors to pulse mode and activate them with a redstone clock for really fast conversion
+The vision helmet is a cheap way to get night vision for the beneath
+Compressed cobblestone can be melted into seared stone in the melter
+Stand in a fire to quickly level up your tinkers armour for more modifier slots
+The range of a thaumcraft emptying essentia transfuser is 16 blocks
+The openblocks placer can keep up with a munchdew
+Growing Celestial Crystal Clusters on Starmetal Ore allows you to get better crystals more easily
+You can use the RFTools builder with the RFTools Shape Chamber to build QMD accelerators quickly
+Mobs killed with Liquid Death drop vis crystals

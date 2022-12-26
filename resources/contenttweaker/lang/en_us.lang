@@ -29,6 +29,8 @@ item.contenttweaker.rod_scal.name=ScAl Rod
 item.contenttweaker.rod_vanasteel.name=Vanasteel Rod
 item.contenttweaker.rod_nimonic.name=Nimonic Rod 
 item.contenttweaker.rod_ironwood.name=Ironwood Rod 
+item.contenttweaker.rod_conductive_iron.name=Conductive Iron Rod
+item.contenttweaker.rod_dawnstone.name=Dawnstone Rod
 item.contenttweaker.greatwood_handle.name=Greatwood Stick
 item.contenttweaker.slatedust.name=§eCrushed Slate
 item.contenttweaker.activatedaspectuscopper.name=Infused Copper Aspectus
@@ -156,6 +158,7 @@ item.contenttweaker.clump_titanium.name=Crystalized Titanium
 
 item.contenttweaker.gear_modularium.name=Modularium Gear
 item.contenttweaker.plate_modularium.name=Modularium Plate
+item.contenttweaker.rod_modularium.name=Modularium Rod
 
 item.contenttweaker.prepared_starmetal.name=Starmetal-Plated Platinum
 item.contenttweaker.ingot_reinforced_starmetal.name=§9Reinforced Starmetal
@@ -291,12 +294,17 @@ requious.jei.recipe.laser_drill=Laser Drill Ores
 requious.jei.recipe.oc_printer3d=3D Printer
 requious.jei.recipe.electronics_assembler=Electronics Assembler
 requious.jei.recipe.oil_generator=Oil Generator Fuels
+requious.jei.recipe.matter_fabricator=Matter Fabricator
 requious.jei.recipe.ember_bore=Ember Bore
 requious.jei.recipe.refraction_table=Stellar Refraction Table
+requious.jei.recipe.attunement_altar=Attunement Altar
 requious.jei.recipe.apotheosis_enchants=Highest Level Enchants
 
 material.Dilithium.name=Dilithium
+item.battery.0.name=Small Battery
+item.battery.1.name=Battery Pack
 
+tile.turret.name=Ember Turret
 
 item.contenttweaker.inactive_cloaking_device.name=Inactive Cloaking Device
 item.contenttweaker.inactive_lapotronic_orb.name=Inactive Lapotronic Orb
@@ -305,3 +313,32 @@ item.contenttweaker.inactive_energy_crystal.name=Inactive Energy Crystal
 item.contenttweaker.inactive_lithium_battery.name=Inactive Lithium Battery
 item.contenttweaker.inactive_trbattery.name=Inactive Battery
 item.contenttweaker.inactive_energy_tablet.name=Inactive Energy Tablet
+
+item.contenttweaker.hand_framing_tool.name=Hand Framing Tool
+
+item.contenttweaker.hand_framing_tool.desc1=Frame your tools by hand!
+item.contenttweaker.hand_framing_tool.desc2=The Hand Framing Tool lets you frame drawers already placed in the world.
+item.contenttweaker.hand_framing_tool.desc3=To do this, the tool itself needs to be framed in a crafting table. See the item's crafting table recipes in JEI.
+item.contenttweaker.hand_framing_tool.desc4=Then, once the tool is framed, right clicking any drawers in-world will frame them.
+item.contenttweaker.hand_framing_tool.desc5=Optionally, the tool can be filled with sticks using the crafting table recipe. Up to a stack of sticks will be consumed from each slot.
+item.contenttweaker.hand_framing_tool.desc6=The tool can then be used to convert existing unframed drawers into framed drawers, consuming 8 sticks to do so.
+
+item.advgenerators.turbine_blade_smore.name=S'more Turbine Blade
+item.advgenerators.turbine_rotor_smore.name=S'more Turbine Rotor
+item.advgenerators.turbine_kit_smore.name=S'more Turbine Upgrade Kit
+item.advgenerators.turbine_smore.name=S'more Turbine
+
+item.advgenerators.turbine_blade_super.name=Super Alloy Turbine Blade
+item.advgenerators.turbine_rotor_super.name=Super Alloy Turbine Rotor
+item.advgenerators.turbine_kit_super.name=Super Alloy Turbine Upgrade Kit
+item.advgenerators.turbine_super.name=Super Alloy Turbine
+
+item.advgenerators.turbine_blade_hslasteel.name=HSLA Steel Turbine Blade
+item.advgenerators.turbine_rotor_hslasteel.name=HSLA Steel Turbine Rotor
+item.advgenerators.turbine_kit_hslasteel.name=HSLA Steel Turbine Upgrade Kit
+item.advgenerators.turbine_hslasteel.name=HSLA Steel Turbine
+
+item.advgenerators.turbine_blade_extreme.name=Extreme Alloy Turbine Blade
+item.advgenerators.turbine_rotor_extreme.name=Extreme Alloy Turbine Rotor
+item.advgenerators.turbine_kit_extreme.name=Extreme Alloy Turbine Upgrade Kit
+item.advgenerators.turbine_extreme.name=Extreme Alloy Turbine

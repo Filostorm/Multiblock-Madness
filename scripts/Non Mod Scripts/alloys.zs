@@ -280,7 +280,7 @@ InductionSmelter.addRecipe(<nuclearcraft:alloy:13>*2, <nuclearcraft:gem:6>, <nuc
 //AlloySmelter.addRecipe(<nuclearcraft:alloy:13>*2, [<ore:itemSilicon>, <ore:ingotGraphite>], 10000);
 
 // Zircaloy //
-InductionSmelter.addRecipe(<rockhounding_chemistry:alloy_items_tech_b:7>*8, <nuclearcraft:ingot:10>*7, <thermalfoundation:material:129>, 40000);
+InductionSmelter.addRecipe(<nuclearcraft:alloy:12>*8, <nuclearcraft:ingot:10>*7, <thermalfoundation:material:129>, 40000);
 //AlloySmelter.addRecipe(<rockhounding_chemistry:alloy_items_tech_b:7>*8, [<ore:ingotZirconium>*7, <ore:ingotTin>], 40000);
 
 // Titanium Aluminide //
@@ -411,6 +411,7 @@ InductionSmelter.addRecipe(item * 3, <contenttweaker:adaptive_ingot>, item, 1500
 
 // --==NC Fuels for Induction Furnace/Alloy Smelter==-- //
 // Recipes for Zirconium/Carbide variants of all isotopes/fuels for the Induction Furnace
+// Format is original:[zirconium,carbide]
 
 val fuelalloying as IItemStack[][IItemStack] = {
 	<nuclearcraft:uranium>:[<nuclearcraft:uranium:4>,<nuclearcraft:uranium:1>],
@@ -462,11 +463,13 @@ val fuelalloying as IItemStack[][IItemStack] = {
 	<nuclearcraft:pellet_californium:2>:[<nuclearcraft:fuel_californium:7>,<nuclearcraft:pellet_californium:3>],
 	<nuclearcraft:pellet_californium:4>:[<nuclearcraft:fuel_californium:11>,<nuclearcraft:pellet_californium:5>],
 	<nuclearcraft:pellet_californium:6>:[<nuclearcraft:fuel_californium:15>,<nuclearcraft:pellet_californium:7>],
+	<qmd:copernicium>:[<qmd:copernicium:4>,<qmd:copernicium:1>],
+	<qmd:pellet_copernicium>:[<qmd:fuel_copernicium:3>,<qmd:pellet_copernicium:1>]
 } as IItemStack[][IItemStack];
 
 for fuel, newfuel in fuelalloying {
-InductionSmelter.addRecipe(newfuel[0], fuel, <nuclearcraft:ingot:10>, 20000);
-InductionSmelter.addRecipe(newfuel[1], fuel, <nuclearcraft:ingot:8>, 20000);
+	InductionSmelter.addRecipe(newfuel[0], fuel, <nuclearcraft:ingot:10>, 20000);
+	InductionSmelter.addRecipe(newfuel[1], fuel, <nuclearcraft:ingot:8>, 20000);
 }
 
 
