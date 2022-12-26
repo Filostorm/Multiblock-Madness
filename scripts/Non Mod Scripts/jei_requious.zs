@@ -731,7 +731,27 @@ for fluid, values in oilgeneratorfuels {
   oil_generator.addJEIRecipe(assRec);
 }
 
+// --== Matter Fabricator ==-- //
 
+var matter_fabricator = <assembly:matter_fabricator>;
+matter_fabricator.addJEICatalyst(<techreborn:matter_fabricator>);
+matter_fabricator.setJEIItemSlot(0, 0, "input");
+matter_fabricator.setJEIEnergySlot(1, 0, "energy", "rf");
+matter_fabricator.setJEIItemSlot(2, 0, "output");
+
+// Adds a Matter Fabricator recipe to the RQ JEI page.
+
+function add_matter_fabricator(input as IItemStack, energy as int) {
+  val assRec = AssemblyRecipe.create(function(container) {
+      container.addItemOutput("output", <techreborn:uumatter>);
+    });
+    assRec.requireItem("input", input);
+    assRec.requireEnergy("energy", energy);
+  <assembly:matter_fabricator>.addJEIRecipe(assRec);  
+}
+
+add_matter_fabricator(<techreborn:part:33> * 30, 120000);
+add_matter_fabricator(<techreborn:scrapbox> * 3, 120000);
 
 // --== Ember Bore ==-- //
 

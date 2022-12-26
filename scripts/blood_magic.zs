@@ -35,6 +35,7 @@ val itemstoRemove =
 	<bloodmagic:alchemy_table>,
 	<bloodmagic:activation_crystal:1>,
 	<bloodmagic:decorative_brick>,
+	<animus:altardiviner>,
 ]
  as IItemStack[];
 
@@ -289,6 +290,8 @@ AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone2:variation=0>,"
 
 AnimusPlugin.addComponentMapping(<blockstate:chisel:energizedvoidstone:variation=6>, "GLOWSTONE");
 
+// Altar Diviner
+recipes.addShapeless(<animus:altardiviner>, [<bloodmagic:sanguine_book>, <bloodmagic:blood_rune>]);
 
 //alchemy_table
 recipes.addShaped(<bloodmagic:alchemy_table>, [

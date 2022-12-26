@@ -500,6 +500,7 @@ for item in AEGrindstonetoRemove {
 	Grinder.removeRecipe(item);
 }
 
+// --== Individual Metal Processing ==-- //
 
 //Iron
 MineralSizer.add(<minecraft:iron_ore>, [<jaopca:item_crushedlumpiron>*2], [4]);

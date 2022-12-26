@@ -439,6 +439,7 @@ the heat bar will be reset and the gear will gain a level, granting an additiona
 <embers:ember_belt>.addTooltip(format.white("Reduces Embers cost of Embers Gear by 25%"));
 
 <embers:ancient_motive_core>.addTooltip(format.white("Attach to Gear at a Dawnstone Anvil to allow Embers Modifiers to be applied"));
+<embers:ancient_motive_core>.addTooltip(format.white("Use the Inferno Forge to upgrade Gear for more Embers Modifier Slots"));
 
 val emberArmourModifiers = [
   <embers:jet_augment>,
@@ -882,15 +883,84 @@ addDescription(<liquid:aetherworks.impure_aetherium_gas>, "Obtained from the Aet
 <bloodarsenal:glass_sacrificial_dagger>.addTooltip(format.white("Gives more LP than the Sacrificial Dagger"));
 <bloodarsenal:glass_dagger_of_sacrifice>.addTooltip(format.white("Gives more LP than the Dagger of Sacrifice"));
 
-<bloodarsenal:altare_aenigmatica>.addTooltip(format.white("Helpful for automating the Blood Altar"));
+val bloodToolList = [
+  <bloodarsenal:blood_infused_iron_axe>,
+  <bloodarsenal:blood_infused_iron_pickaxe>,
+  <bloodarsenal:blood_infused_iron_shovel>,
+  <bloodarsenal:blood_infused_iron_sickle>,
+  <bloodarsenal:blood_infused_iron_sword>,
+  <bloodarsenal:blood_infused_wooden_axe>,
+  <bloodarsenal:blood_infused_wooden_pickaxe>,
+  <bloodarsenal:blood_infused_wooden_shovel>,
+  <bloodarsenal:blood_infused_wooden_sword>,
+  <bloodarsenal:blood_infused_wooden_sickle>,
+] as IItemStack[];
+
+for tool in bloodToolList {
+  tool.addTooltip(format.darkRed("Automatically repairs, 20 LP per durability point"));
+}
+
+val BMRoutingNodes = [
+  <bloodmagic:input_routing_node>,
+  <bloodmagic:output_routing_node>,
+  <bloodmagic:item_routing_node>,
+  <bloodmagic:master_routing_node>,
+  <bloodmagic:base_item_filter>,
+  <bloodmagic:base_item_filter:1>,
+  <bloodmagic:base_item_filter:2>,
+  <bloodmagic:base_item_filter:3>,
+  <bloodmagic:base_fluid_filter>,
+  <bloodmagic:node_router>,
+] as IItemStack[];
+
+for node in BMRoutingNodes {
+  node.addTooltip(format.darkRed("BM Routing Node Network"));
+}
+
+<bloodmagic:teleposition_focus>.addTooltip(format.white("Right click a teleposer to bind focus to teleposer"));
+<bloodmagic:teleposition_focus>.addTooltip(format.white("Place inside another teleposer to teleport a 1x1x1 area to the bound teleposer"));
+<bloodmagic:teleposition_focus:1>.addTooltip(format.white("Right click a teleposer to bind focus to teleposer"));
+<bloodmagic:teleposition_focus:1>.addTooltip(format.white("Place inside another teleposer to teleport a 3x3x3 area to the bound teleposer"));
+<bloodmagic:teleposition_focus:2>.addTooltip(format.white("Right click a teleposer to bind focus to teleposer"));
+<bloodmagic:teleposition_focus:2>.addTooltip(format.white("Place inside another teleposer to teleport a 5x5x5 area to the bound teleposer"));
+<bloodmagic:teleposition_focus:3>.addTooltip(format.white("Right click a teleposer to bind focus to teleposer"));
+<bloodmagic:teleposition_focus:3>.addTooltip(format.white("Place inside another teleposer to teleport a 7x7x7 area to the bound teleposer"));
+
+<bloodmagic:teleposer>.addTooltip(format.white("Teleports anything above it to another bound teleposer"));
+<bloodmagic:teleposer>.addTooltip(format.white("Insert a bound teleposition focus and give a redstone signal"));
+<bloodmagic:teleposer>.addTooltip(format.white("Consumes LP"));
+
+<bloodmagic:base_fluid_filter>.addTooltip(format.gray("Required on both input and output node for fluid transfer"));
+<bloodmagic:input_routing_node>.addTooltip(format.gray("Place next to input inventory"));
+<bloodmagic:output_routing_node>.addTooltip(format.gray("Place next to output inventory"));
+<bloodmagic:master_routing_node>.addTooltip(format.gray("One required in every routing node network"));
+
+addDescription(<bloodmagic:master_routing_node>,
+"Blood Magic Routing Nodes can be used to create straightforward item and fluid transfer networks.",
+"",
+"Each network requires one master routing node. Place input routing nodes next to input inventories and output routing nodes next to output inventories.
+Connect all the nodes together with a node router. Items will now be automatically transferred from input to output routing nodes.",
+"",
+"Filters can be applied to input and output routing nodes. Right click nodes to access the filter GUI. Filters are applied by side, which can be selected
+on the right. Place the desired filter in the leftmost square. The desired items to be filtered can then be placed in the 3x3 grid. Change the number beside the #
+to change the amount of item filtered (e.g. to keep a certain amount of items stocked in an output inventory), and the number below to change the priority of the inventory.",
+"",
+"For fluid transfer, configured fluid filters are required on both the input and output routing node."
+);
+
+<bloodarsenal:altare_aenigmatica>.addTooltip(format.white("Can be used to automate charging a blood orb"));
+<bloodarsenal:altare_aenigmatica>.addTooltip(format.white("and crafting items on a single Blood Altar"));
+
 addDescription(<bloodarsenal:altare_aenigmatica>,
 "This block can be used to automate charging a blood orb and crafting items on a single Blood Altar!",
 "",
-"Place the block facing the Blood Altar. The green dot must be facing the Blood Altar. Then, right click a blood orb with the block.",
-"Now, place the blood orb in the orb slot and input any items you want to convert into the 9 slots on the left.",
+"Place the block facing the Blood Altar. The green dot must be facing the Blood Altar. Then, right click the block with a blood orb.",
+"Next, place the blood orb in the orb slot and input any items you want to convert into the 9 slots on the left.",
+"",
 "The block will automatically switch between charging the blood orb and converting items placed in the 9 slots.");
 
 <bloodarsenal:stasis_plate>.addTooltip(format.white("Used in Blood Arsenal Rituals"));
+<bloodmagic:sanguine_book>.addTooltip(format.white("Used to view outline of BM Altars"));
 
 <bloodmagic:sentient_armour_boots>.addTooltip(format.white("Created by the Sentient Armour Gem"));
 <bloodmagic:sentient_armour_leggings>.addTooltip(format.white("Created by the Sentient Armour Gem"));
@@ -908,6 +978,20 @@ addDescription(<bloodarsenal:altare_aenigmatica>,
 
 <bloodmagic:pack_sacrifice>.addTooltip(format.white("Slowly gains LP when attacking mobs"));
 <bloodmagic:pack_self_sacrifice>.addTooltip(format.white("Slowly gains LP through self-damage"));
+
+<bloodmagic:incense_altar>.addTooltip(format.gold("Provides a LP bonus for self-sacrifice"));
+<bloodmagic:incense_altar>.addShiftTooltip(format.gold("Base bonus: 20%"), "§6Hold §oShift§r§6 to view bonus values§r");
+<bloodmagic:incense_altar>.addShiftTooltip(format.gold("Wooden Path: 60%"));
+<bloodmagic:incense_altar>.addShiftTooltip(format.gold("Stone Path: 120%"));
+<bloodmagic:incense_altar>.addShiftTooltip(format.gold("Worn Stone Path: 200%"));
+<bloodmagic:incense_altar>.addShiftTooltip(format.gold("Obsidian Path: 300%"));
+
+<bloodmagic:demon_crystallizer>.addTooltip(format.aqua("Draws will from the atmosphere, forming will crystals"));
+<bloodmagic:demon_crucible>.addTooltip(format.aqua("Extracts will from will crystals or tartaric gems into the atmosphere"));
+<bloodmagic:demon_pylon>.addTooltip(format.aqua("Pulls will from neighbouring chunks with higher will into the current chunk"));
+
+<bloodmagic:soul_forge>.addTooltip(format.aqua("Tartaric gems placed within automatically"));
+<bloodmagic:soul_forge>.addTooltip(format.aqua("draw will from the atmosphere"));
 
 ##=======================================================
 ## THAUMCRAFT TOOLTIPS
