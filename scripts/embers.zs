@@ -39,6 +39,7 @@ val itemstoRemove =
 <embers:ashen_amulet>,
 <embers:alchemy_tablet>,
 <aetherworks:item_resource:2>,
+<embers:inferno_forge>,
 ]
  as IItemStack[];
 

@@ -38,7 +38,12 @@
     },
     "e": {
       "id": "iceandfire:dragonforge_ice_core",
-      "meta": 0
+      "meta": 0,
+      "item": {
+        "id": "iceandfire:dragonforge_ice_core_disabled",
+        "meta": 0,
+        "count": 1
+      }
     }
   },
   "input-nbt": {
