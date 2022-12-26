@@ -15,6 +15,7 @@ import mods.techreborn.fluidReplicator;
 import mods.techreborn.industrialElectrolyzer;
 import mods.rockhounding_chemistry.ProfilingBench;
 import mods.extendedcrafting.CombinationCrafting;
+import mods.immersiveengineering.ArcFurnace;
 
 print("==================== loading tech_reborn.zs ====================");
 ##########################################################################################
@@ -141,13 +142,14 @@ recipes.addShaped(<techreborn:ingot:21> * 2, [[<ore:ingotRefinedIron>, <ore:ingo
 // Refined Iron
 furnace.remove(<techreborn:ingot:19>);
 blastFurnace.removeRecipe(<techreborn:ingot:19>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>*2, <minecraft:iron_ingot>, <thermalfoundation:material:865>, 400, 512, [<contenttweaker:limestone_flux>, <contenttweaker:slatedust>], "Alloying");
-mods.immersiveengineering.ArcFurnace.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 300, 512, [<contenttweaker:limestone_flux>], "Alloying");
+ArcFurnace.addRecipe(<techreborn:ingot:19>*2, <minecraft:iron_ingot>, <thermalfoundation:material:865>, 400, 512, [<contenttweaker:limestone_flux>, <contenttweaker:slatedust>], "Alloying");
+ArcFurnace.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <immersiveengineering:material:7>, 300, 512, [<contenttweaker:limestone_flux>], "Alloying");
 mods.thermalexpansion.InductionSmelter.addRecipe(<techreborn:ingot:19>, <minecraft:iron_ingot>, <contenttweaker:limestone_flux>, 10000, <thermalfoundation:material:864>, 25);
 blastFurnace.addRecipe(<techreborn:ingot:19>*2, <thermalfoundation:material:865>, <minecraft:iron_ingot>, <contenttweaker:slatedust>, 200, 256, 1000);
 
 // Plutonium
 blastFurnace.addRecipe(<techreborn:ingot:25>, null, <techreborn:dust:67>, null, 400, 768, 2500);
+ArcFurnace.removeRecipe(<techreborn:ingot:25>);
 
 // Hot Tungstensteel Ingot
 blastFurnace.removeRecipe(<techreborn:ingot:16>);
@@ -250,7 +252,18 @@ recipes.addShaped(<techreborn:industrial_blast_furnace>, [[<ore:circuitAdvanced>
 recipes.addShaped(<techreborn:solar_panel>, [[<enderio:item_material:38>, <enderio:item_material:38>, <enderio:item_material:38>],[<ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:paneGlassColorless>], [<ore:circuitBasic>, <techreborn:machine_frame>, <ore:circuitBasic>]]);
 
 //Reflectors
+recipes.remove(<techreborn:part:28>);
 recipes.addShaped(<techreborn:part:28>, [[null, <techreborn:part:26>, null],[<techreborn:part:26>, <ore:dustBeryllium>, <techreborn:part:26>], [null, <techreborn:part:26>, null]]);
+recipes.addShaped(<techreborn:part:28>, [[null, <techreborn:part:26>, null],[<techreborn:part:26>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "beryllium", Amount: 1000}}), <techreborn:part:26>], [null, <techreborn:part:26>, null]]);
+
+// 60k nak coolant cell
+recipes.remove(<techreborn:part:10>);
+recipes.addShaped(<techreborn:part:10>, [[<ore:ingotTin>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "sodium", Amount: 1000}}), <ore:ingotTin>],
+[<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "potassium", Amount: 1000}}), <techreborn:part:36>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "potassium", Amount: 1000}})], 
+[<ore:ingotTin>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "sodium", Amount: 1000}}), <ore:ingotTin>]]);
+recipes.addShaped(<techreborn:part:10>, [[<ore:ingotTin>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "potassium", Amount: 1000}}), <ore:ingotTin>],
+[<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "sodium", Amount: 1000}}), <techreborn:part:36>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "sodium", Amount: 1000}})], 
+[<ore:ingotTin>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "potassium", Amount: 1000}}), <ore:ingotTin>]]);
 
 ### Grinder ###
 mods.techreborn.industrialGrinder.addRecipe(<thermalfoundation:material:70>, <mekanism:dust:2>, <jaopca:item_dusttinyiridium>, null, <randomthings:ingredient:3>, null, <liquid:alchemical_redstone>*500, 200, 512);
@@ -316,9 +329,6 @@ Centrifuge.addRecipe([<thermalfoundation:material:771> % 25, <minecraft:redstone
 Centrifuge.addRecipe([<rockhounding_chemistry:chemical_dusts:44> % 100, <nuclearcraft:gem:6> % 80, <thermalfoundation:material:68> % 15], <techreborn:dust:48>, <liquid:fluidchlorite>*50, 10000);
 
 // Remove cell recipes
-fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidheliumplasma", Amount: 1000}}));
-fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidhelium3", Amount: 1000}}));
-
 val heliumCells as IIngredient = (
 <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "helium", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "helium", Amount: 1000}}) | 
 <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "liquid_helium", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "liquid_helium", Amount: 1000}}) |
@@ -328,8 +338,6 @@ val heliumCells as IIngredient = (
 // More Helium
 recipes.addShaped(<techreborn:part:7>, [[null, <thermalfoundation:material:129>, null],[<thermalfoundation:material:129>, heliumCells, <thermalfoundation:material:129>], [null, <thermalfoundation:material:129>, null]]);
 
-
-scrapbox.addScrapboxDrop(<jaopca:item_dusttinyiridium>);
 scrapbox.removeRecipe(<thermalfoundation:material:199>);
 
 ############################################
@@ -340,6 +348,10 @@ scrapbox.removeRecipe(<thermalfoundation:material:199>);
 fluidReplicator.removeRecipe(<liquid:water>);
 fluidReplicator.removeRecipe(<liquid:lava>);
 fluidReplicator.removeRecipe(<liquid:fluidmercury>);
+fluidReplicator.removeRecipe(<liquid:fluidcompressedair>);
+fluidReplicator.removeRecipe(<liquid:fluidcalcium>);
+fluidReplicator.removeRecipe(<liquid:fluidhydrogen>);
+fluidReplicator.removeRecipe(<liquid:fluidberylium>);
 
 // Heavy water
 fluidReplicator.addRecipe(2,<liquid:heavy_water>,10, 1000);
@@ -354,7 +366,12 @@ fluidReplicator.addRecipe(1,<liquid:water>*10000 ,10, 1000);
 // Lava
 fluidReplicator.addRecipe(1,<liquid:lava>,10, 1000);
 // Mercury
-fluidReplicator.addRecipe(4, <liquid:mercury>, 200, 20);
+fluidReplicator.addRecipe(4, <liquid:mercury>, 200, 1000);
+// Fixing remaining recipes
+fluidReplicator.addRecipe(2, <liquid:compressed_air>, 10, 1000);
+fluidReplicator.addRecipe(2, <liquid:calcium>, 10, 1000);
+fluidReplicator.addRecipe(2, <liquid:hydrogen>, 10, 1000);
+fluidReplicator.addRecipe(10, <liquid:beryllium>, 100, 1000);
 
 ############################################
 ##############  Recipe Rebalance  ##########
@@ -387,6 +404,59 @@ mods.nuclearcraft.ChemicalReactor.addRecipe(<liquid:fluidsodiumsulfide> * 1000, 
 industrialElectrolyzer.removeInputRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidmethane", Amount: 1000}}));
 industrialElectrolyzer.removeInputRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidsulfuricacid", Amount: 1000}}));
 
+// Fixing all the other TR Electrolyser recipes
+
+val TRCells = [
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidhydrogen", Amount: 1000}}),
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidcompressedair", Amount: 1000}}),
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidsilicon", Amount: 1000}}),
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidlithium", Amount: 1000}}),
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidsodium", Amount: 1000}}),
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidcalcium", Amount: 1000}}),
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidnitrogen", Amount: 1000}}),
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidpotassium", Amount: 1000}}),
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidberylium", Amount: 1000}}),
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidwolframium", Amount: 1000}})
+] as IItemStack[];
+
+for cell in TRCells {
+  industrialElectrolyzer.removeRecipe(cell);
+}
+
+var cellEmpty = <techreborn:dynamiccell>;
+var cellHydrogen = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "hydrogen", Amount: 1000}});
+var cellAir = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "compressed_air", Amount: 1000}});
+var cellSilicon = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "silicon", Amount: 1000}});
+var cellLithium = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "lithium", Amount: 1000}});
+var cellSodium = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "sodium", Amount: 1000}});
+var cellCalcium = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "calcium", Amount: 1000}});
+var cellNitrogen = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "nitrogen", Amount: 1000}});
+var cellPotassium = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "potassium", Amount: 1000}});
+var cellBeryllium = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "beryllium", Amount: 1000}});
+var cellCarbon = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidcarbon", Amount: 1000}});
+
+industrialElectrolyzer.addRecipe(cellHydrogen * 4, cellAir, cellEmpty, null, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidelectrolyzedwater", Amount: 1000}}) * 6, null, 760, 120);
+industrialElectrolyzer.addRecipe(cellSilicon, cellAir, null, null, <minecraft:sand> * 16, cellEmpty * 2, 1000, 25);
+industrialElectrolyzer.addRecipe(cellSilicon, cellAir, null, null, <minecraft:sand:1> * 16, cellEmpty * 2,  1000, 25);
+industrialElectrolyzer.addRecipe(cellLithium, cellSilicon * 2, <thermalfoundation:material:68> * 2, cellSodium * 2, <techreborn:dust:12> * 8, cellEmpty * 5, 200, 50);
+industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 3, cellSilicon * 3, cellCalcium * 3, cellSodium * 4, <techreborn:dust:28> * 29, cellEmpty * 10, 1460, 100);
+industrialElectrolyzer.addRecipe(cellCalcium * 2, cellCarbon * 2, cellAir * 3, null, <techreborn:dust:8> * 10, cellEmpty * 7, 700, 80);
+industrialElectrolyzer.addRecipe(cellSodium * 4, <thermalfoundation:material:68> * 3, cellSilicon * 3, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidchlorite", Amount: 1000}}), <techreborn:dust:48> * 23, cellEmpty * 8, 1340, 90);
+industrialElectrolyzer.addRecipe(cellSilicon, cellAir, null, null, <techreborn:dust:22> * 8, cellEmpty * 2, 1000, 5);
+industrialElectrolyzer.addRecipe(cellPotassium * 2, cellNitrogen * 2, cellAir * 3, null, <thermalfoundation:material:772> * 10, cellEmpty * 7, 40, 105);
+industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 8, <techreborn:smalldust:54> * 2, cellHydrogen * 5, cellAir * 3, <techreborn:dust:5> * 12, cellEmpty * 8, 2000, 125);
+industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 2, <techreborn:dust:10>, cellAir * 3, null,<techreborn:dust:43> * 9,  cellEmpty * 3, 500, 50);
+industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 2, cellAir * 3, null, null,<techreborn:dust:45> * 8,  cellEmpty * 3, 400, 50);
+industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 2, cellBeryllium * 3, cellSilicon * 6, cellAir * 9,<techreborn:dust:18> * 29,  cellEmpty * 3, 600, 50);
+industrialElectrolyzer.addRecipe(<techreborn:dust:30> * 2, <thermalfoundation:material> * 2, cellSilicon, cellAir * 2,<techreborn:dust:36> * 9,  cellEmpty * 3, 600, 60);
+industrialElectrolyzer.addRecipe(<techreborn:smalldust:30> * 2, <techreborn:smalldust:27> * 2, cellSilicon, cellAir * 2,<thermalfoundation:material:770> * 4,  cellEmpty * 3, 500, 5);
+industrialElectrolyzer.addRecipe(<techreborn:dust:30> * 3, <thermalfoundation:material:68> * 2, cellSilicon * 3, cellAir * 6,<techreborn:dust:40> * 20,  cellEmpty * 9, 1780, 50);
+industrialElectrolyzer.addRecipe(<thermalfoundation:material> * 3, <thermalfoundation:material:68> * 2, cellSilicon * 3, cellAir * 6, <techreborn:dust> * 20, cellEmpty * 9, 1640, 50);
+industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 2, <techreborn:dust:31> * 3, cellSilicon * 3, cellAir * 6, <techreborn:dust:49> * 20, cellEmpty * 9, 1800, 50);
+industrialElectrolyzer.addRecipe(cellCalcium * 3, <thermalfoundation:material> * 2, cellSilicon * 3, cellAir * 6, <techreborn:dust:2> * 20, cellEmpty * 12, 1280, 50);
+industrialElectrolyzer.addRecipe(cellCalcium * 3, <thermalfoundation:material:68> * 2, cellSilicon * 3, cellAir * 6, <techreborn:dust:25> * 20, cellEmpty * 12, 200, 50);
+industrialElectrolyzer.addRecipe(cellCalcium * 3, <techreborn:dust:10> * 2, cellSilicon * 3, cellAir * 6, <techreborn:dust:56> * 20, cellEmpty * 12, 2200, 50);
+
 // Removing useless TR IBF recipes
 blastFurnace.removeInputRecipe(<techreborn:smalldust:23>);
 blastFurnace.removeInputRecipe(<techreborn:smalldust:51>);
@@ -394,6 +464,18 @@ blastFurnace.removeInputRecipe(<thermalfoundation:material:96>);
 blastFurnace.removeInputRecipe(<techreborn:dust:10>);
 blastFurnace.removeInputRecipe(<techreborn:smalldust:10>);
 blastFurnace.removeInputRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidsilicon", Amount: 1000}}));
+
+// Removing Cell Chem from the TR Fusion Reactor
+fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidheliumplasma", Amount: 1000}}));
+fusionReactor.removeRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidhelium3", Amount: 1000}}));
+fusionReactor.removeRecipe(<thermalfoundation:material:70>);
+fusionReactor.removeRecipe(<thermalfoundation:ore:7>);
+fusionReactor.removeTopInputRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidwolframium", Amount: 1000}}));
+fusionReactor.removeTopInputRecipe(<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidwolframium", Amount: 1000}}));
+
+fusionReactor.addRecipe(<techreborn:dust:55>, <nuclearcraft:dust:9>, <thermalfoundation:ore:6>, 80000000, 2048, 1024);
+fusionReactor.addRecipe(<techreborn:dust:55>, <mekanism:otherdust:4>, <thermalfoundation:ore:7>, 90000000, 2048, 1024);
+
 
 //no BONES
 industrialElectrolyzer.removeInputRecipe(<minecraft:dye:15>*3);
@@ -407,6 +489,10 @@ mods.techreborn.implosionCompressor.addRecipe(<techreborn:plates:38>, <techrebor
 //For making the Infinity Catlysts
 <techreborn:cloakingdevice>.maxStackSize = 64;
 
+########################################################
+##############  Nbtless item recipe replace  ###########
+########################################################
+
 //Techreborn nbtless item replacement
 recipes.replaceAllOccurences(<techreborn:rebattery>, <ore:trbatteryReplacement>);
 recipes.replaceAllOccurences(<techreborn:lithiumbattery>, <ore:lithiumBatteryReplacement>);
@@ -415,9 +501,6 @@ recipes.replaceAllOccurences(<techreborn:lapotroncrystal>, <ore:lapotronCrystalR
 recipes.replaceAllOccurences(<techreborn:cloakingdevice>, <ore:cloakingDeviceReplacement>);
 recipes.replaceAllOccurences(<techreborn:lapotronicorb>, <ore:lapotronicOrbReplacement>);
 
-########################################################
-##############  Nbtless item recipe replace  ###########
-########################################################
 
 //Techreborn Battery
 recipes.remove(<techreborn:rebattery>);
@@ -427,7 +510,8 @@ recipes.addShapeless(<contenttweaker:inactive_trbattery>, [<techreborn:rebattery
 
 //Techreborn Lithium Battery
 recipes.remove(<techreborn:lithiumbattery>);
-recipes.addShaped("trlithiumbatteryreplacement", <contenttweaker:inactive_lithium_battery>, [[null, <techreborn:cable:6>, null], [<ore:plateAluminum>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidlithium", Amount: 1000}}), <ore:plateAluminum>], [<ore:plateAluminum>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidlithium", Amount: 1000}}), <ore:plateAluminum>]]);
+recipes.addShaped("trlithiumbatteryreplacement", <contenttweaker:inactive_lithium_battery>, [[null, <techreborn:cable:6>, null], [<ore:plateAluminum>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "lithium", Amount: 1000}}), <ore:plateAluminum>], [<ore:plateAluminum>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "lithium", Amount: 1000}}), <ore:plateAluminum>]]);
+recipes.addShaped("trlithiumbatteryreplacement2", <contenttweaker:inactive_lithium_battery>, [[null, <techreborn:cable:6>, null], [<ore:plateAluminum>, <ore:dustLithium>, <ore:plateAluminum>], [<ore:plateAluminum>, <ore:dustLithium>, <ore:plateAluminum>]]);
 recipes.addShapeless(<techreborn:lithiumbattery>.withTag({energy: 0}), [<contenttweaker:inactive_lithium_battery>]);
 recipes.addShapeless(<contenttweaker:inactive_lithium_battery>, [<techreborn:lithiumbattery>]);
 
@@ -468,5 +552,36 @@ craft.remake(<techreborn:quantum_tank>, ["pretty",
   "B": <fluiddrawers:tank>,               # Basic Tank
   "S": <appliedenergistics2:material:47>, # Singularity
 });
+
+############################################
+############  Scrapbox  ####################
+############################################
+
+// Scrapbox Removals
+val scrapItems = [
+  <techreborn:nuggets:16>,
+  <techreborn:nuggets:17>,
+  <techreborn:nuggets:15>,
+  <techreborn:nuggets:14>,
+  <thermalfoundation:material:198>,
+  <thermalfoundation:material:199>,
+  <techreborn:dust:67>,
+  <thermalfoundation:material:71>,
+  <techreborn:dust:55>,
+  <techreborn:dust:54>,
+  <techreborn:dust:64>,
+  <techreborn:nuggets:7>,
+  <techreborn:nuggets:10>,
+  <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidcompressedair", Amount: 1000}})
+] as IItemStack[];
+
+for item in scrapItems {
+  scrapbox.removeRecipe(item);
+}
+
+scrapbox.addScrapboxDrop(<jaopca:item_dusttinyiridium>);
+scrapbox.addScrapboxDrop(<techreborn:smalldust:55>);
+scrapbox.addScrapboxDrop(<techreborn:smalldust:54>);
+
 ##########################################################################################
 print("==================== end of tech_reborn.zs ====================");

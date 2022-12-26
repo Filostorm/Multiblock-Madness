@@ -14,8 +14,8 @@
   
   "input-types": {
     "a": {
-      "id": "minecraft:iron_block",
-      "meta": 0
+      "id": "thermalfoundation:storage",
+      "meta": 4
     },
     "b": {
       "id": "advancedrocketry:biomescanner",

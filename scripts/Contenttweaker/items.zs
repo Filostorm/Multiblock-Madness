@@ -62,6 +62,8 @@ var simpleItems = [
 	"rod_vanasteel",
 	"rod_nimonic",
 	"rod_ironwood",
+	"rod_conductive_iron",
+	"rod_dawnstone",
 	
 	//Steel Casts
 	"steelcast",
@@ -117,6 +119,7 @@ var simpleItems = [
 	//Modularium Parts
 	"gear_modularium",
 	"plate_modularium",
+	"rod_modularium",
 	
 	//Assorted Ingots
 	"inert_ingot",

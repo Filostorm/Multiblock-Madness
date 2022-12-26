@@ -14,6 +14,7 @@
  
 
 
+
   "input-types": {
     "a": {
       "id": "libvulpes:structuremachine",
@@ -28,11 +29,12 @@
       "meta": 2,
       "item": {
         "id": "advancedrocketry:observatory",
+        "meta": 0,
         "count": 1
       }
     },
     "d": {
-      "id": "advancedrocketry:loader",
+      "id": "minecraft:glass",
       "meta": 0
     },
     "e": {
@@ -40,7 +42,7 @@
       "meta": 0
     },
     "f": {
-      "id": "minecraft:glass",
+      "id": "libvulpes:forgepowerinput",
       "meta": 0
     },
     "g": {
@@ -52,7 +54,7 @@
       }
     },
     "h": {
-      "id": "libvulpes:forgepowerinput",
+      "id": "advancedrocketry:loader",
       "meta": 0
     }
   },
@@ -68,6 +70,13 @@
       [
         "_",
         "a",
+        "d",
+        "a",
+        "_"
+      ],
+      [
+        "_",
+        "a",
         "a",
         "a",
         "_"
@@ -75,7 +84,37 @@
       [
         "_",
         "a",
-        "f",
+        "a",
+        "a",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "a",
+        "a",
+        "a",
+        "_"
+      ],
+      [
+        "_",
+        "a",
+        "d",
         "a",
         "_"
       ],
@@ -119,7 +158,7 @@
       [
         "a",
         "_",
-        "f",
+        "d",
         "_",
         "a"
       ],
@@ -135,7 +174,7 @@
       [
         "_",
         "b",
-        "c:A",
+        "c",
         "b",
         "_"
       ],
@@ -171,9 +210,9 @@
     [
       [
         "_",
-        "d:A",
-        "d:A",
-        "d:A",
+        "b",
+        "b",
+        "b",
         "_"
       ],
       [
@@ -188,7 +227,7 @@
         "e",
         "g",
         "e",
-        "b"
+        "f"
       ],
       [
         "b",
@@ -199,9 +238,9 @@
       ],
       [
         "_",
-        "b",
-        "h:A",
-        "b",
+        "h",
+        "h",
+        "h",
         "_"
       ]
     ]

@@ -9,6 +9,8 @@ import mods.nuclearcraft.AlloyFurnace;
 import mods.nuclearcraft.Separator;
 import mods.nuclearcraft.Centrifuge;
 import mods.nuclearcraft.Electrolyzer;
+import mods.thermalexpansion.Transposer;
+
 print("==================== loading nuclearcraft.zs ====================");
 ##########################################################################################
 
@@ -58,6 +60,8 @@ Infuser.removeRecipeWithOutput(<nuclearcraft:radaway>);
 Infuser.removeRecipeWithOutput(<nuclearcraft:radaway_slow>);
 Infuser.addRecipe(<mekanism:polyethene:2>*2, <liquid:radaway>*250, <nuclearcraft:radaway>);
 Infuser.addRecipe(<mekanism:polyethene:2>*2, <liquid:radaway_slow>*250, <nuclearcraft:radaway_slow>);
+Transposer.addFillRecipe(<nuclearcraft:radaway>, <mekanism:polyethene:2> * 2, <liquid:radaway> * 250, 10000);
+Transposer.addFillRecipe(<nuclearcraft:radaway_slow>, <mekanism:polyethene:2> * 2, <liquid:radaway_slow> * 250, 10000);
 
 //SICSIC
 Infuser.addRecipe(<powersuits:powerarmorcomponent:14>, <liquid:silicon> * 288, <nuclearcraft:part:13>, 1.0, 2.0);

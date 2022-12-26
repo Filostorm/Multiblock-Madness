@@ -2,13 +2,36 @@ import mods.modularmachinery.RecipePrimer;
 import crafttweaker.item.IItemStack;
 import mods.actuallyadditions.Empowerer;
 import mods.extendedcrafting.CombinationCrafting;
+import mods.jei.JEI.addDescription;
 
 print("==================== loading 3d_crafter.zs ====================");
 ##########################################################################################
 
 ##############################################
 ##
-##           Mini Field Crafter
+##           Mini Field Crafter Tooltips and Descriptions
+##
+##############################################
+
+// 3D Crafter Upgrade Tooltips //
+
+<techreborn:machine_casing:1>.addShiftTooltip(format.darkAqua("3D Crafter Modifier: +2% Speed, +6% Power Consumption"), "§7Hold §e§oShift§7 for modifier info§r");
+<techreborn:machine_casing:2>.addShiftTooltip(format.darkAqua("3D Crafter Modifier: +4% Speed, +12.5% Power Consumption"), "§7Hold §e§oShift§7 for modifier info§r");
+<techreborn:fusion_coil>.addShiftTooltip(format.darkAqua("3D Crafter Modifier: +11% Speed, +33.3% Power Consumption"), "§7Hold §e§oShift§7 for modifier info§r");
+
+// 3D Crafter JEI Description //
+
+addDescription(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:minifield-crafter"}), 
+"Upgrade effects multiply with each other!",
+"",
+"Casing Upgrade",
+"Reinforced Machine Casing: +2% Speed, +6% Power Consumption each",
+"Advanced Machine Casing: +4% Speed, +12.5% Power Consumption each",
+"Fusion Coil: +11% Speed, +33.3% Power Consumption each");
+
+##############################################
+##
+##           Mini Field Crafter Recipes
 ##
 ##############################################
 

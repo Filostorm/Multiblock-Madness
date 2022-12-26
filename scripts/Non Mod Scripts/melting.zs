@@ -68,6 +68,7 @@ val ingotstoformmap as ILiquidStack[IItemStack] = {
 	<nuclearcraft:alloy:12>:<liquid:molten_zircaloy>,
 	<tcomplement:edibles:30>:<liquid:chocolate_liquor>,
 	<avaritia:resource:4>:<liquid:neutronium>, //Neutronium
+	<modularmachinery:itemmodularium>:<liquid:molten_modularium>,
 } as ILiquidStack[IItemStack];
 
 for item, liquid in ingotstoformmap {
@@ -413,6 +414,8 @@ val generalmelting as IItemStack[][ILiquidStack] = {
 	<liquid:tin_silver>:[null, <nuclearcraft:alloy:8>, null, <jaopca:block_blocktinsilver>],
 	<liquid:neutronic_matrix>:[null,<contenttweaker:neutronic>,null,null], 	//Stuff for Neutronium
 	<liquid:incoherent_matrix>:[null,<contenttweaker:incoherent>,null,null],//Stuff for Neutronium
+	<liquid:fossil_tar>:[<fossil:tardrop>, <thermalfoundation:material:833>, null, null],
+	<liquid:molten_modularium>:[null, <modularmachinery:itemmodularium>, <contenttweaker:plate_modularium>, null]
 } as IItemStack[][ILiquidStack];
 
 for fluid, material in generalmelting {
@@ -438,6 +441,9 @@ for fluid, material in generalmelting {
 	}
 }
 
+// Modularium Gear
+Crucible.addRecipe(<liquid:molten_modularium> * 576, <contenttweaker:gear_modularium>, 16000);
+Melter.addRecipe(<contenttweaker:gear_modularium>, <liquid:molten_modularium> * 576, 4.0);
 
 // Blood
 Melter.addRecipe(<minecraft:rotten_flesh>, <liquid:blood> * 40, 0.5);

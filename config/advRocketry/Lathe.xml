@@ -315,6 +315,70 @@
 			<itemStack>contenttweaker:rod_mek_alloy;4;0</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>thermalfoundation:material;1;133</itemStack>
+		</input>
+		<output>
+			<itemStack>immersiveposts:metal_rods;4;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>thermalfoundation:material;1;131</itemStack>
+		</input>
+		<output>
+			<itemStack>immersiveposts:metal_rods;4;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>thermalfoundation:material;1;129</itemStack>
+		</input>
+		<output>
+			<itemStack>moreplates:tin_stick;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>enderio:item_alloy_ingot;1;4</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_conductive_iron;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>tconstruct:ingots</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickcobalt;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>embers:ingot_dawnstone</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_dawnstone;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>mysticalagriculture:crafting;1;34</itemStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_stickprudentium;4;0</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="30" power ="5000">
+		<input>
+			<itemStack>modularmachinery:itemmodularium</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:rod_modularium;4;0</itemStack>
+		</output>
+	</Recipe>
 
 
 

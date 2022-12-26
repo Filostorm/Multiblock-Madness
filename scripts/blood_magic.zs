@@ -35,6 +35,7 @@ val itemstoRemove =
 	<bloodmagic:alchemy_table>,
 	<bloodmagic:activation_crystal:1>,
 	<bloodmagic:decorative_brick>,
+	<animus:altardiviner>,
 ]
  as IItemStack[];
 
@@ -161,7 +162,7 @@ AlchemyTable.addRecipe(<minecraft:skull:2>, [<thaumcraft:brain>, <thaumcraft:fle
 
 //Binding Reagent
 TartaricForge.removeRecipe([<minecraft:gunpowder>, <minecraft:redstone>, <minecraft:glowstone_dust>, <minecraft:gold_nugget>]);
-TartaricForge.addRecipe(<bloodmagic:component:8>,[<botania:manaresource:23>, <enderio:item_alloy_ingot:1>, <bloodarsenal:base_item:2>, <fossil:tardrop>], 100,10);
+TartaricForge.addRecipe(<bloodmagic:component:8>,[<botania:manaresource:23>, <enderio:item_alloy_ingot:1>, <bloodarsenal:base_item:2>, <thermalfoundation:material:833>], 100,10);
 
 //Graveyard/glass combo
 TartaricForge.addRecipe(<tconstruct:soil:3>,[<quark:black_ash>, <tombstone:crafting_ingredient:3>, <randomthings:fertilizeddirt>, <bloodmagic:blood_shard>], 150,20);
@@ -289,6 +290,8 @@ AnimusPlugin.removeComponentMapping(<blockstate:chisel:glowstone2:variation=0>,"
 
 AnimusPlugin.addComponentMapping(<blockstate:chisel:energizedvoidstone:variation=6>, "GLOWSTONE");
 
+// Altar Diviner
+recipes.addShapeless(<animus:altardiviner>, [<bloodmagic:sanguine_book>, <bloodmagic:blood_rune>]);
 
 //alchemy_table
 recipes.addShaped(<bloodmagic:alchemy_table>, [
