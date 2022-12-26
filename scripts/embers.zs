@@ -135,6 +135,8 @@ recipes.addShaped(<embers:block_furnace>, [[<embers:brick_caminite>, <embers:pla
 // Alchemy Table
 recipes.addShaped(<embers:alchemy_tablet>, [[null, <embers:plate_dawnstone>, null],[<embers:stairs_caminite_brick>, <moreplates:energetic_silver_plate>, <embers:stairs_caminite_brick>], [<embers:block_caminite_brick>, <embers:ingot_dawnstone>, <embers:block_caminite_brick>]]);
 
+// Inferno Forge
+recipes.addShaped(<embers:inferno_forge>, [[<ore:blockDawnstone>, <ore:plateIron>, <ore:blockDawnstone>],[<ore:ingotDawnstone>, <ore:blockCopper>, <ore:ingotDawnstone>], [<embers:block_caminite_brick>, <embers:superheater>, <embers:block_caminite_brick>]]);
 
 //New Aspectus recipes
 /*
