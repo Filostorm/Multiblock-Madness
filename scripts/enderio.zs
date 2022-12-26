@@ -1,5 +1,7 @@
+#priority 1
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.InductionSmelter;
 import mods.nuclearcraft.AlloyFurnace;
@@ -58,7 +60,11 @@ val itemstoRemove =
 <enderio:item_capacitor_vivid>,
 <enderio:item_capacitor_crystalline>,
 <enderio:item_capacitor_melodic>,
-<enderio:item_capacitor_stellar>
+<enderio:item_capacitor_stellar>,
+<enderio:block_solar_panel>,
+<enderio:block_solar_panel:1>,
+<enderio:block_solar_panel:2>,
+<enderio:block_solar_panel:3>,
 ]
  as IItemStack[];
 
@@ -76,6 +82,12 @@ val itemstoHide =
 for item in itemstoHide {
 	mods.jei.JEI.removeAndHide(item);
 }
+
+global tier1Capacitor as IIngredient = <enderio:item_capacitor_silver> | <enderio:item_basic_capacitor>;
+
+global tier2Capacitor as IIngredient =  <enderio:item_basic_capacitor:1> | <enderio:item_capacitor_energetic_silver>;
+ 
+global tier3Capacitor as IIngredient = <enderio:item_capacitor_vivid> | <enderio:item_basic_capacitor:2>;
 
 // Components //
 
@@ -126,6 +138,15 @@ AlloyFurnace.addRecipe(<minecraft:diamond>, <enderio:item_alloy_ingot:5>, <ender
 
 
 // Machines and Tools //
+
+//Solar
+recipes.addShaped(<enderio:block_solar_panel>, [[<enderio:item_material:69>, <ore:paneGlassColorless>, <enderio:item_material:69>],[<enderio:item_material:38>, <enderio:item_material:38>, <enderio:item_material:38>], [<enderio:item_capacitor_grainy>, <immersiveengineering:wirecoil>, <enderio:item_capacitor_grainy>]]);
+recipes.addShaped(<enderio:block_solar_panel:1>, [[<enderio:item_material:38>, <ore:blockGlassHardened>, <enderio:item_material:38>],[<embers:plate_dawnstone>, <enderio:block_solar_panel>, <embers:plate_dawnstone>], [tier1Capacitor, <enderio:item_material:69>, tier1Capacitor]]);
+recipes.addShaped(<enderio:block_solar_panel:2>, [[<tconstruct:large_plate>.withTag({Material: "pulsating_iron"}), <ore:enlightenedFusedQuartz>, <tconstruct:large_plate>.withTag({Material: "pulsating_iron"})],[<enderio:item_alloy_ingot:1>, <enderio:item_material:3>, <enderio:item_alloy_ingot:1>], [tier1Capacitor, <enderio:block_solar_panel:1>, tier1Capacitor]]);
+recipes.addShaped(<enderio:block_solar_panel:3>, [[<enderio:item_material:35>, <ore:enlightenedFusedQuartz>, <enderio:item_material:35>],[<enderio:item_material:3>, <enderio:item_material:3>, <enderio:item_material:3>], [tier2Capacitor, <enderio:block_solar_panel:2>, tier2Capacitor]]);
+
+//Photovoltaic Dust
+recipes.addShapeless(<enderio:item_material:38> * 2, [<arcanearchives:radiant_dust>,<enderio:item_material:22>,<ore:itemSilicon>,<ore:dustLapis>,<ore:carbonforSteel>]);
 
 //YETA
 recipes.addShaped(<enderio:item_yeta_wrench>, [[<thermalfoundation:material:160>, null, <thermalfoundation:material:160>],[null, <enderio:item_material:10>, null], [null, <thermalfoundation:material:160>, null]]);
@@ -203,6 +224,7 @@ recipes.addShapeless(<enderio:item_ender_food>, [<minecraft:bowl>,<minecraft:mil
 
 //New Gas Conduit recipe
 recipes.addShaped(<enderio:item_gas_conduit:2> * 8, [[<enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>],[<rockhounding_chemistry:gasline_duct>, <mekanism:atomicalloy>, <rockhounding_chemistry:gasline_duct>], [<enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>, <enderio:item_liquid_conduit:2>]]);
+
 
 
 # [Alloy Smelter] from [Industrial Machine Chassis][+5]
@@ -338,7 +360,7 @@ craft.remake(<enderio:block_cap_bank:1>, ["pretty",
   "B * B",
   "□ B □"], {
   "□": <ore:plateElectricalSteel>,        # Electrical Steel Plate
-  "B": <enderio:item_basic_capacitor>,    # Basic Capacitor
+  "B": tier1Capacitor,                    # Tier 1 capacitors
   "*": <actuallyadditions:block_crystal>, # Restonia Crystal Block
 });
 
@@ -350,7 +372,7 @@ craft.remake(<enderio:block_cap_bank:2>, ["pretty",
   "□": <ore:plateEnergeticAlloy>,              # Energetic Alloy Plate
   "A": <rockhounding_chemistry:misc_items:10>, # Advanced Logic Chip
   "B": <enderio:block_cap_bank:1>,             # Basic Capacitor Bank
-  "D": <enderio:item_basic_capacitor:1>,       # Double-Layer Capacitor
+  "D": tier2Capacitor,                         # Tier 2 capacitors
 });
 
 # [Vibrant Capacitor Bank] from [Vibrant Crystal][+3]
@@ -359,7 +381,7 @@ craft.remake(<enderio:block_cap_bank:3>, ["pretty",
   "C * C",
   "□ O □"], {
   "□": <ore:plateVibrantAlloy>,          # Vibrant Alloy Plate
-  "O": <enderio:item_basic_capacitor:2>, # Octadic Capacitor
+  "O": tier3Capacitor,                   # Tier 3 Capacitors
   "C": <enderio:block_cap_bank:2>,       # Capacitor Bank
   "*": <ore:itemVibrantCrystal>,         # Vibrant Crystal
 });

@@ -42,6 +42,16 @@ val remove =
 <botania:thirdeye>,
 <botania:alchemycatalyst>,
 <botania:vial>,
+<botania:gravityrod>,
+<botania:missilerod>,
+<botania:lightlauncher>,
+<botania:lightrelay>,
+<botania:manaresource:13>,
+<botania:slimebottle>,
+<botania:supercloudpendant>,
+<botania:forestdrum:1>,
+<botania:platform:1>,
+<botania:astrolabe>,
 ]
  as IItemStack[];
 
@@ -365,6 +375,40 @@ recipes.addShaped(<botania:managun>, [[<botania:spreader:1>, <embers:diffraction
 
 //Enchanted Soil
 recipes.addShapeless(<botania:enchantedsoil>, [<minecraft:grass>,<botania:overgrowthseed>]);
+
+//Rod of the Unstable Reservoir
+recipes.addShaped(<botania:missilerod>, [[<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "spiritus"}]}).onlyWithTag({Aspects: [{amount: 10, key: "spiritus"}]}), <botania:rune:13>, <botania:thirdeye>],[null, <botania:manaresource:13>, <botania:rune:13>], [<botania:manaresource:13>, null, <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "spiritus"}]}).onlyWithTag({Aspects: [{amount: 10, key: "spiritus"}]})]]);
+
+//Rod of the Shaded Mesa
+recipes.addShaped(<botania:gravityrod>, [[null, <botania:manaresource:13>, <botania:manaresource:2>],[null, <cyclicmagic:ender_pearl_reuse>, <botania:manaresource:13>], [<botania:manaresource:13>, null, null]]);
+
+//Dreamwood Twig
+recipes.addShaped(<botania:manaresource:13>, [[<botania:dreamwood:1>],[<botania:dreamwood:1>]]);
+
+//Luminizer
+recipes.addShapeless(<botania:lightrelay>, [<botania:manaresource:12>,<botania:manaresource:2>,<minecraft:glowstone_dust>,<minecraft:glowstone_dust>]);
+
+//Dreamwood Planks
+recipes.addShaped(<botania:dreamwood:1> * 8, [[<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>],[<botania:livingwood:1>, <twilightforest:transformation_powder>, <botania:livingwood:1>], [<botania:livingwood:1>, <botania:livingwood:1>, <botania:livingwood:1>]]);
+
+//Luminizer Launcher
+recipes.addShaped(<botania:lightlauncher>, [[null, null, null],[<botania:dreamwood:1>, <botania:dreamwood:1>, <botania:dreamwood:1>], [<botania:dreamwood:1>, <botania:lightrelay>, <botania:dreamwood:1>]]);
+
+//Nimbus Amulet
+recipes.addShaped(<botania:supercloudpendant>, [[<minecraft:ghast_tear>, <twilightforest:raven_feather>, <minecraft:ghast_tear>],[<mysticalagriculture:crafting:24>, <botania:cloudpendant>, <mysticalagriculture:crafting:24>], [<minecraft:wool>, <tconstruct:slime_boots>, <minecraft:wool>]]);
+
+//Drum of the Gathering
+recipes.addShaped(<botania:forestdrum:1>, [[<botania:livingwood>, <ore:itemLeather>, <botania:livingwood>],[<botania:livingwood>, <thaumcraft:seal:7>, <botania:livingwood>], [<botania:livingwood>, <ore:itemLeather>, <botania:livingwood>]]);
+
+//Spectral Platform
+recipes.addShaped(<botania:platform:1> * 2, [[null, null, null],[<botania:dreamwood:3>, <botania:dreamwood:4>, <botania:dreamwood:3>], [<botania:dreamwood:1>, <randomthings:ingredient:2>, <botania:dreamwood:1>]]);
+
+//Worldshaper's Astrolabe
+recipes.addShaped(<botania:astrolabe>, [[<arcanearchives:orderstone>, <contenttweaker:material_part:20>, null],[<contenttweaker:material_part:20>, <botania:sextant>, <contenttweaker:material_part:20>], [null, <contenttweaker:material_part:20>, <botania:manaresource:13>]]);
+
+//Slime in a bottle
+recipes.addShaped(<botania:slimebottle>, [[<tconstruct:ingots:3>, <astralsorcery:itemskyresonator>, <tconstruct:ingots:3>],[<tconstruct:ingots:3>, <ore:slimeball>, <tconstruct:ingots:3>], [null, <tconstruct:ingots:3>, null]]);
+
 
 # [Master Corporea Spark] from [Corporea Spark][+4]
 craft.remake(<botania:corporeaspark:1>, ["pretty",
