@@ -9,7 +9,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§rWhen a tool loses all of its durabilty it is unusable until you repair it in the Tool Station with the same material as the tool head, or craft it together with a matching sharping kit.\n\nIf you place your Pattern Chest next to your Stencil Table and Part Builder, it will add its functinalty to both.\n\n",
+          "desc:8": "§rWhen a tool loses all of its durability, it is unusable until you repair it in the Tool Station with the same material as the tool head, or craft it together with a matching sharping kit.\n\nIf you place your Pattern Chest next to your Stencil Table and Part Builder, it will add its functionality to both.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1646,7 +1646,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "How to use:\n\nPlace any block, then place the projector on top, facing the direction you want the field to be. Right click the projector to see the placement guide for the projector across from it. Right click either projector to see where to place the two side projectors. Be sure that each projector is facing in, and that the ground is flat.\n\nIf assembeled correctly, an §e§6orange holographic cube§r will form in the center. This is where you will construct the recipes.\n\nFor every arrow beyond the first, you will need each projector to be one block higher.",
+          "desc:8": "Here is where the pack really starts!\n\nHow to use:\n\nPlace any block, then place the projector on top, facing the direction you want the field to be. Right click the projector to see the placement guide for the projector across from it. Right click either projector to see where to place the two side projectors. Be sure that each projector is facing in, and that the ground is flat.\n\nIf assembled correctly, an §e§6orange holographic cube§r will form in the center. This is where you will construct the recipes.\n\nFor every arrow beyond the first, you will need each projector to be one block higher.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -3555,7 +3555,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Right click with the Chisel to open the block chisel menu, then put something that can be chiseled, for example cobblestone. Then you click a variant to chisel all the cobble in the upper left slot into the one you picked. You can also leave a chiseled block in the slot, which will enable you to chisel inworld blocks of the same type with left click.",
+          "desc:8": "Right click with the Chisel to open the block chisel menu, then put something that can be chiseled, for example cobblestone. Then, click a variant to chisel all the cobble in the upper left slot into the one you picked. You can also leave a chiseled block in the slot, which will enable you to chisel inworld blocks of the same type with left click.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24399,7 +24399,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Resonating Wand is used to start Starlight crafting by using it on the table after the icon of the craft shows up.\n\nThe Morphing Tool is used similar to the Akashic Tome, but it will automagicly switch to the correct tool.",
+          "desc:8": "The Resonating Wand is used to start Starlight crafting by using it on the table after the icon of the craft shows up.\n\nThe Morphing Tool is used similarly to the Akashic Tome, but it will automagically switch to the correct tool.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26034,7 +26034,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some Size for Cutting. §cDon\u0027t let it get two small!§r\n\nDropping a Rock Crystal into placed §bLiquid Starlight§r, it will absorb it over time to increase its Size.\n\nOnce it reaches the max Size, it will split into two, which have the chance to be higher Purity.",
+          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some Size for Cutting. §cDon\u0027t let it get two small!§r\n\nDropping a Rock Crystal into placed §bLiquid Starlight§r will cause it to absorb it over time, increasing its Size.\n\nOnce it reaches max Size, it will split into two, one of which has the chance of being higher Purity.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31736,7 +31736,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:master_infusion_crystal"
           },
-          "ismain:1": 1,
+          "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
           "name:8": "Master Infusion Crystal",
@@ -31747,7 +31747,7 @@
           "snd_complete:8": "minecraft:entity.player.levelup",
           "snd_update:8": "minecraft:entity.player.levelup",
           "tasklogic:8": "AND",
-          "visibility:8": "ALWAYS"
+          "visibility:8": "NORMAL"
         }
       },
       "questID:3": 366,
@@ -34892,7 +34892,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Here is where the pack really starts!\n\nThese will grow crystals over time. \n\n§b§cOnly 3 Resonators will be active per player.\n\n§bMaybe look into an Auto Breaker?",
+          "desc:8": "These will grow crystals over time. \n\n§b§cOnly 3 Resonators will be active per player.\n\n§bMaybe look into an Auto Breaker?",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -35245,7 +35245,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Can also be created by shift-right clicking on a chest. \n\nHolds up to 256 items in a single slot, and is connected to your magical storage network.",
+          "desc:8": "Can also be created by shift-right clicking raw radiant quartz on a chest. \n\nHolds up to 256 items in a single slot, and is connected to your magical storage network.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -35309,7 +35309,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Can also be created by shift-right clicking on a crafting table. \n\nCan save the last recipe crafted by clicking one of the slots to the right.",
+          "desc:8": "Can also be created by shift-right clicking raw radiant quartz on a crafting table. \n\nCan save the last recipe crafted by clicking one of the slots to the right.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37130,7 +37130,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.\n\n",
+          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.\n\nHover over a Master Ritual stone to see an outline of the ritual and hold down right click to place the ritual.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37216,7 +37216,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.",
+          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.\n\nShift right click the Ritual Tinkerer to cycle through different modes that allow you to adjust various aspects of BM rituals.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37260,6 +37260,15 @@
               },
               "OreDict:8": "",
               "id:8": "bloodmagic:ritual_diviner"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "bloodmagic:ritual_reader"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -40091,7 +40100,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The first way to use §dDeep Mob Learning§r will be to fight in Trials, which are unlocked when you get access to basic alloys. \n\nWhen killing one of the mobs listed on the Trail Key, while there is a matching §bData Model§r inside a §bLearner§r, the §bKey §rwill become attuned at whatever level the §bData Model§r is.\n\nKill mobs of the model types inside your §bDeep Learner §rto level them up.",
+          "desc:8": "The first way to use §dDeep Mob Learning§r will be to fight in Trials, which are unlocked when you get access to basic alloys. \n\nWhen killing one of the mobs listed on the Trial Key, while there is a matching §bData Model§r inside a §bLearner§r, the §bKey §rwill become attuned at whatever level the §bData Model§r is.\n\nKill mobs of the model types inside your §bDeep Learner §rto level them up.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -44686,7 +44695,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Mining levels and example materials:\n§dYou can explore to get access to up to §rReinforced§d level, or progress through the chapters for the rest!\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron, Copper, Tin)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)\n\n§rOre spawns in veins of several types of metal or gems. Ore generation information can be found in JEI by viewing the uses of the Ore Generation Book in JEI.\n\n§rHold the Divining Rod in your off hand while you are mining to have the ore of that type to light up.",
+          "desc:8": "§nMining levels and example materials§r\n\n§80 - Primitive (Wood)\n§71 - Basic (Stone)\n§f2 - Standard (Iron, Copper, Tin)\n§63 - Hardened (Bronze, Invar)\n§f4 - Reinforced (Steel, Manasteel, Thaumium)\n§b5 - Enhanced (Platinum, Osmium, Titanium)§r\n\n§dYou can explore to get access to up to §rReinforced§d level, or progress through the chapters for the rest!\n\n§rOre spawns in veins of several types of metal or gems. Ore generation information can be found in JEI by viewing the uses of the Ore Generation Book in JEI.\n\n§rHold the Divining Rod in your off hand while you are mining to have the ore of that type to light up.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -58954,7 +58963,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The incense altar allows you to drain 90% of your current health with the sacrificial dagger, and applies bonus LP depending on the tranquility bonus given by the Incense Altar. It also applies Soul Fray, preventing you from using the sacrificial dagger for a certain amount of time.\n\nTranquility Guide by §bDiamondSentinel§r:\n\nFirst, you need to build an incense altar. Nothing works without it. The incense altar goes on a 3x3 square of other stuff. What it is doesn\u0027t matter. \n\nFrom here on, in each cardinal direction, add another few rows of a type of path. The paths used cap the tranquility bonus:\n\n- Wooden (3 rows past altar) caps at 60%, \n- Stone (2 rows past wooden) caps at 120%\n- Worn stone (2 rows past stone) caps at 200%\n- Obsidian (2 rows past worn stone) caps at 300%\n\nThere are 7 categories of \"tranquility\" that you can gain. These blocks go on the same y coordinate as the paths, and up to 2 levels higher (so 3+ block tall trees don\u0027t help). Mix and match categories as much as you can, but don\u0027t bother with anything other than the best of each category. \n\n  §a §e- Crop - Potatoes, Carrots, Wheat, and Wart all give the same bonus. Pick your favorite.\n   §7- Earthen - Farmland\u0027s your best. Fortunate. \n   §c- Fire - Actual fire works best here. Light it on Netherack. (also gives a bonus)\n   §6- Lava - Self explanatory.\n   §2§a- Plants - Leaves. Keep away from fire and lava layers. \n   §2- Tree - Logs. See above. \n   §1§9- Water - Life Essence is your friend here.\n\n§rUse your sigil of divination to figure out what your bonus is. The bottom number is the % increase, the top is your raw score.",
+          "desc:8": "The incense altar allows you to drain 90% of your current health with the sacrificial dagger, and applies bonus LP based on the tranquility bonus given by the Incense Altar. When this bonus is available, the sacrifical dagger gains a gold outline and shimmers. It also applies Soul Fray, preventing you from using the sacrificial dagger for a certain amount of time.\n\nTranquility Guide by §bDiamondSentinel§r:\n\nFirst, you need to build an incense altar. Nothing works without it. The incense altar goes on a 3x3 square of other stuff. What it is doesn\u0027t matter. \n\nFrom here on, in each cardinal direction, add another few rows of a type of path. The paths used cap the tranquility bonus:\n\n- Wooden (3 rows past altar) caps at 60%, \n- Stone (2 rows past wooden) caps at 120%\n- Worn stone (2 rows past stone) caps at 200%\n- Obsidian (2 rows past worn stone) caps at 300%\n\nThere are 7 categories of \"tranquility\" that you can gain. These blocks go on the same y coordinate as the paths, and up to 2 levels higher (so 3+ block tall trees don\u0027t help). Mix and match categories as much as you can, but don\u0027t bother with anything other than the best of each category. \n\n  §a §e- Crop - Potatoes, Carrots, Wheat, and Wart all give the same bonus. Pick your favorite.\n   §7- Earthen - Farmland\u0027s your best. Fortunate. \n   §c- Fire - Actual fire works best here. Light it on Netherack. (also gives a bonus)\n   §6- Lava - Self explanatory.\n   §2§a- Plants - Leaves. Keep away from fire and lava layers. \n   §2- Tree - Logs. See above. \n   §1§9- Water - Life Essence is your friend here.\n\n§rUse your sigil of divination to figure out what your bonus is. The bottom number is the tranquility bonus, the top is your raw tranquility score.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63659,6 +63668,335 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "826:10": {
+      "preRequisites:11": [
+        380
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The Altare Aenigmatica can be used to automate charging a blood orb and crafting items on a single Blood Altar!\n\nPlace the block facing the Blood Altar. The green dot must be facing the Blood Altar. Then, right click the block with a blood orb. Next, place the blood orb in the orb slot. Now, insert items you want to place in the Blood Altar in the 9 slots on the left.\n\nThe block will automatically switch between charging the blood orb and placing items placed in the 9 slots in the Blood Altar. Note that you still need to extract the finished products yourself!\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "bloodarsenal:altare_aenigmatica"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Further Blood Altar Automation",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 826,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodarsenal:stasis_plate"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodarsenal:blood_capacitor"
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodarsenal:altare_aenigmatica"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "827:10": {
+      "preRequisites:11": [
+        351
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §bDemon Crucible§r extracts will from tartaric gems or will crystals and inserts it into the chunk\u0027s atmosphere. \n\nAtmospheric will can be used by rituals in the same chunk for §6bonus effects or enhancements§r. §bHellfire Forges§r containing tartaric gems of the same will type will automatically absorb atmospheric will from the same chunk.\n\nThe §bDemon Crystalliser§r draws will from the chunk\u0027s atmosphere and slowly forms §bwill crystal clusters§r. The first crystal takes substantially more time and will to form than subsequent crystals in a cluster. \n\nRight click a crystal cluster while holding a §btartaric gem§r with §9more than 1000 will§r to harvest all will crystals except the first one.\n\nThe §bDemon Will Aura Gauge§r allows you to view the quantity of all five types of will in the current chunk\u0027s atmosphere.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "bloodmagic:demon_crystallizer"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Will Crystals",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 827,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystal"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystal"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystal"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystal"
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crucible"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_crystallizer"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "bloodmagic:demon_will_gauge"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "828:10": {
+      "preRequisites:11": [
+        827
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§nResonance of the Faceted Crystal§r\n\nThis ritual can be used to obtain your first §dcoloured will crystals§r. Assemble the ritual with the §britual diviner§r and place a demon crystalliser on top. Fill the chunk with raw will using a demon crucible to grow a will crystal cluster on the demon crystalliser.\n\nWhen active, the ritual will §6transform§r raw will crystals in the crystalliser cluster into the four coloured will crystals.\n\n§nGathering of the Forsaken Souls§r\n\nNow that you have all five types of will, you can use this ritual for §6much faster will farming§r. Assemble the ritual and place crystal clusters of all 5 types on top. It\u0027s also recommended to construct a §bCrack of the Fractured Crystal§r ritual beneath the above ritual to harvest will crystals without breaking the crystal clusters. You\u0027ll need a §5vacuum chest§r to pick up the harvested crystals.\n\nNext, build a mob farm with §6multiple types of mobs§r (can be either hostile or passive) beneath the rituals. The §bForsaken Souls§r ritual kills mobs within its range to speed up crystal cluster growth and reduce will cost of crystals. More mob types§6 increases the efficiency§r, allowing a net positive on will.\n\nFinally, pipe some harvested crystals into demon crystallisers to fill the chunk with all five types of will. If done correctly, the setup will yield a §6surplus§r of all five types of will crystals.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "bloodmagic:item_demon_crystal"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Automating Will",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 828,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 4,
+              "Damage:2": 2,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "bloodmagic:soul_gem",
+              "tag:10": {}
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            },
+            "4:10": {
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "bloodmagic:item_demon_crystal"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "829:10": {
+      "preRequisites:11": [
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Whoppers or Hoppers can auto-insert items into the melter and auto-extract items from casting tables or basins. \n\nThe redstone clock can auto-activate seared faucets for automatic casting of ingots or blocks.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "tconstruct:wooden_hopper"
+          },
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Melter Automation",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 829,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "tconstruct:cast_custom"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "tconstruct:wooden_hopper"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "cyclicmagic:clock"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -63858,6 +64196,13 @@
           "sizeY:3": 36,
           "x:3": -390,
           "y:3": 42
+        },
+        "25:10": {
+          "id:3": 829,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -180,
+          "y:3": -24
         }
       }
     },
@@ -68800,6 +69145,20 @@
           "sizeY:3": 24,
           "x:3": 66,
           "y:3": 0
+        },
+        "45:10": {
+          "id:3": 827,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -140,
+          "y:3": 140
+        },
+        "46:10": {
+          "id:3": 828,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -108,
+          "y:3": 156
         }
       }
     },
@@ -69297,6 +69656,13 @@
           "sizeY:3": 24,
           "x:3": -276,
           "y:3": -120
+        },
+        "68:10": {
+          "id:3": 826,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 132,
+          "y:3": -246
         }
       }
     },

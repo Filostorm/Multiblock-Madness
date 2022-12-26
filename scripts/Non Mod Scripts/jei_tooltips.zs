@@ -403,6 +403,10 @@ the heat bar will be reset and the gear will gain a level, granting an additiona
 <embers:ember_injector>.addTooltip("§fGenerates metal with Embers Crystal Seeds");
 <embers:ember_injector>.addTooltip("§fPlace next to crystal seed and supply with Ember");
 
+<embers:alchemy_pedestal>.addTooltip(format.gold("Used in Embers Alchemy setup"));
+<embers:alchemy_tablet>.addTooltip(format.gold("Used in Embers Alchemy setup"));
+<embers:beam_cannon>.addTooltip(format.gold("Used in Embers Alchemy setup"));
+
 <embers:axe_clockwork>.addTooltip(format.white("Uses Ember instead of Durability"));
 <embers:pickaxe_clockwork>.addTooltip(format.white("Uses Ember instead of Durability"));
 <embers:grandhammer>.addTooltip(format.white("Uses Ember instead of Durability"));
@@ -871,17 +875,20 @@ addDescription(<liquid:aetherworks.impure_aetherium_gas>, "Obtained from the Aet
 
 // Other Items //
 
-<bloodarsenal:self_sacrifice_amulet>.addTooltip(format.white("Collects LP when taking damage"));
-<bloodarsenal:sacrifice_amulet>.addTooltip(format.white("Collects LP when dealing damage to mobs"));
-<bloodarsenal:vampire_ring>.addTooltip(format.white("Collects LP from nearby bleeding mobs"));
+<bloodarsenal:self_sacrifice_amulet>.addTooltip(format.darkRed("Collects LP when taking damage"));
+<bloodarsenal:sacrifice_amulet>.addTooltip(format.darkRed("Collects LP when dealing damage to mobs"));
+<bloodarsenal:vampire_ring>.addTooltip(format.darkRed("Collects LP from nearby bleeding mobs"));
 
 // TODO add stats
 
 <bloodmagic:sacrificial_dagger>.addTooltip(format.white("Deals self-damage which is converted into LP at a nearby Blood Altar"));
+<bloodmagic:sacrificial_dagger>.addTooltip(format.white("200LP per self-damage dealt"));
 <bloodmagic:dagger_of_sacrifice>.addTooltip(format.white("Instantly kills mobs when near a Blood Altar"));
 <bloodmagic:dagger_of_sacrifice>.addTooltip(format.white("Adds LP per mob kill"));
 <bloodarsenal:glass_sacrificial_dagger>.addTooltip(format.white("Gives more LP than the Sacrificial Dagger"));
 <bloodarsenal:glass_dagger_of_sacrifice>.addTooltip(format.white("Gives more LP than the Dagger of Sacrifice"));
+<bloodmagic:sentient_sword>.addTooltip(format.aqua("Causes mobs to drop Demonic Will when slain"));
+<bloodmagic:bound_sword>.addTooltip(format.red("Causes mobs to drop Blood Shards when slain"));
 
 val bloodToolList = [
   <bloodarsenal:blood_infused_iron_axe>,
