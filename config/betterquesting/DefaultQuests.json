@@ -1,5 +1,5 @@
 {
-  "build:8": "4.0.5",
+  "build:8": "4.1.0",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -17,6 +17,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:tooltables"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -201,6 +202,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -455,6 +457,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -835,6 +838,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1150,6 +1154,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:torchberries"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1232,6 +1237,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:sand"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -1326,6 +1332,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_decoration0"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1402,6 +1409,7 @@
             "OreDict:8": "",
             "id:8": "embers:tinker_lens"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1487,6 +1495,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_item_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1572,6 +1581,7 @@
             "OreDict:8": "",
             "id:8": "embers:ember_bore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1654,6 +1664,7 @@
             "OreDict:8": "",
             "id:8": "compactmachines3:fieldprojector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1718,6 +1729,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_soul_binder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1784,6 +1796,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1858,6 +1871,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockcustomore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -1955,6 +1969,7 @@
             "OreDict:8": "",
             "id:8": "tcomplement:melter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2060,6 +2075,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:materials"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2127,6 +2143,7 @@
               "Material:8": "iron"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -2202,6 +2219,7 @@
             "OreDict:8": "",
             "id:8": "thaumicaugmentation:starfield_glass"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2377,6 +2395,7 @@
             "OreDict:8": "",
             "id:8": "embers:mech_core"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2447,6 +2466,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2496,6 +2516,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:compressor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2547,6 +2568,7 @@
             "OreDict:8": "",
             "id:8": "embers:item_pipe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2623,6 +2645,7 @@
             "OreDict:8": "",
             "id:8": "embers:ember_activator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2718,6 +2741,7 @@
             "OreDict:8": "",
             "id:8": "embers:block_furnace"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2785,6 +2809,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:misc_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2848,6 +2873,7 @@
             "OreDict:8": "",
             "id:8": "embers:pipe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -2918,6 +2944,7 @@
             "OreDict:8": "",
             "id:8": "embers:stamper"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3000,6 +3027,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3140,6 +3168,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:log"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3217,6 +3246,7 @@
             "OreDict:8": "",
             "id:8": "akashictome:tome"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3509,6 +3539,7 @@
               "orig_meta:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3566,6 +3597,7 @@
             "OreDict:8": "",
             "id:8": "chisel:chisel_iron"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3661,6 +3693,7 @@
             "OreDict:8": "",
             "id:8": "betterquesting:quest_book"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3742,6 +3775,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_device0"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3806,6 +3840,7 @@
             "OreDict:8": "",
             "id:8": "cyclicmagic:builder_pattern"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3864,6 +3899,7 @@
             "OreDict:8": "",
             "id:8": "embers:item_transfer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -3931,6 +3967,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:misc_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4001,6 +4038,7 @@
             "OreDict:8": "",
             "id:8": "improvedbackpacks:backpack"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4089,6 +4127,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:condenser"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4171,6 +4210,7 @@
             "OreDict:8": "",
             "id:8": "waystones:return_scroll"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4235,6 +4275,7 @@
             "OreDict:8": "",
             "id:8": "embers:large_tank"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4378,6 +4419,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4435,6 +4477,7 @@
             "OreDict:8": "",
             "id:8": "embers:geo_separator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4506,6 +4549,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:basicblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4602,6 +4646,7 @@
             "OreDict:8": "",
             "id:8": "embers:boiler"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4666,6 +4711,7 @@
             "OreDict:8": "",
             "id:8": "embers:mechanical_pump"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4736,6 +4782,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_experience_obelisk"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4812,6 +4859,7 @@
             "OreDict:8": "",
             "id:8": "randomthings:spectresword"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4917,6 +4965,7 @@
             "OreDict:8": "",
             "id:8": "ebwizardry:magic_crystal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -4981,6 +5030,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:iron_ore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5072,6 +5122,7 @@
               "type:8": "arcanerose"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5139,6 +5190,7 @@
             "OreDict:8": "",
             "id:8": "embers:steam_engine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5228,6 +5280,7 @@
             "OreDict:8": "",
             "id:8": "mysticalmechanics:axle_iron"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5307,6 +5360,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:stone_decoration"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5371,6 +5425,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_painter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5442,6 +5497,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:matter_fabricator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5512,6 +5568,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:ingot_thermal_alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5576,6 +5633,7 @@
             "OreDict:8": "",
             "id:8": "embers:ingot_dawnstone"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5642,6 +5700,7 @@
             "OreDict:8": "",
             "id:8": "tcomplement:high_oven_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -5730,6 +5789,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5818,6 +5878,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:fusion_control_computer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5875,6 +5936,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:stone_decoration"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -5952,6 +6014,7 @@
             "OreDict:8": "",
             "id:8": "botania:alchemycatalyst"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6028,6 +6091,7 @@
               "tier:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6099,6 +6163,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:purpleprint"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6150,6 +6215,7 @@
             "OreDict:8": "",
             "id:8": "embers:stone_edge"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6218,6 +6284,7 @@
             "OreDict:8": "",
             "id:8": "thaumicaugmentation:research_notes"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6315,6 +6382,7 @@
             "OreDict:8": "",
             "id:8": "beneath:teleporterbeneath"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6377,6 +6445,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ingot_alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6441,6 +6510,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockcustomsandore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6511,6 +6581,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:basicblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6585,6 +6656,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:iron_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6652,6 +6724,7 @@
               "type:8": "puredaisy"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6743,6 +6816,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:tool"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -6818,6 +6892,7 @@
             "OreDict:8": "",
             "id:8": "tcomplement:high_oven_io"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6887,6 +6962,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -6965,6 +7041,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7070,6 +7147,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7146,6 +7224,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7268,6 +7347,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7400,6 +7480,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:chest"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7472,6 +7553,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:obsidian"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -7523,6 +7605,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:platepress"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7591,6 +7674,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:inert_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7659,6 +7743,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7751,6 +7836,7 @@
             "OreDict:8": "",
             "id:8": "botania:altar"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7815,6 +7901,7 @@
             "OreDict:8": "",
             "id:8": "botania:doubleflower1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7886,6 +7973,7 @@
             "OreDict:8": "",
             "id:8": "botania:livingrock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -7948,6 +8036,7 @@
             "OreDict:8": "",
             "id:8": "botania:pool"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8010,6 +8099,7 @@
             "OreDict:8": "",
             "id:8": "botania:livingwood"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8072,6 +8162,7 @@
             "OreDict:8": "",
             "id:8": "botania:spreader"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8141,6 +8232,7 @@
               "type:8": "hydroangeas"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8212,6 +8304,7 @@
               "type:8": "endoflame"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8285,6 +8378,7 @@
               "type:8": "thermalily"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8366,6 +8460,7 @@
               "color2:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8475,6 +8570,7 @@
             "OreDict:8": "",
             "id:8": "ebwizardry:magic_wand"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8542,6 +8638,7 @@
             "OreDict:8": "",
             "id:8": "ebwizardry:arcane_workbench"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8606,6 +8703,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:salis_mundus"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8679,6 +8777,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:thaumometer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -8762,6 +8861,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -8960,6 +9060,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:arcane_workbench"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9024,6 +9125,7 @@
             "OreDict:8": "",
             "id:8": "ebwizardry:spell_book"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9090,6 +9192,7 @@
             "OreDict:8": "",
             "id:8": "modulardiversity:blockmystmechinput"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9239,6 +9342,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9341,6 +9445,7 @@
               "orig_meta:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9418,6 +9523,7 @@
               "orig_tag:10": {}
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9492,6 +9598,7 @@
             "OreDict:8": "",
             "id:8": "modularmachinery:blockcontroller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9662,6 +9769,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:stone_arcane"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9735,6 +9843,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:ingot_mek_alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9799,6 +9908,7 @@
             "OreDict:8": "",
             "id:8": "advgenerators:turbine_manyullyn"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9854,6 +9964,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:sky_compass"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -9918,6 +10029,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:inscriber"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10006,6 +10118,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10082,6 +10195,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:component_mek_alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -10146,6 +10260,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:charger"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10214,6 +10329,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -10311,6 +10427,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10391,6 +10508,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:quartz_growth_accelerator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10442,6 +10560,7 @@
             "OreDict:8": "",
             "id:8": "ae2stuff:grower"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -10524,6 +10643,7 @@
             "id:8": "appliedenergistics2:storage_cell_1k",
             "tag:10": {}
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10600,6 +10720,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:energy_acceptor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -10649,6 +10770,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:tinker_tank_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -10731,6 +10853,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:drive"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -10799,6 +10922,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10897,6 +11021,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:crafting_storage_1k"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -10967,6 +11092,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11029,6 +11155,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11080,6 +11207,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11129,6 +11257,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:vibration_chamber"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11180,6 +11309,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11256,6 +11386,7 @@
             "OreDict:8": "",
             "id:8": "ae2stuff:inscriber"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11307,6 +11438,7 @@
             "OreDict:8": "",
             "id:8": "botania_tweaks:compressed_tiny_potato_8"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11358,6 +11490,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:interface"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -11429,6 +11562,7 @@
             "OreDict:8": "",
             "id:8": "chisel:futura"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11500,6 +11634,7 @@
               "internalCurrentPower:6": 1600000.0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11649,6 +11784,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11713,6 +11849,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:crafting_accelerator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11770,6 +11907,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11840,6 +11978,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11908,6 +12047,7 @@
             "id:8": "appliedenergistics2:biometric_card",
             "tag:10": {}
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -11963,6 +12103,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -12024,6 +12165,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -12091,6 +12233,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:network_tool"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -12154,6 +12297,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:crucible"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12276,6 +12420,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:nitor_yellow"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -12340,6 +12485,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:alumentum"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -12411,6 +12557,7 @@
               "FluidName:8": "salt_brine"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -12469,6 +12616,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12536,6 +12684,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:fiery_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -12589,6 +12738,7 @@
             "id:8": "naturescompass:naturescompass",
             "tag:10": {}
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -12666,6 +12816,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:basicblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -12717,6 +12868,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:altar"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12800,6 +12952,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_giant_chest_medium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12882,6 +13035,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:blood_rune"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -12946,6 +13100,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:infusion_matrix"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -13063,6 +13218,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13153,6 +13309,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13256,6 +13413,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13324,6 +13482,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13424,6 +13583,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13539,6 +13699,7 @@
               "FluidName:8": "sulfuric_acid"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13601,6 +13762,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13670,6 +13832,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13759,6 +13922,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13929,6 +14093,7 @@
               "FluidName:8": "sodium_hydroxide"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -13994,6 +14159,7 @@
               "FluidName:8": "hydrochloric_acid"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14059,6 +14225,7 @@
               "FluidName:8": "hydrofluoric_acid"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14120,6 +14287,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:pt_catalyst"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14187,6 +14355,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:chemical_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14258,6 +14427,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14376,6 +14546,7 @@
               "FluidName:8": "liquid_ammonia"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14445,6 +14616,7 @@
               "FluidName:8": "nitric_acid"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14511,6 +14683,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14591,6 +14764,7 @@
               "FluidName:8": "toxic_waste"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14653,6 +14827,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14741,6 +14916,7 @@
               "FluidName:8": "flue_gas"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14813,6 +14989,7 @@
               "FluidName:8": "sodium_cyanide"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14891,6 +15068,7 @@
             "OreDict:8": "",
             "id:8": "botania:cosmetic"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -14947,6 +15125,7 @@
               "FluidName:8": "water_vapour"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -15009,6 +15188,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -15134,6 +15314,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -15269,6 +15450,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -15496,6 +15678,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -15633,6 +15816,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:misc_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -15692,6 +15876,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -15794,6 +15979,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -15878,6 +16064,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:misc_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -15944,6 +16131,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:os_catalyst"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16014,6 +16202,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:wg_catalyst"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16085,6 +16274,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16183,6 +16373,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:va_catalyst"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16253,6 +16444,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_core:heat_inductor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16323,6 +16515,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:mineral_ores"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16365,6 +16558,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:filter_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16432,6 +16626,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:sulfide_shards"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16500,6 +16695,7 @@
             "OreDict:8": "",
             "id:8": "immersivepetroleum:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16613,6 +16809,7 @@
             "id:8": "techreborn:industrial_blast_furnace",
             "tag:10": {}
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16687,6 +16884,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16751,6 +16949,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16816,6 +17015,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16881,6 +17081,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -16932,6 +17133,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -16999,6 +17201,7 @@
               "Material:8": "steel"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -17073,6 +17276,7 @@
             "OreDict:8": "",
             "id:8": "cyclicmagic:glowing_chorus"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -17151,6 +17355,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -17218,6 +17423,7 @@
             "OreDict:8": "",
             "id:8": "ebwizardry:wizard_hat"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -17333,6 +17539,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -17442,6 +17649,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:miniature_structure"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17530,6 +17738,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:trial_keystone"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -17606,6 +17815,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:nether_brick"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -17669,6 +17879,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -17734,6 +17945,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -17821,6 +18033,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -17954,6 +18167,7 @@
               "Material:8": "bronze"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18049,6 +18263,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_atomic_reconstructor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18116,6 +18331,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:speed_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18173,6 +18389,7 @@
               "material:8": "oak"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18240,6 +18457,7 @@
             "OreDict:8": "",
             "id:8": "storagedrawers:controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18304,6 +18522,7 @@
             "OreDict:8": "",
             "id:8": "storagedrawers:compdrawers"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18368,6 +18587,7 @@
             "OreDict:8": "",
             "id:8": "storagedrawers:framingtable"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18447,6 +18667,7 @@
             "OreDict:8": "",
             "id:8": "storagedrawers:upgrade_storage"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18521,6 +18742,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18588,6 +18810,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:speed_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18645,6 +18868,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:speed_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18702,6 +18926,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:speed_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18759,6 +18984,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:speed_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18816,6 +19042,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:speed_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18873,6 +19100,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:speed_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -18928,6 +19156,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19053,6 +19282,7 @@
               "orb:8": "bloodmagic:weak"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19110,6 +19340,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:trophy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -19351,6 +19582,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19425,6 +19657,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19499,6 +19732,7 @@
             "OreDict:8": "",
             "id:8": "artisanworktables:worktable"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19585,6 +19819,7 @@
               "Fuel:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19665,6 +19900,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_decoration0"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19739,6 +19975,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:activatedaspectuscopper"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19817,6 +20054,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_liquid_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -19904,6 +20142,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:smeltery_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20005,6 +20244,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20086,6 +20326,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20185,6 +20426,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:iron_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20248,6 +20490,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:californium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20305,6 +20548,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:launchpad"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20368,6 +20612,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:turbine_rotor_blade_steel"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20467,6 +20712,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:falling_tower"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20577,6 +20823,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:condenser"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20631,6 +20878,7 @@
             "OreDict:8": "",
             "id:8": "rftools:shape_card"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20685,6 +20933,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:chemical_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20772,6 +21021,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20836,6 +21086,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_core:gas_turbine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -20907,6 +21158,7 @@
             "id:8": "appliedenergistics2:dense_energy_cell",
             "tag:10": {}
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -20973,6 +21225,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:grindstone"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21043,6 +21296,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:component"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21101,6 +21355,7 @@
               "infinite:1": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21192,6 +21447,7 @@
               "RSControl:1": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21261,6 +21517,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:bucket"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -21312,6 +21569,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21376,6 +21634,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21440,6 +21699,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:end_portal_frame"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21528,6 +21788,7 @@
             "OreDict:8": "",
             "id:8": "environmentaltech:litherite_crystal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21595,6 +21856,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:paving_stone_travel"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21665,6 +21927,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_gems"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21719,6 +21982,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:scribing_tools"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21798,6 +22062,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:industrial_grinder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21875,6 +22140,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:grinder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21926,6 +22192,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:industrial_electrolyzer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -21990,6 +22257,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:implosion_compressor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22047,6 +22315,7 @@
             "OreDict:8": "",
             "id:8": "advgenerators:turbine_extreme"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -22102,6 +22371,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:extractor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -22156,6 +22426,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:treetap"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22253,6 +22524,7 @@
             "OreDict:8": "",
             "id:8": "advgenerators:turbine_super"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -22311,6 +22583,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:goggles"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -22390,6 +22663,7 @@
             "OreDict:8": "",
             "id:8": "botania:manaresource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -22488,6 +22762,7 @@
             "OreDict:8": "",
             "id:8": "tinker_io:smart_output"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -22564,6 +22839,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22646,6 +22922,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:wooden_device1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -22716,6 +22993,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:wooden_device1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -22789,6 +23067,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:connector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -22877,6 +23156,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -22929,6 +23209,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23025,6 +23306,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23126,6 +23408,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23220,6 +23503,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23320,6 +23604,7 @@
             "OreDict:8": "",
             "id:8": "embers:alchemy_tablet"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23394,6 +23679,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23458,6 +23744,7 @@
             "OreDict:8": "",
             "id:8": "embers:ember_pulser"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23534,6 +23821,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_placer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23610,6 +23898,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_alloy_smelter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23674,6 +23963,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_furnace_double"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23738,6 +24028,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:connector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23826,6 +24117,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:stone_torch"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23897,6 +24189,7 @@
               "mode:8": "Copy"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -23967,6 +24260,7 @@
             "OreDict:8": "",
             "id:8": "immersivetech:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24061,6 +24355,7 @@
             "OreDict:8": "",
             "id:8": "immersivetech:metal_multiblock1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24180,6 +24475,7 @@
             "OreDict:8": "",
             "id:8": "immersivetech:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24255,6 +24551,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24322,6 +24619,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockaltar"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24405,6 +24703,7 @@
               "astralsorcery:10": {}
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24492,6 +24791,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24570,6 +24870,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockwell"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24643,6 +24944,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockattunementrelay"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24725,6 +25027,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:itemusabledust"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24798,6 +25101,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:itemhandtelescope"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24898,6 +25202,7 @@
             "OreDict:8": "",
             "id:8": "comforts:hammock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -24972,6 +25277,7 @@
               "type:8": "gourmaryllis"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25039,6 +25345,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_device1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25103,6 +25410,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:wire_mill"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25152,6 +25460,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:vacuum_freezer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25209,6 +25518,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:item_worm"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25273,6 +25583,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:machine_frame"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25338,6 +25649,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:machine_frame"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25408,6 +25720,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25511,6 +25824,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:wooden_device0"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25619,6 +25933,7 @@
             "OreDict:8": "",
             "id:8": "storagenetwork:master"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25689,6 +26004,7 @@
             "OreDict:8": "",
             "id:8": "immersivetech:metal_multiblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25823,6 +26139,7 @@
             "OreDict:8": "",
             "id:8": "storagenetwork:controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25896,6 +26213,7 @@
             "OreDict:8": "",
             "id:8": "storagenetwork:remote"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -25970,6 +26288,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26034,6 +26353,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockmachine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26112,6 +26432,7 @@
             "OreDict:8": "",
             "id:8": "threng:big_assembler"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26206,6 +26527,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:sky_stone_chest"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26311,6 +26633,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:ore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26399,6 +26722,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:rocketmotor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26492,6 +26816,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:itemlinkingtool"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26559,6 +26884,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockritualpedestal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26634,6 +26960,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockmachine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26685,6 +27012,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:soul_forge"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -26753,6 +27081,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockcelestialgateway"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26865,6 +27194,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:alchemy_table"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -26932,6 +27262,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockattunementaltar"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -27026,6 +27357,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:smelter_thaumium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -27099,6 +27431,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockaltar"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -27219,6 +27552,7 @@
               "FluidName:8": "oil"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -27334,6 +27668,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockaltar"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -27441,6 +27776,7 @@
             "OreDict:8": "",
             "id:8": "botania:runealtar"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -27505,6 +27841,7 @@
             "OreDict:8": "",
             "id:8": "botania:pylon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -27564,6 +27901,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_empowerer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -27626,6 +27964,7 @@
             "OreDict:8": "",
             "id:8": "botania:terraplate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -27702,6 +28041,7 @@
             "OreDict:8": "",
             "id:8": "botania:pylon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -27771,6 +28111,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:trophy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -28072,6 +28413,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_leaf_generator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -28136,6 +28478,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:trophy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -28433,6 +28776,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:trophy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -28932,6 +29276,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:trophy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -29240,6 +29585,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:trophy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -29516,6 +29862,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -29780,6 +30127,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:trophy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -30058,6 +30406,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:giant_pickaxe"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -30316,6 +30665,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:magic_beans"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -30578,6 +30928,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:lamp_of_cinders"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -30636,6 +30987,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockaltar"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -30725,6 +31077,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockstarlightinfuser"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30823,6 +31176,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:itemcraftingcomponent"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -30874,6 +31228,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:basicblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -30964,6 +31319,7 @@
             "OreDict:8": "",
             "id:8": "thermalexpansion:frame"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31040,6 +31396,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:monster_soul"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31146,6 +31503,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31208,6 +31566,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31284,6 +31643,7 @@
               "TC.RUNIC:1": 10
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31341,6 +31701,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:item_crystal_empowered"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31410,6 +31771,7 @@
             "OreDict:8": "",
             "id:8": "botania:blacklotus"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31464,6 +31826,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:slimesling"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31546,6 +31909,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:fertilizer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31610,6 +31974,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:polyethene"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31661,6 +32026,7 @@
             "OreDict:8": "",
             "id:8": "randomthings:ingredient"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31728,6 +32094,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:master_infusion_crystal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31798,6 +32165,7 @@
               "Level:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31855,6 +32223,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31922,6 +32291,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -31979,6 +32349,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32030,6 +32401,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:smalldust"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32094,6 +32466,7 @@
             "OreDict:8": "",
             "id:8": "chisel:energizedvoidstone"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32154,6 +32527,7 @@
             "OreDict:8": "",
             "id:8": "botania:travelbelt"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32214,6 +32588,7 @@
               "astralsorcery:10": {}
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32345,6 +32720,7 @@
             "OreDict:8": "",
             "id:8": "ironchest:wood_iron_chest_upgrade"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32419,6 +32795,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32486,6 +32863,7 @@
             "OreDict:8": "",
             "id:8": "ironchest:iron_gold_chest_upgrade"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32565,6 +32943,7 @@
             "OreDict:8": "",
             "id:8": "ironchest:gold_diamond_chest_upgrade"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32639,6 +33018,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32703,6 +33083,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:slate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32760,6 +33141,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:slate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32817,6 +33199,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:decorative_brick"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32868,6 +33251,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:dust"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -32919,6 +33303,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:fiery_blood"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33001,6 +33386,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:armor_shard_cluster"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33077,6 +33463,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:naga_scale"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33162,6 +33549,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:curio"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33256,6 +33644,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:netherrack"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33350,6 +33739,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_misc"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33438,6 +33828,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:sub_block_holder_0"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33520,6 +33911,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:misc_items"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33611,6 +34003,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_decoration0"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33699,6 +34092,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:causality_collapser"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33807,6 +34201,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:machine_frame"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33892,6 +34287,7 @@
             "OreDict:8": "",
             "id:8": "enderutilities:handybag"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -33965,6 +34361,7 @@
             "OreDict:8": "",
             "id:8": "bonsaitrees:bonsaipot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34036,6 +34433,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:item_crystal_empowered"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34104,6 +34502,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:item_crystal_empowered"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34172,6 +34571,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:item_crystal_empowered"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34240,6 +34640,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:item_crystal_empowered"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34297,6 +34698,7 @@
               "orb:8": "bloodmagic:apprentice"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34355,6 +34757,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockcustomore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34409,6 +34812,7 @@
               "type:8": "clayconia"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34479,6 +34883,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:causality_collapser"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -34561,6 +34966,7 @@
               "orb:8": "bloodmagic:magician"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34621,6 +35027,7 @@
               "type:8": "kekimurus"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34678,6 +35085,7 @@
             "OreDict:8": "",
             "id:8": "rftools:space_chamber_card"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34750,6 +35158,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:crafting"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34828,6 +35237,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34892,6 +35302,7 @@
             "OreDict:8": "",
             "id:8": "arcanearchives:radiant_resonator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -34962,6 +35373,7 @@
             "OreDict:8": "",
             "id:8": "arcanearchives:gemcutters_table"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35026,6 +35438,7 @@
             "OreDict:8": "",
             "id:8": "arcanearchives:lectern_manifest"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35100,6 +35513,7 @@
             "id:8": "arcanearchives:radiant_trove",
             "tag:10": {}
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35171,6 +35585,7 @@
             "OreDict:8": "",
             "id:8": "arcanearchives:letter_invitation"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35245,6 +35660,7 @@
             "OreDict:8": "",
             "id:8": "arcanearchives:radiant_chest"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35309,6 +35725,7 @@
             "OreDict:8": "",
             "id:8": "arcanearchives:radiant_crafting_table"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35376,6 +35793,7 @@
             "OreDict:8": "",
             "id:8": "arcanearchives:scepter_manipulation"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35455,6 +35873,7 @@
             "OreDict:8": "",
             "id:8": "arcanearchives:monitoring_crystal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35519,6 +35938,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:thaumatorium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35608,6 +36028,7 @@
             "OreDict:8": "",
             "id:8": "rftools:machine_frame"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -35670,6 +36091,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:essentia_output"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35752,6 +36174,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_farmer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35822,6 +36245,7 @@
             "OreDict:8": "",
             "id:8": "compactmachines3:psd"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35899,6 +36323,7 @@
             "OreDict:8": "",
             "id:8": "treasure2:thiefs_lock_pick"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -35982,6 +36407,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:drive"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36076,6 +36502,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36146,6 +36573,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36223,6 +36651,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36291,6 +36720,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:connector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36403,6 +36833,7 @@
             "OreDict:8": "",
             "id:8": "rftools:powercell"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36488,6 +36919,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36585,6 +37017,7 @@
             "OreDict:8": "",
             "id:8": "bloodarsenal:sacrifice_amulet"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36667,6 +37100,7 @@
               "FluidName:8": "boosted_diesel"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36726,6 +37160,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ingot_alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36794,6 +37229,7 @@
               "sacrifice:1": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36858,6 +37294,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ingot_alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36920,6 +37357,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ingot_alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -36982,6 +37420,7 @@
             "OreDict:8": "",
             "id:8": "immersivetech:stone_decoration"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -37066,6 +37505,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:metal_device1"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -37136,6 +37576,7 @@
               "current_ritual:8": "lava"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -37219,6 +37660,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:ritual_diviner"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -37282,6 +37724,7 @@
             "OreDict:8": "",
             "id:8": "embers:cinder_plinth"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -37352,6 +37795,7 @@
             "OreDict:8": "",
             "id:8": "iceandfire:dragon_skull"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -37660,6 +38104,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:blood_rune"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -37730,6 +38175,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockworldilluminator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -37803,6 +38249,7 @@
             "OreDict:8": "",
             "id:8": "scannable:scanner"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -37909,6 +38356,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:blood_rune"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -37983,6 +38431,7 @@
             "OreDict:8": "",
             "id:8": "thaumicaugmentation:research_notes"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38074,6 +38523,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38156,6 +38606,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38222,6 +38673,7 @@
             "OreDict:8": "",
             "id:8": "cyclicmagic:laser_cannon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38315,6 +38767,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:dust"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38397,6 +38850,7 @@
             "OreDict:8": "",
             "id:8": "botania:blacklotus"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38508,6 +38962,7 @@
               "FluidName:8": "moltenembers"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38593,6 +39048,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38644,6 +39100,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:rock_crusher"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38736,6 +39193,7 @@
             "OreDict:8": "",
             "id:8": "libvulpes:structuremachine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -38806,6 +39264,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:item_crystal_empowered"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38860,6 +39319,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -38930,6 +39390,7 @@
               "Level:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39011,6 +39472,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39100,6 +39562,7 @@
             "OreDict:8": "",
             "id:8": "enderutilities:ender_elevator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39176,6 +39639,7 @@
               ]
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39244,6 +39708,7 @@
               "Level:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39302,6 +39767,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39360,6 +39826,7 @@
             "OreDict:8": "",
             "id:8": "modularmachinery:blockcontroller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39474,6 +39941,7 @@
             "OreDict:8": "",
             "id:8": "modularmachinery:blockcontroller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39621,6 +40089,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39700,6 +40169,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39768,6 +40238,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:machine_casing"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39832,6 +40303,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:extraction_chamber"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39896,6 +40368,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:simulation_chamber"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -39964,6 +40437,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearningbm:digital_agonizer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40040,6 +40514,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:trial_keystone"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40103,6 +40578,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:deep_learner"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40195,6 +40671,7 @@
               "TrophyVariant:8": "classic"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40285,6 +40762,7 @@
               "TrophyVariant:8": "classic"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40375,6 +40853,7 @@
               "TrophyVariant:8": "classic"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40465,6 +40944,7 @@
               "TrophyVariant:8": "classic"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40555,6 +41035,7 @@
               "TrophyVariant:8": "classic"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40630,6 +41111,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40679,6 +41161,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40743,6 +41226,7 @@
             "OreDict:8": "",
             "id:8": "advgenerators:turbine_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40819,6 +41303,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:warpcore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40868,6 +41353,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:precisionassemblingmachine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -40964,6 +41450,7 @@
               "Level:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41021,6 +41508,7 @@
               "Level:1": 1
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41075,6 +41563,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41145,6 +41634,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:crystallizer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41232,6 +41722,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:cuttingmachine"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41316,6 +41807,7 @@
               "type:8": "entropinnyum"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41386,6 +41878,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:thaumonomicon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41443,6 +41936,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:thaumonomicon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41511,6 +42005,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_fermenting_barrel"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41590,6 +42085,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:sanity_checker"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41659,6 +42155,7 @@
             "OreDict:8": "",
             "id:8": "botania:sparkupgrade"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41729,6 +42226,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:infuser"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41780,6 +42278,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:ingots"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41844,6 +42343,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:upgrades"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41908,6 +42408,7 @@
             "OreDict:8": "",
             "id:8": "cyclicmagic:auto_crafter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -41959,6 +42460,7 @@
             "OreDict:8": "",
             "id:8": "mysticalworld:silkworm_egg"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42043,6 +42545,7 @@
             "OreDict:8": "",
             "id:8": "thermalexpansion:frame"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42110,6 +42613,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42167,6 +42671,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42244,6 +42749,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42323,6 +42829,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42390,6 +42897,7 @@
             "OreDict:8": "",
             "id:8": "threng:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42459,6 +42967,7 @@
               "FluidName:8": "moltenembers"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42530,6 +43039,7 @@
             "OreDict:8": "",
             "id:8": "randomthings:igniter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42592,6 +43102,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42659,6 +43170,7 @@
               "Material:8": "platinum_plustic"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42733,6 +43245,7 @@
             "OreDict:8": "",
             "id:8": "cyclicmagic:corrupted_chorus"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42795,6 +43308,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:chorus_fruit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -42844,6 +43358,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:solar_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42914,6 +43429,7 @@
               "timeData:10": {}
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -42994,6 +43510,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:diamond"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 1,
           "lockedprogress:1": 0,
@@ -43048,6 +43565,7 @@
             "OreDict:8": "",
             "id:8": "enderutilities:handybag"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43142,6 +43660,7 @@
             "OreDict:8": "",
             "id:8": "botania:rfgenerator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43193,6 +43712,7 @@
             "OreDict:8": "",
             "id:8": "thermaldynamics:retriever"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43255,6 +43775,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:gold_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43317,6 +43838,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43379,6 +43901,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43441,6 +43964,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43503,6 +44027,7 @@
             "OreDict:8": "",
             "id:8": "embers:ingot_dawnstone"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43567,6 +44092,7 @@
             "OreDict:8": "",
             "id:8": "engineersdecor:small_mineral_smelter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43618,6 +44144,7 @@
             "OreDict:8": "",
             "id:8": "thaumicenergistics:arcane_terminal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43686,6 +44213,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:crafting"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43750,6 +44278,7 @@
             "OreDict:8": "",
             "id:8": "aetherworks:item_resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43861,6 +44390,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43923,6 +44453,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -43987,6 +44518,7 @@
             "OreDict:8": "",
             "id:8": "cyclicmagic:block_miner_smart"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44036,6 +44568,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44098,6 +44631,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44160,6 +44694,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_endergy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44222,6 +44757,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:crafting"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44284,6 +44820,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44346,6 +44883,7 @@
             "OreDict:8": "",
             "id:8": "enderio:block_reservoir"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44430,6 +44968,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44501,6 +45040,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:ender_crafter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44569,6 +45109,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagradditions:insanium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44631,6 +45172,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:crafting"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44695,6 +45237,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:iron_ore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44833,6 +45376,7 @@
             "OreDict:8": "",
             "id:8": "chisel:energizedvoidstone"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -44979,6 +45523,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:infused_ingot_block"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45030,6 +45575,7 @@
             "OreDict:8": "",
             "id:8": "iceandfire:dragonsteel_ice_block"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45079,6 +45625,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:productingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45141,6 +45688,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:productingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45203,6 +45751,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45265,6 +45814,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45327,6 +45877,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_endergy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45389,6 +45940,7 @@
             "OreDict:8": "",
             "id:8": "plustic:osgloglasingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45451,6 +46003,7 @@
             "OreDict:8": "",
             "id:8": "plustic:osmiridiumingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45513,6 +46066,7 @@
             "OreDict:8": "",
             "id:8": "plustic:mirioningot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45575,6 +46129,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45637,6 +46192,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45699,6 +46255,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45761,6 +46318,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:itemcraftingcomponent"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45827,6 +46385,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45901,6 +46460,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fission_reflector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -45969,6 +46529,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46037,6 +46598,7 @@
             "OreDict:8": "",
             "id:8": "bloodarsenal:base_item"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46099,6 +46661,7 @@
             "OreDict:8": "",
             "id:8": "bloodarsenal:base_item"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46161,6 +46724,7 @@
             "OreDict:8": "",
             "id:8": "botania:manaresource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46223,6 +46787,7 @@
             "OreDict:8": "",
             "id:8": "botania:manaresource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46285,6 +46850,7 @@
             "OreDict:8": "",
             "id:8": "botania:manaresource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46347,6 +46913,7 @@
             "OreDict:8": "",
             "id:8": "botania:manaresource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46409,6 +46976,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:material_part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46471,6 +47039,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:material_part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46533,6 +47102,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:material_part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46597,6 +47167,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:separator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46685,6 +47256,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:metal_void"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46734,6 +47306,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:material_part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46798,6 +47371,7 @@
             "OreDict:8": "",
             "id:8": "thaumadditions:mithrillium_block"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46849,6 +47423,7 @@
             "OreDict:8": "",
             "id:8": "thaumadditions:adaminite_block"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46900,6 +47475,7 @@
             "OreDict:8": "",
             "id:8": "thaumadditions:mithminite_block"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -46949,6 +47525,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47011,6 +47588,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_endergy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47073,6 +47651,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_endergy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47138,6 +47717,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47203,6 +47783,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47267,6 +47848,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_item_conduit"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47368,6 +47950,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47430,6 +48013,7 @@
             "OreDict:8": "",
             "id:8": "iceandfire:dragonsteel_fire_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47492,6 +48076,7 @@
             "OreDict:8": "",
             "id:8": "iceandfire:dragonsteel_ice_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47554,6 +48139,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:material_part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47616,6 +48202,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:adaptive_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47678,6 +48265,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47743,6 +48331,7 @@
             "OreDict:8": "",
             "id:8": "environmentaltech:aethium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47792,6 +48381,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_endergy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47854,6 +48444,7 @@
             "OreDict:8": "",
             "id:8": "enderio:item_alloy_endergy_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47916,6 +48507,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:material_part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -47978,6 +48570,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:material_part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48040,6 +48633,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:material_part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48102,6 +48696,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:adaptive_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48166,6 +48761,7 @@
             "OreDict:8": "",
             "id:8": "mekanismgenerators:reactor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48284,6 +48880,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48349,6 +48946,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:table_basic"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48431,6 +49029,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48501,6 +49100,7 @@
               "mekData:10": {}
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48556,6 +49156,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:adaptive_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48618,6 +49219,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48680,6 +49282,7 @@
             "OreDict:8": "",
             "id:8": "immersiveengineering:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48747,6 +49350,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock2"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48805,6 +49409,7 @@
               "mekData:10": {}
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48860,6 +49465,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48922,6 +49528,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -48984,6 +49591,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:crafting"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49046,6 +49654,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:crafting"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49119,6 +49728,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49171,6 +49781,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagradditions:insanium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49220,6 +49831,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:crafting"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49282,6 +49894,7 @@
             "OreDict:8": "",
             "id:8": "mysticalagriculture:crafting"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49344,6 +49957,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49406,6 +50020,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49468,6 +50083,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49530,6 +50146,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49594,6 +50211,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49656,6 +50274,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49718,6 +50337,7 @@
             "OreDict:8": "",
             "id:8": "appliedenergistics2:chest"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49786,6 +50406,7 @@
             "OreDict:8": "",
             "id:8": "botania:pool"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49863,6 +50484,7 @@
               "internalCurrentPower:6": 1600000.0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49940,6 +50562,7 @@
             "OreDict:8": "",
             "id:8": "storagedrawers:upgrade_creative"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -49989,6 +50612,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50051,6 +50675,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50113,6 +50738,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50177,6 +50803,7 @@
             "OreDict:8": "",
             "id:8": "randomthings:spectrecoil_genesis"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50226,6 +50853,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50290,6 +50918,7 @@
             "OreDict:8": "",
             "id:8": "libvulpes:creativepowerbattery"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50339,6 +50968,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50407,6 +51037,7 @@
             "id:8": "appliedenergistics2:creative_storage_cell",
             "tag:10": {}
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50473,6 +51104,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50535,6 +51167,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50599,6 +51232,7 @@
             "OreDict:8": "",
             "id:8": "thaumicenergistics:essentia_cell_creative"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50656,6 +51290,7 @@
               "tier:3": 4
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50711,6 +51346,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50773,6 +51409,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:foursmore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50835,6 +51472,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50897,6 +51535,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -50961,6 +51600,7 @@
             "OreDict:8": "",
             "id:8": "simplevoidworld:portal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51023,6 +51663,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51085,6 +51726,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51147,6 +51789,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51209,6 +51852,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51271,6 +51915,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51333,6 +51978,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51395,6 +52041,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51457,6 +52104,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51519,6 +52167,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51581,6 +52230,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51643,6 +52293,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech_b"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51705,6 +52356,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51767,6 +52419,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51829,6 +52482,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51891,6 +52545,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -51953,6 +52608,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52015,6 +52671,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech_b"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52077,6 +52734,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52139,6 +52797,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52201,6 +52860,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52263,6 +52923,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52325,6 +52986,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52391,6 +53053,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:pellet_uranium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52493,6 +53156,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52555,6 +53219,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_deco"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52617,6 +53282,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52679,6 +53345,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:foursmore"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52744,6 +53411,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:solid_fission_cell"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52827,6 +53495,7 @@
             "OreDict:8": "",
             "id:8": "deepmoblearning:glitch_infused_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52889,6 +53558,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -52951,6 +53621,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53013,6 +53684,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53075,6 +53747,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53139,6 +53812,7 @@
             "OreDict:8": "",
             "id:8": "volumetricflask:filler"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53190,6 +53864,7 @@
             "OreDict:8": "",
             "id:8": "modulardiversity:blockmanainputhatch"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53327,6 +54002,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53389,6 +54065,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53451,6 +54128,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53513,6 +54191,7 @@
             "OreDict:8": "",
             "id:8": "avaritia:block_resource"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53583,6 +54262,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fission_dust"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53657,6 +54337,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53719,6 +54400,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53781,6 +54463,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53843,6 +54526,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53905,6 +54589,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -53967,6 +54652,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54029,6 +54715,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:ingot_reinforced_starmetal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54093,6 +54780,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:precisionlaseretcher"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54203,6 +54891,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54267,6 +54956,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:pellet_thorium"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54359,6 +55049,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54423,6 +55114,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54485,6 +55177,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:alloy_items_tech"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54552,6 +55245,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock3"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54647,6 +55341,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54709,6 +55404,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54758,6 +55454,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54820,6 +55517,7 @@
             "OreDict:8": "",
             "id:8": "thaumadditions:mithrillium_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54882,6 +55580,7 @@
             "OreDict:8": "",
             "id:8": "thaumadditions:mithminite_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -54944,6 +55643,7 @@
             "OreDict:8": "",
             "id:8": "thaumadditions:adaminite_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55010,6 +55710,7 @@
               "orig_meta:3": 0
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55084,6 +55785,7 @@
               "orig_meta:3": 11
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55154,6 +55856,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:fiery_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55216,6 +55919,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:knightmetal_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55278,6 +55982,7 @@
             "OreDict:8": "",
             "id:8": "twilightforest:ironwood_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55342,6 +56047,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fission_irradiator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55470,6 +56176,7 @@
             "OreDict:8": "",
             "id:8": "thermalfoundation:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55532,6 +56239,7 @@
             "OreDict:8": "",
             "id:8": "bloodtinker:blood_bronze_ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55596,6 +56304,7 @@
             "OreDict:8": "",
             "id:8": "packagedauto:encoder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55670,6 +56379,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:ingots"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55732,6 +56442,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:ingots"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55794,6 +56505,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:ingots"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55856,6 +56568,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:ingots"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55918,6 +56631,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:ingots"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -55982,6 +56696,7 @@
             "OreDict:8": "",
             "id:8": "thaumicenergistics:infusion_provider"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56053,6 +56768,7 @@
             "OreDict:8": "",
             "id:8": "qmd:semiconductor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56130,6 +56846,7 @@
             "OreDict:8": "",
             "id:8": "advancedrocketry:wafer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56194,6 +56911,7 @@
             "OreDict:8": "",
             "id:8": "qmd:semiconductor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56267,6 +56985,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:sigil_divination"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56330,6 +57049,7 @@
               "patchouli:book:8": "qmd:guide"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56368,6 +57088,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ingot_alloy"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56432,6 +57153,7 @@
             "OreDict:8": "",
             "id:8": "reactorbuilder:reactorbuilder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56496,6 +57218,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ore_leacher"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56593,6 +57316,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:gem_dust"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56657,6 +57381,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:gem"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56725,6 +57450,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56790,6 +57516,7 @@
             "OreDict:8": "",
             "id:8": "rockhounding_chemistry:chemical_dusts"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56854,6 +57581,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56903,6 +57631,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -56967,6 +57696,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:centrifuge"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57037,6 +57767,7 @@
             "OreDict:8": "",
             "id:8": "qmd:atmosphere_collector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
@@ -57102,6 +57833,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:supercooler"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57172,6 +57904,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:manufactory"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57242,6 +57975,7 @@
             "OreDict:8": "",
             "id:8": "qmd:target_chamber_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57336,6 +58070,7 @@
             "OreDict:8": "",
             "id:8": "qmd:semiconductor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57472,6 +58207,7 @@
             "OreDict:8": "",
             "id:8": "qmd:waste_spallation"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57536,6 +58272,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:turbine_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57639,6 +58376,7 @@
             "OreDict:8": "",
             "id:8": "qmd:lepton_cannon"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57710,6 +58448,7 @@
             "OreDict:8": "",
             "id:8": "qmd:gluon_gun"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57778,6 +58517,7 @@
             "OreDict:8": "",
             "id:8": "qmd:collision_chamber_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57846,6 +58586,7 @@
             "OreDict:8": "",
             "id:8": "qmd:cell"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -57958,6 +58699,7 @@
             "OreDict:8": "",
             "id:8": "qmd:semiconductor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58053,6 +58795,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ingot"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58126,6 +58869,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58194,6 +58938,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58254,6 +58999,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:incoherent"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58338,6 +59084,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:neutronic"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58424,6 +59171,7 @@
               "Fluid:8": "tauonium"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58462,6 +59210,7 @@
             "OreDict:8": "",
             "id:8": "qmd:decay_chamber_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58530,6 +59279,7 @@
               "Fluid:8": "antihelium3"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58572,6 +59322,7 @@
               "Fluid:8": "muonium"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58610,6 +59361,7 @@
             "OreDict:8": "",
             "id:8": "techreborn:fusion_coil"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58661,6 +59413,7 @@
             "OreDict:8": "",
             "id:8": "qmd:discharge_lamp"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58799,6 +59552,7 @@
             "OreDict:8": "",
             "id:8": "astralsorcery:blockchalice"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58871,6 +59625,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -58963,6 +59718,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:incense_altar"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59020,6 +59776,7 @@
               "filter:10": {}
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59114,6 +59871,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:lamp"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59178,6 +59936,7 @@
             "OreDict:8": "",
             "id:8": "packagedexcrafting:ultimate_crafter"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59266,6 +60025,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:solid_fission_sink"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59336,6 +60096,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:fission_irradiator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59402,6 +60163,7 @@
             "OreDict:8": "",
             "id:8": "nuclearcraft:solid_fission_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59520,6 +60282,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59571,6 +60334,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59622,6 +60386,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59673,6 +60438,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59724,6 +60490,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59775,6 +60542,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59826,6 +60594,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59877,6 +60646,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59928,6 +60698,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -59979,6 +60750,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60030,6 +60802,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:singularity_custom"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60081,6 +60854,7 @@
             "OreDict:8": "",
             "id:8": "actuallyadditions:block_oil_generator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60132,6 +60906,7 @@
             "OreDict:8": "",
             "id:8": "qmd:linear_accelerator_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60208,6 +60983,7 @@
             "OreDict:8": "",
             "id:8": "qmd:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60284,6 +61060,7 @@
             "OreDict:8": "",
             "id:8": "qmd:ring_accelerator_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60348,6 +61125,7 @@
             "OreDict:8": "",
             "id:8": "qmd:beam_diverter_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60428,6 +61206,7 @@
             "OreDict:8": "",
             "id:8": "treasure2:dwarven_talisman"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60466,6 +61245,7 @@
             "OreDict:8": "",
             "id:8": "qmd:part"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60543,6 +61323,7 @@
             "OreDict:8": "",
             "id:8": "qmd:particle_chamber_detector"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60630,6 +61411,7 @@
             "OreDict:8": "",
             "id:8": "qmd:waste_fission"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60694,6 +61476,7 @@
             "OreDict:8": "",
             "id:8": "qmd:isotope"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60770,6 +61553,7 @@
             "OreDict:8": "",
             "id:8": "qmd:decelerator_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60834,6 +61618,7 @@
             "OreDict:8": "",
             "id:8": "qmd:accelerator_synchrotron_port"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60913,6 +61698,7 @@
             "OreDict:8": "",
             "id:8": "jecalculation:item_calculator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60954,6 +61740,7 @@
             "OreDict:8": "",
             "id:8": "jecalculation:item_calculator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -60995,6 +61782,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:creative_flux_sponge"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61052,6 +61840,7 @@
             "OreDict:8": "",
             "id:8": "thaumcraft:sanity_checker"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61142,6 +61931,7 @@
             "OreDict:8": "",
             "id:8": "minecraft:nether_star"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61180,6 +61970,7 @@
             "OreDict:8": "",
             "id:8": "supersoundmuffler:sound_muffler"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61234,6 +62025,7 @@
             "OreDict:8": "",
             "id:8": "danknull:dank_null_5"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61288,6 +62080,7 @@
             "OreDict:8": "",
             "id:8": "demagnetize:demagnetizer_advanced"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61342,6 +62135,7 @@
             "OreDict:8": "",
             "id:8": "enderutilities:dolly"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61409,6 +62203,7 @@
             "OreDict:8": "",
             "id:8": "extendedcrafting:material"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61479,6 +62274,7 @@
               }
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61542,6 +62338,7 @@
             "OreDict:8": "",
             "id:8": "randomthings:advancedredstoneinterface"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61602,6 +62399,7 @@
             "OreDict:8": "",
             "id:8": "mekanism:machineblock"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61684,6 +62482,7 @@
             "OreDict:8": "",
             "id:8": "bloodarsenal:stasis_plate"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61799,6 +62598,7 @@
             "OreDict:8": "",
             "id:8": "betterquesting:placeholder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61850,6 +62650,7 @@
             "OreDict:8": "",
             "id:8": "modularmachinery:blockcontroller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -61983,6 +62784,7 @@
             "OreDict:8": "",
             "id:8": "volumetricflask:o_interface"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62060,6 +62862,7 @@
               "TrophyVariant:8": "classic"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62150,6 +62953,7 @@
               "TrophyVariant:8": "classic"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62240,6 +63044,7 @@
               "TrophyVariant:8": "classic"
             }
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62324,6 +63129,7 @@
             "OreDict:8": "",
             "id:8": "treasure2:mirthas_torch"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62362,6 +63168,7 @@
             "OreDict:8": "",
             "id:8": "qmd:beamline"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62426,6 +63233,7 @@
             "OreDict:8": "",
             "id:8": "qmd:accelerator_vent"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62513,6 +63321,7 @@
             "OreDict:8": "",
             "id:8": "qmd:accelerator_source"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62588,6 +63397,7 @@
             "OreDict:8": "",
             "id:8": "qmd:accelerator_cavity"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62669,6 +63479,7 @@
             "OreDict:8": "",
             "id:8": "qmd:accelerator_magnet"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62753,6 +63564,7 @@
             "OreDict:8": "",
             "id:8": "jecalculation:item_calculator"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62807,6 +63619,7 @@
             "OreDict:8": "",
             "id:8": "qmd:beam_splitter_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62871,6 +63684,7 @@
             "OreDict:8": "",
             "id:8": "qmd:particle_chamber_beam_port"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62948,6 +63762,7 @@
             "OreDict:8": "",
             "id:8": "treasure2:medics_token"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -62986,6 +63801,7 @@
             "OreDict:8": "",
             "id:8": "qmd:nucleosynthesis_chamber_controller"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63116,6 +63932,7 @@
             "OreDict:8": "",
             "id:8": "qmd:accelerator_yoke"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63180,6 +63997,7 @@
             "OreDict:8": "",
             "id:8": "betterquesting:placeholder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63218,6 +64036,7 @@
             "OreDict:8": "",
             "id:8": "betterquesting:placeholder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63256,6 +64075,7 @@
             "OreDict:8": "",
             "id:8": "betterquesting:placeholder"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63307,6 +64127,7 @@
             "OreDict:8": "",
             "id:8": "qmd:vacuum_chamber_plasma_nozzle"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63345,6 +64166,7 @@
             "OreDict:8": "",
             "id:8": "qmd:vacuum_chamber_heater"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63438,6 +64260,7 @@
             "OreDict:8": "",
             "id:8": "environmentaltech:aethium_crystal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63511,6 +64334,7 @@
             "OreDict:8": "",
             "id:8": "multiblocked:laser_combiner"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63568,6 +64392,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:ichor"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63625,6 +64450,7 @@
             "OreDict:8": "",
             "id:8": "contenttweaker:time_artifact"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63676,6 +64502,7 @@
             "OreDict:8": "",
             "id:8": "bloodarsenal:altare_aenigmatica"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63746,6 +64573,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:demon_crystallizer"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63843,6 +64671,7 @@
             "OreDict:8": "",
             "id:8": "bloodmagic:item_demon_crystal"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -63935,6 +64764,7 @@
             "OreDict:8": "",
             "id:8": "tconstruct:wooden_hopper"
           },
+          "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
@@ -70396,7 +71226,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "editmode:1": 1,
+      "editmode:1": 0,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 0.0,
