@@ -131,7 +131,7 @@ mods.rockhounding_chemistry.LabOven.removeByOutput(<liquid:sulfuric_acid>*1000);
 
 //Cracked Lime now takes limestone
 LabBlender.remove(<rockhounding_chemistry:chemical_items:20>);
-LabBlender.add([<quark:limestone>], <rockhounding_chemistry:chemical_items:20>*4);
+LabBlender.add(["limestoneforFlux"], [1], <rockhounding_chemistry:chemical_items:20>*4);
 
 
 

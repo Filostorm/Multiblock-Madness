@@ -89,10 +89,15 @@ MetalPress.addRecipe(<tconstruct:materials:14>, <immersiveengineering:metal_deco
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:limestone_flux>*3, [<ore:limestoneforFlux>, <bloodmagic:cutting_fluid:1>], 200,200,1);
 
 // Scorched Brick
-LabBlender.add([<rockhounding_chemistry:chemical_items:20>*4, <actuallyadditions:item_crystal:3>, <embers:dust_ember>, <thaumcraft:stone_arcane_brick>*2], <tcomplement:materials:1>*8);
+//LabBlender.add([<rockhounding_chemistry:chemical_items:20>*4, <actuallyadditions:item_crystal:3>, <embers:dust_ember>, <thaumcraft:stone_arcane_brick>*2], <tcomplement:materials:1>*8);
 
 //New verison of RH seems to only accept ore dicts
-//LabBlender.add([<rockhounding_chemistry:chemical_items:20>, <actuallyadditions:item_crystal:3>, <embers:dust_ember>, <thaumcraft:stone_arcane_brick>], [4, 1, 1, 2], <tcomplement:materials:1>*8);
+<ore:crackedLimestone>.add(<rockhounding_chemistry:chemical_items:20>);
+<ore:crystalVoid>.add(<actuallyadditions:item_crystal:3>);
+<ore:dustEmber>.add(<embers:dust_ember>);
+<ore:brickArcane>.add(<thaumcraft:stone_arcane_brick>);
+
+LabBlender.add(["crackedLimestone", "crystalVoid", "dustEmber", "brickArcane"], [4, 1, 1, 2], <tcomplement:materials:1>*8);
 
 # [Slot Upgrade I] from [Base Upgrade][+2]
 craft.remake(<tinker_io:upg:1>, ["pretty",
