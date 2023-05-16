@@ -447,7 +447,7 @@ industrialElectrolyzer.addRecipe(cellPotassium * 2, cellNitrogen * 2, cellAir * 
 industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 8, <techreborn:smalldust:54> * 2, cellHydrogen * 5, cellAir * 3, <techreborn:dust:5> * 12, cellEmpty * 8, 2000, 125);
 industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 2, <techreborn:dust:10>, cellAir * 3, null,<techreborn:dust:43> * 9,  cellEmpty * 3, 500, 50);
 industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 2, cellAir * 3, null, null,<techreborn:dust:45> * 8,  cellEmpty * 3, 400, 50);
-industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 2, cellBeryllium * 3, cellSilicon * 6, cellAir * 9,<techreborn:dust:18> * 29,  cellEmpty * 3, 600, 50);
+industrialElectrolyzer.addRecipe(<thermalfoundation:material:68> * 2, cellBeryllium * 3, cellSilicon * 6, cellAir * 9,<techreborn:dust:18> * 29,  cellEmpty * 18, 600, 50);
 industrialElectrolyzer.addRecipe(<techreborn:dust:30> * 2, <thermalfoundation:material> * 2, cellSilicon, cellAir * 2,<techreborn:dust:36> * 9,  cellEmpty * 3, 600, 60);
 industrialElectrolyzer.addRecipe(<techreborn:smalldust:30> * 2, <techreborn:smalldust:27> * 2, cellSilicon, cellAir * 2,<thermalfoundation:material:770> * 4,  cellEmpty * 3, 500, 5);
 industrialElectrolyzer.addRecipe(<techreborn:dust:30> * 3, <thermalfoundation:material:68> * 2, cellSilicon * 3, cellAir * 6,<techreborn:dust:40> * 20,  cellEmpty * 9, 1780, 50);

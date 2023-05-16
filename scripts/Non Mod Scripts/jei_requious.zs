@@ -130,7 +130,7 @@ addvein("§fUranium", [dimensionItem[0], dimensionItem[3]], [<nuclearcraft:ore:4
 addvein("§fRaw Stone", [dimensionItem[0]], [<minecraft:stone:1> * 20, <minecraft:stone:3> * 20, <minecraft:stone:5> * 20, <quark:limestone> * 15, <astralsorcery:blockmarble> * 15, <quark:basalt> * 15]);
 
 addvein("§fCinnabar", [dimensionItem[0], dimensionItem[3]], [<minecraft:redstone_ore> * 67, <techreborn:ore:6> * 26, <techreborn:ore:2> * 6, <rockhounding_chemistry:uninspected_mineral> * 1]);
-addvein("§fQuartzite", [dimensionItem[0], dimensionItem[3]], [<minecraft:quartz_ore> * 40, <appliedenergistics2:quartz_ore> * 41, <actuallyadditions:block_misc:3> * 14, <appliedenergistics2:charged_quartz_ore> * 5]);
+addvein("§fQuartzite", [dimensionItem[0], dimensionItem[1]], [<minecraft:quartz_ore> * 40, <appliedenergistics2:quartz_ore> * 41, <actuallyadditions:block_misc:3> * 14, <appliedenergistics2:charged_quartz_ore> * 5]);
 
 addvein("§fOsmium", [dimensionItem[3]], [<mekanism:oreblock> * 56, <thermalfoundation:ore:6> * 20, <minecraft:gold_ore> * 20, <rockhounding_chemistry:uninspected_mineral> * 4]);
 addvein("§fPlatinum", [dimensionItem[3]], [<thermalfoundation:ore:6> * 64, <thermalfoundation:ore:5> * 20, <mekanism:oreblock> * 14, <rockhounding_chemistry:uninspected_mineral>]);

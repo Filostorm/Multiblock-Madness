@@ -333,7 +333,9 @@ val stamperList = {
 	<liquid:cobalt>:[<tconstruct:ingots>, null, <moreplates:cobalt_gear>],
 	<liquid:orichalcum>:[<contenttweaker:material_part:20>, <contenttweaker:material_part:22>, <contenttweaker:material_part:21>],
 	<liquid:palladium>:[<contenttweaker:material_part:30>, <contenttweaker:material_part:32>, <contenttweaker:material_part:31>],
-	<liquid:starmetal>:[<astralsorcery:itemcraftingcomponent:1>, null, null]
+	<liquid:starmetal>:[<astralsorcery:itemcraftingcomponent:1>, null, null],
+	<liquid:electrum>:[<thermalfoundation:material:161>, <thermalfoundation:material:353>, <thermalfoundation:material:289>],
+	<liquid:bronze>:[<thermalfoundation:material:163>, <thermalfoundation:material:355>, <thermalfoundation:material:291>],
 } as IItemStack[][ILiquidStack];
 
 for fluid, parts in stamperList {
@@ -390,8 +392,6 @@ val dustMelting = {
 	<liquid:lead>:<thermalfoundation:material:67>,
 	<liquid:nickel>:<thermalfoundation:material:69>,
 	<liquid:tin>:<thermalfoundation:material:65>,
-	<liquid:electrum>:<thermalfoundation:material:97>,
-	<liquid:bronze>:<thermalfoundation:material:99>
 } as IItemStack[ILiquidStack];
 
 for fluid, item in dustMelting {
@@ -432,7 +432,9 @@ val meltingList = {
 	<liquid:manasteel>:[<botania:manaresource:17>, <botania:manaresource>, null, null],
 	<liquid:palladium>:[<contenttweaker:material_part:33>, <contenttweaker:material_part:30>, <contenttweaker:material_part:35>, <contenttweaker:material_part:32>],
 	<liquid:orichalcum>:[<contenttweaker:material_part:23>, <contenttweaker:material_part:20>, <contenttweaker:material_part:25>, <contenttweaker:material_part:22>],
-	<liquid:starmetal>:[<jaopca:item_nuggetastralstarmetal>, <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:2>, null]
+	<liquid:starmetal>:[<jaopca:item_nuggetastralstarmetal>, <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:2>, null],
+	<liquid:bronze>:[<thermalfoundation:material:227>, <thermalfoundation:material:163>, <thermalfoundation:material:99>, <thermalfoundation:material:355>],
+	<liquid:electrum>:[<thermalfoundation:material:225>, <thermalfoundation:material:161>, <thermalfoundation:material:97>, <thermalfoundation:material:353>]
 } as IItemStack[][ILiquidStack];
 
 for fluid, items in meltingList {

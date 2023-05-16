@@ -3685,7 +3685,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§d§rWe have a few very useful hotkeys to set up in this pack:\n\n§2Better Questing: Opens the questbook.\n\n§bOre Excavator: Holding down while using a tool will cause connected blocks to be harversted as well.\n\n§6Find Me: Pushing while hovering oven an item will cause nearby chests containing that item to light up.\n\n\n\n§rIf you are having trouble with a quest, read the discription!\n\nWhen you see a red X§r, you will need to check it to complete the quest.",
+          "desc:8": "§d§rWe have a few very useful hotkeys to set up in this pack:\n\n§2Better Questing: Opens the questbook. \nDefault: Grave (The ` button)\n\n§bOre Excavator: Holding down while using a tool will cause connected blocks to be harvested as well.\nDefault: Grave (Recommended to switch to another button)\n\n§6Find Me: Pushing while hovering oven an item will cause nearby chests containing that item to light up.\nDefault: Y\n\n\n\n§rIf you are having trouble with a quest, read the description!\n\nWhen you see a red X§r, you will need to check it to complete the quest.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6006,7 +6006,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place this block under a Mana Pool to unlock more crafting recipes!\n\n§bNeed more vis? The Twilight Forest contains plenty of Vis! Alternatively, craft a workbench charger!",
+          "desc:8": "Place this block under a Mana Pool to unlock more crafting recipes!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -13571,7 +13571,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble the Lab Oven as shown in the guide book. It is highly recommended to set up a separate Lab Oven to process each of the upcoming products.\n\n\n§bOptional: To set up automation with a Server, place the Server File in the center slot and scroll to the desired recipe with the arrows. Next chose if you want it repetable or not and how many times it should run. Then place it in the top row and active the server. The Lab Oven will then run the recipes defined by the Server Files in order once you activate it.",
+          "desc:8": "Assemble the Lab Oven as shown in the guide book. It is highly recommended to set up a separate Lab Oven to process each of the upcoming products.\n\n\n§bOptional: To set up automation with a Server, place the Server File in the center slot and scroll to the desired recipe with the arrows. Next, choose if you want it repeatable or not and how many times it should run. Then, place it in the top row and activate the server. The Lab Oven will then run the recipes defined by the Server Files in order.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -13631,10 +13631,7 @@
               "Damage:2": 6,
               "OreDict:8": "",
               "id:8": "rockhounding_chemistry:machines_a",
-              "tag:10": {
-                "Energy:3": 0,
-                "Fuel:3": 0
-              }
+              "tag:10": {}
             },
             "1:10": {
               "Count:3": 1,
@@ -39824,7 +39821,7 @@
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "modularmachinery:blockcontroller"
+            "id:8": "compactmachines3:fieldprojector"
           },
           "ignoresview:1": 0,
           "ismain:1": 0,
@@ -56969,12 +56966,12 @@
     },
     "718:10": {
       "preRequisites:11": [
-        206
+        831
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "To craft sigils, use the Ashes on the ground, then add the ingredients in the order shown.\n\nThe §eDivination Sigil§r is used to get more information on your Blood Altar/LP Network.",
+          "desc:8": "The §eDivination Sigil§r is used to get more information on your Blood Altar/LP Network. It is crafted using arcane ashes.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -57035,7 +57032,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§b§bThe quests from this point on are §cnot required§f§b to beat the pack. Neutronium can also be collected by the Orbital Miner. However, there are §6major bragging rights§f§b to make it this way.\n\n\n§f§nWhat is QMD?\n\n§9Quantum Minecraft Dynamics §fis a mod that brings §5High-Energy Particle Physics§f to Minecraft. While it may seem complicated at first glance, the mod becomes much more understandable when you understand the concepts behind it. \n\nBesides this in-game quest book guide, QMD § also has its own §2Guide Book§r already present in the Akashic Tome. An online version can be found on the §Q§Q§2QMD Github Wiki.§f\n\nOf course, the §N§2Nuclearcraft Official Discord§r also has channels to discuss high-energy particle smashing! Make sure to check out §7#qmd§r for support.\n\nWithout further ado, let\u0027s get into the tutorial!\n\n\n§nQuick Summary§r\n\nIn short, QMD revolves around §6producing, manipulating and utilising §5particles§r, via §3specially designed Multiblocks§r, for various recipes. These recipes produce §enew items§r or even §5new types of particles§r, which can then be used in further recipes. In addition, QMD contains other fun things, such as §cpowerful weapons§r or §6extreme power generation§r!\n\n\n§nBrief Introduction to Multiblocks§r\n\nAs mentioned before, particles are manipulated in various ways in QMD\u0027s various multiblocks. There are three types of multiblocks in QMD:\n\n§3-Accelerators\n§a-Particle Chambers\n§7-Vacuum Chambers§r\n\nParticles are produced and accelerated in §3Accelerators§r, then used for recipes in §aParticle Chambers§r and §7Vacuum Chambers§r. All Multiblocks will be covered in subsequent quests, and more details can also be found on the §2QMD Github Wiki§r.\n\nSince the entire mod revolves around particles, it is only natural that we understand them before we do anything involving them.\n\n\n§nWhat are Particles?§r\n\nUnlike most mods that handle items, fluids or even gases, QMD instead deals with particles. Each particle has a set of properties that can be viewed in §2JEI§r. \n\nMuch like how regular §eitems§f are stored in §astacks§r, QMD §5particles§f are stored in §\"§2\"particle stacks\"§f. However, unlike item stacks, particle stacks cannot be held by the player. Instead, §pparticle stacks§f can only be manipulated in §9QMD\u0027s§f §3specialised Multiblock Machines§f, and transported via §7Beamline Pipes§r.\n\nMore details about particle properties and transport will be covered in \"Particle Properties\" and \"Transporting Particles\", and more information about particles can also be found on the §2QMD Github Wiki§f at §nhttps://github.com/Lach01298/QMD/wiki/Particles.\n",
+          "desc:8": "§b§bThe quests from this point on are §cnot required§f§b to beat the pack. Neutronium can also be collected by the Orbital Miner. However, there are §6major bragging rights§f§b to make it this way.\n\n\n§f§nWhat is QMD?\n\n§9Quantum Minecraft Dynamics §fis a mod that brings §5High-Energy Particle Physics§f to Minecraft. While it may seem complicated at first glance, the mod becomes much more understandable when you understand the concepts behind it. \n\nBesides this in-game quest book guide, QMD § also has its own §2Guide Book§r already present in the Akashic Tome. An online version can be found on the §Q§Q§2QMD Github Wiki.§f\n\nOf course, the §N§2Nuclearcraft Official Discord§r also has channels to discuss high-energy particle smashing! Make sure to check out §7#qmd§r for support.\n\nWithout further ado, let\u0027s get into the tutorial!\n\n\n§nQuick Summary§r\n\nIn short, QMD revolves around §6producing, manipulating and utilising §5particles§r, via §3specially designed Multiblocks§r, for various recipes. These recipes produce §enew items§r or even §5new types of particles§r, which can then be used in further recipes. In addition, QMD contains other fun things, such as §cpowerful weapons§r or §6extreme power generation§r!\n\n§dExample:§r To produce §ep-type doped silicon§f (an item and your goal for the next few quests), we first §6produce§r §5boron ions§r (a particle) in a §3Linear Accelerator§r (a multiblock). Then, we combine the boron ions with silicon wafers in a §aTarget Chamber§r (another multiblock). The entire mod consists of these kinds of particle crafting chains!\n\n\n§nBrief Introduction to Multiblocks§r\n\nAs mentioned before, particles are manipulated in various ways in QMD\u0027s various multiblocks. There are three types of multiblocks in QMD:\n\n§3-Accelerators\n§a-Particle Chambers\n§7-Vacuum Chambers§r\n\nParticles (e.g. §5Boron Ions§r) are produced and accelerated in §3Accelerators§r (e.g. the §3Linear Accelerator§r), then used for recipes (e.g. §ep-type doped silicon§r) in §aParticle Chambers§r (e.g. the §aTarget Chamber§r) and §7Vacuum Chambers§r. All Multiblocks will be covered in subsequent quests, and more details can also be found on the §2QMD Github Wiki§r.\n\nSince the entire mod revolves around particles, it is only natural that we understand them before we do anything involving them.\n\n\n§nWhat are Particles?§r\n\nUnlike most mods that handle items, fluids or even gases, QMD instead deals with particles. Each particle has a set of properties that can be viewed in §2JEI§r. \n\nMuch like how regular §eitems§f are stored in §astacks§r, QMD §5particles§f are stored in §\"§2\"particle stacks\"§f. However, unlike item stacks, particle stacks cannot be held by the player. Instead, §pparticle stacks§f can only be manipulated in §9QMD\u0027s§f §3specialised Multiblock Machines§f, and transported via §7Beamline Pipes§r.\n\nMore details about particle properties and transport will be covered in \"Particle Properties\" and \"Transporting Particles\", and more information about particles can also be found on the §2QMD Github Wiki§f at §nhttps://github.com/Lach01298/QMD/wiki/Particles.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -59817,7 +59814,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -60898,7 +60895,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Now that you know how §5particles§r work, it\u0027s time to make use of those concepts to construct your first §3QMD Multiblock§r! This quest will talk about §3Linear Accelerators§f (also known as §3LINACs§f), the first Accelerator you will build.\n\n\n§nLinear Accelerators\n\n§3LINACs§f are your gateway to §9§1§9QMD§f, providing your first method of §5particle manipulation§r. Being an entry-level Accelerator§f, they also produce the particles required for any recipe in QMD§f. \n\n\n§nConstruction§r\n\nA visualisation of an empty and filled §3Linear Accelerator§r is avaliable in §2JEI§r and the §2QMD Github Wiki§r.\n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions: 5 blocks wide, 5 blocks tall, variable length (Min. 6 blocks, Max. 100 blocks), with a continuous line of §7Accelerator Beam Blocks§f in the centre\n\nRequired blocks on long sides:\n- §7Linear Accelerator Controller\n§r- §72 Accelerator Coolant Vents§f in §aInput§e§f and §cOutput§f mode\n§-- §7Accelerator Energy Port§f\n\nRequired blocks at the ends of the Accelerator, in the centre:\n- §7Accelerator Ion source§f facing inwards at one end \n- §7Accelerator Beam Port§f in §cOutput§r mode at the other end \n\nThe particle stack is produced by the §7Ion Source§r and exits the Accelerator via the §7Beam Port§r. \n\n§cNote:§r The Linear Accelerator can also be used to accelerate existing particle stacks by replacing the Accelerator Ion Source with an Accelerator Beam Port on input mode, then piping the particle stack in via that beam port.\n\n\nThe remaining empty space in the Linear Accelerator can now be filled up with §7Accelerator Components§r (§bQuadrapole Magnets§r and §dRF Cavities§r, covered in relevant quests below), to accelerate particles, and §9Coolers§r (covered in \"Passive Cooling\"), to cool the Accelerator.\n\n\n§nRequirements§r\n\nAll Accelerators have similar requirements for operation.\n\n1. Accelerators must be supplied with §6power§r to operate. \n\n2. Accelerators must be cooled with §9coolers§r (passive cooling) and §1coolant§r (active cooling) in order to not §coverheat§r and §cexplode§r. Cooling mechanics are covered in the quests above.\n\n3. Accelerators are switched on via a §credstone signal§r. The output particle\u0027s energy is §c(redstone strength)§r/15 of the §6maximum particle energy§f, which is covered in the \"RF Cavity\" quest.\n\nIn addition, for a LINAC to produce §5particles§r, the §7Ion Source§r must be supplied with §efilled canisters§r. Ion sources are covered in \"Ion Source\".",
+          "desc:8": "Now that you know how §5particles§r work, it\u0027s time to make use of those concepts to construct your first §3QMD Multiblock§r! This quest will talk about §3Linear Accelerators§f (also known as §3LINACs§f), the first Accelerator you will build. You\u0027ll be building this §3LINAC§r to create §eP-Type Doped Silicon§r, and some guidelines are provided in \"Making P-Type Doped Silicon\".\n\n\n§nLinear Accelerators\n\n§3LINACs§f are your gateway to §9§1§9QMD§f, providing your first method of §5particle manipulation§r. Being an entry-level Accelerator§f, they also produce the particles required for any recipe in QMD§f. \n\n\n§nConstruction§r\n\nA visualisation of an empty and filled §3Linear Accelerator§r is avaliable in §2JEI§r and the §2QMD Github Wiki§r.\n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions: 5 blocks wide, 5 blocks tall, variable length (Min. 6 blocks, Max. 100 blocks), with a continuous line of §7Accelerator Beam Blocks§f in the centre\n\nRequired blocks on long sides:\n- §7Linear Accelerator Controller\n§r- §72 Accelerator Coolant Vents§f in §aInput§e§f and §cOutput§f mode\n§-- §7Accelerator Energy Port§f\n\nRequired blocks at the ends of the Accelerator, in the centre:\n- §7Accelerator Ion source§f facing inwards at one end \n- §7Accelerator Beam Port§f in §cOutput§r mode at the other end \n\nThe particle stack is produced by the §7Ion Source§r and exits the Accelerator via the §7Beam Port§r. \n\n§cNote:§r The Linear Accelerator can also be used to accelerate existing particle stacks by replacing the Accelerator Ion Source with an Accelerator Beam Port on input mode, then piping the particle stack in via that beam port.\n\n\nThe remaining empty space in the Linear Accelerator can now be filled up with §7Accelerator Components§r (§bQuadrapole Magnets§r and §dRF Cavities§r, covered in relevant quests below), to accelerate particles, and §9Coolers§r (covered in \"Passive Cooling\"), to cool the Accelerator.\n\n\n§nRequirements§r\n\nAll Accelerators have similar requirements for operation.\n\n1. Accelerators must be supplied with §6power§r to operate. \n\n2. Accelerators must be cooled with §9coolers§r (passive cooling) and §1coolant§r (active cooling) in order to not §coverheat§r and §cexplode§r. Cooling mechanics are covered in the quests above.\n\n3. Accelerators are switched on via a §credstone signal§r. The output particle\u0027s energy is §c(redstone strength)§r/15 of the §6maximum particle energy§f, which is covered in the \"RF Cavity\" quest.\n\nIn addition, for a LINAC to produce §5particles§r, the §7Ion Source§r must be supplied with §efilled canisters§r. Ion sources are covered in \"Ion Source\".",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -61687,7 +61684,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§lTL:DR No Maths version:§r §bFocus§r is calculated exactly the same as a LINAC. For heavier particles (e.g. Proton), §6energy§r is increased with §eDipole Strength§r, while for lighter particles (e.g. Electron), §6energy§r is increased with §eAccelerator Voltage§r.\n\n\nThis quest details the maths behind the §bfocus§r and §6energy§f of a resultant §\n§5particle§\n§f from a §3Synchrotron§f. While it isn\u0027t completely necessary, an understanding of the formulas can help greatly when planning out a new Synchrotron and figuring out if a given design can provide the energy needed for your desired recipe.\n\n§\n\nThe §bfocus§f gained or lost by a §5particle§f travelling through a Synchrotron is calculated with the same formulas as the LINAC. The length of the Synchrotron can be found in the §2Accelerator GUI§r.\n\n\nThe §6maximum energy§f of the resulting particle stack is the smaller of these two values: the Dipole Field Strength and Synchrotron Radiation Losses. \n\n\nThe maximum energy from the Dipole Strength is the limiting factor for heavier particles, like the proton. It is given by: \n\n§6Maximum Energy from Dipole Strength (GeV)§r \u003d  \n(|§dcharge§r| * §eTotal Dipole Strength§r * §7Synchrotron \nRadius§r)^2 / (2 * §dParticle Mass (MeV/c^2)§r)\n\n\nThe maximum energy from the Radiation losses is the limiting factor for lighter particles, like the electron. It is given by:\n\n§6Maximum Energy from Radiation Losses (GeV) § \u003d \n§dParticle Mass (MeV/c^2)§r * (3 * §eTotal Accelerating \nVoltage (kV)§r * §7Synchrotron Radius§r / |§dcharge§r|)^0.25",
+          "desc:8": "§lTL:DR No Maths version:§r §bFocus§r is calculated exactly the same as a LINAC. For heavier particles (e.g. Proton), §6energy§r is increased with §eDipole Strength§r, while for lighter particles (e.g. Electron), §6energy§r is increased with §eAccelerator Voltage§r.\n\n\n§nFull Explanation§r\n\nThis quest details the maths behind the §bfocus§r and §6energy§f of a resultant §\n§5particle§\n§f from a §3Synchrotron§f. While it isn\u0027t completely necessary, an understanding of the formulas can help greatly when planning out a new Synchrotron and figuring out if a given design can provide the energy needed for your desired recipe.\n\n§\n\nThe §bfocus§f gained or lost by a §5particle§f travelling through a Synchrotron is calculated with the same formulas as the LINAC. The length of the Synchrotron can be found in the §2Accelerator GUI§r.\n\n\nThe §6maximum energy§f of the resulting particle stack is the smaller of these two values: the Dipole Field Strength and Synchrotron Radiation Losses. \n\n\nThe maximum energy from the Dipole Strength is the limiting factor for heavier particles, like the proton. It is given by: \n\n§6Maximum Energy from Dipole Strength (GeV)§r \u003d  \n(|§dcharge§r| * §eTotal Dipole Strength§r * §7Synchrotron \nRadius§r)^2 / (2 * §dParticle Mass (MeV/c^2)§r)\n\n\nThe maximum energy from the Radiation losses is the limiting factor for lighter particles, like the electron. It is given by:\n\n§6Maximum Energy from Radiation Losses (GeV) § \u003d \n§dParticle Mass (MeV/c^2)§r * (3 * §eTotal Accelerating \nVoltage (kV)§r * §7Synchrotron Radius§r / |§dcharge§r|)^0.25",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -62270,7 +62267,7 @@
             "tag:10": {
               "Fluid:10": {
                 "Amount:3": 1000,
-                "FluidName:8": "fluidpotassium"
+                "FluidName:8": "potassium"
               }
             }
           },
@@ -62314,7 +62311,7 @@
               "tag:10": {
                 "Fluid:10": {
                   "Amount:3": 1000,
-                  "FluidName:8": "fluidpotassium"
+                  "FluidName:8": "potassium"
                 }
               }
             }
@@ -63114,7 +63111,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Much like how §aitem stacks§r have properties (amount of items in a stack), §2particle stacks§r also have their own properties. However, unlike item stacks, particle stacks have 3 properties:\n\n§4- Amount (pu/t)\n§6- Energy (eV)\n§b- Focus§f\n\n§4Amount§r is the amount of particles, measured in particle units (pu). Particles are produced at a given rate, measured in particle units per tick (pu/t), and that amount §ccannot§r be modified by Accelerators.\n\n§6Energy§r is the energy of the particles, measured in Electron Volts (eV). It can be increased or decreased by Accelerators.\n\n§bFocus§r is how focused or confined the particles are. It can be increased by Accelerators.\n\n\n§nIntroduction to QMD Recipes§r\n\nAll recipes involving particles require particle stacks to have a §bminimum focus§f, and §6energy§r within a certain §6energy range (e.g 10-20 MeV)§f for the recipe to work (relevant values can be seen in §2JEI§f). Recipes require a §4cumulative amount of particles§r to be completed, thus allowing the speed of a recipe to be calculated with (pu required)/(pu/t).\n\n§A§fAs most newly-created particles start out with no §6energy §fand barely any §bfocus§f, §3Accelerators§e §fare used in order to get particle stacks to the relevant § §6energy§f and §bfocus§f§f. How §3Accelerators§f do this, and how they are constructed will be covered in \"QMD 102: The Linear Accelerator\" and relevant quests.",
+          "desc:8": "Much like how §aitem stacks§r have properties (amount of items in a stack), §2particle stacks§r also have their own properties. However, unlike item stacks, particle stacks have 3 properties:\n\n§4- Amount (pu/t)\n§6- Energy (eV)\n§b- Focus§f\n\n§4Amount§r is the amount of particles, measured in particle units (pu). Particles are produced at a given rate, measured in particle units per tick (pu/t), and that amount §ccannot§r be modified by Accelerators.\n\n§6Energy§r is the energy of the particles, measured in Electron Volts (eV). It can be increased or decreased by Accelerators.\n\n§bFocus§r is how focused or confined the particles are. It can be increased by Accelerators.\n\n§dExample:§r A particle stack of boron ions can have a focus of §b1§r, an energy of §6400keV§r and be produced at a rate of §410kpu/t§r. While the stack is stuck at §410kpu/t§r and cannot be modified, an accelerator can increase the focus, and increase or decrease the energy of the boron ion particle stack.\n\n\n§nIntroduction to QMD Recipes§r\n\nAll recipes involving particles require particle stacks to have a §bminimum focus§f, and §6energy§r within a certain §6energy range (e.g 10-20 MeV)§f for the recipe to work (relevant values can be seen in §2JEI§f). Recipes require a §4cumulative amount of particles§r to be completed, thus allowing the speed of a recipe to be calculated with (pu required)/(pu/t).\n\n§dExample:§r The §r§eP-Type Doped Silicon§r recipe requires Boron Ions to have a minimum focus of §b2§r and an energy within §6600keV-1MeV§r. It requires a total of §41Mpu§r of Boron Ions, which means that if §410kpu/t§r of boron ions are provided, the recipe can be completed within 1M/10k \u003d 100t, which is 5s.\n\n§A§fAs most newly-created particles start out with no §6energy §fand barely any §bfocus§f, §3Accelerators§e §fare used in order to get particle stacks to the relevant § §6energy§f and §bfocus§f§f. How §3Accelerators§f do this, and how they are constructed will be covered in \"QMD 102: The Linear Accelerator\" and relevant quests.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63160,7 +63157,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Particle stacks cannot be handled directly by the player. Instead, they can only be transported via §7beam blocks§r (inside multiblocks) and §7beamline pipes§r (outside multiblocks). They can be imagined as §6beams§r travelling through beam blocks to their destination. \n\nAs beamline pipes cannot be turned on their own, §3Beam Diverters§r are required to rotate the direction of a beam, and will be covered in a later quest.\n\n\nParticle stacks also §close focus§r for every block they travel! The amount lost per block is based on the §battenuation rate (default 0.02)§r and the §4pu/t§r of the particle stack, via the equation:\n\n§bFocus Lost per Block§r \u003d §b\nattenuation rate§r * (1 + |§dcharge§r|*(§4pu/t§r / 10000)^0.5)\n\nThe charge of a particle can be found in §2JEI§r, under particle properties.\n\nIf the focus is less than or equal to 0, the particle stack will not travel any further. Thus, make sure to minimise the distance particles travel in your QMD setups to minimise focus loss!\n\n",
+          "desc:8": "Particle stacks cannot be handled directly by the player. Instead, they can only be transported via §7beam blocks§r (inside multiblocks) and §7beamline pipes§r (outside multiblocks). They can be imagined as §6beams§r travelling through beam blocks to their destination. \n\nAs beamline pipes cannot be turned on their own, §3Beam Diverters§r are required to rotate the direction of a beam, and will be covered in a later quest.\n\n\nParticle stacks also §close focus§r for every block they travel! The amount lost per block is based on the §battenuation rate (default 0.02)§r and the §4pu/t§r of the particle stack, via the equation:\n\n§bFocus Lost per Block§r \u003d §b\nattenuation rate§r * (1 + |§dcharge§r|*(§4pu/t§r / 10000)^0.5)\n\nThe charge of a particle can be found in §2JEI§r, under particle properties.\n\n§dExample:§r A boron ion has a charge of +1. If the boron ion particle stack has a pu/t of §410000pu/t§r, it will lose §b0.02§r * (1 + §d1§r * (§410000§r / 10000)^0.5) \u003d §b0.04§r focus per block. This means that if the particle stack travels 5 blocks, it will lose §b0.20§r focus!\n\n\nIf the focus is less than or equal to 0, the particle stack will not travel any further. Thus, make sure to minimise the distance particles travel in your QMD setups to minimise focus loss!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63389,7 +63386,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "An §dRF cavity§f is constructed from §d§f§7RF Cavity blocks§f of the same type in a ring of 8 around the accelerator beam. Each §dRF cavity structure§r increases the §eAccelerating Voltage§r of the accelerator by the amount stated in the §8§7RF cavity\u0027s§r tooltip. The §etotal Accelerating Voltage§r of the accelerator can be seen in the §2Accelerator GUI§r.\n\n\nFor §3Linear Accelerators§f, the resulting particle\u0027s §6energy§f is calculated via the formula:\n\n§6Resulting Energy§r \u003d \n§6Initial Energy§r + |§dcharge§r| * §eTotal Accelerating Voltage§r\n\nThe charge of a particle can be found in §2JEI§r, under particle properties.",
+          "desc:8": "An §dRF cavity§f is constructed from §d§f§7RF Cavity blocks§f of the same type in a ring of 8 around the accelerator beam. Each §dRF cavity structure§r increases the §eAccelerating Voltage§r of the accelerator by the amount stated in the §8§7RF cavity\u0027s§r tooltip. The §etotal Accelerating Voltage§r of the accelerator can be seen in the §2Accelerator GUI§r.\n\n\nFor §3Linear Accelerators§f, the resulting particle\u0027s §6energy§f is calculated via the formula:\n\n§6Resulting Energy§r \u003d \n§6Initial Energy§r + |§dcharge§r| * §eTotal Accelerating Voltage§r\n\nThe charge of a particle can be found in §2JEI§r, under particle properties.\n\n§dExample:§r If a boron ion particle stack (which has a charge of §d+1§r) has an initial energy of §60eV§r and is passed through a Linear Accelerator containing §d5 copper RF cavities§r (accelerating voltage §e200keV§r), the total accelerating voltage is §e1MeV§r. Thus, the resulting energy is §60 §r+ §d1§r * §e1MeV§r \u003d §61MeV§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -64819,6 +64816,290 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "830:10": {
+      "preRequisites:11": [
+        207
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The Workbench Charger is placed on top of your thaumcraft workbench. \n\nIt allows your workbench to draw vis from 9 chunks around it instead of just 1.\n\n§bThis should make recipes requiring large amounts of vis easier to craft!§r\n\nTip: If you are having trouble finding enough vis to craft the workbench charger, the twilight forest contains plenty of vis!",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumcraft:arcane_workbench_charger"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Workbench Charger",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 830,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:dioptra"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:arcane_workbench_charger"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "831:10": {
+      "preRequisites:11": [
+        206
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Used for a number of BM recipes!\n\nTo complete ash recipes, use the Ashes on the ground, then add the ingredients in the order shown.\n\n§bNeed more vis to craft the ashes? Use a workbench charger, or visit the twilight forest, which has tons of vis!",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "OreDict:8": "",
+            "id:8": "bloodmagic:arcane_ashes"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Arcane Ashes",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 831,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:enchanted_book",
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "id:2": 70,
+                    "lvl:2": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "bloodmagic:arcane_ashes"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "832:10": {
+      "preRequisites:11": [
+        228
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The arcane assembler automatically crafts arcane workbench recipes, at the cost of crystal water.\n\n§nAvailable Upgrades\n\n§rView available upgrades for this multiblock either through the JEI description for the blueprint or searching the multiblock name in JEI.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumcraft:arcane_workbench"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Arcane Assembler",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 832,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:salis_mundus"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:itemblueprint",
+              "tag:10": {
+                "dynamicmachine:8": "modularmachinery:arcane-assembler"
+              }
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:blockcontroller"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:blockinputbus"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:blockoutputbus"
+            },
+            "4:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:blockfluidinputhatch"
+            },
+            "5:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:arcane_workbench_charger"
+            },
+            "6:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicaugmentation:stability_field_generator"
+            },
+            "7:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:metal_alchemical"
+            },
+            "8:10": {
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:vis_battery"
+            },
+            "9:10": {
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumadditions:iron_framed_greatwood"
+            },
+            "10:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicaugmentation:arcane_trapdoor_wood"
+            },
+            "11:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:slab_greatwood"
+            },
+            "12:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:arcane_workbench"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -66185,7 +66466,7 @@
           "id:3": 446,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 324,
+          "x:3": 328,
           "y:3": -96
         },
         "46:10": {
@@ -66215,6 +66496,13 @@
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": 0
+        },
+        "50:10": {
+          "id:3": 830,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 24,
+          "y:3": 1
         }
       }
     },
@@ -69622,8 +69910,8 @@
           "id:3": 718,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 252,
-          "y:3": 84
+          "x:3": 269,
+          "y:3": 113
         },
         "50:10": {
           "id:3": 755,
@@ -69631,6 +69919,20 @@
           "sizeY:3": 24,
           "x:3": 180,
           "y:3": -12
+        },
+        "51:10": {
+          "id:3": 831,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 251,
+          "y:3": 78
+        },
+        "52:10": {
+          "id:3": 832,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 558,
+          "y:3": 60
         }
       }
     },
@@ -71226,7 +71528,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 0.0,

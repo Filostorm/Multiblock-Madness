@@ -205,6 +205,14 @@ for moltenfluid in moltentoremove {
 	Melting.removeRecipe(moltenfluid);
 }
 
+Melting.removeRecipe(<liquid:superium>, <mysticalagriculture:crafting:43>);
+Melting.removeRecipe(<liquid:superium>, <mysticalagriculture:crafting:36>);
+Melting.removeRecipe(<liquid:superium>, <mysticalagriculture:ingot_storage:4>);
+Melting.removeRecipe(<liquid:supremium>, <mysticalagriculture:crafting:44>);
+Melting.removeRecipe(<liquid:supremium>, <mysticalagriculture:crafting:37>);
+Melting.removeRecipe(<liquid:supremium>, <mysticalagriculture:ingot_storage:5>);
+
+
 // Additions //
 Melting.addRecipe(<liquid:inert_metal> * 144,<contenttweaker:inert_ingot>);
 Melting.addRecipe(<liquid:inert_metal> * 1296,<contenttweaker:sub_block_holder_0:2>);
