@@ -1401,7 +1401,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Early game Embers!\nHold the Tinker\u0027s Lens in your hand or off hand to see what various blocks are used for.\n\nWalk around with the Atmospheric gauge to find an Ember rich location to place your Bore.\n\nNo gui means it can be hard to know whats going on inside the machines, so craft up some dials to attach to them!\n\n\nRefer to the Codex for more in depth information on any of these quests, as well as more information on Embers in general.",
+          "desc:8": "Various tools for early game Embers!\n\nHold the §bTinker\u0027s Lens§r in your hand or off hand to see what various blocks are used for.\n\nWalk around with the §eAtmospheric gauge§r to find an Ember rich location to place your Bore.\n\nNo gui means it can be hard to know whats going on inside the machines, so craft up some dials to attach to them! The §6Ember Dial§r shows how much Ember a machine contains, while the §9Fluid Dial§r shows how much fluid a machine contains.\n\n\nRefer to the Codex for more in depth information on any of these quests, as well as more information on Embers in general.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1573,7 +1573,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place this within 3 spaces of bedrock, and pipe coal or another burnable material through the top hole, and it will start mining Ember! This expands into a 3x3 structure.\n\nPlace another §6Mechanical Core§r on the top center of the Bore for more access.\n",
+          "desc:8": "Mines §eSolid Ember§r from bedrock, which is used to create §6Ember Power§r.\n\nPlace this within 3 spaces of bedrock, and pipe coal or another burnable material through the top hole, and it will start mining Solid Ember! This expands into a 3x3 structure.\n\nPlace another §6Mechanical Core§r on the top center of the Bore for more access.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1788,7 +1788,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This one will be tricky to automate. You need a way to place the Empowered blocks, as well as a way to break and collect the Unempowered blocks.\n\n",
+          "desc:8": "A material forged from many advanced alloys, used to manufacture endgame items.\n\nThis one will be tricky to automate. You need a way to place the Empowered blocks, as well as a way to break and collect the Unempowered blocks.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -2387,7 +2387,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble the shown structure inside the orange 3x3x3 cube between the Projectors, then throw the catalyst in the field.\n\nYou can also use this block on the Ember Bore and similar to increase the accessible slots.",
+          "desc:8": "Used to create various Embers machines, notably the Ember Bore.\n\nAssemble the shown structure inside the orange 3x3x3 cube between the Projectors, then throw the catalyst in the field.\n\nYou can also use this block on the Ember Bore and similar to increase the accessible slots.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -2637,7 +2637,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Looking at the top and bottom of this with the Tinker\u0027s Lens will show us that solid embers need to be piped into the bottom, then Ember power comes out the top. Attach an Ember Emitter to the top to be able to transfer it, then a Receptor attached to the Copper Cell, or Ember powered machine.\n\n§6Shift-right click §rwith the Tinker\u0027s Hammer on the Receptor, then §6right click §rthe Emitter. After supplying a §credstone signal §rto the Emitter, you should start to see Embers being transferred! Embers can travel a maximum of 25 blocks.\n\n§bEmbers can also be used as a basic source of RF for some of your early game machines. Simply attach a Receptor onto whatever needs power!",
+          "desc:8": "Produces §eEmber Power§r from §7solid embers§r mined from the Ember Bore, which is used to power nearly all Embers Machines.\n\nLooking at the top and bottom of this with the §6Tinker\u0027s Lens§r will show us that solid embers need to be piped into the bottom, then Ember Power comes out the top. \n\nAttach an Ember Emitter to the top of the Ember Activator to transfer power out of it. Then, place a Copper Cell or Ember powered machine, and attach an Ember Receptor to it.\n\n§6Shift-right click §rwith the Tinker\u0027s Hammer on the Receptor, then §6right click §rthe Emitter. Then, supply a §credstone signal §rto the Emitter. You should start to see Embers being transferred! Embers can travel a maximum of 25 blocks.\n\n§bEmbers can also be used as a basic source of RF for some of your early game machines. Simply attach a Receptor onto whatever needs power!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -2733,7 +2733,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Attach an Ember Receptor to the correct side of the Melter. To connect the two ember transmitters shift-right click the Receptor then right click the Emitter. §cUse the lever to activate the Emitter.§r\n\nYou can right click on the melter to place things into it, drop them in, or pipe them. \n\nThis is one of the first methods of ore doubling.",
+          "desc:8": "Attach an Ember Receptor to the correct side of the Melter. To connect the two ember transmitters, shift-right click the Receptor, then right click the Emitter. §cUse the lever to activate the Emitter.§r\n\nYou can right click on the melter to place things into it, drop them in, or pipe them. \n\nThis is one of the first methods of ore doubling.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -2936,7 +2936,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Fluid goes in the Bottom, one empty block, then the Stamper above that. Right click with the stamp to attach, them power with Ember.\n\n§6Be sure that your Ember Shards are placed before you start piping metal in!§r\n\nItems are collected in a Bin below the Stamp Base, or dropped if there is no Bin.\n\n§bThis is also a great way to make all the gears you\u0027ll be needing!",
+          "desc:8": "Stamps molten metal into components like plates or gears.\n\nFluid goes in the Bottom, one empty block, then the Stamper above that. Right click the plate stamp with the bottom of the Stamper to attach it. Then, power the Stamper with Ember.\n\n§6Be sure that your Ember Shards are placed before you start piping metal in!§r\n\nItems are collected in a Bin below the Stamp Base, or dropped if there is no Bin.\n\n§bThis is also a great way to make all the gears you\u0027ll be needing!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -4638,7 +4638,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Simply by supplying this with a steady source of water, you can increase your ember burning efficiency by 1.5. If you place it on a block of metal, then heat it up by surrounding it with lava or fire, you can get up to 6x efficiency!\n\n§bTry placing this on a block of Dawnstone!",
+          "desc:8": "Simply by supplying this with a steady source of water, you can increase your ember burning efficiency by 1.5. If you place it on a block of metal, then heat it up by surrounding the metal block with lava or fire, you can get up to 6x efficiency!\n\n§bTry placing this on a block of Dawnstone!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -5182,7 +5182,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §dSteam Engine§r can either have coal and water piped into it, or steam.\n\nA §dSteam Engine§r running on water and coal will produce §a20 rotational power§r, while one running on steam will produce §a40 RP§r.\n\nPlacing a §9Mini Boiler§r next to any Ember processing machine and filling it with water will create steam! Explosions are disabled in this pack, so no need to worry.\n\n§6The Ember Bore can be made much faster by switching to mechanical power (requires at least 15RP).§r",
+          "desc:8": "The §dSteam Engine§r can either have coal and water piped into it, or steam.\n\nA §dSteam Engine§r running on water and coal will produce §a20 rotational power§r, while one running on steam will produce §a40 RP§r.\n\nPlacing a §9Mini Boiler§r next to any Ember processing machine and filling it with water will create steam! Explosions are disabled in this pack, so no need to worry.\n\n§6The Ember Bore can be made much faster by switching to mechanical power (requires at least 20RP)§r\n\n§bSome Embers Machines can be powered with Mechanical Power to speed them up! Search \"Mechanical Power\" in §2JEI§b to find them.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -5692,7 +5692,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble a hollow 3x3x3 cube, then place the controller in the center of one of the layers. The drain can go anywere, but put it on the second row up, then attach the faucet to it. Place the table below the faucet.\n\n§6You can increase the capacity by adding extra middle layers.\n\n§rThe High Oven works by burning Coke Coal or §bAlumentum §rto produce heat. Once the heat is high enough, it will start the melting process. If it is hot enough, and you have the correct inputs, it can also create a few alloys.",
+          "desc:8": "Produces §6more advanced alloys§r with its intense heat.\n\nAssemble a hollow 3x3x3 cube, then place the controller in the center of one of the layers. The drain can go anywere, but put it on the second row up, then attach the faucet to it. Place the table below the faucet.\n\n§6You can increase the capacity by adding extra middle layers. The maximum size of the high oven is 3x3x8, with 6 slots.\n\n§rThe High Oven works by burning Coke Coal or §bAlumentum §rto produce heat. Once the heat is high enough, it will start the melting process. If it is hot enough, and you have the correct inputs, it can also create a few alloys.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6950,7 +6950,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§b§rLeft click or shift left click to change modes, then right click to place whatever item you want processed. The Profiling Bench does not need power.\n\n§aItems can be piped in and out quite simply, so don\u0027t hesitate to set up a small automation for it!§r\n\nRockhounding can be an intimadating mod! One key thing to note is the §cred arrows§r in the Guide Book when building a machine. They indicate which way you should be facing when that part is placed. \n\nIt is highly recommended to do the §dMineral Sizer§r quest below this one, to familiarize yourself with some of the concepts.\n\nThe Rockhounding questbook chapter will explain in depth how to get the most out of it, and if you need further help, feel free to stop by our §9Discord§r!",
+          "desc:8": "Used to craft Rockhounding Components.\n\n§b§rLeft click or shift left click to change modes, then right click to place whatever item you want processed. The Profiling Bench does not need power.\n\n§aItems can be piped in and out quite simply, so don\u0027t hesitate to set up a small automation for it!§r\n\nRockhounding can be an intimadating mod! One key thing to note is the §cred arrows§r in the Guide Book when building a machine. They indicate which way you should be facing when that part is placed. \n\nIt is highly recommended to do the §dMineral Sizer§r quest below this one, to familiarize yourself with some of the concepts.\n\nThe Rockhounding questbook chapter will explain in depth how to get the most out of it, and if you need further help, feel free to stop by our §9Discord§r!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -7828,7 +7828,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Drop petals in here, along with some seeds, to craft your first magical flower, the Pure Daisy.",
+          "desc:8": "Used to craft Botania\u0027s magic flowers.\n\nDrop petals in here, along with some seeds, to craft your first magical flower, the Pure Daisy.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9184,7 +9184,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "All the custom Multiblocks will require the blueprint inside to function. You can use them to display a hologram while assembling the machine.\n\nThe Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input).\n\nCan attach a Faucet right to the output!",
+          "desc:8": "Mixes metals together to create your §6first alloys§r.\n\nAll the custom Multiblocks will require the blueprint inside to function. You can use them to display a hologram while assembling the machine.\n\nThe Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input).\n\nCan attach a Faucet right to the output!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9761,7 +9761,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A basic magic building block.",
+          "desc:8": "A basic magic building block and crafting material.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12289,7 +12289,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Throw the §dSalis Mundus§r on the Cauldron to turn it into a Crucible. Fill with water, then heat with fire or lava below the Crucible.\n\nThis can be a messy process, with wasted Essentia converting into §5Flux§r and polluting the atmosphere. This can cause §5Void Rifts§r, which can destroy blocks if left unattended. Look in the top left corner of the screen while holding the §6Thaumometer§r to check your Vis/Flux levels. The Dark Purple is how much §5Flux§r is in the chunk.\n\nUse §bQuartz Slivers§r to clean up after a craft, but make sure to unlock the research first!\n\n§6This will be used to make Brass until you get access to Zinc.",
+          "desc:8": "Used to craft Thaumcraft alchemical recipes.\n\nThrow the §dSalis Mundus§r on the Cauldron to turn it into a Crucible. Fill with water, then heat with fire or lava below the Crucible.\n\nThis can be a messy process, with wasted Essentia converting into §5Flux§r and polluting the atmosphere. This can cause §5Void Rifts§r, which can destroy blocks if left unattended. Look in the top left corner of the screen while holding the §6Thaumometer§r to check your Vis/Flux levels. The Dark Purple is how much §5Flux§r is in the chunk.\n\nUse §bQuartz Slivers§r to clean up after a craft, but make sure to unlock the research first!\n\n§6This will be used to make Brass until you get access to Zinc.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12729,7 +12729,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With Nature\u0027s Compass you can choose a biome, and it will point to the closest one.\n\n§6Amber is found inside Hollow Hills.",
+          "desc:8": "With the Nature\u0027s Compass, you can choose a biome and it will point to the closest one.\n\n§6Amber is found inside Hollow Hills.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12860,7 +12860,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§d§5Raw Voidstone§r is found in the Beneath.\n\nItems can be piped in and out for basic automation.\n\nShift-right click on your altar with the§d Diviner§r to show a holographic layout in order to upgrade to the next tier.\n\nUsing the §bSacrificial Dagger§r next to the altar will damage you to fill your altar by a small amount, while hitting mobs next to an altar with the §bDagger of Sacrifice§r will insta-kill them for some blood.\n\n",
+          "desc:8": "Uses Life Essence to craft Blood Magic components. LP in this altar can also be used in other Blood Magic things, such as the alchemical table and BM rituals.\n\n§d§5Raw Voidstone§r is found in the Beneath.\n\nItems can be piped in and out for basic automation.\n\nShift-right click on your altar with the§d Diviner§r to show a holographic layout in order to upgrade to the next tier.\n\nUsing the §bSacrificial Dagger§r next to the altar will damage you to fill your altar by a small amount, while hitting mobs next to an altar with the §bDagger of Sacrifice§r will insta-kill them for some blood.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -13027,7 +13027,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place §6§r8§r of any type of rune in a ring one level below your blood altar to upgrade it to level 2.\n\n§cOnly the four side runes can be upgraded on a tier 2 Altar! §rOnce upgraded to the tier 3 and higher, all eight take effect.\n\n§rThese are the basic runes, they can be upgraded to modify your Blood Altar in diferent ways.\n\nYou\u0027ll need a lot of §eSlate Dust§r coming up soon, so set up automation for it as soon as you can.",
+          "desc:8": "Place §6§r8§r of any type of rune in a ring one level below your blood altar to upgrade it to level 2.\n\n§cOnly the four side runes can be upgraded on a tier 2 Altar! §rOnce upgraded to the tier 3 and higher, all eight take effect.\n\n§rThese are the basic runes, they can be upgraded to modify your Blood Altar in diferent ways.\n\nYou\u0027ll need §ca lot§r of §eSlate Dust§r coming up soon, so set up automation for it as soon as you can.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -13092,7 +13092,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Now that you have some blank runes, you can go ahead and craft the Runic Matrix!\n\n§bClaiming this quest will unlock the research for Infusion.",
+          "desc:8": "Now that you have some blank runes, you can go ahead and craft the §5Runic Matrix§r! Note that the crafting recipe for the Runic Matrix is the recipe with 64 blank runes, while the other recipe shows how to assemble the §5Infusion Matrix§r multiblock.\n\nAfter crafting the Runic Matrix and placing it in a formation with 8 other arcane stones and an arcane pedestal, right click the runic matrix with a salis mundus to complete the structure!\n\n§bClaiming this quest will unlock the research for Infusion.§r\n\n§nInfusion Crafting§r\n\nPlace the Infusion Pedestals in a §esymmetrical§r manner around the Infusion Matrix.\n\nWhen crafting an infusion recipe, place the items §esymmetrically§r on the pedestals and the central item in the central pedestal. Then, place §dvis jars§r containing the required vis for the recipe close to the infusion matrix. Finally, right click the infusion matrix with a §9gauntlet§r to start the recipe. After some time, the item will be crafted.\n\n§cBeware of infusion instability!§r Methods to stabilise the ritual are described in the \"Infusion Stability\" quest.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -16731,10 +16731,10 @@
                 "display:10": {
                   "color:3": 3949738
                 },
-                "label:8": "It-distilliation-tower",
+                "label:8": "It-distillation-tower",
                 "size:3": 17,
                 "sourceInventory:10": {},
-                "structureName:8": "config/capsule/prefabs/immersivetech/it-distilliation-tower"
+                "structureName:8": "config/capsule/prefabs/immersivetech/it-distillation-tower"
               }
             }
           }
@@ -16797,7 +16797,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble a hollow 3x3x4 (you can click the show hologram button after you place your Blast Furnace to show you how to build it.)\n\nBy filling the center with lava, you can increase the heat to just over 1500, enough for Aluminum!\n\n§bYou can place a Blast Furnace controller on each side of the structure.",
+          "desc:8": "The extreme heat of this machine allows you to smelt §6late-game materials§r.\n\nAssemble a hollow 3x3x4 (you can click the show hologram button after you place your Blast Furnace to show you how to build it.)\n\nBy filling the center with lava, you can increase the heat to just over 1500, enough for Aluminium, Manyullyn and Manganese!\n\n§bYou can place a Blast Furnace controller on each side of the structure.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -17528,7 +17528,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§l§l§l§rFlip to Heavy Machinery \u003e Crusher in your Engineer\u0027s Manual, then craft it together with the Projector to configure it.§r\n\nMiddle Click with the Projector to rotate, then left click to anchor your hologram, then place the blocks as shown. Shift-right click on a block with the Projector to remove the Hologram if you want to move it.\n\n§9§6Most Multiblocks have a §9Capsule blueprint §6that is craftable and is used to place the entire Multiblock in just one click! Crafting one doesnt consume the MB parts, just the Paper, Buttons, and Lapis.§r\n\nAfter you finish, right click one of the center fences with the Engineer\u0027s Hammer to complete the machine!\n\nThrow Coke Coal into the top to create some Coke Dust.\n\nThis can also be used to double ore, just feed it through the Crusher and you will get two dusts, along with a chance at a byproduct!",
+          "desc:8": "Crushes materials into dusts.\n\n§l§l§l§rFlip to Heavy Machinery \u003e Crusher in your Engineer\u0027s Manual, then craft it together with the Projector to configure it.§r\n\nMiddle Click with the Projector to rotate, then left click to anchor your hologram, then place the blocks as shown. Shift-right click on a block with the Projector to remove the Hologram if you want to move it.\n\n§9§6Most Multiblocks have a §9Capsule blueprint §6that is craftable and is used to place the entire Multiblock in just one click! Crafting one doesnt consume the MB parts, just the Paper, Buttons, and Lapis.§r\n\nAfter you finish, right click one of the center fences with the Engineer\u0027s Hammer to complete the machine!\n\nThrow Coke Coal into the top to create some Coke Dust.\n\nThis can also be used to double ore, just feed it through the Crusher and you will get two dusts, along with a chance at a byproduct!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -17638,7 +17638,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Craft the Stormway, then throw it into a 2x2 pool of water surrounded by flowers.\n\nYou can find §9Aetherium§r and other gems hanging on the inside of Hollow Hills, along with lots of loot and monsters.\n\nBlack Quartz and Charged Certus are much more common as well.\n\nLimestone is only found here, which is needed for the High Oven.\n\n§bMight be a good idea to bring some Data Models along with you!",
+          "desc:8": "Craft the Stormway, then throw it into a 2x2 pool of water surrounded by flowers.\n\n\n§nResources of the Twilight Forest§r\n\nYou can find §9Aetherium§r and other gems hanging on the inside of Hollow Hills, along with lots of loot and monsters.\n\nBlack Quartz and Charged Certus are much more common as well.\n\nLimestone is only found here, which is needed for the High Oven.\n\n§bMight be a good idea to bring some Data Models along with you!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -17727,7 +17727,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place this in the center of a 15x15 flat area, and insert a Attuned Trail Key.\n\nThe Matter you get can be transmuted into harder to get varieties later on.",
+          "desc:8": "Allows you to fight waves of mobs for §bPristine Matter§r.\n\nPlace this in the center of a 15x15 flat area, and insert an Attuned Trial Key. Trial Keys can be attuned to a specific mob by killing the mob with the Trial Key in your offhand.\n\nThe Matter you get can be transmuted into harder to get varieties later on.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -17934,7 +17934,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Hammer the center barrel to complete the Industrial Squeezer.\n\nYou can also create plant oil here, which is one of the ingreidents for Bio-Diesel.",
+          "desc:8": "Hammer the center barrel to complete the Industrial Squeezer.\n\nYou can create plant oil here, which is one of the ingreidents for Bio-Diesel.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18022,7 +18022,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You can use the hammer on the piston to rotate it, then again once it is in the proper position to complete the Metal Press.\n\nUse a Metal Press Mold on the Metal Press, then drop or pipe items on or into the back conveyor block.\n\n",
+          "desc:8": "Compresses metals into metallic components. §bCan also be used to make tinkers components!§r\n\nYou can use the hammer on the piston to rotate it, then again once it is in the proper position to complete the Metal Press.\n\nUse a Metal Press Mold on the Metal Press, then drop or pipe items on or into the back conveyor block.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -19145,7 +19145,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The left side is where you place your ores to be smelted, or your alloy bases. The right side is where you put your additives. Your §dGraphite Electrodes§r are placed in the top.\n\nSlag can be piped out the back, and your final product out the front.",
+          "desc:8": "With the power of Electricity, you can now manufacture even more advanced alloys.\n\nThe left side is where you place your ores to be smelted, or your alloy bases. The right side is where you put your additives. Your §dGraphite Electrodes§r are placed in the top.\n\nSlag can be piped out the back, and your final product out the front.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -19721,7 +19721,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Pour some lava into the workbench, then place the correct tool inside.",
+          "desc:8": "Can be used to craft plates, rods and wires more easily.\n\nPour some lava into the workbench, then place the correct tool inside.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -19889,7 +19889,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A basic block for building some multiblock machines.",
+          "desc:8": "A basic block for building some Immersive Engineering multiblock machines.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -20701,7 +20701,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "After selecting the §9§1Mark of the Falling Tower §rin your Ritual Diviner (Shift-Left click 3 times), right click on your placed Master Ritual Stone with it until completed. You can view all available Mark of the Falling Tower recipes by viewing the uses of the Master Ritual Stone in JEI.\n\nNext you\u0027ll need to activate the Ritual using the crystal. §cBe sure to check if you have enough LP in your network§r using a §eDivination or Seer\u0027s sigil§r, then throw your catalyst on top. \n\n§bIt might be a good idea to place a block directly above your ritual stone before activating, so your formation doesn\u0027t get destroyed!",
+          "desc:8": "Summons a meteor full of materials!\n\nAfter selecting the §9§1Mark of the Falling Tower §rin your Ritual Diviner (Shift-Left click 3 times), right click on your placed Master Ritual Stone with it until completed. You can view all available Mark of the Falling Tower recipes by viewing the uses of the Master Ritual Stone in JEI.\n\nNext you\u0027ll need to activate the Ritual using the crystal. §cBe sure to check if you have enough LP in your network§r using a §eDivination or Seer\u0027s sigil§r, then throw your catalyst on top. \n\n§bIt might be a good idea to place a block directly above your ritual stone before activating, so your formation doesn\u0027t get destroyed!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -22751,7 +22751,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Melting 4 Quartz in the Mixer, the casing it into a block will give you the Hardened Glass required for the Fluiduct.\n\nUse this like a Casting Table until you can craft the Basin Upgrade.",
+          "desc:8": "Acts like an automatic Casting Table, or Casting Basin with a Basin Upgrade.\n\nMelting 4 Quartz in the Mixer, then casing it into a block will give you the Hardened Glass required for the Fluiduct.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -22828,7 +22828,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "By creating a line of double sticks, with a seed planted at one end, will allow you to improve the stats as it spreads.\n\n§bPlace an Arboreal Extractor next to a tree to collect Sap or Resin!",
+          "desc:8": "Place seeds in crop sticks to turn them into agricraft seeds, which have stats that can be improved. §cAgricraft seeds must be grown in crop sticks!§r\n\nCreating a line of double crop sticks with a seed planted at one end will allow you to improve the stats easily as it spreads.\n\n§bPlace an Arboreal Extractor next to a tree to collect Sap or Resin!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -23733,7 +23733,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Funnel and Injector act the same as their smaller counterparts.\n\nThe Splitter accepts Embers on the small side, with the big sides actting as Emitters.\n\n\nPlace a Mechanical Core or Machine Accessor underneath the Crystal Cell to allow access. The Accessor wont connect if shift-right clicked onto the bottom.\n\nPiping Ember Crystals in will increase the Ember storage.",
+          "desc:8": "The Funnel and Injector act the same as their smaller counterparts, the Receptor and Emitter. However, they can transfer Embers §emuch more quickly§r.\n\nThe Splitter splits a beam of Embers into two smaller beams. It accepts Embers on the small side, with the big sides actting as Emitters.\n\n\nThe Crystal Cell stores a large amount of Embers. Place a Mechanical Core or Machine Accessor underneath the Crystal Cell to allow access. The Accessor wont connect if shift-right clicked onto the bottom.\n\nPiping Ember Crystals in will increase the Ember storage.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24605,7 +24605,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "To craft anything with this table, you need enough starlight, then to hit the table with the Resonating Wand.\n\n§6Claiming this quest will unlock the required research for crafting!",
+          "desc:8": "Your gateway into Astral Sorcery starlight crafting!\n\nTo craft anything with this table, you need enough starlight, then hit the table with the Resonating Wand.\n\n§6Claiming this quest will unlock the required research for crafting!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24686,7 +24686,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Resonating Wand is used to start Starlight crafting by using it on the table after the icon of the craft shows up.\n\nThe Morphing Tool is used similarly to the Akashic Tome, but it will automagically switch to the correct tool.",
+          "desc:8": "The primary wand of Astral Sorcery.\n\nThe Resonating Wand is used to start Starlight crafting by using it on the table after the icon of the craft shows up.\n\nThe Morphing Tool is used similarly to the Akashic Tome, but it will automagically switch to the correct tool.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24859,7 +24859,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Aquamarine, Rock Crystals, and Celestial Crystals will create liquid starlight over time when placed in the Lightwell, eventually being destroyed.\n\nLightwells only hold 2 buckets at a time, and are only able to pipe fluids out the bottom. They are also about 3 times more effective at night.\n\nUsing an Aspectus will create approximately twice the amount of molten metal required to create them.",
+          "desc:8": "Aquamarine, Rock Crystals, and Celestial Crystals will create §bliquid starlight§r over time when placed in the Lightwell, eventually being destroyed.\n\nLightwells only hold 2 buckets at a time, and are only able to pipe fluids out the bottom. They are also about 3 times more effective at night.\n\nUsing an Aspectus will create approximately twice the amount of molten metal required to create them.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -25572,7 +25572,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You can make Carbon Bricks by using a block of coal or charcoal in the Metal Press.\n\n§bCommon loot from Nether Fortresses!",
+          "desc:8": "Used to create more advanced TR machines.\n\nYou can make Carbon Bricks by using a block of coal or charcoal in the Metal Press.\n\n§bCommon loot from Nether Fortresses!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26342,7 +26342,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some Size for Cutting. §cDon\u0027t let it get two small!§r\n\nDropping a Rock Crystal into placed §bLiquid Starlight§r will cause it to absorb it over time, increasing its Size.\n\nOnce it reaches max Size, it will split into two, one of which has the chance of being higher Purity.",
+          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some §eSize§r for §9Cutting§r. §cDon\u0027t let it get two small!§r\n\nDropping a Rock Crystal into placed §bLiquid Starlight§r will cause it to absorb it over time, increasing its Size.\n\nOnce it reaches max Size, it will split into two, one of which has a chance of being higher §bpurity§r.\n\n\n§nMaxing out Crystals§r\n\nBy continuously submerging rock (or celestial) crystals in starlight, you can purify a crystal until it reaches §b100% purity§r, then cut the crystal in the Grindstone until it reaches §9100% Cutting§r (but make sure the crystal is big enough first!). Finally, the crystal can be submerged in starlight a few more times to reach §emaximum size§r (400 for Rock Crystals, 900 for Celestial Crystals). This will be useful later!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26802,7 +26802,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is used to transform blocks by linking a Collector Crystal to them. They are found in the large astral temples, and will need a view on the sky to function.",
+          "desc:8": "This is used to transform blocks by linking a Collector Crystal to them. They are found in the large astral temples, and will need a view on the sky to function.\n\nCollector Crystals can also be linked to starlight altars to increase their starlight!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26873,7 +26873,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Rock Crystals placed on the pedestal cause various effects depending on the attunment.",
+          "desc:8": "Rock Crystals placed on the pedestal cause various effects depending on the attunment. View the ritual effects in §2JEI§r by viewing the uses of the pedestal!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27001,7 +27001,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place will into the forge to start a craft.",
+          "desc:8": "Used to craft more advanced BM items. \n\nPlace will into the forge to start a craft.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27654,7 +27654,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Use the Sextant on the altar after upgrading to show a hologram of the required temple.",
+          "desc:8": "Allows you to craft more advanced Astral Sorcery items, but also requires more starlight.\n\nUse the Sextant on the altar after upgrading to show a hologram of the required temple.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27765,7 +27765,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Drop items on top, then fill with Mana. Once full, drop a Livingrock and right click with your Wand of the Forest.\n\n§bIf you place a spreader next to a filled pool, and point it at the altar, it will start to fill up the altar as soon as it needs mana.",
+          "desc:8": "Used to craft Botania Runes.\n\nDrop items on top, then fill with Mana. Once full, drop a Livingrock and right click with your Wand of the Forest.\n\n§bIf you place a spreader next to a filled pool, and point it at the altar, it will start to fill up the altar as soon as it needs mana.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27890,7 +27890,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place the Empowerer, with the Display Stands three blocks away on each side.\n\nEach Display Stand needs power to craft.",
+          "desc:8": "Used to empower AA items.\n\nPlace the Empowerer, with the Display Stands three blocks away on each side.\n\nEach Display Stand needs power to craft.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -30973,7 +30973,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Used to make some of the most magical items!\n\nPlace the Relays on the Sooty Marble for extra crafting slots.",
+          "desc:8": "Used to make some of the most magical items!\n\nPlace the Relays on the Sooty Marble for extra crafting slots.\n\nTo craft a recipe with a constellation, a celestial crystal attuned to that constellation must be placed in the crystal slot in the table. After that, the table can be right clicked with a resonating wand. Then, when crafting, items floating around the grid must be placed in relays as a transparent item is shown. After all the items are placed in the relays, the recipe will be completed.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31066,7 +31066,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You will also need 12 buckets worth of liquid starlight to complete the structure. \n\nThere is a chance for starlight to be consumed when a craft is finished, so keep a close eye on that!\n\n§bRight click with the Resonating Wand to start the craft, or use 2 Automated Users, one to place the item and one to start the craft with the wand.",
+          "desc:8": "Used to infuse various items with starlight.\n\nYou will also need 12 buckets worth of liquid starlight to complete the structure. \n\nThere is a chance for starlight to be consumed when a craft is finished, so keep a close eye on that!\n\n§bRight click with the Resonating Wand to start the craft, or use 2 Automated Users, one to place the item and one to start the craft with the wand.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31898,7 +31898,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Sap can also be extracted from trees using the §9Arboreal Extractor§r.",
+          "desc:8": "An extremely potent fertiliser.\n\nSap can also be extracted from trees using the §9Arboreal Extractor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34350,7 +34350,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place a Piece of dirt or grass in one of these, then a sapling. Items will get deposited in a chest below.",
+          "desc:8": "A simple, one-block tree farm.\n\nPlace a Piece of dirt or grass in one of these, then a sapling. Items will get deposited in a chest below.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34681,7 +34681,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "There are a few ways to get the Cryotheum needed, one is to use §dPristine Matter Powder§r to craft §9Thermal Matter§r, which you can then turn into Blizz loot with the §6Loot Fabricator§r. The other is to find a Cold Biome (Maybe with the Nature\u0027s Compass) and use some §5Nocturnal Powder§r.\n\n§d§5§fRight click to link the §cBlood Orb§r to you. It is used for crafting, and placing it in a filled altar will store LP (Blood) for rituials and the Alchemy Table. \n\nHigher tiers of orbs hold more LP and can be used for more advanced crafts.",
+          "desc:8": "Your second Blood Orb, which can hold more LP and unlocks more recipes.\n\nThere are a few ways to get the Cryotheum needed, one is to use §dPristine Matter Powder§r to craft §9Thermal Matter§r, which you can then turn into Blizz loot with the §6Loot Fabricator§r. The other is to find a Cold Biome (Maybe with the Nature\u0027s Compass) and use some §5Nocturnal Powder§r.\n\n§d§5§fRight click to link the §cBlood Orb§r to you. It is used for crafting, and placing it in a filled altar will store LP (Blood) for rituials and the Alchemy Table. \n\nHigher tiers of orbs hold even more LP and can be used for more advanced crafts.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -35362,7 +35362,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Main workbench for the mod.",
+          "desc:8": "Main workbench for Arcane Archives.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37559,7 +37559,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.\n\nHover over a Master Ritual stone to see an outline of the ritual and hold down right click to place the ritual.",
+          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier. \n\nHover over a Master Ritual stone to see an outline of the ritual and hold down right click to place the ritual.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37713,7 +37713,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Placing items in here and powering with Embers will burn them into ash, which is used in the process for making Arcane Stone.",
+          "desc:8": "Placing items in here and powering with Embers will burn them into §7ash§r, which is used in the process for making §dArcane Stone§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -40292,7 +40292,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Makes loot from matter. At this point all your Pristine Matter will come from trials, but later on you will have access to Simulation Chambers which will aquire matter for you.",
+          "desc:8": "Makes §6loot§r from §bPristine Matter§r.\n \nAt this point all your Pristine Matter will come from trials, but later on you will have access to Simulation Chambers which will aquire matter for you.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -42599,7 +42599,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Water goes in the front, and outputs gasses on the sides.",
+          "desc:8": "Water goes in the front, and gases are output on the sides.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48935,7 +48935,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Shift-Right click on a Tinkers crafting Station with a Basic Catalyst to start the chain.",
+          "desc:8": "You\u0027ll need these to craft endgame items.\n\nShift-Right click on a Tinkers crafting Station with a Basic Catalyst to start the chain.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -64824,7 +64824,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Workbench Charger is placed on top of your thaumcraft workbench. \n\nIt allows your workbench to draw vis from 9 chunks around it instead of just 1.\n\n§bThis should make recipes requiring large amounts of vis easier to craft!§r\n\nTip: If you are having trouble finding enough vis to craft the workbench charger, the twilight forest contains plenty of vis!",
+          "desc:8": "The Workbench Charger allows your workbench to draw vis from 9 chunks around it instead of just 1, and is placed on top of your thaumcraft workbench. \n\n§bThis should make recipes requiring large amounts of vis easier to craft!§r\n\n§dTip:§r If you are having trouble finding enough vis to craft the workbench charger, the twilight forest contains plenty of vis!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -65095,6 +65095,183 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "thaumcraft:arcane_workbench"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "833:10": {
+      "preRequisites:11": [
+        154
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Infusion Recipes have §dinstability§r, which can cause the recipe to stop or even cause adverse effects!\n\nIn order to avoid this, the infusion matrix must be §bstabilised§r. There are two methods of doing so: Placing stabilising blocks, and using Infusion Stabilisers.\n\n\n§nStabilising Blocks§r\n\nPlacing §bstabilising block§rs like tallow candles and skulls around the infusion matrix will lower the instability of the matrix. Enough stabilising items will keep even the most unstable recipes stable! \n\nStabilising blocks must be placed in a §csymmetrical manner§r around the Infusion Matrix. \n\nPlacing more of the same kind of block reduces its effectiveness, so make sure to place §edifferent types§r of stabilising blocks around the matrix.\n\n§bEach colour of tallow candle counts as a different kind of block, so placing 4 of each colour is more than enough to stabilise any recipe!§r\n\n\n§nInfusion Stabilisers§r\n\nIf you don\u0027t want to place candles, you can use Infusion Stabilisers instead. Place Infusion Stabilisers next to pedestals, or connect them to pedestals with §4redstone inlays§r (pedestals themselves count as redstone inlays). When a recipe becomes too unstable, the infusion stabiliser will stabilise the recipe, disabling itself temporarily and releasing some flux.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumcraft:candle_white"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Infusion Stability",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "OR",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 833,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_green"
+            },
+            "1:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_brown"
+            },
+            "2:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_pink"
+            },
+            "3:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_orange"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_white"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:stabilizer"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "834:10": {
+      "preRequisites:11": [
+        154
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The Infusion Matrix can be upgraded with various blocks to increase its speed and reduce the essentia cost.\n\n§nInfusion Stones§r\n\nPlace these under the pillars of the Infusion Matrix. A maximum of 4 stones can be used.\n\n§9Infusion Speed Stone§r: Speeds up the Infusion Matrix, but increases essentia cost slightly\n§6Infusion Cost Stone§r: Reduces the essentia cost, but slows down the infusion matrix slightly\n\n§nInfusion Matrix Upgrades§r\n\n§eAncient Pedestal§r: Reduces the essentia cost and speeds up the infusion matrix. A maximum of 60 pedestals can be used.\n§dEldritch Pedestal§r: Speeds up the infusion matrix more, but increases essentia cost. A maximum of 60 pedestals can be used.\n§dEldritch Pillars§r (replace Arcane Stone with Eldritch Stone): Reduces the essentia cost and speeds up the infusion matrix.\n\nAncient Stone and Eldritch Stone can both be found on the moon, or in The Emptiness, a dimension which can be accessed through a dimensional fracture.\n\n§nBest Infusion Matrix Setup§r\n\nUsing 4 Infusion Speed Stones, 60 Ancient Pedestals and Eldritch Pillars reduces crafting time to 40% and essentia cost to 50%, which effectively cuts the time taken to 20%.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumcraft:matrix_speed"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Infusion Matrix Upgrades",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 834,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:stone_ancient_tile"
+            },
+            "1:10": {
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:stone_eldritch_tile"
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:matrix_speed"
+            },
+            "1:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:matrix_cost"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -69933,6 +70110,20 @@
           "sizeY:3": 24,
           "x:3": 558,
           "y:3": 60
+        },
+        "53:10": {
+          "id:3": 833,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 504,
+          "y:3": 156
+        },
+        "54:10": {
+          "id:3": 834,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 456,
+          "y:3": 168
         }
       }
     },

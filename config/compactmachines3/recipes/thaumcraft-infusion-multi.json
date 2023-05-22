@@ -1,0 +1,236 @@
+{
+  "name": "cm3thaumcraft:infusionmulti",
+
+  "disabled": false,
+
+  "target-item": "thaumcraft:infusion_matrix",
+  "target-count": 1,
+
+  "duration": 200,
+  "symmetrical": true,
+
+  "catalyst": "contenttweaker:purpleprint",
+  "catalyst-meta": 0,
+
+
+
+  "input-types": {
+    "a": {
+      "id": "thaumcraft:pedestal_arcane",
+      "meta": 0
+    },
+    "b": {
+      "id": "thaumcraft:stone_arcane",
+      "meta": 0
+    },
+    "c": {
+      "id": "thaumcraft:infusion_matrix",
+      "meta": 0
+    }
+  },
+  "input-nbt": {
+    "a:A": {
+      "nbt": "{ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},Items:[],id:\"thaumcraft:tilepedestal\"}"
+    },
+    "c:A": {
+      "nbt": "{recipexp:0,recipeinst:0,active:0b,recipeplayer:\"\",recipetype:0,crafting:0b,Aspects:[],ForgeCaps:{\"nuclearcraft:capability_default_radiation_resistance\":{shieldingRadResistance:0.0d,radiationResistance:0.0d}},id:\"thaumcraft:tileinfusionmatrix\",stability:0.0f}"
+    }
+  },
+  "shape": [
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "c:A",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "b",
+        "_",
+        "b",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "b",
+        "_",
+        "b",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ]
+    ],
+    [
+      [
+        "a:A",
+        "_",
+        "_",
+        "a:A",
+        "_",
+        "_",
+        "a:A"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "b",
+        "_",
+        "b",
+        "_",
+        "_"
+      ],
+      [
+        "a:A",
+        "_",
+        "_",
+        "a:A",
+        "_",
+        "_",
+        "a:A"
+      ],
+      [
+        "_",
+        "_",
+        "b",
+        "_",
+        "b",
+        "_",
+        "_"
+      ],
+      [
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_",
+        "_"
+      ],
+      [
+        "a:A",
+        "_",
+        "_",
+        "a:A",
+        "_",
+        "_",
+        "a:A"
+      ]
+    ]
+  ]
+}
