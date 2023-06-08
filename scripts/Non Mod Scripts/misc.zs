@@ -147,7 +147,8 @@ val recipestoRemove =
 <iceandfire:chain_link>,
 <extendedcrafting:material:2>,
 <jaopca:item_gearthermoconducting>,
-<openblocks:xp_shower>
+<openblocks:xp_shower>,
+<aeadditions:terminal.fluid.wireless>
 ]
  as IItemStack[];
 
@@ -704,6 +705,14 @@ recipes.removeShaped(<additionalcompression:clay_compressed>, [[<minecraft:clay_
 recipes.addShaped(<additionalcompression:clay_compressed>, [[<minecraft:clay>, <minecraft:clay>, <minecraft:clay>], [<minecraft:clay>, <minecraft:clay>, <minecraft:clay>], [<minecraft:clay>, <minecraft:clay>, <minecraft:clay>]]);
 
 Melting.removeRecipe(<liquid:clay>, <additionalcompression:clay_compressed>);
+
+// AE2 Wireless Terminals
+recipes.addShapeless(<wft:wft>, [<appliedenergistics2:wireless_fluid_terminal>]);
+recipes.addShapeless(<appliedenergistics2:wireless_fluid_terminal>, [<wft:wft>]);
+recipes.addShapeless(<wct:wct>, [<appliedenergistics2:wireless_crafting_terminal>]);
+recipes.addShapeless(<appliedenergistics2:wireless_crafting_terminal>, [<wct:wct>]);
+recipes.addShaped(<aeadditions:terminal.fluid.wireless>, [[null, <appliedenergistics2:material:41>, null],[<ore:gemLapis>, <appliedenergistics2:part:520>, <ore:gemLapis>], [null, <appliedenergistics2:dense_energy_cell>, null]]);
+
 
 ##########################################################################################
 print("==================== end of misc.zs ====================");
