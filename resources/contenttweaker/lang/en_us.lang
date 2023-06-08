@@ -342,3 +342,101 @@ item.advgenerators.turbine_blade_extreme.name=Extreme Alloy Turbine Blade
 item.advgenerators.turbine_rotor_extreme.name=Extreme Alloy Turbine Rotor
 item.advgenerators.turbine_kit_extreme.name=Extreme Alloy Turbine Upgrade Kit
 item.advgenerators.turbine_extreme.name=Extreme Alloy Turbine
+
+// Base NCO ingot blocks
+tile.contenttweaker.ferroboronblock.name=Ferroboron Alloy Block
+# tile.contenttweaker.toughblock.name=Tough Alloy Block
+tile.contenttweaker.hardcarbonblock.name=Hard Carbon Alloy Block
+tile.contenttweaker.thermoconductingblock.name=Thermoconducting Alloy Block
+tile.contenttweaker.extremeblock.name=Extreme Alloy Block
+tile.contenttweaker.hslasteelblock.name=HSLA Steel Block
+tile.contenttweaker.sicblock.name=Silicon Carbide Block
+tile.contenttweaker.sicsiccmcblock.name=SiC-SiC CMC Block
+# tile.contenttweaker.zircaloyblock.name=Zircaloy Block
+tile.contenttweaker.leadplatinumblock.name=Lead-Platinum Alloy Block
+tile.contenttweaker.tinsilverblock.name=Tin-Silver Alloy Block
+# tile.contenttweaker.shibuichiblock.name=Shibuichi Alloy Block
+# tile.contenttweaker.steelblock.name=Steel Block
+tile.contenttweaker.limno2block.name=Lithium Manganese Dioxide Alloy Block
+tile.contenttweaker.mgb2block.name=Magnesium Diboride Alloy Block
+# tile.contenttweaker.bronzeblock.name=Bronze Block
+tile.contenttweaker.zrmoblock.name=Zirconium-Molybdenum Alloy Block
+tile.contenttweaker.cmnblock.name=Carbon-Manganese Block
+item.contenttweaker.cmningot.name=Carbon-Manganese Ingot
+
+// Fission Dust stuff
+# item.contenttweaker.moingot.name=Molybdenum Ingot
+tile.contenttweaker.moblock.name=Molybdenum Block
+# tile.contenttweaker.sr90block.name=Strontium-90 Block
+tile.contenttweaker.biblock.name=Bismuth Block
+item.contenttweaker.biingot.name=Bismuth Ingot
+tile.contenttweaker.tbpblock.name=Protactinium-Enriched Thorium Block
+item.contenttweaker.tbpingot.name=Protactinium-Enriched Thorium Ingot
+tile.contenttweaker.ru106block.name=Ruthenium-106 Block
+item.contenttweaker.ru106ingot.name=Ruthenium-106 Ingot
+tile.contenttweaker.rablock.name=Radium Block
+item.contenttweaker.raingot.name=Radium Ingot
+tile.contenttweaker.pa233block.name=Protactinium-233 Block
+item.contenttweaker.pa233ingot.name=Protactinium-233 Ingot
+tile.contenttweaker.pm147block.name=Promethium-147 Block
+item.contenttweaker.pm147ingot.name=Promethium-147 Ingot
+tile.contenttweaker.poblock.name=Polonium Block
+item.contenttweaker.poingot.name=Polonium Ingot
+tile.contenttweaker.eu155block.name=Europium-155 Block
+item.contenttweaker.eu155ingot.name=Europium-155 Ingot
+tile.contenttweaker.cs137block.name=Caesium-137 Block
+item.contenttweaker.cs137ingot.name=Caesium-137 Ingot
+
+
+// Base NCO Gem blocks
+tile.contenttweaker.basblock.name=Boron Arsenide Block
+tile.contenttweaker.bnblock.name=Boron Nitride Block
+tile.contenttweaker.carobblock.name=Carobbiite Block
+tile.contenttweaker.fluorblock.name=Fluorite Block
+tile.contenttweaker.siblock.name=Silicon Block
+tile.contenttweaker.rhodoblock.name=Rhodochrosite Block
+tile.contenttweaker.villiblock.name=Villiaumite Block
+
+// QMD Blocks
+tile.contenttweaker.cablock.name=Calcium Block
+# tile.contenttweaker.crblock.name=Chromium Block
+tile.contenttweaker.hfblock.name=Hafnium Block
+tile.contenttweaker.ndblock.name=Neodymium Block
+tile.contenttweaker.nbblock.name=Niobium Block
+tile.contenttweaker.kblock.name=Potassium Block
+tile.contenttweaker.nablock.name=Sodium Block
+# tile.contenttweaker.wblock.name=Tungsten Block
+tile.contenttweaker.yblock.name=Yttrium Block
+tile.contenttweaker.cfecrblock.name=Stainless Steel Block
+# tile.contenttweaker.coblock.name=Cobalt Block
+# tile.contenttweaker.irblock.name=Iridium Block
+# tile.contenttweaker.niblock.name=Nickel Block
+tile.contenttweaker.nbsnblock.name=Niobium-Tin Block
+tile.contenttweaker.nbtiblock.name=Niobium-Titanium Block
+# tile.contenttweaker.osblock.name=Osmium Block
+# tile.contenttweaker.osirblock.name=Osmiridium Block
+# tile.contenttweaker.ptblock.name=Platinum Block
+# item.contenttweaker.sr90ingot.name=Strontium-90 Ingot
+# tile.contenttweaker.tiblock.name=Titanium Block
+tile.contenttweaker.wcblock.name=Tungsten Carbide Block
+# tile.contenttweaker.znblock.name=Zinc Block
+# tile.contenttweaker.nicrblock.name=Nichrome Block
+tile.contenttweaker.superalloyblock.name=Superalloy Block
+tile.contenttweaker.erblock.name=Erbium Block
+tile.contenttweaker.iblock.name=Iodine Block
+tile.contenttweaker.smblock.name=Samarium Block
+tile.contenttweaker.tbblock.name=Terbium Block
+tile.contenttweaker.ybblock.name=Ytterbium Block
+item.contenttweaker.eringot.name=Erbium Ingot
+item.contenttweaker.iingot.name=Iodine Ingot
+item.contenttweaker.smingot.name=Samarium Ingot
+item.contenttweaker.tbingot.name=Terbium Ingot
+item.contenttweaker.ybingot.name=Ytterbium Ingot
+
+// Trinity Blocks
+# tile.contenttweaker.bablock.name=Barium Block
+# item.contenttweaker.baingot.name=Barium Ingot
+# tile.contenttweaker.baoblock.name=Barium Oxide Block
+# item.contenttweaker.baoingot.name=Barium Oxide Ingot
+
+itemGroup.nceib=NC Extra Ingot Blocks
