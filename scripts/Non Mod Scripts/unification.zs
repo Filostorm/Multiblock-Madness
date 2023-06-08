@@ -82,7 +82,7 @@ InductionSmelter.removeRecipe(<minecraft:sand>, <techreborn:plates:11>);
 InductionSmelter.removeRecipe(<minecraft:sand>, <rockhounding_chemistry:chemical_dusts:42>);
 
 Crusher.removeRecipesForInput(<libvulpes:productingot:3>);
-Pulverizer.removeRecipe(<libvulpes:productingot:3>);
+// Pulverizer.removeRecipe(<libvulpes:productingot:3>);
 Pulverizer.addRecipe(<rockhounding_chemistry:chemical_dusts:42>, <nuclearcraft:gem:6>, 2000);
 
 // New Silicon Wafer Recipes

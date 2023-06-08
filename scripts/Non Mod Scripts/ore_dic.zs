@@ -1,6 +1,18 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 
+import crafttweaker.item.IIngredient;
+import crafttweaker.oredict.IOreDictEntry;
+import mods.nuclearcraft.AlloyFurnace;
+import mods.nuclearcraft.Infuser;
+import mods.nuclearcraft.Enricher;
+import mods.nuclearcraft.IngotFormer;
+import mods.nuclearcraft.Manufactory;
+import mods.nuclearcraft.Melter;
+import mods.nuclearcraft.DecayHastener;
+import mods.nuclearcraft.FissionIrradiator;
+import mods.jei.JEI;
+
 #priority 101
 
 print("==================== loading ore_dic.zs ====================");
@@ -297,6 +309,72 @@ for item in hiddenGlass {
 <ore:sapphire>.remove(<treasure2:sapphire>);
 
 <ore:blockSapphire>.remove(<iceandfire:sapphire_block>);
+
+
+// Thanks to FishingPole and NCEIB for the additional blocks and ingots!
+
+var oreEntries = ["blockManganeseOxide", "blockManganeseDioxide", "blockFerroboron", "blockHardCarbon", "blockThermoconducting", "blockExtreme",
+"blockHSLASteel", "blockSiliconCarbide", "blockSiCSiCCMC", "blockLeadPlatinum", "blockTinSilver", 
+"blockLithiumManganeseDioxide", "blockMagnesiumDiboride", "blockZirconiumMolybdenum", "blockMolybdenum", "blockBoronArsenide",
+"blockBoronNitride", "blockCarobbiite", "blockFluorite", "blockSilicon", "blockRhodochrosite", "blockVilliaumite", "blockBismuth",
+"blockCaesium137", "blockEuropium155", "blockPolonium", "blockPromethium147", "blockProtactinium233", "blockRadium", "blockRuthenium106", "blockTBP",
+"blockCarbonManganese", "blockCalcium", "blockHafnium", "blockNeodymium", "blockNiobium", "blockPotassium", "blockSodium",
+"blockYttrium", "blockStainlessSteel", "blockNiobiumTin", "blockNiobiumTitanium", "blockTungstenCarbide", "blockSuperAlloy",
+"blockErbium", "blockIodine", "blockSamarium", "blockTerbium", "blockYtterbium"] as string[];
+
+var oreBlocks = { <ore:blockManganeseOxide>: <nuclearcraft:ingot_block:14>, <ore:blockManganeseDioxide>: <nuclearcraft:ingot_block:15>,
+<ore:blockFerroboron>: <contenttweaker:ferroboronblock>, 
+<ore:blockHardCarbon>: <contenttweaker:hardcarbonblock>, <ore:blockThermoconducting>: <contenttweaker:thermoconductingblock>, 
+<ore:blockExtreme>: <contenttweaker:extremeblock>, <ore:blockHSLASteel>: <contenttweaker:hslasteelblock>, <ore:blockSiliconCarbide>: <contenttweaker:sicblock>,
+<ore:blockSiCSiCCMC>: <contenttweaker:sicsiccmcblock>, <ore:blockLeadPlatinum>: <contenttweaker:leadplatinumblock>,
+<ore:blockTinSilver>: <contenttweaker:tinsilverblock>, 
+<ore:blockLithiumManganeseDioxide>: <contenttweaker:limno2block>, <ore:blockMagnesiumDiboride>: <contenttweaker:mgb2block>, 
+<ore:blockZirconiumMolybdenum>: <contenttweaker:zrmoblock>, <ore:blockMolybdenum>: <contenttweaker:moblock>, <ore:blockBoronArsenide>: <contenttweaker:basblock>,
+<ore:blockBoronNitride>: <contenttweaker:bnblock>, <ore:blockCarobbiite>: <contenttweaker:carobblock>, <ore:blockFluorite>: <contenttweaker:fluorblock>,
+<ore:blockSilicon>: <contenttweaker:siblock>, <ore:blockRhodochrosite>: <contenttweaker:rhodoblock>, <ore:blockVilliaumite>: <contenttweaker:villiblock>,
+<ore:blockBismuth>: <contenttweaker:biblock>, <ore:blockCaesium137>: <contenttweaker:cs137block>,
+<ore:blockEuropium155>: <contenttweaker:eu155block>, <ore:blockPolonium>: <contenttweaker:poblock>, <ore:blockPromethium147>: <contenttweaker:pm147block>,
+<ore:blockProtactinium233>: <contenttweaker:pa233block>, <ore:blockRadium>: <contenttweaker:rablock>, <ore:blockRuthenium106>: <contenttweaker:ru106block>,
+<ore:blockTBP>: <contenttweaker:tbpblock>, <ore:blockCarbonManganese>: <contenttweaker:cmnblock>,
+<ore:blockCalcium>: <contenttweaker:cablock>, <ore:blockHafnium>: <contenttweaker:hfblock>,
+<ore:blockNeodymium>: <contenttweaker:ndblock>, <ore:blockNiobium>: <contenttweaker:nbblock>, <ore:blockPotassium>: <contenttweaker:kblock>, 
+<ore:blockSodium>: <contenttweaker:nablock>, <ore:blockYttrium>: <contenttweaker:yblock>,
+<ore:blockStainlessSteel>: <contenttweaker:cfecrblock>, 
+<ore:blockNiobiumTin>: <contenttweaker:nbsnblock>, <ore:blockNiobiumTitanium>: <contenttweaker:nbtiblock>, 
+<ore:blockTungstenCarbide>: <contenttweaker:wcblock>, 
+<ore:blockSuperAlloy>: <contenttweaker:superalloyblock>, <ore:blockErbium>: <contenttweaker:erblock>,
+<ore:blockIodine>: <contenttweaker:iblock>, <ore:blockSamarium>: <contenttweaker:smblock>, <ore:blockTerbium>: <contenttweaker:tbblock>,
+<ore:blockYtterbium>: <contenttweaker:ybblock>} as IItemStack[IOreDictEntry];
+
+for entry in oreEntries {
+	oreDict.entry;
+	}
+	
+for oreName, oreBlock in oreBlocks {
+	oreName.add(oreBlock);
+	}
+
+
+oreDict.gemSilicon;
+<ore:gemSilicon>.add(<nuclearcraft:gem:6>);
+
+var oreEntriesIngots = ["ingotBismuth", "ingotCaesium137", "ingotEuropium155", "ingotPolonium", "ingotPromethium147",
+"ingotProtactinium233", "ingotRadium", "ingotRuthenium106", "ingotTBP", "ingotCarbonManganese",
+"ingotErbium", "ingotIodine", "ingotSamarium", "ingotTerbium", "ingotYtterbium"] as string[];
+
+var oreIngots = { <ore:ingotBismuth>: <contenttweaker:biingot>, <ore:ingotCaesium137>: <contenttweaker:cs137ingot>, <ore:ingotEuropium155>: <contenttweaker:eu155ingot>,
+<ore:ingotPolonium>: <contenttweaker:poingot>, <ore:ingotPromethium147>: <contenttweaker:pm147ingot>, <ore:ingotProtactinium233>: <contenttweaker:pa233ingot>,
+<ore:ingotRadium>: <contenttweaker:raingot>, <ore:ingotRuthenium106>: <contenttweaker:ru106ingot>, <ore:ingotTBP>: <contenttweaker:tbpingot>,
+<ore:ingotCarbonManganese>: <contenttweaker:cmningot>,<ore:ingotErbium>: <contenttweaker:eringot>, <ore:ingotIodine>: <contenttweaker:iingot>, 
+<ore:ingotSamarium>: <contenttweaker:smingot>, <ore:ingotTerbium>: <contenttweaker:tbingot>, <ore:ingotYtterbium>: <contenttweaker:ybingot>} as IItemStack[IOreDictEntry];
+
+for entry in oreEntriesIngots {
+	oreDict.entry;
+}
+	
+for oreName, oreIngot in oreIngots {
+	oreName.add(oreIngot);
+}
 
 ##########################################################################################
 print("==================== end of ore_dic.zs ====================");

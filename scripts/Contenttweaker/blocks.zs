@@ -1,6 +1,7 @@
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
+import crafttweaker.item.IIngredient;
 
 #priority 104
 
@@ -342,6 +343,27 @@ book_block.setFullBlock(false);
 book_block.setTranslucent(true);
 book_block.setBlockLayer("CUTOUT");
 book_block.register();
+
+
+// Thanks to FishingPole and the NCEIB addon for the additional ingot blocks!
+
+var material_blocks = ["ferroboronblock", "hardcarbonblock", "thermoconductingblock", "extremeblock", "hslasteelblock", 
+"sicblock", "sicsiccmcblock", "leadplatinumblock", "tinsilverblock", "limno2block", "mgb2block", "zrmoblock", 
+"moblock", "basblock", "bnblock", "carobblock", "fluorblock", "siblock", "rhodoblock", "villiblock", "biblock", 
+"cs137block", "eu155block", "poblock", "pm147block", "pa233block", "rablock", "ru106block", "tbpblock", "cmnblock", 
+"cablock", "hfblock", "ndblock", "nbblock", "kblock", "nablock", "yblock", "cfecrblock", "nbsnblock", 
+"nbtiblock", "wcblock", "superalloyblock", "iblock", "smblock", "ybblock", "tbblock", "erblock"] as string[];
+
+for material in material_blocks {
+		var material = VanillaFactory.createBlock(material, <blockmaterial:iron>);
+		material.setLightOpacity(255);
+		material.setBlockHardness(3);
+		material.setBlockResistance(30);
+		material.setToolClass("pickaxe");
+		material.setToolLevel(1);
+		material.setCreativeTab(<creativetab:nceib>);
+		material.register();
+}
 
 ##########################################################################################
 print("==================== end of blocks.zs ====================");
