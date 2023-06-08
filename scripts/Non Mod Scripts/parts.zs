@@ -129,7 +129,8 @@ val mapNewBlocks as IItemStack[IItemStack] = {
 	<contenttweaker:smingot>:<contenttweaker:smblock>,
 	<contenttweaker:ybingot>:<contenttweaker:ybblock>,
 	<contenttweaker:tbingot>:<contenttweaker:tbblock>,
-	<contenttweaker:eringot>:<contenttweaker:erblock>
+	<contenttweaker:eringot>:<contenttweaker:erblock>,
+	<qmd:ingot_alloy:6>:<contenttweaker:superalloyblock>,
 } as IItemStack[IItemStack];
 
 for ingot, block in mapNewBlocks {
@@ -400,14 +401,14 @@ val rollingmachineCastingMap as IItemStack[IItemStack] = {
 <jaopca:block_sheetmetaltitanium>:<techreborn:storage:2>,
 <jaopca:block_sheetmetalconductiveiron>:<enderio:block_alloy:4>,
 <jaopca:block_sheetmetalpulsatingiron>:<enderio:block_alloy:5>,
-<jaopca:block_sheetmetalstainlesssteel>:<jaopca:block_blockstainlesssteel>,
+<jaopca:block_sheetmetalstainlesssteel>:<contenttweaker:cfecrblock>,
 <contenttweaker:sheetmetal_ironwood>:<twilightforest:block_storage>,
 <jaopca:block_sheetmetalenergeticalloy>:<enderio:block_alloy:1>,
 <jaopca:block_sheetmetalenergeticsilver>:<enderio:block_alloy_endergy:5>,
 <contenttweaker:sheetmetal_mek_alloy>:<contenttweaker:block_mek_alloy>,
 <contenttweaker:sheetmetal_thermal_alloy>:<contenttweaker:block_thermal_alloy>,
 <jaopca:block_sheetmetalstellite>:<rockhounding_chemistry:alloy_blocks_tech:3>,
-<jaopca:block_sheetmetaltinsilver>:<jaopca:block_blocktinsilver>,
+<jaopca:block_sheetmetaltinsilver>:<contenttweaker:tinsilverblock>,
 <immersiveengineering:sheetmetal:3>:<thermalfoundation:storage:2>,
 <immersiveengineering:sheetmetal:4>:<thermalfoundation:storage:5>,
 <immersiveengineering:sheetmetal:5>:<immersiveengineering:storage:5>,

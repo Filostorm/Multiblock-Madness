@@ -11,6 +11,7 @@ import mods.tcomplement.Overrides;
 import mods.tcomplement.highoven.HighOven;
 import mods.tconstruct.Melting;
 import mods.immersiveengineering.ArcFurnace;
+import crafttweaker.item.IIngredient;
 
 #priority 98
 
@@ -69,6 +70,18 @@ val ingotstoformmap as ILiquidStack[IItemStack] = {
 	<tcomplement:edibles:30>:<liquid:chocolate_liquor>,
 	<avaritia:resource:4>:<liquid:neutronium>, //Neutronium
 	<modularmachinery:itemmodularium>:<liquid:molten_modularium>,
+	<contenttweaker:biingot>:<liquid:bismuth>,
+	<contenttweaker:cs137ingot>:<liquid:caesium_137>,
+	<contenttweaker:eu155ingot>:<liquid:europium_155>,
+	<contenttweaker:poingot>:<liquid:polonium>,
+	<contenttweaker:pm147ingot>:<liquid:promethium_147>,
+	<contenttweaker:raingot>:<liquid:radium>,
+	<contenttweaker:ru106ingot>:<liquid:ruthenium_106>,
+	<contenttweaker:iingot>:<liquid:iodine>,
+	<contenttweaker:smingot>:<liquid:samarium>,
+	<contenttweaker:ybingot>:<liquid:ytterbium>,
+	<contenttweaker:tbingot>:<liquid:terbium>,
+	<contenttweaker:eringot>:<liquid:erbium>,
 } as ILiquidStack[IItemStack];
 
 for item, liquid in ingotstoformmap {
@@ -410,12 +423,24 @@ val generalmelting as IItemStack[][ILiquidStack] = {
 	<liquid:dragonsteel_fire>:[null, <iceandfire:dragonsteel_fire_ingot>, null, <iceandfire:dragonsteel_fire_block>],
 	<liquid:molten_blood_infused_iron>:[null, <bloodarsenal:base_item:4>, null, <bloodarsenal:blood_infused_iron_block>],
 	<liquid:bloodbronze>:[null, <bloodtinker:blood_bronze_ingot>, null, <bloodtinker:blood_bronze_block>],
-	<liquid:stainless_steel>:[null, <qmd:ingot_alloy:2>, null, <jaopca:block_blockstainlesssteel>],
-	<liquid:tin_silver>:[null, <nuclearcraft:alloy:8>, null, <jaopca:block_blocktinsilver>],
+	<liquid:stainless_steel>:[null, <qmd:ingot_alloy:2>, null, <contenttweaker:cfecrblock>],
+	<liquid:tin_silver>:[null, <nuclearcraft:alloy:8>, null, <contenttweaker:tinsilverblock>],
 	<liquid:neutronic_matrix>:[null,<contenttweaker:neutronic>,null,null], 	//Stuff for Neutronium
 	<liquid:incoherent_matrix>:[null,<contenttweaker:incoherent>,null,null],//Stuff for Neutronium
 	<liquid:fossil_tar>:[<fossil:tardrop>, <thermalfoundation:material:833>, null, null],
-	<liquid:molten_modularium>:[null, <modularmachinery:itemmodularium>, <contenttweaker:plate_modularium>, null]
+	<liquid:molten_modularium>:[null, <modularmachinery:itemmodularium>, <contenttweaker:plate_modularium>, null],
+	<liquid:bismuth>:[null, <contenttweaker:biingot>, null, <contenttweaker:biblock>],
+	<liquid:caesium_137>:[null, <contenttweaker:cs137ingot>, null, <contenttweaker:cs137block>],
+	<liquid:europium_155>:[null, <contenttweaker:eu155ingot>, null, <contenttweaker:eu155block>],
+	<liquid:polonium>:[null, <contenttweaker:poingot>, null, <contenttweaker:poblock>],
+	<liquid:promethium_147>:[null, <contenttweaker:pm147ingot>, null, <contenttweaker:pm147block>],
+	<liquid:radium>:[null, <contenttweaker:raingot>, null, <contenttweaker:rablock>],
+	<liquid:ruthenium_106>:[null, <contenttweaker:ru106ingot>, null, <contenttweaker:ru106block>],
+	<liquid:iodine>:[null, <contenttweaker:iingot>, null, <contenttweaker:iblock>],
+	<liquid:samarium>:[null, <contenttweaker:smingot>, null, <contenttweaker:smblock>],
+	<liquid:ytterbium>:[null, <contenttweaker:ybingot>, null, <contenttweaker:ybblock>],
+	<liquid:terbium>:[null, <contenttweaker:tbingot>, null, <contenttweaker:tbblock>],
+	<liquid:erbium>:[null, <contenttweaker:eringot>, null, <contenttweaker:erblock>],
 } as IItemStack[][ILiquidStack];
 
 for fluid, material in generalmelting {
@@ -440,6 +465,36 @@ for fluid, material in generalmelting {
 		Melter.addRecipe(material[3], fluid * 1296, 9.0);
 	}
 }
+
+// More NCEIB Blocks
+val gems = {<contenttweaker:carobblock>: <liquid:carobbiite>, <contenttweaker:fluorblock>: <liquid:fluorite>, <contenttweaker:villiblock>: <liquid:villiaumite>,
+<contenttweaker:basblock>: <liquid:bas>} as ILiquidStack[IItemStack];
+
+for gemblock, gemfluid in gems {
+		Melter.addRecipe(gemblock, gemfluid * 5994, 8.0, 1.0, 0.0);
+		Crucible.addRecipe(gemfluid * 5994, gemblock, 36000);
+}
+
+val nceibblocks = {
+	<contenttweaker:ferroboronblock>:<liquid:ferroboron>,
+	<contenttweaker:hardcarbonblock>:<liquid:hard_carbon>,
+	<contenttweaker:leadplatinumblock>:<liquid:lead_platinum>,
+	<contenttweaker:moblock>:<liquid:molybdenum>,
+	<contenttweaker:siblock>:<liquid:silicon>,
+	<contenttweaker:cablock>:<liquid:calcium>,
+	<contenttweaker:nbblock>:<liquid:niobium>,
+	<contenttweaker:hfblock>:<liquid:hafnium>,
+	<contenttweaker:ndblock>:<liquid:neodymium>,
+	<contenttweaker:kblock>:<liquid:potassium>,
+	<contenttweaker:nablock>:<liquid:sodium>,
+	<contenttweaker:yblock>:<liquid:yttrium>
+} as ILiquidStack[IItemStack];
+
+for ncblock, ncfluid in nceibblocks {
+	Crucible.addRecipe(ncfluid * 1296, ncblock, 32000);
+	Melter.addRecipe(ncblock, ncfluid * 1296, 9.0);
+}
+
 
 // Modularium Gear
 Crucible.addRecipe(<liquid:molten_modularium> * 576, <contenttweaker:gear_modularium>, 16000);

@@ -97,7 +97,6 @@ val itemstoHide =
 <techreborn:quadthoriumfuelrod>,
 <techreborn:solid_canning_machine>,
 <techreborn:part:34>,
-<techreborn:plates:11>,
 <techreborn:compressor>,
 <techreborn:grinder>,
 <techreborn:chemical_reactor>,

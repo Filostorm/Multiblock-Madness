@@ -272,7 +272,7 @@ val NCChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-craft
 NCChassis2.addEnergyPerTickInput(4000);
 NCChassis2.addItemInput(<contenttweaker:plating_basic> * 8);
 NCChassis2.addItemInput(<contenttweaker:bam_scaffolding> * 18);
-NCChassis2.addItemInput(<jaopca:block_blockthermoconducting>);
+NCChassis2.addItemInput(<contenttweaker:thermoconductingblock>);
 NCChassis2.addItemInput(<nuclearcraft:part:7>);
 NCChassis2.addItemOutput(<nuclearcraft:part:10>*2);
 NCChassis2.build();

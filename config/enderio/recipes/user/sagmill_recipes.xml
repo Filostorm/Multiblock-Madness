@@ -926,6 +926,127 @@
   </sagmilling>
 </recipe>
 
+<!-- Bismuth Dust -->
+<recipe name="MBM: Bismuth Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotBismuth" />
+    <output name="nuclearcraft:fission_dust" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Caesium-137 Dust -->
+<recipe name="MBM: Caesium-137 Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotCaesium137" />
+    <output name="nuclearcraft:fission_dust:8" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Europium-155 Dust -->
+<recipe name="MBM: Europium-155 Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotEuropium155" />
+    <output name="nuclearcraft:fission_dust:10" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Polonium Dust -->
+<recipe name="MBM: Polonium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotPolonium" />
+    <output name="nuclearcraft:fission_dust:2" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Promethium-147 Dust -->
+<recipe name="MBM: Promethium-147 Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotPromethium147" />
+    <output name="nuclearcraft:fission_dust:9" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Protactinium-233 Dust -->
+<recipe name="MBM: Protactinium-233 Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotProtactinium233" />
+    <output name="nuclearcraft:fission_dust:4" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Radium Dust -->
+<recipe name="MBM: Radium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotRadium" />
+    <output name="nuclearcraft:fission_dust:1" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Ruthenium-106 Dust -->
+<recipe name="MBM: Ruthenium-106 Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotRuthenium106" />
+    <output name="nuclearcraft:fission_dust:7" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Protactinium-Enriched Thorium Dust -->
+<recipe name="MBM: Protactinium-Enriched Thorium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotTBP" />
+    <output name="nuclearcraft:fission_dust:3" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Carbon-Manganese Dust -->
+<recipe name="MBM: Carbon-Manganese Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotCarbonManganese" />
+    <output name="nuclearcraft:compound:10" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Iodine Dust -->
+<recipe name="MBM: Iodine Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotIodine" />
+    <output name="qmd:dust2:2" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Samarium Dust -->
+<recipe name="MBM: Samarium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotSamarium" />
+    <output name="rockhounding_chemistry:chemical_dusts:10" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Ytterbium Dust -->
+<recipe name="MBM: Ytterbium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotYtterbium" />
+    <output name="rockhounding_chemistry:chemical_dusts:14" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Terbium Dust -->
+<recipe name="MBM: Terbium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotTerbium" />
+    <output name="rockhounding_chemistry:chemical_dusts:12" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+<!-- Erbium Dust -->
+<recipe name="MBM: Erbium Dust" required="true">
+  <sagmilling energy="5000" bonus="none">
+    <input name="ingotErbium" />
+    <output name="rockhounding_chemistry:chemical_dusts:2" chance="1.0" amount="1"/>
+  </sagmilling>
+</recipe>
+
+
 
 <!-- Cluster, Lump & Shard Processing -->
 

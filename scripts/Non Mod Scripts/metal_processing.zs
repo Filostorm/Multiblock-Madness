@@ -255,8 +255,6 @@ AlloyFurnace.addRecipe(<ore:ingotGraphite>|<ore:dustGraphite>, <ore:ingotMangane
 AlloyFurnace.removeRecipeWithOutput(<ore:ingotHSLASteel>*16);
 AlloyFurnace.addRecipe(<ore:ingotCarbonManganese>|<ore:dustCarbonManganese>, <ore:ingotIron>*15|<ore:dustIron>*15, <ore:ingotHSLASteel>*16, 8.0, 2.0, 0.0);
 
-Manufactory.addRecipe(<ore:ingotBismuth>, <ore:dustBismuth>);
-
 furnace.addRecipe(<ore:ingotBismuth>.firstItem, <ore:dustBismuth>.firstItem);
 furnace.addRecipe(<ore:ingotCaesium137>.firstItem, <ore:dustCaesium137>.firstItem);
 furnace.addRecipe(<ore:ingotEuropium155>.firstItem, <ore:dustEuropium155>.firstItem);
@@ -276,10 +274,10 @@ var everything = {<liquid:erbium>: [<contenttweaker:eringot>, <contenttweaker:er
 <liquid:ytterbium>: [<contenttweaker:ybingot>, <contenttweaker:ybblock>, <ore:dustYtterbium>]} as IIngredient[][ILiquidStack];
 
 for fluid, itms in everything {
-	Melter.addRecipe(itms[0], fluid*144);
-	Melter.addRecipe(itms[1], fluid*1296);
-	IngotFormer.addRecipe(fluid*144, itms[0]);
-	Manufactory.addRecipe(itms[0], itms[2]);
+	// Melter.addRecipe(itms[0], fluid*144);
+	// Melter.addRecipe(itms[1], fluid*1296);
+	// IngotFormer.addRecipe(fluid*144, itms[0]);
+	// Manufactory.addRecipe(itms[0], itms[2]);
 	furnace.addRecipe(itms[0].items[0], itms[2]);
 }
 
@@ -288,13 +286,6 @@ DecayHastener.addRecipe(<ore:blockPromethium147>, <ore:blockNeodymium>, 0.9, 1.0
 FissionIrradiator.addRecipe(<ore:blockCobalt>, <ore:ingotCobalt60>*9, 17280000, 0.0, 0.0, 0.0);
 
 // NCEIB Blocks //
-
-val gems = {<ore:blockCarobbiite>: <liquid:carobbiite>*5994, <ore:blockVilliaumite>: <liquid:villiaumite>*5994, <ore:blockFluorite>: <liquid:fluorite>*5994,
-<ore:blockBoronArsenide>: <liquid:bas>*5994} as IIngredient[IIngredient];
-
-for gemblock, gemfluid in gems {
-	Melter.addRecipe(gemblock, gemfluid, 8.0, 1.0, 0.0);
-}
 
 FissionIrradiator.addRecipe(<ore:blockThorium>, <ore:blockTBP>, 1440000, 0.0, 0.0, 52.416e-12);
 FissionIrradiator.addRecipe(<ore:blockTBP>, <ore:blockProtactinium233>, 24480000, 0.0, 0.0, 61.344e-3);

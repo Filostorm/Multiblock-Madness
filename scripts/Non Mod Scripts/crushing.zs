@@ -523,5 +523,30 @@ Crusher.addRecipe(<mysticalworld:amethyst_gem> * 2, <mysticalworld:amethyst_ore>
 Pulverizer.addRecipe(<mysticalworld:amethyst_gem> * 2, <mysticalworld:amethyst_ore>, 2500);
 enrichment.addRecipe(<mysticalworld:amethyst_ore>, <mysticalworld:amethyst_gem> * 2);
 
+// All new ingots from NCEIB
+val nceibingots = {
+	<contenttweaker:biingot>: <nuclearcraft:fission_dust>,
+	<contenttweaker:cs137ingot>: <nuclearcraft:fission_dust:8>,
+	<contenttweaker:eu155ingot>: <nuclearcraft:fission_dust:10>,
+	<contenttweaker:poingot>: <nuclearcraft:fission_dust:2>,
+	<contenttweaker:pm147ingot>: <nuclearcraft:fission_dust:9>,
+	<contenttweaker:pa233ingot>: <nuclearcraft:fission_dust:4>,
+	<contenttweaker:raingot>: <nuclearcraft:fission_dust:1>,
+	<contenttweaker:ru106ingot>: <nuclearcraft:fission_dust:7>,
+	<contenttweaker:tbpingot>: <nuclearcraft:fission_dust:3>,
+	<contenttweaker:cmningot>: <nuclearcraft:compound:10>,
+	<contenttweaker:iingot>: <qmd:dust2:2>,
+	<contenttweaker:smingot>: <rockhounding_chemistry:chemical_dusts:10>,
+	<contenttweaker:ybingot>: <rockhounding_chemistry:chemical_dusts:14>,
+	<contenttweaker:tbingot>: <rockhounding_chemistry:chemical_dusts:12>,
+	<contenttweaker:eringot>: <rockhounding_chemistry:chemical_dusts:2>,
+} as IItemStack[IItemStack];
+
+for material, dust in nceibingots {
+	Crusher.addRecipe(dust, material, 1024);
+	crusher.addRecipe(material, dust);
+	Manufactory.addRecipe(material, dust);
+}
+
 ##########################################################################################
 print("==================== end of crushing.zs ====================");

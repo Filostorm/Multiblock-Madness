@@ -489,7 +489,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>itemSilicon;9</oreDict>
+			<oreDict>blockSilicon</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -750,7 +750,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotSuperAlloy;9</oreDict>
+			<oreDict>blockSuperAlloy</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -885,7 +885,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotTungstenCarbide;9</oreDict>
+			<oreDict>blockTungstenCarbide</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -903,7 +903,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotFerroboron;9</oreDict>
+			<oreDict>blockFerroboron</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -948,7 +948,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotHSLASteel;9</oreDict>
+			<oreDict>hslasteelblock</oreDict>
 			<fluidStack>lubricant</fluidStack>
 		</input>
 		<output>
@@ -1170,7 +1170,7 @@
 	
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<itemStack>jaopca:block_blockthermoconducting</itemStack>
+			<oreDict>blockThermoconducting</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>

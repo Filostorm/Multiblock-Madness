@@ -5,6 +5,7 @@ import mods.jaopca.JAOPCA;
 import mods.bloodmagic.TartaricForge;
 import crafttweaker.data.IData;
 import mods.tconstruct.Melting;
+import crafttweaker.formatting.IFormattedText;
 
 #priority 100
 
@@ -712,6 +713,18 @@ recipes.addShapeless(<appliedenergistics2:wireless_fluid_terminal>, [<wft:wft>])
 recipes.addShapeless(<wct:wct>, [<appliedenergistics2:wireless_crafting_terminal>]);
 recipes.addShapeless(<appliedenergistics2:wireless_crafting_terminal>, [<wct:wct>]);
 recipes.addShaped(<aeadditions:terminal.fluid.wireless>, [[null, <appliedenergistics2:material:41>, null],[<ore:gemLapis>, <appliedenergistics2:part:520>, <ore:gemLapis>], [null, <appliedenergistics2:dense_energy_cell>, null]]);
+
+
+// Depreciation Warning for JAOPCA Blocks
+val jaopcablks = [
+<jaopca:block_blockstainlesssteel>, <jaopca:block_blockthermoconducting>, <jaopca:block_blocktinsilver>
+] as IItemStack[];
+
+for block in jaopcablks {
+	recipes.remove(block);
+	block.addTooltip(format.red("Will be removed in next update!"));
+	block.addTooltip("§cConvert to CoT version with a §6Lexical Transmuter§r");
+}
 
 
 ##########################################################################################
