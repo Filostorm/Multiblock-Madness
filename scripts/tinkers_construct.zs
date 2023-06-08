@@ -198,7 +198,8 @@ val moltentoremove = [
 	<liquid:molten_inconel>,
 	<liquid:molten_pewter>,
 	<liquid:molten_corten>,
-	<liquid:molten_vanadium>
+	<liquid:molten_vanadium>,
+	<liquid:blood_infused_glitch>
 ] as ILiquidStack[];
 
 for moltenfluid in moltentoremove {
@@ -668,6 +669,7 @@ var matpresser as IItemStack[string] = {
 	"elementium" : <botania:manaresource:7>,
 	"terrasteel" : <botania:manaresource:4>,
 	"emerald_plustic" : <minecraft:emerald>,
+	"blood_infused_glitch": <deepmoblearningbm:blood_infused_glitch_ingot>,
 };
 
 var tconPartsMappresser as int[IItemStack[]] = {

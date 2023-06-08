@@ -62,7 +62,8 @@ val itemstoRemove =
 	<jaopca:item_geartungstencarbide>,
 	<jaopca:item_gearzinc>,
 	<jaopca:item_stickcobalt>,
-	<jaopca:item_stickprudentium>
+	<jaopca:item_stickprudentium>,
+	<jaopca:item_gearbloodinfusedglitch>,
 ]
  as IItemStack[];
 

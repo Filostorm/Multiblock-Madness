@@ -65277,6 +65277,77 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "835:10": {
+      "preRequisites:11": [
+        380
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Automatically produces §bwill§r without having to set up a mob farm!\n\nPlace a data model and a sentient sword in the machine, and it will produce §bdemonic will§r. Alternatively, place a §9tartaric gem§r in the right slot and it will automatically fill the gem with will.\n\nThis process consumes the §cdurability§r of the sentient sword, so you may want to set up an auto-repair system using a §6diamond anvil§r with conduits or servos extracting the sword when the durability gets too low!",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "deepmoblearningbm:digital_will_injector"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Will Injector - Automated Will",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 835,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "enderio:item_advanced_item_filter"
+            },
+            "1:10": {
+              "Count:3": 2,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "thermaldynamics:servo"
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "deepmoblearningbm:digital_will_injector"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -70977,6 +71048,13 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 132,
+          "y:3": -246
+        },
+        "69:10": {
+          "id:3": 835,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 204,
           "y:3": -246
         }
       }

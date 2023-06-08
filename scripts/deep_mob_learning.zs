@@ -24,6 +24,7 @@ val itemstoRemove =
 	<deepmoblearning:glitch_infused_boots>,
 	<deepmoblearning:extraction_chamber>,
 	<deepmoblearningbm:digital_agonizer>,
+	<deepmoblearningbm:digital_will_injector>
 ]
  as IItemStack[];
 
@@ -57,6 +58,9 @@ recipes.addShaped(<deepmoblearning:extraction_chamber>, [[<bloodmagic:blood_rune
 
 //Agonizer
 recipes.addShaped(<deepmoblearningbm:digital_agonizer>, [[<bloodmagic:blood_rune:3>, <bloodarsenal:gem:1>, <bloodmagic:blood_rune:3>],[<moreplates:restonia_gear>, <deepmoblearning:machine_casing>, <moreplates:restonia_gear>], [<bloodmagic:blood_rune:3>, <immersiveengineering:metal_decoration0:5>, <bloodmagic:blood_rune:3>]]);
+
+// Will Injector
+recipes.addShaped(<deepmoblearningbm:digital_will_injector>, [[<ore:plateBloodInfusedGlitch>, <ore:ingotBloodInfusedIron>, <ore:plateBloodInfusedGlitch>],[<actuallyadditions:item_crystal_empowered:1>, <deepmoblearning:machine_casing>, <actuallyadditions:item_crystal_empowered:1>], [<ore:plateBloodInfusedGlitch>, <rockhounding_chemistry:misc_items:10>, <ore:plateBloodInfusedGlitch>]]);
 
 //Sim Chamber
 recipes.addShaped(<deepmoblearning:simulation_chamber>, [[<contenttweaker:plate_thermal_alloy>, <actuallyadditions:item_crystal_empowered>, <contenttweaker:plate_thermal_alloy>],[<actuallyadditions:item_crystal_empowered>, <deepmoblearning:machine_casing>, <actuallyadditions:item_crystal_empowered>], [<contenttweaker:plate_thermal_alloy>, <ore:circuitElite>, <contenttweaker:plate_thermal_alloy>]]);

@@ -1072,7 +1072,15 @@
 			<itemStack>moreplates:pulsating_iron_plate;9;0</itemStack>
 		</output>
 	</Recipe>
-
+	<Recipe timeRequired="30" power ="15000">
+		<input>
+			<oreDict>blockBloodInfusedGlitch</oreDict>
+			<fluidStack>lubricant;5</fluidStack>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platebloodinfusedglitch;9;0</itemStack>
+		</output>
+	</Recipe>
 
 
 	<!-- Heavy Plates -->

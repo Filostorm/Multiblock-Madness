@@ -116,6 +116,14 @@ Melter.addRecipe(<techreborn:uumatter>, <liquid:uu_matter>);
 Crucible.addRecipe(<liquid:uu_matter>, <techreborn:uumatter>, 5000);
 IngotFormer.addRecipe(<liquid:uu_matter>, <techreborn:uumatter>);
 
+// Blood Infused Glitch
+
+Melter.addRecipe(<deepmoblearningbm:blood_infused_glitch_nugget>, <liquid:blood_infused_glitch> * 16, 0.11);
+Melter.addRecipe(<deepmoblearningbm:blood_infused_glitch_ingot>, <liquid:blood_infused_glitch> * 144);
+Melter.addRecipe(<jaopca:item_dustbloodinfusedglitch>, <liquid:blood_infused_glitch> * 144);
+Melter.addRecipe(<deepmoblearningbm:block_blood_infused_glitch_ingot>, <liquid:blood_infused_glitch> * 1296, 9.0);
+
+
 // --==Magma Crucible Recipe Compat==-- //
 // For recipes in the Melter but not in the Magma Crucible
 
