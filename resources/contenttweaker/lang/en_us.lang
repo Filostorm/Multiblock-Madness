@@ -387,6 +387,12 @@ item.contenttweaker.eu155ingot.name=Europium-155 Ingot
 tile.contenttweaker.cs137block.name=Caesium-137 Block
 item.contenttweaker.cs137ingot.name=Caesium-137 Ingot
 
+tile.contenttweaker.vanadiumblock.name=Vanadium Block
+tile.contenttweaker.carbonblock.name=Carbon Block
+tile.contenttweaker.advancedalloyblock.name=Advanced Alloy Block
+tile.contenttweaker.modulariumblock.name=Modularium Block
+
+
 
 // Base NCO Gem blocks
 tile.contenttweaker.basblock.name=Boron Arsenide Block

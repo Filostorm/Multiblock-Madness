@@ -352,7 +352,8 @@ var material_blocks = ["ferroboronblock", "hardcarbonblock", "thermoconductingbl
 "moblock", "basblock", "bnblock", "carobblock", "fluorblock", "siblock", "rhodoblock", "villiblock", "biblock", 
 "cs137block", "eu155block", "poblock", "pm147block", "pa233block", "rablock", "ru106block", "tbpblock", "cmnblock", 
 "cablock", "hfblock", "ndblock", "nbblock", "kblock", "nablock", "yblock", "cfecrblock", "nbsnblock", 
-"nbtiblock", "wcblock", "superalloyblock", "iblock", "smblock", "ybblock", "tbblock", "erblock"] as string[];
+"nbtiblock", "wcblock", "superalloyblock", "iblock", "smblock", "ybblock", "tbblock", "erblock", 
+"advancedalloyblock", "carbonblock", "modulariumblock", "vanadiumblock"] as string[];
 
 for material in material_blocks {
 		var material = VanillaFactory.createBlock(material, <blockmaterial:iron>);

@@ -132,6 +132,10 @@ val mapNewBlocks as IItemStack[IItemStack] = {
 	<contenttweaker:tbingot>:<contenttweaker:tbblock>,
 	<contenttweaker:eringot>:<contenttweaker:erblock>,
 	<qmd:ingot_alloy:6>:<contenttweaker:superalloyblock>,
+	<rockhounding_chemistry:metal_items>: <contenttweaker:vanadiumblock>, 
+	<advancedrocketry:misc:1>: <contenttweaker:carbonblock>, 
+	<techreborn:ingot:20>: <contenttweaker:advancedalloyblock>, 
+	<modularmachinery:itemmodularium>: <contenttweaker:modulariumblock>,
 } as IItemStack[IItemStack];
 
 for ingot, block in mapNewBlocks {

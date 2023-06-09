@@ -382,7 +382,9 @@ Crucible.addRecipe(<liquid:marshmallow> * 144, <nuclearcraft:marshmallow>, 1000)
 // Strontium-90 Block to Molten Strontium
 Crucible.addRecipe(<liquid:strontium_90> * 1296, <qmd:strontium_90_block>, 32000);
 
-
+// Molten Dawnstone
+Crucible.addRecipe(<liquid:dawnstone> * 576, <embers:gear_dawnstone>, 16000);
+Crucible.addRecipe(<liquid:dawnstone> * 144, <embers:plate_dawnstone>, 4000);
 
 
 // --==Magma Crucible & Melter Recipe Compat==-- //
@@ -436,7 +438,7 @@ val generalmelting as IItemStack[][ILiquidStack] = {
 	<liquid:neutronic_matrix>:[null,<contenttweaker:neutronic>,null,null], 	//Stuff for Neutronium
 	<liquid:incoherent_matrix>:[null,<contenttweaker:incoherent>,null,null],//Stuff for Neutronium
 	<liquid:fossil_tar>:[<fossil:tardrop>, <thermalfoundation:material:833>, null, null],
-	<liquid:molten_modularium>:[null, <modularmachinery:itemmodularium>, <contenttweaker:plate_modularium>, null],
+	<liquid:molten_modularium>:[null, <modularmachinery:itemmodularium>, <contenttweaker:plate_modularium>, <contenttweaker:modulariumblock>],
 	<liquid:bismuth>:[null, <contenttweaker:biingot>, null, <contenttweaker:biblock>],
 	<liquid:caesium_137>:[null, <contenttweaker:cs137ingot>, null, <contenttweaker:cs137block>],
 	<liquid:europium_155>:[null, <contenttweaker:eu155ingot>, null, <contenttweaker:eu155block>],
@@ -449,6 +451,7 @@ val generalmelting as IItemStack[][ILiquidStack] = {
 	<liquid:ytterbium>:[null, <contenttweaker:ybingot>, null, <contenttweaker:ybblock>],
 	<liquid:terbium>:[null, <contenttweaker:tbingot>, null, <contenttweaker:tbblock>],
 	<liquid:erbium>:[null, <contenttweaker:eringot>, null, <contenttweaker:erblock>],
+	<liquid:molten_vanadium>:[null, <rockhounding_chemistry:metal_items>, <rockhounding_chemistry:chemical_dusts:52>, <contenttweaker:vanadiumblock>],
 } as IItemStack[][ILiquidStack];
 
 for fluid, material in generalmelting {
@@ -512,10 +515,6 @@ Melter.addRecipe(<contenttweaker:gear_modularium>, <liquid:molten_modularium> * 
 Melter.addRecipe(<minecraft:rotten_flesh>, <liquid:blood> * 40, 0.5);
 Crucible.addRecipe(<liquid:blood> * 40, <minecraft:rotten_flesh>, 2000);
 
-// Molten Dawnstone
-Crucible.addRecipe(<liquid:dawnstone> * 576, <embers:gear_dawnstone>, 16000);
-Crucible.addRecipe(<liquid:dawnstone> * 144, <embers:plate_dawnstone>, 4000);
-
 // Molten Ferroboron
 Crucible.addRecipe(<liquid:ferroboron> * 144, <nuclearcraft:alloy:6>, 4000);
 Melter.addRecipe(<nuclearcraft:alloy:6>, <liquid:ferroboron> * 144);
@@ -525,10 +524,10 @@ Crucible.addRecipe(<liquid:tough> * 144, <nuclearcraft:alloy:1>, 4000);
 Melter.addRecipe(<nuclearcraft:alloy:1>, <liquid:tough> * 144);
 
 // Molten Vanadium
-Crucible.addRecipe(<liquid:molten_vanadium> * 144, <rockhounding_chemistry:chemical_dusts:52>, 4000);
-Crucible.addRecipe(<liquid:molten_vanadium> * 144, <rockhounding_chemistry:metal_items>, 4000);
-Melter.addRecipe(<rockhounding_chemistry:chemical_dusts:52>, <liquid:molten_vanadium> * 144);
-Melter.addRecipe(<rockhounding_chemistry:metal_items>, <liquid:molten_vanadium> * 144);
+// Crucible.addRecipe(<liquid:molten_vanadium> * 144, <rockhounding_chemistry:chemical_dusts:52>, 4000);
+// Crucible.addRecipe(<liquid:molten_vanadium> * 144, <rockhounding_chemistry:metal_items>, 4000);
+// Melter.addRecipe(<rockhounding_chemistry:chemical_dusts:52>, <liquid:molten_vanadium> * 144);
+// Melter.addRecipe(<rockhounding_chemistry:metal_items>, <liquid:molten_vanadium> * 144);
 
 // Molten Ultimate
 mods.tconstruct.Melting.removeRecipe(<liquid:ultimate>);

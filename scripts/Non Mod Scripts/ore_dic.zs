@@ -286,6 +286,12 @@ for item in hiddenGlass {
 <ore:stickConductiveIron>.add(<contenttweaker:rod_conductive_iron>);
 <ore:stickDawnstone>.add(<contenttweaker:rod_dawnstone>);
 <ore:stickModularium>.add(<contenttweaker:rod_modularium>);
+<ore:stickHeavyAlloy>.add(<contenttweaker:rod_mek_alloy>);
+<ore:stickThermalAlloy>.add(<contenttweaker:rod_thermal_alloy>);
+<ore:stickNimonic>.add(<contenttweaker:rod_nimonic>);
+<ore:stickVanasteel>.add(<contenttweaker:rod_vanasteel>);
+<ore:stickScal>.add(<contenttweaker:rod_scal>);
+<ore:stickBam>.add(<contenttweaker:rod_bam>);
 
 <ore:gearHeavyAlloy>.add(<contenttweaker:gear_mek_alloy>);
 <ore:gearThermalAlloy>.add(<contenttweaker:gear_thermal_alloy>);
@@ -294,6 +300,16 @@ for item in hiddenGlass {
 <ore:ingotHeavyAlloy>.add(<contenttweaker:ingot_mek_alloy>);
 <ore:ingotThermalAlloy>.add(<contenttweaker:ingot_thermal_alloy>);
 <ore:ingotModularium>.add(<modularmachinery:itemmodularium>);
+
+<ore:plateHeavyAlloy>.add(<contenttweaker:plate_mek_alloy>);
+<ore:plateThermalAlloy>.add(<contenttweaker:plate_thermal_alloy>);
+<ore:plateModularium>.add(<contenttweaker:plate_modularium>);
+
+<ore:blockIronwood>.add(<twilightforest:block_storage>);
+<ore:blockAstralStarmetal>.add(<contenttweaker:starmetal_block>);
+<ore:blockRefinedIron>.add(<techreborn:storage2:10>);
+<ore:blockTerrasteel>.add(<botania:storage:1>);
+<ore:blockThermalAlloy>.add(<contenttweaker:block_thermal_alloy>);
 
 <ore:foodMeat>.add(<mysticalworld:venison>);
 <ore:foodMeat>.add(<twilightforest:raw_meef>);
@@ -310,6 +326,21 @@ for item in hiddenGlass {
 
 <ore:blockSapphire>.remove(<iceandfire:sapphire_block>);
 
+val scaffoldinglist = {
+	<ore:scaffoldingVanasteel>:<contenttweaker:vanasteel_scaffolding>,
+	<ore:scaffoldingScal>:<contenttweaker:scal_scaffolding>,
+	<ore:scaffoldingBam>:<contenttweaker:bam_scaffolding>,
+	<ore:scaffoldingNimonic>:<contenttweaker:nimonic_scaffolding>,
+	<ore:scaffoldingInvar>:<contenttweaker:invar_scaffolding>,
+	<ore:scaffoldingIronwood>:<contenttweaker:ironwood_scaffolding>,
+	<ore:scaffoldingThermalAlloy>:<contenttweaker:scaffolding_thermal_alloy>,
+	<ore:scaffoldingHeavyAlloy>:<contenttweaker:scaffolding_mek_alloy>,
+} as IItemStack[IOreDictEntry];
+
+for ore, scaf in scaffoldinglist {
+	ore.add(scaf);
+}
+
 
 // Thanks to FishingPole and NCEIB for the additional blocks and ingots!
 
@@ -320,7 +351,8 @@ var oreEntries = ["blockManganeseOxide", "blockManganeseDioxide", "blockFerrobor
 "blockCaesium137", "blockEuropium155", "blockPolonium", "blockPromethium147", "blockProtactinium233", "blockRadium", "blockRuthenium106", "blockTBP",
 "blockCarbonManganese", "blockCalcium", "blockHafnium", "blockNeodymium", "blockNiobium", "blockPotassium", "blockSodium",
 "blockYttrium", "blockStainlessSteel", "blockNiobiumTin", "blockNiobiumTitanium", "blockTungstenCarbide", "blockSuperAlloy",
-"blockErbium", "blockIodine", "blockSamarium", "blockTerbium", "blockYtterbium"] as string[];
+"blockErbium", "blockIodine", "blockSamarium", "blockTerbium", "blockYtterbium",
+"blockVanadium", "blockCarbon", "blockAdvancedAlloy", "blockModularium"] as string[];
 
 var oreBlocks = { <ore:blockManganeseOxide>: <nuclearcraft:ingot_block:14>, <ore:blockManganeseDioxide>: <nuclearcraft:ingot_block:15>,
 <ore:blockFerroboron>: <contenttweaker:ferroboronblock>, 
@@ -344,7 +376,9 @@ var oreBlocks = { <ore:blockManganeseOxide>: <nuclearcraft:ingot_block:14>, <ore
 <ore:blockTungstenCarbide>: <contenttweaker:wcblock>, 
 <ore:blockSuperAlloy>: <contenttweaker:superalloyblock>, <ore:blockErbium>: <contenttweaker:erblock>,
 <ore:blockIodine>: <contenttweaker:iblock>, <ore:blockSamarium>: <contenttweaker:smblock>, <ore:blockTerbium>: <contenttweaker:tbblock>,
-<ore:blockYtterbium>: <contenttweaker:ybblock>} as IItemStack[IOreDictEntry];
+<ore:blockYtterbium>: <contenttweaker:ybblock>,
+<ore:blockVanadium>: <contenttweaker:vanadiumblock>, <ore:blockCarbon>: <contenttweaker:carbonblock>, 
+<ore:blockAdvancedAlloy>: <contenttweaker:advancedalloyblock>, <ore:blockModularium>: <contenttweaker:modulariumblock>} as IItemStack[IOreDictEntry];
 
 for entry in oreEntries {
 	oreDict.entry;

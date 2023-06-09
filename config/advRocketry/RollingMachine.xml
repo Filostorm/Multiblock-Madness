@@ -165,7 +165,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotVanadium;9</oreDict>
+			<oreDict>blockVanadium</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -768,7 +768,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<itemStack>techreborn:storage2;1;10</itemStack>
+			<oreDict>blockRefinedIron</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -777,7 +777,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<itemStack>botania:storage;1;1</itemStack>
+			<oreDict>blockTerrasteel</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -849,7 +849,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<itemStack>advancedrocketry:misc;9;1</itemStack>
+			<oreDict>blockCarbon</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -948,7 +948,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>hslasteelblock</oreDict>
+			<oreDict>blockHSLASteel</oreDict>
 			<fluidStack>lubricant</fluidStack>
 		</input>
 		<output>
@@ -1047,7 +1047,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<itemStack>twilightforest:block_storage</itemStack>
+			<oreDict>blockIronwood</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -1081,10 +1081,6 @@
 			<itemStack>jaopca:item_platebloodinfusedglitch;9;0</itemStack>
 		</output>
 	</Recipe>
-
-
-	<!-- Heavy Plates -->
-
 	<Recipe timeRequired="30" power ="15000">
 		<input>
 			<itemStack>minecraft:quartz_block</itemStack>
@@ -1132,7 +1128,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<oreDict>ingotAdvancedAlloy;9</oreDict>
+			<oreDict>blockAdvancedAlloy</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -1150,7 +1146,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<itemStack>contenttweaker:block_mek_alloy</itemStack>
+			<oreDict>blockHeavyAlloy</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -1159,7 +1155,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<itemStack>modularmachinery:itemmodularium;9;0</itemStack>
+			<oreDict>blockModularium</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -1168,7 +1164,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power ="15000">
 		<input>
-			<itemStack>contenttweaker:block_thermal_alloy</itemStack>
+			<oreDict>blockThermalAlloy</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>
@@ -1195,9 +1191,14 @@
 			<itemStack>extendedcrafting:material;5;2</itemStack>
 		</output>
 	</Recipe>
+
+
+
+	<!-- Heavy Plates -->
+
 	<Recipe timeRequired="30" power ="20000">
 		<input>
-			<itemStack>techreborn:plates;9;36</itemStack>
+			<oreDict>plateAdvancedAlloy;9</oreDict>
 			<fluidStack>lubricant;5</fluidStack>
 		</input>
 		<output>

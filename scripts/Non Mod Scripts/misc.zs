@@ -716,6 +716,7 @@ recipes.addShaped(<aeadditions:terminal.fluid.wireless>, [[null, <appliedenergis
 
 
 // Depreciation Warning for JAOPCA Blocks
+// TODO Remove these blocks in 3.3/4.0!
 val jaopcablks = [
 <jaopca:block_blockstainlesssteel>, <jaopca:block_blockthermoconducting>, <jaopca:block_blocktinsilver>
 ] as IItemStack[];
@@ -723,8 +724,12 @@ val jaopcablks = [
 for block in jaopcablks {
 	recipes.remove(block);
 	block.addTooltip(format.red("Will be removed in next update!"));
-	block.addTooltip("§cConvert to CoT version with a §6Lexical Transmuter§r");
+	block.addTooltip(format.red("Convert to CoT version with the crafting recipe"));
 }
+
+recipes.addShapeless(<contenttweaker:tinsilverblock>, [<jaopca:block_blocktinsilver>]);
+recipes.addShapeless(<contenttweaker:thermoconductingblock>, [<jaopca:block_blockthermoconducting>]);
+recipes.addShapeless(<contenttweaker:cfecrblock>, [<jaopca:block_blockstainlesssteel>]);
 
 
 ##########################################################################################
