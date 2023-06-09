@@ -128,7 +128,7 @@
 				{
 					"entryName": "amethyst",
 					"type": "item",
-					"name": "treasure2:amethyst",
+					"name": "mysticalworld:amethyst_gem",
 					"weight": 15
 				},
 				{
@@ -141,12 +141,18 @@
 					"entryName": "sapphire",
 					"type": "item",
 					"name": "treasure2:sapphire",
-					"weight": 10
+					"weight": 10,
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 1
+                        }
+                    ]	
 				},
 				{
 					"entryName": "ruby",
 					"type": "item",
-					"name": "treasure2:ruby",
+					"name": "techreborn:gem",
 					"weight": 10
 				},
 				{
