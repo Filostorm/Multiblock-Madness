@@ -4,6 +4,8 @@ import mods.astralsorcery.Altar;
 import mods.bloodmagic.BloodAltar;
 import mods.bloodmagic.AlchemyTable;
 import mods.immersiveengineering.Squeezer;
+import mods.nuclearcraft.Melter;
+import mods.thermalexpansion.Crucible;
 
 print("==================== loading deep_mob_learning.zs ====================");
 ##########################################################################################
@@ -64,6 +66,19 @@ recipes.addShaped(<deepmoblearningbm:digital_will_injector>, [[<ore:plateBloodIn
 
 //Sim Chamber
 recipes.addShaped(<deepmoblearning:simulation_chamber>, [[<contenttweaker:plate_thermal_alloy>, <actuallyadditions:item_crystal_empowered>, <contenttweaker:plate_thermal_alloy>],[<actuallyadditions:item_crystal_empowered>, <deepmoblearning:machine_casing>, <actuallyadditions:item_crystal_empowered>], [<contenttweaker:plate_thermal_alloy>, <ore:circuitElite>, <contenttweaker:plate_thermal_alloy>]]);
+
+// DML Matter Melting
+val dmlmattermelt = {
+	<deepmoblearning:living_matter_overworldian>:10,
+	<deepmoblearning:living_matter_hellish>:14,
+	<deepmoblearning:living_matter_extraterrestrial>:20,
+	<deepmoblearning:living_matter_twilight>:30,
+} as int[IItemStack];
+
+for matter, i in dmlmattermelt {
+	Crucible.addRecipe(<liquid:experience> * (i * 20), matter, 4000);
+	Melter.addRecipe(matter, <liquid:experience> * (i * 20));
+}
 
 
 //Pick-a-Matter

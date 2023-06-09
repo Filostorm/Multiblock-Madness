@@ -40,6 +40,7 @@ val itemstoRemove =
 <embers:alchemy_tablet>,
 <aetherworks:item_resource:2>,
 <embers:inferno_forge>,
+<embers:spark_plug>,
 ]
  as IItemStack[];
 
@@ -96,6 +97,10 @@ recipes.addShaped(<embers:archaic_circuit>, [[null, <embers:archaic_brick>, null
 
 // Ashen Amulet
 RuneAltar.addRecipe(<embers:ashen_amulet>,[<embers:archaic_circuit>, <thaumcraft:baubles>, <improvedbackpacks:tanned_leather>, <improvedbackpacks:tanned_leather>, <embers:dust_ash>, <embers:dust_ash>, <embers:dust_ash>, <embers:dust_ash>], 15000);
+
+// Spark Plug
+recipes.addShaped(<embers:spark_plug>, [[<ore:stickBronze>, null, <ore:stickBronze>],[null, <ore:plateIron>, null], [null, <embers:aspectus_silver>, null]]);
+
 
 
 // Machines //
@@ -189,6 +194,8 @@ mods.thermalexpansion.Refinery.addRecipe(<liquid:condensed_aetherium> * 10, <min
 //Geode
 Crystallizer.addRecipe(<liquid:condensed_aetherium> * 10, <thermalfoundation:geode>);
 
+// Aetherium Shard recipe
+Crystallizer.addRecipe(<liquid:aetherworks.aetherium_gas> * 16, <aetherworks:item_resource>);
 
 ///CRACKING GEODES
 mods.embers.DawnstoneAnvil.add([<contenttweaker:crystal_seed>*4],<thermalfoundation:geode>,null);

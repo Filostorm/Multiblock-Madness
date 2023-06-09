@@ -840,6 +840,8 @@ Manufactory.addRecipe(item, <contenttweaker:material_part:35>);
 enrichment.addRecipe(item, <contenttweaker:material_part:35>);
 }
 
+furnace.addRecipe(<contenttweaker:material_part:30>, <contenttweaker:material_part:35>);
+
 //Orichalcum
 MineralSizer.add(<contenttweaker:sub_block_holder_0:7>, [<jaopca:item_crushedlumporichalcum>*2], [8]);
 LeachingVat.add(<jaopca:item_crushedlumporichalcum>, [<jaopca:item_leachedshardorichalcum>*2], [6.32F], <liquid:leachate>*50);
@@ -893,6 +895,8 @@ Pulverizer.addRecipe(<astralsorcery:itemcraftingcomponent:2>, item, 2000, <jaopc
 Manufactory.addRecipe(item, <astralsorcery:itemcraftingcomponent:2>);
 enrichment.addRecipe(item, <astralsorcery:itemcraftingcomponent:2>);
 }
+
+furnace.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:2>);
 
 //Pyrite
 LeachingVat.add(<techreborn:ore:5>, [<rockhounding_chemistry:sulfide_shards:6>*8], [5.1F], <liquid:leachate>*200);

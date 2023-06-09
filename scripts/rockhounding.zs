@@ -435,6 +435,7 @@ mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:skull:1>, <quark:soul
 //mods.rockhounding_chemistry.PullingCrucible.add(<thermalfoundation:material:1028>, <actuallyadditions:item_crystal_empowered:4>, <environmentaltech:litherite_crystal>);
 
 mods.rockhounding_chemistry.PullingCrucible.add(<rockhounding_chemistry:chemical_items:4>, <techreborn:dust:28>, <contenttweaker:lazurite_gem>*3);
+mods.rockhounding_chemistry.PullingCrucible.add(<nuclearcraft:gem:2>, <techreborn:dust:28>, <contenttweaker:lazurite_gem>*3);
 
 //mods.rockhounding_chemistry.PullingCrucible.add("nuggetIron", <minecraft:glowstone_dust>, <minecraft:ghast_tear>);
 //mods.rockhounding_chemistry.PullingCrucible.add(<minecraft:iron_nugget>, "dustGlowstone", <minecraft:ghast_tear>);

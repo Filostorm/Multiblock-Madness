@@ -12,6 +12,7 @@ import mods.tcomplement.highoven.HighOven;
 import mods.tconstruct.Melting;
 import mods.immersiveengineering.ArcFurnace;
 import crafttweaker.item.IIngredient;
+import mods.nuclearcraft.Crystallizer;
 
 #priority 98
 
@@ -522,6 +523,10 @@ Melter.addRecipe(<nuclearcraft:alloy:6>, <liquid:ferroboron> * 144);
 // Molten Tough Alloy
 Crucible.addRecipe(<liquid:tough> * 144, <nuclearcraft:alloy:1>, 4000);
 Melter.addRecipe(<nuclearcraft:alloy:1>, <liquid:tough> * 144);
+
+// Soul Crude
+Crucible.addRecipe(<liquid:oil_soul> * 100, <minecraft:soul_sand>, 4000);
+Melter.addRecipe(<minecraft:soul_sand>, <liquid:oil_soul> * 100);
 
 // Molten Vanadium
 // Crucible.addRecipe(<liquid:molten_vanadium> * 144, <rockhounding_chemistry:chemical_dusts:52>, 4000);

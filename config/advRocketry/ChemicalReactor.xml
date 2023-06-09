@@ -689,6 +689,24 @@
 			<fluidStack>fluidsodiumpersulfate;4000</fluidStack>
 		</output>
 	</Recipe>
+		<Recipe timeRequired="1" power ="4000">
+		<input>
+			<fluidStack>sulfuric_acid;2000</fluidStack>
+			<fluidStack>water;200</fluidStack>
+		</input>
+		<output>
+			<fluidStack>sulfuricacid;4000</fluidStack>
+		</output>
+	</Recipe>
+		<Recipe timeRequired="1" power ="4000">
+		<input>
+			<fluidStack>sulfuricacid;2000</fluidStack>
+			<fluidStack>water;200</fluidStack>
+		</input>
+		<output>
+			<fluidStack>sulfuric_acid;4000</fluidStack>
+		</output>
+	</Recipe>
 
 
 	<!-- Generic Fluid Mixer Recipes -->
