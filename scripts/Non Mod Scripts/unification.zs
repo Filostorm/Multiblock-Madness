@@ -82,8 +82,17 @@ InductionSmelter.removeRecipe(<minecraft:sand>, <techreborn:plates:11>);
 InductionSmelter.removeRecipe(<minecraft:sand>, <rockhounding_chemistry:chemical_dusts:42>);
 
 Crusher.removeRecipesForInput(<libvulpes:productingot:3>);
-Pulverizer.removeRecipe(<libvulpes:productingot:3>);
+// Pulverizer.removeRecipe(<libvulpes:productingot:3>);
 Pulverizer.addRecipe(<rockhounding_chemistry:chemical_dusts:42>, <nuclearcraft:gem:6>, 2000);
+
+
+MetalPress.removeRecipe(<techreborn:plates:11>);
+MetalPress.removeRecipe(<libvulpes:productingot:3>);
+Compactor.removeStorageRecipe(<libvulpes:productingot:3>);
+Pressurizer.removeRecipeWithInput(<libvulpes:productingot:3>);
+
+MetalPress.addRecipe(<techreborn:plates:11>, <nuclearcraft:gem:6>, <immersiveengineering:mold>, 2000);
+Pressurizer.addRecipe(<ore:itemSilicon>, <techreborn:plates:11>);
 
 // New Silicon Wafer Recipes
 Manufactory.removeRecipeWithInput(<qmd:semiconductor:2>);
@@ -460,6 +469,11 @@ for input, output in furnToRemove {
 crusher.removeRecipe(<techreborn:dust:45>, <iceandfire:sapphire_gem>);
 crusher.removeRecipe(<techreborn:dust:45>, <treasure2:sapphire>);
 crusher.removeRecipe(<techreborn:dust:43>, <treasure2:ruby>);
+
+// Fixing bronze crushing recipe
+crusher.removeRecipe(<thermalfoundation:material:99>);
+crusher.addRecipe(<thermalfoundation:material:163>, <thermalfoundation:material:99>);
+
 
 // Removing useless metallurgic infuser recipes
 

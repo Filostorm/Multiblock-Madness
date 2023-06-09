@@ -5,6 +5,9 @@ import mods.contenttweaker.IItemRightClick;
 import mods.contenttweaker.Commands;
 import mods.contenttweaker.IItemColorSupplier;
 import mods.contenttweaker.Color;
+import crafttweaker.item.IIngredient;
+import mods.contenttweaker.CreativeTab;
+
 
 #priority 105
 
@@ -298,6 +301,20 @@ warp_remover.itemShiftRightClick = function(stack, world, player, hand) {
 };
 
 warp_remover.register();*/
+
+// Thanks to FishingPole and the NCEIB addon for the additional ingots!
+val nceib_tab = VanillaFactory.createCreativeTab("nceib", <item:contenttweaker:toughblock>);
+nceib_tab.register();
+
+var material_ingots = ["biingot", "cs137ingot", "eu155ingot", "poingot", "pm147ingot", "pa233ingot", "raingot", "ru106ingot", 
+"tbpingot", "cmningot", "eringot", "iingot", "smingot", "tbingot", "ybingot"] as string[];
+
+for material in material_ingots {
+	var material = VanillaFactory.createItem(material);
+	material.setCreativeTab(<creativetab:nceib>);
+	material.maxStackSize = 64;
+	material.register();
+}
 
 ##########################################################################################
 print("==================== end of items.zs ====================");

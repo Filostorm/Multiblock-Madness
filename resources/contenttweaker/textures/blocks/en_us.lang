@@ -1,0 +1,442 @@
+tile.contenttweaker.sheetmetal_bronze.name=Bronze Sheetmetal
+tile.contenttweaker.sheetmetal_refinediron.name=Refined Iron Sheetmetal
+tile.contenttweaker.sheetmetal_thaumium.name=Thaumium Sheetmetal
+tile.contenttweaker.sheetmetal_brass.name=Brass Sheetmetal
+tile.contenttweaker.sheetmetal_nimonic.name=Nimonic Sheetmetal
+tile.contenttweaker.sheetmetal_ironwood.name=Ironwood Sheetmetal
+tile.contenttweaker.ironwood_scaffolding.name=Ironwood Scaffolding
+tile.contenttweaker.vanasteel_scaffolding.name=Vanasteel Scaffolding
+tile.contenttweaker.scal_scaffolding.name=ScAl Scaffolding
+tile.contenttweaker.bam_scaffolding.name=BAM Scaffolding
+tile.contenttweaker.invar_scaffolding.name=Invar Scaffolding
+tile.contenttweaker.nimonic_scaffolding.name=Nimonic Scaffolding
+tile.contenttweaker.plating_basic.name=Basic Plating Block
+tile.contenttweaker.plating_advanced.name=Advanced Plating Block
+tile.contenttweaker.plating_elite.name=Elite Plating Block
+tile.contenttweaker.plating_extreme.name=Extreme Plating Block
+tile.contenttweaker.plating_du.name=DU Plating Block
+tile.contenttweaker.starmetal_block.name=Block of Starmetal
+
+item.contenttweaker.hastelloyfoil.name=Hastelloy Foil
+item.contenttweaker.goldfoil.name=Gold Foil
+item.contenttweaker.foil_electrum.name=Electrum Foil
+
+
+item.contenttweaker.aluminumcasing.name=Aluminum Casing
+item.contenttweaker.inert_ingot.name=Inert Ingot
+item.contenttweaker.rod_bam.name=BAM Rod
+item.contenttweaker.rod_scal.name=ScAl Rod
+item.contenttweaker.rod_vanasteel.name=Vanasteel Rod
+item.contenttweaker.rod_nimonic.name=Nimonic Rod 
+item.contenttweaker.rod_ironwood.name=Ironwood Rod 
+item.contenttweaker.rod_conductive_iron.name=Conductive Iron Rod
+item.contenttweaker.rod_dawnstone.name=Dawnstone Rod
+item.contenttweaker.greatwood_handle.name=Greatwood Stick
+item.contenttweaker.slatedust.name=§eCrushed Slate
+item.contenttweaker.activatedaspectuscopper.name=Infused Copper Aspectus
+item.contenttweaker.activatedaspectussilver.name=Infused Silver Aspectus
+item.contenttweaker.activatedaspectusdawnstone.name=Infused Dawnstone Aspectus
+
+item.contenttweaker.aspectus_gold.name=Gold Aspectus
+item.contenttweaker.aspectus_tin.name=Tin Aspectus
+item.contenttweaker.aspectus_nickel.name=Nickel Aspectus
+
+item.contenttweaker.token_tier1.name=Tier 1 Token
+item.contenttweaker.token_tier2.name=Tier 2 Token
+item.contenttweaker.token_tier3.name=Tier 3 Token
+item.contenttweaker.token_tier4.name=Tier 4 Token
+item.contenttweaker.token_tier5.name=Tier 5 Token
+item.contenttweaker.token_tier6.name=Tier 6 Token
+item.contenttweaker.token_tier7.name=Tier 7 Token
+item.contenttweaker.token_tier8.name=Tier 8 Token
+
+item.contenttweaker.adamantine_ingot.name=Adamantine Ingot
+item.contenttweaker.orichalcum_ingot.name=Orichalcum Ingot
+item.contenttweaker.palladium_ingot.name=Palladium Ingot
+item.contenttweaker.terrasteel_coil.name=Terrasteel Heating Coil
+item.contenttweaker.gearcrushinginvar.name=Invar Crushing Gear
+item.contenttweaker.gearcrushingsteel.name=Steel Crushing Gear
+item.contenttweaker.gearcrushingdarksteel.name=Dark Steel Crushing Gear
+item.contenttweaker.gearcrushingcortensteel.name=Corten Steel Crushing Gear
+item.contenttweaker.gearcrushingvanasteel.name=Vanasteel Crushing Gear
+
+item.contenttweaker.agitatorinvar.name=Invar Slurry Agitator
+item.contenttweaker.agitatorsteel.name=Steel Slurry Agitator
+item.contenttweaker.agitatordarksteel.name=Dark Steel Slurry Agitator
+item.contenttweaker.agitatorhydronalium.name=Hydronalium Slurry Agitator
+item.contenttweaker.agitatorhastelloy.name=Hastelloy Slurry Agitator
+
+item.contenttweaker.foilinvar.name=Invar Foil
+item.contenttweaker.foilsteel.name=Steel Foil
+item.contenttweaker.foildarksteel.name=Dark Steel Foil
+item.contenttweaker.foilhydronalium.name=Hydronalium Foil
+
+item.contenttweaker.rodinvar.name=Invar Rod
+item.contenttweaker.rodsteel.name=Steel Rod
+item.contenttweaker.roddarksteel.name=Dark Steel Rod
+item.contenttweaker.rodhydronalium.name=Hydronalium Rod
+
+item.contenttweaker.blood_crystal.name=Blood Crystal
+item.contenttweaker.adaptive_ingot.name=Adaptive Ingot
+item.contenttweaker.casingsteel.name=Steel Casing
+item.contenttweaker.casingplatinum.name=Platinum Casing
+item.contenttweaker.purpleprint.name=§5Multiblock Visualizer
+item.contenttweaker.vis_meal.name=§5Crystal Growth Powder
+
+
+item.contenttweaker.solar_ingot.name=§6Solar Ingot
+item.contenttweaker.solar_shard.name=§6Solar Fragment
+
+item.contenttweaker.ichor.name=§6Ichor
+
+item.contenttweaker.time_artifact.name=§2Vibrant Relic
+
+item.contenttweaker.sanctified_ash.name=§eSanctified Ashes
+
+item.contenttweaker.ingot_xp.name=XP Infused Glowstone
+tile.contenttweaker.block_xp.name=Block of XP Infused Glowstone
+
+fluid.moltenembers=Molten Embers
+fluid.moltenbedrock=Molten Bedrock
+fluid.moltentokeniron=Essence of Tier 1
+fluid.moltentokenbronze=Essence of Tier 2
+fluid.moltentokensteel=Essence of Tier 3
+fluid.moltentokenrefinediron=Essence of Tier 4
+fluid.moltentokenosmium=Essence of Tier 5
+fluid.moltentokeniridium=Essence of Tier 6
+fluid.moltentokenultimate=Essence of Tier 7
+fluid.moltentokeninfinity=Essence of Tier 8
+
+fluid.neutronic_matrix=Supercritical Neutronic Matrix
+fluid.incoherent_matrix=Sublimated Incoherent Matrix
+fluid.neutronium=Cosmic Neutronium
+
+fluid.uu_matter=Decompressed UU Matter
+
+item.contenttweaker.compressed_chrome.name=Compressed Chrome
+
+item.contenttweaker.matrix_deposition_+.name=Positive Deposition Matrix
+item.contenttweaker.matrix_deposition_-.name=Negative Deposition Matrix
+item.contenttweaker.neutronic.name=§l§8Neutronic Matrix
+item.contenttweaker.incoherent.name=§l§cIncoherent Matrix
+
+qmd.particle.filon.name=Filon
+qmd.particle.filon.desc=Ultimate cosmic power!
+
+tile.contenttweaker.sooty_block.name=Soot Covered Casing
+tile.contenttweaker.advanced_redstone_block.name=Enhanced Redstone Block
+
+
+
+item.contenttweaker.lazurite_gem.name=Lazurite Gem
+item.contenttweaker.limestone_flux.name=Limestone Flux
+item.contenttweaker.noon_ingot.name=Daybound Ingot
+item.contenttweaker.tarred_ingot.name=Combustible Ingot
+item.contenttweaker.pristine_dust.name=Pristine Matter Powder
+
+item.contenttweaker.primordial_mote.name=Primordial Mote
+
+
+tile.contenttweaker.elemental_soil.name=Elemental Soil
+
+
+item.contenttweaker.stable_celestial_crystal.name=§1Stable Celestial Crystal
+item.contenttweaker.terrestrial_crystal.name=Terrestrial Crystal
+item.contenttweaker.dun_crystal.name=Dun Crystal
+item.contenttweaker.falling_tower.name=Meteor
+item.contenttweaker.angelring_fake.name=Fake Angel Ring
+item.contenttweaker.blank_matter.name=Reactive Matter
+
+
+fluid.blended_diesel=Diesel Blend
+fluid.boosted_diesel=Boosted Diesel
+
+
+item.contenttweaker.crystal_lattice.name=Crystal Lattice
+item.contenttweaker.starmetal_cluster.name=Starmetal Cluster
+item.contenttweaker.clump_titanium.name=Crystalized Titanium
+
+item.contenttweaker.gear_modularium.name=Modularium Gear
+item.contenttweaker.plate_modularium.name=Modularium Plate
+item.contenttweaker.rod_modularium.name=Modularium Rod
+
+item.contenttweaker.prepared_starmetal.name=Starmetal-Plated Platinum
+item.contenttweaker.ingot_reinforced_starmetal.name=§9Reinforced Starmetal
+
+item.contenttweaker.stacc_thermal_alloy.name=Mixed Thermal Ingot
+item.contenttweaker.hot_thermal_alloy.name=Energized Thermal Alloy
+item.contenttweaker.ingot_thermal_alloy.name=§bHardened Thermalloy
+item.contenttweaker.plate_thermal_alloy.name=§bHardened Thermalloy Plate
+item.contenttweaker.gear_thermal_alloy.name=§bHardened Thermalloy Gear
+item.contenttweaker.rod_thermal_alloy.name=§bHardened Thermalloy Rod
+tile.contenttweaker.block_thermal_alloy.name=§bBlock of Hardened Thermalloy
+tile.contenttweaker.scaffolding_thermal_alloy.name=§bHardened Thermalloy Scaffolding
+tile.contenttweaker.sheetmetal_thermal_alloy.name=§bHardened Thermalloy Sheetmetal
+
+
+item.contenttweaker.hot_cobalt.name=Reactive Cobalt Ingot
+fluid.base_mirion=Mirion Base
+fluid.prepared_mirion=Prepared Mirion Fluid
+
+
+item.contenttweaker.ingot_staballoy.name=Staballoy Ingot
+item.contenttweaker.excited_mek_alloy.name=Irradiated Alloy
+item.contenttweaker.component_mek_alloy.name=Dense Component
+item.contenttweaker.ingot_mek_alloy.name=§6Heavy Alloy
+item.contenttweaker.plate_mek_alloy.name=§6Heavy Alloy Plate
+item.contenttweaker.gear_mek_alloy.name=§6Heavy Alloy Gear
+item.contenttweaker.rod_mek_alloy.name=§6Heavy Alloy Rod
+tile.contenttweaker.block_mek_alloy.name=§6Block of Heavy Alloy
+tile.contenttweaker.sheetmetal_mek_alloy.name=§6Heavy Alloy Sheetmetal
+tile.contenttweaker.scaffolding_mek_alloy.name=§6Heavy Alloy Scaffolding
+
+
+tile.contenttweaker.sheetmetal_cast.name=Sheetmetal Cast
+
+
+item.contenttweaker.grindingball_mixedwill.name=§bIndomitable Grinding Ball
+item.contenttweaker.plate_engineering.name=§eMechanical Plating
+item.contenttweaker.warp_remover.name=Staff of Sanity
+
+
+tile.contenttweaker.scaffolding_plastic.name=PlaStick Scaffolding
+
+tile.contenttweaker.book_block.name=Tome of Magic
+
+
+
+item.contenttweaker.crystal_seed.name=Crystalized Aetherium
+fluid.condensed_aetherium=Condensed Aetherium
+
+fluid.crystal_slurry=Crystal Slag
+
+item.contenttweaker.steelcast.name=Steel Cast
+item.contenttweaker.steelcast_armor_plate.name=Armor Plates Steel Cast
+item.contenttweaker.steelcast_armor_trim.name=Armor Trim Steel Cast
+item.contenttweaker.steelcast_arrow_head.name=Arrow Head Steel Cast
+item.contenttweaker.steelcast_arrow_shaft.name=Arrow Shaft Steel Cast
+item.contenttweaker.steelcast_axe_head.name=Axe Head Steel Cast
+item.contenttweaker.steelcast_battery_cell.name=Battery Cell Steel Cast
+item.contenttweaker.steelcast_binding.name=Binding Steel Cast
+item.contenttweaker.steelcast_boots_core.name=Boots Core Steel Cast
+item.contenttweaker.steelcast_bow_limb.name=Bowlimb Steel Cast
+item.contenttweaker.steelcast_bow_string.name=Bowstring Steel Cast
+item.contenttweaker.steelcast_broad_axe_head.name=Broad Axe Head Steel Cast
+item.contenttweaker.steelcast_chest_core.name=Chestplate Core Steel Cast
+item.contenttweaker.steelcast_chisel_head.name=Chisel Head Steel Cast
+item.contenttweaker.steelcast_cross_guard.name=Cross Guard Steel Cast
+item.contenttweaker.steelcast_excavator_head.name=Excavator Head Steel Cast
+item.contenttweaker.steelcast_fletching.name=Fletching Steel Cast
+item.contenttweaker.steelcast_hammer_head.name=Hammer Head Steel Cast
+item.contenttweaker.steelcast_hand_guard.name=Hand Guard Steel Cast
+item.contenttweaker.steelcast_helmet_core.name=Helmet Core Steel Cast
+item.contenttweaker.steelcast_kama_head.name=Kama Head Steel Cast
+item.contenttweaker.steelcast_knife_blade.name=Knife Blade Steel Cast
+item.contenttweaker.steelcast_large_plate.name=Large Blade Steel Cast
+item.contenttweaker.steelcast_large_sword_blade.name=Large Sword Blade Steel Cast
+item.contenttweaker.steelcast_laser_medium.name=Laser Medium Steel Cast
+item.contenttweaker.steelcast_leggings_core.name=Leggings Core Steel Cast
+item.contenttweaker.steelcast_pan_head.name=Pan Steel Cast
+item.contenttweaker.steelcast_pick_head.name=Pickaxe Head Steel Cast
+item.contenttweaker.steelcast_pipe_piece.name=Pipe Piece Steel Cast
+item.contenttweaker.steelcast_polishing_kit.name=Polishing Kit Steel Cast
+item.contenttweaker.steelcast_scythe_head.name=Scythe Head Steel Cast
+item.contenttweaker.steelcast_sharpening_kit.name=Sharpening Kit Steel Cast
+item.contenttweaker.steelcast_shovel_head.name=Shovel Head Steel Cast
+item.contenttweaker.steelcast_sign_head.name=Sign Plate Steel Cast
+item.contenttweaker.steelcast_sword_blade.name=Sword Blade Steel Cast
+item.contenttweaker.steelcast_tool_rod.name=Tool Rod Steel Cast
+item.contenttweaker.steelcast_tough_binding.name=Tough Binding Steel Cast
+item.contenttweaker.steelcast_tough_tool_rod.name=Tough Tool Rod Steel Cast
+item.contenttweaker.steelcast_wide_guard.name=Wide Guard Steel Cast
+
+
+
+item.contenttweaker.dust_barite.name=Barite
+item.contenttweaker.dust_barium_sulfate.name=Barium Sulfate
+item.contenttweaker.dust_barium_sulfide.name=Barium Sulfide
+fluid.drilling_fluid=Drilling Fluid
+fluid.limestone_slurry=Limestone Slurry
+
+item.contenttweaker.ore_gen_info.name=§7Ore Generation Information§r
+
+
+tile.multiblocked.laser_combiner.name=Laser Fabricator
+laser_combiner.name=Laser Fabricator
+multiblocked.laser_combiner.description=Hopefully you've got a lot of stuff!
+multiblocked.recipe_map.laser_combiner=Laser Fabricator
+
+tile.multiblocked.divine_altar.name=Altar of the Blood God
+divine_altar.name=Altar of the Blood God
+multiblocked.divine_altar.description=That blood isn't red...
+multiblocked.recipe_map.divine_altar=Altar of the Blood God
+
+tile.multiblocked.part_item_in.name=Item Input Bus
+tile.multiblocked.part_item_out.name=Item Output Bus
+tile.multiblocked.part_fluid_in.name=Fluid Input Hatch
+tile.multiblocked.part_power_in.name=Forge Energy Input Hatch
+
+
+fluid.molten_modularium=Molten Modularium
+
+requious.jei.recipe.excavator=Excavator Veins
+requious.jei.recipe.pumpjack=Pumpjack Veins
+requious.jei.recipe.diesel_generator=Diesel Generator Fuels
+requious.jei.recipe.ore_generation=Ore Generation
+requious.jei.recipe.turbine=Turbine Fuels
+requious.jei.recipe.fallen_tower=Mark of the Fallen Tower
+requious.jei.recipe.mineralis=Mineralis Ritual
+requious.jei.recipe.chalice=Chalice Interactions
+requious.jei.recipe.lens_of_the_miner=Lens of the Miner Ores
+requious.jei.recipe.neromantic_prime=Neromantic Prime Veins
+requious.jei.recipe.smeltery_fuel=Smeltery Fuels
+requious.jei.recipe.laser_drill=Laser Drill Ores
+requious.jei.recipe.oc_printer3d=3D Printer
+requious.jei.recipe.electronics_assembler=Electronics Assembler
+requious.jei.recipe.oil_generator=Oil Generator Fuels
+requious.jei.recipe.matter_fabricator=Matter Fabricator
+requious.jei.recipe.ember_bore=Ember Bore
+requious.jei.recipe.refraction_table=Stellar Refraction Table
+requious.jei.recipe.attunement_altar=Attunement Altar
+requious.jei.recipe.apotheosis_enchants=Highest Level Enchants
+
+material.Dilithium.name=Dilithium
+item.battery.0.name=Small Battery
+item.battery.1.name=Battery Pack
+
+tile.turret.name=Ember Turret
+
+item.contenttweaker.inactive_cloaking_device.name=Inactive Cloaking Device
+item.contenttweaker.inactive_lapotronic_orb.name=Inactive Lapotronic Orb
+item.contenttweaker.inactive_lapotron_crystal.name=Inactive Lapotron Crystal
+item.contenttweaker.inactive_energy_crystal.name=Inactive Energy Crystal
+item.contenttweaker.inactive_lithium_battery.name=Inactive Lithium Battery
+item.contenttweaker.inactive_trbattery.name=Inactive Battery
+item.contenttweaker.inactive_energy_tablet.name=Inactive Energy Tablet
+
+item.contenttweaker.hand_framing_tool.name=Hand Framing Tool
+
+item.contenttweaker.hand_framing_tool.desc1=Frame your tools by hand!
+item.contenttweaker.hand_framing_tool.desc2=The Hand Framing Tool lets you frame drawers already placed in the world.
+item.contenttweaker.hand_framing_tool.desc3=To do this, the tool itself needs to be framed in a crafting table. See the item's crafting table recipes in JEI.
+item.contenttweaker.hand_framing_tool.desc4=Then, once the tool is framed, right clicking any drawers in-world will frame them.
+item.contenttweaker.hand_framing_tool.desc5=Optionally, the tool can be filled with sticks using the crafting table recipe. Up to a stack of sticks will be consumed from each slot.
+item.contenttweaker.hand_framing_tool.desc6=The tool can then be used to convert existing unframed drawers into framed drawers, consuming 8 sticks to do so.
+
+item.advgenerators.turbine_blade_smore.name=S'more Turbine Blade
+item.advgenerators.turbine_rotor_smore.name=S'more Turbine Rotor
+item.advgenerators.turbine_kit_smore.name=S'more Turbine Upgrade Kit
+item.advgenerators.turbine_smore.name=S'more Turbine
+
+item.advgenerators.turbine_blade_super.name=Super Alloy Turbine Blade
+item.advgenerators.turbine_rotor_super.name=Super Alloy Turbine Rotor
+item.advgenerators.turbine_kit_super.name=Super Alloy Turbine Upgrade Kit
+item.advgenerators.turbine_super.name=Super Alloy Turbine
+
+item.advgenerators.turbine_blade_hslasteel.name=HSLA Steel Turbine Blade
+item.advgenerators.turbine_rotor_hslasteel.name=HSLA Steel Turbine Rotor
+item.advgenerators.turbine_kit_hslasteel.name=HSLA Steel Turbine Upgrade Kit
+item.advgenerators.turbine_hslasteel.name=HSLA Steel Turbine
+
+item.advgenerators.turbine_blade_extreme.name=Extreme Alloy Turbine Blade
+item.advgenerators.turbine_rotor_extreme.name=Extreme Alloy Turbine Rotor
+item.advgenerators.turbine_kit_extreme.name=Extreme Alloy Turbine Upgrade Kit
+item.advgenerators.turbine_extreme.name=Extreme Alloy Turbine
+
+// Base NCO ingot blocks
+tile.contenttweaker.ferroboronBlock.name=Ferroboron Alloy Block
+# tile.contenttweaker.toughBlock.name=Tough Alloy Block
+tile.contenttweaker.hardCarbonBlock.name=Hard Carbon Alloy Block
+tile.contenttweaker.thermoconductingBlock.name=Thermoconducting Alloy Block
+tile.contenttweaker.extremeBlock.name=Extreme Alloy Block
+tile.contenttweaker.hslaSteelBlock.name=HSLA Steel Block
+tile.contenttweaker.sicBlock.name=Silicon Carbide Block
+tile.contenttweaker.sicsiccmcBlock.name=SiC-SiC CMC Block
+# tile.contenttweaker.zircaloyBlock.name=Zircaloy Block
+tile.contenttweaker.leadplatinumBlock.name=Lead-Platinum Alloy Block
+tile.contenttweaker.tinsilverBlock.name=Tin-Silver Alloy Block
+# tile.contenttweaker.shibuichiBlock.name=Shibuichi Alloy Block
+# tile.contenttweaker.steelBlock.name=Steel Block
+tile.contenttweaker.limno2Block.name=Lithium Manganese Dioxide Alloy Block
+tile.contenttweaker.mgb2Block.name=Magnesium Diboride Alloy Block
+# tile.contenttweaker.bronzeBlock.name=Bronze Block
+tile.contenttweaker.zrmoBlock.name=Zirconium-Molybdenum Alloy Block
+tile.contenttweaker.cmnblock.name=Carbon-Manganese Block
+item.contenttweaker.cmningot.name=Carbon-Manganese Ingot
+
+// Fission Dust stuff
+# item.contenttweaker.moingot.name=Molybdenum Ingot
+tile.contenttweaker.moBlock.name=Molybdenum Block
+# tile.contenttweaker.sr90block.name=Strontium-90 Block
+tile.contenttweaker.biblock.name=Bismuth Block
+item.contenttweaker.biingot.name=Bismuth Ingot
+tile.contenttweaker.tbpblock.name=Protactinium-Enriched Thorium Block
+item.contenttweaker.tbpingot.name=Protactinium-Enriched Thorium Ingot
+tile.contenttweaker.ru106block.name=Ruthenium-106 Block
+item.contenttweaker.ru106ingot.name=Ruthenium-106 Ingot
+tile.contenttweaker.rablock.name=Radium Block
+item.contenttweaker.raingot.name=Radium Ingot
+tile.contenttweaker.pa233block.name=Protactinium-233 Block
+item.contenttweaker.pa233ingot.name=Protactinium-233 Ingot
+tile.contenttweaker.pm147block.name=Promethium-147 Block
+item.contenttweaker.pm147ingot.name=Promethium-147 Ingot
+tile.contenttweaker.poblock.name=Polonium Block
+item.contenttweaker.poingot.name=Polonium Ingot
+tile.contenttweaker.eu155block.name=Europium-155 Block
+item.contenttweaker.eu155ingot.name=Europium-155 Ingot
+tile.contenttweaker.cs137block.name=Caesium-137 Block
+item.contenttweaker.cs137ingot.name=Caesium-137 Ingot
+
+
+// Base NCO Gem blocks
+tile.contenttweaker.basblock.name=Boron Arsenide Block
+tile.contenttweaker.bnblock.name=Boron Nitride Block
+tile.contenttweaker.carobblock.name=Carobbiite Block
+tile.contenttweaker.fluorblock.name=Fluorite Block
+tile.contenttweaker.siblock.name=Silicon Block
+tile.contenttweaker.rhodoblock.name=Rhodochrosite Block
+tile.contenttweaker.villiblock.name=Villiaumite Block
+
+// QMD Blocks
+tile.contenttweaker.cablock.name=Calcium Block
+# tile.contenttweaker.crblock.name=Chromium Block
+tile.contenttweaker.hfblock.name=Hafnium Block
+tile.contenttweaker.ndblock.name=Neodymium Block
+tile.contenttweaker.nbblock.name=Niobium Block
+tile.contenttweaker.kblock.name=Potassium Block
+tile.contenttweaker.nablock.name=Sodium Block
+# tile.contenttweaker.wblock.name=Tungsten Block
+tile.contenttweaker.yblock.name=Yttrium Block
+tile.contenttweaker.cfecrblock.name=Stainless Steel Block
+# tile.contenttweaker.coblock.name=Cobalt Block
+# tile.contenttweaker.irblock.name=Iridium Block
+# tile.contenttweaker.niblock.name=Nickel Block
+tile.contenttweaker.nbsnblock.name=Niobium-Tin Block
+tile.contenttweaker.nbtiblock.name=Niobium-Titanium Block
+# tile.contenttweaker.osblock.name=Osmium Block
+# tile.contenttweaker.osirblock.name=Osmiridium Block
+# tile.contenttweaker.ptblock.name=Platinum Block
+item.contenttweaker.sr90ingot.name=Strontium-90 Ingot
+# tile.contenttweaker.tiblock.name=Titanium Block
+tile.contenttweaker.wcblock.name=Tungsten Carbide Block
+# tile.contenttweaker.znblock.name=Zinc Block
+# tile.contenttweaker.nicrblock.name=Nichrome Block
+tile.contenttweaker.superalloyblock.name=Superalloy Block
+tile.contenttweaker.erblock.name=Erbium Block
+tile.contenttweaker.iblock.name=Iodine Block
+tile.contenttweaker.smblock.name=Samarium Block
+tile.contenttweaker.tbblock.name=Terbium Block
+tile.contenttweaker.ybblock.name=Ytterbium Block
+item.contenttweaker.eringot.name=Erbium Ingot
+item.contenttweaker.iingot.name=Iodine Ingot
+item.contenttweaker.smingot.name=Samarium Ingot
+item.contenttweaker.tbingot.name=Terbium Ingot
+item.contenttweaker.ybingot.name=Ytterbium Ingot
+
+// Trinity Blocks
+# tile.contenttweaker.bablock.name=Barium Block
+# item.contenttweaker.baingot.name=Barium Ingot
+# tile.contenttweaker.baoblock.name=Barium Oxide Block
+# item.contenttweaker.baoingot.name=Barium Oxide Ingot
+
+itemGroup.nceib=NC Extra Ingot Blocks

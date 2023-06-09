@@ -10,6 +10,7 @@ import mods.nuclearcraft.Separator;
 import mods.nuclearcraft.Centrifuge;
 import mods.nuclearcraft.Electrolyzer;
 import mods.thermalexpansion.Transposer;
+import mods.nuclearcraft.Supercooler;
 
 print("==================== loading nuclearcraft.zs ====================");
 ##########################################################################################
@@ -83,6 +84,9 @@ IngotFormer.addRecipe(<liquid:ender>*250, <minecraft:ender_pearl>);
 
 // Manganese Oxide Ingot
 blastFurnace.addRecipe(<nuclearcraft:ingot:14>, null, <nuclearcraft:dust:14>, null, 200, 256, 1500);
+
+// Ammonia to Liquid Ammonia
+Supercooler.addRecipe(<liquid:ammonia> * 80, <liquid:liquid_ammonia>, 0.006, 3.75);
 
 
 // ----==== Machines and Tools ====---- //

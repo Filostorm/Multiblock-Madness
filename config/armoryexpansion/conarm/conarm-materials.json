@@ -1343,6 +1343,28 @@
   },
   {
     "coreMaterialStats": {
+      "durability": 21.0,
+      "defense": 29.970001,
+      "materialType": "core"
+    },
+    "platesMaterialStats": {
+      "durability": 14.56,
+      "modifier": 23.294117,
+      "toughness": 0.0,
+      "materialType": "plates"
+    },
+    "trimMaterialStats": {
+      "extraDurability": 14.56,
+      "materialType": "trim"
+    },
+    "identifier": "blood_infused_glitch",
+    "color": -2218990,
+    "type": "METAL",
+    "castable": true,
+    "craftable": false
+  },
+  {
+    "coreMaterialStats": {
       "durability": 22.0,
       "defense": 12.599999,
       "materialType": "core"

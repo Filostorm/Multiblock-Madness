@@ -198,12 +198,21 @@ val moltentoremove = [
 	<liquid:molten_inconel>,
 	<liquid:molten_pewter>,
 	<liquid:molten_corten>,
-	<liquid:molten_vanadium>
+	<liquid:molten_vanadium>,
+	<liquid:blood_infused_glitch>
 ] as ILiquidStack[];
 
 for moltenfluid in moltentoremove {
 	Melting.removeRecipe(moltenfluid);
 }
+
+Melting.removeRecipe(<liquid:superium>, <mysticalagriculture:crafting:43>);
+Melting.removeRecipe(<liquid:superium>, <mysticalagriculture:crafting:36>);
+Melting.removeRecipe(<liquid:superium>, <mysticalagriculture:ingot_storage:4>);
+Melting.removeRecipe(<liquid:supremium>, <mysticalagriculture:crafting:44>);
+Melting.removeRecipe(<liquid:supremium>, <mysticalagriculture:crafting:37>);
+Melting.removeRecipe(<liquid:supremium>, <mysticalagriculture:ingot_storage:5>);
+
 
 // Additions //
 Melting.addRecipe(<liquid:inert_metal> * 144,<contenttweaker:inert_ingot>);
@@ -660,6 +669,7 @@ var matpresser as IItemStack[string] = {
 	"elementium" : <botania:manaresource:7>,
 	"terrasteel" : <botania:manaresource:4>,
 	"emerald_plustic" : <minecraft:emerald>,
+	"blood_infused_glitch": <deepmoblearningbm:blood_infused_glitch_ingot>,
 };
 
 var tconPartsMappresser as int[IItemStack[]] = {

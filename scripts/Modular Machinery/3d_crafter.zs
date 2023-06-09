@@ -272,7 +272,7 @@ val NCChassis2 = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-craft
 NCChassis2.addEnergyPerTickInput(4000);
 NCChassis2.addItemInput(<contenttweaker:plating_basic> * 8);
 NCChassis2.addItemInput(<contenttweaker:bam_scaffolding> * 18);
-NCChassis2.addItemInput(<jaopca:block_blockthermoconducting>);
+NCChassis2.addItemInput(<contenttweaker:thermoconductingblock>);
 NCChassis2.addItemInput(<nuclearcraft:part:7>);
 NCChassis2.addItemOutput(<nuclearcraft:part:10>*2);
 NCChassis2.build();
@@ -452,6 +452,19 @@ hellShelf.addItemInput(<ebwizardry:crystal_block>);
 hellShelf.addItemInput(<minecraft:nether_star>);
 hellShelf.addItemOutput(<apotheosis:hellshelf>*2);
 hellShelf.build();
+
+##bmaltar
+val bmaltar = mods.modularmachinery.RecipeBuilder.newBuilder("minifield-crafter-bmaltar", "minifield-crafter", 400, 0);
+bmaltar.addEnergyPerTickInput(2000);
+bmaltar.addItemInput(<actuallyadditions:block_crystal> * 8);
+bmaltar.addItemInput(<thaumcraft:slab_arcane_stone> * 12);
+bmaltar.addItemInput(<thaumcraft:stone_arcane> * 12);
+bmaltar.addItemInput(<chisel:energizedvoidstone:3> * 8);
+bmaltar.addItemInput(<botania:storage>);
+bmaltar.addItemInput(<tconstruct:edible:3>);
+bmaltar.addItemOutput(<bloodmagic:altar>);
+bmaltar.build();
+
 
 ##########################################################################################
 print("==================== end of 3d_crafter.zs ====================");

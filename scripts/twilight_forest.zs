@@ -13,6 +13,7 @@ import mods.tconstruct.Melting;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.WeightedItemStack;
 import crafttweaker.event.PlayerInteractBlockEvent;
+import mods.rockhounding_chemistry.LabBlender;
 
 
 print("==================== loading twilight_forest.zs ====================");
@@ -111,6 +112,12 @@ for item in lichScepter {
 <twilightforest:transformation_powder>.addTooltip(format.gold("Found in Twilight Forest hollow hills"));
 mods.bloodmagic.AlchemyTable.addRecipe(<twilightforest:transformation_powder>*16, [<ore:lichScepter>, <bloodmagic:cutting_fluid:1>], 20,200,0);
 recipes.addShapeless(<twilightforest:transformation_powder>, [<deepmoblearning:living_matter_twilight>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
+
+<ore:alumentum>.add(<thaumcraft:alumentum>);
+<ore:nocturnalpowder>.add(<astralsorcery:itemusabledust:1>);
+<ore:lightbluefloralpowder>.add(<botania:dye:3>);
+
+LabBlender.add(["alumentum", "itemInfinityGoop", "nocturnalpowder", "lightbluefloralpowder"], [1, 1, 1, 1], <twilightforest:transformation_powder>);
 
 /*
 //Ember [is] Boring 

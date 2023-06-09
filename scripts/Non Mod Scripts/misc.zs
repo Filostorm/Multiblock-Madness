@@ -4,6 +4,8 @@ import mods.jei.JEI.removeAndHide as rh;
 import mods.jaopca.JAOPCA;
 import mods.bloodmagic.TartaricForge;
 import crafttweaker.data.IData;
+import mods.tconstruct.Melting;
+import crafttweaker.formatting.IFormattedText;
 
 #priority 100
 
@@ -146,7 +148,8 @@ val recipestoRemove =
 <iceandfire:chain_link>,
 <extendedcrafting:material:2>,
 <jaopca:item_gearthermoconducting>,
-<openblocks:xp_shower>
+<openblocks:xp_shower>,
+<aeadditions:terminal.fluid.wireless>
 ]
  as IItemStack[];
 
@@ -388,7 +391,8 @@ recipes.addShaped(<akashictome:tome>.withTag({"akashictome:data": {
   rftools: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rftools:rftools_shape_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftools"}, Damage: 0 as short}, 
   deepmoblearning: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short}, 
   solcarrot: {id: "solcarrot:food_book", Count: 1 as byte, tag: {"akashictome:definedMod": "solcarrot"}, Damage: 0 as short}, 
-  rftools1: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rftools:rftools_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftools1"}, Damage: 0 as short}, 
+  rftools1: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "rftools:rftools_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftools1"}, Damage: 0 as short},
+  ebwizardry: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "ebwizardry:wizard_handbook", Count: 1 as byte, tag: {"akashictome:definedMod": "ebwizardry"}, Damage: 0 as short}, 
   extendedcrafting: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "extendedcrafting:guide", Count: 1 as byte, tag: {"akashictome:definedMod": "extendedcrafting"}, Damage: 0 as short}, 
   botania: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "botania:lexicon", Count: 1 as byte, tag: {"knowledge.minecraft": 1 as byte, "akashictome:definedMod": "botania", "knowledge.alfheim": 1 as byte, "knowledge.relic": 1 as byte}, Damage: 0 as short}, 
   bloodmagic: {ForgeCaps: {"astralsorcery:cap_item_amulet_holder": {}}, id: "guideapi:bloodmagic-guide", Count: 1 as byte, tag: {"akashictome:definedMod": "bloodmagic"}, Damage: 0 as short}, 
@@ -461,6 +465,7 @@ val superMOT = <morphtool:tool>.withTag({"morphtool:is_morphing": 1 as byte, "mo
 	mekanism:            {id:"mekanism:configurator",                       Count: 1 as byte, Damage: 0 as short},
 	immersiveengineering:{id:"immersiveengineering:tool",                   Count: 1 as byte, Damage: 0 as short},
 	arcanearchives:      {id:"arcanearchives:scepter_manipulation",         Count: 1 as byte, Damage: 0 as short},
+	storagedrawers:      {id:"storagedrawers:drawer_key",                   Count: 1 as byte, Damage: 0 as short},
 	},
 });
 
@@ -695,6 +700,36 @@ recipes.addShaped(<natura:empty_bowls:3> * 4, [[<natura:nether_planks:3>, <ore:a
 
 //santa hat all year round
 recipes.addShaped(<tombstone:christmas_hat>, [[<ore:dyeRed>, <apotheosis:lucky_foot>, <ore:dyeRed>], [<tombstone:crafting_ingredient:3>, <iceandfire:sheep_helmet>, <tombstone:crafting_ingredient:3>]]);
+
+// Compressed Clay Fix
+recipes.removeShaped(<additionalcompression:clay_compressed>, [[<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>], [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>], [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]]);
+recipes.addShaped(<additionalcompression:clay_compressed>, [[<minecraft:clay>, <minecraft:clay>, <minecraft:clay>], [<minecraft:clay>, <minecraft:clay>, <minecraft:clay>], [<minecraft:clay>, <minecraft:clay>, <minecraft:clay>]]);
+
+Melting.removeRecipe(<liquid:clay>, <additionalcompression:clay_compressed>);
+
+// AE2 Wireless Terminals
+recipes.addShapeless(<wft:wft>, [<appliedenergistics2:wireless_fluid_terminal>]);
+recipes.addShapeless(<appliedenergistics2:wireless_fluid_terminal>, [<wft:wft>]);
+recipes.addShapeless(<wct:wct>, [<appliedenergistics2:wireless_crafting_terminal>]);
+recipes.addShapeless(<appliedenergistics2:wireless_crafting_terminal>, [<wct:wct>]);
+recipes.addShaped(<aeadditions:terminal.fluid.wireless>, [[null, <appliedenergistics2:material:41>, null],[<ore:gemLapis>, <appliedenergistics2:part:520>, <ore:gemLapis>], [null, <appliedenergistics2:dense_energy_cell>, null]]);
+
+
+// Depreciation Warning for JAOPCA Blocks
+// TODO Remove these blocks in 3.3/4.0!
+val jaopcablks = [
+<jaopca:block_blockstainlesssteel>, <jaopca:block_blockthermoconducting>, <jaopca:block_blocktinsilver>
+] as IItemStack[];
+
+for block in jaopcablks {
+	recipes.remove(block);
+	block.addTooltip(format.red("Will be removed in next update!"));
+	block.addTooltip(format.red("Convert to CoT version with the crafting recipe"));
+}
+
+recipes.addShapeless(<contenttweaker:tinsilverblock>, [<jaopca:block_blocktinsilver>]);
+recipes.addShapeless(<contenttweaker:thermoconductingblock>, [<jaopca:block_blockthermoconducting>]);
+recipes.addShapeless(<contenttweaker:cfecrblock>, [<jaopca:block_blockstainlesssteel>]);
 
 
 ##########################################################################################

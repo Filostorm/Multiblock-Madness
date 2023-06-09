@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
 import mods.extendedcrafting.CombinationCrafting;
+import mods.nuclearcraft.Extractor;
 
 print("==================== loading actuallyadditions.zs ====================");
 ##########################################################################################
@@ -306,6 +307,11 @@ craft.remake(<actuallyadditions:item_laser_wrench>, ["pretty",
   "B": <actuallyadditions:item_misc:7>,    # Basic Coil
   "*": <actuallyadditions:item_crystal:5>, # Enori Crystal
 });
+
+// Canola Oil
+Extractor.addRecipe(<actuallyadditions:item_misc:13>, null, <liquid:canolaoil> * 80, 0.5, 1.0);
+
+
 
 ##########################################################################################
 print("==================== end of actuallyadditions.zs ====================");

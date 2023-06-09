@@ -1401,7 +1401,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Early game Embers!\nHold the Tinker\u0027s Lens in your hand or off hand to see what various blocks are used for.\n\nWalk around with the Atmospheric gauge to find an Ember rich location to place your Bore.\n\nNo gui means it can be hard to know whats going on inside the machines, so craft up some dials to attach to them!\n\n\nRefer to the Codex for more in depth information on any of these quests, as well as more information on Embers in general.",
+          "desc:8": "Various tools for early game Embers!\n\nHold the §bTinker\u0027s Lens§r in your hand or off hand to see what various blocks are used for.\n\nWalk around with the §eAtmospheric gauge§r to find an Ember rich location to place your Bore.\n\nNo gui means it can be hard to know whats going on inside the machines, so craft up some dials to attach to them! The §6Ember Dial§r shows how much Ember a machine contains, while the §9Fluid Dial§r shows how much fluid a machine contains.\n\n\nRefer to the Codex for more in depth information on any of these quests, as well as more information on Embers in general.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1573,7 +1573,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place this within 3 spaces of bedrock, and pipe coal or another burnable material through the top hole, and it will start mining Ember! This expands into a 3x3 structure.\n\nPlace another §6Mechanical Core§r on the top center of the Bore for more access.\n",
+          "desc:8": "Mines §eSolid Ember§r from bedrock, which is used to create §6Ember Power§r.\n\nPlace this within 3 spaces of bedrock, and pipe coal or another burnable material through the top hole, and it will start mining Solid Ember! This expands into a 3x3 structure.\n\nPlace another §6Mechanical Core§r on the top center of the Bore for more access.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -1788,7 +1788,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This one will be tricky to automate. You need a way to place the Empowered blocks, as well as a way to break and collect the Unempowered blocks.\n\n",
+          "desc:8": "A material forged from many advanced alloys, used to manufacture endgame items.\n\nThis one will be tricky to automate. You need a way to place the Empowered blocks, as well as a way to break and collect the Unempowered blocks.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -2387,7 +2387,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble the shown structure inside the orange 3x3x3 cube between the Projectors, then throw the catalyst in the field.\n\nYou can also use this block on the Ember Bore and similar to increase the accessible slots.",
+          "desc:8": "Used to create various Embers machines, notably the Ember Bore.\n\nAssemble the shown structure inside the orange 3x3x3 cube between the Projectors, then throw the catalyst in the field.\n\nYou can also use this block on the Ember Bore and similar to increase the accessible slots.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -2637,7 +2637,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Looking at the top and bottom of this with the Tinker\u0027s Lens will show us that solid embers need to be piped into the bottom, then Ember power comes out the top. Attach an Ember Emitter to the top to be able to transfer it, then a Receptor attached to the Copper Cell, or Ember powered machine.\n\n§6Shift-right click §rwith the Tinker\u0027s Hammer on the Receptor, then §6right click §rthe Emitter. After supplying a §credstone signal §rto the Emitter, you should start to see Embers being transferred! Embers can travel a maximum of 25 blocks.\n\n§bEmbers can also be used as a basic source of RF for some of your early game machines. Simply attach a Receptor onto whatever needs power!",
+          "desc:8": "Produces §eEmber Power§r from §7solid embers§r mined from the Ember Bore, which is used to power nearly all Embers Machines.\n\nLooking at the top and bottom of this with the §6Tinker\u0027s Lens§r will show us that solid embers need to be piped into the bottom, then Ember Power comes out the top. \n\nAttach an Ember Emitter to the top of the Ember Activator to transfer power out of it. Then, place a Copper Cell or Ember powered machine, and attach an Ember Receptor to it.\n\n§6Shift-right click §rwith the Tinker\u0027s Hammer on the Receptor, then §6right click §rthe Emitter. Then, supply a §credstone signal §rto the Emitter. You should start to see Embers being transferred! Embers can travel a maximum of 25 blocks.\n\n§bEmbers can also be used as a basic source of RF for some of your early game machines. Simply attach a Receptor onto whatever needs power!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -2733,7 +2733,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Attach an Ember Receptor to the correct side of the Melter. To connect the two ember transmitters shift-right click the Receptor then right click the Emitter. §cUse the lever to activate the Emitter.§r\n\nYou can right click on the melter to place things into it, drop them in, or pipe them. \n\nThis is one of the first methods of ore doubling.",
+          "desc:8": "Attach an Ember Receptor to the correct side of the Melter. To connect the two ember transmitters, shift-right click the Receptor, then right click the Emitter. §cUse the lever to activate the Emitter.§r\n\nYou can right click on the melter to place things into it, drop them in, or pipe them. \n\nThis is one of the first methods of ore doubling.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -2936,7 +2936,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Fluid goes in the Bottom, one empty block, then the Stamper above that. Right click with the stamp to attach, them power with Ember.\n\n§6Be sure that your Ember Shards are placed before you start piping metal in!§r\n\nItems are collected in a Bin below the Stamp Base, or dropped if there is no Bin.\n\n§bThis is also a great way to make all the gears you\u0027ll be needing!",
+          "desc:8": "Stamps molten metal into components like plates or gears.\n\nFluid goes in the Bottom, one empty block, then the Stamper above that. Right click the plate stamp with the bottom of the Stamper to attach it. Then, power the Stamper with Ember.\n\n§6Be sure that your Ember Shards are placed before you start piping metal in!§r\n\nItems are collected in a Bin below the Stamp Base, or dropped if there is no Bin.\n\n§bThis is also a great way to make all the gears you\u0027ll be needing!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -3685,7 +3685,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§d§rWe have a few very useful hotkeys to set up in this pack:\n\n§2Better Questing: Opens the questbook.\n\n§bOre Excavator: Holding down while using a tool will cause connected blocks to be harversted as well.\n\n§6Find Me: Pushing while hovering oven an item will cause nearby chests containing that item to light up.\n\n\n\n§rIf you are having trouble with a quest, read the discription!\n\nWhen you see a red X§r, you will need to check it to complete the quest.",
+          "desc:8": "§d§rWe have a few very useful hotkeys to set up in this pack:\n\n§2Better Questing: Opens the questbook. \nDefault: Grave (The ` button)\n\n§bOre Excavator: Holding down while using a tool will cause connected blocks to be harvested as well.\nDefault: Grave (Recommended to switch to another button)\n\n§6Find Me: Pushing while hovering oven an item will cause nearby chests containing that item to light up.\nDefault: Y\n\n\n\n§rIf you are having trouble with a quest, read the description!\n\nWhen you see a red X§r, you will need to check it to complete the quest.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -4638,7 +4638,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Simply by supplying this with a steady source of water, you can increase your ember burning efficiency by 1.5. If you place it on a block of metal, then heat it up by surrounding it with lava or fire, you can get up to 6x efficiency!\n\n§bTry placing this on a block of Dawnstone!",
+          "desc:8": "Simply by supplying this with a steady source of water, you can increase your ember burning efficiency by 1.5. If you place it on a block of metal, then heat it up by surrounding the metal block with lava or fire, you can get up to 6x efficiency!\n\n§bTry placing this on a block of Dawnstone!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -5182,7 +5182,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §dSteam Engine§r can either have coal and water piped into it, or steam.\n\nA §dSteam Engine§r running on water and coal will produce §a20 rotational power§r, while one running on steam will produce §a40 RP§r.\n\nPlacing a §9Mini Boiler§r next to any Ember processing machine and filling it with water will create steam! Explosions are disabled in this pack, so no need to worry.\n\n§6The Ember Bore can be made much faster by switching to mechanical power (requires at least 15RP).§r",
+          "desc:8": "The §dSteam Engine§r can either have coal and water piped into it, or steam.\n\nA §dSteam Engine§r running on water and coal will produce §a20 rotational power§r, while one running on steam will produce §a40 RP§r.\n\nPlacing a §9Mini Boiler§r next to any Ember processing machine and filling it with water will create steam! Explosions are disabled in this pack, so no need to worry.\n\n§6The Ember Bore can be made much faster by switching to mechanical power (requires at least 20RP)§r\n\n§bSome Embers Machines can be powered with Mechanical Power to speed them up! Search \"Mechanical Power\" in §2JEI§b to find them.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -5692,7 +5692,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble a hollow 3x3x3 cube, then place the controller in the center of one of the layers. The drain can go anywere, but put it on the second row up, then attach the faucet to it. Place the table below the faucet.\n\n§6You can increase the capacity by adding extra middle layers.\n\n§rThe High Oven works by burning Coke Coal or §bAlumentum §rto produce heat. Once the heat is high enough, it will start the melting process. If it is hot enough, and you have the correct inputs, it can also create a few alloys.",
+          "desc:8": "Produces §6more advanced alloys§r with its intense heat.\n\nAssemble a hollow 3x3x3 cube, then place the controller in the center of one of the layers. The drain can go anywere, but put it on the second row up, then attach the faucet to it. Place the table below the faucet.\n\n§6You can increase the capacity by adding extra middle layers. The maximum size of the high oven is 3x3x8, with 6 slots.\n\n§rThe High Oven works by burning Coke Coal or §bAlumentum §rto produce heat. Once the heat is high enough, it will start the melting process. If it is hot enough, and you have the correct inputs, it can also create a few alloys.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6006,7 +6006,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place this block under a Mana Pool to unlock more crafting recipes!\n\n§bNeed more vis? The Twilight Forest contains plenty of Vis! Alternatively, craft a workbench charger!",
+          "desc:8": "Place this block under a Mana Pool to unlock more crafting recipes!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -6950,7 +6950,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§b§rLeft click or shift left click to change modes, then right click to place whatever item you want processed. The Profiling Bench does not need power.\n\n§aItems can be piped in and out quite simply, so don\u0027t hesitate to set up a small automation for it!§r\n\nRockhounding can be an intimadating mod! One key thing to note is the §cred arrows§r in the Guide Book when building a machine. They indicate which way you should be facing when that part is placed. \n\nIt is highly recommended to do the §dMineral Sizer§r quest below this one, to familiarize yourself with some of the concepts.\n\nThe Rockhounding questbook chapter will explain in depth how to get the most out of it, and if you need further help, feel free to stop by our §9Discord§r!",
+          "desc:8": "Used to craft Rockhounding Components.\n\n§b§rLeft click or shift left click to change modes, then right click to place whatever item you want processed. The Profiling Bench does not need power.\n\n§aItems can be piped in and out quite simply, so don\u0027t hesitate to set up a small automation for it!§r\n\nRockhounding can be an intimadating mod! One key thing to note is the §cred arrows§r in the Guide Book when building a machine. They indicate which way you should be facing when that part is placed. \n\nIt is highly recommended to do the §dMineral Sizer§r quest below this one, to familiarize yourself with some of the concepts.\n\nThe Rockhounding questbook chapter will explain in depth how to get the most out of it, and if you need further help, feel free to stop by our §9Discord§r!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -7828,7 +7828,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Drop petals in here, along with some seeds, to craft your first magical flower, the Pure Daisy.",
+          "desc:8": "Used to craft Botania\u0027s magic flowers.\n\nDrop petals in here, along with some seeds, to craft your first magical flower, the Pure Daisy.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9184,7 +9184,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "All the custom Multiblocks will require the blueprint inside to function. You can use them to display a hologram while assembling the machine.\n\nThe Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input).\n\nCan attach a Faucet right to the output!",
+          "desc:8": "Mixes metals together to create your §6first alloys§r.\n\nAll the custom Multiblocks will require the blueprint inside to function. You can use them to display a hologram while assembling the machine.\n\nThe Mixer requires both §aMechanical Power§r§r (connect an Axle right to the input), as well as an §6Ember§r supply (attach a Receptor to the input).\n\nCan attach a Faucet right to the output!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -9761,7 +9761,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A basic magic building block.",
+          "desc:8": "A basic magic building block and crafting material.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12289,7 +12289,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Throw the §dSalis Mundus§r on the Cauldron to turn it into a Crucible. Fill with water, then heat with fire or lava below the Crucible.\n\nThis can be a messy process, with wasted Essentia converting into §5Flux§r and polluting the atmosphere. This can cause §5Void Rifts§r, which can destroy blocks if left unattended. Look in the top left corner of the screen while holding the §6Thaumometer§r to check your Vis/Flux levels. The Dark Purple is how much §5Flux§r is in the chunk.\n\nUse §bQuartz Slivers§r to clean up after a craft, but make sure to unlock the research first!\n\n§6This will be used to make Brass until you get access to Zinc.",
+          "desc:8": "Used to craft Thaumcraft alchemical recipes.\n\nThrow the §dSalis Mundus§r on the Cauldron to turn it into a Crucible. Fill with water, then heat with fire or lava below the Crucible.\n\nThis can be a messy process, with wasted Essentia converting into §5Flux§r and polluting the atmosphere. This can cause §5Void Rifts§r, which can destroy blocks if left unattended. Look in the top left corner of the screen while holding the §6Thaumometer§r to check your Vis/Flux levels. The Dark Purple is how much §5Flux§r is in the chunk.\n\nUse §bQuartz Slivers§r to clean up after a craft, but make sure to unlock the research first!\n\n§6This will be used to make Brass until you get access to Zinc.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12729,7 +12729,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "With Nature\u0027s Compass you can choose a biome, and it will point to the closest one.\n\n§6Amber is found inside Hollow Hills.",
+          "desc:8": "With the Nature\u0027s Compass, you can choose a biome and it will point to the closest one.\n\n§6Amber is found inside Hollow Hills.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -12860,7 +12860,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§d§5Raw Voidstone§r is found in the Beneath.\n\nItems can be piped in and out for basic automation.\n\nShift-right click on your altar with the§d Diviner§r to show a holographic layout in order to upgrade to the next tier.\n\nUsing the §bSacrificial Dagger§r next to the altar will damage you to fill your altar by a small amount, while hitting mobs next to an altar with the §bDagger of Sacrifice§r will insta-kill them for some blood.\n\n",
+          "desc:8": "Uses Life Essence to craft Blood Magic components. LP in this altar can also be used in other Blood Magic things, such as the alchemical table and BM rituals.\n\n§d§5Raw Voidstone§r is found in the Beneath.\n\nItems can be piped in and out for basic automation.\n\nShift-right click on your altar with the§d Diviner§r to show a holographic layout in order to upgrade to the next tier.\n\nUsing the §bSacrificial Dagger§r next to the altar will damage you to fill your altar by a small amount, while hitting mobs next to an altar with the §bDagger of Sacrifice§r will insta-kill them for some blood.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -13027,7 +13027,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place §6§r8§r of any type of rune in a ring one level below your blood altar to upgrade it to level 2.\n\n§cOnly the four side runes can be upgraded on a tier 2 Altar! §rOnce upgraded to the tier 3 and higher, all eight take effect.\n\n§rThese are the basic runes, they can be upgraded to modify your Blood Altar in diferent ways.\n\nYou\u0027ll need a lot of §eSlate Dust§r coming up soon, so set up automation for it as soon as you can.",
+          "desc:8": "Place §6§r8§r of any type of rune in a ring one level below your blood altar to upgrade it to level 2.\n\n§cOnly the four side runes can be upgraded on a tier 2 Altar! §rOnce upgraded to the tier 3 and higher, all eight take effect.\n\n§rThese are the basic runes, they can be upgraded to modify your Blood Altar in diferent ways.\n\nYou\u0027ll need §ca lot§r of §eSlate Dust§r coming up soon, so set up automation for it as soon as you can.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -13092,7 +13092,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Now that you have some blank runes, you can go ahead and craft the Runic Matrix!\n\n§bClaiming this quest will unlock the research for Infusion.",
+          "desc:8": "Now that you have some blank runes, you can go ahead and craft the §5Runic Matrix§r! Note that the crafting recipe for the Runic Matrix is the recipe with 64 blank runes, while the other recipe shows how to assemble the §5Infusion Matrix§r multiblock.\n\nAfter crafting the Runic Matrix and placing it in a formation with 8 other arcane stones and an arcane pedestal, right click the runic matrix with a salis mundus to complete the structure!\n\n§bClaiming this quest will unlock the research for Infusion.§r\n\n§nInfusion Crafting§r\n\nPlace the Infusion Pedestals in a §esymmetrical§r manner around the Infusion Matrix.\n\nWhen crafting an infusion recipe, place the items §esymmetrically§r on the pedestals and the central item in the central pedestal. Then, place §dvis jars§r containing the required vis for the recipe close to the infusion matrix. Finally, right click the infusion matrix with a §9gauntlet§r to start the recipe. After some time, the item will be crafted.\n\n§cBeware of infusion instability!§r Methods to stabilise the ritual are described in the \"Infusion Stability\" quest.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -13571,7 +13571,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble the Lab Oven as shown in the guide book. It is highly recommended to set up a separate Lab Oven to process each of the upcoming products.\n\n\n§bOptional: To set up automation with a Server, place the Server File in the center slot and scroll to the desired recipe with the arrows. Next chose if you want it repetable or not and how many times it should run. Then place it in the top row and active the server. The Lab Oven will then run the recipes defined by the Server Files in order once you activate it.",
+          "desc:8": "Assemble the Lab Oven as shown in the guide book. It is highly recommended to set up a separate Lab Oven to process each of the upcoming products.\n\n\n§bOptional: To set up automation with a Server, place the Server File in the center slot and scroll to the desired recipe with the arrows. Next, choose if you want it repeatable or not and how many times it should run. Then, place it in the top row and activate the server. The Lab Oven will then run the recipes defined by the Server Files in order.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -13631,10 +13631,7 @@
               "Damage:2": 6,
               "OreDict:8": "",
               "id:8": "rockhounding_chemistry:machines_a",
-              "tag:10": {
-                "Energy:3": 0,
-                "Fuel:3": 0
-              }
+              "tag:10": {}
             },
             "1:10": {
               "Count:3": 1,
@@ -16734,10 +16731,10 @@
                 "display:10": {
                   "color:3": 3949738
                 },
-                "label:8": "It-distilliation-tower",
+                "label:8": "It-distillation-tower",
                 "size:3": 17,
                 "sourceInventory:10": {},
-                "structureName:8": "config/capsule/prefabs/immersivetech/it-distilliation-tower"
+                "structureName:8": "config/capsule/prefabs/immersivetech/it-distillation-tower"
               }
             }
           }
@@ -16800,7 +16797,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Assemble a hollow 3x3x4 (you can click the show hologram button after you place your Blast Furnace to show you how to build it.)\n\nBy filling the center with lava, you can increase the heat to just over 1500, enough for Aluminum!\n\n§bYou can place a Blast Furnace controller on each side of the structure.",
+          "desc:8": "The extreme heat of this machine allows you to smelt §6late-game materials§r.\n\nAssemble a hollow 3x3x4 (you can click the show hologram button after you place your Blast Furnace to show you how to build it.)\n\nBy filling the center with lava, you can increase the heat to just over 1500, enough for Aluminium, Manyullyn and Manganese!\n\n§bYou can place a Blast Furnace controller on each side of the structure.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -17531,7 +17528,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§l§l§l§rFlip to Heavy Machinery \u003e Crusher in your Engineer\u0027s Manual, then craft it together with the Projector to configure it.§r\n\nMiddle Click with the Projector to rotate, then left click to anchor your hologram, then place the blocks as shown. Shift-right click on a block with the Projector to remove the Hologram if you want to move it.\n\n§9§6Most Multiblocks have a §9Capsule blueprint §6that is craftable and is used to place the entire Multiblock in just one click! Crafting one doesnt consume the MB parts, just the Paper, Buttons, and Lapis.§r\n\nAfter you finish, right click one of the center fences with the Engineer\u0027s Hammer to complete the machine!\n\nThrow Coke Coal into the top to create some Coke Dust.\n\nThis can also be used to double ore, just feed it through the Crusher and you will get two dusts, along with a chance at a byproduct!",
+          "desc:8": "Crushes materials into dusts.\n\n§l§l§l§rFlip to Heavy Machinery \u003e Crusher in your Engineer\u0027s Manual, then craft it together with the Projector to configure it.§r\n\nMiddle Click with the Projector to rotate, then left click to anchor your hologram, then place the blocks as shown. Shift-right click on a block with the Projector to remove the Hologram if you want to move it.\n\n§9§6Most Multiblocks have a §9Capsule blueprint §6that is craftable and is used to place the entire Multiblock in just one click! Crafting one doesnt consume the MB parts, just the Paper, Buttons, and Lapis.§r\n\nAfter you finish, right click one of the center fences with the Engineer\u0027s Hammer to complete the machine!\n\nThrow Coke Coal into the top to create some Coke Dust.\n\nThis can also be used to double ore, just feed it through the Crusher and you will get two dusts, along with a chance at a byproduct!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -17641,7 +17638,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Craft the Stormway, then throw it into a 2x2 pool of water surrounded by flowers.\n\nYou can find §9Aetherium§r and other gems hanging on the inside of Hollow Hills, along with lots of loot and monsters.\n\nBlack Quartz and Charged Certus are much more common as well.\n\nLimestone is only found here, which is needed for the High Oven.\n\n§bMight be a good idea to bring some Data Models along with you!",
+          "desc:8": "Craft the Stormway, then throw it into a 2x2 pool of water surrounded by flowers.\n\n\n§nResources of the Twilight Forest§r\n\nYou can find §9Aetherium§r and other gems hanging on the inside of Hollow Hills, along with lots of loot and monsters.\n\nBlack Quartz and Charged Certus are much more common as well.\n\nLimestone is only found here, which is needed for the High Oven.\n\n§bMight be a good idea to bring some Data Models along with you!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -17730,7 +17727,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place this in the center of a 15x15 flat area, and insert a Attuned Trail Key.\n\nThe Matter you get can be transmuted into harder to get varieties later on.",
+          "desc:8": "Allows you to fight waves of mobs for §bPristine Matter§r.\n\nPlace this in the center of a 15x15 flat area, and insert an Attuned Trial Key. Trial Keys can be attuned to a specific mob by killing the mob with the Trial Key in your offhand.\n\nThe Matter you get can be transmuted into harder to get varieties later on.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -17937,7 +17934,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Hammer the center barrel to complete the Industrial Squeezer.\n\nYou can also create plant oil here, which is one of the ingreidents for Bio-Diesel.",
+          "desc:8": "Hammer the center barrel to complete the Industrial Squeezer.\n\nYou can create plant oil here, which is one of the ingreidents for Bio-Diesel.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -18025,7 +18022,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You can use the hammer on the piston to rotate it, then again once it is in the proper position to complete the Metal Press.\n\nUse a Metal Press Mold on the Metal Press, then drop or pipe items on or into the back conveyor block.\n\n",
+          "desc:8": "Compresses metals into metallic components. §bCan also be used to make tinkers components!§r\n\nYou can use the hammer on the piston to rotate it, then again once it is in the proper position to complete the Metal Press.\n\nUse a Metal Press Mold on the Metal Press, then drop or pipe items on or into the back conveyor block.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -19148,7 +19145,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The left side is where you place your ores to be smelted, or your alloy bases. The right side is where you put your additives. Your §dGraphite Electrodes§r are placed in the top.\n\nSlag can be piped out the back, and your final product out the front.",
+          "desc:8": "With the power of Electricity, you can now manufacture even more advanced alloys.\n\nThe left side is where you place your ores to be smelted, or your alloy bases. The right side is where you put your additives. Your §dGraphite Electrodes§r are placed in the top.\n\nSlag can be piped out the back, and your final product out the front.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -19724,7 +19721,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Pour some lava into the workbench, then place the correct tool inside.",
+          "desc:8": "Can be used to craft plates, rods and wires more easily.\n\nPour some lava into the workbench, then place the correct tool inside.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -19892,7 +19889,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A basic block for building some multiblock machines.",
+          "desc:8": "A basic block for building some Immersive Engineering multiblock machines.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -20704,7 +20701,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "After selecting the §9§1Mark of the Falling Tower §rin your Ritual Diviner (Shift-Left click 3 times), right click on your placed Master Ritual Stone with it until completed. You can view all available Mark of the Falling Tower recipes by viewing the uses of the Master Ritual Stone in JEI.\n\nNext you\u0027ll need to activate the Ritual using the crystal. §cBe sure to check if you have enough LP in your network§r using a §eDivination or Seer\u0027s sigil§r, then throw your catalyst on top. \n\n§bIt might be a good idea to place a block directly above your ritual stone before activating, so your formation doesn\u0027t get destroyed!",
+          "desc:8": "Summons a meteor full of materials!\n\nAfter selecting the §9§1Mark of the Falling Tower §rin your Ritual Diviner (Shift-Left click 3 times), right click on your placed Master Ritual Stone with it until completed. You can view all available Mark of the Falling Tower recipes by viewing the uses of the Master Ritual Stone in JEI.\n\nNext you\u0027ll need to activate the Ritual using the crystal. §cBe sure to check if you have enough LP in your network§r using a §eDivination or Seer\u0027s sigil§r, then throw your catalyst on top. \n\n§bIt might be a good idea to place a block directly above your ritual stone before activating, so your formation doesn\u0027t get destroyed!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -22754,7 +22751,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Melting 4 Quartz in the Mixer, the casing it into a block will give you the Hardened Glass required for the Fluiduct.\n\nUse this like a Casting Table until you can craft the Basin Upgrade.",
+          "desc:8": "Acts like an automatic Casting Table, or Casting Basin with a Basin Upgrade.\n\nMelting 4 Quartz in the Mixer, then casing it into a block will give you the Hardened Glass required for the Fluiduct.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -22831,7 +22828,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "By creating a line of double sticks, with a seed planted at one end, will allow you to improve the stats as it spreads.\n\n§bPlace an Arboreal Extractor next to a tree to collect Sap or Resin!",
+          "desc:8": "Place seeds in crop sticks to turn them into agricraft seeds, which have stats that can be improved. §cAgricraft seeds must be grown in crop sticks!§r\n\nCreating a line of double crop sticks with a seed planted at one end will allow you to improve the stats easily as it spreads.\n\n§bPlace an Arboreal Extractor next to a tree to collect Sap or Resin!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -23736,7 +23733,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Funnel and Injector act the same as their smaller counterparts.\n\nThe Splitter accepts Embers on the small side, with the big sides actting as Emitters.\n\n\nPlace a Mechanical Core or Machine Accessor underneath the Crystal Cell to allow access. The Accessor wont connect if shift-right clicked onto the bottom.\n\nPiping Ember Crystals in will increase the Ember storage.",
+          "desc:8": "The Funnel and Injector act the same as their smaller counterparts, the Receptor and Emitter. However, they can transfer Embers §emuch more quickly§r.\n\nThe Splitter splits a beam of Embers into two smaller beams. It accepts Embers on the small side, with the big sides actting as Emitters.\n\n\nThe Crystal Cell stores a large amount of Embers. Place a Mechanical Core or Machine Accessor underneath the Crystal Cell to allow access. The Accessor wont connect if shift-right clicked onto the bottom.\n\nPiping Ember Crystals in will increase the Ember storage.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24608,7 +24605,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "To craft anything with this table, you need enough starlight, then to hit the table with the Resonating Wand.\n\n§6Claiming this quest will unlock the required research for crafting!",
+          "desc:8": "Your gateway into Astral Sorcery starlight crafting!\n\nTo craft anything with this table, you need enough starlight, then hit the table with the Resonating Wand.\n\n§6Claiming this quest will unlock the required research for crafting!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24689,7 +24686,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Resonating Wand is used to start Starlight crafting by using it on the table after the icon of the craft shows up.\n\nThe Morphing Tool is used similarly to the Akashic Tome, but it will automagically switch to the correct tool.",
+          "desc:8": "The primary wand of Astral Sorcery.\n\nThe Resonating Wand is used to start Starlight crafting by using it on the table after the icon of the craft shows up.\n\nThe Morphing Tool is used similarly to the Akashic Tome, but it will automagically switch to the correct tool.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -24862,7 +24859,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Aquamarine, Rock Crystals, and Celestial Crystals will create liquid starlight over time when placed in the Lightwell, eventually being destroyed.\n\nLightwells only hold 2 buckets at a time, and are only able to pipe fluids out the bottom. They are also about 3 times more effective at night.\n\nUsing an Aspectus will create approximately twice the amount of molten metal required to create them.",
+          "desc:8": "Aquamarine, Rock Crystals, and Celestial Crystals will create §bliquid starlight§r over time when placed in the Lightwell, eventually being destroyed.\n\nLightwells only hold 2 buckets at a time, and are only able to pipe fluids out the bottom. They are also about 3 times more effective at night.\n\nUsing an Aspectus will create approximately twice the amount of molten metal required to create them.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -25575,7 +25572,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You can make Carbon Bricks by using a block of coal or charcoal in the Metal Press.\n\n§bCommon loot from Nether Fortresses!",
+          "desc:8": "Used to create more advanced TR machines.\n\nYou can make Carbon Bricks by using a block of coal or charcoal in the Metal Press.\n\n§bCommon loot from Nether Fortresses!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26120,6 +26117,12 @@
               "Damage:2": 4,
               "OreDict:8": "",
               "id:8": "immersiveengineering:stone_decoration"
+            },
+            "9:10": {
+              "Count:3": 34,
+              "Damage:2": 6,
+              "OreDict:8": "",
+              "id:8": "immersiveengineering:metal_device1"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -26345,7 +26348,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some Size for Cutting. §cDon\u0027t let it get two small!§r\n\nDropping a Rock Crystal into placed §bLiquid Starlight§r will cause it to absorb it over time, increasing its Size.\n\nOnce it reaches max Size, it will split into two, one of which has the chance of being higher Purity.",
+          "desc:8": "By placing a Rock Crystal on this and turning it, you will trade some §eSize§r for §9Cutting§r. §cDon\u0027t let it get two small!§r\n\nDropping a Rock Crystal into placed §bLiquid Starlight§r will cause it to absorb it over time, increasing its Size.\n\nOnce it reaches max Size, it will split into two, one of which has a chance of being higher §bpurity§r.\n\n\n§nMaxing out Crystals§r\n\nBy continuously submerging rock (or celestial) crystals in starlight, you can purify a crystal until it reaches §b100% purity§r, then cut the crystal in the Grindstone until it reaches §9100% Cutting§r (but make sure the crystal is big enough first!). Finally, the crystal can be submerged in starlight a few more times to reach §emaximum size§r (400 for Rock Crystals, 900 for Celestial Crystals). This will be useful later!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26805,7 +26808,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is used to transform blocks by linking a Collector Crystal to them. They are found in the large astral temples, and will need a view on the sky to function.",
+          "desc:8": "This is used to transform blocks by linking a Collector Crystal to them. They are found in the large astral temples, and will need a view on the sky to function.\n\nCollector Crystals can also be linked to starlight altars to increase their starlight!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -26876,7 +26879,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Rock Crystals placed on the pedestal cause various effects depending on the attunment.",
+          "desc:8": "Rock Crystals placed on the pedestal cause various effects depending on the attunment. View the ritual effects in §2JEI§r by viewing the uses of the pedestal!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27004,7 +27007,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place will into the forge to start a craft.",
+          "desc:8": "Used to craft more advanced BM items. \n\nPlace will into the forge to start a craft.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27657,7 +27660,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Use the Sextant on the altar after upgrading to show a hologram of the required temple.",
+          "desc:8": "Allows you to craft more advanced Astral Sorcery items, but also requires more starlight.\n\nUse the Sextant on the altar after upgrading to show a hologram of the required temple.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27768,7 +27771,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Drop items on top, then fill with Mana. Once full, drop a Livingrock and right click with your Wand of the Forest.\n\n§bIf you place a spreader next to a filled pool, and point it at the altar, it will start to fill up the altar as soon as it needs mana.",
+          "desc:8": "Used to craft Botania Runes.\n\nDrop items on top, then fill with Mana. Once full, drop a Livingrock and right click with your Wand of the Forest.\n\n§bIf you place a spreader next to a filled pool, and point it at the altar, it will start to fill up the altar as soon as it needs mana.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -27893,7 +27896,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place the Empowerer, with the Display Stands three blocks away on each side.\n\nEach Display Stand needs power to craft.",
+          "desc:8": "Used to empower AA items.\n\nPlace the Empowerer, with the Display Stands three blocks away on each side.\n\nEach Display Stand needs power to craft.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -30976,7 +30979,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Used to make some of the most magical items!\n\nPlace the Relays on the Sooty Marble for extra crafting slots.",
+          "desc:8": "Used to make some of the most magical items!\n\nPlace the Relays on the Sooty Marble for extra crafting slots.\n\nTo craft a recipe with a constellation, a celestial crystal attuned to that constellation must be placed in the crystal slot in the table. After that, the table can be right clicked with a resonating wand. Then, when crafting, items floating around the grid must be placed in relays as a transparent item is shown. After all the items are placed in the relays, the recipe will be completed.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31069,7 +31072,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You will also need 12 buckets worth of liquid starlight to complete the structure. \n\nThere is a chance for starlight to be consumed when a craft is finished, so keep a close eye on that!\n\n§bRight click with the Resonating Wand to start the craft, or use 2 Automated Users, one to place the item and one to start the craft with the wand.",
+          "desc:8": "Used to infuse various items with starlight.\n\nYou will also need 12 buckets worth of liquid starlight to complete the structure. \n\nThere is a chance for starlight to be consumed when a craft is finished, so keep a close eye on that!\n\n§bRight click with the Resonating Wand to start the craft, or use 2 Automated Users, one to place the item and one to start the craft with the wand.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -31901,7 +31904,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Sap can also be extracted from trees using the §9Arboreal Extractor§r.",
+          "desc:8": "An extremely potent fertiliser.\n\nSap can also be extracted from trees using the §9Arboreal Extractor§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34353,7 +34356,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Place a Piece of dirt or grass in one of these, then a sapling. Items will get deposited in a chest below.",
+          "desc:8": "A simple, one-block tree farm.\n\nPlace a Piece of dirt or grass in one of these, then a sapling. Items will get deposited in a chest below.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34684,7 +34687,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "There are a few ways to get the Cryotheum needed, one is to use §dPristine Matter Powder§r to craft §9Thermal Matter§r, which you can then turn into Blizz loot with the §6Loot Fabricator§r. The other is to find a Cold Biome (Maybe with the Nature\u0027s Compass) and use some §5Nocturnal Powder§r.\n\n§d§5§fRight click to link the §cBlood Orb§r to you. It is used for crafting, and placing it in a filled altar will store LP (Blood) for rituials and the Alchemy Table. \n\nHigher tiers of orbs hold more LP and can be used for more advanced crafts.",
+          "desc:8": "Your second Blood Orb, which can hold more LP and unlocks more recipes.\n\nThere are a few ways to get the Cryotheum needed, one is to use §dPristine Matter Powder§r to craft §9Thermal Matter§r, which you can then turn into Blizz loot with the §6Loot Fabricator§r. The other is to find a Cold Biome (Maybe with the Nature\u0027s Compass) and use some §5Nocturnal Powder§r.\n\n§d§5§fRight click to link the §cBlood Orb§r to you. It is used for crafting, and placing it in a filled altar will store LP (Blood) for rituials and the Alchemy Table. \n\nHigher tiers of orbs hold even more LP and can be used for more advanced crafts.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -35365,7 +35368,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Main workbench for the mod.",
+          "desc:8": "Main workbench for Arcane Archives.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37562,7 +37565,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier.\n\nHover over a Master Ritual stone to see an outline of the ritual and hold down right click to place the ritual.",
+          "desc:8": "Shift right/left click the air with the Ritual Diviner to cycle through the diferent rituals avalable at this tier. \n\nHover over a Master Ritual stone to see an outline of the ritual and hold down right click to place the ritual.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -37716,7 +37719,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Placing items in here and powering with Embers will burn them into ash, which is used in the process for making Arcane Stone.",
+          "desc:8": "Placing items in here and powering with Embers will burn them into §7ash§r, which is used in the process for making §dArcane Stone§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -39824,7 +39827,7 @@
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "modularmachinery:blockcontroller"
+            "id:8": "compactmachines3:fieldprojector"
           },
           "ignoresview:1": 0,
           "ismain:1": 0,
@@ -40295,7 +40298,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Makes loot from matter. At this point all your Pristine Matter will come from trials, but later on you will have access to Simulation Chambers which will aquire matter for you.",
+          "desc:8": "Makes §6loot§r from §bPristine Matter§r.\n \nAt this point all your Pristine Matter will come from trials, but later on you will have access to Simulation Chambers which will aquire matter for you.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -42602,7 +42605,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Water goes in the front, and outputs gasses on the sides.",
+          "desc:8": "Water goes in the front, and gases are output on the sides.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -48938,7 +48941,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Shift-Right click on a Tinkers crafting Station with a Basic Catalyst to start the chain.",
+          "desc:8": "You\u0027ll need these to craft endgame items.\n\nShift-Right click on a Tinkers crafting Station with a Basic Catalyst to start the chain.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -56969,12 +56972,12 @@
     },
     "718:10": {
       "preRequisites:11": [
-        206
+        831
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "To craft sigils, use the Ashes on the ground, then add the ingredients in the order shown.\n\nThe §eDivination Sigil§r is used to get more information on your Blood Altar/LP Network.",
+          "desc:8": "The §eDivination Sigil§r is used to get more information on your Blood Altar/LP Network. It is crafted using arcane ashes.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -57035,7 +57038,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§b§bThe quests from this point on are §cnot required§f§b to beat the pack. Neutronium can also be collected by the Orbital Miner. However, there are §6major bragging rights§f§b to make it this way.\n\n\n§f§nWhat is QMD?\n\n§9Quantum Minecraft Dynamics §fis a mod that brings §5High-Energy Particle Physics§f to Minecraft. While it may seem complicated at first glance, the mod becomes much more understandable when you understand the concepts behind it. \n\nBesides this in-game quest book guide, QMD § also has its own §2Guide Book§r already present in the Akashic Tome. An online version can be found on the §Q§Q§2QMD Github Wiki.§f\n\nOf course, the §N§2Nuclearcraft Official Discord§r also has channels to discuss high-energy particle smashing! Make sure to check out §7#qmd§r for support.\n\nWithout further ado, let\u0027s get into the tutorial!\n\n\n§nQuick Summary§r\n\nIn short, QMD revolves around §6producing, manipulating and utilising §5particles§r, via §3specially designed Multiblocks§r, for various recipes. These recipes produce §enew items§r or even §5new types of particles§r, which can then be used in further recipes. In addition, QMD contains other fun things, such as §cpowerful weapons§r or §6extreme power generation§r!\n\n\n§nBrief Introduction to Multiblocks§r\n\nAs mentioned before, particles are manipulated in various ways in QMD\u0027s various multiblocks. There are three types of multiblocks in QMD:\n\n§3-Accelerators\n§a-Particle Chambers\n§7-Vacuum Chambers§r\n\nParticles are produced and accelerated in §3Accelerators§r, then used for recipes in §aParticle Chambers§r and §7Vacuum Chambers§r. All Multiblocks will be covered in subsequent quests, and more details can also be found on the §2QMD Github Wiki§r.\n\nSince the entire mod revolves around particles, it is only natural that we understand them before we do anything involving them.\n\n\n§nWhat are Particles?§r\n\nUnlike most mods that handle items, fluids or even gases, QMD instead deals with particles. Each particle has a set of properties that can be viewed in §2JEI§r. \n\nMuch like how regular §eitems§f are stored in §astacks§r, QMD §5particles§f are stored in §\"§2\"particle stacks\"§f. However, unlike item stacks, particle stacks cannot be held by the player. Instead, §pparticle stacks§f can only be manipulated in §9QMD\u0027s§f §3specialised Multiblock Machines§f, and transported via §7Beamline Pipes§r.\n\nMore details about particle properties and transport will be covered in \"Particle Properties\" and \"Transporting Particles\", and more information about particles can also be found on the §2QMD Github Wiki§f at §nhttps://github.com/Lach01298/QMD/wiki/Particles.\n",
+          "desc:8": "§b§bThe quests from this point on are §cnot required§f§b to beat the pack. Neutronium can also be collected by the Orbital Miner. However, there are §6major bragging rights§f§b to make it this way.\n\n\n§f§nWhat is QMD?\n\n§9Quantum Minecraft Dynamics §fis a mod that brings §5High-Energy Particle Physics§f to Minecraft. While it may seem complicated at first glance, the mod becomes much more understandable when you understand the concepts behind it. \n\nBesides this in-game quest book guide, QMD § also has its own §2Guide Book§r already present in the Akashic Tome. An online version can be found on the §Q§Q§2QMD Github Wiki.§f\n\nOf course, the §N§2Nuclearcraft Official Discord§r also has channels to discuss high-energy particle smashing! Make sure to check out §7#qmd§r for support.\n\nWithout further ado, let\u0027s get into the tutorial!\n\n\n§nQuick Summary§r\n\nIn short, QMD revolves around §6producing, manipulating and utilising §5particles§r, via §3specially designed Multiblocks§r, for various recipes. These recipes produce §enew items§r or even §5new types of particles§r, which can then be used in further recipes. In addition, QMD contains other fun things, such as §cpowerful weapons§r or §6extreme power generation§r!\n\n§dExample:§r To produce §ep-type doped silicon§f (an item and your goal for the next few quests), we first §6produce§r §5boron ions§r (a particle) in a §3Linear Accelerator§r (a multiblock). Then, we combine the boron ions with silicon wafers in a §aTarget Chamber§r (another multiblock). The entire mod consists of these kinds of particle crafting chains!\n\n\n§nBrief Introduction to Multiblocks§r\n\nAs mentioned before, particles are manipulated in various ways in QMD\u0027s various multiblocks. There are three types of multiblocks in QMD:\n\n§3-Accelerators\n§a-Particle Chambers\n§7-Vacuum Chambers§r\n\nParticles (e.g. §5Boron Ions§r) are produced and accelerated in §3Accelerators§r (e.g. the §3Linear Accelerator§r), then used for recipes (e.g. §ep-type doped silicon§r) in §aParticle Chambers§r (e.g. the §aTarget Chamber§r) and §7Vacuum Chambers§r. All Multiblocks will be covered in subsequent quests, and more details can also be found on the §2QMD Github Wiki§r.\n\nSince the entire mod revolves around particles, it is only natural that we understand them before we do anything involving them.\n\n\n§nWhat are Particles?§r\n\nUnlike most mods that handle items, fluids or even gases, QMD instead deals with particles. Each particle has a set of properties that can be viewed in §2JEI§r. \n\nMuch like how regular §eitems§f are stored in §astacks§r, QMD §5particles§f are stored in §\"§2\"particle stacks\"§f. However, unlike item stacks, particle stacks cannot be held by the player. Instead, §pparticle stacks§f can only be manipulated in §9QMD\u0027s§f §3specialised Multiblock Machines§f, and transported via §7Beamline Pipes§r.\n\nMore details about particle properties and transport will be covered in \"Particle Properties\" and \"Transporting Particles\", and more information about particles can also be found on the §2QMD Github Wiki§f at §nhttps://github.com/Lach01298/QMD/wiki/Particles.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -58575,7 +58578,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §7Neutral Containment Chamber§r creates §6neutrally charged exotic matter§f from one or more particle beams and stores it safely in itself. These fluids can also be transferred to special §econtainment cells§f, which can then be used in various gadgets and recipes.\n\n\n§nConstruction§r\n\nA visualisation of a §7Neutral Containment Chamber§r§f§f (7x7x7) can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nCasing: §7Vacuum Chamber Casing/Glass§r\n\nDimensions: 7x7x7 / 9x9x9, with rings of §7Vacuum Chamber Coils§r on the top and bottom one block away from Chamber Walls\n\nRequired blocks on sides:\n- §7Exotic Containment Chamber Controller§r\n- §72 Vacuum Chamber Coolant Vents§r in §ainput§r and §coutput§r mode\n- §7Vacuum Chamber Energy Port§r\n- §72 Vacuum Chamber Beam Ports§r in §ainput§r mode, in the centre of two opposite sides\n- §72 Vacuum Chamber Lasers§r in the centre of the other two faces \n\n\n§nRequirements§r\n\nThe Neutral Containment Chamber must be §nconstantly supplied§r with §6power§r and §1active coolant§f with a temperature below 104K. If any of the below happen while it contains §6exotic fluid§f:\n\n- Runs out of power\n- Temperature rises above the maximum operating temperature\n- The Chamber is broken\n\nThe Chamber will fail, leading to §4catastrophic§f results!\n\n\n§nRecipes§r\n\nIn order to create §6exotic matter§f, the required particle beams as stated in §2JEI§f must have an §6energy§f of §60eV§f (with the exception of §5glueballs§f, which can have any energy) and sufficient §bfocus§f for the recipe. If the particle beams required meet the criteria, exotic matter is created. \n\nThe number of ticks it takes to create 1mb of exotic matter is the amount of particles required for the recipe, divided by the amount of particles in the particle stack. If there are two beams, the time taken will be the larger of the two beams.\n\nTo fill a cell with exotic matter, simply pipe an §eempty cell§f into the chamber via the controller or a §7Containment Item Port§f, and the chamber will automatically fill the cell with the exotic matter it is currently holding.",
+          "desc:8": "The §7Neutral Containment Chamber§r creates §6neutrally charged exotic matter§f from one or more particle beams and stores it safely in itself. These fluids can also be transferred to special §econtainment cells§f, which can then be used in various gadgets and recipes.\n\n\n§nConstruction§r\n\nA visualisation of a §7Neutral Containment Chamber§r§f§f (7x7x7) can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nCasing: §7Vacuum Chamber Casing/Glass§r\n\nDimensions: 7x7x7 / 9x9x9, with rings of §7Vacuum Chamber Coils§r on the top and bottom one block away from Chamber Walls\n\nRequired blocks on sides:\n- §7Exotic Containment Chamber Controller§r\n- §72 Vacuum Chamber Coolant Vents§r in §ainput§r and §coutput§r mode\n- §7Vacuum Chamber Energy Port§r\n- §72 Vacuum Chamber Beam Ports§r in §ainput§r mode, in the centre of two opposite sides\n- §72 Vacuum Chamber Lasers§r in the centre of the other two faces \n\n\n§nRequirements§r\n\nThe Neutral Containment Chamber must be §nconstantly supplied§r with §6power§r and §1active coolant§f with a temperature below 104K. If any of the below happen while it contains §6exotic fluid§f:\n\n- Runs out of power\n- Temperature rises above the maximum operating temperature\n- The Chamber is broken\n\nThe Chamber will fail, leading to §4catastrophic§f results!\n\n\n§nRecipes§r\n\nIn order to create §6exotic matter§f, the required particle beams as stated in §2JEI§f must have an §6energy§f of §60eV§f (with the exception of §5glueballs§f, which can have any energy) and sufficient §bfocus§f for the recipe. If the particle beams required meet the criteria, exotic matter is created. \n\nThe number of ticks it takes to create 1mb of exotic matter is the amount of particles required for the recipe, divided by the amount of particles in the particle stack. If there are two beams, the time taken will be the larger of the two beams.\n\n§dExample§r: If you have a 10kpu/t beam of §5antiprotons§r and a 5kpu/t beam of §5positrons§r going into the beam, the smaller kpu/t positron beam will be taken for the calculation. Each mb of §6antihydrogen§r requires 1kpu of antiprotons and positrons as shown in JEI. Thus, antihydrogen will be produced at a rate of 5kpu/t / 1kpu \u003d 5mb/t.\n\nTo fill a cell with exotic matter, simply pipe an §eempty cell§f into the chamber via the controller or a §7Containment Item Port§f, and the chamber will automatically fill the cell with the exotic matter it is currently holding.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -59817,7 +59820,7 @@
           "autoConsume:1": 0,
           "consume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "partialMatch:1": 1,
           "requiredItems:9": {
@@ -60898,7 +60901,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Now that you know how §5particles§r work, it\u0027s time to make use of those concepts to construct your first §3QMD Multiblock§r! This quest will talk about §3Linear Accelerators§f (also known as §3LINACs§f), the first Accelerator you will build.\n\n\n§nLinear Accelerators\n\n§3LINACs§f are your gateway to §9§1§9QMD§f, providing your first method of §5particle manipulation§r. Being an entry-level Accelerator§f, they also produce the particles required for any recipe in QMD§f. \n\n\n§nConstruction§r\n\nA visualisation of an empty and filled §3Linear Accelerator§r is avaliable in §2JEI§r and the §2QMD Github Wiki§r.\n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions: 5 blocks wide, 5 blocks tall, variable length (Min. 6 blocks, Max. 100 blocks), with a continuous line of §7Accelerator Beam Blocks§f in the centre\n\nRequired blocks on long sides:\n- §7Linear Accelerator Controller\n§r- §72 Accelerator Coolant Vents§f in §aInput§e§f and §cOutput§f mode\n§-- §7Accelerator Energy Port§f\n\nRequired blocks at the ends of the Accelerator, in the centre:\n- §7Accelerator Ion source§f facing inwards at one end \n- §7Accelerator Beam Port§f in §cOutput§r mode at the other end \n\nThe particle stack is produced by the §7Ion Source§r and exits the Accelerator via the §7Beam Port§r. \n\n§cNote:§r The Linear Accelerator can also be used to accelerate existing particle stacks by replacing the Accelerator Ion Source with an Accelerator Beam Port on input mode, then piping the particle stack in via that beam port.\n\n\nThe remaining empty space in the Linear Accelerator can now be filled up with §7Accelerator Components§r (§bQuadrapole Magnets§r and §dRF Cavities§r, covered in relevant quests below), to accelerate particles, and §9Coolers§r (covered in \"Passive Cooling\"), to cool the Accelerator.\n\n\n§nRequirements§r\n\nAll Accelerators have similar requirements for operation.\n\n1. Accelerators must be supplied with §6power§r to operate. \n\n2. Accelerators must be cooled with §9coolers§r (passive cooling) and §1coolant§r (active cooling) in order to not §coverheat§r and §cexplode§r. Cooling mechanics are covered in the quests above.\n\n3. Accelerators are switched on via a §credstone signal§r. The output particle\u0027s energy is §c(redstone strength)§r/15 of the §6maximum particle energy§f, which is covered in the \"RF Cavity\" quest.\n\nIn addition, for a LINAC to produce §5particles§r, the §7Ion Source§r must be supplied with §efilled canisters§r. Ion sources are covered in \"Ion Source\".",
+          "desc:8": "Now that you know how §5particles§r work, it\u0027s time to make use of those concepts to construct your first §3QMD Multiblock§r! This quest will talk about §3Linear Accelerators§f (also known as §3LINACs§f), the first Accelerator you will build. You\u0027ll be building this §3LINAC§r to create §eP-Type Doped Silicon§r, and some guidelines are provided in the quest \"Making P-Type Doped Silicon\".\n\n\n§nLinear Accelerators\n\n§3LINACs§f are your gateway to §9§1§9QMD§f, providing your first method of §5particle manipulation§r. Being an entry-level Accelerator§f, they also produce the particles required for any recipe in QMD§f. \n\n\n§nConstruction§r\n\nA visualisation of an empty and filled §3Linear Accelerator§r is avaliable in §2JEI§r and the §2QMD Github Wiki§r.\n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions: 5 blocks wide, 5 blocks tall, variable length (Min. 6 blocks, Max. 100 blocks), with a continuous line of §7Accelerator Beam Blocks§f in the centre\n\nRequired blocks on long sides:\n- §7Linear Accelerator Controller\n§r- §72 Accelerator Coolant Vents§f in §aInput§e§f and §cOutput§f mode\n§-- §7Accelerator Energy Port§f\n\nRequired blocks at the ends of the Accelerator, in the centre:\n- §7Accelerator Ion source§f facing inwards at one end \n- §7Accelerator Beam Port§f in §cOutput§r mode at the other end \n\nThe particle stack is produced by the §7Ion Source§r and exits the Accelerator via the §7Beam Port§r. \n\n§cNote:§r The Linear Accelerator can also be used to accelerate existing particle stacks by replacing the Accelerator Ion Source with an Accelerator Beam Port on input mode, then piping the particle stack in via that beam port.\n\n\nThe remaining empty space in the Linear Accelerator can now be filled up with §7Accelerator Components§r (§bQuadrapole Magnets§r and §dRF Cavities§r, covered in relevant quests below), to accelerate particles, and §9Coolers§r (covered in \"Passive Cooling\"), to cool the Accelerator.\n\n\n§nRequirements§r\n\nAll Accelerators have similar requirements for operation.\n\n1. Accelerators must be supplied with §6power§r to operate. \n\n2. Accelerators must be cooled with §9coolers§r (passive cooling) and §1coolant§r (active cooling) in order to not §coverheat§r and §cexplode§r. Cooling mechanics are covered in the quests above.\n\n3. Accelerators are switched on via a §credstone signal§r. The output particle\u0027s energy is §c(redstone strength)§r/15 of the §6maximum particle energy§f, which is covered in the \"RF Cavity\" quest.\n\nIn addition, for a LINAC to produce §5particles§r, the §7Ion Source§r must be supplied with §efilled canisters§r. Ion sources are covered in \"Ion Source\".",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -60975,7 +60978,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§lPassive Cooling Requirement:§r The §9sum of the cooling§f from all §9Accelerator Coolers §e§fmust §6exceed§r the §cmaximum heating§f (the sum of all component heating and external heating) of the accelerator§f. \n\nBoth the cooling and max§c§fimum heating§f can be seen by hovering over the §cheat bar§r (second bar from the left) in the §2Accelerator GUI§r. \n\n\n§nFull Explanation§r\n\nEach component (e.g Quadrapole, RF Cavity) placed in an Accelerator §cheats it up§r by the amount shown in the component block\u0027s §6tooltip§r (Note: This is the heating value of §6the entire component§r, not just one block!). Thus, §9Accelerator Coolers§r are required to cool the Accelerator.\n\n§9Accelerator Coolers§f can be placed in §6any remaining unoccupied space§r in an Accelerator, and they cool the Accelerator by the amount shown in their §6tooltip§r. However, much like §2Nuclearcraft: Overhaul §fcoolers§f, they have placement rules regarding where they can be placed (next to an electromagnet, next to an RF Cavity, etc.). \n\nIt is highly recommended that you play around with §9Accelerator Cooler configurations§r to find efficient ways to arrange coolers§f and components to maximise §9cooling§f, and thus the number of components you can fit into your accelerator§f.",
+          "desc:8": "§lPassive Cooling Requirement:§r The §9sum of the cooling§f from all §9Accelerator Coolers §e§fmust §6exceed§r the §cmaximum heating§f (the sum of all component heating and external heating) of the accelerator§f. \n\nBoth the cooling and max§c§fimum heating§f can be seen by hovering over the §cheat bar§r (second bar from the left) in the §2Accelerator GUI§r by right clicking the accelerator controller.\n\n\n§nFull Explanation§r\n\nEach component (e.g Quadrapole, RF Cavity) placed in an Accelerator §cheats it up§r by the amount shown in the component block\u0027s §6tooltip§r (Note: This is the heating value of §6the entire component§r, not just one block!). Thus, §9Accelerator Coolers§r are required to cool the Accelerator.\n\n§9Accelerator Coolers§f can be placed in §6any remaining unoccupied space§r in an Accelerator, and they cool the Accelerator by the amount shown in their §6tooltip§r. However, much like §2Nuclearcraft: Overhaul §fcoolers§f, they have placement rules regarding where they can be placed (next to an electromagnet, next to an RF Cavity, etc.). \n\nIt is highly recommended that you play around with §9Accelerator Cooler configurations§r to find efficient ways to arrange coolers§f and components to maximise §9cooling§f, and thus the number of components you can fit into your accelerator§f.\n\n\n§dExample§r: If your accelerator has 1 copper ion cavity and 1 copper electromagnet, it will produce a total heat of §c300 + 300 \u003d 600H/t§r. External heating can be anywhere from §c50-200H/t§r, resulting in a §cmaximum heating§r of §c650-800H/t§r when the accelerator is switched on. These values can also be viewed by right clicking the accelerator controller and hovering over the second bar. \n\nIn order to cool the accelerator, you must place §9accelerator coolers§r until they have a cooling that is above §9650-800H/t§r, the maximum heating.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -61052,7 +61055,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "You\u0027ve probably found out by now that your Linear Accelerator is pretty weak, and has difficulty accelerating particles anywhere above §620MeV§f. Enter: §3Synchrotron Accelerators§f.\n\nThe Synchrotron is a cyclic §3Particle Accelerator§f capable of imparting §4massive§f amounts of energy to particles, up to the GeV or even TeV range!\n\nHowever, §cSynchrotrons are not replacements for Linear Accelerators!§f A Synchrotron§f §ccannot§r have §7Ion Sources§f placed in them, and can only accelerate particles§f with a §6minimum energy§f of §65MeV§f. Thus, you will still need §3LINACs§r to produce and accelerate particles up to 5MeV for use in Synchrotrons.\n\n\n§nConstruction§r\n\nA visualisation of a Synchrotron can be found on the §2QMD Github Wiki.§f \n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions:§r A square torus with variable exterior length (min. exterior length: 11 blocks, max: 100 blocks), and tunnels 5 blocks wide, 5 blocks tall, with a continuous ring of §7Accelerator Beam Blocks§r down the centre of the tunnels and §eDipole Magnets§r in the corners. Dipole Magnets are discussed in the next quest.\n\nRequired blocks on sides:\n- §7Synchrotron Controller§r\n- §72 Accelerator Coolant Vents§r in §aInput§r and §cOutput§r mode\n- §7Accelerator Energy Port§r\n- §72 Accelerator Beam Ports§r in §aInput§r and §cOutput§r mode at the same level as the beam ring, connected to the beam ring by a §7Beam Block§r, with a §eDipole Magnet§r at the beam block intersection\n\n§cNote:§r §eDipole Magnets§r can be placed §nanywhere§f in a Synchrotron, §ceven on straight beam lines§r! However, a minimum of 4 Dipole Magnets must be placed in the corners of a Synchrotron.§f \n\nUnlike the LINAC, Synchrotrons§f can have §7more than two Beam Ports§f, but there can only be one input and one output port at any time. Applying a §credstone pulse§f to a beam port will activate it, and its active state (input/output) can be controlled by shift right clicking the beam port with the §8Multitool§r.\n\n\n§nRequirements§r\n\nA Synchrotron has the same requirements as the Linear Accelerator§f and any other Accelerator§f, requiring §6power, §9cooling§f and §1active coolant§f. \n\nA §credstone signal§f applied to the §7Synchrotron Accelerator Controller§f will switch it on, with the output particle\u0027s energy being §c(redstone strength)§r/15 of the §6maximum particle energy§f. Just like a Linear Accelerator, when a Synchrotron is switched on, the resulting particle\u0027s properties can be seen in the §2Accelerator GUI§r.",
+          "desc:8": "You\u0027ve probably found out by now that your Linear Accelerator is pretty weak, and has difficulty accelerating particles anywhere above §620MeV§f. Enter: §3Synchrotron Accelerators§f.\n\nThe Synchrotron is a cyclic §3Particle Accelerator§f capable of imparting §4massive§f amounts of energy to particles, up to the GeV or even TeV range!\n\nHowever, §cSynchrotrons are not replacements for Linear Accelerators!§f A Synchrotron§f §ccannot§r have §7Ion Sources§f placed in them, and can only accelerate particles§f with a §6minimum energy§f of §65MeV§f. Thus, you will still need §3LINACs§r to produce and accelerate particles up to 5MeV for use in Synchrotrons.\n\n\n§nConstruction§r\n\nA visualisation of a Synchrotron can be found on the §2QMD Github Wiki.§f \n\nCasing Material: §7Accelerator Casing/Glass§r\n\nDimensions:§r A square torus with variable exterior length (min. exterior length: 11 blocks, max: 100 blocks), and tunnels 5 blocks wide, 5 blocks tall, with a continuous ring of §7Accelerator Beam Blocks§r down the centre of the tunnels and §eDipole Magnets§r in the corners. Dipole Magnets are discussed in the next quest.\n\nRequired blocks on sides:\n- §7Synchrotron Controller§r\n- §72 Accelerator Coolant Vents§r in §aInput§r and §cOutput§r mode\n- §7Accelerator Energy Port§r\n- §72 Accelerator Beam Ports§r in §aInput§r and §cOutput§r mode at the same level as the beam ring, connected to the beam ring by a §7Beam Block§r, with a §eDipole Magnet§r at the beam block intersection\n\n§cNote:§r §eDipole Magnets§r can be placed §nanywhere§f in a Synchrotron, §ceven on straight beam lines§r! However, a minimum of 4 Dipole Magnets must be placed in the corners of a Synchrotron.§f \n\nUnlike the LINAC, Synchrotrons§f can have §7more than two Beam Ports§f, but there can only be one input and one output port at any time. Applying a §credstone pulse§f to a beam port will activate it, and its active state (input/output) can be controlled by shift right clicking the beam port with the Multitool.\n\nMuch like LINACs, the remaining empty space in the Synchrotron can now be filled up with §7Accelerator Components§r (§bQuadrapole Magnets§r, §dRF Cavities§r, and §eDipole Magnets§r) to accelerate particles, and §9Coolers§r to cool the Accelerator.\n\n\n§nRequirements§r\n\nA Synchrotron has the same requirements as the Linear Accelerator§f and any other Accelerator§f, requiring §6power, §9cooling§f and §1active coolant§f. \n\nA §credstone signal§f applied to the §7Synchrotron Accelerator Controller§f will switch it on, with the output particle\u0027s energy being §c(redstone strength)§r/15 of the §6maximum particle energy§f. Just like a Linear Accelerator, when a Synchrotron is switched on, the resulting particle\u0027s properties can be seen in the §2Accelerator GUI§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -61237,7 +61240,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "As you already know, the amount of particles in a particle stack is §csolely dependent§r on the item placed in the Ion Source, and §ncannot be modified§r by Accelerators. Does that mean there is no way to increase the speed of Target Chamber recipes?\n\nEnter: §6Detectors§r. Detectors increase the §eefficiency§r of §aany Particle Chamber§f, including the Target Chamber. A visualisation of a 5x5x5 target chamber can be found in §2JEI§r.\n\nFor the Target Chamber specifically, a higher efficiency §6lowers the amount of particles required§r for a recipe to be processed, leading to recipes being completed faster. The new amount of particles required is equal to the original amount divided by the Target Chamber Efficiency, although the amount required §ccan never be lower than 1Mpu§r.\n\nFor both the Target Chamber§f and other Particle Chambers§f, a higher efficiency also increases the §4amount§f of §5particles§f in the resulting particle stacks, although the amount may never be higher than that stated in §2JEI§f. More details on the amount calculation for output particle stacks can be found in the \"Target Chamber Particle Properties\" quest.",
+          "desc:8": "As you already know, the amount of particles in a particle stack is §csolely dependent§r on the item placed in the Ion Source, and §ncannot be modified§r by Accelerators. Does that mean there is no way to increase the speed of Target Chamber recipes?\n\nEnter: §6Detectors§r. Detectors increase the §eefficiency§r of §aany Particle Chamber§f, including the Target Chamber. A visualisation of a 5x5x5 target chamber can be found in §2JEI§r.\n\nFor the Target Chamber specifically, a higher efficiency §6lowers the amount of particles required§r for a recipe to be processed, leading to recipes being completed faster. The new amount of particles required is equal to the original amount divided by the Target Chamber Efficiency, although the amount required §ccan never be lower than 1Mpu§..\n\nFor both the Target Chamber§f and other Particle Chambers§f, a higher efficiency also increases the §4amount§f of §5particles§f in the resulting particle stacks, although the amount may never be higher than that stated in §2JEI§f. More details on the amount calculation for output particle stacks can be found in the \"Target Chamber Particle Properties\" quest.\n\n\n§nExample§r\n\nThe p-type doped silicon recipe already only requires §41Mpu§r and has a cross-section of 100%. Thus, it does not benefit from detectors at all. However, light fission waste can require anywhere from §42.5Mpu-50Mpu§r, thus detectors can greatly reduce the amount of particles required and thus speed up the recipe.\n\nTaking the gold to fission waste recipe as an example, it requires §46.25Mpu§r of protons to complete. If the target chamber efficiency is increased to 500% with detectors, the amount falls to §46.25Mpu§r / 500% \u003d §41.25Mpu§r. This means the recipe can be completed 5 times faster!\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -61545,7 +61548,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§3Decelerators§f lower the energy of particles that go in them to a minimum of §60eV§r. This is especially useful for creating §5antimatter compounds§r and §6exotic matter§r in §7Neutral Exotic Containment§r.\n\n\n§nConstruction§r\n\nA screenshot of a §3Decelerator§f can be found on the §2QMD Github Wiki.§f \n\nDecelerators are built in the exact same way as Synchrotrons, with three notable differences:\n\n1. They require a §7Decelerator Controller.§f\n2. They cannot have §7Synchrotron Ports§f installed.§f\n3. Only one §dRF Cavity§f is required; any more than one serves no purpose and wastes power.\n\n\n§nRequirements§r\n\nA Decelerator has the same requirements as any other Accelerator, requring §6power§r, §9cooling§f and §1active coolant§f. \n\nA §credstone signal§f applied to the §7Decelerator Controller§f will switch it on. When a Decelerator is switched on, the resulting particle\u0027s properties can be seen in the §2Accelerator GUI§r.\n\n\n§nOutput Particle Properties§r\n\nThe §bfocus§f gained or lost by a particle travelling through a Decelerator is calculated in exactly the same way as any other Accelerator.\n\nDecelerators §9lower§r the energy of particle inputs to a minimum of 0eV. However, they can only accept particle inputs with energies below their §6maximum energy§r. This maximum energy is calculated exactly the same way as the Synchrotron\u0027s §emaximum energy from Dipole Strength§r as discussed in the quest \"Synchrotron Particle Properties\".\n\nWhat this means is that the exact same design for a Synchrotron can be used for a Decelerator, as the §6maximum energy§f of the resultant Decelerator will be equal to the §emaximum energy from Dipole Strength§r of the §3Synchrotron§f.\n\n\n§nRedstone Control§r\n\nThe energy of the output particles is given by (15 - §cRedstone Signal Strength§r)/15 * §6Maximum Energy§r. This means that a signal strength of 15 lowers the energy to 0eV, while anything lower lowers the energy to a fraction of the maximum energy. This is useful for §aCollision Chamber recipes§r that require a very small non-zero §6energy§f, like §5anti-triton§f.",
+          "desc:8": "§3Decelerators§f lower the energy of particles that go in them to a minimum of §60eV§r. This is especially useful for creating §5antimatter compounds§r and §6exotic matter§r in §7Neutral Exotic Containment§r.\n\n\n§nConstruction§r\n\nA screenshot of a §3Decelerator§f can be found on the §2QMD Github Wiki.§f \n\nDecelerators are built in the exact same way as Synchrotrons, with three notable differences:\n\n1. They require a §7Decelerator Controller.§f\n2. They cannot have §7Synchrotron Ports§f installed.§f\n3. Only one §dRF Cavity§f is required; any more than one serves no purpose and wastes power.\n\n\n§nRequirements§r\n\nA Decelerator has the same requirements as any other Accelerator, requring §6power§r, §9cooling§f and §1active coolant§f. \n\nA §credstone signal§f applied to the §7Decelerator Controller§f will switch it on. When a Decelerator is switched on, the resulting particle\u0027s properties can be seen in the §2Accelerator GUI§r.\n\n\n§nOutput Particle Properties§r\n\nThe §bfocus§f gained or lost by a particle travelling through a Decelerator is calculated in exactly the same way as any other Accelerator.\n\nDecelerators §9lower§r the energy of particle inputs to a minimum of 0eV. However, they can only accept particle inputs with energies below their §6maximum energy§r. This maximum energy is calculated exactly the same way as the Synchrotron\u0027s §emaximum energy from Dipole Strength§r as discussed in the quest \"Synchrotron Particle Properties\".\n\nWhat this means is that the exact same design for a Synchrotron can be used for a Decelerator, as the §6maximum energy§f of the resultant Decelerator will be equal to the §emaximum energy from Dipole Strength§r of the §3Synchrotron§f.\n\n§dExample:§r If you have constructed a synchrotron which accelerates §5heavy particles§r (e.g. protons) to §62GeV§r, replacing the synchrotron controller with a decelerator controller turns it into a decelerator that can reduce the energy of any particle with initial energy below §62GeV§r to §60eV§r. No new decelerator designs required!\n\n\n§nRedstone Control§r\n\nThe energy of the output particles is given by (15 - §cRedstone Signal Strength§r)/15 * §6Maximum Energy§r. This means that a signal strength of 15 lowers the energy to 0eV, while anything lower lowers the energy to a fraction of the maximum energy. This is useful for §aCollision Chamber recipes§r that require a very small non-zero §6energy§f, like §5anti-triton§f.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -61687,7 +61690,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§lTL:DR No Maths version:§r §bFocus§r is calculated exactly the same as a LINAC. For heavier particles (e.g. Proton), §6energy§r is increased with §eDipole Strength§r, while for lighter particles (e.g. Electron), §6energy§r is increased with §eAccelerator Voltage§r.\n\n\nThis quest details the maths behind the §bfocus§r and §6energy§f of a resultant §\n§5particle§\n§f from a §3Synchrotron§f. While it isn\u0027t completely necessary, an understanding of the formulas can help greatly when planning out a new Synchrotron and figuring out if a given design can provide the energy needed for your desired recipe.\n\n§\n\nThe §bfocus§f gained or lost by a §5particle§f travelling through a Synchrotron is calculated with the same formulas as the LINAC. The length of the Synchrotron can be found in the §2Accelerator GUI§r.\n\n\nThe §6maximum energy§f of the resulting particle stack is the smaller of these two values: the Dipole Field Strength and Synchrotron Radiation Losses. \n\n\nThe maximum energy from the Dipole Strength is the limiting factor for heavier particles, like the proton. It is given by: \n\n§6Maximum Energy from Dipole Strength (GeV)§r \u003d  \n(|§dcharge§r| * §eTotal Dipole Strength§r * §7Synchrotron \nRadius§r)^2 / (2 * §dParticle Mass (MeV/c^2)§r)\n\n\nThe maximum energy from the Radiation losses is the limiting factor for lighter particles, like the electron. It is given by:\n\n§6Maximum Energy from Radiation Losses (GeV) § \u003d \n§dParticle Mass (MeV/c^2)§r * (3 * §eTotal Accelerating \nVoltage (kV)§r * §7Synchrotron Radius§r / |§dcharge§r|)^0.25",
+          "desc:8": "§lTL:DR No Maths version:§r §bFocus§r is calculated exactly the same as a LINAC. For heavier particles (e.g. Proton), §6energy§r is increased with §eDipole Strength§r, while for lighter particles (e.g. Electron), §6energy§r is increased with §eAccelerator Voltage§r.\n\n\n§nFull Explanation§r\n\nThis quest details the maths behind the §bfocus§r and §6energy§f of a resultant §\n§5particle§\n§f from a §3Synchrotron§f. While it isn\u0027t completely necessary, an understanding of the formulas can help greatly when planning out a new Synchrotron and figuring out if a given design can provide the energy needed for your desired recipe.\n\n§\n\nThe §bfocus§f gained or lost by a §5particle§f travelling through a Synchrotron is calculated with the same formulas as the LINAC. The length of the Synchrotron can be found in the §2Accelerator GUI§r.\n\n\nThe §6maximum energy§f of the resulting particle stack is the smaller of these two values: the Dipole Field Strength and Synchrotron Radiation Losses. \n\n\nThe maximum energy from the Dipole Strength is the limiting factor for heavier particles, like the proton. It is given by: \n\n§6Maximum Energy from Dipole Strength (GeV)§r \u003d  \n(|§dcharge§r| * §eTotal Dipole Strength§r * §7Synchrotron \nRadius§r)^2 / (2 * §dParticle Mass (MeV/c^2)§r)\n\n\nThe maximum energy from the Radiation losses is the limiting factor for lighter particles, like the electron. It is given by:\n\n§6Maximum Energy from Radiation Losses (GeV) § \u003d \n§dParticle Mass (MeV/c^2)§r * (3 * §eTotal Accelerating \nVoltage (kV)§r * §7Synchrotron Radius§r / |§dcharge§r|)^0.25",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -62270,7 +62273,7 @@
             "tag:10": {
               "Fluid:10": {
                 "Amount:3": 1000,
-                "FluidName:8": "fluidpotassium"
+                "FluidName:8": "potassium"
               }
             }
           },
@@ -62314,7 +62317,7 @@
               "tag:10": {
                 "Fluid:10": {
                   "Amount:3": 1000,
-                  "FluidName:8": "fluidpotassium"
+                  "FluidName:8": "potassium"
                 }
               }
             }
@@ -63114,7 +63117,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Much like how §aitem stacks§r have properties (amount of items in a stack), §2particle stacks§r also have their own properties. However, unlike item stacks, particle stacks have 3 properties:\n\n§4- Amount (pu/t)\n§6- Energy (eV)\n§b- Focus§f\n\n§4Amount§r is the amount of particles, measured in particle units (pu). Particles are produced at a given rate, measured in particle units per tick (pu/t), and that amount §ccannot§r be modified by Accelerators.\n\n§6Energy§r is the energy of the particles, measured in Electron Volts (eV). It can be increased or decreased by Accelerators.\n\n§bFocus§r is how focused or confined the particles are. It can be increased by Accelerators.\n\n\n§nIntroduction to QMD Recipes§r\n\nAll recipes involving particles require particle stacks to have a §bminimum focus§f, and §6energy§r within a certain §6energy range (e.g 10-20 MeV)§f for the recipe to work (relevant values can be seen in §2JEI§f). Recipes require a §4cumulative amount of particles§r to be completed, thus allowing the speed of a recipe to be calculated with (pu required)/(pu/t).\n\n§A§fAs most newly-created particles start out with no §6energy §fand barely any §bfocus§f, §3Accelerators§e §fare used in order to get particle stacks to the relevant § §6energy§f and §bfocus§f§f. How §3Accelerators§f do this, and how they are constructed will be covered in \"QMD 102: The Linear Accelerator\" and relevant quests.",
+          "desc:8": "Much like how §aitem stacks§r have properties (amount of items in a stack), §2particle stacks§r also have their own properties. However, unlike item stacks, particle stacks have 3 properties:\n\n§4- Amount (pu/t)\n§6- Energy (eV)\n§b- Focus§f\n\n§4Amount§r is the amount of particles, measured in particle units (pu). Particles are produced at a given rate, measured in particle units per tick (pu/t), and that amount §ccannot§r be modified by Accelerators.\n\n§6Energy§r is the energy of the particles, measured in Electron Volts (eV). It can be increased or decreased by Accelerators.\n\n§bFocus§r is how focused or confined the particles are. It can be increased by Accelerators.\n\n§dExample:§r A particle stack of boron ions can have a focus of §b1§r, an energy of §6400keV§r and be produced at a rate of §410kpu/t§r. While the stack is stuck at §410kpu/t§r and cannot be modified, an accelerator can increase the focus, and increase or decrease the energy of the boron ion particle stack.\n\n\n§nIntroduction to QMD Recipes§r\n\nAll recipes involving particles require particle stacks to have a §bminimum focus§f, and §6energy§r within a certain §6energy range (e.g 10-20 MeV)§f for the recipe to work (relevant values can be seen in §2JEI§f). Recipes require a §4cumulative amount of particles§r to be completed, thus allowing the speed of a recipe to be calculated with (pu required)/(pu/t).\n\n§dExample:§r The §r§eP-Type Doped Silicon§r recipe requires Boron Ions to have a minimum focus of §b2§r and an energy within §6600keV-1MeV§r. It requires a total of §41Mpu§r of Boron Ions, which means that if §410kpu/t§r of boron ions are provided, the recipe can be completed within 1M/10k \u003d 100t, which is 5s.\n\n§A§fAs most newly-created particles start out with no §6energy §fand barely any §bfocus§f, §3Accelerators§e §fare used in order to get particle stacks to the relevant § §6energy§f and §bfocus§f§f. How §3Accelerators§f do this, and how they are constructed will be covered in \"QMD 102: The Linear Accelerator\" and relevant quests.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63160,7 +63163,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Particle stacks cannot be handled directly by the player. Instead, they can only be transported via §7beam blocks§r (inside multiblocks) and §7beamline pipes§r (outside multiblocks). They can be imagined as §6beams§r travelling through beam blocks to their destination. \n\nAs beamline pipes cannot be turned on their own, §3Beam Diverters§r are required to rotate the direction of a beam, and will be covered in a later quest.\n\n\nParticle stacks also §close focus§r for every block they travel! The amount lost per block is based on the §battenuation rate (default 0.02)§r and the §4pu/t§r of the particle stack, via the equation:\n\n§bFocus Lost per Block§r \u003d §b\nattenuation rate§r * (1 + |§dcharge§r|*(§4pu/t§r / 10000)^0.5)\n\nThe charge of a particle can be found in §2JEI§r, under particle properties.\n\nIf the focus is less than or equal to 0, the particle stack will not travel any further. Thus, make sure to minimise the distance particles travel in your QMD setups to minimise focus loss!\n\n",
+          "desc:8": "Particle stacks cannot be handled directly by the player. Instead, they can only be transported via §7beam blocks§r (inside multiblocks) and §7beamline pipes§r (outside multiblocks). They can be imagined as §6beams§r travelling through beam blocks to their destination. \n\nAs beamline pipes cannot be turned on their own, §3Beam Diverters§r are required to rotate the direction of a beam, and will be covered in a later quest.\n\n\nParticle stacks also §close focus§r for every block they travel! The amount lost per block is based on the §battenuation rate (default 0.02)§r and the §4pu/t§r of the particle stack, via the equation:\n\n§bFocus Lost per Block§r \u003d §b\nattenuation rate§r * (1 + |§dcharge§r|*(§4pu/t§r / 10000)^0.5)\n\nThe charge of a particle can be found in §2JEI§r, under particle properties.\n\n§dExample:§r A boron ion has a charge of +1. If the boron ion particle stack has a pu/t of §410000pu/t§r, it will lose §b0.02§r * (1 + §d1§r * (§410000§r / 10000)^0.5) \u003d §b0.04§r focus per block. This means that if the particle stack travels 5 blocks, it will lose §b0.20§r focus!\n\n\nIf the focus is less than or equal to 0, the particle stack will not travel any further. Thus, make sure to minimise the distance particles travel in your QMD setups to minimise focus loss!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63225,7 +63228,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§lActive Cooling Requirement:§r An accelerator§f must be §nconstantly supplied§r with an §1active coolant§r, whose §ctemperature§r is §6below§r the §cmaximum temperature§r (the lowest maximum operating temperature out of all components) of the accelerator.\n\nThe accelerator\u0027s current temperature and maximum temperature can be viewed in the §2Accelerator GUI§r. \n\n\n§nFull Explanation§r\n\nComponents are only capable of operating when they are §9cooled§r below their §cmaximum operating temperature§r, as seen in the §6tooltip§r of the block used to construct that component. Thus, §1active coolant§r is required to lower the accelerator\u0027s temperature.\n\nActive coolants §fcool an accelerator§f to their own temperature, provided that the §9passive cooling§r requirement is met (see the quest \"Passive Cooling\"). Valid active coolants§f and their temperatures can be seen in §2JEI§f via Accelerator Controllers.\n\n\nWhen an accelerator is supplied with active coolant via the §9input§r coolant vent, it is converted into the resultant hot coolant (as seen in the JEI recipe), which is output from the §coutput§r cooler vent. Coolant§f use rate as well as exhaust coolant output rate can be seen via the §9coolant bar§f (third bar from the left) in the §2Accelerator GUI§r.\n\n§cNote:§r Used up coolant must constantly be emptied from the accelerator for it to work, otherwise new coolant cannot be input into the accelerator to cool it and the accelerator will §coverheat and explode§r!\n\n\n§r§nSupercooler Loop§r\n\n§fWith the exception of water, §nall active coolants§f are output in their gaseous forms in the same ratio as their gas:liquid conversion ratio in a supercooler. Thus, you can form a §6closed loop of active coolant§f by pumping §cexhaust coolant§f from the output coolant vent  into a Supercooler, then pumping the §9cooled active coolant§f back into the input coolant vent, with no loss in active coolant§f.\n",
+          "desc:8": "§lActive Cooling Requirement:§r An accelerator§f must be §nconstantly supplied§r with an §1active coolant§r, whose §ctemperature§r is §6below§r the §cmaximum temperature§r (the lowest maximum operating temperature out of all components) of the accelerator.\n\nThe accelerator\u0027s current temperature and maximum temperature can be viewed in the §2Accelerator GUI§r. \n\n\n§nFull Explanation§r\n\nComponents are only capable of operating when they are §9cooled§r below their §cmaximum operating temperature§r, as seen in the §6tooltip§r of the block used to construct that component. Thus, §1active coolant§r is required to lower the accelerator\u0027s temperature.\n\nActive coolants §fcool an accelerator§f to their own temperature, provided that the §9passive cooling§r requirement is met (see the quest \"Passive Cooling\"). Valid active coolants§f and their temperatures can be seen in §2JEI§f by viewing the uses of Accelerator Controllers.\n\n\n§dExample:§r If your accelerator has a copper electromagnet and a niobium-tin electromagnet, the §cmaximum temperature§r is §c18K§r, the maximum operating temperature of niobium-tin, since it is the lowest in the accelerator. An §1active coolant§r with a temperature lower than §918K§r is required to cool the accelerator. In this case, only Liquid Helium with a temperature of §94K§r is cool enough, and it will cool the accelerator to §94K§r, consuming it and returning regular helium in the coolant output vent.\n\n\nWhen an accelerator is supplied with active coolant via the §9input§r coolant vent, it is converted into the resultant hot coolant (as seen in the JEI recipe), which is output from the §coutput§r cooler vent. Coolant§f use rate as well as exhaust coolant output rate can be seen via the §9coolant bar§f (third bar from the left) in the §2Accelerator GUI§r.\n\n§cNote:§r Used up coolant must constantly be emptied from the accelerator for it to work, otherwise new coolant cannot be input into the accelerator to cool it and the accelerator will §coverheat and explode§r!\n\n\n§r§nSupercooler Loop§r\n\n§fWith the exception of water, §nall active coolants§f are output in their gaseous forms in the same ratio as their gas:liquid conversion ratio in a supercooler. Thus, you can form a §6closed loop of active coolant§f by pumping §cexhaust coolant§f from the output coolant vent into a Supercooler, then pumping the §9cooled active coolant§f back into the input coolant vent, with no loss in active coolant§f.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63313,7 +63316,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §7Ion Source§f creates §5particle stacks§r from items placed in it. \n\nRecipes for particles §fcan be seen in §2JEI§f via the Ion Source. Particles are produced with their relevant properties (§4amount§f, §6energy§e §fand §bfocus§f) as shown in the recipe in §2JEI§r, and the particles (pu) in the item will be slowly consumed, at the rate (pu/t) shown in §2JEI§r.",
+          "desc:8": "The §7Ion Source§f creates §5particle stacks§r from items placed in it. \n\nRecipes for particles §fcan be seen in §2JEI§f via the Ion Source. Particles are produced with their relevant properties (§4amount§f, §6energy§e §fand §bfocus§f) as shown in the recipe in §2JEI§r, and the particles (pu) in the item will be slowly consumed, at the rate (pu/t) shown in §2JEI§r.\n\n§dExample§r: As seen in JEI, the Boron Canister can be placed in an Ion Source. It will produce a §5boron ion stack§r within the §3LINAC§r with §4amount 10kpu/t§r, §6energy 0eV§r, and §bfocus 0.2§r. The boron canister contains 10Mpu initially, which is consumed at a rate of 10kpu/t. Thus, the boron canister will be depleted in 10Mpu / 10kpu \u003d 1000t \u003d 50s.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63389,7 +63392,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "An §dRF cavity§f is constructed from §d§f§7RF Cavity blocks§f of the same type in a ring of 8 around the accelerator beam. Each §dRF cavity structure§r increases the §eAccelerating Voltage§r of the accelerator by the amount stated in the §8§7RF cavity\u0027s§r tooltip. The §etotal Accelerating Voltage§r of the accelerator can be seen in the §2Accelerator GUI§r.\n\n\nFor §3Linear Accelerators§f, the resulting particle\u0027s §6energy§f is calculated via the formula:\n\n§6Resulting Energy§r \u003d \n§6Initial Energy§r + |§dcharge§r| * §eTotal Accelerating Voltage§r\n\nThe charge of a particle can be found in §2JEI§r, under particle properties.",
+          "desc:8": "An §dRF cavity§f is constructed from §d§f§7RF Cavity blocks§f of the same type in a ring of 8 around the accelerator beam. Each §dRF cavity structure§r increases the §eAccelerating Voltage§r of the accelerator by the amount stated in the §8§7RF cavity\u0027s§r tooltip. The §etotal Accelerating Voltage§r of the accelerator can be seen in the §2Accelerator GUI§r.\n\n\nFor §3Linear Accelerators§f, the RF cavity increases the §6particle\u0027s energy§r. The resulting particle\u0027s energy is calculated via the formula:\n\n§6Resulting Energy§r \u003d \n§6Initial Energy§r + |§dcharge§r| * §eTotal Accelerating Voltage§r\n\nThe charge of a particle can be found in §2JEI§r, under particle properties.\n\n§dExample:§r If a boron ion particle stack (which has a charge of §d+1§r) has an initial energy of §60eV§r and is passed through a Linear Accelerator containing §d5 copper RF cavities§r (accelerating voltage §e200keV§r), the total accelerating voltage is §e200keV * 5 \u003d 1MeV§r. Thus, the resulting energy is §60 §r+ §d1§r * §e1MeV§r \u003d §61MeV§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63471,7 +63474,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A §bQuadrapole Magnet§f is constructed from §74 Accelerator Electromagnets §fof the same type around the accelerator beam. §b§fEach §bQuadrapole Magnet structure§r increases the §eQuadrapole Strength§r of the Accelerator§f§f by the amount stated in the §7Electromagnet\u0027s§r tooltip. The §etotal Quadrapole Strength§r can be seen in the §2Accelerator GUI§r. \n\n\nFor §nall accelerators,§r the resultant §bfocus§r can be calculated by the given formula:\n\n§bResultant Focus§r \u003d \n§bInitial Focus§r + |§dcharge§r| * (§eTotal Quadrapole Strength§r) - §bFocus Lost per Block§r * (§7Length of Accelerator§r)\n\nwhere the length of the accelerator can be found in the §2Accelerator GUI§r, and §bfocus lost per block§r is as given in \"Transporting Particles\":\n\n§bFocus Lost per Block§r \u003d §b\nattenuation rate§r * (1 + |§dcharge§r|*(§4pu/t§r / 10000)^0.5)",
+          "desc:8": "A §bQuadrapole Magnet§f is constructed from §74 Accelerator Electromagnets §fof the same type around the accelerator beam. §b§fEach §bQuadrapole Magnet structure§r increases the §eQuadrapole Strength§r of the Accelerator§f§f by the amount stated in the §7Electromagnet\u0027s§r tooltip. The §etotal Quadrapole Strength§r can be seen in the §2Accelerator GUI§r. \n\n\nFor §nall accelerators§r, Quadropole Magnets increase the §bparticle\u0027s focus§r.§r The resultant focus can be calculated by the given formula:\n\n§bResultant Focus§r \u003d \n§bInitial Focus§r + |§dcharge§r| * (§eTotal Quadrapole Strength§r) - §bFocus Lost per Block§r * (§7Length of Accelerator§r)\n\nwhere the length of the accelerator can be found in the §2Accelerator GUI§r, and §bfocus lost per block§r is as given in \"Transporting Particles\":\n\n§bFocus Lost per Block§r \u003d §b\nattenuation rate§r * (1 + |§dcharge§r|*(§4pu/t§r / 10000)^0.5)\n\n§dExample:§r If a Boron Ion particle stack (§bfocus 0§r, §dcharge +1§r, §410000 pu/t§r) passes through a linear accelerator 7 blocks long with 5 copper electromagnets, the total quadrapole strength is §e5 * 0.2T \u003d 1T§r. Thus, the focus lost per block is §b0.02§r * (1 + §d1§r * (§410000§r / 10000)^0.5) \u003d §b0.04§r and the resultant focus is §b0 §r+ §d1§r * §e1§r - §b0.04§r * §77§r \u003d §b0.72§r. This shows that while quadrapoles increase focus, the length of the accelerator decreases focus.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63553,7 +63556,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Don\u0027t want to do maths just to find the resultant properties of your particle? You can view them in the §2Accelerator GUI§r itself! \n\nA resulting §5particle stack§r and its §6properties§r can be viewed by hovering over the box in the GUI when the Accelerator is switched on with a §credstone signal§r. You can view the properties of a particle in §nany multiblock§r in this manner! \n\nMake sure that all the requirements of the Accelerator are met first though, otherwise it may §cexplode§r!",
+          "desc:8": "Don\u0027t want to do maths just to find the resultant properties of your particle? You can view them in the §2Accelerator GUI§r itself! Just right click the accelerator controller!\n\nA resulting §5particle stack§r and its §6properties§r can be viewed by hovering over the box in the GUI when the Accelerator is switched on with a §credstone signal§r. You can view the properties of a particle in §nany multiblock§r in this manner! \n\nMake sure that all the requirements of the Accelerator are met first though, otherwise it may §cexplode§r!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -63793,7 +63796,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The §7Nucleosynthesis Chamber§r fuses two elements together under a particle beam to create §enew elements§r! These reactions also release §clarge amounts of heat§r, which can be used to generate §6immense power§r!\n\n§nConstruction§r\n\nA visualisation of a §7Nucleosynthesis Chamber§r§f§f can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nCasing: §7Vacuum Chamber Casing/Glass§r\n\nDimensions: 5 wide x 11 long x 7 tall, with §7Vacuum Chamber Beam Blocks§r in an \"n\" shape, §7Vacuum Chamber Plasma Nozzles§r facing inward and a §7Vacuum Chamber Plasma Glass§r container in the middle\n\nRequired blocks on sides:\n- §7Nucleosynthesis Chamber Controller§r\n- §72 Vacuum Chamber Coolant Vents§r in §ainput§r and §coutput§r mode\n- §72 Vacuum Chamber Heater Vents§r in §ainput§r and §coutput§r mode\n- §7Vacuum Chamber Energy Port§r\n\nRequired blocks on sides next to Vacuum Chamber Beam Blocks:\n- §7Vacuum Chamber Beam Port§r in §ainput§r mode\n- §74 Vacuum Chamber Fluid Ports§r, 2 in §ainput§r and 2 in §coutput§r mode\n\n§cNote:§r The vacuum chamber glass must be connected to any of the other blocks in the multiblock via §7Vacuum Heaters§r, otherwise the multiblock will not form! §9Cooling mechanics§r will be covered in \"Cooling Fusion\".\n\n§nRequirements§r\n\nIn order to process a recipe, the Nucleosynthesis Chamber must be supplied with:\n- §6Power§r\n- §9Passive Cooling§r from Vacuum Heaters (§9Cooling mechanics§r covered in \"Cooling Fusion\")\n- §8Liquid Mercury§r (absorbs heat from the reaction and becomes hot mercury, mercury consumption rate can be seen by hovering over the first bar from the right in the §2Chamber GUI§r)\n- §1Active Coolant§r with a temperature below 104K (used for cooling magnets, magnet heat bar and coolant consumption rate can be seen by hovering over the second bar from the left in the §2Chamber GUI§r)\n- The two fluids in the desired recipe\n- The particle beam in the desired recipe with an energy of §60eV§r and sufficient §bfocus§r\n\nMake sure all the requirements are met, otherwise the multiblock may §cexplode§r and leak §dhot plasma§r!\n\nIf all the requirements are met, the Nucleosynthesis Chamber will begin converting the two fluids and particle beam into the output fluids, producing §8hot mercury§r in the process. \n\nMore details about recipe time and heat generation are covered in \"Nucleosynthesis Recipes\", while more details about Hot Mercury production are covered in \"Cooling Fusion\".",
+          "desc:8": "The §7Nucleosynthesis Chamber§r fuses two elements together under a particle beam to create §enew elements§r! These reactions also release §clarge amounts of heat§r, which can be used to generate §6immense power§r!\n\n§nConstruction§r\n\nA visualisation of a §7Nucleosynthesis Chamber§r§f§f can be found in §2JEI§r and on the §2QMD Github Wiki§f.\n\nCasing: §7Vacuum Chamber Casing/Glass§r\n\nDimensions: 5 wide x 11 long x 7 tall, with §7Vacuum Chamber Beam Blocks§r in an \"n\" shape, §7Vacuum Chamber Plasma Nozzles§r facing inward and a §7Vacuum Chamber Plasma Glass§r container in the middle\n\nRequired blocks on sides:\n- §7Nucleosynthesis Chamber Controller§r\n- §72 Vacuum Chamber Coolant Vents§r in §ainput§r and §coutput§r mode\n- §72 Vacuum Chamber Heater Vents§r in §ainput§r and §coutput§r mode\n- §7Vacuum Chamber Energy Port§r\n\nRequired blocks on sides next to Vacuum Chamber Beam Blocks:\n- §7Vacuum Chamber Beam Port§r in §ainput§r mode\n- §74 Vacuum Chamber Fluid Ports§r, 2 in §ainput§r and 2 in §coutput§r mode\n\nThe rest of the chamber can be filled with Vacuum Heaters to cool the multiblock.\n\n§cNote:§r The vacuum chamber glass must be connected to any of the other blocks in the multiblock via §7Vacuum Heaters§r, otherwise the multiblock will not form! §9Cooling mechanics§r will be covered in \"Cooling Fusion\".\n\n§nRequirements§r\n\nIn order to process a recipe, the Nucleosynthesis Chamber must be supplied with:\n- §6Power§r\n- §9Passive Cooling§r from Vacuum Heaters (§9Cooling mechanics§r covered in \"Cooling Fusion\")\n- §8Liquid Mercury§r (absorbs heat from the reaction and becomes hot mercury, mercury consumption rate can be seen by hovering over the first bar from the right in the §2Chamber GUI§r)\n- §1Active Coolant§r with a temperature below 104K (used for cooling magnets, magnet heat bar and coolant consumption rate can be seen by hovering over the second bar from the left in the §2Chamber GUI§r)\n- The two fluids in the desired recipe\n- The particle beam in the desired recipe with an energy of §60eV§r and sufficient §bfocus§r\n\nMake sure all the requirements are met, otherwise the multiblock may §cexplode§r and leak §dhot plasma§r!\n\nIf all the requirements are met, the Nucleosynthesis Chamber will begin converting the two fluids and particle beam into the output fluids, producing §8hot mercury§r in the process. \n\nMore details about recipe time and heat generation are covered in \"Nucleosynthesis Recipes\", while more details about Hot Mercury production are covered in \"Cooling Fusion\".",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -64119,7 +64122,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This quest covers various calculations for Nucleosynthesis Recipes, such as §erecipe time§r and §crate of heat production§r.\n\nThe §4amount of particles§r required for a recipe to be processed once is the amount shown in §2JEI§r. Thus, the time taken for a recipe to process, in ticks, is given as the amount of particles required for the recipe (e.g §4155.9kpu§r) divided by the amount of particles in the particle stack (e.g §410000 pu/t§r). In this case, the recipe will take ~16t to process.\n\nWhen a recipe is complete, it produces both output fluids and §cheat§r. The rate of heat production is given by the amount of heat produced (e.g. §c17.6kH§r) divided by the recipe time given above (e.g. 15.59t). In this case, the rate of heat production will be §c~1130H/t§r. This heat is converted into §8Hot Mercury§r, as covered in the quest \"Cooling Fusion\".",
+          "desc:8": "This quest covers various calculations for Nucleosynthesis Recipes, such as §erecipe time§r and §crate of heat production§r.\n\nThe §4amount of particles§r required for a recipe to be processed once is the amount shown in §2JEI§r. Thus, the time taken for a recipe to process, in ticks, is given as the amount of particles required for the recipe (e.g §4155.9kpu§r for Deuterium-Tritium) divided by the amount of particles in the particle stack (e.g §410000 pu/t§r). In this case, the recipe will take ~16t to process.\n\nWhen a recipe is complete, it produces both output fluids and §cheat§r. The rate of heat production is given by the amount of heat produced (e.g. §c17.6kH§r for Deuterium-Tritium) divided by the recipe time given above (e.g. 15.59t). In this case, the rate of heat production will be §c~1130H/t§r. This heat is converted into §8Hot Mercury§r, as covered in the quest \"Cooling Fusion\".",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -64158,7 +64161,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Much like §3Accelerators§r, the Nucleosynthesis Chamber must also be §9cooled passively§r. However, unlike Accelerators, the Nucleosynthesis Chamber produces a useful cooling product: §8Hot Mercury§r, which can be used to generate §6large amounts of power§r in an §2NC:O Turbine§r!\n\n\n§nCooling§r\n\nIn order to get rid of the heat produced, §7Vacuum Heaters§r must be placed inside the Nucleosynthesis Chamber to §9cool§r it. Much like Accelerator Coolers, Vacuum Heaters also have placement rules regarding where they can be placed. Both the total cooling and heating§f can be seen by hovering over the §cheat bar§r (second bar from the right) in the §2Chamber GUI§r. The §9total cooling§r must exceed the §ctotal heating§r, otherwise the chamber will §cexplode§r!\n\n\n§nPower§r\n\nCooling the Nucleosynthesis Chamber also produces Hot Mercury. The §8rate of hot mercury production (mb/t)§r is equal to the §crate of heat production (H/t)§r (calculated in the quest \"Nucleosynthesis Recipes\") multiplied by the §eoutput efficiency§r, which is given by the §crate of heat production§r divided by the §9total cooling§r. Thus, you should ensure that the total cooling is as close to the rate of heat production as possible!\n\nAs the rate of heat production is variable and dependent on both the recipe you choose and the §4amount of particles§r in the input beam, it is recommended that you calculate the rate of heat production beforehand, then place Vacuum Heaters to get total cooling as close as possible to the rate of heat production.",
+          "desc:8": "Much like §3Accelerators§r, the Nucleosynthesis Chamber must also be §9cooled passively§r. However, unlike Accelerators, the Nucleosynthesis Chamber produces a useful cooling product: §8Hot Mercury§r, which can be used to generate §6large amounts of power§r in an §2NC:O Turbine§r!\n\n\n§nCooling§r\n\nIn order to get rid of the heat produced, §7Vacuum Heaters§r must be placed inside the Nucleosynthesis Chamber to §9cool§r it. Much like Accelerator Coolers, Vacuum Heaters also have placement rules regarding where they can be placed. Both the total cooling and heating§f can be seen by hovering over the §cheat bar§r (second bar from the right) in the §2Chamber GUI§r. The §9total cooling§r must exceed the §ctotal heating§r, otherwise the chamber will §cexplode§r!\n\n\n§nPower§r\n\nCooling the Nucleosynthesis Chamber also produces Hot Mercury. The §8rate of hot mercury production (mb/t)§r is equal to the §crate of heat production (H/t)§r (calculated in the quest \"Nucleosynthesis Recipes\") multiplied by the §eoutput efficiency§r, which is given by the §crate of heat production§r divided by the §9total cooling§r. Thus, you should ensure that the total cooling is as close to the rate of heat production as possible!\n\nAs the rate of heat production is variable and dependent on both the recipe you choose and the §4amount of particles§r in the input beam, it is recommended that you calculate the rate of heat production beforehand, then place Vacuum Heaters to get total cooling as close as possible to the rate of heat production.\n\n\n§nExample: Deuterium-Tritium§r\n\nAs mentioned in the \"Nucleosynthesis Recipes\" quest, when 2 beams of §410kpu/t§r deuterium and tritium are combined, they will produce a heat of §c1130H/t§r. Thus, enough vacuum heaters must be placed such that their total cooling exceeds §91130H/t§r. This heat production leads to §81130mb/t§r of hot mercury produced, which can be converted into power in a turbine to produce at least §618.5MRF/t§r, increasing with turbine efficiency! \n\nYou can also use beam multiplication (covered in the quest \"Beam Multiplication\") to increase the pu/t of the particle beams, further increasing the heat produced and thus hot mercury production.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -64814,6 +64817,538 @@
               "Damage:2": 0,
               "OreDict:8": "",
               "id:8": "cyclicmagic:clock"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "830:10": {
+      "preRequisites:11": [
+        207
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The Workbench Charger allows your workbench to draw vis from 9 chunks around it instead of just 1, and is placed on top of your thaumcraft workbench. \n\n§bThis should make recipes requiring large amounts of vis easier to craft!§r\n\n§dTip:§r If you are having trouble finding enough vis to craft the workbench charger, the twilight forest contains plenty of vis!",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumcraft:arcane_workbench_charger"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Workbench Charger",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 830,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:dioptra"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:arcane_workbench_charger"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "831:10": {
+      "preRequisites:11": [
+        206
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Used for a number of BM recipes!\n\nTo complete ash recipes, use the Ashes on the ground, then add the ingredients in the order shown.\n\n§bNeed more vis to craft the ashes? Use a workbench charger, or visit the twilight forest, which has tons of vis!",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "OreDict:8": "",
+            "id:8": "bloodmagic:arcane_ashes"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Arcane Ashes",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 831,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:enchanted_book",
+              "tag:10": {
+                "StoredEnchantments:9": {
+                  "0:10": {
+                    "id:2": 70,
+                    "lvl:2": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "OreDict:8": "",
+              "id:8": "bloodmagic:arcane_ashes"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "832:10": {
+      "preRequisites:11": [
+        228
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The arcane assembler automatically crafts arcane workbench recipes, at the cost of crystal water.\n\n§nAvailable Upgrades\n\n§rView available upgrades for this multiblock either through the JEI description for the blueprint or searching the multiblock name in JEI.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumcraft:arcane_workbench"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Arcane Assembler",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 832,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:salis_mundus"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:itemblueprint",
+              "tag:10": {
+                "dynamicmachine:8": "modularmachinery:arcane-assembler"
+              }
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:blockcontroller"
+            },
+            "2:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:blockinputbus"
+            },
+            "3:10": {
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:blockoutputbus"
+            },
+            "4:10": {
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": "",
+              "id:8": "modularmachinery:blockfluidinputhatch"
+            },
+            "5:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:arcane_workbench_charger"
+            },
+            "6:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicaugmentation:stability_field_generator"
+            },
+            "7:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:metal_alchemical"
+            },
+            "8:10": {
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:vis_battery"
+            },
+            "9:10": {
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumadditions:iron_framed_greatwood"
+            },
+            "10:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicaugmentation:arcane_trapdoor_wood"
+            },
+            "11:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:slab_greatwood"
+            },
+            "12:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:arcane_workbench"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "833:10": {
+      "preRequisites:11": [
+        154
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Infusion Recipes have §dinstability§r, which can cause the recipe to stop or even cause adverse effects!\n\nIn order to avoid this, the infusion matrix must be §bstabilised§r. There are two methods of doing so: Placing stabilising blocks, and using Infusion Stabilisers.\n\n\n§nStabilising Blocks§r\n\nPlacing §bstabilising block§rs like tallow candles and skulls around the infusion matrix will lower the instability of the matrix. Enough stabilising items will keep even the most unstable recipes stable! \n\nStabilising blocks must be placed in a §csymmetrical manner§r around the Infusion Matrix. \n\nPlacing more of the same kind of block reduces its effectiveness, so make sure to place §edifferent types§r of stabilising blocks around the matrix.\n\n§bEach colour of tallow candle counts as a different kind of block, so placing 4 of each colour is more than enough to stabilise any recipe!§r\n\n\n§nInfusion Stabilisers§r\n\nIf you don\u0027t want to place candles, you can use Infusion Stabilisers instead. Place Infusion Stabilisers next to pedestals, or connect them to pedestals with §4redstone inlays§r (pedestals themselves count as redstone inlays). When a recipe becomes too unstable, the infusion stabiliser will stabilise the recipe, disabling itself temporarily and releasing some flux.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumcraft:candle_white"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Infusion Stability",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "OR",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 833,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_green"
+            },
+            "1:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_brown"
+            },
+            "2:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_pink"
+            },
+            "3:10": {
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_orange"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:candle_white"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:stabilizer"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "834:10": {
+      "preRequisites:11": [
+        154
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The Infusion Matrix can be upgraded with various blocks to increase its speed and reduce the essentia cost.\n\n§nInfusion Stones§r\n\nPlace these under the pillars of the Infusion Matrix. A maximum of 4 stones can be used.\n\n§9Infusion Speed Stone§r: Speeds up the Infusion Matrix, but increases essentia cost slightly\n§6Infusion Cost Stone§r: Reduces the essentia cost, but slows down the infusion matrix slightly\n\n§nInfusion Matrix Upgrades§r\n\n§eAncient Pedestal§r: Reduces the essentia cost and speeds up the infusion matrix. A maximum of 60 pedestals can be used.\n§dEldritch Pedestal§r: Speeds up the infusion matrix more, but increases essentia cost. A maximum of 60 pedestals can be used.\n§dEldritch Pillars§r (replace Arcane Stone with Eldritch Stone): Reduces the essentia cost and speeds up the infusion matrix.\n\nAncient Stone and Eldritch Stone can both be found on the moon, or in The Emptiness, a dimension which can be accessed through a dimensional fracture.\n\n§nBest Infusion Matrix Setup§r\n\nUsing 4 Infusion Speed Stones, 60 Ancient Pedestals and Eldritch Pillars reduces crafting time to 40% and essentia cost to 50%, which effectively cuts the time taken to 20%.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumcraft:matrix_speed"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Infusion Matrix Upgrades",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 834,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:stone_ancient_tile"
+            },
+            "1:10": {
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:stone_eldritch_tile"
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:matrix_speed"
+            },
+            "1:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:matrix_cost"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "835:10": {
+      "preRequisites:11": [
+        380
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Automatically produces §bwill§r without having to set up a mob farm!\n\nPlace a data model and a sentient sword in the machine, and it will produce §bdemonic will§r. Alternatively, place a §9tartaric gem§r in the right slot and it will automatically fill the gem with will.\n\nThis process consumes the §cdurability§r of the sentient sword, so you may want to set up an auto-repair system using a §6diamond anvil§r with conduits or servos extracting the sword when the durability gets too low!",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "deepmoblearningbm:digital_will_injector"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Will Injector - Automated Will",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 835,
+      "rewards:9": {
+        "0:10": {
+          "choices:9": {
+            "0:10": {
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "enderio:item_advanced_item_filter"
+            },
+            "1:10": {
+              "Count:3": 2,
+              "Damage:2": 4,
+              "OreDict:8": "",
+              "id:8": "thermaldynamics:servo"
+            }
+          },
+          "index:3": 0,
+          "rewardID:8": "bq_standard:choice"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "deepmoblearningbm:digital_will_injector"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -66185,7 +66720,7 @@
           "id:3": 446,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 324,
+          "x:3": 328,
           "y:3": -96
         },
         "46:10": {
@@ -66215,6 +66750,13 @@
           "sizeY:3": 24,
           "x:3": -12,
           "y:3": 0
+        },
+        "50:10": {
+          "id:3": 830,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 24,
+          "y:3": 1
         }
       }
     },
@@ -69622,8 +70164,8 @@
           "id:3": 718,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 252,
-          "y:3": 84
+          "x:3": 269,
+          "y:3": 113
         },
         "50:10": {
           "id:3": 755,
@@ -69631,6 +70173,34 @@
           "sizeY:3": 24,
           "x:3": 180,
           "y:3": -12
+        },
+        "51:10": {
+          "id:3": 831,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 251,
+          "y:3": 78
+        },
+        "52:10": {
+          "id:3": 832,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 558,
+          "y:3": 60
+        },
+        "53:10": {
+          "id:3": 833,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 504,
+          "y:3": 156
+        },
+        "54:10": {
+          "id:3": 834,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 456,
+          "y:3": 168
         }
       }
     },
@@ -70485,6 +71055,13 @@
           "sizeY:3": 24,
           "x:3": 132,
           "y:3": -246
+        },
+        "69:10": {
+          "id:3": 835,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 204,
+          "y:3": -246
         }
       }
     },
@@ -71226,7 +71803,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 0.0,

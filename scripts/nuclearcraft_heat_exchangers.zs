@@ -34,3 +34,7 @@ for i,array in crMatrix{
         mods.nuclearcraft.ChemicalReactor.addRecipe(coolantIn[j].amount(coolModifier[i]), transferIn[i].amount(num), coolantOut[j].amount(coolModifier[i]), transferOut[i].amount(num*transferModifier[i]), 0.00125, 0.0, 0.0);
     }
 }
+
+//condenser recipes
+mods.nuclearcraft.Enricher.addRecipe(<minecraft:snowball>, <fluid:exhaust_steam>*16000, <fluid:condensate_water>*1000, 0.00125, 0.0, 0.0);
+mods.nuclearcraft.Enricher.addRecipe(<minecraft:snowball>, <fluid:low_quality_steam>*16000, <fluid:condensate_water>*500, 0.00125, 0.0, 0.0);

@@ -6,6 +6,7 @@ import mods.mekatweaker.InfuserType;
 import mods.appliedenergistics2.Grinder;
 import mods.mekanism.separator;
 import mods.nuclearcraft.Electrolyzer;
+import mods.nuclearcraft.ChemicalReactor;
 
 
 print("==================== loading mekanism.zs ====================");
@@ -672,6 +673,11 @@ separator.addRecipe(<liquid:heavy_water> * 2, 4000.0, <gas:deuterium> * 2, <gas:
 
 // Mek Heavy Water Electrolysis in NC Electrolyser
 Electrolyzer.addRecipe(<liquid:heavywater> * 250, <liquid:deuterium> * 500, <liquid:oxygen> * 250, null, null, 0.5);
+
+// Convert NC Sulfuric Acid to Mek Sulfuric Acid and vice versa
+ChemicalReactor.addRecipe(<liquid:sulfuric_acid> * 1000, <liquid:water> * 100, <liquid:sulfuricacid> * 1000, null, 0.1, 0.1);
+ChemicalReactor.addRecipe(<liquid:sulfuricacid> * 1000, <liquid:water> * 100, <liquid:sulfuric_acid> * 1000, null, 0.1, 0.1);
+
 
 ##########################################################################################
 print("==================== end of mekanism.zs ====================");

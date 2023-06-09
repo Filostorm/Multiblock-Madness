@@ -19,6 +19,14 @@ import mods.mekanism.enrichment;
 import mods.embers.Stamper;
 import mods.techreborn.industrialGrinder;
 import mods.appliedenergistics2.Grinder;
+import crafttweaker.item.IIngredient;
+import mods.nuclearcraft.AlloyFurnace;
+import mods.nuclearcraft.Infuser;
+import mods.nuclearcraft.Enricher;
+import mods.nuclearcraft.IngotFormer;
+import mods.nuclearcraft.DecayHastener;
+import mods.nuclearcraft.FissionIrradiator;
+import mods.jei.JEI;
 
 #priority 100
 
@@ -238,6 +246,60 @@ industrialGrinder.removeInputRecipe(<nuclearcraft:ore:4>);
 ##=======================================================
 ##              ORE PROCESSING
 ##=======================================================
+
+// NCEIB Ingots //
+// Thank you FishingPole!
+
+AlloyFurnace.addRecipe(<ore:ingotZirconium>, <ore:ingotMolybdenum>*15, <ore:ingotZirconiumMolybdenum>*16, 8.0, 2.0, 0.0);
+AlloyFurnace.addRecipe(<ore:ingotGraphite>|<ore:dustGraphite>, <ore:ingotManganese>|<ore:dustManganese>, <contenttweaker:cmningot>*2, 1.0, 1.0, 0.0);
+AlloyFurnace.removeRecipeWithOutput(<ore:ingotHSLASteel>*16);
+AlloyFurnace.addRecipe(<ore:ingotCarbonManganese>|<ore:dustCarbonManganese>, <ore:ingotIron>*15|<ore:dustIron>*15, <ore:ingotHSLASteel>*16, 8.0, 2.0, 0.0);
+
+furnace.addRecipe(<ore:ingotBismuth>.firstItem, <ore:dustBismuth>.firstItem);
+furnace.addRecipe(<ore:ingotCaesium137>.firstItem, <ore:dustCaesium137>.firstItem);
+furnace.addRecipe(<ore:ingotEuropium155>.firstItem, <ore:dustEuropium155>.firstItem);
+furnace.addRecipe(<ore:ingotPolonium>.firstItem, <ore:dustPolonium>.firstItem);
+furnace.addRecipe(<ore:ingotPromethium147>.firstItem, <ore:dustPromethium147>.firstItem);
+furnace.addRecipe(<ore:ingotProtactinium233>.firstItem, <ore:dustProtactinium233>.firstItem);
+furnace.addRecipe(<ore:ingotRadium>.firstItem, <ore:dustRadium>.firstItem);
+furnace.addRecipe(<ore:ingotRuthenium106>.firstItem, <ore:dustRuthenium106>.firstItem);
+furnace.addRecipe(<ore:ingotTBP>.firstItem, <ore:dustTBP>.firstItem);
+
+Melter.addRecipe(<ore:blockSilicon>, <liquid:silicon>*1296, 8.0, 1.5, 0.0);
+
+var everything = {<liquid:erbium>: [<contenttweaker:eringot>, <contenttweaker:erblock>, <ore:dustErbium>], 
+<liquid:iodine>: [<contenttweaker:iingot>, <contenttweaker:iblock>, <ore:dustIodine>], 
+<liquid:samarium>: [<contenttweaker:smingot>, <contenttweaker:smblock>, <ore:dustSamarium>], 
+<liquid:terbium>: [<contenttweaker:tbingot>, <contenttweaker:tbblock>, <ore:dustTerbium>],
+<liquid:ytterbium>: [<contenttweaker:ybingot>, <contenttweaker:ybblock>, <ore:dustYtterbium>]} as IIngredient[][ILiquidStack];
+
+for fluid, itms in everything {
+	// Melter.addRecipe(itms[0], fluid*144);
+	// Melter.addRecipe(itms[1], fluid*1296);
+	// IngotFormer.addRecipe(fluid*144, itms[0]);
+	// Manufactory.addRecipe(itms[0], itms[2]);
+	furnace.addRecipe(itms[0].items[0], itms[2]);
+}
+
+DecayHastener.addRecipe(<ore:blockStrontium90>, <ore:blockZirconium>, 9.0, 1.0, 34.4e-3);
+DecayHastener.addRecipe(<ore:blockPromethium147>, <ore:blockNeodymium>, 0.9, 1.0, 380.0e-3);
+FissionIrradiator.addRecipe(<ore:blockCobalt>, <ore:ingotCobalt60>*9, 17280000, 0.0, 0.0, 0.0);
+
+// NCEIB Blocks //
+
+FissionIrradiator.addRecipe(<ore:blockThorium>, <ore:blockTBP>, 1440000, 0.0, 0.0, 52.416e-12);
+FissionIrradiator.addRecipe(<ore:blockTBP>, <ore:blockProtactinium233>, 24480000, 0.0, 0.0, 61.344e-3);
+FissionIrradiator.addRecipe(<ore:blockBismuth>, <ore:blockPolonium>, 17280000, 0.0, 0.5, 36.432e-21);
+DecayHastener.addRecipe(<ore:blockTBP>, <ore:ingotTBU>*9, 1.0125, 1.0, 83.6e-3);
+DecayHastener.addRecipe(<ore:blockProtactinium233>, <ore:ingotUranium233>*9, 0.84375, 1.0, 1.5);
+DecayHastener.addRecipe(<ore:blockRadium>, <ore:blockLead>, 1.6785, 1.0, 6.25e-4);
+DecayHastener.addRecipe(<ore:blockPolonium>, <ore:blockLead>, 0.95625, 1.0, 293.0e-3);
+DecayHastener.addRecipe(<ore:blockUranium238>, <ore:blockRadium>, 148.275, 1.0, 225.0e-12);
+
+Manufactory.addRecipe(<ore:blockCarobbiite>, <ore:dustPotassiumFluoride>*9, 8.0, 1.0, 0.0);
+Manufactory.addRecipe(<ore:blockVilliaumite>, <ore:dustSodiumFluoride>*9, 8.0, 1.0, 0.0);
+Manufactory.addRecipe(<ore:blockBoronNitride>, <ore:dustBoronNitride>*9, 8.0, 1.0, 0.0);
+
 
 // TC Clusters //
 
@@ -778,6 +840,8 @@ Manufactory.addRecipe(item, <contenttweaker:material_part:35>);
 enrichment.addRecipe(item, <contenttweaker:material_part:35>);
 }
 
+furnace.addRecipe(<contenttweaker:material_part:30>, <contenttweaker:material_part:35>);
+
 //Orichalcum
 MineralSizer.add(<contenttweaker:sub_block_holder_0:7>, [<jaopca:item_crushedlumporichalcum>*2], [8]);
 LeachingVat.add(<jaopca:item_crushedlumporichalcum>, [<jaopca:item_leachedshardorichalcum>*2], [6.32F], <liquid:leachate>*50);
@@ -831,6 +895,8 @@ Pulverizer.addRecipe(<astralsorcery:itemcraftingcomponent:2>, item, 2000, <jaopc
 Manufactory.addRecipe(item, <astralsorcery:itemcraftingcomponent:2>);
 enrichment.addRecipe(item, <astralsorcery:itemcraftingcomponent:2>);
 }
+
+furnace.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:2>);
 
 //Pyrite
 LeachingVat.add(<techreborn:ore:5>, [<rockhounding_chemistry:sulfide_shards:6>*8], [5.1F], <liquid:leachate>*200);
