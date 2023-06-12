@@ -310,6 +310,7 @@ for item in hiddenGlass {
 <ore:blockRefinedIron>.add(<techreborn:storage2:10>);
 <ore:blockTerrasteel>.add(<botania:storage:1>);
 <ore:blockThermalAlloy>.add(<contenttweaker:block_thermal_alloy>);
+<ore:blockHeavyAlloy>.add(<contenttweaker:block_mek_alloy>);
 
 <ore:foodMeat>.add(<mysticalworld:venison>);
 <ore:foodMeat>.add(<twilightforest:raw_meef>);
